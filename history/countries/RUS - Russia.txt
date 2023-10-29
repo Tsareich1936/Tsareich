@@ -87,6 +87,10 @@ if = {
 	target = FIN
 	autonomous_state = autonomy_dominion
     }
+    set_autonomy = {
+	target = SIK
+	autonomous_state = autonomy_dominion
+    }
 }
 
 

@@ -12,6 +12,10 @@ SOV = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 163 17 31 }
 }
+RUS = {
+	color = rgb { 64 128 0 }
+	color_ui = rgb { 51 204 51 }
+}
 SWE = {
 	color = rgb { 36 132 247 }
 	color_ui = rgb { 47 172 255 }
@@ -42,8 +46,8 @@ POL = {
 	color_ui = rgb { 51 204 51 }
 }
 AUS = {
-	color = rgb { 194 198 215 }
-	color_ui = rgb { 255 255 255 }
+	color = rgb { 0  136 230 }
+	color_ui = rgb { 0  136  230 }
 }
 LIT = {
 	color = rgb { 219 219 119 }
@@ -146,8 +150,8 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = hsv { 0.18 0.6 0.9 } #255 244 190
-	color_ui = hsv { 0.18 0.3 0.9 }
+	color = rgb { 0  76  153 }
+	color_ui = rgb { 0  76  153 }
 }
 CHL = {
 	color = rgb { 155 101 107 }
@@ -238,8 +242,8 @@ SIA = {
 	color_ui = rgb { 222 247 198 }
 }
 SIK = {
-	color = rgb { 71 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 64 128 0 }
+	color_ui = rgb { 51 204 51 }
 }
 TIB = {
 	color = rgb { 80 115 45}
