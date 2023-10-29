@@ -13,6 +13,9 @@ state={
 	history={
 		owner = RHN
 		victory_points = {
+			6469 10 
+		}
+		victory_points = {
 			587 5 
 		}
 		#victory_points = {
@@ -47,7 +50,7 @@ state={
 	}
 
 	provinces={
-		587 3444 3547 9522 
+		529 587 3444 3512 3547 6469 6570 9482 9522 
 	}
 	local_supplies=0.0 
 }
