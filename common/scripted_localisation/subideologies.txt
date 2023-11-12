@@ -48,36 +48,6 @@ defined_text = {
 		}
 		localization_key = socialism
 	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = oligarchic_democracy
-		}
-		localization_key = oligarchic_democracy
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = centrism_democratic
-		}
-		localization_key = centrism_democratic
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = anarcho_capitalism
-		}
-		localization_key = anarcho_capitalism
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = islamic_democracy
-		}
-		localization_key = islamic_democracy
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = labour_zionism
-		}
-		localization_key = labour_zionism
-	}
 }
 defined_text = {
 	name = GetSubIdeologyAth
@@ -86,19 +56,6 @@ defined_text = {
 			has_country_leader_ideology = despotism
 		}
 		localization_key = despotism
-		
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = conservatism_n
-		}
-		localization_key = conservatism_n
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = absolute_monarchism
-		}
-		localization_key = absolute_monarchism
 	}
 	text = {
 		trigger = {
@@ -123,48 +80,6 @@ defined_text = {
 			has_country_leader_ideology = centrism
 		}
 		localization_key = centrism
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = corporatism
-		}
-		localization_key = corporatism
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = the_peoples_tutelage
-		}
-		localization_key = the_peoples_tutelage
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = anarcho_capitalism_n
-		}
-		localization_key = anarcho_capitalism_n
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = monarchical_theocracy
-		}
-		localization_key = monarchical_theocracy
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = marhaenism
-		}
-		localization_key = marhaenism
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = arab_socialism
-		}
-		localization_key = arab_socialism
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = revisionist_zionism
-		}
-		localization_key = revisionist_zionism
 	}
 }
 defined_text = {
@@ -196,29 +111,10 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = clerical_fascism
-		}
-		localization_key = clerical_fascism
-	}
-	text = {
-		trigger = {
 			has_country_leader_ideology = rexism
 		}
 		localization_key = rexism
 	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = marhaenism_f
-		}
-		localization_key = marhaenism_f
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = islamism
-		}
-		localization_key = islamism
-	}
-	
 }
 defined_text = {
 	name = GetSubIdeologyCom
@@ -253,11 +149,4 @@ defined_text = {
 		}
 		localization_key = anarchist_communism
 	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = juche
-		}
-		localization_key = juche
-	}
-	
 }

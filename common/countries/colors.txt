@@ -21,12 +21,20 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 42 100 201 }
-	color_ui = rgb { 68 135 229 }
+	color = rgb { 173 36 36 }
+	color_ui = rgb { 173 36 36 }
 }
-RHN = {
-	color = rgb { 0 127 97 }
-	color_ui = rgb { 0 127 97 }
+FGE = {
+	color = rgb { 37 75 150 }
+	color_ui = rgb { 37 75 150 }
+}
+FWA = {
+	color = rgb { 37 75 150 }
+	color_ui = rgb { 37 75 150 }
+}
+FEA = {
+	color = rgb { 37 75 150 }
+	color_ui = rgb { 37 75 150 }
 }
 LUX = {
 	color = rgb { 65 175 179 }
@@ -46,8 +54,8 @@ POL = {
 	color_ui = rgb { 51 204 51 }
 }
 AUS = {
-	color = rgb { 0 149 204 }
-	color_ui = rgb { 0 149 204 }
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
 }
 LIT = {
 	color = rgb { 219 219 119 }
@@ -68,6 +76,10 @@ SPR = {
 ITA = {
 	color = rgb { 67 127 63 }
 	color_ui = rgb { 87 165 82 }
+}
+SRI = {
+	color = rgb { 143 47 47 }
+	color_ui = rgb {143 47 47 }
 }
 ROM = {
 	color = rgb { 215 196 72 }
