@@ -1,0 +1,20 @@
+on_actions = {
+
+	
+	on_startup = {
+		effect = {
+
+			every_country = {
+				limit = { is_ai = no }
+				add_to_array = { # It will automatically add the scope
+					array = global.players
+				}
+			}
+			# UI setup
+			for_each_scope_loop = {
+				array = global.players
+				set_variable = { TR_welcome_splash_variable = 1 }
+			}
+		}
+	}
+}

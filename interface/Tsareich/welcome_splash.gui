@@ -1,0 +1,125 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "TR_welcome_splash_container"
+		position = { x = 0 y = 0 }
+		size = { width = 720 height = 800 }
+		moveable = yes
+		orientation = CENTER
+		origo = center
+		clipping = no
+		background = {
+			name = "TR_logo"
+			spriteType = "GFX_TR_splash_intro"
+			position = { x = -40 y = -6 }
+		}
+	
+		containerWindowType = {
+			name = "splash_backfill"
+			position = { x = 0 y = 356 }
+			size = { width = 728 height = 448 }
+			orientation = CENTER_UP
+			origo = center_up
+			clipping = no
+
+			background = {
+				quadTextureSprite = "GFX_tiled_window_pol_goal"
+			}
+
+			containerWindowType = {
+				name = "splash_border"
+				position = { x = 0 y = 4 }
+				size = { width = 720 height = 448 }
+				orientation = CENTER_UP
+				origo = center_up
+				clipping = no
+
+				background = {
+					quadTextureSprite = "GFX_tiled_generic_bg_1"
+				}
+
+				containerWindowType = {
+					name = welcome_630splash_tab_button_container
+					position = {
+						x = -315
+						y = 22
+					}
+					size = {
+						width = 630
+						height = 60
+					}
+					orientation = CENTER_UP
+					
+					buttonType = {
+						name = "tab_1"
+						position = { x = 0 y = 0 }
+						quadTextureSprite ="GFX_strategic_air_sort"
+						buttonText = "TR_welcome_splash_tab_1"
+						font = "hoi_18mbs"
+						clicksound = click_default
+					}
+	
+					buttonType = {
+						name = "tab_2"
+						position = { x = 170 y = 0 }
+						quadTextureSprite ="GFX_strategic_air_sort"
+						buttonText = "TR_welcome_splash_tab_2"
+						font = "hoi_18mbs"
+						clicksound = click_default
+					}
+	
+					buttonType = {
+						name = "tab_3"
+						position = { x = 340 y = 0 }
+						quadTextureSprite ="GFX_strategic_air_sort"
+						buttonText = "TR_welcome_splash_tab_3"
+						font = "hoi_18mbs"
+						clicksound = click_default
+					}
+	
+					buttonType = {
+						name = "tab_4"
+						position = { x = 510 y = 0 }
+						quadTextureSprite ="GFX_strategic_air_sort"
+						buttonText = "TR_welcome_splash_tab_4"
+						font = "hoi_18mbs"
+						clicksound = click_default
+					}
+				}
+
+				containerWindowType = {
+					name = content_bkgr_bottom_layer
+					position = { x = 0 y = 72 }
+					size = { width = 696 height = 360 }
+					orientation = CENTER_UP
+					origo = center_up
+
+					background = { quadTextureSprite = GFX_tiled_window_thin_border }
+
+					containerWindowType = {
+						name = content_bkgr_top_layer
+						position = { x = 0 y = 4 }
+						size = { width = 688 height = 352 }
+						orientation = CENTER_UP
+						origo = center_up
+
+						background = { quadTextureSprite = GFX_tiled_generic_bg_1 }
+					}
+				}
+
+				buttonType = {
+					name = "mod_options_button"
+					position = { x = -120 y = -48 }
+					orientation = center_down
+
+					quadTextureSprite = "GFX_intro_screen_continue_button"
+					buttonText = "mod_options_button_text"
+					buttonFont = "hoi_24header"
+					clicksound = click_default
+					oversound = ui_menu_over
+					shortcut = "c"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+scripted_gui = {
+	TR_welcome_splash = {
+		context_type = player_context
+		window_name = "TR_welcome_splash_container"
+		dirty = TR_welcome_splash_variable
+		
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_variable = TR_welcome_splash_variable
+		}
+
+		effects = {
+			mod_options_button_click = { clear_variable = TR_welcome_splash_variable }	
+		}
+	}
+}
