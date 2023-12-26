@@ -91,6 +91,14 @@ if = {
 	target = SIK
 	autonomous_state = autonomy_dominion
     }
+    set_autonomy = {
+	target = SYR
+	autonomous_state = autonomy_dominion
+    }
+    set_autonomy = {
+	target = ARM
+	autonomous_state = autonomy_dominion
+    }
 }
 
 
