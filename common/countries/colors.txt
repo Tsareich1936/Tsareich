@@ -900,3 +900,7 @@ GRN = {
 	color = rgb { 255 80 80 }
 	color_ui = rgb { 179 0 0 }
 }
+DNS = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
+}
