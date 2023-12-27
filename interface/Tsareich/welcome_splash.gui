@@ -122,6 +122,63 @@ guiTypes = {
 			}
 		}
 	}
+	containerWindowType = {
+		name = TR_welcome_splash_tab_1_container
+		position = { x = 0 y = 436 }
+		size = { width = 720 height = 360 }
+		margin = { left = 16 right = 16 }
+		clipping = yes
+
+		## backdrop texticon scripted loc textbox
+		containerWindowType = {
+			name = "TR_welcome_splash_tab_1_background"
+			size = { width = 172 height = 352 }
+
+			background = { quadTextureSprite = "GFX_tiled_paper_bg2" }
+
+			iconType = {
+				name = "TR_welcome_splash_tab_1_background_icon"
+				#spriteType = "GFX_FRA_intro"
+				position = { x = 2 y = 2 }
+			}
+		}
+
+		containerWindowType = {
+			name = "TR_welcome_splash_tab_1_text_container"
+			position = { x = 172 y = 0 }
+			margin = { left = 8 right = 8 }
+
+			instantTextboxType = {
+				name = "TR_welcome_splash_tab_1_header"
+				text = "TR_welcome_splash_tab_1_header"
+				position = { x = 0 y = 6 }
+				font = "hoi_20bs"
+				maxWidth = 500
+			}
+
+			instantTextboxType = {
+				name = "TR_welcome_splash_tab_1_content"
+				text = "TR_welcome_splash_tab_1_content"
+				position = { x = 0 y = 28 }
+				font = "hoi_18b"
+				maxWidth = 500
+				maxHeight = 292
+				scrollbartype = "standardtext_slider"
+			}
+
+			buttonType = {
+				name = "flip_back"
+				quadTextureSprite = "GFX_browser_back"
+				position = { x = 280 y = 320 }
+			}
+
+			buttonType = {
+				name = "flip_forward"
+				quadTextureSprite = "GFX_browser_forward"
+				position = { x = 320 y = 320 }
+			}
+		}
+	}
 
 	containerWindowType = {
 		name = TR_welcome_splash_tab_4_container
