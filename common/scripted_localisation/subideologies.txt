@@ -139,6 +139,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = luxemburgism
+		}
+		localization_key = luxemburgism
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = anti_revisionism
 		}
 		localization_key = anti_revisionism
