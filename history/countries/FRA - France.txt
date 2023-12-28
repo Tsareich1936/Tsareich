@@ -347,6 +347,10 @@ set_popularities = {
 	communism = 20
 }
 
+create_faction = International
+add_to_faction = GER
+add_to_faction = SRI
+
 add_ideas = {
 	FRA_victors_of_wwi
 	FRA_disjointed_government
