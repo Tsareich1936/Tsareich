@@ -1,12 +1,15 @@
 defined_text = {
 	name = GetCountryIntroHeader
-
 	#Default
-	text = { localization_key = "default_intro_header" }
+	text = {
+		localization_key = "default_intro_header"
+	}
 }
+
 defined_text = {
 	name = GetCountryIntroContent
-
 	#Default
-	text = { localization_key = "default_intro_content" }
+	text = {
+		localization_key = "default_intro_content"
+	}
 }

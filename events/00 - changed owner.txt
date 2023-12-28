@@ -1,0 +1,37 @@
+add_nameplace = ChangeName
+country_event = {
+	id = ChangeName.763
+	trigger = {
+		always = yes
+	}
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				763 = {
+					is_controlled_by = GER
+				}
+			}
+			set_province_name = {
+				id = 6332
+				name = VICTORY_POINTS_6332_GER
+			}
+			763 = {
+				set_state_name = STATE_763_GER
+			}
+		}
+		if = {
+			limit = {
+				763 = {
+					is_controlled_by = RUS
+				}
+			}
+			763 = {
+				reset_state_name = yes
+			}
+		}
+	}
+	option = {
+	}
+	timeout_days = 0
+}

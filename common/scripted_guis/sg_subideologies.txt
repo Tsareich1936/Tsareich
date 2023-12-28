@@ -4,7 +4,6 @@ scripted_gui = {
 		window_name = "countrypoliticsview_ideology_info"
 		parent_window_token = politics_tab
 	}
-
 	countrydiplomacyview_ideology_info = {
 		context_type = selected_country_context
 		window_name = "countrydiplomacyview_ideology_info"

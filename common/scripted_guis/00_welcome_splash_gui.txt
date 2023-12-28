@@ -3,29 +3,66 @@ scripted_gui = {
 		context_type = player_context
 		window_name = "TR_welcome_splash_container"
 		dirty = TR_welcome_splash_variable
-		
 		ai_enabled = {
 			always = no
 		}
-
 		visible = {
 			has_variable = TR_welcome_splash_variable
 		}
-
 		triggers = {
-			tab_1_click_enabled = { NOT = { check_variable = { TR_welcome_splash_variable = 1 } } }
-			tab_2_click_enabled = { NOT = { check_variable = { TR_welcome_splash_variable = 2 } } }
-			tab_3_click_enabled = { NOT = { check_variable = { TR_welcome_splash_variable = 3 } } }
-			tab_4_click_enabled = { NOT = { check_variable = { TR_welcome_splash_variable = 4 } } }
+			tab_1_click_enabled = {
+				NOT = {
+					check_variable = {
+						TR_welcome_splash_variable = 1
+					}
+				}
+			}
+			tab_2_click_enabled = {
+				NOT = {
+					check_variable = {
+						TR_welcome_splash_variable = 2
+					}
+				}
+			}
+			tab_3_click_enabled = {
+				NOT = {
+					check_variable = {
+						TR_welcome_splash_variable = 3
+					}
+				}
+			}
+			tab_4_click_enabled = {
+				NOT = {
+					check_variable = {
+						TR_welcome_splash_variable = 4
+					}
+				}
+			}
 		}
-
 		effects = {
-			tab_1_click = { set_variable = { TR_welcome_splash_variable = 1 } }
-			tab_2_click = { set_variable = { TR_welcome_splash_variable = 2 } }
-			tab_3_click = { set_variable = { TR_welcome_splash_variable = 3 } }
-			tab_4_click = { set_variable = { TR_welcome_splash_variable = 4 } }
-
-			mod_options_button_click = { clear_variable = TR_welcome_splash_variable }	
+			tab_1_click = {
+				set_variable = {
+					TR_welcome_splash_variable = 1
+				}
+			}
+			tab_2_click = {
+				set_variable = {
+					TR_welcome_splash_variable = 2
+				}
+			}
+			tab_3_click = {
+				set_variable = {
+					TR_welcome_splash_variable = 3
+				}
+			}
+			tab_4_click = {
+				set_variable = {
+					TR_welcome_splash_variable = 4
+				}
+			}
+			mod_options_button_click = {
+				clear_variable = TR_welcome_splash_variable
+			}
 		}
 	}
 	TR_welcome_splash_tab_1 = {
@@ -34,29 +71,50 @@ scripted_gui = {
 		parent_window_name = TR_welcome_splash_container
 		dirty = TR_welcome_splash_variable
 		dirty = curr_page
-
 		ai_enabled = {
 			always = no
 		}
-
 		triggers = {
-			flip_back_visible = { has_variable = country_intro_page_count }
-			flip_forward_visible = { has_variable = country_intro_page_count }
-
-			flip_back_click_enabled = { check_variable = { curr_page > 0 } }
-			flip_forward_click_enabled = { check_variable = { curr_page < country_intro_page_count } }
+			flip_back_visible = {
+				has_variable = country_intro_page_count
+			}
+			flip_forward_visible = {
+				has_variable = country_intro_page_count
+			}
+			flip_back_click_enabled = {
+				check_variable = {
+					curr_page > 0
+				}
+			}
+			flip_forward_click_enabled = {
+				check_variable = {
+					curr_page < country_intro_page_count
+				}
+			}
 		}
 		effects = {
 			flip_back_click = {
 				if = {
-					limit = { check_variable = { curr_page > 0 } }
-					subtract_from_variable = { curr_page = 1 }
+					limit = {
+						check_variable = {
+							curr_page > 0
+						}
+					}
+					subtract_from_variable = {
+						curr_page = 1
+					}
 				}
 			}
 			flip_forward_click = {
 				if = {
-					limit = { check_variable = { curr_page < country_intro_page_count } }
-					add_to_variable = { curr_page = 1 }
+					limit = {
+						check_variable = {
+							curr_page < country_intro_page_count
+						}
+					}
+					add_to_variable = {
+						curr_page = 1
+					}
 				}
 			}
 		}
@@ -71,11 +129,9 @@ scripted_gui = {
 		window_name = TR_welcome_splash_tab_4_container
 		parent_window_name = TR_welcome_splash_container
 		dirty = TR_welcome_splash_variable
-
 		ai_enabled = {
 			always = no
 		}
-
 		visible = {
 			check_variable = {
 				TR_welcome_splash_variable = 4
