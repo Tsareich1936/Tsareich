@@ -1,0 +1,46 @@
+NF作成時の注意
+1.新規作成の際は以下のコードをコピーしてください。（ただし<>の部分は自分のものに置き換えてください。）
+
+focus_tree = {
+    id = <任意の名前>
+    country = {
+        factor = 0
+        modifire = {
+            add = 101
+            tag = <任意の国の国家タグ>
+        }
+    }
+    default = yes
+	reset_on_civilwar = no
+
+	initial_show_position = {
+		focus = <任意のNFのID>
+	}
+}
+
+2.NFを追加します
+focus_tree の{}の中で、countryの{}の下に以下をコピペ
+不必要なものは除去する
+
+focus = {
+    id = <NFのID>
+    icon = <NFアイコンのGFX>
+    prerequisite = { focus = <前提として必要なNFのID> } #最初のものには不要
+    mutually_exclusive = { focus = <択一のNF> } #どちらか一方しか取らせたくないときに使う。必須ではない
+	available = {<任意の条件>} #取得のための前提条件。必須ではない
+    bypass = { <任意の条件> } #自動達成の条件。必須ではない
+    x = <NFのx座標> #大きくなるほど右に、小さくなるほど左に行く
+    y = <NFのy座標> #大きくなるほど下に、小さくなるほど上に行く
+    relative_position_id = <NFの位置の基準となるNFのID> #最初のものには不要
+    cost = <NF取得にかかる期間> #実際には7をかけた数字が取得にかかる日数
+
+    search_filters = <NFの分類>
+
+    available_if_capitulated = yes
+
+    completion_reward = {
+
+        <任意の効果> #詳しくは　https://hoi4.paradoxwikis.com/Effect
+
+    }
+}
