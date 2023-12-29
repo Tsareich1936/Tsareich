@@ -33,6 +33,7 @@ state = {
 				naval_base = 4
 			}
 		}
+		add_core_of = SRI
 		add_core_of = ITA
 		add_core_of = SRI
 		add_core_of = TOS

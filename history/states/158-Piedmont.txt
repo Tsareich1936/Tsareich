@@ -30,6 +30,7 @@ state = {
 				naval_base = 8
 			}
 		}
+		add_core_of = SRI
 		add_core_of = ITA
 		add_core_of = SRI
 		add_core_of = SPM
