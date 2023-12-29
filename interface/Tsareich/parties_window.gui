@@ -1,0 +1,392 @@
+@C = 0
+@S = 18
+@SD = 36
+@D = 54
+@Co = 72
+@N = 90
+@F = 108
+@CL = 29
+@SL = 47
+@SDL = 65
+@DL = 83
+@CoL = 101
+@NL = 119
+@FL = 137
+
+guiTypes = {
+	containerWindowType = {
+		name = "pol_show_parties"
+		position = {
+			x = 62
+			y = -198
+		}
+		orientation = CENTER
+		# origo = center
+		size = {
+			width = 252
+			height = 85
+		}
+		background = {
+			name = "Background"
+			spriteType = ""
+		}
+		buttonType = {
+			name = "button1"
+			spriteType = "GFX_pol_show_window_button"
+		}
+		buttonType = {
+			name = "button2"
+			spriteType = "GFX_pol_show_window_button"
+		}
+	}
+	containerWindowType = {
+		name = "pol_parties_window"
+		position = {
+			x = 268
+			y = -270
+		}
+		orientation = CENTER
+		clipping = yes
+		size = {
+			width = 165
+			height = 230
+		}
+		background = {
+			name = "Background"
+			spriteType = "GFX_pol_parties_window_bg"
+		}
+		#for leading party
+		iconType = {
+			name = "Communism_Leading"
+			position = { x = 5 y = @CL }
+			spriteType = "GFX_leading_pol_party_bg"
+		}
+		iconType = {
+			name = "Socialism_Leading"
+			position = { x = 5 y = @SL }
+			spriteType = "GFX_leading_pol_party_bg"
+		}
+		iconType = {
+			name = "SocialDemocratic_Leading"
+			position = { x = 5 y = @SDL }
+			spriteType = "GFX_leading_pol_party_bg"
+		}
+		iconType = {
+			name = "Democratic_Leading"
+			position = { x = 5 y = @DL }
+			spriteType = "GFX_leading_pol_party_bg"
+		}
+		iconType = {
+			name = "Conservatism_Leading"
+			position = { x = 5 y = @CoL }
+			spriteType = "GFX_leading_pol_party_bg"
+		}
+		iconType = {
+			name = "Neutrality_Leading"
+			position = { x = 5 y = @NL }
+			spriteType = "GFX_leading_pol_party_bg"
+		}
+		iconType = {
+			name = "Fascism_Leading"
+			position = { x = 5 y = @FL }
+			spriteType = "GFX_leading_pol_party_bg"
+		}
+		#parties name
+		containerWindowType = {
+			name = party_names
+			position = {
+				x = 5
+				y = 24
+			}
+			size = {
+				width = 158
+				height = 200
+			}
+			clipping = yes
+			background = {
+				name = "Background"
+				spriteType = ""
+			}
+			#show names
+			containerWindowType = {
+				name = "communism_info"
+				size = { width = 330 height = 18 }
+				clipping = no
+		
+						
+				
+				iconType = {
+					name = "color_block_bg"
+					position = { x = 0 y = 2 }
+					spriteType = "GFX_pol_party_colour_bg"
+				}
+				
+				iconType = {
+					name = "color_block"
+					position = { x = 4 y = 6 }
+					spriteType = "GFX_pol_party_colour"
+				}
+				
+				instantTextboxType = {
+					name = "score"
+					position = { x = 128 y = 4 }
+					font = "hoi_16mbs"
+					text = "[?party_popularity@communism|%G0]"
+					maxWidth = 60
+					maxHeight = 18
+				}
+					
+				instantTextboxType = {
+					name = "name"
+					position = { x = 22 y = 4 }
+					font = "hoi_16mbs"
+					text = "Communism_Party"
+					fixedsize = yes
+					maxWidth = 175
+					maxHeight = 18
+				}
+			}
+			containerWindowType = {
+				name = "socialism_info"
+				position = {
+					x = 0
+					y = @S
+				}
+				size = { width = 330 height = 18 }
+				clipping = no
+				
+				iconType = {
+					name = "color_block_bg"
+					position = { x = 0 y = 2 }
+					spriteType = "GFX_pol_party_colour_bg"
+				}
+				
+				iconType = {
+					name = "color_block"
+					position = { x = 4 y = 6 }
+					spriteType = "GFX_pol_party_colour"
+				}
+				
+				instantTextboxType = {
+					name = "score"
+					position = { x = 128 y = 4 }
+					font = "hoi_16mbs"
+					text = "[?party_popularity@socialism|%G0]"
+					maxWidth = 60
+					maxHeight = 18
+				}
+					
+				instantTextboxType = {
+					name = "name"
+					position = { x = 22 y = 4 }
+					font = "hoi_16mbs"
+					text = "Socialism_Party"
+					fixedsize = yes
+					maxWidth = 175
+					maxHeight = 18
+				}
+			}
+			containerWindowType = {
+				name = "socialdemocratic_info"
+				position = {
+					x = 0
+					y = @SD
+				}
+				size = { width = 330 height = 18 }
+				clipping = no	
+				
+				iconType = {
+					name = "color_block_bg"
+					position = { x = 0 y = 2 }
+					spriteType = "GFX_pol_party_colour_bg"
+				}
+				
+				iconType = {
+					name = "color_block"
+					position = { x = 4 y = 6 }
+					spriteType = "GFX_pol_party_colour"
+				}
+				
+				instantTextboxType = {
+					name = "score"
+					position = { x = 128 y = 4 }
+					font = "hoi_16mbs"
+					text = "[?party_popularity@socialdemocratic|%G0]"
+					maxWidth = 60
+					maxHeight = 18
+				}
+					
+				instantTextboxType = {
+					name = "name"
+					position = { x = 22 y = 4 }
+					font = "hoi_16mbs"
+					text = "SocialDemocratic_Party"
+					fixedsize = yes
+					maxWidth = 175
+					maxHeight = 18
+				}
+			}
+			containerWindowType = {
+				name = "democratic_info"
+				position = {
+					x = 0
+					y = @D
+				}
+				size = { width = 330 height = 18 }
+				clipping = no	
+				
+				iconType = {
+					name = "color_block_bg"
+					position = { x = 0 y = 2 }
+					spriteType = "GFX_pol_party_colour_bg"
+				}
+				
+				iconType = {
+					name = "color_block"
+					position = { x = 4 y = 6 }
+					spriteType = "GFX_pol_party_colour"
+				}
+				
+				instantTextboxType = {
+					name = "score"
+					position = { x = 128 y = 4 }
+					font = "hoi_16mbs"
+					text = "[?party_popularity@democratic|%G0]"
+					maxWidth = 60
+					maxHeight = 18
+				}
+					
+				instantTextboxType = {
+					name = "name"
+					position = { x = 22 y = 4 }
+					font = "hoi_16mbs"
+					text = "Democratic_Party"
+					fixedsize = yes
+					maxWidth = 175
+					maxHeight = 18
+				}
+			}
+			containerWindowType = {
+				name = "conservatism_info"
+				position = {
+					x = 0
+					y = @Co
+				}
+				size = { width = 330 height = 18 }
+				clipping = no		
+				
+				iconType = {
+					name = "color_block_bg"
+					position = { x = 0 y = 2 }
+					spriteType = "GFX_pol_party_colour_bg"
+				}
+				
+				iconType = {
+					name = "color_block"
+					position = { x = 4 y = 6 }
+					spriteType = "GFX_pol_party_colour"
+				}
+				
+				instantTextboxType = {
+					name = "score"
+					position = { x = 128 y = 4 }
+					font = "hoi_16mbs"
+					text = "[?party_popularity@conservatism|%G0]"
+					maxWidth = 60
+					maxHeight = 18
+				}
+					
+				instantTextboxType = {
+					name = "name"
+					position = { x = 22 y = 4 }
+					font = "hoi_16mbs"
+					text = "Conservatism_Party"
+					fixedsize = yes
+					maxWidth = 175
+					maxHeight = 18
+				}
+			}
+			containerWindowType = {
+				name = "neutrality_info"
+				position = {
+					x = 0
+					y = @N
+				}
+				size = { width = 330 height = 18 }
+				clipping = no		
+				
+				iconType = {
+					name = "color_block_bg"
+					position = { x = 0 y = 2 }
+					spriteType = "GFX_pol_party_colour_bg"
+				}
+				
+				iconType = {
+					name = "color_block"
+					position = { x = 4 y = 6 }
+					spriteType = "GFX_pol_party_colour"
+				}
+				
+				instantTextboxType = {
+					name = "score"
+					position = { x = 128 y = 4 }
+					font = "hoi_16mbs"
+					text = "[?party_popularity@neutrality|%G0]"
+					maxWidth = 60
+					maxHeight = 18
+				}
+					
+				instantTextboxType = {
+					name = "name"
+					position = { x = 22 y = 4 }
+					font = "hoi_16mbs"
+					text = "Neutrality_Party"
+					fixedsize = yes
+					maxWidth = 175
+					maxHeight = 18
+				}
+			}
+			containerWindowType = {
+				name = "fascism_info"
+				position = {
+					x = 0
+					y = @F
+				}
+				size = { width = 330 height = 18 }
+				clipping = no	
+				
+				iconType = {
+					name = "color_block_bg"
+					position = { x = 0 y = 2 }
+					spriteType = "GFX_pol_party_colour_bg"
+				}
+				
+				iconType = {
+					name = "color_block"
+					position = { x = 4 y = 6 }
+					spriteType = "GFX_pol_party_colour"
+				}
+				
+				instantTextboxType = {
+					name = "score"
+					position = { x = 128 y = 4 }
+					font = "hoi_16mbs"
+					text = "[?party_popularity@fascism|%G0]"
+					maxWidth = 60
+					maxHeight = 18
+				}
+					
+				instantTextboxType = {
+					name = "name"
+					position = { x = 22 y = 4 }
+					font = "hoi_16mbs"
+					text = "Fascism_Party"
+					fixedsize = yes
+					maxWidth = 175
+					maxHeight = 18
+				}
+			}
+		}
+		
+	}
+}

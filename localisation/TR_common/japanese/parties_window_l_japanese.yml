@@ -1,0 +1,8 @@
+﻿l_japanese:
+ Communism_Party: "[ROOT.GetPartyCommunism]"
+ Socialism_Party: "[ROOT.GetPartySocialism]"
+ SocialDemocratic_Party: "[ROOT.GetPartySocialDemocratic]"
+ Democratic_Party: "[ROOT.GetPartyDemocratic]"
+ Conservatism_Party: "[ROOT.GetPartyConservatism]"
+ Neutrality_Party: "[ROOT.GetPartyNeutrality]"
+ Fascism_Party: "[ROOT.GetPartyFascism]"
