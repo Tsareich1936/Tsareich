@@ -1,0 +1,28 @@
+defined_text = {
+	name = communism
+	text = { localization_key = communism }
+}
+defined_text = {
+	name = socialism
+	text = { localization_key = socialism }
+}
+defined_text = {
+	name = socialdemocratic
+	text = { localization_key = socialdemocratic }
+}
+defined_text = {
+	name = democratic
+	text = { localization_key = democratic }
+}
+defined_text = {
+	name = conservatism
+	text = { localization_key = conservatism }
+}
+defined_text = {
+	name = neutrality
+	text = { localization_key = neutrality }
+}
+defined_text = {
+	name = fascism
+	text = { localization_key = fascism }
+}
