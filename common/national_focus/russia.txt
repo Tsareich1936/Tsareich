@@ -1,0 +1,43 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+
+focus_tree = {
+	id = russian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 13
+			tag = RUS
+		}
+	}
+    default = yes
+	reset_on_civilwar = no
+
+    ### 堕ちゆく鷲
+        focus = {
+            id = RUS_fallingdown
+            icon = GFX_focus_SOV_panslavic_nationalism
+            x = 8
+            y = 0
+            cost = 5
+
+            search_filters = FOCUS_FILTER_POLITICAL
+
+            available_if_capitulated = yes
+
+            completion_reward = {
+                
+            }
+        }
+
+
+
+}

@@ -19,9 +19,7 @@ focus_tree = {
 		factor = 1
 		modifier = {
 			add = 11
-			NOT = {
-				tag = RUS
-			}
+
 		}
 	}
 	
