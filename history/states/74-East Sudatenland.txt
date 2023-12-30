@@ -9,7 +9,6 @@ state=
 	
 	history=
 	{
-		set_demilitarized_zone = yes
 		victory_points = {
 			3583 5
 		}
@@ -20,6 +19,11 @@ state=
 		}
 		add_core_of = GER
 		add_core_of = CZE
+
+		1938.9.30 = {
+			owner = GER
+			controller = GER
+		}
 	}
 	provinces= {
 		421 3414 3583 6485
