@@ -19,6 +19,7 @@ state = {
 				naval_base = 2
 			}
 		}
+		add_core_of = SRI
 		add_core_of = ITA
 		add_core_of = YUG
 		add_core_of = CRO

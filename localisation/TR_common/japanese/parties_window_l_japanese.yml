@@ -1,4 +1,5 @@
 ﻿l_japanese:
+ #parties names
  Communism_Party: "[ROOT.GetPartyCommunism]"
  Socialism_Party: "[ROOT.GetPartySocialism]"
  SocialDemocratic_Party: "[ROOT.GetPartySocialDemocratic]"
@@ -6,3 +7,14 @@
  Conservatism_Party: "[ROOT.GetPartyConservatism]"
  Neutrality_Party: "[ROOT.GetPartyNeutrality]"
  Fascism_Party: "[ROOT.GetPartyFascism]"
+  #tooltip
+ Button_Open_window:0 "ウィンドウを開く"
+ Button_Close_window:0 "ウィンドウを閉じる"
+
+ CommunismDetail:0 "§Y[ROOT.GetPartyCommunism]§!\n政党イデオロギー:§Y[communism]§!"
+ SocialismDetail:0 "§Y[ROOT.GetPartySocialism]§!\n政党イデオロギー:§Y[socialism]§!"
+ SocialDemocraticDetail:0 "§Y[ROOT.GetPartySocialDemocratic]§!\n政党イデオロギー:§Y[socialdemocratic]§!"
+ DemocraticDetail:0 "§Y[ROOT.GetPartyDemocratic]§!\n政党イデオロギー:§Y[democratic]§!"
+ ConservatismDetail:0 "§Y[ROOT.GetPartyConservatism]§!\n政党イデオロギー:§Y[conservatism]§!"
+ NeutralityDetail:0 "§Y[ROOT.GetPartyNeutrality]§!\n政党イデオロギー:§Y[neutrality]§!"
+ FascismDetail:0 "§Y[ROOT.GetPartyFascism]§!\n政党イデオロギー:§Y[fascism]§!"
