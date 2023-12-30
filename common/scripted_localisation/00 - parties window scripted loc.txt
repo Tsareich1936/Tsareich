@@ -255,6 +255,15 @@ defined_text = {
 	text = { trigger = { tag = ORO } localization_key = "ORO_communism_party" }
 	text = { trigger = { tag = QEM } localization_key = "QEM_communism_party" }
 	text = { trigger = { tag = KHA } localization_key = "KHA_communism_party" }
+	text = { trigger = { tag = AOI } localization_key = "AOI_communism_party" }
+	text = { trigger = { tag = LBV } localization_key = "LBV_communism_party" }
+	text = { trigger = { tag = PAP } localization_key = "PAP_communism_party" }
+	text = { trigger = { tag = TOS } localization_key = "TOS_communism_party" }
+	text = { trigger = { tag = SPM } localization_key = "SPM_communism_party" }
+	text = { trigger = { tag = TTS } localization_key = "TTS_communism_party" }
+	text = { trigger = { tag = SMI } localization_key = "SMI_communism_party" }
+	text = { trigger = { tag = GRN } localization_key = "GRN_communism_party" }
+	text = { trigger = { tag = BNT } localization_key = "BNT_communism_party" }
 }
 defined_text = {
 	name = GetPartySocialism
@@ -513,6 +522,15 @@ defined_text = {
 	text = { trigger = { tag = ORO } localization_key = "ORO_socialism_party" }
 	text = { trigger = { tag = QEM } localization_key = "QEM_socialism_party" }
 	text = { trigger = { tag = KHA } localization_key = "KHA_socialism_party" }
+	text = { trigger = { tag = AOI } localization_key = "AOI_socialism_party" }
+	text = { trigger = { tag = LBV } localization_key = "LBV_socialism_party" }
+	text = { trigger = { tag = PAP } localization_key = "PAP_socialism_party" }
+	text = { trigger = { tag = TOS } localization_key = "TOS_socialism_party" }
+	text = { trigger = { tag = SPM } localization_key = "SPM_socialism_party" }
+	text = { trigger = { tag = TTS } localization_key = "TTS_socialism_party" }
+	text = { trigger = { tag = SMI } localization_key = "SMI_socialism_party" }
+	text = { trigger = { tag = GRN } localization_key = "GRN_socialism_party" }
+	text = { trigger = { tag = BNT } localization_key = "BNT_socialism_party" }
 }
 defined_text = {
 	name = GetPartySocialDemocratic
@@ -771,6 +789,15 @@ defined_text = {
 	text = { trigger = { tag = ORO } localization_key = "ORO_socialdemocratic_party" }
 	text = { trigger = { tag = QEM } localization_key = "QEM_socialdemocratic_party" }
 	text = { trigger = { tag = KHA } localization_key = "KHA_socialdemocratic_party" }
+	text = { trigger = { tag = AOI } localization_key = "AOI_socialdemocratic_party" }
+	text = { trigger = { tag = LBV } localization_key = "LBV_socialdemocratic_party" }
+	text = { trigger = { tag = PAP } localization_key = "PAP_socialdemocratic_party" }
+	text = { trigger = { tag = TOS } localization_key = "TOS_socialdemocratic_party" }
+	text = { trigger = { tag = SPM } localization_key = "SPM_socialdemocratic_party" }
+	text = { trigger = { tag = TTS } localization_key = "TTS_socialdemocratic_party" }
+	text = { trigger = { tag = SMI } localization_key = "SMI_socialdemocratic_party" }
+	text = { trigger = { tag = GRN } localization_key = "GRN_socialdemocratic_party" }
+	text = { trigger = { tag = BNT } localization_key = "BNT_socialdemocratic_party" }
 }
 defined_text = {
 	name = GetPartyDemocratic
@@ -1029,6 +1056,15 @@ defined_text = {
 	text = { trigger = { tag = ORO } localization_key = "ORO_democratic_party" }
 	text = { trigger = { tag = QEM } localization_key = "QEM_democratic_party" }
 	text = { trigger = { tag = KHA } localization_key = "KHA_democratic_party" }
+	text = { trigger = { tag = AOI } localization_key = "AOI_democratic_party" }
+	text = { trigger = { tag = LBV } localization_key = "LBV_democratic_party" }
+	text = { trigger = { tag = PAP } localization_key = "PAP_democratic_party" }
+	text = { trigger = { tag = TOS } localization_key = "TOS_democratic_party" }
+	text = { trigger = { tag = SPM } localization_key = "SPM_democratic_party" }
+	text = { trigger = { tag = TTS } localization_key = "TTS_democratic_party" }
+	text = { trigger = { tag = SMI } localization_key = "SMI_democratic_party" }
+	text = { trigger = { tag = GRN } localization_key = "GRN_democratic_party" }
+	text = { trigger = { tag = BNT } localization_key = "BNT_democratic_party" }
 }
 defined_text = {
 	name = GetPartyConservatism
@@ -1287,6 +1323,15 @@ defined_text = {
 	text = { trigger = { tag = ORO } localization_key = "ORO_conservatism_party" }
 	text = { trigger = { tag = QEM } localization_key = "QEM_conservatism_party" }
 	text = { trigger = { tag = KHA } localization_key = "KHA_conservatism_party" }
+	text = { trigger = { tag = AOI } localization_key = "AOI_conservatism_party" }
+	text = { trigger = { tag = LBV } localization_key = "LBV_conservatism_party" }
+	text = { trigger = { tag = PAP } localization_key = "PAP_conservatism_party" }
+	text = { trigger = { tag = TOS } localization_key = "TOS_conservatism_party" }
+	text = { trigger = { tag = SPM } localization_key = "SPM_conservatism_party" }
+	text = { trigger = { tag = TTS } localization_key = "TTS_conservatism_party" }
+	text = { trigger = { tag = SMI } localization_key = "SMI_conservatism_party" }
+	text = { trigger = { tag = GRN } localization_key = "GRN_conservatism_party" }
+	text = { trigger = { tag = BNT } localization_key = "BNT_conservatism_party" }
 }
 defined_text = {
 	name = GetPartyNeutrality
@@ -1545,6 +1590,15 @@ defined_text = {
 	text = { trigger = { tag = ORO } localization_key = "ORO_neutrality_party" }
 	text = { trigger = { tag = QEM } localization_key = "QEM_neutrality_party" }
 	text = { trigger = { tag = KHA } localization_key = "KHA_neutrality_party" }
+	text = { trigger = { tag = AOI } localization_key = "AOI_neutrality_party" }
+	text = { trigger = { tag = LBV } localization_key = "LBV_neutrality_party" }
+	text = { trigger = { tag = PAP } localization_key = "PAP_neutrality_party" }
+	text = { trigger = { tag = TOS } localization_key = "TOS_neutrality_party" }
+	text = { trigger = { tag = SPM } localization_key = "SPM_neutrality_party" }
+	text = { trigger = { tag = TTS } localization_key = "TTS_neutrality_party" }
+	text = { trigger = { tag = SMI } localization_key = "SMI_neutrality_party" }
+	text = { trigger = { tag = GRN } localization_key = "GRN_neutrality_party" }
+	text = { trigger = { tag = BNT } localization_key = "BNT_neutrality_party" }
 }
 defined_text = {
 	name = GetPartyFascism
@@ -1803,4 +1857,13 @@ defined_text = {
 	text = { trigger = { tag = ORO } localization_key = "ORO_fascism_party" }
 	text = { trigger = { tag = QEM } localization_key = "QEM_fascism_party" }
 	text = { trigger = { tag = KHA } localization_key = "KHA_fascism_party" }
+	text = { trigger = { tag = AOI } localization_key = "AOI_fascism_party" }
+	text = { trigger = { tag = LBV } localization_key = "LBV_fascism_party" }
+	text = { trigger = { tag = PAP } localization_key = "PAP_fascism_party" }
+	text = { trigger = { tag = TOS } localization_key = "TOS_fascism_party" }
+	text = { trigger = { tag = SPM } localization_key = "SPM_fascism_party" }
+	text = { trigger = { tag = TTS } localization_key = "TTS_fascism_party" }
+	text = { trigger = { tag = SMI } localization_key = "SMI_fascism_party" }
+	text = { trigger = { tag = GRN } localization_key = "GRN_fascism_party" }
+	text = { trigger = { tag = BNT } localization_key = "BNT_fascism_party" }
 }
