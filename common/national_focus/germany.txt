@@ -8,19 +8,231 @@
 
 focus_tree = {
 	id = german_focus
-	
 	country = {
 		factor = 0
-		
 		modifier = {
-			add = 10
+			add = 13
 			tag = GER
 		}
 	}
+	default = yes
+	focus = {
+		id = GER_1936_party_conference
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		x = 11
+		y = 0
 
-	
+	}
+	focus = {
+		id = GER_left
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
+		cost = 10.00
+		prerequisite = {
+			focus = GER_1936_party_conference
+		}
+		mutually_exclusive = {
+			focus = GER_right
+		}
+		x = 8
+		y = 1
 
-	
-	default = no
+	}
+	focus = {
+		id = GER_first_five_year_plan
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10.00
+		prerequisite = {
+			focus = GER_left
+		}
+		x = 6
+		y = 2
 
+	}
+	focus = {
+		id = GER_agricultural_reform
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		cost = 10.00
+		prerequisite = {
+			focus = GER_first_five_year_plan
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = GER_second_five_year_plan
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10.00
+		prerequisite = {
+			focus = GER_first_five_year_plan
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = GER_union_USPD
+		icon = GFX_focus_SOV_the_supreme_soviet
+		cost = 10.00
+		prerequisite = {
+			focus = GER_left
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = GER_democratic_centralism
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		cost = 10.00
+		prerequisite = {
+			focus = GER_union_USPD
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = GER_right
+		icon = GFX_focus_ETH_callout_to_the_world
+		cost = 10.00
+		prerequisite = {
+			focus = GER_1936_party_conference
+		}
+		mutually_exclusive = {
+			focus = GER_left
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = GER_suppress_opposition
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 10.00
+		prerequisite = {
+			focus = GER_right
+			focus = GER_left
+		}
+		mutually_exclusive = {
+			focus = GER_left_right_pandering
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = GER_left_right_pandering
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = GER_right
+			focus = GER_left
+		}
+		mutually_exclusive = {
+			focus = GER_suppress_opposition
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = GER_organize_secret_police
+		icon = GFX_focus_generic_workers
+		cost = 10.00
+		prerequisite = {
+			focus = GER_suppress_opposition
+			focus = GER_left_right_pandering
+		}
+		prerequisite = {
+			focus = GER_union_USPD
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = GER_purging_dissidents
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = GER_organize_secret_police
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = GER_united_front_tatics
+		icon = GFX_focus_generic_join_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = GER_left_right_pandering
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = newfocus_14
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = GER_left_right_pandering
+		}
+		prerequisite = {
+			focus = GER_united_front_tatics
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = newfocus_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = GER_right
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = newfocus_13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_6
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = newfocus_12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = GER_united_front_tatics
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = GER_proletarian_dictatorship
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = GER_purging_dissidents
+		}
+		prerequisite = {
+			focus = GER_democratic_centralism
+		}
+		x = 8
+		y = 5
+
+	}
 }
