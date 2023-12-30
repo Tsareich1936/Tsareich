@@ -16,9 +16,9 @@ focus_tree = {
 	id = generic_focus
 	
 	country = {
-		factor = 29
+		factor = 1
 		modifier = {
-			add = 100
+			add = 11
 			NOT = {
 				tag = RUS
 			}
