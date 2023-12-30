@@ -1,0 +1,49 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = french_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+
+	focus = {
+		id = FRA_international
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		x = 10
+		y = 0
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_named_threat = { threat = 3 name = FRA_international }
+			add_political_power = 50
+
+			country_event = { id = trfrance.1 }
+            GER = {
+                country_event = { id = trfrance.1 }
+            }
+			ITA = {
+                country_event = { id = trfrance.1 }
+            }
+		}
+	}
+	
+	default = no
+
+}

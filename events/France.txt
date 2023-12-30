@@ -1,0 +1,20 @@
+###########################
+# German Events
+###########################
+
+add_namespace = trfrance
+
+
+country_event = {
+    id = trfrance.1
+    title = trfrance.1.t
+	desc = trfrance.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+    option = { # Yes!
+		name = trfrance.1.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

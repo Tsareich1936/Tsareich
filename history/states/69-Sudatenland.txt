@@ -11,6 +11,7 @@ state=
 	}
 	
 	history={
+
 		victory_points = {
 			3585 3
 		}
