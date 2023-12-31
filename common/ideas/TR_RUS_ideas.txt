@@ -1,0 +1,281 @@
+ideas = {
+    country = {
+        Nokindaika = {
+            picture = SOV_second_five_year_plan
+            allowed = {
+                tag = RUS
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                local_resources_factor = -0.5
+                production_speed_buildings_factor = -0.5
+                political_power_cost = 1
+                consumer_goods_factor = 1
+                
+            }
+        }
+
+        Nokindaika_1 = {
+            picture = SOV_second_five_year_plan
+            allowed = {
+                tag = RUS
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                local_resources_factor = -0.4
+                production_speed_buildings_factor = -0.4
+                political_power_cost = 0.8
+                consumer_goods_factor = 0.8
+                
+            }
+        }
+
+        Nokindaika_2 = {
+            picture = SOV_second_five_year_plan
+            allowed = {
+                tag = RUS
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                local_resources_factor = -0.3
+                production_speed_buildings_factor = -0.3
+                political_power_cost = 0.6
+                consumer_goods_factor = 0.6
+                
+            }
+        }
+
+        Nokindaika_3 = {
+            picture = SOV_second_five_year_plan
+            allowed = {
+                tag = RUS
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                local_resources_factor = -0.2
+                production_speed_buildings_factor = -0.2
+                political_power_cost = 0.4
+                consumer_goods_factor = 0.4
+                
+            }
+        }
+
+        Nokindaika_4 = {
+            picture = SOV_second_five_year_plan
+            allowed = {
+                tag = RUS
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                local_resources_factor = -0.1
+                production_speed_buildings_factor = -0.1
+                political_power_cost = 0.2
+                consumer_goods_factor = 0.2
+                
+            }
+        }
+
+
+        Badgunji = {
+            picture = generic_army_problems
+            allowed = {
+                tag = RUS
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                land_doctrine_cost_factor = 0.25
+                naval_doctrine_cost_factor = 0.25
+                air_doctrine_cost_factor = 0.25	
+                army_attack_factor = -0.25
+            }
+        }
+
+        Badgunji_1 = {
+            picture = generic_army_problems
+            allowed = {
+                tag = RUS
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                land_doctrine_cost_factor = 0.2
+                naval_doctrine_cost_factor = 0.2
+                air_doctrine_cost_factor = 0.2	
+                army_attack_factor = -0.2
+            }
+        }
+
+        Badgunji_2 = {
+            picture = generic_army_problems
+            allowed = {
+                tag = RUS
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                land_doctrine_cost_factor = 0.15
+                naval_doctrine_cost_factor = 0.15
+                air_doctrine_cost_factor = 0.15
+                army_attack_factor = -0.15
+            }
+        }
+
+        Badgunji_3 = {
+            picture = generic_army_problems
+            allowed = {
+                tag = RUS
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                land_doctrine_cost_factor = 0.1
+                naval_doctrine_cost_factor = 0.1
+                air_doctrine_cost_factor = 0.1
+                army_attack_factor = -0.1
+            }
+        }
+
+        Badgunji_4 = {
+            picture = generic_army_problems
+            allowed = {
+                tag = RUS
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                land_doctrine_cost_factor = 0.05
+                naval_doctrine_cost_factor = 0.05
+                air_doctrine_cost_factor = 0.05
+                army_attack_factor = -0.05
+            }
+        }
+
+        Cantresearch = {
+            picture = tur_tdpa
+            allowed = {
+                tag = RUS
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = -999
+            }
+        }
+
+        wwiTsar = {
+            picture = SOV_the_true_tsars
+            allowed = {
+                tag = RUS
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                stability_factor = 0.35
+                justify_war_goal_time = 2.5
+                war_support_factor = -0.2
+            }
+        }
+    }
+}
