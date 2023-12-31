@@ -62,6 +62,100 @@ focus_tree = {
         }
     }
 
+    ### 国家資産省の再編
+    focus = {
+        id = RUS_kokkasisan
+        icon = GFX_focus_LAT_suspend_constitution_of_latvia
+        x = 12
+        y = 1
+        cost = 5
+
+        search_filters = FOCUS_FILTER_RESEARCH
+        prerequisite = { 
+            focus = RUS_fallingdown
+            focus = RUS_kindaika
+                    }
+        available_if_capitulated = yes
+        complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = RUS_industrial_effort_3IC }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}			
+		}
+        completion_reward = {
+            add_timed_idea = { idea = kokkasisan_broke  days = 120 }
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = RUS_industrial_effort_3IC
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = RUS_industrial_effort_3IC
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = RUS_industrial_effort_3IC
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = RUS_industrial_effort_3IC
+			}
+        }
+    }
+
 
 
 }

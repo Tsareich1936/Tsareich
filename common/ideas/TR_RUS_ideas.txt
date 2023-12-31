@@ -252,7 +252,7 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                research_speed_factor = -999
+                research_speed_factor = -0.8
             }
         }
 
@@ -275,6 +275,27 @@ ideas = {
                 stability_factor = 0.35
                 justify_war_goal_time = 2.5
                 war_support_factor = -0.2
+            }
+        }
+
+        kokkasisan_broke = {
+            picture = NOR_broken_gun_ns
+            allowed = {
+                tag = RUS
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                training_time_army_factor = 1
+                army_defence_factor = -0.15
             }
         }
     }
