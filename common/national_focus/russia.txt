@@ -37,6 +37,30 @@ focus_tree = {
                 add_political_power = 100
             }
         }
+    
+    ### 上からの近代化
+    focus = {
+        id = RUS_kindaika
+        icon = GFX_focus_spa_the_spanish_miracle
+        x = 16
+        y = 0
+        cost = 5
+
+        search_filters = FOCUS_FILTER_RESEARCH
+
+        available_if_capitulated = yes
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = Nokindaika
+                add_idea = Nokindaika_1
+            }
+            swap_ideas = {
+                remove_idea = Badgunji
+                add_idea = Badgunji_1
+            }
+        }
+    }
 
 
 
