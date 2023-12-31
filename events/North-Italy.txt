@@ -16,7 +16,7 @@ country_event = {
 			SRI = {
 				kill_country_leader = yes
 				create_country_leader = {
-					name = RSI_consiglio_socialista
+					name = SRI_consiglio_socialista
 					picture = "gfx/leaders/SRI/portrait_SRI_cln.dds"
 					ideology = Lcoalition
 					traits = {}
@@ -35,5 +35,11 @@ country_event = {
 		mark_focus_tree_layout_dirty = yes
 		unlock_national_focus = SRI_emergency_council
 		complete_national_focus = SRI_emergency_council
+		set_popularities = {
+			communism = 15
+			socialism = 35
+			socialdemocratic = 15
+			fascism = 35
+		}
 	}
 }

@@ -98,4 +98,5 @@ set_popularities = {
 }
 
 add_ideas = {
+	SRI_divided_italy
 }

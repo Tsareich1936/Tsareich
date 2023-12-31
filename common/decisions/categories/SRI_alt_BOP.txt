@@ -1,0 +1,10 @@
+SRI_alt_BOP = {
+	icon = power_struggle
+	priority = 100
+	allowed = {
+		tag = SRI
+	}
+	visible = {
+		always = yes
+	}
+}

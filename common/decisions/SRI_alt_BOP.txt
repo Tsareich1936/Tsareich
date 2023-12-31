@@ -1,0 +1,7 @@
+SRI_alt_BOP = {
+	temp = {
+		allowed = {
+			always = yes
+		}
+	}
+}
