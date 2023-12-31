@@ -403,7 +403,7 @@ add_ideas = {
 
 recruit_character = GER_Heinrich_Brandler
 recruit_character = GER_konrad_adenauer
-recruit_character = GER_adolf_hitler
+recruit_character = GER_otto_strasser
 recruit_character = GER_albert_kesselring
 recruit_character = GER_alfred_jodl
 recruit_character = GER_alfred_saalwachter

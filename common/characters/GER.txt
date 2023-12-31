@@ -1,9 +1,9 @@
 characters={
-	GER_adolf_hitler={
-		name=GER_adolf_hitler
+	GER_otto_strasser={
+		name=GER_otto_strasser
 		portraits={
 			civilian={
-				large=GFX_portrait_GER_adolf_hitler
+				large=GFX_portrait_GER_otto_strasser
 			}
 		}
 		country_leader={

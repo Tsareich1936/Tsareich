@@ -25,7 +25,12 @@ defined_text = {
 		}
 		localization_key = "[GetSubIdeologyCom]"
 	}
-	
+	text = {
+		trigger = {
+			has_government = leftcoalition
+		}
+		localization_key = "[GetSubIdeologyLC]"
+	}
 }
 defined_text = {
 	name = GetSubIdeologyDem
@@ -154,5 +159,14 @@ defined_text = {
 			has_country_leader_ideology = anarchist_communism
 		}
 		localization_key = anarchist_communism
+	}
+}
+defined_text = {
+	name = GetSubIdeologyLC
+	text = {
+		trigger = {
+			has_country_leader_ideology = Lcoalition
+		}
+		localization_key = Lcoalition
 	}
 }

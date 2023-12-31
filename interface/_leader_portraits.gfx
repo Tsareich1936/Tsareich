@@ -4542,8 +4542,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_portrait_GER_adolf_hitler
-		texturefile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler.dds"
+		name = GFX_portrait_GER_otto_strasser
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Otto_Strasser.dds"
 	}
 
 	spriteType = {

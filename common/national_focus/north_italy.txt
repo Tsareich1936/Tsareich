@@ -1,0 +1,136 @@
+focus_tree = {
+	id = north_italy_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 13
+			tag = SRI
+		}
+	}
+	default = yes
+	focus = {
+		id = SRI_emergency_council
+		icon = GFX_goal_unknown
+		cost = 99999 #Not available for manual acquisition.#手動での取得不可
+		# bypass = {
+		# 	has_country_flag = dAnnunzio_death
+		# }
+		allow_branch = {
+			has_country_flag = dAnnunzio_death
+		}
+		x = 6
+		y = 1
+	}
+	focus = {
+		id = SRI_north-south_problem
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 0
+		y = 1
+		available = {
+			hidden_trigger = {
+				NOT ={
+					has_country_flag = dAnnunzio_death
+				}
+			}
+		}
+		allow_branch = {
+			NOT = { has_country_flag = dAnnunzio_death }
+		}
+		relative_position_id = SRI_emergency_council
+
+	}
+	focus = {
+		id = SRI_just_socialim
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SRI_emergency_council
+		}
+		mutually_exclusive = {
+			focus = SRI_national_socialism
+		}
+		x = -2
+		y = 1
+		relative_position_id = SRI_emergency_council
+
+	}
+	focus = {
+		id = SRI_national_socialism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SRI_emergency_council
+		}
+		mutually_exclusive = {
+			focus = SRI_just_socialim
+			focus = SRI_just_socialim
+		}
+		x = 2
+		y = 1
+		relative_position_id = SRI_emergency_council
+
+	}
+	focus = {
+		id = SRI_force_ettlement
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SRI_just_socialim
+			focus = SRI_national_socialism
+			focus = SRI_north-south_problem
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_north-south_problem
+
+	}
+	focus = {
+		id = SRI_socialist_work_south
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SRI_force_ettlement
+		}
+		x = -1
+		y = 1
+		relative_position_id = SRI_force_ettlement
+
+	}
+	focus = {
+		id = SRI_unity_consciousness_south
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SRI_force_ettlement
+		}
+		x = 1
+		y = 1
+		relative_position_id = SRI_force_ettlement
+
+	}
+	focus = {
+		id = SRI_iternational_proximity
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SRI_just_socialim
+		}
+		x = -1
+		y = 1
+		relative_position_id = SRI_just_socialim
+
+	}
+	focus = {
+		id = SRI_south_tyrol_issue
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SRI_national_socialism
+		}
+		x = 1
+		y = 1
+		relative_position_id = SRI_national_socialism
+
+	}
+}
