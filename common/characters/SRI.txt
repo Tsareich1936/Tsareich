@@ -1,14 +1,14 @@
 characters = {
 	SRI_dAnnunzio = {
-		name = "SRI_dAnunzio"
+		name = "SRI_dAnnunzio"
 		portraits = {
 			civilian = {
-				large = GFX_portraits_SRI_dAnunzio
+				large = GFX_portraits_SRI_dAnnunzio
 			}
 		}
 		country_leader={
 			ideology= Lcoalition
-			traits={ }
+			traits={ TR_italy_little_hero }
 			expire="1965.1.1.1"
 			id=-1
 		}
