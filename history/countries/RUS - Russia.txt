@@ -3,7 +3,6 @@ capital = 195
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	motorised_infantry = 1
 	gw_artillery = 1
 }
 if = {
@@ -41,6 +40,10 @@ if = {
 		transport = 1
 	}
 }
+
+### kaigun
+
+
 if = {
 	limit = {
 		has_dlc = "Man the Guns"

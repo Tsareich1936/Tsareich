@@ -21,13 +21,14 @@ focus_tree = {
     default = yes
 	reset_on_civilwar = no
 
+
     ### 堕ちゆく鷲
         focus = {
             id = RUS_fallingdown
             icon = GFX_focus_SOV_panslavic_nationalism
-            x = 8
+            x = 17
             y = 0
-            cost = 5
+            cost = 4
 
             search_filters = FOCUS_FILTER_POLITICAL
 
@@ -38,18 +39,24 @@ focus_tree = {
             }
         }
     
+#### 憲法改定
+
+
+
+#### 上からの近代化ルート        
     ### 上からの近代化
     focus = {
         id = RUS_kindaika
         icon = GFX_focus_spa_the_spanish_miracle
         x = 16
-        y = 0
+        y = 4
         cost = 5
 
         search_filters = FOCUS_FILTER_RESEARCH
 
         available_if_capitulated = yes
-
+        prerequisite = { focus = RUS_fallingdown }
+        mutually_exclusive = { focus = RUS_underkindaika }
         completion_reward = {
             swap_ideas = {
                 remove_idea = Nokindaika
@@ -67,14 +74,11 @@ focus_tree = {
         id = RUS_kokkasisan
         icon = GFX_focus_LAT_suspend_constitution_of_latvia
         x = 12
-        y = 1
-        cost = 5
+        y = 5
+        cost = 10
 
-        search_filters = FOCUS_FILTER_RESEARCH
-        prerequisite = { 
-            focus = RUS_fallingdown
-            focus = RUS_kindaika
-                    }
+        search_filters = FOCUS_FILTER_INDUSTRY
+        prerequisite = { focus = RUS_kindaika }
         available_if_capitulated = yes
         complete_tooltip = {
 			every_state = {
@@ -156,6 +160,93 @@ focus_tree = {
         }
     }
 
+    focus = {
+        id = RUS_kougu
+        icon = GFX_goal_generic_production2
+        x = 16
+        y = 5
+        cost = 5
+
+        search_filters = FOCUS_FILTER_RESEARCH
+        prerequisite = { focus = RUS_kindaika 
+                         fcous = RUS_underkindaika }
+        available_if_capitulated = yes
+        completion_reward = {
+            set_technology = {
+                basic_machine_tools = 1
+            }
+        }
+    }
+
+    focus = {
+        id = RUS_gunji
+        icon = GFX_focus_generic_manpower
+        x = 18
+        y = 5
+        cost = 5
+
+        search_filters = FOCUS_FILTER_RESEARCH
+        prerequisite = { focus = RUS_kindaika 
+                         focus = RUS_underkindaika }
+        available_if_capitulated = yes
+        completion_reward = {
+            set_technology = {
+                interwar_artillery = 1
+                support_weapons = 1
+                tech_support = 1
+            }
+        }
+    }
+
+    focus = {
+        id = RUS_tyokurei1
+        icon = GFX_focus_spr_torchbearers_of_tomorrow
+        x = 12
+        y = 6
+        cost = 4
+
+        search_filters = FOCUS_FILTER_RESEARCH
+        prerequisite = { focus = RUS_kokkasisan }
+        prerequisite = { focus = RUS_kougu }
+        prerequisite = { focus = RUS_gunji }
+        available_if_capitulated = yes
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = Nokindaika_1
+                add_idea = Nokindaika_2
+            }
+            swap_ideas = {
+                remove_idea = Badgunji_1
+                add_idea = Badgunji_2
+            }
+        }
+    }
+
+#### 政変ルート
+    ### 下からの近代化
+    focus = {
+        id = RUS_underkindaika
+        icon = GFX_focus_generic_socialist_science
+        x = 18
+        y = 4
+        cost = 5
+        prerequisite = { focus = RUS_fallingdown }
+        mutually_exclusive = { focus = RUS_kindaika }
+        search_filters = FOCUS_FILTER_POLITICAL
+
+        available_if_capitulated = yes
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = Nokindaika
+                add_idea = Nokindaika_1
+            }
+            swap_ideas = {
+                remove_idea = Badgunji
+                add_idea = Badgunji_1
+            }
+        }
+    }
 
 
 }
