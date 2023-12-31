@@ -1,0 +1,16 @@
+characters = {
+	SRI_dAnnunzio = {
+		name = "SRI_dAnunzio"
+		portraits = {
+			civilian = {
+				large = GFX_portraits_SRI_dAnunzio
+			}
+		}
+		country_leader={
+			ideology= Lcoalition
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
