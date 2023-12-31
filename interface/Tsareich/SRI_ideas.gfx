@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_SRI_divided_italy"
+		textureFile = "gfx/interface/ideas/idea_divided_italy.dds"
+	}
+}

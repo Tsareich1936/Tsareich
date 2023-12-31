@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		SRI_divided_italy = {
+			picture = "GFX_idea_SRI_divided_italy"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.3
+			}
+		}
+	}
+}

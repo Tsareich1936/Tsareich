@@ -23,7 +23,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_north-south_problem
-		icon = GFX_goal_unknown
+		icon = "GFX_SRI_divided_italy"
 		cost = 10.00
 		x = 0
 		y = 1

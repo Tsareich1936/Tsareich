@@ -7,13 +7,14 @@ guiTypes = {
 		position = { x = 88 y = 305 }
 		instantTextboxType = {
 			name = "ideology_gui"
-			position = { x = 121 y = -80 }
+			position = { x = 90 y = -80 }
 			font = "hoi_16mbs"
 			text = "[GetSubIdeology]"
 			maxWidth = 155
 			maxHeight = 18
 			fixedsize = yes
 			alwaystransparent=yes
+			format = center
 		}
 	}
 	containerWindowType = {

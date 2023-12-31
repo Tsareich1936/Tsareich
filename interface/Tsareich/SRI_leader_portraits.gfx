@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_portraits_SRI_dAnunzio"
 		textureFile = "gfx/leaders/SRI/dannunzio.dds"
 	}
+	# spriteType = {
+	# 	name = "GFX_idea_SRI_divided_italy"
+	# 	textureFile = "gfx/interface/ideas/idea_divided_italy.dds"
+	# }
 }
