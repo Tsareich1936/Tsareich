@@ -1,0 +1,249 @@
+guiTypes = {
+	containerWindowType = {
+		name = SRI_alt_BOP
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 100%
+			height = 300
+		}
+		moveable = no
+		background = {
+			name = Background
+			quadTextureSprite = ""
+		}
+		instantTextBoxType = {
+			name = title
+			text = "bop"
+			position = {
+				x = 155
+				y = 0
+			}
+			format = center
+			font = vic_36
+		}
+		iconType = {
+			name = PSI_icon
+			position = {
+				x = 5
+				y = 100
+			}
+			spriteType = PSI_icon
+		}
+		iconType = {
+			name = PNF_icon
+			position = {
+				x = 450
+				y = 100
+			}
+			spriteType = PNF_icon
+		}
+		#bar colour
+			iconType = {
+				name = bar_R_0
+				spriteType = "GFX_alt_bop_R_0"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_R_10
+				spriteType = "GFX_alt_bop_R_10"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_R_20
+				spriteType = "GFX_alt_bop_R_20"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_R_30
+				spriteType = "GFX_alt_bop_R_30"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_R_40
+				spriteType = "GFX_alt_bop_R_40"
+				position = {
+					x = 77
+					y = 129
+				}
+			
+			}iconType = {
+				name = bar_R_50
+				spriteType = "GFX_alt_bop_R_50"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_R_60
+				spriteType = "GFX_alt_bop_R_60"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_R_70
+				spriteType = "GFX_alt_bop_R_70"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_R_80
+				spriteType = "GFX_alt_bop_R_80"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_R_90
+				spriteType = "GFX_alt_bop_R_90"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_R_100
+				spriteType = "GFX_alt_bop_R_100"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_L_0
+				spriteType = "GFX_alt_bop_L_0"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_L_10
+				spriteType = "GFX_alt_bop_L_10"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_L_20
+				spriteType = "GFX_alt_bop_L_20"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_L_30
+				spriteType = "GFX_alt_bop_L_30"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_L_40
+				spriteType = "GFX_alt_bop_L_40"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_L_50
+				spriteType = "GFX_alt_bop_L_50"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_L_60
+				spriteType = "GFX_alt_bop_L_60"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_L_70
+				spriteType = "GFX_alt_bop_L_70"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_L_80
+				spriteType = "GFX_alt_bop_L_80"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_L_90
+				spriteType = "GFX_alt_bop_L_90"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+			iconType = {
+				name = bar_L_100
+				spriteType = "GFX_alt_bop_L_100"
+				position = {
+					x = 77
+					y = 129
+				}
+			}
+		iconType = {
+			name = alt_BOP_bar
+			spriteType = "GFX_alt_bop_bar_frame"
+			position = {
+				x = 73
+				y = 125
+			}
+		}
+		instantTextBoxType = {
+			name = PSI_percent
+			text = "[?SRI_bop_L_var|%|0]"
+			position = {
+				x = -130
+				y = 160
+			}
+			format = right
+			font = "hoi_30header"
+		}
+		instantTextBoxType = {
+			name = PNF_percent
+			text = "[?SRI_bop_R_var|%|0]"
+			position = {
+				x = 290
+				y = 160
+			}
+			font = "hoi_30header"
+			format = right
+		}
+	}
+}

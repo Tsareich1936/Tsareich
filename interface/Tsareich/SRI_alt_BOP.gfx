@@ -1,0 +1,105 @@
+spriteTypes = {
+	#icon
+	spriteType = {
+		name = PNF_icon
+		textureFile = "gfx/interface/UI/PNFicon.dds"
+	}
+	spriteType = {
+		name = PSI_icon
+		textureFile = "gfx/interface/UI/PSIicon.dds"
+	}
+	#frame
+	spriteType = {
+		name = GFX_alt_bop_bar_frame
+		textureFile = "gfx/interface/bop/bop_bar_frame.dds"
+	}
+	#bar
+	spriteType = {
+		name = GFX_alt_bop_R_0
+		textureFile = "gfx/interface/UI/alt_bop/red_0.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_R_10
+		textureFile = "gfx/interface/UI/alt_bop/red_10.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_R_20
+		textureFile = "gfx/interface/UI/alt_bop/red_20.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_R_30
+		textureFile = "gfx/interface/UI/alt_bop/red_30.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_R_40
+		textureFile = "gfx/interface/UI/alt_bop/red_40.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_R_50
+		textureFile = "gfx/interface/UI/alt_bop/red_50.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_R_60
+		textureFile = "gfx/interface/UI/alt_bop/red_60.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_R_70
+		textureFile = "gfx/interface/UI/alt_bop/red_70.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_R_80
+		textureFile = "gfx/interface/UI/alt_bop/red_80.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_R_90
+		textureFile = "gfx/interface/UI/alt_bop/red_90.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_R_100
+		textureFile = "gfx/interface/UI/alt_bop/red_100.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_L_0
+		textureFile = "gfx/interface/UI/alt_bop/blue_0.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_L_10
+		textureFile = "gfx/interface/UI/alt_bop/blue_10.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_L_20
+		textureFile = "gfx/interface/UI/alt_bop/blue_20.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_L_30
+		textureFile = "gfx/interface/UI/alt_bop/blue_30.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_L_40
+		textureFile = "gfx/interface/UI/alt_bop/blue_40.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_L_50
+		textureFile = "gfx/interface/UI/alt_bop/blue_50.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_L_60
+		textureFile = "gfx/interface/UI/alt_bop/blue_60.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_L_70
+		textureFile = "gfx/interface/UI/alt_bop/blue_70.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_L_80
+		textureFile = "gfx/interface/UI/alt_bop/blue_80.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_L_90
+		textureFile = "gfx/interface/UI/alt_bop/blue_90.dds"
+	}
+	spriteType = {
+		name = GFX_alt_bop_L_100
+		textureFile = "gfx/interface/UI/alt_bop/blue_100.dds"
+	}
+}

@@ -1,5 +1,6 @@
 SRI_alt_BOP = {
 	icon = power_struggle
+	scripted_gui = SRI_alt_BOP
 	priority = 100
 	allowed = {
 		tag = SRI

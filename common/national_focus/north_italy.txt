@@ -20,6 +20,14 @@ focus_tree = {
 		}
 		x = 6
 		y = 1
+		completion_reward = {
+			SRI = {
+				set_variable = {
+					SRI_bop_R_var = 0.5
+					SRI_bop_L_var = 0.5
+				}
+			}
+		}
 	}
 	focus = {
 		id = SRI_north-south_problem

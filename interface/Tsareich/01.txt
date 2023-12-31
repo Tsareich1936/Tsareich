@@ -1,0 +1,155 @@
+# iconType = {
+# 	name = bar_R_0
+# 	spriteType = "GFX_alt_bop_R_0"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_R_10
+# 	spriteType = "GFX_alt_bop_R_10"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_R_20
+# 	spriteType = "GFX_alt_bop_R_20"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_R_30
+# 	spriteType = "GFX_alt_bop_R_30"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_R_40
+# 	spriteType = "GFX_alt_bop_R_40"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_R_50
+# 	spriteType = "GFX_alt_bop_R_50"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_R_60
+# 	spriteType = "GFX_alt_bop_R_60"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_R_70
+# 	spriteType = "GFX_alt_bop_R_70"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_R_80
+# 	spriteType = "GFX_alt_bop_R_80"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_R_90
+# 	spriteType = "GFX_alt_bop_R_90"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_R_100
+# 	spriteType = "GFX_alt_bop_R_100"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_L_0
+# 	spriteType = "GFX_alt_bop_L_0"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_L_10
+# 	spriteType = "GFX_alt_bop_L_10"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_L_20
+# 	spriteType = "GFX_alt_bop_L_20"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_L_30
+# 	spriteType = "GFX_alt_bop_L_30"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_L_40
+# 	spriteType = "GFX_alt_bop_L_40"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_L_50
+# 	spriteType = "GFX_alt_bop_L_50"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_L_60
+# 	spriteType = "GFX_alt_bop_L_60"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_L_70
+# 	spriteType = "GFX_alt_bop_L_70"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_L_80
+# 	spriteType = "GFX_alt_bop_L_80"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_L_90
+# 	spriteType = "GFX_alt_bop_L_90"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }iconType = {
+# 	name = bar_L_100
+# 	spriteType = "GFX_alt_bop_L_100"
+# 	position = {
+# 		x = 73
+# 		y = 125
+# 	}
+# }
