@@ -24,5 +24,13 @@ on_actions = {
 				}
 			}
 		}
+		effect = {
+			SRI = {
+				country_event = {
+					id = TR_north_italy.1
+					days = 6
+				}
+			}
+		}
 	}
 }
