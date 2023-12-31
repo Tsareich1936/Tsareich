@@ -1,26 +1,18 @@
-### search_filters = {FOCUS_FILTER_POLITICAL}
-### search_filters = {FOCUS_FILTER_RESEARCH}
-### search_filters = {FOCUS_FILTER_INDUSTRY}
-### search_filters = {FOCUS_FILTER_STABILITY}
-### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
-### search_filters = {FOCUS_FILTER_MANPOWER}
-### search_filters = {FOCUS_FILTER_ANNEXATION}
-
 focus_tree = {
 	id = german_focus
 	country = {
 		factor = 0
 		modifier = {
-			add = 13
+			add = 20
 			tag = GER
 		}
 	}
-	default = yes
+	default = no
 	focus = {
 		id = GER_1936_party_conference
 		icon = GFX_focus_generic_soviet_politics
 		cost = 10.00
-		x = 11
+		x = 10
 		y = 0
 
 	}
@@ -39,58 +31,48 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GER_first_five_year_plan
-		icon = GFX_goal_generic_soviet_construction
-		cost = 10.00
-		prerequisite = {
-			focus = GER_left
-		}
-		x = 6
-		y = 2
-
-	}
-	focus = {
-		id = GER_agricultural_reform
-		icon = GFX_focus_generic_workers_and_farmers_rise
-		cost = 10.00
-		prerequisite = {
-			focus = GER_first_five_year_plan
-		}
-		x = 4
-		y = 3
-
-	}
-	focus = {
-		id = GER_second_five_year_plan
-		icon = GFX_goal_generic_soviet_construction
-		cost = 10.00
-		prerequisite = {
-			focus = GER_first_five_year_plan
-		}
-		x = 6
-		y = 4
-
-	}
-	focus = {
 		id = GER_union_USPD
 		icon = GFX_focus_SOV_the_supreme_soviet
 		cost = 10.00
 		prerequisite = {
 			focus = GER_left
 		}
-		x = 8
+		x = 7
 		y = 2
 
 	}
 	focus = {
-		id = GER_democratic_centralism
-		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		id = GER_suppress_opposition
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 10.00
+		prerequisite = {
+			focus = GER_left
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = GER_condemn_revisionists
+		icon = GFX_focus_generic_strike_at_democracy3
 		cost = 10.00
 		prerequisite = {
 			focus = GER_union_USPD
+			focus = GER_suppress_opposition
 		}
 		x = 8
 		y = 3
+
+	}
+	focus = {
+		id = GER_social_fascism
+		icon = GFX_focus_generic_manpower
+		cost = 10.00
+		prerequisite = {
+			focus = GER_condemn_revisionists
+		}
+		x = 8
+		y = 4
 
 	}
 	focus = {
@@ -103,64 +85,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GER_left
 		}
-		x = 14
-		y = 1
-
-	}
-	focus = {
-		id = GER_suppress_opposition
-		icon = GFX_focus_spr_crush_the_revolution
-		cost = 10.00
-		prerequisite = {
-			focus = GER_right
-			focus = GER_left
-		}
-		mutually_exclusive = {
-			focus = GER_left_right_pandering
-		}
-		x = 10
-		y = 2
-
-	}
-	focus = {
-		id = GER_left_right_pandering
-		icon = GFX_goal_generic_improve_relations
-		cost = 10.00
-		prerequisite = {
-			focus = GER_right
-			focus = GER_left
-		}
-		mutually_exclusive = {
-			focus = GER_suppress_opposition
-		}
 		x = 12
-		y = 2
-
-	}
-	focus = {
-		id = GER_organize_secret_police
-		icon = GFX_focus_generic_workers
-		cost = 10.00
-		prerequisite = {
-			focus = GER_suppress_opposition
-			focus = GER_left_right_pandering
-		}
-		prerequisite = {
-			focus = GER_union_USPD
-		}
-		x = 10
-		y = 3
-
-	}
-	focus = {
-		id = GER_purging_dissidents
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10.00
-		prerequisite = {
-			focus = GER_organize_secret_police
-		}
-		x = 10
-		y = 4
+		y = 1
 
 	}
 	focus = {
@@ -168,71 +94,108 @@ focus_tree = {
 		icon = GFX_focus_generic_join_comintern
 		cost = 10.00
 		prerequisite = {
-			focus = GER_left_right_pandering
+			focus = GER_right
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = GER_workers_government
+		icon = GFX_focus_generic_workers
+		cost = 10.00
+		prerequisite = {
+			focus = GER_united_front_tatics
+		}
+		mutually_exclusive = {
+			focus = GER_unite_SPD
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = GER_unite_SPD
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		prerequisite = {
+			focus = GER_united_front_tatics
+		}
+		mutually_exclusive = {
+			focus = GER_workers_government
 		}
 		x = 13
 		y = 3
 
 	}
 	focus = {
-		id = newfocus_14
-		icon = GFX_goal_unknown
+		id = GER_totalitarianism
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		cost = 10.00
 		prerequisite = {
-			focus = GER_left_right_pandering
-		}
-		prerequisite = {
-			focus = GER_united_front_tatics
+			focus = GER_workers_government
+			focus = GER_unite_SPD
 		}
 		x = 12
 		y = 4
 
 	}
 	focus = {
-		id = newfocus_6
-		icon = GFX_goal_unknown
+		id = GER_socialist_economy
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
 		prerequisite = {
-			focus = GER_right
+			focus = GER_totalitarianism
+			focus = GER_social_fascism
 		}
-		x = 15
-		y = 2
+		x = 10
+		y = 5
 
 	}
 	focus = {
-		id = newfocus_13
-		icon = GFX_goal_unknown
+		id = GER_promote_heavy_industrialization
+		icon = GFX_focus_generic_communist_industry
 		cost = 10.00
 		prerequisite = {
-			focus = newfocus_6
+			focus = GER_socialist_economy
 		}
-		x = 15
-		y = 3
+		prerequisite = {
+			focus = GER_social_fascism
+		}
+		mutually_exclusive = {
+			focus = socialist_economy2
+		}
+		x = 9
+		y = 6
 
 	}
 	focus = {
-		id = newfocus_12
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = GER_united_front_tatics
-		}
-		x = 16
-		y = 4
-
-	}
-	focus = {
-		id = GER_proletarian_dictatorship
+		id = GER_new_socialism_economy
 		icon = GFX_goal_support_communism
 		cost = 10.00
 		prerequisite = {
-			focus = GER_purging_dissidents
+			focus = GER_promote_heavy_industrialization
+			focus = socialist_economy2
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = socialist_economy2
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = GER_socialist_economy
 		}
 		prerequisite = {
-			focus = GER_democratic_centralism
+			focus = GER_totalitarianism
 		}
-		x = 8
-		y = 5
+		mutually_exclusive = {
+			focus = GER_promote_heavy_industrialization
+		}
+		x = 11
+		y = 6
 
 	}
 }
