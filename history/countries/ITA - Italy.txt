@@ -160,4 +160,5 @@ set_popularities = {
 }
 
 add_ideas = {
+	partial_economic_mobilisation
 }

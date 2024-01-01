@@ -1,3 +1,10 @@
+#added
+CRO_SLV = {
+	color = rgb { 178  55  141 }
+	color_ui = rgb { 178  55  141 }
+}
+
+#original
 MAL_UK = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }

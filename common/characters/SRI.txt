@@ -13,4 +13,32 @@ characters = {
 			id=-1
 		}
 	}
+	SRI_consiglio_socialista = {
+		name = "SRI_consiglio_socialista"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SRI/portrait_SRI_cln.dds"
+			}
+		}
+		country_leader={
+			ideology= Lcoalition
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SRI_blank_leader = {
+		name = SRI_blank_leader
+		portraits = {
+			civilian = {
+				large = GFX_portrait_unknown
+			}
+		}
+		country_leader={
+			ideology= Lcoalition
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 }

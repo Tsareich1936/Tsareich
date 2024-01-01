@@ -15,13 +15,11 @@ country_event = {
 		hidden_effect = {
 			SRI = {
 				kill_country_leader = yes
-				create_country_leader = {
-					name = SRI_consiglio_socialista
-					picture = "gfx/leaders/SRI/portrait_SRI_cln.dds"
-					ideology = Lcoalition
-					traits = {}
-				}
 				set_country_flag = dAnnunzio_death
+				promote_character = {
+					character = SRI_blank_leader
+					ideology = Lcoalition
+				}
 				mark_focus_tree_layout_dirty = yes
 				load_focus_tree = {
 					tree = north_italy_focus
@@ -35,6 +33,10 @@ country_event = {
 		mark_focus_tree_layout_dirty = yes
 		unlock_national_focus = SRI_emergency_council
 		complete_national_focus = SRI_emergency_council
+		promote_character = {
+			character = SRI_consiglio_socialista
+			ideology = Lcoalition
+		}
 		set_popularities = {
 			communism = 15
 			socialism = 35

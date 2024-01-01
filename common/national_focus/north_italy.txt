@@ -1,3 +1,5 @@
+#!gfx:interface\Tsareich\focus\SRI_focus.gfx
+
 focus_tree = {
 	id = north_italy_focus
 	country = {
@@ -20,8 +22,30 @@ focus_tree = {
 		}
 		x = 6
 		y = 1
+		complete_tooltip = {
+			promote_character = {
+				character = SRI_consiglio_socialista
+				ideology = Lcoalition
+			}
+			set_popularities = {
+				communism = 15
+				socialism = 35
+				socialdemocratic = 15
+				fascism = 35
+			}
+		}
 		completion_reward = {
 			SRI = {
+				promote_character = {
+					character = SRI_consiglio_socialista
+					ideology = Lcoalition
+				}
+				set_popularities = {
+					communism = 15
+					socialism = 35
+					socialdemocratic = 15
+					fascism = 35
+				}
 				set_variable = {
 					SRI_bop_R_var = 0.5
 				}
@@ -33,7 +57,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_north-south_problem
-		icon = "GFX_SRI_divided_italy"
+		icon = "GFX_focus_SRI_north-south_problem"
 		cost = 10.00
 		x = 0
 		y = 1

@@ -85,6 +85,8 @@ set_convoys = 50
 set_stability = 0.50
 
 recruit_character = SRI_dAnnunzio
+recruit_character = SRI_consiglio_socialista
+recruit_character = SRI_blank_leader
 
 set_politics = {
 	ruling_party = leftcoalition
@@ -99,4 +101,5 @@ set_popularities = {
 
 add_ideas = {
 	SRI_divided_italy
+	partial_economic_mobilisation
 }
