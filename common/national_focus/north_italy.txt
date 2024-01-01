@@ -213,6 +213,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SRI_north-south_problem
+		completion_reward = {
+			add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = SRI_socialist_work_south
@@ -220,6 +223,9 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = SRI_force_ettlement
+		}
+		available = {
+			has_completed_focus = SRI_just_socialim
 		}
 		x = -1
 		y = 1
@@ -244,12 +250,21 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = SRI_socialist_work_south
-		completion_reward = { }
+		completion_reward = {
+			ITA = {
+				add_ideas = {
+					SRI_incit_farmers_south
+				}
+			}
+		}
 	}
 	focus = {
 		id = SRI_unity_consciousness_south
 		icon = GFX_goal_unknown
 		cost = 4
+		available = {
+			has_completed_focus = SRI_national_socialism
+		}
 		prerequisite = {
 			focus = SRI_force_ettlement
 		}
@@ -289,7 +304,12 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SRI_force_ettlement
-		completion_reward = { }
+		completion_reward = {
+			add_war_support = 0.1
+			ITA = {
+				add_war_support = -0.15
+			}
+		}
 	}
 	focus = {
 		id = SRI_united_volunteer_soldiers
@@ -301,7 +321,11 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SRI_incitement_in_rome
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = {
+				SRI_volunteer_soldiers
+			}
+		}
 	}
 	focus = {
 		id = SRI_risorgimento
@@ -317,7 +341,32 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SRI_united_volunteer_soldiers
-		completion_reward = { }
+		completion_reward = {
+			declare_war_on = {
+				target = ITA
+				type = risorgimento
+			}
+			hidden_effect = {
+				ITA = {
+					remove_state_core =2
+					remove_state_core =114
+					remove_state_core =115
+					remove_state_core =117
+					remove_state_core =156
+					remove_state_core =157
+					remove_state_core =849
+				}
+				set_state_owner =2
+				set_state_owner =114
+				set_state_owner =117
+				set_state_owner =117
+				set_state_owner =157
+				set_state_owner =849
+				add_ideas = {
+					risorgimento
+				}
+			}
+		}
 	}
 	focus = {
 		id = SRI_international_proximity
@@ -344,7 +393,7 @@ focus_tree = {
 			}
 			add_popularity = {
 				ideology = socialism
-				popularity = 7
+				popularity = 0.07
 			}
 		}
 
@@ -360,6 +409,15 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_international_proximity
 		completion_reward = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+			add_timed_idea = {
+				idea = SRI_support_socialism
+				days = 100
+			}
+			
 			if = {
 				limit = {
 					NOT = {
@@ -401,6 +459,10 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_international_proximity
 		completion_reward = {
+			add_timed_idea = {
+				idea = SRI_labor_union_law
+				days = 365
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -441,6 +503,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SRI_support_socialism
+		completion_reward = {
+
+		}
 	}
 	focus = {
 		id = SRI_recall_defections
@@ -453,6 +518,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_international_proximity
 		completion_reward = {
+			add_popularity = {
+				ideology = socialdemocratic
+				popularity = -1
+			}
+			add_stability = 0.1
 			if = {
 				limit = {
 					NOT = {
@@ -496,6 +566,13 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SRI_recall_defections
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+			add_stability = 0.1
+		}
 	}
 	focus = {
 		id = SRI_communist_dissolution
@@ -512,6 +589,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_support_socialism
 		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+			add_stability = -1
 			if = {
 				limit = {
 					NOT = {
@@ -552,6 +634,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SRI_labor_union_law
+		completion_reward = {
+			add_ideas = {
+				SRI_reformed_agrarian
+			}
+		}
 	}
 	focus = {
 		id = SRI_foreign_industrial_advisers
@@ -566,6 +653,11 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = SRI_appeal_help
+		completion_reward = {
+			add_ideas = {
+				SRI_foreign_industrial_advisers
+			}
+		}
 	}
 	focus = {
 		id = SRI_organise_secret_police
@@ -608,6 +700,11 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SRI_foreign_industrial_advisers
+		completion_reward = {
+			add_ideas = {
+				SRI_FRA_adviser
+			}
+		}
 	}
 	focus = {
 		id = SRI_GER_adviser
@@ -619,6 +716,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SRI_foreign_industrial_advisers
+		completion_reward = {
+			add_ideas = {
+				SRI_GER_adviser
+			}
+		}
 	}
 	focus = {
 		id = SRI_black_shirts

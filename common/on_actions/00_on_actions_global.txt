@@ -30,6 +30,10 @@ on_actions = {
 					id = TR_north_italy.1
 					days = 5
 				}
+				set_truce = {
+					target = ITA
+					days = 999999
+				}
 			}
 		}
 	}
