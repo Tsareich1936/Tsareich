@@ -37,6 +37,9 @@ country_event = {
 			character = SRI_consiglio_socialista
 			ideology = Lcoalition
 		}
+		effect_tooltip = {
+			custom_effect_tooltip = "SRI_unlock_alt_bop"
+		}
 		set_popularities = {
 			communism = 15
 			socialism = 35

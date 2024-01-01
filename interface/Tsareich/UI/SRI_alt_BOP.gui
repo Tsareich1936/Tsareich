@@ -31,6 +31,7 @@ guiTypes = {
 				y = 100
 			}
 			spriteType = PSI_icon
+			pdx_tooltip = "alt_BOP_L_side"
 		}
 		iconType = {
 			name = PNF_icon
@@ -39,6 +40,7 @@ guiTypes = {
 				y = 100
 			}
 			spriteType = PNF_icon
+			pdx_tooltip = "alt_BOP_R_side"
 		}
 		#bar colour
 			iconType = {
@@ -234,6 +236,7 @@ guiTypes = {
 			}
 			format = right
 			font = "hoi_30header"
+			pdx_tooltip = "alt_BOP_L_side"
 		}
 		instantTextBoxType = {
 			name = PNF_percent
@@ -244,6 +247,18 @@ guiTypes = {
 			}
 			font = "hoi_30header"
 			format = right
+			pdx_tooltip = "alt_BOP_R_side"
+		}
+		instantTextBoxType = {
+			name = alt_BOP_situation
+			text = "[ROOT.alt_BOP_situation]"
+			position = {
+				x = -36
+				y = 250
+			}
+			format = center
+			font = "hoi_30header"
+			maxWidth = 600
 		}
 	}
 }

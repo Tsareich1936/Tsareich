@@ -1,0 +1,147 @@
+defined_text = {
+	name = alt_BOP_situation
+	text = {
+		trigger = {
+			check_variable = {
+				SRI_bop_L_var = 0
+			}
+			check_variable = {
+				SRI_bop_R_var = 1.0
+			}
+		}
+
+		localization_key = "alt_BOP_R_win"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				SRI_bop_L_var = 0.1
+			}
+			check_variable = {
+				SRI_bop_R_var = 0.9
+			}
+		}
+
+		localization_key = "alt_BOP_R_will_win"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				SRI_bop_L_var = 0.2
+			}
+			check_variable = {
+				SRI_bop_R_var = 0.8
+			}
+		}
+
+		localization_key = "alt_BOP_R_very_strong"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				SRI_bop_L_var = 0.3
+			}
+			check_variable = {
+				SRI_bop_R_var = 0.7
+			}
+		}
+
+		localization_key = "alt_BOP_R_strong"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				SRI_bop_L_var = 0.4
+			}
+			check_variable = {
+				SRI_bop_R_var = 0.6
+			}
+		}
+
+		localization_key = "alt_BOP_R_alittle_strong"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				SRI_bop_L_var = 0.5
+			}
+			check_variable = {
+				SRI_bop_R_var = 0.5
+			}
+		}
+
+		localization_key = "alt_BOP_rivalry"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				SRI_bop_L_var = 0.6
+			}
+			check_variable = {
+				SRI_bop_R_var = 0.4
+			}
+		}
+
+		localization_key = "alt_BOP_L_alittle_strong"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				SRI_bop_L_var = 0.7
+			}
+			check_variable = {
+				SRI_bop_R_var = 0.3
+			}
+		}
+
+		localization_key = "alt_BOP_L_strong"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				SRI_bop_L_var = 0.8
+			}
+			check_variable = {
+				SRI_bop_R_var = 0.2
+			}
+		}
+
+		localization_key = "alt_BOP_L_very_strong"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				SRI_bop_L_var = 0.9
+			}
+			check_variable = {
+				SRI_bop_R_var = 0.1
+			}
+		}
+
+		localization_key = "alt_BOP_L_will_win"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				SRI_bop_L_var = 1.0
+			}
+			check_variable = {
+				SRI_bop_R_var = 0
+			}
+		}
+
+		localization_key = "alt_BOP_L_win"
+	}
+}
+defined_text = {
+	name = alt_BOP_L_side
+	text = {
+		localization_key = "alt_BOP_PSI_side"
+	}
+}
+defined_text = {
+	name = alt_BOP_R_side
+	text = {
+		localization_key = "alt_BOP_PNF_side"
+	}
+}
