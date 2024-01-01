@@ -17,3 +17,5 @@
  alt_BOP_PSI_side: "§Y$SRI_socialism_party_long$§!\n勢力:[?SRI_bop_L_var|Y%0]"
  alt_BOP_R_side: "[ROOT.alt_BOP_R_side]"
  alt_BOP_PNF_side: "§Y$SRI_fascism_party_long$§!\n勢力:[?SRI_bop_R_var|Y%0]"
+ req_bop_r_07: "ファシスト党がの勢力が§Y70%§!を超えている"
+ req_bop_l_07: "社会党がの勢力が§Y70%§!を超えている"

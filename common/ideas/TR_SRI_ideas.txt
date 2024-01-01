@@ -10,5 +10,14 @@ ideas = {
 				stability_factor = -0.3
 			}
 		}
+		SRI_fiume_issue = {
+			picture = "GFX_idea_SRI_fiume_issue"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
 	}
 }

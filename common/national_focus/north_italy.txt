@@ -1,5 +1,36 @@
 #!gfx:interface\Tsareich\focus\SRI_focus.gfx
 
+
+#BOP effect template
+# if = {
+# 	limit = {
+# 		NOT = {
+# 			OR = {
+# 				check_variable = {
+# 					SRI_bop_L_var = 1
+# 				}
+# 				check_variable = {
+# 					SRI_bop_R_var = 1
+# 				}
+# 			}
+# 			OR = {
+# 				check_variable = {
+# 					SRI_bop_L_var = 0
+# 				}
+# 				check_variable = {
+# 					SRI_bop_R_var = 0
+# 				}
+# 			}
+# 		}
+# 	}
+# 	add_to_variable = {
+# 		SRI_bop_L_var = 0.1
+# 	}
+# 	add_to_variable = {
+# 		SRI_bop_R_var = 0.1
+# 	}
+# }
+
 focus_tree = {
 	id = north_italy_focus
 	country = {
@@ -10,6 +41,13 @@ focus_tree = {
 		}
 	}
 	default = yes
+	continuous_focus_position = {
+		x = 500
+		y = 100
+	}
+	initial_show_position = {
+		focus = SRI_force_ettlement
+	}
 	focus = {
 		id = SRI_emergency_council
 		icon = GFX_goal_unknown
@@ -20,8 +58,8 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = dAnnunzio_death
 		}
-		x = 6
-		y = 1
+		x = 16
+		y = 0
 		complete_tooltip = {
 			promote_character = {
 				character = SRI_consiglio_socialista
@@ -60,9 +98,9 @@ focus_tree = {
 	focus = {
 		id = SRI_north-south_problem
 		icon = "GFX_focus_SRI_north-south_problem"
-		cost = 10.00
+		cost = 10
 		x = 0
-		y = 1
+		y = 2
 		available = {
 			hidden_trigger = {
 				NOT ={
@@ -90,9 +128,20 @@ focus_tree = {
 			focus = SRI_national_socialism
 		}
 		x = -2
-		y = 1
+		y = 2
 		relative_position_id = SRI_emergency_council
-
+		completion_reward = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.07
+			}
+			set_variable = {
+				SRI_bop_L_var = 0.6
+			}
+			set_variable = {
+				SRI_bop_R_var = 0.4
+			}
+		}
 	}
 	focus = {
 		id = SRI_national_socialism
@@ -106,28 +155,69 @@ focus_tree = {
 			focus = SRI_just_socialim
 		}
 		x = 2
-		y = 1
+		y = 2
 		relative_position_id = SRI_emergency_council
-
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.07
+			}
+			set_variable = {
+				SRI_bop_L_var = 0.4
+			}
+			set_variable = {
+				SRI_bop_R_var = 0.6
+			}
+		}
 	}
 	focus = {
 		id = SRI_force_ettlement
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 4
 		prerequisite = {
 			focus = SRI_just_socialim
 			focus = SRI_national_socialism
 			focus = SRI_north-south_problem
 		}
+		available = {
+			OR = {
+				has_completed_focus = SRI_north-south_problem
+				if = {
+					limit = {
+						has_country_flag = dAnnunzio_death
+					}
+					OR = {
+						AND = {
+							has_completed_focus = SRI_just_socialim
+							check_variable = {
+								SRI_bop_L_var > 0.7
+							}
+							custom_trigger_tooltip = {
+								tooltip = "req_bop_l_07"
+							}
+						}
+						AND = {
+							has_completed_focus = SRI_national_socialism
+							check_variable = {
+								SRI_bop_R_var > 0.7
+							}
+							custom_trigger_tooltip = {
+								tooltip = "req_bop_r_07"
+							}
+
+						}
+					}
+				}
+			}
+		}
 		x = 0
 		y = 1
 		relative_position_id = SRI_north-south_problem
-
 	}
 	focus = {
 		id = SRI_socialist_work_south
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = SRI_force_ettlement
 		}
@@ -137,9 +227,29 @@ focus_tree = {
 
 	}
 	focus = {
+		id = SRI_incit_farmers_south
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_socialist_work_south
+		}
+		prerequisite = {
+			focus = SRI_agrarian_reform
+		}
+		available = {
+			check_variable = {
+				SRI_bop_L_var = 1
+			}
+		}
+		x = -1
+		y = 3
+		relative_position_id = SRI_socialist_work_south
+		completion_reward = { }
+	}
+	focus = {
 		id = SRI_unity_consciousness_south
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 4
 		prerequisite = {
 			focus = SRI_force_ettlement
 		}
@@ -149,27 +259,652 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SRI_iternational_proximity
+		id = SRI_romans_descendants
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
+		prerequisite = {
+			focus = SRI_unity_consciousness_south
+		}
+		prerequisite = {
+			focus = SRI_call_to_zara
+		}
+		available = {
+			check_variable = {
+				SRI_bop_R_var = 1
+			}
+		}
+		x = 1
+		y = 3
+		relative_position_id = SRI_unity_consciousness_south
+		completion_reward = { }
+	}
+	focus = {
+		id = SRI_incitement_in_rome
+		icon = GFX_goal_unknown
+		cost = 4
+		prerequisite = {
+			focus = SRI_socialist_work_south
+			focus = SRI_unity_consciousness_south
+		}
+		x = 0
+		y = 2
+		relative_position_id = SRI_force_ettlement
+		completion_reward = { }
+	}
+	focus = {
+		id = SRI_united_volunteer_soldiers
+		icon = GFX_goal_unknown
+		cost = 4
+		prerequisite = {
+			focus = SRI_incitement_in_rome
+		}
+		x = 0
+		y = 2
+		relative_position_id = SRI_incitement_in_rome
+		completion_reward = { }
+	}
+	focus = {
+		id = SRI_risorgimento
+		icon = GFX_focus_SRI_north-south_problem
+		cost = 5
+		prerequisite = {
+			focus = SRI_united_volunteer_soldiers
+		}
+		prerequisite = {
+			focus = SRI_incit_farmers_south
+			focus = SRI_romans_descendants
+		}
+		x = 0
+		y = 2
+		relative_position_id = SRI_united_volunteer_soldiers
+		completion_reward = { }
+	}
+	focus = {
+		id = SRI_international_proximity
+		icon = GFX_goal_unknown
+		cost = 5
 		prerequisite = {
 			focus = SRI_just_socialim
 		}
 		x = -1
 		y = 1
 		relative_position_id = SRI_just_socialim
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+					target = SRI
+					modifier = SRI_international
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = SRI
+					modifier = SRI_international
+				}
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = 7
+			}
+		}
 
 	}
 	focus = {
-		id = SRI_south_tyrol_issue
+		id = SRI_support_socialism
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
+		prerequisite = {
+			focus = SRI_international_proximity
+		}
+		x = -2
+		y = 2
+		relative_position_id = SRI_international_proximity
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 1
+							}
+							check_variable = {
+								SRI_bop_R_var = 1
+							}
+						}
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 0
+							}
+							check_variable = {
+								SRI_bop_R_var = 0
+							}
+						}
+					}
+				}
+				add_to_variable = {
+					SRI_bop_L_var = 0.1
+				}
+				add_to_variable = {
+					SRI_bop_R_var = -0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SRI_labor_union_law
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_international_proximity
+		}
+		x = 0
+		y = 2
+		relative_position_id = SRI_international_proximity
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 1
+							}
+							check_variable = {
+								SRI_bop_R_var = 1
+							}
+						}
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 0
+							}
+							check_variable = {
+								SRI_bop_R_var = 0
+							}
+						}
+					}
+				}
+				add_to_variable = {
+					SRI_bop_L_var = 0.1
+				}
+				add_to_variable = {
+					SRI_bop_R_var = -0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SRI_appeal_help
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_support_socialism
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_support_socialism
+	}
+	focus = {
+		id = SRI_recall_defections
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_international_proximity
+		}
+		x = -6
+		y = 1
+		relative_position_id = SRI_international_proximity
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 1
+							}
+							check_variable = {
+								SRI_bop_R_var = 1
+							}
+						}
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 0
+							}
+							check_variable = {
+								SRI_bop_R_var = 0
+							}
+						}
+					}
+				}
+				add_to_variable = {
+					SRI_bop_L_var = 0.1
+				}
+				add_to_variable = {
+					SRI_bop_R_var = -0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SRI_reconciliation_communism
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_recall_defections
+		}
+		mutually_exclusive = {
+			focus = SRI_communist_dissolution
+		}
+		x = 0
+		y = 2
+		relative_position_id = SRI_recall_defections
+	}
+	focus = {
+		id = SRI_communist_dissolution
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_support_socialism
+			focus = SRI_recall_defections
+		}
+		mutually_exclusive = {
+			focus = SRI_reconciliation_communism
+		}
+		x = -2
+		y = 1
+		relative_position_id = SRI_support_socialism
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 1
+							}
+							check_variable = {
+								SRI_bop_R_var = 1
+							}
+						}
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 0
+							}
+							check_variable = {
+								SRI_bop_R_var = 0
+							}
+						}
+					}
+				}
+				add_to_variable = {
+					SRI_bop_L_var = 0.1
+				}
+				add_to_variable = {
+					SRI_bop_R_var = -0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SRI_agrarian_reform
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_labor_union_law
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_labor_union_law
+	}
+	focus = {
+		id = SRI_foreign_industrial_advisers
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_appeal_help
+		}
+		prerequisite = {
+			focus = SRI_labor_union_law
+		}
+		x = 1
+		y = 2
+		relative_position_id = SRI_appeal_help
+	}
+	focus = {
+		id = SRI_organise_secret_police
+		icon = GFX_focus_secret_rearmament
+		cost = 5
+		prerequisite = {
+			focus = SRI_communist_dissolution
+			focus = SRI_reconciliation_communism
+		}
+		x = 1
+		y = 1
+		relative_position_id = SRI_reconciliation_communism
+	}
+	focus = {
+		id = SRI_arrest_Mussolini
+		icon = GFX_focus_ger_assassinate_mussolini
+		cost = 5
+		prerequisite = {
+			focus = SRI_organise_secret_police
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_organise_secret_police
+		completion_reward = {
+			set_variable = {
+				SRI_bop_L_var = 1
+			}
+			set_variable = {
+				SRI_bop_R_var = 0
+			}
+		}
+	}
+	focus = {
+		id = SRI_FRA_adviser
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_foreign_industrial_advisers
+		}
+		x = -2
+		y = 1
+		relative_position_id = SRI_foreign_industrial_advisers
+	}
+	focus = {
+		id = SRI_GER_adviser
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_foreign_industrial_advisers
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_foreign_industrial_advisers
+	}
+	focus = {
+		id = SRI_black_shirts
+		icon = GFX_goal_unknown
+		cost = 5
 		prerequisite = {
 			focus = SRI_national_socialism
 		}
 		x = 1
 		y = 1
 		relative_position_id = SRI_national_socialism
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 1
+							}
+							check_variable = {
+								SRI_bop_R_var = 1
+							}
+						}
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 0
+							}
+							check_variable = {
+								SRI_bop_R_var = 0
+							}
+						}
+					}
+				}
+				add_to_variable = {
+					SRI_bop_L_var = -0.1
+				}
+				add_to_variable = {
+					SRI_bop_R_var = 0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SRI_south_tyrol_issue
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_black_shirts
+		}
+		x = 0
+		y = 2
+		relative_position_id = SRI_black_shirts
 
+	}
+	focus = {
+		id = SRI_call_to_zara
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_south_tyrol_issue
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_south_tyrol_issue
+	}
+	focus = {
+		id = SRI_support_nationalism
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = SRI_black_shirts
+		}
+		x = 2
+		y = 2
+		relative_position_id = SRI_black_shirts
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 1
+							}
+							check_variable = {
+								SRI_bop_R_var = 1
+							}
+						}
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 0
+							}
+							check_variable = {
+								SRI_bop_R_var = 0
+							}
+						}
+					}
+				}
+				add_to_variable = {
+					SRI_bop_L_var = -0.1
+				}
+				add_to_variable = {
+					SRI_bop_R_var = 0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SRI_public_works_investment
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_support_nationalism
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_support_nationalism
+		completion_reward = { }
+	}
+	focus = {
+		id = SRI_domestic_industry_advisers
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_south_tyrol_issue
+		}
+		prerequisite = {
+			focus = SRI_public_works_investment
+		}
+		x = -1
+		y = 2
+		relative_position_id = SRI_public_works_investment
+	}
+	focus = {
+		id = SRI_military_industry_investment 
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_domestic_industry_advisers
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_domestic_industry_advisers
+		completion_reward = { }
+	}
+	focus = {
+		id = SRI_private_industry_investment
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_domestic_industry_advisers
+		}
+		x = 2
+		y = 1
+		relative_position_id = SRI_domestic_industry_advisers
+		completion_reward = { }
+	}
+	focus = {
+		id = SRI_military_proximity
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_black_shirts
+		}
+		x = 6
+		y = 1
+		relative_position_id = SRI_black_shirts
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 1
+							}
+							check_variable = {
+								SRI_bop_R_var = 1
+							}
+						}
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 0
+							}
+							check_variable = {
+								SRI_bop_R_var = 0
+							}
+						}
+					}
+				}
+				add_to_variable = {
+					SRI_bop_L_var = -0.1
+				}
+				add_to_variable = {
+					SRI_bop_R_var = 0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SRI_secret_communist_agreements
+		icon = GFX_goal_unknown
+		cost = 5
+		mutually_exclusive = {
+			focus = SRI_assault_on_communists
+		}
+		prerequisite = {
+			focus = SRI_military_proximity
+		}
+		x = 0
+		y = 2
+		relative_position_id = SRI_military_proximity
+		completion_reward = { }
+	}
+	focus = {
+		id = SRI_assault_on_communists
+		icon = GFX_goal_unknown
+		cost = 5
+		mutually_exclusive = {
+			focus = SRI_secret_communist_agreements
+		}
+		prerequisite = {
+			focus = SRI_military_proximity
+			focus = SRI_support_nationalism
+		}
+		x = -2
+		y = 2
+		relative_position_id = SRI_military_proximity
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 1
+							}
+							check_variable = {
+								SRI_bop_R_var = 1
+							}
+						}
+						OR = {
+							check_variable = {
+								SRI_bop_L_var = 0
+							}
+							check_variable = {
+								SRI_bop_R_var = 0
+							}
+						}
+					}
+				}
+				add_to_variable = {
+					SRI_bop_L_var = -0.1
+				}
+				add_to_variable = {
+					SRI_bop_R_var = 0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SRI_strengthening_blackshirts
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_secret_communist_agreements
+			focus = SRI_assault_on_communists
+		}
+		x = 1
+		y = 1
+		relative_position_id = SRI_assault_on_communists
+		completion_reward = { }
+	}
+	focus = {
+		id = SRI_smash_PSI
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = SRI_strengthening_blackshirts
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_strengthening_blackshirts
+		completion_reward = {
+			set_variable = {
+				SRI_bop_L_var = 0
+			}
+			set_variable = {
+				SRI_bop_R_var = 1
+			}
+		}
 	}
 }

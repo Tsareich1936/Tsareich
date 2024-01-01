@@ -1,0 +1,5 @@
+opinion_modifiers = {
+	SRI_international = {
+		value = 20
+	}
+}

@@ -101,5 +101,6 @@ set_popularities = {
 
 add_ideas = {
 	SRI_divided_italy
+	SRI_fiume_issue
 	partial_economic_mobilisation
 }
