@@ -28,7 +28,7 @@ on_actions = {
 			SRI = {
 				country_event = {
 					id = TR_north_italy.1
-					days = 6
+					days = 5
 				}
 			}
 		}

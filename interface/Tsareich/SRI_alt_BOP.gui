@@ -227,7 +227,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = PSI_percent
-			text = "[?SRI_bop_L_var|%|0]"
+			text = "[?SRI_bop_L_var|%0C]"
 			position = {
 				x = -130
 				y = 160
@@ -237,7 +237,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = PNF_percent
-			text = "[?SRI_bop_R_var|%|0]"
+			text = "[?SRI_bop_R_var|%0O]"
 			position = {
 				x = 290
 				y = 160

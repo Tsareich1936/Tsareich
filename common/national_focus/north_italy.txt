@@ -24,6 +24,8 @@ focus_tree = {
 			SRI = {
 				set_variable = {
 					SRI_bop_R_var = 0.5
+				}
+				set_variable = {
 					SRI_bop_L_var = 0.5
 				}
 			}
@@ -46,6 +48,9 @@ focus_tree = {
 			NOT = { has_country_flag = dAnnunzio_death }
 		}
 		relative_position_id = SRI_emergency_council
+		completion_reward = {
+			custom_effect_tooltip = "SRI_north-south_problem.tt"
+		}
 
 	}
 	focus = {

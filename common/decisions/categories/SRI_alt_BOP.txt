@@ -6,6 +6,6 @@ SRI_alt_BOP = {
 		tag = SRI
 	}
 	visible = {
-		always = yes
+		has_country_flag = dAnnunzio_death
 	}
 }
