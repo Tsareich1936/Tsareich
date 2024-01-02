@@ -220,7 +220,7 @@ focus_tree = {
 	focus = {
 		id = SRI_socialist_work_south
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = SRI_force_ettlement
 		}
@@ -235,7 +235,7 @@ focus_tree = {
 	focus = {
 		id = SRI_incit_farmers_south
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = SRI_socialist_work_south
 		}
@@ -276,7 +276,7 @@ focus_tree = {
 	focus = {
 		id = SRI_romans_descendants
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 4
 		prerequisite = {
 			focus = SRI_unity_consciousness_south
 		}
@@ -593,7 +593,7 @@ focus_tree = {
 				ideology = communism
 				popularity = -1
 			}
-			add_stability = -1
+			add_stability = -0.1
 			if = {
 				limit = {
 					NOT = {
@@ -670,6 +670,15 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SRI_reconciliation_communism
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+					has_intelligence_agency = no
+				}
+				create_intelligence_agency = yes
+			}
+		}
 	}
 	focus = {
 		id = SRI_arrest_Mussolini
@@ -1006,6 +1015,9 @@ focus_tree = {
 			}
 			set_variable = {
 				SRI_bop_R_var = 1
+			}
+			set_politics = {
+				ruling_party = socialism
 			}
 		}
 	}

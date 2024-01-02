@@ -1,0 +1,167 @@
+division_template = {
+	name = "Esercito Popolare di Liberazione"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+units = {
+	division = {
+		location = 6857
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 6857
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 9750
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 9750
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}division = {
+		location = 3885
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 3885
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 9879
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 9879
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 11889
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 11889
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 9924
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 9924
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 11564
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 11564
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 11735
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 599
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+	division = {
+		location = 11595
+		division_template = "Esercito Popolare di Liberazione"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+}
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SRI"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SRI" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "SRI" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment
+			creator = "SRI"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment
+			creator = "FRA"
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 50
+	}
+}
