@@ -50,6 +50,18 @@ country_event = {
 		}
 	}
 }
+#risorgimento
+news_event = {
+	id = TR_north_italy.2
+	title = TR_north_italy.2.t
+	desc = TR_north_italy.2.d
+	is_triggered_only = yes
+	timeout_days = 7
+	major = yes
+	option = {
+		name = TR_north_italy.2.a
+	}
+}
 #south tyrol issue
 country_event = {
 	id = TR_north_italy.fascism.3

@@ -50,7 +50,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_emergency_council
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_secret_service_agency
 		cost = 99999 #Not available for manual acquisition.#手動での取得不可
 		# bypass = {
 		# 	has_country_flag = dAnnunzio_death
@@ -119,7 +119,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_just_socialim
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_join_comintern
 		cost = 9
 		prerequisite = {
 			focus = SRI_emergency_council
@@ -145,7 +145,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_national_socialism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ITA_generic_fascist_workers
 		cost = 9
 		prerequisite = {
 			focus = SRI_emergency_council
@@ -172,7 +172,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_force_ettlement
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 4
 		prerequisite = {
 			focus = SRI_just_socialim
@@ -219,7 +219,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_socialist_work_south
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_unify_the_london_bureau
 		cost = 4
 		prerequisite = {
 			focus = SRI_force_ettlement
@@ -238,7 +238,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_incit_farmers_south
-		icon = GFX_goal_unknown
+		icon = GFX_focus_prc_agrarian_socialism
 		cost = 4
 		prerequisite = {
 			focus = SRI_socialist_work_south
@@ -264,7 +264,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_unity_consciousness_south
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		cost = 4
 		available = {
 			has_completed_focus = SRI_national_socialism
@@ -283,7 +283,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_romans_descendants
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ITA_mare_nostrum
 		cost = 4
 		prerequisite = {
 			focus = SRI_unity_consciousness_south
@@ -307,7 +307,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_incitement_in_rome
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		cost = 4
 		prerequisite = {
 			focus = SRI_socialist_work_south
@@ -325,7 +325,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_united_volunteer_soldiers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 4
 		prerequisite = {
 			focus = SRI_incitement_in_rome
@@ -359,6 +359,7 @@ focus_tree = {
 				type = risorgimento
 			}
 			hidden_effect = {
+				news_event = TR_north_italy.2
 				ITA = {
 					remove_state_core =2
 					remove_state_core =114
@@ -382,7 +383,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_international_proximity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
 		cost = 5
 		prerequisite = {
 			focus = SRI_just_socialim
@@ -412,7 +413,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_support_socialism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_builder_of_the_red_army
 		cost = 5
 		prerequisite = {
 			focus = SRI_international_proximity
@@ -462,7 +463,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_labor_union_law
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_non_factory_construct
 		cost = 5
 		prerequisite = {
 			focus = SRI_international_proximity
@@ -507,7 +508,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_appeal_help
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_increase_nu
 		cost = 5
 		prerequisite = {
 			focus = SRI_support_socialism
@@ -521,7 +522,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_recall_defections
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_soviet_politics
 		cost = 5
 		prerequisite = {
 			focus = SRI_international_proximity
@@ -567,7 +568,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_reconciliation_communism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		cost = 5
 		prerequisite = {
 			focus = SRI_recall_defections
@@ -588,7 +589,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_communist_dissolution
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anti_comintern_pact
 		cost = 5
 		prerequisite = {
 			focus = SRI_support_socialism
@@ -638,7 +639,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_agrarian_reform
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_agricultural_subsidies
 		cost = 5
 		prerequisite = {
 			focus = SRI_labor_union_law
@@ -654,7 +655,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_foreign_industrial_advisers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		cost = 5
 		prerequisite = {
 			focus = SRI_appeal_help
@@ -721,7 +722,8 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_FRA_adviser
-		icon = GFX_goal_unknown
+		icon = "GFX_focus_chi_reach_out_to_france"
+
 		cost = 5
 		prerequisite = {
 			focus = SRI_foreign_industrial_advisers
@@ -737,7 +739,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_GER_adviser
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_mission_to_germany
 		cost = 5
 		prerequisite = {
 			focus = SRI_foreign_industrial_advisers
@@ -753,7 +755,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_black_shirts
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ITA_blackshirts
 		cost = 5
 		prerequisite = {
 			focus = SRI_national_socialism
@@ -799,7 +801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_south_tyrol_issue
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_germany
 		cost = 5
 		prerequisite = {
 			focus = SRI_black_shirts
@@ -815,7 +817,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_call_to_zara
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_territory_or_war
 		cost = 5
 		prerequisite = {
 			focus = SRI_south_tyrol_issue
@@ -834,7 +836,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_support_nationalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_fascist_propaganda
 		prerequisite = {
 			focus = SRI_black_shirts
 		}
@@ -881,7 +883,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_public_works_investment
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5
 		prerequisite = {
 			focus = SRI_support_nationalism
@@ -927,7 +929,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_domestic_industry_advisers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_modernize_industry
 		cost = 5
 		prerequisite = {
 			focus = SRI_south_tyrol_issue
@@ -947,7 +949,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_military_industry_investment 
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5
 		prerequisite = {
 			focus = SRI_domestic_industry_advisers
@@ -974,7 +976,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_private_industry_investment
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5
 		prerequisite = {
 			focus = SRI_domestic_industry_advisers
@@ -1001,7 +1003,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_military_proximity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_mission
 		cost = 5
 		prerequisite = {
 			focus = SRI_black_shirts
@@ -1045,7 +1047,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_secret_communist_agreements
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_communism
 		cost = 5
 		mutually_exclusive = {
 			focus = SRI_assault_on_communists
@@ -1066,7 +1068,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_assault_on_communists
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anti_comintern_pact
 		cost = 5
 		mutually_exclusive = {
 			focus = SRI_secret_communist_agreements
@@ -1116,7 +1118,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_strengthening_blackshirts
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_organise_the_blackshirts
 		cost = 5
 		prerequisite = {
 			focus = SRI_secret_communist_agreements
@@ -1145,7 +1147,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_smash_PSI
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SWE_attack_landsorganisationen
 		cost = 5
 		prerequisite = {
 			focus = SRI_strengthening_blackshirts

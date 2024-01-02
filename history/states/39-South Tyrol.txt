@@ -21,6 +21,7 @@ state = {
 		}
 		add_core_of = GER
 		add_core_of = ITA
+		add_core_of = SRI
 		add_core_of = LBV
 		add_claim_by = AUS
 	}
