@@ -296,3 +296,250 @@ country_event = {
 		}
 	}
 }
+
+#Zara issue
+country_event = {
+	id = TR_north_italy.fascism.10
+	title = TR_north_italy.fascism.10.t
+	desc = TR_north_italy.fascism.10.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#only zara
+		trigger = {
+			tag = SRI
+		}
+		ai_chance = {
+			base = 1
+		}
+		CRO = {
+			country_event = {
+				id = TR_north_italy.fascism.11
+				hours = 4
+			}
+		}
+	}
+	option = {#All of Dalmatia!
+		trigger = {
+			tag = SRI
+		}
+		ai_chance = {
+			base = 3
+		}
+		CRO = {
+			country_event = {
+				id = TR_north_italy.fascism.14
+				hours = 4
+			}
+		}
+	}
+}
+#CRO asked zara
+country_event = {
+	id = TR_north_italy.fascism.11
+	title = TR_north_italy.fascism.11.t
+	desc = TR_north_italy.fascism.11.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#accept
+		name = TR_north_italy.fascism.11.a
+		trigger = {
+			tag = CRO
+		}
+		ai_chance = {
+			base = 7
+		}
+		SRI = {
+			country_event = {
+				id = TR_north_italy.fascism.12
+			}
+		}
+	}
+	option = {#reject
+		name = TR_north_italy.fascism.11.b
+		trigger = {
+			tag = CRO
+		}
+		ai_chance = {
+			base = 1
+		}
+		SRI = {
+			country_event = {
+				id = TR_north_italy.fascism.13
+			}
+		}
+	}
+}
+#CRO accept
+country_event = {
+	id = TR_north_italy.fascism.12
+	title = TR_north_italy.fascism.12.t
+	desc = TR_north_italy.fascism.12.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#OK
+		name = TR_north_italy.fascism.12.a
+
+		trigger = {
+			tag = SRI
+		}
+		SRI = {
+			transfer_state = 163
+		}
+	}
+}
+#CRO reject
+country_event = {
+	id = TR_north_italy.fascism.13
+	title = TR_north_italy.fascism.13.t
+	desc = TR_north_italy.fascism.13.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#war
+		trigger = {
+			tag = SRI
+		}
+		name = TR_north_italy.fascism.13.a
+		SRI = {
+			add_state_claim = 103
+			add_state_claim = 163
+			create_wargoal = {
+				target = CRO
+				type = take_claimed_state
+				generator = { 103 163 }
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					has_country_flag = GER_get_slovenia_chance_flag
+				}
+			}
+			GER = {
+				add_state_claim = 102
+				add_state_claim = 853
+			}
+		}
+	}
+}
+#CRO asked All of Dalmatia!
+country_event = {
+	id = TR_north_italy.fascism.14
+	title = TR_north_italy.fascism.14.t
+	desc = TR_north_italy.fascism.14.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#accept
+		name = TR_north_italy.fascism.14.a
+		trigger = {
+			tag = CRO
+		}
+		ai_chance = {
+			base = 1
+		}
+		SRI = {
+			country_event = {
+				id =TR_north_italy.fascism.15
+				hours = 4
+			}
+		}
+	}
+	option = {#reject
+		name = TR_north_italy.fascism.14.b
+		trigger = {
+			tag = CRO
+		}
+		ai_chance = {
+			base = 1
+		}
+		SRI = {
+			country_event = {
+				id =TR_north_italy.fascism.16
+				hours = 4
+			}
+		}
+	}
+}
+#CRO accept
+country_event = {
+	id = TR_north_italy.fascism.15
+	title = TR_north_italy.fascism.15.t
+	desc = TR_north_italy.fascism.15.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#OK
+		name = TR_north_italy.fascism.15.a
+		trigger = {
+			tag = SRI
+		}
+		SRI = {
+			transfer_state = 103
+			transfer_state = 163
+		}
+		if = {
+			limit = {
+				GER = {
+					has_country_flag = GER_get_slovenia_chance_flag
+				}
+			}
+			GER = {
+				transfer_state = 102
+				transfer_state = 853
+			}
+		}
+	}
+}
+#CRO reject
+country_event = {
+	id = TR_north_italy.fascism.16
+	title = TR_north_italy.fascism.16.t
+	desc = TR_north_italy.fascism.16.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#war
+		name = TR_north_italy.fascism.16.a
+		trigger = {
+			tag = SRI
+		}
+		SRI = {
+			add_state_claim = 103
+			add_state_claim = 163
+			create_wargoal = {
+				target = CRO
+				type = take_claimed_state
+				generator = { 103 163 }
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					has_country_flag = GER_get_slovenia_chance_flag
+				}
+			}
+			GER = {
+				add_state_claim = 102
+				add_state_claim = 853
+			}
+		}
+	}
+}

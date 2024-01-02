@@ -803,6 +803,14 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SRI_south_tyrol_issue
+		completion_reward = {
+			SRI = {
+				country_event = {
+					id = TR_north_italy.fascism.10
+					hours = 4
+				}
+			}
+		}
 	}
 	focus = {
 		id = SRI_support_nationalism
