@@ -230,7 +230,11 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SRI_force_ettlement
-
+		completion_reward = {
+			ITA = {
+				add_stability = -0.15
+			}
+		}
 	}
 	focus = {
 		id = SRI_incit_farmers_south
@@ -271,7 +275,11 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SRI_force_ettlement
-
+		completion_reward = {
+			ITA = {
+				add_war_support = -0.15
+			}
+		}
 	}
 	focus = {
 		id = SRI_romans_descendants
@@ -291,7 +299,11 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = SRI_unity_consciousness_south
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = {
+				SRI_romans_descendants
+			}
+		}
 	}
 	focus = {
 		id = SRI_incitement_in_rome
@@ -691,12 +703,20 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_organise_secret_police
 		completion_reward = {
+			add_popularity = {
+				ideology = socialism
+				popularity = -1
+			}
 			set_variable = {
 				SRI_bop_L_var = 1
 			}
 			set_variable = {
 				SRI_bop_R_var = 0
 			}
+			set_politics = {
+				ruling_party = socialism
+			}
+			
 		}
 	}
 	focus = {
@@ -918,6 +938,12 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SRI_public_works_investment
+		complete_tooltip = {
+			add_ideas = {
+				SRI_domestic_industry_advisers
+			}
+
+		}
 	}
 	focus = {
 		id = SRI_military_industry_investment 
@@ -929,7 +955,22 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SRI_domestic_industry_advisers
-		completion_reward = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
 	}
 	focus = {
 		id = SRI_private_industry_investment
@@ -941,7 +982,22 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SRI_domestic_industry_advisers
-		completion_reward = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
 	}
 	focus = {
 		id = SRI_military_proximity
