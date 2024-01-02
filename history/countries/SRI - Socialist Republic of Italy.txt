@@ -87,16 +87,17 @@ set_stability = 0.50
 recruit_character = SRI_dAnnunzio
 recruit_character = SRI_consiglio_socialista
 recruit_character = SRI_blank_leader
+recruit_character = SRI_benito_mussolini
 
 set_politics = {
-	ruling_party = leftcoalition
+	ruling_party = coalition
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 
 }
 set_popularities = {
-	leftcoalition = 100
+	coalition = 100
 }
 
 add_ideas = {

@@ -27,7 +27,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_government = leftcoalition
+			has_government = coalition
 		}
 		localization_key = "[GetSubIdeologyLC]"
 	}

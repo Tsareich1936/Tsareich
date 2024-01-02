@@ -1,4 +1,6 @@
-add_namespace = TR_north_italy
+add_namespace = "TR_north_italy"
+add_namespace = "TR_north_italy.fascism"
+add_namespace = "TR_north_italy.socialism"
 
 
 #death of dannunzio
@@ -45,6 +47,252 @@ country_event = {
 			socialism = 35
 			socialdemocratic = 15
 			fascism = 35
+		}
+	}
+}
+#south tyrol issue
+country_event = {
+	id = TR_north_italy.fascism.3
+	title = TR_north_italy.fascism.3.t
+	desc = TR_north_italy.fascism.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#In exchange for Slovenia
+		name = TR_north_italy.fascism.3.a
+		trigger = {
+			tag = SRI
+		}
+		ai_chance = {
+			base = 2
+		}
+		GER = {
+			country_event = {
+				id = TR_north_italy.fascism.4
+				hours = 4
+			}
+		}
+	}
+	option = {#no payback
+		name = TR_north_italy.fascism.3.a
+		trigger = {
+			tag = SRI
+		}
+		ai_chance = {
+			base = 1
+		}
+		GER = {
+			country_event = {
+				id = TR_north_italy.fascism.7
+				hours = 4
+			}
+		}
+	}
+	option = {
+		name = TR_north_italy.fascism.3.c
+		trigger = {
+			tag = SRI
+		}
+		ai_chance = {
+			base = 2
+		}
+		add_war_support = -0.1
+	}
+}
+#GER asled south tyrol issue sloven
+country_event = {
+	id = TR_north_italy.fascism.4
+	title = TR_north_italy.fascism.4.t
+	desc = TR_north_italy.fascism.4.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#accept
+		name = TR_north_italy.fascism.4.a
+		trigger = {
+			tag = GER
+		}
+		ai_chance = {
+			base = 10
+		}
+		SRI = {
+			country_event = {
+				id = TR_north_italy.fascism.5
+				hours = 4
+			}
+		}
+	}
+	option = {#reject
+		name = TR_north_italy.fascism.4.a
+		trigger = {
+			tag = GER
+		}
+		ai_chance = {
+			base = 2
+		}
+		SRI = {
+			country_event = {
+				id = TR_north_italy.fascism.6
+				hours = 4
+			}
+		}
+	}
+}
+#GER accept
+country_event = {
+	id = TR_north_italy.fascism.5
+	title = TR_north_italy.fascism.5.t
+	desc = TR_north_italy.fascism.5.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#thank you
+		name = TR_north_italy.fascism.5.a
+		trigger = {
+			tag = SRI
+		}
+		ai_chance = {
+			base = 1
+		}
+		SRI = {
+			transfer_state = 39
+		}
+		GER = {
+			set_country_flag = GER_get_slovenia_chance_flag
+		}
+	}
+}
+#GER reject
+country_event = {
+	id = TR_north_italy.fascism.6
+	title = TR_north_italy.fascism.6.t
+	desc = TR_north_italy.fascism.6.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#OK
+		name = TR_north_italy.fascism.6.a
+		trigger = {
+			tag = SRI
+		}
+		ai_chance = {
+			base = 7
+		}
+	}
+	option = {#No
+		name =TR_north_italy.fascism.6.b
+		trigger = {
+			tag = SRI
+		}
+		ai_chance = {
+			base = 0
+		}
+		SRI = {
+			remove_from_faction = FRA
+		}
+	}
+}
+#GER asked  south tyrol issue no payment
+country_event = {
+	id = TR_north_italy.fascism.7
+	title = TR_north_italy.fascism.7.t
+	desc = TR_north_italy.fascism.7.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#accept
+		name = TR_north_italy.fascism.7.a
+		trigger = {
+			tag = GER
+		}
+		ai_chance = {
+			base = 1
+		}
+		SRI = {
+			country_event = {
+				id = TR_north_italy.fascism.8
+				hours = 4
+			}
+		}
+	}
+	option = {#reject
+		name = TR_north_italy.fascism.7.a
+		trigger = {
+			tag = GER
+		}
+		ai_chance = {
+			base = 10
+		}
+		SRI = {
+			country_event = {
+				id = TR_north_italy.fascism.9
+				hours = 4
+			}
+		}
+	}
+}
+#GER accept
+country_event = {
+	id = TR_north_italy.fascism.8
+	title = TR_north_italy.fascism.8.t
+	desc = TR_north_italy.fascism.8.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#thank you
+		name = TR_north_italy.fascism.8.a
+		trigger = {
+			tag = SRI
+		}
+		ai_chance = {
+			base = 1
+		}
+		SRI = {
+			transfer_state = 39
+		}
+	}
+}
+#GER reject
+country_event = {
+	id = TR_north_italy.fascism.9
+	title = TR_north_italy.fascism.9.t
+	desc = TR_north_italy.fascism.9.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {#OK
+		name = TR_north_italy.fascism.9.a
+		trigger = {
+			tag = SRI
+		}
+		ai_chance = {
+			base = 7
+		}
+	}
+	option = {#No
+		name =TR_north_italy.fascism.9.b
+		trigger = {
+			tag = SRI
+		}
+		ai_chance = {
+			base = 0
+		}
+		SRI = {
+			remove_from_faction = FRA
 		}
 	}
 }

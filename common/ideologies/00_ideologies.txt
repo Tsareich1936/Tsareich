@@ -401,9 +401,10 @@ ideologies = {
 		ai_ideology_wanted_units_factor = 1.65
 	}
 
-	leftcoalition = {
+	coalition = {
 		types = {
 			Lcoalition = {}
+			Rcoalition = {}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_COMMUNIST_1"

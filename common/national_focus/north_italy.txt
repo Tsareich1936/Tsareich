@@ -742,6 +742,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_national_socialism
 		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.07
+			}
+			add_war_support = 0.1
 			if = {
 				limit = {
 					NOT = {
@@ -782,7 +787,11 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SRI_black_shirts
-
+		completion_reward = {
+			SRI = {
+				country_event = TR_north_italy.fascism.3
+			}
+		}
 	}
 	focus = {
 		id = SRI_call_to_zara
@@ -805,6 +814,13 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_black_shirts
 		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.07
+			}
+			add_ideas = {
+				SRI_support_fascism
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -845,7 +861,41 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SRI_support_nationalism
-		completion_reward = { }
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					check_variable = {
+						var:building_level@infrastructure < 5
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					check_variable = {
+						var:building_level@infrastructure < 5
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					check_variable = {
+						var:building_level@infrastructure < 5
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
 	}
 	focus = {
 		id = SRI_domestic_industry_advisers
@@ -896,6 +946,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_black_shirts
 		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			army_experience = 50
 			if = {
 				limit = {
 					NOT = {
@@ -939,7 +992,13 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SRI_military_proximity
-		completion_reward = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+			add_stability = 0.1
+		}
 	}
 	focus = {
 		id = SRI_assault_on_communists
@@ -956,6 +1015,11 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_military_proximity
 		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+			add_stability = -0.1
 			if = {
 				limit = {
 					NOT = {
@@ -997,7 +1061,23 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SRI_assault_on_communists
-		completion_reward = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { PREV = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"Black Shirts 1\" division_template = \" Esercito Popolare di Liberazione \" start_experience_factor = 0.9" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Black Shirts 2\" division_template = \"Esercito Popolare di Liberazione\" start_experience_factor = 0.9" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Black Shirts 3\" division_template = \"Esercito Popolare di Liberazione\" start_experience_factor = 0.9" 
+					owner = PREV
+				}
+			}
+		}
 	}
 	focus = {
 		id = SRI_smash_PSI
@@ -1010,6 +1090,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_strengthening_blackshirts
 		completion_reward = {
+			add_popularity = {
+				ideology = socialism
+				popularity = -1
+			}
 			set_variable = {
 				SRI_bop_L_var = 0
 			}
@@ -1017,7 +1101,7 @@ focus_tree = {
 				SRI_bop_R_var = 1
 			}
 			set_politics = {
-				ruling_party = socialism
+				ruling_party = fascism
 			}
 		}
 	}
