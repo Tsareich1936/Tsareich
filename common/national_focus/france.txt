@@ -13,7 +13,7 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 12
+			add = 22
 			tag = FRA
 		}
 	}

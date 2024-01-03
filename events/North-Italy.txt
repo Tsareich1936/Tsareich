@@ -62,6 +62,72 @@ news_event = {
 		name = TR_north_italy.2.a
 	}
 }
+#win soc
+country_event = {
+	id = TR_north_italy.3
+	title = TR_north_italy.3.t
+	desc = TR_north_italy.3.d
+	fire_only_once = yes
+	timeout_days = 7
+	trigger = {
+		SRI = {
+			2 = { is_controlled_by = ROOT } 
+			115 = { is_controlled_by = ROOT } 
+			117 = { is_controlled_by = ROOT } 
+			156 = { is_controlled_by = ROOT } 
+			157 = { is_controlled_by = ROOT } 
+			849 = { is_controlled_by = ROOT } 
+
+		}
+	}
+	option = {
+		trigger = {
+			tag = SRI
+		}
+		SRI = {
+			set_rule = {
+				can_join_factions = yes
+			}
+			transfer_state =2
+			transfer_state =114
+			transfer_state =115
+			transfer_state =117
+			transfer_state =156
+			transfer_state =157
+			transfer_state =158
+			transfer_state =159
+			transfer_state =160
+			transfer_state =161
+			transfer_state =162
+			transfer_state =736
+			transfer_state =849
+			transfer_state =850
+			transfer_state =852
+			white_peace = ITA
+		}
+		FRA = {
+			add_to_faction = SRI
+			set_truce = {
+				target = SRI
+				days = 0
+			}
+		}
+		GER = {
+			set_truce = {
+				target = SRI
+				days = 0
+			}
+		}
+		ITA = {
+			set_rule = {
+				can_join_factions = yes
+			}
+			ENG = {
+				add_to_faction = ITA
+			}
+		}
+	}
+}
 #south tyrol issue
 country_event = {
 	id = TR_north_italy.fascism.3
