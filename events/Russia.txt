@@ -1,4 +1,5 @@
 add_namespace = "TR_Russia"
+add_namespace = "TR_Russia_news"
 
 
 country_event = {
@@ -20,6 +21,7 @@ country_event = {
     }
 }
 
+#暗殺
 country_event = {
     id = TR_Russia.2
     title = TR_Russia.2.t
@@ -30,6 +32,67 @@ country_event = {
 
     option = {
         name = TR_Russia.2.a
-        complete_national_focus = RUS_newtsar
+        custom_effect_tooltip = TR_Russia.tt.1
+        hidden_effect = {
+			RUS = { country_event = { hours = 120 id = TR_Russia.3 } } 
+            news_event = { hours = 24 id = TR_Russia_news.1 }
+            }
+		}    
+    option = {
+        name = TR_Russia.2.b
+        custom_effect_tooltip = TR_nosupport
+        hidden_effect = {
+			
+		}
     }
+}
+
+#皇帝を誰に？
+country_event = {
+    id = TR_Russia.3
+    title = TR_Russia.3.t
+    desc = TR_Russia.3.d
+    picture = GFX_report_event_generic_funeral
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.3.a
+        custom_effect_tooltip = TR_Russia.tt.2
+        hidden_effect = {
+			complete_national_focus = RUS_newtsar
+		}
+    }
+    option = {
+        name = TR_Russia.3.b
+        custom_effect_tooltip = TR_nosupport
+        hidden_effect = {
+			
+		}
+    }
+}
+
+
+
+#News
+
+#皇帝暗殺
+news_event = {
+	id = TR_Russia_news.1
+	title = TR_Russia_news.1.t
+	desc = TR_Russia_news.1.d
+	picture = GFX_news_event_hitler_speech
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_Russia_news.1.a
+		trigger = {
+			NOT = {
+				TAG = RUS
+			}
+		}
+	}
 }
