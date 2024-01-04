@@ -236,25 +236,6 @@ ideas = {
             }
         }
 
-        Cantresearch = {
-            picture = tur_tdpa
-            allowed = {
-                tag = RUS
-            }
-            available = {
-
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                research_speed_factor = -0.8
-            }
-        }
 
         wwiTsar = {
             picture = SOV_the_true_tsars
@@ -274,12 +255,12 @@ ideas = {
             modifier = {
                 stability_factor = 0.35
                 justify_war_goal_time = 2.5
-                war_support_factor = -0.2
+                war_support_factor = -0.01
             }
         }
 
-        kokkasisan_broke = {
-            picture = NOR_broken_gun_ns
+        Yubokumin = {
+            picture = eng_imperial_conscription
             allowed = {
                 tag = RUS
             }
@@ -294,8 +275,8 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                training_time_army_factor = 1
-                army_defence_factor = -0.15
+                conscription_factor = -0.25
+                
             }
         }
     }

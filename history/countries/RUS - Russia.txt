@@ -1,111 +1,102 @@
 capital = 195
 
 # Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-}
 if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
-	set_technology = {
-		early_fighter = 1
-		early_bomber = 1
-	}
-}
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			iw_small_airframe = 1
+			aa_lmg = 1
+			early_bombs = 1
+			engines_1 = 1
+			iw_medium_airframe = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
 		}
 	}
+}
+
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	fuel_silos = 1
+	basic_train = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
 	set_technology = {
+		gwtank = 1
+
 	}
 }
 if = {
 	limit = {
-		
 		has_dlc = "No Step Back"
-		
 	}
 	set_technology = {
+		gwtank_chassis = 1
+		engine_tech_1 = 1
 	}
 }
+
 if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
+	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+        basic_destroyer
+		early_light_cruiser = 1
+		early_battlecruiser = 1
 		transport = 1
 	}
 }
-
-### kaigun
-
-
 if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
+	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_light_battery = 1
 		mtg_transport = 1
 	}
-    set_autonomy = {
-	target = POL
-	autonomous_state = autonomy_dominion
-    }
-    set_autonomy = {
-	target = PRE
-	autonomous_state = autonomy_dominion
-    }
-    set_autonomy = {
-	target = FIN
-	autonomous_state = autonomy_dominion
-    }
-    set_autonomy = {
-	target = SIK
-	autonomous_state = autonomy_dominion
-    }
-    set_autonomy = {
-	target = SYR
-	autonomous_state = autonomy_dominion
-    }
-    set_autonomy = {
-	target = ARM
-	autonomous_state = autonomy_dominion
-    }
 }
 
+# ideas
+add_ideas = {
+    wwiTsar
+	Badgunji
+	Nokindaika
+	Yubokumin
+}
 
-
-
+# politics
 set_research_slots = 2
-set_convoys = 50
-set_stability = 0.35
-
-
+set_convoys = 35
+set_stability = 0.17 #17
+set_war_support = 0.02 #2
 
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
-
+	elections_allowed = no
 }
+
 set_popularities = {
-	democratic = 30
-	fascism = 7
-	communism = 20
-	neutrality = 43
+	communism = 1 #6
+	socialism = 4 #7
+	socialdemocratic = 4 #10
+	democratic = 6 #18
+	conservatism = 10 #20
+	neutrality = 75 #35
+	fascism = 0 #4
 }
-
-add_ideas = {
-	wwiTsar
-	Nokindaika
-	Badgunji
-	Cantresearch
-}
-
-
-
