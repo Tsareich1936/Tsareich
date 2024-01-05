@@ -724,7 +724,7 @@ focus_tree = {
 			focus = SRI_reconciliation_communism
 		}
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = SRI_reconciliation_communism
 		completion_reward = {
 			if = {
@@ -744,7 +744,7 @@ focus_tree = {
 			focus = SRI_organise_secret_police
 		}
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = SRI_organise_secret_police
 		completion_reward = {
 			add_popularity = {
@@ -1168,7 +1168,7 @@ focus_tree = {
 			focus = SRI_assault_on_communists
 		}
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = SRI_assault_on_communists
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -1196,7 +1196,7 @@ focus_tree = {
 			focus = SRI_strengthening_blackshirts
 		}
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = SRI_strengthening_blackshirts
 		completion_reward = {
 			add_popularity = {
@@ -1230,7 +1230,294 @@ focus_tree = {
 			remove_ideas = {
 				risorgimento
 				SRI_divided_italy
+				SRI_volunteer_soldiers
 			}
+		}
+	}
+	#left route
+	focus = {
+		id = SRI_agrarian_reform_south
+		icon = GFX_focus_generic_agricultural_subsidies
+		cost = 5
+		prerequisite = {
+			focus = SRI_reunification
+		}
+		prerequisite = {
+			focus = SRI_arrest_Mussolini
+			focus = SRI_smash_PSI
+		}
+		x = -0
+		y = 1
+		relative_position_id = SRI_reunification
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_industrialisation_south
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_agrarian_reform_south
+		}
+		x = -1
+		y = 1
+		relative_position_id = SRI_agrarian_reform_south
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_five_year_plan
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_agrarian_reform_south
+		}
+		x = 1
+		y = 1
+		relative_position_id = SRI_agrarian_reform_south
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_cooperation_for_spain
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_reunification
+		}
+		prerequisite = {
+			focus = SRI_arrest_Mussolini
+		}
+		x = -6
+		y = 2
+		relative_position_id = SRI_reunification
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_mediterranean_sea
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_perfect_italy
+		}
+		prerequisite = {
+			focus = SRI_focus_relation_europe
+		}
+		x = -5
+		y = 2
+		relative_position_id = SRI_perfect_italy
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_friendship_with_turkey
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_mediterranean_sea
+		}
+		x = 2
+		y = 1
+		relative_position_id = SRI_mediterranean_sea
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_friendship_with_egypt
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_mediterranean_sea
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_mediterranean_sea
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_red_africa
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_mediterranean_sea
+		}
+		x = -2
+		y = 1
+		relative_position_id = SRI_mediterranean_sea
+		completion_reward = {
+	
+		}
+	}
+	# focus template
+	focus = {
+		id = SRI_URSR
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_friendship_with_egypt
+		}
+		prerequisite = {
+			focus = SRI_red_africa
+		}
+		prerequisite = {
+			focus = SRI_friendship_with_turkey
+		}
+		available = {
+			has_completed_focus = SRI_red_Adria
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_friendship_with_egypt
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_neutrality_no_sense
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_cooperation_for_spain
+		}
+		x = -1
+		y = 1
+		relative_position_id = SRI_cooperation_for_spain
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_perfect_italy
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_cooperation_for_spain
+		}
+		x = 1
+		y = 1
+		relative_position_id = SRI_cooperation_for_spain
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_red_Adria
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_perfect_italy
+		}
+		x = -1
+		y = 1
+		relative_position_id = SRI_perfect_italy
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_focus_relation_europe
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_perfect_italy
+		}
+		mutually_exclusive = {
+			focus = SRI_mediterranean_sea
+		}
+		x = 1
+		y = 2
+		relative_position_id = SRI_perfect_italy
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_red_greece
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_focus_relation_europe
+		}
+		prerequisite = {
+			focus = SRI_red_Adria
+		}
+		x = -2
+		y = 1
+		relative_position_id = SRI_focus_relation_europe
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_red_Balkans
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_focus_relation_europe
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_focus_relation_europe
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_african_charenge
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_red_greece
+		}
+		prerequisite = {
+			focus = SRI_red_Balkans
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_red_greece
+		completion_reward = {
+	
+		}
+	}
+	#right route
+	focus = {
+		id = SRI_conquering_serbia
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_reunification
+		}
+		prerequisite = {
+			focus = SRI_smash_PSI
+		}
+		x = 6
+		y = 2
+		relative_position_id = SRI_reunification
+		completion_reward = {
+	
 		}
 	}
 }
