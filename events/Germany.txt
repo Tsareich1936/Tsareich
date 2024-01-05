@@ -6,7 +6,7 @@ country_event = {
 	title = TR_germany.1.t
 	desc = TR_germany.1.d
 	picture = GFX_report_event_german_speech
-
+	is_triggered_only = yes
 	option = {
 		name = TR_germany.1.a
 		set_country_flag = germany_election

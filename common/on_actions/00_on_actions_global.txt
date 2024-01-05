@@ -36,5 +36,13 @@ on_actions = {
 				}
 			}
 		}
+		effect = {
+            GER = {
+                country_event = {
+                    id = TR_germany.1
+                    days = 89
+                }
+            }
+        }
 	}
 }
