@@ -28,7 +28,8 @@ on_actions = {
 			SRI = {
 				country_event = {
 					id = TR_north_italy.1
-					days = 5
+					days = 4
+					hours = 12
 				}
 				set_truce = {
 					target = ITA

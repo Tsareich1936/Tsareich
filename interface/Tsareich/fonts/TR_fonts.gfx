@@ -1,0 +1,48 @@
+bitmapfonts = {
+	bitmapfont = {
+		name = "hoi_16mbs"
+		fontfiles = {
+			"gfx/fonts/16px/16px"
+		}
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+	bitmapfont = {
+		name = "hoi_18mbs"
+		fontfiles = {
+			"gfx/fonts/18px/18px"
+		}
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+	bitmapfont = {
+		name = "hoi_36header"
+		fontfiles = {
+			"gfx/fonts/36px/36px-0"
+			"gfx/fonts/36px/36px-1"
+		}
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+}
