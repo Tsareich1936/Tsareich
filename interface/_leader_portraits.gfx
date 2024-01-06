@@ -17,6 +17,12 @@ spriteTypes = {
 		texturefile = "gfx/leaders/leader_unknown_female.dds"
 	}
 
+	### RUS
+
+	spriteType = {
+		name = "GFX_portrait_RUS_alexei_nikolaevich"
+		texturefile = "gfx/leaders/RUS/Portrait_Russia_Alexei_Nikolaevich.dds"
+	}
 
 	### GER
 

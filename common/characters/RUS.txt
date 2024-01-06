@@ -1,0 +1,15 @@
+characters={
+	RUS_alexei_nikolaevich
+		name=RUS_alexei_nikolaevich
+		portraits={
+			civilian={
+				large=GFX_portrait_RUS_alexei_nikolaevich
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

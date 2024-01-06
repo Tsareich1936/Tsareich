@@ -12,7 +12,7 @@ focus_tree = {
 		id = GER_1936_party_conference
 		text = GER_1936_party_conference
 		icon = GFX_focus_generic_soviet_politics
-		cost = 2.143
+		cost = 5.00
 		x = 17
 		y = 0
 		available = {
@@ -39,6 +39,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 1
+		available = {
+			has_country_flag = germany_leftorright
+		}
 
 	}
 	focus = {
@@ -162,6 +165,9 @@ focus_tree = {
 		}
 		x = 22
 		y = 1
+		available = {
+			has_country_flag = germany_leftorright
+		}
 
 	}
 	focus = {

@@ -31,6 +31,7 @@ country_event = {
 	picture = GFX_report_event_german_speech
 	option = {
 		name = TR_germany.2.a
+		complete_national_focus = GER_right
 		set_country_flag = germany_leftorright
 	}
 

@@ -113,6 +113,8 @@ set_popularities = {
 	fascism = 4
 }
 
+recruit_character = RUS_Alexei_Nikolaevich
+
 if = {
 	limit = { 
 		not = {
