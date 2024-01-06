@@ -1,0 +1,6 @@
+# scripted_gui = {
+# 	super_event = {
+# 		window_name = TR_super_event_window
+# 		parent_window_name = EventWindow
+# 	}
+# }
