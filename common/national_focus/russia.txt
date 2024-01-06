@@ -21,6 +21,11 @@ focus_tree = {
     default = yes
 	reset_on_civilwar = no
 
+    continuous_focus_position = {
+		x = 100
+		y = 25000
+	}
+
 
     ### 新時代の皇帝
         focus = {
@@ -41,6 +46,26 @@ focus_tree = {
             }
 			
         }
+
+    ### 政治犯の釈放
+    focus = {
+        id = RUS_unprison
+        icon = GFX_focus_mex_arrest_general_cedillo
+        x = 16
+        y = 1
+        cost = 10
+
+        search_filters = FOCUS_FILTER_POLITICAL
+
+        ai_will_do = { factor = 50 }
+        available = {
+            always = no
+        }
+        completion_reward = {
+            communism_drift = 0.03
+        }
+        
+    }
     
 
 
