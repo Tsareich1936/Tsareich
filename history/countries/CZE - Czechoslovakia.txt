@@ -74,56 +74,44 @@ recruit_character = CZE_jozef_tiso
 recruit_character = CZE_vojtech_tuka
 recruit_character = CZE_konrad_henlein
 recruit_character = CZE_gustav_husak
-
-
+recruit_character = CZE_syukoda
 if = {
 	limit = {
-		NOT = { has_dlc = "No Step Back" }
+		has_dlc = "By Blood Alone"
 	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-		improved_light_tank = 1
+	create_equipment_variant = {
+		name = "Avia B.534"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
 	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
+	create_equipment_variant = {
+		name = "Aero A.101"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = lmg_defense_turret
+		}
 	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
+	create_equipment_variant = {
+		name = "Letov S-16"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = lmg_defense_turret
+		}
 	}
+
 }
 
-set_research_slots = 3
 
-set_politics = {
-	ruling_party = democratic
-	last_election = "1935.5.19"
-	election_frequency = 60
-	elections_allowed = yes
-}
 
-set_popularities = {
-	democratic = 65
-	neutrality = 20
-	fascism = 5
-	communism = 10
-}
-
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	add_ideas = {
-		CZE_skoda_works
-		CZE_divided_nation
-}
-	give_guarantee = YUG
-	give_guarantee = ROM
-}
 
 if = {
 	limit = {
@@ -184,45 +172,50 @@ if = {
 
 if = {
 	limit = {
-		has_dlc = "By Blood Alone"
+		NOT = { has_dlc = "No Step Back" }
 	}
-	create_equipment_variant = {
-		name = "Avia B.534"
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_4x
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = empty
-		}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
 	}
-	create_equipment_variant = {
-		name = "Aero A.101"
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			fixed_auxiliary_weapon_slot_1 = light_mg_2x
-			engine_type_slot = engine_2_1x
-			special_type_slot_1 = lmg_defense_turret
-		}
-	}
-	create_equipment_variant = {
-		name = "Letov S-16"
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = lmg_defense_turret
-		}
-	}
-
 }
-
 if = {
 	limit = {
-		NOT = { has_dlc = "Death or Dishonor" }
+		has_dlc = "No Step Back"
 	}
-	add_ideas = {
-		CZE_fortification_focus
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
 	}
 }
+
+
+
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = dconservatism
+	last_election = "1920.5.19"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 17
+	neutrality = 6
+	fascism = 0
+	communism = 7
+	conservatism = 65
+}
+
+add_ideas = {
+	TR_CZE_skoda_works
+	limited_conscription
+	partial_economic_mobilisation
+}
+
+
+
+
 
