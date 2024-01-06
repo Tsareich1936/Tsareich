@@ -149,17 +149,10 @@ ideas = {
                 always = yes
             }
             removal_cost = -1
-            if = {
-                limit = { has_dlc = "Arms Against Tyranny" }
-                    modifier = {
-                        research_speed_factor = -0.35
-                        military_industrial_organization_research_bonus = -0.8
-                    }
-                else = {
-                    modifier = {
-                        research_speed_factor = -0.35
-                    }
-                }
+            modifier = {
+                research_speed_factor = -0.35
+            }
+
             }
         }
 
