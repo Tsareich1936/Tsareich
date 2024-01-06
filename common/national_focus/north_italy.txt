@@ -883,6 +883,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SRI_black_shirts
 		}
+		cost = 5
 		x = 2
 		y = 2
 		relative_position_id = SRI_black_shirts
@@ -1234,21 +1235,78 @@ focus_tree = {
 			}
 		}
 	}
-	#left route
+	focus = {
+		id = SRI_revival
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_reunification
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_reunification
+		completion_reward = {
+	
+		}
+	}
 	focus = {
 		id = SRI_agrarian_reform_south
 		icon = GFX_focus_generic_agricultural_subsidies
 		cost = 5
 		prerequisite = {
-			focus = SRI_reunification
+			focus = SRI_revival
 		}
 		prerequisite = {
 			focus = SRI_arrest_Mussolini
+		}
+		x = -2
+		y = 2
+		relative_position_id = SRI_revival
+		completion_reward = {
+	
+		}
+	}
+	focus = {
+		id = SRI_vast_road_network
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_revival
+		}
+		prerequisite = {
 			focus = SRI_smash_PSI
 		}
-		x = -0
-		y = 1
-		relative_position_id = SRI_reunification
+		x = 2
+		y = 2
+		relative_position_id = SRI_revival
+		completion_reward = {
+	
+		}
+	}
+	focus = {
+		id = SRI_continenta_army
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_vast_road_network
+		}
+		x = 0
+		y = 2
+		relative_position_id = SRI_vast_road_network
+		completion_reward = {
+	
+		}
+	}
+	focus = {
+		id = scale_developments_south
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_continenta_army
+		}
+		x = 1
+		y = 2
+		relative_position_id = SRI_continenta_army
 		completion_reward = {
 	
 		}
@@ -1260,14 +1318,44 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = SRI_agrarian_reform_south
+			focus = SRI_vast_road_network
 		}
-		x = -1
+		x = 2
 		y = 1
 		relative_position_id = SRI_agrarian_reform_south
 		completion_reward = {
 	
 		}
 	}
+	focus = {
+		id = SRI_large-scale_steel_mill
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_industrialisation_south
+		}
+		x = 0
+		y = 2
+		relative_position_id = SRI_industrialisation_south
+		completion_reward = {
+	
+		}
+	}
+	focus = {
+		id = SRI_additional_research_slot
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_large-scale_steel_mill
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_large-scale_steel_mill
+		completion_reward = {
+	
+		}
+	}
+	#left route
 	#focus template
 	focus = {
 		id = SRI_five_year_plan
@@ -1276,9 +1364,23 @@ focus_tree = {
 		prerequisite = {
 			focus = SRI_agrarian_reform_south
 		}
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = SRI_agrarian_reform_south
+		completion_reward = {
+	
+		}
+	}
+	focus = {
+		id = SRI_large-scale_developments_south
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_five_year_plan
+		}
+		x = -1
+		y = 2
+		relative_position_id = SRI_five_year_plan
 		completion_reward = {
 	
 		}
@@ -1520,4 +1622,158 @@ focus_tree = {
 	
 		}
 	}
+	#focus template
+	focus = {
+		id = SRI_greek_conquest
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_conquering_serbia
+		}
+		x = -1
+		y = 1
+		relative_position_id = SRI_conquering_serbia
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_africa_reconquwst
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_conquering_serbia
+		}
+		x = 1
+		y = 1
+		relative_position_id = SRI_conquering_serbia
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_our_sea
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_greek_conquest
+		}
+		prerequisite = {
+			focus = SRI_africa_reconquwst
+		}
+		x = 0
+		y = 2
+		relative_position_id = SRI_conquering_serbia
+		completion_reward = {
+		
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_strengthening_power_duce
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_our_sea
+		}
+		x = -2
+		y = 1
+		relative_position_id = SRI_our_sea
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_augusutus
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_strengthening_power_duce
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_strengthening_power_duce
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+		id = SRI_return_to_hispania
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_our_sea
+		}
+		x = 5
+		y = 1
+		relative_position_id = SRI_our_sea
+		completion_reward = {
+	
+		}
+	}
+	focus = {
+		id = SRI_return_to_gaul
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_our_sea
+		}
+		x = 1
+		y = 1
+		relative_position_id = SRI_our_sea
+		completion_reward = {
+	
+		}
+	}
+	focus = {
+		id = SRI_return_to_britannia
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_return_to_gaul
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_return_to_gaul
+		completion_reward = {
+	
+		}
+	}
+	focus = {
+		id = SRI_return_to_asia
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = SRI_return_to_hispania
+		}
+		x = 0
+		y = 1
+		relative_position_id = SRI_return_to_hispania
+		completion_reward = {
+	
+		}
+	}
+	#focus template
+	focus = {
+	 	id = SRI_omnes_viae_Romam_ducunt
+	 	icon = GFX_
+	 	cost = 5
+		prerequisite = {
+			focus = SRI_return_to_britannia
+		}
+		prerequisite = {
+			focus = SRI_return_to_asia
+		}
+	 	x = 2
+	 	y = 1
+	 	relative_position_id = SRI_return_to_britannia
+	 	completion_reward = {
+	 
+	 	}
+	 }
+
 }
