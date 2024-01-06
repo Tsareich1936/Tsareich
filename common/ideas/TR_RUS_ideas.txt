@@ -1,9 +1,34 @@
 ideas = {
     country = {
-        wwi_army_charge = {
+        RUS_winner_of_wwi = {
+            picture = SOV_the_true_tsars
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                drift_defence_factor = 0.5
+                conscription_factor = -0.3
+                justify_war_goal_time = 1.5
+                enemy_justify_war_goal_time = 1
+            }
+            rule = {
+				can_create_factions = yes
+			}
+        }
+
+
+        RUS_wwi_army_charge = {
             picture = chi_army_corruption2
             allowed = {
-                tag = RUS
             }
             available = {
 
@@ -23,10 +48,9 @@ ideas = {
             }
         }
 
-        wwi_army_dig = {
+        RUS_wwi_army_dig = {
             picture = generic_supply_depot
             allowed = {
-                tag = RUS
             }
             available = {
 
@@ -42,6 +66,25 @@ ideas = {
                 max_dig_in_factor = 0.15
                 dig_in_speed_factor = -0.1
                 recon_factor = -0.25
+            }
+        }
+
+        RUS_nomad_of_russia = {
+            picture = ETH_national_studs
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                conscription_factor = -0.2
             }
         }
 

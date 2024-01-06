@@ -76,8 +76,15 @@ if = {
 
 # ideas
 add_ideas = {
-	wwi_army_charge
-	wwi_army_dig
+	RUS_winner_of_wwi
+	RUS_nomad_of_russia
+	RUS_wwi_army_charge
+	RUS_wwi_army_dig
+
+	#laws
+	disarmed_nation
+	export_focus
+	civilian_economy
 }
 
 # politics
