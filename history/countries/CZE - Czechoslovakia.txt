@@ -196,14 +196,14 @@ if = {
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = dconservatism
+	ruling_party = conservatism
 	last_election = "1920.5.19"
 	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 17
-	neutrality = 6
+	democratic = 18
+	neutrality = 10
 	fascism = 0
 	communism = 7
 	conservatism = 65
