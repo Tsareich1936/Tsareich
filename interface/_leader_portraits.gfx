@@ -4557,6 +4557,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = GFX_portrait_GER_ernst_thalmann
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Ernst_Thalmann.dds"
+	}
+
+	spriteType = {
 		name = GFX_portrait_GER_gerd_von_rundstedt
 		texturefile = "gfx/leaders/GER/Portrait_Germany_Gerd_von_Rundstedt.dds"
 	}

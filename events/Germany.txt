@@ -22,3 +22,27 @@ country_event = {
 		set_country_flag = germany_election
 	}
 }
+
+country_event = {
+	id = TR_germany.2
+	title = TR_germany.2.t
+	desc = TR_germany.2.d
+	is_triggered_only = yes
+	picture = GFX_report_event_german_speech
+	option = {
+		name = TR_germany.2.a
+		set_country_flag = germany_leftorright
+	}
+
+	option = {
+		name = TR_germany.2.b
+		set_country_flag = germany_leftorright
+		complete_national_focus = GER_left
+		promote_character = {
+			character = GER_ernst_thalmann
+			ideology = stalinism
+			
+		}
+	}
+
+}

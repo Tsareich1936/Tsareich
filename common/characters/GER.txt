@@ -42,6 +42,20 @@ characters={
 		}
 	}
 
+	GER_Ernst_Thalmann={
+		name=GER_ernst_thalmann
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_ernst_thalmann
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	GER_wilhelm_ii={ #Empty Wilhelm II so he doesn't become ruler automatically if the neutrals are in power
 		name=GER_wilhelm_ii
 		portraits={

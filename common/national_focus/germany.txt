@@ -12,18 +12,25 @@ focus_tree = {
 		id = GER_1936_party_conference
 		text = GER_1936_party_conference
 		icon = GFX_focus_generic_soviet_politics
-		cost = 10.00
+		cost = 2.143
 		x = 17
 		y = 0
 		available = {
 			has_country_flag = germany_election
 		}
+		completion_reward = {
+			country_event = {
+				id = TR_germany.2
+				days = 1
+			}
+		}
+
 	}
 	focus = {
 		id = GER_left
 		text = GER_left
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_1936_party_conference
 		}
@@ -365,7 +372,7 @@ focus_tree = {
 		id = GER_international_revolution
 		text = GER_international_revolution
 		icon = GFX_focus_SOV_international_union_of_soviet_republics
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_preparing_for_battle
 		}
@@ -392,7 +399,7 @@ focus_tree = {
 		id = GER_pangermanic_socialism
 		text = GER_pangermanic_socialism
 		icon = GFX_focus_ger_revive_kaiserreich
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_preparing_for_battle
 		}
