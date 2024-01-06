@@ -25,6 +25,8 @@ set_technology = {
 	gw_artillery = 1
 	fuel_silos = 1
 	basic_train = 1
+	support_weapons = 1
+	tech_support = 1
 }
 
 if = {
@@ -51,7 +53,7 @@ if = {
 	set_technology = {
 		early_submarine = 1
 		early_destroyer = 1
-        basic_destroyer
+        basic_destroyer = 1
 		early_light_cruiser = 1
 		early_battlecruiser = 1
 		transport = 1
@@ -66,16 +68,23 @@ if = {
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_light_battery = 1
+		basic_battery = 1 
 		mtg_transport = 1
+		basic_torpedo = 1
 	}
 }
 
 # ideas
 add_ideas = {
-    wwiTsar
-	Badgunji
-	Nokindaika
-	Yubokumin
+	RUS_winner_of_wwi
+	RUS_nomad_of_russia
+	RUS_wwi_army_charge
+	RUS_wwi_army_dig
+
+	#laws
+	disarmed_nation
+	export_focus
+	civilian_economy
 }
 
 # politics
@@ -92,11 +101,57 @@ set_politics = {
 }
 
 set_popularities = {
-	communism = 1 #6
-	socialism = 4 #7
-	socialdemocratic = 4 #10
-	democratic = 6 #18
-	conservatism = 10 #20
-	neutrality = 75 #35
-	fascism = 0 #4
+	communism = 6
+	socialism = 7
+	socialdemocratic = 10
+	democratic = 18
+	conservatism = 20
+	neutrality = 35
+	fascism = 4
+}
+
+if = {
+	limit = { 
+		not = {
+			has_dlc = "Waking the Tiger"
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = FIN
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = ARM
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = SYR
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = SIK
+		autonomous_state = autonomy_puppet
+	}
+}
+if = {
+	limit = { 
+			has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = FIN
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = ARM
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = SYR
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = SIK
+		autonomous_state = autonomy_integrated_puppet
+	}
 }
