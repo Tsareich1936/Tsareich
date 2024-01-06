@@ -88,5 +88,80 @@ ideas = {
             }
         }
 
+        RUS_agricultural_economy = {
+            picture = POL_disjointed_industry
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.85
+                local_resources_factor = -0.6
+                production_speed_buildings_factor = -0.3
+                industrial_capacity_factory = -0.5
+                industrial_capacity_dockyard = -0.4
+            }
+        }
+
+        RUS_MGI = {
+            picture = NOR_printing_money
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = 0.2
+                experience_gain_army = 0.1
+                army_core_defence_factor = 0.25
+                country_resource_cost_steel = 24
+                country_resource_cost_aluminium = 24
+                country_resource_cost_tungsten = 20
+            }
+        }
+
+        RUS_low_research = {
+            picture = jap_duplicate_research
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            if = {
+                limit = { has_dlc = "Arms Against Tyranny" }
+                    modifier = {
+                        research_speed_factor = -0.35
+                        military_industrial_organization_research_bonus = -0.8
+                    }
+                else = {
+                    modifier = {
+                        research_speed_factor = -0.35
+                    }
+                }
+            }
+        }
+
     }
 }
