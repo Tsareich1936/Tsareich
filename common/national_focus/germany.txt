@@ -30,7 +30,7 @@ focus_tree = {
 		id = GER_left
 		text = GER_left
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = GER_1936_party_conference
 		}
