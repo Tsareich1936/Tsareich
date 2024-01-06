@@ -16,12 +16,10 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                combat_width_factor = -0.2
-                army_org_regain = 3.5
-                army_org_factor = -0.6
-                max_planning = -0.85
-                supply_consumption_factor = 0.5
-                experience_loss_factor = 0.2
+                combat_width_factor = -0.1
+                army_org_regain = 1
+                army_org_factor = -0.3
+                supply_consumption_factor = 0.25
             }
         }
 
@@ -41,9 +39,9 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                max_dig_in_factor = 0.35
-                dig_in_speed_factor = -0.2
-                recon_factor = -0.5
+                max_dig_in_factor = 0.15
+                dig_in_speed_factor = -0.1
+                recon_factor = -0.25
             }
         }
 
