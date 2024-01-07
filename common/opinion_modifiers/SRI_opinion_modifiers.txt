@@ -2,4 +2,7 @@ opinion_modifiers = {
 	SRI_international = {
 		value = 20
 	}
+	SRI_temp = {
+		value = 200
+	}
 }

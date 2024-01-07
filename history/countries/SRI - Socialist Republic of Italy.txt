@@ -90,18 +90,32 @@ recruit_character = SRI_blank_leader
 recruit_character = SRI_benito_mussolini
 
 set_politics = {
-	ruling_party = coalition
+	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 
 }
 set_popularities = {
-	coalition = 100
+	communism = 100
 }
+set_party_name = {
+	ideology =communism
+	long_name = SRI_coalition_party_long
+	name = SRI_coalition_party
+}
+
 
 add_ideas = {
 	SRI_divided_italy
 	SRI_fiume_issue
 	partial_economic_mobilisation
+}
+set_rule = {
+	can_join_factions_not_allowed_diplomacy = yes
+	can_join_opposite_factions = yes
+}
+add_opinion_modifier = {
+	target = FRA
+	modifier = SRI_temp
 }

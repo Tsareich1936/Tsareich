@@ -145,6 +145,9 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = SRI_emergency_council
+		ai_will_do = {
+			factor = 100
+		}
 		completion_reward = {
 			add_popularity = {
 				ideology = socialism
@@ -172,6 +175,9 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SRI_emergency_council
+		ai_will_do = {
+			factor = 0
+		}
 		completion_reward = {
 			add_popularity = {
 				ideology = fascism
@@ -748,7 +754,7 @@ focus_tree = {
 		relative_position_id = SRI_organise_secret_police
 		completion_reward = {
 			add_popularity = {
-				ideology = socialism
+				ideology = fascism
 				popularity = -1
 			}
 			set_variable = {

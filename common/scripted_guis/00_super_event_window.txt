@@ -1,6 +1,27 @@
-# scripted_gui = {
-# 	super_event = {
-# 		window_name = TR_super_event_window
-# 		parent_window_name = EventWindow
-# 	}
-# }
+scripted_gui = {
+	super_event = {
+		context_type = player_context
+		window_name = TR_super_event_window
+		parent_window_name = EventWindow
+		visible = {
+			check_variable = {
+				TR_showing_super_event = 1
+			}
+		}
+		effects = {
+			SE_quit_button_click = {
+				set_variable = {
+					TR_showing_super_event = 0
+				}
+				set_variable = {
+					TR_super_event_variable = 0
+				}
+			}
+		}
+		properties = {
+			SE_picture = {
+				image = "[ROOT.GetSuperEventPicture]"
+			}
+		}
+	}
+}

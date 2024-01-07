@@ -27,6 +27,11 @@ country_event = {
 					tree = north_italy_focus
 					keep_completed = yes
 				}
+				set_party_name = {
+					ideology = communism
+					long_name = SRI_communism_party_long
+					name = SRI_communism_party
+				}
 			}
 		}
 	}
@@ -58,6 +63,9 @@ news_event = {
 	is_triggered_only = yes
 	timeout_days = 7
 	major = yes
+	trigger = {
+		NOT = { TAG = SRI }
+	}
 	option = {
 		name = TR_north_italy.2.a
 	}
@@ -70,17 +78,17 @@ country_event = {
 	fire_only_once = yes
 	timeout_days = 7
 	trigger = {
-		SRI = {
-			2 = { is_controlled_by = ROOT } 
-			115 = { is_controlled_by = ROOT } 
-			117 = { is_controlled_by = ROOT } 
-			156 = { is_controlled_by = ROOT } 
-			157 = { is_controlled_by = ROOT } 
-			849 = { is_controlled_by = ROOT } 
+		tag = SRI
+		2 = { is_controlled_by = SRI } 
+		115 = { is_controlled_by = SRI } 
+		117 = { is_controlled_by = SRI } 
+		156 = { is_controlled_by = SRI } 
+		157 = { is_controlled_by = SRI } 
+		849 = { is_controlled_by = SRI } 
 
-		}
 	}
 	option = {
+		name = TR_north_italy.3.a
 		trigger = {
 			tag = SRI
 		}
@@ -124,6 +132,14 @@ country_event = {
 			}
 			ENG = {
 				add_to_faction = ITA
+			}
+		}
+	}
+	option = {
+		name = TR_north_italy.3.b
+		trigger = {
+			NOT = {
+				tag = SRI
 			}
 		}
 	}

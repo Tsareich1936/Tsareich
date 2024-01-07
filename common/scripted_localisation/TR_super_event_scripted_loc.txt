@@ -1,0 +1,16 @@
+defined_text = {
+	name = GetSuperEventTiltle
+	text = { localization_key = SE_Error_Title }
+}
+defined_text = {
+	name = GetSuperEventDesc
+	text = { localization_key = SE_Error_Desc }
+}
+defined_text = {
+	name = GetSuperEventPicture
+	text = { localization_key = "GFX_SE_Error_Picture" }
+}
+defined_text = {
+	name = GetSuperEventButton
+	text = { localization_key = SE_Error_Button }
+}
