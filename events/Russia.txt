@@ -91,6 +91,83 @@ country_event = {
     }
 }
 
+#シベリア出発
+country_event = {
+    id = TR_Russia.4
+    title = TR_Russia.4.t
+    desc = TR_Russia.4.d
+    picture = GFX_report_event_generic_construction_site
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.4.a
+        custom_effect_tooltip = TR_Russia.tt.4
+        custom_effect_tooltip = TR_Russia.tt.5
+        hidden_effect = {
+			add_ideas = RUS_search_of_siberia_tired
+            RUS = { country_event = { hours = 2400 id = TR_Russia.5 } } 
+		}
+    }
+}
+
+#シベリア到着
+country_event = {
+    id = TR_Russia.5
+    title = TR_Russia.5.t
+    desc = TR_Russia.5.d
+    picture = GFX_report_event_generic_construction_site
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.5.a
+        remove_ideas = RUS_search_of_siberia_tired
+        653 = {
+            add_resource = {
+                type = tungsten
+                amount = 16
+            }
+            add_resource = {
+                type = chromium
+                amount = 6
+            }
+        }
+        578 = {
+            add_resource = {
+                type = tungsten
+                amount = 12
+            }
+            add_resource = {
+                type = chromium
+                amount = 10
+            }
+        }
+        516 = {
+            add_resource = {
+                type = tungsten
+                amount = 8
+            }
+        }
+        579 = {
+            add_resource = {
+                type = oil
+                amount = 2
+            }
+            add_resource = {
+                type = chromium
+                amount = 12
+            }
+        }
+        825 = {
+            add_resource = {
+                type = oil
+                amount = 4
+            }
+        }
+    }
+}
+
 
 
 #News
