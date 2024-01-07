@@ -1,0 +1,19 @@
+leader_traits = {
+	TR_hero_of_wwi = {
+		random = no
+		political_power_factor = 0.15
+		non_core_manpower = 0.3
+	}
+	TR_confusion_of_notsar = {
+		random = no
+		stability_factor = -1
+		war_support_factor = -1
+		political_power_gain = -1
+	}
+	TR_reformal_tsar = {
+		random = no
+		political_power_factor = 0.35
+		research_speed_factor = 0.08
+		neutrality_drift = 0.0005
+	}
+}

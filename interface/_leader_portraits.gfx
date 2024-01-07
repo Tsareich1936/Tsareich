@@ -24,6 +24,11 @@ spriteTypes = {
 		texturefile = "gfx/leaders/RUS/Portrait_Russia_Alexei_Nikolaevich.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_kirill_vladimirovich"
+		texturefile = "gfx/leaders/RUS/Portrait_Russia_Kirill_Vladimirovich.dds"
+	}
+
 	### GER
 
 	spriteType = {

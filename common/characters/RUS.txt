@@ -1,15 +1,46 @@
-characters={
-	RUS_alexei_nikolaevich
-		name=RUS_alexei_nikolaevich
-		portraits={
-			civilian={
-				large=GFX_portrait_RUS_alexei_nikolaevich
+characters = {
+	RUS_alexei_nikolaevich = {
+		name= "RUS_alexei_nikolaevich"
+		portraits = {
+			civilian = {
+				large= "GFX_portrait_RUS_alexei_nikolaevich"
 			}
 		}
-		country_leader={
-			ideology=despotism
-			expire="1965.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = despotism
+			traits = { TR_hero_of_wwi }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	RUS_notsar = {
+		name = "RUS_notsar"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_unknown"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1.1"
+			traits = { TR_confusion_of_notsar }
+			id= -1
+		}
+	}
+	RUS_kirill_vladimirovich = {
+		name= "RUS_kirill_vladimirovich"
+		portraits = {
+			civilian = {
+				large= "GFX_portrait_RUS_kirill_vladimirovich"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { TR_reformal_tsar }
+			expire = "1965.1.1.1"
+			id = -1
 		}
 	}
 }
+
+	
