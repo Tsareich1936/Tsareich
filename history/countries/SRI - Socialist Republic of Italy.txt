@@ -115,7 +115,3 @@ set_rule = {
 	can_join_factions_not_allowed_diplomacy = yes
 	can_join_opposite_factions = yes
 }
-add_opinion_modifier = {
-	target = FRA
-	modifier = SRI_temp
-}
