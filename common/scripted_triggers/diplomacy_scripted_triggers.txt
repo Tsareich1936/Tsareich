@@ -100,6 +100,7 @@ DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
 	}
 }
 
+
 DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	#added
 	if = {
@@ -1695,6 +1696,13 @@ DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = LON_NON_INTERFERENCE_RESOLUTION_CALL
+			always = no
+		}
+	}
+	if = {
+		limit = { ROOT = { tag = POL } check_variable = { modifier@cannot_call_allies_or_join_wars > 0 } }
+		custom_trigger_tooltip = {
+			tooltip = cannot_call_allies_or_join_wars_warning
 			always = no
 		}
 	}

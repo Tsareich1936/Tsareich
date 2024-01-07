@@ -1,0 +1,27 @@
+add_namespace = polish_peasant_revolt
+country_event = {
+	id = polish_peasant_revolt.0
+	hidden = yes
+	immediate = {
+		RUS = {
+			remove_ideas = {
+				RUS_polish_peasant_revolt
+			}
+		}
+	}
+	trigger = {
+		tag = RUS
+		OR = {
+			NOT = {
+				country_exists = POL
+			}
+			NOT = {
+				has_war_with = POL
+			}
+			has_war_with = GER
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+}

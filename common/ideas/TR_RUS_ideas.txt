@@ -1,4 +1,14 @@
 ideas = {
+    hidden_ideas = {
+        RUS_polish_peasant_revolt = {
+            allowed = {
+                always = no
+            }
+            modifier = {
+                stability_factor = 0.4
+            }
+        }
+    }
     country = {
         RUS_winner_of_wwi = {
             picture = SOV_the_true_tsars

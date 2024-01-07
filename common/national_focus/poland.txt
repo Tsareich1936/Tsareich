@@ -1,0 +1,24 @@
+focus_tree = {
+    id = poland_focus
+    country = {
+        factor = 0
+        modifier = {
+            add = 101
+            tag = CZE
+        }
+    }
+    default = yes
+	reset_on_civilwar = no
+
+	# initial_show_position = {
+	# 	focus = 
+	# }
+	focus = {
+		id = temp
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 0
+		y = 0
+		completion_reward = { }
+	}
+}

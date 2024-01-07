@@ -17,6 +17,13 @@ wargoal_types = {
 		take_states_cost = -9999
 		threat = 0.20
 	}
+	pol_war = {
+		war_name = pol_war
+		allowed = {
+			always = no
+		}
+		threat = 2
+	}
 
 	take_state = {
 		# PREV = original target country

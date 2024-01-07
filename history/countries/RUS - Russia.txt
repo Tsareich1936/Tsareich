@@ -88,6 +88,8 @@ add_ideas = {
 	disarmed_nation
 	export_focus
 	civilian_economy
+	#hiddens
+	RUS_polish_peasant_revolt
 }
 
 # politics

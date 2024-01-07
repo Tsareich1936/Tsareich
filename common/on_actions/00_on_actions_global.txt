@@ -49,6 +49,7 @@ on_actions = {
                     days = 89
                 }
             }
+			POL = { become_exiled_in = { target = FRA legitimacy = 10 } }
         }
 	}
 }

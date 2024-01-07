@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		TEMP = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				cannot_call_allies_or_join_wars = 1
+			}
+		}
+	}
+}
