@@ -172,3 +172,83 @@ add_to_faction = FIN
 add_to_faction = ARM
 add_to_faction = SYR
 add_to_faction = SIK
+
+#resistance
+85 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+86 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+807 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+98 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+87 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+90 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+762 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+88 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+10 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+92 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+5 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+763 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
+188 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 35
+	set_garrison_strength = 1.0
+}
