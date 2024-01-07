@@ -118,5 +118,73 @@ focus_tree = {
         
     }
 
+    ### 文民を優遇
+    focus = {
+        id = RUS_welcome_civillian
+        icon = GFX_focus_generic_military_academy
+        x = 15
+        y = 3
+        cost = 4
+
+        search_filters = FOCUS_FILTER_POLITICAL
+        prerequisite = { focus = RUS_remake_national_government }
+        mutually_exclusive = { focus = RUS_welcome_military }
+        available = {
+
+        }
+        completion_reward = {
+            custom_effect_tooltip = TR_Russia.tt.7
+            add_stability = 0.15
+        }
+        
+    }
+
+    ### 軍人を優遇
+    focus = {
+        id = RUS_welcome_military
+        icon = GFX_focus_generic_military_mission
+        x = 19
+        y = 3
+        cost = 4
+
+        search_filters = FOCUS_FILTER_POLITICAL
+        prerequisite = { focus = RUS_remake_national_government }
+        mutually_exclusive = { focus = RUS_welcome_civillian }
+
+        available = {
+
+        }
+        completion_reward = {
+            custom_effect_tooltip = TR_Russia.tt.8
+            add_war_support = 0.15
+        }
+        
+    }
+
+    ### シベリア測量
+    focus = {
+        id = RUS_search_of_siberia
+        icon = GFX_goal_reichsautobahn
+        x = 17
+        y = 4
+        cost = 1
+
+        search_filters = FOCUS_FILTER_POLITICAL
+        prerequisite = { focus = RUS_welcome_civillian 
+                         focus = RUS_welcome_military
+                        }
+        available = {
+
+        }
+        completion_reward = {
+            custom_effect_tooltip = TR_Russia.tt.3
+            custom_effect_tooltip = TR_Russia.tt.6
+            hidden_effect = {
+                country_event = { hours = 48 id = TR_Russia.4 }
+            }
+        }
+        
+    }
+
 
 }
