@@ -186,7 +186,7 @@ create_import = {
 		ludwig_beck
 		gerd_von_rundstedt
 		GER_autarky_idea
-#		SWE_historical_trade_with_Germany_dummy #CUT
+		#SWE_historical_trade_with_Germany_dummy #CUT
 		#laws
 		war_economy
 		extensive_conscription
@@ -206,7 +206,7 @@ create_import = {
 		generator = { 72 88 90 87 86 } # Zaolzie Krakow Kielce Lodz Poznan
 	}
 
-#Trade
+	#Trade
 	create_import = {
 			resource = oil
 			factories = 2
