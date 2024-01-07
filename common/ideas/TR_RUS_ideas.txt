@@ -111,6 +111,29 @@ ideas = {
             }
         }
 
+        RUS_agricultural_economy_1 = {
+            picture = POL_disjointed_industry
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.6
+                local_resources_factor = -0.5
+                production_speed_buildings_factor = -0.15
+                industrial_capacity_factory = -0.25
+                industrial_capacity_dockyard = -0.2
+            }
+        }
+
         RUS_MGI = {
             picture = NOR_printing_money
             allowed = {
@@ -150,11 +173,35 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                research_speed_factor = -0.35
+                research_speed_factor = -0.15
             }
 
-            }
         }
+        
+        RUS_released_political_prisoner = {
+            picture = FRA_scw_intervention_nationalists_focus
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                neutrality_drift = 0.1
+                stability_weekly_factor = -0.0025
+            }
+
+        }    
+
+        
 
     }
+
+    
 }
