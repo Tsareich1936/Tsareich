@@ -93,8 +93,8 @@ add_ideas = {
 # politics
 set_research_slots = 2
 set_convoys = 35
-set_stability = 0.17 #17
-set_war_support = 0.02 #2
+set_stability = 0.45
+set_war_support = 0.08
 
 set_politics = {
 	ruling_party = neutrality
@@ -172,4 +172,3 @@ add_to_faction = FIN
 add_to_faction = ARM
 add_to_faction = SYR
 add_to_faction = SIK
-add_to_faction = SER
