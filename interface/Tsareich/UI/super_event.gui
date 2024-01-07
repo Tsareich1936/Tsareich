@@ -81,28 +81,17 @@ guiTypes = {
 				}
 			}
 		}
-		containerWindowType = {
-			name = SE_bottom_Window
-			position = {
-				x = 0
-				y = 421
-			}
-			size = { width = 720 height = 60 }
-			moveable = yes
-			clipping = no
-			Orientation = UPPER_LEFT
-			buttonType = {
-				name = SE_quit_button
-				position = { x = 216 y = 5 }
-				orientation = UPPER_LEFT
+		buttonType = {
+			name = SE_quit_button
+			position = { x = 216 y = 426 }
+			orientation = UPPER_LEFT
 
-				quadTextureSprite = "GFX_TR_super_event_button"
-				buttonText = "[ROOT.GetSuperEventButton]"
-				buttonFont = "hoi_24header"
-				clicksound = click_default
-				oversound = ui_menu_over
-				shortcut = "c"
-			}
+			quadTextureSprite = "GFX_TR_super_event_button"
+			buttonText = "[ROOT.GetSuperEventButton]"
+			buttonFont = "hoi_24header"
+			clicksound = click_default
+			oversound = ui_menu_over
+			shortcut = "c"
 		}
 	}
 }
