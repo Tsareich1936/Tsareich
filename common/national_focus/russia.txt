@@ -53,21 +53,70 @@ focus_tree = {
         icon = GFX_focus_mex_arrest_general_cedillo
         x = 16
         y = 1
-        cost = 10
+        cost = 5
 
         search_filters = FOCUS_FILTER_POLITICAL
+        prerequisite = { focus = RUS_newtsar }
 
-        ai_will_do = { factor = 50 }
+        ai_will_do = { factor = 40 }
         available = {
-            always = no
+
         }
         completion_reward = {
-            communism_drift = 0.03
+            add_timed_idea = {
+                idea = RUS_released_political_prisoner
+                days = 180
+            }
         }
         
     }
     
+    ### 宮廷親衛隊の創設
+    focus = {
+        id = RUS_tsar_infantry
+        icon = GFX_focus_DEN_expand_haerens_tekniske_korps
+        x = 18
+        y = 1
+        cost = 5
 
+        search_filters = FOCUS_FILTER_POLITICAL
+        prerequisite = { focus = RUS_newtsar }
+
+        ai_will_do = { factor = 50 }
+        available = {
+
+        }
+        completion_reward = {
+            add_stability = 0.15
+            add_political_power = 100
+        }
+        
+    }
+
+    ### 帝国政府の再編
+    focus = {
+        id = RUS_remake_national_government
+        icon = GFX_focus_NOR_continue_nygaardsvold_government
+        x = 17
+        y = 2
+        cost = 10
+
+        search_filters = FOCUS_FILTER_POLITICAL
+        prerequisite = { focus = RUS_tsar_infantry }
+        prerequisite = { focus = RUS_unprison }
+
+        ai_will_do = { factor = 50 }
+        available = {
+
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = RUS_agricultural_economy
+                add_idea = RUS_agricultural_economy_1
+            }
+        }
+        
+    }
 
 
 }

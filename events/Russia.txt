@@ -29,12 +29,23 @@ country_event = {
     picture = GFX_report_event_soviet_in_riga
 
     is_triggered_only = yes
-
+    immediate = {
+		hidden_effect = {
+			RUS = {
+				kill_country_leader = yes
+				set_country_flag = Tsar_death
+				promote_character = {
+					character = RUS_notsar
+					ideology = Neutrality
+				}
+			}
+		}
+	}
     option = {
         name = TR_Russia.2.a
         custom_effect_tooltip = TR_Russia.tt.1
         hidden_effect = {
-			RUS = { country_event = { hours = 120 id = TR_Russia.3 } } 
+			RUS = { country_event = { hours = 240 id = TR_Russia.3 } } 
             news_event = { hours = 24 id = TR_Russia_news.1 }
             }
 		}    
@@ -61,6 +72,14 @@ country_event = {
         custom_effect_tooltip = TR_Russia.tt.2
         hidden_effect = {
 			complete_national_focus = RUS_newtsar
+            RUS = {
+				kill_country_leader = yes
+				set_country_flag = Tsar_kirill
+				promote_character = {
+					character = RUS_kirill_vladimirovich
+					ideology = Neutrality
+				}
+			}
 		}
     }
     option = {
@@ -90,9 +109,50 @@ news_event = {
 	option = {
 		name = TR_Russia_news.1.a
 		trigger = {
-			NOT = {
-				TAG = RUS
-			}
+            AND = {
+                NOT = {
+				    has_government = communism
+			    }
+                NOT = {
+				    tag = FIN
+                    tag = ARM
+                    tag = SYR
+                    tag = SIK
+			    }
+                NOT = {
+                    tag = RUS
+                }
+            }
+	}
+}
+    option = {
+		name = TR_Russia_news.1.b
+		trigger = {
+            AND = {
+				has_government = communism
+                NOT = {
+                    tag = FIN
+                    tag = ARM
+                    tag = SYR
+                    tag = SIK
+			    }
+                NOT = {
+                    tag = RUS
+                }
+            }
 		}
 	}
+    option = {
+		name = TR_Russia_news.1.c
+		trigger = {
+            OR = {
+                tag = RUS
+                tag = FIN
+                tag = ARM
+                tag = SYR
+                tag = SIK
+            }
+		}
+	}
+
 }
