@@ -361,9 +361,7 @@ add_ideas = {
 	FRA_inefficient_economy_2
 }
 
-give_guarantee = CZE
-give_guarantee = YUG
-give_guarantee = ROM
+
 
 recruit_character = FRA_philippe_petain
 recruit_character = FRA_maurice_thorez

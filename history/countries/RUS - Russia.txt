@@ -162,3 +162,14 @@ if = {
 		autonomous_state = autonomy_integrated_puppet
 	}
 }
+
+give_guarantee = SER
+give_guarantee = GRE
+give_guarantee = CZE
+
+create_faction = Slav_Entente
+add_to_faction = FIN
+add_to_faction = ARM
+add_to_faction = SYR
+add_to_faction = SIK
+add_to_faction = SER
