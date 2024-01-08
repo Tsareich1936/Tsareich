@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+		TR_CZE_demo_oppo = {
+			picture = FRA_matignon_agreements
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.5
+			}
+		}
+	
+	}
+	
+	country = {
+		TR_CZE_skoda_works = {
+			picture = CZE_skoda_works
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+	
+	}
+}
