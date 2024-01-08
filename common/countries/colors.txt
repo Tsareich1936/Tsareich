@@ -256,7 +256,7 @@ SIA = {
 }
 SIC = {
 	color = { 130  70  0 }
-	color = rgb { 130  70  0 }
+	color_ui = rgb { 130  70  0 }
 }
 SIK = {
 	color = rgb { 71 190 152 }
@@ -909,6 +909,6 @@ DNS = {
 	color_ui = rgb { 163 17 31 }
 }
 GXH = {
-	coror = rgb { 127 109 50 }
+	color = rgb { 127 109 50 }
 	color_ui = rgb { 127 109 50 }
 }
