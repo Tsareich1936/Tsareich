@@ -8,6 +8,10 @@ SOM_UK = {
 	color_ui = rgb { 180  10  10 }
 }
 
+SUD_UK = {
+	color = rgb { 160  20  20 }
+	color_ui = rgb { 180  10  10 }
+}
 #original
 MAL_UK = {
     color = rgb { 201 56 93 }

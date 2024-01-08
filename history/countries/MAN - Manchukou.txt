@@ -1,4 +1,4 @@
-﻿capital = 328
+﻿capital = 608
 
 oob = "MAN_1936"
 
@@ -138,15 +138,26 @@ set_convoys = 5
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 80
-	neutrality = 20
+	fascism = 20
+	neutrality = 80
 }
 
 1939.1.1 = {
 }
+
+create_faction = Republic_of_China
+add_to_faction = SIC
+add_to_faction = GXH
+add_to_faction = SHX
+add_to_faction = XSM
+add_to_faction = YUN
+add_to_faction = FJN
+add_to_faction = HNA
+add_to_faction = GXC
+add_to_faction = GZH
