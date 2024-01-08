@@ -126,7 +126,7 @@ country_event = {
         653 = {
             add_resource = {
                 type = tungsten
-                amount = 16
+                amount = 8
             }
             add_resource = {
                 type = chromium
@@ -136,7 +136,7 @@ country_event = {
         578 = {
             add_resource = {
                 type = tungsten
-                amount = 12
+                amount = 6
             }
             add_resource = {
                 type = chromium
@@ -146,7 +146,7 @@ country_event = {
         516 = {
             add_resource = {
                 type = tungsten
-                amount = 8
+                amount = 4
             }
         }
         579 = {
