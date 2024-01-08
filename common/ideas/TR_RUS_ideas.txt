@@ -41,10 +41,9 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                combat_width_factor = -0.1
-                army_org_regain = 1
-                army_org_factor = -0.3
-                supply_consumption_factor = 0.25
+                army_org_regain = 0.1
+                army_org_factor = -0.2
+                supply_consumption_factor = 0.35
             }
         }
 
@@ -85,6 +84,63 @@ ideas = {
             removal_cost = -1
             modifier = {
                 conscription_factor = -0.2
+            }
+        }
+
+        RUS_nomad_of_russia_1 = {
+            picture = ETH_national_studs
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                conscription_factor = -0.15
+            }
+        }
+
+        RUS_nomad_of_russia_2 = {
+            picture = ETH_national_studs
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                conscription_factor = -0.1
+            }
+        }
+
+        RUS_nomad_of_russia_3 = {
+            picture = ETH_national_studs
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                conscription_factor = -0.05
             }
         }
 

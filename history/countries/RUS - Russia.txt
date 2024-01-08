@@ -1,5 +1,5 @@
 capital = 195
-
+set_oob = RUS_1936
 # Starting tech
 if = {
 	limit = { has_dlc = "By Blood Alone" }
