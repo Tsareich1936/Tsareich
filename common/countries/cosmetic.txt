@@ -3,6 +3,10 @@ CRO_SLV = {
 	color = rgb { 178  55  141 }
 	color_ui = rgb { 178  55  141 }
 }
+SOM_UK = {
+	color = rgb { 160  20  20 }
+	color_ui = rgb { 180  10  10 }
+}
 
 #original
 MAL_UK = {

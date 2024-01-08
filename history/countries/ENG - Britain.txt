@@ -218,9 +218,14 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
+	set_autonomy = {
+		target = SOM
+		autonomy_state = autonomy_integrated_puppet
+	}
 	else = {
 		puppet = MAL
 		puppet = RAJ
+		puppet = SOM
 	}
 }
 

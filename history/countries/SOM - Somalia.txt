@@ -6,7 +6,7 @@ set_technology = {
 }
 
 set_convoys = 10
-
+set_cosmetic_tag = SOM_UK
 1939.1.1 = {
 	
 	#generic focuses
