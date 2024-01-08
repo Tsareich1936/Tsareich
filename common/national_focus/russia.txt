@@ -53,7 +53,7 @@ focus_tree = {
         icon = GFX_focus_mex_arrest_general_cedillo
         x = 16
         y = 1
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_POLITICAL
         prerequisite = { focus = RUS_newtsar }
@@ -77,7 +77,7 @@ focus_tree = {
         icon = GFX_focus_DEN_expand_haerens_tekniske_korps
         x = 18
         y = 1
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_POLITICAL
         prerequisite = { focus = RUS_newtsar }
@@ -169,7 +169,7 @@ focus_tree = {
         y = 4
         cost = 1
 
-        search_filters = FOCUS_FILTER_POLITICAL
+        search_filters = FOCUS_FILTER_INDUSTRY
         prerequisite = { focus = RUS_welcome_civillian 
                          focus = RUS_welcome_military
                         }
@@ -181,6 +181,30 @@ focus_tree = {
             custom_effect_tooltip = TR_Russia.tt.6
             hidden_effect = {
                 country_event = { hours = 48 id = TR_Russia.4 }
+            }
+        }
+        
+    }
+
+    #戸籍改革の開始
+    focus = {
+        id = RUS_census
+        icon = GFX_focus_CZE_german_puppet
+        x = 17
+        y = 5
+        cost = 6
+
+        search_filters = FOCUS_FILTER_MANPOWER
+        prerequisite = { focus = RUS_search_of_siberia }
+        available = {
+            NOT = {
+                has_idea = RUS_search_of_siberia_tired
+            }
+        }
+        completion_reward = {
+            custom_effect_tooltip = TR_Russia.tt.9
+            hidden_effect = {
+                set_country_flag = RUS_start_census
             }
         }
         
