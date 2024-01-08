@@ -179,17 +179,6 @@ create_import = {
 	
 	#adding ministers
 	add_ideas = {
-		henschel
-		ig_faben
-		heinrich_himmler
-		rudolf_hess
-		ludwig_beck
-		gerd_von_rundstedt
-		GER_autarky_idea
-		#SWE_historical_trade_with_Germany_dummy #CUT
-		#laws
-		war_economy
-		extensive_conscription
 	}
 	
 	
@@ -393,12 +382,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	sour_loser
-	general_staff
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
-#	SWE_historical_trade_with_Germany_dummy CUT
+GER_successful_revolution
 }
 
 recruit_character = GER_Heinrich_Brandler
