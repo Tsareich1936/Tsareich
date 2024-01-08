@@ -1406,7 +1406,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_reunification
 		completion_reward = {
-	
+			
 		}
 	}
 	#focus template

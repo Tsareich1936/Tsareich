@@ -2,8 +2,8 @@ add_namespace = "TR_north_italy"
 add_namespace = "TR_north_italy.fascism"
 add_namespace = "TR_north_italy.socialism"
 
-
-#death of dannunzio
+### North Itary Generic Events ###
+# death of dannunzio
 country_event = {
 	id = TR_north_italy.1
 	title = TR_north_italy.1.t
@@ -55,7 +55,7 @@ country_event = {
 		}
 	}
 }
-#risorgimento
+# risorgimento
 news_event = {
 	id = TR_north_italy.2
 	title = TR_north_italy.2.t
@@ -70,7 +70,7 @@ news_event = {
 		name = TR_north_italy.2.a
 	}
 }
-#win soc
+# win soc
 country_event = {
 	id = TR_north_italy.3
 	title = TR_north_italy.3.t
@@ -144,7 +144,48 @@ country_event = {
 		}
 	}
 }
-#south tyrol issue
+### Left Route events ###
+
+# International proxi #1
+
+# arrest Mussolini #2
+
+# cooperate spain #3
+
+# Switzerland war #4
+
+# Soc Zara issue 
+
+# make Serbia Socialism
+
+## Legft main route ##
+
+# make Greek Socialism
+
+# make Bulgaria Socialism
+
+# Make Libia Socialism
+
+## Left sub route ##
+
+# Council of Rome
+
+# Make Libia & Morroco Socialism
+
+# Friend ship with Egypt
+
+# Friend ship with Turkey
+
+# Union of Rome Socialist Republic
+
+# Serbia socialist
+### Right route events ###
+
+# Black shirts #1
+
+# smash PSI #2
+
+# south tyrol issue #3
 country_event = {
 	id = TR_north_italy.fascism.3
 	title = TR_north_italy.fascism.3.t
@@ -195,7 +236,7 @@ country_event = {
 		add_war_support = -0.1
 	}
 }
-#GER asled south tyrol issue sloven
+#GER asled south tyrol issue sloven #4
 country_event = {
 	id = TR_north_italy.fascism.4
 	title = TR_north_italy.fascism.4.t
@@ -236,7 +277,7 @@ country_event = {
 		}
 	}
 }
-#GER accept
+#GER accept #5
 country_event = {
 	id = TR_north_italy.fascism.5
 	title = TR_north_italy.fascism.5.t
@@ -262,7 +303,7 @@ country_event = {
 		}
 	}
 }
-#GER reject
+#GER reject #6
 country_event = {
 	id = TR_north_italy.fascism.6
 	title = TR_north_italy.fascism.6.t
@@ -294,7 +335,7 @@ country_event = {
 		}
 	}
 }
-#GER asked  south tyrol issue no payment
+#GER asked  south tyrol issue no payment #7
 country_event = {
 	id = TR_north_italy.fascism.7
 	title = TR_north_italy.fascism.7.t
@@ -335,7 +376,7 @@ country_event = {
 		}
 	}
 }
-#GER accept
+#GER accept #8
 country_event = {
 	id = TR_north_italy.fascism.8
 	title = TR_north_italy.fascism.8.t
@@ -358,7 +399,7 @@ country_event = {
 		}
 	}
 }
-#GER reject
+#GER reject #9
 country_event = {
 	id = TR_north_italy.fascism.9
 	title = TR_north_italy.fascism.9.t
@@ -391,7 +432,7 @@ country_event = {
 	}
 }
 
-#Zara issue
+#Zara issue #10
 country_event = {
 	id = TR_north_italy.fascism.10
 	title = TR_north_italy.fascism.10.t
@@ -430,7 +471,7 @@ country_event = {
 		}
 	}
 }
-#CRO asked zara
+#CRO asked zara #11
 country_event = {
 	id = TR_north_italy.fascism.11
 	title = TR_north_italy.fascism.11.t
@@ -469,7 +510,7 @@ country_event = {
 		}
 	}
 }
-#CRO accept
+#CRO accept #12
 country_event = {
 	id = TR_north_italy.fascism.12
 	title = TR_north_italy.fascism.12.t
@@ -490,7 +531,7 @@ country_event = {
 		}
 	}
 }
-#CRO reject
+#CRO reject #13
 country_event = {
 	id = TR_north_italy.fascism.13
 	title = TR_north_italy.fascism.13.t
@@ -527,7 +568,7 @@ country_event = {
 		}
 	}
 }
-#CRO asked All of Dalmatia!
+#CRO asked All of Dalmatia! #14
 country_event = {
 	id = TR_north_italy.fascism.14
 	title = TR_north_italy.fascism.14.t
@@ -568,7 +609,7 @@ country_event = {
 		}
 	}
 }
-#CRO accept
+#CRO accept #15
 country_event = {
 	id = TR_north_italy.fascism.15
 	title = TR_north_italy.fascism.15.t
@@ -600,7 +641,7 @@ country_event = {
 		}
 	}
 }
-#CRO reject
+#CRO reject #16
 country_event = {
 	id = TR_north_italy.fascism.16
 	title = TR_north_italy.fascism.16.t

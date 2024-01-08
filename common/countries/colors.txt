@@ -202,6 +202,10 @@ IRQ = {
 	color = rgb { 150 96 84 }
 	color_ui = rgb { 150 96 84 }
 }
+SUD = {
+	color = rgb { 150 96 84 }
+	color_ui = rgb { 150 96 84 }
+}
 JAP = {
 	color = hsv { 0.05 0.3 1 }
 	color_ui = hsv { 0.05 0.25 1.2 }
@@ -255,7 +259,7 @@ SIA = {
 	color_ui = rgb { 222 247 198 }
 }
 SIC = {
-	color = { 130  70  0 }
+	color = rgb { 130  70  0 }
 	color_ui = rgb { 130  70  0 }
 }
 SIK = {
@@ -448,8 +452,8 @@ BLR = {
 	color_ui = rgb { 180 220 190 }
 }
 MAN = {
-	color = rgb { 255 120 71 }
-	color_ui = rgb { 255 120 71 }
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
 }
 ANG = {
 	color = rgb { 37 140 61 }
@@ -911,4 +915,8 @@ DNS = {
 GXH = {
 	color = rgb { 127 109 50 }
 	color_ui = rgb { 127 109 50 }
+}
+FJN = {
+	color = rgb { 204  178  14 }
+	color_ui = rgb { 204  178  14 }
 }
