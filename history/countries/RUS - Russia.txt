@@ -136,10 +136,6 @@ if = {
 		target = SYR
 		autonomous_state = autonomy_puppet
 	}
-	set_autonomy = {
-		target = SIK
-		autonomous_state = autonomy_puppet
-	}
 }
 if = {
 	limit = { 
@@ -157,10 +153,6 @@ if = {
 		target = SYR
 		autonomous_state = autonomy_puppet
 	}
-	set_autonomy = {
-		target = SIK
-		autonomous_state = autonomy_integrated_puppet
-	}
 }
 
 give_guarantee = SER
@@ -171,7 +163,6 @@ create_faction = Slav_Entente
 add_to_faction = FIN
 add_to_faction = ARM
 add_to_faction = SYR
-add_to_faction = SIK
 
 #resistance
 85 = {
