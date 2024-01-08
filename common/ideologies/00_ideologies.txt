@@ -58,13 +58,13 @@ ideologies = {
 			hidden_modifier = { join_faction_tension = -0.1 }
 			embargo_threshold_factor = 0.5
 			lend_lease_tension = 0.50
-			communism_acceptance = 100
 			socialism_acceptance = 100
-			socialdemocratic_acceptance = 75
 		}
 
 		faction_modifiers = {
-
+			communism_acceptance = 100
+			socialism_acceptance = 75
+			socialdemocratic_acceptance = 50
 		}
 
 	}
@@ -110,13 +110,15 @@ ideologies = {
 			hidden_modifier = { join_faction_tension = -0.1 }
 			embargo_threshold_factor = 0.5
 			lend_lease_tension = 0.50
-			communism_acceptance = 100
+			communism_acceptance = 75
 			socialism_acceptance = 100
-			socialdemocratic_acceptance = 100
+			socialdemocratic_acceptance = 75
 		}
 
 		faction_modifiers = {
-
+			communism_acceptance = 75
+			socialism_acceptance = 100
+			socialdemocratic_acceptance = 75
 		}
 	}
 
