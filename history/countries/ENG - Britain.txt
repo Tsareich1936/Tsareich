@@ -222,6 +222,10 @@ if = {
 		target = SOM
 		autonomy_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = SUD
+		autonomy_state = autonomy_integrated_puppet
+	}
 	else = {
 		puppet = MAL
 		puppet = RAJ
@@ -463,6 +467,11 @@ add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = NZL
 add_to_faction = SAF
+add_to_faction = EGY
+add_to_faction = SUD
+add_to_faction = FEA
+add_to_faction = FWA
+add_to_faction = FGE
 
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
