@@ -1,0 +1,15 @@
+focus_tree = {
+    id = japan_focus
+    country = {
+        factor = 0
+        modifier = {
+            add = 101
+            tag = JAP
+        }
+    }
+    default = yes
+	reset_on_civilwar = no
+	focus = {
+		id = jap_teemp
+	}
+}

@@ -1,12 +1,11 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
-		desc = "GATHERING_STORM_DESC"
-		date = 1936.1.1.12
-		picture = "GFX_select_date_1936"
-		default_country = "GER"
-		default = yes
-		
+		name = "dumy"
+		desc = "dumy"
+		date = 1945.8.10.1
+		picture = ""
+		default_country = "RUS"
+		default = no
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -19,6 +18,35 @@ bookmarks = {
 			# 	FRA_form_the_popular_front
 			# 	FRA_revive_the_national_bloc
 			# 	FRA_france_leads
+			# }
+		}
+		"SRI"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism	
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+		}
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		"RUS"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			# ideas = {
+			# 	stiff_upper_lip
+			# 	ENG_the_war_to_end_all_wars
+			# 	george_v
+			# }
+			# focuses = {
+			# 	ENG_imperial_federation
+			# 	ENG_the_kings_party
+			# 	ENG_organize_the_blackshirts
 			# }
 		}
 		"USA"={
@@ -35,38 +63,10 @@ bookmarks = {
 			# 	USA_reestablish_the_gold_standard
 			# }
 		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
-			# ideas = {
-			# 	stiff_upper_lip
-			# 	ENG_the_war_to_end_all_wars
-			# 	george_v
-			# }
-			# focuses = {
-			# 	ENG_imperial_federation
-			# 	ENG_the_kings_party
-			# 	ENG_organize_the_blackshirts
-			# }
-		}
-		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
-		}
-		"SRI"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism	
-		}
 		"JAP"={
+			minor = yes
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism		
-		}
-		"RUS"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
-		}
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
 		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

@@ -1,0 +1,45 @@
+bookmarks = {
+	bookmark = {
+		name = "TR_MAIN_SCENARIO_NAME"
+		desc = "TR_MAIN_SCENARIO_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_TR_MAIN_SCENARIO_PICTURE"
+		default_country = "RUS"
+		default = yes
+		"JAP"={
+			history = "TR_JAP_MAIN_SCENARIO_DESC"
+			ideology = fascism	
+		}
+		"FRA"={
+			history = "TR_FRA_MAIN_SCENARIO_DESC"
+			ideology = communism
+		}
+		"SRI"={
+			history = "TR_SRI_MAIN_SCENARIO_DESC"
+			ideology = communism	
+		}
+		"GER"={
+			history = "TR_GER_MAIN_SCENARIO_DESC"
+			ideology = communism
+		}
+		"RUS"={
+			history = "TR_RUS_MAIN_SCENARIO_DESC"
+			ideology = neutrality
+		}
+		"ENG"={
+			history = "TR_ENG_MAIN_SCENARIO_DESC"
+			ideology = democratic
+		}
+		"USA"={
+			history = "TR_USA_MAIN_SCENARIO_DESC"
+			ideology = democratic
+		}
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
