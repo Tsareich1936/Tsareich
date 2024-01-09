@@ -1406,7 +1406,11 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_reunification
 		completion_reward = {
-			
+			SRI = {
+				country_event = {
+					id = TR_north_italy.socialism.3
+				}
+			}
 		}
 	}
 	#focus template
