@@ -410,8 +410,37 @@ country_event = {
 	fire_for_sender = yes
 	major = yes
 
-	option = {
+	option = {# All Annexion!
 		name = TR_north_italy.socialism.8.a
+		create_wargoal = {
+			target = SWI
+			type = take_claimed_state
+		}
+		add_state_claim = 846
+		GER = {
+			add_state_claim = 3
+			add_state_claim = 151
+			add_state_claim = 847
+		}
+		FRA = {
+			add_state_claim = 845
+		}
+	}
+	option = {# Make Socialism!
+		name = TR_north_italy.socialism.8.b
+		SWI = {
+			start_civil_war = {
+				ideology = democratic
+				ruling_party = socialdemocratic
+				FRA = {
+					add_to_faction = SWI
+					declare_war_on = {
+						target = PREV
+						type = puppet_wargoal_focus
+					}
+				}
+			}
+		}
 	}
 }
 # Soc Zara issue 
