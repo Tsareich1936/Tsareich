@@ -210,5 +210,110 @@ focus_tree = {
         
     }
 
+    #義務教育制度の見直し
+    focus = {
+        id = RUS_compulsory_education
+        icon = GFX_focus_research2
+        x = 15
+        y = 5
+        cost = 5
+
+        search_filters = FOCUS_FILTER_RESEARCH
+        prerequisite = { focus = RUS_search_of_siberia }
+        available = {
+            NOT = {
+                has_idea = RUS_search_of_siberia_tired
+            }
+        }
+        completion_reward = {
+            custom_effect_tooltip = TR_Russia.tt.9
+            add_research_slot = 1
+            add_tech_bonus = {
+                bonus = 2
+                uses = 2
+                ahead_reduction = 1
+                category = electronics
+            }
+        }
+        
+    }
+
+        #義務教育制度の見直し
+        focus = {
+            id = RUS_industrial_rubber
+            icon = GFX_focus_generic_rubber
+            x = 19
+            y = 5
+            cost = 5
+    
+            search_filters = FOCUS_FILTER_RESEARCH
+            prerequisite = { focus = RUS_search_of_siberia }
+            available = {
+                AND = {
+                    NOT = {
+                        has_idea = RUS_search_of_siberia_tired
+                    }
+                    has_tech = rubber_processing
+                }
+            }
+            completion_reward = {
+                custom_effect_tooltip = TR_Russia.tt.9
+                random_owned_controlled_state = {
+                    limit = {
+                        OR = {
+                            has_state_category = town
+                            has_state_category = large_town
+                            has_state_category = city
+                            has_state_category = large_city
+                            has_state_category = metropolis
+                            has_state_category = megalopolis
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = synthetic_refinery
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        OR = {
+                            has_state_category = town
+                            has_state_category = large_town
+                            has_state_category = city
+                            has_state_category = large_city
+                            has_state_category = metropolis
+                            has_state_category = megalopolis
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = synthetic_refinery
+                        level = 2
+                        instant_build = yes
+                    }
+                }          
+                random_owned_controlled_state = {
+                    limit = {
+                        OR = {
+                            has_state_category = town
+                            has_state_category = large_town
+                            has_state_category = city
+                            has_state_category = large_city
+                            has_state_category = metropolis
+                            has_state_category = megalopolis
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = synthetic_refinery
+                        level = 2
+                        instant_build = yes
+                    }
+                }        
+            }
+        }
+
 
 }
