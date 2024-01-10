@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_focus_SRI_north-south_problem"
 		textureFile = "gfx/interface/goals/Tsareich/focus_SRI_north-south_problem.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_SRI_egypt_relationship"
+		textureFile = "gfx/interface/goals/Tsareich/egypt_relationship.dds"
+	}
 }

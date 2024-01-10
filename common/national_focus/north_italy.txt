@@ -1230,7 +1230,7 @@ focus_tree = {
 	#after 1937
 	focus = {
 		id = SRI_reunification
-		icon = GFX_
+		icon = GFX_goal_generic_national_unity
 		cost = 5
 		prerequisite = {
 			focus = SRI_risorgimento
@@ -1248,7 +1248,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_revival
-		icon = GFX_
+		icon = GFX_focus_generic_italy_propaganda
 		cost = 5
 		prerequisite = {
 			focus = SRI_reunification
@@ -1279,7 +1279,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_vast_road_network
-		icon = GFX_
+		icon = GFX_focus_generic_truck
 		cost = 5
 		prerequisite = {
 			focus = SRI_revival
@@ -1296,7 +1296,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_continenta_army
-		icon = GFX_
+		icon = GFX_focus_generic_combined_arms
 		cost = 5
 		prerequisite = {
 			focus = SRI_vast_road_network
@@ -1309,8 +1309,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = scale_developments_south
-		icon = GFX_
+		id = SRI_large-scale_developments_north
+		icon = GFX_focus_ITA_northern_industry
 		cost = 5
 		prerequisite = {
 			focus = SRI_continenta_army
@@ -1325,7 +1325,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_industrialisation_south
-		icon = GFX_
+		icon = GFX_focus_generic_industry_3
 		cost = 5
 		prerequisite = {
 			focus = SRI_agrarian_reform_south
@@ -1340,7 +1340,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_large-scale_steel_mill
-		icon = GFX_
+		icon = GFX_focus_generic_steel
 		cost = 5
 		prerequisite = {
 			focus = SRI_industrialisation_south
@@ -1354,7 +1354,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_additional_research_slot
-		icon = GFX_
+		icon = GFX_focus_research
 		cost = 5
 		prerequisite = {
 			focus = SRI_large-scale_steel_mill
@@ -1370,7 +1370,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_five_year_plan
-		icon = GFX_
+		icon = GFX_focus_generic_industry_1
 		cost = 5
 		prerequisite = {
 			focus = SRI_agrarian_reform_south
@@ -1384,7 +1384,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_large-scale_developments_south
-		icon = GFX_
+		icon = GFX_focus_ITA_southern_industry
 		cost = 5
 		prerequisite = {
 			focus = SRI_five_year_plan
@@ -1399,7 +1399,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_cooperation_for_spain
-		icon = GFX_
+		icon = GFX_focus_intervention_spain_republic
 		cost = 5
 		prerequisite = {
 			focus = SRI_reunification
@@ -1421,7 +1421,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_mediterranean_sea
-		icon = GFX_
+		icon = GFX_focus_ITA_mare_nostrum
 		cost = 5
 		prerequisite = {
 			focus = SRI_perfect_italy
@@ -1439,7 +1439,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_friendship_with_turkey
-		icon = GFX_
+		icon = GFX_focus_generic_befriend_turkey
 		cost = 5
 		prerequisite = {
 			focus = SRI_mediterranean_sea
@@ -1454,7 +1454,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_friendship_with_egypt
-		icon = GFX_
+		icon = GFX_focus_SRI_egypt_relationship
 		cost = 5
 		prerequisite = {
 			focus = SRI_mediterranean_sea
@@ -1469,7 +1469,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_red_africa
-		icon = GFX_
+		icon = GFX_focus_ETH_african_wildfire
 		cost = 5
 		prerequisite = {
 			focus = SRI_mediterranean_sea
@@ -1508,7 +1508,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_neutrality_no_sense
-		icon = GFX_
+		icon = GFX_focus_SWI_expand_the_federation
 		cost = 5
 		prerequisite = {
 			focus = SRI_cooperation_for_spain
@@ -1517,13 +1517,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_cooperation_for_spain
 		completion_reward = {
-	
+			country_event = TR_north_italy.socialism.8
 		}
 	}
 	#focus template
 	focus = {
 		id = SRI_perfect_italy
-		icon = GFX_
+		icon = GFX_focus_SWI_fortify_border_with_italy
 		cost = 5
 		prerequisite = {
 			focus = SRI_cooperation_for_spain
@@ -1532,13 +1532,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_cooperation_for_spain
 		completion_reward = {
-	
+			CRO = {
+				country_event = {
+					id = TR_north_italy.socialism.9
+				}
+			}
 		}
 	}
 	#focus template
 	focus = {
 		id = SRI_red_Adria
-		icon = GFX_
+		icon = GFX_focus_generic_adriatic_sea_focus
 		cost = 5
 		prerequisite = {
 			focus = SRI_perfect_italy
@@ -1547,13 +1551,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_perfect_italy
 		completion_reward = {
-	
+			country_event = {
+				id = TR_north_italy.socialism.13
+			}
 		}
 	}
 	#focus template
 	focus = {
 		id = SRI_focus_relation_europe
-		icon = GFX_
+		icon = GFX_goal_generic_improve_relations
 		cost = 5
 		prerequisite = {
 			focus = SRI_perfect_italy
@@ -1571,7 +1577,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_red_greece
-		icon = GFX_
+		icon = GFX_focus_generic_befriend_greece
 		cost = 5
 		prerequisite = {
 			focus = SRI_focus_relation_europe
@@ -1589,7 +1595,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_red_Balkans
-		icon = GFX_
+		icon = GFX_focus_BUL_free_balkan_states
 		cost = 5
 		prerequisite = {
 			focus = SRI_focus_relation_europe
@@ -1604,7 +1610,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_african_charenge
-		icon = GFX_
+		icon = GFX_focus_generic_africa_liberation
 		cost = 5
 		prerequisite = {
 			focus = SRI_red_greece
@@ -1622,7 +1628,7 @@ focus_tree = {
 	#right route
 	focus = {
 		id = SRI_conquering_serbia
-		icon = GFX_
+		icon = GFX_goal_generic_more_territorial_claims
 		cost = 5
 		prerequisite = {
 			focus = SRI_reunification
@@ -1640,7 +1646,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_greek_conquest
-		icon = GFX_
+		icon = GFX_focus_generic_attack_greece
 		cost = 5
 		prerequisite = {
 			focus = SRI_conquering_serbia
@@ -1655,7 +1661,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_africa_reconquwst
-		icon = GFX_
+		icon = GFX_focus_generic_africa_liberation
 		cost = 5
 		prerequisite = {
 			focus = SRI_conquering_serbia
@@ -1670,7 +1676,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_our_sea
-		icon = GFX_
+		icon = GFX_focus_ITA_mare_nostrum
 		cost = 5
 		prerequisite = {
 			focus = SRI_greek_conquest
@@ -1688,7 +1694,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_strengthening_power_duce
-		icon = GFX_
+		icon = GFX_focus_ITA_culto_del_duce
 		cost = 5
 		prerequisite = {
 			focus = SRI_our_sea
@@ -1718,7 +1724,7 @@ focus_tree = {
 	#focus template
 	focus = {
 		id = SRI_return_to_hispania
-		icon = GFX_
+		icon = GFX_focus_generic_attack_republican_spain_focus
 		cost = 5
 		prerequisite = {
 			focus = SRI_our_sea
@@ -1732,7 +1738,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_return_to_gaul
-		icon = GFX_
+		icon = GFX_focus_attack_france
 		cost = 5
 		prerequisite = {
 			focus = SRI_our_sea
@@ -1746,7 +1752,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_return_to_britannia
-		icon = GFX_
+		icon = GFX_focus_attack_britain
 		cost = 5
 		prerequisite = {
 			focus = SRI_return_to_gaul
@@ -1760,7 +1766,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_return_to_asia
-		icon = GFX_
+		icon = GFX_focus_generic_attack_turkey
 		cost = 5
 		prerequisite = {
 			focus = SRI_return_to_hispania
@@ -1775,7 +1781,7 @@ focus_tree = {
 	#focus template
 	focus = {
 	 	id = SRI_omnes_viae_Romam_ducunt
-	 	icon = GFX_
+	 	icon = GFX_focus_generic_spread_fascism
 	 	cost = 5
 		prerequisite = {
 			focus = SRI_return_to_britannia
