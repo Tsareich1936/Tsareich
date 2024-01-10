@@ -165,6 +165,17 @@ add_to_faction = FIN
 add_to_faction = ARM
 add_to_faction = SYR
 
+add_to_tech_sharing_group = slav_entente_research
+FIN = {
+	add_to_tech_sharing_group = slav_entente_research
+}
+ARM = {
+	add_to_tech_sharing_group = slav_entente_research
+}
+SYR = {
+	add_to_tech_sharing_group = slav_entente_research
+}
+
 #resistance
 85 = {
 	start_resistance = yes
