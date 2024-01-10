@@ -17,6 +17,7 @@ ideas = {
             modifier = {
                 drift_defence_factor = 0.5
                 conscription_factor = -0.3
+                war_support_weekly = -0.05
                 justify_war_goal_time = 1.5
                 enemy_justify_war_goal_time = 1
             }
@@ -190,6 +191,29 @@ ideas = {
             }
         }
 
+        RUS_agricultural_economy_2 = {
+            picture = POL_disjointed_industry
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.3
+                local_resources_factor = -0.25
+                production_speed_buildings_factor = -0.075
+                industrial_capacity_factory = -0.125
+                industrial_capacity_dockyard = -0.1
+            }
+        }
+
         RUS_MGI = {
             picture = NOR_printing_money
             allowed = {
@@ -211,6 +235,27 @@ ideas = {
                 country_resource_cost_steel = 24
                 country_resource_cost_aluminium = 24
                 country_resource_cost_tungsten = 20
+            }
+        }
+
+        RUS_MGI_1 = {
+            picture = NOR_printing_money
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                local_resources_factor = 0.15
+                experience_gain_army = 0.1
+                army_core_defence_factor = 0.15
             }
         }
 
@@ -278,7 +323,279 @@ ideas = {
 
         }
 
+        RUS_war_against_PER = {
+            picture = SPR_class_war
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                
+            }
+            targeted_modifier = {
+                tag = PER
+                attack_bonus_against = -0.25
+                defense_bonus_against = -0.15
+            }
+
+        }
+
+        RUS_idea_civillian_government = {
+            picture = SOV_third_five_year_plan_civilian
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.15
+            }
+        }
+
+        RUS_idea_civillian_government_1 = {
+            picture = SOV_third_five_year_plan_civilian
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.15
+                research_speed_factor = 0.075
+            }
+        }
+
+        RUS_idea_civillian_government_2 = {
+            picture = SOV_third_five_year_plan_civilian
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.15
+                research_speed_factor = 0.075
+                industrial_capacity_factory = 0.075
+                industrial_capacity_dockyard = 0.075
+
+            }
+        }
+
+        RUS_idea_civillian_government_1_1 = {
+            picture = SOV_third_five_year_plan_civilian
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.15
+                industrial_capacity_factory = 0.075
+                industrial_capacity_dockyard = 0.075
+
+            }
+        }
+
+        RUS_idea_civillian_government_3 = {
+            picture = SOV_third_five_year_plan_civilian
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.15
+                research_speed_factor = 0.075
+                industrial_capacity_factory = 0.075
+                industrial_capacity_dockyard = 0.075
+                consumer_goods_factor = -0.15
+            }
+        }
+
+        RUS_idea_military_government = {
+            picture = SOV_third_five_year_plan_military
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                production_speed_arms_factory_factor = 0.15
+            }
+        }
+
+        RUS_idea_military_government_1 = {
+            picture = SOV_third_five_year_plan_military
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                production_speed_arms_factory_factor = 0.15
+                land_doctrine_cost_factor = -0.075
+                naval_doctrine_cost_factor = -0.075
+                air_doctrine_cost_factor = -0.075
+            }
+        }
+
+        RUS_idea_military_government_2 = {
+            picture = SOV_third_five_year_plan_military
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                production_speed_arms_factory_factor = 0.15
+                land_doctrine_cost_factor = -0.075
+                naval_doctrine_cost_factor = -0.075
+                air_doctrine_cost_factor = -0.075
+                training_time_factor = -0.075
+            }
+        }
+
+        RUS_idea_military_government_1_1 = {
+            picture = SOV_third_five_year_plan_military
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                production_speed_arms_factory_factor = 0.15
+                training_time_factor = -0.075
+            }
+        }
+
+        RUS_idea_military_government_3 = {
+            picture = SOV_third_five_year_plan_military
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                production_speed_arms_factory_factor = 0.15
+                land_doctrine_cost_factor = -0.075
+                naval_doctrine_cost_factor = -0.075
+                air_doctrine_cost_factor = -0.075
+                training_time_factor = -0.075
+                conscription_factor = 0.15
+            }
+        }
+
+        RUS_tech_scholarship = {
+            picture = hol_the_foundations_of_defense
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.025
+                research_speed_factor = 0.05
+            }
+        }
+
     }
 
     
 }
+

@@ -12,6 +12,13 @@ SUD_UK = {
 	color = rgb { 160  20  20 }
 	color_ui = rgb { 180  10  10 }
 }
+
+#TR
+PER_puppet_RUS = {
+	color = rgb { 64 128 0 }
+	color_ui = rgb { 64 128 0 }
+}
+
 #original
 MAL_UK = {
     color = rgb { 201 56 93 }
@@ -1101,3 +1108,4 @@ DEN_imperial = {
 	color = rgb { 200 210 220 }
 	color_ui = rgb { 230 255 255 }
 }
+

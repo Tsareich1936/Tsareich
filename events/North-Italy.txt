@@ -443,10 +443,372 @@ country_event = {
 		}
 	}
 }
-# Soc Zara issue 
+# Soc Zara issue #9
+country_event = {
+	id = TR_north_italy.socialism.9
+	title = TR_north_italy.socialism.9.t
+	desc = TR_north_italy.socialism.9.d
 
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# accept
+		name = TR_north_italy.socialism.9.a
+		trigger = {
+			tag = CRO
+		}
+		ai_chance = {
+			base = 50
+		}
+		SRI = {
+			country_event = {
+				id = TR_north_italy.socialism.10
+			}
+		}
+	}
+	option = {# reject
+		name = TR_north_italy.socialism.9.b
+		trigger = {
+			tag = CRO
+		}
+		ai_chance = {
+			base = 50
+		}
+		SRI = {
+			country_event = {
+				id = TR_north_italy.socialism.11
+			}
+		}
+	}
+}
+
+# Soc Zara issue -option A #10
+country_event = {
+	id = TR_north_italy.socialism.10
+	title = TR_north_italy.socialism.10.t
+	desc = TR_north_italy.socialism.10.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# OK
+		name = TR_north_italy.socialism.10.a
+		trigger = {
+			tag = SRI
+		}
+		transfer_state = 163
+		163 = {
+			add_core_of = SRI
+			remove_core_of = CRO
+		}
+	}
+}
+# Soc Zara issue -option B #10
+country_event = {
+	id = TR_north_italy.socialism.11
+	title = TR_north_italy.socialism.11.t
+	desc = TR_north_italy.socialism.11.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# よろしい、ならば戦争だ！
+		name = TR_north_italy.socialism.11.a
+		trigger = {
+			tag = SRI
+		}
+		add_state_claim = 103
+		add_state_claim = 163
+		create_wargoal = {
+			target = CRO
+			type = take_claimed_state
+			generator = {
+				103 163
+			}
+		}
+		set_country_flag = TR_SRI_socialist_zara_war_flag
+	}
+}
+# zara to be core #12
+country_event = {
+	id = TR_north_italy.socialism.12
+	title = TR_north_italy.socialism.12.t
+	desc = TR_north_italy.socialism.12.d
+
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+
+	trigger = {
+		tag = SRI
+		# has_government = socialism
+		has_country_flag = TR_SRI_socialist_zara_war_flag
+		owns_state = 163
+	}
+	trigger = {
+		CRO = {
+			OR = {
+				is_puppet_of = SRI
+				is_puppet_of = GER
+				exists = no
+			}
+		}
+		
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {# Why can we say that Zara is not Italy? No, I can say. #どうしてザラがイタリアでないと言えようか。
+		name = TR_north_italy.socialism.12.a
+		SRI = {
+			if = {
+				limit = {
+					163 = {
+						is_owned_by = SRI
+					}
+				}
+				163 = {
+					add_core_of = SRI
+				}
+			}
+			if = {
+				limit = {
+					103 = {
+						is_owned_by = SRI
+					}
+				}
+				103 = {
+					add_core_of = SRI
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						SLV = {
+							exists = yes
+						}
+						AND = {
+							CRO = {
+								owns_state = 102
+							}
+							CRO = {
+								owns_state = 853
+							}
+						}
+					}
+				}
+				CRO = {
+					drop_cosmetic_tag = yes
+				}
+			}
+			clr_country_flag = TR_SRI_socialist_zara_war_flag
+		}
+	}
+}
 # make Serbia Socialism
+country_event = {
+	id = TR_north_italy.socialism.13
+	title = TR_north_italy.socialism.13.t
+	desc = TR_north_italy.socialism.13.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
 
+	option = {# Albania
+		name = TR_north_italy.socialism.13.a
+		SER = {
+			country_event = TR_north_italy.socialism.14
+		}
+	}
+
+	option = {# Albania Montenegro
+		name = TR_north_italy.socialism.13.b
+		SER = {
+			country_event = TR_north_italy.socialism.18
+		}
+	}
+}
+# make Serbia Socialism SERBIA -option A selection
+country_event = {
+	id = TR_north_italy.socialism.14
+	title = TR_north_italy.socialism.14.t
+	desc = TR_north_italy.socialism.14.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# accept
+		name = TR_north_italy.socialism.14.a
+		SRI = {
+			country_event = TR_north_italy.socialism.15
+		}
+	}
+	option = {#russian help
+		name = TR_north_italy.socialism.14.a
+		RUS = {
+			country_event = TR_north_italy.socialism.16
+		}
+	}
+}
+# make Serbia Socialism -option A accepted
+country_event = {
+	id = TR_north_italy.socialism.15
+	title = TR_north_italy.socialism.15.t
+	desc = TR_north_italy.socialism.15.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# OK
+		name = TR_north_italy.socialism.15.a
+	}
+}
+# make Serbia Socialism RUS -option A russian help
+country_event = {
+	id = TR_north_italy.socialism.16
+	title = TR_north_italy.socialism.16.t
+	desc = TR_north_italy.socialism.16.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# OK
+		name = TR_north_italy.socialism.16.a
+		SRI = {
+			country_event = TR_north_italy.socialism.17
+		}
+	}
+	option = {# NO
+		name = TR_north_italy.socialism.16.b
+		SRI = {
+			country_event = TR_north_italy.socialism.15
+		}
+	}
+}
+# make Serbia Socialism SRI -option A rejected
+country_event = {
+	id = TR_north_italy.socialism.17
+	title = TR_north_italy.socialism.17.t
+	desc = TR_north_italy.socialism.17.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# OK
+		name = TR_north_italy.socialism.17.a
+	}
+	option = {# war
+		name = TR_north_italy.socialism.17.a
+	}
+}
+# make Serbia Socialism SERBIA -option B selection
+country_event = {
+	id = TR_north_italy.socialism.18
+	title = TR_north_italy.socialism.18.t
+	desc = TR_north_italy.socialism.18.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# accept
+		name = TR_north_italy.socialism.18.a
+		SRI = {
+			country_event = TR_north_italy.socialism.19
+		}
+	}
+	option = {#russian help
+		name = TR_north_italy.socialism.18.a
+		RUS = {
+			country_event = TR_north_italy.socialism.20
+		}
+	}
+}
+# make Serbia Socialism -option B accepted
+country_event = {
+	id = TR_north_italy.socialism.19
+	title = TR_north_italy.socialism.19.t
+	desc = TR_north_italy.socialism.19.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# OK
+		name = TR_north_italy.socialism.19.a
+	}
+}
+# make Serbia Socialism RUS -option B russian help
+country_event = {
+	id = TR_north_italy.socialism.20
+	title = TR_north_italy.socialism.20.t
+	desc = TR_north_italy.socialism.20.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# OK
+		name = TR_north_italy.socialism.20.a
+		SRI = {
+			country_event = TR_north_italy.socialism.21
+		}
+	}
+	option = {# NO
+		name = TR_north_italy.socialism.20.b
+		SRI = {
+			country_event = TR_north_italy.socialism.19
+		}
+	}
+}
+# make Serbia Socialism SRI -option B rejected
+country_event = {
+	id = TR_north_italy.socialism.21
+	title = TR_north_italy.socialism.21.t
+	desc = TR_north_italy.socialism.21.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# OK
+		name = TR_north_italy.socialism.21.a
+	}
+	option = {# war
+		name = TR_north_italy.socialism.21.a
+	}
+}
 ## Legft main route ##
 
 # make Greek Socialism

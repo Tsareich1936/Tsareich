@@ -238,7 +238,7 @@ focus_tree = {
         
     }
 
-        #義務教育制度の見直し
+        #製油所
         focus = {
             id = RUS_industrial_rubber
             icon = GFX_focus_generic_rubber
@@ -253,7 +253,7 @@ focus_tree = {
                     NOT = {
                         has_idea = RUS_search_of_siberia_tired
                     }
-                    has_tech = rubber_processing
+                    has_tech = synth_oil_experiments
                 }
             }
             completion_reward = {
@@ -313,6 +313,1418 @@ focus_tree = {
                     }
                 }        
             }
+        }
+
+        #カスピ海の守り
+        focus = {
+            id = RUS_invade_PER
+            icon = GFX_focus_generic_attack_iran
+            x = 17
+            y = 6
+            cost = 10
+    
+            search_filters = FOCUS_FILTER_ANNEXATION
+            prerequisite = { focus = RUS_compulsory_education }
+            prerequisite = { focus = RUS_census }
+            prerequisite = { focus = RUS_industrial_rubber }
+
+            available = {
+                
+            }
+            select_effect = {
+                add_state_claim = 419
+                add_state_claim = 420
+                add_state_claim = 266
+                add_state_claim = 418
+                add_state_claim = 416
+            }
+            completion_reward = {
+                custom_effect_tooltip = TR_Russia.tt.11
+                custom_effect_tooltip = TR_Russia.tt.10
+                add_timed_idea = {
+                    idea = RUS_war_against_PER
+                    days = 360
+                }
+                declare_war_on = {
+                    target = PER
+                    type = annex_everything
+                    generator = { 266 }
+                }
+            }
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        ### 工業ツリー ###
+        focus = {
+            id = RUS_NCA
+            icon = GFX_goal_generic_construction
+            x = 8
+            y = 3
+            cost = 5
+    
+            search_filters = FOCUS_FILTER_INDUSTRY
+            prerequisite = { focus = RUS_remake_national_government }
+
+            available = {
+                
+            }
+            completion_reward = {
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+            
+        }
+
+        focus = {
+            id = RUS_infrastructure
+            icon = GFX_goal_generic_construct_infrastructure
+            x = 8
+            y = 4
+            cost = 3
+    
+            search_filters = FOCUS_FILTER_INDUSTRY
+            prerequisite = { focus = RUS_NCA }
+
+            available = {
+                
+            }
+            completion_reward = {
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = infrastructure
+                            size > 1
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = infrastructure
+                                            size > 1
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = infrastructure
+                            size > 1
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = infrastructure
+                                            size > 1
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = infrastructure
+                            size > 1
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = infrastructure
+                                            size > 1
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+            }
+            
+        }
+
+        focus = {
+            id = RUS_infrastructure_1
+            icon = GFX_focus_generic_hydroelectric_energy
+            x = 8
+            y = 5
+            cost = 3
+    
+            search_filters = FOCUS_FILTER_INDUSTRY
+            prerequisite = { focus = RUS_infrastructure }
+
+            available = {
+                
+            }
+            completion_reward = {
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = infrastructure
+                            size > 1
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = infrastructure
+                                            size > 1
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = infrastructure
+                            size > 1
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = infrastructure
+                                            size > 1
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = infrastructure
+                            size > 1
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = infrastructure
+                                            size > 1
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = infrastructure
+                            size > 1
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = infrastructure
+                                            size > 1
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = infrastructure
+                            size > 1
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = infrastructure
+                                            size > 1
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+            }
+            
+        }
+
+        focus = {
+            id = RUS_agricultural_tructer
+            icon = GFX_focus_NZL_bob_semple_tank
+            x = 8
+            y = 6
+            cost = 3
+    
+            search_filters = FOCUS_FILTER_INDUSTRY
+            prerequisite = { focus = RUS_infrastructure_1 }
+
+            available = {
+                
+            }
+            completion_reward = {
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+            
+        }
+
+        focus = {
+            id = RUS_tech_school
+            icon = GFX_focus_SWE_institute_of_technology
+            x = 6
+            y = 4
+            cost = 3
+    
+            search_filters = FOCUS_FILTER_RESEARCH
+            prerequisite = { focus = RUS_NCA }
+    
+            available = {
+    
+            }
+            completion_reward = {
+                add_research_slot = 1
+            }
+            
+        }
+
+        focus = {
+            id = RUS_factory
+            icon = GFX_goal_generic_construct_civ_factory
+            x = 4
+            y = 4
+            cost = 3
+    
+            search_filters = FOCUS_FILTER_INDUSTRY
+            prerequisite = { focus = RUS_NCA }
+    
+            available = {
+    
+            }
+            completion_reward = {
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+        }
+
+            focus = {
+                id = RUS_scholarship
+                icon = GFX_focus_usa_reestablish_the_gold_standard
+                x = 5
+                y = 5
+                cost = 3
+        
+                search_filters = FOCUS_FILTER_RESEARCH
+                prerequisite = { focus = RUS_tech_school }
+                prerequisite = { focus = RUS_factory }
+        
+                available = {
+        
+                }
+                completion_reward = {
+                    add_ideas = RUS_tech_scholarship
+                }
+                
+            }
+
+            focus = {
+                id = RUS_develop_arkhangelsk
+                icon = GFX_focus_generic_industry_3
+                x = 6
+                y = 6
+                cost = 3
+        
+                search_filters = FOCUS_FILTER_INDUSTRY
+                prerequisite = { focus = RUS_scholarship }
+        
+                available = {
+        
+                }
+                completion_reward = {
+                    214 = {
+                    add_extra_state_shared_building_slots = 8
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 3
+                        instant_build = yes
+                    }
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 4
+                        instant_build = yes
+                    }
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 2
+                        instant_build = yes
+                    }
+                    set_state_category = city
+                    }
+                }
+                
+            }
+
+            focus = {
+                id = RUS_develop_khabarovsk
+                icon = GFX_focus_generic_land_reclamation
+                x = 4
+                y = 6
+                cost = 3
+        
+                search_filters = FOCUS_FILTER_INDUSTRY
+                prerequisite = { focus = RUS_scholarship }
+        
+                available = {
+        
+                }
+                completion_reward = {
+                    409 = {
+                    add_extra_state_shared_building_slots = 5
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 3
+                        instant_build = yes
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 2
+                        instant_build = yes
+                    }
+                    set_state_category = large_town
+                    }
+                }
+                
+            }
+
+            focus = {
+                id = RUS_development_arctic_zone
+                icon = GFX_focus_generic_truck
+                x = 2
+                y = 4
+                cost = 3
+        
+                search_filters = FOCUS_FILTER_INDUSTRY
+                prerequisite = { focus = RUS_NCA }
+        
+                available = {
+        
+                }
+                completion_reward = {
+                    216 = {
+                    set_state_category = town
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 1
+                        instant_build = yes
+                    }
+                    }
+                    215 = {
+                        set_state_category = town
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    213 = {
+                        set_state_category = town
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                    879 = {
+                        set_state_category = town
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+
+                }
+                
+            }
+
+            focus = {
+                id = RUS_ukrine
+                icon = GFX_focus_POL_ukrainian_army
+                x = 2
+                y = 5
+                cost = 3
+        
+                search_filters = FOCUS_FILTER_INDUSTRY
+                prerequisite = { focus = RUS_development_arctic_zone }
+        
+                available = {
+        
+                }
+                completion_reward = {
+                    every_controlled_state = { 
+                        limit = {
+                            AND = {
+                                is_core_of = UKR
+                                OR = {
+                                    has_state_category = rural
+                                }
+                            }
+                        }
+                        set_state_category = town
+                        add_building_construction = {
+                            type = infrastructure
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+                
+            }
+
+            focus = {
+                id = RUS_wasteland_remake
+                icon = GFX_focus_generic_supply_line
+                x = 2
+                y = 6
+                cost = 3
+        
+                search_filters = FOCUS_FILTER_INDUSTRY
+                prerequisite = { focus = RUS_ukrine }
+        
+                available = {
+        
+                }
+                completion_reward = {
+                    every_controlled_state = { 
+                        limit = {
+                            AND = {
+                                is_core_of = RUS
+                                has_state_category = wasteland
+                            }
+                        }
+                        set_state_category = pastoral
+                    }
+                }
+                
+            }
+
+
+            focus = {
+                id = RUS_remake_MGI
+                icon = GFX_focus_LAT_suspend_constitution_of_latvia
+                x = 5
+                y = 7
+                cost = 3
+        
+                search_filters = FOCUS_FILTER_INDUSTRY
+                prerequisite = { focus = RUS_agricultural_tructer }
+                prerequisite = { focus = RUS_develop_arkhangelsk }
+                prerequisite = { focus = RUS_develop_khabarovsk }
+                prerequisite = { focus = RUS_wasteland_remake }
+        
+                available = {
+        
+                }
+                completion_reward = {
+                    custom_effect_tooltip = TR_Russia.tt.12
+                    swap_ideas = {
+                        remove_idea = RUS_MGI
+                        add_idea = RUS_MGI_1
+                    }
+                    remove_ideas = RUS_low_research
+                }
+                
+            }
+
+            focus = {
+                id = RUS_remake_industrial_system
+                icon = GFX_focus_SWE_landsverk
+                x = 5
+                y = 8
+                cost = 5
+        
+                search_filters = FOCUS_FILTER_INDUSTRY
+                prerequisite = { focus = RUS_remake_MGI }
+        
+                available = {
+        
+                }
+                completion_reward = {
+                    custom_effect_tooltip = TR_Russia.tt.13
+                    swap_ideas = {
+                        remove_idea = RUS_agricultural_economy_1
+                        add_idea = RUS_agricultural_economy_2
+                    }
+                    add_political_power = 300
+                }
+                
+            }
+            
+        
+
+        #文民の政府
+        focus = {
+            id = RUS_civillian_government
+            icon = GFX_focus_NORDIC_com_capstone_civilian
+            x = 12
+            y = 4
+            cost = 2
+    
+            search_filters = FOCUS_FILTER_INDUSTRY
+            prerequisite = { focus = RUS_welcome_civillian }
+            prerequisite = { focus = RUS_NCA }
+    
+            available = {
+    
+            }
+            completion_reward = {
+                add_ideas = RUS_idea_civillian_government
+            }
+            
+        }
+
+        focus = {
+            id = RUS_civillian_government_1
+            icon = GFX_focus_NORDIC_com_research
+            x = 13
+            y = 5
+            cost = 2
+    
+            search_filters = FOCUS_FILTER_RESEARCH
+            prerequisite = { focus = RUS_civillian_government }
+    
+            available = {
+
+            }
+            completion_reward = {
+                if = {
+                    limit = {
+                        has_idea = RUS_idea_civillian_government
+                    }
+                    swap_ideas = {
+                        remove_idea = RUS_idea_civillian_government
+                        add_idea = RUS_idea_civillian_government_1
+                    }
+                }
+                if = {
+                    limit = {
+                        has_idea = RUS_idea_civillian_government_1_1
+                    }
+                    swap_ideas = {
+                        remove_idea = RUS_idea_civillian_government_1_1
+                        add_idea = RUS_idea_civillian_government_2
+                    }
+                }
+                else = {
+                    swap_ideas = {
+                        remove_idea = RUS_idea_civillian_government
+                        add_idea = RUS_idea_civillian_government_1
+                    }
+                }
+            }
+            
+        }
+
+        focus = {
+            id = RUS_civillian_government_2
+            icon = GFX_focus_NORDIC_com_capstone_civilian
+            x = 11
+            y = 5
+            cost = 2
+    
+            search_filters = FOCUS_FILTER_INDUSTRY
+            prerequisite = { focus = RUS_civillian_government }
+    
+            available = {
+    
+            }
+            completion_reward = {
+                if = {
+                    limit = {
+                        has_idea = RUS_idea_civillian_government
+                    }
+                    swap_ideas = {
+                        remove_idea = RUS_idea_civillian_government
+                        add_idea = RUS_idea_civillian_government_1_1
+                    }
+                }
+                if = {
+                    limit = {
+                        has_idea = RUS_idea_civillian_government_1
+                    }
+                    swap_ideas = {
+                        remove_idea = RUS_idea_civillian_government_1
+                        add_idea = RUS_idea_civillian_government_2
+                    }
+                }
+                else = {
+                    swap_ideas = {
+                        remove_idea = RUS_idea_civillian_government
+                        add_idea = RUS_idea_civillian_government_1_1
+                    }
+                }
+            }
+            
+        }
+
+        focus = {
+            id = RUS_civillian_government_3
+            icon = GFX_focus_NORDIC_com_selector_civilian
+            x = 12
+            y = 6
+            cost = 2
+    
+            search_filters = FOCUS_FILTER_INDUSTRY
+            prerequisite = { focus = RUS_civillian_government_1 }
+            prerequisite = { focus = RUS_civillian_government_2 }
+    
+            available = {
+            }
+            completion_reward = {
+                swap_ideas = {
+                    remove_idea = RUS_idea_civillian_government_2
+                    add_idea = RUS_idea_civillian_government_3
+                }
+            }
+            
+        }
+
+
+
+
+        ### 軍事 ###
+        focus = {
+            id = RUS_munitions_manufacturing
+            icon = GFX_focus_generic_armored_air_support
+            x = 26
+            y = 3
+            cost = 5
+    
+            search_filters = FOCUS_FILTER_INDUSTRY
+            prerequisite = { focus = RUS_remake_national_government }
+
+            available = {
+                
+            }
+            completion_reward = {
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_owned_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+            
+        }
+
+        #軍人の政府
+        focus = {
+            id = RUS_military_government
+            icon = GFX_focus_NORDIC_com_army
+            x = 22
+            y = 4
+            cost = 2
+    
+            search_filters = FOCUS_FILTER_WAR_SUPPORT
+            prerequisite = { focus = RUS_welcome_military }
+            prerequisite = { focus = RUS_munitions_manufacturing }
+    
+            available = {
+            }
+            completion_reward = {
+                add_ideas = RUS_idea_military_government
+            }
+            
+        }
+
+
+        focus = {
+            id = RUS_military_government_1
+            icon = GFX_focus_NORDIC_com_capstone_research
+            x = 21
+            y = 5
+            cost = 2
+    
+            search_filters = FOCUS_FILTER_RESEARCH
+            prerequisite = { focus = RUS_military_government }
+    
+            available = {
+
+            }
+            completion_reward = {
+                if = {
+                    limit = {
+                        has_idea = RUS_idea_military_government
+                    }
+                    swap_ideas = {
+                        remove_idea = RUS_idea_military_government
+                        add_idea = RUS_idea_military_government_1
+                    }
+                }
+                if = {
+                    limit = {
+                        has_idea = RUS_idea_military_government_1_1
+                    }
+                    swap_ideas = {
+                        remove_idea = RUS_idea_military_government_1_1
+                        add_idea = RUS_idea_military_government_2
+                    }
+                }
+                else = {
+                    swap_ideas = {
+                        remove_idea = RUS_idea_military_government
+                        add_idea = RUS_idea_military_government_1
+                    }
+                }
+            }
+            
+        }
+
+        focus = {
+            id = RUS_military_government_2
+            icon = GFX_focus_NORDIC_com_capstone_civilian
+            x = 23
+            y = 5
+            cost = 2
+    
+            search_filters = FOCUS_FILTER_WAR_SUPPORT
+            prerequisite = { focus = RUS_military_government }
+    
+            available = {
+    
+            }
+            completion_reward = {
+                if = {
+                    limit = {
+                        has_idea = RUS_idea_military_government
+                    }
+                    swap_ideas = {
+                        remove_idea = RUS_idea_military_government
+                        add_idea = RUS_idea_military_government_1_1
+                    }
+                }
+                if = {
+                    limit = {
+                        has_idea = RUS_idea_military_government_1
+                    }
+                    swap_ideas = {
+                        remove_idea = RUS_idea_military_government_1
+                        add_idea = RUS_idea_military_government_2
+                    }
+                }
+                else = {
+                    swap_ideas = {
+                        remove_idea = RUS_idea_military_government
+                        add_idea = RUS_idea_military_government_1_1
+                    }
+                }
+            }
+            
+        }
+
+        focus = {
+            id = RUS_military_government_3
+            icon = GFX_focus_NORDIC_com_institution_1
+            x = 22
+            y = 6
+            cost = 2
+    
+            search_filters = FOCUS_FILTER_WAR_SUPPORT
+            prerequisite = { focus = RUS_military_government_1 }
+            prerequisite = { focus = RUS_military_government_2 }
+    
+            available = {
+            }
+            completion_reward = {
+                swap_ideas = {
+                    remove_idea = RUS_idea_military_government_2
+                    add_idea = RUS_idea_military_government_3
+                }
+            }
+            
         }
 
 
