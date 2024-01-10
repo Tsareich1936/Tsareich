@@ -51,6 +51,15 @@ set_convoys = 20
 	}
 }
 
+set_autonomy = {
+	target = FWA
+	autonomy_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = FEA
+	autonomy_state = autonomy_integrated_puppet
+}
+puppet = MOR
 
 set_politics = {
 	ruling_party = democratic
