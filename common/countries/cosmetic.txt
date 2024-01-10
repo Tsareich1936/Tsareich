@@ -7,10 +7,13 @@ SOM_UK = {
 	color = rgb { 160  20  20 }
 	color_ui = rgb { 180  10  10 }
 }
-
 SUD_UK = {
 	color = rgb { 160  20  20 }
 	color_ui = rgb { 180  10  10 }
+}
+URSR = {
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 } 
 }
 
 #TR
