@@ -1,0 +1,1165 @@
+focus_tree = {
+	id = cze
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = CZE
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 200 y = 1600 }
+
+	
+	#産業
+	focus = {
+		id = CZE_ind_leg
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 8.00
+		x = 5
+		y = 0
+
+	}
+	focus = {
+		id = CZE_ind_rus1
+		icon = GFX_goal_generic_consumer_goods
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_ind_leg
+		}
+		mutually_exclusive = {
+			focus = CZE_ind_cze1
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = CZE_ind_rus2
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_ind_rus1
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = CZE_ind_cze1
+		icon = GFX_focus_generic_steel
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_ind_leg
+		}
+		mutually_exclusive = {
+			focus = CZE_ind_rus1
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = CZE_ind_cze2
+		icon = GFX_goal_generic_construction2
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_ind_cze1
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = CZE_ind1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_ind_leg
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = CZE_ind2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_ind1
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = CZE_ind3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_ind2
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = CZE_weapon_ex1
+		icon =  GFX_goal_generic_production
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_ind_leg
+		}
+		x = 7
+		y = 1
+
+	}
+	focus = {
+		id = CZE_weapon_ex2
+		icon =  GFX_goal_generic_production
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_weapon_ex1
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = CZE_weapon_ex3
+		icon = GFX_goal_tripartite_pact
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_weapon_ex2
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = CZE_tech
+		icon = GFX_focus_research
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_weapon_ex3
+			focus = CZE_ind_cze2
+			focus = CZE_ind_rus2
+		}
+		prerequisite = {
+			focus = CZE_ind3
+		}
+		x = 5
+		y = 4
+
+	}
+
+
+#要塞
+    focus = {
+	    id = CZE_fortress
+	    icon = GFX_goal_generic_defence
+	    cost = 8.00
+	    x = 5
+	    y = 6
+
+    }
+	focus = {
+		id = CZE_fortress1
+		icon = GFX_goal_generic_construct_military
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_fortress
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = CZE_fortress2
+		icon = GFX_goal_generic_construct_military
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_fortress1
+		}
+		x = 5
+		y = 8
+
+	}
+	focus = {
+		id = CZE_fortress3
+		icon = GFX_goal_generic_construct_military
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_fortress2
+		}
+		x = 5
+		y = 9
+
+	}
+
+	focus = {
+		id = CZE_fortress_back1
+		icon = GFX_goal_generic_construct_military
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_fortress1
+		}
+		x = 3
+		y = 8
+
+	}
+	focus = {
+		id = CZE_fortress_back2
+		icon = GFX_goal_generic_construct_military
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_fortress_back1
+		}
+		x = 3
+		y = 9
+
+	}
+
+	focus = {
+		id = CZE_fortress_fall
+		icon = GFX_goal_generic_construct_military
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_fortress
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = CZE_fortress_pra
+		icon = GFX_goal_generic_fortify_city
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_fortress_fall
+		}
+		x = 7
+		y = 8
+
+	}
+	focus = {
+		id = CZE_fortress_brn
+		icon = GFX_goal_generic_fortify_city
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_fortress_fall
+		}
+		x = 9
+		y = 8
+
+	}
+
+	focus = {
+		id = CZE_slo1
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 8.00
+		available = {
+			always = no
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = CZE_slo2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_slo1
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = CZE_fortress_slo
+		icon = GFX_goal_generic_construct_military
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_slo2
+		}
+		prerequisite = {
+			focus = CZE_fortress_fall
+		}
+		x = 11
+		y = 8
+
+	}
+
+
+    #政治
+	focus = {
+		id = CZE_sko
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 8.00
+		mutually_exclusive = {
+			focus = CZE_rev
+		}
+		x = 14
+		y = 0
+
+	}
+	focus = {
+		id = CZE_ban_dem
+		icon = GFX_focus_generic_conspiracy
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_sko
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = CZE_sko1
+		icon = GFX_goal_generic_propaganda
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_ban_dem
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = CZE_sko2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_sko1
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = CZE_sko4
+		icon = GFX_focus_research
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_sko1
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = CZE_sko5
+		icon = GFX_goal_generic_defence
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_sko1
+		}
+		x = 15
+		y = 3
+
+	}
+
+	#民主
+	focus = {
+		id = CZE_rev
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 8.00
+		mutually_exclusive = {
+			focus = CZE_sko
+		}
+		x = 18
+		y = 0
+
+	}
+	focus = {
+		id = CZE_dem1
+		icon = GFX_goal_support_democracy
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_rev
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = CZE_dem2
+		icon = GFX_focus_DEN_heavy_regulations
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dem1
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = CZE_dem3
+		icon = GFX_goal_generic_political_pressure
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dem2
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = CZE_dem4
+		icon = GFX_goal_generic_propaganda
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dem3
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = CZE_dem5
+		icon = GFX_focus_research
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dem4
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = CZE_dem6
+		icon = GFX_goal_generic_defence
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dem2
+		}
+		x = 17
+		y = 3
+
+	}
+
+	focus = {
+		id = CZE_ban_com
+		icon = GFX_goal_generic_territory_or_war
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dem6
+			focus = CZE_sko5
+		}
+		x = 16
+		y = 4
+
+	}
+
+
+#外交
+	focus = {
+		id = CZE_fall_com
+		icon = GFX_goal_anti_comintern_pact
+		cost = 0.00
+		available = {
+			always = no
+		}
+		x = 26
+		y = 0
+
+	}
+	focus = {
+		id = CZE_dip1
+		icon = GFX_goal_generic_major_alliance
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_fall_com
+		}
+		mutually_exclusive = {
+			focus = CZE_dip_big1
+		}
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = CZE_dip2
+		icon = GFX_goal_continuous_increase_nu
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip1
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = CZE_dip3
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip2
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = CZE_dip_big1
+		icon = GFX_goal_generic_military_deal
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_fall_com
+		}
+		mutually_exclusive = {
+			focus = CZE_dip1
+		}
+		x = 28
+		y = 1
+
+	}
+	focus = {
+		id = CZE_dip_big2
+		icon = GFX_goal_generic_alliance
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_big1
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = CZE_dip_slo1
+		icon = GFX_goal_generic_major_war
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_big2
+		}
+		prerequisite = {
+			focus = CZE_dip2
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = CZE_dip_big3
+		icon = GFX_goal_demand_sudetenland
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_big2
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = CZE_dip_slb1
+		icon = GFX_goal_generic_major_war
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_big3
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = CZE_dip_slb2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_slb1
+		}
+		x = 29
+		y = 5
+
+	}
+	focus = {
+		id = CZE_dip_sle1
+		icon = GFX_goal_generic_major_war
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_big3
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = CZE_dip_sle2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_sle1
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = CZE_dip_rus
+		icon = GFX_goal_generic_major_war
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_slb2
+		}
+		prerequisite = {
+			focus = CZE_dip_sle2
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = CZE_dip_pol
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_rus
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = CZE_dip_westslb
+		icon = GFX_goal_support_democracy
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_pol
+		}
+		x = 30
+		y = 8
+
+	}
+
+
+#軍事
+
+	focus = {
+		id = CZE_air
+		icon = GFX_focus_CZE_military_aeronautical_institute
+		cost = 8.00
+		x = 49
+		y = 0
+
+	}
+	focus = {
+		id = CZE_navy
+		icon = GFX_goal_generic_build_navy
+		cost = 8.00
+		x = 56
+		y = 0
+
+	}
+
+
+#陸軍
+    focus = {
+		id = CZE_mil
+		icon = GFX_goal_rhineland
+		cost = 8.00
+		x = 38
+		y = 0
+
+    }
+	focus = {
+		id = CZE_mil_inf1
+		icon = GFX_focus_chi_army_reform
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_mil
+		}
+		mutually_exclusive = {
+			focus = CZE_mil_tank1
+		}
+		x = 36
+		y = 1
+
+	}
+	focus = {
+		id = CZE_mil_inf2
+		icon = GFX_goal_rhineland
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_mil_inf1
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = CZE_mil_inf3
+		icon = GFX_goal_generic_army_artillery2
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_mil_inf2
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = CZE_mil_inf4
+		icon = GFX_goal_generic_small_arms
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_mil_inf1
+		}
+		x = 34
+		y = 2
+
+	}
+	focus = {
+		id = CZE_mil_inf5
+		icon = GFX_focus_POL_sanation_right
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_mil_inf4
+		}
+		x = 34
+		y = 3
+
+	}
+
+	focus = {
+		id = CZE_mil1
+		icon = GFX_goal_generic_army_doctrines
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_mil
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = CZE_mil2
+		icon = GFX_goal_generic_army_doctrines
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_mil1
+		}
+		x = 38
+		y = 3
+
+	}
+
+
+	focus = {
+		id = CZE_mil_tank1
+		icon = GFX_focus_CZE_military_research_institute
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_mil
+		}
+		mutually_exclusive = {
+			focus = CZE_mil_inf1
+		}
+		x = 40
+		y = 1
+
+	}
+	focus = {
+		id = CZE_mil_tank2
+		icon = GFX_goal_generic_army_tanks
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_mil_tank1
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = CZE_mil_tank3
+		icon =  GFX_goal_generic_production2
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_mil_tank2
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = CZE_mil4
+		icon = GFX_goal_generic_build_tank
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_mil_inf3
+			focus = CZE_mil_tank3
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = CZE_mil_tank4
+		icon = GFX_goal_generic_construction
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_mil_tank1
+		}
+		x = 42
+		y = 2
+
+	}
+	focus = {
+		id = CZE_mil_tank5
+		icon = GFX_goal_generic_construction
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_mil_tank4
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = CZE_air_anti1
+		icon = GFX_goal_generic_army_artillery2
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_air
+		}
+		x = 45
+		y = 1
+
+	}
+	focus = {
+		id = CZE_air_anti2
+		icon = GFX_goal_generic_army_artillery2
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_air_anti1
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = CZE_air_sml1
+		icon = GFX_goal_generic_air_fighter
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_air
+		}
+		x = 47
+		y = 1
+
+	}
+	focus = {
+		id = CZE_air_sml2
+		icon = GFX_goal_generic_air_fighter
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_air_sml1
+		}
+		x = 47
+		y = 2
+
+	}
+	focus = {
+		id = CZE_air_sml3
+		icon = GFX_goal_generic_air_fighter
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_air_sml2
+		}
+		x = 47
+		y = 3
+
+	}
+	focus = {
+		id = CZE_air1
+		icon = GFX_goal_generic_build_airforce
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_air
+		}
+		x = 49
+		y = 2
+
+	}
+	focus = {
+		id = CZE_air2
+		icon = GFX_goal_generic_build_airforce
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_air1
+		}
+		x = 49
+		y = 3
+
+	}
+	focus = {
+		id = CZE_air_big1
+		icon = GFX_goal_generic_air_bomber
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_air
+		}
+		x = 51
+		y = 1
+
+	}
+	focus = {
+		id = CZE_air_big2
+		icon = GFX_goal_generic_air_bomber
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_air_big1
+		}
+		x = 51
+		y = 2
+
+	}
+	focus = {
+		id = CZE_air_big3
+		icon = GFX_goal_generic_air_bomber
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_air_big2
+		}
+		x = 51
+		y = 3
+
+	}
+	focus = {
+		id = CZE_air3
+		icon = GFX_goal_generic_air_fighter2
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_air_big3
+			focus = CZE_air_sml3
+		}
+		prerequisite = {
+			focus = CZE_air2
+		}
+		x = 49
+		y = 4
+
+	}
+	focus = {
+		id = CZE_navy1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_navy
+		}
+		x = 56
+		y = 1
+
+	}
+	focus = {
+		id = CZE_navy2
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_navy1
+		}
+		x = 54
+		y = 2
+
+	}
+	focus = {
+		id = CZE_navy3
+		icon = GFX_focus_generic_refit_civilian_ships
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_navy1
+		}
+		x = 56
+		y = 2
+
+	}
+	focus = {
+		id = CZE_navy4
+		icon = GFX_goal_generic_navy_battleship
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_navy1
+		}
+		x = 58
+		y = 2
+
+	}
+	focus = {
+		id = CZE_navy5
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_navy2
+		}
+		prerequisite = {
+			focus = CZE_navy3
+		}
+		prerequisite = {
+			focus = CZE_navy4
+		}
+		x = 56
+		y = 3
+
+	}
+	focus = {
+		id = CZE_navy6
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_navy5
+		}
+		x = 56
+		y = 4
+
+	}
+
+
+
+	focus = {
+		id = CZE_sko3
+		icon = GFX_goal_generic_construction
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_sko2
+		}
+		x = 11
+		y = 4
+
+	}
+
+	focus = {
+		id = CZE_dip_slo2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_slo1
+		}
+		x = 26
+		y = 4
+
+	}
+
+#チェコの勝利
+	focus = {
+		id = CZE_Pskd
+		icon = GFX_focus_CZE_military_research_institute
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_air3
+			focus = CZE_navy6
+		}
+		prerequisite = {
+			focus = CZE_mil4
+		}
+		x = 41
+		y = 6
+
+	}
+	focus = {
+		id = CZE_Pskd_ind1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_Pskd
+		}
+		x = 44
+		y = 7
+
+	}
+	focus = {
+		id = CZE_Pskd_arm1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_Pskd
+		}
+		x = 38
+		y = 7
+
+	}
+	focus = {
+		id = CZE_Pskd_arm2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_Pskd_arm1
+		}
+		x = 38
+		y = 8
+
+	}
+	focus = {
+		id = CZE_Pskd_arm3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_Pskd_arm2
+		}
+		x = 38
+		y = 9
+
+	}
+	focus = {
+		id = CZE_Pskd_ind2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_Pskd_ind1
+		}
+		x = 44
+		y = 8
+
+	}
+	focus = {
+		id = CZE_Pskd_ind3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_Pskd_ind2
+		}
+		x = 44
+		y = 9
+
+	}
+	focus = {
+		id = CZE_Pskd_rec1
+		icon = GFX_focus_research
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_Pskd
+		}
+		x = 41
+		y = 8
+
+	}
+	focus = {
+		id = CZE_Pskd_rec2
+		icon =GFX_focus_research
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_Pskd_rec1
+		}
+		x = 41
+		y = 9
+
+	}
+	focus = {
+		id = CZE_Pskd_zz
+		icon = GFX_focus_generic_reorient_production
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_Pskd_rec2
+		}
+		prerequisite = {
+			focus = CZE_Pskd_ind3
+		}
+		prerequisite = {
+			focus = CZE_Pskd_arm3
+		}
+		x = 41
+		y = 11
+
+	}
+
+}
