@@ -8,6 +8,8 @@
   TR_Russia.tt.7: "強力な§Y産業改革§!を行うことができるようになる！"
   TR_Russia.tt.8: "強力な§Y軍事改革§!を行うことができるようになる！"
   TR_Russia.tt.9: "§Yシベリア測量§!で得た大量の資源を利用して近代化を行う。"
+  TR_Russia.tt.10: "§Yテヘラン§!を陥落させることで、請求権のある地域を§3中核州§!として獲得できる！"
+  TR_Russia.tt.11: "§Rこの国家方針を選択することで、イラン北部に請求権を得るが、イギリスの反発による軍隊の一時的な弱体化を発生させる！§!"
 
   TR_nosupport: "§Rこの選択肢は現バージョンでは実装されていない！§!"
   RULE_ALLOW_RELEASE_NATIONS_RUSSIA_POLAND_TOOLTIP: "§Y[ROOT.GetNameDefCap]§!は§Y[POL.GetNameDef]§!の解放ができません。"

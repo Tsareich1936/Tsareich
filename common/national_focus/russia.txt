@@ -238,7 +238,7 @@ focus_tree = {
         
     }
 
-        #義務教育制度の見直し
+        #製油所
         focus = {
             id = RUS_industrial_rubber
             icon = GFX_focus_generic_rubber
@@ -313,6 +313,45 @@ focus_tree = {
                     }
                 }        
             }
+        }
+
+        #カスピ海の守り
+        focus = {
+            id = RUS_invade_PER
+            icon = GFX_focus_generic_attack_iran
+            x = 17
+            y = 6
+            cost = 10
+    
+            search_filters = FOCUS_FILTER_ANNEXATION
+            prerequisite = { focus = RUS_compulsory_education }
+            prerequisite = { focus = RUS_census }
+            prerequisite = { focus = RUS_industrial_rubber }
+
+            available = {
+                controls_state = 266
+            }
+            select_effect = {
+                add_state_claim = 419
+                add_state_claim = 420
+                add_state_claim = 266
+                add_state_claim = 418
+                add_state_claim = 416
+            }
+            completion_reward = {
+                custom_effect_tooltip = TR_Russia.tt.11
+                custom_effect_tooltip = TR_Russia.tt.10
+                add_timed_idea = {
+                    idea = RUS_war_against_PER
+                    days = 360
+                }
+                declare_war_on = {
+                    target = PER
+                    type = annex_everything
+                    generator = { 266 }
+                }
+            }
+            
         }
 
 

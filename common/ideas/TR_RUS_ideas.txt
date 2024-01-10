@@ -278,7 +278,33 @@ ideas = {
 
         }
 
+        RUS_war_against_PER = {
+            picture = SPR_class_war
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                
+            }
+            targeted_modifier = {
+                tag = PER
+                attack_bonus_against = -0.25
+                defense_bonus_against = -0.15
+            }
+
+        }
+
     }
 
     
 }
+
