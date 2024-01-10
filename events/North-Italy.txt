@@ -627,14 +627,14 @@ country_event = {
 
 	option = {# Albania
 		name = TR_north_italy.socialism.13.a
-		SRI = {
+		SER = {
 			country_event = TR_north_italy.socialism.14
 		}
 	}
 
 	option = {# Albania Montenegro
 		name = TR_north_italy.socialism.13.b
-		SRI = {
+		SER = {
 			country_event = TR_north_italy.socialism.18
 		}
 	}
@@ -659,7 +659,7 @@ country_event = {
 	}
 	option = {#russian help
 		name = TR_north_italy.socialism.14.a
-		SRI = {
+		RUS = {
 			country_event = TR_north_italy.socialism.16
 		}
 	}
@@ -744,7 +744,7 @@ country_event = {
 	}
 	option = {#russian help
 		name = TR_north_italy.socialism.18.a
-		SRI = {
+		RUS = {
 			country_event = TR_north_italy.socialism.20
 		}
 	}
