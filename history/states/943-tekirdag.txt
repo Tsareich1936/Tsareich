@@ -1,7 +1,7 @@
 
 state= {
-	id=341
-	name="STATE_341"
+	id=943
+	name="STATE_943"
 	manpower = 181973
 	resources={
 
@@ -10,20 +10,24 @@ state= {
 	state_category = town
 
 	history= {
-		owner = GRE
+		owner = RUS
 		victory_points = {
-			11842 5
+			6895 5
 		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+			849 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
 		}
 		add_core_of = TUR
 
 	}
 	provinces=
 	{
-922 3893 11842 	}
+849 3879 6895 	}
 
 	local_supplies=0.0 
 }
