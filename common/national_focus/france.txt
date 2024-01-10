@@ -9,14 +9,14 @@
 focus_tree = {
 	id = french_focus
 	
-	country = {
-		factor = 0
+	# country = {
+	# 	factor = 0
 		
-		modifier = {
-			add = 22
-			tag = FRA
-		}
-	}
+	# 	modifier = {
+	# 		add = 22
+	# 		tag = FRA
+	# 	}
+	# }
 
 	focus = {
 		id = FRA_international
