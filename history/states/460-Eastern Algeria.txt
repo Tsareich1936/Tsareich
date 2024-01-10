@@ -9,6 +9,7 @@ state={
 	history={
 		owner = FGE
 		add_core_of = ALG
+		add_core_of = FGE
 		victory_points = {
 			7081 1 
 		}

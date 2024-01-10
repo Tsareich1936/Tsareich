@@ -27,6 +27,7 @@ set_technology = {
 	basic_train = 1
 	support_weapons = 1
 	tech_support = 1
+	synth_oil_experiments = 1
 }
 
 if = {
@@ -164,6 +165,17 @@ add_to_faction = FIN
 add_to_faction = ARM
 add_to_faction = SYR
 
+add_to_tech_sharing_group = slav_entente_research
+FIN = {
+	add_to_tech_sharing_group = slav_entente_research
+}
+ARM = {
+	add_to_tech_sharing_group = slav_entente_research
+}
+SYR = {
+	add_to_tech_sharing_group = slav_entente_research
+}
+
 #resistance
 85 = {
 	start_resistance = yes
@@ -249,3 +261,5 @@ add_to_faction = SYR
 	set_resistance = 65
 	set_garrison_strength = 1.0
 }
+
+#人

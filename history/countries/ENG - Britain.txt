@@ -472,6 +472,8 @@ add_to_faction = SUD
 add_to_faction = FEA
 add_to_faction = FWA
 add_to_faction = FGE
+add_to_faction = BEL
+add_to_faction = MOR
 
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
