@@ -19,3 +19,27 @@
  RUS_industrial_rubber_desc:"国内の大都市にある使われなくなった土地で、半国営の大規模なゴム合成生産工場を建設する。我々に足りていない資源であるゴムを優先的に獲得することで、共産主義者やその他の脅威からの資源的な脆弱性を減らす。"
  RUS_invade_PER:"カスピ海の護り"
  RUS_invade_PER_desc:"カスピ海の南側はイランが領有しており、我々のカスピ海における活動を阻害する要因になっている。大戦争の後にあの地から手を引いたのは間違えだったのだろう。我々はこの地を素早く奪還しなければならない。"
+
+
+ RUS_NCA:"国立建設局の設立"
+ RUS_NCA_desc:"各都市に国家が建設を主導する管理局を設けることで、その土地における産業の動態を把握し、それに応じた国立機関によってその土地の産業を最適化することができる。"
+ RUS_civillian_government:"産業系閣僚の誘致"
+ RUS_civillian_government_desc:"ロシアの政府は、文民を中心に編成されている。産業系閣僚を多く誘致し、その政府の特色を生かすことで、我々の工業化がより効率的に進むだろう。"
+ RUS_civillian_government_1:"産業研究所の強化"
+ RUS_civillian_government_1_desc:"ロシアの遅れた産業は、今後の発展における障害となるだろう。早い時点でそれを取り除くべきだ。"
+ RUS_civillian_government_2:"工場法の整備"
+ RUS_civillian_government_2_desc:"工業に関する様々な事象を法によって規格化し、点検業務などを通して事故率を減らすことで、工場における安全性が向上し、長期的な業務効率化を成し遂げるだろう。"
+ RUS_civillian_government_3:"流通管理局"
+ RUS_civillian_government_3_desc:"国内の流通を管理するための国家機関を設立し、流通の専門家を配置することで国内の民生品の運輸効率を上昇させ、無駄な生産量を減らす。"
+
+
+ RUS_munitions_manufacturing:"軍需企業の買収"
+ RUS_munitions_manufacturing_desc:"経営が困難になりつつある軍需企業を国家が買収することで、より効率的な軍需品生産を可能とすることができる。"
+ RUS_military_government:"将校たちを招く"
+ RUS_military_government_desc:"軍将校たちは、ロシアの軍の未来について語り合っている。我々に必要な装備とは何か、政府が軍人によって動かされる今、ロシア軍はさらに強くなることができるだろう。"
+ RUS_military_government_1:"実践的戦略開発"
+ RUS_military_government_1_desc:"ロシアの広大な土地に、大規模な演習場を建設することで、陸海空いずれの軍も実際の戦闘を想定した新たな戦略の開発を行えるようになるだろう。"
+ RUS_military_government_2:"教育規定の整備"
+ RUS_military_government_2_desc:"新兵に対して行う訓練を全国で統一することで、土地による兵の質を均一化し、訓練の無駄を省くことができる。"
+ RUS_military_government_3:"大規模宣伝"
+ RUS_military_government_3_desc:"志願兵を募る大規模な宣伝活動を行い、全国から志ある若者たちを多く集めることで、大規模かつ士気の高い軍を編成する。"

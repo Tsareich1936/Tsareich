@@ -27,7 +27,7 @@ set_technology = {
 	basic_train = 1
 	support_weapons = 1
 	tech_support = 1
-	rubber_processing = 1
+	synth_oil_experiments = 1
 }
 
 if = {
