@@ -1255,9 +1255,15 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
+		ai_will_do = {
+			base = 100
+		}
 		relative_position_id = SRI_reunification
 		completion_reward = {
-	
+			add_timed_idea = {
+				idea = SRI_revival
+				days = 365
+			}
 		}
 	}
 	focus = {
@@ -1274,7 +1280,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_revival
 		completion_reward = {
-	
+			add_ideas = {
+				SRI_agrarian_reform_south
+			}
 		}
 	}
 	focus = {
@@ -1291,7 +1299,48 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_revival
 		completion_reward = {
-	
+			158 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			159 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			160 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			161 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			162 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			736 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
 		}
 	}
 	focus = {
@@ -1305,7 +1354,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_vast_road_network
 		completion_reward = {
-	
+			add_ideas = {
+				SRI_continenta_army
+			}
 		}
 	}
 	focus = {
@@ -1319,7 +1370,52 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_continenta_army
 		completion_reward = {
-	
+			158 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			159 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			160 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+			161 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			162 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			736 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+				}
+			}
 		}
 	}
 	#focus template
@@ -1335,7 +1431,39 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_agrarian_reform_south
 		completion_reward = {
-	
+			2 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			117 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			157 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 		}
 	}
 	focus = {
@@ -1349,7 +1477,21 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_industrialisation_south
 		completion_reward = {
-	
+			add_resource = {
+				type = steel
+				amount = 8
+				state = 117
+			}
+			add_resource = {
+				type = steel
+				amount = 14
+				state = 158
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+				state = 160
+			}
 		}
 	}
 	focus = {
@@ -1363,7 +1505,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_large-scale_steel_mill
 		completion_reward = {
-	
+			add_research_slot = 1
 		}
 	}
 	#left route
@@ -1379,7 +1521,10 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_agrarian_reform_south
 		completion_reward = {
-	
+			add_timed_idea = {
+				idea = SRI_five_year_plan
+				days = 360
+			}
 		}
 	}
 	focus = {
@@ -1393,7 +1538,48 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_five_year_plan
 		completion_reward = {
-	
+			2 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			114 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			115 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			117 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			156 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			157 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
 		}
 	}
 	#focus template
