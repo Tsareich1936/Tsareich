@@ -87,6 +87,9 @@ country_event = {
 		849 = { is_controlled_by = SRI } 
 
 	}
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = TR_north_italy.3.a
 		trigger = {
@@ -148,12 +151,298 @@ country_event = {
 
 # International proxi #1
 
+country_event = {
+	id = TR_north_italy.socialism.1
+	title = TR_north_italy.socialism.1.t
+	desc = TR_north_italy.socialism.1.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# That's great!
+		name = TR_north_italy.socialism.1.a
+	}
+}
+
 # arrest Mussolini #2
+
+country_event = {
+	id = TR_north_italy.socialism.2
+	title = TR_north_italy.socialism.2.t
+	desc = TR_north_italy.socialism.1.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = { # いいか？一生そこから出すな
+		name = TR_north_italy.socialism.2.a
+		trigger = {
+			tag = SRI
+		}
+		SRI_benito_mussolini = {
+			retire_country_leader = yes
+		}
+	}
+}
 
 # cooperate spain #3
 
-# Switzerland war #4
+country_event = {
+	id = TR_north_italy.socialism.3
+	title = TR_north_italy.socialism.3.t
+	desc = TR_north_italy.socialism.3.d
 
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# 直接的軍事介入が必要だ
+		name = TR_north_italy.socialism.3.a
+		ai_chance = {
+			base = 25
+		}
+		FRA = {
+			country_event = TR_north_italy.socialism.4
+		}
+		add_political_power = 50
+	}
+	option = {# 共和派への武器援助が妥当だ
+		name = TR_north_italy.socialism.3.a
+		ai_chance = {
+			base = 75
+		}
+		THIS = {
+			add_equipment_production = {
+				equipment = {
+					type = infantry_equipment
+				}
+				amount = -2000
+			}
+		}
+		every_country = {
+			limit = {
+				original_tag = SPR
+				OR = { has_government = communism has_government = socialism has_government = socialdemocratic has_government = democratic }
+			}
+			add_equipment_production = {
+				equipment = {
+					type = infantry_equipment
+				}
+				amount = 2000
+			}
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = SRI
+				NOT = {
+					tag = SRI
+				}
+			}
+			country_event = TR_north_italy.socialism.7
+		}
+	}
+}
+
+# cooperate spain - option-A selection #4
+country_event = {
+	id = TR_north_italy.socialism.4
+	title = TR_north_italy.socialism.4.t
+	desc = TR_north_italy.socialism.4.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {#accept
+		name = TR_north_italy.socialism.4.a
+		trigger = {
+			tag = FRA
+		}
+		every_country = {
+			limit = {
+				original_tag = SPR
+				OR = { has_government = communism has_government = socialism has_government = socialdemocratic has_government = democratic }
+			}
+			FRA = {
+				add_to_faction = PREV
+			}
+		}
+		every_country = {
+			limit = {
+				original_tag = SPR
+				has_civil_war = yes
+				NOT = {
+					is_in_faction_with = FRA
+				}
+			}
+			FRA = {
+				declare_war_on = {
+					target = PREV
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+		SRI = {
+			country_event = {
+				id = TR_north_italy.socialism.5
+			}
+		}
+	}
+	option = {#reject
+		name = TR_north_italy.socialism.4.b
+		trigger = {
+			tag = FRA
+		}
+		SRI = {
+			country_event = {
+				id = TR_north_italy.socialism.6
+			}
+		}
+	}
+}
+# cooperate spain - option-A accepted #5
+country_event = {
+	id = TR_north_italy.socialism.5
+	title = TR_north_italy.socialism.5.t
+	desc = TR_north_italy.socialism.5.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# OK
+		name = TR_north_italy.socialism.5.a
+		trigger = {
+			tag = SRI
+		}
+	}
+}
+# cooperate spain - option-A rejected #6
+country_event = {
+	id = TR_north_italy.socialism.6
+	title = TR_north_italy.socialism.6.t
+	desc = TR_north_italy.socialism.6.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {#OK
+		name = TR_north_italy.socialism.6.a
+		trigger = {
+			tag = SRI
+		}
+	}
+}
+# cooperate spain - option-B selection #7
+country_event = {
+	id = TR_north_italy.socialism.7
+	title = TR_north_italy.socialism.7.t
+	desc = TR_north_italy.socialism.7.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {#accept
+		trigger = {
+			NOT = {
+				tag = SRI
+			}
+		}
+		name = TR_north_italy.socialism.7.a
+	}
+	option = {#reject
+		trigger = {
+			NOT = {
+				tag = SRI
+			}
+		}
+		name = TR_north_italy.socialism.7.b
+		THIS = {
+			add_equipment_production = {
+				equipment = {
+					type = infantry_equipment
+				}
+				amount = -2000
+			}
+		}
+		every_country = {
+			limit = {
+				original_tag = SPR
+				OR = { has_government = communism has_government = socialism has_government = socialdemocratic has_government = democratic }
+			}
+			add_equipment_production = {
+				equipment = {
+					type = infantry_equipment
+				}
+				amount = 2000
+			}
+		}
+	}
+}
+
+# Switzerland war #8
+country_event = {
+	id = TR_north_italy.socialism.8
+	title = TR_north_italy.socialism.8.t
+	desc = TR_north_italy.socialism.8.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# All Annexion!
+		name = TR_north_italy.socialism.8.a
+		create_wargoal = {
+			target = SWI
+			type = take_claimed_state
+		}
+		add_state_claim = 846
+		GER = {
+			add_state_claim = 3
+			add_state_claim = 151
+			add_state_claim = 847
+		}
+		FRA = {
+			add_state_claim = 845
+		}
+	}
+	option = {# Make Socialism!
+		name = TR_north_italy.socialism.8.b
+		SWI = {
+			start_civil_war = {
+				ideology = democratic
+				ruling_party = socialdemocratic
+				FRA = {
+					add_to_faction = SWI
+					declare_war_on = {
+						target = PREV
+						type = puppet_wargoal_focus
+					}
+				}
+			}
+		}
+	}
+}
 # Soc Zara issue 
 
 # make Serbia Socialism

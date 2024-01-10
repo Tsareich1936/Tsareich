@@ -43,6 +43,7 @@ country_event = {
 	}
     option = {
         name = TR_Russia.2.a
+        ai_will_do = { factor = 50 }
         custom_effect_tooltip = TR_Russia.tt.1
         hidden_effect = {
 			RUS = { country_event = { hours = 240 id = TR_Russia.3 } } 
@@ -69,6 +70,7 @@ country_event = {
 
     option = {
         name = TR_Russia.3.a
+        ai_will_do = { factor = 50 }
         custom_effect_tooltip = TR_Russia.tt.2
         hidden_effect = {
 			complete_national_focus = RUS_newtsar
@@ -194,7 +196,6 @@ news_event = {
 				    tag = FIN
                     tag = ARM
                     tag = SYR
-                    tag = SIK
 			    }
                 NOT = {
                     tag = RUS
@@ -211,7 +212,6 @@ news_event = {
                     tag = FIN
                     tag = ARM
                     tag = SYR
-                    tag = SIK
 			    }
                 NOT = {
                     tag = RUS
@@ -227,7 +227,6 @@ news_event = {
                 tag = FIN
                 tag = ARM
                 tag = SYR
-                tag = SIK
             }
 		}
 	}
