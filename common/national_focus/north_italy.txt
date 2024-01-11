@@ -1808,7 +1808,12 @@ focus_tree = {
 			y = 1
 			relative_position_id = SRI_mediterranean_sea
 			completion_reward = {
-		
+				TUR = {
+					add_timed_idea = {
+						idea = TR_socialist_influence
+						days = 720
+					}
+				}
 			}
 		}
 		focus = {
@@ -1823,7 +1828,12 @@ focus_tree = {
 			y = 1
 			relative_position_id = SRI_mediterranean_sea
 			completion_reward = {
-		
+				EGY = {
+					add_timed_idea = {
+						idea = TR_socialist_influence
+						days = 720
+					}
+				}
 			}
 		}
 		focus = {
