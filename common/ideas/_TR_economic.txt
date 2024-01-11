@@ -1,0 +1,29 @@
+ideas = {
+
+	economy = { 
+		law = yes
+		use_list_view = no
+		original_tag = CZE
+				
+		company_economy = {
+			
+			picture = idea_generic_flexible_foreign_policy2
+						
+			available = {
+				has_completed_focus = CZE_sko3
+			}				
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				production_speed_buildings_factor = 0.2
+				conversion_cost_civ_to_mil_factor= 0.25
+				conversion_cost_mil_to_civ_factor = 0.25
+			}
+			ai_will_do = {
+   				factor = 10
+		}
+		
+	}
+}	

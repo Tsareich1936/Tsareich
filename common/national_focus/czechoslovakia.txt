@@ -9,6 +9,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	reset_on_civilwar = no
 	continuous_focus_position = { x = 200 y = 1600 }
 
 	
@@ -19,21 +20,65 @@ focus_tree = {
 		cost = 8.00
 		x = 5
 		y = 0
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 2
+				category = industry
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}   
+		}
 	}
 	focus = {
 		id = CZE_ind_rus1
 		icon = GFX_goal_generic_consumer_goods
 		cost = 8.00
 		prerequisite = {
-			focus = CZE_ind_leg
+		    focus = CZE_ind_leg
 		}
 		mutually_exclusive = {
 			focus = CZE_ind_cze1
 		}
 		x = 1
 		y = 1
-
+		completion_reward = {
+		        add_political_power = 50
+				add_timed_idea = {
+					idea = CZE_rus_investment
+				    days = 480
+				} 
+				add_resource = {
+					type = steel
+					amount = 8
+					state = 9
+				}
+				add_resource = {
+					type = steel
+					amount = 8
+					state = 75
+				}  
+				add_resource = {
+					type = oil
+					amount = 6
+					state = 75
+				} 
+		}
 	}
 	focus = {
 		id = CZE_ind_rus2
@@ -44,7 +89,13 @@ focus_tree = {
 		}
 		x = 1
 		y = 2
-
+		completion_reward = {
+			add_political_power = 50
+			add_offsite_building = { 
+				type = industrial_complex
+				level = 3 
+			    } 
+		}
 	}
 	focus = {
 		id = CZE_ind_cze1
@@ -58,7 +109,18 @@ focus_tree = {
 		}
 		x = 3
 		y = 1
-
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 12
+				state = 9
+			}
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 75
+			}       
+		}
 	}
 	focus = {
 		id = CZE_ind_cze2
@@ -69,7 +131,23 @@ focus_tree = {
 		}
 		x = 3
 		y = 2
-
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 8
+				state = 75
+			}     
+			add_resource = {
+				type = aluminium
+				amount = 14
+				state = 942
+			}    
+			add_resource = {
+				type = tungsten
+				amount = 6
+				state = 942
+			}        
+		}
 	}
 	focus = {
 		id = CZE_ind1
@@ -80,7 +158,40 @@ focus_tree = {
 		}
 		x = 5
 		y = 1
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}  
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}   
+		}        
 	}
 	focus = {
 		id = CZE_ind2
@@ -91,7 +202,40 @@ focus_tree = {
 		}
 		x = 5
 		y = 2
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}  
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}           
+		}
 	}
 	focus = {
 		id = CZE_ind3
@@ -102,7 +246,40 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}  
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}           
+		}
 	}
 	focus = {
 		id = CZE_weapon_ex1
@@ -113,7 +290,9 @@ focus_tree = {
 		}
 		x = 7
 		y = 1
-
+		completion_reward = {
+			add_ideas = CZE_ex
+		}
 	}
 	focus = {
 		id = CZE_weapon_ex2
@@ -124,7 +303,12 @@ focus_tree = {
 		}
 		x = 7
 		y = 2
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CZE_ex
+				add_idea = CZE_ex1
+			}                 
+		}
 	}
 	focus = {
 		id = CZE_weapon_ex3
@@ -135,7 +319,15 @@ focus_tree = {
 		}
 		x = 7
 		y = 3
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CZE_ex1
+				add_idea = CZE_ex2
+			}      
+			country_event = { 
+				id = CZE_ex_rus
+			}   
+		}
 	}
 	focus = {
 		id = CZE_tech
@@ -151,7 +343,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 4
-
+		completion_reward = {
+			add_research_slot = 1          
+		}
 	}
 
 
@@ -162,7 +356,9 @@ focus_tree = {
 	    cost = 8.00
 	    x = 5
 	    y = 6
-
+		completion_reward = {
+  			add_ideas = TR_CZE_fortress      
+		}
     }
 	focus = {
 		id = CZE_fortress1
@@ -173,7 +369,59 @@ focus_tree = {
 		}
 		x = 5
 		y = 7
-
+		completion_reward = {   
+			75= {
+			add_building_construction = {
+				    type = bunker
+				    level = 2
+				    instant_build = yes
+				    province = {
+				    id = 3569
+				    id = 6562
+			        }
+		    	}
+		    }
+			940= {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+					id = 569
+					id = 3553
+					id = 11556
+			      	}				
+				}
+			}
+			941= {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+					id = 9569
+					id = 9541
+					id = 6592
+					id = 6418
+					id = 6440
+				    }
+				}
+			}
+			942= {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+					id = 9414
+					id = 3462
+					id = 494
+					id = 445
+					id = 583
+			    	}
+				}
+			}
+	    }
 	}
 	focus = {
 		id = CZE_fortress2
@@ -184,7 +432,59 @@ focus_tree = {
 		}
 		x = 5
 		y = 8
-
+		completion_reward = {   
+			75= {
+				add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+						id = 3569
+						id = 6562
+						}
+					}
+				}
+				940= {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+						id = 569
+						id = 3553
+						id = 11556
+						  }				
+					}
+				}
+				941= {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+						id = 9569
+						id = 9541
+						id = 6592
+						id = 6418
+						id = 6440
+						}
+					}
+				}
+				942= {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+						id = 9414
+						id = 3462
+						id = 494
+						id = 445
+						id = 583
+						}
+					}
+				}			
+	  }
 	}
 	focus = {
 		id = CZE_fortress3
@@ -195,7 +495,59 @@ focus_tree = {
 		}
 		x = 5
 		y = 9
-
+		completion_reward = {   
+			75= {
+				add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+						id = 3569
+						id = 6562
+						}
+					}
+				}
+				940= {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+						id = 569
+						id = 3553
+						id = 11556
+						  }				
+					}
+				}
+				941= {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+						id = 9569
+						id = 9541
+						id = 6592
+						id = 6418
+						id = 6440
+						}
+					}
+				}
+				942= {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+						id = 9414
+						id = 3462
+						id = 494
+						id = 445
+						id = 583
+						}
+					}
+				}			
+		}
 	}
 
 	focus = {
@@ -207,18 +559,20 @@ focus_tree = {
 		}
 		x = 3
 		y = 8
-
-	}
-	focus = {
-		id = CZE_fortress_back2
-		icon = GFX_goal_generic_construct_military
-		cost = 8.00
-		prerequisite = {
-			focus = CZE_fortress_back1
+		completion_reward = {   
+			75= {
+				add_building_construction = {
+					type = bunker
+					level = 6
+					instant_build = yes
+					province = {
+					id = 11511
+					id = 6576
+					id = 6590
+					}
+				}
+			}				
 		}
-		x = 3
-		y = 9
-
 	}
 
 	focus = {
@@ -230,7 +584,20 @@ focus_tree = {
 		}
 		x = 7
 		y = 7
-
+		completion_reward = {   
+			75= {
+				add_building_construction = {
+					type = bunker
+					level = 6
+					instant_build = yes
+					province = {
+					id = 11511
+					id = 6576
+					id = 6590
+					}
+				}
+			}				
+		}
 	}
 	focus = {
 		id = CZE_fortress_pra
@@ -241,7 +608,18 @@ focus_tree = {
 		}
 		x = 7
 		y = 8
-
+		completion_reward = {   
+			9= {
+				add_building_construction = {
+					type = bunker
+					level = 10
+					instant_build = yes
+					province = {
+					id = 11542
+					}
+				}
+			}			
+		}
 	}
 	focus = {
 		id = CZE_fortress_brn
@@ -252,7 +630,28 @@ focus_tree = {
 		}
 		x = 9
 		y = 8
-
+		completion_reward = {   
+			75= {
+				add_building_construction = {
+					type = bunker
+					level = 6
+					instant_build = yes
+					province = {
+					id = 3569
+					}
+				}
+			}
+			940= {
+				add_building_construction = {
+					type = bunker
+					level = 6
+					instant_build = yes
+					province = {
+					id = 569
+					}
+				}
+			}	
+		}
 	}
 
 	focus = {
@@ -264,7 +663,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 6
-
+		completion_reward = {   
+			
+		}
 	}
 	focus = {
 		id = CZE_slo2
@@ -275,7 +676,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 7
-
+		completion_reward = {   
+			
+		}
 	}
 	focus = {
 		id = CZE_fortress_slo
@@ -287,9 +690,14 @@ focus_tree = {
 		prerequisite = {
 			focus = CZE_fortress_fall
 		}
+		available = {
+			has = 1
+		}
 		x = 11
 		y = 8
-
+		completion_reward = {   
+			
+		}
 	}
 
 
@@ -303,7 +711,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 0
-
+		completion_reward = {
+			add_political_power = 150
+		}
 	}
 	focus = {
 		id = CZE_ban_dem
@@ -314,7 +724,10 @@ focus_tree = {
 		}
 		x = 14
 		y = 1
-
+		completion_reward = {
+		    remove_ideas = TR_CZE_demo_oppo
+			add_stability = -0.1
+		}
 	}
 	focus = {
 		id = CZE_sko1
@@ -325,7 +738,13 @@ focus_tree = {
 		}
 		x = 14
 		y = 2
-
+		completion_reward = {
+			add_stability = 0.15
+			swap_ideas = {
+				remove_idea = TR_CZE_skoda_works
+				add_idea = TR_CZE_skoda_works1
+			}  
+		}
 	}
 	focus = {
 		id = CZE_sko2
@@ -336,7 +755,99 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TR_CZE_skoda_works1
+				add_idea = TR_CZE_skoda_works2
+			} 
+			9 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			75 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			940 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			941 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			942 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+					modifier = {
+						tag = CZE
+						add = 2
+					}
+				}
+				fallback = yes
+				path = { 3569 3553 583 }
+				start_province = 3569
+				target_province = 583
+			}
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+					modifier = {
+						tag = CZE
+						add = 2
+					}
+				}
+				fallback = yes
+				path = { 3569 569 11556 9569 9421 11542 }
+				start_province = 3569
+				target_province = 11542
+			}
+		}
+	}
+	focus = {
+		id = CZE_sko3
+		icon = GFX_goal_generic_construction
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_sko2
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TR_CZE_skoda_works2
+				add_idea = TR_CZE_skoda_works3
+			} 
+			show_ideas_tooltip = company_economy
+		}
 	}
 	focus = {
 		id = CZE_sko4
@@ -347,7 +858,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
-
+		completion_reward = {
+			add_research_slot = 1   
+		}
 	}
 	focus = {
 		id = CZE_sko5
@@ -358,7 +871,13 @@ focus_tree = {
 		}
 		x = 15
 		y = 3
-
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = conservatism
+			    popularity = 0.1
+			}
+		}
 	}
 
 	#民主
@@ -371,7 +890,19 @@ focus_tree = {
 		}
 		x = 18
 		y = 0
-
+		completion_reward = {
+			remove_ideas = TR_CZE_demo_oppo
+			swap_ideas = {
+				remove_idea = TR_CZE_skoda_works
+				add_idea = TR_CZE_skoda_anti
+			} 
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 48 
+			}
+		}
 	}
 	focus = {
 		id = CZE_dem1
@@ -382,7 +913,13 @@ focus_tree = {
 		}
 		x = 18
 		y = 1
-
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = democratic
+			    popularity = 0.15
+			}	
+		}
 	}
 	focus = {
 		id = CZE_dem2
@@ -393,7 +930,30 @@ focus_tree = {
 		}
 		x = 18
 		y = 2
-
+		completion_reward = {
+			add_political_power = 100
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}  
+			add_popularity = {
+				ideology = conservatism
+			    popularity = -0.2
+			}	
+			remove_ideas = TR_CZE_skoda_anti
+		}
 	}
 	focus = {
 		id = CZE_dem3
@@ -404,7 +964,13 @@ focus_tree = {
 		}
 		x = 19
 		y = 3
-
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = democratic
+			    popularity = 0.2
+			}			
+		}
 	}
 	focus = {
 		id = CZE_dem4
@@ -415,7 +981,10 @@ focus_tree = {
 		}
 		x = 19
 		y = 4
-
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.2
+		}
 	}
 	focus = {
 		id = CZE_dem5
@@ -426,7 +995,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 5
-
+		completion_reward = {
+			add_research_slot = 1   
+		}
 	}
 	focus = {
 		id = CZE_dem6
@@ -437,7 +1008,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 3
-
+		completion_reward = {
+			add_ideas = CZE_dem_strong
+		}
 	}
 
 	focus = {
@@ -450,7 +1023,15 @@ focus_tree = {
 		}
 		x = 16
 		y = 4
-
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+			    popularity = -0.2
+			}
+			country_event = { 
+				id = CZE_ban_com
+			}   
+		}
 	}
 
 
@@ -464,7 +1045,9 @@ focus_tree = {
 		}
 		x = 26
 		y = 0
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = CZE_dip1
@@ -478,7 +1061,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 1
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = CZE_dip2
@@ -489,7 +1074,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 2
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = CZE_dip3
@@ -500,7 +1087,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 3
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = CZE_dip_big1
@@ -514,7 +1103,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 1
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = CZE_dip_big2
@@ -525,7 +1116,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 2
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = CZE_dip_slo1
@@ -539,7 +1132,22 @@ focus_tree = {
 		}
 		x = 26
 		y = 3
+		completion_reward = {
 
+		}
+	}
+	focus = {
+		id = CZE_dip_slo2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_slo1
+		}
+		x = 26
+		y = 4
+		completion_reward = {
+
+		}
 	}
 	focus = {
 		id = CZE_dip_big3
@@ -550,7 +1158,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 3
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = CZE_dip_slb1
@@ -561,7 +1171,9 @@ focus_tree = {
 		}
 		x = 29
 		y = 4
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = CZE_dip_slb2
@@ -572,7 +1184,9 @@ focus_tree = {
 		}
 		x = 29
 		y = 5
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = CZE_dip_sle1
@@ -583,7 +1197,9 @@ focus_tree = {
 		}
 		x = 31
 		y = 4
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = CZE_dip_sle2
@@ -594,7 +1210,9 @@ focus_tree = {
 		}
 		x = 31
 		y = 5
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = CZE_dip_rus
@@ -608,7 +1226,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 6
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = CZE_dip_pol
@@ -619,7 +1239,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 7
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = CZE_dip_westslb
@@ -630,28 +1252,16 @@ focus_tree = {
 		}
 		x = 30
 		y = 8
+		completion_reward = {
 
+		}
 	}
 
 
 #軍事
 
-	focus = {
-		id = CZE_air
-		icon = GFX_focus_CZE_military_aeronautical_institute
-		cost = 8.00
-		x = 49
-		y = 0
 
-	}
-	focus = {
-		id = CZE_navy
-		icon = GFX_goal_generic_build_navy
-		cost = 8.00
-		x = 56
-		y = 0
 
-	}
 
 
 #陸軍
@@ -661,7 +1271,15 @@ focus_tree = {
 		cost = 8.00
 		x = 38
 		y = 0
-
+		completion_reward = {
+			army_experience = 30
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+		}
     }
 	focus = {
 		id = CZE_mil_inf1
@@ -675,7 +1293,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 1
-
+		completion_reward = {
+			add_ideas = TR_CZE_inf
+		}
 	}
 	focus = {
 		id = CZE_mil_inf2
@@ -686,7 +1306,14 @@ focus_tree = {
 		}
 		x = 36
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+			}
+		}
 	}
 	focus = {
 		id = CZE_mil_inf3
@@ -697,7 +1324,14 @@ focus_tree = {
 		}
 		x = 36
 		y = 3
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+		}
 	}
 	focus = {
 		id = CZE_mil_inf4
@@ -708,7 +1342,30 @@ focus_tree = {
 		}
 		x = 34
 		y = 2
-
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = volunteer_only
+				}
+				swap_ideas = {
+					remove_idea = volunteer_only
+					add_idea = extensive_conscription
+				} 	
+			} 
+			else_if = {
+				limit = { 
+					has_idea =limited_conscription
+				}
+				add_political_power = 100
+				swap_ideas = {
+					remove_idea = limited_conscription
+					add_idea = extensive_conscription
+				} 	
+			} 
+			else = {
+				add_political_power = 150
+			}
+		}  
 	}
 	focus = {
 		id = CZE_mil_inf5
@@ -719,7 +1376,10 @@ focus_tree = {
 		}
 		x = 34
 		y = 3
-
+		completion_reward = {
+		             add_ideas = military_com_focus 
+					 add_manpower = 75000
+		}
 	}
 
 	focus = {
@@ -731,7 +1391,14 @@ focus_tree = {
 		}
 		x = 38
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+		}
 	}
 	focus = {
 		id = CZE_mil2
@@ -742,7 +1409,14 @@ focus_tree = {
 		}
 		x = 38
 		y = 3
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+		}
 	}
 
 
@@ -758,7 +1432,9 @@ focus_tree = {
 		}
 		x = 40
 		y = 1
-
+		completion_reward = {
+			add_ideas = TR_CZE_tank
+		}
 	}
 	focus = {
 		id = CZE_mil_tank2
@@ -769,7 +1445,14 @@ focus_tree = {
 		}
 		x = 40
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.75
+				uses = 2
+				category = armor
+			}
+		}
 	}
 	focus = {
 		id = CZE_mil_tank3
@@ -780,7 +1463,15 @@ focus_tree = {
 		}
 		x = 40
 		y = 3
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+		}
 	}
 	focus = {
 		id = CZE_mil4
@@ -792,7 +1483,15 @@ focus_tree = {
 		}
 		x = 38
 		y = 4
-
+		completion_reward = {
+			army_experience = 30
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
 	}
 	focus = {
 		id = CZE_mil_tank4
@@ -803,7 +1502,25 @@ focus_tree = {
 		}
 		x = 42
 		y = 2
-
+		completion_reward = {
+			add_ideas = TR_CZE_ind_tank
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}  
+		}
 	}
 	focus = {
 		id = CZE_mil_tank5
@@ -814,7 +1531,47 @@ focus_tree = {
 		}
 		x = 42
 		y = 3
+		completion_reward = {
+			swap_ideas = {
+				remove_idea =  TR_CZE_ind_tank
+				add_idea =  TR_CZE_ind_tank1
+			}  
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}  
+		}
+	}
 
+
+	#空軍
+	focus = {
+		id = CZE_air
+		icon = GFX_focus_CZE_military_aeronautical_institute
+		cost = 8.00
+		x = 49
+		y = 0
+		completion_reward = {
+			air_experience = 30
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = air_doctrine
+			}
+		}
 	}
 	focus = {
 		id = CZE_air_anti1
@@ -825,7 +1582,14 @@ focus_tree = {
 		}
 		x = 45
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 2.0
+				uses = 1
+				category = cat_anti_air
+			}
+		}
 	}
 	focus = {
 		id = CZE_air_anti2
@@ -836,7 +1600,14 @@ focus_tree = {
 		}
 		x = 45
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 2.0
+				uses = 1
+				category = cat_anti_air
+			}
+		}
 	}
 	focus = {
 		id = CZE_air_sml1
@@ -847,7 +1618,14 @@ focus_tree = {
 		}
 		x = 47
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_base
+				bonus = 0.75
+				uses = 1
+				category = light_air
+			}
+		}
 	}
 	focus = {
 		id = CZE_air_sml2
@@ -858,7 +1636,14 @@ focus_tree = {
 		}
 		x = 47
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_base
+				bonus = 0.75
+				uses = 1
+				category = light_air
+			}
+		}
 	}
 	focus = {
 		id = CZE_air_sml3
@@ -869,7 +1654,15 @@ focus_tree = {
 		}
 		x = 47
 		y = 3
-
+		completion_reward = {
+			air_experience = 30
+			add_tech_bonus = {
+				name = air_base
+				bonus = 0.75
+				uses = 1
+				category = cat_anti_tank
+			}
+		}
 	}
 	focus = {
 		id = CZE_air1
@@ -880,7 +1673,14 @@ focus_tree = {
 		}
 		x = 49
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = air_doctrine
+			}
+		}		
 	}
 	focus = {
 		id = CZE_air2
@@ -891,7 +1691,14 @@ focus_tree = {
 		}
 		x = 49
 		y = 3
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = air_doctrine
+			}
+		}
 	}
 	focus = {
 		id = CZE_air_big1
@@ -902,7 +1709,14 @@ focus_tree = {
 		}
 		x = 51
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_base
+				bonus = 0.75
+				uses = 1
+				category = medium_air
+			}
+		}
 	}
 	focus = {
 		id = CZE_air_big2
@@ -913,7 +1727,14 @@ focus_tree = {
 		}
 		x = 51
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_base
+				bonus = 0.75
+				uses = 1
+				category = medium_air
+			}
+		}
 	}
 	focus = {
 		id = CZE_air_big3
@@ -924,7 +1745,14 @@ focus_tree = {
 		}
 		x = 51
 		y = 3
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_base
+				bonus = 0.75
+				uses = 1
+				category = heavy_air
+			}
+		}
 	}
 	focus = {
 		id = CZE_air3
@@ -939,7 +1767,41 @@ focus_tree = {
 		}
 		x = 49
 		y = 4
+		completion_reward = {
+			air_experience = 30
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.50
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
 
+
+
+	#海軍
+	focus = {
+		id = CZE_navy
+		icon = GFX_goal_generic_build_navy
+		cost = 8.00
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+		x = 56
+		y = 0
+		completion_reward = {
+			navy_experience = 30
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.50
+				uses = 3
+				category = dd_tech
+				category = ss_tech
+			}
+		}
 	}
 	focus = {
 		id = CZE_navy1
@@ -948,9 +1810,65 @@ focus_tree = {
 		prerequisite = {
 			focus = CZE_navy
 		}
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
 		x = 56
 		y = 1
-
+		completion_reward = {
+			navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = CZE_navy2
@@ -961,7 +1879,14 @@ focus_tree = {
 		}
 		x = 54
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = ss_tech
+			}
+		}
 	}
 	focus = {
 		id = CZE_navy3
@@ -972,7 +1897,15 @@ focus_tree = {
 		}
 		x = 56
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = dd_tech
+				category = cl_tech
+			}
+		}
 	}
 	focus = {
 		id = CZE_navy4
@@ -983,7 +1916,15 @@ focus_tree = {
 		}
 		x = 58
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 0.75
+				uses = 1
+				category = bb_tech
+				category = cv_tech
+			}
+		}
 	}
 	focus = {
 		id = CZE_navy5
@@ -1000,7 +1941,14 @@ focus_tree = {
 		}
 		x = 56
 		y = 3
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.75
+				uses = 1
+				category = naval_doctrine
+			}
+		}
 	}
 	focus = {
 		id = CZE_navy6
@@ -1011,34 +1959,22 @@ focus_tree = {
 		}
 		x = 56
 		y = 4
-
-	}
-
-
-
-	focus = {
-		id = CZE_sko3
-		icon = GFX_goal_generic_construction
-		cost = 8.00
-		prerequisite = {
-			focus = CZE_sko2
+		completion_reward = {
+			navy_experience = 30
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
 		}
-		x = 11
-		y = 4
-
 	}
 
-	focus = {
-		id = CZE_dip_slo2
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 8.00
-		prerequisite = {
-			focus = CZE_dip_slo1
-		}
-		x = 26
-		y = 4
 
-	}
+
+
+
+
 
 #チェコの勝利
 	focus = {
@@ -1052,9 +1988,16 @@ focus_tree = {
 		prerequisite = {
 			focus = CZE_mil4
 		}
+		available = {
+			num_of_factories > 100
+		}
 		x = 41
 		y = 6
 
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = TR_CZE_Pskd
+		}
 	}
 	focus = {
 		id = CZE_Pskd_ind1
@@ -1066,39 +2009,24 @@ focus_tree = {
 		x = 44
 		y = 7
 
-	}
-	focus = {
-		id = CZE_Pskd_arm1
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 8.00
-		prerequisite = {
-			focus = CZE_Pskd
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}  
 		}
-		x = 38
-		y = 7
-
-	}
-	focus = {
-		id = CZE_Pskd_arm2
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 8.00
-		prerequisite = {
-			focus = CZE_Pskd_arm1
-		}
-		x = 38
-		y = 8
-
-	}
-	focus = {
-		id = CZE_Pskd_arm3
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 8.00
-		prerequisite = {
-			focus = CZE_Pskd_arm2
-		}
-		x = 38
-		y = 9
-
 	}
 	focus = {
 		id = CZE_Pskd_ind2
@@ -1110,6 +2038,30 @@ focus_tree = {
 		x = 44
 		y = 8
 
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}  
+		}
 	}
 	focus = {
 		id = CZE_Pskd_ind3
@@ -1121,7 +2073,140 @@ focus_tree = {
 		x = 44
 		y = 9
 
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}  
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			} 
+		}
 	}
+	focus = {
+		id = CZE_Pskd_arm1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_Pskd
+		}
+		x = 38
+		y = 7
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}  
+		}
+	}
+	focus = {
+		id = CZE_Pskd_arm2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_Pskd_arm1
+		}
+		x = 38
+		y = 8
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}  
+		}
+	}
+	focus = {
+		id = CZE_Pskd_arm3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_Pskd_arm2
+		}
+		x = 38
+		y = 9
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bonus
+				bonus = 1
+				uses = 2
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}  
+		}
+	}
+
 	focus = {
 		id = CZE_Pskd_rec1
 		icon = GFX_focus_research
@@ -1132,6 +2217,13 @@ focus_tree = {
 		x = 41
 		y = 8
 
+		completion_reward = {
+			add_stability = 0.1
+			swap_ideas = {
+				remove_idea = TR_CZE_Pskd
+				add_idea = TR_CZE_Pskd1
+			}
+		}
 	}
 	focus = {
 		id = CZE_Pskd_rec2
@@ -1143,6 +2235,10 @@ focus_tree = {
 		x = 41
 		y = 9
 
+		completion_reward = {
+			add_stability = 0.1
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = CZE_Pskd_zz
@@ -1160,6 +2256,13 @@ focus_tree = {
 		x = 41
 		y = 11
 
+		completion_reward = {
+			add_stability = 0.1
+			swap_ideas = {
+				remove_idea = TR_CZE_Pskd1
+				add_idea = TR_CZE_Pskd2
+			}
+		}
 	}
 
 }
