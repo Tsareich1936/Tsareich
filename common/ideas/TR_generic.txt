@@ -1,0 +1,114 @@
+ideas = {
+	country = {
+		# ideologies infuluence
+		TR_socialist_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = socialism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				socialism_drift = 0.1
+				socialism_acceptance = 85
+			}
+		}
+		TR_socialdemocratic_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = socialdemocratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				socialdemocratic_drift = 0.1
+				socialdemocratic_acceptance = 85
+			}
+		}
+		TR_conservatist_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = conservatism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				conservatism_drift = 0.1
+				conservatism_acceptance = 85
+			}
+		}
+		# weakly infuluence
+		TR_socialist_influence_weak = {
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					has_government = socialism
+				}
+
+				removal_cost = -1
+
+				picture = generic_communism_drift_bonus
+				
+				modifier = {
+					socialism_drift = 0.1
+					socialism_acceptance = 35
+				}
+		}
+		TR_socialdemocratic_influence_weak = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = socialdemocratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				socialdemocratic_drift = 0.1
+				socialdemocratic_acceptance = 35
+			}
+		}
+		TR_conservatist_influence_weak = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = conservatism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				conservatism_drift = 0.1
+				conservatism_acceptance = 35
+			}
+		}
+	}
+}
