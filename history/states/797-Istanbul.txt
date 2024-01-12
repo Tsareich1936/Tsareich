@@ -26,7 +26,7 @@ state={
 				naval_base = 8
 			}
 		}
-		add_core_of = TUR
+		add_core_of = GER
 		if = {
 			limit = { has_dlc = "Battle for the Bosporus"}
 			set_demilitarized_zone = no

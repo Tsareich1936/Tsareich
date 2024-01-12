@@ -1,0 +1,385 @@
+add_namespace = TR_iraklion
+
+#1 GRE Rise of socialism
+country_event = {
+	id = TR_iraklion.1
+	title = TR_iraklion.1.t
+	desc = TR_iraklion.1.d
+
+	trigger = {
+		tag = GRE
+		socialism > 0.15
+	}
+	trigger = {
+		SRI = {
+			has_completed_focus = SRI_red_greece
+		}
+	}
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {# That's great!
+		name = TR_iraklion.1.a
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.15
+		}
+		hidden_effect = {
+			GRE = {
+				country_event = {
+					id = TR_iraklion.2
+					days = 35
+				}
+			}
+		}
+	}
+}
+#2 GRE coup of socialist!
+country_event = {
+	id = TR_iraklion.2
+	title = TR_iraklion.2.t
+	desc = TR_iraklion.2.d
+
+	is_triggered_only = yes #triggered by ev1
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	immediate = {
+		GRE = {
+			every_owned_state = {
+				limit = {
+					is_core_of = GRE
+				}
+				add_core_of = GRS
+			}
+		}
+		GRS = {
+			transfer_state = 185
+			country_event = TR_iraklion.5
+		}
+		add_threat = 0.15
+	}
+	option = {#Seek assistance from Russia.
+		name = TR_iraklion.2.a
+		RUS = {
+			country_event = {
+				id = TR_iraklion.3
+				hours = 4
+			}
+		}
+	}
+	# option = {#Socialism is good.
+	# 	name = TR_iraklion.2.a
+	# }
+}
+#3 RUS Request for assistance from Greece
+country_event = {
+	id = TR_iraklion.3
+	title = TR_iraklion.3.t
+	desc = TR_iraklion.3.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {#Socialism spread must not be allowed 
+		name = TR_iraklion.3.a
+		ai_chance = {
+			base = 0
+		}
+		trigger = {
+			is_ai = no
+		}
+		RUS = {
+			give_guarantee = GRE
+		}
+		GRE = {
+			country_event = {
+				id = TR_iraklion.4
+				hours = 1
+			}
+		}
+		GRS = {
+			country_event = {
+				id = TR_iraklion.4
+				hours = 1
+			}
+		}
+	}
+	option = {#War must be avoided
+		name = TR_iraklion.3.b
+		ai_chance = {
+			base = 100
+		}
+		GRE = {
+			country_event = {
+				id = TR_iraklion.8
+				hours = 4
+			}
+		}
+		GRS = {
+			country_event = {
+				id = TR_iraklion.8
+				hours = 4
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = GRE
+						tag = GRS
+						tag = SRI
+						tag = RUS
+						tag = ENG
+					}
+				}
+				country_event = {#hold Iraklion
+					id = TR_iraklion.9
+					hours = 24
+				}
+			}
+		}
+	}
+}
+#4 GRE-GRS Russian intervention in Greece!
+country_event = {
+	id = TR_iraklion.4
+	title = TR_iraklion.4.t
+	desc = TR_iraklionTR_.4.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+	option = {# Great!
+		trigger = {
+			tag = GRE
+		}
+		name = TR_iraklion.4.a
+	}
+	option = {# Come and get it! I'll be your opponent!
+		trigger = {
+			tag = GRS
+		}
+		name = TR_iraklion.4.b
+		declare_war_on = {
+			target = GRE
+			type = annex_everything
+		}
+		add_threat = 0.15
+	}
+}
+#5 GRS Request for assistment to ITA
+country_event = {
+	id = TR_iraklion.5
+	title = TR_iraklion.5.t
+	desc = TR_iraklion.5.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {#Send them a request for assistance
+		name = TR_iraklion.5.a
+		SRI = {
+			country_event = {
+				id = TR_iraklion.6
+				hours = 4
+			}
+		}
+	}
+}
+#6 SRI Request for assistance from Greece
+country_event = {
+	id = TR_iraklion.6
+	title = TR_iraklion.6.t
+	desc = TR_iraklion.6.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {#We should help our comrades
+		name = TR_iraklion.6.a
+		GRS = {
+			country_event = {
+				id = TR_iraklion.7
+				hours = 4
+			}
+		}
+	}
+}
+#7 GRS Italy help us
+country_event = {
+	id = TR_iraklion.7
+	title = TR_iraklion.7.t
+	desc = TR_iraklion.7.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {# Great!
+		name = TR_iraklion.7.a
+		trigger = {
+			tag = GRS
+		}
+		add_equipment_production = {
+			equipment = {
+				type = infantry_equipment_3
+			}
+			amount = 20000
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 5
+		}
+	}
+}
+#8 Russia announces mediation
+country_event = {
+	id = TR_iraklion.8
+	title = TR_iraklion.8.t
+	desc = TR_iraklion.8.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {#Let's just accept it for the moment
+		name = TR_iraklion.8.a
+	}
+}
+#9 Gonna hold Iraklion Conference
+country_event = {
+	id = TR_iraklion.9
+	title = TR_iraklion.9.t
+	desc = TR_iraklion.9.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {#Wait for a time!
+		name = TR_iraklion.9.a
+		trigger = {
+			OR = {
+				tag = GRE
+				tag = GRS
+			}
+		}
+	}
+	option = {#Let's keep it civil
+		name = TR_iraklion.9.b
+		trigger = {
+			tag = RUS
+		}
+	}
+	option = {#Socialism will win
+		name = TR_iraklion.9.c
+		trigger = {
+			tag = SRI
+		}
+	}
+	option = {#Should intervene!
+		name = TR_iraklion.9.d
+		trigger = {
+			tag = ENG
+		}
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = GRE
+						tag = GRS
+						tag = SRI
+						tag = RUS
+						tag = ENG
+					}
+				}
+				add_to_array = {
+					array = iraklion_members
+				}
+			}
+			for_each_scope_loop = {
+				array = iraklion_members
+				country_event = {
+					id = TR_iraklion.10
+					hours = 0
+				}
+			}
+			every_country = {
+				limit = {
+					always = no
+				}
+				country_event = {
+					id = TR_iraklion.10
+					hours = 0
+				}
+			}
+		}
+	}
+	option = {#Shouldn't get involved.
+		name = TR_iraklion.9.e
+		trigger = {
+			tag = ENG
+		}
+		ai_chance = {
+			base = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = GRE
+						tag = GRS
+						tag = SRI
+						tag = RUS
+					}
+				}
+				add_to_array = {
+					array = iraklion_members
+				}
+			}
+		}
+	}
+}
+#10 Britain Intervene
+country_event = {
+	id = TR_iraklion.10
+	title = TR_iraklion.10.t
+	desc = TR_iraklion.10.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {#For the time being, there will be no war.
+		name = TR_iraklion.10.a
+	}
+}

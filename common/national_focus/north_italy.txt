@@ -1678,6 +1678,12 @@ focus_tree = {
 				country_event = {
 					id = TR_north_italy.socialism.13
 				}
+				GRE = {
+					add_timed_idea = {
+						idea = TR_socialist_influence
+						days = 720
+					}
+				}
 			}
 		}
 	# left
