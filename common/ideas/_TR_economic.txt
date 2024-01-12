@@ -49,6 +49,8 @@ ideas = {
 					conversion_cost_civ_to_mil_factor= -1.0
 					conversion_cost_mil_to_civ_factor = -1.0
 					production_speed_arms_factory_factor = 5.55
+					conscription = 0.99
+					conscription = 2.0
 				}
 				consumer_goods_expected_value = -1
 				training_time_army_factor = -0.9
