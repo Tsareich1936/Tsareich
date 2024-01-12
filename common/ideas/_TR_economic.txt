@@ -3,7 +3,6 @@ ideas = {
 	economy = { 
 		law = yes
 		use_list_view = no
-		original_tag = CZE
 				
 		company_economy = {
 			
@@ -12,9 +11,12 @@ ideas = {
 			available = {
 				has_completed_focus = CZE_sko3
 			}				
+			visible = {
+				original_tag = CZE
+			}
 			cost = 150
 			removal_cost = -1
-			
+			level = -1
 			modifier = {
 				consumer_goods_expected_value = 0.15
 				production_speed_buildings_factor = 0.2
@@ -23,7 +25,37 @@ ideas = {
 			}
 			ai_will_do = {
    				factor = 10
-		}
+			}
 		
+		}
+		revolutional_economic = {
+			picture = idea_generic_flexible_foreign_policy2
+						
+			available = {
+				tag = GRS
+			}				
+			visible = {
+				original_tag = GRS
+			}
+			removal_cost = -1
+			level = -1
+			allowed_to_remove = {
+				always = no
+			}
+			
+			modifier = {
+				hidden_modifier = {
+					production_speed_buildings_factor = 2.0
+					conversion_cost_civ_to_mil_factor= -1.0
+					conversion_cost_mil_to_civ_factor = -1.0
+					production_speed_arms_factory_factor = 5.55
+				}
+				consumer_goods_expected_value = -1
+				training_time_army_factor = -0.9
+			}
+			ai_will_do = {
+   				factor = 10
+			}
+		}
 	}
 }	
