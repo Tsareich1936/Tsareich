@@ -234,7 +234,7 @@ country_event = {
 		GRS = {
 			country_event = {
 				id = TR_iraklion.7
-				hours = 12
+				hours = 16
 			}
 		}
 	}
@@ -552,5 +552,209 @@ country_event = {
 
 	option = {
 		name = TR_iraklion.15.a
+	}
+}
+#16 Security issue - start
+country_event = {
+	id = TR_iraklion.16
+	title = TR_iraklion.16.t
+	desc = TR_iraklion.16.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+
+	option = {# belive good result
+		name = TR_iraklion.16.a
+		for_each_loop = {
+			array = iraklion_members
+			country_event = {
+				id = TR_iraklion.17
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					always = no
+				}
+				country_event = {
+					id = TR_iraklion.17
+				}
+			}
+		}
+	}
+}
+#17 security issue - vote
+country_event = {
+	id = TR_iraklion.17
+	title = TR_iraklion.17.t
+	desc = TR_iraklion.17.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+
+	immediate = {
+		GRE = {
+			country_event = {
+				id = TR_iraklion.18
+				days = 1
+			}
+		}
+	}
+
+	option = {#indipendence
+		name = TR_iraklion.17.a
+		add_to_variable = {
+			value = 1
+			var = TR_IC_acceptance
+		}
+	}
+}
+#18 security issue - collect
+country_event = {
+	id = TR_iraklion.18
+	title = TR_iraklion.18.t
+	desc = TR_iraklion.18.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					var = TR_IC_acceptance
+					value = 5
+				}
+			}
+			set_country_flag = TR_IC_sec_win
+		}
+		for_each_loop = {
+			array = iraklion_members
+			country_event = {
+				id = TR_iraklion.19
+			}
+		}
+		every_country = {
+			limit = {
+				always = no
+			}
+			country_event = TR_iraklion.19
+		}
+	}
+}
+#19 Security issue - result
+country_event = {
+	id = TR_iraklion.19
+	title = TR_iraklion.19.t
+	desc = TR_iraklion.19.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+
+	option = {
+		name = TR_iraklion.19.a
+	}
+}
+#20 Socialist issue - start
+country_event = {
+	id = TR_iraklion.20
+	title = TR_iraklion.20.t
+	desc = TR_iraklion.20.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+
+	option = {# belive good result
+		name = TR_iraklion.20.a
+		for_each_loop = {
+			array = iraklion_members
+			country_event = {
+				id = TR_iraklion.21
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					always = no
+				}
+				country_event = {
+					id = TR_iraklion.21
+				}
+			}
+		}
+	}
+}
+#21 Socialist issue - vote
+country_event = {
+	id = TR_iraklion.21
+	title = TR_iraklion.21.t
+	desc = TR_iraklion.21.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+
+	immediate = {
+		GRE = {
+			country_event = {
+				id = TR_iraklion.22
+				days = 1
+			}
+		}
+	}
+
+	option = {#indipendence
+		name = TR_iraklion.21.a
+		add_to_variable = {
+			value = 1
+			var = TR_IC_acceptance
+		}
+	}
+}
+#22 Socialist issue - collect
+country_event = {
+	id = TR_iraklion.22
+	title = TR_iraklion.12.t
+	desc = TR_iraklion.22.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					var = TR_IC_acceptance
+					value = 5
+				}
+			}
+			set_country_flag = TR_IC_tur_win
+		}
+		for_each_loop = {
+			array = iraklion_members
+			country_event = {
+				id = TR_iraklion.23
+			}
+		}
+		every_country = {
+			limit = {
+				always = no
+			}
+			country_event = TR_iraklion.23
+		}
+	}
+}
+#15 Socialist issue - result
+country_event = {
+	id = TR_iraklion.23
+	title = TR_iraklion.23.t
+	desc = TR_iraklion.23.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+
+	option = {
+		name = TR_iraklion.23.a
 	}
 }

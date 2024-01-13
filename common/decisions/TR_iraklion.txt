@@ -75,11 +75,8 @@ TR_iraklion_conference = {
 
 		complete_effect = {
 			set_country_flag = TR_IC_progressing
-			for_each_loop = {
-				array = iraklion_members
-				country_event = {
-					
-				}
+			country_event = {
+				id = TR_iraklion.16
 			}
 		}
 	}
@@ -100,11 +97,8 @@ TR_iraklion_conference = {
 
 		complete_effect = {
 			set_country_flag = TR_IC_progressing
-			for_each_loop = {
-				array = iraklion_members
-				country_event = {
-					
-				}
+			country_event = {
+				id = TR_iraklion.20
 			}
 		}
 	}
