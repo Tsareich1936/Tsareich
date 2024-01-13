@@ -415,6 +415,7 @@ country_event = {
 		set_country_flag = TR_GRE_iraklion_started_flag
 		set_global_flag = TR_iraklion_started_flag
 		custom_effect_tooltip = "TR_unlocked_iraklion_decisions_tt"
+		activate_mission = 
 	}
 	option = {#GRS we weill win
 		name = TR_iraklion.11.b

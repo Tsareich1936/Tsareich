@@ -6,5 +6,6 @@ TR_iraklion_conference_decision = {
 	}
 	visible = {
 		has_country_flag = TR_GRE_iraklion_started_flag
+		NOT = { has_global_flag = TR_iraklion_finished_flag }
 	}
 }
