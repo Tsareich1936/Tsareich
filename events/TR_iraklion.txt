@@ -385,6 +385,15 @@ country_event = {
 				days = 1
 			}
 		}
+		every_country = {
+			limit = {
+				always = no
+			}
+			country_event = {
+				id = TR_iraklion.11
+				days = 1
+			}
+		}
 	}
 	option = {#For the time being, there will be no war.
 		name = TR_iraklion.10.a
@@ -415,7 +424,7 @@ country_event = {
 		set_country_flag = TR_GRE_iraklion_started_flag
 		set_global_flag = TR_iraklion_started_flag
 		custom_effect_tooltip = "TR_unlocked_iraklion_decisions_tt"
-		activate_mission = 
+		activate_mission = TR_IC_mission
 	}
 	option = {#GRS we weill win
 		name = TR_iraklion.11.b
@@ -442,4 +451,106 @@ country_event = {
 		}
 	}
 
+}
+#12 Socialist issue - start
+country_event = {
+	id = TR_iraklion.12
+	title = TR_iraklion.12.t
+	desc = TR_iraklion.12.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+
+	option = {# belive good result
+		name = TR_iraklion.12.a
+		for_each_loop = {
+			array = iraklion_members
+			country_event = {
+				id = TR_iraklion.13
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					always = no
+				}
+				country_event = {
+					id = TR_iraklion.13
+				}
+			}
+		}
+	}
+}
+#13 Socialist issue - vote
+country_event = {
+	id = TR_iraklion.13
+	title = TR_iraklion.13.t
+	desc = TR_iraklion.13.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+
+	immediate = {
+		GRE = {
+			country_event = {
+				id = TR_iraklion.14
+				days = 1
+			}
+		}
+	}
+
+	option = {#indipendence
+		name = TR_iraklion.13.a
+		add_to_variable = {
+			value = 1
+			var = TR_IC_acceptance
+		}
+	}
+}
+#14 Socialist issue - collect
+country_event = {
+	id = TR_iraklion.14
+	title = TR_iraklion.14.t
+	desc = TR_iraklion.14.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					var = TR_IC_acceptance
+					value = 5
+				}
+			}
+			set_country_flag = TR_IC_soc_win
+		}
+		for_each_loop = {
+			array = iraklion_members
+			country_event = {
+				id = TR_iraklion.15
+			}
+		}
+		every_country = {
+			limit = {
+				always = no
+			}
+			country_event = TR_iraklion.15
+		}
+	}
+}
+#15 Socialist issue - result
+country_event = {
+	id = TR_iraklion.15
+	title = TR_iraklion.15.t
+	desc = TR_iraklion.15.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+
+	option = {
+		name = TR_iraklion.15.a
+	}
 }
