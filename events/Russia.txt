@@ -211,10 +211,6 @@ country_event = {
             transfer_state_to = RUS
             add_core_of = RUS
         }
-        266 = {
-            transfer_state_to = RUS
-            add_core_of = RUS
-        }
         418 = {
             transfer_state_to = RUS
             add_core_of = RUS
