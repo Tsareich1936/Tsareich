@@ -594,6 +594,28 @@ ideas = {
             }
         }
 
+
+        RUS_debug_exp = {
+            picture = SOV_the_true_tsars
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                experience_gain_army = 0.1
+                experience_gain_navy = 0.15
+                experience_gain_air = 0.15
+            }
+        }
+
     }
 
     

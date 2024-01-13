@@ -334,7 +334,6 @@ focus_tree = {
             select_effect = {
                 add_state_claim = 419
                 add_state_claim = 420
-                add_state_claim = 266
                 add_state_claim = 418
                 add_state_claim = 416
             }
