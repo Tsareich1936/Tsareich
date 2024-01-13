@@ -102,7 +102,6 @@ if = {
 }
 
 add_ideas = {
-	german_advisors
 }
 
 600 = { #Jiangxi
@@ -158,7 +157,6 @@ if = {
 		}
 	}
 	add_ideas = {
-		CHI_communist_uprisings
 	}
 }
 
@@ -168,12 +166,7 @@ if = {
 		has_dlc = "Waking the Tiger"
 	}		
 	add_ideas = {
-		CHI_nine_power_treaty
-		CHI_army_corruption_1
-		CHI_ineffective_bureaucracy
-		CHI_incompetent_officers
 		free_trade
-		CHI_hyper_inflation_1
 	}
 }
 save_global_event_target_as = WTT_current_china_leader
@@ -228,9 +221,6 @@ set_convoys = 40
 		closed_economy
 
 		#ministers
-		CHI_bo_yibo
-		CHI_xiao_yisu
-		CHI_chen_shaokuan
 		jiangnan_shipyard_group
 		camco
 
@@ -239,16 +229,9 @@ set_convoys = 40
 		limit = {
 			has_dlc = "Waking the Tiger"
 		}
-		remove_ideas = CHI_army_corruption_1
 		add_ideas = {
 			#national spirits
-			CHI_hyper_inflation_1
-			CHI_nine_power_treaty
-			CHI_army_corruption_2
-			CHI_ineffective_bureaucracy
-			CHI_incompetent_officers
 			free_trade
-			CHI_military_affairs_commission
 		}
 	}
 	

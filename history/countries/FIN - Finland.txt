@@ -153,7 +153,6 @@ if = {
 		set_value = -0.45 #Adding FIN_sisu_2 idea below
 	}
 	#SISU NS
-	add_ideas = FIN_sisu_2
 }
 
 
@@ -577,7 +576,6 @@ set_convoys = 5
 		right_side = FIN_good_side
 		set_value = 0 #Adding FIN_sisu_2 idea below
 	}
-	add_ideas = FIN_sisu_3
 
 	retire_country_leader = yes
 	#Set Maalaisliitto (Agrarian League) as Non-Aligned party

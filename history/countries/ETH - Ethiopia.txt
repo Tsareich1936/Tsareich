@@ -105,22 +105,16 @@ IF = {
 
 	### Add ideas 
 	add_ideas = {
-		ETH_conservative_high_command_idea
-		ETH_the_heroes_of_adwa_idea
-		ETH_chitet_law
-		ETH_christmas_offensive_idea
 	}
 	if = {
 		limit = {
 			has_dlc = "Arms Against Tyranny"
 		}
-		add_ideas = ETH_on_our_own_idea_aat
 	}
 	if = {
 		limit = {
 			NOT = {	has_dlc = "Arms Against Tyranny" }
 		}
-		add_ideas = ETH_on_our_own_idea
 	}
 }
 IF = {
