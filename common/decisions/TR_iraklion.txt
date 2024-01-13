@@ -1,4 +1,4 @@
-TR_iraklion_conference = {
+TR_iraklion_conference_decision = {
 	TR_IC_mission = {
 		icon = Conference
 		allowed = {
