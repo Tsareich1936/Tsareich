@@ -27,6 +27,7 @@ state={
 			}
 		}
 		add_core_of = TUR
+		add_core_of = GRE
 	}
 
 	provinces={
