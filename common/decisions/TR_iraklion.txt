@@ -1,0 +1,35 @@
+TR_iraklion_conference = {
+	TR_IC_poverty_issue_socialist = {
+		icon = communism
+		complete_effect = {
+			for_each_loop = {
+				array = iraklion_members
+				country_event = {
+
+				}
+			}
+		}
+	}
+	TR_IC_poverty_issue_security_guarantee = {
+		icon = Military
+		complete_effect = {
+			for_each_loop = {
+				array = iraklion_members
+				country_event = {
+					
+				}
+			}
+		}
+	}
+	TR_IC_poverty_issue_turkey = {
+		icon = TUR
+		complete_effect = {
+			for_each_loop = {
+				array = iraklion_members
+				country_event = {
+					
+				}
+			}
+		}
+	}
+}

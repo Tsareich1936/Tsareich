@@ -316,7 +316,7 @@ country_event = {
 		}
 	}
 	option = {#Should intervene!
-		name = TR_iraklion.9.d
+		name = TR_iraklion.9.e
 		trigger = {
 			tag = ENG
 		}
@@ -345,7 +345,7 @@ country_event = {
 		}
 	}
 	# option = {#Shouldn't get involved.
-	# 	name = TR_iraklion.9.e
+	# 	name = TR_iraklion.9.f
 	# 	trigger = {
 	# 		tag = ENG
 	# 	}
@@ -377,8 +377,68 @@ country_event = {
 
 	is_triggered_only = yes
 	timeout_days = 7
-
+	immediate = {
+		for_each_loop = {
+			array = iraklion_members
+			country_event = {
+				id = TR_iraklion.11
+				days = 1
+			}
+		}
+	}
 	option = {#For the time being, there will be no war.
 		name = TR_iraklion.10.a
+		effect_tooltip = {
+			for_each_loop = {
+				array = iraklion_members
+				country_event = {
+					id = TR_iraklion.11
+					days = 1
+				}
+			}
+		}
 	}
+}
+#11 Iraklion Conference Start
+country_event = {
+	id = TR_iraklion.11
+	title = TR_iraklion.11.t
+	desc = TR_iraklion.11.d
+
+	is_triggered_only = yes
+	timeout_days = 7
+	option = {#GRE Let us start 
+		name = TR_iraklion.11.a
+		trigger = {
+			tag = GRE
+		}
+		set_country_flag = TR_GRE_iraklion_started_flag
+		set_global_flag = TR_iraklion_started_flag
+		custom_effect_tooltip = "TR_unlocked_iraklion_decisions_tt"
+	}
+	option = {#GRS we weill win
+		name = TR_iraklion.11.b
+		trigger = {
+			tag = GRS
+		}
+	}
+	option = {#RUS kill socialist!
+		name = TR_iraklion.11.c
+		trigger = {
+			tag = RUS
+		}
+	}
+	option = {#SRI go socialism
+		name = TR_iraklion.11.e
+		trigger = {
+			tag = SRI
+		}
+	}
+	option = {#ENG make greece peace
+		name = TR_iraklion.11.f
+		trigger = {
+			tag = ENG
+		}
+	}
+
 }

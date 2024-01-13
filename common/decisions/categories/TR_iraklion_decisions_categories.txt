@@ -1,0 +1,10 @@
+TR_iraklion_conference_decision = {
+	icon = Conference
+	priority = 9999
+	allowed = {
+		tag = GRE
+	}
+	visible = {
+		has_country_flag = TR_GRE_iraklion_started_flag
+	}
+}
