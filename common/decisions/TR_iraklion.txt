@@ -5,33 +5,64 @@ TR_iraklion_conference_decision = {
 			tag = GRE
 		}
 		days_mission_timeout = 14
-		is_good = yes
 		fire_only_once = yes
-
+		is_good = no
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = x
+				has_global_flag = finished_soc
+				has_global_flag = finished_sec
+				has_global_flag = finished_tur
+				tag = SOV
+			}
+		}
 		cost = 0
-
+		activation = {
+			has_country_flag = TR_GRE_iraklion_started_flag
+			NOT = { has_global_flag = TR_iraklion_finished_flag }
+		}
 		timeout_effect = {
 			set_global_flag = TR_iraklion_finished_flag
 			clr_global_flag = TR_iraklion_started_flag
-
-			for_each_loop = {
-				array = iraklion_members
-				if = {
-					limit = {
-						has_global_flag = finished_soc
-						has_global_flag = finished_safe
-						has_global_flag = finished_tur
-					}
-					country_event = {# Iraklion Conference Failed
-
-					}
+			if = {
+				limit = {
+					has_global_flag = finished_sec
+					has_global_flag = finished_soc
+					has_global_flag = finished_tur
 				}
-				else = {
-					country_event = {# Iraklion Conference Failed
-
+				every_country = {
+					limit = {
+						OR = {
+							tag = GRE
+							tag = GRS
+							tag = RUS
+							tag = SRI
+							tag = ENG
+						}
+					}
+					country_event = {
+						id = TR_iraklion.24
 					}
 				}
 			}
+			else = {
+				every_country = {
+					limit = {
+						OR = {
+							tag = GRE
+							tag = GRS
+							tag = RUS
+							tag = SRI
+							tag = ENG
+						}
+					}
+					country_event = {
+						id = TR_iraklion.26
+					}
+				}
+			}
+
+			
 		}
 	}
 	TR_IC_poverty_issue_socialist = {
