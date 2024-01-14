@@ -956,7 +956,7 @@ focus_tree = {
                 icon = GFX_focus_usa_reestablish_the_gold_standard
                 x = 5
                 y = 5
-                cost = 3
+                cost = 2
         
                 search_filters = FOCUS_FILTER_RESEARCH
                 prerequisite = { focus = RUS_tech_school }
@@ -976,7 +976,7 @@ focus_tree = {
                 icon = GFX_focus_generic_industry_3
                 x = 6
                 y = 6
-                cost = 3
+                cost = 2
         
                 search_filters = FOCUS_FILTER_INDUSTRY
                 prerequisite = { focus = RUS_scholarship }
@@ -1018,7 +1018,7 @@ focus_tree = {
                 icon = GFX_focus_generic_land_reclamation
                 x = 4
                 y = 6
-                cost = 3
+                cost = 2
         
                 search_filters = FOCUS_FILTER_INDUSTRY
                 prerequisite = { focus = RUS_scholarship }
@@ -1106,7 +1106,7 @@ focus_tree = {
                 icon = GFX_focus_POL_ukrainian_army
                 x = 2
                 y = 5
-                cost = 3
+                cost = 2
         
                 search_filters = FOCUS_FILTER_INDUSTRY
                 prerequisite = { focus = RUS_development_arctic_zone }
@@ -1140,7 +1140,7 @@ focus_tree = {
                 icon = GFX_focus_generic_supply_line
                 x = 2
                 y = 6
-                cost = 3
+                cost = 2
         
                 search_filters = FOCUS_FILTER_INDUSTRY
                 prerequisite = { focus = RUS_ukrine }
