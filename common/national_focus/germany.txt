@@ -328,6 +328,9 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_socialist_economy
 		}
+		prerequisite = {
+			focus = GER_left
+		}
 		x = 16
 		y = 3
 
