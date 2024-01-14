@@ -70,4 +70,18 @@ characters = {
 		# 	}
 		# }
 	}
+	SRI_pietro_nenni = {
+		name = SRI_pietro_nenni
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SRI_pietro_nenni
+			}
+		}
+		country_leader={
+			ideology= socialism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 }

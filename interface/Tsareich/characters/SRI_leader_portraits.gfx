@@ -7,4 +7,8 @@ spriteTypes = {
 	# 	name = "GFX_idea_SRI_divided_italy"
 	# 	textureFile = "gfx/interface/ideas/idea_divided_italy.dds"
 	# }
+	spriteType = {
+		name = "GFX_portrait_SRI_pietro_nenni"
+		textureFile = "gfx/leaders/SRI/Portrait_SRI_pietro_nenni.dds"
+	}
 }
