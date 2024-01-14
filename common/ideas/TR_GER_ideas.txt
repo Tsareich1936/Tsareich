@@ -22,20 +22,20 @@ ideas = {
 			}
             removal_cost = -1
             modifier = {
-				add_stability = -0.01
+				stability_weekly = -0.05
 				fascism_drift = -0.1
 			}
 		}
 
 		GER_left_right_divide = {
-			picture = "idea_SOV_factionalism_modifier"
+			picture = "SOV_factionalism_modifier"
 			allowed = {
 				always = no
 			}
-            removal_cost = -1
-            modifier = {
-				add_stability = -0.1
-				add_war_support = -0.1
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+                war_support_factor = -0.05
 			}
 		}
 	}

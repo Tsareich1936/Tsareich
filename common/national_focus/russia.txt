@@ -1485,7 +1485,259 @@ focus_tree = {
             
         }
 
+        focus = {
+            id = RUS_research_of_tanks
+            icon = GFX_goal_generic_army_tanks
+            x = 26
+            y = 4
+            cost = 2
+    
+            search_filters = FOCUS_FILTER_RESEARCH
+            prerequisite = { focus = RUS_munitions_manufacturing }
 
+            available = {
+                
+            }
+
+            completion_reward = {
+                add_tech_bonus = {
+                    bonus = 1
+                    uses = 4 
+                    ahead_reduction = 1
+                    category = armor
+                }
+            }
+            
+        }
+
+        focus = {
+            id = RUS_research_of_middle_tanks
+            icon = GFX_goal_continuous_armor_production
+            x = 26
+            y = 5
+            cost = 2
+    
+            search_filters = FOCUS_FILTER_RESEARCH
+            prerequisite = { focus = RUS_research_of_tanks }
+
+            available = {
+                
+            }
+
+            completion_reward = {
+                add_tech_bonus = {
+                    bonus = 4
+                    uses = 2
+                    ahead_reduction = 3
+                    category = cat_medium_armor
+                }
+            }
+            
+        }
+
+        focus = {
+            id = RUS_Tank_divisions
+            icon = GFX_focus_generic_tank_production
+            x = 26
+            y = 6
+            cost = 2
+    
+            search_filters = FOCUS_FILTER_RESEARCH
+            prerequisite = { focus = RUS_research_of_middle_tanks }
+
+            available = {
+                if = {
+                    limit = {
+                        has_dlc = "No Step Back"
+                    }
+                    OR = {
+                        has_tech = basic_medium_tank_chassis
+                        has_tech = improved_medium_tank_chassis
+                    }
+                }
+                else = {
+                    OR = {
+                        has_tech = basic_medium_tank
+                        has_tech = improved_medium_tank
+                    }
+                }
+                has_tech = tech_recon
+                has_tech = tech_engineers
+                has_tech = motorised_infantry
+            }
+            completion_reward = {
+                division_template = {
+                    name = "Tankovjy Polk"
+                    regiments = {
+                        medium_armor = { x = 0 y = 0 }
+                        medium_armor = { x = 0 y = 1 }
+                        medium_armor = { x = 0 y = 2 }
+                        medium_armor = { x = 0 y = 3 }
+                        medium_armor = { x = 1 y = 0 }
+                        medium_armor = { x = 1 y = 1 }
+                        medium_armor = { x = 1 y = 2 }
+                        medium_armor = { x = 1 y = 3 }
+                        motorized = { x = 2 y = 0 }
+                        motorized = { x = 2 y = 1 }
+                        motorized = { x = 2 y = 2 }
+                        motorized = { x = 2 y = 3 }
+                        motorized = { x = 3 y = 0 }
+                        motorized = { x = 3 y = 1 }
+                        motorized = { x = 3 y = 2 }
+                        motorized = { x = 3 y = 3 }
+                    }
+                    support = {
+                        engineer = { x = 0 y = 0 }
+                        mot_recon = { x = 0 y = 1 }
+                    }
+                }
+                if = {
+                    limit = {
+                        has_dlc = "No Step Back"
+                    }
+                    if = {
+                        limit = {
+                            has_tech = improved_medium_tank_chassis
+                        }
+                        create_equipment_variant = {
+                            name = "Imperatorskiy tank III Mark.IV"
+                            type = medium_tank_chassis_3
+                            parent_version = 0
+                            modules = {
+                                main_armament_slot = tank_high_velocity_cannon_2
+                                turret_type_slot = tank_medium_three_man_tank_turret
+                                suspension_type_slot = tank_bogie_suspension
+                                armor_type_slot = tank_welded_armor
+                                engine_type_slot = tank_gasoline_engine
+                                special_type_slot_1 = tank_radio_1
+                            }
+                            upgrades = {
+                                tank_nsb_engine_upgrade = 8
+                                tank_nsb_armor_upgrade = 5
+                            }
+                            icon = "GFX_GER_basic_medium_tank_medium"
+                        }
+                    }
+                    else = {
+                        create_equipment_variant = {
+                            name = "Imperatorskiy tank I Mark.V"
+                            type = medium_tank_chassis_1
+                            parent_version = 0
+                            modules = {
+                                main_armament_slot = tank_high_velocity_cannon_2
+                                turret_type_slot = tank_medium_three_man_tank_turret
+                                suspension_type_slot = tank_bogie_suspension
+                                armor_type_slot = tank_welded_armor
+                                engine_type_slot = tank_gasoline_engine
+                                special_type_slot_1 = tank_radio_1
+                            }
+                            upgrades = {
+                                tank_nsb_engine_upgrade = 8
+                                tank_nsb_armor_upgrade = 5
+                            }
+                            icon = "GFX_GER_basic_medium_tank_medium"
+                        }
+                    }
+                    custom_effect_tooltip = TR_Russia.tt.14
+                    custom_effect_tooltip = TR_Russia.tt.15
+                    hidden_effect = {
+                        219 = {
+                            create_unit = {
+                                division = "name = \"1.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"2.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"3.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"4.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"5.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"6.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"7.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"8.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"9.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"10.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                        }
+                        195 = {
+                            create_unit = {
+                                division = "name = \"11.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"12.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"13.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"14.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"15.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"16.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"17.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"18.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"19.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"20.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"21.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                            create_unit = {
+                                division = "name = \"22.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                                owner = RUS
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
 
 
 
