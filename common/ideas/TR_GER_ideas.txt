@@ -33,10 +33,11 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			modifier = 
+			modifier = {
 				political_power_cost = 0.8
 				stability_factor = -0.10
 				war_support_factor = -0.05
+			}
 		}
 
 		GER_left_right_divide2 = {
@@ -45,9 +46,11 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			modifier = 
+			modifier = {
 				stability_factor = -0.05
 				war_support_factor = -0.025
+			}
+
 		} 
 
 		GER_workers_democracy = {
