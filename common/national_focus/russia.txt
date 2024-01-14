@@ -33,7 +33,7 @@ focus_tree = {
             icon = GFX_focus_SOV_panslavic_nationalism
             x = 17
             y = 0
-            cost = 10
+            cost = 4
 
             search_filters = FOCUS_FILTER_POLITICAL
 
@@ -99,7 +99,7 @@ focus_tree = {
         icon = GFX_focus_NOR_continue_nygaardsvold_government
         x = 17
         y = 2
-        cost = 10
+        cost = 4
 
         search_filters = FOCUS_FILTER_POLITICAL
         prerequisite = { focus = RUS_tsar_infantry }
@@ -192,7 +192,7 @@ focus_tree = {
         icon = GFX_focus_CZE_german_puppet
         x = 17
         y = 5
-        cost = 6
+        cost = 4
 
         search_filters = FOCUS_FILTER_MANPOWER
         prerequisite = { focus = RUS_search_of_siberia }
@@ -216,7 +216,7 @@ focus_tree = {
         icon = GFX_focus_research2
         x = 15
         y = 5
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_RESEARCH
         prerequisite = { focus = RUS_search_of_siberia }
@@ -244,7 +244,7 @@ focus_tree = {
             icon = GFX_focus_generic_rubber
             x = 19
             y = 5
-            cost = 5
+            cost = 4
     
             search_filters = FOCUS_FILTER_RESEARCH
             prerequisite = { focus = RUS_search_of_siberia }
@@ -321,7 +321,7 @@ focus_tree = {
             icon = GFX_focus_generic_attack_iran
             x = 17
             y = 6
-            cost = 10
+            cost = 4
     
             search_filters = FOCUS_FILTER_ANNEXATION
             prerequisite = { focus = RUS_compulsory_education }
@@ -374,7 +374,7 @@ focus_tree = {
             icon = GFX_goal_generic_construction
             x = 8
             y = 3
-            cost = 5
+            cost = 4
     
             search_filters = FOCUS_FILTER_INDUSTRY
             prerequisite = { focus = RUS_remake_national_government }
@@ -1195,7 +1195,7 @@ focus_tree = {
                 icon = GFX_focus_SWE_landsverk
                 x = 5
                 y = 8
-                cost = 5
+                cost = 4
         
                 search_filters = FOCUS_FILTER_INDUSTRY
                 prerequisite = { focus = RUS_remake_MGI }
@@ -1352,7 +1352,7 @@ focus_tree = {
             icon = GFX_focus_generic_armored_air_support
             x = 26
             y = 3
-            cost = 5
+            cost = 4
     
             search_filters = FOCUS_FILTER_INDUSTRY
             prerequisite = { focus = RUS_remake_national_government }
