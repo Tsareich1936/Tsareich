@@ -16,6 +16,9 @@
   TR_Russia.tt.15: "§Yペトログラード§!に完全な状態でよく訓練された装甲師団§Y12§!師団からなる親衛装甲軍団が組織される！"
   TR_Russia.tt.16: "§Yドニエプル川§!に沿って§Yレベル4§!の§Y陸上要塞§!を建設する。"
   TR_Russia.tt.17: "§Y西ドヴィナ川§!に沿って§Yレベル4§!の§Y陸上要塞§!を建設する。\n平野部に§Yレベル5§!の§Y陸上要塞§!を建設する。"
+  TR_Russia.tt.18: "§3近代化§!によって帝国軍の後進性が改善しつつある！"
+  TR_Russia.tt.19: "§Yロシア軍§!は近代化によって恐ろしい軍隊に変化した！"
+  TR_Russia.tt.20: "§Yラジオ§!を使用することで様々な§Y布告§!を行えるようになる！"
 
   TR_nosupport: "§Rこの選択肢は現バージョンでは実装されていない！§!"
   RULE_ALLOW_RELEASE_NATIONS_RUSSIA_POLAND_TOOLTIP: "§Y[ROOT.GetNameDefCap]§!は§Y[POL.GetNameDef]§!の解放ができません。"
