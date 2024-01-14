@@ -128,37 +128,37 @@ country_event = {
         653 = {
             add_resource = {
                 type = tungsten
-                amount = 8
+                amount = 16
             }
             add_resource = {
                 type = chromium
-                amount = 6
+                amount = 12
             }
         }
         578 = {
             add_resource = {
                 type = tungsten
-                amount = 6
+                amount = 12
             }
             add_resource = {
                 type = chromium
-                amount = 10
+                amount = 20
             }
         }
         516 = {
             add_resource = {
                 type = tungsten
-                amount = 4
+                amount = 24
             }
         }
         579 = {
             add_resource = {
                 type = oil
-                amount = 2
+                amount = 32
             }
             add_resource = {
                 type = chromium
-                amount = 12
+                amount = 24
             }
         }
         825 = {
@@ -178,8 +178,8 @@ country_event = {
 
     trigger = {
         country_exists = RUS
-        266 = {
-            is_controlled_by = RUS
+        PER = {
+            surrender_progress > 0.8
         }
     }
 
@@ -201,30 +201,31 @@ country_event = {
 
     option = {
         name = TR_Russia.6.a
-        remove_ideas = RUS_war_against_PER
-        white_peace = PER
-        419 = {
-            transfer_state_to = RUS
-            add_core_of = RUS
-        }
-        420 = {
-            transfer_state_to = RUS
-            add_core_of = RUS
-        }
-        418 = {
-            transfer_state_to = RUS
-            add_core_of = RUS
-        }
-        416 = {
-            transfer_state_to = RUS
-            add_core_of = RUS
-        }
-        PER = {
-            set_cosmetic_tag = PER_puppet_RUS
-        }
-        set_autonomy = {
-            target = PER
-            autonomous_state = autonomy_puppet
+        hidden_effect = {
+            remove_ideas = RUS_war_against_PER
+            white_peace = PER
+            PER = {
+                remove_ideas = TR_hidden_war_nosurrender
+            }
+            419 = {
+                transfer_state_to = RUS
+            }
+            420 = {
+                transfer_state_to = RUS
+            }
+            418 = {
+                transfer_state_to = RUS
+            }
+            416 = {
+                transfer_state_to = RUS
+            }
+            PER = {
+                set_cosmetic_tag = PER_puppet_RUS
+            }
+            set_autonomy = {
+                target = PER
+                autonomous_state = autonomy_puppet
+            }
         }
     }
 }
