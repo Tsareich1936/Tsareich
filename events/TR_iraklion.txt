@@ -265,6 +265,7 @@ country_event = {
 		}
 		add_ideas = {
 			revolutional_economic
+			extensive_conscription
 		}
 		army_experience = 100
 		add_manpower = 500000
@@ -781,7 +782,37 @@ country_event = {
 
 	is_triggered_only = yes
 	timeout_days = 7
-
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = TR_IC_completed
+				}
+			}
+			set_global_flag = TR_IC_completed
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = TR_IC_GRS
+					}
+				}
+				set_global_flag = TR_IC_GRS
+			
+				GRS = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 10
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 10
+					}
+				}
+			}
+		}
+	}
 	option = {
 		name = TR_iraklion.24.a
 	}
@@ -810,7 +841,15 @@ country_event = {
 
 	is_triggered_only = yes
 	timeout_days = 7
-
+	immediate = {
+		for_each_loop = {
+			array = iraklion_members
+			country_event = {
+				id = TR_iraklion.29
+				days = 3
+			}
+		}
+	}
 	option = {
 		name = TR_iraklion.26.a
 	}
@@ -859,7 +898,23 @@ country_event = {
 	fire_for_sender = yes
 	major = yes
 
-	option = {
-		name = TR_iraklion.29.a
+	option = {# Great!
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+		name = TR_iraklion.4.a
+	}
+	option = {# Come and get it! I'll be your opponent!
+		trigger = {
+			tag = GRS
+		}
+		name = TR_iraklion.4.b
+		declare_war_on = {
+			target = GRE
+			type = annex_everything
+		}
+		add_threat = 0.15
 	}
 }

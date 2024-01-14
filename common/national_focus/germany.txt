@@ -48,7 +48,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		cost = 10.00
 		x = 30
-		y = 6
+		y = 5
 
 	}
 	focus = {
@@ -115,6 +115,18 @@ focus_tree = {
 
 	}
 	focus = {
+		id = newfocus_96
+		icon = GFX_focus_SOV_organize_wreckers
+		cost = 10.00
+		prerequisite = {
+			focus = industry_4
+			focus = industry_5
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
 		id = industry_3
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
@@ -137,33 +149,30 @@ focus_tree = {
 
 	}
 	focus = {
+		id = newfocus_97
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = industry_5
+			focus = industry_6
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
 		id = industry_7
 		icon = GFX_focus_generic_socialist_science
 		cost = 10.00
 		prerequisite = {
-			focus = industry_4
-			focus = industry_5
-			focus = industry_6
+			focus = newfocus_97
+			focus = newfocus_96
 		}
 		x = 5
-		y = 3
-			completion_reward = {
-				add_research_slot = 1
-			}
-
-	}
-	focus = {
-		id = industry_8
-		icon = GFX_focus_research2
-		cost = 10.00
-		prerequisite = {
-			focus = industry_7
-		}
-		x = 4
 		y = 4
 			completion_reward = {
-				add_research_slot = 1
-			}
+					add_research_slot = 1
+				}
 
 	}
 	focus = {
@@ -173,18 +182,18 @@ focus_tree = {
 		prerequisite = {
 			focus = industry_7
 		}
-		x = 6
+		x = 7
 		y = 5
 
 	}
 	focus = {
-		id = industry_10
+		id = GER_war_economy
 		icon = GFX_goal_generic_major_war
 		cost = 10.00
 		prerequisite = {
 			focus = industry_9
 		}
-		x = 6
+		x = 7
 		y = 6
 
 	}
@@ -207,15 +216,27 @@ focus_tree = {
 
 	}
 	focus = {
+		id = GER_condemn_revisionists
+		text = GER_condemn_revisionists
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 10.00
+		prerequisite = {
+			focus = GER_left
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
 		id = GER_union_USPD
 		text = GER_union_USPD
 		icon = GFX_focus_SOV_the_supreme_soviet
 		cost = 10.00
 		prerequisite = {
-			focus = GER_left
+			focus = GER_condemn_revisionists
 		}
 		x = 11
-		y = 2
+		y = 3
 
 	}
 	focus = {
@@ -224,22 +245,9 @@ focus_tree = {
 		icon = GFX_focus_spr_crush_the_revolution
 		cost = 10.00
 		prerequisite = {
-			focus = GER_left
+			focus = GER_condemn_revisionists
 		}
 		x = 13
-		y = 2
-
-	}
-	focus = {
-		id = GER_condemn_revisionists
-		text = GER_condemn_revisionists
-		icon = GFX_focus_generic_strike_at_democracy3
-		cost = 10.00
-		prerequisite = {
-			focus = GER_union_USPD
-			focus = GER_suppress_opposition
-		}
-		x = 12
 		y = 3
 
 	}
@@ -249,46 +257,13 @@ focus_tree = {
 		icon = GFX_focus_generic_manpower
 		cost = 10.00
 		prerequisite = {
-			focus = GER_condemn_revisionists
+			focus = GER_union_USPD
+		}
+		prerequisite = {
+			focus = GER_suppress_opposition
 		}
 		x = 12
 		y = 4
-
-	}
-	focus = {
-		id = GER_proletariat_dictatorship
-		icon = GFX_focus_usa_voter_registration_act
-		cost = 10.00
-		prerequisite = {
-			focus = GER_social_fascism
-		}
-		x = 11
-		y = 5
-
-	}
-	focus = {
-		id = GER_facilitate_nationalization
-		icon = GFX_focus_SOV_merge_plants
-		cost = 10.00
-		prerequisite = {
-			focus = GER_proletariat_dictatorship
-		}
-		x = 11
-		y = 6
-
-	}
-	focus = {
-		id = GER_first_five_year_plan
-		icon = GFX_focus_TUR_ratify_the_six_arrows
-		cost = 10.00
-		prerequisite = {
-			focus = GER_facilitate_nationalization
-		}
-		prerequisite = {
-			focus = industry_10
-		}
-		x = 9
-		y = 7
 
 	}
 	focus = {
@@ -313,44 +288,6 @@ focus_tree = {
 		}
 		x = 13
 		y = 6
-
-	}
-	focus = {
-		id = GER_one_country_socialism
-		icon = GFX_focus_usa_focus_on_europe
-		cost = 10.00
-		prerequisite = {
-			focus = GER_facilitate_nationalization
-		}
-		prerequisite = {
-			focus = GER_purge_dissidents
-		}
-		x = 12
-		y = 7
-
-	}
-	focus = {
-		id = GER_distance_from_international
-		text = GER_distance_from_international
-		icon = GFX_focus_SOV_builder_of_the_red_army
-		cost = 10.00
-		prerequisite = {
-			focus = GER_one_country_socialism
-		}
-		x = 14
-		y = 8
-
-	}
-	focus = {
-		id = GER_Criticizes_Italian_totalitarianism
-		text = GER_Criticizes_Italian_totalitarianism
-		icon = GFX_focus_ger_assassinate_mussolini
-		cost = 10.00
-		prerequisite = {
-			focus = GER_distance_from_international
-		}
-		x = 13
-		y = 9
 
 	}
 	focus = {
@@ -385,15 +322,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GER_promote_heavy_industrialization
-		text = GER_promote_heavy_industrialization
-		icon = GFX_focus_generic_communist_industry
+		id = GER_facilitate_nationalization
+		icon = GFX_focus_SOV_merge_plants
 		cost = 10.00
 		prerequisite = {
 			focus = GER_socialist_economy
-		}
-		prerequisite = {
-			focus = GER_left
 		}
 		x = 16
 		y = 3
@@ -404,7 +337,7 @@ focus_tree = {
 		icon = GFX_focus_generic_workers_and_farmers_rise
 		cost = 10.00
 		prerequisite = {
-			focus = GER_promote_heavy_industrialization
+			focus = GER_facilitate_nationalization
 		}
 		x = 16
 		y = 4
@@ -439,7 +372,7 @@ focus_tree = {
 	focus = {
 		id = GER_new_socialism_economy
 		text = GER_new_socialism_economy
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_generic_communist_industry
 		cost = 10.00
 		prerequisite = {
 			focus = GER_agricultural_collectivization
@@ -447,6 +380,17 @@ focus_tree = {
 		}
 		x = 17
 		y = 5
+
+	}
+	focus = {
+		id = newfocus_92
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = GER_new_socialism_economy
+		}
+		x = 18
+		y = 6
 
 	}
 	focus = {
@@ -539,9 +483,9 @@ focus_tree = {
 			completion_reward = {
 					add_war_support = 0.15
 					add_timed_idea = {
-						idea = GER_totalitarian_oppression
-						days = 20
-					}
+							idea = GER_totalitarian_oppression
+							days = 180
+						}
 				}
 
 	}
@@ -695,7 +639,7 @@ focus_tree = {
 			focus = navy_1
 		}
 		x = 28
-		y = 7
+		y = 6
 
 	}
 	focus = {
@@ -706,40 +650,7 @@ focus_tree = {
 			focus = navy_2
 		}
 		x = 28
-		y = 8
-
-	}
-	focus = {
-		id = navy_7
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = navy_5
-		}
-		x = 26
-		y = 9
-
-	}
-	focus = {
-		id = navy_10
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = navy_7
-		}
-		x = 24
-		y = 10
-
-	}
-	focus = {
-		id = navy_8
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = navy_5
-		}
-		x = 28
-		y = 9
+		y = 7
 
 	}
 	focus = {
@@ -776,6 +687,17 @@ focus_tree = {
 			focus = navy_1
 		}
 		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = navy_8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = navy_3
+		}
+		x = 30
 		y = 7
 
 	}
@@ -809,7 +731,7 @@ focus_tree = {
 			focus = navy_1
 		}
 		x = 32
-		y = 7
+		y = 6
 
 	}
 	focus = {
@@ -820,7 +742,7 @@ focus_tree = {
 			focus = navy_4
 		}
 		x = 32
-		y = 8
+		y = 7
 
 	}
 	focus = {
@@ -833,8 +755,11 @@ focus_tree = {
 		prerequisite = {
 			focus = navy_8
 		}
+		prerequisite = {
+			focus = navy_5
+		}
 		x = 30
-		y = 10
+		y = 8
 
 	}
 	focus = {
@@ -985,6 +910,115 @@ focus_tree = {
 
 	}
 	focus = {
+		id = industry_8
+		icon = GFX_focus_research2
+		cost = 10.00
+		prerequisite = {
+			focus = industry_7
+		}
+		x = 5
+		y = 5
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = GER_proletariat_dictatorship
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 10.00
+		prerequisite = {
+			focus = GER_social_fascism
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = GER_first_five_year_plan
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		cost = 10.00
+		prerequisite = {
+			focus = GER_war_economy
+		}
+		prerequisite = {
+			focus = GER_state_function
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = GER_one_country_socialism
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = GER_purge_dissidents
+		}
+		prerequisite = {
+			focus = GER_state_function
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = GER_distance_from_international
+		text = GER_distance_from_international
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 10.00
+		prerequisite = {
+			focus = GER_one_country_socialism
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = GER_attack_italy
+		icon = GFX_focus_usa_attack_italy
+		cost = 10.00
+		prerequisite = {
+			focus = GER_south_tyrol
+		}
+		x = 14
+		y = 11
+
+	}
+	focus = {
+		id = GER_state_function
+		icon = GFX_focus_DEN_no_regulations
+		cost = 10.00
+		prerequisite = {
+			focus = GER_proletariat_dictatorship
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = navy_7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = navy_5
+		}
+		x = 27
+		y = 8
+
+	}
+	focus = {
+		id = navy_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = navy_7
+		}
+		x = 27
+		y = 9
+
+	}
+	focus = {
 		id = GER_preparing_for_battle
 		icon = GFX_focus_SWE_refuge_for_revolutionaries
 		cost = 10.00
@@ -1004,7 +1038,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_preparing_for_battle
 		}
-		x = 14
+		x = 20
 		y = 10
 
 	}
@@ -1016,7 +1050,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_supporting_poland
 		}
-		x = 15
+		x = 18
 		y = 11
 
 	}
@@ -1028,7 +1062,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_preparing_for_battle
 		}
-		x = 20
+		x = 25
 		y = 10
 
 	}
@@ -1054,7 +1088,7 @@ focus_tree = {
 		prerequisite = {
 			focus = navy_10
 		}
-		x = 22
+		x = 26
 		y = 11
 
 	}
@@ -1065,6 +1099,8 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = GER_protecting_czech_communists
+		}
+		prerequisite = {
 			focus = GER_warsaw_uprising
 		}
 		x = 17
@@ -1121,10 +1157,164 @@ focus_tree = {
 		icon = GFX_focus_generic_invade_denmark
 		cost = 10.00
 		prerequisite = {
-			focus = GER_protecting_czech_communists
+			focus = newfocus_95
+		}
+		mutually_exclusive = {
+			focus = GER_friendship_with_denmark
+		}
+		x = 20
+		y = 12
+
+	}
+	focus = {
+		id = newfocus_93
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = GER_thought_education
+			focus = newfocus_92
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = GER_thought_education
+		icon = GFX_focus_spr_unify_the_london_bureau
+		cost = 10.00
+		prerequisite = {
+			focus = GER_new_socialism_economy
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = GER_attack_france
+		icon = GFX_focus_attack_france
+		cost = 10.00
+		prerequisite = {
+			focus = GER_distance_from_international
+		}
+		x = 11
+		y = 9
+
+	}
+	focus = {
+		id = GER_support_finland
+		icon = GFX_focus_EST_national_pride_in_finland
+		cost = 10.00
+		prerequisite = {
+			focus = GER_preparing_for_battle
+		}
+		x = 22
+		y = 10
+
+	}
+	focus = {
+		id = newfocus_95
+		icon = GFX_focus_SOV_reinforce_western_naval_bases
+		cost = 10.00
+		prerequisite = {
+			focus = GER_support_finland
+		}
+		prerequisite = {
+			focus = GER_supporting_poland
+		}
+		x = 21
+		y = 11
+
+	}
+	focus = {
+		id = GER_friendship_with_denmark
+		icon = GFX_focus_generic_befriend_denmark
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_95
+		}
+		mutually_exclusive = {
+			focus = GER_reclaiming_north_schleswig
+		}
+		x = 22
+		y = 12
+
+	}
+	focus = {
+		id = GER_reconquest_african_colonies
+		icon = GFX_focus_generic_attack_vichy_france
+		cost = 10.00
+		prerequisite = {
+			focus = GER_attack_switherland
+			focus = GER_road_construction
+		}
+		x = 11
+		y = 11
+
+	}
+	focus = {
+		id = newfocus_100
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = GER_war_plan_against_russia
+		}
+		x = 16
+		y = 13
+
+	}
+	focus = {
+		id = newfocus_101
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = GER_war_plan_against_russia
 		}
 		x = 18
+		y = 13
+
+	}
+	focus = {
+		id = GER_road_construction
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 10.00
+		prerequisite = {
+			focus = GER_attack_france
+		}
+		x = 12
+		y = 10
+
+	}
+	focus = {
+		id = GER_attack_switherland
+		icon = GFX_focus_attack_switzerland
+		cost = 10.00
+		prerequisite = {
+			focus = GER_attack_france
+		}
+		x = 10
+		y = 10
+
+	}
+	focus = {
+		id = GER_hungary_revolution
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		cost = 10.00
+		prerequisite = {
+			focus = GER_protecting_czech_communists
+		}
+		x = 16
 		y = 11
+
+	}
+	focus = {
+		id = GER_south_tyrol
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 10.00
+		prerequisite = {
+			focus = GER_distance_from_international
+		}
+		x = 14
+		y = 9
 
 	}
 }
