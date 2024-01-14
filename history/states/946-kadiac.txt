@@ -1,0 +1,30 @@
+state={
+	id=946
+	name="STATE_946"
+	provinces={
+		1830 4833 4848 7884 10679 10694 12661 13091 
+	}
+	resources = { steel = 13 aluminium = 20 }
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			4833 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = RUS
+
+		victory_points = {
+			4833 5
+		}
+
+	}
+	state_category=rural
+	manpower=16520
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
