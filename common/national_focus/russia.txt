@@ -340,14 +340,18 @@ focus_tree = {
             completion_reward = {
                 custom_effect_tooltip = TR_Russia.tt.11
                 custom_effect_tooltip = TR_Russia.tt.10
-                add_timed_idea = {
-                    idea = RUS_war_against_PER
-                    days = 360
-                }
                 declare_war_on = {
                     target = PER
                     type = annex_everything
-                    generator = { 266 }
+                }
+                hidden_effect = {
+                    PER = {
+                        add_ideas = TR_hidden_war_nosurrender
+                    }
+                    add_timed_idea = {
+                        idea = RUS_war_against_PER
+                        days = 720
+                    }
                 }
             }
             

@@ -342,8 +342,8 @@ ideas = {
             }
             targeted_modifier = {
                 tag = PER
-                attack_bonus_against = -0.25
-                defense_bonus_against = -0.15
+                attack_bonus_against = -0.15
+                defense_bonus_against = -0.05
             }
 
         }
