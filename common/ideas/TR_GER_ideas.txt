@@ -34,9 +34,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_cost = 0.8
-				stability_factor = -0.10
-				war_support_factor = -0.05
+				political_power_cost = 1.0
+				stability_factor = -0.20
+				war_support_factor = -0.10
 			}
 		}
 
@@ -47,8 +47,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.05
-				war_support_factor = -0.025
+				stability_factor = -0.10
+				war_support_factor = -0.05
 			}
 
 		} 
@@ -66,8 +66,8 @@ ideas = {
 				production_speed_dockyard_factor = 0.15
 				industrial_capacity_factory = 0.25
 				industrial_capacity_dockyard = 0.25
-				production_factory_max_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
 			}
 		}
 	}	
