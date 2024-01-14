@@ -188,7 +188,7 @@ country_event = {
     }
 
     option = {
-        name = TR_Russia.1.a
+        name = TR_Russia.6.a
     }
 }
 
