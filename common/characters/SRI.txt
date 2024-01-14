@@ -17,7 +17,7 @@ characters = {
 		name = "SRI_consiglio_socialista"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/SRI/portrait_SRI_cln.dds"
+				large = "gfx/leaders/SRI/Portrait_SRI_cln.dds"
 			}
 		}
 		country_leader={
