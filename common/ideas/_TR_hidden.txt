@@ -1,0 +1,27 @@
+ideas = {
+
+	hidden_ideas = { 
+
+		TR_hidden_war_nosurrender = {
+            picture = hol_the_foundations_of_defense
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                forced_surrender_limit = 1
+            }
+        }
+
+	}
+
+}

@@ -80,17 +80,27 @@ focus_tree = {
 	focus = {
 		id = SRI_army_focus_1
 		icon = GFX_
-		cost = 10
+		cost = 5
 		x = 29
 		y = 4
+		allow_branch = {
+			has_country_flag = dAnnunzio_death
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				has_completed_focus = SRI_reunification
+				factor = 3
+			}
+		}
 		completion_reward = {
-	
+			army_experience = 50
 		}
 	}
 	focus = {
 		id = SRI_army_focus_2
 		icon = GFX_
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SRI_army_focus_1
 		}
@@ -98,7 +108,6 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_army_focus_1
 		completion_reward = {
-	
 		}
 	}
 	focus = {
@@ -118,7 +127,7 @@ focus_tree = {
 	focus = {
 		id = SRI_army_focus_4
 		icon = GFX_
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SRI_army_focus_1
 		}
@@ -132,7 +141,7 @@ focus_tree = {
 	focus = {
 		id = SRI_army_focus_5
 		icon = GFX_
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SRI_army_focus_2
 		}
@@ -146,7 +155,7 @@ focus_tree = {
 	focus = {
 		id = SRI_army_focus_6
 		icon = GFX_
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SRI_army_focus_3
 		}
@@ -174,7 +183,7 @@ focus_tree = {
 	focus = {
 		id = SRI_army_focus_8
 		icon = GFX_
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SRI_army_focus_5
 		}
@@ -195,17 +204,27 @@ focus_tree = {
 		focus = {
 			id = SRI_navy_focus_1
 			icon = GFX_
-			cost = 10
+			cost = 5
+			allow_branch = {
+				has_country_flag = dAnnunzio_death
+			}
+			ai_will_do = {
+				base = 1
+				modifier = {
+					has_completed_focus = SRI_reunification
+					factor = 3
+				}
+			}
 			x = 35
 			y = 4
 			completion_reward = {
-		
+				navy_experience = 50
 			}
 		}
 		focus = {
 			id = SRI_navy_focus_2
 			icon = GFX_
-			cost = 10
+			cost = 5
 			prerequisite = {
 				focus = SRI_navy_focus_1
 			}
@@ -233,7 +252,7 @@ focus_tree = {
 		focus = {
 			id = SRI_navy_focus_4
 			icon = GFX_
-			cost = 10
+			cost = 5
 			prerequisite = {
 				focus = SRI_navy_focus_1
 			}
@@ -247,7 +266,7 @@ focus_tree = {
 		focus = {
 			id = SRI_navy_focus_5
 			icon = GFX_
-			cost = 10
+			cost = 5
 			prerequisite = {
 				focus = SRI_navy_focus_2
 			}
@@ -261,7 +280,7 @@ focus_tree = {
 		focus = {
 			id = SRI_navy_focus_6
 			icon = GFX_
-			cost = 10
+			cost = 5
 			prerequisite = {
 				focus = SRI_navy_focus_3
 			}
@@ -289,7 +308,7 @@ focus_tree = {
 		focus = {
 			id = SRI_navy_focus_8
 			icon = GFX_
-			cost = 10
+			cost = 5
 			prerequisite = {
 				focus = SRI_navy_focus_5
 			}
@@ -310,17 +329,27 @@ focus_tree = {
 		focus = {
 			id = SRI_air_force_focus_1
 			icon = GFX_
-			cost = 10
+			cost = 5
+			allow_branch = {
+				has_country_flag = dAnnunzio_death
+			}
+			ai_will_do = {
+				base = 1
+				modifier = {
+					has_completed_focus = SRI_reunification
+					factor = 3
+				}
+			}
 			x = 41
 			y = 4
 			completion_reward = {
-		
+				air_experience = 50
 			}
 		}
 		focus = {
 			id = SRI_air_force_focus_2
 			icon = GFX_
-			cost = 10
+			cost = 5
 			prerequisite = {
 				focus = SRI_air_force_focus_1
 			}
@@ -348,7 +377,7 @@ focus_tree = {
 		focus = {
 			id = SRI_air_force_focus_4
 			icon = GFX_
-			cost = 10
+			cost = 5
 			prerequisite = {
 				focus = SRI_air_force_focus_1
 			}
@@ -362,7 +391,7 @@ focus_tree = {
 		focus = {
 			id = SRI_air_force_focus_5
 			icon = GFX_
-			cost = 10
+			cost = 5
 			prerequisite = {
 				focus = SRI_air_force_focus_2
 			}
@@ -376,7 +405,7 @@ focus_tree = {
 		focus = {
 			id = SRI_air_force_focus_6
 			icon = GFX_
-			cost = 10
+			cost = 5
 			prerequisite = {
 				focus = SRI_air_force_focus_3
 			}
@@ -404,7 +433,7 @@ focus_tree = {
 		focus = {
 			id = SRI_air_force_focus_8
 			icon = GFX_
-			cost = 10
+			cost = 5
 			prerequisite = {
 				focus = SRI_air_force_focus_5
 			}
@@ -882,6 +911,9 @@ focus_tree = {
 			prerequisite = {
 				focus = SRI_support_socialism
 			}
+			ai_will_do = {
+				base = 4
+			}
 			x = 0
 			y = 1
 			relative_position_id = SRI_support_socialism
@@ -918,6 +950,9 @@ focus_tree = {
 			prerequisite = {
 				focus = SRI_labor_union_law
 			}
+			ai_will_do = {
+				base = 5
+			}
 			x = 1
 			y = 2
 			relative_position_id = SRI_appeal_help
@@ -935,6 +970,9 @@ focus_tree = {
 			prerequisite = {
 				focus = SRI_foreign_industrial_advisers
 			}
+			ai_will_do = {
+				base = 3
+			}
 			x = -2
 			y = 1
 			relative_position_id = SRI_foreign_industrial_advisers
@@ -950,6 +988,9 @@ focus_tree = {
 			cost = 5
 			prerequisite = {
 				focus = SRI_foreign_industrial_advisers
+			}
+			ai_will_do = {
+				base = 3
 			}
 			x = 0
 			y = 1
@@ -1653,6 +1694,9 @@ focus_tree = {
 			prerequisite = {
 				focus = SRI_risorgimento
 			}
+			ai_will_do = {
+				factor = 15
+			}
 			x = 0
 			y = 2
 			relative_position_id = SRI_risorgimento
@@ -1691,6 +1735,9 @@ focus_tree = {
 			prerequisite = {
 				focus = SRI_agrarian_reform_south
 				focus = SRI_vast_road_network
+			}
+			ai_will_do = {
+				base = 5
 			}
 			x = 2
 			y = 1
@@ -1738,6 +1785,9 @@ focus_tree = {
 			prerequisite = {
 				focus = SRI_industrialisation_south
 			}
+			ai_will_do = {
+				base = 5
+			}
 			x = 0
 			y = 2
 			relative_position_id = SRI_industrialisation_south
@@ -1765,6 +1815,9 @@ focus_tree = {
 			cost = 10
 			prerequisite = {
 				focus = SRI_large-scale_steel_mill
+			}
+			ai_will_do = {
+				base = 5
 			}
 			x = 0
 			y = 1
@@ -1814,6 +1867,13 @@ focus_tree = {
 				add_timed_idea = {
 					idea = SRI_five_year_plan
 					days = 360
+				}
+				every_owned_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+					add_extra_state_shared_building_slots = 4
 				}
 			}
 		}
@@ -2109,7 +2169,7 @@ focus_tree = {
 				focus = SRI_mediterranean_sea
 			}
 			ai_will_do = {
-				factor = 1
+				factor = 20
 			}
 			x = 1
 			y = 2
@@ -2142,10 +2202,13 @@ focus_tree = {
 		focus = {
 			id = SRI_red_Balkans
 			icon = GFX_focus_BUL_free_balkan_states
-			cost = 5
+			cost = 4
 			prerequisite = {
 				focus = SRI_focus_relation_europe
 				focus = SRI_mediterranean_sea
+			}
+			ai_will_do = {
+				factor = 5
 			}
 			x = 0
 			y = 1
@@ -2166,6 +2229,9 @@ focus_tree = {
 			}
 			available = {
 				has_completed_focus = SRI_focus_relation_europe
+			}
+			ai_will_do = {
+				factor = 5
 			}
 			x = 0
 			y = 1
@@ -2222,10 +2288,13 @@ focus_tree = {
 		focus = {
 			id = SRI_friendship_with_turkey
 			icon = GFX_focus_generic_befriend_turkey
-			cost = 10
+			cost = 5
 			prerequisite = {
 				focus = SRI_mediterranean_sea
 				focus = SRI_focus_relation_europe
+			}
+			ai_will_do = {
+				base = 5
 			}
 			x = 2
 			y = 1
@@ -2242,7 +2311,7 @@ focus_tree = {
 		focus = {
 			id = SRI_friendship_with_egypt
 			icon = GFX_focus_SRI_egypt_relationship
-			cost = 10
+			cost = 5
 			prerequisite = {
 				focus = SRI_mediterranean_sea
 				focus = SRI_focus_relation_europe

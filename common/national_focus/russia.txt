@@ -33,7 +33,7 @@ focus_tree = {
             icon = GFX_focus_SOV_panslavic_nationalism
             x = 17
             y = 0
-            cost = 10
+            cost = 4
 
             search_filters = FOCUS_FILTER_POLITICAL
 
@@ -99,7 +99,7 @@ focus_tree = {
         icon = GFX_focus_NOR_continue_nygaardsvold_government
         x = 17
         y = 2
-        cost = 10
+        cost = 4
 
         search_filters = FOCUS_FILTER_POLITICAL
         prerequisite = { focus = RUS_tsar_infantry }
@@ -192,7 +192,7 @@ focus_tree = {
         icon = GFX_focus_CZE_german_puppet
         x = 17
         y = 5
-        cost = 6
+        cost = 4
 
         search_filters = FOCUS_FILTER_MANPOWER
         prerequisite = { focus = RUS_search_of_siberia }
@@ -216,7 +216,7 @@ focus_tree = {
         icon = GFX_focus_research2
         x = 15
         y = 5
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_RESEARCH
         prerequisite = { focus = RUS_search_of_siberia }
@@ -244,7 +244,7 @@ focus_tree = {
             icon = GFX_focus_generic_rubber
             x = 19
             y = 5
-            cost = 5
+            cost = 4
     
             search_filters = FOCUS_FILTER_RESEARCH
             prerequisite = { focus = RUS_search_of_siberia }
@@ -321,7 +321,7 @@ focus_tree = {
             icon = GFX_focus_generic_attack_iran
             x = 17
             y = 6
-            cost = 10
+            cost = 4
     
             search_filters = FOCUS_FILTER_ANNEXATION
             prerequisite = { focus = RUS_compulsory_education }
@@ -340,14 +340,18 @@ focus_tree = {
             completion_reward = {
                 custom_effect_tooltip = TR_Russia.tt.11
                 custom_effect_tooltip = TR_Russia.tt.10
-                add_timed_idea = {
-                    idea = RUS_war_against_PER
-                    days = 360
-                }
                 declare_war_on = {
                     target = PER
                     type = annex_everything
-                    generator = { 266 }
+                }
+                hidden_effect = {
+                    PER = {
+                        add_ideas = TR_hidden_war_nosurrender
+                    }
+                    add_timed_idea = {
+                        idea = RUS_war_against_PER
+                        days = 720
+                    }
                 }
             }
             
@@ -370,7 +374,7 @@ focus_tree = {
             icon = GFX_goal_generic_construction
             x = 8
             y = 3
-            cost = 5
+            cost = 4
     
             search_filters = FOCUS_FILTER_INDUSTRY
             prerequisite = { focus = RUS_remake_national_government }
@@ -478,7 +482,7 @@ focus_tree = {
             icon = GFX_goal_generic_construct_infrastructure
             x = 8
             y = 4
-            cost = 3
+            cost = 2
     
             search_filters = FOCUS_FILTER_INDUSTRY
             prerequisite = { focus = RUS_NCA }
@@ -487,35 +491,6 @@ focus_tree = {
                 
             }
             completion_reward = {
-                random_owned_controlled_state = {
-                    limit = {
-                        free_building_slots = {
-                            building = infrastructure
-                            size > 1
-                            include_locked = yes
-                        }
-                        OR = {
-                            is_in_home_area = yes
-                            NOT = {
-                                owner = {
-                                    any_owned_state = {
-                                        free_building_slots = {
-                                            building = infrastructure
-                                            size > 1
-                                            include_locked = yes
-                                        }
-                                        is_in_home_area = yes
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    add_building_construction = {
-                        type = infrastructure
-                        level = 2
-                        instant_build = yes
-                    }
-                }
                 random_owned_controlled_state = {
                     limit = {
                         free_building_slots = {
@@ -583,7 +558,7 @@ focus_tree = {
             icon = GFX_focus_generic_hydroelectric_energy
             x = 8
             y = 5
-            cost = 3
+            cost = 2
     
             search_filters = FOCUS_FILTER_INDUSTRY
             prerequisite = { focus = RUS_infrastructure }
@@ -592,35 +567,6 @@ focus_tree = {
                 
             }
             completion_reward = {
-                random_owned_controlled_state = {
-                    limit = {
-                        free_building_slots = {
-                            building = infrastructure
-                            size > 1
-                            include_locked = yes
-                        }
-                        OR = {
-                            is_in_home_area = yes
-                            NOT = {
-                                owner = {
-                                    any_owned_state = {
-                                        free_building_slots = {
-                                            building = infrastructure
-                                            size > 1
-                                            include_locked = yes
-                                        }
-                                        is_in_home_area = yes
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    add_building_construction = {
-                        type = infrastructure
-                        level = 2
-                        instant_build = yes
-                    }
-                }
                 random_owned_controlled_state = {
                     limit = {
                         free_building_slots = {
@@ -746,7 +692,7 @@ focus_tree = {
             icon = GFX_focus_NZL_bob_semple_tank
             x = 8
             y = 6
-            cost = 3
+            cost = 2
     
             search_filters = FOCUS_FILTER_INDUSTRY
             prerequisite = { focus = RUS_infrastructure_1 }
@@ -755,66 +701,6 @@ focus_tree = {
                 
             }
             completion_reward = {
-                random_owned_controlled_state = {
-                    limit = {
-                        free_building_slots = {
-                            building = industrial_complex
-                            size > 0
-                            include_locked = yes
-                        }
-                        OR = {
-                            is_in_home_area = yes
-                            NOT = {
-                                owner = {
-                                    any_owned_state = {
-                                        free_building_slots = {
-                                            building = industrial_complex
-                                            size > 0
-                                            include_locked = yes
-                                        }
-                                        is_in_home_area = yes
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    add_extra_state_shared_building_slots = 1
-                    add_building_construction = {
-                        type = industrial_complex
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-                random_owned_controlled_state = {
-                    limit = {
-                        free_building_slots = {
-                            building = industrial_complex
-                            size > 0
-                            include_locked = yes
-                        }
-                        OR = {
-                            is_in_home_area = yes
-                            NOT = {
-                                owner = {
-                                    any_owned_state = {
-                                        free_building_slots = {
-                                            building = industrial_complex
-                                            size > 0
-                                            include_locked = yes
-                                        }
-                                        is_in_home_area = yes
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    add_extra_state_shared_building_slots = 1
-                    add_building_construction = {
-                        type = industrial_complex
-                        level = 1
-                        instant_build = yes
-                    }
-                }
                 random_owned_controlled_state = {
                     limit = {
                         free_building_slots = {
@@ -884,7 +770,7 @@ focus_tree = {
             icon = GFX_focus_SWE_institute_of_technology
             x = 6
             y = 4
-            cost = 3
+            cost = 2
     
             search_filters = FOCUS_FILTER_RESEARCH
             prerequisite = { focus = RUS_NCA }
@@ -903,7 +789,7 @@ focus_tree = {
             icon = GFX_goal_generic_construct_civ_factory
             x = 4
             y = 4
-            cost = 3
+            cost = 2
     
             search_filters = FOCUS_FILTER_INDUSTRY
             prerequisite = { focus = RUS_NCA }
@@ -1070,7 +956,7 @@ focus_tree = {
                 icon = GFX_focus_usa_reestablish_the_gold_standard
                 x = 5
                 y = 5
-                cost = 3
+                cost = 2
         
                 search_filters = FOCUS_FILTER_RESEARCH
                 prerequisite = { focus = RUS_tech_school }
@@ -1090,7 +976,7 @@ focus_tree = {
                 icon = GFX_focus_generic_industry_3
                 x = 6
                 y = 6
-                cost = 3
+                cost = 2
         
                 search_filters = FOCUS_FILTER_INDUSTRY
                 prerequisite = { focus = RUS_scholarship }
@@ -1132,7 +1018,7 @@ focus_tree = {
                 icon = GFX_focus_generic_land_reclamation
                 x = 4
                 y = 6
-                cost = 3
+                cost = 2
         
                 search_filters = FOCUS_FILTER_INDUSTRY
                 prerequisite = { focus = RUS_scholarship }
@@ -1169,7 +1055,7 @@ focus_tree = {
                 icon = GFX_focus_generic_truck
                 x = 2
                 y = 4
-                cost = 3
+                cost = 2
         
                 search_filters = FOCUS_FILTER_INDUSTRY
                 prerequisite = { focus = RUS_NCA }
@@ -1220,7 +1106,7 @@ focus_tree = {
                 icon = GFX_focus_POL_ukrainian_army
                 x = 2
                 y = 5
-                cost = 3
+                cost = 2
         
                 search_filters = FOCUS_FILTER_INDUSTRY
                 prerequisite = { focus = RUS_development_arctic_zone }
@@ -1254,7 +1140,7 @@ focus_tree = {
                 icon = GFX_focus_generic_supply_line
                 x = 2
                 y = 6
-                cost = 3
+                cost = 2
         
                 search_filters = FOCUS_FILTER_INDUSTRY
                 prerequisite = { focus = RUS_ukrine }
@@ -1282,7 +1168,7 @@ focus_tree = {
                 icon = GFX_focus_LAT_suspend_constitution_of_latvia
                 x = 5
                 y = 7
-                cost = 3
+                cost = 2
         
                 search_filters = FOCUS_FILTER_INDUSTRY
                 prerequisite = { focus = RUS_agricultural_tructer }
@@ -1309,7 +1195,7 @@ focus_tree = {
                 icon = GFX_focus_SWE_landsverk
                 x = 5
                 y = 8
-                cost = 5
+                cost = 4
         
                 search_filters = FOCUS_FILTER_INDUSTRY
                 prerequisite = { focus = RUS_remake_MGI }
@@ -1466,7 +1352,7 @@ focus_tree = {
             icon = GFX_focus_generic_armored_air_support
             x = 26
             y = 3
-            cost = 5
+            cost = 4
     
             search_filters = FOCUS_FILTER_INDUSTRY
             prerequisite = { focus = RUS_remake_national_government }
@@ -1598,6 +1484,33 @@ focus_tree = {
             }
             
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
         #軍人の政府
         focus = {
