@@ -49,7 +49,7 @@ country_event = {
 	
 	immediate = {
 		GRE = {
-			every_owned_state = {
+			every_state = {
 				limit = {
 					is_core_of = GRE
 				}
@@ -790,6 +790,70 @@ country_event = {
 				}
 			}
 			set_global_flag = TR_IC_completed
+			GRS = {
+				transfer_state = 805
+				transfer_state = 731
+				FRA = {
+					add_to_faction = PREV
+				}
+			}
+			RUS = {
+				transfer_state = 184
+				transfer_state = 341
+			}
+			SRI = {
+				transfer_state = 182
+				transfer_state = 187
+			}
+			GRE = {
+				set_politics = {
+					ruling_party = democratic
+				}
+				set_popularities = {
+					democratic = 45
+					socialdemocratic = 25
+					neutrality = 30
+				}
+				RUS = {
+					add_to_faction = PREV
+				}
+			}
+			if = {
+				limit = {
+					country_exists = BUL
+				}
+				BUL = {
+					transfer_state = 945
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = BUL
+					}
+				}
+				SER = {
+					transfer_state = 945
+				}
+			}
+			if = {
+				limit = {
+					country_exists = TUR
+				}
+				TUR = {
+					transfer_state = 339
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = TUR
+					}
+				}
+				RUS = {
+					transfer_state = 339
+				}
+			}
 		}
 		hidden_effect = {
 			if = {
