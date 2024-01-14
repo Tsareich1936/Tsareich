@@ -383,6 +383,7 @@ set_popularities = {
 
 add_ideas = {
 GER_successful_revolution
+GER_left_right_divide
 }
 
 recruit_character = GER_Heinrich_Brandler
