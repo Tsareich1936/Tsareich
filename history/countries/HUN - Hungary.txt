@@ -63,11 +63,9 @@ if = {
 		has_dlc = "Death or Dishonor"
 	}
 	add_ideas = {
-		disarmed_nation
 	}
 	if = {
 		limit = { has_dlc = "Arms Against Tyranny" }
-		add_ideas = { HUN_treaty_of_triannon_aat }
 	}
 	if = {
 		limit = {
@@ -152,11 +150,9 @@ if = {
 		unlock_national_focus = HUN_renounce_the_treaty_of_trianon
 		add_ideas = {
 			limited_conscription
-			HUN_treaty_of_triannon_3
 		}
 
 		unlock_national_focus = HUN_strengthen_fascists #To avoid leader ID clash
-		add_ideas = HUN_strengthen_fascists
 
 		else = {
 			#generic focuses

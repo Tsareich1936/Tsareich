@@ -171,9 +171,6 @@ if = { #########   By Blood Alone Stuff
 	set_variable = { SWI_gold_trade_factory_max_efficiency_factor_increase = 0.035 } 
 
 	add_ideas = {
-		SWI_swiss_neutrality
-		SWI_citizen_militia_1
-		SWI_foreign_fascist_propaganda
 	}
 	
 	if = {
@@ -181,9 +178,6 @@ if = { #########   By Blood Alone Stuff
 			has_start_date < 1936.01.02
 		}
 		add_ideas = {
-			SWI_johannes_baumann
-			SWI_giuseppe_motta
-			SWI_albert_meyer
 		}	
 		set_variable = { SWI_councilor_1 = SWI_johannes_baumann }
 		set_variable = { SWI_councilor_2 = SWI_giuseppe_motta }
@@ -272,9 +266,6 @@ if = { #########   By Blood Alone Stuff
 		clear_variable = SWI_councilor_3
 
 		add_ideas = {
-			SWI_marcel_pilet_golaz
-			SWI_ernst_wetter
-			SWI_enrico_celio
 		}	
 		set_variable = { SWI_councilor_1 = SWI_marcel_pilet_golaz }
 		set_variable = { SWI_councilor_2 = SWI_ernst_wetter }

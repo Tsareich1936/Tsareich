@@ -74,17 +74,6 @@ save_global_event_target_as = WTT_communist_china
 
 		set_research_slots = 3
 
-		add_ideas = {
-			PRC_revolutionary_military_commission
-			PRC_low_popular_support_3
-			PRC_the_long_march_2
-			PRC_mobile_warfare
-			PRC_focus_on_china
-		}
-		remove_ideas = {
-			PRC_low_popular_support_1
-			PRC_the_long_march_1
-		}
 		else = {
 			#generic focuses
 			complete_national_focus = army_effort
@@ -182,10 +171,6 @@ if = {
 		has_dlc = "Waking the Tiger"
 	}
 	add_ideas = {
-		PRC_the_long_march_1
-		PRC_low_popular_support_3
-		PRC_power_struggles
-		PRC_red_army_weakened
 	}
 }
 

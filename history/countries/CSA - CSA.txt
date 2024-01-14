@@ -101,10 +101,6 @@ recruit_character = CSA_yvan_gerard
 	
 	#adding ministers
 	add_ideas = {
-		army_ordnance_department
-		general_electric
-		USA_prepare_intervention
-
 		#laws
 		isolation
 		volunteer_only
@@ -210,7 +206,6 @@ add_ideas = {
 	civilian_economy
 	volunteer_only
 	free_trade
-	home_of_the_free
 }
 
 1939.1.1 = {

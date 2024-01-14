@@ -12,8 +12,6 @@ IF = {
 	}
 	add_ideas = {
 		ICE_christian_x
-		disarmed_nation
-		isolation
 	}
 	
 	set_war_support = 0.15

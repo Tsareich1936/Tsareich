@@ -1,0 +1,136 @@
+TR_iraklion_conference_decision = {
+	TR_IC_mission = {
+		icon = Conference
+		allowed = {
+			tag = GRE
+		}
+		days_mission_timeout = 14
+		fire_only_once = yes
+		is_good = no
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = x
+				has_global_flag = finished_soc
+				has_global_flag = finished_sec
+				has_global_flag = finished_tur
+				tag = SOV
+			}
+		}
+		cost = 0
+		activation = {
+			has_country_flag = TR_GRE_iraklion_started_flag
+			NOT = { has_global_flag = TR_iraklion_finished_flag }
+		}
+		timeout_effect = {
+			set_global_flag = TR_iraklion_finished_flag
+			clr_global_flag = TR_iraklion_started_flag
+			if = {
+				limit = {
+					has_global_flag = finished_sec
+					has_global_flag = finished_soc
+					has_global_flag = finished_tur
+				}
+				every_country = {
+					limit = {
+						OR = {
+							tag = GRE
+							tag = GRS
+							tag = RUS
+							tag = SRI
+							tag = ENG
+						}
+					}
+					country_event = {
+						id = TR_iraklion.24
+					}
+				}
+			}
+			else = {
+				every_country = {
+					limit = {
+						OR = {
+							tag = GRE
+							tag = GRS
+							tag = RUS
+							tag = SRI
+							tag = ENG
+						}
+					}
+					country_event = {
+						id = TR_iraklion.26
+					}
+				}
+			}
+
+			
+		}
+	}
+	TR_IC_poverty_issue_socialist = {
+		icon = communism
+		allowed = {
+			tag = GRE
+		}
+		available = {
+			NOT = { has_country_flag = TR_IC_progressing }
+		}
+		fire_only_once = yes
+
+		cost = 0
+
+		ai_will_do = {
+			base = 100
+			factor = 1
+		}
+
+		complete_effect = {
+			set_country_flag = TR_IC_progressing
+			country_event = {
+				id = TR_iraklion.12
+			}
+		}
+	}
+	TR_IC_poverty_issue_security_guarantee = {
+		icon = Military
+		allowed = {
+			tag = GRE
+		}
+		available = {
+			NOT = { has_country_flag = TR_IC_progressing }
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 100
+			factor = 0.9
+		}
+
+		complete_effect = {
+			set_country_flag = TR_IC_progressing
+			country_event = {
+				id = TR_iraklion.16
+			}
+		}
+	}
+	TR_IC_poverty_issue_turkey = {
+		icon = TUR
+		allowed = {
+			tag = GRE
+		}
+		available = {
+			NOT = { has_country_flag = TR_IC_progressing }
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 100
+			factor = 0.8
+		}
+
+		complete_effect = {
+			set_country_flag = TR_IC_progressing
+			country_event = {
+				id = TR_iraklion.20
+			}
+		}
+	}
+}
