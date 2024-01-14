@@ -656,7 +656,7 @@ country_event = {
 		name = TR_iraklion.19.a
 	}
 }
-#20 Socialist issue - start
+#20 Turkey issue - start
 country_event = {
 	id = TR_iraklion.20
 	title = TR_iraklion.20.t
@@ -685,7 +685,7 @@ country_event = {
 		}
 	}
 }
-#21 Socialist issue - vote
+#21 Turkey issue - vote
 country_event = {
 	id = TR_iraklion.21
 	title = TR_iraklion.21.t
@@ -711,7 +711,7 @@ country_event = {
 		}
 	}
 }
-#22 Socialist issue - collect
+#22 Turkey issue - collect
 country_event = {
 	id = TR_iraklion.22
 	title = TR_iraklion.12.t
@@ -745,7 +745,7 @@ country_event = {
 		}
 	}
 }
-#15 Socialist issue - result
+#23 Turkey issue - result
 country_event = {
 	id = TR_iraklion.23
 	title = TR_iraklion.23.t
@@ -756,5 +756,101 @@ country_event = {
 
 	option = {
 		name = TR_iraklion.23.a
+	}
+}
+#24 Iraklion Conference Finished
+country_event = {
+	id = TR_iraklion.24
+	title = TR_iraklion.24.t
+	desc = TR_iraklion.24.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {
+		name = TR_iraklion.24.a
+	}
+}
+#25 unsettled mood
+country_event = {
+	id = TR_iraklion.25
+	title = TR_iraklion.25.t
+	desc = TR_iraklion.25.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {
+		name = TR_iraklion.25.a
+	}
+}
+#26 Meetings dance, but do not proceed
+country_event = {
+	id = TR_iraklion.26
+	title = TR_iraklion.26.t
+	desc = TR_iraklion.26.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {
+		name = TR_iraklion.26.a
+	}
+}
+#27 The price of reconciliation
+country_event = {
+	id = TR_iraklion.27
+	title = TR_iraklion.27.t
+	desc = TR_iraklion.27.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {
+		name = TR_iraklion.27.a
+	}
+}
+#28 restarting conflicts
+country_event = {
+	id = TR_iraklion.28
+	title = TR_iraklion.28.t
+	desc = TR_iraklion.28.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {
+		name = TR_iraklion.28.a
+	}
+}
+#29 inevitable fate
+country_event = {
+	id = TR_iraklion.29
+	title = TR_iraklion.29.t
+	desc = TR_iraklion.29.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {
+		name = TR_iraklion.29.a
 	}
 }
