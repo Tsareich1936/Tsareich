@@ -593,6 +593,88 @@ ideas = {
             }
         }
 
+        RUS_idea_lot_guns = {
+            picture = MEX_politicised_army_2
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            equipment_bonus = {
+                infantry_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.2
+                }
+            }	
+        }
+
+        RUS_idea_russian_planes = {
+            picture = generic_aircraft_support
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            equipment_bonus = {
+                small_plane_airframe = {
+					instant = yes
+					air_range = 0.35
+				}
+				medium_plane_fighter_airframe = {
+					instant = yes
+					air_range = 0.4
+				}
+            }	
+        }
+
+        RUS_idea_russian_navy = {
+            picture = generic_sea_focused_navy
+            allowed = {
+
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            equipment_bonus = {
+
+                ship_hull_light = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+                ship_hull_cruiser = {
+					instant = yes
+					build_cost_ic = -0.08
+				}
+            }	
+            modifier = {
+                industrial_capacity_dockyard = 0.2
+                naval_speed_factor = 0.15
+            }
+        }
+
 
         RUS_debug_exp = {
             picture = SOV_the_true_tsars

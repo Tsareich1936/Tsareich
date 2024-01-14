@@ -56,3 +56,11 @@
  RUS_idea_military_government_1_1_desc:"軍人が主導権を握る帝国政府では、国の安全保障のために様々な資源を利用し、強国の地位を維持するための努力が行われる。"
  RUS_tech_scholarship:"国家奨学金"
  RUS_tech_scholarship_desc:"国家奨学金は、国費で優秀な学生に学習の機会を与える先進的制度である。"
+
+ RUS_idea_lot_guns:"銃の大量生産"
+
+ RUS_idea_russian_planes:"帝国の長距離航空機"
+ RUS_idea_russian_planes_desc:"ロシアでは、その地理的特徴から長距離を飛行可能な航空機が必要とされており、国の近代化の過程で得られた他国にはない知識と経験が、この国の上質な飛行機を生んだ。"
+ RUS_idea_russian_navy:"極地沿岸防衛海軍"
+ RUS_idea_russian_navy_desc:"我が国の極地防衛思想から、最終的には重量の少ない艦艇について重点的に建造する方針が採用された。さらなる近代化が進むまではこれを維持すべきであろう。"
+
