@@ -1485,6 +1485,32 @@ focus_tree = {
             
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
         #軍人の政府
         focus = {
             id = RUS_military_government
