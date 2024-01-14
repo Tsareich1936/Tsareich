@@ -8,7 +8,7 @@ country_event = {
 
 	trigger = {
 		tag = GRE
-		socialism > 0.15
+		socialism > 0.05
 	}
 	trigger = {
 		SRI = {
