@@ -455,23 +455,23 @@ focus_tree = {
 		x = 23
 		y = 3
 			completion_reward = {
-					add_stability = -0.1
-					add_popularity = {
-							ideology = communism
-							popularity = 0.1
-						}
-					add_popularity = {
-							ideology = socialism
-							popularity = -1
-						}
-					set_party_name = {
-							ideology = communism
-							long_name = GER_communism_unite_party_long
-							name = GER_communism_unite_party
-						}
+				add_stability = -0.1
+				add_popularity = {
+						ideology = communism
+						popularity = 0.1
+					}
+				add_popularity = {
+						ideology = socialism
+						popularity = -1
+					}
+				set_party_name = {
+						ideology = communism
+						long_name = GER_communism_unite_party_long
+						name = GER_communism_unite_party
 				}
-
+			}
 	}
+
 	focus = {
 		id = GER_totalitarianism
 		text = GER_totalitarianism
@@ -484,12 +484,12 @@ focus_tree = {
 		x = 22
 		y = 4
 			completion_reward = {
-					add_war_support = 0.15
-					add_timed_idea = {
-							idea = GER_totalitarian_oppression
-							days = 180
-						}
+				add_war_support = 0.15
+				add_timed_idea = {
+						idea = GER_totalitarian_oppression
+						days = 180
 				}
+			}
 
 	}
 	focus = {
@@ -524,6 +524,12 @@ focus_tree = {
 		}
 		x = 23
 		y = 5
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = GER_left_right_divide
+				add_idea = GER_left_right_divide2
+			}
+		}
 
 	}
 	focus = {
@@ -536,6 +542,9 @@ focus_tree = {
 		}
 		x = 23
 		y = 6
+		completion_reward = {
+			remove_ideas = GER_left_right_divide2
+		}
 
 	}
 	focus = {

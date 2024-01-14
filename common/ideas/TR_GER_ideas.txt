@@ -20,9 +20,9 @@ ideas = {
 			allowed = {
 				always = no
 			}
-            removal_cost = -1
-            modifier = {
-				stability_weekly = -0.05
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.01
 				fascism_drift = -0.1
 			}
 		}
@@ -33,10 +33,43 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			modifier = {
+			modifier = 
+				political_power_cost = 0.8
 				stability_factor = -0.10
-                war_support_factor = -0.05
+				war_support_factor = -0.05
+		}
+
+		GER_left_right_divide2 = {
+			picture = "SOV_factionalism_modifier"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = 
+				stability_factor = -0.05
+				war_support_factor = -0.025
+		} 
+
+		GER_workers_democracy = {
+			picture = "generic_communism_drift_bonus"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.33
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 0.2
 			}
 		}
-	}
+	}	
 }
