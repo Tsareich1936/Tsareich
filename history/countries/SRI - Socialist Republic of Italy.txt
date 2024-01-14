@@ -123,11 +123,41 @@ if = {
 set_research_slots = 3
 set_convoys = 50
 set_stability = 0.50
-
+##################################
+###         characters         ###
+##################################
+#political leader
 recruit_character = SRI_dAnnunzio
 recruit_character = SRI_consiglio_socialista
 recruit_character = SRI_blank_leader
 recruit_character = SRI_benito_mussolini
+recruit_character = SRI_pietro_nenni
+#army leader
+recruit_character = SRI_rodolfo_graziani
+recruit_character = SRI_pietro_badoglio
+recruit_character = SRI_emilio_de_bono
+recruit_character = SRI_italo_balbo
+recruit_character = SRI_giovanni_messe
+recruit_character = SRI_ugo_cavallero
+recruit_character = SRI_sebastiano_visconti_prasca
+recruit_character = SRI_ubaldo_soddu
+recruit_character = SRI_ettore_bastico
+recruit_character = SRI_italo_gariboldi
+recruit_character = SRI_vittorio_ambrosio
+recruit_character = SRI_alfredo_guzzoni
+recruit_character = SRI_pietro_pintor
+recruit_character = SRI_mario_berti
+recruit_character = SRI_carlo_geloso
+recruit_character = SRI_giuseppe_tellera
+recruit_character = SRI_francesco_zingales
+recruit_character = SRI_ezio_rosi
+recruit_character = SRI_mario_vercellino
+recruit_character = SRI_alessandro_pirzio_biroli
+recruit_character = SRI_carlo_vecchiarelli
+recruit_character = SRI_mario_robotti
+recruit_character = SRI_ettore_baldassarre
+recruit_character = SRI_amedeo_guillet
+recruit_character = SRI_annibale_bergonzoli
 
 set_politics = {
 	ruling_party = communism
