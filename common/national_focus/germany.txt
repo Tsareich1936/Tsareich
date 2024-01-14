@@ -147,6 +147,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
+			completion_reward = {
+				add_research_slot = 1
+			}
 
 	}
 	focus = {
@@ -158,6 +161,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 4
+			completion_reward = {
+				add_research_slot = 1
+			}
 
 	}
 	focus = {
@@ -531,12 +537,11 @@ focus_tree = {
 		x = 22
 		y = 4
 			completion_reward = {
-					add_stability = -0.1
 					add_war_support = 0.15
-					add_popularity = {
-							ideology = fascism
-							popularity = -1
-						}
+					add_timed_idea = {
+						idea = GER_totalitarian_oppression
+						days = 20
+					}
 				}
 
 	}
