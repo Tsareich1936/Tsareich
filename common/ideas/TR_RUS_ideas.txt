@@ -102,7 +102,7 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                conscription_factor = -0.15
+                conscription_factor = -0.25
             }
         }
 
@@ -694,6 +694,77 @@ ideas = {
                 experience_gain_army = 0.1
                 experience_gain_navy = 0.15
                 experience_gain_air = 0.15
+            }
+        }
+
+        RUS_imperiya_army = {
+            picture = SOV_the_road_of_life
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                mobilization_speed = 2
+                army_attack_factor = 0.05
+                army_defence_factor = 0.075
+                training_time_factor = -0.15
+                acclimatization_cold_climate_gain_factor = 0.15
+                winter_attrition_factor = -0.4
+                heat_attrition_factor = 0.25
+                air_weather_penalty = -0.15
+            }
+        }
+
+        RUS_operational_art = {
+            picture = general_staff
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                max_planning = 0.35
+                land_reinforce_rate = 0.05
+                max_commander_army_size = 8
+                max_army_group_size = 3
+            }
+        }
+
+        RUS_economy_by_RUS = {
+            picture = generic_economic_increase
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                neutrality_drift = 0.05
+                political_power_factor = -0.15
+                consumer_goods_factor = -0.15
+                production_speed_buildings_factor = 0.2
+                industrial_capacity_factory = 0.2
             }
         }
 
