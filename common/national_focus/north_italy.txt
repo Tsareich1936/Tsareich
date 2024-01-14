@@ -108,6 +108,12 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_army_focus_1
 		completion_reward = {
+			add_tech_bonus = {
+				name = SRI_artillery_bonus
+				bonus = 2
+				uses = 2
+				category = artillery
+			}
 		}
 	}
 	focus = {
@@ -121,7 +127,12 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_army_focus_1
 		completion_reward = {
-	
+			add_tech_bonus = {
+				name = SRI_armor_bonus
+				bonus = 2
+				uses = 2
+				category = armor
+			}
 		}
 	}
 	focus = {
@@ -135,7 +146,12 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_army_focus_1
 		completion_reward = {
-	
+			add_tech_bonus = {
+				name = SRI_infantry_bonus
+				bonus = 2
+				uses = 2
+				category = infantry_tech
+			}
 		}
 	}
 	focus = {
@@ -232,7 +248,12 @@ focus_tree = {
 			y = 2
 			relative_position_id = SRI_navy_focus_1
 			completion_reward = {
-		
+				add_tech_bonus = {
+					name = SRI_ships_bonus
+					bonus = 2
+					uses = 2
+					technology = advanced_light_art
+				}
 			}
 		}
 		focus = {
@@ -246,7 +267,12 @@ focus_tree = {
 			y = 2
 			relative_position_id = SRI_navy_focus_1
 			completion_reward = {
-		
+				add_tech_bonus = {
+					name = SRI_artillery_bonus
+					bonus = 2
+					uses = 1
+					technology = advanced_submarine
+				}
 			}
 		}
 		focus = {
@@ -260,7 +286,12 @@ focus_tree = {
 			y = 2
 			relative_position_id = SRI_navy_focus_1
 			completion_reward = {
-		
+				add_tech_bonus = {
+					name = SRI_naval_air_bonus
+					bonus = 2
+					uses = 2
+					category = naval_air
+				}
 			}
 		}
 		focus = {
