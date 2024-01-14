@@ -188,7 +188,7 @@ country_event = {
     }
 
     option = {
-        name = TR_Russia.1.a
+        name = TR_Russia.6.a
     }
 }
 
@@ -227,6 +227,111 @@ country_event = {
                 autonomous_state = autonomy_puppet
             }
         }
+    }
+}
+
+country_event = {
+    id = TR_Russia.8
+    hidden = yes
+    fire_only_once = yes
+
+    is_triggered_only = yes
+    immediate = {
+        219 = {
+            create_unit = {
+                division = "name = \"1.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"2.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"3.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"4.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"5.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"6.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"7.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"8.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"9.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"10.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+        }
+        195 = {
+            create_unit = {
+                division = "name = \"11.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"12.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"13.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"14.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"15.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"16.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"17.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"18.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"19.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"20.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"21.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+            create_unit = {
+                division = "name = \"22.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+                owner = RUS
+            }
+        }
+    }
+    option = {
+        name = TR_Russia.7.a
     }
 }
 
