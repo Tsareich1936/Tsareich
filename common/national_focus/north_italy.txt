@@ -1555,7 +1555,7 @@ focus_tree = {
 			x = -1
 			y = 2
 			relative_position_id = SRI_public_works_investment
-			complete_tooltip = {
+			completion_reward = {
 				add_ideas = {
 					SRI_domestic_industry_advisers
 				}
