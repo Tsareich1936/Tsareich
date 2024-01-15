@@ -2408,7 +2408,6 @@ focus_tree = {
             }
 
             completion_reward = {
-                add_ideas = RUS_idea_russian_navy
                 add_tech_bonus = {
                     bonus = 1.75
                     uses = 2
