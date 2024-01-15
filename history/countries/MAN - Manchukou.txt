@@ -158,3 +158,4 @@ add_to_faction = FJN
 add_to_faction = HNA
 add_to_faction = GXC
 add_to_faction = GZH
+add_to_faction = SIK

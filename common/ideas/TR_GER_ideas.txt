@@ -54,7 +54,7 @@ ideas = {
 		} 
 
 		GER_workers_democracy = {
-			picture = "generic_communism_drift_bonus"
+			picture = "send_attache"
 			allowed = {
 				always = no
 			}
