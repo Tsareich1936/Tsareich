@@ -1,0 +1,11 @@
+opinion_modifiers = {
+	GER_approaching_international = {
+		value = 20
+	}
+	GER_international_revolution = {
+		value = -50
+	}
+	GER_temp = {
+		value = 200
+	}
+}

@@ -501,6 +501,12 @@ focus_tree = {
 		}
 		x = 21
 		y = 5
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = GER_workers_democracy
+				add_idea = GER_workers_democracy2
+			}
+		}
 
 	}
 	focus = {
@@ -559,6 +565,27 @@ focus_tree = {
 		}
 		x = 22
 		y = 7
+		completion_reward = {
+				add_political_power = 100
+			ENG = {
+				add_opinion_modifier = {
+				target = GER
+				modifier = GER_international_revolution
+				}
+			}
+			FGE = {
+				add_opinion_modifier = {
+				target = GER
+				modifier = GER_international_revolution
+				}
+			}
+			RUS = {
+				add_opinion_modifier = {
+				target = GER
+				modifier = GER_international_revolution
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -571,7 +598,18 @@ focus_tree = {
 		}
 		x = 20
 		y = 8
-
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+				target = SRI
+				modifier = GER_approaching_international
+				}
+				add_opinion_modifier = {
+				target = FRA
+				modifier = GER_approaching_international
+				}
+			}
+		}
 	}
 	focus = {
 		id = army_2
