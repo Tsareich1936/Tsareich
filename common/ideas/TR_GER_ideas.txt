@@ -22,7 +22,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_weekly = -0.01
+				stability_factor = -0.10
 				fascism_drift = -0.1
 			}
 		}
@@ -35,7 +35,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_cost = 1.0
-				stability_factor = -0.20
+				stability_factor = -0.25
 				war_support_factor = -0.10
 			}
 		}
@@ -54,38 +54,51 @@ ideas = {
 		} 
 
 		GER_workers_democracy = {
-			picture = "send_attache"
+			picture = "SOV_system_decentralization"
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = -0.10
-				production_speed_industrial_complex_factor = 0.15
-				production_speed_arms_factory_factor = 0.15
-				production_speed_dockyard_factor = 0.15
-				industrial_capacity_factory = 0.25
-				industrial_capacity_dockyard = 0.25
+				consumer_goods_factor = -0.15
 				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 
 		GER_workers_democracy2 = {
-			picture = "send_attache"
+			picture = "SOV_system_decentralization"
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = -0.30
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.15
 				production_speed_industrial_complex_factor = 0.25
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
-				industrial_capacity_factory = 0.25
-				industrial_capacity_dockyard = 0.25
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.10
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+
+		GER_positive_propaganda = {
+			picture = "idea_por_iberian_workers_united"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				communism_drift = 0.5
+				stability_weekly = 0.05
+				war_support_weekly = 0.025
 			}
 		}
 	}	
