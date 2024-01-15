@@ -893,7 +893,7 @@ charavters = {
 			defense_skill = 2
 			maneuvering_skill = 4
 			coordination_skill = 2
-			legacy_id = 0
+			# legacy_id = 0
 		}
 	}
 
@@ -929,7 +929,7 @@ charavters = {
 			defense_skill = 1
 			maneuvering_skill = 2
 			coordination_skill = 1
-			legacy_id = 0
+			# legacy_id = 0
 		}
 	}
 
@@ -1014,4 +1014,2108 @@ charavters = {
 		}
 	}
 
+}
+characters = {
+	### THEORISTS ###
+
+	# Messe up there
+
+	# Graziani up there
+
+	# Iachino up there
+
+	#Fioravanzo up there
+
+	SRI_amedeo_mecozzi = {
+		name = ITA_amedeo_mecozzi
+		portraits = {
+			army = {
+				small = GFX_idea_amedeo_mecozzi
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = amedeo_mecozzi
+			ledger = air
+			allowed = {
+				tag = SRI
+			}
+			visible = {
+				has_global_flag = SRI_one_Italy
+			}
+			traits = {
+				assault_avaition
+			}
+		}
+	}
+
+	SRI_renato_sandalli = {
+		name = ITA_renato_sandalli
+		portraits = {
+			army = {
+				small = GFX_idea_renato_sandalli
+			}
+		}
+
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = renato_sandalli
+			ledger = air
+			allowed = {
+				tag = SRI
+			}
+			traits = { air_warfare_theorist }
+		}		
+	}
+
+	SRI_gaetano_crocco = {
+		name = ITA_gaetano_crocco
+		portraits = {
+			army = {
+				small = GFX_idea_gaetano_crocco
+			}
+		}
+
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = gaetano_crocco
+			ledger = air
+			allowed = {
+				tag = SRI
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			visible = {
+				has_global_flag = SRI_one_Italy
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+	
+	SRI_romeo_bernotti = {
+		name = ITA_romeo_bernotti
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_romeo_bernotti_small
+			}
+		}
+
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = ITA_romeo_bernotti
+			ledger = navy
+			allowed = {
+				tag = SRI
+			}
+			traits = {
+				naval_aviation_pioneer
+			}
+		}
+	}
+}
+characters = {
+	### ARMY CHIEFS ###
+
+	# Badoglio up there
+
+	# Cavallero up there
+
+	# De Bono up there
+
+	SRI_alberto_pariani = {
+		name = ITA_alberto_pariani
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_alberto_pariani_small
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = ITA_alberto_pariani
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_completed_focus = ITA_a_bandits_war
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### NAVY CHIEFS ###
+
+	# Campioni up there
+
+	SRI_domenico_cavagnari = {
+		name = ITA_domenico_cavagnari
+		portraits = {
+			army = {
+				small = GFX_idea_domenico_cavagnari
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = domenico_cavagnari
+			allowed = {
+				tag = SRI
+			}
+			traits = {
+				navy_chief_commerce_raiding_1
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SRI_arturo_riccardi = {
+		name = ITA_arturo_riccardi
+		portraits = {
+			army = {
+				small = GFX_idea_arturo_riccardi
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = arturo_riccardi
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				navy_chief_naval_aviation_1
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SRI_raffaele_de_courten = {
+		name = ITA_raffaele_de_courten
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_raffaele_de_courten_small
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = ITA_raffaele_de_courten
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+
+	### AIR CHIEFS ###
+
+	# Balbo up there
+
+	SRI_rino_corso_fougier = {
+		name = ITA_rino_corso_fougier
+		portraits = {
+			army = {
+				small = GFX_idea_rino_corso_fougier
+			}
+		}
+
+		advisor = {	
+			slot = air_chief
+			idea_token = rino_corso_fougier
+			allowed = {
+				tag = SRI
+			}
+			traits = {
+				air_chief_safety_1
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SRI_francesco_pricolo = {
+		name = ITA_francesco_pricolo
+		portraits = {
+			army = {
+				small = GFX_idea_francesco_pricolo
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = francesco_pricolo
+			allowed = {
+				tag = SRI
+			}
+			visible = {
+				has_global_flag = SRI_one_Italy
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}		
+	}
+
+	SRI_aldo_pellegrini = {
+		name = ITA_aldo_pellegrini
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_aldo_pellegrini_small
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = ITA_aldo_pellegrini
+			allowed = {
+				tag = SRI
+			}
+			traits = {
+				air_chief_ground_support_1
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+}
+characters = {
+	### MILITARY HIGH COMMAND ###
+
+	# Da Zara up there
+
+	# Bergamini up there
+
+	# Roatta up there
+
+	# Vittorio Ambrosio up there
+
+	# Guzzoni up there
+
+	# Giovanni Duca up there
+
+	# Luigi Longo up there
+
+	# Randolfo Pacciardi up there
+	
+	SRI_ettore_muti = {
+		name = ITA_ettore_muti
+		portraits = {
+			army = {
+				small = GFX_idea_ettore_muti
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = ettore_muti
+			ledger = air
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				air_tactical_bombing_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SRI_marziale_cerutti = {
+		name = ITA_marziale_cerutti
+		portraits = {
+			army = {
+				small = GFX_idea_marziale_cerutti
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = marziale_cerutti
+			ledger = air
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				air_air_combat_training_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}		
+	}
+	
+	SRI_silvio_scaroni = {
+		name = ITA_silvio_scaroni
+		portraits = {
+			army = {
+				small = GFX_idea_silvio_scaroni
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = silvio_scaroni
+			ledger = air
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				air_bomber_interception_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SRI_luigi_mascherpa = {
+		name = ITA_luigi_mascherpa
+		portraits = {
+			army = {
+				small = GFX_idea_luigi_mascherpa
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = luigi_mascherpa
+			ledger = navy
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				navy_naval_air_defense_1
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	SRI_achille_starace = {
+		name = ITA_achille_starace
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_achille_starace_small
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = ITA_achille_starace
+			ledger = army
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				OR = {
+					has_government = fascism
+				}
+			}
+			visible = {
+				has_global_flag = SRI_one_Italy	
+			}
+			traits = {
+				army_logistics_1 # Blackshirt related trait instead?
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+}
+characters = {
+	### POLITICAL ADVISORS ###
+
+	# Mario Roatta is up there (Military High Command)
+
+	# Luigi Longo up there (MHC)
+
+	SRI_gian_galeazzo_ciano = {
+		name = ITA_gian_galeazzo_ciano
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_gian_galeazzo_ciano_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_gian_galeazzo_ciano
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			cost = 75
+			traits = {
+				hierarch_minister_of_foreign_affairs
+			}
+			# on_add = {
+			# 	owner = {
+			# 		hidden_effect = {
+			# 			ITA_bop_medium_decrease_effect = yes
+			# 		}
+			# 	}
+			# }
+			# on_remove = {
+			# 	owner = {
+			# 		hidden_effect = {
+			# 			ITA_bop_medium_increase_effect = yes
+			# 		}
+			# 	}
+			# }
+			ai_will_do = {
+				base = 0.3
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+					}
+				}
+			}
+		}
+	}
+
+	SRI_dino_grandi = {
+		name = ITA_dino_grandi
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_dino_grandi_small
+			}
+			civilian = {
+				large = GFX_portrait_ITA_dino_grandi
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_dino_grandi
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			
+			cost = 75
+			traits = {
+				hierarch_minister_of_justice 
+			}
+			# on_add = {
+			# 	owner = {
+			# 		hidden_effect = {
+			# 			ITA_bop_medium_decrease_effect = yes
+			# 		}
+			# 	}
+			# }
+			# on_remove = {
+			# 	owner = {
+			# 		hidden_effect = {
+			# 			ITA_bop_medium_increase_effect = yes
+			# 		}
+			# 	}
+			# }
+			ai_will_do = {
+				base = 0.3
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+					}
+				}
+			}
+		}
+	}
+
+	SRI_giuseppe_bottai = {
+		name = ITA_giuseppe_bottai
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_giuseppe_botai_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_giuseppe_bottai
+			allowed = {
+				tag = SRI
+			}
+			available = {
+			}
+			cost = 75
+			traits = {
+				hierarch_minister_of_education # Hierarch / Minister of Education
+			}
+			# on_add = {
+			# 	owner = {
+			# 		hidden_effect = {
+			# 			ITA_bop_medium_decrease_effect = yes
+			# 		}
+			# 	}
+			# }
+			# on_remove = {
+			# 	owner = {
+			# 		hidden_effect = {
+			# 			ITA_bop_medium_increase_effect = yes
+			# 		}
+			# 	}
+			# }
+			ai_will_do = {
+				base = 0.300
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+					}
+				}
+			}
+		}
+	}
+
+	SRI_renato_ricci = {
+		name = ITA_renato_ricci
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_renato_ricci_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_renato_ricci
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			cost = 75
+			traits = {
+				hierarch_minister_of_corporations # Leader of Blackshirts and Military Police
+			}
+			# on_add = {
+			# 	owner = {
+			# 		hidden_effect = {
+			# 			ITA_bop_medium_decrease_effect = yes
+			# 		}
+			# 	}
+			# }
+			# on_remove = {
+			# 	owner = {
+			# 		hidden_effect = {
+			# 			ITA_bop_medium_increase_effect = yes
+			# 		}
+			# 	}
+			# }
+			ai_will_do = {
+				base = 0.300
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+					}
+				}
+			}
+		}
+	}
+
+	SRI_mario_roatta = {
+		name = ITA_mario_roatta
+		portraits = {
+		#TODO_Manu: In the past we were not able to make this work. I hope that you, people from the future who are seeing this, will be able to use your knowledge and sci-fi technology to make this work. Good luck comrades. 
+		#Edit: But don't duplicate this character or my cursed spirit will come to haunt you.
+			civilian = {
+				small = GFX_idea_ita_mario_roatta_political_advisor
+			}
+			army = {
+				small = GFX_idea_mario_roatta
+				large = GFX_portrait_ITA_mario_roatta
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = mario_roatta
+			ledger = army
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				army_regrouping_1
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mario_roatta_political_advisor
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_intelligence_agency = yes
+				has_government = fascism
+			}
+			traits = {
+				head_of_intelligence 
+			}
+			ai_will_do = {
+				base = 1.000
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_monarchist_ai = yes
+						ITA_is_christian_democracy_ai = yes
+					}
+				}
+			}
+		}
+
+		corps_commander = {
+			traits = { politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { has_government = fascism }
+		}
+	}
+
+	SRI_giovanni_marinelli = {
+		name = ITA_giovanni_marinelli
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_giovanni_marinelli_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_giovanni_marinelli
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				prince_of_terror
+			}
+			ai_will_do = {
+				base = 1.000
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+					}
+				}
+			}
+		}		
+	}
+
+	SRI_giacomo_acerbo = {
+		name = ITA_giacomo_acerbo
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_giacomo_acerbo_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_giacomo_acerbo
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				war_industrialist 
+			}
+			visible = {
+				has_global_flag = SRI_one_Italy
+			}
+			ai_will_do = {
+				base = 3.000
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_monarchist_ai = yes
+						ITA_is_christian_democracy_ai = yes
+					}
+				}
+			}
+		}
+	}
+	
+	SRI_paolo_thaon_di_revel = {
+		name = ITA_paolo_thaon_di_revel
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_paolo_thaon_di_revel_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_paolo_thaon_di_revel
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				quartermaster_general 
+			}
+
+			ai_will_do = {
+				base = 0.300
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_monarchist_ai = yes
+						ITA_is_christian_democracy_ai = yes
+					}
+				}
+			}
+		}
+	}
+
+	SRI_carlo_favagrossa = {
+		name = ITA_carlo_favagrossa
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_carlo_favagrossa_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_carlo_favagrossa
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				armaments_organizer
+			}
+
+			ai_will_do = {
+				base = 0.300
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_monarchist_ai = yes
+						ITA_is_christian_democracy_ai = yes
+					}
+				}
+			}
+		}
+	}
+
+	SRI_alberto_beneduce = {
+		name = ITA_alberto_beneduce
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_alberto_beneduce_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_alberto_beneduce
+			allowed = {
+				tag = SRI
+			}
+			available = {
+			}
+			traits = {
+				captain_of_industry
+			}
+
+			ai_will_do = {
+				base = 0.300
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+					}
+				}
+			}
+		}
+	}
+
+	SRI_guido_jung = {
+		name = ITA_guido_jung
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_guido_jung_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_guido_jung
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				financial_expert
+			}
+			visible = {
+				has_global_flag = SRI_one_Italy
+			}
+
+			ai_will_do = {
+				base = 0.300
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_historical_ai = yes
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_monarchist_ai = yes
+						ITA_is_christian_democracy_ai = yes
+					}
+				}
+			}
+		}
+	}
+
+	SRI_adelchi_serena = {
+		name = ITA_adelchi_serena
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_adelchi_serena_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_adelchi_serena
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				silent_workhorse
+			}
+			visible = {
+				has_global_flag = SRI_one_Italy
+			}
+			ai_will_do = {
+				base = 0.300
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_monarchist_ai = yes
+						ITA_is_christian_democracy_ai = yes
+					}
+				}
+			}
+		}
+	}
+
+	SRI_curzio_malaparte = {
+		name = ITA_curzio_malaparte
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_curzio_malaparte_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_curzio_malaparte
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				editor
+			}
+
+			ai_will_do = {
+				base = 0.300
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_monarchist_ai = yes
+					}
+				}
+			}
+		}
+	}
+
+	SRI_serafino_mazzolini = {
+		name = ITA_serafino_mazzolini
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_serafino_mazzolini_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_serafino_mazzolini
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			visible = {
+				has_global_flag = SRI_one_Italy
+			}
+			traits = {
+				ideological_crusader 
+			}
+			on_add = {
+			}
+			ai_will_do = {
+				base = 0.500
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_christian_democracy_ai = yes
+					}
+				}
+			}
+		}
+	}
+
+	SRI_roberto_farinacci = {
+		name = ITA_roberto_farinacci
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_roberto_farinacci_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_roberto_farinacci
+			allowed = {
+				tag = SRI
+			}
+			visible = {
+				has_global_flag = SRI_one_Italy
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				backroom_backstabber 
+			}
+			ai_will_do = {
+				base = 0.000
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_monarchist_ai = yes
+						ITA_is_christian_democracy_ai = yes
+					}
+				}
+			}
+		}
+	}
+
+	SRI_carlo_scorza = {
+		name = ITA_carlo_scorza
+		portraits = {
+			army = {
+				small = GFX_idea_carlo_scorza
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = carlo_scorza
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			visible = {
+				has_global_flag = SRI_one_Italy
+			}
+			traits = {
+				fascist_demagogue 
+			}
+			do_effect = {
+				NOT = {
+					has_government = fascism 
+				}
+			}
+			ai_will_do = {
+				base = 0.000
+				modifier = {
+					factor = 0
+					OR = {
+						ITA_is_communist_ai = yes
+						ITA_is_socialist_ai = yes
+						ITA_is_monarchist_ai = yes
+						ITA_is_christian_democracy_ai = yes
+					}
+				}
+			}
+		}		
+	}
+}
+characters = {
+	##    ##  #######  ##    ##         ########    ###     ######   ######  ####  ######  ########    ########  ########  #######  ########  ##       ######## 
+	###   ## ##     ## ###   ##         ##         ## ##   ##    ## ##    ##  ##  ##    ##    ##       ##     ## ##       ##     ## ##     ## ##       ##       
+	####  ## ##     ## ####  ##         ##        ##   ##  ##       ##        ##  ##          ##       ##     ## ##       ##     ## ##     ## ##       ##       
+	## ## ## ##     ## ## ## ## ####### ######   ##     ##  ######  ##        ##   ######     ##       ########  ######   ##     ## ########  ##       ######   
+	##  #### ##     ## ##  ####         ##       #########       ## ##        ##        ##    ##       ##        ##       ##     ## ##        ##       ##       
+	##   ### ##     ## ##   ###         ##       ##     ## ##    ## ##    ##  ##  ##    ##    ##       ##        ##       ##     ## ##        ##       ##       
+	##    ##  #######  ##    ##         ##       ##     ##  ######   ######  ####  ######     ##       ##        ########  #######  ##        ######## ######## 
+
+
+	SRI_giuseppe_pieche = {
+		name = ITA_giuseppe_pieche
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_giuseppe_pieche_small
+				large = GFX_portrait_ITA_giuseppe_pieche
+			}
+		}
+		
+		field_marshal = {
+			traits = { infantry_officer expert_delegator } #Regno del Sud, Commander of Royal Carabinieri
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+			visible = {
+				OR = {
+					has_completed_focus = ITA_the_carabinieri
+					has_completed_focus = ITA_empower_the_carabinieri
+					has_completed_focus = ITA_expand_the_royal_guard
+				}
+			}
+		}
+	}
+
+	SRI_giovanni_duca = {
+		name = ITA_giovanni_duca
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_giovanni_duca_small
+				large = GFX_portrait_ITA_giovanni_duca
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = ITA_giovanni_duca
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				OR = {
+					AND = {
+						has_government = democratic
+					}
+				}
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		
+		corps_commander = {
+			traits = { militias_officer infantry_officer hill_fighter } #Regno del Sud
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 0
+			visible = {
+				OR = {
+					AND = {
+						OR = {
+							has_government = democratic
+							has_government = neutrality
+						}
+						has_completed_focus = ITA_army_leaders
+					}
+					has_completed_focus = ITA_meritocracy
+				}
+			}
+		}
+	}
+
+	SRI_giuseppe_de_stefanis = {
+		name = ITA_giuseppe_de_stefanis
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_giuseppe_de_stefanis_small
+				large = GFX_portrait_ITA_giuseppe_de_stefanis
+			}
+		}
+		
+		corps_commander = {
+			traits = { infantry_officer armor_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+			visible = {
+				OR = {
+					has_completed_focus = ITA_italian_socialism
+					has_completed_focus = ITA_monarchia_d_italia
+				}
+			}
+		}
+	}
+
+	SRI_ugo_luca = {
+		name = ITA_ugo_luca
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_ugo_luca_small
+				large = GFX_portrait_ITA_ugo_luca
+			}
+		}
+		
+		corps_commander = {
+			traits = { infantry_officer urban_assault_specialist }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { 
+				OR = {
+					has_completed_focus = ITA_the_carabinieri
+					has_completed_focus = ITA_empower_the_carabinieri
+				}
+			}
+		}
+	}
+
+	SRI_enrico_fermi = {
+		name = ITA_enrico_fermi
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_enrico_fermi_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_enrico_fermi
+			allowed = {
+				tag = SRI
+			}
+			available = {
+			}
+			visible = {
+				has_global_flag = SRI_one_Italy
+			}
+			research_bonus = {
+				nuclear = 0.15
+			}
+			traits = {
+				nuclear_scientist # Nuclear guy
+			}
+
+			ai_will_do = {
+				base = 0.100
+			}
+		}
+	}
+
+	SRI_luigi_einaudi = {
+		name = ITA_luigi_einaudi
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_luigi_einaudi_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_luigi_einaudi
+			allowed = {
+				tag = SRI
+			}
+			available = {
+			}
+			traits = {
+				financial_expert 
+			}
+			on_add = {
+			}
+			ai_will_do = {
+				base = 3.000
+			}
+		}
+	}
+
+	### MONARCHIST ###
+	# SRI_pietro_d_acquarone = {
+	# 	name = ITA_pietro_d_acquarone
+	# 	portraits = {
+	# 		army = {
+	# 			small = GFX_portrait_ITA_pietro_d_acquarone_small
+	# 		}
+	# 	}
+
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ITA_pietro_d_acquarone
+	# 		allowed = {
+	# 			tag = SRI
+	# 		}
+	# 		traits = {
+	# 			staunch_monarchist
+	# 		}
+
+	# 		ai_will_do = {
+	# 			base = 0
+	# 			modifier = {
+	# 				add = 100
+	# 				OR = {
+	# 					ITA_is_monarchist_ai = yes
+	# 					ITA_is_christian_democracy_ai = yes
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# SRI_alberto_de_stefani = {
+	# 	name = ITA_alberto_de_stefani
+	# 	portraits = {
+	# 		army = {
+	# 			small = GFX_portrait_ITA_alberto_de_stefani_small
+	# 		}
+	# 	}
+
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ITA_alberto_de_stefani
+	# 		allowed = {
+	# 			tag = SRI
+	# 		}
+	# 		available = {
+	# 		}
+	# 		traits = {
+	# 			economist
+	# 		}
+
+	# 		ai_will_do = {
+	# 			base = 0.300
+	# 		}
+	# 	}
+	# }
+
+	### DEMOCRATIC ###
+	SRI_ivanoe_bonomi = {
+		name = ITA_ivanoe_bonomi
+		portraits = {
+			army = {
+				small = GFX_idea_ivanoe_bonomi
+				large = GFX_portrait_ITA_ivanoe_bonomi
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ivanoe_bonomi
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				always = no
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					has_government = democratic 
+				}
+			}
+			ai_will_do = {
+				base = 0.000
+				modifier = {
+					factor = 0
+					ITA_is_socialist_ai = no
+				}
+			}
+		}
+
+		country_leader = {
+			ideology = liberalism
+			traits = { moderate_reformist }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	# SRI_alcide_de_gasperi = {
+	# 	name = ITA_alcide_de_gasperi
+	# 	portraits = {
+	# 		civilian = {
+	# 			small = GFX_portrait_ITA_alcide_de_gasperi_small
+	# 			large = GFX_portrait_ITA_alcide_de_gasperi
+	# 		}
+	# 	}
+
+	# 	country_leader = {
+	# 		ideology = consetvatism
+	# 		traits = { master_of_politics }
+	# 		expire = "1965.1.1.1"
+	# 		id = -1
+	# 	}
+
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ITA_alcide_de_gasperi
+	# 		allowed = {
+	# 			tag = SRI
+	# 		}
+	# 		available = {
+	# 			OR = {
+	# 				AND = {
+	# 					has_government = democratic
+	# 				}
+	# 			}
+	# 			# NOT = { 
+	# 			# 	has_country_leader = {
+	# 			# 		character = ITA_alcide_de_gasperi
+	# 			# 		ruling_only = yes
+	# 			# 	}
+	# 			# }
+	# 		}
+	# 		traits = {
+	# 			voice_of_restraint
+	# 		}
+
+	# 		ai_will_do = {
+	# 			base = 0
+	# 			modifier = {
+	# 				add = 0.1
+	# 				ITA_is_socialist_ai = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# SRI_mario_scelba = {
+	# 	name = ITA_mario_scelba
+	# 	portraits = {
+	# 		army = {
+	# 			small = GFX_portrait_ITA_mario_scelba_small
+	# 		}
+	# 	}
+
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ITA_mario_scelba
+	# 		allowed = {
+	# 			tag = SRI
+	# 		}
+	# 		available = {
+	# 			OR = {
+	# 				has_completed_focus = ITA_christian_democracy
+	# 				AND = {
+	# 					has_completed_focus = ITA_common_ground
+	# 					has_government = democratic
+	# 				}
+	# 			}
+	# 		}
+	# 		traits = {
+	# 			minister_of_posts_and_telegraphs # Christian Democracy guy
+	# 		}
+
+	# 		ai_will_do = {
+	# 			base = 0.300
+	# 			modifier = {
+	# 				factor = 0
+	# 				ITA_is_communist_ai = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# SRI_guido_de_ruggiero = {
+	# 	name = ITA_guido_de_ruggiero
+	# 	portraits = {
+	# 		army = {
+	# 			small = GFX_portrait_ITA_guido_de_rugiero_small
+	# 		}
+	# 	}
+
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ITA_guido_de_ruggiero
+	# 		allowed = {
+	# 			tag = SRI
+	# 		}
+	# 		available = {
+	# 			OR = {
+	# 				has_completed_focus = ITA_cooperate_with_moderates
+	# 				has_completed_focus = ITA_italian_socialism
+	# 				AND = {
+	# 					has_completed_focus = ITA_common_ground
+	# 					has_government = communism
+	# 				}
+	# 			}
+	# 		}
+	# 		traits = {
+	# 			liberal_professor # Liberal Philosophy professor and Minister of Education
+	# 		}
+
+	# 		ai_will_do = {
+	# 			base = 0.300
+	# 			modifier = {
+	# 				factor = 0
+	# 				ITA_is_communist_ai = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# SRI_alberto_tarchiani = {
+	# 	name = ITA_alberto_tarchiani
+	# 	portraits = {
+	# 		army = {
+	# 			small = GFX_portrait_ITA_alberto_tarchiani_small
+	# 		}
+	# 	}
+
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ITA_alberto_tarchiani
+	# 		allowed = {
+	# 			tag = SRI
+	# 		}
+	# 		available = {
+	# 			has_completed_focus = ITA_bring_back_exiled_intellectuals
+	# 		}
+	# 		traits = {
+	# 			captain_of_industry # Ministry of Public Works and later Ambassador to USA
+	# 		}
+
+	# 		ai_will_do = {
+	# 			base = 0.300
+	# 		}
+	# 	}
+	# }
+
+	# SRI_giuseppe_borea = {
+	# 	name = ITA_giuseppe_borea
+	# 	portraits = {
+	# 		army = {
+	# 			small = GFX_portrait_ITA_giuseppe_borea_small
+	# 		}
+	# 	}
+
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ITA_giuseppe_borea
+	# 		allowed = {
+	# 			tag = SRI
+	# 		}
+	# 		available = {
+	# 			OR = {
+	# 				has_completed_focus = ITA_defy_the_duce
+	# 				ITA_is_in_liberation_war = yes
+	# 			}
+	# 		}
+	# 		traits = {
+	# 			anti_fascist_chaplain
+	# 		}
+
+	# 		ai_will_do = {
+	# 			base = 0.300
+	# 		}
+	# 	}		
+	# }	
+
+
+
+
+ ######   #######  ##     ## ##     ## ##     ## ##    ## ####  ######  ######## 
+ ##    ## ##     ## ###   ### ###   ### ##     ## ###   ##  ##  ##    ##    ##    
+ ##       ##     ## #### #### #### #### ##     ## ####  ##  ##  ##          ##    
+ ##       ##     ## ## ### ## ## ### ## ##     ## ## ## ##  ##   ######     ##    
+ ##       ##     ## ##     ## ##     ## ##     ## ##  ####  ##        ##    ##    
+ ##    ## ##     ## ##     ## ##     ## ##     ## ##   ###  ##  ##    ##    ##    
+  ######   #######  ##     ## ##     ##  #######  ##    ## ####  ######     ##    
+
+
+ 	ITA_mario_ricci = {
+		name = ITA_mario_ricci
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_mario_ricci_small
+				large = GFX_portrait_ITA_mario_ricci
+			}
+		}
+		
+		field_marshal = {
+			traits = { unyielding_defender trait_mountaineer } #Partisan Commander
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+			visible = {
+				OR = {
+					has_government = communism
+					has_government = socialism
+				}
+			}
+		}
+	}
+
+	SRI_norma_barbolini = {
+		name = ITA_norma_barbolini
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_norma_barbolini_small
+				large = GFX_portrait_ITA_norma_barbolini
+			}
+		}
+		
+		corps_commander = {
+			traits = { militias_officer trickster } #Partisan Commander
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 0
+			visible = {
+				OR = {
+					has_government = communism
+					has_government = socialism
+				}
+			}
+		}
+	}
+
+	#Longo further down
+
+	SRI_ada_gobetti = {
+		name = ITA_ada_gobetti
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_ada_gobetti_small
+				large = GFX_portrait_ITA_ada_gobetti
+			}
+		}
+		
+		corps_commander = {
+			traits = { militias_officer organizer trait_cautious } #Partisan
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+			visible = {
+				has_completed_focus = ITA_gruppi_di_difesa_della_donna
+			}
+		}
+	}
+
+	SRI_pompeo_colajanni = {
+		name = ITA_pompeo_colajanni
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_pompeo_colajanni_small
+				large = GFX_portrait_ITA_pompeo_colajanni
+			}
+		}
+		
+		corps_commander = {
+			traits = { trait_reckless cavalry_officer commando }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 0
+			visible = {
+				OR = {
+					has_government = communism
+					has_government = socialism
+				}
+			}
+		}
+	}
+
+	SRI_randolfo_pacciardi = {
+		name = ITA_randolfo_pacciardi
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_randolfo_pacciardi_small
+				large = GFX_portrait_ITA_randolfo_pacciardi
+			}
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = ITA_randolfo_pacciardi
+			ledger = army
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				OR = {
+					has_government = communism
+					has_government = socialism
+				}
+			}
+			cost = 50
+			traits = {
+				army_regrouping_2 
+			}
+
+			ai_will_do = {
+				base = 0.300
+			}
+		}
+
+		corps_commander = {
+			traits = { politically_connected skilled_staffer infantry_officer } #SCW + Partisan Commander
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = {
+				OR = {
+					has_completed_focus = ITA_defy_the_duce
+					ITA_is_in_liberation_war = yes
+				}
+				OR = {
+					has_government = communism
+					has_government = democratic
+				}
+			}
+		}
+	}
+
+	SRI_amadeo_bordiga = {
+		name = ITA_amadeo_bordiga
+		portraits = {
+			army = {
+				small = GFX_idea_amadeo_bordiga
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = amadeo_bordiga
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				always = no
+			}
+			traits = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					has_government = communism 
+				}
+			}
+			ai_will_do = {
+				base = 0.000
+			}
+		}
+	}
+
+	SRI_luigi_longo = {
+		name = ITA_luigi_longo
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_luigi_longo_small
+				large = GFX_portrait_ITA_luigi_longo
+			}
+			civilian = {
+				small = GFX_portrait_ITA_luigi_longo_political_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_luigi_longo
+			allowed = {
+				tag = SRI
+			}
+
+			available = {
+				OR = {
+					has_government = communism
+					has_government = socialism
+				}
+			}
+
+			traits = {
+				gallo 
+			}
+
+			ai_will_do = {
+				base = 0.800
+				modifier = {
+					factor = 0.1
+					ITA_is_socialist_ai = yes
+				}
+			}
+		}
+
+		corps_commander = {
+			traits = { militias_officer infantry_officer } #SCW + Partisan Commander
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = {
+				has_government = communism
+			}
+		}
+	}
+
+	SRI_palmiro_togliatti = {
+		name = ITA_palmiro_togliatti
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ita_palmiro_togliatti
+				small = GFX_portrait_ITA_palmiro_togliatti_small
+			}
+		}
+
+		country_leader = {
+			ideology = marxism
+			traits = { conservative_communist }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_palmiro_togliatti
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				OR = {
+					has_government = communism
+					has_government = socialism
+				}
+			}
+			
+			traits = {
+				marxist_fundamentalist
+			}
+			
+			ai_will_do = {
+				base = 0.100
+				modifier = {
+					factor = 10
+					has_stability < 0.3
+				}
+				modifier = {
+					factor = 0
+					ITA_is_socialist_ai = yes
+				}
+			}
+		}
+	}
+
+	SRI_sandro_pertini = {
+		name = ITA_sandro_pertini
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ITA_sandro_pertini
+				small = GFX_portrait_ITA_sandro_pertini_small
+			}
+		}
+
+		country_leader = {
+			ideology = stalinism
+			traits = { staunch_anti_fascist }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_sandro_pertini
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				OR = {
+					has_government = communism
+					has_government = socialism
+				}
+			}
+			
+			traits = {
+				marxist_philosopher
+			}
+			
+			ai_will_do = {
+				base = 1.000
+				modifier = {
+					factor = 0
+					ITA_is_socialist_ai = yes
+				}
+			}
+		}
+	}
+
+	SRI_antonio_pesenti = {
+		name = ITA_antonio_pesenti
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_antonio_pesenti_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_antonio_pesenti
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				OR = {
+					has_government = communism
+					has_government = socialism
+				}
+			}
+			traits = {
+				economist
+			}
+
+			ai_will_do = {
+				base = 0.300
+			}
+		}
+	}
+
+	SRI_fausto_gullo = {
+		name = ITA_fausto_gullo
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_fausto_gullo_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_fausto_gullo
+			allowed = {
+				OR = {
+					original_tag = SRI
+				}
+			}
+			available = {
+				OR = {
+					has_government = communism
+					has_government = socialism
+				}
+			}
+			traits = {
+				minister_of_peasants #"Minister of Peasants" Agrarian Reforms
+			}
+
+			ai_will_do = {
+				base = 0.300
+			}
+		}
+	}
+
+	SRI_giulio_paggio = {
+		name = ITA_giulio_paggio
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_giulio_paggio_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_giulio_paggio
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				OR = {
+					has_government = communism
+					has_government = socialism
+				}
+			}
+			traits = {
+				partisans_organizer
+			}
+
+			ai_will_do = {
+				base = 0.300
+			}
+		}
+	}
+
+	SRI_ignazio_silone = {
+		name = ITA_ignazio_silone
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_ignazio_silone_small
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ITA_ignazio_silone
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				OR = {
+					has_government = communism
+					has_government = socialism
+				}
+			}
+			traits = {
+				revolutionary_poet # Writer intelectual
+			}
+
+			ai_will_do = {
+				base = 0.300
+				modifier = {
+					factor = 0
+					ITA_is_socialist_ai = yes
+				}
+			}
+		}
+	}
 }
