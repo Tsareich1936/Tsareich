@@ -239,7 +239,7 @@ ideas = {
 				submarine = {
 					sub_attack = 0.75
 					naval_speed_factor = 0.75
-					build_cost_ic = 0.75	
+					build_cost_ic = -0.75	
 				}
 			}
 		}
