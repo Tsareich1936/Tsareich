@@ -782,3 +782,236 @@ characters = {
 		}
 	}
 }
+charavters = {
+ #     #                             #                                                       
+ ##    #    ##    #    #  #   #      #        ######    ##    #####   ######  #####    ####  
+ # #   #   #  #   #    #   # #       #        #        #  #   #    #  #       #    #  #      
+ #  #  #  #    #  #    #    #        #        #####   #    #  #    #  #####   #    #   ####  
+ #   # #  ######  #    #    #        #        #       ######  #    #  #       #####        # 
+ #    ##  #    #   #  #     #        #        #       #    #  #    #  #       #   #   #    # 
+ #     #  #    #    ##      #        #######  ######  #    #  #####   ######  #    #   ####  
+                                                                                             
+
+
+	SRI_inigo_campioni = {
+		name = ITA_inigo_campioni
+		portraits = {
+			navy = {
+				small = GFX_idea_inigo_campioni
+				large = GFX_portrait_ITA_inigo_campioni
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = inigo_campioni
+			allowed = {
+				tag = SRI
+			}
+			traits = {
+				navy_chief_decisive_battle_1
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		
+		navy_leader = {
+			traits = { battleship_adherent superior_tactician spotter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+			legacy_id = 0
+		}
+	}
+
+	SRI_alberto_da_zara = {
+		name = ITA_alberto_da_zara
+		portraits = {
+			navy = {
+				small = GFX_idea_alberto_da_zara
+				large = GFX_portrait_ITA_alberto_da_zara
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = alberto_da_zara
+			ledger = navy
+			allowed = {
+				tag = SRI
+			}
+			traits = {
+				navy_anti_submarine_1
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		
+		navy_leader = {
+			traits = { gentlemanly superior_tactician }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+			legacy_id = 0
+		}
+	}
+
+	SRI_giuseppe_fioravanzo = {
+		name = ITA_giuseppe_fioravanzo
+		portraits = {
+			army = {
+				large = GFX_portrait_ITA_giuseppe_fioravanzo
+				small = GFX_portrait_ITA_giuseppe_fioravanzo_small
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = guiseppe_fioravanzo
+			ledger = navy
+			allowed = {
+				tag = SRI
+			}
+			traits = {
+				grand_fleet_proponent
+			}
+		}
+
+		navy_leader = {
+			traits = { aviation_enthusiast blockade_runner }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 2
+			legacy_id = 0
+		}
+	}
+
+	SRI_carlo_bergamini = {
+		name = ITA_carlo_bergamini
+		portraits = {
+			navy = {
+				small = GFX_idea_carlo_bergamini
+				large = GFX_portrait_ITA_carlo_bergamini
+			}
+		}
+
+		advisor = {	
+			slot = high_command
+			idea_token = carlo_bergamini
+			ledger = navy
+			allowed = {
+				tag = SRI
+			}
+			traits = {
+				navy_capital_ship_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		
+		navy_leader = {
+			traits = { gunnery_expert battleship_adherent ironside }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 1
+			legacy_id = 0
+		}
+	}
+
+	SRI_angelo_iachino = {
+		name = ITA_angelo_iachino
+		portraits = {
+			navy = {
+				small = GFX_idea_angelo_iachino
+				large = GFX_portrait_ITA_angelo_iachino
+			}
+		}
+
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = angelo_iachino
+			ledger = navy
+			allowed = {
+				tag = SRI
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = { naval_theorist }
+		}
+
+		navy_leader = {
+			traits = { bold navy_career_officer superior_tactician spotter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 3
+			coordination_skill = 1
+			legacy_id = 0
+			visible = { has_government = fascism }
+		}
+	}
+
+	SRI_giuseppe_di_bartolo = {
+		name = ITA_giuseppe_di_bartolo
+		portraits = {
+			navy = {
+				small = GFX_portrait_ITA_giuseppe_di_bartolo_small
+				large = GFX_portrait_ITA_giuseppe_di_bartolo
+			}
+		}
+
+		navy_leader = {
+			traits = { old_guard_navy bold fleet_protector }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = 0
+			visible = {
+				has_global_flag = SRI_one_Italy
+			}
+		}
+	}
+
+	SRI_junio_valerio_borghese = {
+		name = ITA_junio_valerio_borghese
+		portraits = {
+			navy = {
+				small = GFX_portrait_ITA_junio_valerio_borghese_small
+				large = GFX_portrait_ITA_junio_valerio_borghese
+			}
+		}
+
+		navy_leader = {
+			traits = { cuts_corners seawolf silent_hunter } #Submarines, Human torpedos, Torpedo boats, etc.
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			maneuvering_skill = 3
+			coordination_skill = 2
+			legacy_id = 0
+			visible = {
+				has_global_flag = SRI_one_Italy
+			}
+		}
+	}
+
+}
