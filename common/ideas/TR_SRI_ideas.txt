@@ -197,5 +197,131 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.25
 			}
 		}
+		SRI_armor = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.15
+					defence = 0.15
+					maximum_speed = 0.15
+					build_cost_ic = -0.15
+				}
+			}
+		}
+		SRI_artillery = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			equipment_bonus = {
+				artillery = {
+					soft_attack = 0.25
+					maximum_speed = 0.10
+					build_cost_ic = -0.10
+				}
+			}
+		}
+		SRI_subship = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			equipment_bonus = {
+				submarine = {
+					sub_attack = 0.75
+					naval_speed_factor = 0.75
+					build_cost_ic = 0.75	
+				}
+			}
+		}
+		SRI_naval_bomber = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			equipment_bonus = {
+				naval_bomber = {
+					naval_strike_attack = 5.55
+				}
+			}
+		}
+		SRI_air_fighter = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			equipment_bonus = {
+				fighter = {
+					air_attack = 0.15
+					air_defence = 0.15
+					air_range = 0.2
+				}
+				heavy_fighter = {
+					air_attack = 0.20
+					air_defence = 0.20
+					air_range = 0.25
+				}
+			}
+		}
+		SRI_air_bomber = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			equipment_bonus = {
+				naval_bomber = {
+					air_defence = 0.15
+					air_bombing = 0.3
+					air_range = 0.25
+				}
+				tactical_bomber = {
+					air_defence = 0.15
+					air_bombing = 0.3
+					air_range = 0.25
+				}
+				strategic_bomber = {
+					air_defence = 0.15
+					air_bombing = 0.3
+					air_range = 0.25
+				}
+			}
+		}
+		SRI_italian_air_force = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.3
+				}
+				cas = {
+					build_cost_ic = -0.3
+				}
+				heavy_fighter = {
+					build_cost_ic = -0.5
+				}
+				tactical_bomber = {
+					build_cost_ic = -0.5
+				}
+			}
+		}
 	}
 }

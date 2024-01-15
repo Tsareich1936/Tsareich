@@ -79,7 +79,7 @@ focus_tree = {
 	### army focus ###
 	focus = {
 		id = SRI_army_focus_1
-		icon = GFX_
+		icon = "GFX_goal_generic_axis_build_infantry"
 		cost = 5
 		x = 29
 		y = 4
@@ -99,7 +99,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_army_focus_2
-		icon = GFX_
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5
 		prerequisite = {
 			focus = SRI_army_focus_1
@@ -118,7 +118,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_army_focus_3
-		icon = GFX_
+		icon = "GFX_goal_generic_army_tanks"
 		cost = 5
 		prerequisite = {
 			focus = SRI_army_focus_1
@@ -137,7 +137,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_army_focus_4
-		icon = GFX_
+		icon = "GFX_focus_generic_commonwealth_build_infantry"
 		cost = 5
 		prerequisite = {
 			focus = SRI_army_focus_1
@@ -156,7 +156,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SRI_army_focus_5
-		icon = GFX_
+		icon = GFX_goal_generic_army_artillery
 		cost = 5
 		prerequisite = {
 			focus = SRI_army_focus_2
@@ -165,12 +165,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_army_focus_2
 		completion_reward = {
-	
+			add_ideas = {
+				SRI_artillery
+			}
 		}
 	}
 	focus = {
 		id = SRI_army_focus_6
-		icon = GFX_
+		icon = "GFX_goal_generic_build_tank"
 		cost = 5
 		prerequisite = {
 			focus = SRI_army_focus_3
@@ -179,12 +181,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_army_focus_3
 		completion_reward = {
-	
+			add_ideas = {
+				SRI_armor
+			}
 		}
 	}
 	focus = {
 		id = SRI_army_focus_7
-		icon = GFX_
+		icon = GFX_goal_generic_army_motorized
 		cost = 5
 		prerequisite = {
 			focus = SRI_army_focus_4
@@ -193,12 +197,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_army_focus_4
 		completion_reward = {
-	
+			add_tech_bonus = {
+				name = SRI_mot_bonus
+				bonus = 2
+				uses = 2
+				category = motorized_equipment
+			}
 		}
 	}
 	focus = {
 		id = SRI_army_focus_8
-		icon = GFX_
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5
 		prerequisite = {
 			focus = SRI_army_focus_5
@@ -213,13 +222,19 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_army_focus_6
 		completion_reward = {
-	
+			army_experience = 100
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				category = land_doctrine
+				uses = 3
+				name = SRI_army_doctrines
+			}
 		}
 	}
 	### navy focus ###
 		focus = {
 			id = SRI_navy_focus_1
-			icon = GFX_
+			icon = GFX_goal_generic_navy_battleship
 			cost = 5
 			allow_branch = {
 				has_country_flag = dAnnunzio_death
@@ -239,7 +254,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SRI_navy_focus_2
-			icon = GFX_
+			icon = GFX_focus_generic_navy_battleship2
 			cost = 5
 			prerequisite = {
 				focus = SRI_navy_focus_1
@@ -252,13 +267,13 @@ focus_tree = {
 					name = SRI_ships_bonus
 					bonus = 2
 					uses = 2
-					technology = advanced_light_art
+					category = dd_tech
 				}
 			}
 		}
 		focus = {
 			id = SRI_navy_focus_3
-			icon = GFX_
+			icon = GFX_goal_generic_navy_submarine
 			cost = 5
 			prerequisite = {
 				focus = SRI_navy_focus_1
@@ -271,13 +286,13 @@ focus_tree = {
 					name = SRI_artillery_bonus
 					bonus = 2
 					uses = 1
-					technology = advanced_submarine
+					category = ss_tech
 				}
 			}
 		}
 		focus = {
 			id = SRI_navy_focus_4
-			icon = GFX_
+			icon = GFX_goal_generic_navy_carrier
 			cost = 5
 			prerequisite = {
 				focus = SRI_navy_focus_1
@@ -290,13 +305,13 @@ focus_tree = {
 					name = SRI_naval_air_bonus
 					bonus = 2
 					uses = 2
-					category = naval_air
+					category = cv_tech
 				}
 			}
 		}
 		focus = {
 			id = SRI_navy_focus_5
-			icon = GFX_
+			icon = GFX_goal_generic_amphibious_assault
 			cost = 5
 			prerequisite = {
 				focus = SRI_navy_focus_2
@@ -305,12 +320,20 @@ focus_tree = {
 			y = 1
 			relative_position_id = SRI_navy_focus_2
 			completion_reward = {
-		
+				add_tech_bonus = {
+					name = SRI_naval_air_bonus
+					bonus = 2
+					uses = 4
+					category = ca_tech
+					category = cl_tech
+					category = bb_tech
+					category = bc_tech
+				}
 			}
 		}
 		focus = {
 			id = SRI_navy_focus_6
-			icon = GFX_
+			icon = GFX_goal_generic_navy_anti_submarine
 			cost = 5
 			prerequisite = {
 				focus = SRI_navy_focus_3
@@ -319,12 +342,14 @@ focus_tree = {
 			y = 1
 			relative_position_id = SRI_navy_focus_3
 			completion_reward = {
-		
+				add_ideas = {
+					SRI_subship
+				}
 			}
 		}
 		focus = {
 			id = SRI_navy_focus_7
-			icon = GFX_
+			icon = GFX_goal_generic_air_naval_bomber
 			cost = 5
 			prerequisite = {
 				focus = SRI_navy_focus_4
@@ -333,12 +358,14 @@ focus_tree = {
 			y = 1
 			relative_position_id = SRI_navy_focus_4
 			completion_reward = {
-		
+				add_ideas = {
+					SRI_naval_bomber
+				}
 			}
 		}
 		focus = {
 			id = SRI_navy_focus_8
-			icon = GFX_
+			icon = GFX_goal_generic_navy_doctrines_tactics
 			cost = 5
 			prerequisite = {
 				focus = SRI_navy_focus_5
@@ -353,13 +380,19 @@ focus_tree = {
 			y = 2
 			relative_position_id = SRI_navy_focus_6
 			completion_reward = {
-		
+				navy_experience = 100
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.75
+					category = naval_doctrine
+					uses = 3
+					name = SRI_army_doctrines
+				}
 			}
 		}
 	### air force focus ###
 		focus = {
 			id = SRI_air_force_focus_1
-			icon = GFX_
+			icon = GFX_goal_generic_build_airforce
 			cost = 5
 			allow_branch = {
 				has_country_flag = dAnnunzio_death
@@ -379,7 +412,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SRI_air_force_focus_2
-			icon = GFX_
+			icon = GFX_focus_generic_aircraft_production
 			cost = 5
 			prerequisite = {
 				focus = SRI_air_force_focus_1
@@ -388,12 +421,17 @@ focus_tree = {
 			y = 2
 			relative_position_id = SRI_air_force_focus_1
 			completion_reward = {
-		
+				add_tech_bonus = {
+					name = SRI_air_arms_bonus
+					bonus = 2
+					uses = 2
+					category = plane_modules_tech
+				}
 			}
 		}
 		focus = {
 			id = SRI_air_force_focus_3
-			icon = GFX_
+			icon = GFX_goal_generic_air_fighter
 			cost = 5
 			prerequisite = {
 				focus = SRI_air_force_focus_1
@@ -402,12 +440,17 @@ focus_tree = {
 			y = 2
 			relative_position_id = SRI_air_force_focus_1
 			completion_reward = {
-		
+				add_tech_bonus = {
+					name = SRI_fighter_bonus
+					bonus = 2
+					uses = 2
+					category = light_fighter
+				}
 			}
 		}
 		focus = {
 			id = SRI_air_force_focus_4
-			icon = GFX_
+			icon = GFX_goal_generic_air_bomber
 			cost = 5
 			prerequisite = {
 				focus = SRI_air_force_focus_1
@@ -416,12 +459,17 @@ focus_tree = {
 			y = 2
 			relative_position_id = SRI_air_force_focus_1
 			completion_reward = {
-		
+				add_tech_bonus = {
+					name = SRI_bomber_bonus
+					bonus = 2
+					uses = 2
+					category = cas_bomber
+				}
 			}
 		}
 		focus = {
 			id = SRI_air_force_focus_5
-			icon = GFX_
+			icon = GFX_focus_generic_paratrooper
 			cost = 5
 			prerequisite = {
 				focus = SRI_air_force_focus_2
@@ -430,12 +478,17 @@ focus_tree = {
 			y = 1
 			relative_position_id = SRI_air_force_focus_2
 			completion_reward = {
-		
+				add_tech_bonus = {
+					name = SRI_para_bonus
+					bonus = 2
+					uses = 2
+					category = para_tech
+				}
 			}
 		}
 		focus = {
 			id = SRI_air_force_focus_6
-			icon = GFX_
+			icon = GFX_goal_generic_air_fighter2
 			cost = 5
 			prerequisite = {
 				focus = SRI_air_force_focus_3
@@ -444,12 +497,14 @@ focus_tree = {
 			y = 1
 			relative_position_id = SRI_air_force_focus_3
 			completion_reward = {
-		
+				add_ideas = {
+					SRI_air_fighter
+				}
 			}
 		}
 		focus = {
 			id = SRI_air_force_focus_7
-			icon = GFX_
+			icon = GFX_goal_generic_air_naval_bomber
 			cost = 5
 			prerequisite = {
 				focus = SRI_air_force_focus_4
@@ -458,12 +513,14 @@ focus_tree = {
 			y = 1
 			relative_position_id = SRI_air_force_focus_4
 			completion_reward = {
-		
+				add_ideas ={
+					SRI_air_bomber
+				} 
 			}
 		}
 		focus = {
 			id = SRI_air_force_focus_8
-			icon = GFX_
+			icon = GFX_focus_generic_jet_planes
 			cost = 5
 			prerequisite = {
 				focus = SRI_air_force_focus_5
@@ -478,7 +535,16 @@ focus_tree = {
 			y = 2
 			relative_position_id = SRI_air_force_focus_6
 			completion_reward = {
-		
+				air_experience = 100
+				set_technology = {
+					jet_engines = 1
+					modern_small_airframe = 1
+					modern_medium_airframe = 1
+					modern_large_airframe = 1
+				}
+				add_ideas = {
+					SRI_italian_air_force
+				}
 			}
 		}
 	### before 1938.1.1 ###
@@ -1227,6 +1293,14 @@ focus_tree = {
 			mutually_exclusive = {
 				focus = SRI_just_socialim
 				focus = SRI_just_socialim
+			}
+			available = {
+				hidden_trigger = {
+					always = no
+				}
+				custom_trigger_tooltip = {
+					tooltip = TR_focus_nosupport
+				}
 			}
 			x = 2
 			y = 2
@@ -2307,13 +2381,18 @@ focus_tree = {
 				focus = SRI_focus_relation_europe
 			}
 			available = {
-				always = no
+				hidden_trigger = {
+					always = no
+				}
+				custom_trigger_tooltip = {
+					tooltip = TR_focus_nosupport
+				}
 			}
 			x = -5
 			y = 2
 			relative_position_id = SRI_perfect_italy
 			completion_reward = {
-		
+				custom_effect_tooltip = TR_focus_nosupport
 			}
 		}
 		focus = {
@@ -2613,7 +2692,7 @@ focus_tree = {
 	## Left route
 	focus = {
 		id = SRI_cooperation_for_great_war
-		icon = GFX_
+		icon = GFX_focus_usa_focus_on_europe
 		cost = 10
 		prerequisite = {
 			focus = SRI_african_charenge
@@ -2622,12 +2701,18 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_african_charenge
 		completion_reward = {
-	
+			create_wargoal = {
+				target = HUN
+				type = annex_everything
+			}
+		}
+		bypass = {
+			has_war_with = HUN
 		}
 	}
 	focus = {
 		id = SRI_attack_to_russia
-		icon = GFX_
+		icon = GFX_focus_SRI_russia_annexion
 		cost = 10
 		prerequisite = {
 			focus = SRI_cooperation_for_great_war
@@ -2636,12 +2721,19 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_cooperation_for_great_war
 		completion_reward = {
-	
+			add_state_claim = 797
+			create_wargoal = {
+				target = RUS
+				type = take_claimed_state
+				generator = {
+					797
+				}
+			}
 		}
 	}
 	focus = {
 		id = SRI_cooperation_for_greek
-		icon = GFX_
+		icon = GFX_focus_generic_befriend_greece
 		cost = 10
 		prerequisite = {
 			focus = SRI_cooperation_for_great_war
@@ -2650,12 +2742,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = SRI_cooperation_for_great_war
 		completion_reward = {
-	
+			GRS = {
+				create_wargoal = {
+					target =GRE
+					type = annex_everything
+				}
+			}
 		}
 	}
 	focus = {
 		id = SRI_attack_to_britain
-		icon = GFX_
+		icon = "GFX_focus_attack_britain"
 		cost = 10
 		prerequisite = {
 			focus = SRI_cooperation_for_greek
@@ -2665,7 +2762,10 @@ focus_tree = {
 		y = 2
 		relative_position_id = SRI_cooperation_for_great_war
 		completion_reward = {
-	
+			create_wargoal = {
+				target = ENG
+				type = topple_government
+			}
 		}
 	}
 }

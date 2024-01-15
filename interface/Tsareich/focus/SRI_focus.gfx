@@ -7,4 +7,8 @@ spriteTypes = {
 		name = "GFX_focus_SRI_egypt_relationship"
 		textureFile = "gfx/interface/goals/Tsareich/egypt_relationship.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_SRI_russia_annexion"
+		textureFile = "gfx/interface/goals/Tsareich/russia_annexion.dds"
+	}
 }

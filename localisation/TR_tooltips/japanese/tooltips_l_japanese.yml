@@ -21,4 +21,5 @@
   TR_Russia.tt.20: "§Yラジオ§!を使用することで様々な§Y布告§!を行えるようになる！"
 
   TR_nosupport: "§Rこの選択肢は現バージョンでは実装されていない！§!"
+  TR_focus_nosupport: "§Rこの選択肢には現実味がない§!"
   RULE_ALLOW_RELEASE_NATIONS_RUSSIA_POLAND_TOOLTIP: "§Y[ROOT.GetNameDefCap]§!は§Y[POL.GetNameDef]§!の解放ができません。"
