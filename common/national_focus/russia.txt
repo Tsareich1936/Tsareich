@@ -258,7 +258,7 @@ focus_tree = {
             }
             completion_reward = {
                 custom_effect_tooltip = TR_Russia.tt.9
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         OR = {
                             has_state_category = town
@@ -276,7 +276,43 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
+                    limit = {
+                        OR = {
+                            has_state_category = town
+                            has_state_category = large_town
+                            has_state_category = city
+                            has_state_category = large_city
+                            has_state_category = metropolis
+                            has_state_category = megalopolis
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = synthetic_refinery
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        OR = {
+                            has_state_category = town
+                            has_state_category = large_town
+                            has_state_category = city
+                            has_state_category = large_city
+                            has_state_category = metropolis
+                            has_state_category = megalopolis
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+                        type = synthetic_refinery
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
                     limit = {
                         OR = {
                             has_state_category = town
@@ -294,7 +330,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }          
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         OR = {
                             has_state_category = town
@@ -383,7 +419,7 @@ focus_tree = {
                 
             }
             completion_reward = {
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = industrial_complex
@@ -394,7 +430,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = industrial_complex
                                             size > 0
@@ -413,7 +449,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = industrial_complex
@@ -424,7 +460,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = industrial_complex
                                             size > 0
@@ -443,7 +479,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = industrial_complex
@@ -454,7 +490,157 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = industrial_complex
                                             size > 0
@@ -491,7 +677,7 @@ focus_tree = {
                 
             }
             completion_reward = {
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = infrastructure
@@ -502,7 +688,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = infrastructure
                                             size > 1
@@ -520,7 +706,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = infrastructure
@@ -531,7 +717,36 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = infrastructure
+                                            size > 1
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = infrastructure
+                            size > 1
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = infrastructure
                                             size > 1
@@ -567,7 +782,7 @@ focus_tree = {
                 
             }
             completion_reward = {
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = infrastructure
@@ -578,7 +793,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = infrastructure
                                             size > 1
@@ -596,7 +811,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = infrastructure
@@ -607,7 +822,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = infrastructure
                                             size > 1
@@ -625,7 +840,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = infrastructure
@@ -636,7 +851,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = infrastructure
                                             size > 1
@@ -654,7 +869,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = infrastructure
@@ -665,7 +880,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = infrastructure
                                             size > 1
@@ -701,7 +916,7 @@ focus_tree = {
                 
             }
             completion_reward = {
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = industrial_complex
@@ -712,7 +927,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = industrial_complex
                                             size > 0
@@ -731,7 +946,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = industrial_complex
@@ -742,7 +957,157 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = industrial_complex
                                             size > 0
@@ -798,7 +1163,7 @@ focus_tree = {
     
             }
             completion_reward = {
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = industrial_complex
@@ -809,7 +1174,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = industrial_complex
                                             size > 0
@@ -828,7 +1193,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = industrial_complex
@@ -839,7 +1204,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = industrial_complex
                                             size > 0
@@ -858,7 +1223,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = industrial_complex
@@ -869,7 +1234,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = industrial_complex
                                             size > 0
@@ -888,7 +1253,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = industrial_complex
@@ -899,7 +1264,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = industrial_complex
                                             size > 0
@@ -918,7 +1283,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = industrial_complex
@@ -929,7 +1294,217 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = industrial_complex
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = industrial_complex
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = industrial_complex
                                             size > 0
@@ -1361,7 +1936,7 @@ focus_tree = {
                 
             }
             completion_reward = {
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = arms_factory
@@ -1372,7 +1947,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = arms_factory
                                             size > 0
@@ -1391,7 +1966,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = arms_factory
@@ -1402,7 +1977,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = arms_factory
                                             size > 0
@@ -1421,7 +1996,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = arms_factory
@@ -1432,7 +2007,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = arms_factory
                                             size > 0
@@ -1451,7 +2026,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = arms_factory
@@ -1462,7 +2037,157 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = arms_factory
                                             size > 0
@@ -2014,7 +2739,7 @@ focus_tree = {
             }
 
             completion_reward = {
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = arms_factory
@@ -2025,7 +2750,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = arms_factory
                                             size > 0
@@ -2044,7 +2769,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = arms_factory
@@ -2055,7 +2780,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = arms_factory
                                             size > 0
@@ -2074,7 +2799,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = arms_factory
@@ -2085,7 +2810,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = arms_factory
                                             size > 0
@@ -2104,7 +2829,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = arms_factory
@@ -2115,7 +2840,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = arms_factory
                                             size > 0
@@ -2134,7 +2859,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = arms_factory
@@ -2145,7 +2870,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = arms_factory
                                             size > 0
@@ -2164,7 +2889,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = arms_factory
@@ -2175,7 +2900,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = arms_factory
                                             size > 0
@@ -2194,7 +2919,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = arms_factory
@@ -2205,7 +2930,7 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = arms_factory
                                             size > 0
@@ -2224,7 +2949,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         free_building_slots = {
                             building = arms_factory
@@ -2235,7 +2960,157 @@ focus_tree = {
                             is_in_home_area = yes
                             NOT = {
                                 owner = {
-                                    any_owned_state = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
+                                        free_building_slots = {
+                                            building = arms_factory
+                                            size > 0
+                                            include_locked = yes
+                                        }
+                                        is_in_home_area = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        free_building_slots = {
+                            building = arms_factory
+                            size > 0
+                            include_locked = yes
+                        }
+                        OR = {
+                            is_in_home_area = yes
+                            NOT = {
+                                owner = {
+                                    any_core_state = {
                                         free_building_slots = {
                                             building = arms_factory
                                             size > 0
@@ -2300,7 +3175,7 @@ focus_tree = {
             }
 
             completion_reward = {
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         is_coastal = yes
                         free_building_slots = {
@@ -2316,7 +3191,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         is_coastal = yes
                         free_building_slots = {
@@ -2332,7 +3207,7 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
                     limit = {
                         is_coastal = yes
                         free_building_slots = {
@@ -2348,7 +3223,55 @@ focus_tree = {
                         instant_build = yes
                     }
                 }
-                random_owned_controlled_state = {
+                random_core_state = {
+                    limit = {
+                        is_coastal = yes
+                        free_building_slots = {
+                            building = dockyard
+                            size > 2
+                            include_locked = yes
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 3
+                    add_building_construction = {
+                        type = dockyard
+                        level = 3
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        is_coastal = yes
+                        free_building_slots = {
+                            building = dockyard
+                            size > 2
+                            include_locked = yes
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 3
+                    add_building_construction = {
+                        type = dockyard
+                        level = 3
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
+                    limit = {
+                        is_coastal = yes
+                        free_building_slots = {
+                            building = dockyard
+                            size > 2
+                            include_locked = yes
+                        }
+                    }
+                    add_extra_state_shared_building_slots = 3
+                    add_building_construction = {
+                        type = dockyard
+                        level = 3
+                        instant_build = yes
+                    }
+                }
+                random_core_state = {
                     limit = {
                         is_coastal = yes
                         free_building_slots = {
