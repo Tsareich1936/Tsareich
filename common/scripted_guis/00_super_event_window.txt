@@ -10,12 +10,8 @@ scripted_gui = {
 		}
 		effects = {
 			SE_quit_button_click = {
-				set_variable = {
-					TR_showing_super_event = 0
-				}
-				set_variable = {
-					TR_super_event_variable = 0
-				}
+				clear_variable = TR_showing_super_event
+				clear_variable = TR_super_event_variable
 			}
 		}
 		properties = {

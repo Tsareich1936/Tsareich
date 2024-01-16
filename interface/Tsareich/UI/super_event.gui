@@ -27,7 +27,7 @@ guiTypes = {
 				position = { x = 85 y = 12 }
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 0}
-				text = "[ROOT.GetSuperEventTiltle]"	
+				text = "[GetSuperEventTiltle]"	
 				maxWidth = 550
 				maxHeight = 36
 				format = centre
@@ -73,7 +73,7 @@ guiTypes = {
 					}
 					font = "hoi4_typewriter22_inverted"
 					borderSize = {x = 0 y = 0}
-					text = "[ROOT.GetSuperEventDesc]"	
+					text = "[GetSuperEventDesc]"	
 					maxWidth = 420
 					maxHeight = 130
 					format = right
@@ -87,7 +87,7 @@ guiTypes = {
 			orientation = UPPER_LEFT
 
 			quadTextureSprite = "GFX_TR_super_event_button"
-			buttonText = "[ROOT.GetSuperEventButton]"
+			buttonText = "[GetSuperEventButton]"
 			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over

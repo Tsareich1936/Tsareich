@@ -3,4 +3,9 @@ spriteTypes = {
 		name = GFX_SE_Error_Picture
 		textureFile = "gfx/interface/super_event/SE_Error_Picture.png"
 	}
+	spriteType = {
+		name = GFX_SE_one_Itary_Picture
+		textureFile = "gfx/interface/super_event/SE_one_Italy_Picture.png"
+
+	}
 }
