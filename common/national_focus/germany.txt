@@ -1140,12 +1140,21 @@ focus_tree = {
 		id = GER_protecting_czech_communists
 		text = GER_protecting_czech_communists
 		icon = GFX_focus_generic_provoke_border_clashes
-		cost = 10.00
+		cost = 2.50
 		prerequisite = {
 			focus = GER_preparing_for_battle
 		}
 		x = 17
 		y = 10
+		available = {
+				has_country_flag = czech_revolution
+		}
+		completion_reward = {
+			country_event = {
+				id = TR_czech_revolution.2
+				days = 1
+			}
+		}
 
 	}
 	focus = {

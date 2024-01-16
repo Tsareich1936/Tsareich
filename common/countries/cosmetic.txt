@@ -3,6 +3,10 @@ PER_puppet_RUS = {
 	color = rgb { 64 128 0 }
 	color_ui = rgb { 64 128 0 }
 }
+CZE_communism = {
+	color = rgb { 135 48 48 }
+	color_ui = rgb { 135 48 48 }
+}
 CRO_SLV = {
 	color = rgb { 178  55  141 }
 	color_ui = rgb { 178  55  141 }

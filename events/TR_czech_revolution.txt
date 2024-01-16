@@ -1,0 +1,61 @@
+add_namespace = "TR_czech_revolution"
+add_namespace = "TR_czech_revolution_news"
+
+
+country_event = {
+	id = TR_czech_revolution.1
+	title = TR_czech_revolution.1.t
+	desc = TR_czech_revolution.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = TR_czech_revolution.1.a
+		set_cosmetic_tag = CZE_communism
+		set_politics = {
+			ruling_party = communism
+		}
+		set_political_party = {
+ 		   ideology = communism
+ 		   popularity = 100
+		}
+        news_event = {
+			hours = 24
+			id = TR_czech_revolution_news.1
+		}
+	}
+}
+country_event = {
+	id = TR_czech_revolution.2
+	title = TR_czech_revolution.2.t
+	desc = TR_czech_revolution.2.d
+	is_triggered_only = yes
+	picture = GFX_report_event_german_speech
+	option = {
+		name = TR_czech_revolution.2.a
+		puppet = {
+			target = CZE
+			end_wars = no
+		}
+	}
+}
+news_event = {
+	id = TR_czech_revolution_news.1
+	title = TR_czech_revolution_news.1.t
+	desc = TR_czech_revolution_news.1.d
+	picture = GFX_news_event_hitler_speech
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = TR_czech_revolution_news.1.a
+		trigger = {
+			NOT = {
+				tag = CZE
+			}
+		}
+		GER = {
+			set_country_flag = czech_revolution
+		}
+	}
+}
+
+ 

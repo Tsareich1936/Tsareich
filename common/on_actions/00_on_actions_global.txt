@@ -50,5 +50,13 @@ on_actions = {
                 }
             }
         }
+		effect = {
+            CZE = {
+                country_event = {
+                    id = TR_czech_revolution.1
+                    days = 1
+                }
+            }
+        }
 	}
 }
