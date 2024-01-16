@@ -114,6 +114,9 @@ focus_tree = {
                 remove_idea = RUS_agricultural_economy
                 add_idea = RUS_agricultural_economy_1
             }
+            hidden_effect = {
+                news_event = TR_Russia_news.2
+            }
         }
         
     }
@@ -2628,6 +2631,9 @@ focus_tree = {
 
             completion_reward = {
                 custom_effect_tooltip = TR_Russia.tt.20
+                hidden_effect = {
+                    set_country_flag = RUS_start_radio
+                }
             }
             
         }

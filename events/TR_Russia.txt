@@ -202,6 +202,7 @@ country_event = {
     option = {
         name = TR_Russia.6.a
         hidden_effect = {
+            news_event = TR_Russia_news.3
             remove_ideas = RUS_war_against_PER
             white_peace = PER
             PER = {
@@ -230,16 +231,14 @@ country_event = {
     }
 }
 
-
-
-#News
+### News ###
 
 #皇帝暗殺
 news_event = {
 	id = TR_Russia_news.1
 	title = TR_Russia_news.1.t
 	desc = TR_Russia_news.1.d
-	picture = GFX_news_event_hitler_speech
+	picture = GFX_news_event_generic_funeral
 	
 	major = yes
 	
@@ -293,3 +292,68 @@ news_event = {
 
 }
 
+#帝国新政府
+news_event = {
+	id = TR_Russia_news.2
+	title = TR_Russia_news.2.t
+	desc = TR_Russia_news.2.d
+	picture = GFX_news_event_ITA_vittorio_emanuele_III
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_Russia_news.2.a
+		trigger = {
+            tag = RUS
+	    }
+}
+    option = {
+		name = TR_Russia_news.2.b
+		trigger = {
+            NOT = {
+                tag = RUS
+            }
+		}
+	}
+
+}
+
+#テヘラン条約
+news_event = {
+	id = TR_Russia_news.3
+	title = TR_Russia_news.3.t
+	desc = TR_Russia_news.3.d
+	picture = GFX_news_event_generic_read_write
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_Russia_news.3.a
+		trigger = {
+            tag = RUS
+	    }
+    }
+    option = {
+		name = TR_Russia_news.3.b
+		trigger = {
+            tag = PER
+	    }
+    }
+    option = {
+		name = TR_Russia_news.3.c
+		trigger = {
+            tag = ENG
+		}
+	}
+    option = {
+        name = TR_Russia_news.3.d
+        trigger = {
+            NOT = {
+                tag = RUS
+                tag = PER
+                tag = ENG
+            }
+        }
+    }
+
+}

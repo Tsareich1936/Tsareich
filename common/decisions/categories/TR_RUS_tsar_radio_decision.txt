@@ -1,0 +1,11 @@
+RUS_tsar_radio_decision = {
+	icon = GFX_decision_category_generic_propaganda
+	priority = 1100
+	allowed = {
+		tag = RUS
+	}
+	picture = GFX_decision_cat_picture_SWI_federal_council
+	visible = {
+        has_country_flag = RUS_start_radio      
+	}
+}
