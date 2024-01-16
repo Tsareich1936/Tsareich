@@ -39,7 +39,7 @@
  SRI_reconciliation_communism: "共産主義との和解"
  SRI_reconciliation_communism_desc: "かつては強く対立した共産主義者だが、勢力を強めつつあるムッソリーニに対抗するためには協力することを視野に入れてもよいだろう。"
  SRI_communist_dissolution: "共産主義の禁止"
- SRI_communist_dissolution?desc: "共産主義を許してはならない。彼らは最終的には国家なき社会を目標としており、非常に危険な思想を持っている。"
+ SRI_communist_dissolution_desc: "共産主義を許してはならない。彼らは最終的には国家なき社会を目標としており、非常に危険な思想を持っている。"
  SRI_agrarian_reform: "農業改革"
  SRI_agrarian_reform_desc: "工業に偏重した我が国においても、農業は重要な要素の一つである。生産性を上昇させ、農村を豊かにすることで、国も豊かとなる。"
  SRI_foreign_industrial_advisers: "外国の産業顧問"
