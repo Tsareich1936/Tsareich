@@ -22,12 +22,6 @@ on_actions = {
 				set_variable = {
 					showing_parties_window = 0 
 				}
-				set_variable = {
-					TR_super_event_variable = 0
-				}
-				set_variable = {
-					TR_showing_super_super_event_variable = 0
-				}
 			}
 		}
 		effect = {

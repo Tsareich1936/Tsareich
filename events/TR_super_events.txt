@@ -4,12 +4,26 @@ country_event = {#Test event
 	id = TR_super_event.0
 	hidden = yes
 	is_triggered_only = yes
-	fire_only_once = yes
-	fire_for_sender = yes
 
 	immediate = {
 		set_variable = {
-			TR_super_event_variable = 0 # event id
+			# TR_super_event_variable = 0 # event id
+			TR_showing_super_event = 1 # 0:unvisible 1:visible
+		}
+	}
+}
+country_event = {#One Italy, One Nation
+	id = TR_super_event.1
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+
+	immediate = {
+		set_variable = {
+			TR_super_event_variable = 1 # event id
+		}
+		set_variable = {
 			TR_showing_super_event = 1 # 0:unvisible 1:visible
 		}
 	}

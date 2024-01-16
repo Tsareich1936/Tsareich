@@ -98,6 +98,9 @@ country_event = {
 		trigger = {
 			tag = SRI
 		}
+		hidden_effect = {
+			country_event = TR_super_event.1
+		}
 		SRI = {
 			set_rule = {
 				can_join_factions = yes
