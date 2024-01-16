@@ -1015,6 +1015,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 7
+		completion_reward = {
+			add_political_power = 100
+		}
 
 	}
 	focus = {
@@ -1027,7 +1030,19 @@ focus_tree = {
 		}
 		x = 14
 		y = 8
-
+		completion_reward = {
+			add_political_power = 50
+			GER = {
+				add_opinion_modifier = {
+				target = SRI
+				modifier = GER_distance_from_international
+				}
+				add_opinion_modifier = {
+				target = FRA
+				modifier = GER_distance_from_international
+				}
+			}
+		}
 	}
 	focus = {
 		id = GER_attack_italy

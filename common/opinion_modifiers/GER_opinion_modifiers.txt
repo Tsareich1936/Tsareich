@@ -2,6 +2,9 @@ opinion_modifiers = {
 	GER_approaching_international = {
 		value = 20
 	}
+	GER_distance_from_international = {
+		value = -20
+	}
 	GER_international_revolution = {
 		value = -50
 	}
