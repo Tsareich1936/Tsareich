@@ -1881,6 +1881,26 @@ focus_tree = {
 						level = 1
 					}
 				}
+				add_resource = {
+					type = aluminium
+					amount = 7
+					state = 117
+				}
+				add_resource = {
+					type = aluminium
+					amount = 7
+					state = 161
+				}
+				add_resource = {
+					type = aluminium
+					amount = 12
+					state = 158
+				}
+				add_resource = {
+					type = aluminium
+					amount = 12
+					state = 160
+				}
 			}
 		}
 		focus = {
@@ -2405,6 +2425,9 @@ focus_tree = {
 			}
 			ai_will_do = {
 				base = 5
+				modifier = {
+					factor = 0
+				}
 			}
 			x = 2
 			y = 1
@@ -2425,6 +2448,12 @@ focus_tree = {
 			prerequisite = {
 				focus = SRI_mediterranean_sea
 				focus = SRI_focus_relation_europe
+			}
+			ai_will_do = {
+				base = 5
+				modifier = {
+					factor = 0
+				}
 			}
 			x = 0
 			y = 1
@@ -2697,6 +2726,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SRI_african_charenge
 		}
+		available = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				date >1940.1.1
+			}
+		}
 		x = 0
 		y = 2
 		relative_position_id = SRI_african_charenge
@@ -2707,7 +2744,13 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			has_war_with = HUN
+			OR = {
+				has_war_with = HUN
+				NOT = { country_exists = HUN }
+			}
+			hidden_trigger = {
+				has_completed_focus = SRI_african_charenge
+			}
 		}
 	}
 	focus = {
