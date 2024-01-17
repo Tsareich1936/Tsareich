@@ -37,6 +37,10 @@ country_event = {
 			end_wars = no
 		}
 	}
+	option = {
+		name = TR_czech_revolution.2.b
+
+	}
 }
 news_event = {
 	id = TR_czech_revolution_news.1

@@ -1031,7 +1031,6 @@ focus_tree = {
 		x = 14
 		y = 8
 		completion_reward = {
-			add_political_power = 50
 			GER = {
 				add_opinion_modifier = {
 				target = SRI
@@ -1098,13 +1097,18 @@ focus_tree = {
 		}
 		x = 17
 		y = 9
-
+		completion_reward = {
+			add_timed_idea = {
+					idea = GER_positive_propaganda
+					days = 180
+			}
+		}
 	}
 	focus = {
 		id = GER_supporting_poland
 		text = GER_supporting_poland
 		icon = GFX_focus_generic_polish_deal
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_preparing_for_battle
 		}
@@ -1116,7 +1120,7 @@ focus_tree = {
 		id = GER_warsaw_uprising
 		text = GER_warsaw_uprising
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_supporting_poland
 		}
@@ -1130,17 +1134,17 @@ focus_tree = {
 		icon = GFX_focus_ICE_infiltrating_the_british_isles
 		cost = 10.00
 		prerequisite = {
-			focus = GER_preparing_for_battle
+			focus = GER_approaching_international
 		}
 		x = 25
-		y = 10
+		y = 9
 
 	}
 	focus = {
 		id = GER_protecting_czech_communists
 		text = GER_protecting_czech_communists
 		icon = GFX_focus_generic_provoke_border_clashes
-		cost = 2.50
+		cost = 5.00
 		prerequisite = {
 			focus = GER_preparing_for_battle
 		}
@@ -1175,7 +1179,7 @@ focus_tree = {
 		id = GER_war_plan_against_russia
 		text = GER_war_plan_against_russia
 		icon = GFX_focus_SOV_the_defense_of_moscow
-		cost = 10.00
+		cost = 2.50
 		prerequisite = {
 			focus = GER_protecting_czech_communists
 		}
@@ -1184,7 +1188,14 @@ focus_tree = {
 		}
 		x = 17
 		y = 12
-
+		completion_reward = {
+			create_wargoal = {
+ 			   type = take_state_focus
+ 			   target = RUS
+ 			   generator = { 86 807 85 5 763 188 762 }
+ 			   expire = 0
+			}
+		}
 	}
 	focus = {
 		id = GER_swiss_partition
@@ -1232,9 +1243,9 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GER_reclaiming_north_schleswig
+		id = GER_reclaiming_schleswig
 		icon = GFX_focus_generic_invade_denmark
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = newfocus_95
 		}
@@ -1243,7 +1254,14 @@ focus_tree = {
 		}
 		x = 20
 		y = 12
-
+		completion_reward = {
+			create_wargoal = {
+ 			   type = take_state_focus
+ 			   target = DEN
+ 			   generator = { 909 912 }
+ 			   expire = 0
+			}
+		}
 	}
 	focus = {
 		id = newfocus_93
@@ -1307,7 +1325,7 @@ focus_tree = {
 	focus = {
 		id = GER_friendship_with_denmark
 		icon = GFX_focus_generic_befriend_denmark
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = newfocus_95
 		}
@@ -1377,7 +1395,7 @@ focus_tree = {
 	focus = {
 		id = GER_hungary_revolution
 		icon = GFX_focus_ITA_corpo_volontari_della_liberta
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_protecting_czech_communists
 		}
