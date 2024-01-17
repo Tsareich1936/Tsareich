@@ -1781,7 +1781,7 @@ focus_tree = {
             completion_reward = {
                 custom_effect_tooltip = TR_Russia.tt.16
                 hidden_effect = {
-                    add_building_construction = {
+                    196 = { add_building_construction = {
                         type = bunker
                         level = 4
                         province = 721
@@ -1798,8 +1798,8 @@ focus_tree = {
                         level = 4
                         province = 3573
                         instant_build = yes
-                    }
-                    add_building_construction = {
+                    }}
+                    200 = { add_building_construction = {
                         type = bunker
                         level = 4
                         province = 588
@@ -1810,8 +1810,8 @@ focus_tree = {
                         level = 4
                         province = 11405
                         instant_build = yes
-                    }
-                    add_building_construction = {
+                    }}
+                    226 = {add_building_construction = {
                         type = bunker
                         level = 4
                         province = 453
@@ -1822,8 +1822,8 @@ focus_tree = {
                         level = 4
                         province = 266
                         instant_build = yes
-                    }
-                    add_building_construction = {
+                    }}
+                    259 = {add_building_construction = {
                         type = bunker
                         level = 4
                         province = 6507
@@ -1834,8 +1834,8 @@ focus_tree = {
                         level = 4
                         province = 6495
                         instant_build = yes
-                    }
-                    add_building_construction = {
+                    }}
+                    203 = {add_building_construction = {
                         type = bunker
                         level = 4
                         province = 9491
@@ -1846,8 +1846,8 @@ focus_tree = {
                         level = 4
                         province = 11530
                         instant_build = yes
-                    }
-                    add_building_construction = {
+                    }}
+                    202 = {add_building_construction = {
                         type = bunker
                         level = 4
                         province = 9543
@@ -1864,8 +1864,8 @@ focus_tree = {
                         level = 4
                         province = 489
                         instant_build = yes
-                    }
-                    add_building_construction = {
+                    }}
+                    193={add_building_construction = {
                         type = bunker
                         level = 4
                         province = 3568
@@ -1876,8 +1876,8 @@ focus_tree = {
                         level = 4
                         province = 546
                         instant_build = yes
-                    }
-                    add_building_construction = {
+                    }}
+                    241={add_building_construction = {
                         type = bunker
                         level = 4
                         province = 9288
@@ -1906,7 +1906,7 @@ focus_tree = {
                         level = 4
                         province = 6354
                         instant_build = yes
-                    }
+                    }}
 
                 }
             }
@@ -1930,7 +1930,7 @@ focus_tree = {
             completion_reward = {
                 custom_effect_tooltip = TR_Russia.tt.17
                 hidden_effect = {
-                    add_building_construction = {
+                    808 = { add_building_construction = {
                         type = bunker
                         level = 4
                         province = 9340
@@ -1941,8 +1941,8 @@ focus_tree = {
                         level = 4
                         province = 10323
                         instant_build = yes
-                    }
-                    add_building_construction = {
+                    } }
+                    810 = { add_building_construction = {
                         type = bunker
                         level = 4
                         province = 7482
@@ -1959,8 +1959,8 @@ focus_tree = {
                         level = 4
                         province = 6459
                         instant_build = yes
-                    }
-                    add_building_construction = {
+                    } }
+                    207 = { add_building_construction = {
                         type = bunker
                         level = 4
                         province = 3219
@@ -1995,7 +1995,7 @@ focus_tree = {
                         level = 5
                         province = 11220
                         instant_build = yes
-                    }
+                    } }
                 }
             }
             
