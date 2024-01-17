@@ -245,7 +245,7 @@ ideologies = {
 	conservatism = {	#from democratic
 
 		types = {
-			consetvatism = {
+			conservatism = {
 
 			}
 		}

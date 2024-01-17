@@ -2480,7 +2480,7 @@ characters = {
 	# 	}
 
 	# 	country_leader = {
-	# 		ideology = consetvatism
+	# 		ideology = conservatism
 	# 		traits = { master_of_politics }
 	# 		expire = "1965.1.1.1"
 	# 		id = -1
