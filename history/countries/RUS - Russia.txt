@@ -270,3 +270,128 @@ recruit_character = RUS_georgy_zhukov
 
 
 #POLITICAL ADVISORS
+recruit_character = RUS_mikhail_kalinin
+recruit_character = RUS_nikita_khrushchyov
+recruit_character = RUS_nikolay_voznesensky
+recruit_character = RUS_lazar_kaganovich
+recruit_character = RUS_genrikh_yagoda
+recruit_character = RUS_nikolay_yezhov
+recruit_character = RUS_lavrenty_beriya
+recruit_character = RUS_vsevolod_merkulov
+recruit_character = RUS_vyacheslav_molotov
+recruit_character = RUS_maksim_litvinov
+
+recruit_character = RUS_lev_trotsky
+recruit_character = RUS_ivan_smirnov
+recruit_character = RUS_ivar_smilga
+recruit_character = RUS_karl_radek
+recruit_character = RUS_yevgeny_preobrazhensky
+recruit_character = RUS_aleksandr_shlyapnikov
+recruit_character = RUS_nikolay_bukharin
+recruit_character = RUS_aleksey_rykov
+recruit_character = RUS_mikhail_tomsky
+recruit_character = RUS_grigory_sokolnikov
+recruit_character = RUS_grigory_zinovyev
+recruit_character = RUS_lev_kamenev
+recruit_character = RUS_martemyan_ryutin
+recruit_character = RUS_patriarch_sergy
+recruit_character = RUS_aleksandr_kerensky
+recruit_character = RUS_konstantin_rodzayevsky
+
+
+recruit_character = RUS_aleksandr_vasilevsky
+recruit_character = RUS_aleksandr_golovanov
+recruit_character = RUS_aleksandr_gorbatov
+recruit_character = RUS_aleksandr_novikov
+recruit_character = RUS_aleksandr_yegorov
+recruit_character = RUS_andrey_grechko
+recruit_character = RUS_andrey_vlasov
+recruit_character = RUS_andrey_yeryomenko
+recruit_character = RUS_arseny_golovko
+recruit_character = RUS_boris_shaposhnikov
+recruit_character = RUS_dmitry_lelyushenko
+recruit_character = RUS_filipp_golikov
+recruit_character = RUS_filipp_oktyabrsky
+
+recruit_character = RUS_georgy_zakharov
+recruit_character = RUS_georgy_zhukov
+recruit_character = RUS_gordey_levchenko
+recruit_character = RUS_grigory_kulik
+recruit_character = RUS_igor_kurchatov
+recruit_character = RUS_issa_pliyev
+recruit_character = RUS_ivan_chernyakhovsky
+recruit_character = RUS_ivan_fedyuninsky
+recruit_character = RUS_ivan_konev
+recruit_character = RUS_ivan_yumashev
+recruit_character = RUS_kirill_meretskov
+recruit_character = RUS_kirill_moskalenko
+recruit_character = RUS_kliment_voroshilov
+recruit_character = RUS_konstantin_rokossovsky
+recruit_character = RUS_konstantin_vershinin
+recruit_character = RUS_kuzma_galitsky
+recruit_character = RUS_leonid_govorov
+recruit_character = RUS_maksim_purkayev
+recruit_character = RUS_markian_popov
+recruit_character = RUS_maks_reyter
+recruit_character = RUS_mikhail_frinovsky
+
+recruit_character = RUS_mikhail_tukhachevsky
+recruit_character = RUS_nikandr_chibisov
+
+recruit_character = RUS_nikolay_berzarin
+recruit_character = RUS_nikolay_vatutin
+
+recruit_character = RUS_nikolay_kuznetsov
+
+recruit_character = RUS_pavel_rychagov
+recruit_character = RUS_pavel_zhigarev
+recruit_character = RUS_pyotr_smirnov
+recruit_character = RUS_rodion_malinovsky
+recruit_character = RUS_semyon_budyonny
+recruit_character = RUS_semyon_timoshenko
+recruit_character = RUS_sergey_khudyakov
+recruit_character = RUS_sergey_korolyov
+recruit_character = RUS_sergey_rudenko
+recruit_character = RUS_sergey_gorshkov
+recruit_character = RUS_stepan_krasovsky
+recruit_character = RUS_vasily_blyukher
+recruit_character = RUS_vasily_chuykov
+recruit_character = RUS_vasily_kuznetsov
+recruit_character = RUS_vladimir_kasatonov
+recruit_character = RUS_vladimir_tributs
+
+recruit_character = RUS_yakov_cherevichenko
+recruit_character = RUS_yakov_smushkevich
+
+recruit_character = RUS_vitaly_primakov
+#Not available at game start
+recruit_character = RUS_vasily_korzh
+recruit_character = RUS_sidor_kovpak
+recruit_character = RUS_lev_dovator
+recruit_character = RUS_pavel_rybalko
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	recruit_character = RUS_anastasy_vonsyatsky
+	# recruit_character = RUS_grigory_semyonov # starts as an advisor to Puyi
+	recruit_character = RUS_metropolitan_anastasy
+	recruit_character = RUS_metropolitan_nikolay
+	recruit_character = RUS_nikolay_ustryalov
+	recruit_character = RUS_aleksandr_kazembek
+	recruit_character = RUS_metropolitan_aleksy
+	recruit_character = RUS_metropolitan_meletius
+	recruit_character = RUS_aleksandr_prokofyev_seversky
+	recruit_character = RUS_vyacheslav_tkachyov
+	recruit_character = RUS_yan_nagursky
+	recruit_character = RUS_vasily_yanchenko
+	recruit_character = RUS_tsar_vladimir_kirillovich
+
+	recruit_character = RUS_pyotr_krasnov
+	recruit_character = RUS_konstantin_nechayev
+	recruit_character = RUS_aleksandr_rodzyanko
+	recruit_character = RUS_vladimir_kosmin
+	recruit_character = RUS_andrey_shkuro
+	recruit_character = RUS_anton_denikin
+}
