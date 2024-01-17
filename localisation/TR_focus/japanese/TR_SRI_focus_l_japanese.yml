@@ -1,4 +1,4 @@
-﻿l_japanese:
+l_japanese:
  SRI_emergency_council: "緊急評議会の設立"
  SRI_emergency_council_desc: "国家の緊急事態には早急な対応を必要とする。そこで我々は新たな国家元首が決定されるまでの間党幹部による合議制によって国を運営してゆくことを決めた。"
  SRI_just_socialim: "正統派社会主義"
@@ -97,6 +97,7 @@
  SRI_continenta_army: "強固な軍隊"
  SRI_large-scale_developments_north: "北部の大規模開発"
  SRI_cooperation_for_spain: "スペインへの協力"
+ SRI_cooperation_for_spain_desc: "スペインでは社会主義の同胞、反動君主主義者、そして無政府主義者の間で内戦が行われている。もしこの地にて反動勢力や危険思想を抱えるものたちが力を持った場合我々の安全保障条約脅威となりうる。地中海には社会主義の安寧が築かれなければならない。"
  SRI_neutrality_no_sense: "中立はもはや意味をなさない"
  SRI_perfect_italy: "完全なイタリア"
  SRI_red_Adria: "赤きアドリア"
