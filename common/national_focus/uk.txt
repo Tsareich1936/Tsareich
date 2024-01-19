@@ -36,6 +36,7 @@ focus_tree = {
 			cost = 5
 			prerequisite = {
 				focus = TR_ENG_steady_as_she_goes
+				focus = TR_ENG_a_change_in_course
 			}
 			x = 3
 			y = 1
