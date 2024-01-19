@@ -1,0 +1,249 @@
+focus_tree = {
+    id = britain_focus
+    country = {
+        factor = 0
+        modifier = {
+            add = 101
+            tag = ENG
+        }
+    }
+    default = yes
+	reset_on_civilwar = no
+
+	initial_show_position = {
+		focus = TR_ENG_steady_as_she_goes
+	}
+	### historical route ###
+		focus = {
+			id = TR_ENG_steady_as_she_goes
+			icon = GFX_goal_support_democracy
+			mutually_exclusive = {
+				focus = TR_ENG_a_change_in_course
+			}
+			cost = 5
+			x = 30
+			y = 0
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_withdrawal_france
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_continue_occupation
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_steady_as_she_goes
+			}
+			x = 3
+			y = 1
+			relative_position_id = TR_ENG_steady_as_she_goes
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_expose_faults
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_protecting_brittany
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_withdrawal_france
+				focus = TR_ENG_continue_occupation
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_withdrawal_france
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_protest_letter_france
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_expose_faults
+			}
+			x = 0
+			y = 3
+			relative_position_id = TR_ENG_expose_faults
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_abandon_greece
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_intervention_greece
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_protest_letter_france
+				focus = TR_ENG_preemptive_strikes_against_france
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_protest_letter_france
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_abandon_czecho
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_intervention_czecho
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_abandon_greece
+				focus = TR_ENG_intervention_greece
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_abandon_greece
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_engagement_with_france
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_abandon_czecho
+				focus = TR_ENG_intervention_czecho
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_abandon_czecho
+			completion_reward = {
+		
+			}
+		}
+	### unhistorical route ###
+		focus = {
+			id = TR_ENG_a_change_in_course
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_steady_as_she_goes
+			}
+			cost = 5
+			relative_position_id = TR_ENG_steady_as_she_goes
+			x = 9
+			y = 0
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_continue_occupation
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_withdrawal_france
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_a_change_in_course
+				focus = TR_ENG_steady_as_she_goes
+			}
+			x = -3
+			y = 1
+			relative_position_id = TR_ENG_a_change_in_course
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_protecting_brittany
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_expose_faults
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_continue_occupation
+				focus = TR_ENG_withdrawal_france
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_continue_occupation
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_preemptive_strikes_against_france
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_protest_letter_france
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_protecting_brittany
+			}
+			x = 0
+			y = 3
+			relative_position_id = TR_ENG_protecting_brittany
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_intervention_greece
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_abandon_greece
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_preemptive_strikes_against_france
+				focus = TR_ENG_protest_letter_france
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_preemptive_strikes_against_france
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_intervention_czecho
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_abandon_czecho
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_abandon_greece
+				focus = TR_ENG_intervention_greece
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_intervention_greece
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_engagement_with_germany
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_abandon_czecho
+				focus = TR_ENG_intervention_czecho
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_intervention_czecho
+			completion_reward = {
+		
+			}
+		}
+}
