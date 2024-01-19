@@ -81,12 +81,9 @@ add_ideas = {
 	RUS_agricultural_economy
 	RUS_low_research
 	RUS_nomad_of_russia
-	RUS_MGI
-	# RUS_wwi_army_charge
-	# RUS_wwi_army_dig
+	RUS_wwi_army
 
 	#debug
-	RUS_debug_exp
 
 	#laws
 	disarmed_nation
