@@ -27,6 +27,7 @@ focus_tree = {
 		
 			}
 		}
+		## center
 		focus = {
 			id = TR_ENG_withdrawal_france
 			icon = GFX_
@@ -128,6 +129,243 @@ focus_tree = {
 		
 			}
 		}
+		## main
+		focus = {
+			id = TR_ENG_anticommunist
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_steady_as_she_goes
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_steady_as_she_goes
+			completion_reward = {
+
+			}
+		}
+		focus = {
+			id = TR_ENG_supporting_spain
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_anticommunist
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_anticommunist
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_revival_old_alliances
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_supporting_spain
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_supporting_spain
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_alliance_opposite_shore
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_anticommunist
+			}
+			x = -2
+			y = 1
+			relative_position_id = TR_ENG_anticommunist
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_belgian_issue
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_alliance_opposite_shore
+			}
+			x = 0
+			y = 1
+			relative_position_id = TR_ENG_alliance_opposite_shore
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_alliance_denmark
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_belgian_issue
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_belgian_issue
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_contacts_with_russia
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_alliance_denmark
+			}
+			x = 0
+			y = 3
+			relative_position_id = TR_ENG_alliance_denmark
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_RUS_allies
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_anticommunist_allies
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_contacts_with_russia
+				focus = TR_ENG_governmet_in_exile_recognised
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_contacts_with_russia
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_those_driven_by_vengeance
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_anticommunist
+			}
+			x = -6
+			y = 1
+			relative_position_id = TR_ENG_anticommunist
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_north_african_losers
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_those_driven_by_vengeance
+			}
+			x = 1
+			y = 1
+			relative_position_id = TR_ENG_those_driven_by_vengeance
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_rhodes_loser
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_those_driven_by_vengeance
+			}
+			x = -1
+			y = 3
+			relative_position_id = TR_ENG_those_driven_by_vengeance
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_governmet_in_exile_recognised
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_north_african_losers
+			}
+			prerequisite = {
+				focus = TR_ENG_rhodes_loser
+			}
+			x = 0
+			y = 6
+			relative_position_id = TR_ENG_those_driven_by_vengeance
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_anticommunist_allies
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_RUS_allies
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_governmet_in_exile_recognised
+				focus = TR_ENG_contacts_with_russia
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_governmet_in_exile_recognised
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_rouse_the_giant
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_anticommunist_allies
+				focus = TR_ENG_RUS_allies
+			}
+			x = 2
+			y = 2
+			relative_position_id = TR_ENG_anticommunist_allies
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_colonial_security
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_anticommunist
+			}
+			x = -9
+			y = 2
+			relative_position_id = TR_ENG_anticommunist
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_far_eastern_security
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_colonial_security
+			}
+			x = 0
+			y = 4
+			relative_position_id = TR_ENG_colonial_security
+			completion_reward = {
+		
+			}
+		}
 	### unhistorical route ###
 		focus = {
 			id = TR_ENG_a_change_in_course
@@ -143,6 +381,7 @@ focus_tree = {
 		
 			}
 		}
+		## center
 		focus = {
 			id = TR_ENG_continue_occupation
 			icon = GFX_
