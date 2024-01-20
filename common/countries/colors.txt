@@ -494,8 +494,8 @@ PAK = {
 #}
 #}
 KOR = {
-	color = rgb { 255  240  195 }
-	color_ui = rgb { 255 248 229 }	
+	color = rgb { 14 35 145 }
+	color_ui = rgb { 18 13 155 }	
 }
 ISR = {
 	color = rgb { 152  130  191 }
