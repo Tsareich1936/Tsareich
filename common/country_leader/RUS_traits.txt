@@ -18,8 +18,8 @@ leader_traits = {
 	}
 	TR_krill_conflicts_in_the_court = {
 		random = no
-		political_power_factor_cost = 1.25
-		drift_defence_factor = -0.2
+		political_power_cost = 1
+		drift_defence_factor = -0.25
 	}
 	TR_krill_evolutional_government = {
 		random = no
