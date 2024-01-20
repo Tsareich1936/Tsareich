@@ -62,7 +62,11 @@ focus_tree = {
 
         }
         completion_reward = {
-
+            add_trait = {
+                character = RUS_kirill_vladimirovich
+                ideology = despotism
+                trait = TR_krill_evolutional_government
+            }
         }
         
     }
