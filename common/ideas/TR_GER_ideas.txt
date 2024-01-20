@@ -34,7 +34,6 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_cost = 1.0
 				stability_factor = -0.25
 				war_support_factor = -0.10
 			}
@@ -63,9 +62,6 @@ ideas = {
 				consumer_goods_factor = -0.15
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.15
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = 0.1
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 			}
@@ -79,11 +75,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.30
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.15
-				production_speed_industrial_complex_factor = 0.25
-				production_speed_arms_factory_factor = 0.25
-				production_speed_dockyard_factor = 0.25
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.25
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 			}
@@ -99,6 +92,18 @@ ideas = {
 				communism_drift = 0.5
 				stability_weekly = 0.05
 				war_support_weekly = 0.025
+			}
+		}
+		GER_more_industry = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_exploit_mines
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
 			}
 		}
 	}	

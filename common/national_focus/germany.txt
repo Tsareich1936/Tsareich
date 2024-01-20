@@ -33,7 +33,14 @@ focus_tree = {
 		cost = 10.00
 		x = 5
 		y = 0
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
 	}
 	focus = {
 		id = army_1
@@ -68,10 +75,35 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
-		id = industry_1
+		id = GER_industry_1
 		icon = GFX_goal_generic_construction2
 		cost = 10.00
 		prerequisite = {
@@ -82,18 +114,18 @@ focus_tree = {
 
 	}
 	focus = {
-		id = industry_4
+		id = GER_industry_4
 		icon = GFX_goal_generic_construct_civilian
 		cost = 10.00
 		prerequisite = {
-			focus = industry_1
+			focus = GER_industry_1
 		}
 		x = 3
 		y = 2
 
 	}
 	focus = {
-		id = industry_2
+		id = GER_industry_2
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
@@ -101,33 +133,121 @@ focus_tree = {
 		}
 		x = 5
 		y = 1
-
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = GER_industrial_effort_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
 	}
 	focus = {
-		id = industry_5
+		id = GER_industry_5
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
-			focus = industry_2
+			focus = GER_industry_2
 		}
 		x = 5
 		y = 2
-
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = GER_industrial_effort_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
 	}
 	focus = {
 		id = newfocus_96
 		icon = GFX_focus_SOV_organize_wreckers
 		cost = 10.00
 		prerequisite = {
-			focus = industry_4
-			focus = industry_5
+			focus = GER_industry_4
+			focus = GER_industry_5
 		}
 		x = 4
 		y = 3
 
 	}
 	focus = {
-		id = industry_3
+		id = GER_industry_3
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
@@ -135,37 +255,127 @@ focus_tree = {
 		}
 		x = 7
 		y = 1
-
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = GER_industrial_effort_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
 	}
 	focus = {
-		id = industry_6
+		id = GER_industry_6
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
-			focus = industry_3
+			focus = GER_industry_3
 		}
 		x = 7
 		y = 2
-
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = GER_industrial_effort_2_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2_2IC
+			}
+		}
 	}
 	focus = {
-		id = newfocus_97
+		id = GER_more_industry
 		icon = GFX_goal_generic_production2
 		cost = 10.00
 		prerequisite = {
-			focus = industry_5
-			focus = industry_6
+			focus = GER_industry_5
+			focus = GER_industry_6
 		}
 		x = 6
 		y = 3
-
+		completion_reward = {
+			add_ideas = GER_more_industry
+		}
 	}
 	focus = {
 		id = industry_7
 		icon = GFX_focus_generic_socialist_science
 		cost = 10.00
 		prerequisite = {
-			focus = newfocus_97
+			focus = GER_more_industry
 			focus = newfocus_96
 		}
 		x = 5
@@ -195,7 +405,75 @@ focus_tree = {
 		}
 		x = 7
 		y = 6
-
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = GER_german_war_economy }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = tot_economic_mobilisation }
+				}
+				add_ideas = war_economy
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+		}
 	}
 	focus = {
 		id = GER_left
@@ -312,7 +590,7 @@ focus_tree = {
 		id = GER_socialist_economy
 		text = GER_socialist_economy
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_left
 			focus = GER_right
@@ -422,7 +700,7 @@ focus_tree = {
 		id = GER_workers_government
 		text = GER_workers_government
 		icon = GFX_focus_generic_workers
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_united_front_tatics
 		}
@@ -444,7 +722,7 @@ focus_tree = {
 		id = GER_unite_SPD
 		text = GER_unite_SPD
 		icon = GFX_goal_generic_dangerous_deal
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_united_front_tatics
 		}
@@ -475,7 +753,7 @@ focus_tree = {
 		id = GER_totalitarianism
 		text = GER_totalitarianism
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_workers_government
 			focus = GER_unite_SPD
@@ -504,7 +782,7 @@ focus_tree = {
 			add_political_power = 50
 			add_timed_idea = {
 					idea = GER_positive_propaganda
-					days = 180
+					days = 90
 			}
 		}
 
