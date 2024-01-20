@@ -83,7 +83,11 @@ focus_tree = {
 
         }
         completion_reward = {
-
+            remove_trait = {
+                character = RUS_kirill_vladimirovich
+                ideology = despotism
+                trait = TR_krill_conflicts_in_the_court
+            }
         }
         
     }
@@ -91,9 +95,9 @@ focus_tree = {
     focus = {
         id = RUS_remake_national_government
         icon = GFX_focus_NOR_continue_nygaardsvold_government
-        x = 1
-        y = 1
-        relative_position_id = RUS_unprison
+        x = 0
+        y = 2
+        relative_position_id = RUS_newtsar
         cost = 4
 
         search_filters = FOCUS_FILTER_POLITICAL

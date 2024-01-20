@@ -176,6 +176,9 @@ SYR = {
 	add_to_tech_sharing_group = slav_entente_research
 }
 
+#var
+set_variable = { var = rus_finland_autonomous_power value = 20 }
+
 #resistance
 85 = {
 	start_resistance = yes
