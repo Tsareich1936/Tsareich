@@ -225,14 +225,10 @@ if = {
 		has_dlc = "Together for Victory"
 		not = { has_dlc = "Waking the Tiger" }
 	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = KOR
-		autonomous_state = autonomy_integrated_puppet
-	}
+	# set_autonomy = {
+	# 	target = KOR
+	# 	autonomous_state = autonomy_integrated_puppet
+	# }
 }
 if = {
 	limit = { 
@@ -241,37 +237,34 @@ if = {
 			has_dlc = "Together for Victory"
 		}
 	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_puppet
-	}
-	set_autonomy = {
-		target = KOR
-		autonomous_state = autonomy_integrated_puppet
-	}
+	
+	# set_autonomy = {
+	# 	target = KOR
+	# 	autonomous_state = autonomy_integrated_puppet
+	# }
 }
 if = {
 	limit = { 
 		has_dlc = "Waking the Tiger"
 	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_wtt_imperial_protectorate
-	}
-	set_autonomy = {
-		target = KOR
-		autonomous_state = autonomy_integrated_puppet
-	}
+	# set_autonomy = {
+	# 	target = KOR
+	# 	autonomous_state = autonomy_integrated_puppet
+	# }
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	democratic = 40
+	conservatism = 32
+	socialdemocratic = 15
+	neutrality = 7
+	socialism = 6
 }
 
 recruit_character = JAP_tetsu_katayama
