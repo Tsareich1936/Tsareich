@@ -187,8 +187,6 @@ ideas = {
             }
         }
 
-
-
         RUS_MGI = {
             picture = NOR_printing_money
             allowed = {

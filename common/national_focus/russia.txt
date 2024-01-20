@@ -29,7 +29,7 @@ focus_tree = {
 
     ### 新時代の皇帝
     focus = {
-        id = RUS_newtsar_1          
+        id = RUS_newtsar          
         icon = GFX_focus_SOV_panslavic_nationalism
         x = 17
         y = 0
@@ -48,57 +48,65 @@ focus_tree = {
     }
     ### 政治犯の釈放
     focus = {
-        id = RUS_unprison_1
+        id = RUS_unprison
         icon = GFX_focus_mex_arrest_general_cedillo
         x = -1
         y = 1
         cost = 4
-        relative_position_id = RUS_newtsar_1
+        relative_position_id = RUS_newtsar
         search_filters = FOCUS_FILTER_POLITICAL
-        prerequisite = { focus = RUS_newtsar_1 }
+        prerequisite = { focus = RUS_newtsar }
 
         ai_will_do = { factor = 40 }
         available = {
 
         }
         completion_reward = {
-
+            add_trait = {
+                character = RUS_kirill_vladimirovich
+                ideology = despotism
+                trait = TR_krill_evolutional_government
+            }
         }
         
     }
     
     ### 宮廷親衛隊の創設
     focus = {
-        id = RUS_tsar_infantry_1
+        id = RUS_tsar_infantry
         icon = GFX_focus_DEN_expand_haerens_tekniske_korps
         x = 1
         y = 1
         cost = 4
-        relative_position_id = RUS_newtsar_1
+        relative_position_id = RUS_newtsar
         search_filters = FOCUS_FILTER_POLITICAL
-        prerequisite = { focus = RUS_newtsar_1 }
+        prerequisite = { focus = RUS_newtsar }
 
         ai_will_do = { factor = 50 }
         available = {
 
         }
         completion_reward = {
-
+            remove_trait = {
+                character = RUS_kirill_vladimirovich
+                ideology = despotism
+                trait = TR_krill_conflicts_in_the_court
+            }
         }
         
     }
 
     focus = {
-        id = RUS_remake_national_government_1
+        id = RUS_remake_national_government
         icon = GFX_focus_NOR_continue_nygaardsvold_government
-        x = 1
-        y = 1
-        relative_position_id = RUS_unprison_1
+        x = 0
+        y = 2
+        relative_position_id = RUS_newtsar
         cost = 4
 
         search_filters = FOCUS_FILTER_POLITICAL
-        prerequisite = { focus = RUS_tsar_infantry_1 }
-        prerequisite = { focus = RUS_unprison_1 }
+        prerequisite = { focus = RUS_tsar_infantry }
+        prerequisite = { focus = RUS_unprison }
 
         ai_will_do = { factor = 50 }
         available = {
@@ -107,7 +115,7 @@ focus_tree = {
         completion_reward = {
             swap_ideas = {
                 remove_idea = RUS_agricultural_economy
-                add_idea = RUS_agricultural_economy_1
+                add_idea = RUS_agricultural_economy
             }
             hidden_effect = {
                 news_event = TR_Russia_news.2
