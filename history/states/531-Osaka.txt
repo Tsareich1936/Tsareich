@@ -14,10 +14,6 @@ state={
 			arms_factory = 2
 			industrial_complex = 4
 			dockyard = 2
-			1136 = {
-				naval_base = 6
-
-			}
 			7072 = {
 				naval_base = 3
 
@@ -28,7 +24,7 @@ state={
 			7072 40 
 		}
 		victory_points = {
-			11960 20 
+			13339 20 
 		}
 		1939.1.1 = {
 			buildings = {
@@ -42,7 +38,7 @@ state={
 	}
 
 	provinces={
-		1051 1133 1136 4142 7072 7113 9985 11960 12031 13278 13279 
+		7072 13339 
 	}
 	manpower=11810000
 	buildings_max_level_factor=1.000

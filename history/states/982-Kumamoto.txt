@@ -1,0 +1,14 @@
+state={
+	id=982
+	name="STATE_982"
+	provinces={
+		1183 11925 11949 12006 
+	}
+	history = {
+		owner = JAP
+		add_core_of = JAP
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
