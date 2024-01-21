@@ -1,16 +1,19 @@
+
 state={
 	id=953
 	name="STATE_953"
+
 	history={
 		owner = JAP
 		add_core_of = JAP
 
 	}
+
 	provinces={
-		1024 4118 4122 
+		1024 4118 4122 13295 13297 13299 
 	}
 	manpower=1582000
-	state_category = large_town
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
 }
