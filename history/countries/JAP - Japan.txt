@@ -12,22 +12,11 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
-
+ 
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
 	JAP_militarism
 	JAP_hirohito
-}
-
-diplomatic_relation = {
-    country = KOR
-    relation = guarantee
-    active = yes
-}
-diplomatic_relation = {
-    country = KOR
-    relation = military_access
-    active = yes
 }
 
 609 = {
@@ -226,11 +215,11 @@ if = {
 
 create_import = {
 		resource = oil
-		factories = 3
+		factories = 2
 		exporter = USA
 }
 
-set_convoys = 600
+set_convoys = 400
 
 if = {
 	limit = {
@@ -269,14 +258,14 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 30
-	conservatism = 42
-	socialdemocratic = 25
-	neutrality = 2
-	socialism = 1
+	democratic = 40
+	conservatism = 32
+	socialdemocratic = 15
+	neutrality = 7
+	socialism = 6
 }
 
 recruit_character = JAP_tetsu_katayama
