@@ -19,6 +19,17 @@ add_ideas = {
 	JAP_hirohito
 }
 
+diplomatic_relation = {
+    country = KOR
+    relation = guarantee
+    active = yes
+}
+diplomatic_relation = {
+    country = KOR
+    relation = military_access
+    active = yes
+}
+
 609 = {
 	start_resistance = yes
 	set_compliance = 5
