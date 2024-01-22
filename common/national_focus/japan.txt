@@ -21,7 +21,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            country_event = TR.japan.1
+            country_event = TR_japan.1
         }
 
 	}
@@ -257,7 +257,7 @@ focus_tree = {
         y = 1
         cost = 10
         prerequisite = {
-            focus = jap_19th_General_Election
+            focus = jap_Rikken_Seiyūkai
         }
         available = {
             
