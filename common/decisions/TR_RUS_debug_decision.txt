@@ -57,4 +57,28 @@ RUS_debug_decision_c = {
         }
     }
 
+    RUS_run_factory = {
+
+        state_target = yes
+        target_trigger = {
+            FROM = {
+                oil > 16
+                is_owned_by = RUS
+            }
+        }
+        available = {
+
+        }
+        icon = GFX_decision_oil
+        priority = 27
+		cost = 80
+
+        days_remove = 0
+        complete_effect = {
+            set_temp_variable = { temp1 = FROM.resource@oil }
+            multiply_temp_variable = { temp1 = 0.3 }
+            add_political_power = temp1
+        }
+    }
+
 }
