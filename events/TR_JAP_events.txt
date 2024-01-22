@@ -1,0 +1,10 @@
+country_event = {
+	id = TR.japan.1
+	title = TR.japan.1.t
+	desc = TR.japan.1.d
+
+	trigger = {
+		tag = JAP
+		
+	}
+}
