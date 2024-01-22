@@ -10,7 +10,7 @@ focus_tree = {
 	default = yes
 	reset_on_civilwar = no
 
-    #　政治ツリー
+    # #　政治ツリー
 
 	focus = {
 		id = jap_19th_General_Election
@@ -31,7 +31,7 @@ focus_tree = {
    
     
 
-    # 立憲民政党
+    # # 立憲民政党
 
     focus = {
         id = jap_Constitutional_Democratic_Party
@@ -47,8 +47,6 @@ focus_tree = {
         }
         completion_reward = {
         }
-
-
     }
    
     focus = {
@@ -229,7 +227,7 @@ focus_tree = {
 
     }
 
-    # 立憲政友会
+    # # 立憲政友会
 
     focus = {
         id = jap_Rikken_Seiyūkai
