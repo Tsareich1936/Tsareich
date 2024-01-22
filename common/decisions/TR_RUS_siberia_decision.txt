@@ -96,6 +96,9 @@ RUS_siberia_decision_c = {
         icon = GFX_decision_generic_operation
         priority = 19
         days_remove = 0
+		ai_will_do = {
+			base = 1200
+		}
         complete_effect = {
 			if = {
 				limit = {
@@ -137,6 +140,9 @@ RUS_siberia_decision_c = {
 					has_country_flag = RUS_selected_navy_siberia_decision
 				}
 			}
+		}
+		ai_will_do = {
+			base = 10
 		}
 		days_remove = 0
         icon = GFX_decision_generic_operation
@@ -186,6 +192,9 @@ RUS_siberia_decision_c = {
 		days_remove = 0
         icon = GFX_decision_generic_operation
         priority = 18
+		ai_will_do = {
+			base = 5
+		}
         complete_effect = {
 			if = {
 				limit = {
@@ -227,6 +236,9 @@ RUS_siberia_decision_c = {
 					has_country_flag = RUS_selected_industry_siberia_decision
 				}
 			}
+		}
+		ai_will_do = {
+			base = 1500
 		}
 		days_remove = 0
         icon = GFX_decision_generic_operation
