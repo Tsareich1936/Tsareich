@@ -1,40 +1,10 @@
-add_namespace = "TR_Japan"
-
-
-
 country_event = {
-	id = TR_japan.1
-	title = TR_japan.1.t
-	desc = TR_japan.1.d
-	
-	fire_only_once = yes
+	id = TR.japan.1
+	title = TR.japan.1.t
+	desc = TR.japan.1.d
+
 	trigger = {
 		tag = JAP
-		JAP = {
-			has_completed_focus = jap_19th_General_Election
-		}
-	}
-	timeout_days = 7
-	
-	option = {
-		name = TR_Japan.1.a
-
-	    complete_national_focus = jap_Constitutional_Democratic_Party
 		
-		ai_chance = { factor = 33 }
-	}
-	option = {
-		name = TR_Japan.1.b
-
-	    complete_national_focus = jap_Rikken_Seiyūkai
-		
-		ai_chance = { factor = 34 }
-	}
-	option = {
-		name = TR_Japan.1.c
-		
-	    complete_national_focus = jap_Shakai_Taishūtō
-		
-		ai_chance = { factor = 33}
 	}
 }
