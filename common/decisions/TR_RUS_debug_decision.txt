@@ -1,0 +1,60 @@
+RUS_debug_decision_c = {
+    RUS_debug_siberia_on = {
+        allowed = {
+            tag = RUS
+        }
+        available = {
+            NOT = { has_country_flag = RUS_start_siberia_decision }
+        }
+        icon = GFX_decision_unknown
+        priority = 29
+		cost = 0
+        days_remove = 0
+        complete_effect = {
+			set_country_flag = RUS_start_siberia_decision
+        }
+    }
+	RUS_debug_siberia_off = {
+        allowed = {
+            tag = RUS
+        }
+        available = {
+            has_country_flag = RUS_start_siberia_decision
+        }
+        icon = GFX_decision_unknown
+        priority = 28
+		cost = 0
+        days_remove = 0
+        complete_effect = {
+			clr_country_flag = RUS_start_siberia_decision
+        }
+    }
+    RUS_debug_siberia_achive_off = {
+        allowed = {
+            tag = RUS
+        }
+        available = {
+            OR = {
+                has_country_flag = RUS_full_siberia_decision
+                has_country_flag = RUS_one_selected_siberia_decision
+                has_country_flag = RUS_selected_army_siberia_decision
+                has_country_flag = RUS_selected_navy_siberia_decision
+                has_country_flag = RUS_selected_air_siberia_decision
+                has_country_flag = RUS_selected_industry_siberia_decision
+            }
+        }
+        icon = GFX_decision_unknown
+        priority = 27
+		cost = 0
+        days_remove = 0
+        complete_effect = {
+			clr_country_flag = RUS_full_siberia_decision
+            clr_country_flag = RUS_one_selected_siberia_decision
+            clr_country_flag = RUS_selected_army_siberia_decision
+            clr_country_flag = RUS_selected_navy_siberia_decision
+            clr_country_flag = RUS_selected_air_siberia_decision
+            clr_country_flag = RUS_selected_industry_siberia_decision
+        }
+    }
+
+}

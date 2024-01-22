@@ -93,6 +93,91 @@ country_event = {
     }
 }
 
+# シベリア測量
+country_event = {
+    id = TR_Russia.4
+    title = TR_Russia.4.t
+    desc = TR_Russia.4.d
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            RUS = {
+                clr_country_flag = RUS_full_siberia_decision
+                clr_country_flag = RUS_one_selected_siberia_decision
+
+                clr_country_flag = RUS_start_siberia_decision
+            }
+        }
+    }
+
+    option = {
+        name = TR_Russia.4.a
+        custom_effect_tooltip = TR_Russia_siberia_tt.1
+        add_resource = {
+            type = tungsten
+            amount = 40
+            state = 564
+        }
+        custom_effect_tooltip = TR_Russia_siberia_tt.2
+        add_resource = {
+            type = chromium
+            amount = 30
+            state = 565
+        }
+        if = {
+            limit = {
+                has_country_flag = RUS_selected_army_siberia_decision
+            }
+            custom_effect_tooltip = TR_Russia_siberia_tt.3
+            army_experience = 100
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 2
+                category = land_doctrine
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = RUS_selected_navy_siberia_decision
+            }
+            custom_effect_tooltip = TR_Russia_siberia_tt.4
+            navy_experience = 100
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 2
+                category = naval_doctrine
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = RUS_selected_air_siberia_decision
+            }
+            custom_effect_tooltip = TR_Russia_siberia_tt.5
+            navy_experience = 100
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 2
+                category = air_doctrine
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = RUS_selected_industry_siberia_decision
+            }
+            custom_effect_tooltip = TR_Russia_siberia_tt.6
+            add_offsite_building = { type = industrial_complex level = 4 }
+            add_offsite_building = { type = arms_factory level = 4 }
+        }
+        clr_country_flag = RUS_selected_army_siberia_decision
+        clr_country_flag = RUS_selected_navy_siberia_decision
+        clr_country_flag = RUS_selected_air_siberia_decision
+        clr_country_flag = RUS_selected_industry_siberia_decision
+    }
+}
+
+
+
 
 #テヘラン陥落
 country_event = {

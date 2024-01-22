@@ -14,7 +14,7 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 23
+			add = 25
 			tag = RUS
 		}
 	}
@@ -37,7 +37,7 @@ focus_tree = {
     
         search_filters = FOCUS_FILTER_POLITICAL
 
-        ai_will_do = { factor = 50 }
+        ai_will_do = { factor = 40 }
         available = {
             always = no
         }
@@ -57,7 +57,7 @@ focus_tree = {
         search_filters = FOCUS_FILTER_POLITICAL
         prerequisite = { focus = RUS_newtsar }
 
-        ai_will_do = { factor = 40 }
+        ai_will_do = { factor = 200 }
         available = {
 
         }
@@ -82,7 +82,7 @@ focus_tree = {
         search_filters = FOCUS_FILTER_POLITICAL
         prerequisite = { focus = RUS_newtsar }
 
-        ai_will_do = { factor = 50 }
+        ai_will_do = { factor = 40 }
         available = {
 
         }
@@ -108,7 +108,7 @@ focus_tree = {
         prerequisite = { focus = RUS_tsar_infantry }
         prerequisite = { focus = RUS_unprison }
 
-        ai_will_do = { factor = 50 }
+        ai_will_do = { factor = 40 }
         available = {
 
         }
@@ -120,6 +120,31 @@ focus_tree = {
             hidden_effect = {
                 news_event = TR_Russia_news.2
             }
+        }
+        
+    }
+
+    #シベリア測量
+    focus = {
+        id = RUS_development_of_siberia
+        icon = GFX_focus_GRE_a_land_of_mountains
+        x = 0
+        y = 1
+        relative_position_id = RUS_remake_national_government
+        cost = 1
+
+        search_filters = FOCUS_FILTER_POLITICAL
+        prerequisite = { focus = RUS_remake_national_government }
+
+        ai_will_do = { factor = 80 }
+        available = {
+
+        }
+        completion_reward = {
+            hidden_effect = {
+                set_country_flag = RUS_start_siberia_decision
+            }
+            custom_effect_tooltip = TR_Russia.tt.3
         }
         
     }
