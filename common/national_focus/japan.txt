@@ -230,7 +230,7 @@ focus_tree = {
     # # 立憲政友会
 
     focus = {
-        id = jap_Rikken_Seiyūkai
+        id = jap_Rikken_Seiyukai
         relative_position_id = jap_19th_General_Election
         x = 0
         y = 1
@@ -250,12 +250,12 @@ focus_tree = {
 
     focus = {
         id = jap_Continuation_of_Takahashi_Financing
-        relative_position_id = jap_Rikken_Seiyūkai
+        relative_position_id = jap_Rikken_Seiyukai
         x = 0
         y = 1
         cost = 10
         prerequisite = {
-            focus = jap_Rikken_Seiyūkai
+            focus = jap_Rikken_Seiyukai
         }
         available = {
             
@@ -318,12 +318,12 @@ focus_tree = {
 
     focus = {
         id = jap_decentralization_of_power
-        relative_position_id = jap_Rikken_Seiyūkai
+        relative_position_id = jap_Rikken_Seiyukai
         x = 2
         y = 1
         cost = 10
         prerequisite = {
-            focus = jap_Rikken_Seiyūkai
+            focus = jap_Rikken_Seiyukai
         }
         completion_reward = {
             
@@ -360,12 +360,12 @@ focus_tree = {
 
     focus = {
         id = jap_Royal_Center_Definition
-        relative_position_id = jap_Rikken_Seiyūkai
+        relative_position_id = jap_Rikken_Seiyukai
         x = -2
         y = 1
         cost = 5
         prerequisite = {
-            focus = jap_Rikken_Seiyūkai
+            focus = jap_Rikken_Seiyukai
         }
         available = {
             
@@ -412,7 +412,7 @@ focus_tree = {
     #　社会大衆党
 
     focus = {
-        id = jap_Shakai_Taishūtō
+        id = jap_Shakai_Taishuto
         relative_position_id = jap_19th_General_Election
         x = 7
         y = 1
@@ -432,12 +432,12 @@ focus_tree = {
 
     focus = {
         id = jap_socialist_economy
-        relative_position_id = jap_Shakai_Taishūtō
+        relative_position_id = jap_Shakai_Taishuto
         x = 0
         y = 1
         cost = 10
         prerequisite = {
-            focus = jap_Shakai_Taishūtō
+            focus = jap_Shakai_Taishuto
         }
         available = {
             
@@ -500,12 +500,12 @@ focus_tree = {
 
     focus = {
         id = jap_dismantling_of_the_Ministry_of_Home_Affairs
-        relative_position_id = jap_Shakai_Taishūtō
+        relative_position_id = jap_Shakai_Taishuto
         x = 2
         y = 1
         cost = 10
         prerequisite = {
-            focus = jap_Shakai_Taishūtō
+            focus = jap_Shakai_Taishuto
         }
         available = {
             
@@ -551,12 +551,12 @@ focus_tree = {
 
     focus = {
         id = jap_social_democracy
-        relative_position_id = jap_Shakai_Taishūtō
+        relative_position_id = jap_Shakai_Taishuto
         x = -2
         y = 1
         cost = 5
         prerequisite = {
-            focus = jap_Shakai_Taishūtō
+            focus = jap_Shakai_Taishuto
         }
         available = {
             

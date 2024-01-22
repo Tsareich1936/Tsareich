@@ -1,9 +1,9 @@
 characters = {
-	JAP_Tsuyoshi_Inukai = {
-		name = JAP_Tsuyoshi_Inukai
+	JAP_tsuyoshi_inukai = {
+		name = JAP_tsuyoshi_inukai
 		portraits = {
 			civilian = {
-				large = 
+				large = GFX_portrait_Tsuyoshi_Onikkai
 			}
 		}
 		country_leader={
@@ -13,59 +13,61 @@ characters = {
 		}
 	}
 	
-    JAP_Fusanosuke_Kuhara = {
+	JAP_fusanosuke_kuhara = {
+		name = JAP_fusanosuke_kuhara
 		portraits = {
-			civilian = {
-				large = 
-			}
+		    civilian = {
+		        large = GFX_portrait_Fusanosuke_Kuhara
+		}
 		}
 		country_leader={
-			ideology = conservatism
-			expire = "1965.1.29.1"
-			id=-1			
+		    ideology = conservatism
+		    expire = "1965.1.29.1"
+		    id=-1
+		}
+		}
+		
+	JAP_chikuhei_nakajima = {
+		name = JAP_chikuhei_nakajima
+		portraits = {
+		civilian = {
+		        large = GFX_portrait_Chikuhei_Nakajima
+		    }
+		}
+		country_leader={
+		    ideology = conservatism
+		    expire = "1949.10.29"
+		    id=-1
+		}
+	}
+		
+	JAP_osachi_hamaguchi = {
+		name = JAP_osachi_hamaguchi
+		portraits = {
+		    civilian = {
+		        large = GFX_portrait_Osachi_Hmaguchi
+		    }
+		}
+		country_leader={
+		    ideology = liberalism
+		    expire = "1944.11.14"
+		    id=-1
 		}
 	}
 
-	JAP_Chikuhei_Nakajima = {
+	JAP_chuji_machida = {
+		name = JAP_chuji_machida
 		portraits = {
 			civilian = {
-				large = 
+				large = GFX_portrait_Chuzi_Machida
 			}
 		}
 		country_leader={
-			ideology = conservatism
-			expire = "1949.10.29"
-			id=-1			
-		}
-	}
-
-	JAP_Osachi_Hamaguchi = {
-		portraits = {
-			civilian = {
-				large = 
-			}
-		}
-		country_leader={
-			ideology = democratic
-			expire = "1944.11.14"
-			id=-1			
-		}
-	}
-
-	JAP_Chuji_Machida = {
-		portraits = {
-			civilian = {
-				large = 
-			}
-		}
-		country_leader={
-			ideology = democratic
+			ideology = liberalism
 			expire = "1946.11.21"
 			id=-1			
 		}
 	}
 
-	JAP_Makoto_Saito = {
 
-	}
 }
