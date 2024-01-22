@@ -67,6 +67,63 @@ ideas = {
             }
         }
 
+        RUS_nomad_of_russia_1 = {
+            picture = ETH_national_studs
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                conscription_factor = -0.25
+            }
+        }
+
+        RUS_nomad_of_russia_2 = {
+            picture = ETH_national_studs
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                conscription_factor = -0.1
+            }
+        }
+
+        RUS_nomad_of_russia_3 = {
+            picture = ETH_national_studs
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                conscription_factor = -0.05
+            }
+        }
+
         RUS_agricultural_economy = {
             picture = POL_disjointed_industry
             allowed = {
@@ -170,28 +227,6 @@ ideas = {
             removal_cost = -1
             modifier = {
                 research_speed_factor = -0.2
-            }
-
-        }
-
-
-        RUS_MNE_Lyceum_idea = {
-            picture = generic_research_bonus
-            allowed = {
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                research_speed_factor = 0.075
-                consumer_goods_factor = 0.025
             }
 
         }
