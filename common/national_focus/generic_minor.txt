@@ -65,6 +65,14 @@ focus_tree = {
 			add = 22
 			tag = EGY
 		}
+		modifier = {
+			add = 22
+			tag = MAN
+		}
+		modifier = {
+			add = 22
+			tag = KOR
+		}
 	}
 	
 	default = no

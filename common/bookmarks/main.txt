@@ -134,7 +134,17 @@ bookmarks = {
 			ideology = democratic
 			minor = yes
 		}
-
+		#minor-East-Asia
+		"MAN"={
+			history = "TR_MAN_MAIN_SCENARIO_DESC"
+			ideology = neutrality
+			minor = yes
+		}
+		"KOR"={
+			history = "TR_KOR_MAIN_SCENARIO_DESC"
+			ideology = neutrality
+			minor = yes
+		}
 
 
 
