@@ -3,7 +3,11 @@ RUS_siberia_decision_c = {
 
 	allowed = {
 		tag = RUS
-		has_country_flag = RUS_start_siberia_decision
+	}
+	visible = {
+		hidden_trigger = {
+			has_country_flag = RUS_start_siberia_decision
+		}
 	}
 
 	picture = GFX_decision_cat_picture_chi_infiltration
