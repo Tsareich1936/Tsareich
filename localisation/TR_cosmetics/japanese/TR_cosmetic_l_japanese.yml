@@ -36,3 +36,6 @@
  IDC_fascism: "インドシナ帝国"
  IDC_fascism_DEF: "インドシナ帝国"
  IDC_subject: "$OVERLORDADJ$領インドシナ連邦"
+ POL_KPU: "クラクフ農民連合"
+ POL_KPU_DEF: "クラクフ農民連合"
+ POL_KPU_ADJ: "クラクフ"

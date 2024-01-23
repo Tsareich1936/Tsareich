@@ -407,6 +407,101 @@ ideologies = {
 		ai_neutral = yes #
 		ai_ideology_wanted_units_factor = 1.15
 	}
+	theocracy = {
+
+		types = {
+			catholicism  = {#カトリック
+			}
+			protestantism  = {#プロテスタント
+			}
+			orthodoxy = {#正教
+			}
+			adamism = {#キリスト教アダム派
+			}
+			hussites = {#キリスト教フス派
+			}
+
+			shia_islamism = {#シーア派
+			}
+			sunni_islamism = {#スンニ派
+			}
+
+			judaism = {#ユダヤ教
+			}
+
+			mahayana_buddhism = {#大乗仏教
+			}
+			theravada_buddhism = {#上座部仏教
+			}
+
+			hinduism = {#ヒンドゥー
+			}
+
+			animism = {#精霊信仰
+			}
+
+			shintoism = {#神道
+			}
+
+			zoroastrianism = {#ゾロアスター
+			}
+
+			roman_polytheism = {#ローマ多神教
+			}
+			greek_polytheism = {#ギリシャ多神教
+			}
+
+			confucianism = {#儒学
+			}
+
+			hedonism = {#快楽主義
+			}
+			mysticism = {#神秘主義
+			}
+			cosmopolitanism = {#宇宙主義
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+
+		color = { 251 251 229 }
+
+
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = no
+		}
+
+		modifiers = {
+			#increased_influence_factor = 0.3 #30% easier to influence
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.4
+			lend_lease_tension = 0.6
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+			drift_defence_factor = -0.3
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 10.0
+		}
+
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes #
+		ai_ideology_wanted_units_factor = 1.15
+	}
 
 	fascism = {
 
