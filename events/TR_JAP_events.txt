@@ -20,21 +20,66 @@ country_event = {
 		name = TR_Japan.1.a
 
 	    complete_national_focus = jap_Constitutional_Democratic_Party
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.21
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.15
+		}
+		add_popularity = {
+			ideology = socialdemocratic
+			popularity = -0.06
+		}
+		set_politics = {
+			ruling_party = democratic
+		}
 		
-		ai_chance = { factor = 33 }
+		ai_chance = { factor = 40 }
 	}
 	option = {
 		name = TR_Japan.1.b
 
 	    complete_national_focus = jap_Rikken_Seiyukai
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = socialdemocratic
+			popularity = -0.05
+		}
+		set_politics = {
+			ruling_party = conservatism
+		}
 		
-		ai_chance = { factor = 34 }
+		ai_chance = { factor = 40 }
 	}
 	option = {
 		name = TR_Japan.1.c
 		
 	    complete_national_focus = jap_Shakai_Taishūtō
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.12
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.14
+		}
+		add_popularity = {
+			ideology = socialdemocratic
+			popularity = 0.26
+		}
+		set_politics = {
+			ruling_party = socialdemocratic
+		}
 		
-		ai_chance = { factor = 33}
+		ai_chance = { factor = 20 }
 	}
 }
