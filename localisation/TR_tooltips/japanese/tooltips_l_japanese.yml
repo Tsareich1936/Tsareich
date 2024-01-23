@@ -15,9 +15,13 @@
   TR_Russia_per_tt.3: "§Yイラン§!は戦勝点の§R6割§!を失うと降伏するだろう！"
   TR_Russia_per_tt.4: "§Yロシア§!は§Rツァリーツィン§!、§Rロストフ§!、§Rバクー§!を失うと降伏するだろう！"
 
-  TR_Russia_per_peace_tt.1:"§Yダブリーズ§!、§Yギーラーン§!、§Yサムナーン§!、§Yホラーサーン§!は§Gロシア帝国§!の直轄保護領として§R併合§!される。\n§Yテヘラン§!は§Gロシア帝国§!の民政管理地区として§R非武装化§!される。\n§Rイラン§!は国家再建のために§Gロシア帝国§!の§R保護領§!となる。\n§Rイラン§!は§Gロシア帝国§!に賠償金を支払う。"
-  TR_Russia_per_peace_tt.2:"§Yダブリーズ§!、§Yギーラーン§!、§Yサムナーン§!、§Yホラーサーン§!、§Yテヘラン§!、§Yクルディスタン§!、§Yハマダーン§!は§Gロシア帝国§!の直轄保護領として§R併合§!される。\n§Rイラン§!は国家再建のために§Gロシア帝国§!の§R保護領§!となる。"
-
+  TR_Russia_per_peace_tt.1: "§Yダブリーズ§!、§Yギーラーン§!、§Yサムナーン§!、§Yホラーサーン§!は§Gロシア帝国§!の直轄保護領として§R併合§!される。\n§Yテヘラン§!は§Gロシア帝国§!の民政管理地区として§R非武装化§!される。\n§Rイラン§!は国家再建のために§Gロシア帝国§!の§R保護領§!となる。\n§Rイラン§!は§Gロシア帝国§!に賠償金を支払う。"
+  TR_Russia_per_peace_tt.2: "§Yダブリーズ§!、§Yギーラーン§!、§Yサムナーン§!、§Yホラーサーン§!、§Yテヘラン§!、§Yクルディスタン§!、§Yハマダーン§!は§Gロシア帝国§!の直轄保護領として§R併合§!される。\n§Rイラン§!は国家再建のために§Gロシア帝国§!の§R保護領§!となる。"
+  TR_North_Italy_win_soc_tt: "§Yイタリア半島§!は§R$TR_North_Italy_name$§!により統一された。\n§G$TR_South_Italy_name$§!は§Yドデカネス諸島§!へと§Y亡命§!した！"
+  TR_North_Italy_name: "北イタリア"
+  TR_South_Italy_name: "南イタリア"
   TR_nosupport: "§Rこの選択肢は現バージョンでは実装されていない！§!"
   TR_focus_nosupport: "§Rこの選択肢には現実味がない§!"
+  RULL_JOIN_ALLY_POLAND_TOOLTIP: "§Y[POL.GetNameDef]§!は戦争を行っていない。"
+
   RULE_ALLOW_RELEASE_NATIONS_RUSSIA_POLAND_TOOLTIP: "§Y[ROOT.GetNameDefCap]§!は§Y[POL.GetNameDef]§!の解放ができません。"

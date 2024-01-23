@@ -59,6 +59,11 @@ bookmarks = {
 			ideology = democratic
 			minor = yes
 		}
+		"POL"={
+			history = "TR_POL_MAIN_SCENARIO_DESC"
+			ideology = socialdemocratic
+			minor = yes
+		}
 
 		#minor-entente
 		"SER"={

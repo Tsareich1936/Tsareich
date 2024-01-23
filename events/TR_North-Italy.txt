@@ -70,29 +70,42 @@ news_event = {
 		name = TR_north_italy.2.a
 	}
 }
-# win soc
+# win soc trigger
 country_event = {
 	id = TR_north_italy.3
 	title = TR_north_italy.3.t
 	desc = TR_north_italy.3.d
 	fire_only_once = yes
 	timeout_days = 7
+	hidden = yes
 	trigger = {
 		tag = SRI
-		2 = { is_controlled_by = SRI } 
-		115 = { is_controlled_by = SRI } 
-		117 = { is_controlled_by = SRI } 
-		156 = { is_controlled_by = SRI } 
-		157 = { is_controlled_by = SRI } 
-		849 = { is_controlled_by = SRI } 
-
+		exists = yes
+		has_war_with = ITA
+	}
+	trigger = {
+		ITA = {
+			surrender_progress >0.7
+		}
 	}
 	mean_time_to_happen = {
 		days = 1
 	}
 	immediate = {
 		set_global_flag = SRI_one_Italy
+		country_event = TR_north_italy.4
 	}
+}
+# win soc
+country_event = {
+	id = TR_north_italy.4
+	title = TR_north_italy.3.t
+	desc = TR_north_italy.3.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+
 	option = {
 		name = TR_north_italy.3.a
 		trigger = {
@@ -105,22 +118,27 @@ country_event = {
 			set_rule = {
 				can_join_factions = yes
 			}
-			transfer_state =2
-			transfer_state =114
-			transfer_state =115
-			transfer_state =117
-			transfer_state =156
-			transfer_state =157
-			transfer_state =158
-			transfer_state =159
-			transfer_state =160
-			transfer_state =161
-			transfer_state =162
-			transfer_state =736
-			transfer_state =849
-			transfer_state =850
-			transfer_state =852
-			white_peace = ITA
+			hidden_effect = {
+				transfer_state =2
+				transfer_state =114
+				transfer_state =115
+				transfer_state =117
+				transfer_state =156
+				transfer_state =157
+				transfer_state =158
+				transfer_state =159
+				transfer_state =160
+				transfer_state =161
+				transfer_state =162
+				transfer_state =736
+				transfer_state =849
+				transfer_state =850
+				transfer_state =852
+			}
+			white_peace = {
+				tag = ITA
+				message = TR_North_Italy_win_soc_tt
+			}
 		}
 		FRA = {
 			add_to_faction = SRI
