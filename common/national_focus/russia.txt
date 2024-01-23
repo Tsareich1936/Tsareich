@@ -199,4 +199,50 @@ focus_tree = {
         
     }
 
+    focus = {
+        id = RUS_remove_census
+        icon = GFX_focus_generic_horse_studs
+        x = 2
+        y = 2
+        relative_position_id = RUS_remake_national_government
+        cost = 5
+
+        search_filters = FOCUS_FILTER_MANPOWER
+        prerequisite = { focus = RUS_development_of_siberia }
+
+        ai_will_do = { factor = 100 }
+        available = {
+            NOT = {   	
+                has_active_mission = RUS_siberia_mission
+            }
+        }
+        completion_reward = {
+            remove_ideas = RUS_nomad_of_russia
+        }
+        
+    }
+
+    focus = {
+        id = RUS_battle_with_PER
+        icon = GFX_focus_generic_attack_iran
+        x = 0
+        y = 3
+        relative_position_id = RUS_remake_national_government
+        cost = 5
+
+        search_filters = FOCUS_FILTER_ANNEXATION
+        prerequisite = { focus = RUS_remove_census }
+        prerequisite = { focus = RUS_oil_to_rubber_factory }
+        prerequisite = { focus = RUS_MNE_Lyceum }
+
+        ai_will_do = { factor = 240 }
+        available = {
+            
+        }
+        completion_reward = {
+            custom_effect_tooltip = TR_Russia.tt.5
+        }
+        
+    }
+
 }

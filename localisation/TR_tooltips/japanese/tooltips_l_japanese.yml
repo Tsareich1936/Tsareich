@@ -9,6 +9,9 @@
   TR_Russia_siberia_tt.5: "§G空軍§!が行った遠征演習で以下の成果を得た。"
   TR_Russia_siberia_tt.6: "§G産業研究者§!が行った遠征演習で以下の成果を得た。"
   TR_Russia.tt.4: "油田地帯で大規模な§Yゴム生産事業§!を開始する。"
+  TR_Russia.tt.5: "§Rイランとの戦争へ突き進むことになる！§!"
+  TR_Russia_per_tt.1: "§R彼らは拒否するだろう！§!"
+  TR_Russia_per_tt.2: "§R国際社会からの強い批判を受けることになる。§!"
 
   TR_nosupport: "§Rこの選択肢は現バージョンでは実装されていない！§!"
   TR_focus_nosupport: "§Rこの選択肢には現実味がない§!"

@@ -176,69 +176,117 @@ country_event = {
     }
 }
 
-
-
-
-#テヘラン陥落
+#ギーラーン危機！
 country_event = {
-    id = TR_Russia.7
-    hidden = yes
-    fire_only_once = yes
+    id = TR_Russia.5
+    title = TR_Russia.5.t
+    desc = TR_Russia.5.d
+    picture = GFX_report_event_chinese_soldiers_mountain
 
-    trigger = {
-        country_exists = RUS
+    is_triggered_only = yes
+    immediate = {
+        add_named_threat = {
+            threat = 6
+            name = TR_Russia.5.t
+        }
+        news_event = { hours = 24 id = TR_Russia_news.3 }
+    }
+    option = { #最後通牒
+        name = TR_Russia.5.a
+        ai_chance = { factor = 97 }
+        custom_effect_tooltip = TR_Russia_per_tt.1
         PER = {
-            surrender_progress > 0.8
+            country_event = { hours = 48 id = TR_Russia.6 }
         }
     }
-
-    immediate = {
-        RUS = { country_event = { id = TR_Russia.6 } }
-    }
-
-    option = {
-        name = TR_Russia.6.a
+    option = { #最後通牒なし
+        name = TR_Russia.5.b
+        custom_effect_tooltip = TR_Russia_per_tt.2
+        add_timed_idea = { idea = RUS_dropped_army days = 180 }
+        ai_chance = { factor = 3 }
+        declare_war_on = {
+            target = PER
+            type = annex_everything
+        }
+        hidden_effect = {
+            PER = {
+                set_country_flag = RUS_war_against_RUS
+            }
+            #戦争開始
+            news_event = { hours = 24 id = TR_Russia_news.4 }
+        }
     }
 }
 
+#イラン；最後通牒が来たぞ！
 country_event = {
     id = TR_Russia.6
     title = TR_Russia.6.t
     desc = TR_Russia.6.d
-    fire_only_once = yes
+    picture = GFX_report_event_gre_allied_diplomacy
+
     is_triggered_only = yes
 
     option = {
-        name = TR_Russia.6.a
-        hidden_effect = {
-            news_event = TR_Russia_news.3
-            remove_ideas = RUS_war_against_PER
-            white_peace = PER
-            PER = {
-                remove_ideas = TR_hidden_war_nosurrender
-            }
-            419 = {
-                transfer_state_to = RUS
-            }
-            420 = {
-                transfer_state_to = RUS
-            }
-            418 = {
-                transfer_state_to = RUS
-            }
-            416 = {
-                transfer_state_to = RUS
-            }
-            PER = {
-                set_cosmetic_tag = PER_puppet_RUS
-            }
-            set_autonomy = {
-                target = PER
-                autonomous_state = autonomy_puppet
-            }
+        name = TR_Russia.6.a #かかってこい
+        ai_chance = { factor = 80 }
+        RUS = {
+            country_event = { hours = 48 id = TR_Russia.7 }
+        }
+    }
+    option = {
+        name = TR_Russia.6.b #引き下がる
+        ai_chance = { factor = 20 }
+        RUS = {
+            country_event = { hours = 48 id = TR_Russia.8 }
         }
     }
 }
+
+#ロシア：イランが拒否
+country_event = {
+    id = TR_Russia.7
+    title = TR_Russia.7.t
+    desc = TR_Russia.7.d
+    picture = GFX_report_event_spain_civil_war_soldiers
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.7.a #よろしい、ならば戦争だ。
+        declare_war_on = {
+            target = PER
+            type = annex_everything
+        }
+        hidden_effect = {
+            PER = {
+                set_country_flag = RUS_war_against_RUS
+            } 
+            news_event = { hours = 24 id = TR_Russia_news.5 }
+            #戦争開始
+        }
+    }
+}
+
+#ロシア：ペルシャが受諾
+country_event = {
+    id = TR_Russia.8
+    title = TR_Russia.8.t
+    desc = TR_Russia.8.d
+    picture = GFX_report_event_generic_sign_treaty1
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.8.a #ようこそ！
+        hidden_effect = {
+            news_event = { hours = 24 id = TR_Russia_news.6 }
+        }
+        #講和のやつ
+    }
+}
+
+
 
 ### News ###
 
@@ -327,13 +375,13 @@ news_event = {
 
 }
 
-#テヘラン条約
+#ギーラーン危機！
 news_event = {
 	id = TR_Russia_news.3
 	title = TR_Russia_news.3.t
 	desc = TR_Russia_news.3.d
-	picture = GFX_news_event_generic_read_write
-	major = yes
+	picture = GFX_news_event_battle_for_the_bosporus
+	
 	is_triggered_only = yes
 	
 	option = {
@@ -346,23 +394,109 @@ news_event = {
 		name = TR_Russia_news.3.b
 		trigger = {
             tag = PER
-	    }
-    }
-    option = {
-		name = TR_Russia_news.3.c
-		trigger = {
-            tag = ENG
 		}
 	}
     option = {
-        name = TR_Russia_news.3.e
-        trigger = {
+		name = TR_Russia_news.3.b
+		trigger = {
             NOT = {
                 tag = RUS
                 tag = PER
-                tag = ENG
             }
-        }
-    }
+		}
+	}
 
 }
+
+#宣戦布告なしの戦争
+news_event = {
+	id = TR_Russia_news.4
+	title = TR_Russia_news.4.t
+	desc = TR_Russia_news.4.d
+	picture = GFX_news_event_SOV_invasion_iran
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_Russia_news.4.a
+		trigger = {
+            tag = RUS
+	    }
+    }
+    option = {
+		name = TR_Russia_news.4.b
+		trigger = {
+            tag = PER
+		}
+	}
+    option = {
+		name = TR_Russia_news.4.b
+		trigger = {
+            NOT = {
+                tag = RUS
+                tag = PER
+            }
+		}
+	}
+
+}
+
+#最後通牒が拒否され開戦
+news_event = {
+	id = TR_Russia_news.5
+	title = TR_Russia_news.5.t
+	desc = TR_Russia_news.5.d
+	picture = GFX_news_event_SOV_invasion_iran
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_Russia_news.5.a
+		trigger = {
+            tag = RUS
+	    }
+    }
+    option = {
+		name = TR_Russia_news.5.b
+		trigger = {
+            tag = PER
+		}
+	}
+    option = {
+		name = TR_Russia_news.5.b
+		trigger = {
+            NOT = {
+                tag = RUS
+                tag = PER
+            }
+		}
+	}
+
+}
+
+#最後通牒に従う
+news_event = {
+	id = TR_Russia_news.6
+	title = TR_Russia_news.6.t
+	desc = TR_Russia_news.6.d
+	picture = GFX_news_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_Russia_news.6.a
+		trigger = {
+            tag = RUS
+	    }
+    }
+    option = {
+		name = TR_Russia_news.6.b
+		trigger = {
+            NOT = {
+                tag = RUS
+            }
+		}
+	}
+
+}
+
