@@ -154,7 +154,7 @@ country_event = {
                 has_country_flag = RUS_selected_air_siberia_decision
             }
             custom_effect_tooltip = TR_Russia_siberia_tt.5
-            navy_experience = 100
+            air_experience = 100
             add_doctrine_cost_reduction = {
                 cost_reduction = 0.5
                 uses = 2

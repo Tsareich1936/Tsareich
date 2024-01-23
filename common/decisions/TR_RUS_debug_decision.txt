@@ -56,34 +56,36 @@ RUS_debug_decision_c = {
             clr_country_flag = RUS_selected_industry_siberia_decision
         }
     }
-
-    RUS_run_factory = {
-
-        state_target = yes
-        target_trigger = {
-            FROM = {
-                oil > 30
-                is_owned_by = RUS
-            }
+    RUS_debug_rubber_on = {
+        allowed = {
+            tag = RUS
         }
         available = {
-
+            NOT = { has_country_flag = RUS_rubber_factory_flag }
         }
-        icon = GFX_decision_rubber
-        priority = 27
-		cost = 150
-
+        icon = GFX_decision_unknown
+        priority = 29
+		cost = 0
         days_remove = 0
         complete_effect = {
-            set_temp_variable = { temp1 = FROM.resource@oil }
-            multiply_temp_variable = { temp1 = 0.3 }
-            FROM = {
-                add_resource = {
-                    type = rubber
-                    amount = temp1
-                }
-            }
+			set_country_flag = RUS_rubber_factory_flag
         }
     }
+	RUS_debug_rubber_off = {
+        allowed = {
+            tag = RUS
+        }
+        available = {
+            has_country_flag = RUS_rubber_factory_flag
+        }
+        icon = GFX_decision_unknown
+        priority = 28
+		cost = 0
+        days_remove = 0
+        complete_effect = {
+			clr_country_flag = RUS_rubber_factory_flag
+        }
+    }
+
 
 }
