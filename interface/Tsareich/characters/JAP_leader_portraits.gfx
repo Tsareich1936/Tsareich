@@ -23,4 +23,9 @@ spriteTypes = {
 		name = "GFX_portrait_Tsuyoshi_Onikkai"
 		textureFile = "gfx/leaders/JAP/Portrait_Tsuyoshi_Inukai.dds"
 	}
+
+	spriteType = {
+		name = "GFX_portrait_Iso_Abe"
+		textureFile = "gfx/leaders/JAP/Portrait_Iso_Abe.dds"
+	}
 }

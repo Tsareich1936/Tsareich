@@ -9,14 +9,19 @@ set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
 	state_shintoism
-	limited_exports
+	free_trade
 	limited_conscription
-	partial_economic_mobilisation
+	civilian_economy
 
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
-	JAP_militarism
 	JAP_hirohito
+
+	JAP_constitution
+	JAP_ARMY
+	JAP_NAVY
+	JAP_AIRFORCE
+	JAP_inflation
 }
 
 diplomatic_relation = {
@@ -286,6 +291,7 @@ recruit_character = JAP_fusanosuke_kuhara
 recruit_character = JAP_chikuhei_nakajima
 recruit_character = JAP_osachi_hamaguchi
 recruit_character = JAP_chuji_machida
+recruit_character = JAP_iso_abe
 
 
 if = {
