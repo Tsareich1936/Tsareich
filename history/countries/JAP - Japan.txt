@@ -2,7 +2,7 @@
 
 
 
-set_stability = 0.25 #baseline, THE EMPEROR PROTECTS
+set_stability = 0.3 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
 set_research_slots = 4
@@ -275,7 +275,7 @@ set_popularities = {
 	democratic = 30
 	conservatism = 42
 	socialdemocratic = 25
-	neutrality = 2
+    fascism = 2
 	socialism = 1
 }
 
