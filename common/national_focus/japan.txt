@@ -1419,7 +1419,166 @@ focus_tree = {
         }
     }
 
+    ## 社会改革
 
-    
+    focus = {
+        id = jap_social_reform
+        x = 57
+        y = 0
+        cost = 4
+        completion_reward = {
+            
+        }
+    }
 
+    focus = {
+        id = jap_agrarian_reform_1
+        relative_position_id = jap_social_reform
+        x = -2
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_social_reform
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_agrarian_reform_2
+        relative_position_id = jap_agrarian_reform_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_agrarian_reform_1
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_agrarian_reform_3
+        relative_position_id = jap_agrarian_reform_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_agrarian_reform_2
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_zaibatsu
+        relative_position_id = jap_social_reform
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_social_reform
+        }
+        completion_reward = {
+           
+        }
+    }
+
+    focus = {
+        id = jap_low
+        relative_position_id = jap_zaibatsu
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_zaibatsu
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_zaibutsu_2
+        relative_position_id = jap_low
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_low
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_pollution
+        relative_position_id = jap_social_reform
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_social_reform
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_pollition_2
+        relative_position_id = jap_pollution
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_pollition
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_pollition_3
+        relative_position_id = jap_pollition_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_pollition_2
+        }
+        completion_reward = {
+            
+        }
+    }
+
+}
+
+
+focus_tree = {
+	id = japan_focus_Military
+	country = {
+		factor = 0
+		modifier = {
+			add = 101
+			tag = JAP
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+
+    focus = {
+        id = jap_Minister_of_War_of_Active_Military_Service
+        x = 10
+        y = 0
+        cost = 0
+        available = {
+            always = no
+        }
+        completion_reward = {
+            
+        }
+    }
 }

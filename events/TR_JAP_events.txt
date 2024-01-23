@@ -63,7 +63,7 @@ country_event = {
 	option = {
 		name = TR_Japan.1.c
 		
-	    complete_national_focus = jap_Shakai_Taishūtō
+	    complete_national_focus = jap_Shakai_Taishuto
 		add_popularity = {
 			ideology = democratic
 			popularity = -0.12
@@ -83,3 +83,4 @@ country_event = {
 		ai_chance = { factor = 20 }
 	}
 }
+
