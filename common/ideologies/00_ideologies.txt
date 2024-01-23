@@ -1,6 +1,56 @@
 ideologies = {
 
-
+	anarchism = {
+	
+			types = {
+				anarchism = {
+					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+				}
+			}
+	
+			dynamic_faction_names = {
+				"FACTION_NAME_COMMUNIST_1"
+				"FACTION_NAME_COMMUNIST_2"
+				"FACTION_NAME_COMMUNIST_3"
+				"FACTION_NAME_COMMUNIST_4"
+				"FACTION_NAME_COMMUNIST_5"
+			}
+	
+			color = { 0 0 0 }
+	
+			war_impact_on_world_tension = 0.75		#Commie less threatening
+			faction_impact_on_world_tension = 0.5
+	
+			ai_communist = yes # uses the commie AI behaviour
+			ai_ideology_wanted_units_factor = 1.20
+	
+			rules = {
+				can_force_government = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+			}
+	
+			can_collaborate = yes
+	
+			modifiers = {
+				# puppet_cost_factor = -0.3 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
+				civilian_intel_to_others = 10.0
+				army_intel_to_others = 7.5
+				navy_intel_to_others = 12.5
+				airforce_intel_to_others = 7.5
+				hidden_modifier = { join_faction_tension = -0.1 }
+				embargo_threshold_factor = 0.5
+				lend_lease_tension = 0.50
+				socialism_acceptance = 100
+			}
+	
+			faction_modifiers = {
+				communism_acceptance = 100
+				socialism_acceptance = 75
+				socialdemocratic_acceptance = 50
+			}
+	
+		}
 	communism = {
 
 		types = {
@@ -308,10 +358,6 @@ ideologies = {
 			}
 
 			oligarchism  = {
-			}
-
-			anarchism = {
-				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			moderatism = {
