@@ -185,11 +185,13 @@ country_event = {
 
     is_triggered_only = yes
     immediate = {
+        hidden_effect = { 
         add_named_threat = {
             threat = 6
             name = TR_Russia.5.t
         }
         news_event = { hours = 24 id = TR_Russia_news.3 }
+    }
     }
     option = { #最後通牒
         name = TR_Russia.5.a
