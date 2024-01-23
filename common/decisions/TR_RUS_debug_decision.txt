@@ -86,6 +86,24 @@ RUS_debug_decision_c = {
 			clr_country_flag = RUS_rubber_factory_flag
         }
     }
+    RUS_debug_iran = {
+        allowed = {
+            tag = RUS
+        }
+        available = {
+            
+        }
+        icon = GFX_decision_unknown
+        priority = 28
+		cost = 0
+        days_remove = 0
+        complete_effect = {
+			white_peace = {
+                tag = PER
+                message = TR_Russia_per_peace_tt.1
+            }
+        }
+    }
 
 
 }
