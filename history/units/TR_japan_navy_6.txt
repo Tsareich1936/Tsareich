@@ -1,0 +1,58 @@
+﻿
+
+
+
+
+units = {
+	
+	
+
+	fleet = {
+		name = "Third Naval Construction Project"			
+		naval_base = 1092  # Hiroshima
+		task_force = {				
+			name = ""
+			location = 1092  # Hiroshima
+			ship = { name = "Shokaku" definition = carrier start_experience_factor = 0 equipment = { ship_hull_carrier_1 = {amount = 1 owner = JAP version_name = "Shokaku Class" } } }
+			ship = { name = "Zuikaku" definition = carrier start_experience_factor = 0 equipment = { ship_hull_carrier_1 =  {amount = 1 owner = JAP version_name = "Shokaku Class" } } }
+			ship = { name = "Unryu" definition = carrier start_experience_factor = 0 equipment = { ship_hull_carrier_1 = {amount = 1 owner = JAP version_name = "Shokaku Class" } } }
+			ship = { name = "Katsuragi" definition = carrier start_experience_factor = 0 equipment = { ship_hull_carrier_1 =  {amount = 1 owner = JAP version_name = "Shokaku Class" } } }
+			ship = { name = "Agano" definition = light_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Agano Class"} } }
+			ship = { name = "Noshiro" definition = light_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Agano Class"} } }
+			ship = { name = "Yahagi" definition = light_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Agano Class"} } }
+			ship = { name = "Sakawa" definition = light_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Agano Class"} } }
+			ship = { name = "Kagero" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Kagero Class" } } }
+			ship = { name = "Oyashio" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Kagero Class" } } }
+			ship = { name = "Amatsukaze" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Asashio Class"} } }
+			ship = { name = "Arashi" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Kagero Class"} } }
+			ship = { name = "Nowaki" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Kagero Class"} } }
+			ship = { name = "Shiranui" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Kagero Class"} } }
+			ship = { name = "Hayashio" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Kagero Class"} } }
+			ship = { name = "Tokitsukaze" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Kagero Class"} } }
+		    ship = { name = "Hagikaza" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = JAP version_name = "Kagero Class"}}}
+			ship = { name = "Akigumo" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = JAP version_name = "Kagero Class"}}}
+			ship = { name = "Kuroshio" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = JAP version_name = "Kagero Class"}}}
+			ship = { name = "Natsushio" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = JAP version_name = "Kagero Class"}}}
+			ship = { name = "Urakaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = JAP version_name = "Kagero Class"}}}
+			ship = { name = "Tanikaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = JAP version_name = "Kagero Class"}}}
+			ship = { name = "Maikaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = JAP version_name = "Kagero Class"}}}
+			ship = { name = "Yakukize" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = JAP version_name = "Kagero Class"}}}
+			ship = { name = "Isokaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = JAP version_name = "Kagero Class"}}}
+			ship = { name = "Hamakaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = JAP version_name = "Kagero Class"}}}
+			ship = { name = "I-15" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "I-15 Class"}}}
+			ship = { name = "I-17" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "I-15 Class"}}}
+			ship = { name = "I-19" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "I-15 Class"}}}
+			ship = { name = "I-21" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "I-15 Class"}}}
+			ship = { name = "I-23" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "I-15 Class"}}}
+			ship = { name = "I-25" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "I-15 Class"}}}
+			ship = { name = "I-16" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "I-15 Class"}}}
+			ship = { name = "I-18" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = JAP version_name = "I-15 Class"}}}
+		}
+	}
+	
+	
+}
+
+
+
+

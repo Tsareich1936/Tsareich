@@ -1,0 +1,1614 @@
+JAP_interservice_rivalry = {
+	JAP_steel_for_guns = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_steel_for_ships
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_steel_for_ships
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 4
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			JAP_interservice_rivalry_towards_army = yes
+			set_country_flag = JAP_steel_for_guns
+		}
+	}
+	JAP_steel_for_ships = {
+
+		icon = generic_naval
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_steel_for_guns
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_steel_for_guns
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			JAP_interservice_rivalry_towards_navy = yes
+			set_country_flag = JAP_steel_for_ships
+		}
+	}
+	JAP_prioritize_army_aircraft_construction = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_prioritize_naval_aircraft_construction
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_prioritize_naval_aircraft_construction
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1938.9.1
+			}
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			add_ideas = JAP_prioritize_army_aircraft_construction
+			JAP_interservice_rivalry_towards_army = yes
+			set_country_flag = JAP_prioritize_army_aircraft_construction
+		}
+	}
+	JAP_prioritize_naval_aircraft_construction = {
+
+		icon = generic_naval
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_prioritize_army_aircraft_construction
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_prioritize_army_aircraft_construction
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				date < 1938.9.1
+			}
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			add_ideas = JAP_prioritize_naval_aircraft_construction
+			JAP_interservice_rivalry_towards_navy = yes
+			set_country_flag = JAP_prioritize_naval_aircraft_construction
+		}
+	}
+	JAP_everybody_serves = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_draft_exemptions
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_draft_exemptions
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+		modifier = {
+			conscription = 0.02
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			JAP_interservice_rivalry_towards_army = yes
+			set_country_flag = JAP_everybody_serves
+		}
+	}
+	JAP_draft_exemptions = {
+
+		icon = generic_naval
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_everybody_serves
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_everybody_serves
+			}
+		}
+		cost = 30
+		days_remove = -1
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+		modifier = {
+			industrial_capacity_factory = 0.05
+			industrial_capacity_dockyard = 0.05
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			JAP_interservice_rivalry_towards_navy = yes
+			set_country_flag = JAP_draft_exemptions
+		}
+	}
+	JAP_raiding_regiments = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_special_air_landing_force
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_special_air_landing_force
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+		modifier = {
+			special_forces_cap = 0.02
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			set_country_flag = JAP_raiding_regiments
+			JAP_interservice_rivalry_towards_army = yes
+		}
+	}
+	JAP_special_air_landing_force = {
+
+		icon = generic_naval
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			NOT = {
+				has_country_flag = JAP_raiding_regiments
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = JAP_raiding_regiments
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+		modifier = {
+			special_forces_attack_factor = 0.05 
+			special_forces_defence_factor = 0.05
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			set_country_flag = JAP_special_air_landing_force
+			JAP_interservice_rivalry_towards_navy = yes
+		}
+	}
+	JAP_favor_army = {
+
+		icon = generic_tank
+
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			AND = {
+				OR = { 
+					has_country_flag = JAP_raiding_regiments 
+					has_country_flag = JAP_special_air_landing_force
+				}
+				OR = { 
+					has_country_flag = JAP_everybody_serves
+					has_country_flag = JAP_draft_exemptions
+				}
+				OR = { 
+					has_country_flag = JAP_prioritize_naval_aircraft_construction
+					has_country_flag = JAP_prioritize_army_aircraft_construction
+				}
+				OR = { 
+					has_country_flag = JAP_steel_for_guns
+					has_country_flag = JAP_steel_for_ships
+				}
+			}
+			
+		}
+		visible = {
+			AND = {
+				OR = { 
+					has_country_flag = JAP_raiding_regiments 
+					has_country_flag = JAP_special_air_landing_force
+				}
+				OR = { 
+					has_country_flag = JAP_everybody_serves
+					has_country_flag = JAP_draft_exemptions
+				}
+				OR = { 
+					has_country_flag = JAP_prioritize_naval_aircraft_construction
+					has_country_flag = JAP_prioritize_army_aircraft_construction
+				}
+				OR = { 
+					has_country_flag = JAP_steel_for_guns
+					has_country_flag = JAP_steel_for_ships
+				}
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			JAP_interservice_rivalry_towards_army = yes
+		}
+	}
+	JAP_favor_navy = {
+
+		icon = generic_naval
+
+		available = { 
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			AND = {
+				OR = { 
+					has_country_flag = JAP_raiding_regiments 
+					has_country_flag = JAP_special_air_landing_force
+				}
+				OR = { 
+					has_country_flag = JAP_everybody_serves
+					has_country_flag = JAP_draft_exemptions
+				}
+				OR = { 
+					has_country_flag = JAP_prioritize_naval_aircraft_construction
+					has_country_flag = JAP_prioritize_army_aircraft_construction
+				}
+				OR = { 
+					has_country_flag = JAP_steel_for_guns
+					has_country_flag = JAP_steel_for_ships
+				}
+			}
+			
+		}
+		visible = {
+			AND = {
+				OR = { 
+					has_country_flag = JAP_raiding_regiments 
+					has_country_flag = JAP_special_air_landing_force
+				}
+				OR = { 
+					has_country_flag = JAP_everybody_serves
+					has_country_flag = JAP_draft_exemptions
+				}
+				OR = { 
+					has_country_flag = JAP_prioritize_naval_aircraft_construction
+					has_country_flag = JAP_prioritize_army_aircraft_construction
+				}
+				OR = { 
+					has_country_flag = JAP_steel_for_guns
+					has_country_flag = JAP_steel_for_ships
+				}
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			JAP_interservice_rivalry_towards_navy = yes
+		}
+	}
+}
+
+
+JAP_industry_Takahashi = {
+	
+	JAP_Civilian_factory_1 = {
+		icon = generic_construction
+		allowed = { always = no }
+		available = {
+			
+		}
+		
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 60
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cost = 25
+
+	}
+
+	JAP_Civilian_factory_2 = {
+		
+		
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 180
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cost = 25
+	}
+
+	JAP_Military_factory_1 = {
+		icon = generic_construction
+		allowed = { always = no }
+		available = {
+			
+		}
+		
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 60
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cost = 25
+
+	}
+
+	JAP_Military_factory_2 = {
+		
+		
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 180
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cost = 25
+	}
+
+	JAP_Infrastructure_1 = {
+		icon = generic_construction
+		allowed = { always = no }
+		available = {
+			
+		}
+		
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = 	infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 60
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cost = 25
+
+	}
+
+	JAP_Infrastructure_2 = {
+		
+		
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 180
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cost = 25
+	}
+
+	JAP_Naval_dockyard_1 = {
+		icon = generic_construction
+		allowed = { always = no }
+		available = {
+			
+		}
+		
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = 	dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 60
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cost = 25
+
+	}
+
+	JAP_Naval_dockyard_2 = {
+		
+		
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 180
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cost = 25
+	}
+
+	JAP_synthetic_refinery_1 = {
+		icon = generic_construction
+		allowed = { always = no }
+		available = {
+			
+		}
+		
+		remove_effect= {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = 	synthetic_refinery
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 60
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cost = 25
+
+	}
+
+	JAP_synthetic_refinery_2 = {
+		
+		
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 180
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cost = 25
+	}
+
+	JAP_air_base_1 = {
+		icon = generic_construction
+		allowed = { always = no }
+		available = {
+			
+		}
+		
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = 	air_base
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 60
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cost = 25
+
+	}
+
+	JAP_air_base_2 = {
+		
+		
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = air_base
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 180
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cost = 25
+	}
+}
+
+JAP_Railway = {
+	JAP_Railway_prepare_1 = {
+		days_remove = 180
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+	}
+	JAP_Railway_prepare_2 = {
+		available = {
+			has_decision = JAP_Railway_prepare_1
+		}
+		days_remove = 180
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+	}
+	JAP_Railway_prepare_3 = {
+		available = {
+			has_decision = JAP_Railway_prepare_2
+		}
+		days_remove = 180
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+	}
+
+	JAP_Railway = {
+		available = {
+			has_decision = JAP_Railway_prepare_3
+		}
+		fire_only_once = yes
+		days_remove = 365
+		icon = generic_construction
+		allowed = {
+			always = no
+		}
+		modifier = {
+			civilian_factory_use = 10
+		}
+		cost = 30
+	    remove_effect = {
+			build_railway = {
+				path = { 1182 9938 13284 13310 7087 12097 13307 13308 10125 13345 13347 4142 11960 7072 13278 12031 12344 7212 4197 13277 11496 1092}
+			}
+			build_railway = {
+				path = { 1182 9938 13284 13310 7087 12097 13307 13308 10125 13345 13347 4142 11960 7072 13278 12031 12344 7212 4197 13277 11496 1092}
+			}
+			build_railway = {
+				path = { 1182 9938 13284 13310 7087 12097 13307 13308 10125 13345 13347 4142 11960 7072 13278 12031 12344 7212 4197 13277 11496 1092}
+			}
+			build_railway = {
+				path = { 1182 9938 13284 13310 7087 12097 13307 13308 10125 13345 13347 4142 11960 7072 13278 12031 12344 7212 4197 13277 11496 1092}
+			}
+			country_event = TR_japan.6
+		}
+	}
+}
+
+JAP_NAVAL_PLAN_3 = {
+	JAP_NAVY_3_1_1 = {
+		days_remove = 365
+		fire_only_once = yes
+		icon = generic_construction
+		modifier = {
+			civilian_factory_use = 20
+		}
+		cost = 100
+		complete_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Amagi Class"
+					type = ship_hull_heavy_2
+					name_group = JAP_BB_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_bc_2
+						front_1_custom_slot = empty
+						mid_1_custom_slot = ship_secondaries_2
+						mid_2_custom_slot = ship_airplane_launcher_1
+						rear_1_custom_slot = ship_heavy_battery_2
+					}
+					obsolete = no
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					type = ship_hull_light_2
+					name = "Kagero Class"
+					name_group = JAP_DE_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = dp_light_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_2
+						fixed_ship_torpedo_slot = ship_torpedo_2
+						mid_1_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_depth_charge_1
+			
+					}
+					obsolete = no
+				}
+			}
+		}
+		remove_effect = {
+			load_oob = TR_japan_navy_1
+		} 
+		allowed = {
+			always = no
+		}
+		available = {
+			industrial_complex > 20
+		}
+		
+	}
+
+    JAP_NAVY_3_1_2 = {
+		days_remove = 365
+		fire_only_once = yes
+		icon = generic_construction
+		modifier = {
+			civilian_factory_use = 20
+		}
+		allowed = {
+			always = no
+		}
+		available = {
+			industrial_complex > 20
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Yamato Class"
+					type = ship_hull_super_heavy_1
+					name_group = JAP_BB_HISTORICAL
+					parent_version = 0
+					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
+					modules = {
+						fixed_ship_battery_slot = ship_super_heavy_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_shbb
+						front_1_custom_slot = ship_anti_air_1
+						front_2_custom_slot = empty
+						mid_1_custom_slot = empty
+						mid_2_custom_slot = ship_secondaries_2
+						mid_3_custom_slot = ship_secondaries_2
+						rear_1_custom_slot = ship_super_heavy_battery_1
+						rear_2_custom_slot = ship_airplane_launcher_1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					type = ship_hull_light_2
+					name = "Kagero Class"
+					name_group = JAP_DE_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = dp_light_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_2
+						fixed_ship_torpedo_slot = ship_torpedo_2
+						mid_1_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_depth_charge_1
+			
+					}
+					obsolete = no
+				}
+			}
+		}
+		remove_effect = {
+			load_oob = TR_japan_navy_2
+		} 
+		cost = 100
+	}
+	
+	JAP_NAVY_3_2_1 = {
+		days_remove = 365
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 20
+		}
+		available = {
+			industrial_complex > 20
+		}
+		cost = 100
+		complete_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Shokaku Class"
+					type = ship_hull_carrier_1
+					name_group = JAP_CV_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						front_1_custom_slot = ship_deck_space	
+						front_2_custom_slot = ship_deck_space		
+					}
+					obsolete = no
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Agano Class"
+					type = ship_hull_cruiser_2
+					name_group = JAP_CL_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_medium_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_2
+						fixed_ship_armor_slot = ship_armor_cruiser_2
+						fixed_ship_secondaries_slot = dp_ship_secondaries_1
+						front_1_custom_slot = ship_light_medium_battery_2
+						mid_1_custom_slot = dp_ship_secondaries_2
+						mid_2_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_airplane_launcher_1
+					}
+					obsolete = no
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					type = ship_hull_light_2
+					name = "Kagero Class"
+					name_group = JAP_DE_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = dp_light_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_2
+						fixed_ship_torpedo_slot = ship_torpedo_2
+						mid_1_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_depth_charge_1
+			
+					}
+					obsolete = no
+				}
+			}
+			
+		}
+		remove_effect = {
+			load_oob = TR_japan_navy_3
+		}
+	}
+
+	JAP_NAVY_3_2_2 = {
+		days_remove = 365
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 20
+		}
+		available = {
+			industrial_complex > 20
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Shokaku Class"
+					type = ship_hull_carrier_1
+					name_group = JAP_CV_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						front_1_custom_slot = ship_deck_space	
+						front_2_custom_slot = ship_deck_space		
+					}
+					obsolete = no
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Amagi Class"
+					type = ship_hull_heavy_2
+					name_group = JAP_BB_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_bc_2
+						front_1_custom_slot = empty
+						mid_1_custom_slot = ship_secondaries_2
+						mid_2_custom_slot = ship_airplane_launcher_1
+						rear_1_custom_slot = ship_heavy_battery_2
+					}
+					obsolete = no
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Agano Class"
+					type = ship_hull_cruiser_2
+					name_group = JAP_CL_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_medium_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_2
+						fixed_ship_armor_slot = ship_armor_cruiser_2
+						fixed_ship_secondaries_slot = dp_ship_secondaries_1
+						front_1_custom_slot = ship_light_medium_battery_2
+						mid_1_custom_slot = dp_ship_secondaries_2
+						mid_2_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_airplane_launcher_1
+					}
+					obsolete = no
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					type = ship_hull_light_2
+					name = "Kagero Class"
+					name_group = JAP_DE_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = dp_light_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_2
+						fixed_ship_torpedo_slot = ship_torpedo_2
+						mid_1_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_depth_charge_1
+			
+					}
+					obsolete = no
+				}
+			}
+
+		}
+		remove_effect = {
+			load_oob = TR_japan_navy_4
+		}
+		cost = 100
+	}
+	
+	JAP_NAVY_3_2_3 = {
+		days_remove = 365
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 20
+		}
+		available = {
+			industrial_complex > 20
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Shokaku Class"
+					type = ship_hull_carrier_1
+					name_group = JAP_CV_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						front_1_custom_slot = ship_deck_space	
+						front_2_custom_slot = ship_deck_space		
+					}
+					obsolete = no
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Amagi Class"
+					type = ship_hull_heavy_2
+					name_group = JAP_BB_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_bb_2
+						front_1_custom_slot = empty
+						mid_1_custom_slot = ship_secondaries_2
+						mid_2_custom_slot = ship_airplane_launcher_1
+						rear_1_custom_slot = ship_heavy_battery_2
+					}
+					obsolete = no
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Agano Class"
+					type = ship_hull_cruiser_2
+					name_group = JAP_CL_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_medium_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_2
+						fixed_ship_armor_slot = ship_armor_cruiser_2
+						fixed_ship_secondaries_slot = dp_ship_secondaries_1
+						front_1_custom_slot = ship_light_medium_battery_2
+						mid_1_custom_slot = dp_ship_secondaries_2
+						mid_2_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_airplane_launcher_1
+					}
+					obsolete = no
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					type = ship_hull_light_2
+					name = "Kagero Class"
+					name_group = JAP_DE_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = dp_light_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_2
+						fixed_ship_torpedo_slot = ship_torpedo_2
+						mid_1_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_depth_charge_1
+			
+					}
+					obsolete = no
+				}
+			}
+		}
+		remove_effect = {
+			load_oob = TR_japan_navy_5
+		}
+		cost = 100
+	}
+	
+	JAP_NAVY_3_3_1 = {
+		days_remove = 365
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 20
+		}
+		available = {
+			industrial_complex > 20
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Shokaku Class"
+					type = ship_hull_carrier_1
+					name_group = JAP_CV_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						front_1_custom_slot = ship_deck_space	
+						front_2_custom_slot = ship_deck_space		
+					}
+					obsolete = no
+				}
+		    }
+		    if = {
+			    limit = {
+			    	has_dlc = "Man the Guns"
+			    }
+				create_equipment_variant = {
+					name = "Agano Class"
+					type = ship_hull_cruiser_2
+					name_group = JAP_CL_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_medium_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_2
+						fixed_ship_armor_slot = ship_armor_cruiser_2
+						fixed_ship_secondaries_slot = dp_ship_secondaries_1
+						front_1_custom_slot = ship_light_medium_battery_2
+						mid_1_custom_slot = dp_ship_secondaries_2
+						mid_2_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_airplane_launcher_1
+					}
+					obsolete = no
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					type = ship_hull_light_2
+					name = "Kagero Class"
+					name_group = JAP_DE_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = dp_light_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_2
+						fixed_ship_torpedo_slot = ship_torpedo_2
+						mid_1_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_depth_charge_1
+			
+					}
+					obsolete = no
+				}
+			}
+			
+		
+	    	if = {
+		    	limit = {
+		    		has_dlc = "Man the Guns"
+		    	}
+		    	create_equipment_variant = {
+		    		type = ship_hull_submarine_2
+		    		name= "I-15 Class"
+		    		name_group = JAP_SS_HISTORICAL
+		    		parent_version = 0
+		    		modules = {
+			    		fixed_ship_torpedo_slot = ship_torpedo_sub_2
+				    	fixed_ship_engine_slot = sub_ship_engine_2
+				    	rear_1_custom_slot = ship_mine_layer_sub
+				    }
+			    	obsolete = no
+	 		    }
+	    	}
+		}
+	   	cost = 100
+		remove_effect = {
+			load_oob = TR_japan_navy_6
+		}
+	}
+	
+	JAP_NAVY_3_3_2 = {
+		days_remove = 365
+		fire_only_once = yes
+		icon = generic_construction
+		allowed = { always = no }
+		modifier = {
+			civilian_factory_use = 20
+		}
+		available = {
+			industrial_complex > 20
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Zuiho Class"
+					type = ship_hull_carrier_conversion_ca
+					name_group = JAP_CVL_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					name = "Agano Class"
+					type = ship_hull_cruiser_2
+					name_group = JAP_CL_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_medium_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = cruiser_ship_engine_2
+						fixed_ship_armor_slot = ship_armor_cruiser_2
+						fixed_ship_secondaries_slot = dp_ship_secondaries_1
+						front_1_custom_slot = ship_light_medium_battery_2
+						mid_1_custom_slot = dp_ship_secondaries_2
+						mid_2_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_airplane_launcher_1
+					}
+					obsolete = no
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					type = ship_hull_light_2
+					name = "Kagero Class"
+					name_group = JAP_DE_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = dp_light_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_2
+						fixed_ship_torpedo_slot = ship_torpedo_2
+						mid_1_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_depth_charge_1
+			
+					}
+					obsolete = no
+				}
+			}
+			
+		    
+	    	if = {
+		    	limit = {
+		    		has_dlc = "Man the Guns"
+		    	}
+		    	create_equipment_variant = {
+		    		type = ship_hull_submarine_2
+		    		name= "I-15 Class"
+		    		name_group = JAP_SS_HISTORICAL
+		    		parent_version = 0
+		    		modules = {
+			    		fixed_ship_torpedo_slot = ship_torpedo_sub_2
+				    	fixed_ship_engine_slot = sub_ship_engine_2
+				    	rear_1_custom_slot = ship_mine_layer_sub
+				    }
+			    	obsolete = no
+	 		    }
+	    	}
+		}
+		remove_effect = {
+			load_oob = TR_japan_navy_7
+		}		
+		cost = 100
+	}
+	
+	
+}

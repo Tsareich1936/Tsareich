@@ -442,6 +442,17 @@ ideas = {
                 production_speed_naval_base_factor = 0.3
 			}
 		}
+
+		JAP_dissatisfaction ={
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.2
+			} 
+		}
 		
 	}
 }

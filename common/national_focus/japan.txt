@@ -21,8 +21,11 @@ focus_tree = {
             
         }
         completion_reward = {
-            country_event = TR_japan.1
-        }
+            country_event = {
+                id = TR_japan.1
+                days = 1
+            }
+        }  
 
 	}
  
@@ -730,7 +733,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            country_event = TR_japan.7
         }
     }
 
@@ -744,9 +747,76 @@ focus_tree = {
             focus = jap_NAVY_1_1
         }
         available = {
-            
+            always = no   
         }
         completion_reward = {
+            if = {
+                limit = {
+                    has_country_flag = 	TR_japan_9
+                }
+            
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_NAVY_3_1_1
+                }
+            }
+            if = {
+                limit = { 
+                    has_country_flag = TR_japan_10
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_NAVY_3_1_2
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = TR_japan_11
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_NAVY_3_2_1
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = TR_japan_12
+                }
+            
+                activate_targeted_decision = {
+                    target = jap
+                    decision = JAP_NAVY_3_2_2
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = TR_japan_13
+                }
+            
+                activate_targeted_decision = {
+                    target = jap
+                    decision = JAP_NAVY_3_2_3
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = TR_japan_14
+                }
+            
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_NAVY_3_3_1
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = TR_japan_15
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_NAVY_3_3_2
+                }
+            }
             
         }
     }
@@ -1250,8 +1320,8 @@ focus_tree = {
             
         }
     }
-
-    focus = {
+ 
+    focus = {                        ###################### country_triger
         id = jap_Establishment_of_the_Ministry_of_War
         relative_position_id = jap_Integration_of_Army_and_Navy
         x = 0
@@ -1268,7 +1338,7 @@ focus_tree = {
             
         }
         allow_branch = {
-            has_country_flag = a                      ################
+            has_country_flag = a                    
         }
         available = {
             is_subject = no
@@ -1544,7 +1614,7 @@ focus_tree = {
         y = 0
         cost = 4
         completion_reward = {
-            
+            add_political_power = 100
         }
     }
 

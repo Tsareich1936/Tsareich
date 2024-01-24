@@ -14,7 +14,7 @@ country_event = {
 			has_completed_focus = jap_19th_General_Election
 		}
 	}
-	timeout_days = 7
+	timeout_days = 21
 	
 	option = {
 		name = TR_Japan.1.a
@@ -111,9 +111,9 @@ country_event = {  ############Toyotomi
 
 }
 
-country_event = {   # 皇室中心主義
-	id = TR_japan.3
-}
+#country_event = {   # 皇室中心主義
+#	id = TR_japan.3
+#}
 
 country_event = {
 	id = TR_japan.4
@@ -126,7 +126,7 @@ country_event = {
 			has_completed_focus = jap_socialist_economy
 		}
 	}
-	timeout_days = 7
+	timeout_days = 21
 
 	option = {
 		name = TR_japan.4.a
@@ -200,7 +200,7 @@ country_event = {
 	id = TR_japan.5
 	title = TR_japan.5.t
 	desc = TR_japan.5.d
-	timeout_days = 7
+	timeout_days = 21
 	is_triggered_only = yes
 	option = {
 		name = TR_japan.5.a
@@ -281,7 +281,7 @@ country_event = {
 			has_decision = JAP_Railway
 		}
 	}
-	timeout_days = 7
+	timeout_days = 21
 	option = {
 		name = TR_japan.6.a
 		add_political_power = 100
@@ -420,3 +420,165 @@ country_event = {
 	}
 }
 
+country_event = {              ######〇３計画
+	id = TR_japan.7
+	title = TR_japan.7.t
+	desc = TR_japan.7.d
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		JAP = {
+			has_completed_focus = jap_NAVY_1_1
+		}
+	}
+	timeout_days = 21
+	option = {
+		name = TR_japan.a
+		ai_chance = {
+			factor = 40
+		}
+		JAP = {
+			country_event = {
+				id = TR_japan.8
+			}
+		}
+		hidden_effect = {
+			set_country_flag = TR_japan_NAVY_7_8
+		}
+	}
+	option = {
+		name = TR_japan.b
+		ai_chance = {
+			factor = 20
+		}
+		JAP = {
+			country_event = {
+				id = TR_japan.9
+			}
+		}
+	}
+	option = {
+		name = TR_japan.c
+		ai_chance = {
+			factor = 20
+		}
+
+		JAP = {
+			country_event = {
+				id = TR_japan.10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TR_japan.8
+	title = TR_japan.8.t
+	desc = TR_japan.8.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 21
+	
+	option = {
+		name = TR_Japan.8.a
+		hidden_effect = {
+			set_country_flag = TR_japan_9
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = TR_Japan.8.b
+		hidden_effect = {
+			set_country_flag = TR_japan_10
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	
+	id = TR_japan.9
+	title = TR_japan.9.t
+	desc = TR_japan.9.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 21
+	
+	option = {
+		name = TR_Japan.9.a
+		hidden_effect = {
+			set_country_flag = TR_japan11
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = TR_Japan.9.b
+		ai_chance = { factor = 1 }
+		JAP = {
+			country_event = {
+				id = TR_japan.10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TR_japan.10
+	title = TR_japan.10.t
+	desc = TR_japan.10.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 21
+	option = {
+		name = TR_Japan.10.b
+		hidden_effect = {
+			set_country_flag = TR_japan_12
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = TR_Japan.10.a
+		hidden_effect = {
+			set_country_flag = TR_japan_13
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = TR_japan.11
+	title = TR_japan.11.t
+	desc = TR_japan.11.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 21
+	
+	option = {
+		name = TR_Japan.11.a
+		hidden_effect = {
+			set_country_flag = TR_japan14
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = TR_Japan.11.b
+		hidden_effect = {
+			set_country_flag = TR_japan_15
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+}
