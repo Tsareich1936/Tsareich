@@ -4,15 +4,27 @@ state={
 	name="STATE_937"
 
 	history={
+		victory_points = {
+			11548 3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+		    6449 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = FRA
 		owner = ENG
+
 
 	}
 
 	provinces={
 		575 11548 
 	}
-	manpower=100000
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category=town
+	manpower=150000
+	state_category = town
+	local_supplies=1
 }

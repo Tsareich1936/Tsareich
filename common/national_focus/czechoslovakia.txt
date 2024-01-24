@@ -325,7 +325,8 @@ focus_tree = {
 				add_idea = CZE_ex2
 			}      
 			country_event = { 
-				id = CZE_ex_rus
+				id = CZE_ex_rus.1
+				days = 1
 			}   
 		}
 	}
@@ -1062,7 +1063,7 @@ focus_tree = {
 		x = 24
 		y = 1
 		completion_reward = {
-
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -1085,7 +1086,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CZE_dip2
 		}
-		x = 24
+		x = 23
 		y = 3
 		completion_reward = {
 
@@ -1104,7 +1105,7 @@ focus_tree = {
 		x = 28
 		y = 1
 		completion_reward = {
-
+			add_stability = -0.05
 		}
 	}
 	focus = {
@@ -1126,14 +1127,15 @@ focus_tree = {
 		cost = 8.00
 		prerequisite = {
 			focus = CZE_dip_big2
-		}
-		prerequisite = {
 			focus = CZE_dip2
 		}
-		x = 26
+		x = 25
 		y = 3
 		completion_reward = {
-
+			declare_war_on = {
+				target = SLO
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -1143,7 +1145,37 @@ focus_tree = {
 		prerequisite = {
 			focus = CZE_dip_slo1
 		}
-		x = 26
+		x = 25
+		y = 4
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = CZE_dip_hun1
+		icon = GFX_goal_generic_major_war
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_big2
+			focus = CZE_dip2
+		}
+		x = 27
+		y = 3
+		completion_reward = {
+			declare_war_on = {
+				target = HUN
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = CZE_dip_hun2
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_dip_hun1
+		}
+		x = 27
 		y = 4
 		completion_reward = {
 
@@ -1172,7 +1204,10 @@ focus_tree = {
 		x = 29
 		y = 4
 		completion_reward = {
-
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -1198,7 +1233,10 @@ focus_tree = {
 		x = 31
 		y = 4
 		completion_reward = {
-
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -1227,7 +1265,10 @@ focus_tree = {
 		x = 30
 		y = 6
 		completion_reward = {
-
+			declare_war_on = {
+				target = RUS
+				type = annex_everything
+			}
 		}
 	}
 	focus = {
@@ -1273,9 +1314,9 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			army_experience = 30
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				bonus = 0.75
+				cost_reduction = 0.6
 				uses = 1
 				category = land_doctrine
 			}
@@ -1392,9 +1433,9 @@ focus_tree = {
 		x = 38
 		y = 2
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				bonus = 0.75
+				cost_reduction = 0.6
 				uses = 1
 				category = land_doctrine
 			}
@@ -1410,9 +1451,9 @@ focus_tree = {
 		x = 38
 		y = 3
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				bonus = 0.75
+				cost_reduction = 0.6
 				uses = 1
 				category = land_doctrine
 			}
@@ -1485,9 +1526,9 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			army_experience = 30
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				bonus = 0.5
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -1565,9 +1606,9 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			air_experience = 30
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 0.75
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.6
 				uses = 1
 				category = air_doctrine
 			}
@@ -1674,9 +1715,9 @@ focus_tree = {
 		x = 49
 		y = 2
 		completion_reward = {
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 0.75
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.6
 				uses = 1
 				category = air_doctrine
 			}
@@ -1692,9 +1733,9 @@ focus_tree = {
 		x = 49
 		y = 3
 		completion_reward = {
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 0.75
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.6
 				uses = 1
 				category = air_doctrine
 			}
@@ -1769,9 +1810,9 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			air_experience = 30
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 0.50
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -1942,9 +1983,9 @@ focus_tree = {
 		x = 56
 		y = 3
 		completion_reward = {
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 0.75
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.6
 				uses = 1
 				category = naval_doctrine
 			}
@@ -1961,9 +2002,9 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			navy_experience = 30
-			add_tech_bonus = {
-				name = fleet_in_being_bonus
-				bonus = 0.5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}

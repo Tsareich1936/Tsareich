@@ -1,0 +1,17 @@
+add_namespace = "TR_czech"
+
+country_event = {
+	id = CZE_ex_rus.1
+	title = CZE_ex_rus.1
+	desc = CZE_ex_rus.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = CZE_ex_a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+ 

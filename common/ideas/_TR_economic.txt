@@ -6,8 +6,11 @@ ideas = {
 				
 		company_economy = {
 			
-			picture = idea_generic_flexible_foreign_policy2
-						
+			picture = generic_flexible_foreign_policy2
+				
+			visible = {
+				original_tag = CZE
+			}			
 			available = {
 				has_completed_focus = CZE_sko3
 			}				
@@ -29,7 +32,7 @@ ideas = {
 		
 		}
 		revolutional_economic = {
-			picture = idea_generic_flexible_foreign_policy2
+			picture = generic_flexible_foreign_policy2
 						
 			available = {
 				tag = GRS

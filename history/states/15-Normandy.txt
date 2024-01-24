@@ -20,6 +20,7 @@ state={
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
+			arms_factory = 1
 			air_base = 6
 			9434 = {
 				naval_base = 5
@@ -31,7 +32,6 @@ state={
 
 			}
 		}
-		set_demilitarized_zone = yes
 		add_core_of = FRA
 
 	}
