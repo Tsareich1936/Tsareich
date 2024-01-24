@@ -51,8 +51,8 @@ CZE = {	color = rgb { 46 140 129 }
 
 }
 POL = {
-	color = rgb { 57 114 0 }
-	color_ui = rgb { 51 204 51 }
+	color = rgb { 214 102 139 }
+	color_ui = rgb { 255 120 138 }
 }
 AUS = {
 	color = rgb { 194 198 215 }
@@ -492,9 +492,10 @@ PAK = {
 #    color = rgb { 120 150 80 }
 #    color_ui = rgb { 150 180 120 }
 #}
+#}
 KOR = {
-	color = hsv { 0.05 0.3 1 }
-	color_ui = hsv { 0.05 0.25 1.2 }
+	color = rgb { 14 35 145 }
+	color_ui = rgb { 18 13 155 }	
 }
 ISR = {
 	color = rgb { 152  130  191 }

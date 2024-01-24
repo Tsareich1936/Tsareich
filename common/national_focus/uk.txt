@@ -1,0 +1,674 @@
+focus_tree = {
+    id = britain_focus
+    country = {
+        factor = 0
+        modifier = {
+            add = 101
+            tag = ENG
+        }
+    }
+    default = yes
+	reset_on_civilwar = no
+
+	initial_show_position = {
+		focus = TR_ENG_steady_as_she_goes
+	}
+	### historical route ###
+		focus = {
+			id = TR_ENG_steady_as_she_goes
+			icon = GFX_goal_support_democracy
+			mutually_exclusive = {
+				focus = TR_ENG_a_change_in_course
+			}
+			cost = 5
+			x = 30
+			y = 0
+			completion_reward = {
+		
+			}
+		}
+		## center
+			focus = {
+				id = TR_ENG_withdrawal_france
+				icon = GFX_
+				mutually_exclusive = {
+					focus = TR_ENG_continue_occupation
+				}
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_steady_as_she_goes
+					focus = TR_ENG_a_change_in_course
+				}
+				x = 3
+				y = 1
+				relative_position_id = TR_ENG_steady_as_she_goes
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_expose_faults
+				icon = GFX_
+				mutually_exclusive = {
+					focus = TR_ENG_protecting_brittany
+				}
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_withdrawal_france
+					focus = TR_ENG_continue_occupation
+				}
+				x = 0
+				y = 2
+				relative_position_id = TR_ENG_withdrawal_france
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_protest_letter_france
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_expose_faults
+				}
+				x = 0
+				y = 3
+				relative_position_id = TR_ENG_expose_faults
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_abandon_greece
+				icon = GFX_
+				mutually_exclusive = {
+					focus = TR_ENG_intervention_greece
+				}
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_protest_letter_france
+					focus = TR_ENG_preemptive_strikes_against_france
+				}
+				x = 0
+				y = 2
+				relative_position_id = TR_ENG_protest_letter_france
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_abandon_czecho
+				icon = GFX_
+				mutually_exclusive = {
+					focus = TR_ENG_intervention_czecho
+				}
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_abandon_greece
+					focus = TR_ENG_intervention_greece
+				}
+				x = 0
+				y = 2
+				relative_position_id = TR_ENG_abandon_greece
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_engagement_with_france
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_abandon_czecho
+					focus = TR_ENG_intervention_czecho
+				}
+				x = 0
+				y = 2
+				relative_position_id = TR_ENG_abandon_czecho
+				completion_reward = {
+			
+				}
+			}
+		## main
+			focus = {
+				id = TR_ENG_anticommunist
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_steady_as_she_goes
+				}
+				x = 0
+				y = 2
+				relative_position_id = TR_ENG_steady_as_she_goes
+				completion_reward = {
+
+				}
+			}
+			focus = {
+				id = TR_ENG_supporting_spain
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_anticommunist
+				}
+				x = 0
+				y = 2
+				relative_position_id = TR_ENG_anticommunist
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_revival_old_alliances
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_supporting_spain
+				}
+				x = 0
+				y = 2
+				relative_position_id = TR_ENG_supporting_spain
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_alliance_opposite_shore
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_anticommunist
+				}
+				x = -2
+				y = 1
+				relative_position_id = TR_ENG_anticommunist
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_belgian_issue
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_alliance_opposite_shore
+				}
+				x = 0
+				y = 1
+				relative_position_id = TR_ENG_alliance_opposite_shore
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_alliance_denmark
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_belgian_issue
+				}
+				x = 0
+				y = 2
+				relative_position_id = TR_ENG_belgian_issue
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_contacts_with_russia
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_alliance_denmark
+				}
+				x = 0
+				y = 3
+				relative_position_id = TR_ENG_alliance_denmark
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_RUS_allies
+				icon = GFX_
+				mutually_exclusive = {
+					focus = TR_ENG_anticommunist_allies
+				}
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_contacts_with_russia
+					focus = TR_ENG_governmet_in_exile_recognised
+				}
+				x = 0
+				y = 2
+				relative_position_id = TR_ENG_contacts_with_russia
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_those_driven_by_vengeance
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_anticommunist
+				}
+				x = -6
+				y = 1
+				relative_position_id = TR_ENG_anticommunist
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_north_african_losers
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_those_driven_by_vengeance
+				}
+				x = 1
+				y = 1
+				relative_position_id = TR_ENG_those_driven_by_vengeance
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_rhodes_loser
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_those_driven_by_vengeance
+				}
+				x = -1
+				y = 3
+				relative_position_id = TR_ENG_those_driven_by_vengeance
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_governmet_in_exile_recognised
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_north_african_losers
+				}
+				prerequisite = {
+					focus = TR_ENG_rhodes_loser
+				}
+				x = 0
+				y = 6
+				relative_position_id = TR_ENG_those_driven_by_vengeance
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_anticommunist_allies
+				icon = GFX_
+				mutually_exclusive = {
+					focus = TR_ENG_RUS_allies
+				}
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_governmet_in_exile_recognised
+					focus = TR_ENG_contacts_with_russia
+				}
+				x = 0
+				y = 2
+				relative_position_id = TR_ENG_governmet_in_exile_recognised
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_rouse_the_giant
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_anticommunist_allies
+					focus = TR_ENG_RUS_allies
+				}
+				x = 2
+				y = 2
+				relative_position_id = TR_ENG_anticommunist_allies
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_colonial_security
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_anticommunist
+				}
+				x = -9
+				y = 2
+				relative_position_id = TR_ENG_anticommunist
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_ENG_far_eastern_security
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_colonial_security
+				}
+				x = 0
+				y = 4
+				relative_position_id = TR_ENG_colonial_security
+				completion_reward = {
+			
+				}
+			}
+		## army and industrial
+		focus = {
+			id = TR_ENG_prepare_for_war
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_steady_as_she_goes
+			}
+			x = -20
+			y = 1
+			relative_position_id = TR_ENG_steady_as_she_goes
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_focus_on_defence
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_prepare_for_war
+			}
+			x = -1
+			y = 2
+			relative_position_id = TR_ENG_prepare_for_war
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_focus_on_attack
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_prepare_for_war
+			}
+			x = 1
+			y = 2
+			relative_position_id = TR_ENG_prepare_for_war
+			completion_reward = {
+		
+			}
+		}
+		# industry
+		focus = {
+			id = TR_ENG_shadow_scheme
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_focus_on_attack
+				focus = TR_ENG_focus_on_defence
+			}
+			x = 0
+			y = 4
+			relative_position_id = TR_ENG_prepare_for_war
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_additional_research_slot
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_shadow_scheme
+			}
+			x = 0
+			y = 1
+			relative_position_id = TR_ENG_shadow_scheme
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_war_economy
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_additional_research_slot
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_additional_research_slot
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_general_mobilisation
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_war_economy
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_war_economy
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_royal_ordinance
+			icon = GFX_royal_ordinance
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_shadow_scheme
+			}
+			x = -2
+			y = 2
+			relative_position_id = TR_ENG_shadow_scheme
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_focus_on_industry
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_royal_ordinance
+			}
+			x = 0
+			y = 1
+			relative_position_id = TR_ENG_royal_ordinance
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_focus_on_shipbuilding
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_focus_on_industry
+			}
+			x = 0
+			y = 1
+			relative_position_id = TR_ENG_focus_on_industry
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_military_expansion
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_shadow_scheme
+			}
+			x = 2
+			y = 2
+			relative_position_id = TR_ENG_shadow_scheme
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_small_arms
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_military_expansion
+			}
+			x = 0
+			y = 1
+			relative_position_id = TR_ENG_military_expansion
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_focus_on_aircraft
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_small_arms
+			}
+			x = 0
+			y = 1
+			relative_position_id = TR_ENG_small_arms
+			completion_reward = {
+		
+			}
+		}
+	### unhistorical route ###
+		focus = {
+			id = TR_ENG_a_change_in_course
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_steady_as_she_goes
+			}
+			cost = 5
+			relative_position_id = TR_ENG_steady_as_she_goes
+			x = 9
+			y = 0
+			completion_reward = {
+		
+			}
+		}
+		## center
+		focus = {
+			id = TR_ENG_continue_occupation
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_withdrawal_france
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_a_change_in_course
+				focus = TR_ENG_steady_as_she_goes
+			}
+			x = -3
+			y = 1
+			relative_position_id = TR_ENG_a_change_in_course
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_protecting_brittany
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_expose_faults
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_continue_occupation
+				focus = TR_ENG_withdrawal_france
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_continue_occupation
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_preemptive_strikes_against_france
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_protest_letter_france
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_protecting_brittany
+			}
+			x = 0
+			y = 3
+			relative_position_id = TR_ENG_protecting_brittany
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_intervention_greece
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_abandon_greece
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_preemptive_strikes_against_france
+				focus = TR_ENG_protest_letter_france
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_preemptive_strikes_against_france
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_intervention_czecho
+			icon = GFX_
+			mutually_exclusive = {
+				focus = TR_ENG_abandon_czecho
+			}
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_abandon_greece
+				focus = TR_ENG_intervention_greece
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_intervention_greece
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = TR_ENG_engagement_with_germany
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_abandon_czecho
+				focus = TR_ENG_intervention_czecho
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_ENG_intervention_czecho
+			completion_reward = {
+		
+			}
+		}
+}

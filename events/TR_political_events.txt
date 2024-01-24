@@ -21,7 +21,15 @@ country_event = {
 			}
 		}
 		NOT = {
-			tag = SRI
+			OR = {
+				tag = RUS
+				tag = GER
+				tag = FRA
+				tag = SRI
+				tag = ENG
+				tag = JAP
+				tag = USA
+			}
 		}
 	}
 
@@ -62,6 +70,17 @@ country_event = {
 		NOT = { has_government = socialism }
 		socialism > 0.2
 		NOT = { socialism > 0.59 }
+		NOT = {
+			OR = {
+				tag = RUS
+				tag = GER
+				tag = FRA
+				tag = SRI
+				tag = ENG
+				tag = JAP
+				tag = USA
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -99,7 +118,15 @@ country_event = {
 			}
 		}
 		NOT = {
-			tag = SRI
+			OR = {
+				tag = RUS
+				tag = GER
+				tag = FRA
+				tag = SRI
+				tag = ENG
+				tag = JAP
+				tag = USA
+			}
 		}
 	}
 
@@ -140,6 +167,17 @@ country_event = {
 		NOT = { has_government = socialdemocratic }
 		socialdemocratic > 0.2
 		NOT = { socialdemocratic > 0.59 }
+		NOT = {
+			OR = {
+				tag = RUS
+				tag = GER
+				tag = FRA
+				tag = SRI
+				tag = ENG
+				tag = JAP
+				tag = USA
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -177,7 +215,15 @@ country_event = {
 			}
 		}
 		NOT = {
-			tag = SRI
+			OR = {
+				tag = RUS
+				tag = GER
+				tag = FRA
+				tag = SRI
+				tag = ENG
+				tag = JAP
+				tag = USA
+			}
 		}
 	}
 
@@ -218,6 +264,17 @@ country_event = {
 		NOT = { has_government = conservatism }
 		conservatism > 0.2
 		NOT = { conservatism > 0.59 }
+		NOT = {
+			OR = {
+				tag = RUS
+				tag = GER
+				tag = FRA
+				tag = SRI
+				tag = ENG
+				tag = JAP
+				tag = USA
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -309,7 +366,15 @@ country_event = {
 			}
 		}
 		NOT = {
-			tag = SRI
+			OR = {
+				tag = RUS
+				tag = GER
+				tag = FRA
+				tag = SRI
+				tag = ENG
+				tag = JAP
+				tag = USA
+			}
 		}
 	}
 
@@ -421,6 +486,17 @@ country_event = {
 		name = TR_political.19.c
 		trigger = {
 			is_ai = yes
+			NOT = {
+				OR = {
+					tag = RUS
+					tag = GER
+					tag = FRA
+					tag = SRI
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
 		}
 		add_political_power = -100
 		set_politics = {
@@ -448,7 +524,15 @@ country_event = {
 			}
 		}
 		NOT = {
-			tag = SRI
+			OR = {
+				tag = RUS
+				tag = GER
+				tag = FRA
+				tag = SRI
+				tag = ENG
+				tag = JAP
+				tag = USA
+			}
 		}
 	}
 
@@ -560,6 +644,17 @@ country_event = {
 		name = TR_political.20.c
 		trigger = {
 			is_ai = yes
+			NOT = {
+				OR = {
+					tag = RUS
+					tag = GER
+					tag = FRA
+					tag = SRI
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
 		}
 		add_political_power = -100
 		set_politics = {
@@ -587,7 +682,15 @@ country_event = {
 			}
 		}
 		NOT = {
-			tag = SRI
+			OR = {
+				tag = RUS
+				tag = GER
+				tag = FRA
+				tag = SRI
+				tag = ENG
+				tag = JAP
+				tag = USA
+			}
 		}
 	}
 
@@ -699,6 +802,17 @@ country_event = {
 		name = TR_political.21.c
 		trigger = {
 			is_ai = yes
+			NOT = {
+				OR = {
+					tag = RUS
+					tag = GER
+					tag = FRA
+					tag = SRI
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
 		}
 		add_political_power = -100
 		set_politics = {

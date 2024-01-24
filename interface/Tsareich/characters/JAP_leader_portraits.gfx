@@ -1,0 +1,31 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_Osachi_Hmaguchi"
+		textureFile = "gfx/leaders/JAP/Portrait_Osachi _Hmaguchi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Fusanosuke_Kuhara"
+		textureFile = "gfx/leaders/JAP/Fusanosuke_kuhara.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Chikuhei_Nakajima"
+		textureFile = "gfx/leaders/JAP/Portrait_Chikuheo_Nakajima.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Chuzi_Machida"
+		textureFile = "gfx/leaders/JAP/Portrait_Chuzi_Machida.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_Tsuyoshi_Onikkai"
+		textureFile = "gfx/leaders/JAP/Portrait_Tsuyoshi_Inukai.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Iso_Abe"
+		textureFile = "gfx/leaders/JAP/Portrait_Iso_Abe.dds"
+	}
+}

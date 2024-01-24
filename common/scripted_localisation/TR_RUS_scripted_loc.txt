@@ -1,0 +1,29 @@
+defined_text = {
+	name = RUS_getSiberiaDecisionAchive
+	text = {
+		trigger = {
+			RUS = {
+				has_country_flag = RUS_one_selected_siberia_decision
+				NOT = {
+					has_country_flag = RUS_full_siberia_decision
+				}
+			}
+		}
+
+		localization_key = "RUS_getSiberiaDecisionAchive_oneselected"
+	}
+	text = {
+		trigger = {
+			RUS = {
+				has_country_flag = RUS_full_siberia_decision
+			}
+		}
+
+		localization_key = "RUS_getSiberiaDecisionAchive_allselected"
+	}
+	text = {
+		
+		localization_key = "RUS_getSiberiaDecisionAchive_noselected"
+	}
+
+}

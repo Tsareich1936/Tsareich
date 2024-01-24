@@ -4,7 +4,9 @@
 
 
  TR_hero_of_wwi: "大戦争の英雄"
- TR_hero_of_wwi_desc: "大戦争の英雄として国内からの尊敬を集めている。"4
+ TR_hero_of_wwi_desc: "大戦争の英雄として国内からの尊敬を集めている。"
  TR_confusion_of_notsar: "空位による混乱"
  TR_confusion_of_notsar_desc: "長らく皇帝に依存していた帝国政府は、突然の空位により極めて不安定な状態に陥っている。"
- TR_reformal_tsar: "改革の皇帝"
+ TR_krill_reformal_tsar: "改革のツァーリ"
+ TR_krill_conflicts_in_the_court: "宮廷内紛争"
+ TR_krill_evolutional_government: "改革派閣僚"

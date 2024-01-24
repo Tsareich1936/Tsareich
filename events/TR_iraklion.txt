@@ -11,8 +11,11 @@ country_event = {
 		socialism > 0.05
 	}
 	trigger = {
-		SRI = {
-			has_completed_focus = SRI_red_greece
+		OR = {
+			SRI = {
+				has_completed_focus = SRI_red_greece
+			}
+			socialism > 0.2
 		}
 	}
 	fire_only_once = yes
@@ -102,6 +105,9 @@ country_event = {
 
 	option = {#Socialism spread must not be allowed 
 		name = TR_iraklion.3.a
+		trigger = {
+			is_ai = yes
+		}
 		ai_chance = {
 			base = 0
 		}

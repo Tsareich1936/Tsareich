@@ -1,0 +1,15 @@
+﻿l_japanese:
+ RUS_siberia_decision_c:"シベリア測量"
+ RUS_siberia_decision_c_desc:"我が国の政府はシベリア測量を政府予算を用いて行うことを決定した。皇帝の名の下に行われるこの遠征は我が国にとって大きな進捗となるだろう。"
+ RUS_siberia_mission:"シベリア測量が進行中"
+ RUS_siberia_mission_desc:"シベリア測量には長い期間を要する。我が国はその間に別の近代化を進めるべきだろう。"
+
+ RUS_siberia_army_professional:"陸軍関係者の主導"
+ RUS_siberia_navy_professional:"海軍関係者の主導"
+ RUS_siberia_air_professional:"空軍関係者の主導"
+ RUS_siberia_industrial_professional:"産業関係者の主導"
+
+ RUS_select_siberia_decision_mission:"[RUS_getSiberiaDecisionAchive]"
+ RUS_getSiberiaDecisionAchive_noselected:"あと§R2§!人§Y主導者§!を選択可能"
+ RUS_getSiberiaDecisionAchive_oneselected:"あと§R1§!人§Y主導者§!を選択可能"
+ RUS_getSiberiaDecisionAchive_allselected:"以下の§R2§!人の§Y主導者§!を選択した"

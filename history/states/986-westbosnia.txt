@@ -1,0 +1,28 @@
+state={
+	id=986
+	name="STATE_986"
+
+	history={
+		owner = SER
+		victory_points = {
+			6983 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			air_base = 2
+
+		}
+		add_core_of = YUG
+		add_core_of = BOS
+		add_core_of = SER
+	}
+
+	provinces={
+		3985 6614 6619 6957 6983 9586 9588 
+	}
+	manpower=0
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

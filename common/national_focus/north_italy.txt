@@ -1829,7 +1829,7 @@ focus_tree = {
 			completion_reward = {
 				add_timed_idea = {
 					idea = SRI_revival
-					days = 365
+					days = 730
 				}
 			}
 		}
@@ -1877,7 +1877,7 @@ focus_tree = {
 						level = 1
 					}
 					add_building_construction = {
-						type = arms_factory
+						type = industrial_complex
 						level = 1
 					}
 				}

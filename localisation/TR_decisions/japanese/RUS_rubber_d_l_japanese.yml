@@ -1,0 +1,5 @@
+﻿l_japanese:
+ RUS_rubber_decision_c:"ゴム製造工場"
+ RUS_rubber_decision_c_desc:"我が国には産出しない資源は限りなく少ないが、ゴムについては戦争遂行のために確実に必要なのに対し、我が国の産出量はあまりにも少ない。我々はゴムの生産量を増加させるために、いくらかの液体石油をゴムに変換する大規模な工場を建設すべきだ。"
+ RUS_run_rubber_factory:"§Y[FROM.GetName]§!におけるゴム工場建設"
+ RUS_run_rubber_factory_desc:"§Y[FROM.GetName]§!において、§4石油産出§!の§32割§!の§4ゴム§!を産出させる工場を建設する。\n§Rアラスカ地方においては、アラスカの開発後のほうが効果は大きくなるだろう！§!"

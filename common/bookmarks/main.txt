@@ -25,6 +25,16 @@ bookmarks = {
 		"RUS"={
 			history = "TR_RUS_MAIN_SCENARIO_DESC"
 			ideology = neutrality
+			ideas = {
+				RUS_winner_of_wwi
+				RUS_wwi_army
+				RUS_agricultural_economy
+			}
+			focuses = {
+				RUS_newtsar
+				RUS_remake_national_government
+				RUS_development_of_siberia
+			}
 		}
 		"ENG"={
 			history = "TR_ENG_MAIN_SCENARIO_DESC"
@@ -37,6 +47,112 @@ bookmarks = {
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
+
+		#minor-kakumei
+		"CZE"={
+			history = "TR_CZE_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+		"GRE"={
+			history = "TR_GRE_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+		"POL"={
+			history = "TR_POL_MAIN_SCENARIO_DESC"
+			ideology = socialdemocratic
+			minor = yes
+		}
+
+		#minor-entente
+		"SER"={
+			history = "TR_SER_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+		"ROM"={
+			history = "TR_ROM_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+		"DEN"={
+			history = "TR_DEN_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+		"HOL"={
+			history = "TR_HOL_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+
+		#minor-russia
+		"FIN"={
+			history = "TR_FIN_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+		"ARM"={
+			history = "TR_ARM_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+		"SYR"={
+			history = "TR_SYR_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+
+		#minor-eng
+		"CAN"={
+			history = "TR_CAN_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+		"EGY"={
+			history = "TR_EGY_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+
+		#minor-revive_allies
+		"HUN"={
+			history = "TR_HUN_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+		"BUL"={
+			history = "TR_BUL_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+
+		#run
+		"FGE"={
+			history = "TR_FGE_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+		"ITA"={
+			history = "TR_ITA_MAIN_SCENARIO_DESC"
+			ideology = democratic
+			minor = yes
+		}
+		#minor-East-Asia
+		"MAN"={
+			history = "TR_MAN_MAIN_SCENARIO_DESC"
+			ideology = neutrality
+			minor = yes
+		}
+		"KOR"={
+			history = "TR_KOR_MAIN_SCENARIO_DESC"
+			ideology = neutrality
+			minor = yes
+		}
+
+
+
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

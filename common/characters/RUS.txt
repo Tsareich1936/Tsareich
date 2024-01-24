@@ -36,7 +36,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = despotism
-			traits = { TR_reformal_tsar }
+			traits = { TR_krill_conflicts_in_the_court TR_krill_reformal_tsar }
 			expire = "1965.1.1.1"
 			id = -1
 		}

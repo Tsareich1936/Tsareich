@@ -162,8 +162,9 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_speed_buildings_factor = 1.00
+				production_speed_buildings_factor = 0.50
 				consumer_goods_factor = -0.6
+				industrial_capacity_dockyard = 0.3
 			}
 		}
 		SRI_agrarian_reform_south = {
@@ -307,6 +308,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
+				fuel_cost = -0.3
 			}
 			equipment_bonus = {
 				fighter = {

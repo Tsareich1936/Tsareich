@@ -1,0 +1,29 @@
+
+state={
+	id=534
+	name="STATE_534"
+
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+			fuel_silo = 1
+
+		}
+		victory_points = {
+			10032 15 
+		}
+
+	}
+
+	provinces={
+		998 10032 13320 13326 
+	}
+	manpower=768000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

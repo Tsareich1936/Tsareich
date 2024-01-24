@@ -1,0 +1,8 @@
+﻿l_japanese:
+ RUS_finland_decision_c:"フィンランドへの対応"
+ RUS_finland_decision_c_desc:"フィンランドは現在我が国から実質的に独立している状態であり、万が一独立すれば地政学的にも我が国の首都を首元で脅かす存在になる。彼らの怒りを買わないように、彼らをまた我々の手の中に収めなければならない。"
+ rus_finland_autonomous_value_desc:"[Root.GetNameDefCap]は§H政府への影響力§!を[?Root.rus_finland_autonomous_power|+0]保持\n"
+ rus_finland_autonomous_power_icon_value: "[?Root.rus_finland_autonomous_power|0H]"
+
+ RUS_finland_roundtables:"円卓会議の開催"
+ RUS_finland_roundtables_desc:"円卓会議を開催し、いくつかの事象について討議する。フィンランドへの支援を示唆すれば、彼らはそれなりの反応を見せるだろう。"

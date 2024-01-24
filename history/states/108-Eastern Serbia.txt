@@ -13,7 +13,8 @@ state={
 		owner = SER
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 10
+			industrial_complex = 8
+
 		}
 		add_core_of = YUG
 		add_core_of = SER
@@ -21,11 +22,10 @@ state={
 	}
 
 	provinces={
-		630 3922 3939 6953 6970 6998 9602 9756 9906 11887 
+		3922 3939 6953 6970 6998 9602 9906 
 	}
 	manpower=707000
 	buildings_max_level_factor=1.000
-	state_category = metropolis
-
-	local_supplies=5.0 
+	state_category=metropolis
+	local_supplies=5.000
 }

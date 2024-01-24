@@ -93,118 +93,327 @@ country_event = {
     }
 }
 
-#シベリア出発
+# シベリア測量
 country_event = {
     id = TR_Russia.4
     title = TR_Russia.4.t
     desc = TR_Russia.4.d
-    picture = GFX_report_event_generic_construction_site
-
     is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            RUS = {
+                clr_country_flag = RUS_full_siberia_decision
+                clr_country_flag = RUS_one_selected_siberia_decision
+
+                clr_country_flag = RUS_start_siberia_decision
+            }
+        }
+    }
 
     option = {
         name = TR_Russia.4.a
-        custom_effect_tooltip = TR_Russia.tt.4
-        custom_effect_tooltip = TR_Russia.tt.5
-        hidden_effect = {
-			add_ideas = RUS_search_of_siberia_tired
-            RUS = { country_event = { hours = 2400 id = TR_Russia.5 } } 
-		}
+        custom_effect_tooltip = TR_Russia_siberia_tt.1
+        add_resource = {
+            type = tungsten
+            amount = 40
+            state = 564
+        }
+        custom_effect_tooltip = TR_Russia_siberia_tt.2
+        add_resource = {
+            type = chromium
+            amount = 30
+            state = 565
+        }
+        if = {
+            limit = {
+                has_country_flag = RUS_selected_army_siberia_decision
+            }
+            custom_effect_tooltip = TR_Russia_siberia_tt.3
+            army_experience = 100
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 2
+                category = land_doctrine
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = RUS_selected_navy_siberia_decision
+            }
+            custom_effect_tooltip = TR_Russia_siberia_tt.4
+            navy_experience = 100
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 2
+                category = naval_doctrine
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = RUS_selected_air_siberia_decision
+            }
+            custom_effect_tooltip = TR_Russia_siberia_tt.5
+            air_experience = 100
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 2
+                category = air_doctrine
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = RUS_selected_industry_siberia_decision
+            }
+            custom_effect_tooltip = TR_Russia_siberia_tt.6
+            add_offsite_building = { type = industrial_complex level = 4 }
+            add_offsite_building = { type = arms_factory level = 4 }
+        }
+        clr_country_flag = RUS_selected_army_siberia_decision
+        clr_country_flag = RUS_selected_navy_siberia_decision
+        clr_country_flag = RUS_selected_air_siberia_decision
+        clr_country_flag = RUS_selected_industry_siberia_decision
     }
 }
 
-#シベリア到着
+#ギーラーン危機！
 country_event = {
     id = TR_Russia.5
     title = TR_Russia.5.t
     desc = TR_Russia.5.d
-    picture = GFX_report_event_generic_construction_site
+    picture = GFX_report_event_chinese_soldiers_mountain
+
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = { 
+        add_named_threat = {
+            threat = 6
+            name = TR_Russia.5.t
+        }
+        news_event = { hours = 1 id = TR_Russia_news.3 }
+    }
+    }
+    option = { #最後通牒
+        name = TR_Russia.5.a
+        ai_chance = { factor = 97 }
+        custom_effect_tooltip = TR_Russia_per_tt.1
+        PER = {
+            country_event = { hours = 48 id = TR_Russia.6 }
+        }
+    }
+    option = { #最後通牒なし
+        name = TR_Russia.5.b
+        custom_effect_tooltip = TR_Russia_per_tt.2
+        add_timed_idea = { idea = RUS_dropped_army days = 180 }
+        ai_chance = { factor = 3 }
+        declare_war_on = {
+            target = PER
+            type = annex_everything
+        }
+        custom_effect_tooltip = TR_Russia_per_tt.3
+        custom_effect_tooltip = TR_Russia_per_tt.4
+        hidden_effect = {
+            PER = {
+                set_country_flag = RUS_war_against_RUS
+                add_ideas = TR_hidden_war_nosurrender
+            }
+            RUS = {
+                set_country_flag = RUS_war_against_RUS
+                add_ideas = TR_hidden_war_nosurrender
+            }
+            #戦争開始
+            news_event = { hours = 1 id = TR_Russia_news.4 }
+        }
+    }
+}
+
+#イラン；最後通牒が来たぞ！
+country_event = {
+    id = TR_Russia.6
+    title = TR_Russia.6.t
+    desc = TR_Russia.6.d
+    picture = GFX_report_event_gre_allied_diplomacy
 
     is_triggered_only = yes
 
     option = {
-        name = TR_Russia.5.a
-        remove_ideas = RUS_search_of_siberia_tired
-        653 = {
-            add_resource = {
-                type = tungsten
-                amount = 16
-            }
-            add_resource = {
-                type = chromium
-                amount = 12
-            }
+        name = TR_Russia.6.a #かかってこい
+        ai_chance = { factor = 80 }
+        RUS = {
+            country_event = { hours = 48 id = TR_Russia.7 }
         }
-        578 = {
-            add_resource = {
-                type = tungsten
-                amount = 12
-            }
-            add_resource = {
-                type = chromium
-                amount = 20
-            }
+    }
+    option = {
+        name = TR_Russia.6.b #引き下がる
+        ai_chance = { factor = 20 }
+        RUS = {
+            country_event = { hours = 48 id = TR_Russia.8 }
         }
-        516 = {
-            add_resource = {
-                type = tungsten
-                amount = 24
-            }
+    }
+}
+
+#ロシア：イランが拒否
+country_event = {
+    id = TR_Russia.7
+    title = TR_Russia.7.t
+    desc = TR_Russia.7.d
+    picture = GFX_report_event_spain_civil_war_soldiers
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.7.a #よろしい、ならば戦争だ。
+        declare_war_on = {
+            target = PER
+            type = annex_everything
         }
-        579 = {
-            add_resource = {
-                type = oil
-                amount = 32
+        
+        custom_effect_tooltip = TR_Russia_per_tt.3
+        custom_effect_tooltip = TR_Russia_per_tt.4
+        hidden_effect = {
+            PER = {
+                set_country_flag = RUS_war_against_RUS
+                add_ideas = TR_hidden_war_nosurrender
+            } 
+            RUS = {
+                set_country_flag = RUS_war_against_RUS
+                add_ideas = TR_hidden_war_nosurrender
             }
-            add_resource = {
-                type = chromium
-                amount = 24
-            }
+            news_event = { hours = 1 id = TR_Russia_news.5 }
+            #戦争開始
         }
-        825 = {
-            add_resource = {
-                type = oil
-                amount = 4
-            }
+    }
+}
+
+#ロシア：ペルシャが受諾
+country_event = {
+    id = TR_Russia.8
+    title = TR_Russia.8.t
+    desc = TR_Russia.8.d
+    picture = GFX_report_event_generic_sign_treaty1
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.8.a #ようこそ！
+        hidden_effect = {
+            news_event = { hours = 1 id = TR_Russia_news.6 }
         }
+        #講和のやつ
     }
 }
 
 #テヘラン陥落
 country_event = {
-    id = TR_Russia.7
+    id = TR_Russia.9
     hidden = yes
     fire_only_once = yes
 
     trigger = {
-        country_exists = RUS
-        PER = {
-            surrender_progress > 0.8
+        AND = {
+            country_exists = RUS
+            266 = {
+                is_controlled_by = RUS
+            }
+            PER = {
+                has_country_flag = RUS_war_against_RUS
+            }
         }
     }
 
     immediate = {
-        RUS = { country_event = { id = TR_Russia.6 } }
+        RUS = { news_event = { hours = 1 id = TR_Russia_news.7 } }
     }
 
     option = {
-        name = TR_Russia.6.a
+        name = TR_Russia.1.a
     }
 }
 
+#バクー陥落
 country_event = {
-    id = TR_Russia.6
-    title = TR_Russia.6.t
-    desc = TR_Russia.6.d
+    id = TR_Russia.10
+    hidden = yes
     fire_only_once = yes
+
+    trigger = {
+        AND = {
+            country_exists = PER
+            229 = {
+                is_controlled_by = PER
+            }
+            RUS = {
+                has_country_flag = RUS_war_against_RUS
+            }
+        }
+    }
+
+    immediate = {
+        PER = { news_event = { hours = 1 id = TR_Russia_news.8 } }
+    }
+
+    option = {
+        name = TR_Russia.1.a
+    }
+}
+
+#イラン降伏
+country_event = {
+    id = TR_Russia.11
+    hidden = yes
+    fire_only_once = yes
+
+    trigger = {
+        AND = {
+            country_exists = RUS
+            PER = {
+                surrender_progress > 0.6
+            }
+            PER = {
+                has_country_flag = RUS_war_against_RUS
+            }
+        }
+    }
+
+    immediate = {
+        RUS = { country_event = TR_Russia.12 }
+        RUS = {
+            clr_country_flag = RUS_war_against_RUS
+            if = {
+                limit = {
+                    has_idea = RUS_dropped_army
+                }
+                remove_ideas = RUS_dropped_army
+            }
+        }
+        PER = {
+            clr_country_flag = RUS_war_against_RUS
+        }
+    }
+
+    option = {
+        name = TR_Russia.1.a
+    }
+}
+
+#ロシア:講和会議
+country_event = {
+    id = TR_Russia.12
+    title = TR_Russia.12.t
+    desc = TR_Russia.12.d
+    picture = GFX_report_event_generic_sign_treaty2
+
     is_triggered_only = yes
 
     option = {
-        name = TR_Russia.6.a
+        name = TR_Russia.12.a #北部要求
+        ai_chance = { factor = 65 }
+        white_peace = {
+            tag = PER
+            message = TR_Russia_per_peace_tt.1
+        }
         hidden_effect = {
-            news_event = TR_Russia_news.3
-            remove_ideas = RUS_war_against_PER
-            white_peace = PER
+            remove_ideas = TR_hidden_war_nosurrender
             PER = {
                 remove_ideas = TR_hidden_war_nosurrender
             }
@@ -218,6 +427,55 @@ country_event = {
                 transfer_state_to = RUS
             }
             416 = {
+                transfer_state_to = RUS
+            }
+            266 = {
+                set_demilitarized_zone = yes
+            }
+            PER = {
+                set_cosmetic_tag = PER_puppet_RUS
+                add_ideas = RUS_money_to_RUS
+            }
+            RUS = {
+                add_ideas = RUS_money_by_PER
+            }
+            set_autonomy = {
+                target = PER
+                autonomous_state = autonomy_puppet
+            }
+        }
+    }
+    option = {
+        name = TR_Russia.12.b #首都含む大規模な南下
+        ai_chance = { factor = 35 }
+        white_peace = {
+            tag = PER
+            message = TR_Russia_per_peace_tt.2
+        }
+        hidden_effect = {
+            remove_ideas = TR_hidden_war_nosurrender
+            PER = {
+                remove_ideas = TR_hidden_war_nosurrender
+            }
+            419 = {
+                transfer_state_to = RUS
+            }
+            420 = {
+                transfer_state_to = RUS
+            }
+            418 = {
+                transfer_state_to = RUS
+            }
+            416 = {
+                transfer_state_to = RUS
+            }
+            266 = {
+                transfer_state_to = RUS
+            }
+            421 = {
+                transfer_state_to = RUS
+            }
+            417 = {
                 transfer_state_to = RUS
             }
             PER = {
@@ -318,13 +576,13 @@ news_event = {
 
 }
 
-#テヘラン条約
+#ギーラーン危機！
 news_event = {
 	id = TR_Russia_news.3
 	title = TR_Russia_news.3.t
 	desc = TR_Russia_news.3.d
-	picture = GFX_news_event_generic_read_write
-	major = yes
+	picture = GFX_news_event_battle_for_the_bosporus
+	
 	is_triggered_only = yes
 	
 	option = {
@@ -337,23 +595,183 @@ news_event = {
 		name = TR_Russia_news.3.b
 		trigger = {
             tag = PER
-	    }
-    }
-    option = {
-		name = TR_Russia_news.3.c
-		trigger = {
-            tag = ENG
 		}
 	}
     option = {
-        name = TR_Russia_news.3.d
-        trigger = {
+		name = TR_Russia_news.3.b
+		trigger = {
             NOT = {
                 tag = RUS
                 tag = PER
-                tag = ENG
             }
-        }
-    }
+		}
+	}
 
 }
+
+#宣戦布告なしの戦争
+news_event = {
+	id = TR_Russia_news.4
+	title = TR_Russia_news.4.t
+	desc = TR_Russia_news.4.d
+	picture = GFX_news_event_SOV_invasion_iran
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_Russia_news.4.a
+		trigger = {
+            tag = RUS
+	    }
+    }
+    option = {
+		name = TR_Russia_news.4.b
+		trigger = {
+            tag = PER
+		}
+        custom_effect_tooltip = TR_Russia_per_tt.3
+        custom_effect_tooltip = TR_Russia_per_tt.4
+	}
+    option = {
+		name = TR_Russia_news.4.b
+		trigger = {
+            NOT = {
+                tag = RUS
+                tag = PER
+            }
+		}
+	}
+
+}
+
+#最後通牒が拒否され開戦
+news_event = {
+	id = TR_Russia_news.5
+	title = TR_Russia_news.5.t
+	desc = TR_Russia_news.5.d
+	picture = GFX_news_event_SOV_invasion_iran
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_Russia_news.5.a
+		trigger = {
+            tag = RUS
+	    }
+    }
+    option = {
+		name = TR_Russia_news.5.b
+		trigger = {
+            tag = PER
+		}
+        custom_effect_tooltip = TR_Russia_per_tt.3
+        custom_effect_tooltip = TR_Russia_per_tt.4
+	}
+    option = {
+		name = TR_Russia_news.5.b
+		trigger = {
+            NOT = {
+                tag = RUS
+                tag = PER
+            }
+		}
+	}
+
+}
+
+#最後通牒に従う
+news_event = {
+	id = TR_Russia_news.6
+	title = TR_Russia_news.6.t
+	desc = TR_Russia_news.6.d
+	picture = GFX_news_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_Russia_news.6.a
+		trigger = {
+            tag = RUS
+	    }
+    }
+    option = {
+		name = TR_Russia_news.6.b
+		trigger = {
+            NOT = {
+                tag = RUS
+            }
+		}
+	}
+
+}
+
+#テヘラン陥落！
+news_event = {
+	id = TR_Russia_news.7
+	title = TR_Russia_news.7.t
+	desc = TR_Russia_news.7.d
+	picture = GFX_news_event_ger_civil_war
+	
+	is_triggered_only = yes
+	
+
+    option = {
+		name = TR_Russia_news.7.a
+		trigger = {
+            tag = RUS
+		}
+	}
+    option = {
+		name = TR_Russia_news.7.b
+		trigger = {
+            tag = PER
+		}
+	}
+    option = {
+		name = TR_Russia_news.7.c
+		trigger = {
+            NOT = {
+                tag = RUS
+                tag = PER
+            }
+		}
+	}
+
+}
+
+#バクー陥落！
+news_event = {
+	id = TR_Russia_news.8
+	title = TR_Russia_news.8.t
+	desc = TR_Russia_news.8.d
+	picture = GFX_news_event_ger_civil_war
+	
+	is_triggered_only = yes
+	
+
+    option = {
+		name = TR_Russia_news.8.a
+		trigger = {
+            tag = RUS
+		}
+	}
+    option = {
+		name = TR_Russia_news.8.b
+		trigger = {
+            tag = PER
+		}
+	}
+    option = {
+		name = TR_Russia_news.8.c
+		trigger = {
+            NOT = {
+                tag = RUS
+                tag = PER
+            }
+		}
+	}
+
+}
+
+
+

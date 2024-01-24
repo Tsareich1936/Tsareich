@@ -1,0 +1,12 @@
+RUS_debug_decision_c = {
+	icon = GFX_decision_category_usa_intervention_mandate
+	priority = 999999
+	allowed = {
+		tag = RUS
+	}
+	picture = GFX_decision_cat_picture_SWI_federal_council
+	visible = {
+		is_ai = no
+	}
+	visible_when_empty = yes
+}

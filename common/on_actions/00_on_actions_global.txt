@@ -10,6 +10,16 @@ on_actions = {
 					array = global.players
 				}
 			}
+			every_country = {
+				limit = {
+					NOT = {
+						tag = POL
+					}
+				}
+				add_to_array = {
+					array = not_poland_countries
+				}
+			}
 			# UI setup
 			for_each_scope_loop = {
 				array = global.players
@@ -52,5 +62,8 @@ on_actions = {
                 }
             }
         }
+		effect = {
+			POL = { become_exiled_in = { target = FRA legitimacy = 10 } }
+		}
 	}
 }

@@ -1,15 +1,1707 @@
 focus_tree = {
-    id = japan_focus
-    country = {
-        factor = 0
-        modifier = {
-            add = 101
-            tag = JAP
+	id = japan_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 101
+			tag = JAP
+		}
+	}
+	default = yes
+	reset_on_civilwar = no
+
+    # #　政治ツリー
+
+	focus = {
+		id = jap_19th_General_Election
+        x = 9
+        y = 0
+        cost = 4
+        available = {
+            
+        }
+        completion_reward = {
+            country_event = TR_japan.1
+        }
+
+	}
+ 
+  
+    
+   
+    
+
+    # # 立憲民政党
+
+    focus = {
+        id = jap_Constitutional_Democratic_Party
+        relative_position_id = jap_19th_General_Election
+        x = -7
+        y = 1
+        cost = 0
+        prerequisite = {
+            focus = jap_19th_General_Election
+        }
+        available = {
+            always = no
+        }
+        completion_reward = {
         }
     }
-    default = yes
-	reset_on_civilwar = no
-	focus = {
-		id = jap_teemp
+   
+    focus = {                                    
+        id = jap_Inoue
+        relative_position_id = jap_Constitutional_Democratic_Party 
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { 
+            focus = jap_Constitutional_Democratic_Party 
+        }
+        available = {
+
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = JAP_inflation
+                add_idea = JAP_deflation
+            }
+            add_ideas = JAP_lifting_of_a_gold_embargo
+            add_timed_idea = {
+                idea = JAP_deflation
+                days = 395
+            }
+        }
+
+
+    }
+
+    focus = {
+        id = jap_Liquidation_of_unprofitable_companies
+
+        prerequisite = { 
+            focus = jap_Inoue 
+        }
+        relative_position_id = jap_Inoue 
+        x = 0
+        y = 1
+        cost = 8
+        available = {
+
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = JAP_lifting_of_a_gold_embargo
+                add_idea = JAP_lifting_of_a_gold_embargo_2
+            }
+        }
+
+    }
+ 
+    focus = {                                
+        id = jap_Improving_corporate_efficiency
+        prerequisite = {
+            focus = jap_Liquidation_of_unprofitable_companies
+        }
+        relative_position_id = jap_Liquidation_of_unprofitable_companies
+        x = 0
+        y = 1
+        cost = 8
+        available = {
+            
+        }
+        completion_reward = {
+            add_ideas = JAP_Streamlined_enterprise
+        }
+    }
+
+
+    focus = {
+        id = jap_Long_live_liberalism
+        prerequisite = {
+            focus = jap_Improving_corporate_efficiency
+        }
+        relative_position_id = jap_Improving_corporate_efficiency
+        x = 0
+        y = 1
+        cost = 10
+        available = {
+            not = {
+                has_idea = JAP_deflation
+            }
+        }
+        completion_reward = {
+            add_ideas = JAP_Long_live_the_liberal_economy
+        }
+
+    }
+
+    focus = {
+        id = jap_education
+        relative_position_id = jap_Constitutional_Democratic_Party
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = { 
+            focus = jap_Constitutional_Democratic_Party 
+        }
+        available = {
+
+        }
+        completion_reward = {
+            add_ideas = JAP_education
+        }
+
+
+    }
+
+    focus = {
+        id = jap_State_Control_of_Electricity
+        relative_position_id = jap_education
+        x = 0
+        y = 1
+        cost = 5
+        prerequisite = { 
+            focus = jap_education 
+        }
+        available = {
+
+        }
+        completion_reward = {
+            add_ideas = JAP_electric_power_control
+        }
+
+    }
+    
+    focus = {
+        id = jap_administrative_reform
+        relative_position_id = jap_State_Control_of_Electricity
+        x = 0
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = jap_State_Control_of_Electricity
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_ideas = JAP_administrative_reform
+        }
+    }
+
+    focus = {
+        id = jap_Convention_Center_Definition
+        relative_position_id = jap_Constitutional_Democratic_Party
+        x = -2
+        y = 1
+        cost = 5
+        prerequisite = { focus = jap_Constitutional_Democratic_Party }
+        available = {
+
+        }
+        completion_reward = {
+            country_event = TR_japan.2
+        }
+
+    }
+
+    focus = {
+        id = jap_Continuation_of_Shidehara_foreign_policy
+        relative_position_id = jap_Convention_Center_Definition
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = { focus = jap_Convention_Center_Definition }]
+        available = {
+
+        }
+        completion_reward = {
+            diplomatic_relation = {
+                country = MAN
+                relation = non_aggression_pact
+                relation = guarantee
+                active = no
+                }
+        }
+
+    }
+
+    focus = {
+        id = jap_constitutional_amendment
+        relative_position_id = jap_Continuation_of_Shidehara_foreign_policy
+        x = 0
+        y = 1
+        cost = 20
+        prerequisite = {
+            focus = jap_Continuation_of_Shidehara_foreign_policy
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = JAP_constitution
+                add_idea = JAP_constitution_1
+            }
+        }
+
+    }
+
+    # # 立憲政友会
+
+    focus = {
+        id = jap_Rikken_Seiyukai
+        relative_position_id = jap_19th_General_Election
+        x = 0
+        y = 1
+        cost = 0
+        prerequisite = {
+            focus = jap_19th_General_Election
+        }
+        available = {
+            always = no
+        }
+        completion_reward = {
+        
+        }
+
+
+    }
+
+    focus = {
+        id = jap_Continuation_of_Takahashi_Financing
+        relative_position_id = jap_Rikken_Seiyukai
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Rikken_Seiyukai
+        }
+        completion_reward = {
+            activate_targeted_decision = { 
+                target = JAP 
+                decision = JAP_Civilian_factory_1
+            }
+            activate_targeted_decision = { 
+                target = JAP 
+                decision = JAP_Military_factory_1
+            }
+            activate_targeted_decision = { 
+                target = JAP
+                decision = JAP_Infrastructure_1
+            }
+            activate_targeted_decision = { 
+                target = JAP 
+                decision = JAP_Naval_dockyard_1
+            }
+            activate_targeted_decision = { 
+                target = JAP 
+                decision = JAP_synthetic_refinery_1
+            }
+            activate_targeted_decision = { 
+                target = JAP 
+                decision = JAP_air_base_1
+            }
+        }
+    }
+
+    focus = {
+        id = jap_Keynesian_Studies_in_Practice
+        relative_position_id =  jap_Continuation_of_Takahashi_Financing
+        x = 0 
+        y = 1
+        cost = 8
+        prerequisite = {
+            focus = jap_Continuation_of_Takahashi_Financing
+        }
+        available = {
+            has_decision = JAP_Civilian_factory_1
+            has_decision = JAP_Military_factory_1
+            has_decision = JAP_Infrastructure_1
+            has_decision = JAP_Naval_dockyard_1
+            has_decision = JAP_synthetic_refinery_1
+            has_decision = JAP_air_base_1
+        }
+        completion_reward = {
+            activate_targeted_decision = { 
+                target = JAP 
+                decision = JAP_Civilian_factory_2 
+            }
+            activate_targeted_decision = { 
+                target = JAP 
+                decision = JAP_Military_factory_2
+            }
+            activate_targeted_decision = { 
+                target = JAP
+                decision = JAP_Infrastructure_2
+            }
+            activate_targeted_decision = { 
+                target = JAP 
+                decision = JAP_Naval_dockyard_2
+            }
+            activate_targeted_decision = { 
+                target = JAP 
+                decision = JAP_synthetic_refinery_2
+            }
+            activate_targeted_decision = { 
+                target = JAP 
+                decision = JAP_air_base_2
+            }
+        }
+    }
+
+    focus = {
+        id = jap_Controlling_inflation
+        relative_position_id = jap_Keynesian_Studies_in_Practice
+        x = 0
+        y = 1
+        cost = 8
+        prerequisite = {
+            focus = jap_Keynesian_Studies_in_Practice
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+            remove_idea = JAP_inflation
+            add_timed_idea = {
+                idea = JAP_deflation
+                days = 365
+            }
+            
+        }
+    }
+    
+    focus = {
+        id = jap_Growth_based_on_Keynesian_studies.
+        relative_position_id = jap_Controlling_inflation
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Controlling_inflation
+        }
+        available = {
+            not = {
+                has_idea = JAP_deflation
+            }
+        }
+        completion_reward = {
+            add_ideas = JAP_Keynesian_Studies_in_Practice
+        }
+    }
+
+    focus = {
+        id = jap_decentralization_of_power
+        relative_position_id = jap_Rikken_Seiyukai
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Rikken_Seiyukai
+        }
+        completion_reward = {
+            add_ideas = JAP_decentralization_of_power
+        }
+    }
+
+    focus = {                       ###############################################
+        id = jap_extensive_transportation_network
+        relative_position_id = jap_decentralization_of_power
+        x = 0
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = jap_decentralization_of_power
+        }
+        completion_reward = {
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_Railway_prepare_1
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_Railway_prepare_2
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_Railway_prepare_3
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_Railway
+            }
+        }
+    }
+
+    focus = {
+        id = jap_policy_of_imperialisation
+        relative_position_id = jap_extensive_transportation_network
+        x = 0
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = jap_extensive_transportation_network
+        }
+        completion_reward = {
+            add_ideas = JAP_policy_of_imperialisation
+        }
+    }
+
+    focus = {                                                          ##################################### 
+        id = jap_Royal_Center_Definition
+        relative_position_id = jap_Rikken_Seiyukai
+        x = -2
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = jap_Rikken_Seiyukai
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            country_event = TR_japan.3
+        }
+    }
+
+    focus = {
+        id = jap_Developing_Mori_Diplomacy
+        relative_position_id = jap_Royal_Center_Definition
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Royal_Center_Definition
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_ideas = JAP_Kaku_Mori
+        }
+    }
+
+    focus = {
+        id = jap_Protect_the_Constitution
+        relative_position_id = jap_Developing_Mori_Diplomacy
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Developing_Mori_Diplomacy
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = JAP_constitution
+                add_idea = JAP_constitution_2
+            }
+        }
+    }
+
+    #　社会大衆党
+
+    focus = {
+        id = jap_Shakai_Taishuto
+        relative_position_id = jap_19th_General_Election
+        x = 7
+        y = 1
+        cost = 0
+        prerequisite = {
+            focus = jap_19th_General_Election
+        }
+        available = {
+            always = no
+        }
+        completion_reward = {
+
+        }
+
+
+    }
+
+    focus = {
+        id = jap_socialist_economy
+        relative_position_id = jap_Shakai_Taishuto
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Shakai_Taishuto
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            country_event = TR_japan.4
+        }
+    }
+
+    focus = {
+        id = jap_planned_economy
+        relative_position_id = jap_socialist_economy
+        x = 0
+        y = 1
+        cost = 8
+        prerequisite = {
+            focus = jap_socialist_economy
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_ideas = planned_economy
+        }
+    }
+
+    focus = {
+        id = jap_wealth_redistribution
+        relative_position_id = jap_planned_economy
+        x = 0
+        y = 1
+        cost = 8
+        prerequisite = {
+            focus = jap_planned_economy
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_ideas = JAP_wealth_redistribution
+        }
+    }
+
+    focus = {
+        id = jap_Building_Japanese-style_Socialism
+        relative_position_id = jap_wealth_redistribution
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_wealth_redistribution
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_ideas = JAP_Japanese_style_socialism
+        }
+    }
+
+    focus = {
+        id = jap_dismantling_of_the_Ministry_of_Home_Affairs
+        relative_position_id = jap_Shakai_Taishuto
+        x = 2
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Shakai_Taishuto
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = jap_Development_of_insurance_system
+        relative_position_id = jap_dismantling_of_the_Ministry_of_Home_Affairs
+        x = 0
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = jap_dismantling_of_the_Ministry_of_Home_Affairs
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_stability = 0.1
+        }
+    }
+
+    focus = {
+        id = jap_Establishment_of_the_Ministry_of_Labor
+        relative_position_id = jap_Development_of_insurance_system
+        x = 0
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = jap_Development_of_insurance_system
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_ideas = JAP_Establishment_of_the_Ministry_of_Labor
+        }
+    }
+
+    focus = {
+        id = jap_social_democracy
+        relative_position_id = jap_Shakai_Taishuto
+        x = -2
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = jap_Shakai_Taishuto
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = socialdemocratic
+                popularity = 0.1
+                }
+        }
+    }
+
+    focus = {
+        id = jap_Cooperation_with_Socialist_Countries
+        relative_position_id = jap_social_democracy
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_social_democracy
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+            diplomatic_relation = {
+                country = GER
+                relation = non_aggression_pact
+                active = yes
+            }
+            diplomatic_relation = {
+                country = FRA
+                relation = non_aggression_pact
+                active = yes
+            }
+            diplomatic_relation = {
+                country = ITA
+                relation = non_aggression_pact
+                active = yes
+            }
+
+        }
+    }
+
+    focus = {
+        id = jap_revise_the_constitution
+        relative_position_id = jap_Cooperation_with_Socialist_Countries
+        x = 0
+        y = 1
+        cost = 20
+        prerequisite = {
+            focus = jap_Cooperation_with_Socialist_Countries
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = JAP_constitution
+                add_idea = JAP_constitution_3
+            }
+        }
+    }
+
+    ##　軍事ツリー
+
+    #　海軍ツリー
+
+    focus = {
+        id = jap_NAVY_1_1
+        x = 21
+        y = 0
+        cost = 4
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_NAVY_1_2
+        relative_position_id = jap_NAVY_1_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_NAVY_1_1
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_NAVY_1_3
+        relative_position_id = jap_NAVY_1_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_NAVY_1_2
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_NAVY_2_1
+        relative_position_id = jap_NAVY_1_1
+        x = 2
+        y = 0
+        cost = 4
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_NAVY_2_2
+        relative_position_id = jap_NAVY_2_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_NAVY_2_1
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_NAVY_2_3
+        relative_position_id = jap_NAVY_2_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_NAVY_2_2
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_NAVY_3_1
+        relative_position_id = jap_NAVY_1_1
+        x = 4
+        y = 0
+        cost = 4
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_NAVY_3_2
+        relative_position_id = jap_NAVY_3_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_NAVY_3_1
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_NAVY_3_3
+        relative_position_id = jap_NAVY_3_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_NAVY_3_2
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_NAVY_10
+        relative_position_id = jap_NAVY_2_3
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_NAVY_1_3
+            focus = jap_NAVY_2_3
+            focus = jap_NAVY_3_3
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+     #　空軍ツリー
+
+     focus = {
+        id = jap_AIRFORCE_1_1
+        x = 27
+        y = 0
+        cost = 4
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_AIRFORCE_1_2
+        relative_position_id = jap_AIRFORCE_1_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_AIRFORCE_1_1
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_AIRFORCE_1_3
+        relative_position_id = jap_AIRFORCE_1_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_AIRFORCE_1_2
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_AIRFORCE_2_1
+        relative_position_id = jap_AIRFORCE_1_1
+        x = 2
+        y = 0
+        cost = 4
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_AIRFORCE_2_2
+        relative_position_id = jap_AIRFORCE_2_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_AIRFORCE_2_1
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_AIRFORCE_2_3
+        relative_position_id = jap_AIRFORCE_2_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_AIRFORCE_2_2
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_AIRFORCE_3_1
+        relative_position_id = jap_AIRFORCE_1_1
+        x = 4
+        y = 0
+        cost = 4
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_AIRFORCE_3_2
+        relative_position_id = jap_AIRFORCE_3_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_AIRFORCE_3_1
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_AIRFORCE_3_3
+        relative_position_id = jap_AIRFORCE_3_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_AIRFORCE_3_2
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_AIRFORCE_10
+        relative_position_id = jap_AIRFORCE_2_3
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_AIRFORCE_1_3
+            focus = jap_AIRFORCE_2_3
+            focus = jap_AIRFORCE_3_3
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    #　陸軍ツリー
+
+    focus = {
+        id = jap_ARMY_1_1
+        x = 33
+        y = 0
+        cost = 4
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_ARMY_1_2
+        relative_position_id = jap_ARMY_1_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_ARMY_1_1
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_ARMY_1_3
+        relative_position_id = jap_ARMY_1_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_ARMY_1_2
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_ARMY_2_1
+        relative_position_id = jap_ARMY_1_1
+        x = 2
+        y = 0
+        cost = 4
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_ARMY_2_2
+        relative_position_id = jap_ARMY_2_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_ARMY_2_1
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_ARMY_2_3
+        relative_position_id = jap_ARMY_2_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_ARMY_2_2
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_ARMY_3_1
+        relative_position_id = jap_ARMY_1_1
+        x = 4
+        y = 0
+        cost = 4
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_ARMY_3_2
+        relative_position_id = jap_ARMY_3_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_ARMY_3_1
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_ARMY_3_3
+        relative_position_id = jap_ARMY_3_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_ARMY_3_2
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_ARMY_10
+        relative_position_id = jap_ARMY_2_3
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_ARMY_1_3
+            focus = jap_ARMY_2_3
+            focus = jap_ARMY_3_3
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    # 軍事ツリー下部
+
+    focus = {
+        id = jap_Integration_of_Army_and_Navy
+        relative_position_id = jap_AIRFORCE_10
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_NAVY_10
+            focus = jap_AIRFORCE_10
+            focus = jap_ARMY_10
+        }
+
+       
+        completion_reward = {
+            
+        }
+
+
+    }
+
+    focus = {
+        id = jap_NAVY
+        relative_position_id = jap_Integration_of_Army_and_Navy
+        x = -4
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Integration_of_Army_and_Navy
+        }
+        mutually_exclusive = {
+            focus = jap_ARMY
+            focus = jap_Establishment_of_the_Ministry_of_War
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_Establishment_of_the_Ministry_of_War
+        relative_position_id = jap_Integration_of_Army_and_Navy
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Integration_of_Army_and_Navy
+        }
+        mutually_exclusive = {
+            focus = jap_NAVY
+            focus = jap_ARMY
+        }
+        completion_reward = {
+            
+        }
+        allow_branch = {
+            has_country_flag = a                      ################
+        }
+        available = {
+            is_subject = no
+        }
+    }
+
+    focus = {
+        id = jap_ARMY
+        relative_position_id = jap_Integration_of_Army_and_Navy
+        x = 4
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Integration_of_Army_and_Navy
+        }
+        mutually_exclusive = {
+            focus = jap_NAVY
+            focus = jap_Establishment_of_the_Ministry_of_War
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    ##　外交方針
+
+    focus = {
+        id = jap_Foreign_Policy
+        x = 46
+        y = 0
+        cost = 1
+        completion_reward = {
+            # country_event = TR.japan.2         ###############
+        }
+    }
+
+    # 列強と同盟
+
+    focus = {
+        id = jap_cooperation
+        relative_position_id = jap_Foreign_Policy
+        x = -4
+        y = 1
+        cost = 0
+        prerequisite = {
+            focus = jap_Foreign_Policy
+        }
+        completion_reward = {
+            
+        }
+        available = {
+            always = no
+        }
+    }
+
+    focus = {
+        id = jap_japan-england
+        relative_position_id = jap_cooperation
+        x = -2
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = jap_cooperation
+        }
+        mutually_exclusive = {
+            focus = jap_japan-usa
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_japan-usa
+        relative_position_id = jap_cooperation
+        x = 2
+        y = 1
+        cost = 5
+        mutually_exclusive = {
+            focus = jap_japan-england
+        }
+        prerequisite = {
+            focus = jap_cooperation
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_Logistical_support
+        relative_position_id = jap_japan-england
+        x = 0
+        y = 1
+        cost = 10
+        mutually_exclusive = {
+            focus = jap_massive_troops
+        }
+
+        prerequisite = {
+            focus = jap_japan-england
+            focus = jap_japan-usa
+        }
+        completion_reward = {
+            
+        }
+
+    }
+
+    focus = {
+        id = jap_massive_troops
+        relative_position_id = jap_Logistical_support
+        x = 4
+        y = 0
+        cost = 10
+        mutually_exclusive = {
+            focus = jap_Logistical_support
+        }
+        prerequisite = {
+            focus = jap_japan-england
+            focus = jap_japan-usa
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_War_lessons_from_our_allies
+        relative_position_id = jap_cooperation
+        x = 0
+        y = 3
+        cost = 10
+        prerequisite = {
+            focus = jap_Logistical_support
+            focus = jap_massive_troops
+        }
+        completion_reward = {
+            
+        }
+
+    }
+
+    focus = {
+        id = jap_Convention_on_the_Elimination_of_All_Forms_of_Racial_Discrimination
+        relative_position_id = jap_War_lessons_from_our_allies
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_War_lessons_from_our_allies
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    #　独自陣営
+
+    focus = {
+        id = jap_unyielding
+        relative_position_id = jap_Foreign_Policy
+        x = 4
+        y = 1
+        cost = 0
+        available = {
+            always = no
+        }
+        prerequisite = {
+            focus = jap_Foreign_Policy
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_Greater_East_Asian_Co-prosperity_Sphere_concept
+        relative_position_id = jap_unyielding
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_unyielding
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_Find_an_ally
+        relative_position_id = jap_Greater_East_Asian_Co-prosperity_Sphere_concept
+        x = -2
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = jap_Greater_East_Asian_Co-prosperity_Sphere_concept
+        }
+        completion_reward = {
+            
+        }
+        mutually_exclusive = {
+            focus = jap_Create_allies
+        }
+    }
+
+    focus = {
+        id = jap_Create_allies
+        relative_position_id = jap_Greater_East_Asian_Co-prosperity_Sphere_concept
+        x = 2
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = jap_Greater_East_Asian_Co-prosperity_Sphere_concept
+        }
+        mutually_exclusive = {
+            focus = jap_Find_an_ally
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_Holding_of_the_Greater_East_Asia_Conference
+        relative_position_id = jap_Find_an_ally
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Find_an_ally
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_war_plan
+        relative_position_id = jap_Create_allies
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Create_allies
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_final_war
+        relative_position_id = jap_Greater_East_Asian_Co-prosperity_Sphere_concept
+        x = 0
+        y = 3
+        cost = 10
+        prerequisite = {
+            focus = jap_Holding_of_the_Greater_East_Asia_Conference
+            focus = jap_war_plan
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    ## 社会改革
+
+    focus = {
+        id = jap_social_reform
+        x = 57
+        y = 0
+        cost = 4
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_agrarian_reform_1
+        relative_position_id = jap_social_reform
+        x = -2
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_social_reform
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_agrarian_reform_2
+        relative_position_id = jap_agrarian_reform_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_agrarian_reform_1
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_agrarian_reform_3
+        relative_position_id = jap_agrarian_reform_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_agrarian_reform_2
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_zaibatsu
+        relative_position_id = jap_social_reform
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_social_reform
+        }
+        completion_reward = {
+           
+        }
+        cost = 4
+    }
+
+    focus = {
+        id = jap_low
+        relative_position_id = jap_zaibatsu
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_zaibatsu
+        }
+        completion_reward = {
+            
+        }
+        cost = 4
+    }
+
+    focus = {
+        id = jap_zaibutsu_2
+        relative_position_id = jap_low
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_low
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            
+        }
+        cost = 4
+    }
+
+    focus = {
+        id = jap_pollition
+        relative_position_id = jap_social_reform
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_social_reform
+        }
+        completion_reward = {
+            
+        }
+        cost = 4
+    }
+
+    focus = {
+        id = jap_pollition_2
+        relative_position_id = jap_pollition
+        x = 0
+        y = 1
+        prerequisite = {
+        focus = jap_pollution
+        }
+        completion_reward = {
+            
+        }
+        cost = 4
+    }
+
+    focus = {
+        id = jap_pollition_3
+        relative_position_id = jap_pollition_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_pollition_2
+        }
+        completion_reward = {
+            
+        }
+        cost = 4
+    }
+
+}
+
+
+focus_tree = {
+	id = japan_focus_Military
+	country = {
+		factor = 0
+		modifier = {
+			add = 101
+			tag = JAP
+		}
 	}
+	default = no
+	reset_on_civilwar = no
+
+    focus = {
+        id = jap_Minister_of_War_of_Active_Military_Service
+        x = 10
+        y = 0
+        cost = 0
+        available = {
+            always = no
+        }
+        completion_reward = {
+            
+        }
+    }
 }

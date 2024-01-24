@@ -1,0 +1,422 @@
+add_namespace = "TR_Japan"
+
+
+
+country_event = {
+	id = TR_japan.1
+	title = TR_japan.1.t
+	desc = TR_japan.1.d
+	
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		JAP = {
+			has_completed_focus = jap_19th_General_Election
+		}
+	}
+	timeout_days = 7
+	
+	option = {
+		name = TR_Japan.1.a
+
+	    complete_national_focus = jap_Constitutional_Democratic_Party
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.21
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.15
+		}
+		add_popularity = {
+			ideology = socialdemocratic
+			popularity = -0.06
+		}
+		set_politics = {
+			ruling_party = democratic
+		}
+		
+		ai_chance = { factor = 40 }
+	}
+	option = {
+		name = TR_Japan.1.b
+
+	    complete_national_focus = jap_Rikken_Seiyukai
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = socialdemocratic
+			popularity = -0.05
+		}
+		set_politics = {
+			ruling_party = conservatism
+		}
+		
+		ai_chance = { factor = 40 }
+	}
+	option = {
+		name = TR_Japan.1.c
+		
+	    complete_national_focus = jap_Shakai_Taishuto
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.12
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.14
+		}
+		add_popularity = {
+			ideology = socialdemocratic
+			popularity = 0.26
+		}
+		set_politics = {
+			ruling_party = socialdemocratic
+		}
+		
+		ai_chance = { factor = 20 }
+	}
+}
+
+country_event = {  ############Toyotomi
+	id = TR_japan.2
+	title = TR_japan.2.t
+	desc = TR_japan.2.d
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		JAP = {
+			has_completed_focus = jap_Convention_Center_Definition
+		}
+	}
+	timeout_days = 7
+	option = {
+		name = TR_japan.2.a
+		add_political_power = 100
+		ai_chance = { factor = 99 }
+	}
+
+	option = {
+		name = TR_japan.2.b
+		add_political_power = -100
+		ai_chance = { factor = 1 }
+		set_country_flag = TR.Japan.Toyotomi
+	}
+
+}
+
+country_event = {   # 皇室中心主義
+	id = TR_japan.3
+}
+
+country_event = {
+	id = TR_japan.4
+	title = TR_japan.4.t
+	desc = TR_japan.4.d
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		JAP = {
+			has_completed_focus = jap_socialist_economy
+		}
+	}
+	timeout_days = 7
+
+	option = {
+		name = TR_japan.4.a
+		add_timed_idea = {
+	        idea = JAP_industrial_complex
+			days = 365
+		}
+		if = {
+			limit = {
+				has_war = yes
+			}
+			ai_chance = {factor = 10}
+			else = {
+				ai_chance = {factor = 60}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_japan.5
+				days = 365
+			}
+		}
+	}
+	option = {
+		name = TR_japan.4.b
+		add_timed_idea = {
+			idea = JAP_arms_factory
+			days = 365
+		}
+		if = {
+			limit = {
+				has_war = yes
+			}
+			ai_chance = {factor = 45}
+			else = {
+				ai_chance = {factor = 20}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_japan.5
+				days = 365
+			}
+		}
+	}
+	option = {
+		name = TR_japan.4.c
+		add_timed_idea = {
+			idea = JAP_dockyard
+			days = 365
+		}
+		if = {
+			limit = {
+				has_war = yes
+			}
+			ai_chance = {factor = 45}
+			else = {
+				ai_chance = {factor = 20}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_japan.5
+				days = 365
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TR_japan.5
+	title = TR_japan.5.t
+	desc = TR_japan.5.d
+	timeout_days = 7
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.5.a
+		add_timed_idea = {
+	        idea = JAP_industrial_complex
+			days = 365
+		}
+		if = {
+			limit = {
+				has_war = yes
+			}
+			ai_chance = {factor = 10}
+			else = {
+				ai_chance = {factor = 60}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_japan.5
+				days = 365
+			}
+		}
+	}
+	option = {
+		name = TR_japan.5.b
+		add_timed_idea = {
+			idea = JAP_arms_factory
+			days = 365
+		}
+		if = {
+			limit = {
+				has_war = yes
+			}
+			ai_chance = {factor = 45}
+			else = {
+				ai_chance = {factor = 20}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_japan.5
+				days = 365
+			}
+		}
+	}
+	option = {
+		name = TR_japan.5.c
+		add_timed_idea = {
+			idea = JAP_dockyard
+			days = 365
+		}
+		if = {
+			limit = {
+				has_war = yes
+			}
+			ai_chance = {factor = 45}
+			else = {
+				ai_chance = {factor = 20}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_japan.5
+				days = 365
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TR_japan.6
+	title = TR_japan.6.t
+	desc = TR_japan.6.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = JAP
+		JAP = {
+			has_decision = JAP_Railway
+		}
+	}
+	timeout_days = 7
+	option = {
+		name = TR_japan.6.a
+		add_political_power = 100
+		282 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+				
+				
+		}
+		962 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		903 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+		}
+		532 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		968 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+		}
+		969 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+		}
+		973 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+		}
+		531 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		972 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+		}
+		974 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+		}
+		529 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		975 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+		}
+		528 = {
+			add_extra_state_shared_building_slots = 2
+			set_building_level = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+		}
+
+	}
+}
+

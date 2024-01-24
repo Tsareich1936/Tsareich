@@ -67,5 +67,30 @@ ideas = {
    				factor = 10
 			}
 		}
+		planned_economy = {
+			picture = new_economic_policy
+			available = {
+				has_completed_focus = jap_planned_economy
+			}
+			visible = {
+				original_tag = JAP
+			}
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			ai_will_do = {
+				factor = 0
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.3
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_dockyard_factor = 0.2
+			}
+		}
 	}
 }	
