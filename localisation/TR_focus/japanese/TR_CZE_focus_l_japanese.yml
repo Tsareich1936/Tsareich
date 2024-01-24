@@ -23,7 +23,7 @@
  CZE_fortress_brn: "ブルノ要塞"
  CZE_slo1: "スロバキアの保護"
  CZE_slo2: "スロバキア産業への投資"
- CZE_fortress_slo1: "スロバキア要塞"
+ CZE_fortress_slo: "スロバキア要塞"
  
  CZE_sko: "権力の維持"
  CZE_ban_dem: "民主派の粛清"
@@ -47,6 +47,8 @@
  CZE_dip3: "技術共有"
  CZE_dip_slo1: "スロバキア侵攻"
  CZE_dip_slo2: "スロバキアへの投資"
+ CZE_dip_hun1: "スロバキア侵攻"
+ CZE_dip_hun2: "スロバキア南部の支配確立"
  CZE_dip_big1: "拡大外交"
  CZE_dip_big2: "独自路線"
  CZE_dip_big3: "汎西スラブ主義"

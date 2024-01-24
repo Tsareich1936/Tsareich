@@ -1,0 +1,71 @@
+ideas = {
+	country = {
+		TR_FRA_kakumei_honou = {
+			picture = "generic_communism_drift_bonus"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		TR_FRA_kanzenkoyou = {
+			picture = "generic_production_bonus"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.2
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		TR_FRA_syousika_mondai = {
+			picture = "ETH_peacekeeping_forces"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.1
+				monthly_population = -0.5
+				army_morale_factor = -0.1
+			}
+		}
+
+		TR_FRA_seijiteki_hunsou = {
+			picture = "FRA_political_violence"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.5
+                political_power_cost = 0.8
+			}
+		}
+
+		TR_FRA_kokuminno_situbou = {
+			picture = "officers_purged"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly_factor = -0.001
+				war_support_factor = -0.5
+				surrender_limit = -0.5
+			}
+		}
+		
+
+
+
+	}	
+}
