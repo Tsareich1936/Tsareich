@@ -25,6 +25,30 @@ ideas = {
 			}
         }
 
+        RUS_winner_of_wwi_1 = {
+            picture = SOV_the_true_tsars
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                drift_defence_factor = 0.5
+                enemy_justify_war_goal_time = 1
+                stability_factor = 0.2
+            }
+            rule = {
+				can_create_factions = yes
+			}
+        }
+
 
         RUS_wwi_army = {
             picture = chi_army_corruption2
@@ -301,6 +325,232 @@ ideas = {
             }
         }
  
+        RUS_stock_exchange = {
+            picture = gre_schachtplan3
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                military_industrial_organization_research_bonus = 0.25
+                military_industrial_organization_design_team_assign_cost = -0.5
+                production_speed_buildings_factor = 0.1
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+                
+            }
+        }
+
+        RUS_stock_exchange_1 = {
+            picture = gre_schachtplan3
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                military_industrial_organization_research_bonus = 0.25
+                military_industrial_organization_design_team_assign_cost = -0.5
+                production_speed_buildings_factor = 0.15
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+                production_factory_efficiency_gain_factor = 0.1
+                production_factory_max_efficiency_factor = 0.15
+            }
+        }
+        
+        RUS_national_construction_idea = {
+            picture = generic_railroads
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                production_cost_infrastructure_factor = -0.25
+                production_cost_supply_node_factor = -0.25
+            }
+        }
+
+        RUS_cost_of_buying_arms_factory = {
+            picture = SPR_seize_the_gold_reserves
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.15
+            }
+        }
+
+        RUS_navy_doctrine = {
+            picture = generic_coastal_navy
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            equipment_bonus = {
+
+                ship_hull_light = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+                ship_hull_cruiser = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+            }	
+            modifier = {
+                spotting_chance = 0.1
+                navy_max_range_factor = -0.25
+                convoy_escort_efficiency = 0.15
+                navy_screen_attack_factor = 0.35
+                navy_screen_defence_factor = 0.5
+                navy_capital_ship_attack_factor = -0.15
+            }
+        }
+
+        RUS_tank_divisions = {
+            picture = man_five_year_plan_tank
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            equipment_bonus = {
+                medium_tank_chassis = {
+					instant = yes
+					build_cost_ic = -0.25
+                    maximum_speed = 0.05
+				}
+            }
+        }
+
+        RUS_shikolsky_planes_idea = {
+            picture = SWE_land_air_warfare
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            equipment_bonus = {
+                medium_plane_fighter_airframe = {
+					instant = yes
+					build_cost_ic = -0.35
+				}
+            }
+        }
+
+        RUS_one_year_buildup = {
+            picture = SOV_fourth_five_year_plan
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                production_speed_buildings_factor = 0.75
+                consumer_goods_factor = -0.35
+            }
+        }
+
+        RUS_deep_battle = {
+            picture = NORDIC_army_communist
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            equipment_bonus = {
+                infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.25
+				}
+            }
+            modifier = {
+                army_attack_factor = 0.08
+                army_defence_factor = 0.05
+                army_org_factor = 0.15
+                army_morale_factor = 0.1
+                supply_consumption_factor = -0.125
+                winter_attrition_factor = -0.75
+            }
+        }
 
 
     }

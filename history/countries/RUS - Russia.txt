@@ -85,7 +85,6 @@ if = {
 		mtg_transport = 1
 		basic_dp_light_battery = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
 }
 
 # ideas
@@ -99,14 +98,14 @@ add_ideas = {
 	#debug
 
 	#laws
-	disarmed_nation
+	volunteer_only
 	export_focus
 	civilian_economy
 }
 
 # politics
 set_research_slots = 2
-set_convoys = 35
+set_convoys = 420
 set_stability = 0.45
 set_war_support = 0.08
 
