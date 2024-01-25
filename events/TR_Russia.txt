@@ -223,6 +223,9 @@ country_event = {
             }
             #戦争開始
             news_event = { hours = 1 id = TR_Russia_news.4 }
+            PER = {
+                load_oob = "TR_PER_russianwar"
+            }
         }
     }
 }
@@ -281,6 +284,9 @@ country_event = {
             }
             news_event = { hours = 1 id = TR_Russia_news.5 }
             #戦争開始
+            PER = {
+                load_oob = "TR_PER_russianwar"
+            }
         }
     }
 }

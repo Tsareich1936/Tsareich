@@ -245,4 +245,25 @@ focus_tree = {
         
     }
 
+    focus = {
+        id = RUS_remake_russian_constitution
+        icon = GFX_focus_hol_the_foundations_of_defense
+        x = 0
+        y = 4
+        relative_position_id = RUS_remake_national_government
+        cost = 5
+
+        search_filters = FOCUS_FILTER_ANNEXATION
+        prerequisite = { focus = RUS_battle_with_PER }
+
+        ai_will_do = { factor = 80 }
+        available = {
+            has_war = no
+        }
+        completion_reward = {
+            #custom_effect_tooltip = TR_Russia.tt.5
+        }
+        
+    }
+
 }
