@@ -935,7 +935,7 @@ JAP_Railway = {
 	}
 }
 
-JAP_NAVAL_PLAN_3 = {
+JAP_NAVAL_PLAN_3 = { 
 	JAP_NAVY_3_1_1 = {
 		days_remove = 365
 		fire_only_once = yes
