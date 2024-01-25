@@ -593,23 +593,24 @@ country_event = {
 
 country_event = {            #########  右翼政治団体が首相を襲撃！
 	id = TR_japan.12
-	title = TR_japan.12.t
-	desc = TR_japan.12.d
+
 	fire_only_once = yes
 	trigger = {
 		country_exists = JAP
 		date > 1936.2.26
+		has_government = conservatism
 	}
-	option = {
-		name = TR_japan.12.a
-		hidden_effect = {
-			JAP = {
-				country_event = {
-					id = TR_japan.18
-				}
+	immediate = {
+		JAP = {
+			country_event = {
+				id = TR_japan.28
 			}
 		}
 	}
+	
+    option = {
+        name = TR_japan.12.a
+    }
 }
 
 country_event = {                    #　国家保護法
@@ -721,40 +722,36 @@ country_event = {        # 立憲政友会の総裁を決める
 	}
 }
 
-country_event ={            
-	id = TR_japan.18
-	title = TR_japan.18.t
-	desc = TR_japan.18.d
-	is_triggered_only = yes
-	hidden = yes
-	immediate = {
-		JAP = {
-			if = {
-				limit = {
-					has_government	= conservatism
-				}
-				JAP = {
-					country_event = {
-						id = TR_japan28
-					}
-				}
-			}
-			else = {
-				JAP = {
-					country_event = {
-						id = TR_japan.13
-					}
-				}
-			}
-		}
-	}
- 
-}
+#country_event ={            
+#	id = TR_japan.18
+#	hidden = yes
+#	
+##	trigger = {
+#		country_exists = JAP
+#		date > 1936.2.26
+#		NOT = {
+#			has_government = conservatism
+#		}
+		
+#	}
+#	immediate = {
+#		JAP = {
+#			country_event = {
+#				id = TR_japan.13
+#			}
+##		}
+#	}
+	
+ #   option = {
+  #      name = TR_japan.18.a
+	#}
+#}
 
 country_event = {
 	id = TR_japan.19
 	title = TR_japan.19.t
 	desc = TR_japan.19.d
+	is_triggered_only = yes
 	immediate = {
 		navy_experience = 100
 	}
@@ -772,6 +769,7 @@ country_event = {
 	id = TR_japan.20
 	title = TR_japan.20.t
 	desc = TR_japan.20.d
+	is_triggered_only = yes
 	immediate = {
 		add_tech_bonus = {
 			name = TR_japan.20.0
@@ -801,6 +799,7 @@ country_event = {
 country_event = {
 	id = TR_japan.21
 	title = TR_japan.21.t
+	is_triggered_only = yes
 	desc = TR_japan.21.d
 	immediate = {
 		add_tech_bonus = {
@@ -833,6 +832,7 @@ country_event = {
 country_event = {
 	id = TR_japan.21
 	title = TR_japan.21.t
+	is_triggered_only = yes
 	desc = TR_japan.21.d
 	option = {
 		name = TR_japan.21.a
@@ -847,6 +847,7 @@ country_event = {
 country_event = {
 	id = TR_japan.22 
 	title = TR_japan.22.t
+	is_triggered_only = yes
 	desc = TR_japan.22.d
 	option = {
 		name = TR_japan.22.a
@@ -858,6 +859,7 @@ country_event = {
 	id = TR_japan.23
 	title = TR_japan.23.t
 	desc = TR_japan.23.d
+	is_triggered_only = yes
 	option = {
 		name = TR_japan.23.a
 		add_ideas = JAP_ARMY_5
@@ -869,6 +871,7 @@ country_event = {
 	id = TR_japan.24
 	title = TR_japan.24.t
 	desc = TR_japan.24.d
+	is_triggered_only = yes
 	option = {
 		name = TR_japan.24.a
 		add_ideas = JAP_N_A
@@ -878,6 +881,7 @@ country_event = {
 country_event = {
 	id = TR_japan.25
 	title = TR_japan.25.t
+	is_triggered_only = yes
 	desc = TR_japan.25.d
 	option = {
 		name = TR_japan.25.a
@@ -888,6 +892,7 @@ country_event = {
 country_event = {
 	id = TR_japan.26
 	title = TR_japan.26.t
+	is_triggered_only = yes
 	desc = TR_japan.26.d
 	option = {
 		name = TR_japan.26.a
@@ -897,6 +902,7 @@ country_event = {
 
 country_event = {
 	id = TR_japan.27
+	is_triggered_only = yes
 	title = TR_japan.27.t
 	desc = TR_japan.27.d
 	option = {
@@ -910,20 +916,23 @@ country_event = {
 	desc = TR_japan.28.d
 	is_triggered_only = yes
 	immediate = {
-		kill_country_leader = yes
-		create_country_leader = {
-			name = JAP_Korekiyo_Takahashi
-			picture = GFX_portrait_Korekiyo_Takahashi
-			ideology = conservatism
-		}
+		hidden_effect = {
+			kill_country_leader = yes
+		    create_country_leader = {
+		    	name = JAP_Korekiyo_Takahashi
+		    	picture = GFX_portrait_Korekiyo_Takahashi
+		    	ideology = conservatism
+	    	}
 		add_manpower = -1
+		}
+		
 	}
 	option = {
 		name = TR_japan.28.a
 		JAP = {
 			country_event = {
-				id = TR_japan.13
-				days = 16
+				id = TR_japan.17
+				days = 7
 			}
 		}
 	}

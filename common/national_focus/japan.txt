@@ -23,7 +23,6 @@ focus_tree = {
         completion_reward = {
             country_event = {
                 id = TR_japan.1
-                days = 1
             }
         }  
 
