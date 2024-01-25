@@ -73,5 +73,13 @@ on_actions = {
 				}
 			}
 		}
+		effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.12
+					days = 56
+				}
+			}
+		}
 	}
 }
