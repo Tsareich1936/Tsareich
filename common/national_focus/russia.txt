@@ -258,7 +258,7 @@ focus_tree = {
 
         ai_will_do = { factor = 80 }
         available = {
-            has_war = no
+            
         }
         completion_reward = {
             #custom_effect_tooltip = TR_Russia.tt.5

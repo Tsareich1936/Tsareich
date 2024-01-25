@@ -204,7 +204,7 @@ country_event = {
     option = { #最後通牒なし
         name = TR_Russia.5.b
         custom_effect_tooltip = TR_Russia_per_tt.2
-        add_timed_idea = { idea = RUS_dropped_army days = 180 }
+        add_timed_idea = { idea = RUS_dropped_army days = 720 }
         ai_chance = { factor = 3 }
         declare_war_on = {
             target = PER

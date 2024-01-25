@@ -213,8 +213,8 @@ ideas = {
             removal_cost = -1
             targeted_modifier = {
                 tag = PER
-                attack_bonus_against = -0.35
-                defense_bonus_against = -0.2
+                attack_bonus_against = -0.15
+                defense_bonus_against = -0.1
             }
 
         }

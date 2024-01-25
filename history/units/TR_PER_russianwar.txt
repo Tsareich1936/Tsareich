@@ -10,9 +10,7 @@
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+
 	}
 }
 
@@ -23,77 +21,77 @@ units = {
 		name = "Iranian Volunteer Army"
 		location = 7604
 		division_template = "Volunteer Army"		
-		start_experience_factor = 1
+		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Iranian Volunteer Army"
 		location = 1636
 		division_template = "Volunteer Army"		
-		start_experience_factor = 1
+		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Iranian Volunteer Army"
 		location = 4755
 		division_template = "Volunteer Army"		
-		start_experience_factor = 1
+		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Iranian Volunteer Army"
 		location = 4825
 		division_template = "Volunteer Army"		
-		start_experience_factor = 1
+		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Iranian Volunteer Army"
 		location = 10454
 		division_template = "Volunteer Army"		
-		start_experience_factor = 1
+		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Iranian Volunteer Army"
 		location = 4901
 		division_template = "Volunteer Army"		
-		start_experience_factor = 1
+		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Iranian Volunteer Army"
 		location = 2000
 		division_template = "Volunteer Army"		
-		start_experience_factor = 1
+		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Iranian Volunteer Army"
 		location = 5029
 		division_template = "Volunteer Army"		
-		start_experience_factor = 1
+		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Iranian Volunteer Army"
 		location = 1521
 		division_template = "Volunteer Army"		
-		start_experience_factor = 1
+		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Iranian Volunteer Army"
 		location = 10351
 		division_template = "Volunteer Army"		
-		start_experience_factor = 1
+		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Iranian Volunteer Army"
 		location = 7602
 		division_template = "Volunteer Army"		
-		start_experience_factor = 1
+		start_experience_factor = 0.5
 		start_equipment_factor = 1
 	}
 	
