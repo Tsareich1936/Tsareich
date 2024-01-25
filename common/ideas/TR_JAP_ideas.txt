@@ -53,7 +53,7 @@ ideas = {
 		}
 
 		JAP_constitution = {
-			picture = GFX_idea_generic_constitutional_guarantees
+			picture = "GFX_idea_generic_constitutional_guarantees"
 			allowed = {
 				always = no
 			}
@@ -153,7 +153,7 @@ ideas = {
 				generate_wargoal_tension = -0.3
 			}
 			set_rule = {
-				can_only_justify_war_on_threat_country
+				can_only_justify_war_on_threat_country = yes
 			}
 		}
 
@@ -454,5 +454,15 @@ ideas = {
 			} 
 		}
 		
+		JAP_pollution = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.5
+				industrial_capacity_factory = -0.2
+			}
+		}
 	}
 }

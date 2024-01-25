@@ -655,3 +655,14 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = TR_japan.14
+	title = TR_japan.14.t
+	desc = TR_japan.13.d
+	fire_only_once = yes
+	trigger = {
+		industrial_complex =  > 100
+	}
+	add_ideas = JAP_pollution
+}
+

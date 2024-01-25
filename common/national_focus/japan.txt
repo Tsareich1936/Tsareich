@@ -65,10 +65,7 @@ focus_tree = {
 
         }
         completion_reward = {
-            swap_ideas = {
-                remove_idea = JAP_inflation
-                add_idea = JAP_deflation
-            }
+            remove_ideas = JAP_inflation
             add_ideas = JAP_lifting_of_a_gold_embargo
             add_timed_idea = {
                 idea = JAP_deflation
@@ -1710,7 +1707,7 @@ focus_tree = {
     }
 
     focus = {
-        id = jap_pollition
+        id = jap_pollution
         relative_position_id = jap_social_reform
         x = 0
         y = 1
@@ -1724,8 +1721,8 @@ focus_tree = {
     }
 
     focus = {
-        id = jap_pollition_2
-        relative_position_id = jap_pollition
+        id = jap_pollution_2
+        relative_position_id = jap_pollution
         x = 0
         y = 1
         prerequisite = {
@@ -1738,12 +1735,12 @@ focus_tree = {
     }
 
     focus = {
-        id = jap_pollition_3
-        relative_position_id = jap_pollition_2
+        id = jap_pollution_3
+        relative_position_id = jap_pollution_2
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_pollition_2
+            focus = jap_pollution_2
         }
         completion_reward = {
             
