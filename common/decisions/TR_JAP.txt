@@ -975,6 +975,7 @@ JAP_NAVAL_PLAN_3 = {
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
+					allow_without_tech = yes
 					type = ship_hull_light_2
 					name = "Kagero Class"
 					name_group = JAP_DE_HISTORICAL
@@ -1053,6 +1054,7 @@ JAP_NAVAL_PLAN_3 = {
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
+					allow_without_tech = yes
 					type = ship_hull_light_2
 					name = "Kagero Class"
 					name_group = JAP_DE_HISTORICAL
@@ -1143,6 +1145,7 @@ JAP_NAVAL_PLAN_3 = {
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
+					allow_without_tech = yes
 					type = ship_hull_light_2
 					name = "Kagero Class"
 					name_group = JAP_DE_HISTORICAL
@@ -1257,6 +1260,7 @@ JAP_NAVAL_PLAN_3 = {
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
+					allow_without_tech = yes
 					type = ship_hull_light_2
 					name = "Kagero Class"
 					name_group = JAP_DE_HISTORICAL
@@ -1372,6 +1376,7 @@ JAP_NAVAL_PLAN_3 = {
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
+					allow_without_tech = yes
 					type = ship_hull_light_2
 					name = "Kagero Class"
 					name_group = JAP_DE_HISTORICAL
@@ -1461,6 +1466,7 @@ JAP_NAVAL_PLAN_3 = {
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
+					allow_without_tech = yes
 					type = ship_hull_light_2
 					name = "Kagero Class"
 					name_group = JAP_DE_HISTORICAL
@@ -1485,18 +1491,19 @@ JAP_NAVAL_PLAN_3 = {
 		    	limit = {
 		    		has_dlc = "Man the Guns"
 		    	}
-		    	create_equipment_variant = {
-		    		type = ship_hull_submarine_2
-		    		name= "I-15 Class"
-		    		name_group = JAP_SS_HISTORICAL
-		    		parent_version = 0
-		    		modules = {
-			    		fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				    	fixed_ship_engine_slot = sub_ship_engine_2
-				    	rear_1_custom_slot = ship_mine_layer_sub
-				    }
-			    	obsolete = no
-	 		    }
+				create_equipment_variant = {
+					allow_without_tech = yes
+					name = "I-15 Class"
+					type = ship_hull_submarine_2
+					name_group = JAP_SS_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_torpedo_slot = ship_torpedo_sub_1
+						fixed_ship_engine_slot = sub_ship_engine_1
+						rear_1_custom_slot = ship_mine_layer_sub
+					}
+					
+				}
 	    	}
 		}
 	   	cost = 100
@@ -1566,6 +1573,7 @@ JAP_NAVAL_PLAN_3 = {
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
+					allow_without_tech = yes
 					type = ship_hull_light_2
 					name = "Kagero Class"
 					name_group = JAP_DE_HISTORICAL
@@ -1586,29 +1594,29 @@ JAP_NAVAL_PLAN_3 = {
 			}
 			
 		    
-	    	if = {
-		    	limit = {
-		    		has_dlc = "Man the Guns"
-		    	}
-		    	create_equipment_variant = {
-		    		type = ship_hull_submarine_2
-		    		name= "I-15 Class"
-		    		name_group = JAP_SS_HISTORICAL
-		    		parent_version = 0
-		    		modules = {
-			    		fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				    	fixed_ship_engine_slot = sub_ship_engine_2
-				    	rear_1_custom_slot = ship_mine_layer_sub
-				    }
-			    	obsolete = no
-	 		    }
-	    	}
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				create_equipment_variant = {
+					allow_without_tech = yes
+					type = ship_hull_submarine_2
+					name = "I-15 Class"
+					name_group = JAP_DE_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_torpedo_slot = ship_torpedo_sub_2
+						fixed_ship_engine_slot = sub_ship_engine_2
+						rear_1_custom_slot = ship_mine_layer_sub
+			
+					}
+				}
+			}
 		}
 		remove_effect = {
 			load_oob = TR_japan_navy_7
 		}		
 		cost = 100
 	}
-	
 	
 }
