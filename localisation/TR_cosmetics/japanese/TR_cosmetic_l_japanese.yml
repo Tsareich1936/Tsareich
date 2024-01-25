@@ -18,6 +18,13 @@
  SOM_UK_subject: "$OVERLORDADJ$保護領ソマリア"
  URSR: "ローマ社会主義共和国連邦"
  PER_puppet_RUS: "ペルシャ保護領"
+
+ PER_empire: "ペルシャ帝国"
+ SYR_puppet_PER: "肥沃な三日月地帯"
+ ARM_puppet_PER: "アルミーニャ王国"
+ UZB_puppet_PER: "マワランナハルの防壁"
+ TAJ_puppet_PER: "ソグディアナの防壁"
+
  IDC: "インドシナ"
  IDC_ADJ: "インドシナ"
  IDC_DEF: "インドシナ"

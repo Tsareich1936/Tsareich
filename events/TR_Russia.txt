@@ -537,7 +537,7 @@ country_event = {
     }
 
     immediate = {
-        PER = { country_event = TR_Russia.13 }
+        PER = { country_event = TR_Russia.14 }
         RUS = {
             clr_country_flag = RUS_war_against_RUS
             if = {
@@ -578,10 +578,14 @@ country_event = {
         add_offsite_building = { type = arms_factory level = 15 }
         add_offsite_building = { type = industrial_complex level = 30 }
         hidden_effect = {
-            PER = { news_event = { hours = 1 id = TR_Russia_news.11 } }
+            #PER = { news_event = { hours = 1 id = TR_Russia_news.11 } }
             remove_ideas = TR_hidden_war_nosurrender
             RUS = {
                 remove_ideas = TR_hidden_war_nosurrender
+            }
+            PER = {
+                set_cosmetic_tag = PER_empire
+                
             }
             229 = {
                 transfer_state_to = PER
@@ -639,17 +643,134 @@ country_event = {
             tag = RUS
             message = TR_Russia_per_peace_tt.4
         }
-        hidden_effect = {
-            PER = { news_event = { hours = 1 id = TR_Russia_news.12 } }
-            remove_ideas = TR_hidden_war_nosurrender
-            white_peace = {
-                tag = RUS
-                message = TR_Russia_per_peace_tt.4
-            }
-            custom_effect_tooltip = TR_Persia_tt.1
-            add_offsite_building = { type = arms_factory level = 15 }
-            add_offsite_building = { type = industrial_complex level = 30 }
-        }
+        #hidden_effect = {
+            #PER = { news_event = { hours = 1 id = TR_Russia_news.12 } }
+
+                remove_ideas = TR_hidden_war_nosurrender
+                PER = {
+                    set_cosmetic_tag = PER_empire
+                }
+                RUS = {
+                    remove_ideas = TR_hidden_war_nosurrender
+                }
+                229 = {
+                    transfer_state_to = PER
+                    add_core_of = PER
+                }
+                230 = {
+                    transfer_state_to = PER
+                    add_core_of = PER
+                }
+                231 = {
+                    transfer_state_to = PER
+                    add_core_of = PER
+                }
+                826 = {
+                    transfer_state_to = PER
+                    add_core_of = PER
+                }
+                832 = {
+                    transfer_state_to = PER
+                    add_core_of = PER
+                }
+                584 = {
+                    transfer_state_to = PER
+                    add_core_of = PER
+                }
+                232 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                234 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                235 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                233 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                827 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                828 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                821 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                830 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                831 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                823 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                587 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+
+                #傀儡
+                RUS = {
+                    end_puppet = ARM
+                    end_puppet = SYR
+                }
+                set_autonomy = {
+                    target = ARM
+                    autonomous_state = autonomy_collaboration_government
+                }
+                set_autonomy = {
+                    target = SYR
+                    autonomous_state = autonomy_collaboration_government
+                }
+                set_autonomy = {
+                    target = UZB
+                    autonomous_state = autonomy_collaboration_government
+                }
+                set_autonomy = {
+                    target = TAJ
+                    autonomous_state = autonomy_collaboration_government
+                }
+                
+                585 = {
+                    transfer_state_to = UZB
+                }
+                405 = {
+                    transfer_state_to = UZB
+                }
+                742 = {
+                    transfer_state_to = TAJ
+                }
+                944 = {
+                    transfer_state_to = SYR
+                }
+                SYR = {
+                    set_cosmetic_tag = SYR_puppet_PER
+                }
+                ARM = {
+                    set_cosmetic_tag = ARM_puppet_PER
+                }
+                UZB = {
+                    set_cosmetic_tag = UZB_puppet_PER
+                }
+                TAJ = {
+                    set_cosmetic_tag = TAJ_puppet_PER
+                }
+
+          
+        #}
     }
 }
 
