@@ -503,7 +503,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 2
-
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = GER_union_USPD
@@ -515,7 +517,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
-
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = GER_suppress_opposition
@@ -527,7 +531,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
-
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = GER_social_fascism
@@ -542,7 +548,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
-
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = GER_organize_secret_police_force
@@ -615,12 +623,13 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			add_political_power = 25
+			add_ideas = GER_socialist_economy
 		}
 	}
 	focus = {
 		id = GER_facilitate_nationalization
 		icon = GFX_focus_SOV_merge_plants
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_socialist_economy
 		}
@@ -629,24 +638,34 @@ focus_tree = {
 		}
 		x = 16
 		y = 3
-
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = GER_socialist_economy
+				add_idea = GER_socialist_economy_left
+			}
+		}
 	}
 	focus = {
 		id = GER_agricultural_collectivization
 		icon = GFX_focus_generic_workers_and_farmers_rise
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_facilitate_nationalization
 		}
 		x = 16
 		y = 4
-
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = GER_socialist_economy_left
+				add_idea = GER_socialist_economy_left2
+			}
+		}
 	}
 	focus = {
 		id = socialist_economy2
 		text = socialist_economy2
 		icon = GFX_focus_generic_the_giant_wakes
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_socialist_economy
 		}
@@ -656,6 +675,10 @@ focus_tree = {
 		x = 18
 		y = 3
 		completion_reward = {
+			swap_ideas = { 
+				remove_idea = GER_socialist_economy
+				add_idea = GER_socialist_economy_right
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -677,30 +700,50 @@ focus_tree = {
 	focus = {
 		id = GER_assist_small_medium_enterprises
 		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = socialist_economy2
 		}
 		x = 18
 		y = 4
-
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = GER_socialist_economy_right
+				add_idea = GER_socialist_economy_right2
+			}
+		}
 	}
 	focus = {
 		id = GER_new_socialism_economy
 		text = GER_new_socialism_economy
 		icon = GFX_focus_generic_communist_industry
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_agricultural_collectivization
 			focus = GER_assist_small_medium_enterprises
 		}
 		x = 17
 		y = 5
-
+		completion_reward = {
+			if = {
+				limit = { has_idea = GER_socialist_economy_right2 }
+					swap_ideas = { 
+						remove_idea = GER_socialist_economy_right2
+						add_idea = GER_new_socialism_economy
+					}
+			}
+			else if = {
+				limit = { has_idea = GER_socialist_economy_left2 }
+					swap_ideas = { 
+						remove_idea = GER_socialist_economy_left2
+						add_idea = GER_new_socialism_economy
+					}
+			}
+		}
 	}
 	focus = {
-		id = newfocus_92
-		icon = GFX_goal_generic_war_with_comintern
+		id = GER_socialist_realism
+		icon = GFX_focus_YUG_pan_slavic_congress
 		cost = 10.00
 		prerequisite = {
 			focus = GER_new_socialism_economy
@@ -720,6 +763,7 @@ focus_tree = {
 		x = 22
 		y = 2
 			completion_reward = {
+					add_political_power = 25
 					add_popularity = {
 							ideology = socialism
 							popularity = 0.1
@@ -745,6 +789,7 @@ focus_tree = {
 		x = 21
 		y = 3
 			completion_reward = {
+					add_political_power = 25
 					add_stability = 0.05
 					add_popularity = {
 							ideology = socialism
@@ -767,6 +812,7 @@ focus_tree = {
 		x = 23
 		y = 3
 			completion_reward = {
+				add_political_power = 25
 				add_stability = -0.05
 				add_popularity = {
 						ideology = communism
@@ -796,7 +842,9 @@ focus_tree = {
 		x = 22
 		y = 4
 			completion_reward = {
+				add_political_power = 25
 				add_war_support = 0.15
+				remove_ideas = GER_Dolchstosslegende
 				add_timed_idea = {
 						idea = GER_totalitarian_oppression
 						days = 180
@@ -814,7 +862,7 @@ focus_tree = {
 		x = 21
 		y = 5
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
 			add_timed_idea = {
 					idea = GER_positive_propaganda
 					days = 90
@@ -832,6 +880,7 @@ focus_tree = {
 		x = 21
 		y = 6
 		completion_reward = {
+			add_political_power = 25
 			swap_ideas = { 
 				remove_idea = GER_workers_democracy
 				add_idea = GER_workers_democracy2
@@ -848,6 +897,7 @@ focus_tree = {
 		x = 23
 		y = 5
 		completion_reward = {
+			add_political_power = 25
 			swap_ideas = { 
 				remove_idea = GER_left_right_divide
 				add_idea = GER_left_right_divide2
@@ -866,6 +916,7 @@ focus_tree = {
 		x = 23
 		y = 6
 		completion_reward = {
+			add_political_power = 25
 			remove_ideas = GER_left_right_divide2
 		}
 
@@ -1314,7 +1365,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 7
-
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = GER_one_country_socialism
@@ -1389,7 +1442,9 @@ focus_tree = {
 		}
 		x = 27
 		y = 8
-
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = navy_10
@@ -1579,12 +1634,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = newfocus_93
-		icon = GFX_goal_unknown
+		id = GER_state_atheism
+		icon = GFX_focus_mex_triumph_over_the_cristeros
 		cost = 10.00
 		prerequisite = {
 			focus = GER_thought_education
-			focus = newfocus_92
+			focus = GER_socialist_realism
 		}
 		x = 17
 		y = 7
@@ -1592,7 +1647,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_thought_education
-		icon = GFX_focus_spr_unify_the_london_bureau
+		icon = GFX_focus_NOR_moscows_education_centers
 		cost = 10.00
 		prerequisite = {
 			focus = GER_new_socialism_economy

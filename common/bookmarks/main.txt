@@ -21,6 +21,16 @@ bookmarks = {
 		"GER"={
 			history = "TR_GER_MAIN_SCENARIO_DESC"
 			ideology = communism
+			ideas = {]
+				GER_successful_revolution
+				GER_workers_democracy
+				GER_left_right_divide
+			}
+			focuses = {
+				GER_1936_party_conference
+				GER_international_revolution
+				GER_preparing_for_battle
+			}
 		}
 		"RUS"={
 			history = "TR_RUS_MAIN_SCENARIO_DESC"
