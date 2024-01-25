@@ -158,7 +158,7 @@ ideas = {
 		}
 
 		JAP_inflation = {
-			picture = GFX_idea_chi_hyper_inflation2
+			picture = "GFX_idea_chi_hyper_inflation2"
 			allowed = {
 				always = no
 			}
@@ -170,7 +170,7 @@ ideas = {
 		}
 
 		JAP_deflation = {
-		    picture = GFX_idea_generic_economic_crisis
+		    picture = "GFX_idea_generic_economic_crisis"
 	    	allowed = {
 			    always = no
     		}

@@ -465,7 +465,7 @@ country_event = {              ######〇３計画
 
 		JAP = {
 			country_event = {
-				id = TR_japan.10
+				id = TR_japan.11
 			}
 		}
 	}

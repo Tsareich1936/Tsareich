@@ -1614,7 +1614,7 @@ JAP_NAVAL_PLAN_3 = {
 			}
 		}
 		remove_effect = {
-			set_naval_oob = TR_japan_navy_7
+			load_oob = TR_japan_navy_7
 		}		
 		cost = 100
 	}
