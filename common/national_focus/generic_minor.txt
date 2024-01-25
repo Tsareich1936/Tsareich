@@ -33,10 +33,10 @@ focus_tree = {
 			add = 22
 			tag = GRE
 		}
-		modifier = {
-			add = 22
-			tag = POL
-		}
+		# modifier = {
+		# 	add = 22
+		# 	tag = POL
+		# }
 		modifier = {
 			add = 22
 			tag = DEN

@@ -4,12 +4,12 @@ TR_POL_resistance = {
 	}
 	priority = 1
 	icon = icon
-visible_when_empty = yes
+	visible_when_empty = yes
 	visible = {
-		# has_war_with = RUS
-		# NOT = {
-		# 	has_global_flag = TR_poland_recognized_flag
-		# }
-		always = yes
+		has_war_with = RUS
+		NOT = {
+			has_global_flag = TR_poland_recognized_flag
+		}
+		has_country_flag = TR_POL_start_resistance
 	}
 }

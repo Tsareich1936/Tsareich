@@ -1,0 +1,169 @@
+focus_tree = {
+    id = poland_focus
+    country = {
+        factor = 1
+        modifier = {
+            add = 22
+            tag = POL
+        }
+    }
+    default = no
+	reset_on_civilwar = no
+
+	initial_show_position = {
+	}
+	focus = {
+		id = TR_POL_start_resistance
+		icon = GFX_
+		cost = 10
+		x = 5
+		y = 0
+		
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_category_tooltip = TR_POL_resistance
+			set_country_flag = TR_POL_start_resistance
+			72 = {
+				set_state_flag = TR_POL_avaiabled_resist
+			}
+			88 = {
+				set_state_flag = TR_POL_avaiabled_resist
+			}
+			90 = {
+				set_state_flag = TR_POL_avaiabled_resist
+			}
+			92 = {
+				set_state_flag = TR_POL_avaiabled_resist
+			}
+			762 = {
+				set_state_flag = TR_POL_avaiabled_resist
+			}
+		}
+	}
+	focus = {
+		id = TR_POL_approach_international
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = TR_POL_start_resistance
+		}
+		x = 1
+		y = 1
+		relative_position_id = TR_POL_start_resistance
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = TR_POL_asked_support
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = TR_POL_approach_international
+		}
+		x = 0
+		y = 1
+		relative_position_id = TR_POL_approach_international
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = TR_POL_collect_weapons
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = TR_POL_asked_support
+		}
+		x = 0
+		y = 1
+		relative_position_id = TR_POL_asked_support
+		completion_reward = {
+	
+		}
+	}
+	focus = {#ポーランド農民共和国
+		id = TR_POL_PRP
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = TR_POL_collect_weapons
+		}
+		x = 0
+		y = 1
+		relative_position_id = TR_POL_collect_weapons
+		completion_reward = {
+	
+		}
+	}
+	focus = {
+		id = TR_POL_call_in_volunteer
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = TR_POL_start_resistance
+		}
+		x = -1
+		y = 1
+		relative_position_id = TR_POL_start_resistance
+		completion_reward = {
+	
+		}
+	}
+	focus = {
+		id = TR_POL_start_guerrilla
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = TR_POL_call_in_volunteer
+		}
+		x = 0
+		y = 1
+		relative_position_id = TR_POL_call_in_volunteer
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = TR_POL_training_guerrilla
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = TR_POL_start_guerrilla
+		}
+		x = 0
+		y = 1
+		relative_position_id = TR_POL_start_guerrilla
+		completion_reward = {
+	
+		}
+	}
+	focus = {
+		id = TR_POL_inciting_peasantry
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = TR_POL_training_guerrilla
+		}
+		x = 0
+		y = 1
+		relative_position_id = TR_POL_training_guerrilla
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = TR_POL_coup
+		icon = GFX_
+		cost = 5
+		prerequisite = {
+			focus = TR_POL_inciting_peasantry
+		}
+		prerequisite = {
+			focus = TR_POL_PRP
+		}
+		x = 0
+		y = 5
+		relative_position_id = TR_POL_start_resistance
+		completion_reward = {
+			set_country_flag = TR_POL_start_coup
+		}
+	}
+}

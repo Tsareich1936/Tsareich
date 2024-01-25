@@ -55,7 +55,7 @@ focus_tree = {
 			tag = SRI
 		}
 	}
-	default = yes
+	default = no
 	continuous_focus_position = {
 		x = 500
 		y = 100
