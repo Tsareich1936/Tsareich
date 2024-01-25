@@ -1,0 +1,15 @@
+TR_POL_resistance = {
+	allowed = {
+		tag = POL
+	}
+	priority = 1
+	icon = icon
+visible_when_empty = yes
+	visible = {
+		# has_war_with = RUS
+		# NOT = {
+		# 	has_global_flag = TR_poland_recognized_flag
+		# }
+		always = yes
+	}
+}
