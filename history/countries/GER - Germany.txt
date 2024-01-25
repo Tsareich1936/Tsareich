@@ -374,17 +374,22 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
+	anarchism = 4
 	communism = 45
 	socialism = 25
-	socialdemocratic = 15
-	democratic = 2
-	fascism = 13
+	socialdemocratic = 10
+	democratic = 1
+	fascism = 15
+	theocracy = 0
 }
 
 add_ideas = {
 GER_successful_revolution
 GER_left_right_divide
 GER_workers_democracy
+GER_Dolchstosslegende
+GER_Opposition_to_War
+GER_legacy_of_an_empire
 }
 
 recruit_character = GER_Heinrich_Brandler
