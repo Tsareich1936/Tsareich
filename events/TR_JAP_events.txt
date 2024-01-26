@@ -617,7 +617,7 @@ country_event = {                    #　国家保護法
 	desc = TR_japan.13.d
 	fire_only_once = yes
 	is_triggered_only = yes
-	option = {                    ### 国家安全保障法　可決
+	option = {                    ### 国家保護法　可決
 		name = TR_japan.13.a
 		add_political_power = 100
 		add_stability = 0.1
@@ -676,6 +676,7 @@ country_event = {          # 公害問題
 	}
 	
 	option = {
+		name = TR_japan.15.a
 		add_ideas = JAP_pollution
 	}
 }
@@ -720,30 +721,24 @@ country_event = {        # 立憲政友会の総裁を決める
 	}
 }
 
-#country_event ={            
-#	id = TR_japan.18
-#	hidden = yes
-#	
-##	trigger = {
-#		country_exists = JAP
-#		date > 1936.2.26
-#		NOT = {
-#			has_government = conservatism
-#		}
-		
-#	}
-#	immediate = {
-#		JAP = {
-#			country_event = {
-#				id = TR_japan.13
-#			}
-##		}
-#	}
+country_event ={            
+	id = TR_japan.18
+	is_triggered_only = yes
+	title = TR_japan.12.t
+	desc = TR_japan.12.d
+	is_triggered_only = yes
+	immediate = {
+		JAP = {
+			country_event = {
+				id = TR_japan.13
+			}
+		}
+	}
 	
- #   option = {
-  #      name = TR_japan.18.a
-	#}
-#}
+    option = {
+        name = TR_japan.18.a
+	}
+}
 
 country_event = {
 	id = TR_japan.19
@@ -781,7 +776,7 @@ country_event = {
 			name = TR_japan.20.1
 			bonus = 3
 			uses = 1
-			category = cat_ship_heavy_battery
+			category = bb_tech
 		}
 	}
 	option = {
@@ -813,7 +808,7 @@ country_event = {
 			name = TR_japan.21.1
 			bonus = 3
 			uses = 1
-			category = cat_ship_medium_battery
+			category = cl_tech
 		}
 	}
 	option = {
@@ -822,7 +817,7 @@ country_event = {
 			name = TR_japan.21.2
 			bonus = 3
 			uses = 1
-			category = cat_ship_light_battery
+			category = dd_tech
 		}
 	}
 }
@@ -901,10 +896,20 @@ country_event = {
 country_event = {
 	id = TR_japan.27
 	is_triggered_only = yes
-	title = TR_japan.27.t
-	desc = TR_japan.27.d
-	option = {
-		name = TR_japan.27.a
+	immediate = {
+		if = {
+			limit = {
+				has_government = conservatism
+			}
+			country_event = {
+				id = TR_japan.12
+			}
+			else = {
+				country_event = {
+					id = TR_japan.18
+				}
+			}
+		}
 	}
 }
 
@@ -941,8 +946,147 @@ country_event = {
 	id = TR_japan.29
 	title = TR_japan.29.t
 	desc = TR_japan.29.d
-	is_triggered_only = yes
-	immediate = {
+	trigger = {
+		tag = JAP
+		JAP = {
+			num_of_factories > 150
+		}
+	}
+	option = {
 		name = TR_japan.29.a
+		add_ideas = JAP_pollution
+	}
+}
+
+country_event = {
+	id = TR_japan.30
+	title = TR_japan.30.t
+	desc = TR_japan.30.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.30.a
+		
+	}
+	option = {
+		name = TR_japan.30.b
+	}
+}
+
+country_event = {
+	id = TR_japan.31
+	title = TR_japan.31.t
+	desc = TR_japan.31.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.31.a
+		complete_national_focus = jap_cooperation
+	}
+	option = {
+		name = TR_japan.31.b
+		complete_national_focus = jap_unyielding
+	}
+}
+
+country_event = {
+	id = TR_japan.32
+	title = TR_japan.32.t
+	desc = TR_japan.32.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.32.a
+		JAP = {
+			create_faction = Pacific_Pact
+		}
+		JAP = {
+			add_to_faction = USA
+		}
+	}
+	option = {
+		name = TR_japan.32.b
+		JAP = {
+			create_faction = security_diamond
+		}
+		JAP = {
+			add_to_faction = USA
+		}
+	}
+}
+
+country_event = {
+	id = TR_japan.33
+	title = TR_japan.33.t
+	desc = TR_japan.33.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.33.b
+		if = {
+			limit = {
+				is_in_faction_with = ENG
+			}
+			ENG = {
+				country_event = {
+					id = TR_japan.34
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_in_faction_with = USA
+			}
+			USA = {
+				country_event = {
+					id = TR_japan.34
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TR_japan.34
+	title = TR_japan.33.t
+	desc = TR_japan.33.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.34.a
+		JAP = {
+			country_event = {
+				id = TR_japan.35
+			}
+		}
+
+	}
+	option = {
+		name = TR_japan.34.b
+		JAP = {
+			country_event = {
+				id = TR_japan.36
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+	is_triggered_only = yes
+	id = TR_japan.35
+	title = TR_japan.35.t
+	desc = TR_japan.35.d
+	option = {
+		name = TR_japan.35.a
+		add_ideas = JAP_Convention_on_the_Elimination_of_All_Forms_of_Racial_Discrimination
+	}
+}
+
+country_event = {
+	is_triggered_only = yes
+	id = TR_japan.36
+	title = TR_japan.36.t
+	desc = TR_japan.36.d
+	option = {
+		name = TR_japan.36.a
 	}
 }

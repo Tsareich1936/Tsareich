@@ -411,7 +411,6 @@ ideas = {
 			modifier = {
 				air_ace_generation_chance_factor = -0.3
 				enemy_army_bonus_air_superiority_factor = 0.3
-				experience_gain_air = -0.3
 				experience_gain_air_factor = 0.3
 			}
 		}
@@ -425,7 +424,6 @@ ideas = {
 			modifier = {
 				air_ace_generation_chance_factor = -0.2
 				enemy_army_bonus_air_superiority_factor = 0.2
-				experience_gain_air = -0.2
 				experience_gain_air_factor = 0.2
 			}
 		}
@@ -439,7 +437,6 @@ ideas = {
 			modifier = {
 				air_ace_generation_chance_factor = -0.1
 				enemy_army_bonus_air_superiority_factor = 0.1
-				experience_gain_air = -0.1
 				experience_gain_air_factor = 0.1
 			}
 		}
@@ -741,6 +738,56 @@ ideas = {
 				navy_capital_ship_attack_factor = 0.1
 				naval_speed_factor = 0.1
 			}			
+		}
+
+		JAP_logistical_support = {
+			allowed = {
+				always = NO
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.1
+				global_building_slots_factor = 0.1
+				industry_air_damage_factor = 0.2
+				industry_repair_factor = -0.2
+				conscription_factor = -0.03
+			}
+		}
+
+		JAP_massive_troops = {
+			allowed = {
+				always = No
+			}
+			removal_cost = -1
+			modifier = {
+				training_time_factor = -0.2
+				supply_consumption_factor = -0.2
+			}
+		}
+
+		JAP_lessons = {
+			allowed = {
+				always = No
+			}
+			removal_cost = -1
+			modifier = {
+				experience_gain_army = 1.0
+				experience_gain_navy = 1.0
+				experience_gain_air = 1.0
+			}
+		}
+
+		JAP_Convention_on_the_Elimination_of_All_Forms_of_Racial_Discrimination = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				political_power_factor = 1.0
+			}
 		}
 	}
 }

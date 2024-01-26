@@ -76,7 +76,7 @@ on_actions = {
 		effect = {
 			JAP = {
 				country_event = {
-					id = TR_japan.12
+					id = TR_japan.27
 					days = 56
 				}
 			}

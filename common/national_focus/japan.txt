@@ -896,7 +896,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            remove_ideas = JAP_NAVY
+            remove_ideas = JAP_NAVY_2
         }
     }
 
@@ -1394,7 +1394,7 @@ focus_tree = {
        
         completion_reward = {
             country_event = {
-                id = TR_japan27
+                id = TR_japan.30
             }
         }
 
@@ -1475,7 +1475,10 @@ focus_tree = {
         y = 0
         cost = 1
         completion_reward = {
-            # country_event = TR.japan.2         ###############
+             country_event = {
+                id = TR_japan.31
+             }
+    
         }
     }
 
@@ -1511,7 +1514,9 @@ focus_tree = {
             focus = jap_japan-usa
         }
         completion_reward = {
-            
+            ENG = {
+                add_to_faction = JAP
+            }
         }
     }
 
@@ -1528,7 +1533,9 @@ focus_tree = {
             focus = jap_cooperation
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.32
+            }
         }
     }
 
@@ -1538,6 +1545,9 @@ focus_tree = {
         x = 0
         y = 1
         cost = 10
+        available = {
+            is_in_faction = yes
+        }
         mutually_exclusive = {
             focus = jap_massive_troops
         }
@@ -1547,7 +1557,7 @@ focus_tree = {
             focus = jap_japan-usa
         }
         completion_reward = {
-            
+            add_ideas = JAP_logistical_support
         }
 
     }
@@ -1558,6 +1568,9 @@ focus_tree = {
         x = 4
         y = 0
         cost = 10
+        available = {
+            is_in_faction = yes
+        }
         mutually_exclusive = {
             focus = jap_Logistical_support
         }
@@ -1566,7 +1579,7 @@ focus_tree = {
             focus = jap_japan-usa
         }
         completion_reward = {
-            
+            add_ideas = JAP_massive_troops
         }
     }
 
@@ -1576,12 +1589,15 @@ focus_tree = {
         x = 0
         y = 3
         cost = 10
+        available = {
+            is_in_faction = yes
+        }
         prerequisite = {
             focus = jap_Logistical_support
             focus = jap_massive_troops
         }
         completion_reward = {
-            
+            add_ideas = JAP_lessons
         }
 
     }
@@ -1592,11 +1608,16 @@ focus_tree = {
         x = 0
         y = 1
         cost = 10
+        available = {
+            is_in_faction = yes
+        }
         prerequisite = {
             focus = jap_War_lessons_from_our_allies
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.33
+            }
         }
     }
 
@@ -1629,7 +1650,8 @@ focus_tree = {
             focus = jap_unyielding
         }
         completion_reward = {
-            
+            set_rule = { can_create_factions = yes }
+			create_faction = JAP_greater_east_asian_co_prosperity_sphere
         }
     }
 
@@ -1881,4 +1903,4 @@ focus_tree = {
             
         }
     }
-}
+} 
