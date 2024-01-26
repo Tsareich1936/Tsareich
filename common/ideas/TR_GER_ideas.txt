@@ -147,5 +147,65 @@ ideas = {
 				conscription_factor = -0.25
 			}
 		}
+		GER_socialist_economy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = "generic_infantry_equipment_manufacturer_2"
+			modifier = {
+				political_power_factor = 0.5
+			}
+		}
+		GER_socialist_economy_right = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = "generic_infantry_equipment_manufacturer_2"
+			modifier = {
+				political_power_factor = 0.5
+			}
+		}
+		GER_socialist_economy_right2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = "generic_infantry_equipment_manufacturer_2"
+			modifier = {
+				political_power_factor = 0.5
+			}
+		}
+		GER_socialist_economy_left = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = "generic_infantry_equipment_manufacturer_2"
+			modifier = {
+				political_power_factor = 0.5
+			}
+		}
+		GER_socialist_economy_left2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = "generic_infantry_equipment_manufacturer_2"
+			modifier = {
+				political_power_factor = 0.5
+			}
+		}
+		GER_new_socialism_economy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = "generic_infantry_equipment_manufacturer_2"
+			modifier = {
+				political_power_factor = 0.5
+			}
+		}
 	}	
 }
