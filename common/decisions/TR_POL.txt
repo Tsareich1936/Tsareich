@@ -1,4 +1,14 @@
 TR_POL_resistance = {
+	# TR_POL_go_to_resistance = {
+	# 	highlight_states = {
+	# 		highlight_states_trigger = {
+	# 			has_state_flag = TR_POL_avaiabled_resist
+	# 		}
+	# 	}
+	# 	custom_cost_trigger = {
+			
+	# 	}	
+	# }
 	TR_POL_resistance1 = {
 		state_target = yes
 		priority = 999
@@ -16,7 +26,11 @@ TR_POL_resistance = {
 				}
 			}
 		}
-		# target_array = POL_core
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = TR_POL_avaiabled_resist
+			}
+		}
 		target_trigger = {
 			FROM = {
 				OR = {
@@ -88,6 +102,12 @@ TR_POL_resistance = {
 				has_global_flag = TR_poland_recognized_flag
 			}
 		}
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = TR_POL_avaiabled_resist
+			}
+			highlight_color_before_active = 0
+		}
 		# target_array = POL_core
 		target_trigger = {
 			FROM = {
@@ -153,8 +173,8 @@ TR_POL_resistance = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = "蜂起へとつながるすべての手を取ることでこの決断は可能になるだろう。"
-				has_country_flag = TR_POL_start_resistance
-				has_country_flag = TR_POL_start_coup
+				# has_country_flag = TR_POL_start_resistance
+				# has_country_flag = TR_POL_start_coup
 			}
 		}
 		visible = {
@@ -200,9 +220,63 @@ TR_POL_resistance = {
 				}
 				transfer_state_to = POL
 			}
+			division_template = {
+				name = "chłopska partyzantka"
+				regiments = {
+					guellira = { x = 0 y = 0  }
+					guellira = { x = 0 y = 1  }
+					guellira = { x = 0 y = 2  }
+					guellira = { x = 0 y = 3  }
+					guellira = { x = 1 y = 0  }
+					guellira = { x = 1 y = 1  }
+					guellira = { x = 1 y = 2  }
+					guellira = { x = 1 y = 3  }
+					guellira = { x = 2 y = 0  }
+					guellira = { x = 2 y = 1  }
+					guellira = { x = 2 y = 2  }
+					guellira = { x = 2 y = 3  }
+				}
+			}
+			POL = {
+				# set_technology = {
+				# 	guellira_infantry = 1
+				# }
+			}
+			load_oob = POL_coup
 		}
 	}
-	TR_POL_spread_the_movement = {
-		
+	TR_POL_spread_the_movement1 = {
+		visible = {
+			72 = {
+				has_state_flag = TR_POL_resisting
+			}
+			88 = {
+				has_state_flag = TR_POL_resisting
+			}
+			90 = {
+				has_state_flag = TR_POL_resisting
+			}
+			92 = {
+				has_state_flag = TR_POL_resisting
+			}
+			762 = {
+				has_state_flag = TR_POL_resisting
+			}
+			NOT = {
+				has_country_flag = TR_POL_spread_the_movement1
+			}
+		}
+		complete_effect = {
+			set_country_flag = TR_POL_spread_the_movement1
+			10 = {
+				set_state_flag = TR_POL_avaiabled_resist
+			}
+			87 = {
+				set_state_flag = TR_POL_avaiabled_resist
+			}
+			98 = {
+				set_state_flag = TR_POL_avaiabled_resist
+			}
+		}
 	}
 }

@@ -1,0 +1,27 @@
+units = {
+	division = {
+		location = 9427
+		division_template = "chłopska partyzantka"
+		start_experience_factor = 0.8
+	}
+	division = {
+		location = 9427
+		division_template = "chłopska partyzantka"
+		start_experience_factor = 0.8
+	}
+	division = {
+		location = 9427
+		division_template = "chłopska partyzantka"
+		start_experience_factor = 0.8
+	}
+	division = {
+		location = 9427
+		division_template = "chłopska partyzantka"
+		start_experience_factor = 0.8
+	}
+	division = {
+		location = 9427
+		division_template = "chłopska partyzantka"
+		start_experience_factor = 0.8
+	}
+}
