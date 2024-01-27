@@ -436,11 +436,11 @@ ideas = {
 
                 ship_hull_light = {
 					instant = yes
-					build_cost_ic = -0.2
+					build_cost_ic = -0.15
 				}
                 ship_hull_cruiser = {
 					instant = yes
-					build_cost_ic = -0.2
+					build_cost_ic = -0.15
 				}
             }	
             modifier = {
@@ -471,7 +471,7 @@ ideas = {
             equipment_bonus = {
                 medium_tank_chassis = {
 					instant = yes
-					build_cost_ic = -0.25
+					build_cost_ic = -0.1
                     maximum_speed = 0.05
 				}
             }
@@ -495,7 +495,7 @@ ideas = {
             equipment_bonus = {
                 medium_plane_fighter_airframe = {
 					instant = yes
-					build_cost_ic = -0.35
+					build_cost_ic = -0.25
 				}
             }
         }
