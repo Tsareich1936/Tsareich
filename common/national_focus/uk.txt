@@ -25,7 +25,7 @@ focus_tree = {
 				focus = TR_ENG_a_change_in_course
 			}
 			cost = 5
-			x = 33
+			x = 38
 			y = 0
 			completion_reward = {
 		
@@ -867,6 +867,368 @@ focus_tree = {
 					
 						}
 					}
+		# defence
+			focus = {
+				id = TR_ENG_building_defence_networks
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_focus_on_defence
+				}
+				x = -8
+				y = 3
+				relative_position_id = TR_ENG_prepare_for_war
+				completion_reward = {
+			
+				}
+			}
+			# buildings
+				focus = {
+					id = TR_ENG_air_defense_focus
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_building_defence_networks
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_ENG_building_defence_networks
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_defence_assistance_to_opposite_shore
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_air_defense_focus
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_air_defense_focus
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_fortification_in_ally
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_defence_assistance_to_opposite_shore
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_defence_assistance_to_opposite_shore
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_focus_on_flak
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_air_defense_focus
+					}
+					x = -1
+					y = 1
+					relative_position_id = TR_ENG_air_defense_focus
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_reinforced_flak
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_focus_on_flak
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_focus_on_flak
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_flak_in_ally
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_reinforced_flak
+					}
+					prerequisite = {
+						focus = TR_ENG_fortification_in_ally
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_reinforced_flak
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_radar
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_air_defense_focus
+					}
+					x = 1
+					y = 1
+					relative_position_id = TR_ENG_air_defense_focus
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_reinforced_radar
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_radar
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_radar
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_radar_in_ally
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_reinforced_radar
+					}
+					prerequisite = {
+						focus = TR_ENG_fortification_in_ally
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_reinforced_radar
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_protect_everything
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_the_ultimate_weapon
+					}
+					prerequisite = {
+						focus = TR_ENG_flak_in_ally
+					}
+					prerequisite = {
+						focus = TR_ENG_radar_in_ally
+					}
+					prerequisite = {
+						focus = TR_ENG_absolute_defense_sphere
+					}
+					x = 0
+					y = 3
+					relative_position_id = TR_ENG_fortification_in_ally
+					completion_reward = {
+				
+					}
+				}
+			# nuclear
+				focus = {
+					id = TR_ENG_secret_weapon_development
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_building_defence_networks
+					}
+					x = -3
+					y = 1
+					relative_position_id = TR_ENG_building_defence_networks
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_cooperation_USA
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_secret_weapon_development
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_ENG_secret_weapon_development
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_uranium_mining
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_cooperation_USA
+					}
+					x = -1
+					y = 3
+					relative_position_id = TR_ENG_cooperation_USA
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_construction_of_reactors
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_cooperation_USA
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_cooperation_USA
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_securing_research_staff
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_cooperation_USA
+					}
+					x = 1
+					y = 3
+					relative_position_id = TR_ENG_cooperation_USA
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_sahara_experiments
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_construction_of_reactors
+					}
+					prerequisite = {
+						focus = TR_ENG_uranium_mining
+					}
+					prerequisite = {
+						focus = TR_ENG_securing_research_staff
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_construction_of_reactors
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_the_ultimate_weapon
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_sahara_experiments
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_ENG_sahara_experiments
+					completion_reward = {
+					}
+				}
+			# Home Island
+				focus = {
+					id = TR_ENG_maritime_fort
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_building_defence_networks
+					}
+					x = 3
+					y = 1
+					relative_position_id = TR_ENG_building_defence_networks
+					completion_reward = {
+					}
+				}
+				focus = {
+					id = TR_ENG_prevention_of_landing
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_maritime_fort
+					}
+					x = -1
+					y = 2
+					relative_position_id = TR_ENG_maritime_fort
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_reinforced_maritime_fort
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_prevention_of_landing
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_prevention_of_landing
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_fort_of_england
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_maritime_fort
+					}
+					x = 1
+					y = 2
+					relative_position_id = TR_ENG_maritime_fort
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_fort_of_scotland
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_fort_of_england
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_fort_of_england
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_absolute_defense_sphere 
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_reinforced_maritime_fort
+					}
+					prerequisite = {
+						focus = TR_ENG_fort_of_scotland
+					}
+					x = 0
+					y = 6
+					relative_position_id = TR_ENG_maritime_fort
+					completion_reward = {
+				
+					}
+				}
 	### unhistorical route ###
 		focus = {
 			id = TR_ENG_a_change_in_course
