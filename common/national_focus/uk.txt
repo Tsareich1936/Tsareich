@@ -563,9 +563,6 @@ focus_tree = {
 				prerequisite = {
 					focus = TR_ENG_focus_on_attack
 				}
-				prerequisite = {
-					focus = TR_ENG_focus_on_defence
-				}
 				x = 8
 				y = 3
 				relative_position_id = TR_ENG_prepare_for_war
