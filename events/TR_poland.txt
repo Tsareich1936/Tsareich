@@ -1,0 +1,19 @@
+add_namespace = TR_poland
+country_event = {
+	id = TR_poland.1
+	title = TR_poland.1.t
+	desc = TR_poland.1.d
+	is_triggered_only = yes
+	
+
+	immediate = {
+		every_state = {
+			limit = {
+				is_core_of = POL
+				is_controlled_by = RUS
+				resistance >80
+			}
+			transfer_state_to = POL
+		}
+	}
+} 

@@ -293,7 +293,7 @@ recruit_character = JAP_chikuhei_nakajima
 recruit_character = JAP_osachi_hamaguchi
 recruit_character = JAP_chuji_machida
 recruit_character = JAP_iso_abe
-
+recruit_character = JAP_Korekiyo_Takahashi
 
 if = {
 	limit = {

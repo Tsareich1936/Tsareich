@@ -23,7 +23,6 @@ focus_tree = {
         completion_reward = {
             country_event = {
                 id = TR_japan.1
-                days = 1
             }
         }  
 
@@ -132,6 +131,7 @@ focus_tree = {
         }
         completion_reward = {
             add_ideas = JAP_Long_live_the_liberal_economy
+            add_research_slot = 1
         }
 
     }
@@ -390,6 +390,7 @@ focus_tree = {
         }
         completion_reward = {
             add_ideas = JAP_Keynesian_Studies_in_Practice
+            add_research_slot = 1
         }
     }
 
@@ -407,7 +408,7 @@ focus_tree = {
         }
     }
 
-    focus = {                       ###############################################
+    focus = {                       
         id = jap_extensive_transportation_network
         relative_position_id = jap_decentralization_of_power
         x = 0
@@ -450,7 +451,7 @@ focus_tree = {
         }
     }
 
-    focus = {                                                          ##################################### 
+    focus = {                                                       
         id = jap_Royal_Center_Definition
         relative_position_id = jap_Rikken_Seiyukai
         x = -2
@@ -463,7 +464,10 @@ focus_tree = {
             
         }
         completion_reward = {
-            country_event = TR_japan.3
+            country_event = {
+                id = TR_japan.3
+                days = 1
+            }
         }
     }
 
@@ -590,6 +594,7 @@ focus_tree = {
         }
         completion_reward = {
             add_ideas = JAP_Japanese_style_socialism
+            add_research_slot = 1
         }
     }
 
@@ -835,7 +840,9 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.19
+            }
         }
     }
 
@@ -849,7 +856,10 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = JAP_NAVY
+                add_idea = JAP_NAVY_1
+            }
         }
     }
 
@@ -866,7 +876,10 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = JAP_NAVY_1
+                add_idea = JAP_NAVY_2
+            }
         }
     }
 
@@ -883,7 +896,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            remove_ideas = JAP_NAVY_2
         }
     }
 
@@ -897,7 +910,9 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.20
+            }
         }
     }
 
@@ -914,7 +929,9 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.21
+            }
         }
     }
 
@@ -931,7 +948,12 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_tech_bonus = {
+                name = jap_NAVY_3_3
+                uses = 1
+                bonus = 3
+                category = ss_tech
+            }
         }
     }
 
@@ -950,13 +972,15 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.22
+            }
         }
     }
 
      #　空軍ツリー
 
-     focus = {
+    focus = {
         id = jap_AIRFORCE_1_1
         x = 27
         y = 0
@@ -965,7 +989,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_ideas = JAP_AIRFORCE_3
         }
     }
 
@@ -982,8 +1006,12 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = JAP_AIRFORCE_3
+                add_idea = JAP_AIRFORCE_5
+            }
         }
+        
     }
 
     focus = {
@@ -999,7 +1027,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_ideas = JAP_AIRFORCE_4
         }
     }
 
@@ -1013,7 +1041,10 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = JAP_AIRFORCE
+                add_idea = JAP_AIRFORCE_1
+            }
         }
     }
 
@@ -1030,7 +1061,10 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = JAP_AIRFORCE_1
+                add_idea = JAP_AIRFORCE_1
+            }
         }
     }
 
@@ -1047,7 +1081,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            remove_ideas = JAP_AIRFORCE_2
         }
     }
 
@@ -1061,7 +1095,12 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_tech_bonus = {
+                name = jap_AIRFORCE_3_1
+                bonus = 2
+                uses = 2
+                category = light_air
+            }
         }
     }
 
@@ -1078,7 +1117,12 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_tech_bonus = {
+                name = jap_AIRFORCE_3_2
+                bonus = 2
+                uses = 2
+                category = medium_air
+            }
         }
     }
 
@@ -1095,7 +1139,12 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_tech_bonus = {
+                name = jap_AIRFORCE_3_3
+                bonus = 2
+                uses = 2
+                category = cat_air_engine
+            }
         }
     }
 
@@ -1114,7 +1163,9 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.22
+            }
         }
     }
 
@@ -1129,7 +1180,28 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            army_experience = 50
+            division_template = {
+                name = "Shin-Hoheishidan"
+                regiments = {
+                    infantry = {x = 0 y = 0 }
+                    infantry = {x = 0 y = 1 }
+                    infantry = {x = 0 y = 2 }
+                    infantry = {x = 0 y = 3 }
+                    infantry = {x = 1 y = 0 }
+                    infantry = {x = 1 y = 1 }
+                    infantry = {x = 1 y = 2 }
+                    infantry = {x = 1 y = 3 } 
+                    artillery = {x = 2 y = 0}
+                    artillery = {x = 2 y = 1}
+                }
+                support = {
+                    engineer = { x = 0 y = 0 }
+                    recon = { x = 0 y = 1 }
+                    artillery = { x = 0 y = 1 }
+                }
+                
+            }
         }
     }
 
@@ -1146,7 +1218,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_ideas = JAP_ARMY_3
         }
     }
 
@@ -1163,7 +1235,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_ideas = JAP_ARMY_4
         }
     }
 
@@ -1177,7 +1249,10 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = JAP_ARMY
+                add_idea = JAP_ARMY_1
+            }
         }
     }
 
@@ -1194,7 +1269,10 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = JAP_ARMY_1
+                add_idea = JAP_ARMY_2
+            }
         }
     }
 
@@ -1211,7 +1289,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            remove_ideas = JAP_ARMY_2
         }
     }
 
@@ -1225,7 +1303,12 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_tech_bonus = {
+                name = jap_ARMY_3_1
+                bonus = 2
+                uses = 2
+                category = infantry_weapons
+            }
         }
     }
 
@@ -1242,7 +1325,12 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            add_tech_bonus = {
+                name = jap_ARMY_3_2
+                bonus = 2
+                uses = 2
+                category = artillery
+            }
         }
     }
 
@@ -1258,9 +1346,14 @@ focus_tree = {
         available = {
             
         }
-        completion_reward = {
-            
-        }
+		completion_reward = {
+			add_tech_bonus = {
+				name = jap_ARMY_3_3
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
     }
 
     focus = {
@@ -1278,7 +1371,9 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.23
+            }
         }
     }
 
@@ -1298,7 +1393,9 @@ focus_tree = {
 
        
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.30
+            }
         }
 
 
@@ -1318,7 +1415,9 @@ focus_tree = {
             focus = jap_Establishment_of_the_Ministry_of_War
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.24
+            }
         }
     }
  
@@ -1336,7 +1435,9 @@ focus_tree = {
             focus = jap_ARMY
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.26
+            }
         }
         allow_branch = {
             has_country_flag = a                    
@@ -1360,7 +1461,9 @@ focus_tree = {
             focus = jap_Establishment_of_the_Ministry_of_War
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.25
+            }
         }
     }
 
@@ -1372,7 +1475,10 @@ focus_tree = {
         y = 0
         cost = 1
         completion_reward = {
-            # country_event = TR.japan.2         ###############
+             country_event = {
+                id = TR_japan.31
+             }
+    
         }
     }
 
@@ -1408,7 +1514,9 @@ focus_tree = {
             focus = jap_japan-usa
         }
         completion_reward = {
-            
+            ENG = {
+                add_to_faction = JAP
+            }
         }
     }
 
@@ -1425,7 +1533,9 @@ focus_tree = {
             focus = jap_cooperation
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.32
+            }
         }
     }
 
@@ -1435,6 +1545,9 @@ focus_tree = {
         x = 0
         y = 1
         cost = 10
+        available = {
+            is_in_faction = yes
+        }
         mutually_exclusive = {
             focus = jap_massive_troops
         }
@@ -1444,7 +1557,7 @@ focus_tree = {
             focus = jap_japan-usa
         }
         completion_reward = {
-            
+            add_ideas = JAP_logistical_support
         }
 
     }
@@ -1455,6 +1568,9 @@ focus_tree = {
         x = 4
         y = 0
         cost = 10
+        available = {
+            is_in_faction = yes
+        }
         mutually_exclusive = {
             focus = jap_Logistical_support
         }
@@ -1463,7 +1579,7 @@ focus_tree = {
             focus = jap_japan-usa
         }
         completion_reward = {
-            
+            add_ideas = JAP_massive_troops
         }
     }
 
@@ -1473,12 +1589,15 @@ focus_tree = {
         x = 0
         y = 3
         cost = 10
+        available = {
+            is_in_faction = yes
+        }
         prerequisite = {
             focus = jap_Logistical_support
             focus = jap_massive_troops
         }
         completion_reward = {
-            
+            add_ideas = JAP_lessons
         }
 
     }
@@ -1489,11 +1608,16 @@ focus_tree = {
         x = 0
         y = 1
         cost = 10
+        available = {
+            is_in_faction = yes
+        }
         prerequisite = {
             focus = jap_War_lessons_from_our_allies
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.33
+            }
         }
     }
 
@@ -1526,7 +1650,8 @@ focus_tree = {
             focus = jap_unyielding
         }
         completion_reward = {
-            
+            set_rule = { can_create_factions = yes }
+			create_faction = JAP_greater_east_asian_co_prosperity_sphere
         }
     }
 
@@ -1711,6 +1836,9 @@ focus_tree = {
         relative_position_id = jap_social_reform
         x = 0
         y = 1
+        available = {
+            has_idea = JAP_pollution
+        }
         prerequisite = {
             focus = jap_social_reform
         }
@@ -1775,4 +1903,4 @@ focus_tree = {
             
         }
     }
-}
+} 

@@ -1,0 +1,118 @@
+TR_POL_resistance = {
+	TR_POL_resistance1 = {
+		state_target = yes
+		priority = 999
+		available = {
+			tag = POL
+			always = no
+		}
+		visible = {
+			NOT = {
+				has_global_flag = TR_poland_recognized_flag
+			}
+		}
+		# target_array = POL_core
+		target_trigger = {
+			FROM = {
+				OR = {
+					is_owned_by = RUS
+					is_controlled_by = RUS
+				}
+				is_core_of = POL
+				has_resistance = yes
+			}
+		}
+		on_map_mode = map_only
+		icon = my_icon
+		cost = 30
+		ai_will_do = {
+			factor = 999
+			modifier = {
+				
+			}
+		}
+		complete_effect = {
+			FROM = {
+				add_resistance = 15
+			}
+			FROM = {
+				if = {
+					limit = {
+						FROM = {
+							AND = {
+								is_owned_by = POL
+								is_controlled_by = RUS
+							}
+							is_core_of = POL
+							has_resistance = yes
+						}
+					}
+					add_resistance = 30
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						resistance > 65
+							is_core_of = POL
+							OR = {
+								is_owned_by = RUS
+								is_controlled_by = RUS
+							}
+					}
+				}
+				FROM = {
+					set_state_owner_to = POL
+				}
+			}
+		}
+	}
+	TR_POL_coup = {
+		priority = 998
+		available = {
+			always = no
+
+		}
+		visible = {
+			NOT = {
+				has_global_flag = TR_poland_recognized_flag
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+		
+			
+				10 = {
+					resistance >50
+				}
+				72 = {
+					resistance >50
+				}
+				86 = {
+					resistance >50
+				}
+				87 = {
+					resistance >50
+				}
+				90 = {
+					resistance >50
+				}
+				92 = {
+					resistance >50
+				}
+				98 = {
+					resistance >50
+				}
+			
+			
+				factor = 999
+			}
+		}
+		complete_effect = {
+			every_owned_state = {
+				transfer_state_to = POL
+			}
+		}
+	}
+}
