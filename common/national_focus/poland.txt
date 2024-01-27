@@ -39,120 +39,205 @@ focus_tree = {
 				set_state_flag = TR_POL_avaiabled_resist
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	focus = {
 		id = TR_POL_approach_international
 		icon = GFX_
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = TR_POL_start_resistance
 		}
 		x = 1
 		y = 1
 		relative_position_id = TR_POL_start_resistance
+		available_if_capitulated = yes
 		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = SRI_international
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = SRI_international
+				}
+			}
+			SRI = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = SRI_international
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 99
 		}
 	}
 	focus = {
 		id = TR_POL_asked_support
 		icon = GFX_
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = TR_POL_approach_international
 		}
 		x = 0
 		y = 1
 		relative_position_id = TR_POL_approach_international
+		available_if_capitulated = yes
 		completion_reward = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = POL
+					}
+					is_in_faction_with = FRA
+				}
+				country_event = TR_poland.3
+			}
+		}
+		ai_will_do = {
+			factor = 97
 		}
 	}
 	focus = {
 		id = TR_POL_collect_weapons
 		icon = GFX_
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = TR_POL_asked_support
 		}
 		x = 0
 		y = 1
 		relative_position_id = TR_POL_asked_support
+		available_if_capitulated = yes
 		completion_reward = {
-	
+			every_country = {
+				limit = {
+					is_in_faction_with = FRA
+				}
+				send_equipment = {
+					type = infantry_equipment
+					amount = 1500
+					target = POL
+				}
+			}
 		}
 	}
 	focus = {#ポーランド農民共和国
 		id = TR_POL_PRP
 		icon = GFX_
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = TR_POL_collect_weapons
 		}
 		x = 0
 		y = 1
 		relative_position_id = TR_POL_collect_weapons
+		available_if_capitulated = yes
 		completion_reward = {
-	
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = POL
 		}
 	}
 	focus = {
 		id = TR_POL_call_in_volunteer
 		icon = GFX_
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = TR_POL_start_resistance
 		}
 		x = -1
 		y = 1
 		relative_position_id = TR_POL_start_resistance
+		available_if_capitulated = yes
 		completion_reward = {
-	
+			add_ideas = TR_POL_call_in_volunteer
+			add_manpower = 1000
+		}
+		ai_will_do = {
+			factor = 98
 		}
 	}
 	focus = {
 		id = TR_POL_start_guerrilla
 		icon = GFX_
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = TR_POL_call_in_volunteer
 		}
 		x = 0
 		y = 1
 		relative_position_id = TR_POL_call_in_volunteer
+		available_if_capitulated = yes
 		completion_reward = {
-
+			set_technology = {
+				guellira_infantry = 1
+			}
+		}
+		ai_will_do = {
+			factor = 96
 		}
 	}
 	focus = {
 		id = TR_POL_training_guerrilla
 		icon = GFX_
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = TR_POL_start_guerrilla
 		}
 		x = 0
 		y = 1
 		relative_position_id = TR_POL_start_guerrilla
+		available_if_capitulated = yes
 		completion_reward = {
-	
+			10 = {
+				create_unit = {
+					division = "name = \"chłopska partyzantka\" division_template = \" chłopska partyzantka \" start_experience_factor = 0.9" 
+					owner = POL
+				}
+				create_unit = {
+					division = "name = \"chłopska partyzantka\" division_template = \" chłopska partyzantka \" start_experience_factor = 0.9" 
+					owner = POL
+				}
+				create_unit = {
+					division = "name = \"chłopska partyzantka\" division_template = \" chłopska partyzantka \" start_experience_factor = 0.9" 
+					owner = POL
+				}
+				create_unit = {
+					division = "name = \"chłopska partyzantka\" division_template = \" chłopska partyzantka \" start_experience_factor = 0.9" 
+					owner = POL
+				}
+				create_unit = {
+					division = "name = \"chłopska partyzantka\" division_template = \" chłopska partyzantka \" start_experience_factor = 0.9" 
+					owner = POL
+				}
+			}
 		}
 	}
 	focus = {
 		id = TR_POL_inciting_peasantry
 		icon = GFX_
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = TR_POL_training_guerrilla
 		}
 		x = 0
 		y = 1
 		relative_position_id = TR_POL_training_guerrilla
+		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = TR_war_of_liberation
 		}
 	}
 	focus = {
 		id = TR_POL_coup
 		icon = GFX_
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = TR_POL_inciting_peasantry
 		}
@@ -162,7 +247,9 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = TR_POL_start_resistance
+		available_if_capitulated = yes
 		completion_reward = {
+			unlock_decision_tooltip = TR_POL_coup
 			set_country_flag = TR_POL_start_coup
 		}
 	}

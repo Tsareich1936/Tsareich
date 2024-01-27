@@ -1,0 +1,11 @@
+﻿l_japanese:
+ TR_poland.3.t: "[POL.GetName]からの支援要請"
+ TR_poland.3.d: "[RUS.GetName]からの独立を狙う[POL.GetName]は我々に対して支援を要請している。"
+ TR_poland.3.a: "これはいい機会だ"
+ TR_poland.3.b: "奴らにそんなことができるのか？"
+ TR_poland.4.t: "[FROM.GetName]が支援を決定"
+ TR_poland.4.d: "[FROM.GetName]は我々の支援要請を了承した。これは共和国独立にとって大きな一歩である。"
+ TR_poland.4.a: "ありがたい"
+ TR_poland.5.t: "[FROM.GetName]が支援を拒絶"
+ TR_poland.5.d: "[FROM.GetName]は我々の支援要請を拒絶した。これは全世界の抑圧される農民、労働者の意思を踏みにじる非道な行いだ。"
+ TR_poland.5.a: "奴らは何もわかっちゃいない"

@@ -35,6 +35,12 @@
 		type = independence_wargoal
 	}
 	set_cosmetic_tag = POL_KPU
+	create_intelligence_agency = yes
+	upgrade_intelligence_agency = upgrade_economy_civilian
+	upgrade_intelligence_agency = upgrade_army_department
+	upgrade_intelligence_agency = upgrade_commando_training
+	upgrade_intelligence_agency = upgrade_invisible_ink
+	upgrade_intelligence_agency = upgrade_diplo_training
 }
 set_research_slots = 3
 
@@ -91,24 +97,21 @@ if = {
 		basic_depth_charges = 1
 	}
 }
-if = {
-	limit = { has_dlc = "No Step Back" }
-	set_variable = {
-		var = pol_peasant_democracy
-		value = 30
-	}
-	set_variable = {
-		var = pol_peasant_communism
-		value = 30
-	}
-}
-
 
 85 = {
 	add_dynamic_modifier = { modifier = international_city }
 }
 
 set_convoys = 10
+add_ideas = {
+	TR_POL_support_for_presants
+	TR_POL_willingness_to_go_indepent
+	TR_POL_low_legitimacy
+	TR_POL_repression_by_Russia
+}
+
+set_stability = 0.3
+set_war_support = 0.66
 
 set_politics = {
 	ruling_party = socialdemocratic

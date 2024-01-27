@@ -24,13 +24,13 @@ sub_units = {
 		
 		combat_width = 0.5
 		
-		soft_attack = 25
+		soft_attack = 4
 		hard_attack = 10
 		defence = 25
 		air_attack = 200
 		#Size Definitions
-		max_strength = 120
-		max_organisation = 120
+		max_strength = 140
+		max_organisation = 140
 		default_morale = 0.8
 		manpower = 100
 	
@@ -43,7 +43,7 @@ sub_units = {
 		breakthrough = 0
 	
 		need = {
-			infantry_equipment = -10
+			infantry_equipment = 10
 		}
 	
 		hills = {

@@ -2,7 +2,7 @@ TR_POL_resistance = {
 	allowed = {
 		tag = POL
 	}
-	priority = 1
+	priority = 999
 	icon = icon
 	visible_when_empty = yes
 	visible = {
