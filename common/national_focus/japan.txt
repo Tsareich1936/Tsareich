@@ -20,6 +20,7 @@ focus_tree = {
         available = {
             
         }
+        cancelable = no
         completion_reward = {
             country_event = {
                 id = TR_japan.1
@@ -694,7 +695,7 @@ focus_tree = {
                 active = yes
             }
             diplomatic_relation = {
-                country = ITA
+                country = SRI
                 relation = non_aggression_pact
                 active = yes
             }
@@ -1394,7 +1395,9 @@ focus_tree = {
        
         completion_reward = {
             country_event = {
-                id = TR_japan.30
+                id = TR_japan.40
+                days = 7
+                
             }
         }
 
@@ -1515,7 +1518,10 @@ focus_tree = {
         }
         completion_reward = {
             ENG = {
-                add_to_faction = JAP
+                country_event = {
+                    id = TR_japan.37
+                    days = 7
+                }
             }
         }
     }
@@ -1665,7 +1671,21 @@ focus_tree = {
             focus = jap_Greater_East_Asian_Co-prosperity_Sphere_concept
         }
         completion_reward = {
-            
+            KOR = {
+                country_event = {
+                    id = TR_japan.39
+                }
+            }
+            MAN = {
+                country_event = {
+                    id = TR_japan.47
+                }
+            }
+            SIA = {
+                country_event = {
+                    id = TR_japan.39
+                }
+            }
         }
         mutually_exclusive = {
             focus = jap_Create_allies
@@ -1685,7 +1705,21 @@ focus_tree = {
             focus = jap_Find_an_ally
         }
         completion_reward = {
-            
+            KOR = {
+                country_event = {
+                    id = TR_japan.50
+                }
+            }
+            MAN = {
+                country_event = {
+                    id = TR_japan.50
+                }
+            }
+            SIA = {
+                country_event = {
+                    id = TR_japan.50
+                }
+            }
         }
     }
 
@@ -1699,7 +1733,9 @@ focus_tree = {
             focus = jap_Find_an_ally
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.41
+            }
         }
     }
 
@@ -1713,7 +1749,18 @@ focus_tree = {
             focus = jap_Create_allies
         }
         completion_reward = {
-            
+            activate_targeted_decision = {
+                target = JAP
+                decision = FOR_WAR_1
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = FOR_WAR_2
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = FOR_WAR_3
+            }
         }
     }
 
@@ -1723,12 +1770,62 @@ focus_tree = {
         x = 0
         y = 3
         cost = 10
+        available = {
+            if = {
+                limit = {
+                    has_completed_focus = jap_Create_allies
+                }
+                always = no
+            }
+            
+        }
         prerequisite = {
             focus = jap_Holding_of_the_Greater_East_Asia_Conference
             focus = jap_war_plan
         }
         completion_reward = {
-            
+            if = {
+                limit = {
+                    has_completed_focus = jap_Find_an_ally
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_ENG
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_USA
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_FGE
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_HOL
+                }
+            }
+            if = {
+                limit = {
+                    has_completed_focus = jap_Create_allies
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_ENG.1
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_USA.1
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_FGE.1
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_HOL.1
+                }
+            }
         }
     }
 
