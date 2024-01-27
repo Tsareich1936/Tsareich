@@ -13,6 +13,10 @@ focus_tree = {
 	initial_show_position = {
 		focus = TR_ENG_steady_as_she_goes
 	}
+	continuous_focus_position = {
+		x = 500
+		y = 2500
+	}
 	### historical route ###
 		focus = {
 			id = TR_ENG_steady_as_she_goes
@@ -21,7 +25,7 @@ focus_tree = {
 				focus = TR_ENG_a_change_in_course
 			}
 			cost = 5
-			x = 30
+			x = 33
 			y = 0
 			completion_reward = {
 		
@@ -367,190 +371,502 @@ focus_tree = {
 				}
 			}
 		## army and industrial
-		focus = {
-			id = TR_ENG_prepare_for_war
-			icon = GFX_
-			cost = 5
-			prerequisite = {
-				focus = TR_ENG_steady_as_she_goes
+			focus = {
+				id = TR_ENG_prepare_for_war
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_steady_as_she_goes
+				}
+				x = -25
+				y = 1
+				relative_position_id = TR_ENG_steady_as_she_goes
+				completion_reward = {
+			
+				}
 			}
-			x = -20
-			y = 1
-			relative_position_id = TR_ENG_steady_as_she_goes
-			completion_reward = {
-		
+			focus = {
+				id = TR_ENG_focus_on_defence
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_prepare_for_war
+				}
+				x = -1
+				y = 2
+				relative_position_id = TR_ENG_prepare_for_war
+				completion_reward = {
+			
+				}
 			}
-		}
-		focus = {
-			id = TR_ENG_focus_on_defence
-			icon = GFX_
-			cost = 5
-			prerequisite = {
-				focus = TR_ENG_prepare_for_war
+			focus = {
+				id = TR_ENG_focus_on_attack
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_prepare_for_war
+				}
+				x = 1
+				y = 2
+				relative_position_id = TR_ENG_prepare_for_war
+				completion_reward = {
+			
+				}
 			}
-			x = -1
-			y = 2
-			relative_position_id = TR_ENG_prepare_for_war
-			completion_reward = {
-		
-			}
-		}
-		focus = {
-			id = TR_ENG_focus_on_attack
-			icon = GFX_
-			cost = 5
-			prerequisite = {
-				focus = TR_ENG_prepare_for_war
-			}
-			x = 1
-			y = 2
-			relative_position_id = TR_ENG_prepare_for_war
-			completion_reward = {
-		
-			}
-		}
 		# industry
-		focus = {
-			id = TR_ENG_shadow_scheme
-			icon = GFX_
-			cost = 5
-			prerequisite = {
-				focus = TR_ENG_focus_on_attack
-				focus = TR_ENG_focus_on_defence
+			focus = {
+				id = TR_ENG_shadow_scheme
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_focus_on_attack
+					focus = TR_ENG_focus_on_defence
+				}
+				x = 0
+				y = 4
+				relative_position_id = TR_ENG_prepare_for_war
+				completion_reward = {
+			
+				}
 			}
-			x = 0
-			y = 4
-			relative_position_id = TR_ENG_prepare_for_war
-			completion_reward = {
-		
+			focus = {
+				id = TR_ENG_additional_research_slot
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_shadow_scheme
+				}
+				x = 0
+				y = 1
+				relative_position_id = TR_ENG_shadow_scheme
+				completion_reward = {
+			
+				}
 			}
-		}
-		focus = {
-			id = TR_ENG_additional_research_slot
-			icon = GFX_
-			cost = 5
-			prerequisite = {
-				focus = TR_ENG_shadow_scheme
+			focus = {
+				id = TR_ENG_war_economy
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_additional_research_slot
+				}
+				x = 0
+				y = 2
+				relative_position_id = TR_ENG_additional_research_slot
+				completion_reward = {
+			
+				}
 			}
-			x = 0
-			y = 1
-			relative_position_id = TR_ENG_shadow_scheme
-			completion_reward = {
-		
+			focus = {
+				id = TR_ENG_general_mobilisation
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_war_economy
+				}
+				x = 0
+				y = 2
+				relative_position_id = TR_ENG_war_economy
+				completion_reward = {
+			
+				}
 			}
-		}
-		focus = {
-			id = TR_ENG_war_economy
-			icon = GFX_
-			cost = 5
-			prerequisite = {
-				focus = TR_ENG_additional_research_slot
+			focus = {
+				id = TR_ENG_royal_ordinance
+				icon = GFX_royal_ordinance
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_shadow_scheme
+				}
+				x = -2
+				y = 2
+				relative_position_id = TR_ENG_shadow_scheme
+				completion_reward = {
+			
+				}
 			}
-			x = 0
-			y = 2
-			relative_position_id = TR_ENG_additional_research_slot
-			completion_reward = {
-		
+			focus = {
+				id = TR_ENG_focus_on_industry
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_royal_ordinance
+				}
+				x = 0
+				y = 1
+				relative_position_id = TR_ENG_royal_ordinance
+				completion_reward = {
+			
+				}
 			}
-		}
-		focus = {
-			id = TR_ENG_general_mobilisation
-			icon = GFX_
-			cost = 5
-			prerequisite = {
-				focus = TR_ENG_war_economy
+			focus = {
+				id = TR_ENG_focus_on_shipbuilding
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_focus_on_industry
+				}
+				x = 0
+				y = 1
+				relative_position_id = TR_ENG_focus_on_industry
+				completion_reward = {
+			
+				}
 			}
-			x = 0
-			y = 2
-			relative_position_id = TR_ENG_war_economy
-			completion_reward = {
-		
+			focus = {
+				id = TR_ENG_military_expansion
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_shadow_scheme
+				}
+				x = 2
+				y = 2
+				relative_position_id = TR_ENG_shadow_scheme
+				completion_reward = {
+			
+				}
 			}
-		}
-		focus = {
-			id = TR_ENG_royal_ordinance
-			icon = GFX_royal_ordinance
-			cost = 5
-			prerequisite = {
-				focus = TR_ENG_shadow_scheme
+			focus = {
+				id = TR_ENG_small_arms
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_military_expansion
+				}
+				x = 0
+				y = 1
+				relative_position_id = TR_ENG_military_expansion
+				completion_reward = {
+			
+				}
 			}
-			x = -2
-			y = 2
-			relative_position_id = TR_ENG_shadow_scheme
-			completion_reward = {
-		
+			focus = {
+				id = TR_ENG_focus_on_aircraft
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_small_arms
+				}
+				x = 0
+				y = 1
+				relative_position_id = TR_ENG_small_arms
+				completion_reward = {
+			
+				}
 			}
-		}
-		focus = {
-			id = TR_ENG_focus_on_industry
-			icon = GFX_
-			cost = 5
-			prerequisite = {
-				focus = TR_ENG_royal_ordinance
+		# army
+			focus = {
+				id = TR_ENG_full_scale_military_expansion
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_focus_on_attack
+				}
+				prerequisite = {
+					focus = TR_ENG_focus_on_defence
+				}
+				x = 8
+				y = 3
+				relative_position_id = TR_ENG_prepare_for_war
+				completion_reward = {
+			
+				}
 			}
-			x = 0
-			y = 1
-			relative_position_id = TR_ENG_royal_ordinance
-			completion_reward = {
-		
-			}
-		}
-		focus = {
-			id = TR_ENG_focus_on_shipbuilding
-			icon = GFX_
-			cost = 5
-			prerequisite = {
-				focus = TR_ENG_focus_on_industry
-			}
-			x = 0
-			y = 1
-			relative_position_id = TR_ENG_focus_on_industry
-			completion_reward = {
-		
-			}
-		}
-		focus = {
-			id = TR_ENG_military_expansion
-			icon = GFX_
-			cost = 5
-			prerequisite = {
-				focus = TR_ENG_shadow_scheme
-			}
-			x = 2
-			y = 2
-			relative_position_id = TR_ENG_shadow_scheme
-			completion_reward = {
-		
-			}
-		}
-		focus = {
-			id = TR_ENG_small_arms
-			icon = GFX_
-			cost = 5
-			prerequisite = {
-				focus = TR_ENG_military_expansion
-			}
-			x = 0
-			y = 1
-			relative_position_id = TR_ENG_military_expansion
-			completion_reward = {
-		
-			}
-		}
-		focus = {
-			id = TR_ENG_focus_on_aircraft
-			icon = GFX_
-			cost = 5
-			prerequisite = {
-				focus = TR_ENG_small_arms
-			}
-			x = 0
-			y = 1
-			relative_position_id = TR_ENG_small_arms
-			completion_reward = {
-		
-			}
-		}
+			# land
+				focus = {
+					id = TR_ENG_motorized_focus
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_full_scale_military_expansion
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_full_scale_military_expansion
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_tank_focus
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_motorized_focus
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_ENG_motorized_focus
+					completion_reward = {
+				
+					}
+				}
+			# air force
+				focus = {
+					id = TR_ENG_air_military_expansion_focus
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_full_scale_military_expansion
+					}
+					x = -3
+					y = 2
+					relative_position_id = TR_ENG_full_scale_military_expansion
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_bomber_command_focus
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_air_military_expansion_focus
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_ENG_air_military_expansion_focus
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_fighter_command_focus
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_air_military_expansion_focus
+					}
+					x = -1
+					y = 2
+					relative_position_id = TR_ENG_air_military_expansion_focus
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_coastal_command_focus
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_air_military_expansion_focus
+					}
+					x = 1
+					y = 2
+					relative_position_id = TR_ENG_air_military_expansion_focus
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_aircraft_production_focus
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_fighter_command_focus
+						focus = TR_ENG_bomber_command_focus
+						focus = TR_ENG_coastal_command_focus
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_bomber_command_focus
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_jet_focus
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_aircraft_production_focus
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_ENG_aircraft_production_focus
+					completion_reward = {
+				
+					}
+				}
+			# navy
+				focus = {
+					id = TR_ENG_naval_military_expansion_focus
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_full_scale_military_expansion
+					}
+					x = 3
+					y = 2
+					relative_position_id = TR_ENG_full_scale_military_expansion
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_amphibious_focus
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_naval_military_expansion_focus
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_ENG_naval_military_expansion_focus
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_anti_non_contact_committee
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_naval_military_expansion_focus
+					}
+					x = 3
+					y = 1
+					relative_position_id = TR_ENG_naval_military_expansion_focus
+					completion_reward = {
+				
+					}
+				}
+				# destroyer
+					focus = {
+						id = TR_ENG_destroyer_focus
+						icon = GFX_
+						cost = 5
+						prerequisite = {
+							focus = TR_ENG_naval_military_expansion_focus
+						}
+						x = -2
+						y = 2
+						relative_position_id = TR_ENG_naval_military_expansion_focus
+						completion_reward = {
+					
+						}
+					}
+					focus = {
+						id = TR_ENG_convoy_focus
+						icon = GFX_
+						cost = 5
+						prerequisite = {
+							focus = TR_ENG_destroyer_focus
+						}
+						x = -1
+						y = 1
+						relative_position_id = TR_ENG_destroyer_focus
+						completion_reward = {
+					
+						}
+					}
+					focus = {
+						id = TR_ENG_anti_submarine_training_school
+						icon = GFX_
+						cost = 5
+						prerequisite = {
+							focus = TR_ENG_convoy_focus
+						}
+						x = 0
+						y = 2
+						relative_position_id = TR_ENG_convoy_focus
+						completion_reward = {
+					
+						}
+					}
+					focus = {
+						id = TR_ENG_a_s_warfare
+						icon = GFX_
+						cost = 5
+						prerequisite = {
+							focus = TR_ENG_destroyer_focus
+						}
+						x = 0
+						y = 2
+						relative_position_id = TR_ENG_destroyer_focus
+						completion_reward = {
+					
+						}
+					}
+				# Big BIg BIG
+					focus = {
+						id = TR_ENG_waves_focus
+						icon = GFX_
+						cost = 5
+						prerequisite = {
+							focus = TR_ENG_naval_military_expansion_focus
+						}
+						x = 2
+						y = 2
+						relative_position_id = TR_ENG_naval_military_expansion_focus
+						completion_reward = {
+					
+						}
+					}
+					focus = {
+						id = TR_ENG_carrier_focus
+						icon = GFX_
+						cost = 5
+						prerequisite = {
+							focus = TR_ENG_waves_focus
+						}
+						mutually_exclusive = {
+							focus = TR_ENG_battleship_focus
+						}
+						x = -1
+						y = 1
+						relative_position_id = TR_ENG_waves_focus
+						completion_reward = {
+					
+						}
+					}
+					focus = {
+						id = TR_ENG_battleship_focus
+						icon = GFX_
+						cost = 5
+						prerequisite = {
+							focus = TR_ENG_waves_focus
+						}
+						mutually_exclusive = {
+							focus = TR_ENG_carrier_focus
+						}
+						x = 1
+						y = 1
+						relative_position_id = TR_ENG_waves_focus
+						completion_reward = {
+					
+						}
+					}
+					focus = {
+						id = TR_ENG_expand_the_repair_yards
+						icon = GFX_
+						cost = 5
+						prerequisite = {
+							focus = TR_ENG_carrier_focus
+							focus = TR_ENG_battleship_focus
+						}
+						x = -1
+						y = 1
+						relative_position_id = TR_ENG_carrier_focus
+						completion_reward = {
+					
+						}
+					}
+					focus = {
+						id = TR_ENG_vanguards
+						icon = GFX_
+						cost = 5
+						prerequisite = {
+							focus = TR_ENG_battleship_focus
+						}
+						x = 0
+						y = 2
+						relative_position_id = TR_ENG_battleship_focus
+						completion_reward = {
+					
+						}
+					}
 	### unhistorical route ###
 		focus = {
 			id = TR_ENG_a_change_in_course
