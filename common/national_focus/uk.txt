@@ -11,12 +11,412 @@ focus_tree = {
 	reset_on_civilwar = no
 
 	initial_show_position = {
-		focus = TR_ENG_steady_as_she_goes
+		focus = TR_ENG_Focus_on_financial_issues
 	}
 	continuous_focus_position = {
-		x = 500
-		y = 2500
+		x = 1000
+		y = 1500
 	}
+	### financial affairs
+		focus = {
+			id = TR_ENG_Focus_on_financial_issues
+			icon = GFX_
+			cost = 5
+			x = 42
+			y = 14
+			completion_reward = {
+		
+			}
+		}
+		# Left
+			focus = {
+				id = TR_ENG_review_of_colonial_policy
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_ENG_Focus_on_financial_issues
+				}
+				mutually_exclusive = {
+					focus = TR_ENG_fiscal_health_through_disarmament
+				}
+				x = -8
+				y = 1
+				relative_position_id = TR_ENG_Focus_on_financial_issues
+				completion_reward = {
+			
+				}
+			}
+			# Dominion
+				focus = {
+					id = TR_ENG_strengthening_the_dominion
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_review_of_colonial_policy
+					}
+					x = -3
+					y = 1
+					relative_position_id = TR_ENG_review_of_colonial_policy
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_autonomy_in_africa
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_strengthening_the_dominion
+					}
+					x = 1
+					y = 1
+					relative_position_id = TR_ENG_strengthening_the_dominion
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_EGY_one_ruler
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_autonomy_in_africa
+					}
+					x = 1
+					y = 2
+					relative_position_id = TR_ENG_autonomy_in_africa
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_autonisation_of_sudan
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_EGY_one_ruler
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_EGY_one_ruler
+					completion_reward = {
+					}
+				}
+				focus = {
+					id = TR_ENG_all_african_autonomy
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_autonomy_in_africa
+					}
+					x = -1
+					y = 2
+					relative_position_id = TR_ENG_autonomy_in_africa
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_establish_neighbourhood_watch
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_all_african_autonomy
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_all_african_autonomy
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_imperial_conference
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_strengthening_the_dominion
+					}
+					x = -2
+					y = 1
+					relative_position_id = TR_ENG_strengthening_the_dominion
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_dominion_expansion
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_imperial_conference
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_imperial_conference
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_the_road_to_federalisation
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_dominion_expansion
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_dominion_expansion
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_military_decentralisation
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_imperial_conference
+					}
+					x = -2
+					y = 2
+					relative_position_id = TR_ENG_imperial_conference
+					completion_reward = {
+					}
+				}
+				focus = {
+					id = TR_ENG_joint_military_exercise
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_military_decentralisation
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_ENG_military_decentralisation
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_british_commonwealth
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_autonisation_of_sudan
+					}
+					prerequisite = {
+						focus = TR_ENG_establish_neighbourhood_watch
+					}
+					prerequisite = {
+						focus = TR_ENG_the_road_to_federalisation
+					}
+					prerequisite = {
+						focus = TR_ENG_joint_military_exercise
+					}
+					prerequisite = {
+						focus = TR_ENG_dominion_india
+						focus = TR_ENG_british_raj
+					}
+					x = 0
+					y = 7
+					relative_position_id = TR_ENG_review_of_colonial_policy
+					completion_reward = {
+				
+					}
+				}
+			# India
+				focus = {
+					id = TR_ENG_indian_affairs
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_review_of_colonial_policy
+					}
+					x = 4
+					y = 1
+					relative_position_id = TR_ENG_review_of_colonial_policy
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_suppressed_independence_movement
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_indian_affairs
+					}
+					prerequisite = {
+						focus = TR_ENG_compromise_to_INC
+					}
+					x = -2
+					y = 1
+					relative_position_id = TR_ENG_indian_affairs
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_strengthening_of_indian_control
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_suppressed_independence_movement
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_ENG_suppressed_independence_movement
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_proximity_to_clan_kings
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_strengthening_of_indian_control
+					}
+					x = -1
+					y = 1
+					relative_position_id = TR_ENG_strengthening_of_indian_control
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_partition_of_india
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_strengthening_of_indian_control
+					}
+					x = 1
+					y = 1
+					relative_position_id = TR_ENG_strengthening_of_indian_control
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_british_raj
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_proximity_to_clan_kings
+					}
+					prerequisite = {
+						focus = TR_ENG_partition_of_india
+					}
+					x = 0
+					y = 3
+					relative_position_id = TR_ENG_strengthening_of_indian_control
+					completion_reward = {
+				
+					}
+				}
+				focus = {# Compromise to the Indian National Congress
+					id = TR_ENG_compromise_to_INC
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_indian_affairs
+					}
+					mutually_exclusive = {
+						focus = TR_ENG_suppressed_independence_movement
+					}
+					x = 2
+					y = 1
+					relative_position_id = TR_ENG_indian_affairs
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_autonomy_in_india
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_compromise_to_INC
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_ENG_compromise_to_INC
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_compromise_republic
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_autonomy_in_india
+					}
+					mutually_exclusive = {
+						focus = TR_ENG_crown_to_india
+					}
+					x = 1
+					y = 1
+					relative_position_id = TR_ENG_autonomy_in_india
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_crown_to_india
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_autonomy_in_india
+					}
+					mutually_exclusive = {
+						focus = TR_ENG_compromise_republic
+					}
+					x = -1
+					y = 1
+					relative_position_id = TR_ENG_autonomy_in_india
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_ENG_dominion_india
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_ENG_crown_to_india
+					}
+					prerequisite = {
+						focus = TR_ENG_compromise_republic
+					}
+					x = 0
+					y = 3
+					relative_position_id = TR_ENG_autonomy_in_india
+					completion_reward = {
+				
+					}
+				}
+		# right
+		focus = {
+			id = TR_ENG_fiscal_health_through_disarmament
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_ENG_Focus_on_financial_issues
+			}
+			mutually_exclusive = {
+				focus = TR_ENG_review_of_colonial_policy
+			}
+			x = 8
+			y = 1
+			relative_position_id = TR_ENG_Focus_on_financial_issues
+			completion_reward = {
+		
+			}
+		}
 	### historical route ###
 		focus = {
 			id = TR_ENG_steady_as_she_goes
@@ -25,8 +425,9 @@ focus_tree = {
 				focus = TR_ENG_a_change_in_course
 			}
 			cost = 5
-			x = 38
-			y = 0
+			x = -4
+			y = -14
+			relative_position_id = TR_ENG_Focus_on_financial_issues
 			completion_reward = {
 		
 			}
@@ -1235,7 +1636,7 @@ focus_tree = {
 			}
 			cost = 5
 			relative_position_id = TR_ENG_steady_as_she_goes
-			x = 9
+			x = 8
 			y = 0
 			completion_reward = {
 		
