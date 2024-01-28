@@ -844,7 +844,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            country_event = TR_Russia.15
         }
         
     }
