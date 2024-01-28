@@ -122,3 +122,21 @@ TR_ENG_war_bonds = {
 		}
 	}
 }
+TR_autonomy_imperial_dominion1 = {
+	temporary = {
+		target_array = subjects
+		target_trigger = {
+			FROM = {
+				# NOT = {
+				# 	has_autonomy_state = autonomy_imperial_dominion
+				# }
+			}
+		}
+		complete_effect = {
+			set_autonomy = {
+				target = FROM
+				autonomy_state = autonomy_imperial_dominion
+			}
+		}
+	}
+}

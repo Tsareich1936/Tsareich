@@ -174,9 +174,18 @@ country_event = {#USA イギリスが返済の先送りを決定
 				days = 7
 			}
 		}
+		ai_chance = {
+			base = 90
+		}
 	}
 	option = {#そんなことはどうでも良い
 		name = TR_uk.3.a
+		ai_chance = {
+			base = 10
+		}
+		ENG = {
+			complete_national_focus = TR_ENG_trampling_down_of_war_bonds
+		}
 	}
 }
 country_event = {#アメリカが返済を催促
@@ -337,7 +346,6 @@ country_event = {#イギリスが戦債の返済を拒否！
 		create_wargoal = {
 			target = ENG
 			type = topple_government
-			expire = 3
 		}
 	}
 }

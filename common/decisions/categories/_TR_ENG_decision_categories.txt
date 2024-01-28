@@ -13,3 +13,14 @@ TR_ENG_war_bonds = {
 	priority = 999
 	visible_when_empty = yes
 }
+TR_autonomy_imperial_dominion1 = {
+	allowed = {
+		tag = ENG
+	}
+	available = {
+		has_country_flag = TR_ENG_imperial_dominion
+	}
+	priority = 100
+	visible_when_empty = yes
+
+}

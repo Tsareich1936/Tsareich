@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_imperial_dominion_icon
+		textureFile = "gfx/interface/autonomy/Imperial_Dominion_icon.dds"
+	}
+}
