@@ -1,0 +1,15 @@
+TR_ENG_war_bonds = {
+	icon = GFX_decision_category_generic_economy
+	allowed = {
+		tag = ENG
+	}
+	available = {
+		has_completed_focus = TR_ENG_war_bond_issue
+		check_variable = {
+			var = TR_ENG_war_bond_var
+			value > 0
+		}
+	}
+	priority = 999
+	visible_when_empty = yes
+}

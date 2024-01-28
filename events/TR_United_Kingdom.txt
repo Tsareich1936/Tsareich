@@ -27,9 +27,9 @@ country_event = {#戦債問題
 		hidden_effect = {
 			USA = {
 				country_event = {#USA イギリスが返済の先送りを決定
-				id = TR_uk.3
-				days = 7
-			}
+					id = TR_uk.3
+					days = 7
+				}
 			}
 		}
 	}
@@ -96,8 +96,7 @@ country_event = {#トリガー用　戦債の完済
 		tag = ENG
 		ENG = {
 			check_variable = {
-				var = TR_ENG_war_bond_var
-				value = 0
+				TR_ENG_war_bond_var = 0
 			}
 			NOT = {
 				has_country_flag = TR_ENG_complete_war_bond
@@ -119,7 +118,7 @@ country_event = {#戦債の完済
 
 	option = {
 		name = TR_uk.7.a
-		unlock_national_focus = TR_ENG_investment_in_public_works
+		remove_ideas = TR_ENG_war_bond_issue
 	}
 }
 country_event = {#建艦問題
