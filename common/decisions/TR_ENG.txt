@@ -1,0 +1,69 @@
+TR_ENG_war_bonds = {
+	TR_ENG_small_repayment = {
+		allowed = {
+			tag = ENG
+		}
+		visible = {
+			tag = ENG
+			has_completed_focus = TR_ENG_commencement_of_minor_repayments
+		}
+		available = {
+			NOT = {
+				has_country_flag = TR_ENG_repaying
+			}
+			check_variable = {
+				TR_ENG_war_bond_var > 0
+			}
+		}
+		cost = 50
+		days_remove = 28
+		days_re_enable = 0
+		complete_effect = {
+			set_country_flag = TR_ENG_repaying
+			add_war_support = 0
+			add_ideas = TR_ENG_small_repayment
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = TR_ENG_war_bond_var
+				value = -25
+			}
+			clr_country_flag = TR_ENG_repaying
+			add_stability = 0
+			remove_ideas = TR_ENG_small_repayment
+		}
+	}
+	TR_ENG_big_repayment = {
+		allowed = {
+			tag = ENG
+		}
+		visible = {
+			tag = ENG
+			has_completed_focus = TR_ENG_commencement_of_minor_repayments
+			has_completed_focus = TR_ENG_commencement_of_major_repayments
+		}
+		available = {
+			NOT = {
+				has_country_flag = TR_ENG_repaying
+			}
+			check_variable = {
+				TR_ENG_war_bond_var > 0
+			}
+		}
+		cost = 100
+		days_remove = 42
+		days_re_enable = 0
+		complete_effect = {
+			set_country_flag = TR_ENG_repaying
+			add_ideas = TR_ENG_big_repayment
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = TR_ENG_war_bond_var
+				value = -50
+			}
+			clr_country_flag = TR_ENG_repaying
+			remove_ideas = TR_ENG_big_repayment
+		}
+	}
+}

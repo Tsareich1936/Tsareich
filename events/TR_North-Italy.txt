@@ -9,10 +9,6 @@ country_event = {
 	title = TR_north_italy.1.t
 	desc = TR_north_italy.1.d
 	is_triggered_only = yes
-	fire_only_once = yes
-	timeout_days = 7
-	fire_for_sender = yes
-	major = yes
 	immediate = {
 		hidden_effect = {
 			SRI = {
@@ -23,10 +19,10 @@ country_event = {
 					ideology = Lcoalition
 				}
 				mark_focus_tree_layout_dirty = yes
-				load_focus_tree = {
-					tree = north_italy_focus
-					keep_completed = yes
-				}
+				# load_focus_tree = {
+				# 	tree = north_italy_focus
+				# 	keep_completed = yes
+				# }
 				set_party_name = {
 					ideology = communism
 					long_name = SRI_communism_party_long
@@ -154,11 +150,9 @@ country_event = {
 			}
 		}
 		ITA = {
-			set_rule = {
-				can_join_factions = yes
-			}
-			ENG = {
-				add_to_faction = ITA
+			country_event = {
+				id = TR_north_italy.5
+				days = 1
 			}
 		}
 	}
@@ -168,6 +162,22 @@ country_event = {
 			NOT = {
 				tag = SRI
 			}
+		}
+	}
+}
+country_event = {
+	id = TR_north_italy.5
+	title = TR_north_italy.5.t
+	desc = TR_north_italy.5.d
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_rule = {
+			can_join_factions = yes
+		}
+		ENG = {
+			add_to_faction = ITA
 		}
 	}
 }

@@ -1,0 +1,191 @@
+add_namespace = TR_uk
+country_event = {#財政問題
+	id = TR_uk.1
+	title = TR_uk.1.t
+	desc = TR_uk.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_uk.1.a
+	}
+}
+country_event = {#戦債問題
+	id = TR_uk.2
+	title = TR_uk.2.t
+	desc = TR_uk.2.d
+
+	is_triggered_only = yes
+
+	option = {#返済
+		name = TR_uk.2.a
+		complete_national_focus = TR_ENG_commencement_of_minor_repayments
+	}
+	option = {#先送り
+		name = TR_uk.2.b
+		complete_national_focus = TR_ENG_postponement_of_repayments
+		hidden_effect = {
+			USA = {
+				country_event = {#USA イギリスが返済の先送りを決定
+					id = TR_uk.3
+					days = 7
+				}
+			}
+		}
+	}
+}
+country_event = {#USA イギリスが返済の先送りを決定
+	id = TR_uk.3
+	title = TR_uk.3.t
+	desc = TR_uk.3.d
+
+	is_triggered_only = yes
+
+	option = {#抗議をせねばなるまい
+		name = TR_uk.3.a
+		ENG = {
+			country_event = {
+				id = TR_uk.4
+				days = 7
+			}
+		}
+	}
+	option = {#そんなことはどうでも良い
+		name = TR_uk.3.a
+	}
+}
+country_event = {#アメリカが返済を催促
+	id = TR_uk.4
+	title = TR_uk.4.t
+	desc = TR_uk.4.d
+
+	is_triggered_only = yes
+
+	option = {#返済をすぐに再開しろ！
+		name = TR_uk.4.a
+		complete_national_focus = TR_ENG_transfer_of_resource_concessions
+		hidden_effect = {
+			country_event = {
+				id = TR_uk.5
+				days = 35
+			}
+		}
+	}
+	option = {#借金など踏み倒してしまえ！
+		name = TR_uk.4.b
+		complete_national_focus = TR_ENG_trampling_down_of_war_bonds
+	}
+}
+country_event = {#経済的従属
+	id = TR_uk.5
+	title = TR_uk.5.t
+	desc = TR_uk.5.d
+
+	is_triggered_only = yes
+
+	option = {#もはやこれまでか…
+		name = TR_uk.5.a
+		complete_national_focus = TR_ENG_economic_subservience
+	}
+}
+country_event = {#トリガー用　戦債の完済
+	id = TR_uk.6
+	hidden = yes
+
+	trigger = {
+		tag = ENG
+		ENG = {
+			check_variable = {
+				TR_ENG_war_bond_var = 0
+			}
+			NOT = {
+				has_country_flag = TR_ENG_complete_war_bond
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = TR_ENG_complete_war_bond
+		country_event = TR_uk.7
+	}
+}
+country_event = {#戦債の完済
+	id = TR_uk.7
+	title = TR_uk.7.t
+	desc = TR_uk.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_uk.7.a
+		remove_ideas = TR_ENG_war_bond_issue
+	}
+}
+country_event = {#建艦問題
+	id = TR_uk.8
+	title = TR_uk.8.t
+	desc = TR_uk.8.d
+
+	is_triggered_only = yes
+
+	option = {#建艦競争を止めよう
+		name = TR_uk.8.a
+		complete_national_focus = TR_ENG_reconciliation_with_russia
+		ENG = {
+			country_event = {
+				id = TR_uk.9
+				days = 14
+			}
+		}
+	}
+	option = {#艦船を売却しろ
+		name = TR_uk.8.a
+		complete_national_focus = TR_ENG_sale_of_ships
+	}
+}
+country_event = {#カイロ会談
+	id = TR_uk.9
+	title = TR_uk.9.t
+	desc = TR_uk.9.d
+
+	is_triggered_only = yes
+	immediate = {
+		RUS = {
+			country_event = TR_uk.10
+		}
+		country_event = {
+			id = TR_uk.11
+			days = 35
+		}
+	}
+	option = {#我らには共通の敵がいるだろう？
+		name = TR_uk.9.a
+	}
+}
+country_event = {#RUS カイロ会談
+	id = TR_uk.10
+	title = TR_uk.10.t
+	desc = TR_uk.10.d
+
+	is_triggered_only = yes
+
+	option = {#我らには共通の敵がいるだろう？
+		name = TR_uk.10.a
+	}
+}
+country_event = {#カイロ会談の成功
+	id = TR_uk.11
+	title = TR_uk.11.t
+	desc = TR_uk.11.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 7
+	fire_for_sender = yes
+	major = yes
+
+	option = {#グレート・ゲームは終わった
+		name = TR_uk.11.a
+		complete_national_focus = TR_ENG_the_end_of_the_great_game
+	}
+}

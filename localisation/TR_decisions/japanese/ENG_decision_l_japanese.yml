@@ -1,0 +1,3 @@
+﻿l_japanese:
+ TR_ENG_war_bonds: "戦債の返済"
+ TR_ENG_war_bonds_desc: "\n\n未返済の戦債[?TR_ENG_war_bond_var|%%0C]\n\n"

@@ -60,8 +60,8 @@ load_oob = "ENG_Motorized"
 
 set_research_slots = 4
 
-set_stability = 0.6
-set_war_support = 0.1
+set_stability = 0.4
+set_war_support = 0.2
 add_command_power = 20
 
 # Starting tech
@@ -169,19 +169,21 @@ if = {
 	}
 }
 
-set_variable = { var = eng_gateway_to_europe_influence value = 0 }
-
 add_ideas = {
 	stiff_upper_lip
 	# ENG_the_war_to_end_all_wars
 	george_v
 	TR_ENG_anti_communist_bulwark
+	TR_ENG_financial_issues
+	TR_ENG_war_bond_issue
 	TR_ENG_royal_army
 	TR_ENG_royal_navy
 	TR_ENG_royal_air_force
 }
-	
-
+set_variable = {
+	var = TR_ENG_war_bond_var
+	value = 100
+}
 set_convoys = 1000
 
 # DIPLOMACY
