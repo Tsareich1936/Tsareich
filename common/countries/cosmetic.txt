@@ -47,7 +47,7 @@ URSR = {
 	color = rgb { 153 0 0 }
 	color_ui = rgb { 153 0 0 } 
 }
-IDC_FRA = {
+IDC_FGE = {
 	color = rgb { 29 62 119 }
 	color_ui = rgb { 29 62 119 }
 }
