@@ -19,10 +19,10 @@ country_event = {
 					ideology = Lcoalition
 				}
 				mark_focus_tree_layout_dirty = yes
-				load_focus_tree = {
-					tree = north_italy_focus
-					keep_completed = yes
-				}
+				# load_focus_tree = {
+				# 	tree = north_italy_focus
+				# 	keep_completed = yes
+				# }
 				set_party_name = {
 					ideology = communism
 					long_name = SRI_communism_party_long
@@ -151,7 +151,7 @@ country_event = {
 		}
 		ITA = {
 			country_event = {
-				id = TR_north_italy.4
+				id = TR_north_italy.5
 				days = 1
 			}
 		}
@@ -166,9 +166,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = TR_north_italy.4
-	title = TR_north_italy.4.t
-	desc = TR_north_italy.4.d
+	id = TR_north_italy.5
+	title = TR_north_italy.5.t
+	desc = TR_north_italy.5.d
 
 	is_triggered_only = yes
 	
