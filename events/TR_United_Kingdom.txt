@@ -9,6 +9,9 @@ country_event = {#HOL 英国との同盟
 
 	option = {#accept
 		name = TR_uk_diplomacy.1.a
+		ai_chance = {
+			base = 80
+		}
 		ENG = {
 			country_event = {
 				id = TR_uk_diplomacy.2
@@ -18,6 +21,9 @@ country_event = {#HOL 英国との同盟
 	}
 	option = {#reject
 		name = TR_uk_diplomacy.1.b
+		ai_chance = {
+			base = 20
+		}
 		ENG = {
 			country_event = {
 				id = TR_uk_diplomacy.3
@@ -51,6 +57,72 @@ country_event = {#オランダが同盟を拒否
 		name = TR_uk_diplomacy.3.a
 	}
 }
+country_event = {#HOL ベルギーの帰還
+	id = TR_uk_diplomacy.4
+	title = TR_uk_diplomacy.4.t
+	desc = TR_uk_diplomacy.4.d
+
+	is_triggered_only = yes
+
+	option = {# accept
+		name = TR_uk_diplomacy.4.a
+		ENG = {
+			country_event = {
+				id = TR_uk_diplomacy.5
+				days = 3
+			}
+		}
+	}
+	option = {# reject
+		name = TR_uk_diplomacy.4.a
+		ENG = {
+			country_event = {
+				id = TR_uk_diplomacy.6
+				days = 3
+			}
+		}
+	}
+}
+country_event = {# オランダが承認
+	id = TR_uk_diplomacy.5
+	title = TR_uk_diplomacy.5.t
+	desc = TR_uk_diplomacy.5.d
+
+	is_triggered_only = yes
+
+	option = {# Good
+		name = TR_uk_diplomacy.5.a
+		BEL = {
+			country_event = TR_uk_diplomacy.7
+			transfer_state = 6
+			set_capital = {
+				state = 6
+			}
+		}
+	}
+}
+country_event = {# オランダが拒否
+	id = TR_uk_diplomacy.6
+	title = TR_uk_diplomacy.6.t
+	desc = TR_uk_diplomacy.6.d
+
+	is_triggered_only = yes
+
+	option = {# OK
+		name = TR_uk_diplomacy.6.a
+	}
+}
+country_event = {# BEL 本土への帰還
+	id = TR_uk_diplomacy.7
+	title = TR_uk_diplomacy.7.t
+	desc = TR_uk_diplomacy.7.d
+
+	is_triggered_only = yes
+
+	option = {# Good
+		name = TR_uk_diplomacy.7.a
+	}
+}
 country_event = {#財政問題
 	id = TR_uk.1
 	title = TR_uk.1.t
@@ -76,6 +148,7 @@ country_event = {#戦債問題
 	option = {#先送り
 		name = TR_uk.2.b
 		complete_national_focus = TR_ENG_postponement_of_repayments
+		custom_effect_tooltip = TR_ENG_trampling_down_of_war_bonds_tt
 		hidden_effect = {
 			USA = {
 				country_event = {#USA イギリスが返済の先送りを決定
@@ -126,6 +199,17 @@ country_event = {#アメリカが返済を催促
 	option = {#借金など踏み倒してしまえ！
 		name = TR_uk.4.b
 		complete_national_focus = TR_ENG_trampling_down_of_war_bonds
+		custom_effect_tooltip = TR_ENG_danger_america
+		USA = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = TR_ENG_non_repay
+			}
+			country_event = {
+				id = TR_uk.12
+				months = 6
+			}
+		}
 	}
 }
 country_event = {#経済的従属
@@ -239,5 +323,21 @@ country_event = {#カイロ会談の成功
 	option = {#グレート・ゲームは終わった
 		name = TR_uk.11.a
 		complete_national_focus = TR_ENG_the_end_of_the_great_game
+	}
+}
+country_event = {#イギリスが戦債の返済を拒否！
+	id = TR_uk.12
+	title = TR_uk.12.t
+	desc = TR_uk.12.d
+
+	is_triggered_only = yes
+
+	option = {#奴らに報復せねばなるまい
+		name = TR_uk.12.a
+		create_wargoal = {
+			target = ENG
+			type = topple_government
+			expire = 3
+		}
 	}
 }
