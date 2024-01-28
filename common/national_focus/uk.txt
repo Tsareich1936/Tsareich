@@ -24,6 +24,9 @@ focus_tree = {
 			id = TR_ENG_Focus_on_financial_issues
 			icon = GFX_goal_generic_consumer_goods
 			cost = 3
+			ai_will_do = {
+				factor = 999
+			}
 			x = 42
 			y = 14
 			completion_reward = {
@@ -35,7 +38,7 @@ focus_tree = {
 			focus = {#財政再建
 				id = TR_ENG_fiscal_reconstruction
 				icon = GFX_
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_economic_subservience
 					focus = TR_ENG_investment_in_public_works
@@ -43,6 +46,9 @@ focus_tree = {
 				prerequisite = {
 					focus = TR_ENG_sale_to_asylum_seekers
 					focus = TR_ENG_russia_land_britain_sea
+				}
+				ai_will_do = {
+					factor = 999
 				}
 				x = 0
 				y = 9
@@ -59,7 +65,9 @@ focus_tree = {
 					prerequisite = {
 						focus = TR_ENG_Focus_on_financial_issues
 					}
-					
+					ai_will_do = {
+						factor = 198
+					}
 					x = -2
 					y = 2
 					relative_position_id = TR_ENG_Focus_on_financial_issues
@@ -70,7 +78,7 @@ focus_tree = {
 				focus = {#返済の先送り
 					id = TR_ENG_postponement_of_repayments
 					icon = GFX_
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_war_bond_issue
 					}
@@ -93,7 +101,7 @@ focus_tree = {
 				focus = {# 踏み倒し
 					id = TR_ENG_trampling_down_of_war_bonds
 					icon = GFX_
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_postponement_of_repayments
 					}
@@ -120,7 +128,7 @@ focus_tree = {
 				focus = {#資源利権の譲渡
 					id = TR_ENG_transfer_of_resource_concessions
 					icon = GFX_
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_postponement_of_repayments
 					}
@@ -143,7 +151,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_economic_subservience
 					icon = GFX_
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_transfer_of_resource_concessions
 					}
@@ -163,7 +171,7 @@ focus_tree = {
 				focus = {# 小規模返済の開始
 					id = TR_ENG_commencement_of_minor_repayments
 					icon = GFX_
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_war_bond_issue
 					}
@@ -193,6 +201,9 @@ focus_tree = {
 					available = {
 						num_of_factories > 70
 					}
+					ai_will_do = {
+						factor = 999
+					}
 					x = 0
 					y = 2
 					relative_position_id = TR_ENG_commencement_of_minor_repayments
@@ -203,10 +214,13 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_investment_in_public_works
 					icon = GFX_
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_commencement_of_major_repayments
 						focus = TR_ENG_trampling_down_of_war_bonds
+					}
+					ai_will_do = {
+						factor = 188
 					}
 					x = 0
 					y = 2
@@ -223,6 +237,9 @@ focus_tree = {
 					prerequisite = {
 						focus = TR_ENG_Focus_on_financial_issues
 					}
+					ai_will_do = {
+						factor = 198
+					}
 					x = 2
 					y = 2
 					relative_position_id = TR_ENG_Focus_on_financial_issues
@@ -233,7 +250,7 @@ focus_tree = {
 				focus = {# 艦船を売却
 					id = TR_ENG_sale_of_ships
 					icon = GFX_
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_naval_shipbuilding_problem
 					}
@@ -256,7 +273,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_sale_to_portugal
 					icon = GFX_
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_sale_of_ships
 					}
@@ -269,7 +286,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_sale_to_asylum_seekers
 					icon = GFX_
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_sale_to_portugal
 					}
@@ -289,7 +306,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_reconciliation_with_russia
 					icon = GFX_
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_naval_shipbuilding_problem
 					}
@@ -312,7 +329,7 @@ focus_tree = {
 				focus = {#グレート・ゲームの終焉
 					id = TR_ENG_the_end_of_the_great_game
 					icon = GFX_
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_reconciliation_with_russia
 					}
@@ -336,6 +353,9 @@ focus_tree = {
 					prerequisite = {
 						focus = TR_ENG_the_end_of_the_great_game
 					}
+					ai_will_do = {
+						factor = 170
+					}
 					x = 0
 					y = 2
 					relative_position_id = TR_ENG_the_end_of_the_great_game
@@ -346,9 +366,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_review_of_colonial_policy
 				icon = GFX_goal_generic_national_unity
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_Focus_on_financial_issues
+				}
+				ai_will_do = {
+					factor = 196
 				}
 				mutually_exclusive = {
 					focus = TR_ENG_fiscal_health_through_disarmament
@@ -364,9 +387,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_strengthening_the_dominion
 					icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_review_of_colonial_policy
+					}
+					ai_will_do = {
+						factor = 190
 					}
 					x = -3
 					y = 1
@@ -378,9 +404,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_autonomy_in_africa
 					icon = GFX_focus_generic_africa_liberation
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_strengthening_the_dominion
+					}
+					ai_will_do = {
+						factor = 186
 					}
 					x = 1
 					y = 1
@@ -392,9 +421,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_EGY_one_ruler
 					icon = GFX_focus_SRI_egypt_relationship
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_autonomy_in_africa
+					}
+					ai_will_do = {
+						factor = 184
 					}
 					x = 1
 					y = 2
@@ -406,9 +438,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_autonisation_of_sudan
 					icon = GFX_goal_continuous_boost_freedom
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_EGY_one_ruler
+					}
+					ai_will_do = {
+						factor = 178
 					}
 					x = 0
 					y = 2
@@ -419,9 +454,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_all_african_autonomy
 					icon = GFX_goal_tfv_saf_secure_interests_in_africa
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_autonomy_in_africa
+					}
+					ai_will_do = {
+						factor = 184
 					}
 					x = -1
 					y = 2
@@ -433,9 +471,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_establish_neighbourhood_watch
 					icon = GFX_goal_generic_allies_build_infantry
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_all_african_autonomy
+					}
+					ai_will_do = {
+						factor = 178
 					}
 					x = 0
 					y = 2
@@ -447,9 +488,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_imperial_conference
 					icon = GFX_goal_generic_national_unity
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_strengthening_the_dominion
+					}
+					ai_will_do = {
+						factor = 186
 					}
 					x = -2
 					y = 1
@@ -461,9 +505,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_dominion_expansion
 					icon = GFX_goal_generic_major_alliance
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_imperial_conference
+					}
+					ai_will_do = {
+						factor = 184
 					}
 					x = 0
 					y = 2
@@ -475,9 +522,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_the_road_to_federalisation
 					icon = GFX_focus_eng_the_sun_never_sets
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_dominion_expansion
+					}
+					ai_will_do = {
+						factor = 178
 					}
 					x = 0
 					y = 2
@@ -489,9 +539,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_military_decentralisation
 					icon = GFX_focus_mex_restore_the_army_of_christ
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_imperial_conference
+					}
+					ai_will_do = {
+						factor = 184
 					}
 					x = -2
 					y = 2
@@ -502,9 +555,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_joint_military_exercise
 					icon = GFX_focus_generic_military_mission
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_military_decentralisation
+					}
+					ai_will_do = {
+						factor = 178
 					}
 					x = 0
 					y = 2
@@ -516,7 +572,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_british_commonwealth
 					icon = GFX_focus_eng_imperial_federation
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_autonisation_of_sudan
 					}
@@ -533,6 +589,9 @@ focus_tree = {
 						focus = TR_ENG_dominion_india
 						focus = TR_ENG_british_raj
 					}
+					ai_will_do = {
+						factor = 999
+					}
 					x = 0
 					y = 7
 					relative_position_id = TR_ENG_review_of_colonial_policy
@@ -544,9 +603,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_indian_affairs
 					icon = GFX_focus_RAJ_indianisation_of_army
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_review_of_colonial_policy
+					}
+					ai_will_do = {
+						factor = 186
 					}
 					x = 4
 					y = 1
@@ -558,7 +620,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_suppressed_independence_movement
 					icon = GFX_focus_RAJ_british_investors
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_indian_affairs
 					}
@@ -575,7 +637,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_strengthening_of_indian_control
 					icon = GFX_goal_continuous_restrict_freedom
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_suppressed_independence_movement
 					}
@@ -589,7 +651,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_proximity_to_clan_kings
 					icon = GFX_goal_generic_major_alliance
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_strengthening_of_indian_control
 					}
@@ -603,7 +665,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_partition_of_india
 					icon = GFX_focus_RAJ_two_nation_theory
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_strengthening_of_indian_control
 					}
@@ -617,7 +679,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_british_raj
 					icon = GFX_focus_eng_the_sun_never_sets
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_proximity_to_clan_kings
 					}
@@ -634,7 +696,7 @@ focus_tree = {
 				focus = {# Compromise to the Indian National Congress
 					id = TR_ENG_compromise_to_INC
 					icon = GFX_focus_RAJ_all_india_forward_bloc
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_indian_affairs
 					}
@@ -651,7 +713,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_autonomy_in_india
 					icon = GFX_focus_generic_self_management
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_compromise_to_INC
 					}
@@ -665,7 +727,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_compromise_republic
 					icon = GFX_focus_RAJ_all_india_forward_bloc
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_autonomy_in_india
 					}
@@ -682,7 +744,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_crown_to_india
 					icon = GFX_goal_tfv_strengthen_commonwealth_ties
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_autonomy_in_india
 					}
@@ -699,7 +761,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_dominion_india
 					icon = GFX_goal_generic_improve_relations
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_crown_to_india
 					}
@@ -717,7 +779,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_fiscal_health_through_disarmament
 				icon = GFX_
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_Focus_on_financial_issues
 				}
@@ -729,6 +791,9 @@ focus_tree = {
 						tooltip = TR_focus_nosupport
 						always = no
 					}
+				}
+				ai_will_do = {
+					factor = 196
 				}
 				x = 12
 				y = 1
@@ -744,7 +809,10 @@ focus_tree = {
 			mutually_exclusive = {
 				focus = TR_ENG_a_change_in_course
 			}
-			cost = 5
+			ai_will_do = {
+				factor = 200
+			}
+			cost = 3
 			x = -4
 			y = -14
 			relative_position_id = TR_ENG_Focus_on_financial_issues
@@ -759,10 +827,13 @@ focus_tree = {
 				mutually_exclusive = {
 					focus = TR_ENG_continue_occupation
 				}
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_steady_as_she_goes
 					focus = TR_ENG_a_change_in_course
+				}
+				ai_will_do = {
+					factor = 198
 				}
 				x = 3
 				y = 1
@@ -777,7 +848,7 @@ focus_tree = {
 				mutually_exclusive = {
 					focus = TR_ENG_protecting_brittany
 				}
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_withdrawal_france
 					focus = TR_ENG_continue_occupation
@@ -798,7 +869,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_protest_letter_france
 				icon = GFX_goal_generic_intelligence_exchange
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_expose_faults
 				}
@@ -827,7 +898,7 @@ focus_tree = {
 						always = no
 					}
 				}
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_protest_letter_france
 					focus = TR_ENG_preemptive_strikes_against_france
@@ -851,7 +922,7 @@ focus_tree = {
 						always = no
 					}
 				}
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_abandon_greece
 					focus = TR_ENG_intervention_greece
@@ -866,7 +937,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_engagement_with_france
 				icon = GFX_focus_attack_france
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_abandon_czecho
 					focus = TR_ENG_intervention_czecho
@@ -882,7 +953,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_anticommunist
 				icon = GFX_goal_generic_war_with_comintern
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_steady_as_she_goes
 				}
@@ -891,6 +962,9 @@ focus_tree = {
 						has_completed_focus = TR_ENG_withdrawal_france
 						has_completed_focus = TR_ENG_continue_occupation
 					}
+				}
+				ai_will_do = {
+					factor = 196
 				}
 				x = 0
 				y = 2
@@ -937,9 +1011,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_supporting_spain
 				icon = GFX_focus_intervention_spain_republic
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_anticommunist
+				}
+				ai_will_do = {
+					factor = 184
 				}
 				x = 0
 				y = 2
@@ -951,9 +1028,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_revival_old_alliances
 				icon = GFX_focus_generic_befriend_portugal
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_supporting_spain
+				}
+				ai_will_do = {
+					factor = 180
 				}
 				x = 0
 				y = 2
@@ -965,9 +1045,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_alliance_opposite_shore
 				icon = GFX_focus_hol_oranje_boven
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_anticommunist
+				}
+				ai_will_do = {
+					factor = 194
 				}
 				x = -2
 				y = 1
@@ -984,9 +1067,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_belgian_issue
 				icon = GFX_focus_hol_the_zuiderzee_works
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_alliance_opposite_shore
+				}
+				ai_will_do = {
+					factor = 184
 				}
 				x = 0
 				y = 1
@@ -998,9 +1084,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_alliance_denmark
 				icon = GFX_focus_generic_befriend_denmark
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_belgian_issue
+				}
+				ai_will_do = {
+					factor = 180
 				}
 				x = 0
 				y = 2
@@ -1012,9 +1101,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_contacts_with_russia
 				icon = TR_ENG_contacts_with_russia
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_alliance_denmark
+				}
+				ai_will_do = {
+					factor = 170
 				}
 				x = 0
 				y = 3
@@ -1029,10 +1121,13 @@ focus_tree = {
 				mutually_exclusive = {
 					focus = TR_ENG_anticommunist_allies
 				}
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_contacts_with_russia
 					focus = TR_ENG_governmet_in_exile_recognised
+				}
+				ai_will_do = {
+					factor = 168
 				}
 				x = 0
 				y = 2
@@ -1044,9 +1139,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_those_driven_by_vengeance
 				icon = GFX_focus_generic_strike_at_democracy3
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_anticommunist
+				}
+				ai_will_do = {
+					factor = 192
 				}
 				x = -6
 				y = 1
@@ -1058,9 +1156,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_north_african_losers
 				icon = GFX_focus_chi_reach_out_to_france
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_those_driven_by_vengeance
+				}
+				ai_will_do = {
+					factor = 188
 				}
 				x = 1
 				y = 1
@@ -1072,9 +1173,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_rhodes_loser
 				icon = GFX_focus_befriend_italy
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_those_driven_by_vengeance
+				}
+				ai_will_do = {
+					factor = 184
 				}
 				x = -1
 				y = 3
@@ -1086,12 +1190,15 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_governmet_in_exile_recognised
 				icon = GFX_goal_anschluss
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_north_african_losers
 				}
 				prerequisite = {
 					focus = TR_ENG_rhodes_loser
+				}
+				ai_will_do = {
+					factor = 170
 				}
 				x = 0
 				y = 6
@@ -1106,10 +1213,13 @@ focus_tree = {
 				mutually_exclusive = {
 					focus = TR_ENG_RUS_allies
 				}
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_governmet_in_exile_recognised
 					focus = TR_ENG_contacts_with_russia
+				}
+				ai_will_do = {
+					factor = 168
 				}
 				x = 0
 				y = 2
@@ -1121,10 +1231,13 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_rouse_the_giant
 				icon = GFX_focus_generic_befriend_usa
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_anticommunist_allies
 					focus = TR_ENG_RUS_allies
+				}
+				ai_will_do = {
+					factor = 150
 				}
 				x = 2
 				y = 2
@@ -1136,9 +1249,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_colonial_security
 				icon = GFX_focus_secret_rearmament
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_anticommunist
+				}
+				ai_will_do = {
+					factor = 184
 				}
 				x = -9
 				y = 2
@@ -1150,9 +1266,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_far_eastern_security
 				icon = GFX_focus_chi_collaboration_with_the_japanese
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_colonial_security
+				}
+				ai_will_do = {
+					factor = 170
 				}
 				x = 0
 				y = 4
@@ -1165,9 +1284,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_prepare_for_war
 				icon = GFX_goal_generic_occupy_states_ongoing_war
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_steady_as_she_goes
+				}
+				ai_will_do = {
+					factor = 194
 				}
 				available = {
 					OR = {
@@ -1185,9 +1307,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_focus_on_defence
 				icon = GFX_goal_generic_defence
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_prepare_for_war
+				}
+				ai_will_do = {
+					factor = 192
 				}
 				x = -1
 				y = 2
@@ -1199,9 +1324,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_focus_on_attack
 				icon = GFX_goal_generic_attack_allies
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_prepare_for_war
+				}
+				ai_will_do = {
+					factor = 192
 				}
 				x = 1
 				y = 2
@@ -1214,10 +1342,13 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_shadow_scheme
 				icon = GFX_goal_generic_construct_mil_factory
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_focus_on_attack
 					focus = TR_ENG_focus_on_defence
+				}
+				ai_will_do = {
+					factor = 190
 				}
 				x = 0
 				y = 4
@@ -1229,9 +1360,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_additional_research_slot
 				icon = GFX_focus_research
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_shadow_scheme
+				}
+				ai_will_do = {
+					factor = 190
 				}
 				x = 0
 				y = 1
@@ -1243,9 +1377,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_war_economy
 				icon = GFX_goal_generic_major_war
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_additional_research_slot
+				}
+				ai_will_do = {
+					factor = 164
 				}
 				x = 0
 				y = 2
@@ -1257,12 +1394,15 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_general_mobilisation
 				icon = GFX_focus_generic_support_the_left_right
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_war_economy
 				}
 				x = 0
 				y = 2
+				ai_will_do = {
+					factor = 160
+				}
 				relative_position_id = TR_ENG_war_economy
 				completion_reward = {
 			
@@ -1271,9 +1411,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_royal_ordinance
 				icon = GFX_goal_continuous_non_factory_construct
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_shadow_scheme
+				}
+				ai_will_do = {
+					factor = 182
 				}
 				x = -2
 				y = 2
@@ -1285,9 +1428,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_focus_on_industry
 				icon = GFX_focus_generic_industry_2
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_royal_ordinance
+				}
+				ai_will_do = {
+					factor = 174
 				}
 				x = 0
 				y = 1
@@ -1299,7 +1445,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_focus_on_shipbuilding
 				icon = GFX_focus_generic_refit_civilian_ships
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_focus_on_industry
 				}
@@ -1313,9 +1459,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_military_expansion
 				icon = GFX_focus_chi_army_reform
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_shadow_scheme
+				}
+				ai_will_do = {
+					factor = 176
 				}
 				x = 2
 				y = 2
@@ -1327,9 +1476,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_small_arms
 				icon = GFX_goal_generic_small_arms
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_military_expansion
+				}
+				ai_will_do = {
+					factor = 174
 				}
 				x = 0
 				y = 1
@@ -1341,7 +1493,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_focus_on_aircraft
 				icon = GFX_focus_generic_aircraft_production
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_small_arms
 				}
@@ -1356,9 +1508,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_full_scale_military_expansion
 				icon = GFX_goal_generic_consumer_goods
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_focus_on_attack
+				}
+				ai_will_do = {
+					factor = 188
 				}
 				x = 8
 				y = 3
@@ -1371,10 +1526,11 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_motorized_focus
 					icon = GFX_goal_generic_army_motorized
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_full_scale_military_expansion
 					}
+					
 					x = 0
 					y = 2
 					relative_position_id = TR_ENG_full_scale_military_expansion
@@ -1385,7 +1541,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_tank_focus
 					icon = GFX_goal_generic_army_tanks
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_motorized_focus
 					}
@@ -1400,9 +1556,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_air_military_expansion_focus
 					icon = GFX_goal_generic_air_doctrine
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_full_scale_military_expansion
+					}
+					ai_will_do = {
+						factor = 182
 					}
 					x = -3
 					y = 2
@@ -1414,9 +1573,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_bomber_command_focus
 					icon = GFX_goal_generic_air_bomber
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_air_military_expansion_focus
+					}
+					ai_will_do = {
+						factor = 176
 					}
 					x = 0
 					y = 1
@@ -1428,9 +1590,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_fighter_command_focus
 					icon = GFX_goal_generic_air_fighter
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_air_military_expansion_focus
+					}
+					ai_will_do = {
+						factor = 176
 					}
 					x = -1
 					y = 2
@@ -1442,9 +1607,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_coastal_command_focus
 					icon = GFX_goal_generic_air_naval_bomber
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_air_military_expansion_focus
+					}
+					ai_will_do = {
+						factor = 176
 					}
 					x = 1
 					y = 2
@@ -1456,11 +1624,14 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_aircraft_production_focus
 					icon = GFX_goal_generic_air_production
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_fighter_command_focus
 						focus = TR_ENG_bomber_command_focus
 						focus = TR_ENG_coastal_command_focus
+					}
+					ai_will_do = {
+						factor = 180
 					}
 					x = 0
 					y = 2
@@ -1472,7 +1643,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_jet_focus
 					icon = GFX_goal_generic_build_airforce
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_aircraft_production_focus
 					}
@@ -1487,9 +1658,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_naval_military_expansion_focus
 					icon = GFX_goal_generic_construct_naval_dockyard
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_full_scale_military_expansion
+					}
+					ai_will_do = {
+						factor = 182
 					}
 					x = 3
 					y = 2
@@ -1501,9 +1675,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_amphibious_focus
 					icon = GFX_goal_generic_amphibious_assault
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_naval_military_expansion_focus
+					}
+					ai_will_do = {
+						factor = 176
 					}
 					x = 0
 					y = 1
@@ -1515,9 +1692,15 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_anti_non_contact_committee
 					icon = GFX_goal_generic_occupy_states_coastal
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_naval_military_expansion_focus
+					}
+					ai_will_do = {
+						factor = 174
+					}
+					ai_will_do = {
+						factor = 170
 					}
 					x = 3
 					y = 1
@@ -1530,9 +1713,12 @@ focus_tree = {
 					focus = {
 						id = TR_ENG_destroyer_focus
 						icon = GFX_focus_generic_destroyer
-						cost = 5
+						cost = 3
 						prerequisite = {
 							focus = TR_ENG_naval_military_expansion_focus
+						}
+						ai_will_do = {
+							factor = 174
 						}
 						x = -2
 						y = 2
@@ -1544,9 +1730,12 @@ focus_tree = {
 					focus = {
 						id = TR_ENG_convoy_focus
 						icon = GFX_goal_generic_navy_cruiser
-						cost = 5
+						cost = 3
 						prerequisite = {
 							focus = TR_ENG_destroyer_focus
+						}
+						ai_will_do = {
+							factor = 170
 						}
 						x = -1
 						y = 1
@@ -1558,7 +1747,7 @@ focus_tree = {
 					focus = {
 						id = TR_ENG_anti_submarine_training_school
 						icon = GFX_goal_generic_navy_doctrines_tactics
-						cost = 5
+						cost = 3
 						prerequisite = {
 							focus = TR_ENG_convoy_focus
 						}
@@ -1572,9 +1761,12 @@ focus_tree = {
 					focus = {
 						id = TR_ENG_a_s_warfare
 						icon = GFX_goal_generic_navy_anti_submarine
-						cost = 5
+						cost = 3
 						prerequisite = {
 							focus = TR_ENG_destroyer_focus
+						}
+						ai_will_do = {
+							factor = 164
 						}
 						x = 0
 						y = 2
@@ -1587,9 +1779,12 @@ focus_tree = {
 					focus = {
 						id = TR_ENG_waves_focus
 						icon = GFX_goal_generic_navy_doctrines_tactics
-						cost = 5
+						cost = 3
 						prerequisite = {
 							focus = TR_ENG_naval_military_expansion_focus
+						}
+						ai_will_do = {
+							factor = 174
 						}
 						x = 2
 						y = 2
@@ -1601,12 +1796,15 @@ focus_tree = {
 					focus = {
 						id = TR_ENG_carrier_focus
 						icon = GFX_goal_generic_navy_carrier
-						cost = 5
+						cost = 3
 						prerequisite = {
 							focus = TR_ENG_waves_focus
 						}
 						mutually_exclusive = {
 							focus = TR_ENG_battleship_focus
+						}
+						ai_will_do = {
+							factor = 170
 						}
 						x = -1
 						y = 1
@@ -1618,12 +1816,15 @@ focus_tree = {
 					focus = {
 						id = TR_ENG_battleship_focus
 						icon = GFX_goal_generic_navy_battleship
-						cost = 5
+						cost = 3
 						prerequisite = {
 							focus = TR_ENG_waves_focus
 						}
 						mutually_exclusive = {
 							focus = TR_ENG_carrier_focus
+						}
+						ai_will_do = {
+							factor = 170
 						}
 						x = 1
 						y = 1
@@ -1635,10 +1836,13 @@ focus_tree = {
 					focus = {
 						id = TR_ENG_expand_the_repair_yards
 						icon = GFX_goal_generic_production
-						cost = 5
+						cost = 3
 						prerequisite = {
 							focus = TR_ENG_carrier_focus
 							focus = TR_ENG_battleship_focus
+						}
+						ai_will_do = {
+							factor = 164
 						}
 						x = -1
 						y = 1
@@ -1650,7 +1854,7 @@ focus_tree = {
 					focus = {
 						id = TR_ENG_vanguards
 						icon = GFX_focus_generic_navy_battleship2
-						cost = 5
+						cost = 3
 						prerequisite = {
 							focus = TR_ENG_battleship_focus
 						}
@@ -1665,9 +1869,12 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_building_defence_networks
 				icon = GFX_goal_fortify_the_westwall
-				cost = 5
+				cost = 3
 				prerequisite = {
 					focus = TR_ENG_focus_on_defence
+				}
+				ai_will_do = {
+					factor = 188
 				}
 				x = -8
 				y = 3
@@ -1680,9 +1887,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_air_defense_focus
 					icon = GFX_focus_generic_tank_air_support
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_building_defence_networks
+					}
+					ai_will_do = {
+						factor = 188
 					}
 					x = 0
 					y = 1
@@ -1694,9 +1904,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_defence_assistance_to_opposite_shore
 					icon = GFX_focus_hol_the_foundations_of_defense
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_air_defense_focus
+					}
+					ai_will_do = {
+						factor = 176
 					}
 					x = 0
 					y = 2
@@ -1708,9 +1921,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_fortification_in_ally
 					icon = GFX_focus_LAT_suspend_constitution_of_latvia
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_defence_assistance_to_opposite_shore
+					}
+					ai_will_do = {
+						factor = 170
 					}
 					x = 0
 					y = 2
@@ -1722,9 +1938,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_focus_on_flak
 					icon = GFX_goal_generic_army_artillery2
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_air_defense_focus
+					}
+					ai_will_do = {
+						factor = 182
 					}
 					x = -1
 					y = 1
@@ -1736,9 +1955,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_reinforced_flak
 					icon = GFX_focus_research
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_focus_on_flak
+					}
+					ai_will_do = {
+						factor = 172
 					}
 					x = 0
 					y = 2
@@ -1750,12 +1972,15 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_flak_in_ally
 					icon = GFX_goal_generic_army_artillery2
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_reinforced_flak
 					}
 					prerequisite = {
 						focus = TR_ENG_fortification_in_ally
+					}
+					ai_will_do = {
+						factor = 164
 					}
 					x = 0
 					y = 2
@@ -1767,9 +1992,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_radar
 					icon = GFX_goal_generic_radar
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_air_defense_focus
+					}
+					ai_will_do = {
+						factor = 182
 					}
 					x = 1
 					y = 1
@@ -1781,9 +2009,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_reinforced_radar
 					icon = GFX_focus_research
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_radar
+					}
+					ai_will_do = {
+						factor = 172
 					}
 					x = 0
 					y = 2
@@ -1795,12 +2026,15 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_radar_in_ally
 					icon = GFX_goal_generic_radar
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_reinforced_radar
 					}
 					prerequisite = {
 						focus = TR_ENG_fortification_in_ally
+					}
+					ai_will_do = {
+						factor = 164
 					}
 					x = 0
 					y = 2
@@ -1812,7 +2046,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_protect_everything
 					icon = GFX_focus_generic_home_defense
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_the_ultimate_weapon
 					}
@@ -1825,6 +2059,9 @@ focus_tree = {
 					prerequisite = {
 						focus = TR_ENG_absolute_defense_sphere
 					}
+					ai_will_do = {
+						factor = 999
+					}
 					x = 0
 					y = 3
 					relative_position_id = TR_ENG_fortification_in_ally
@@ -1836,9 +2073,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_secret_weapon_development
 					icon = GFX_goal_generic_secret_weapon
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_building_defence_networks
+					}
+					ai_will_do = {
+						factor = 186
 					}
 					x = -3
 					y = 1
@@ -1850,9 +2090,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_cooperation_USA
 					icon = GFX_focus_generic_befriend_usa
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_secret_weapon_development
+					}
+					ai_will_do = {
+						factor = 182
 					}
 					x = 0
 					y = 1
@@ -1864,9 +2107,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_uranium_mining
 					icon = GFX_focus_generic_mining_industry
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_cooperation_USA
+					}
+					ai_will_do = {
+						factor = 170
 					}
 					x = -1
 					y = 3
@@ -1878,9 +2124,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_construction_of_reactors
 					icon = GFX_goal_generic_construction
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_cooperation_USA
+					}
+					ai_will_do = {
+						factor = 172
 					}
 					x = 0
 					y = 2
@@ -1892,9 +2141,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_securing_research_staff
 					icon = GFX_focus_research2
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_cooperation_USA
+					}
+					ai_will_do = {
+						factor = 170
 					}
 					x = 1
 					y = 3
@@ -1906,7 +2158,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_sahara_experiments
 					icon = GFX_goal_poland_goal
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_construction_of_reactors
 					}
@@ -1915,6 +2167,9 @@ focus_tree = {
 					}
 					prerequisite = {
 						focus = TR_ENG_securing_research_staff
+					}
+					ai_will_do = {
+						factor = 160
 					}
 					x = 0
 					y = 2
@@ -1926,9 +2181,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_the_ultimate_weapon
 					icon = GFX_focus_wonderweapons
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_sahara_experiments
+					}
+					ai_will_do = {
+						factor = 999
 					}
 					x = 0
 					y = 1
@@ -1940,9 +2198,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_maritime_fort
 					icon = GFX_focus_generic_coastal_fort
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_building_defence_networks
+					}
+					ai_will_do = {
+						factor = 186
 					}
 					x = 3
 					y = 1
@@ -1953,9 +2214,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_prevention_of_landing
 					icon = GFX_goal_generic_navy_cruiser
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_maritime_fort
+					}
+					ai_will_do = {
+						factor = 176
 					}
 					x = -1
 					y = 2
@@ -1967,9 +2231,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_reinforced_maritime_fort
 					icon = GFX_focus_generic_coastal_fort
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_prevention_of_landing
+					}
+					ai_will_do = {
+						factor = 170
 					}
 					x = 0
 					y = 2
@@ -1981,9 +2248,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_fort_of_england
 					icon = GFX_goal_generic_fortify_city
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_maritime_fort
+					}
+					ai_will_do = {
+						factor = 176
 					}
 					x = 1
 					y = 2
@@ -1995,9 +2265,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_fort_of_scotland
 					icon = GFX_goal_generic_fortify_city
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_fort_of_england
+					}
+					ai_will_do = {
+						factor = 170
 					}
 					x = 0
 					y = 2
@@ -2009,12 +2282,15 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_absolute_defense_sphere 
 					icon = GFX_focus_ICE_infiltrating_the_british_isles
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_reinforced_maritime_fort
 					}
 					prerequisite = {
 						focus = TR_ENG_fort_of_scotland
+					}
+					ai_will_do = {
+						factor = 160
 					}
 					x = 0
 					y = 6
@@ -2036,7 +2312,7 @@ focus_tree = {
 					always = no
 				}
 			}
-			cost = 5
+			cost = 3
 			relative_position_id = TR_ENG_steady_as_she_goes
 			x = 8
 			y = 0
@@ -2051,7 +2327,7 @@ focus_tree = {
 			mutually_exclusive = {
 				focus = TR_ENG_withdrawal_france
 			}
-			cost = 5
+			cost = 3
 			prerequisite = {
 				focus = TR_ENG_a_change_in_course
 				focus = TR_ENG_steady_as_she_goes
@@ -2069,7 +2345,7 @@ focus_tree = {
 			mutually_exclusive = {
 				focus = TR_ENG_expose_faults
 			}
-			cost = 5
+			cost = 3
 			prerequisite = {
 				focus = TR_ENG_continue_occupation
 				focus = TR_ENG_withdrawal_france
@@ -2099,7 +2375,7 @@ focus_tree = {
 					always = no
 				}
 			}
-			cost = 5
+			cost = 3
 			prerequisite = {
 				focus = TR_ENG_protecting_brittany
 			}
@@ -2122,7 +2398,7 @@ focus_tree = {
 					always = no
 				}
 			}
-			cost = 5
+			cost = 3
 			prerequisite = {
 				focus = TR_ENG_preemptive_strikes_against_france
 				focus = TR_ENG_protest_letter_france
@@ -2146,7 +2422,7 @@ focus_tree = {
 					always = no
 				}
 			}
-			cost = 5
+			cost = 3
 			prerequisite = {
 				focus = TR_ENG_abandon_greece
 				focus = TR_ENG_intervention_greece
@@ -2161,7 +2437,7 @@ focus_tree = {
 		focus = {
 			id = TR_ENG_engagement_with_germany
 			icon = GFX_focus_attack_germany
-			cost = 5
+			cost = 3
 			prerequisite = {
 				focus = TR_ENG_abandon_czecho
 				focus = TR_ENG_intervention_czecho
