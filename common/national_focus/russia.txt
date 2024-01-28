@@ -155,7 +155,7 @@ focus_tree = {
         x = 0
         y = 2
         relative_position_id = RUS_remake_national_government
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_RESEARCH
         prerequisite = { focus = RUS_development_of_siberia }
@@ -179,7 +179,7 @@ focus_tree = {
         x = -2
         y = 2
         relative_position_id = RUS_remake_national_government
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_INDUSTRY
         prerequisite = { focus = RUS_development_of_siberia }
@@ -205,7 +205,7 @@ focus_tree = {
         x = 2
         y = 2
         relative_position_id = RUS_remake_national_government
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_MANPOWER
         prerequisite = { focus = RUS_development_of_siberia }
@@ -228,7 +228,7 @@ focus_tree = {
         x = 0
         y = 3
         relative_position_id = RUS_remake_national_government
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_ANNEXATION
         prerequisite = { focus = RUS_remove_census }
@@ -252,7 +252,7 @@ focus_tree = {
         x = 0
         y = 4
         relative_position_id = RUS_remake_national_government
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_POLITICAL
         prerequisite = { focus = RUS_battle_with_PER }
@@ -277,7 +277,7 @@ focus_tree = {
         x = -5
         y = 1
         relative_position_id = RUS_remake_national_government
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_INDUSTRY
         prerequisite = { focus = RUS_remake_national_government }
@@ -298,7 +298,7 @@ focus_tree = {
         x = 1
         y = 1
         relative_position_id = RUS_build_stock_exchange
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_RESEARCH
         prerequisite = { focus = RUS_build_stock_exchange }
@@ -327,7 +327,7 @@ focus_tree = {
         x = 1
         y = 2
         relative_position_id = RUS_build_stock_exchange
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_RESEARCH
         prerequisite = { focus = RUS_add_more_academy }
@@ -467,7 +467,7 @@ focus_tree = {
         x = -1
         y = 1
         relative_position_id = RUS_build_stock_exchange
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_INDUSTRY
         prerequisite = { focus = RUS_build_stock_exchange }
@@ -523,7 +523,7 @@ focus_tree = {
         x = -1
         y = 2
         relative_position_id = RUS_build_stock_exchange
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_INDUSTRY
         prerequisite = { focus = RUS_develop_of_ukrine }
@@ -544,7 +544,7 @@ focus_tree = {
         x = 0
         y = 3
         relative_position_id = RUS_build_stock_exchange
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_INDUSTRY
         prerequisite = { focus = RUS_national_construction }
@@ -575,7 +575,7 @@ focus_tree = {
         x = 5
         y = 1
         relative_position_id = RUS_remake_national_government
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_INDUSTRY
         prerequisite = { focus = RUS_remake_national_government }
@@ -597,7 +597,7 @@ focus_tree = {
         x = -1
         y = 1
         relative_position_id = RUS_buy_arms_factory
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_ARMY_XP
         prerequisite = { focus = RUS_buy_arms_factory }
@@ -623,7 +623,7 @@ focus_tree = {
         x = -1
         y = 2
         relative_position_id = RUS_buy_arms_factory
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_WAR_SUPPORT
         prerequisite = { focus = RUS_russia_fire_training }
@@ -785,7 +785,7 @@ focus_tree = {
         x = 1
         y = 1
         relative_position_id = RUS_buy_arms_factory
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_INDUSTRY
         prerequisite = { focus = RUS_buy_arms_factory }
@@ -806,7 +806,7 @@ focus_tree = {
         x = 1
         y = 2
         relative_position_id = RUS_buy_arms_factory
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_INDUSTRY
         prerequisite = { focus = RUS_navy_doctrine }
@@ -827,7 +827,7 @@ focus_tree = {
         x = 0
         y = 3
         relative_position_id = RUS_buy_arms_factory
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_WAR_SUPPORT
         prerequisite = { focus = RUS_shikolsky_planes }
@@ -850,7 +850,7 @@ focus_tree = {
         x = -3
         y = 5
         relative_position_id = RUS_remake_national_government
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_WAR_SUPPORT
         prerequisite = { focus = RUS_moscow_economy }
@@ -873,7 +873,7 @@ focus_tree = {
         x = 3
         y = 5
         relative_position_id = RUS_remake_national_government
-        cost = 5
+        cost = 4
 
         search_filters = FOCUS_FILTER_WAR_SUPPORT
         prerequisite = { focus = RUS_operational_doctrine }
@@ -889,10 +889,9 @@ focus_tree = {
                 limit = {
                     is_character = RUS_mikhail_tukhachevsky
                 }
-                add_skill_level = 3
-                add_attack = 2
-                add_defense = 1
-                add_logistics = 2
+                add_skill_level = 2
+                add_attack = 1
+                add_logistics = 1
             }
             custom_effect_tooltip = TR_Russia.tt.8
             hidden_effect = {
