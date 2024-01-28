@@ -2,7 +2,7 @@ add_namespace = "TR_Japan"
 
 
 
-country_event = {
+country_event = {        # 19選挙
 	id = TR_japan.1
 	title = TR_japan.1.t
 	desc = TR_japan.1.d
@@ -14,7 +14,7 @@ country_event = {
 			has_completed_focus = jap_19th_General_Election
 		}
 	}
-	timeout_days = 7
+	timeout_days = 21
 	
 	option = {
 		name = TR_Japan.1.a
@@ -111,11 +111,19 @@ country_event = {  ############Toyotomi
 
 }
 
-country_event = {   # 皇室中心主義
-	id = TR_japan.3
+country_event = {               # 皇室中心主義
+    id = TR_japan.3
+	title = TR_japan.3.t
+	desc = TR_japan.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.3.a
+		add_political_power = 200
+	}
 }
 
-country_event = {
+country_event = {      # 一か年計画
 	id = TR_japan.4
 	title = TR_japan.4.t
 	desc = TR_japan.4.d
@@ -126,7 +134,7 @@ country_event = {
 			has_completed_focus = jap_socialist_economy
 		}
 	}
-	timeout_days = 7
+	timeout_days = 21
 
 	option = {
 		name = TR_japan.4.a
@@ -196,11 +204,11 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {     # 一か年計画
 	id = TR_japan.5
 	title = TR_japan.5.t
 	desc = TR_japan.5.d
-	timeout_days = 7
+	timeout_days = 21
 	is_triggered_only = yes
 	option = {
 		name = TR_japan.5.a
@@ -270,7 +278,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {     # 弾丸列車
 	id = TR_japan.6
 	title = TR_japan.6.t
 	desc = TR_japan.6.d
@@ -281,7 +289,7 @@ country_event = {
 			has_decision = JAP_Railway
 		}
 	}
-	timeout_days = 7
+	timeout_days = 21
 	option = {
 		name = TR_japan.6.a
 		add_political_power = 100
@@ -420,3 +428,1335 @@ country_event = {
 	}
 }
 
+country_event = {              ######〇３計画
+	id = TR_japan.7
+	title = TR_japan.7.t
+	desc = TR_japan.7.d
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		JAP = {
+			has_completed_focus = jap_NAVY_1_1
+		}
+	}
+	timeout_days = 21
+	option = {
+		name = TR_japan.7.a
+		ai_chance = {
+			factor = 40
+		}
+		JAP = {
+			country_event = {
+				id = TR_japan.8
+			}
+		}
+		hidden_effect = {
+			set_country_flag = TR_japan_NAVY_7_8
+		}
+	}
+	option = {
+		name = TR_japan.7.b
+		ai_chance = {
+			factor = 20
+		}
+		JAP = {
+			country_event = {
+				id = TR_japan.9
+			}
+		}
+	}
+	option = {
+		name = TR_japan.7.c
+		ai_chance = {
+			factor = 20
+		}
+
+		JAP = {
+			country_event = {
+				id = TR_japan.11
+			}
+		}
+	}
+}
+
+country_event = {              ######〇３計画
+	id = TR_japan.8
+	title = TR_japan.8.t
+	desc = TR_japan.8.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 21
+	
+	option = {
+		name = TR_Japan.8.a
+		hidden_effect = {
+			set_country_flag = TR_japan_9
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = TR_Japan.8.b
+		hidden_effect = {
+			set_country_flag = TR_japan_10
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {              ######〇３計画
+	
+	id = TR_japan.9
+	title = TR_japan.9.t
+	desc = TR_japan.9.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 21
+	
+	option = {
+		name = TR_Japan.9.a
+		hidden_effect = {
+			set_country_flag = TR_japan11
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = TR_Japan.9.b
+		ai_chance = { factor = 1 }
+		JAP = {
+			country_event = {
+				id = TR_japan.10
+			}
+		}
+	}
+}
+
+country_event = {              ######〇３計画
+	id = TR_japan.10
+	title = TR_japan.10.t
+	desc = TR_japan.10.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 21
+	option = {
+		name = TR_Japan.10.a
+		hidden_effect = {
+			set_country_flag = TR_japan_12
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = TR_Japan.10.b
+		hidden_effect = {
+			set_country_flag = TR_japan_13
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {              ######〇３計画
+	id = TR_japan.11
+	title = TR_japan.11.t
+	desc = TR_japan.11.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 21
+	
+	option = {
+		name = TR_Japan.11.a
+		hidden_effect = {
+			set_country_flag = TR_japan14
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = TR_Japan.11.b
+		hidden_effect = {
+			set_country_flag = TR_japan_15
+		}
+	    complete_national_focus = jap_NAVY_1_2
+		
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {            #########  右翼政治団体が首相を襲撃！
+	id = TR_japan.12
+	title = TR_japan.12.t
+	desc = TR_japan.12.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		JAP = {
+			country_event = {
+				id = TR_japan.28
+				days = 1
+			}
+		}
+	}
+    option = {
+        name = TR_japan.12.a
+    }
+}
+
+country_event = {                    #　国家保護法 
+	id = TR_japan.13
+	title = TR_japan.13.t
+	desc = TR_japan.13.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {                    ### 国家保護法　可決
+		name = TR_japan.13.a
+		add_political_power = 100
+		add_stability = 0.1
+		ai_chance = {
+			factor = 99
+		}
+	}
+	option = {                         ## 否決
+		name = TR_japan.13.b
+		add_political_power = -100
+		add_stability = -0.3
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.14
+					days = 365
+				}
+			}
+		}
+	}
+}
+
+country_event = {          #　　国民の不満の高まり
+	id = TR_japan.14
+	title = TR_japan.14.t
+	desc = TR_japan.14.d
+	is_triggered_only = yes
+	option = {            #########  国民の不満の高まり　朝鮮に侵攻する
+		name = TR_japan.14.a
+		ai_chance = {
+			factor = 99
+		}
+		JAP = {
+		    activate_targeted_decision = {
+				target = JAP
+				decision = JAP_KOR_WAR_PREPARE
+			}
+		}
+	}
+	option = {          ####       否
+		name = TR_japan.14.b
+		ai_chance = {
+			factor = 1
+		}
+
+		
+	}
+}
+
+country_event = {          # 公害問題
+	id = TR_japan.15
+	title = TR_japan.145.t
+	desc = TR_japan.15.d
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		JAP = {
+			industrial_complex > 75
+		}
+	}
+	
+	option = {
+		name = TR_japan.15.a
+		add_ideas = JAP_pollution
+	}
+}
+
+country_event = {        # 立憲政友会の総裁を決める
+	id = TR_japan.17
+	title = TR_japan.17.t
+	desc = TR_japan.17.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.17.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = JAP_fusanosuke_kuhara
+			picture = GFX_portrait_Fusanosuke_Kuhara
+			ideology = conservatism
+			expire = "1965.1.29"
+		}
+		JAP = {
+			country_event = {
+				id = TR_japan.13
+			}
+		}
+
+	}
+	option = {
+		name = TR_japan.17.b
+		retire_country_leader = yes
+		create_country_leader = {
+			name = JAP_chikuhei_nakajima
+			picture = GFX_portrait_Chikuhei_Nakajima
+			ideology = conservatism
+			expire = "1949.10.29"
+		}
+		JAP = {
+			country_event = {
+				id = TR_japan.13
+			}
+		}
+
+	}
+}
+
+country_event ={                 #########  右翼政治団体が首相を襲撃！      
+	id = TR_japan.18
+	is_triggered_only = yes
+	title = TR_japan.12.t
+	desc = TR_japan.12.d
+	is_triggered_only = yes
+    option = {
+        name = TR_japan.18.a
+		JAP = {
+			country_event = {
+				id = TR_japan.13
+			}
+		}
+	}
+}
+
+country_event = {            #〇4
+	id = TR_japan.19
+	title = TR_japan.19.t
+	desc = TR_japan.19.d
+	is_triggered_only = yes
+	immediate = {
+		navy_experience = 100
+	}
+	option = {
+		name = TR_japan.19.a
+		add_ideas =JAP_Navy_4_1
+	}
+	option = {
+		name = TR_japan.19.b
+		add_ideas = JAP_Navy_4_2
+	}
+}
+
+country_event = {            # 戦艦か空母か
+	id = TR_japan.20
+	title = TR_japan.20.t
+	desc = TR_japan.20.d
+	is_triggered_only = yes
+	immediate = {
+		add_tech_bonus = {
+			name = TR_japan.20.0
+			bonus = 0.5
+			uses = 2
+			category = naval_equipment
+		}
+	}
+	option = {
+		add_tech_bonus = {
+			name = TR_japan.20.1
+			bonus = 3
+			uses = 1
+			category = bb_tech
+		}
+	}
+	option = {
+		add_tech_bonus = {
+			name = TR_japan.20.2
+			bonus = 3
+			uses  = 1
+			category = cv_tech
+		}
+	}
+}
+
+country_event = {           # 駆逐艦か巡洋艦か
+	id = TR_japan.21
+	title = TR_japan.21.t
+	is_triggered_only = yes
+	desc = TR_japan.21.d
+	immediate = {
+		add_tech_bonus = {
+			name = TR_japan.20.0
+			bonus = 0.5
+			uses = 2
+			category = naval_equipment
+		}
+	}
+	option = {
+		name = TR_japan.21.a
+		add_tech_bonus = {
+			name = TR_japan.21.1
+			bonus = 3
+			uses = 1
+			category = cl_tech
+		}
+	}
+	option = {
+		name = TR_japan.21.b
+		add_tech_bonus = {
+			name = TR_japan.21.2
+			bonus = 3
+			uses = 1
+			category = dd_tech
+		}
+	}
+}
+
+country_event = {           # 大艦巨砲主義か航空主兵論か
+	id = TR_japan.58
+	title = TR_japan.58.t
+	is_triggered_only = yes
+	desc = TR_japan.58.d
+	option = {
+		name = TR_japan.58.a
+		add_ideas = JAP_NAVY_3
+	}
+	option = {
+		name = TR_japan.58.b
+		add_ideas = JAP_NAVY_4
+	}
+}
+
+country_event = {          # 日本航空の未来
+	id = TR_japan.22 
+	title = TR_japan.22.t
+	is_triggered_only = yes
+	desc = TR_japan.22.d
+	option = {
+		name = TR_japan.22.a
+		add_ideas = JAP_AIRFORCE_6
+	}
+}
+
+country_event = {          # 帝国陸軍の未来
+	id = TR_japan.23
+	title = TR_japan.23.t
+	desc = TR_japan.23.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.23.a
+		add_ideas = JAP_ARMY_5
+	}
+
+}
+
+country_event = {          # 海軍優勢
+	id = TR_japan.24
+	title = TR_japan.24.t
+	desc = TR_japan.24.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.24.a
+		add_ideas = JAP_N_A
+	}
+}
+
+country_event = {          # 陸軍優勢
+	id = TR_japan.25
+	title = TR_japan.25.t
+	is_triggered_only = yes
+	desc = TR_japan.25.d
+	option = {
+		name = TR_japan.25.a
+		add_ideas = JAP_A_N
+	}
+}
+
+country_event = {          # 兵部省設立
+	id = TR_japan.26
+	title = TR_japan.26.t
+	is_triggered_only = yes
+	desc = TR_japan.26.d
+	option = {
+		name = TR_japan.26.a
+		add_ideas = JAP_BALANCE_ARMMMY_NAVY
+	}
+}
+
+country_event = {          #　2.26発生
+	id = TR_japan.27
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				has_government = conservatism
+			}
+			country_event = {
+				id = TR_japan.12
+			}
+			else = {
+				country_event = {
+					id = TR_japan.18
+				}
+			}
+		}
+	}
+}
+
+country_event = {       #　犬養首相が死亡
+	id = TR_japan.28
+	title = TR_japan.28.t
+	desc = TR_japan.28.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			kill_country_leader = yes
+		    create_country_leader = {
+		    	name = JAP_Korekiyo_Takahashi
+		    	picture = GFX_portrait_Korekiyo_Takahashi
+		    	ideology = conservatism
+	    	}
+		add_manpower = -1
+		}
+		
+	}
+	option = {
+		name = TR_japan.28.a
+		JAP = {
+			country_event = {
+				id = TR_japan.17
+				days = 7
+			}
+		}
+	}
+
+}
+
+country_event = {        # 公害問題
+	id = TR_japan.29
+	title = TR_japan.29.t
+	desc = TR_japan.29.d
+	is_triggered_only = yes
+	trigger = {
+		tag = JAP
+		JAP = {
+			num_of_factories > 150
+		}
+	}
+	option = {
+		name = TR_japan.29.a
+		add_ideas = JAP_pollution
+	}
+}
+
+country_event = {       #
+	id = TR_japan.30
+	title = TR_japan.30.t
+	desc = TR_japan.30.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.30.a
+		
+	}
+	option = {
+		name = TR_japan.30.b
+	}
+}
+
+country_event = {            # 外交方針
+	id = TR_japan.31
+	title = TR_japan.31.t
+	desc = TR_japan.31.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.31.a
+		complete_national_focus = jap_cooperation
+	}
+	option = {
+		name = TR_japan.31.b
+		complete_national_focus = jap_unyielding
+	}
+}
+
+country_event = {            # アメリカ同盟
+	id = TR_japan.32
+	title = TR_japan.32.t
+	desc = TR_japan.32.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.32.a
+		USA = {
+			country_event = {
+				id = TR_japan.38
+				days = 7
+			}
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+	option = {
+		name = TR_japan.32.b
+		JAP = {
+			complete_national_focus = jap_unyielding
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {             # 人種差別撤廃条約
+	id = TR_japan.33
+	title = TR_japan.33.t
+	desc = TR_japan.33.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.33.b
+		if = {
+			limit = {
+				is_in_faction_with = ENG
+			}
+			ENG = {
+				country_event = {
+					id = TR_japan.34
+					days = 14
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_in_faction_with = USA
+			}
+			USA = {
+				country_event = {
+					id = TR_japan.34
+					days = 14
+				}
+			}
+		}
+	}
+}
+
+country_event = {            # 人種差別撤廃条約
+	id = TR_japan.34
+	title = TR_japan.33.t
+	desc = TR_japan.33.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.34.a
+		JAP = {
+			country_event = {
+				id = TR_japan.35
+				days = 7
+			}
+		}
+
+	}
+	option = {
+		name = TR_japan.34.b
+		JAP = {
+			country_event = {
+				id = TR_japan.36
+				days = 7
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {            # 人種差別撤廃条約　yes
+
+	is_triggered_only = yes
+	id = TR_japan.35
+	title = TR_japan.35.t
+	desc = TR_japan.35.d
+	option = {
+		name = TR_japan.35.a
+		add_ideas = JAP_Convention_on_the_Elimination_of_All_Forms_of_Racial_Discrimination
+		remove_ideas = JAP_dissatisfaction
+	}
+}
+
+country_event = {            # 人種差別撤廃条約 no
+	is_triggered_only = yes
+	id = TR_japan.36
+	title = TR_japan.36.t
+	desc = TR_japan.36.d
+	option = {
+		name = TR_japan.36.a
+	}
+}
+
+
+country_event = {         # 英国同盟
+	is_triggered_only = yes
+	id = TR_japan.37
+	title = TR_japan.37.t
+	desc = TR_japan.37.d
+	option = {
+		name = TR_japan.37.a
+		ENG = {
+			add_to_faction = JAP
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+	option = {
+		name = TR_japan.37.b
+		complete_national_focus = jap_unyielding
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {       # アメリカ同盟
+	id = TR_japan.38
+	title = TR_japan.38.t
+	desc = TR_japan.38.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.38.a
+		JAP = {
+			create_faction = Pacific_Pact
+		}
+		JAP = {
+			add_to_faction = USA
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = TR_japan.38.b
+		JAP = {
+			create_faction = security_diamond
+		}
+		JAP = {
+			add_to_faction = USA
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {      # 協力大東亜
+	id = TR_japan.39
+	title = TR_japan.39.t
+	desc = TR_japan.39.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.39.a
+		JAP = {
+			add_to_faction = PREV
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	option = {
+		name = TR_japan.39.b
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {    # 陸海軍の統合
+	id = TR_japan.40
+	title = TR_japan.40.t
+	desc = TR_japan.40.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.40.a
+	}
+	option = {
+		name = TR_japan.40.b
+	}
+	
+}
+
+country_event = {    # 大東亜会議
+	id = TR_japan.41
+	title = TR_japan.41.t
+	desc = TR_japan.41.d
+	is_triggered_only = yes
+	immediate = {
+		JAP = {
+			country_event = {
+				id = TR_japan.43
+				days = 14
+			}
+		}
+	}
+	option = {
+		name = TR_japan.41.a
+		every_country = {
+			limit = {is_in_faction_with = JAP}
+			limit = { 
+				not = {
+				    original_tag = JAP
+			    }
+		    }
+		
+			country_event = {
+				id = TR_japan.42
+				days = 7
+			}
+		}
+
+	}	
+}
+
+country_event = {    # 大東亜会議
+	id = TR_japan.42
+	title = TR_japan.42.t
+	desc = TR_japan.42.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.42.a
+		add_ideas = JAP_Asian_Ethnic_Community
+	}
+	
+}
+
+country_event = {    # 大東亜会議
+	id = TR_japan.43
+	title = TR_japan.43.t
+	desc = TR_japan.43.d
+	is_triggered_only = yes 
+	hidden = yes
+	immediate = {
+		add_ideas = JAP_Asian_Ethnic_Community
+	}
+}
+
+country_event = {    # 英国との対決
+	id = TR_japan.44
+	title = TR_japan.44.t
+	desc = TR_japan.44.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.44.a
+		release = RAJ
+		release = MAL
+		JAP = {
+			add_to_faction = RAJ
+			add_to_faction = MAL
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = TR_japan.44.b
+		JAP = {
+		    create_wargoal = {
+				target = RAJ
+				type = liberate_wargoal
+			}
+			create_wargoal = {
+				target = MAL
+				type = liberate_wargoal
+			}
+		}
+		hidden_effect = {
+			JAP = {
+				set_country_flag = TR_japan.ENG
+			}
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+}
+
+country_event = {    # 米国との対決
+	id = TR_japan.45
+	title = TR_japan.45.t
+	desc = TR_japan.45.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.45.a
+		release = PHI
+		JAP = {
+			add_to_faction = PHI
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = TR_japan.45.b
+		JAP = {
+		    create_wargoal = {
+				target = PHI
+				type = liberate_wargoal
+			}
+		}
+		hidden_effect = {
+			JAP = {
+				set_country_flag = TR_japan.USA
+			}
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+}
+
+country_event = {   # against FGE
+	id = TR_japan.46
+	title = TR_japan.46.t
+	desc = TR_japan.46.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.46.a
+		release = VIN
+		JAP = {
+			add_to_faction = VIN
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = TR_japan.46.b
+		JAP = {
+		    create_wargoal = {
+				target = VIN
+				type = liberate_wargoal
+			}
+		}
+		hidden_effect = {
+			JAP = {
+				set_country_flag = TR_japan.FGE
+			}
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+}
+
+country_event = {   # 協力大東亜
+	id = TR_japan.47
+	title = TR_japan.47.t
+	desc = TR_japan.47.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.47.a
+
+		ai_chance = {
+			factor = 90
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {is_in_faction_with = MAN}
+				country_event = {
+					id = TR_japan.48
+				}
+			}
+		}
+		JAP = {
+			add_to_faction = MAN
+		}
+	}
+	option = {
+		name = TR_japan.47.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {   # 中華民国
+	id = TR_japan.48
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		name = TR_japan.48.a
+		JAP = {
+			add_to_faction = PREV
+		}
+	}
+}
+
+country_event = {  # against HOL
+	id = TR_japan.49
+	title = TR_japan.49.t
+	desc = TR_japan.49.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.49.a
+		release = INS
+		JAP = {
+			add_to_faction = INS
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = TR_japan.49.b
+		JAP = {
+		    create_wargoal = {
+				target = INS
+				type = liberate_wargoal
+			}
+		}
+		hidden_effect = {
+			JAP = {
+				set_country_flag = TR_japan.INS
+			}
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+}
+
+country_event = {  # 対決大東亜
+	id = TR_japan.50
+	title = TR_japan.50.t
+	desc = TR_japan.50.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.50.a
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.51
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = TR_japan.50.b
+		JAP = {
+			country_event = {
+				id = TR_japan.52
+			}
+		}
+		ai_chance = {
+			factor = 4
+		}
+	}
+}
+
+country_event = {   # puppet 
+	id = TR_japan.51
+	title = TR_japan.51.t
+	desc = TR_japan.51.d
+    is_triggered_only = yes
+	option = {
+		puppet = FROM
+	}
+}
+
+country_event = {  #  war
+	id = TR_japan.52
+	title = TR_japan.52.t
+	desc = TR_japan.52.d
+	is_triggered_only = yes
+	option = {
+		create_wargoal = {
+			target = FROM
+			type = puppet_wargoal_focus
+		}
+		ai_chance = {
+			factor = 3
+		}
+	}
+	option = {
+		add_political_power = -150
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 英国との対決
+	id = TR_japan.53
+	title = TR_japan.53.t
+	desc = TR_japan.53.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.53.a
+		JAP = {
+			puppet = RAJ
+			puppet = MAL
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = TR_japan.53.b
+		JAP = {
+		    create_wargoal = {
+				target = RAJ
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = MAL
+				type = puppet_wargoal_focus
+			}
+		}
+		hidden_effect = {
+			JAP = {
+				set_country_flag = TR_japan.ENG
+			}
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+}
+
+country_event = {  # 米国との対決
+	id = TR_japan.54
+	title = TR_japan.54.t
+	desc = TR_japan.54.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.54.a
+		JAP = {
+			puppet = PHI
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = TR_japan.54.b
+		JAP = {
+		    create_wargoal = {
+				target = PHI
+				type = puppet_wargoal_focus
+			}
+		}
+		hidden_effect = {
+			JAP = {
+				set_country_flag = TR_japan.USA
+			}
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+}
+
+country_event = { # against FGE
+	id = TR_japan.55
+	title = TR_japan.55.t
+	desc = TR_japan.55.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.55.a
+		JAP = {
+			puppet = VIN
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = TR_japan.55.b
+		JAP = {
+		    create_wargoal = {
+				target = VIN
+				type = puppet_wargoal_focus
+			}
+		}
+		hidden_effect = {
+			JAP = {
+				set_country_flag = TR_japan.FGE
+			}
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+}
+
+country_event = { # against HOL
+	id = TR_japan.56
+	title = TR_japan.56.t
+	desc = TR_japan.56.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.56.a
+		JAP = {
+		        puppet = INS
+		    }
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = TR_japan.56.b
+		JAP = {
+		    create_wargoal = {
+				target = INS
+				type = puppet_wargoal_focus
+			}
+		}
+		hidden_effect = {
+			JAP = {
+				set_country_flag = TR_japan.INS
+			}
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+}
+
+country_event = { # zaibatsu problem
+	id = TR_japan.57
+	title = TR_japan.57.t
+	desc = TR_japan.57.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.57.a
+		swap_ideas = {
+			remove_idea = JAP_zaibatsus_2
+			add_idea = JAP_zaibatsus_3
+		}
+	}
+	option = {
+		name = TR_japan.57.b
+		remove_ideas = JAP_zaibatsus_2
+	}
+}
+
+country_event = { # civil war
+	id = TR_japan.59
+	title = TR_japan.59.t
+	desc = TR_japan.59.d
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = {
+			flag = TR_japan_18
+			days > 60
+		}
+	}
+	option = {  # 戒厳令
+		name = TR_japan.59.a
+		JAP = {
+			country_event = {
+				id = TR_japan.60
+				days = 1
+			}
+		}
+	}
+	option = {   #  通常の治安維持
+		name = TR_japan.59.b
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.63
+					days = 30
+				}
+			}
+		}
+	}
+}
+
+country_event = {  # 戒厳令
+	id = TR_japan.60
+	title = TR_japan.60.t
+	desc = TR_japan.60.d
+	is_triggered_only = yes
+	option = {    # police
+		name = TR_japan.60.a
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.61
+					days = 30
+				}
+			}
+		}
+	}
+	option = {   # military
+		name = TR_japan.60.b
+		hidden_effect = {
+			JAP = {
+				country_event ={
+					id = TR_japan.62
+					days = 30
+				}
+			}
+		}
+
+	}
+}
+
+country_event = { # election
+	id = TR_japan.61
+	title = TR_japan.61.t
+	desc = TR_japa.61.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.61.a
+		JAP = {
+			country_event = {
+				id = TR_japan.63
+				days = 30
+			}
+		}
+	}
+}
+
+country_event ={
+	id = TR_japan.62
+	title = TR_japan.62.t
+	desc = TR_japan.63.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.62.a
+		JAP = {
+			country_event = {
+				id = TR_japan.64
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TR_japan.64
+	title = TR_japan.64.t
+	desc = TR_japan.64.d
+	is_triggered_only = yes
+	option = { # 　官僚
+		name = TR_japan.64.a
+		set_politics = {
+			
+		}
+	}
+}

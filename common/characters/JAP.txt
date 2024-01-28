@@ -18,7 +18,7 @@ characters = {
 		portraits = {
 		    civilian = {
 		        large = GFX_portrait_Fusanosuke_Kuhara
-		}
+		    }
 		}
 		country_leader={
 		    ideology = conservatism
@@ -30,8 +30,22 @@ characters = {
 	JAP_chikuhei_nakajima = {
 		name = JAP_chikuhei_nakajima
 		portraits = {
-		civilian = {
+		    civilian = {
 		        large = GFX_portrait_Chikuhei_Nakajima
+		    }
+		}
+		country_leader={
+		    ideology = conservatism
+		    expire = "1949.10.29"
+		    id=-1
+		}
+	}
+
+	JAP_Korekiyo_Takahashi = {
+		name = JAP_Korekiyo_Takahashi
+		portraits = {
+	    	civilian = {
+		        large = GFX_portrait_Korekiyo_Takahashi
 		    }
 		}
 		country_leader={

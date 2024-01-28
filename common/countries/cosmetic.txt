@@ -3,6 +3,30 @@ PER_puppet_RUS = {
 	color = rgb { 64 128 0 }
 	color_ui = rgb { 64 128 0 }
 }
+
+
+PER_empire = {
+	color = rgb { 94 0 77 }
+	color_ui = rgb { 94 0 77 }
+}
+SYR_puppet_PER = {
+	color = rgb { 94 0 77 }
+	color_ui = rgb { 94 0 77 }
+}
+UZB_puppet_PER = {
+	color = rgb { 94 0 77 }
+	color_ui = rgb { 94 0 77 }
+}
+TAJ_puppet_PER = {
+	color = rgb { 94 0 77 }
+	color_ui = rgb { 94 0 77 }
+}
+ARM_puppet_PER = {
+	color = rgb { 94 0 77 }
+	color_ui = rgb { 94 0 77 }
+}
+
+
 CZE_communism = {
 	color = rgb { 135 48 48 }
 	color_ui = rgb { 135 48 48 }

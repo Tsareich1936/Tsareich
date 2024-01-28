@@ -11,7 +11,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_portrait_Chikuhei_Nakajima"
-		textureFile = "gfx/leaders/JAP/Portrait_Chikuheo_Nakajima.dds"
+		textureFile = "gfx/leaders/JAP/Portrait_Chikuhei_Nakajima.dds"
 	}
 	
 	spriteType = {
@@ -27,5 +27,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_Iso_Abe"
 		textureFile = "gfx/leaders/JAP/Portrait_Iso_Abe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Korekiyo_Takahashi"
+		textureFile = "gfx/leaders/JAP/Potrait_Korekiyo_Takahashi.dds"
 	}
 }

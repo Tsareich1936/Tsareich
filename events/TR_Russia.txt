@@ -204,7 +204,7 @@ country_event = {
     option = { #最後通牒なし
         name = TR_Russia.5.b
         custom_effect_tooltip = TR_Russia_per_tt.2
-        add_timed_idea = { idea = RUS_dropped_army days = 180 }
+        add_timed_idea = { idea = RUS_dropped_army days = 720 }
         ai_chance = { factor = 3 }
         declare_war_on = {
             target = PER
@@ -217,12 +217,11 @@ country_event = {
                 set_country_flag = RUS_war_against_RUS
                 add_ideas = TR_hidden_war_nosurrender
             }
-            RUS = {
-                set_country_flag = RUS_war_against_RUS
-                add_ideas = TR_hidden_war_nosurrender
-            }
             #戦争開始
             news_event = { hours = 1 id = TR_Russia_news.4 }
+            PER = {
+                load_oob = "TR_PER_russianwar"
+            }
         }
     }
 }
@@ -238,14 +237,14 @@ country_event = {
 
     option = {
         name = TR_Russia.6.a #かかってこい
-        ai_chance = { factor = 80 }
+        ai_chance = { factor = 90 }
         RUS = {
             country_event = { hours = 48 id = TR_Russia.7 }
         }
     }
     option = {
         name = TR_Russia.6.b #引き下がる
-        ai_chance = { factor = 20 }
+        ai_chance = { factor = 10 }
         RUS = {
             country_event = { hours = 48 id = TR_Russia.8 }
         }
@@ -274,13 +273,12 @@ country_event = {
             PER = {
                 set_country_flag = RUS_war_against_RUS
                 add_ideas = TR_hidden_war_nosurrender
-            } 
-            RUS = {
-                set_country_flag = RUS_war_against_RUS
-                add_ideas = TR_hidden_war_nosurrender
             }
             news_event = { hours = 1 id = TR_Russia_news.5 }
             #戦争開始
+            PER = {
+                load_oob = "TR_PER_russianwar"
+            }
         }
     }
 }
@@ -299,7 +297,30 @@ country_event = {
         hidden_effect = {
             news_event = { hours = 1 id = TR_Russia_news.6 }
         }
+        custom_effect_tooltip = TR_Russia_per_peace_tt.1_1
         #講和のやつ
+        hidden_effect = {
+            419 = {
+                transfer_state_to = RUS
+            }
+            420 = {
+                transfer_state_to = RUS
+            }
+            418 = {
+                transfer_state_to = RUS
+            }
+            416 = {
+                transfer_state_to = RUS
+            }
+            set_autonomy = {
+                target = PER
+                autonomous_state = autonomy_puppet
+            }
+            PER = {
+                set_cosmetic_tag = PER_puppet_RUS
+                
+            }
+        }
     }
 }
 
@@ -413,7 +434,7 @@ country_event = {
             message = TR_Russia_per_peace_tt.1
         }
         hidden_effect = {
-            remove_ideas = TR_hidden_war_nosurrender
+            RUS = { news_event = { hours = 1 id = TR_Russia_news.9 } }
             PER = {
                 remove_ideas = TR_hidden_war_nosurrender
             }
@@ -453,7 +474,7 @@ country_event = {
             message = TR_Russia_per_peace_tt.2
         }
         hidden_effect = {
-            remove_ideas = TR_hidden_war_nosurrender
+            RUS = { news_event = { hours = 1 id = TR_Russia_news.10 } }
             PER = {
                 remove_ideas = TR_hidden_war_nosurrender
             }
@@ -488,6 +509,299 @@ country_event = {
         }
     }
 }
+
+
+#ロシア降伏
+country_event = {
+    id = TR_Russia.13
+    hidden = yes
+    fire_only_once = yes
+
+    trigger = {
+        AND = {
+            country_exists = PER
+            229 = {
+                is_controlled_by = PER
+            }
+            218 = {
+                is_controlled_by = PER
+            }
+            217 = {
+                is_controlled_by = PER
+            }
+        }
+    }
+
+    immediate = {
+        PER = { country_event = TR_Russia.14 }
+        RUS = {
+            clr_country_flag = RUS_war_against_RUS
+            if = {
+                limit = {
+                    has_idea = RUS_dropped_army
+                }
+                remove_ideas = RUS_dropped_army
+            }
+        }
+        PER = {
+            clr_country_flag = RUS_war_against_RUS
+        }
+    }
+
+    option = {
+        name = TR_Russia.1.a
+    }
+}
+
+
+#ペルシャ:講和会議
+country_event = {
+    id = TR_Russia.14
+    title = TR_Russia.14.t
+    desc = TR_Russia.14.d
+    picture = GFX_report_event_generic_sign_treaty2
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.14.a #停戦+賠償
+        ai_chance = { factor = 90 }
+        white_peace = {
+            tag = RUS
+            message = TR_Russia_per_peace_tt.3
+        }
+        custom_effect_tooltip = TR_Persia_tt.1
+        add_offsite_building = { type = arms_factory level = 15 }
+        add_offsite_building = { type = industrial_complex level = 30 }
+        hidden_effect = {
+            PER = { news_event = { hours = 1 id = TR_Russia_news.11 } }
+            remove_ideas = TR_hidden_war_nosurrender
+            PER = {
+                set_cosmetic_tag = PER_empire
+                
+            }
+            229 = {
+                transfer_state_to = PER
+                add_core_of = PER
+            }
+            230 = {
+                transfer_state_to = PER
+                add_core_of = PER
+            }
+            231 = {
+                transfer_state_to = PER
+                add_core_of = PER
+            }
+            826 = {
+                transfer_state_to = PER
+                add_core_of = PER
+            }
+            832 = {
+                transfer_state_to = PER
+                add_core_of = PER
+            }
+            584 = {
+                transfer_state_to = PER
+                add_core_of = PER
+            }
+            233 = {
+                set_demilitarized_zone = yes
+            }
+            827 = {
+                set_demilitarized_zone = yes
+            }
+            828 = {
+                set_demilitarized_zone = yes
+            }
+            821 = {
+                set_demilitarized_zone = yes
+            }
+            232 = {
+                set_demilitarized_zone = yes
+            }
+            PER = {
+                set_country_flag = is_kaukasus_demilitarized_by_PER
+                add_timed_idea = { idea = RUS_money_by_RUS days = 360 }
+
+            }
+            RUS = {
+                add_timed_idea = { idea = RUS_money_to_PER days = 360 }
+            }
+        }
+    }
+    option = {
+        name = TR_Russia.14.b #ペルシャ帝国
+        ai_chance = { factor = 10 }
+        white_peace = {
+            tag = RUS
+            message = TR_Russia_per_peace_tt.4
+        }
+        hidden_effect = {
+            PER = { news_event = { hours = 1 id = TR_Russia_news.12 } }
+
+                remove_ideas = TR_hidden_war_nosurrender
+                PER = {
+                    set_cosmetic_tag = PER_empire
+                }
+                229 = {
+                    transfer_state_to = PER
+                    add_core_of = PER
+                }
+                230 = {
+                    transfer_state_to = PER
+                    add_core_of = PER
+                }
+                231 = {
+                    transfer_state_to = PER
+                    add_core_of = PER
+                }
+                826 = {
+                    transfer_state_to = PER
+                    add_core_of = PER
+                }
+                832 = {
+                    transfer_state_to = PER
+                    add_core_of = PER
+                }
+                584 = {
+                    transfer_state_to = PER
+                    add_core_of = PER
+                }
+                232 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                234 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                235 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                233 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                827 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                828 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                821 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                830 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                831 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                823 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+                587 = {
+                    transfer_state_to = PER
+                    set_state_flag = PER_empire_but_nocored
+                }
+
+                #傀儡
+                RUS = {
+                    end_puppet = ARM
+                    end_puppet = SYR
+                }
+                set_autonomy = {
+                    target = ARM
+                    autonomous_state = autonomy_collaboration_government
+                }
+                set_autonomy = {
+                    target = SYR
+                    autonomous_state = autonomy_collaboration_government
+                }
+                set_autonomy = {
+                    target = UZB
+                    autonomous_state = autonomy_collaboration_government
+                }
+                set_autonomy = {
+                    target = TAJ
+                    autonomous_state = autonomy_collaboration_government
+                }
+                
+                585 = {
+                    transfer_state_to = UZB
+                }
+                405 = {
+                    transfer_state_to = UZB
+                }
+                742 = {
+                    transfer_state_to = TAJ
+                }
+                944 = {
+                    transfer_state_to = SYR
+                }
+                SYR = {
+                    set_cosmetic_tag = SYR_puppet_PER
+                }
+                ARM = {
+                    set_cosmetic_tag = ARM_puppet_PER
+                }
+                UZB = {
+                    set_cosmetic_tag = UZB_puppet_PER
+                }
+                TAJ = {
+                    set_cosmetic_tag = TAJ_puppet_PER
+                }
+
+          
+        }
+    }
+}
+
+#シベリア
+country_event = {
+    id = TR_Russia.15
+    title = TR_Russia.15.t
+    desc = TR_Russia.15.d
+    picture = GFX_report_event_FIN_three_country_cairn_flag_raising
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.15.a #よし。
+        948 = {
+            add_resource = {
+                type = oil
+                amount = 48
+            }
+            add_manpower = 25000
+        }
+        946 = {
+            add_resource = {
+                type = oil
+                amount = 12
+            }
+            add_manpower = 9500
+        }
+        463 = {
+            add_resource = {
+                type = oil
+                amount = 30
+            }
+            add_manpower = 12000
+        }
+    }
+    
+}
+
+
+
 
 ### News ###
 
@@ -774,4 +1088,135 @@ news_event = {
 }
 
 
+news_event = {
+	id = TR_Russia_news.9
+	title = TR_Russia_news.9.t
+	desc = TR_Russia_news.9.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+
+    option = {
+		name = TR_Russia_news.9.a
+		trigger = {
+            tag = RUS
+		}
+	}
+    option = {
+		name = TR_Russia_news.9.b
+		trigger = {
+            tag = PER
+		}
+	}
+    option = {
+		name = TR_Russia_news.9.c
+		trigger = {
+            NOT = {
+                tag = RUS
+                tag = PER
+            }
+		}
+	}
+
+}
+
+news_event = {
+	id = TR_Russia_news.10
+	title = TR_Russia_news.9.t
+	desc = TR_Russia_news.10.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+
+    option = {
+		name = TR_Russia_news.9.a
+		trigger = {
+            tag = RUS
+		}
+	}
+    option = {
+		name = TR_Russia_news.9.b
+		trigger = {
+            tag = PER
+		}
+	}
+    option = {
+		name = TR_Russia_news.9.c
+		trigger = {
+            NOT = {
+                tag = RUS
+                tag = PER
+            }
+		}
+	}
+
+}
+
+news_event = {
+	id = TR_Russia_news.11
+	title = TR_Russia_news.11.t
+	desc = TR_Russia_news.11.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+
+    option = {
+		name = TR_Russia_news.11.a
+		trigger = {
+            tag = RUS
+		}
+	}
+    option = {
+		name = TR_Russia_news.11.b
+		trigger = {
+            tag = PER
+		}
+	}
+    option = {
+		name = TR_Russia_news.11.c
+		trigger = {
+            NOT = {
+                tag = RUS
+                tag = PER
+            }
+		}
+	}
+
+}
+
+news_event = {
+	id = TR_Russia_news.12
+	title = TR_Russia_news.12.t
+	desc = TR_Russia_news.12.d
+	picture = GFX_news_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+
+    option = {
+		name = TR_Russia_news.12.a
+		trigger = {
+            tag = RUS
+		}
+	}
+    option = {
+		name = TR_Russia_news.12.b
+		trigger = {
+            tag = PER
+		}
+	}
+    option = {
+		name = TR_Russia_news.11.c
+		trigger = {
+            NOT = {
+                tag = RUS
+                tag = PER
+            }
+		}
+	}
+
+}
 

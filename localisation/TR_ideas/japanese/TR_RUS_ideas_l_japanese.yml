@@ -1,6 +1,8 @@
 ﻿l_japanese:
  RUS_winner_of_wwi: "大戦争の勝者"
  RUS_winner_of_wwi_desc: "大戦争では、ロシアの軍隊は革命を起こしたドイツ相手に勇敢に戦い、栄光ある勝利を掴んだ。皇帝の権威は国内外を問わず響き渡り、今日の帝国の土台となっている。"
+ RUS_winner_of_wwi_1: "大戦争の勝者"
+ RUS_winner_of_wwi_1_desc: "大戦争では、ロシアの軍隊は革命を起こしたドイツ相手に勇敢に戦い、栄光ある勝利を掴んだ。皇帝の権威は国内外を問わず響き渡り、今日の帝国の土台となっている。"
  RUS_wwi_army: "大戦争の軍隊"
  RUS_wwi_army_desc: "ロシア帝国軍は先の大戦争の遺産を大きく抱えている。近代化の途上で発生した戦争による勝利体験は、陸軍による無駄な突撃戦術を長く維持させることになってしまった。"
  RUS_nomad_of_russia: "遊牧民"
@@ -23,5 +25,29 @@
  RUS_dropped_army:"大義なき侵略"
  RUS_money_by_PER:"イランからの賠償"
  RUS_money_to_RUS:"ロシアへの賠償"
+ RUS_money_by_RUS:"ロシアからの賠償"
+ RUS_money_to_PER:"ペルシャへの賠償"
+ RUS_cost_of_buying_arms_factory:"軍需工場買収の費用"
+ RUS_navy_doctrine:"近海集中死守ドクトリン"
+ RUS_tank_divisions:"安価な中戦車"
+ RUS_shikolsky_planes_idea:"シコルスキー重戦闘機"
+
+ RUS_stock_exchange:"国内資本家の投資"
+ RUS_stock_exchange_desc:"国内の資本家による投資を政府が推進したため、国内の民間企業の生産性が大きく向上した。"
+ RUS_stock_exchange_1:"国内資本家の投資"
+ RUS_stock_exchange_1_desc:"国内の資本家による投資を政府が推進したため、国内の民間企業の生産性が大きく向上した。"
+
+ RUS_national_construction_idea:"国営建設局"
+ RUS_national_construction_idea_desc:"我が国の広大な領土に対応するように、我が国のインフラは安価に建設されるよう設計されている。"
+
+ RUS_three_year_buildup:"三ヵ年工業化計画"
+ RUS_three_year_buildup_desc:"ツァーリは三年間での可能な限りの工業化を命令した。我々は世界の工場となるだろう。"
+
+ RUS_deep_battle:"縦深戦闘"
+ RUS_deep_battle_desc:"トゥハチェフスキーが考案した縦深戦闘によって、我が軍の攻撃力は格段に向上した。"
+
+ modifier_production_cost_infrastructure_factor: "§Yインフラ§!建設コスト"
+ modifier_production_cost_rail_way_factor: "§Y鉄道§!建設コスト"
+ 
 
 

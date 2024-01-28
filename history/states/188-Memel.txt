@@ -20,6 +20,7 @@ state=
 			}
 		}
 		add_core_of = LIT
+		add_core_of = GER
 
 		1939.3.22 = {
 			owner = GER

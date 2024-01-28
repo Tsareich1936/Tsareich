@@ -64,6 +64,22 @@ on_actions = {
         }
 		effect = {
 			POL = { become_exiled_in = { target = FRA legitimacy = 10 } }
+			every_state = {
+				limit = {
+					is_core_of = POL
+				}
+				add_to_array = {
+					array = POL_core
+				}
+			}
+		}
+		effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.27
+					days = 56
+				}
+			}
 		}
 	}
 }

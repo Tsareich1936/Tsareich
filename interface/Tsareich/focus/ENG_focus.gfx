@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = TR_ENG_contacts_with_russia
+		textureFile = "gfx/interface/goals/Tsareich/russia_relationship.dds"
+	}
+}

@@ -39,7 +39,7 @@ country_event = {
 	}
 	option = {
 		name = TR_czech_revolution.2.b
-
+        ai_chance = { base = 0 }
 	}
 }
 news_event = {

@@ -1,0 +1,102 @@
+JAP_interservice_rivalry = {
+
+	allowed = {
+		tag = JAP
+	}
+
+	picture = GFX_decision_cat_picture_NOR_fascist_war
+	priority = {
+		base = 11
+	}
+	
+	
+	visible_when_empty = yes
+
+}
+
+JAP_industry_Takahashi = {
+
+	allowed = {
+		tag = JAP
+	}
+
+	
+	priority = {
+		base = 11
+	}
+	
+	
+	visible_when_empty = no
+
+}
+
+JAP_Railway = {
+	allowed = {
+		tag = JAP
+	}
+
+	
+	priority = {
+		base = 11
+	}
+	
+	
+	visible_when_empty = no
+}
+
+JAP_NAVAL_PLAN_3 = {
+	allowed = {
+		tag = JAP
+	}
+
+	
+	priority = {
+		base = 11
+	
+	}
+	visible_when_empty = no
+}
+
+JAP_WAR_PLAN_COOP = {
+	allowed = {
+		tag = JAP
+	}
+
+	priority = {
+		base = 11
+	}
+	visible_when_empty = no
+}
+
+JAP_WAR_PLAN_CREATE = {
+	allowed = {
+		tag = JAP
+	}
+
+	priority = {
+		base = 11
+	}
+	visible_when_empty = no
+}
+
+JAP_WAR_PLAN_CREATE_2 = {
+	allowed = {
+		tag = JAP
+	}
+
+	priority = {
+		base = 11
+	}
+	visible_when_empty = no
+}
+
+JAP_KOR_WAR = {
+	allowed = {
+		tag = JAP
+	}
+
+	priority = {
+		base = 100
+	}
+	visible_when_empty = no
+}

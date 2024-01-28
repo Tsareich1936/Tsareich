@@ -1,0 +1,35 @@
+TR_ENG_proceed_financial_issue = {
+	if = {
+		limit = {
+			has_idea = TR_ENG_financial_issues1
+		}
+		swap_ideas = {
+			remove_idea = TR_ENG_financial_issues1
+			add_idea = TR_ENG_financial_issues2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TR_ENG_financial_issues2
+		}
+		swap_ideas = {
+			remove_idea = TR_ENG_financial_issues2
+			add_idea = TR_ENG_financial_issues3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TR_ENG_financial_issues3
+		}
+		swap_ideas = {
+			remove_idea = TR_ENG_financial_issues3
+			add_idea = TR_ENG_financial_issues4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TR_ENG_financial_issues4
+		}
+		remove_ideas = TR_ENG_financial_issues4
+	}
+}
