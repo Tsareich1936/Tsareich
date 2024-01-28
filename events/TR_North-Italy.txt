@@ -19,10 +19,10 @@ country_event = {
 					ideology = Lcoalition
 				}
 				mark_focus_tree_layout_dirty = yes
-				load_focus_tree = {
-					tree = north_italy_focus
-					keep_completed = yes
-				}
+				# load_focus_tree = {
+				# 	tree = north_italy_focus
+				# 	keep_completed = yes
+				# }
 				set_party_name = {
 					ideology = communism
 					long_name = SRI_communism_party_long
