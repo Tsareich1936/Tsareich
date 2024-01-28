@@ -1,7 +1,7 @@
 add_namespace = "TR_czech"
 
 country_event = {
-	id = CZE_ex_rus.1
+	id = CZE_ex_rus
 	title = CZE_ex_rus.1
 	desc = CZE_ex_rus.d
 	picture = GFX_report_event_generic_handshake

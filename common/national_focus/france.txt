@@ -1,49 +1,1040 @@
-### search_filters = {FOCUS_FILTER_POLITICAL}
-### search_filters = {FOCUS_FILTER_RESEARCH}
-### search_filters = {FOCUS_FILTER_INDUSTRY}
-### search_filters = {FOCUS_FILTER_STABILITY}
-### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
-### search_filters = {FOCUS_FILTER_MANPOWER}
-### search_filters = {FOCUS_FILTER_ANNEXATION}
-
 focus_tree = {
-	id = french_focus
-	
-	# country = {
-	# 	factor = 0
-		
-	# 	modifier = {
-	# 		add = 22
-	# 		tag = FRA
-	# 	}
-	# }
-
-	focus = {
-		id = FRA_international
-		icon = GFX_focus_SOV_builder_of_the_red_army
-		x = 10
-		y = 0
-		cost = 2
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_named_threat = { threat = 3 name = FRA_international }
-			add_political_power = 50
-
-			country_event = { id = trfrance.1 }
-            GER = {
-                country_event = { id = trfrance.1 }
-            }
-			ITA = {
-                country_event = { id = trfrance.1 }
-            }
+	id = fra
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = FRA
 		}
 	}
-	
 	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 200 y = 2600 }
 
+	
+	focus = {
+		id = FRA_inter1
+		icon = GFX_goal_unknown
+		cost = 8.00
+		x = 11
+		y = 0
+
+	}
+	focus = {
+		id = FRA_ind1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 6
+		y = 13
+
+	}
+	focus = {
+		id = FRA_hukusi
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 13
+		y = 12
+
+	}
+	focus = {
+		id = FRA_nav
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = FRA_mil
+		}
+		x = 28
+		y = 12
+
+	}
+	focus = {
+		id = FRA_mil
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = FRA_nav
+		}
+		x = 36
+		y = 12
+
+	}
+	focus = {
+		id = FRA_dip
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 6
+		y = 9
+
+	}
+	focus = {
+		id = FRA_com1
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_inter1
+		}
+		mutually_exclusive = {
+			focus = FRA_anaky
+			focus = FRA_bonp
+			focus = FRA_sadc
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = FRA_com_purge1
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com1
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = FRA_com_purge2
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_com_purge1
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = FRA_com_purge3
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_com_purge1
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = FRA_com_purge4
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_com_purge2
+		}
+		prerequisite = {
+			focus = FRA_com_purge3
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = FRA_com_antiger1
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_purge4
+		}
+		mutually_exclusive = {
+			focus = FRA_com2
+		}
+		x = 0
+		y = 5
+
+	}
+	focus = {
+		id = FRA_com2
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_purge4
+		}
+		mutually_exclusive = {
+			focus = FRA_com_antiger1
+		}
+		x = 2
+		y = 5
+
+	}
+	focus = {
+		id = FRA_com3
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com2
+		}
+		x = 2
+		y = 6
+
+	}
+	focus = {
+		id = FRA_com4
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com3
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = FRA_ind_oil1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_ind1
+		}
+		x = 3
+		y = 14
+
+	}
+	focus = {
+		id = FRA_com7
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_purge4
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = FRA_com8
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com7
+		}
+		x = 4
+		y = 7
+
+	}
+	focus = {
+		id = FRA_ind_oil3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_ind_oil1
+		}
+		x = 4
+		y = 15
+
+	}
+	focus = {
+		id = FRA_com_purge5
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_com8
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = FRA_com_purge6
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_com_purge5
+		}
+		x = 4
+		y = 9
+
+	}
+	focus = {
+		id = FRA_dip1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_dip
+		}
+		x = 6
+		y = 10
+
+	}
+	focus = {
+		id = FRA_dip2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_dip1
+		}
+		x = 6
+		y = 11
+
+	}
+	focus = {
+		id = FRA_ind2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_ind1
+		}
+		x = 6
+		y = 14
+
+	}
+	focus = {
+		id = FRA_ind3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_ind2
+		}
+		x = 6
+		y = 15
+
+	}
+	focus = {
+		id = FRA_ind6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_ind3
+		}
+		x = 4
+		y = 16
+
+	}
+	focus = {
+		id = FRA_ind_rec
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_ind3
+		}
+		x = 6
+		y = 17
+
+	}
+	focus = {
+		id = FRA_sadc
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_inter1
+		}
+		mutually_exclusive = {
+			focus = FRA_anaky
+			focus = FRA_bonp
+			focus = FRA_anaky
+			focus = FRA_bonp
+			focus = FRA_com1
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = FRA_ind4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_ind1
+		}
+		x = 8
+		y = 14
+
+	}
+	focus = {
+		id = FRA_ind5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_ind4
+		}
+		x = 8
+		y = 15
+
+	}
+	focus = {
+		id = FRA_dip_inter1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_dip
+		}
+		x = 9
+		y = 10
+
+	}
+	focus = {
+		id = FRA_dip_inter2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_dip_inter1
+		}
+		x = 9
+		y = 11
+
+	}
+	focus = {
+		id = FRA_hukusi_imin1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi
+		}
+		mutually_exclusive = {
+			focus = FRA_hukusi_syousika1
+		}
+		x = 12
+		y = 13
+
+	}
+	focus = {
+		id = FRA_hukusi_imin4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_imin1
+		}
+		x = 10
+		y = 14
+
+	}
+	focus = {
+		id = FRA_hukusi_imin5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_imin4
+		}
+		x = 10
+		y = 15
+
+	}
+	focus = {
+		id = FRA_hukusi_imin2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_imin1
+		}
+		x = 12
+		y = 14
+
+	}
+	focus = {
+		id = FRA_hukusi_imin3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_imin2
+		}
+		x = 12
+		y = 15
+
+	}
+	focus = {
+		id = FRA_bonp
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_inter1
+		}
+		mutually_exclusive = {
+			focus = FRA_anaky
+			focus = FRA_sadc
+			focus = FRA_sadc
+			focus = FRA_com1
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = FRA_hukusi_syousika1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi
+		}
+		mutually_exclusive = {
+			focus = FRA_hukusi_imin1
+		}
+		x = 14
+		y = 13
+
+	}
+	focus = {
+		id = FRA_hukusi_syousika2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_syousika1
+		}
+		x = 14
+		y = 14
+
+	}
+	focus = {
+		id = FRA_hukusi_syousika3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_syousika2
+		}
+		x = 14
+		y = 15
+
+	}
+	focus = {
+		id = FRA_hukusi2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_imin3
+			focus = FRA_hukusi_syousika3
+		}
+		x = 13
+		y = 16
+
+	}
+	focus = {
+		id = FRA_hukusi3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi2
+		}
+		prerequisite = {
+			focus = FRA_ind3
+		}
+		prerequisite = {
+			focus = FRA_ind5
+		}
+		x = 10
+		y = 17
+
+	}
+	focus = {
+		id = FRA_hukusi_syousika4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_syousika1
+		}
+		x = 16
+		y = 14
+
+	}
+	focus = {
+		id = FRA_hukusi_syousika5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_syousika4
+		}
+		x = 16
+		y = 15
+
+	}
+	focus = {
+		id = FRA_hukusi_jyosei1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi
+		}
+		x = 18
+		y = 13
+
+	}
+	focus = {
+		id = FRA_hukusi_jyosei2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_jyosei1
+		}
+		x = 18
+		y = 14
+
+	}
+	focus = {
+		id = FRA_hukusi_jyosei3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_jyosei2
+		}
+		x = 18
+		y = 16
+
+	}
+	focus = {
+		id = FRA_anaky
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_inter1
+		}
+		mutually_exclusive = {
+			focus = FRA_bonp
+			focus = FRA_sadc
+			focus = FRA_com1
+			focus = FRA_sadc
+		}
+		x = 20
+		y = 1
+
+	}
+	focus = {
+		id = FRA_nav_mil1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav
+		}
+		x = 24
+		y = 13
+
+	}
+	focus = {
+		id = FRA_nav_mil2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav_mil1
+		}
+		x = 23
+		y = 15
+
+	}
+	focus = {
+		id = FRA_nav_mil3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav_mil1
+		}
+		x = 25
+		y = 15
+
+	}
+	focus = {
+		id = FRA_nav_mil4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav_mil3
+		}
+		prerequisite = {
+			focus = FRA_nav_mil2
+		}
+		x = 24
+		y = 16
+
+	}
+	focus = {
+		id = FRA_nav_midi
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav
+		}
+		x = 26
+		y = 13
+
+	}
+	focus = {
+		id = FRA_nav1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav
+		}
+		x = 29
+		y = 13
+
+	}
+	focus = {
+		id = FRA_nav5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav1
+		}
+		x = 27
+		y = 14
+
+	}
+	focus = {
+		id = FRA_nav6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav5
+		}
+		x = 27
+		y = 15
+
+	}
+	focus = {
+		id = FRA_nav2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav1
+		}
+		x = 29
+		y = 14
+
+	}
+	focus = {
+		id = FRA_nav3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav2
+		}
+		x = 29
+		y = 15
+
+	}
+	focus = {
+		id = FRA_air1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil
+			focus = FRA_nav
+		}
+		x = 33
+		y = 13
+
+	}
+	focus = {
+		id = FRA_air2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_air1
+		}
+		x = 33
+		y = 14
+
+	}
+	focus = {
+		id = FRA_nav_air
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_air2
+		}
+		prerequisite = {
+			focus = FRA_nav2
+		}
+		x = 31
+		y = 15
+
+	}
+	focus = {
+		id = FRA_nav4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav_air
+		}
+		prerequisite = {
+			focus = FRA_nav3
+		}
+		x = 30
+		y = 16
+
+	}
+	focus = {
+		id = FRA_air3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_air2
+		}
+		x = 33
+		y = 15
+
+	}
+	focus = {
+		id = FRA_air4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_air3
+		}
+		x = 33
+		y = 16
+
+	}
+	focus = {
+		id = FRA_mil1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil
+		}
+		x = 39
+		y = 13
+
+	}
+	focus = {
+		id = FRA_mil2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil1
+		}
+		x = 37
+		y = 14
+
+	}
+	focus = {
+		id = FRA_mil_air
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil2
+		}
+		prerequisite = {
+			focus = FRA_air2
+		}
+		x = 35
+		y = 15
+
+	}
+	focus = {
+		id = FRA_mil3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil2
+		}
+		x = 37
+		y = 15
+
+	}
+	focus = {
+		id = FRA_mil4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil3
+		}
+		x = 37
+		y = 16
+
+	}
+	focus = {
+		id = FRA_mil5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil4
+		}
+		x = 37
+		y = 17
+
+	}
+	focus = {
+		id = FRA_mil_tank1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil1
+		}
+		mutually_exclusive = {
+			focus = FRA_mil_arc1
+		}
+		x = 39
+		y = 14
+
+	}
+	focus = {
+		id = FRA_mil_tank2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil_tank1
+		}
+		x = 39
+		y = 15
+
+	}
+	focus = {
+		id = FRA_mil_arc1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil1
+		}
+		mutually_exclusive = {
+			focus = FRA_mil_tank1
+		}
+		x = 41
+		y = 14
+
+	}
+	focus = {
+		id = FRA_mil_arc2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil_arc1
+		}
+		x = 41
+		y = 15
+
+	}
+	focus = {
+		id = FRA_mil_nav1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil
+		}
+		x = 43
+		y = 13
+
+	}
+	focus = {
+		id = FRA_mil_nav2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil_nav1
+		}
+		x = 43
+		y = 14
+
+	}
+	focus = {
+		id = FRA_mil_nav3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil_nav2
+		}
+		x = 43
+		y = 15
+
+	}
+	focus = {
+		id = FRA_com5
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_antiger3
+			focus = FRA_com4
+		}
+		prerequisite = {
+			focus = FRA_com8
+		}
+		x = 2
+		y = 8
+
+	}
+	focus = {
+		id = FRA_com6
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com5
+		}
+		x = 2
+		y = 9
+
+	}
+	focus = {
+		id = FRA_com_antiger2
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_antiger1
+		}
+		x = 0
+		y = 6
+
+	}
+	focus = {
+		id = FRA_com_antiger3
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_antiger2
+		}
+		x = 0
+		y = 7
+
+	}
+	focus = {
+		id = FRA_hukusi4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi3
+		}
+		x = 10
+		y = 18
+
+	}
+	focus = {
+		id = FRA_ind7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_ind6
+		}
+		x = 4
+		y = 17
+
+	}
+	focus = {
+		id = FRA_ind_oil2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_ind_oil1
+		}
+		x = 2
+		y = 15
+
+	}
+	focus = {
+		id = FRA_mil_nav4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil_nav2
+		}
+		x = 45
+		y = 15
+
+	}
+	focus = {
+		id = FRA_com_EU2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_com_EU
+		}
+		x = 2
+		y = 12
+
+	}
+	focus = {
+		id = FRA_com_EU
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_com6
+		}
+		x = 2
+		y = 11
+
+	}
 }

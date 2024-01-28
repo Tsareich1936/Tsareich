@@ -260,7 +260,6 @@ set_popularities = {
 
 create_faction = Allies
 add_to_faction = ENG
-#add_to_faction = FRA
 add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = NZL

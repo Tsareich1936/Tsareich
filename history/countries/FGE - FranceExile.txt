@@ -14,10 +14,6 @@ set_autonomy = {
 	target = FEA
 	autonomy_state = autonomy_integrated_puppet
 }
-set_autonomy = {
-	target = VIN
-	autonomy_state = autonomy_integrated_puppet
-}
 puppet = MOR
 
 set_politics = {
