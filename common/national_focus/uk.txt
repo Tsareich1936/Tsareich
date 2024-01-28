@@ -146,7 +146,11 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_postponement_of_repayments
 					completion_reward = {
-				
+						USA = {
+							puppet = MAL
+							transfer_state = 422
+							transfer_state = 687
+						}
 					}
 				}
 				focus = {
