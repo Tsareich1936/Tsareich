@@ -678,7 +678,6 @@ focus_tree = {
                 allow_without_tech = yes
                 
             }
-            add_ideas = RUS_tank_divisions
             custom_effect_tooltip = TR_Russia.tt.6
             #custom_effect_tooltip = TR_Russia.tt.7
             hidden_effect = {
