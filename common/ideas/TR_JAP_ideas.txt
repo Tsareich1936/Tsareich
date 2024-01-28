@@ -650,8 +650,48 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_weekly = -0.5
+				stability_factor = -0.5
+				war_support_factor = -0.3
+				industrial_capacity_factory = 0.2
+				local_resources_factor = 0.2
+			}
+		}
+
+		JAP_pollution_1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.15
+				industrial_capacity_factory = 0.1
+				local_resources_factor = 0.1
+			}
+		}
+
+		JAP_pollution_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.1
+				local_resources_factor = -0.1
+			}
+		}
+
+		JAP_pollution_3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.5
 				industrial_capacity_factory = -0.2
+				local_resources_factor = -0.2 
 			}
 		}
 
@@ -813,6 +853,143 @@ ideas = {
 				mobilization_laws_cost_factor = -0.5
 				industrial_capacity_factory = 0.2
 				industrial_capacity_dockyard = 0.2
+			}
+		}
+
+		JAP_zaibatsus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu
+			
+			modifier = {
+				political_power_cost = 0.5
+				trade_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				consumer_goods_factor = 0.20
+			}
+		}
+
+		JAP_zaibatsus_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu
+			
+			modifier = {
+				political_power_cost = 0.25
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				consumer_goods_factor = 0.10
+			}
+		}
+
+		JAP_LOW = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu
+			
+			modifier = {
+				trade_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+			
+		}
+
+		JAP_zaibatsus_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu
+			
+			modifier = {
+				political_power_cost = 0.5
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		JAP_agriculture = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.15
+				stability_factor = -0.2
+			}
+		}
+
+		JAP_agriculture_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.075
+				stability_factor = -0.1
 			}
 		}
 	}

@@ -23,6 +23,8 @@ add_ideas = {
 	JAP_AIRFORCE
 	JAP_inflation
 	JAP_dissatisfaction
+	the_long_lance
+	JAP_agriculture
 }
 
 diplomatic_relation = {

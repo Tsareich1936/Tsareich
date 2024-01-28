@@ -14,11 +14,13 @@ country_event = {
 
 	option = {
 		name = TR_germany.1.b
+        ai_chance = { base = 0 }
 		set_country_flag = germany_election
 	}
 
 	option = {
 		name = TR_germany.1.c
+        ai_chance = { base = 0 }
 		set_country_flag = germany_election
 	}
 }
@@ -37,6 +39,7 @@ country_event = {
 
 	option = {
 		name = TR_germany.2.b
+        ai_chance = { base = 0 }
 		set_country_flag = germany_leftorright
 		complete_national_focus = GER_left
 		promote_character = {
