@@ -500,7 +500,7 @@ ideas = {
             }
         }
 
-        RUS_one_year_buildup = {
+        RUS_three_year_buildup = {
             picture = SOV_fourth_five_year_plan
             allowed = {
                 
@@ -516,8 +516,8 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                production_speed_buildings_factor = 0.75
-                consumer_goods_factor = -0.35
+                production_speed_buildings_factor = 0.3
+                consumer_goods_factor = -0.15
             }
         }
 

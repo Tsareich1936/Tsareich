@@ -680,7 +680,7 @@ focus_tree = {
             }
             add_ideas = RUS_tank_divisions
             custom_effect_tooltip = TR_Russia.tt.6
-            custom_effect_tooltip = TR_Russia.tt.7
+            #custom_effect_tooltip = TR_Russia.tt.7
             hidden_effect = {
                 219 = {
                     create_unit = {
@@ -693,84 +693,6 @@ focus_tree = {
                     }
                     create_unit = {
                         division = "name = \"3.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"4.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"5.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"6.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"7.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"8.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"9.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"10.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                }
-                195 = {
-                    create_unit = {
-                        division = "name = \"11.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"12.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"13.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"14.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"15.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"16.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"17.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"18.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"19.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"20.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"21.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"22.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
                         owner = RUS
                     }
                 }
@@ -845,7 +767,7 @@ focus_tree = {
 
 
     focus = {
-        id = RUS_1_year_buildup
+        id = RUS_3_year_buildup
         icon = GFX_focus_generic_hydroelectric_energy
         x = -3
         y = 5
@@ -862,7 +784,7 @@ focus_tree = {
         }
         completion_reward = {
             remove_ideas = RUS_agricultural_economy_2
-            add_timed_idea = { idea = RUS_one_year_buildup days = 360 }
+            add_timed_idea = { idea = RUS_three_year_buildup days = 1080 }
         }
         
     }
@@ -902,6 +824,28 @@ focus_tree = {
                 }
             }
 
+        }
+        
+    }
+
+    focus = {
+        id = RUS_alaska_development
+        icon = GFX_focus_SOV_old_eastern_empire
+        x = 0
+        y = 6
+        relative_position_id = RUS_remake_national_government
+        cost = 10
+
+        search_filters = FOCUS_FILTER_WAR_SUPPORT
+        prerequisite = { focus = RUS_deep_battle_doctrine }
+        prerequisite = { focus = RUS_3_year_buildup }
+
+        ai_will_do = { factor = 1200 }
+        available = {
+            
+        }
+        completion_reward = {
+            
         }
         
     }
