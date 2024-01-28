@@ -36,8 +36,11 @@
   TR_North_Italy_win_soc_tt: "§Yイタリア半島§!は§R$TR_North_Italy_name$§!により統一された。\n§G$TR_South_Italy_name$§!は§Yドデカネス諸島§!へと§Y亡命§!した！"
   TR_North_Italy_name: "北イタリア"
   TR_South_Italy_name: "南イタリア"
+
   TR_nosupport: "§Rこの選択肢は現バージョンでは実装されていない！§!"
   TR_focus_nosupport: "§Rこの選択肢には現実味がない§!"
   TR_avaiable_on_events_tt: "この方針はイベントによって達成される。"
+
+
   RULL_JOIN_ALLY_POLAND_TOOLTIP: "§Y[POL.GetNameDef]§!は戦争を行っていない。"
   RULE_ALLOW_RELEASE_NATIONS_RUSSIA_POLAND_TOOLTIP: "§Y[ROOT.GetNameDefCap]§!は§Y[POL.GetNameDef]§!の解放ができません。"

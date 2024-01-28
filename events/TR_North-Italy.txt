@@ -149,12 +149,12 @@ country_event = {
 				days = 0
 			}
 		}
-		ITA = {
-			country_event = {
-				id = TR_north_italy.5
-				days = 1
-			}
-		}
+		# ITA = {
+		# 	country_event = {
+		# 		id = TR_north_italy.5
+		# 		days = 7
+		# 	}
+		# }
 	}
 	option = {
 		name = TR_north_italy.3.b
@@ -165,22 +165,22 @@ country_event = {
 		}
 	}
 }
-country_event = {
-	id = TR_north_italy.5
-	title = TR_north_italy.5.t
-	desc = TR_north_italy.5.d
+# country_event = {
+# 	id = TR_north_italy.5
+# 	title = TR_north_italy.5.t
+# 	desc = TR_north_italy.5.d
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	immediate = {
-		set_rule = {
-			can_join_factions = yes
-		}
-		ENG = {
-			add_to_faction = ITA
-		}
-	}
-}
+# 	immediate = {
+# 		set_rule = {
+# 			can_join_factions = yes
+# 		}
+# 		ENG = {
+# 			add_to_faction = ITA
+# 		}
+# 	}
+# }
 ### Left Route events ###
 
 # International proxi #1

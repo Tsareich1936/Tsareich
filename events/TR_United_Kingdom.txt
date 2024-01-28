@@ -1,4 +1,56 @@
 add_namespace = TR_uk
+add_namespace = TR_uk_diplomacy
+country_event = {#HOL 英国との同盟
+	id = TR_uk_diplomacy.1
+	title = TR_uk_diplomacy.1.t
+	desc = TR_uk_diplomacy.1.d
+
+	is_triggered_only = yes
+
+	option = {#accept
+		name = TR_uk_diplomacy.1.a
+		ENG = {
+			country_event = {
+				id = TR_uk_diplomacy.2
+				days = 1
+			}
+		}
+	}
+	option = {#reject
+		name = TR_uk_diplomacy.1.b
+		ENG = {
+			country_event = {
+				id = TR_uk_diplomacy.3
+				days = 1
+			}
+		}
+	}
+}
+country_event = {#オランダが同盟を承諾
+	id = TR_uk_diplomacy.2
+	title = TR_uk_diplomacy.2.t
+	desc = TR_uk_diplomacy.2.d
+
+	is_triggered_only = yes
+
+	option = {#OK
+		name = TR_uk_diplomacy.2.a
+		ENG = {
+			add_to_faction = HOL
+		}
+	}
+}
+country_event = {#オランダが同盟を拒否
+	id = TR_uk_diplomacy.3
+	title = TR_uk_diplomacy.3.t
+	desc = TR_uk_diplomacy.3.d
+
+	is_triggered_only = yes
+
+	option = {#OK
+		name = TR_uk_diplomacy.3.a
+	}
+}
 country_event = {#財政問題
 	id = TR_uk.1
 	title = TR_uk.1.t

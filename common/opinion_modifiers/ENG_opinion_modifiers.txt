@@ -1,0 +1,8 @@
+opinion_modifiers = {
+	TR_ENG_anticommunist_communist = {
+		value = -20
+	}
+	TR_ENG_anticommunist_pact = {
+		value = 20
+	}
+}
