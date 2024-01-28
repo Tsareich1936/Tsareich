@@ -151,7 +151,7 @@ country_event = {
 		}
 		ITA = {
 			country_event = {
-				id = TR_north_italy.4
+				id = TR_north_italy.5
 				days = 1
 			}
 		}
@@ -166,9 +166,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = TR_north_italy.4
-	title = TR_north_italy.4.t
-	desc = TR_north_italy.4.d
+	id = TR_north_italy.5
+	title = TR_north_italy.5.t
+	desc = TR_north_italy.5.d
 
 	is_triggered_only = yes
 	
