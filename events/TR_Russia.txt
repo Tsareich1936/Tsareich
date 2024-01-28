@@ -782,6 +782,20 @@ country_event = {
             }
             add_manpower = 25000
         }
+        946 = {
+            add_resource = {
+                type = oil
+                amount = 12
+            }
+            add_manpower = 9500
+        }
+        463 = {
+            add_resource = {
+                type = oil
+                amount = 30
+            }
+            add_manpower = 12000
+        }
     }
     
 }
