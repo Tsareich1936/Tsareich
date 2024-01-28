@@ -60,7 +60,7 @@ focus_tree = {
 			# center left 
 				focus = {
 					id = TR_ENG_war_bond_issue
-					icon = GFX_
+					icon = GFX_focus_generic_american_investments
 					cost = 2
 					prerequisite = {
 						focus = TR_ENG_Focus_on_financial_issues
@@ -100,7 +100,7 @@ focus_tree = {
 				}
 				focus = {# 踏み倒し
 					id = TR_ENG_trampling_down_of_war_bonds
-					icon = GFX_
+					icon = GFX_goal_generic_positive_trade_relations
 					cost = 3
 					prerequisite = {
 						focus = TR_ENG_postponement_of_repayments
@@ -233,7 +233,7 @@ focus_tree = {
 			# center right
 				focus = {
 					id = TR_ENG_naval_shipbuilding_problem
-					icon = GFX_
+					icon = "GFX_focus_generic_navy_battleship2"
 					cost = 3
 					prerequisite = {
 						focus = TR_ENG_Focus_on_financial_issues
@@ -250,7 +250,7 @@ focus_tree = {
 				}
 				focus = {# 艦船を売却
 					id = TR_ENG_sale_of_ships
-					icon = GFX_
+					icon = GFX_focus_POL_develop_polish_shipbuilding
 					cost = 3
 					prerequisite = {
 						focus = TR_ENG_naval_shipbuilding_problem
@@ -273,7 +273,7 @@ focus_tree = {
 				}
 				focus = {
 					id = TR_ENG_sale_to_portugal
-					icon = GFX_
+					icon = GFX_focus_generic_befriend_portugal
 					cost = 3
 					prerequisite = {
 						focus = TR_ENG_sale_of_ships
@@ -286,7 +286,7 @@ focus_tree = {
 				}
 				focus = {
 					id = TR_ENG_sale_to_asylum_seekers
-					icon = GFX_
+					icon = GFX_focus_chi_reach_out_to_france
 					cost = 3
 					prerequisite = {
 						focus = TR_ENG_sale_to_portugal
@@ -306,7 +306,7 @@ focus_tree = {
 				}
 				focus = {
 					id = TR_ENG_reconciliation_with_russia
-					icon = GFX_
+					icon = TR_ENG_contacts_with_russia
 					cost = 3
 					prerequisite = {
 						focus = TR_ENG_naval_shipbuilding_problem
@@ -329,7 +329,7 @@ focus_tree = {
 				}
 				focus = {#グレート・ゲームの終焉
 					id = TR_ENG_the_end_of_the_great_game
-					icon = GFX_
+					icon = GFX_focus_NOR_approach_kretsen
 					cost = 3
 					prerequisite = {
 						focus = TR_ENG_reconciliation_with_russia
@@ -349,7 +349,7 @@ focus_tree = {
 				}
 				focus = {#陸のロシア、海のブリテン
 					id = TR_ENG_russia_land_britain_sea
-					icon = GFX_
+					icon = GFX_focus_ger_accept_british_naval_dominance
 					cost = 10
 					prerequisite = {
 						focus = TR_ENG_the_end_of_the_great_game
