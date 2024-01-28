@@ -10,6 +10,7 @@ state={
 		owner = VIN
 		victory_points = {
 			4401 3 
+			
 		}
 		buildings = {
 			infrastructure = 2

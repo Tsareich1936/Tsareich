@@ -163,10 +163,7 @@ set_popularities = {
 	socialism = 14
 	socialdemocratic = 14
 }
-set_autonomy = {
-	target = VIN
-	autonomy_state = puppet
-}
+puppet = VIN
 create_faction = International
 add_to_faction = GER
 add_to_faction = SRI
