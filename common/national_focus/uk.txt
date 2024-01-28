@@ -27,7 +27,7 @@ focus_tree = {
 			x = 42
 			y = 14
 			completion_reward = {
-		
+				country_event = TR_uk.1
 			}
 		}
 		# center
@@ -89,8 +89,8 @@ focus_tree = {
 					prerequisite = {
 						focus = TR_ENG_postponement_of_repayments
 					}
-					x = -1
-					y = 1
+					x = 1
+					y = 3
 					relative_position_id = TR_ENG_postponement_of_repayments
 					completion_reward = {
 				
@@ -161,6 +161,7 @@ focus_tree = {
 					cost = 5
 					prerequisite = {
 						focus = TR_ENG_commencement_of_major_repayments
+						focus = TR_ENG_trampling_down_of_war_bonds
 					}
 					x = 0
 					y = 2
