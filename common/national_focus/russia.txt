@@ -834,7 +834,7 @@ focus_tree = {
         x = 0
         y = 6
         relative_position_id = RUS_remake_national_government
-        cost = 4
+        cost = 10
 
         search_filters = FOCUS_FILTER_WAR_SUPPORT
         prerequisite = { focus = RUS_deep_battle_doctrine }
