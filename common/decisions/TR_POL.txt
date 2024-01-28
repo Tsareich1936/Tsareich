@@ -1,17 +1,36 @@
 TR_POL_resistance = {
+	# TR_POL_go_to_resistance = {
+	# 	highlight_states = {
+	# 		highlight_states_trigger = {
+	# 			has_state_flag = TR_POL_avaiabled_resist
+	# 		}
+	# 	}
+	# 	custom_cost_trigger = {
+			
+	# 	}	
+	# }
 	TR_POL_resistance1 = {
 		state_target = yes
 		priority = 999
 		available = {
 			tag = POL
-			always = no
+			has_country_flag = TR_POL_start_resistance
 		}
 		visible = {
 			NOT = {
 				has_global_flag = TR_poland_recognized_flag
 			}
+			FROM = {
+				NOT = {
+					has_state_flag = TR_POL_resisting
+				}
+			}
 		}
-		# target_array = POL_core
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = TR_POL_avaiabled_resist
+			}
+		}
 		target_trigger = {
 			FROM = {
 				OR = {
@@ -20,13 +39,14 @@ TR_POL_resistance = {
 				}
 				is_core_of = POL
 				has_resistance = yes
+				has_state_flag = TR_POL_avaiabled_resist
 			}
 		}
 		on_map_mode = map_only
 		icon = my_icon
 		cost = 30
 		ai_will_do = {
-			factor = 999
+			base = 999
 			modifier = {
 				
 			}
@@ -62,16 +82,141 @@ TR_POL_resistance = {
 					}
 				}
 				FROM = {
-					set_state_owner_to = POL
+					# set_state_owner_to = POL
+					set_state_flag = TR_POL_resisting
+					hidden_effect = {
+						add_resistance_target = 30
+					}
 				}
 			}
 		}
 	}
-	TR_POL_coup = {
+	TR_POL_resistance2 = {
+		state_target = yes
 		priority = 998
 		available = {
-			always = no
-
+			custom_trigger_tooltip = {
+				tooltip = "この地域はすでに掌握済みである。"
+				always = no
+			}
+		}
+		visible = {
+			NOT = {
+				has_global_flag = TR_poland_recognized_flag
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = TR_POL_avaiabled_resist
+			}
+			highlight_color_before_active = 0
+		}
+		# target_array = POL_core
+		target_trigger = {
+			FROM = {
+				OR = {
+					is_owned_by = RUS
+					is_controlled_by = RUS
+					is_owned_by = POL
+				}
+				is_core_of = POL
+				# has_resistance = yes
+				has_state_flag = TR_POL_resisting
+				
+			}
+		}
+		on_map_mode = map_only
+		icon = my_icon
+		ai_will_do = {
+			factor = 999
+			modifier = {
+				
+			}
+		}
+		cost = 30
+		complete_effect = {
+			FROM = {
+				add_resistance = 15
+			}
+			FROM = {
+				if = {
+					limit = {
+						FROM = {
+							AND = {
+								is_owned_by = POL
+								is_controlled_by = RUS
+							}
+							is_core_of = POL
+							has_resistance = yes
+						}
+					}
+					add_resistance = 30
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						resistance > 65
+							is_core_of = POL
+							OR = {
+								is_owned_by = RUS
+								is_controlled_by = RUS
+							}
+					}
+				}
+				FROM = {
+					# set_state_owner_to = POL
+					set_state_flag = TR_POL_resisting
+				}
+			}
+		}
+	}
+	TR_POL_spread_the_movement1 = {
+		visible = {
+			72 = {
+				has_state_flag = TR_POL_resisting
+			}
+			88 = {
+				has_state_flag = TR_POL_resisting
+			}
+			90 = {
+				has_state_flag = TR_POL_resisting
+			}
+			92 = {
+				has_state_flag = TR_POL_resisting
+			}
+			762 = {
+				has_state_flag = TR_POL_resisting
+			}
+			NOT = {
+				has_country_flag = TR_POL_spread_the_movement1
+			}
+		}
+		complete_effect = {
+			set_country_flag = TR_POL_spread_the_movement1
+			10 = {
+				set_state_flag = TR_POL_avaiabled_resist
+			}
+			87 = {
+				set_state_flag = TR_POL_avaiabled_resist
+			}
+			98 = {
+				set_state_flag = TR_POL_avaiabled_resist
+			}
+		}
+		ai_will_do = {
+			base = 999
+		}
+	}
+	TR_POL_coup = {
+		priority = 997
+		fire_only_once = yes
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "蜂起へとつながるすべての手を取ることでこの決断は可能になるだろう。"
+				has_country_flag = TR_POL_start_resistance
+				has_country_flag = TR_POL_start_coup
+			}
 		}
 		visible = {
 			NOT = {
@@ -79,30 +224,30 @@ TR_POL_resistance = {
 			}
 		}
 		ai_will_do = {
-			base = 0
+			base = 1
 			modifier = {
 		
 			
-				10 = {
-					resistance >50
-				}
+				# 10 = {
+				# 	resistance >50
+				# }
 				72 = {
-					resistance >50
+					has_state_flag = TR_POL_resisting
 				}
 				86 = {
-					resistance >50
+					has_state_flag = TR_POL_resisting
 				}
 				87 = {
-					resistance >50
+					has_state_flag = TR_POL_resisting
 				}
 				90 = {
-					resistance >50
+					has_state_flag = TR_POL_resisting
 				}
 				92 = {
-					resistance >50
+					has_state_flag = TR_POL_resisting
 				}
 				98 = {
-					resistance >50
+					has_state_flag = TR_POL_resisting
 				}
 			
 			
@@ -110,9 +255,36 @@ TR_POL_resistance = {
 			}
 		}
 		complete_effect = {
-			every_owned_state = {
+			every_state = {
+				limit = {
+					has_state_flag = TR_POL_resisting
+					NOT = {
+						state = 10
+					}
+				}
 				transfer_state_to = POL
 			}
+			division_template = {
+				name = "chłopska partyzantka"
+				regiments = {
+					guellira = { x = 0 y = 0  }
+					guellira = { x = 0 y = 1  }
+					guellira = { x = 0 y = 2  }
+					guellira = { x = 0 y = 3  }
+					guellira = { x = 1 y = 0  }
+					guellira = { x = 1 y = 1  }
+					guellira = { x = 1 y = 2  }
+					guellira = { x = 1 y = 3  }
+					guellira = { x = 2 y = 0  }
+					guellira = { x = 2 y = 1  }
+					guellira = { x = 2 y = 2  }
+					guellira = { x = 2 y = 3  }
+				}
+			}
+			POL = {
+				TR_POL_coup = yes
+			}
+			# load_oob = POL_coup
 		}
 	}
 }
