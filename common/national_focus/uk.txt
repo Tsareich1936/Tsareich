@@ -23,11 +23,11 @@ focus_tree = {
 		focus = {
 			id = TR_ENG_Focus_on_financial_issues
 			icon = GFX_goal_generic_consumer_goods
-			cost = 5
+			cost = 3
 			x = 42
 			y = 14
 			completion_reward = {
-				add_political_power = 300
+				add_political_power = 100
 				country_event = TR_uk.1
 			}
 		}
@@ -48,14 +48,14 @@ focus_tree = {
 				y = 9
 				relative_position_id = TR_ENG_Focus_on_financial_issues
 				completion_reward = {
-			
+					TR_ENG_proceed_financial_issue = yes
 				}
 			}
 			# center left 
 				focus = {
 					id = TR_ENG_war_bond_issue
 					icon = GFX_
-					cost = 5
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_Focus_on_financial_issues
 					}
@@ -102,12 +102,19 @@ focus_tree = {
 							tooltip = TR_avaiable_on_events_tt
 							always = no
 						}
+						NOT = {
+							has_completed_focus = TR_ENG_transfer_of_resource_concessions
+						}
 					}
 					x = 1
 					y = 3
 					relative_position_id = TR_ENG_postponement_of_repayments
 					completion_reward = {
-				
+						TR_ENG_proceed_financial_issue = yes
+						hidden_effect = {
+							TR_ENG_proceed_financial_issue = yes
+							
+						}
 					}
 				}
 				focus = {#資源利権の譲渡
@@ -121,6 +128,9 @@ focus_tree = {
 						custom_trigger_tooltip = {
 							tooltip = TR_avaiable_on_events_tt
 							always = no
+						}
+						NOT = {
+							has_completed_focus = TR_ENG_trampling_down_of_war_bonds
 						}
 					}
 					x = 0
@@ -147,7 +157,7 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_transfer_of_resource_concessions
 					completion_reward = {
-				
+						TR_ENG_proceed_financial_issue = yes
 					}
 				}
 				focus = {# 小規模返済の開始
@@ -176,9 +186,12 @@ focus_tree = {
 				focus = {# 大規模返済の開始
 					id = TR_ENG_commencement_of_major_repayments
 					icon = GFX_
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_commencement_of_minor_repayments
+					}
+					available = {
+						num_of_factories > 70
 					}
 					x = 0
 					y = 2
@@ -199,14 +212,14 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_commencement_of_major_repayments
 					completion_reward = {
-				
+
 					}
 				}
 			# center right
 				focus = {
 					id = TR_ENG_naval_shipbuilding_problem
 					icon = GFX_
-					cost = 5
+					cost = 3
 					prerequisite = {
 						focus = TR_ENG_Focus_on_financial_issues
 					}
@@ -251,7 +264,6 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_sale_of_ships
 					completion_reward = {
-				
 					}
 				}
 				focus = {
@@ -271,7 +283,7 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_sale_to_portugal
 					completion_reward = {
-				
+						TR_ENG_proceed_financial_issue = yes
 					}
 				}
 				focus = {
@@ -314,13 +326,13 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_reconciliation_with_russia
 					completion_reward = {
-				
+						TR_ENG_proceed_financial_issue = yes
 					}
 				}
 				focus = {#陸のロシア、海のブリテン
 					id = TR_ENG_russia_land_britain_sea
 					icon = GFX_
-					cost = 5
+					cost = 10
 					prerequisite = {
 						focus = TR_ENG_the_end_of_the_great_game
 					}
@@ -328,7 +340,6 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_the_end_of_the_great_game
 					completion_reward = {
-				
 					}
 				}
 		# Left
@@ -713,6 +724,12 @@ focus_tree = {
 				mutually_exclusive = {
 					focus = TR_ENG_review_of_colonial_policy
 				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = TR_focus_nosupport
+						always = no
+					}
+				}
 				x = 12
 				y = 1
 				relative_position_id = TR_ENG_Focus_on_financial_issues
@@ -732,7 +749,7 @@ focus_tree = {
 			y = -14
 			relative_position_id = TR_ENG_Focus_on_financial_issues
 			completion_reward = {
-		
+				add_political_power = 100
 			}
 		}
 		## center
@@ -746,12 +763,6 @@ focus_tree = {
 				prerequisite = {
 					focus = TR_ENG_steady_as_she_goes
 					focus = TR_ENG_a_change_in_course
-				}
-				available = {
-					custom_trigger_tooltip = {
-						tooltip = TR_avaiable_on_events_tt
-						always = no
-					}
 				}
 				x = 3
 				y = 1
@@ -875,11 +886,52 @@ focus_tree = {
 				prerequisite = {
 					focus = TR_ENG_steady_as_she_goes
 				}
+				available = {
+					OR = {
+						has_completed_focus = TR_ENG_withdrawal_france
+						has_completed_focus = TR_ENG_continue_occupation
+					}
+				}
 				x = 0
 				y = 2
 				relative_position_id = TR_ENG_steady_as_she_goes
 				completion_reward = {
-
+					every_country = {
+						limit = {
+							OR = {
+								has_government = communism
+								has_government = socialism
+								has_government = socialdemocratic
+							}
+							NOT = {
+								is_in_faction_with = ENG
+							}
+						}
+						add_opinion_modifier = {
+							target = ENG
+							modifier = TR_ENG_anticommunist_communist
+						}
+					}
+					every_country = {
+						limit = {
+							OR = {
+								tag = DEN
+								tag = HOL
+								tag = CAN
+								tag = AUS
+								tag = NZL
+								tag = MAL
+								tag = FRA
+								tag = ITA
+								tag = SAF
+								tag = JAP
+							}
+						}
+						add_opinion_modifier = {
+							target = ENG
+							modifier = TR_ENG_anticommunist_pact
+						}
+					}
 				}
 			}
 			focus = {
@@ -921,7 +973,12 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_ENG_anticommunist
 				completion_reward = {
-			
+					HOL = {
+						country_event = {
+							id = TR_uk_diplomacy.1
+							days = 3
+						}
+					}
 				}
 			}
 			focus = {
@@ -1111,6 +1168,12 @@ focus_tree = {
 				cost = 5
 				prerequisite = {
 					focus = TR_ENG_steady_as_she_goes
+				}
+				available = {
+					OR = {
+						has_completed_focus = TR_ENG_withdrawal_france
+						has_completed_focus = TR_ENG_continue_occupation
+					}
 				}
 				x = -25
 				y = 1
@@ -1967,6 +2030,12 @@ focus_tree = {
 			mutually_exclusive = {
 				focus = TR_ENG_steady_as_she_goes
 			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = TR_focus_nosupport
+					always = no
+				}
+			}
 			cost = 5
 			relative_position_id = TR_ENG_steady_as_she_goes
 			x = 8
@@ -1986,12 +2055,6 @@ focus_tree = {
 			prerequisite = {
 				focus = TR_ENG_a_change_in_course
 				focus = TR_ENG_steady_as_she_goes
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = TR_avaiable_on_events_tt
-					always = no
-				}
 			}
 			x = -3
 			y = 1

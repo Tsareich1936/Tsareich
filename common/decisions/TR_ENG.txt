@@ -15,8 +15,11 @@ TR_ENG_war_bonds = {
 				TR_ENG_war_bond_var > 0
 			}
 		}
-		cost = 50
-		days_remove = 28
+		ai_will_do = {
+			factor = 999
+		}
+		cost = 20
+		days_remove = 14
 		days_re_enable = 0
 		complete_effect = {
 			set_country_flag = TR_ENG_repaying
@@ -24,9 +27,32 @@ TR_ENG_war_bonds = {
 			add_ideas = TR_ENG_small_repayment
 		}
 		remove_effect = {
-			add_to_variable = {
-				var = TR_ENG_war_bond_var
-				value = -25
+			if = {
+				limit = {
+					check_variable = {
+						TR_ENG_war_bond_var < 0.3
+					}
+				}
+				set_variable = {
+					TR_ENG_war_bond_var = 0
+				}
+			}
+			else = {
+				add_to_variable = {
+					var = TR_ENG_war_bond_var
+					value = -0.3
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						TR_ENG_war_bond_var = 0
+					}
+				}
+				TR_ENG_proceed_financial_issue = yes
+				hidden_effect = {
+					TR_ENG_proceed_financial_issue = yes
+				}
 			}
 			clr_country_flag = TR_ENG_repaying
 			add_stability = 0
@@ -40,7 +66,7 @@ TR_ENG_war_bonds = {
 		visible = {
 			tag = ENG
 			has_completed_focus = TR_ENG_commencement_of_minor_repayments
-			has_completed_focus = TR_ENG_commencement_of_major_repayments
+			has_completed_focus = TR_ENG_commencement_of_major_repayments 
 		}
 		available = {
 			NOT = {
@@ -50,17 +76,43 @@ TR_ENG_war_bonds = {
 				TR_ENG_war_bond_var > 0
 			}
 		}
-		cost = 100
-		days_remove = 42
+		ai_will_do = {
+			factor = 999
+		}
+		cost = 40
+		days_remove = 14
 		days_re_enable = 0
 		complete_effect = {
 			set_country_flag = TR_ENG_repaying
 			add_ideas = TR_ENG_big_repayment
 		}
 		remove_effect = {
-			add_to_variable = {
-				var = TR_ENG_war_bond_var
-				value = -50
+			if = {
+				limit = {
+					check_variable = {
+						TR_ENG_war_bond_var < 1
+					}
+				}
+				set_variable = {
+					TR_ENG_war_bond_var = 0
+				}
+			}
+			else = {
+				add_to_variable = {
+					var = TR_ENG_war_bond_var
+					value = -1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						TR_ENG_war_bond_var = 0
+					}
+				}
+				TR_ENG_proceed_financial_issue = yes
+				hidden_effect = {
+					TR_ENG_proceed_financial_issue = yes
+				}
 			}
 			clr_country_flag = TR_ENG_repaying
 			remove_ideas = TR_ENG_big_repayment

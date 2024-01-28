@@ -174,7 +174,7 @@ add_ideas = {
 	# ENG_the_war_to_end_all_wars
 	george_v
 	TR_ENG_anti_communist_bulwark
-	TR_ENG_financial_issues
+	TR_ENG_financial_issues1
 	TR_ENG_war_bond_issue
 	TR_ENG_royal_army
 	TR_ENG_royal_navy
@@ -182,7 +182,7 @@ add_ideas = {
 }
 set_variable = {
 	var = TR_ENG_war_bond_var
-	value = 100
+	value = 20.0
 }
 set_convoys = 1000
 

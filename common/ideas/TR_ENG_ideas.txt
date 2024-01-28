@@ -45,14 +45,16 @@ ideas = {
 				experience_gain_air_factor = 0.2
 			}
 		}
-		TR_ENG_financial_issues = {
+		TR_ENG_financial_issues1 = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
+			picture = "GFX_idea_generic_goods_red_bonus"
 			modifier = {
-				political_power_gain = -0.8
 				research_speed_factor = -0.4
+				industrial_capacity_dockyard = -0.4
+				industrial_capacity_factory = -0.4
 				stability_factor = -0.2
 			}
 		}
@@ -60,6 +62,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			picture = "GFX_idea_TR_ENG_war_bond"
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.5
@@ -84,6 +87,45 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.5
 				stability_factor = -0.3
+			}
+		}
+		TR_ENG_financial_issues2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = "GFX_idea_generic_goods_red_bonus"
+			modifier = {
+				research_speed_factor = -0.3
+				industrial_capacity_dockyard = -0.3
+				industrial_capacity_factory = -0.3
+				stability_factor = -0.15
+			}
+		}
+		TR_ENG_financial_issues3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = "GFX_idea_generic_goods_red_bonus"
+			modifier = {
+				research_speed_factor = -0.2
+				industrial_capacity_dockyard = -0.2
+				industrial_capacity_factory = -0.2
+				stability_factor = -0.1
+			}
+		}
+		TR_ENG_financial_issues4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = "GFX_idea_generic_goods_red_bonus"
+			modifier = {
+				research_speed_factor = -0.1
+				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.05
 			}
 		}
 	}
