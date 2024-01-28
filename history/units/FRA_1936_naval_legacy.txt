@@ -5,17 +5,17 @@ units= {
 	### METRPOLITAN FRANCE ###
 	fleet = {
 		name = "Amiral Nord"
-		naval_base = 575 # Dunkerque
+		naval_base = 485 # norumandei
 		task_force = {				
 			name = "1ère Région Navale"			
-			location = 575 # Dunkerque			
+			location = 485 # norumandei	
 			# 8e Division des Contre-Torpilleurs
 			ship = { name = "Le Terrible" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
 			ship = { name = "L'Audacieux" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
 		}
 		task_force = {				
 			name = "Sous-Marins Force du Nord"			
-			location = 575 # Dunkerque	
+			location = 485 # norumandei
 			# 16e Division des Sous-Marins
 			ship = { name = "Orphée" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA version_name = "630 Series" } } }
 			ship = { name = "Amazone" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA version_name = "630 Series" } } }
@@ -31,6 +31,12 @@ units= {
 			name = "2ème Région Navale"
 			location = 3552 # Brest			
 			ship = { name = "Béarn" definition = carrier equipment = { carrier_1 = { amount = 1 owner = FRA } } 
+			}
+			ship = { name = "sein" definition = carrier equipment = { carrier_1 = { amount = 1 owner = FRA } } 
+			}
+			ship = { name = "Limoges" definition = carrier equipment = { carrier_1 = { amount = 1 owner = FRA } } 
+			}
+			ship = { name = "lorient" definition = carrier equipment = { carrier_1 = { amount = 1 owner = FRA } } 
 			}
 			# 2e Division des Contre-Torpilleurs
 			ship = { name = "Jaguar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
@@ -50,6 +56,10 @@ units= {
 			ship = { name = "Le Foudroyant" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }	
 			ship = { name = "Boulonnais" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }	
 			# 6e Légère Division des Contre-Torpilleurs
+			ship = { name = "Cyclone" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Siroco" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }	
+			ship = { name = "Mistral" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }	
+			# 7e Légère Division des Contre-Torpilleurs
 			ship = { name = "Cyclone" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
 			ship = { name = "Siroco" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }	
 			ship = { name = "Mistral" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }	
@@ -132,16 +142,10 @@ units= {
 			ship = { name = "Sirène" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }				
 			ship = { name = "Naïade" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }				
 			ship = { name = "Galathée" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }				
-		}				
-	}
-
-	### NORTH AFRICA ###				
-	fleet = {
-		name = "Amiral Afrique"			
-		naval_base = 7132 # Oran
+		}	
 		task_force = {				
 			name = "Flottille de Haute Mers"			
-			location = 7132 # Oran			
+			location = 9909 # nice		
 			ship = { name = "Lorraine" definition = battleship equipment = { battleship_1 = { amount = 1 owner = FRA version_name = "Bretagne Class" } } }			
 			ship = { name = "Bretagne" definition = battleship equipment = { battleship_1 = { amount = 1 owner = FRA version_name = "Bretagne Class" } } }			
 			ship = { name = "Provence" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = FRA version_name = "Bretagne Class" } } }			
@@ -166,9 +170,15 @@ units= {
 			ship = { name = "Forbin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }	
 			ship = { name = "Basque" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }	
 		}				
+	}
+
+				
+	fleet = {
+		name = "Amiral Méditerranéen"	
+		naval_base = 3838 # ajakusio				
 		task_force = {				
 			name = "Force d'Attaque Légère"			
-			location = 9994 # Bizerte, Tunisia	
+			location = 3838 # ajakusio
 			ship = { name = "La Galissonnière" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = FRA } } }	# La Galissonnière variant
 			ship = { name = "Émile Bertin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FRA } } }
 			# 1e Division des Contre-Torpilleurs
@@ -186,14 +196,14 @@ units= {
 		}				
 		task_force = {				
 			name = "Flotte d'Afrique de l'Ouest"			
-			location = 4948 # Dakar			
+			location = 3838 # ajakusio		
 			ship = { name = "Jeanne d'Arc" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FRA } } }
 			ship = { name = "Duguay-Trouin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FRA } } }
 			ship = { name = "Primauguet" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FRA } } }
 		}
 		task_force = {				
 			name = "2ème Escadron Sous-Marins" 			
-			location = 7132 # Oran			
+			location = 3838 # ajakusio		
 			# 4e Division des Sous-Marins
 			ship = { name = "Le Centaure" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
 			ship = { name = "Argo" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
@@ -214,7 +224,7 @@ units= {
 		}				
 		task_force = {				
 			name = "6ème Escadron Sous-Marins"			
-			location = 9994 # Bizerte, Tunisia	
+			location = 3838 # ajakusio
 			# 9e Division des Sous-Marins
 			ship = { name = "Caïman" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }				
 			ship = { name = "Morse" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }				
@@ -231,7 +241,7 @@ units= {
 		}				
 		task_force = {				
 			name = "Sous-Marins Force de Levant"			
-			location = 792 # Beirut			
+			location = 3838 # ajakusio		
 			# 11e Division des Sous-Marins
 			ship = { name = "Requin" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }				
 			ship = { name = "Marsouin" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }				

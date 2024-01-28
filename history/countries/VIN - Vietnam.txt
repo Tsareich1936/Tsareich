@@ -93,16 +93,16 @@ if = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = communism
 	last_election = "1933.2.16"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 35
-	fascism = 15
-	communism = 15
-	neutrality = 35
+	democratic = 15
+	fascism = 5
+	communism = 75
+	neutrality = 5
 }
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
