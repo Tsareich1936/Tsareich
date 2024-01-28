@@ -756,7 +756,10 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_review_of_colonial_policy
 					completion_reward = {
-				
+						country_event = {
+							id = TR_uk.13
+							days = 7
+						}
 					}
 				}
 				focus = {
@@ -785,9 +788,15 @@ focus_tree = {
 					}
 					x = 0
 					y = 1
+					ai_will_do = {
+						factor = 180
+					}
 					relative_position_id = TR_ENG_suppressed_independence_movement
 					completion_reward = {
-				
+						country_event = {
+							id = TR_uk.15
+							days = 14
+						}
 					}
 				}
 				focus = {
@@ -796,6 +805,9 @@ focus_tree = {
 					cost = 3
 					prerequisite = {
 						focus = TR_ENG_strengthening_of_indian_control
+					}
+					ai_will_do = {
+						factor = 190
 					}
 					x = -1
 					y = 1
@@ -828,6 +840,9 @@ focus_tree = {
 					prerequisite = {
 						focus = TR_ENG_partition_of_india
 					}
+					ai_will_do = {
+						factor = 190
+					}
 					x = 0
 					y = 3
 					relative_position_id = TR_ENG_strengthening_of_indian_control
@@ -859,11 +874,17 @@ focus_tree = {
 					prerequisite = {
 						focus = TR_ENG_compromise_to_INC
 					}
+					ai_will_do = {
+						factor = 180
+					}
 					x = 0
 					y = 1
 					relative_position_id = TR_ENG_compromise_to_INC
 					completion_reward = {
-				
+						country_event = {
+							id = TR_uk.14
+							days = 14
+						}
 					}
 				}
 				focus = {
@@ -909,6 +930,9 @@ focus_tree = {
 					}
 					prerequisite = {
 						focus = TR_ENG_compromise_republic
+					}
+					ai_will_do = {
+						factor = 190
 					}
 					x = 0
 					y = 3

@@ -231,6 +231,23 @@ country_event = {#経済的従属
 	option = {#もはやこれまでか…
 		name = TR_uk.5.a
 		complete_national_focus = TR_ENG_economic_subservience
+		every_country = {
+			limit = {
+				is_subject_of = ENG
+			}
+			USA = {
+				set_autonomy = {
+					target = PREV
+					autonomy_state = autonomy_puppet
+				}
+			}
+		}
+		USA = {
+			set_autonomy = {
+				target = ENG
+				autonomy_state = autonomy_puppet
+			}
+		}
 	}
 }
 country_event = {#トリガー用　戦債の完済
@@ -347,5 +364,50 @@ country_event = {#イギリスが戦債の返済を拒否！
 			target = ENG
 			type = topple_government
 		}
+	}
+}
+country_event = {#インド問題
+	id = TR_uk.13
+	title = TR_uk.13.t
+	desc = TR_uk.13.d
+
+	is_triggered_only = yes
+
+	option = {#インドに自治を！
+		name = TR_uk.13.a
+		complete_national_focus = TR_ENG_compromise_to_INC
+		
+	}
+	option = {#インド支配を強めろ！
+		name = TR_uk.13.b
+		complete_national_focus = TR_ENG_suppressed_independence_movement
+	}
+}
+country_event = {#インド自治
+	id = TR_uk.14
+	title = TR_uk.14.t
+	desc = TR_uk.14.d
+
+	is_triggered_only = yes
+
+	option = {#インドに王冠を！
+		name = TR_uk.14.a
+		complete_national_focus = TR_ENG_crown_to_india
+	}
+	option = {#インドに議会を！
+		name = TR_uk.14.b
+		complete_national_focus = TR_ENG_compromise_republic
+	}
+}
+country_event = {#宗教問題
+	id = TR_uk.15
+	title = TR_uk.15.t
+	desc = TR_uk.15.d
+
+	is_triggered_only = yes
+
+	option = {#分割して統治せよ
+		name = TR_uk.15.a
+		complete_national_focus = TR_ENG_partition_of_india
 	}
 }
