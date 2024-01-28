@@ -780,6 +780,31 @@ country_event = {
     }
 }
 
+#シベリア
+country_event = {
+    id = TR_Russia.15
+    title = TR_Russia.15.t
+    desc = TR_Russia.15.d
+    picture = GFX_report_event_FIN_three_country_cairn_flag_raising
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.15.a #よし。
+        948 = {
+            add_resource = {
+                type = oil
+                amount = 48
+            }
+            add_manpower = 25000
+        }
+    }
+    
+}
+
+
+
+
 ### News ###
 
 #皇帝暗殺
