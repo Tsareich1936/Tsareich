@@ -15,6 +15,9 @@ TR_ENG_war_bonds = {
 				TR_ENG_war_bond_var > 0
 			}
 		}
+		ai_will_do = {
+			factor = 999
+		}
 		cost = 20
 		days_remove = 14
 		days_re_enable = 0
@@ -72,6 +75,9 @@ TR_ENG_war_bonds = {
 			check_variable = {
 				TR_ENG_war_bond_var > 0
 			}
+		}
+		ai_will_do = {
+			factor = 999
 		}
 		cost = 40
 		days_remove = 14
