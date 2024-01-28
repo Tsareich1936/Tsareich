@@ -8,7 +8,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/idea_TR_ENG_royal_air_force.dds"
 	}
 	spriteType = {
-		name = GFX_idea_TR_ENG_war_bond
+		name = "GFX_idea_TR_ENG_war_bond"
 		textureFile = "gfx/interface/ideas/idea_TR_ENG_war_bond.dds"
 	}
 }

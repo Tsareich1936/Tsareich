@@ -66,7 +66,7 @@ focus_tree = {
 						focus = TR_ENG_Focus_on_financial_issues
 					}
 					ai_will_do = {
-						factor = 198
+						factor = 210
 					}
 					x = -2
 					y = 2
@@ -95,7 +95,7 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_war_bond_issue
 					completion_reward = {
-				
+						custom_effect_tooltip = TR_ENG_postponement_of_repayments_tt
 					}
 				}
 				focus = {# 踏み倒し
@@ -118,10 +118,11 @@ focus_tree = {
 					y = 3
 					relative_position_id = TR_ENG_postponement_of_repayments
 					completion_reward = {
-						TR_ENG_proceed_financial_issue = yes
+						custom_effect_tooltip = TR_ENG_trampling_down_of_war_bonds_tt
+						custom_effect_tooltip = TR_ENG_danger_america
+
 						hidden_effect = {
 							TR_ENG_proceed_financial_issue = yes
-							
 						}
 					}
 				}
@@ -624,7 +625,7 @@ focus_tree = {
 					prerequisite = {
 						focus = TR_ENG_indian_affairs
 					}
-					prerequisite = {
+					mutually_exclusive = {
 						focus = TR_ENG_compromise_to_INC
 					}
 					x = -2
@@ -1078,7 +1079,9 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_ENG_alliance_opposite_shore
 				completion_reward = {
-			
+					HOL = {
+						country_event = TR_uk_diplomacy.4
+					}
 				}
 			}
 			focus = {
@@ -1112,7 +1115,18 @@ focus_tree = {
 				y = 3
 				relative_position_id = TR_ENG_alliance_denmark
 				completion_reward = {
-			
+					ENG = {
+						diplomatic_relation = {
+							country = RUS
+							relation = non_aggression_pact
+						}
+					}
+					RUS = {
+						diplomatic_relation = {
+							country = ENG
+							relation = non_aggression_pact
+						}
+					}
 				}
 			}
 			focus = {
@@ -1301,7 +1315,7 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_ENG_steady_as_she_goes
 				completion_reward = {
-			
+					add_war_support = 0.05
 				}
 			}
 			focus = {
@@ -1354,7 +1368,18 @@ focus_tree = {
 				y = 4
 				relative_position_id = TR_ENG_prepare_for_war
 				completion_reward = {
-			
+					random_owned_state = {
+
+						add_extra_state_shared_building_slots = 4
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+					}
 				}
 			}
 			focus = {
@@ -1371,7 +1396,7 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_ENG_shadow_scheme
 				completion_reward = {
-			
+					add_research_slot = 1
 				}
 			}
 			focus = {
@@ -1388,7 +1413,40 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_ENG_additional_research_slot
 				completion_reward = {
-			
+					if = {
+						limit = {
+							NOT = {
+								has_idea = war_economy
+							}
+						}
+						add_ideas = war_economy
+					}
+					else = {
+						random_owned_state = {
+
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+							}
+						}
+						random_owned_state = {
+
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+							}
+						}
+						random_owned_state = {
+
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+							}
+						}
+					}
 				}
 			}
 			focus = {
@@ -1405,7 +1463,48 @@ focus_tree = {
 				}
 				relative_position_id = TR_ENG_war_economy
 				completion_reward = {
-			
+					if = {
+						limit = {
+							NOT = {
+								has_idea = tot_economic_mobilisation
+							}
+						}
+						add_ideas = tot_economic_mobilisation
+					}
+					else = {
+						random_owned_state = {
+
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+							}
+						}
+						random_owned_state = {
+
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+							}
+						}
+						random_owned_state = {
+
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+							}
+						}
+						random_owned_state = {
+
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+							}
+						}
+					}
 				}
 			}
 			focus = {
@@ -1422,7 +1521,7 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_ENG_shadow_scheme
 				completion_reward = {
-			
+					
 				}
 			}
 			focus = {
@@ -2152,7 +2251,7 @@ focus_tree = {
 					y = 3
 					relative_position_id = TR_ENG_cooperation_USA
 					completion_reward = {
-				
+						add_research_slot = 1
 					}
 				}
 				focus = {

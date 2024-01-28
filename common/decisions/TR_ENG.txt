@@ -33,6 +33,7 @@ TR_ENG_war_bonds = {
 						TR_ENG_war_bond_var < 0.3
 					}
 				}
+				custom_effect_tooltip = TR_ENG_reduce_bond_03_tt
 				set_variable = {
 					TR_ENG_war_bond_var = 0
 				}
@@ -42,6 +43,7 @@ TR_ENG_war_bonds = {
 					var = TR_ENG_war_bond_var
 					value = -0.3
 				}
+				custom_effect_tooltip = TR_ENG_reduce_bond_03_tt
 			}
 			if = {
 				limit = {
@@ -55,7 +57,6 @@ TR_ENG_war_bonds = {
 				}
 			}
 			clr_country_flag = TR_ENG_repaying
-			add_stability = 0
 			remove_ideas = TR_ENG_small_repayment
 		}
 	}
@@ -96,12 +97,14 @@ TR_ENG_war_bonds = {
 				set_variable = {
 					TR_ENG_war_bond_var = 0
 				}
+				custom_effect_tooltip = TR_ENG_reduce_bond_10_tt
 			}
 			else = {
 				add_to_variable = {
 					var = TR_ENG_war_bond_var
 					value = -1
 				}
+				custom_effect_tooltip = TR_ENG_reduce_bond_10_tt
 			}
 			if = {
 				limit = {
