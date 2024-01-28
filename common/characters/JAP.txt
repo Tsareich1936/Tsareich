@@ -97,5 +97,85 @@ characters = {
 		}
 	}
 
+	JAP_seigo_nakano = {
+		name = JAP_seigo_nakano
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Seigo_Nakano
+			}
+		}
+		country_leader={
+			ideology = fascism_ideology
+			expire = "1943.10.27"
+			id = -1
+		}
+	}
 
+	JAP_Nobusuke_Kishi = {
+		name = JAP_Nobusuke_Kishi
+		portraits = {
+			civilian = {
+				large = GFX_PORTRAIT_Nobusuke_Kishi
+			}
+		}
+		country_leader={
+			ideology = fascism_ideology
+			expire = "1987.8.17"
+			id = -1
+		}
+
+	}
+
+	JAP_Sanzo_Nosaka = {
+		name = JAP_Sanzo_Nosaka
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Sanzo_Nosaka
+			}
+		}
+		country_leader = {
+			ideology = luxemburgism
+			expire = "1993.3.30"
+			id = -1
+		}
+	}
+
+	JAP_Kyuichi_Tokuda = {
+		name = JAP_Kyuichi_Tokuda
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Kyuichi_Tokuda
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1953.10.14"
+			id = -1
+		}
+	}
+
+	JAP_Hisaichi_Terauchi = {
+		name = JAP_Hisaichi_Terauchi
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Hisaichi_Terauchi
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+		}
+	}
+
+	JAP_Kantoro_Suziki = {
+		name = JAP_Kantoro_Suziki
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Kantaro_Suzuki
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+		}
+	}
+	
 }

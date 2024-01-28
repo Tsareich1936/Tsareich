@@ -33,4 +33,34 @@ spriteTypes = {
 		name = "GFX_portrait_Korekiyo_Takahashi"
 		textureFile = "gfx/leaders/JAP/Potrait_Korekiyo_Takahashi.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Portrait_Seigo_Nakano"
+		textureFile = "gfx/leaders/JAP/Portrait_Seigo_Nakano.dds"
+	}
+
+	spriteType = {
+		name = "GFX_PORTRAIT_Nobusuke_Kishi"
+		textureFile = "gfx/leaders/JAP/Portrait_Nobusuke_Kishi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Sanzo_Nosaka"
+		textureFile = "gfx/leaders/JAP/Portrait_Sanzo_Nosaka.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Kyuichi_Tokuda"
+		textureFile = "gfx/leaders/JAP/Portrait_Kyuichi_Tokuda.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Hisaichi_Terauchi"
+		textureFile = "gfx/leaders/JAP/Portrait_Hisaichi_Terauchi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Kantaro_Suzuki"
+		textureFile = "gfx/leaders/JAP/Portrait_Kantaro_Suzuki"
+	}
 }
