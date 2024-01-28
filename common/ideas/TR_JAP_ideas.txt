@@ -992,5 +992,21 @@ ideas = {
 				stability_factor = -0.1
 			}
 		}
+
+		JAP_KOR_DEFEAT = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -200
+			}
+		}
 	}
 }

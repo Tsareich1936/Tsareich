@@ -317,12 +317,22 @@ focus_tree = {
             focus = jap_Continuation_of_Takahashi_Financing
         }
         available = {
-            has_decision = JAP_Civilian_factory_1
-            has_decision = JAP_Military_factory_1
-            has_decision = JAP_Infrastructure_1
-            has_decision = JAP_Naval_dockyard_1
-            has_decision = JAP_synthetic_refinery_1
-            has_decision = JAP_air_base_1
+            has_country_flag = JAP_Civilian_factory_1
+        }
+        available = {
+            has_country_flag = JAP_Military_factory_1
+        }
+        available = {
+            has_country_flag =  JAP_Infrastructure_1
+        }
+        available = {
+            has_country_flag =  JAP_Naval_dockyard_1
+        }
+        available = {
+            has_country_flag =  JAP_synthetic_refinery_1
+        }
+        available = {
+            has_country_flag =  JAP_air_base_1
         }
         completion_reward = {
             activate_targeted_decision = { 
@@ -966,7 +976,11 @@ focus_tree = {
         cost = 10
         prerequisite = {
             focus = jap_NAVY_1_3
+        }
+        prerequisite = {
             focus = jap_NAVY_2_3
+        }
+        prerequisite = {
             focus = jap_NAVY_3_3
         }
         available = {
@@ -974,7 +988,7 @@ focus_tree = {
         }
         completion_reward = {
             country_event = {
-                id = TR_japan.22
+                id = TR_japan.21
             }
         }
     }
@@ -1064,7 +1078,7 @@ focus_tree = {
         completion_reward = {
             swap_ideas = {
                 remove_idea = JAP_AIRFORCE_1
-                add_idea = JAP_AIRFORCE_1
+                add_idea = JAP_AIRFORCE_2
             }
         }
     }
@@ -1157,7 +1171,11 @@ focus_tree = {
         cost = 10
         prerequisite = {
             focus = jap_AIRFORCE_1_3
+        }
+        prerequisite = {
             focus = jap_AIRFORCE_2_3
+        }
+        prerequisite = {
             focus = jap_AIRFORCE_3_3
         }
         available = {
@@ -1365,7 +1383,11 @@ focus_tree = {
         cost = 10
         prerequisite = {
             focus = jap_ARMY_1_3
+        }
+        prerequisite = {
             focus = jap_ARMY_2_3
+        }
+        prerequisite = {
             focus = jap_ARMY_3_3
         }
         available = {
@@ -1388,7 +1410,11 @@ focus_tree = {
         cost = 10
         prerequisite = {
             focus = jap_NAVY_10
+        }
+        prerequisite = {
             focus = jap_AIRFORCE_10
+        }
+        prerequisite = {
             focus = jap_ARMY_10
         }
 
