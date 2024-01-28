@@ -1620,3 +1620,21 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = TR_japan.57
+	title = TR_japan.57.t
+	desc = TR_japan.57.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.57.a
+		swap_ideas = {
+			remove_idea = JAP_zaibatsus_2
+			add_idea = JAP_zaibatsus_3
+		}
+	}
+	option = {
+		name = TR_japan.57.b
+		remove_ideas = JAP_zaibatsus_2
+	}
+}

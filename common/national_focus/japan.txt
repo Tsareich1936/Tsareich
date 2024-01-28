@@ -1851,7 +1851,10 @@ focus_tree = {
             focus = jap_social_reform
         }
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = JAP_agriculture
+                add_idea = JAP_agriculture_2
+            }
         }
     }
 
@@ -1865,7 +1868,7 @@ focus_tree = {
             focus = jap_agrarian_reform_1
         }
         completion_reward = {
-            
+            remove_ideas = JAP_agriculture_2
         }
     }
 
@@ -1879,7 +1882,13 @@ focus_tree = {
             focus = jap_agrarian_reform_2
         }
         completion_reward = {
-            
+            every_state = {
+                limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+                }
+                add_extra_state_shared_building_slots = 3
+            }
         }
     }
 
@@ -1892,7 +1901,10 @@ focus_tree = {
             focus = jap_social_reform
         }
         completion_reward = {
-           
+           swap_ideas = {
+            remove_idea = JAP_zaibatsus
+            add_idea = JAP_zaibatsus_2
+           }
         }
         cost = 4
     }
@@ -1906,7 +1918,7 @@ focus_tree = {
             focus = jap_zaibatsu
         }
         completion_reward = {
-            
+            add_ideas = JAP_LOW
         }
         cost = 4
     }
@@ -1923,7 +1935,9 @@ focus_tree = {
             
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.57
+            }
         }
         cost = 4
     }
@@ -1940,7 +1954,10 @@ focus_tree = {
             focus = jap_social_reform
         }
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = JAP_pollution
+                add_idea = JAP_pollution_1
+            }
         }
         cost = 4
     }
@@ -1954,7 +1971,10 @@ focus_tree = {
         focus = jap_pollution
         }
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = JAP_pollution_1
+                add_idea = JAP_pollution_2
+            }
         }
         cost = 4
     }
@@ -1968,7 +1988,10 @@ focus_tree = {
             focus = jap_pollution_2
         }
         completion_reward = {
-            
+            swap_ideas = {
+                remove_idea = JAP_pollution_2
+                add_idea = JAP_pollution_3
+            }
         }
         cost = 4
     }
