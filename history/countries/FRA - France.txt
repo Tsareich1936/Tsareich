@@ -156,12 +156,13 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 22
-	fascism = 18
-	neutrality = 10
 	communism = 22
+	fascism = 18
 	socialism = 14
-	socialdemocratic = 14
+	anarchism = 10
+	socialdemocratic = 8
+	democratic = 22
+	neutrality = 6
 }
 puppet = VIN
 create_faction = International
