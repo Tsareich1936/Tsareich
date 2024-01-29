@@ -23,7 +23,7 @@ focus_tree = {
 		focus = {
 			id = TR_ENG_Focus_on_financial_issues
 			icon = GFX_goal_generic_consumer_goods
-			cost = 3
+			cost = 5
 			ai_will_do = {
 				factor = 999
 			}
@@ -38,7 +38,7 @@ focus_tree = {
 			focus = {#財政再建
 				id = TR_ENG_fiscal_reconstruction
 				icon = GFX_goal_generic_consumer_goods
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_economic_subservience
 					focus = TR_ENG_investment_in_public_works
@@ -61,7 +61,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_war_bond_issue
 					icon = GFX_focus_generic_american_investments
-					cost = 2
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_Focus_on_financial_issues
 					}
@@ -78,7 +78,7 @@ focus_tree = {
 				focus = {#返済の先送り
 					id = TR_ENG_postponement_of_repayments
 					icon = GFX_focus_eng_concessions_to_the_trade_unions
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_war_bond_issue
 					}
@@ -101,7 +101,7 @@ focus_tree = {
 				focus = {# 踏み倒し
 					id = TR_ENG_trampling_down_of_war_bonds
 					icon = GFX_goal_generic_trade
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_postponement_of_repayments
 					}
@@ -120,7 +120,7 @@ focus_tree = {
 					completion_reward = {
 						custom_effect_tooltip = TR_ENG_trampling_down_of_war_bonds_tt
 						custom_effect_tooltip = TR_ENG_danger_america
-
+						remove_ideas = TR_ENG_war_bond_issue
 						hidden_effect = {
 							TR_ENG_proceed_financial_issue = yes
 						}
@@ -129,7 +129,7 @@ focus_tree = {
 				focus = {#資源利権の譲渡
 					id = TR_ENG_transfer_of_resource_concessions
 					icon = GFX_goal_generic_oil_refinery
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_postponement_of_repayments
 					}
@@ -156,7 +156,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_economic_subservience
 					icon = GFX_focus_generic_concessions
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_transfer_of_resource_concessions
 					}
@@ -176,7 +176,7 @@ focus_tree = {
 				focus = {# 小規模返済の開始
 					id = TR_ENG_commencement_of_minor_repayments
 					icon = GFX_goal_generic_positive_trade_relations
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_war_bond_issue
 					}
@@ -199,7 +199,7 @@ focus_tree = {
 				focus = {# 大規模返済の開始
 					id = TR_ENG_commencement_of_major_repayments
 					icon = GFX_goal_generic_positive_trade_relations
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_commencement_of_minor_repayments
 					}
@@ -219,7 +219,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_investment_in_public_works
 					icon = GFX_goal_reichsautobahn
-					cost = 3
+					cost = 10
 					prerequisite = {
 						focus = TR_ENG_commencement_of_major_repayments
 						focus = TR_ENG_trampling_down_of_war_bonds
@@ -231,14 +231,19 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_commencement_of_major_repayments
 					completion_reward = {
-
+						every_core_state = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+							}
+						}
 					}
 				}
 			# center right
 				focus = {
 					id = TR_ENG_naval_shipbuilding_problem
 					icon = "GFX_focus_generic_navy_battleship2"
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_Focus_on_financial_issues
 					}
@@ -255,7 +260,7 @@ focus_tree = {
 				focus = {# 艦船を売却
 					id = TR_ENG_sale_of_ships
 					icon = GFX_focus_POL_develop_polish_shipbuilding
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_naval_shipbuilding_problem
 					}
@@ -278,9 +283,12 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_sale_to_portugal
 					icon = GFX_focus_generic_befriend_portugal
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_sale_of_ships
+					}
+					ai_will_do = {
+						factor = 180
 					}
 					x = 0
 					y = 2
@@ -291,7 +299,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_sale_to_asylum_seekers
 					icon = GFX_focus_chi_reach_out_to_france
-					cost = 3
+					cost = 10
 					prerequisite = {
 						focus = TR_ENG_sale_to_portugal
 					}
@@ -300,6 +308,9 @@ focus_tree = {
 							tooltip = TR_avaiable_on_events_tt
 							always = no
 						}
+					}
+					ai_will_do = {
+						factor = 170
 					}
 					x = 0
 					y = 2
@@ -311,7 +322,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_reconciliation_with_russia
 					icon = TR_ENG_contacts_with_russia
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_naval_shipbuilding_problem
 					}
@@ -334,7 +345,7 @@ focus_tree = {
 				focus = {#グレート・ゲームの終焉
 					id = TR_ENG_the_end_of_the_great_game
 					icon = GFX_focus_NOR_approach_kretsen
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_reconciliation_with_russia
 					}
@@ -371,7 +382,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_review_of_colonial_policy
 				icon = GFX_goal_generic_national_unity
-				cost = 3
+				cost = 10
 				prerequisite = {
 					focus = TR_ENG_Focus_on_financial_issues
 				}
@@ -385,14 +396,14 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_ENG_Focus_on_financial_issues
 				completion_reward = {
-			
+					add_stability = 0.1
 				}
 			}
 			# Dominion
 				focus = {
 					id = TR_ENG_strengthening_the_dominion
 					icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_review_of_colonial_policy
 					}
@@ -403,13 +414,54 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_review_of_colonial_policy
 					completion_reward = {
-				
+						set_country_flag = TR_ENG_imperial_dominion
+						every_country = {
+							limit = {
+								OR = {
+									tag = CAN
+									tag = AST
+									tag = NZL
+									tag = SAF
+								}
+							}
+							ENG = {
+								set_autonomy = {
+									target = PREV
+									autonomy_state = autonomy_imperial_dominion
+								}
+							}
+							random_owned_state = {
+								add_extra_state_shared_building_slots = 2
+								add_building_construction = {
+									type = industrial_complex
+									level = 2
+								}
+							}
+							PREV = {
+								random_owned_state = {
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+										type = arms_factory
+										level = 2
+									}
+								}
+							}
+							PREV = {
+								random_owned_state = {
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+										type = dockyard
+										level = 2
+									}
+								}
+							}
+						}
 					}
 				}
 				focus = {
 					id = TR_ENG_autonomy_in_africa
 					icon = GFX_focus_generic_africa_liberation
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_strengthening_the_dominion
 					}
@@ -420,13 +472,13 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_strengthening_the_dominion
 					completion_reward = {
-				
+						add_stability = 0.05
 					}
 				}
 				focus = {
 					id = TR_ENG_EGY_one_ruler
 					icon = GFX_focus_SRI_egypt_relationship
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_autonomy_in_africa
 					}
@@ -437,13 +489,16 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_autonomy_in_africa
 					completion_reward = {
-				
+						set_autonomy = {
+							target = EGY
+							autonomy_state = autonomy_imperial_dominion
+						}
 					}
 				}
 				focus = {
 					id = TR_ENG_autonisation_of_sudan
 					icon = GFX_goal_continuous_boost_freedom
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_EGY_one_ruler
 					}
@@ -454,12 +509,16 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_EGY_one_ruler
 					completion_reward = {
+						set_autonomy = {
+							target = SUD
+							autonomy_state = autonomy_imperial_dominion
+						}
 					}
 				}
 				focus = {
 					id = TR_ENG_all_african_autonomy
 					icon = GFX_goal_tfv_saf_secure_interests_in_africa
-					cost = 3
+					cost = 10
 					prerequisite = {
 						focus = TR_ENG_autonomy_in_africa
 					}
@@ -470,13 +529,79 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_autonomy_in_africa
 					completion_reward = {
-				
+						release_autonomy = {
+							target = KEN
+							autonomy_state = autonomy_imperial_dominion
+						}
+						release_autonomy = {
+							target = UGA
+							autonomy_state = autonomy_imperial_dominion
+						}
+						release_autonomy = {
+							target = TZN
+							autonomy_state = autonomy_imperial_dominion
+						}
+						release_autonomy = {
+							target = ZAM
+							autonomy_state = autonomy_imperial_dominion
+						}
+						release_autonomy = {
+							target = BOT
+							autonomy_state = autonomy_imperial_dominion
+						}
+						release_autonomy = {
+							target = NGA
+							autonomy_state = autonomy_imperial_dominion
+						}
+						release_autonomy = {
+							target = GHA
+							autonomy_state = autonomy_imperial_dominion
+						}
+						release_autonomy = {
+							target = SIE
+							autonomy_state = autonomy_imperial_dominion
+						}
+						release_autonomy = {
+							target = GAM
+							autonomy_state = autonomy_imperial_dominion
+						}
+						release_autonomy = {
+							target = MLW
+							autonomy_state = autonomy_imperial_dominion
+						}
+						release_autonomy = {
+							target = ZIM
+							autonomy_state = autonomy_imperial_dominion
+						}
+						every_country = {
+							limit = {
+								NOT = {
+									OR = {
+										tag = CAN
+										tag = AST
+										tag = NZL
+										tag = SAF
+										tag = RAJ
+										tag = MAL
+										tag = EGY
+										tag = SUD
+									}
+								}
+								is_subject_of = ENG
+							}
+							ENG = {
+								set_autonomy = {
+									target = PREV
+									autonomy_state = autonomy_imperial_dominion
+								}
+							}
+						}
 					}
 				}
 				focus = {
 					id = TR_ENG_establish_neighbourhood_watch
 					icon = GFX_goal_generic_allies_build_infantry
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_all_african_autonomy
 					}
@@ -493,7 +618,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_imperial_conference
 					icon = GFX_goal_generic_national_unity
-					cost = 3
+					cost = 10
 					prerequisite = {
 						focus = TR_ENG_strengthening_the_dominion
 					}
@@ -510,7 +635,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_dominion_expansion
 					icon = GFX_goal_generic_major_alliance
-					cost = 3
+					cost = 15
 					prerequisite = {
 						focus = TR_ENG_imperial_conference
 					}
@@ -521,13 +646,16 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_imperial_conference
 					completion_reward = {
-				
+						set_autonomy = {
+							target = MAL
+							autonomy_state = autonomy_imperial_dominion
+						}
 					}
 				}
 				focus = {
 					id = TR_ENG_the_road_to_federalisation
 					icon = GFX_focus_eng_the_sun_never_sets
-					cost = 3
+					cost = 10
 					prerequisite = {
 						focus = TR_ENG_dominion_expansion
 					}
@@ -537,14 +665,11 @@ focus_tree = {
 					x = 0
 					y = 2
 					relative_position_id = TR_ENG_dominion_expansion
-					completion_reward = {
-				
-					}
 				}
 				focus = {
 					id = TR_ENG_military_decentralisation
 					icon = GFX_focus_mex_restore_the_army_of_christ
-					cost = 3
+					cost = 10
 					prerequisite = {
 						focus = TR_ENG_imperial_conference
 					}
@@ -560,7 +685,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_joint_military_exercise
 					icon = GFX_focus_generic_military_mission
-					cost = 3
+					cost = 10
 					prerequisite = {
 						focus = TR_ENG_military_decentralisation
 					}
@@ -577,7 +702,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_british_commonwealth
 					icon = GFX_focus_eng_imperial_federation
-					cost = 3
+					cost = 15
 					prerequisite = {
 						focus = TR_ENG_autonisation_of_sudan
 					}
@@ -594,6 +719,9 @@ focus_tree = {
 						focus = TR_ENG_dominion_india
 						focus = TR_ENG_british_raj
 					}
+					avaiable = {
+						has_completed_focus = TR_ENG_fiscal_reconstruction
+					}
 					ai_will_do = {
 						factor = 999
 					}
@@ -601,14 +729,35 @@ focus_tree = {
 					y = 7
 					relative_position_id = TR_ENG_review_of_colonial_policy
 					completion_reward = {
-				
+						custom_effect_tooltip = TR_ENG_british_commonwealth_tt
+						hidden_effect = {
+							set_country_flag = TR_ENG_imperial_dominion
+							every_country = {
+								limit = {
+									has_autonomy_state = autonomy_imperial_dominion
+								}
+								every_owned_state = {
+									add_core_of = ENG
+								}
+								ENG = {
+									annex_country = {
+										target = PREV
+										transfer_troops = yes
+									}
+								}
+								every_unit_leader = {
+									set_nationality = ENG
+								}
+							}
+							set_cosmetic_tag = ENG_imperial_federation_unified
+						}
 					}
 				}
 			# India
 				focus = {
 					id = TR_ENG_indian_affairs
 					icon = GFX_focus_RAJ_indianisation_of_army
-					cost = 3
+					cost = 10
 					prerequisite = {
 						focus = TR_ENG_review_of_colonial_policy
 					}
@@ -619,13 +768,16 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_review_of_colonial_policy
 					completion_reward = {
-				
+						country_event = {
+							id = TR_uk.13
+							days = 7
+						}
 					}
 				}
 				focus = {
 					id = TR_ENG_suppressed_independence_movement
 					icon = GFX_focus_RAJ_british_investors
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_indian_affairs
 					}
@@ -642,23 +794,32 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_strengthening_of_indian_control
 					icon = GFX_goal_continuous_restrict_freedom
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_suppressed_independence_movement
 					}
 					x = 0
 					y = 1
+					ai_will_do = {
+						factor = 180
+					}
 					relative_position_id = TR_ENG_suppressed_independence_movement
 					completion_reward = {
-				
+						country_event = {
+							id = TR_uk.15
+							days = 14
+						}
 					}
 				}
 				focus = {
 					id = TR_ENG_proximity_to_clan_kings
 					icon = GFX_goal_generic_major_alliance
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_strengthening_of_indian_control
+					}
+					ai_will_do = {
+						factor = 190
 					}
 					x = -1
 					y = 1
@@ -670,7 +831,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_partition_of_india
 					icon = GFX_focus_RAJ_two_nation_theory
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_strengthening_of_indian_control
 					}
@@ -684,12 +845,15 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_british_raj
 					icon = GFX_focus_eng_the_sun_never_sets
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_proximity_to_clan_kings
 					}
 					prerequisite = {
 						focus = TR_ENG_partition_of_india
+					}
+					ai_will_do = {
+						factor = 190
 					}
 					x = 0
 					y = 3
@@ -701,7 +865,7 @@ focus_tree = {
 				focus = {# Compromise to the Indian National Congress
 					id = TR_ENG_compromise_to_INC
 					icon = GFX_focus_RAJ_all_india_forward_bloc
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_indian_affairs
 					}
@@ -718,21 +882,27 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_autonomy_in_india
 					icon = GFX_focus_generic_self_management
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_compromise_to_INC
+					}
+					ai_will_do = {
+						factor = 180
 					}
 					x = 0
 					y = 1
 					relative_position_id = TR_ENG_compromise_to_INC
 					completion_reward = {
-				
+						country_event = {
+							id = TR_uk.14
+							days = 14
+						}
 					}
 				}
 				focus = {
 					id = TR_ENG_compromise_republic
 					icon = GFX_focus_RAJ_all_india_forward_bloc
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_autonomy_in_india
 					}
@@ -749,7 +919,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_crown_to_india
 					icon = GFX_goal_tfv_strengthen_commonwealth_ties
-					cost = 3
+					cost = 5
 					prerequisite = {
 						focus = TR_ENG_autonomy_in_india
 					}
@@ -766,25 +936,32 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_dominion_india
 					icon = GFX_goal_generic_improve_relations
-					cost = 3
+					cost = 10
 					prerequisite = {
 						focus = TR_ENG_crown_to_india
 					}
 					prerequisite = {
 						focus = TR_ENG_compromise_republic
 					}
+					ai_will_do = {
+						factor = 190
+					}
 					x = 0
 					y = 3
 					relative_position_id = TR_ENG_autonomy_in_india
 					completion_reward = {
-				
+						set_country_flag = TR_ENG_imperial_dominion
+						set_autonomy = {
+							target = RAJ
+							autonomy_state = autonomy_imperial_dominion
+						}
 					}
 				}
 		# right
 			focus = {
 				id = TR_ENG_fiscal_health_through_disarmament
 				icon = GFX_
-				cost = 3
+				cost = 10
 				prerequisite = {
 					focus = TR_ENG_Focus_on_financial_issues
 				}
@@ -817,7 +994,7 @@ focus_tree = {
 			ai_will_do = {
 				factor = 200
 			}
-			cost = 3
+			cost = 5
 			x = -4
 			y = -14
 			relative_position_id = TR_ENG_Focus_on_financial_issues
@@ -832,7 +1009,7 @@ focus_tree = {
 				mutually_exclusive = {
 					focus = TR_ENG_continue_occupation
 				}
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_steady_as_she_goes
 					focus = TR_ENG_a_change_in_course
@@ -853,7 +1030,7 @@ focus_tree = {
 				mutually_exclusive = {
 					focus = TR_ENG_protecting_brittany
 				}
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_withdrawal_france
 					focus = TR_ENG_continue_occupation
@@ -958,7 +1135,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_anticommunist
 				icon = GFX_goal_generic_war_with_comintern
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_steady_as_she_goes
 				}
@@ -1016,7 +1193,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_supporting_spain
 				icon = GFX_focus_intervention_spain_republic
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_anticommunist
 				}
@@ -1033,7 +1210,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_revival_old_alliances
 				icon = GFX_focus_generic_befriend_portugal
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_supporting_spain
 				}
@@ -1050,7 +1227,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_alliance_opposite_shore
 				icon = GFX_focus_hol_oranje_boven
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_anticommunist
 				}
@@ -1072,7 +1249,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_belgian_issue
 				icon = GFX_focus_hol_the_zuiderzee_works
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_alliance_opposite_shore
 				}
@@ -1091,7 +1268,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_alliance_denmark
 				icon = GFX_focus_generic_befriend_denmark
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_belgian_issue
 				}
@@ -1108,7 +1285,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_contacts_with_russia
 				icon = TR_ENG_contacts_with_russia
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_alliance_denmark
 				}
@@ -1139,7 +1316,7 @@ focus_tree = {
 				mutually_exclusive = {
 					focus = TR_ENG_anticommunist_allies
 				}
-				cost = 3
+				cost = 10
 				prerequisite = {
 					focus = TR_ENG_contacts_with_russia
 					focus = TR_ENG_governmet_in_exile_recognised
@@ -1157,7 +1334,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_those_driven_by_vengeance
 				icon = GFX_focus_generic_strike_at_democracy3
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_anticommunist
 				}
@@ -1174,7 +1351,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_north_african_losers
 				icon = GFX_focus_chi_reach_out_to_france
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_those_driven_by_vengeance
 				}
@@ -1191,7 +1368,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_rhodes_loser
 				icon = GFX_focus_befriend_italy
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_those_driven_by_vengeance
 				}
@@ -1208,7 +1385,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_governmet_in_exile_recognised
 				icon = GFX_goal_anschluss
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_north_african_losers
 				}
@@ -1231,7 +1408,7 @@ focus_tree = {
 				mutually_exclusive = {
 					focus = TR_ENG_RUS_allies
 				}
-				cost = 3
+				cost = 10
 				prerequisite = {
 					focus = TR_ENG_governmet_in_exile_recognised
 					focus = TR_ENG_contacts_with_russia
@@ -1249,7 +1426,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_rouse_the_giant
 				icon = GFX_focus_generic_befriend_usa
-				cost = 3
+				cost = 15
 				prerequisite = {
 					focus = TR_ENG_anticommunist_allies
 					focus = TR_ENG_RUS_allies
@@ -1267,7 +1444,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_colonial_security
 				icon = GFX_focus_secret_rearmament
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_anticommunist
 				}
@@ -1284,7 +1461,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_far_eastern_security
 				icon = GFX_focus_chi_collaboration_with_the_japanese
-				cost = 3
+				cost = 5
 				prerequisite = {
 					focus = TR_ENG_colonial_security
 				}
@@ -1336,7 +1513,13 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_ENG_prepare_for_war
 				completion_reward = {
-			
+					random_core_state = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+						}
+					}
 				}
 			}
 			focus = {
@@ -1353,7 +1536,7 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_ENG_prepare_for_war
 				completion_reward = {
-			
+					army_experience = 50
 				}
 			}
 		# industry
