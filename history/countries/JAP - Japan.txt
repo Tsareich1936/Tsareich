@@ -301,6 +301,10 @@ recruit_character = JAP_Nobusuke_Kishi
 recruit_character = JAP_Sanzo_Nosaka
 recruit_character = JAP_Hisaichi_Terauchi
 recruit_character = JAP_Kantoro_Suziki
+recruit_character = JAP_Toshiro_Obata
+recruit_character = JAP_Showa_Emoeror
+recruit_character = JAP_Himiko
+recruit_character = JAP_Toyotomi
 
 if = {
 	limit = {
