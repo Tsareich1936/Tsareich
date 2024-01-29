@@ -1132,9 +1132,10 @@ focus_tree = {
 		x = 25
 		y = 3
 		completion_reward = {
-			declare_war_on = {
-				target = SLO
+			create_wargoal = {
 				type = annex_everything
+				target = SLO
+				expire = 0
 			}
 		}
 	}
@@ -1162,9 +1163,10 @@ focus_tree = {
 		x = 27
 		y = 3
 		completion_reward = {
-			declare_war_on = {
-				target = HUN
+			create_wargoal = {
 				type = annex_everything
+				target = HUN
+				expire = 0
 			}
 		}
 	}
@@ -1204,9 +1206,10 @@ focus_tree = {
 		x = 29
 		y = 4
 		completion_reward = {
-			declare_war_on = {
-				target = GER
+			create_wargoal = {
 				type = annex_everything
+				target = GER
+				expire = 0
 			}
 		}
 	}
@@ -1233,9 +1236,10 @@ focus_tree = {
 		x = 31
 		y = 4
 		completion_reward = {
-			declare_war_on = {
-				target = GER
+			create_wargoal = {
 				type = annex_everything
+				target = GER
+				expire = 0
 			}
 		}
 	}
@@ -1265,9 +1269,10 @@ focus_tree = {
 		x = 30
 		y = 6
 		completion_reward = {
-			declare_war_on = {
-				target = RUS
+			create_wargoal = {
 				type = annex_everything
+				target = GER
+				expire = 0
 			}
 		}
 	}

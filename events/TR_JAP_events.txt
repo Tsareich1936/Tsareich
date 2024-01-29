@@ -635,7 +635,7 @@ country_event = {                    #　国家保護法
 			JAP = {
 				country_event = {
 					id = TR_japan.14
-					days = 365
+					days = 3
 				}
 			}
 		}
@@ -664,9 +664,17 @@ country_event = {          #　　国民の不満の高まり
 		ai_chance = {
 			factor = 1
 		}
+		hidden_effect = {
+			JAP = {
+				id = TR_japan.67
+				days = 30
+			}
+		}
+    }
+		
 
 		
-	}
+	
 }
 
 country_event = {          # 公害問題
@@ -922,20 +930,21 @@ country_event = {       #　犬養首相が死亡
 	title = TR_japan.28.t
 	desc = TR_japan.28.d
 	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			kill_country_leader = yes
-		    create_country_leader = {
-		    	name = JAP_Korekiyo_Takahashi
-		    	picture = GFX_portrait_Korekiyo_Takahashi
-		    	ideology = conservatism
-	    	}
-		add_manpower = -1
-		}
+
+
 		
-	}
+		
+	
 	option = {
 		name = TR_japan.28.a
+		kill_country_leader = yes
+
+		create_country_leader = {
+		    name = JAP_Korekiyo_Takahashi
+		    picture = GFX_portrait_Korekiyo_Takahashi
+		    ideology = conservatism
+	    }
+		add_manpower = -1
 		JAP = {
 			country_event = {
 				id = TR_japan.17
@@ -1654,16 +1663,10 @@ country_event = { # zaibatsu problem
 }
 
 country_event = { # civil war
-	id = TR_japan.59
+	id =  TR_japan.59
 	title = TR_japan.59.t
 	desc = TR_japan.59.d
 	is_triggered_only = yes
-	trigger = {
-		has_country_flag = {
-			flag = TR_japan_18
-			days > 60
-		}
-	}
 	option = {  # 戒厳令
 		name = TR_japan.59.a
 		JAP = {
@@ -1678,7 +1681,7 @@ country_event = { # civil war
 		hidden_effect = {
 			JAP = {
 				country_event = {
-					id = TR_japan.63
+					id = TR_japan.66
 					days = 30
 				}
 			}
@@ -1732,31 +1735,239 @@ country_event = { # election
 	}
 }
 
-country_event ={
+country_event = { #  クーデター 
 	id = TR_japan.62
 	title = TR_japan.62.t
-	desc = TR_japan.63.d
+	desc = TR_japan.62.d
 	is_triggered_only = yes
 	option = {
 		name = TR_japan.62.a
+		set_party_name = {
+			ideology = fascism
+			long_name = JAP_Innovation_Bureaucracy_long
+			name = JAP_Innovation_Bureaucracy
+		}
+		set_political_party = {
+			ideology = fascism
+			popularity = 80
+		}
+		set_politics = {
+			ruling_party = fascism
+		}
+		hidden_effect = {
+			JAP = {
+				retire_country_leader = yes
+			}
+		}
+		create_country_leader = {
+			name = JAP_Hisaichi_Terauchi
+			picture = GFX_Portrait_Hisaichi_Terauchi
+			ideology = fascism
+		}
 		JAP = {
 			country_event = {
 				id = TR_japan.64
 				days = 7
 			}
 		}
+		if = {
+			limit = {
+				or = {
+					JAP = {
+						has_idea = JAP_interservice_rivalry_balanced
+					}
+					JAP = {
+						has_idea = JAP_interservice_rivalry_navy_strengthened
+					}
+					JAP = {
+						has_idea = JAP_interservice_rivalry_navy_dominant
+					}
+				}
+			}
+			hidden_effect = {
+				JAP = {
+					country_event = {
+						id = TR_japan.64
+						days = 1
+					}
+				}
+			}
+		}
 	}
 }
 
-country_event = {
+country_event = {   #  election score
+	id = TR_japan.63
+	title = TR_japan.63.t
+	desc = TR_japan.63.d
+	is_triggered_only = yes
+	option = { # 　官僚
+		name = TR_japan.63.a
+		set_party_name = {
+			ideology = fascism
+			long_name = JAP_Innovation_Bureaucracy_long
+			name = JAP_Innovation_Bureaucracy
+		}
+		set_political_party = {
+			ideology = fascism
+			popularity = 80
+		}
+		set_politics = {
+			ruling_party = fascism
+		}
+		hidden_effect = {
+			JAP = {
+				retire_country_leader = yes
+			}
+		}
+		create_country_leader = {
+			name = JAP_Nobusuke_Kishi
+			picture = GFX_PORTRAIT_Nobusuke_Kishi
+			ideology = fascism
+		}
+		load_focus_tree = TR_japan_bureaucracy
+	}
+	option = { # ルクセンブルク主義
+		name = TR_japan.63.b
+		set_party_name = {
+			ideology = communism
+			long_name = JAP_socialism_party_r_long
+			name = JAP_socialism_party_r
+		}
+		set_political_party = {
+			ideology = communism
+			popularity = 80
+		}
+		set_politics = {
+			ruling_party = communism
+		}
+		hidden_effect = {
+			JAP = {
+				retire_country_leader = yes
+			}
+		}
+		create_country_leader = {
+			name = JAP_Sanzo_Nosaka
+			picture = GFX_Portrait_Sanzo_Nosaka
+			ideology = communism
+		}
+	}
+}
+
+country_event = {  ## navy
 	id = TR_japan.64
 	title = TR_japan.64.t
 	desc = TR_japan.64.d
 	is_triggered_only = yes
-	option = { # 　官僚
+	option = {
 		name = TR_japan.64.a
-		set_politics = {
-			
+	}
+	option = {
+		name = TR_japan.64.b
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.65
+					days = 7
+				}
+			}
 		}
+	}
+}
+
+country_event = {  ##  navyによる逆クーデター
+	id = TR_japan.65
+	title = TR_japan.65.t
+	desc = TR_japan.65.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.65.a
+		set_party_name = {
+			ideology = fascism
+			long_name = JAP_ARMY
+			name = JAP_ARMY
+		}
+		set_political_party = {
+			ideology = fascism
+			popularity = 80
+		}
+		set_politics = {
+			ruling_party = fascism
+		}
+		hidden_effect = {
+			JAP = {
+				retire_country_leader = yes
+			}
+		}
+		create_country_leader = {
+			name = JAP_Kantoro_Suziki
+			picture = GFX_Portrait_Kantaro_Suzuki
+			ideology = fascism
+		}
+	}
+}
+
+country_event = {
+	id = TR_japan.66
+	title = TR_japan.66.t
+	desc = TR_japan.66.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.66.a
+		start_civil_war = {
+			ruling_party = communism
+			ideology = ROOT
+			size = 0.7
+		}
+	}
+}
+
+country_event = {
+	id = TR_japan.67
+	title = TR_japan.67.t
+	desc = TR_japan.67.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.67
+		JAP = {
+			country_event = {
+				id = TR_japan.68
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TR_japan.68
+	title = TR_japan.68.t
+	desc = TR_japan.68.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.68.a
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.69
+					days = 30
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = TR_japan.69
+	title = TR_japan.69.t
+	desc = TR_japan.69.d
+	is_triggered_only = yes 
+	option = {
+		name = TR_japan.69.a
+	}
+	option = {
+		name = TR_japan.69.b
+	}
+	option = {
+		name = TR_japan.69.c
 	}
 }

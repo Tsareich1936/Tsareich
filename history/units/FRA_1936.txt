@@ -22,12 +22,15 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 1 }
@@ -83,13 +86,13 @@ division_template = {
 		light_armor = { x = 0 y = 0 }		
 		light_armor = { x = 0 y = 1 }	
 		light_armor = { x = 0 y = 2 }		
-		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 0 }
 		light_armor = { x = 1 y = 1 }		
 		light_armor = { x = 1 y = 2 }	
-		motorized = { x = 1 y = 0 }			
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
+		motorized = { x = 2 y = 0 }			
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 1 }
@@ -307,35 +310,35 @@ units = {
 
 	#せんしゃ
 	division= {	
-	name = "1ère Division Légère Mécanique"
-	location = 11506
-	division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
-	start_experience_factor = 0.5
-	force_equipment_variants = { light_tank_equipment_2 = { owner = "FRA" } }
+	    name = "1ère Division Légère Mécanique"
+	    location = 11506
+	    division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
+	    start_experience_factor = 0.5
+	    force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA"  version_name = "H-35"} }
     }
 	division= {	
 		name = "2ère Division Légère Mécanique"
 		location = 13011
 		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
 		start_experience_factor = 0.5
-		force_equipment_variants = { light_tank_equipment_2 = { owner = "FRA" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA"  version_name = "H-35"} }
 	}
 	division= {	
 		name = "3ère Division Légère Mécanique"
 		location = 3671
 		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
 		start_experience_factor = 0.5
-		force_equipment_variants = { light_tank_equipment_2 = { owner = "FRA" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA" version_name = "H-35" } }
 	}
 	division= {	
 		name = "4ère Division Légère Mécanique"
 		location = 6613
 		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
 		start_experience_factor = 0.5
-		force_equipment_variants = { light_tank_equipment_2 = { owner = "FRA" } }
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA" version_name = "H-35" } }
 	}
 
-    
+	
 	#ちゅうとん
 	division= {	
 		name = "1'Inf. de Forteresse"

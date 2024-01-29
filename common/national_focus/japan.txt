@@ -788,7 +788,7 @@ focus_tree = {
             }
             if = {
                 limit = {
-                    has_country_flag = TR_japan_11
+                    has_country_flag = TR_japan11
                 }
                 activate_targeted_decision = {
                     target = JAP
@@ -817,7 +817,7 @@ focus_tree = {
             }
             if = {
                 limit = {
-                    has_country_flag = TR_japan_14
+                    has_country_flag = TR_japan14
                 }
             
                 activate_targeted_decision = {
@@ -1217,7 +1217,7 @@ focus_tree = {
                 support = {
                     engineer = { x = 0 y = 0 }
                     recon = { x = 0 y = 1 }
-                    artillery = { x = 0 y = 1 }
+                    artillery = { x = 0 y = 2 }
                 }
                 
             }
@@ -2050,3 +2050,17 @@ focus_tree = {
         }
     }
 } 
+
+focus_tree = {
+    id = TR_japan_bureaucracy
+    country = {
+        factor = 0
+        modifier = {
+            add = 101
+            tag = JAP
+        }
+    }
+    default = no
+    reset_on_civilwar = no
+    
+}

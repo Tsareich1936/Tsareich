@@ -288,7 +288,7 @@ set_popularities = {
 }
 
 
-
+recruit_character = JAP_Kyuichi_Tokuda
 recruit_character = JAP_tsuyoshi_inukai
 recruit_character = JAP_fusanosuke_kuhara
 recruit_character = JAP_chikuhei_nakajima
@@ -296,6 +296,11 @@ recruit_character = JAP_osachi_hamaguchi
 recruit_character = JAP_chuji_machida
 recruit_character = JAP_iso_abe
 recruit_character = JAP_Korekiyo_Takahashi
+recruit_character = JAP_seigo_nakano
+recruit_character = JAP_Nobusuke_Kishi
+recruit_character = JAP_Sanzo_Nosaka
+recruit_character = JAP_Hisaichi_Terauchi
+recruit_character = JAP_Kantoro_Suziki
 
 if = {
 	limit = {

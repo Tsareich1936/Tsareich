@@ -15,61 +15,17 @@ focus_tree = {
 	focus = {
 		id = FRA_inter1
 		icon = GFX_goal_unknown
-		cost = 8.00
+		cost = 4
 		x = 11
 		y = 0
-
-	}
-	focus = {
-		id = FRA_ind1
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 6
-		y = 13
-
-	}
-	focus = {
-		id = FRA_hukusi
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 13
-		y = 12
-
-	}
-	focus = {
-		id = FRA_nav
-		icon = GFX_goal_unknown
-		cost = 10.00
-		mutually_exclusive = {
-			focus = FRA_mil
+		completion_reward = {
+			add_political_power = 50
 		}
-		x = 28
-		y = 12
-
-	}
-	focus = {
-		id = FRA_mil
-		icon = GFX_goal_unknown
-		cost = 10.00
-		mutually_exclusive = {
-			focus = FRA_nav
-		}
-		x = 36
-		y = 12
-
-	}
-	focus = {
-		id = FRA_dip
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 6
-		y = 9
-
 	}
 	focus = {
 		id = FRA_com1
 		icon = GFX_goal_unknown
-		cost = 8.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_inter1
 		}
@@ -80,7 +36,13 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
-
+		completion_reward = {
+			add_political_power = 150
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
 	}
 	focus = {
 		id = FRA_com_purge1
@@ -91,7 +53,13 @@ focus_tree = {
 		}
 		x = 2
 		y = 2
-
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = TR_FRA_seijiteki_hunsou
+				add_idea = TR_FRA_seijiteki_hunsou1
+			}
+			add_stability = -0.1
+		}
 	}
 	focus = {
 		id = FRA_com_purge2
@@ -102,8 +70,22 @@ focus_tree = {
 		}
 		x = 1
 		y = 3
-
+		completion_reward = {
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+			add_manpower = -1000
+			add_ideas = TR_jinzaibusoku_kanryou
+		}
+		
 	}
+
+
 	focus = {
 		id = FRA_com_purge3
 		icon = GFX_goal_unknown
@@ -113,7 +95,18 @@ focus_tree = {
 		}
 		x = 3
 		y = 3
-
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = anarchism
+				popularity = -0.1
+			}
+			add_manpower = -1000
+			add_ideas = TR_jinzaibusoku_syoukou
+		}
 	}
 	focus = {
 		id = FRA_com_purge4
@@ -127,7 +120,10 @@ focus_tree = {
 		}
 		x = 2
 		y = 4
-
+		completion_reward = {
+			add_stability = 0.15
+			remove_ideas = TR_FRA_seijiteki_hunsou1
+		}
 	}
 	focus = {
 		id = FRA_com_antiger1
@@ -141,7 +137,76 @@ focus_tree = {
 		}
 		x = 0
 		y = 5
-
+		completion_reward = {
+			custom_effect_tooltip = "FRA_GER_sibaku1.tt"
+		}
+	}
+	focus = {
+		id = FRA_com_antiger2
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_antiger1
+		}
+		x = 0
+		y = 6
+		completion_reward = {
+			
+			swap_ideas = {
+				remove_idea = TR_FRA_kokuminno_situbou
+				add_idea = TR_FRA_kokuminno_situbou1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}  
+			create_wargoal = {
+				type = annex_everything
+				target = GER
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = FRA_com_antiger3
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_antiger2
+		}
+		x = 0
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = "FRA_GER_sibaku2.tt"
+		}
 	}
 	focus = {
 		id = FRA_com2
@@ -155,7 +220,9 @@ focus_tree = {
 		}
 		x = 2
 		y = 5
-
+		completion_reward = {
+			custom_effect_tooltip = "FRA_SPA_sibaku1.tt"
+		}
 	}
 	focus = {
 		id = FRA_com3
@@ -166,7 +233,9 @@ focus_tree = {
 		}
 		x = 2
 		y = 6
-
+		completion_reward = {
+			custom_effect_tooltip = "FRA_SPA_sibaku2.tt"
+		}
 	}
 	focus = {
 		id = FRA_com4
@@ -177,18 +246,13 @@ focus_tree = {
 		}
 		x = 2
 		y = 7
-
-	}
-	focus = {
-		id = FRA_ind_oil1
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = FRA_ind1
+		completion_reward = {
+			custom_effect_tooltip = "FRA_SPA_sibaku3.tt"
+			swap_ideas = {
+				remove_idea = TR_FRA_kokuminno_situbou
+				add_idea = TR_FRA_kokuminno_situbou1
+			}
 		}
-		x = 3
-		y = 14
-
 	}
 	focus = {
 		id = FRA_com7
@@ -199,7 +263,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 6
-
+		completion_reward = {
+			add_ideas = TR_FRA_SCpolice
+		}
 	}
 	focus = {
 		id = FRA_com8
@@ -210,19 +276,14 @@ focus_tree = {
 		}
 		x = 4
 		y = 7
-
-	}
-	focus = {
-		id = FRA_ind_oil3
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = FRA_ind_oil1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TR_FRA_SCpolice
+				add_idea = TR_FRA_SCpolice1
+			}
 		}
-		x = 4
-		y = 15
-
 	}
+
 	focus = {
 		id = FRA_com_purge5
 		icon = GFX_goal_unknown
@@ -232,7 +293,10 @@ focus_tree = {
 		}
 		x = 4
 		y = 8
-
+		completion_reward = {
+			remove_ideas = TR_jinzaibusoku_kanryou
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = FRA_com_purge6
@@ -242,6 +306,117 @@ focus_tree = {
 			focus = FRA_com_purge5
 		}
 		x = 4
+		y = 9
+		completion_reward = {
+			remove_ideas = TR_jinzaibusoku_syoukou
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = FRA_com5
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_antiger3
+			focus = FRA_com4
+		}
+		prerequisite = {
+			focus = FRA_com8
+		}
+		x = 2
+		y = 8
+		completion_reward = {
+			remove_ideas = TR_FRA_kokuminno_situbou1
+		}
+	}
+	focus = {
+		id = FRA_com6
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com5
+		}
+		x = 2
+		y = 9
+		completion_reward = {
+			add_political_power = 150
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+		}
+	}
+
+
+
+
+	#政治その他
+	focus = {
+		id = FRA_sadc
+		icon = GFX_goal_unknown
+		cost = 8.00
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = FRA_inter1
+		}
+		mutually_exclusive = {
+			focus = FRA_anaky
+			focus = FRA_bonp
+			focus = FRA_com1
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = FRA_bonp
+		icon = GFX_goal_unknown
+		cost = 8.00
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = FRA_inter1
+		}
+		mutually_exclusive = {
+			focus = FRA_anaky
+			focus = FRA_sadc
+			focus = FRA_com1
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = FRA_anaky
+		icon = GFX_goal_unknown
+		cost = 8.00
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = FRA_inter1
+		}
+		mutually_exclusive = {
+			focus = FRA_bonp
+			focus = FRA_sadc
+			focus = FRA_com1
+		}
+		x = 20
+		y = 1
+
+	}
+
+
+
+	#外交
+	focus = {
+		id = FRA_dip
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 6
 		y = 9
 
 	}
@@ -267,6 +442,114 @@ focus_tree = {
 		y = 11
 
 	}
+	focus = {
+		id = FRA_dip_inter1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_dip
+		}
+		x = 9
+		y = 10
+
+	}
+	focus = {
+		id = FRA_dip_inter2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_dip_inter1
+		}
+		x = 9
+		y = 11
+
+	}
+
+	focus = {
+		id = FRA_com_EU2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_com_EU
+		}
+		x = 2
+		y = 12
+
+	}
+	focus = {
+		id = FRA_com_EU
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 2
+		y = 11
+
+	}
+
+
+	focus = {
+		id = FRA_ind_oil1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_ind1
+		}
+		x = 3
+		y = 14
+
+	}
+
+
+	focus = {
+		id = FRA_ind_oil3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_ind_oil1
+		}
+		x = 4
+		y = 15
+
+	}
+
+	focus = {
+		id = FRA_ind1
+		icon = GFX_goal_unknown
+		cost = 8.00
+		x = 6
+		y = 13
+
+	}
+	focus = {
+		id = FRA_hukusi
+		icon = GFX_goal_unknown
+		cost = 8.00
+		x = 13
+		y = 12
+
+	}
+	focus = {
+		id = FRA_nav
+		icon = GFX_goal_unknown
+		cost = 8.00
+		mutually_exclusive = {
+			focus = FRA_mil
+		}
+		x = 28
+		y = 12
+
+	}
+	focus = {
+		id = FRA_mil
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = FRA_nav
+		}
+		x = 36
+		y = 12
+
+	}
+
 	focus = {
 		id = FRA_ind2
 		icon = GFX_goal_unknown
@@ -311,24 +594,7 @@ focus_tree = {
 		y = 17
 
 	}
-	focus = {
-		id = FRA_sadc
-		icon = GFX_goal_unknown
-		cost = 8.00
-		prerequisite = {
-			focus = FRA_inter1
-		}
-		mutually_exclusive = {
-			focus = FRA_anaky
-			focus = FRA_bonp
-			focus = FRA_anaky
-			focus = FRA_bonp
-			focus = FRA_com1
-		}
-		x = 8
-		y = 1
 
-	}
 	focus = {
 		id = FRA_ind4
 		icon = GFX_goal_unknown
@@ -351,28 +617,7 @@ focus_tree = {
 		y = 15
 
 	}
-	focus = {
-		id = FRA_dip_inter1
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = FRA_dip
-		}
-		x = 9
-		y = 10
 
-	}
-	focus = {
-		id = FRA_dip_inter2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = FRA_dip_inter1
-		}
-		x = 9
-		y = 11
-
-	}
 	focus = {
 		id = FRA_hukusi_imin1
 		icon = GFX_goal_unknown
@@ -431,23 +676,7 @@ focus_tree = {
 		y = 15
 
 	}
-	focus = {
-		id = FRA_bonp
-		icon = GFX_goal_unknown
-		cost = 8.00
-		prerequisite = {
-			focus = FRA_inter1
-		}
-		mutually_exclusive = {
-			focus = FRA_anaky
-			focus = FRA_sadc
-			focus = FRA_sadc
-			focus = FRA_com1
-		}
-		x = 14
-		y = 1
 
-	}
 	focus = {
 		id = FRA_hukusi_syousika1
 		icon = GFX_goal_unknown
@@ -568,23 +797,7 @@ focus_tree = {
 		y = 16
 
 	}
-	focus = {
-		id = FRA_anaky
-		icon = GFX_goal_unknown
-		cost = 8.00
-		prerequisite = {
-			focus = FRA_inter1
-		}
-		mutually_exclusive = {
-			focus = FRA_bonp
-			focus = FRA_sadc
-			focus = FRA_com1
-			focus = FRA_sadc
-		}
-		x = 20
-		y = 1
 
-	}
 	focus = {
 		id = FRA_nav_mil1
 		icon = GFX_goal_unknown
@@ -923,54 +1136,8 @@ focus_tree = {
 		y = 15
 
 	}
-	focus = {
-		id = FRA_com5
-		icon = GFX_goal_unknown
-		cost = 8.00
-		prerequisite = {
-			focus = FRA_com_antiger3
-			focus = FRA_com4
-		}
-		prerequisite = {
-			focus = FRA_com8
-		}
-		x = 2
-		y = 8
 
-	}
-	focus = {
-		id = FRA_com6
-		icon = GFX_goal_unknown
-		cost = 8.00
-		prerequisite = {
-			focus = FRA_com5
-		}
-		x = 2
-		y = 9
 
-	}
-	focus = {
-		id = FRA_com_antiger2
-		icon = GFX_goal_unknown
-		cost = 8.00
-		prerequisite = {
-			focus = FRA_com_antiger1
-		}
-		x = 0
-		y = 6
-
-	}
-	focus = {
-		id = FRA_com_antiger3
-		icon = GFX_goal_unknown
-		cost = 8.00
-		prerequisite = {
-			focus = FRA_com_antiger2
-		}
-		x = 0
-		y = 7
-
-	}
 	focus = {
 		id = FRA_hukusi4
 		icon = GFX_goal_unknown
@@ -1015,26 +1182,5 @@ focus_tree = {
 		y = 15
 
 	}
-	focus = {
-		id = FRA_com_EU2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = FRA_com_EU
-		}
-		x = 2
-		y = 12
 
-	}
-	focus = {
-		id = FRA_com_EU
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = FRA_com6
-		}
-		x = 2
-		y = 11
-
-	}
 }

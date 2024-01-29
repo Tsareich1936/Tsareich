@@ -1005,7 +1005,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -200
+				stability_factor = -2
 			}
 		}
 	}
