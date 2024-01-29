@@ -1,0 +1,230 @@
+add_namespace = "TR_truce"
+add_namespace = "TR_truce_news"
+
+country_event = {
+    id = TR_truce.1
+	title = TR_truce.1.t
+	desc = TR_truce.1.d
+
+	is_triggered_only = yes
+	
+	option = {
+        name = TR_truce.1.a
+		GER = {
+            country_event = { hours = 48 id = TR_truce.2 }
+        }
+    }
+
+    option = {
+        name = TR_truce.1.b
+    }
+}
+
+country_event = {
+    id = TR_truce.2
+	title = TR_truce.2.t
+	desc = TR_truce.2.d
+
+	is_triggered_only = yes
+
+	option = {
+        name = TR_truce.2.a
+        white_peace = {
+            tag = RUS
+        }
+		86 = {
+			transfer_state_to = GER
+		}
+		807 = {
+			transfer_state_to = GER
+		}
+		85 = {
+			transfer_state_to = GER
+		}
+		5 = {
+			transfer_state_to = GER
+		}
+		763 = {
+			transfer_state_to = GER
+		}
+		188 = {
+			transfer_state_to = GER
+		}
+		762 = {
+			transfer_state_to = GER
+		}
+		189 = {
+			transfer_state_to = GER
+		}
+		190 = {
+			transfer_state_to = GER
+		}
+		814 = {
+			transfer_state_to = GER
+		}
+		809 = {
+			transfer_state_to = GER
+		}
+		815 = {
+			transfer_state_to = GER
+		}
+		11 = {
+			transfer_state_to = GER
+		}
+		808 = {
+			transfer_state_to = GER
+		}
+		810 = {
+			transfer_state_to = GER
+		}
+		12 = {
+			transfer_state_to = GER
+		}
+		13 = {
+			transfer_state_to = GER
+		}
+		191 = {
+			transfer_state_to = GER
+		}
+		813 = {
+			transfer_state_to = GER
+		}
+		812 = {
+			transfer_state_to = GER
+		}
+		811 = {
+			transfer_state_to = GER
+		}
+		207 = {
+			transfer_state_to = GER
+		}
+		206 = {
+			transfer_state_to = GER
+		}
+		241 = {
+			transfer_state_to = GER
+		}
+		204 = {
+			transfer_state_to = GER
+		}
+		194 = {
+			transfer_state_to = GER
+		}
+		201 = {
+			transfer_state_to = GER
+		}
+		202 = {
+			transfer_state_to = GER
+		}
+		199 = {
+			transfer_state_to = GER
+		}
+		198 = {
+			transfer_state_to = GER
+		}
+		78 = {
+			transfer_state_to = GER
+		}
+		766 = {
+			transfer_state_to = GER
+		}
+		938 = {
+			transfer_state_to = GER
+		}
+		192 = {
+			transfer_state_to = GER
+		}
+		834 = {
+			transfer_state_to = GER
+		}
+		203 = {
+			transfer_state_to = GER
+		}
+		197 = {
+			transfer_state_to = GER
+		}
+		196 = {
+			transfer_state_to = GER
+		}
+		137 = {
+			transfer_state_to = GER
+		}
+		200 = {
+			transfer_state_to = GER
+		}
+		227 = {
+			transfer_state_to = GER
+		}
+		228 = {
+			transfer_state_to = GER
+		}
+		221 = {
+			transfer_state_to = GER
+		}
+		259 = {
+			transfer_state_to = GER
+		}
+		225 = {
+			transfer_state_to = GER
+		}
+		193 = {
+			transfer_state_to = GER
+		}
+		226 = {
+			transfer_state_to = GER
+		}
+		10 = {
+			transfer_state_to = POL
+		}
+		87 = {
+			transfer_state_to = POL
+		}
+		98 = {
+			transfer_state_to = POL
+		}
+		90 = {
+			transfer_state_to = POL
+		}
+		92 = {
+			transfer_state_to = POL
+		}
+		88 = {
+			transfer_state_to = POL
+		}
+		89 = {
+			transfer_state_to = POL
+		}
+		80 = {
+			transfer_state_to = POL
+		}
+		91 = {
+			transfer_state_to = POL
+		}
+		93 = {
+			transfer_state_to = POL
+		}
+		94 = {
+			transfer_state_to = POL
+		}
+		95 = {
+			transfer_state_to = POL
+		}
+		96 = {
+			transfer_state_to = POL
+		}
+		784 = {
+			transfer_state_to = POL
+		}
+		97 = {
+			transfer_state_to = POL
+		}
+		72 = {
+			transfer_state_to = CZE
+		}
+
+	}
+
+    option = {
+        name = TR_truce.2.b
+    }
+}
