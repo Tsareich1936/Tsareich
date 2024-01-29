@@ -317,6 +317,10 @@ focus_tree = {
 					relative_position_id = TR_ENG_sale_to_portugal
 					completion_reward = {
 						TR_ENG_proceed_financial_issue = yes
+						swap_ideas = {
+							remove_idea = TR_ENG_navy_heavy_budget
+							add_idea = TR_ENG_royal_navy1
+						}
 					}
 				}
 				focus = {
@@ -339,7 +343,10 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_naval_shipbuilding_problem
 					completion_reward = {
-				
+						diplomatic_relation = {
+							country = RUS
+							relation = befriend
+						}
 					}
 				}
 				focus = {#グレート・ゲームの終焉
@@ -360,6 +367,20 @@ focus_tree = {
 					relative_position_id = TR_ENG_reconciliation_with_russia
 					completion_reward = {
 						TR_ENG_proceed_financial_issue = yes
+						swap_ideas = {
+							remove_idea = TR_ENG_navy_heavy_budget
+							add_idea = TR_ENG_royal_navy1
+						}
+						diplomatic_relation = {
+							country = RUS
+							relation = market_access_rights
+						}
+						RUS = {
+							diplomatic_relation = {
+								country = ENG
+								relation = market_access_rights
+							}
+						}
 					}
 				}
 				focus = {#陸のロシア、海のブリテン
@@ -376,6 +397,7 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_the_end_of_the_great_game
 					completion_reward = {
+						TR_ENG_reforming_navy = yes
 					}
 				}
 		# Left
@@ -785,7 +807,7 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_indian_affairs
 					completion_reward = {
-				
+						add_stability = -0.05
 					}
 				}
 				focus = {
@@ -809,7 +831,7 @@ focus_tree = {
 					}
 				}
 				focus = {
-					id = TR_ENG_proximity_to_clan_kings
+					id = TR_ENG_proximity_to_princely_states
 					icon = GFX_goal_generic_major_alliance
 					cost = 3
 					prerequisite = {
@@ -822,7 +844,16 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_strengthening_of_indian_control
 					completion_reward = {
-				
+						every_state = {
+							limit = {
+								OR = {
+									state = 427
+									state = 428
+									state = 433
+								}
+							}
+							set_state_flag = TR_indian_princely_states
+						}
 					}
 				}
 				focus = {
@@ -836,7 +867,9 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_strengthening_of_indian_control
 					completion_reward = {
-				
+						RAJ = {
+							add_stability = -0.5
+						}
 					}
 				}
 				focus = {
@@ -844,7 +877,7 @@ focus_tree = {
 					icon = GFX_focus_eng_the_sun_never_sets
 					cost = 3
 					prerequisite = {
-						focus = TR_ENG_proximity_to_clan_kings
+						focus = TR_ENG_proximity_to_princely_states
 					}
 					prerequisite = {
 						focus = TR_ENG_partition_of_india
@@ -855,8 +888,14 @@ focus_tree = {
 					x = 0
 					y = 3
 					relative_position_id = TR_ENG_strengthening_of_indian_control
+					complete_tooltip = {
+						set_autonomy = {
+							target = RAJ
+							autonomy_state = autonomy_integrated_puppet
+						}
+					}
 					completion_reward = {
-				
+						country_event = TR_uk.16
 					}
 				}
 				focus = {# Compromise to the Indian National Congress
@@ -873,7 +912,7 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_indian_affairs
 					completion_reward = {
-				
+						add_stability = 0.05
 					}
 				}
 				focus = {
@@ -1795,6 +1834,11 @@ focus_tree = {
 				prerequisite = {
 					focus = TR_ENG_focus_on_attack
 				}
+				available = {
+					NOT = {
+						has_idea = TR_ENG_navy_heavy_budget
+					}
+				}
 				ai_will_do = {
 					factor = 188
 				}
@@ -1939,7 +1983,7 @@ focus_tree = {
 				}
 			# navy
 				focus = {
-					id = TR_ENG_naval_military_expansion_focus
+					id = TR_ENG_naval_reform
 					icon = GFX_goal_generic_construct_naval_dockyard
 					cost = 3
 					prerequisite = {
@@ -1952,7 +1996,7 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_full_scale_military_expansion
 					completion_reward = {
-				
+						TR_ENG_reforming_navy = yes
 					}
 				}
 				focus = {
@@ -1960,14 +2004,14 @@ focus_tree = {
 					icon = GFX_goal_generic_amphibious_assault
 					cost = 3
 					prerequisite = {
-						focus = TR_ENG_naval_military_expansion_focus
+						focus = TR_ENG_naval_reform
 					}
 					ai_will_do = {
 						factor = 176
 					}
 					x = 0
 					y = 1
-					relative_position_id = TR_ENG_naval_military_expansion_focus
+					relative_position_id = TR_ENG_naval_reform
 					completion_reward = {
 				
 					}
@@ -1977,7 +2021,7 @@ focus_tree = {
 					icon = GFX_goal_generic_occupy_states_coastal
 					cost = 3
 					prerequisite = {
-						focus = TR_ENG_naval_military_expansion_focus
+						focus = TR_ENG_naval_reform
 					}
 					ai_will_do = {
 						factor = 174
@@ -1987,7 +2031,7 @@ focus_tree = {
 					}
 					x = 3
 					y = 1
-					relative_position_id = TR_ENG_naval_military_expansion_focus
+					relative_position_id = TR_ENG_naval_reform
 					completion_reward = {
 				
 					}
@@ -1998,14 +2042,14 @@ focus_tree = {
 						icon = GFX_focus_generic_destroyer
 						cost = 3
 						prerequisite = {
-							focus = TR_ENG_naval_military_expansion_focus
+							focus = TR_ENG_naval_reform
 						}
 						ai_will_do = {
 							factor = 174
 						}
 						x = -2
 						y = 2
-						relative_position_id = TR_ENG_naval_military_expansion_focus
+						relative_position_id = TR_ENG_naval_reform
 						completion_reward = {
 					
 						}
@@ -2064,14 +2108,14 @@ focus_tree = {
 						icon = GFX_goal_generic_navy_doctrines_tactics
 						cost = 3
 						prerequisite = {
-							focus = TR_ENG_naval_military_expansion_focus
+							focus = TR_ENG_naval_reform
 						}
 						ai_will_do = {
 							factor = 174
 						}
 						x = 2
 						y = 2
-						relative_position_id = TR_ENG_naval_military_expansion_focus
+						relative_position_id = TR_ENG_naval_reform
 						completion_reward = {
 					
 						}

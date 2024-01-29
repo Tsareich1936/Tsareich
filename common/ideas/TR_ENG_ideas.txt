@@ -11,38 +11,58 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
-		TR_ENG_royal_army = {
+		TR_ENG_colonial_maintenance_force = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			modifier = {
-				command_power_gain = 0.05
-				max_command_power = 60
-				experience_gain_army_factor = 0.1
+				army_morale_factor = -0.3
+				army_org_factor = -0.3
+				non_core_manpower = -0.5
 			}
 		}
-		TR_ENG_royal_navy = {
+		TR_ENG_papier_mache_navy = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
 			modifier = {
-				command_power_gain = 0.05
-				max_command_power = 60
-				experience_gain_navy_factor = 0.2
+				naval_morale_factor = -0.3
+				navy_org_factor = -0.3
 			}
 		}
-		TR_ENG_royal_air_force = {
+		TR_ENG_navy_heavy_budget = {
 			allowed = {
 				always = no
 			}
-			picture = GFX_idea_TR_ENG_royal_air_force
 			removal_cost = -1
 			modifier = {
-				command_power_gain = 0.05
-				max_command_power = 60
-				experience_gain_air_factor = 0.2
+				conscription_factor = -0.5
+				training_time_army_factor = 0.5
+				experience_gain_army = -0.05
+				experience_gain_navy = 0.05
+				experience_gain_air = -0.05
+			}
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = 0.3
+				}
+				cas = {
+					build_cost_ic = 0.3
+				}
+				heavy_fighter = {
+					build_cost_ic = 0.3
+				}
+				tactical_bomber = {
+					build_cost_ic = 0.3
+				}
+				strategic_bomber = {
+					build_cost_ic = 0.3
+				}
+				naval_bomber = {
+					build_cost_ic = -0.3
+				}
 			}
 		}
 		TR_ENG_financial_issues1 = {
@@ -58,7 +78,7 @@ ideas = {
 				stability_factor = -0.2
 			}
 		}
-		TR_ENG_war_bond_issue = {
+		TR_ENG_war_bond_issue_idea = {
 			allowed = {
 				always = no
 			}
@@ -69,6 +89,7 @@ ideas = {
 				production_speed_buildings_factor = -0.5
 			}
 		}
+
 		TR_ENG_small_repayment = {
 			allowed = {
 				always = no
@@ -126,6 +147,122 @@ ideas = {
 				industrial_capacity_dockyard = -0.1
 				industrial_capacity_factory = -0.1
 				stability_factor = -0.05
+			}
+		}
+
+		TR_ENG_royal_army = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				command_power_gain = 0.05
+				max_command_power = 60
+				experience_gain_army_factor = 0.1
+			}
+		}
+		TR_ENG_royal_navy1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.3
+				training_time_army_factor = 0.3
+				experience_gain_army = -0.03
+				experience_gain_navy = 0.03
+				experience_gain_air = -0.03
+
+				command_power_gain = 0.01
+				max_command_power = 10
+				experience_gain_navy_factor = 0.03
+			}
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = 0.2
+				}
+				cas = {
+					build_cost_ic = 0.2
+				}
+				heavy_fighter = {
+					build_cost_ic = 0.2
+				}
+				tactical_bomber = {
+					build_cost_ic = 0.2
+				}
+				strategic_bomber = {
+					build_cost_ic = 0.2
+				}
+				naval_bomber = {
+					build_cost_ic = -0.2
+				}
+			}
+		}
+		TR_ENG_royal_navy2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.1
+				training_time_army_factor = 0.1
+				experience_gain_army = -0.01
+				experience_gain_navy = 0.01
+				experience_gain_air = -0.01
+
+				command_power_gain = 0.03
+				max_command_power = 30
+				experience_gain_navy_factor = 0.07
+			}
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = 0.1
+				}
+				cas = {
+					build_cost_ic = 0.1
+				}
+				heavy_fighter = {
+					build_cost_ic = 0.1
+				}
+				tactical_bomber = {
+					build_cost_ic = 0.1
+				}
+				strategic_bomber = {
+					build_cost_ic = 0.1
+				}
+				naval_bomber = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		TR_ENG_royal_navy3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				experience_gain_navy = 0.03
+
+				command_power_gain = 0.05
+				max_command_power = 60
+				experience_gain_navy_factor = 0.2
+			}
+			equipment_bonus = {
+				naval_bomber = {
+					build_cost_ic = -0.15
+				}
+			}
+		}
+		TR_ENG_royal_air_force = {
+			allowed = {
+				always = no
+			}
+			picture = GFX_idea_TR_ENG_royal_air_force
+			removal_cost = -1
+			modifier = {
+				command_power_gain = 0.05
+				max_command_power = 60
+				experience_gain_air_factor = 0.2
 			}
 		}
 	}
