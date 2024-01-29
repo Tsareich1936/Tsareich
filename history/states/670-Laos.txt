@@ -1,9 +1,12 @@
 state={
 	id=670
 	name="STATE_670"
+	resources={
+		steel = 12
+	}
 	manpower = 1184000
 	
-	state_category = pastoral
+	state_category = rural
 
 	history={
 		owner = VIN

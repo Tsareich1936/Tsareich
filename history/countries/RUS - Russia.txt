@@ -123,10 +123,10 @@ add_ideas = {
 }
 
 # politics
-set_research_slots = 2
-set_convoys = 420
-set_stability = 0.45
-set_war_support = 0.08
+set_research_slots = 3
+set_convoys = 900
+set_stability = 0.35
+set_war_support = 0.02
 
 set_politics = {
 	ruling_party = neutrality
@@ -136,13 +136,15 @@ set_politics = {
 }
 
 set_popularities = {
-	communism = 6
+	anarchism = 1
+	communism = 5
 	socialism = 7
 	socialdemocratic = 10
 	democratic = 18
 	conservatism = 20
-	neutrality = 35
-	fascism = 4
+	neutrality = 36
+	theocracy = 2
+	fascism = 1
 }
 
 recruit_character = RUS_Alexei_Nikolaevich

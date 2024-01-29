@@ -217,10 +217,6 @@ country_event = {
                 set_country_flag = RUS_war_against_RUS
                 add_ideas = TR_hidden_war_nosurrender
             }
-            RUS = {
-                set_country_flag = RUS_war_against_RUS
-                add_ideas = TR_hidden_war_nosurrender
-            }
             #戦争開始
             news_event = { hours = 1 id = TR_Russia_news.4 }
             PER = {
@@ -275,10 +271,6 @@ country_event = {
         custom_effect_tooltip = TR_Russia_per_tt.4
         hidden_effect = {
             PER = {
-                set_country_flag = RUS_war_against_RUS
-                add_ideas = TR_hidden_war_nosurrender
-            } 
-            RUS = {
                 set_country_flag = RUS_war_against_RUS
                 add_ideas = TR_hidden_war_nosurrender
             }
@@ -443,7 +435,6 @@ country_event = {
         }
         hidden_effect = {
             RUS = { news_event = { hours = 1 id = TR_Russia_news.9 } }
-            remove_ideas = TR_hidden_war_nosurrender
             PER = {
                 remove_ideas = TR_hidden_war_nosurrender
             }
@@ -484,7 +475,6 @@ country_event = {
         }
         hidden_effect = {
             RUS = { news_event = { hours = 1 id = TR_Russia_news.10 } }
-            remove_ideas = TR_hidden_war_nosurrender
             PER = {
                 remove_ideas = TR_hidden_war_nosurrender
             }
@@ -586,9 +576,6 @@ country_event = {
         hidden_effect = {
             PER = { news_event = { hours = 1 id = TR_Russia_news.11 } }
             remove_ideas = TR_hidden_war_nosurrender
-            RUS = {
-                remove_ideas = TR_hidden_war_nosurrender
-            }
             PER = {
                 set_cosmetic_tag = PER_empire
                 
@@ -655,9 +642,6 @@ country_event = {
                 remove_ideas = TR_hidden_war_nosurrender
                 PER = {
                     set_cosmetic_tag = PER_empire
-                }
-                RUS = {
-                    remove_ideas = TR_hidden_war_nosurrender
                 }
                 229 = {
                     transfer_state_to = PER
@@ -779,6 +763,45 @@ country_event = {
         }
     }
 }
+
+#シベリア
+country_event = {
+    id = TR_Russia.15
+    title = TR_Russia.15.t
+    desc = TR_Russia.15.d
+    picture = GFX_report_event_FIN_three_country_cairn_flag_raising
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.15.a #よし。
+        948 = {
+            add_resource = {
+                type = oil
+                amount = 48
+            }
+            add_manpower = 25000
+        }
+        946 = {
+            add_resource = {
+                type = oil
+                amount = 12
+            }
+            add_manpower = 9500
+        }
+        463 = {
+            add_resource = {
+                type = oil
+                amount = 30
+            }
+            add_manpower = 12000
+        }
+    }
+    
+}
+
+
+
 
 ### News ###
 

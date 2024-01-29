@@ -89,3 +89,14 @@ JAP_WAR_PLAN_CREATE_2 = {
 	}
 	visible_when_empty = no
 }
+
+JAP_KOR_WAR = {
+	allowed = {
+		tag = JAP
+	}
+
+	priority = {
+		base = 100
+	}
+	visible_when_empty = no
+}

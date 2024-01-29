@@ -163,10 +163,11 @@ set_popularities = {
 	socialism = 14
 	socialdemocratic = 14
 }
-
+puppet = VIN
 create_faction = International
 add_to_faction = GER
 add_to_faction = SRI
+add_to_faction = VIN
 
 add_ideas = {
 	TR_FRA_kakumei_honou

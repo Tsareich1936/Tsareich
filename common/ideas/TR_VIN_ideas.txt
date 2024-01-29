@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		VIN_FRA_sien = {
+			picture = "SPR_relocate_the_gold_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_factory_donations = 1
+				consumer_goods_factor = -0.15
+			}
+		}
+	}	
+}

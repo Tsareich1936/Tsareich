@@ -149,12 +149,12 @@ country_event = {
 				days = 0
 			}
 		}
-		ITA = {
-			country_event = {
-				id = TR_north_italy.5
-				days = 1
-			}
-		}
+		# ITA = {
+		# 	country_event = {
+		# 		id = TR_north_italy.5
+		# 		days = 7
+		# 	}
+		# }
 	}
 	option = {
 		name = TR_north_italy.3.b
@@ -165,22 +165,22 @@ country_event = {
 		}
 	}
 }
-country_event = {
-	id = TR_north_italy.5
-	title = TR_north_italy.5.t
-	desc = TR_north_italy.5.d
+# country_event = {
+# 	id = TR_north_italy.5
+# 	title = TR_north_italy.5.t
+# 	desc = TR_north_italy.5.d
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	immediate = {
-		set_rule = {
-			can_join_factions = yes
-		}
-		ENG = {
-			add_to_faction = ITA
-		}
-	}
-}
+# 	immediate = {
+# 		set_rule = {
+# 			can_join_factions = yes
+# 		}
+# 		ENG = {
+# 			add_to_faction = ITA
+# 		}
+# 	}
+# }
 ### Left Route events ###
 
 # International proxi #1
@@ -459,6 +459,11 @@ country_event = {
 		FRA = {
 			add_state_claim = 845
 		}
+		SWI = {
+			set_rule = {
+				can_join_factions = no
+			}
+		}
 	}
 	option = {# Make Socialism!
 		name = TR_north_italy.socialism.8.b
@@ -472,6 +477,9 @@ country_event = {
 						target = PREV
 						type = puppet_wargoal_focus
 					}
+				}
+				set_rule = {
+					can_join_factions = no
 				}
 			}
 		}
@@ -567,6 +575,11 @@ country_event = {
 			type = take_claimed_state
 			generator = {
 				103 163
+			}
+		}
+		CRO = {
+			set_rule = {
+				can_join_factions = no
 			}
 		}
 		set_country_flag = TR_SRI_socialist_zara_war_flag

@@ -55,7 +55,7 @@ focus_tree = {
 			tag = SRI
 		}
 	}
-	default = yes
+	default = no
 	continuous_focus_position = {
 		x = 500
 		y = 100
@@ -730,11 +730,11 @@ focus_tree = {
 					target = ITA
 					type = risorgimento
 				}
+				leave_faction = yes
 				set_rule = {
 					can_join_factions = no
 				}
 				FRA ={
-					remove_from_faction = SRI
 					set_truce = {
 						target = SRI
 						days = 2920

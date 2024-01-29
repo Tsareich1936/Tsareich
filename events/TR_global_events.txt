@@ -1,0 +1,13 @@
+add_namespace = TR_news
+news_event = {#ワルシャワ開放
+	id = TR_news.1
+	title = TR_news.1.t
+	desc = TR_news.1.d
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = TR_news.1.a
+	}
+}
