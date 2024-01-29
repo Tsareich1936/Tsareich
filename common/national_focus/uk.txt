@@ -25,7 +25,7 @@ focus_tree = {
 			icon = GFX_goal_generic_consumer_goods
 			cost = 5
 			ai_will_do = {
-				factor = 999
+				factor = 220
 			}
 			x = 42
 			y = 14

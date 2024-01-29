@@ -567,10 +567,10 @@ country_event = {#インドで革命
 					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
 					owner = IND
 				}
-				create_unit = {
-					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
-					owner = IND
-				}
+				# create_unit = {
+				# 	division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+				# 	owner = IND
+				# }
 			}
 			capital = {
 				create_unit = {
@@ -719,6 +719,12 @@ country_event = {#パキスタンが蜂起！
 					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
 					owner = PREV
 				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				
+				
 			}
 		}
 		RAJ = {
