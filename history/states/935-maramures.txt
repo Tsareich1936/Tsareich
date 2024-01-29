@@ -2,9 +2,9 @@ state={
 	id=935
 	name="STATE_935"
 	history={
-		owner = HUN
+		owner = TRA
 		add_core_of = ROM
-		add_core_of = HUN
+		add_core_of = TRA
 		}
 	provinces={
 		746 9704 11676 
