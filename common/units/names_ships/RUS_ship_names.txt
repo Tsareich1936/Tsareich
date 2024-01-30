@@ -5,10 +5,6 @@ RUS_DD_IMPERIAL = {
 
 	for_countries = { RUS }
 
-	can_use = {
-		
-	}
-
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
 
@@ -42,9 +38,7 @@ RUS_DE_IMPERIAL = {
 
 	for_countries = { RUS }
 
-	can_use = { 
-		
-	}
+
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
@@ -68,9 +62,7 @@ RUS_CL_IMPERIAL = {
 
 	for_countries = { RUS }
 
-	can_use = { 
-		
-	}
+
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
@@ -92,9 +84,7 @@ RUS_CA_IMPERIAL = {
 
 	for_countries = { RUS }
 
-	can_use = { 
-		
-	}
+
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
@@ -116,9 +106,7 @@ RUS_MINELAYERS_IMPERIAL = {
 
 	for_countries = { RUS }
 
-	can_use = { 
-		
-	}
+
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
@@ -138,9 +126,7 @@ RUS_MINESWEEPERS_IMPERIAL = {
 
 	for_countries = { RUS }
 
-	can_use = { 
-		
-	}
+
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }
@@ -161,9 +147,7 @@ RUS_BBBC_IMPERIAL = {
 
 	for_countries = { RUS }
 
-	can_use = { 
-		
-	}
+
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship battle_cruiser }
@@ -184,9 +168,7 @@ RUS_CV_IMPERIAL = {
 
 	for_countries = { RUS }
 
-	can_use = { 
-		
-	}
+
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
@@ -205,9 +187,7 @@ RUS_SS_IMPERIAL = {
 
 	for_countries = { RUS }
 
-	can_use = { 
-		
-	}
+
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
@@ -229,9 +209,7 @@ RUS_IMPERIAL_CITIES = {
 
 	for_countries = { RUS }
 
-	can_use = { 
-		
-	}
+
 
 	type = ship
 						
@@ -248,9 +226,7 @@ RUS_IMPERIAL_GOVERNORATES = {
 
 	for_countries = { RUS }
 
-	can_use = { 
-		
-	}
+
 
 	type = ship
 					
