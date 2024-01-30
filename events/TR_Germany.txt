@@ -35,6 +35,11 @@ country_event = {
 		name = TR_germany.2.a
 		complete_national_focus = GER_right
 		set_country_flag = germany_leftorright
+		promote_character = {
+			character = GER_Heinrich_Brandler
+			ideology = luxemburgism
+			
+		}
 	}
 
 	option = {
