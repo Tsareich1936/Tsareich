@@ -103,6 +103,7 @@ if = {
 		basic_depth_charges = 1
 		mtg_transport = 1
 		basic_dp_light_battery = 1
+		pre_dreadnoughts = 1
 	}
 }
 
@@ -427,4 +428,29 @@ if = {
 	recruit_character = RUS_vladimir_kosmin
 	recruit_character = RUS_andrey_shkuro
 	recruit_character = RUS_anton_denikin
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	create_equipment_variant = {
+		name = "Imperatrica Mariq Class"
+		type = ship_hull_pre_dreadnought
+		name_group = RUS_BBBC_IMPERIAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
 }
