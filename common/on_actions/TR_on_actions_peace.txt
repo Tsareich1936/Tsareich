@@ -1,0 +1,119 @@
+on_actions = {
+	on_capitulation_immediate = {
+		effect = {# SRI-CRO war peace
+			if = {
+				limit = {
+					ROOT = {
+						tag = CRO
+					}
+					FROM = {
+						OR = {
+							tag = SRI
+							tag = GER
+							tag = FRA
+						}
+					}
+					SRI = {
+						has_country_flag = {
+							flag = TR_SRI_socialist_zara_war_flag
+							value = 1
+						}
+					}
+				}
+				set_country_flag = {
+					flag = TR_SRI_socialist_zara_war_flag
+					value = 2
+				}
+				SRI = {
+					transfer_state = 103
+					transfer_state = 163
+					country_event = {
+						id = TR_north_italy.socialism.12
+						days = 3
+					}
+				}
+				if = {
+					limit = {
+						GER = {
+							has_war_with = CRO
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = CRO
+						}
+						white_peace = {
+							tag = CRO
+							message = TR_SRI_CRO_WAR_finished_1
+						}
+					}
+					SLV = {
+						transfer_state = 102
+						transfer_state = 853
+						GER = {
+							set_autonomy = {
+								target = SLV
+								autonomy_state = autonomy_puppet
+							}
+						}
+					}
+					CRO = {
+						transfer_state = 109
+						SRI = {
+							set_autonomy = {
+								target = CRO
+								autonomy_state = autonomy_puppet
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							GER = {
+								has_war_with = CRO
+							}
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = CRO
+						}
+						white_peace = {
+							tag = CRO
+							message = TR_SRI_CRO_WAR_finished_2
+						}
+					}
+					SLV = {
+						transfer_state = 102
+						transfer_state = 853
+						SRI = {
+							set_autonomy = {
+								target = SLV
+								autonomy_state = autonomy_puppet
+							}
+						}
+					}
+					CRO = {
+						transfer_state = 109
+						SRI = {
+							set_autonomy = {
+								target = CRO
+								autonomy_state = autonomy_puppet
+							}
+						}
+					}
+				}
+				CRO = {
+					set_capital = {
+						state = 109
+						remember_old_capital = no
+					}
+					every_owned_state = {
+						set_state_controller_to = CRO
+					}
+				}
+			}
+		}
+	}	
+}

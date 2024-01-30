@@ -1,0 +1,23 @@
+units = {
+
+	fleet = {
+		name = "Baltiyskiy flot"			
+		naval_base = 3151
+
+		task_force = {
+			name = "Shtabnoy flot"
+			location = 3151 
+			ship = { name = "Imperatrica Mariq" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = RUS version_name = "Imperatrica Mariq Class"} } }
+            
+            ship = { name = "Imperator Nikolay I" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperator Nikolay I Class"} } }
+            ship = { name = "Imperator Nikolay II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperator Nikolay I Class"} } }
+
+            ship = { name = "Tsaritsyn" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperator Aleksey Class"} } }
+            ship = { name = "Yekaterinburg" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperator Aleksey Class"} } }
+            
+		}
+
+		
+	}
+
+}
