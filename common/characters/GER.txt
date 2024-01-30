@@ -28,6 +28,20 @@ characters={
 		}
 	}
 
+	GER_Karl_Liebknecht={
+		name=GER_karl_liebknecht
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_karl_liebknecht
+			}
+		}
+		country_leader={
+			ideology=luxemburgism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	GER_Heinrich_Brandler={
 		name=GER_heinrich_brandler
 		portraits={

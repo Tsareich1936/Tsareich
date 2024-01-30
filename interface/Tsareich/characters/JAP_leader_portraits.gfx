@@ -61,6 +61,26 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_Portrait_Kantaro_Suzuki"
-		textureFile = "gfx/leaders/JAP/Portrait_Kantaro_Suzuki"
+		textureFile = "gfx/leaders/JAP/Portrait_Kantaro_Suzuki.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Toshiro_Obata"
+		textureFile = "gfx/leaders/JAP/Portrait_Toshiro_Obata.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Himiko"
+		textureFile = "gfx/leaders/JAP/Portrait_Himiko.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Showa_Emperor"
+		textureFile = "gfx/leaders/JAP/Portrait_Showa_Emperor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_JAP_Toyotomi"
+		textureFile = "gfx/leaders/JAP/JAP_Toyotomi.dds"
 	}
 }
