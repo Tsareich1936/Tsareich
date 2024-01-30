@@ -334,7 +334,6 @@ units = {
 		start_experience_factor = 0.5
 		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA" version_name = "H-35" } }
 	}
-	}
 
 	
 	#ちゅうとん
