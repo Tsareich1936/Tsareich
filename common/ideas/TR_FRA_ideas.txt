@@ -136,6 +136,17 @@ ideas = {
 		}
 		
 
+		TR_FRA_tech = {
+			picture = "atomic_bomb_project"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+
 
 
 	}	
