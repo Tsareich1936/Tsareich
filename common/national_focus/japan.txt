@@ -1885,7 +1885,7 @@ focus_tree = {
         relative_position_id = jap_social_reform
         x = -2
         y = 1
-        cost = 4
+        cost = 5
         prerequisite = {
             focus = jap_social_reform
         }
@@ -1902,7 +1902,7 @@ focus_tree = {
         relative_position_id = jap_agrarian_reform_1
         x = 0
         y = 1
-        cost = 4
+        cost = 5
         prerequisite = {
             focus = jap_agrarian_reform_1
         }
@@ -1916,7 +1916,7 @@ focus_tree = {
         relative_position_id = jap_agrarian_reform_2
         x = 0
         y = 1
-        cost = 4
+        cost = 5
         prerequisite = {
             focus = jap_agrarian_reform_2
         }
@@ -2501,17 +2501,118 @@ focus_tree = {
     }
 
     focus = {
+        id = jap_No_defeat
         allow_branch = {
             or = {
                 surrender_progress > 0.1
-                and = {
-                    controls_state = 645
-                    controls_state = 526
+                not = {
+                    and = {
+                        controls_state = 645
+                        controls_state = 526
+                    }
                 }
+
             }
         }
-        x = 50
-        y = 10
+        x = 47
+        y = 8
+    }
+
+    focus = {
+        id = jap_Metal_Supply_and_Order
+        prerequisite = {
+            focus = jap_No_defeat
+        }
+        relative_position_id = jap_No_defeat
+        x = -2
+        y = 1
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_student_going_war
+        prerequisite = {
+            focus = jap_No_defeat
+        }
+        relative_position_id = jap_No_defeat
+        x = 0
+        y = 1
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_psychological_mobilization
+        prerequisite = {
+            focus = jap_No_defeat
+        }
+        relative_position_id = jap_No_defeat
+        x = 2
+        y = 1
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_Kamikaze
+        relative_position_id = jap_No_defeat
+        x = 1
+        y = 2
+        completion_reward = {
+            
+        }
+        prerequisite = {
+            focus = jap_Metal_Supply_and_Order
+        }
+        prerequisite = {
+            focus = jap_student_going_war
+        }
+        prerequisite = {
+            focus = jap_psychological_mobilization
+        }
+    }
+
+    focus = {
+        id = jap_volunteer_corps
+        relative_position_id = jap_No_defeat
+        x = -1
+        y = 2
+        prerequisite = {
+            focus = jap_Metal_Supply_and_Order
+        }
+        prerequisite = {
+            focus = jap_student_going_war
+        }
+        prerequisite = {
+            focus = jap_psychological_mobilization
+        }
+    }
+
+    focus = {
+        id = jap_National_Volunteer_Army
+        relative_position_id = jap_No_defeat
+        x = 0
+        y = 3
+        prerequisite = {
+            focus = jap_Kamikaze
+        }
+        prerequisite = {
+            focus = jap_volunteer_corps
+        }
+    }
+
+    focus = {
+        id = jap_Operation_Ketsu
+        relative_position_id = jap_No_defeat
+        x = 0
+        y = 4
+        prerequisite = {
+            focus = jap_National_Volunteer_Army
+        }
     }
 }
 
@@ -2554,4 +2655,58 @@ focus_tree = {
     default = no
     reset_on_civilwar = no
     
+}
+
+focus_tree = {
+    id = japan_Toyotomi
+    country = {
+        factor = 0
+        modifier = {
+            add = 101
+            tag = JAP
+        }
+    }
+    default = no
+    reset_on_civilwar = no
+
+    focus = {
+        id = jap_Kanpaku
+        x = 5
+        y = 0
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_Buke
+        relative_position_id = jap_Kanpaku
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_Kanpaku
+        }
+    }
+
+    focus= {
+        id = jap_Gotairo
+        relative_position_id = jap_Kanpaku
+        x = -1
+        y = 2
+        prerequisite = {
+            focus = jap_Buke
+        }
+    }
+
+    focus = {
+        id = jap_Gobugyo
+        relative_position_id = jap_Gotairo
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Gotairo
+        }
+    }
+
+
 }
