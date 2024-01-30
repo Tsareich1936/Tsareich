@@ -2030,3 +2030,11 @@ country_event = {
 
 	}
 }
+
+country_event = {
+	id = TR_japan.70
+	is_triggered_only = yes
+	immediate = {
+		mark_focus_tree_layout_dirty = yes
+	}
+}

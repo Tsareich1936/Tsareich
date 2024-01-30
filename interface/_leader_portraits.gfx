@@ -1395,7 +1395,10 @@ spriteTypes = {
 	}
 
 	##### FRA ###
-
+	spriteType = {
+		name = "GFX_portrait_fra_ludovic_oscar_frossard"
+		texturefile = "gfx/leaders/FRA/portrait_fra_ludovic_oscar_frossard.dds"
+	}
 	spriteType = {
 		name = "GFX_portrait_fra_maurice_thorez"
 		texturefile = "gfx/leaders/FRA/portrait_fra_maurice_thorez.dds"
@@ -4560,6 +4563,11 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_GER_konrad_adenauer
 		texturefile = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_GER_karl_liebknecht
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Karl_Liebknecht.dds"
 	}
 
 	spriteType = {

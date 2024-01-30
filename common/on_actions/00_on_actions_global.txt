@@ -81,10 +81,11 @@ on_actions = {
 				}
 			}
 		}
+	}
+	on_daily_JAP = {
 		effect = {
 			if = {
 				limit = {
-					tag = JAP
 					has_war_with_major = yes
 				}
 				mark_focus_tree_layout_dirty = yes

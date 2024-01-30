@@ -392,6 +392,7 @@ GER_Opposition_to_War
 GER_legacy_of_an_empire
 }
 
+recruit_character = GER_karl_liebknecht
 recruit_character = GER_Heinrich_Brandler
 recruit_character = GER_konrad_adenauer
 recruit_character = GER_otto_strasser
