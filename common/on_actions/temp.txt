@@ -1,5 +1,21 @@
 on_actions = {
-    on_startup = {
-        
-    }
+    # on_capitulation_immediate = {
+    #     effect = {
+    #         if = {
+    #             limit = {
+    #                 ROOT = {
+    #                     tag = MEX
+    #                 }
+    #                 FROM = {
+    #                     tag = USA
+    #                 }
+    #             }
+    #             FROM = {
+    #                 white_peace = {
+    #                     tag = ROOT
+    #                 }
+    #             }
+    #         }
+    #     }
+    # }
 }
