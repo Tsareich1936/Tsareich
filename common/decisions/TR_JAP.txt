@@ -2031,6 +2031,7 @@ JAP_KOR_WAR = {
 				target = JAP
 				decision = JAP_KOR_WAR_FIN
 			}
+			set_global_flag = JAP_KOREA_WAR
 		}
 		activation = {
 			always = no

@@ -2500,6 +2500,19 @@ focus_tree = {
         }
     }
 
+    focus = {
+        allow_branch = {
+            or = {
+                surrender_progress > 0.1
+                and = {
+                    controls_state = 645
+                    controls_state = 526
+                }
+            }
+        }
+        x = 50
+        y = 10
+    }
 }
 
 
