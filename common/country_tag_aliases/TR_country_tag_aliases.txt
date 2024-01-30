@@ -1,0 +1,8 @@
+IND = {
+	original_tag = RAJ
+	has_country_flag = TR_communism_india_alieas
+}
+IPS = {#Indian Princely States
+	original_tag = RAJ
+	has_country_flag = TR_princely_india_alieas
+}

@@ -81,5 +81,14 @@ on_actions = {
 				}
 			}
 		}
+		effect = {
+			if = {
+				limit = {
+					tag = JAP
+					has_war_with_major = yes
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
 	}
 }

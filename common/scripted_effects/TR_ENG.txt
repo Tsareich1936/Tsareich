@@ -33,3 +33,23 @@ TR_ENG_proceed_financial_issue = {
 		remove_ideas = TR_ENG_financial_issues4
 	}
 }
+TR_ENG_reforming_navy = {
+	if = {
+		limit = {
+			has_idea = TR_ENG_royal_navy1
+		}
+		swap_ideas = {
+			remove_idea = TR_ENG_royal_navy1
+			add_idea = TR_ENG_royal_navy2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TR_ENG_royal_navy2
+		}
+		swap_ideas = {
+			remove_idea = TR_ENG_royal_navy2
+			add_idea = TR_ENG_royal_navy3
+		}
+	}
+}

@@ -163,6 +163,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = fascism_ideology
+			id = -1
 		}
 	}
 
@@ -175,7 +176,60 @@ characters = {
 		}
 		country_leader = {
 			ideology = fascism_ideology
+			id = -1
 		}
 	}
 	
+	JAP_Toshiro_Obata = {
+		name = JAP_Toshiro_Obata
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Toshiro_Obata
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			id = -1
+		}
+	}
+
+	JAP_Himiko = {
+		name = JAP_Himiko
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Himiko
+			}
+		}
+		country_leader = {
+			ideology = animism
+			id = -1
+		}
+	}
+
+	JAP_Showa_Emoeror ={
+
+		name = JAP_Showa_Emoeror
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Showa_Emperor
+			}
+		}
+		country_leader = {
+			ideology = shintoism
+			id = -1
+		}
+	}
+
+	JAP_Toyotomi = {
+		name = JAP_Toyotomi
+		portraits = {
+			civilian = {
+				large = GFX_JAP_Toyotomi
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			id = -1
+		}
+	}
 }

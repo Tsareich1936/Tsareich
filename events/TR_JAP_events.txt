@@ -1764,12 +1764,6 @@ country_event = { #  クーデター
 			picture = GFX_Portrait_Hisaichi_Terauchi
 			ideology = fascism
 		}
-		JAP = {
-			country_event = {
-				id = TR_japan.64
-				days = 7
-			}
-		}
 		if = {
 			limit = {
 				or = {
@@ -1884,8 +1878,8 @@ country_event = {  ##  navyによる逆クーデター
 		name = TR_japan.65.a
 		set_party_name = {
 			ideology = fascism
-			long_name = JAP_ARMY
-			name = JAP_ARMY
+			long_name = JAP_NAVY
+			name = JAP_NAVY
 		}
 		set_political_party = {
 			ideology = fascism
@@ -1917,7 +1911,14 @@ country_event = {
 		start_civil_war = {
 			ruling_party = communism
 			ideology = ROOT
-			size = 0.7
+			size = 0.3
+			states = {
+				953 967 535 959 960 962 963 955 965 949 958 282 964 968 970 971 973 950 981 982 977 978 979 530
+			}
+			
+		}
+		hidden_effect = {
+			remove_ideas = JAP_KOR_DEFEAT
 		}
 	}
 }
@@ -1963,11 +1964,69 @@ country_event = {
 	is_triggered_only = yes 
 	option = {
 		name = TR_japan.69.a
-	}
-	option = {
-		name = TR_japan.69.b
-	}
-	option = {
-		name = TR_japan.69.c
+		if = {
+			limit = {
+				has_completed_focus = jap_Shakai_Taishuto
+			}
+			set_political_party = {
+				ideology = neutrality
+				popularity = 80
+			}
+			set_politics = {
+				ruling_party = neutrality
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = jap_Rikken_Seiyukai
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = JAP_Toyotomi_family_long
+				name = JAP_Toyotomi_family
+			}
+			set_political_party = {
+				ideology = neutrality
+				popularity = 80
+			}
+			set_politics = {
+				ruling_party = neutrality
+			}
+			hidden_effect = {
+				retire_country_leader = yes
+			}
+			create_country_leader = {
+				name = JAP_Toyotomi
+				picture = GFX_JAP_Toyotomi
+				ideology = despotism
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = jap_Constitutional_Democratic_Party
+		    }
+			set_party_name = {
+				ideology = theocracy
+				long_name = JAP_Yamataikoku_long
+				name = JAP_Tamataikoku
+			}
+			set_political_party = {
+				ideology = theocracy
+				popularity = 80
+			}
+			set_politics = {
+				ruling_party = theocracy
+			}
+			hidden_effect = {
+				retire_country_leader = yes
+			}
+			create_country_leader = {
+				name = JAP_Himiko
+				picture = GFX_Portrait_Himiko
+				ideology = animism 
+
+			}
+		}
+
 	}
 }
