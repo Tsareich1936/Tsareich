@@ -1,21 +1,44 @@
 on_actions = {
-    # on_capitulation_immediate = {
-    #     effect = {
-    #         if = {
-    #             limit = {
-    #                 ROOT = {
-    #                     tag = MEX
-    #                 }
-    #                 FROM = {
-    #                     tag = USA
-    #                 }
-    #             }
-    #             FROM = {
-    #                 white_peace = {
-    #                     tag = ROOT
-    #                 }
-    #             }
-    #         }
-    #     }
-    # }
+    on_capitulation_immediate = {
+        # effect = {
+        #     if = {
+        #         limit = {
+        #             ROOT = {
+        #                 tag = MEX
+        #             }
+        #             FROM = {
+        #                 tag = USA
+        #             }
+        #         }
+        #         FROM = {
+        #             white_peace = {
+        #                 tag = ROOT
+        #             }
+        #         }
+        #     }
+        # }
+        # effect = {
+        #     if = {
+        #         limit = {
+        #             ROOT = {#敗戦国
+        #                 tag = KOR
+        #             }
+        #             FROM = {#戦勝国
+        #                 tag = JAP
+        #             }
+        #             # has_global_flag = JAP_KOREA_WAR
+        #             NOT = {
+        #               has_global_flag = JAP_KOREA_WAR_FINISHED
+        #             }
+        #         }
+        #         FROM = {
+        #             white_peace = {
+        #                 tag = ROOT
+        #                 message = localization_key
+        #             }
+        #         }
+        #         set_global_flag = JAP_KOREA_WAR_FINISHED
+        #     }
+        # }
+    }
 }
