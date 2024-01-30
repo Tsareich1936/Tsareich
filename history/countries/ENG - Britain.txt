@@ -175,10 +175,13 @@ add_ideas = {
 	george_v
 	TR_ENG_anti_communist_bulwark
 	TR_ENG_financial_issues1
-	TR_ENG_war_bond_issue
-	TR_ENG_royal_army
-	TR_ENG_royal_navy
-	TR_ENG_royal_air_force
+	TR_ENG_war_bond_issue_idea
+	TR_ENG_colonial_maintenance_force
+	TR_ENG_papier_mache_navy
+	TR_ENG_navy_heavy_budget
+	# TR_ENG_royal_army
+	# TR_ENG_royal_navy
+	# TR_ENG_royal_air_force
 }
 set_variable = {
 	var = TR_ENG_war_bond_var

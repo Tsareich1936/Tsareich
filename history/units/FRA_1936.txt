@@ -9,9 +9,6 @@ division_template = {
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
 	}
-	support = {
-		recon = { x = 0 y = 0 }      # Recon Group consisted of 64 ACs/scout cars
-	}
 }
 division_template = {
 	name = "Division d'Infanterie"		
@@ -33,8 +30,8 @@ division_template = {
 		infantry = { x = 2 y = 3 }
 	}
 	support = {
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 } 	# Heavy Arty Regiment had 2x 155mm battalions
 	}
 }
 division_template = {
@@ -53,9 +50,9 @@ division_template = {
 		motorized = { x = 2 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 1 }
-		mot_recon = { x = 0 y = 0 }      # Recon Group consisted of 26 ACs + motorcycles
-		artillery = { x = 0 y = 1 }  # Heavy Arty Regiment had 1x 155mm, 1x 105mm battalions
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }      # Recon Group consisted of 26 ACs + motorcycles
+		artillery = { x = 0 y = 2 }  # Heavy Arty Regiment had 1x 155mm, 1x 105mm battalions
 	}
 }
 division_template = {
@@ -95,8 +92,8 @@ division_template = {
 		motorized = { x = 2 y = 3 }
 	}
 	support = {
-		engineer = { x = 0 y = 1 }
-		mot_recon = { x = 0 y = 0 }      # Recon Group consisted of 42 ACs + motorcycles
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }      # Recon Group consisted of 42 ACs + motorcycles
 	}
 }
 division_template = {
@@ -314,28 +311,29 @@ units = {
 	    location = 11506
 	    division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
 	    start_experience_factor = 0.5
-	    force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA"  version_name = "H-35"} }
+	    force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA"  version_name = "H-35"} }
     }
 	division= {	
 		name = "2ère Division Légère Mécanique"
 		location = 13011
 		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
 		start_experience_factor = 0.5
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA"  version_name = "H-35"} }
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA"  version_name = "H-35"} }
 	}
 	division= {	
 		name = "3ère Division Légère Mécanique"
 		location = 3671
 		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
 		start_experience_factor = 0.5
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA" version_name = "H-35" } }
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA" version_name = "H-35" } }
 	}
 	division= {	
 		name = "4ère Division Légère Mécanique"
 		location = 6613
 		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
 		start_experience_factor = 0.5
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA" version_name = "H-35" } }
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA" version_name = "H-35" } }
+	}
 	}
 
 	

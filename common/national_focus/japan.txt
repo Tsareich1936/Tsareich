@@ -14,7 +14,7 @@ focus_tree = {
 
 	focus = {
 		id = jap_19th_General_Election
-        x = 9
+        x = 28
         y = 0
         cost = 4
         available = {
@@ -133,6 +133,9 @@ focus_tree = {
         completion_reward = {
             add_ideas = JAP_Long_live_the_liberal_economy
             add_research_slot = 1
+            hidden_effect = {
+                mark_focus_tree_layout_dirty = yes
+            }
         }
 
     }
@@ -386,7 +389,7 @@ focus_tree = {
     }
     
     focus = {
-        id = jap_Growth_based_on_Keynesian_studies.
+        id = jap_Growth_based_on_Keynesian_studies
         relative_position_id = jap_Controlling_inflation
         x = 0
         y = 1
@@ -402,6 +405,10 @@ focus_tree = {
         completion_reward = {
             add_ideas = JAP_Keynesian_Studies_in_Practice
             add_research_slot = 1
+            hidden_effect = {
+                mark_focus_tree_layout_dirty = yes
+            }
+            
         }
     }
 
@@ -606,6 +613,9 @@ focus_tree = {
         completion_reward = {
             add_ideas = JAP_Japanese_style_socialism
             add_research_slot = 1
+            hidden_effect = {
+                mark_focus_tree_layout_dirty = yes
+            }
         }
     }
 
@@ -739,7 +749,7 @@ focus_tree = {
 
     focus = {
         id = jap_NAVY_1_1
-        x = 21
+        x = 0
         y = 0
         cost = 4
         available = {
@@ -997,7 +1007,7 @@ focus_tree = {
 
     focus = {
         id = jap_AIRFORCE_1_1
-        x = 27
+        x = 6
         y = 0
         cost = 4
         available = {
@@ -1192,7 +1202,7 @@ focus_tree = {
 
     focus = {
         id = jap_ARMY_1_1
-        x = 33
+        x = 12
         y = 0
         cost = 4
         available = {
@@ -1503,6 +1513,9 @@ focus_tree = {
         x = 46
         y = 0
         cost = 1
+        available = {
+            date > 1939.1.1
+        }
         completion_reward = {
              country_event = {
                 id = TR_japan.31
@@ -2020,6 +2033,471 @@ focus_tree = {
             }
         }
         cost = 4
+    }
+
+    ## 産業
+
+    focus = {
+        id = jap_industry
+        x = 28
+        y = 8
+        allow_branch = {
+            or = {
+                has_completed_focus = jap_Long_live_liberalism 
+                has_completed_focus = jap_Growth_based_on_Keynesian_studies
+                has_completed_focus = jap_Building_Japanese-style_Socialism
+            }
+        }
+        
+    }
+
+    focus = {
+        id = jap_industry_Hokkaido
+        cost = x
+        relative_position_id = jap_industry
+        x = 1
+        y = 1
+        completion_reward = { 
+
+        }
+        prerequisite = {
+            focus = jap_industry
+        }
+    }
+    
+    focus = {
+        id = jap_industry_Tohoku
+        relative_position_id = jap_industry
+        x =  -1
+        y = 1
+        completion_reward = {
+            
+        }
+        prerequisite = {
+            focus = jap_industry
+        }
+    }
+
+    focus = {
+        id = jap_industry_Korea
+        relative_position_id = jap_industry
+        x = 0
+        y = 2
+        prerequisite = {
+            focus = jap_industry_Hokkaido
+        }
+        prerequisite = {
+            focus = jap_industry_Tohoku
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_industry_Palao
+        relative_position_id = jap_industry
+        x = 3
+        y = 2
+        prerequisite = {
+            focus = jap_industry_Hokkaido
+        }
+        prerequisite = {
+            focus = jap_industry_Tohoku
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_industry_MAN
+        relative_position_id = jap_industry
+        x = -3
+        y = 2
+        prerequisite = {
+            focus = jap_industry_Hokkaido
+        }
+        prerequisite = {
+            focus = jap_industry_Tohoku
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_colony
+        relative_position_id = jap_industry
+        x = 0
+        y = 3
+        prerequisite = {
+            focus = jap_industry_MAN
+        }
+        prerequisite = {
+            focus = jap_industry_Palao
+        }
+        prerequisite = {
+            focus = jap_industry_Korea
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_bank
+        relative_position_id = jap_industry
+        x = 2
+        y = 4
+        mutually_exclusive = {
+            focus = jap_abroad
+        }
+        prerequisite = {
+            focus = jap_colony
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_abroad
+        relative_position_id = jap_industry
+        x = -2
+        y = 4
+        mutually_exclusive = {
+            focus = jap_bank
+        }
+        prerequisite = {
+            focus = jap_colony
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_steel_Kamaishi
+        relative_position_id = jap_industry
+        x = 1
+        y = 5
+        prerequisite = {
+            focus = jap_bank
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_steel_Hokkaido
+        relative_position_id = jap_industry
+        x = 3
+        y = 5
+        prerequisite = {
+            focus = jap_bank
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_tang_Bilma
+        relative_position_id = jap_industry
+        x = -3
+        y = 5
+        prerequisite = {
+            focus = jap_abroad
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_AL_Malay
+        relative_position_id = jap_industry
+        x = -1
+        y = 5
+        prerequisite = {
+            focus = jap_abroad
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_kuromu_Tottori
+        relative_position_id = jap_industry
+        x = 1
+        y = 6
+        prerequisite = {
+            focus = jap_steel_Kamaishi
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_oil
+        relative_position_id = jap_industry
+        x = 3
+        y = 6
+        prerequisite = {
+            focus = jap_steel_Hokkaido
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_steel_Australia
+        relative_position_id = jap_industry
+        x = -3
+        y = 6
+        prerequisite = {
+            focus = jap_tang_Bilma
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_gom_Sumatora
+        relative_position_id = jap_industry
+        x = -1
+        y = 6
+        prerequisite = {
+            focus = jap_AL_Malay
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_Taiwan
+        relative_position_id = jap_industry
+        x = 0
+        y = 7
+        prerequisite = {
+            focus = jap_steel_Australia
+            focus = jap_oil
+        }
+        prerequisite = {
+            focus = jap_kuromu_Tottori
+            focus = jap_gom_Sumatora
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_water_dum
+        relative_position_id = jap_industry
+        x = 1
+        y = 8
+        prerequisite = {
+            focus = jap_Taiwan
+        }
+        mutually_exclusive = {
+            focus = jap_fire
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_fire
+        relative_position_id = jap_industry
+        x = 3
+        y = 8
+        prerequisite = {
+            focus = jap_Taiwan
+        }
+        mutually_exclusive = {
+            focus = jap_water_dum
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_lolo_ship
+        relative_position_id = jap_industry
+        x = -1
+        y = 8
+        prerequisite = {
+            focus = jap_Taiwan
+        }
+        mutually_exclusive = {
+            focus = jap_railway
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_railway
+        relative_position_id = jap_industry
+        x = -3
+        y = 8
+        prerequisite = {
+            focus = jap_Taiwan
+        }
+        mutually_exclusive = {
+            focus = jap_lolo_ship
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    # 総力戦
+
+    focus = {
+        id = jap_war
+        x = 40
+        y = 8
+        allow_branch = {
+            has_war_with_major = yes
+        }
+        
+    }
+
+    focus = {
+        id = jap_war_economy
+        relative_position_id = jap_war
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_war
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_army_information
+        relative_position_id = jap_war_economy
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_war_economy
+        }
+        completion_reward = {
+            
+        }
+        mutually_exclusive = {
+            focus = jap_government_information
+        }
+    }
+
+    focus = {
+        id = jap_government_information
+        relative_position_id = jap_war_economy
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_war_economy
+        }
+        mutually_exclusive = {
+            focus = jap_army_information
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_army_doc
+        relative_position_id = jap_government_information
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_government_information
+            focus = jap_army_information
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_air_doc
+        relative_position_id = jap_army_doc
+        x = 2
+        y = 0
+        prerequisite = {
+            focus = jap_government_information
+            focus = jap_army_information
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_navy_doc
+        relative_position_id = jap_air_doc
+        x = 2
+        y = 0
+        prerequisite = {
+            focus = jap_government_information
+            focus = jap_army_information
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_army_transport_fleet
+        relative_position_id = jap_air_doc
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_army_doc
+        }
+        prerequisite = {
+            focus = jap_air_doc
+        }
+        prerequisite = {
+            focus = jap_navy_doc
+        }
+        mutually_exclusive = {
+            focus = jap_Marine_escort_force
+        }
+    }
+
+    focus = {
+        id = jap_Marine_escort_force
+        relative_position_id = jap_air_doc
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_army_doc
+        }
+        prerequisite = {
+            focus = jap_air_doc
+        }
+        prerequisite = {
+            focus = jap_navy_doc
+        }
+        mutually_exclusive = {
+            focus = jap_army_transport_fleet
+        }
     }
 
 }
