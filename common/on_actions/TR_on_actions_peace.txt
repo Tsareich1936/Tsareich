@@ -1,6 +1,6 @@
 on_actions = {
 	on_capitulation_immediate = {
-		effect = {
+		effect = {# SRI-CRO war peace
 			if = {
 				limit = {
 					ROOT = {
@@ -44,7 +44,7 @@ on_actions = {
 						}
 						white_peace = {
 							tag = CRO
-							message = localization_key
+							message = TR_SRI_CRO_WAR_finished_1
 						}
 					}
 					SLV = {
@@ -81,7 +81,7 @@ on_actions = {
 						}
 						white_peace = {
 							tag = CRO
-							message = localization_key
+							message = TR_SRI_CRO_WAR_finished_2
 						}
 					}
 					SLV = {

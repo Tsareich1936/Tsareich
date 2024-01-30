@@ -35,7 +35,8 @@
   TR_North_Italy_win_soc_tt: "§Yイタリア半島§!は§R$TR_North_Italy_name$§!により統一された。\n§G$TR_South_Italy_name$§!は§Yドデカネス諸島§!へと§Y亡命§!した！"
   TR_North_Italy_name: "北イタリア"
   TR_South_Italy_name: "南イタリア"
-
+  TR_SRI_CRO_WAR_finished_1: ""
+  TR_SRI_CRO_WAR_finished_2: "" 
   TR_ENG_reduce_bond_03_tt: "戦債を§Y$$0.3 B§!返済する"
   TR_ENG_reduce_bond_10_tt: "戦債を§Y$$1.0 B§!返済する"
   TR_ENG_postponement_of_repayments_tt: "戦債返済を先送りにする"
