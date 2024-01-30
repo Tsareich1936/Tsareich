@@ -156,17 +156,17 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 22
-	fascism = 18
-	neutrality = 10
-	communism = 22
-	socialism = 14
-	socialdemocratic = 14
+	anarchism = 3
+	syndicalism = 12
+	communism = 30
+	socialism = 35
+	socialdemocratic = 20
 }
-
+puppet = VIN
 create_faction = International
 add_to_faction = GER
 add_to_faction = SRI
+add_to_faction = VIN
 
 add_ideas = {
 	TR_FRA_kakumei_honou
@@ -177,9 +177,8 @@ add_ideas = {
 }
 
 
-
+recruit_character = FRA_ludovic_oscar_frossard
 recruit_character = FRA_philippe_petain
-recruit_character = FRA_maurice_thorez
 recruit_character = FRA_pierre_laval
 recruit_character = FRA_edouard_daladier
 recruit_character = FRA_jean_de_lattre_de_tassigny

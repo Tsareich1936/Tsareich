@@ -2012,9 +2012,16 @@ JAP_KOR_WAR = {
 	JAP_KOR_WAR_PREPARE = {
 		fire_only_once = yes
 		allowed = {
-			always = no
+			tag = JAP
 		}
 		days_mission_timeout = 90
+		available = {
+
+			JAP = {
+				has_war_with = KOR
+			}
+			
+		}
 		timeout_effect = {
 			declare_war_on = {
 				target = KOR
@@ -2024,22 +2031,38 @@ JAP_KOR_WAR = {
 				target = JAP
 				decision = JAP_KOR_WAR_FIN
 			}
+			set_global_flag = JAP_KOREA_WAR
 		}
 		activation = {
 			always = no
 		}
 		selectable_mission = no
+		is_good = no
+		war_with_on_timeout = JAP
 	}
 	JAP_KOR_WAR_FIN = {
+
 		fire_only_once = yes
 		allowed = {
+			tag = JAP
+		}
+		activation = {
 			always = no
 		}
 		days_mission_timeout = 180
 		is_good = yes
-		cancel_trigger = {
-			KOR = {
-				is_in_peace_conference = yes
+		available = {
+			not = {
+			    JAP = {
+				    has_war_with = KOR
+			    }
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				JAP = {
+					set_country_flag = TR_japan.19
+				}
 			}
 		}
 		timeout_effect = {
@@ -2048,7 +2071,13 @@ JAP_KOR_WAR = {
 			}
 			add_ideas = JAP_KOR_DEFEAT
 			hidden_effect = {
-				set_country_event = TR_japan_18
+				JAP = {
+					country_event = {
+						id = TR_japan.59
+						days = 60
+					}
+				}
+
 			}
 		}
 	}

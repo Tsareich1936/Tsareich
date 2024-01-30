@@ -432,7 +432,7 @@ guiTypes = {
 				gridboxtype = {
 					name = "spirit_grid"
 					position = { x = 1 y = 2 }
-					size = { width = 354 height = 68 }
+					size = { width = 475 height = 68 }
 					slotsize = { width = 59 height = 68 }
 					max_slots = { x = 8 y = 1 }
 					format = "UPPER_LEFT"
@@ -440,7 +440,7 @@ guiTypes = {
 				gridboxtype = {
 					name = "spirit_grid_over_defined"
 					position = { x = 10 y = 1 }
-					size = { width = 330 height = 68 }
+					size = { width = 497 height = 68 }
 					slotsize = { width = 33 height = 34 }
 					max_slots_horizontal = 15
 					format = "UPPER_LEFT"

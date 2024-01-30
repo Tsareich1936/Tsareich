@@ -1,5 +1,16 @@
 ﻿##### Division Templates #####
 division_template = {
+	name = "Division de Cavalerie" 	# Division de Cavalerie
+	division_names_group = FRA_CAV_01
+	# Note: Transformed to DLC, DLM divisions, 1936-39 
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+division_template = {
 	name = "Division d'Infanterie"		
 	division_names_group = FRA_INF_01
 	# Represents: Division d'Infanterie (Series A and B), Div. d'Inf. de Forteresse
@@ -19,8 +30,8 @@ division_template = {
 		infantry = { x = 2 y = 3 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
-		engineer = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 } 	# Heavy Arty Regiment had 2x 155mm battalions
 	}
 }
 division_template = {
@@ -39,9 +50,9 @@ division_template = {
 		motorized = { x = 2 y = 2 }
 	}
 	support = {
-		mot_recon = { x = 0 y = 0 }      # Recon Group consisted of 26 ACs + motorcycles
-		artillery = { x = 0 y = 1 }  # Heavy Arty Regiment had 1x 155mm, 1x 105mm battalions
-		engineer = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }      # Recon Group consisted of 26 ACs + motorcycles
+		artillery = { x = 0 y = 2 }  # Heavy Arty Regiment had 1x 155mm, 1x 105mm battalions
 	}
 }
 division_template = {
@@ -65,34 +76,24 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Division de Cavalerie" 	# Division de Cavalerie
-	division_names_group = FRA_CAV_01
-	# Note: Transformed to DLC, DLM divisions, 1936-39 
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }      # Recon Group consisted of 64 ACs/scout cars
-	}
-}
-division_template = {
 	name = "Division Légère Mécanique" 		# Division Légère Mécanique
 	division_names_group = FRA_MEC_01
 
 	regiments = {
-		light_armor = { x = 0 y = 0 }		# Bn. of Hotchkiss, then Souma (Med.) tanks
-		light_armor = { x = 0 y = 1 }		# Bn. of Hotchkiss tanks
-		motorized = { x = 1 y = 0 }			# Brigade of 2x Rgts., 2 Bns. each (later 1 Rgt. of 3x Bns.)
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
+		light_armor = { x = 0 y = 0 }		
+		light_armor = { x = 0 y = 1 }	
+		light_armor = { x = 0 y = 2 }		
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }	
+		motorized = { x = 2 y = 0 }			
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
 	}
 	support = {
-		mot_recon = { x = 0 y = 0 }      # Recon Group consisted of 42 ACs + motorcycles
-		engineer = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }      # Recon Group consisted of 42 ACs + motorcycles
 	}
 }
 division_template = {
@@ -111,7 +112,329 @@ division_template = {
 }
 
 ##### OOB #####
+#ほへい12+さんがく4+くるま10+せんしゃ4+ちゅうとん12=42
+units = {
+	#### Československá Vojenská Jednotka #####
+	# directly subordinate
+	division= {	
+		name = "1ème Division d'Infanterie"
+		location = 11506
+		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
 
+	}
+	division= {	
+	name = "2ème Division d'Infanterie"
+	location = 9523
+	division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+	start_experience_factor = 0.2
+	start_equipment_factor = 0.7
+
+	}
+	division= {	
+	name = "3ème Division d'Infanterie"
+	location = 11516
+	division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+	start_experience_factor = 0.2
+	start_equipment_factor = 0.7
+
+	}
+	division= {	
+	name = "4ème Division d'Infanterie"
+	location = 3560
+	division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+	start_experience_factor = 0.2
+	start_equipment_factor = 0.7
+
+	}
+	division= {	
+	name = "5ème Division d'Infanterie"
+	location = 3516
+	division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+	start_experience_factor = 0.2
+	start_equipment_factor = 0.7
+
+	}
+	division= {	
+	name = "6ème Division d'Infanterie"
+	location = 11606
+	division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+	start_experience_factor = 0.2
+	start_equipment_factor = 0.7
+
+	}
+	division= {	
+	name = "7ème Division d'Infanterie"
+	location = 11563
+	division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+	start_experience_factor = 0.2
+	start_equipment_factor = 0.7
+
+	}
+	division= {	
+	name = "8ème Division d'Infanterie"
+	location = 9550
+	division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+	start_experience_factor = 0.2
+	start_equipment_factor = 0.7
+
+	}
+	division= {	
+	name = "9ème Division d'Infanterie"
+	location = 620
+	division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+	start_experience_factor = 0.2
+	start_equipment_factor = 0.7
+
+	}
+	division= {	
+	name = "10ème Division d'Infanterie"
+	location = 11834
+	division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+	start_experience_factor = 0.2
+	start_equipment_factor = 0.7
+
+	}
+	division= {	
+	name = "11ème Division d'Infanterie"
+	location = 743
+	division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+	start_experience_factor = 0.2
+	start_equipment_factor = 0.7
+
+	}
+	division= {	
+	name = "12ème Division d'Infanterie"
+	location = 3915
+	division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+	start_experience_factor = 0.2
+	start_equipment_factor = 0.7
+
+	}
+
+
+
+	#やま
+	division= {	
+		name = "13ème Division d'Infanterie Alpine"
+		location = 778
+		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "14ème Division d'Infanterie Alpine"
+		location = 3959
+		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "15ème Division d'Infanterie Alpine"
+		location = 11697
+		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	
+	name = "16ème Division d'Infanterie Alpine"
+	location = 6915
+	division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
+	start_experience_factor = 0.3
+    }
+
+
+
+	#くるま
+	division= {	
+	name = "1ère Div. d'Infanterie Motorisée"
+	location = 11483
+	division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+	start_experience_factor = 0.4
+    }
+	division= {	
+		name = "2ère Div. d'Infanterie Motorisée"
+		location = 9536
+		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "3ère Div. d'Infanterie Motorisée"
+		location = 3516
+		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "4ère Div. d'Infanterie Motorisée"
+		location = 11519
+		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "5ère Div. d'Infanterie Motorisée"
+		location = 3536
+		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "6ère Div. d'Infanterie Motorisée"
+		location = 11420
+		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "7ère Div. d'Infanterie Motorisée"
+		location = 3579
+		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "8ère Div. d'Infanterie Motorisée"
+		location = 3552
+		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "9ère Div. d'Infanterie Motorisée"
+		location = 3594
+		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "10ère Div. d'Infanterie Motorisée"
+		location = 6766
+		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.4
+	}
+
+	#せんしゃ
+	division= {	
+	    name = "1ère Division Légère Mécanique"
+	    location = 11506
+	    division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
+	    start_experience_factor = 0.5
+	    force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA"  version_name = "H-35"} }
+    }
+	division= {	
+		name = "2ère Division Légère Mécanique"
+		location = 13011
+		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
+		start_experience_factor = 0.5
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA"  version_name = "H-35"} }
+	}
+	division= {	
+		name = "3ère Division Légère Mécanique"
+		location = 3671
+		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
+		start_experience_factor = 0.5
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA" version_name = "H-35" } }
+	}
+	division= {	
+		name = "4ère Division Légère Mécanique"
+		location = 6613
+		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
+		start_experience_factor = 0.5
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "FRA" version_name = "H-35" } }
+	}
+
+	
+	#ちゅうとん
+	division= {	
+		name = "1'Inf. de Forteresse"
+		location = 11518
+		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		name = "2'Inf. de Forteresse"
+		location = 11483
+		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		name = "3'Inf. de Forteresse"
+		location = 485
+		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		name = "4'Inf. de Forteresse"
+		location = 9434
+		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		name = "5'Inf. de Forteresse"
+		location = 3552
+		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		name = "6'Inf. de Forteresse"
+		location = 6536
+		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		name = "7'Inf. de Forteresse"
+		location = 6657
+		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		name = "8'Inf. de Forteresse"
+		location = 9737
+		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		name = "9'Inf. de Forteresse"
+		location = 9898
+		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		name = "10'Inf. de Forteresse"
+		location = 11834
+		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		name = "11'Inf. de Forteresse"
+		location = 3959
+		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division= {	
+		name = "12'Inf. de Forteresse"
+		location = 3838
+		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+
+}
 
 #########################
 ## STARTING PRODUCTION ##

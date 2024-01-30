@@ -36,6 +36,12 @@
   TR_North_Italy_name: "北イタリア"
   TR_South_Italy_name: "南イタリア"
 
+  TR_ENG_reduce_bond_03_tt: "戦債を§Y$$0.3 B§!返済する"
+  TR_ENG_reduce_bond_10_tt: "戦債を§Y$$1.0 B§!返済する"
+  TR_ENG_postponement_of_repayments_tt: "戦債返済を先送りにする"
+  TR_ENG_trampling_down_of_war_bonds_tt: "戦債の返済義務を放棄する"
+  TR_ENG_danger_america: "§Rこの選択はアメリカとの関係を大幅に悪化させるだろう！§!"
+  TR_ENG_british_commonwealth_tt: "帝国は一つの国家として再編され、§Y$ENG_imperial_federation_unified$§!となる。"
   TR_nosupport: "§Rこの選択肢は現バージョンでは実装されていない！§!"
   TR_focus_nosupport: "§Rこの選択肢には現実味がない§!"
   TR_avaiable_on_events_tt: "この方針はイベントによって達成される。"

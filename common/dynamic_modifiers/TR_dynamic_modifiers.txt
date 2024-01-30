@@ -1,0 +1,8 @@
+TR_POL_resisting = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_3d_view_placeholder
+	# resistance_target = 75
+	# resistance_growth = 0.125
+}

@@ -1,6 +1,9 @@
 state={
 	id=741
 	name="STATE_741"
+	resources={
+		rubber=30 
+	}
 	history = {
 		add_core_of = CAM
 		add_core_of = VIN
@@ -10,8 +13,10 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 			7432 = {
 				naval_base = 1
+
 			}
 
 		}

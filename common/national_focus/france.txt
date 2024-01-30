@@ -1,49 +1,1600 @@
-### search_filters = {FOCUS_FILTER_POLITICAL}
-### search_filters = {FOCUS_FILTER_RESEARCH}
-### search_filters = {FOCUS_FILTER_INDUSTRY}
-### search_filters = {FOCUS_FILTER_STABILITY}
-### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
-### search_filters = {FOCUS_FILTER_MANPOWER}
-### search_filters = {FOCUS_FILTER_ANNEXATION}
-
 focus_tree = {
-	id = french_focus
-	
-	# country = {
-	# 	factor = 0
-		
-	# 	modifier = {
-	# 		add = 22
-	# 		tag = FRA
-	# 	}
-	# }
-
-	focus = {
-		id = FRA_international
-		icon = GFX_focus_SOV_builder_of_the_red_army
-		x = 10
-		y = 0
-		cost = 2
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_named_threat = { threat = 3 name = FRA_international }
-			add_political_power = 50
-
-			country_event = { id = trfrance.1 }
-            GER = {
-                country_event = { id = trfrance.1 }
-            }
-			ITA = {
-                country_event = { id = trfrance.1 }
-            }
+	id = fra
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = FRA
 		}
 	}
-	
 	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 200 y = 2600 }
+
+	
+	focus = {
+		id = FRA_inter1
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 4
+		x = 11
+		y = 0
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = FRA_com1
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		cost = 4
+		prerequisite = {
+			focus = FRA_inter1
+		}
+		mutually_exclusive = {
+			focus = FRA_anaky
+			focus = FRA_bonp
+			focus = FRA_sadc
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+			add_political_power = 150
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = FRA_com_purge1
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com1
+		}
+		x = 2
+		y = 2
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = TR_FRA_seijiteki_hunsou
+				add_idea = TR_FRA_seijiteki_hunsou1
+			}
+			add_stability = -0.1
+		}
+	}
+	focus = {
+		id = FRA_com_purge2
+		icon = GFX_goal_continuous_suppression
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_com_purge1
+		}
+		x = 1
+		y = 3
+		completion_reward = {
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+			add_manpower = -1000
+			add_ideas = TR_jinzaibusoku_kanryou
+		}
+		
+	}
+
+
+	focus = {
+		id = FRA_com_purge3
+		icon = GFX_focus_SOV_military_purge
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_com_purge1
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = anarchism
+				popularity = -0.1
+			}
+			add_manpower = -1000
+			add_ideas = TR_jinzaibusoku_syoukou
+		}
+	}
+	focus = {
+		id = FRA_com_purge4
+		icon = GFX_focus_SOV_the_last_purge
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_com_purge2
+		}
+		prerequisite = {
+			focus = FRA_com_purge3
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+			add_stability = 0.15
+			remove_ideas = TR_FRA_seijiteki_hunsou1
+		}
+	}
+	focus = {
+		id = FRA_com_antiger1
+		icon = GFX_goal_generic_attack_allies
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_purge4
+		}
+		mutually_exclusive = {
+			focus = FRA_com2
+		}
+		x = 0
+		y = 5
+		ai_will_do = -9999
+		completion_reward = {
+			custom_effect_tooltip = "FRA_GER_sibaku1.tt"
+		}
+	}
+	focus = {
+		id = FRA_com_antiger2
+		icon = GFX_focus_generic_total_war
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_antiger1
+		}
+		x = 0
+		y = 6
+		completion_reward = {
+			
+			swap_ideas = {
+				remove_idea = TR_FRA_kokuminno_situbou
+				add_idea = TR_FRA_kokuminno_situbou1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}  
+			create_wargoal = {
+				type = annex_everything
+				target = GER
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = FRA_com_antiger3
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_antiger2
+		}
+		x = 0
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = "FRA_GER_sibaku2.tt"
+		}
+	}
+	focus = {
+		id = FRA_com2
+		icon = GFX_goal_generic_improve_relations
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_purge4
+		}
+		mutually_exclusive = {
+			focus = FRA_com_antiger1
+		}
+		x = 2
+		y = 5
+		ai_will_do = 100
+		completion_reward = {
+			custom_effect_tooltip = "FRA_SPA_sibaku1.tt"
+		}
+	}
+	focus = {
+		id = FRA_com3
+		icon = GFX_goal_generic_military_sphere
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com2
+		}
+		x = 2
+		y = 6
+		completion_reward = {
+			custom_effect_tooltip = "FRA_SPA_sibaku2.tt"
+		}
+	}
+	focus = {
+		id = FRA_com4
+		icon = GFX_focus_generic_attack_republican_spain_shine
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com3
+		}
+		x = 2
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = "FRA_SPA_sibaku3.tt"
+			swap_ideas = {
+				remove_idea = TR_FRA_kokuminno_situbou
+				add_idea = TR_FRA_kokuminno_situbou1
+			}
+		}
+	}
+	focus = {
+		id = FRA_com7
+		icon = GFX_goal_rhineland
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_purge4
+		}
+		x = 4
+		y = 6
+		completion_reward = {
+			add_ideas = TR_FRA_SCpolice
+		}
+	}
+	focus = {
+		id = FRA_com8
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com7
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TR_FRA_SCpolice
+				add_idea = TR_FRA_SCpolice1
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_com_purge5
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_com8
+		}
+		x = 4
+		y = 8
+		completion_reward = {
+			remove_ideas = TR_jinzaibusoku_kanryou
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = FRA_com_purge6
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_com_purge5
+		}
+		x = 4
+		y = 9
+		completion_reward = {
+			remove_ideas = TR_jinzaibusoku_syoukou
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = FRA_com5
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_antiger3
+			focus = FRA_com4
+		}
+		prerequisite = {
+			focus = FRA_com8
+		}
+		x = 2
+		y = 8
+		completion_reward = {
+			remove_ideas = TR_FRA_kokuminno_situbou1
+		}
+	}
+	focus = {
+		id = FRA_com6
+		icon = GFX_goal_generic_propaganda
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com5
+		}
+		x = 2
+		y = 9
+		completion_reward = {
+			add_political_power = 150
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = FRA_com_tech
+		icon = GFX_focus_generic_socialist_science
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_antiger3
+			focus = FRA_com4
+		}
+		x = 0
+		y = 8
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = TR_FRA_tech
+		}
+	}
+
+
+
+	#政治その他
+	focus = {
+		id = FRA_sadc
+		icon = GFX_focus_focus_fra_revolution_utmost_shine
+		cost = 8.00
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = FRA_inter1
+		}
+		mutually_exclusive = {
+			focus = FRA_anaky
+			focus = FRA_bonp
+			focus = FRA_com1
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = FRA_bonp
+		icon = GFX_focus_fra_milice
+		cost = 8.00
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = FRA_inter1
+		}
+		mutually_exclusive = {
+			focus = FRA_anaky
+			focus = FRA_sadc
+			focus = FRA_com1
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = FRA_anaky
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 8.00
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = FRA_inter1
+		}
+		mutually_exclusive = {
+			focus = FRA_bonp
+			focus = FRA_sadc
+			focus = FRA_com1
+		}
+		x = 20
+		y = 1
+
+	}
+
+
+
+	#外交
+	focus = {
+		id = FRA_dip
+		icon = GFX_focus_focus_fra_fascist_threat
+		cost = 8.00
+		available = {
+			not ={
+				has_idea = TR_FRA_kokuminno_situbou
+				has_idea = TR_FRA_kokuminno_situbou1
+			}
+		}
+		x = 6
+		y = 9
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = FGE
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = FRA_dip1
+		icon = GFX_focus_attack_britain
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_dip
+		}
+		x = 6
+		y = 10
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ENG
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = FRA_dip2
+		icon = GFX_goal_generic_major_war
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_dip1
+		}
+		x = 6
+		y = 11
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SYR
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = IRQ
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PER
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = FRA_dip_inter1
+		icon = GFX_goal_support_communism_shine
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_dip
+		}
+		x = 9
+		y = 10
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = FRA_dip_inter2
+		icon = GFX_goal_support_communism_shine
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_dip_inter1
+		}
+		x = 9
+		y = 11
+		completion_reward = {
+			add_political_power = 50			
+		}
+	}
+
+	focus = {
+		id = FRA_com_EU
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 8.00
+		x = 2
+		y = 11
+		completion_reward = {
+			add_political_power = 50	
+		}
+	}
+	focus = {
+		id = FRA_com_EU2
+		icon = GFX_goal_support_communism_shine
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_com_EU
+		}
+		x = 2
+		y = 12
+		completion_reward = {
+			add_political_power = 50	
+		}
+	}
+
+
+
+
+	#産業
+	focus = {
+		id = FRA_ind1
+		icon = GFX_focus_generic_treaty
+		cost = 8.00
+		x = 6
+		y = 13
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.7
+				uses = 3
+				category = industry
+			} 
+		}
+	}
+	focus = {
+		id = FRA_ind_oil1
+		icon = GFX_goal_generic_oil_refinery
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_ind1
+		}
+		x = 3
+		y = 14
+		completion_reward = {
+			add_tech_bonus = {
+				name = oil_bonus
+				bonus = 1
+				uses = 1
+				category = cat_synth_oil
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}  
+		}	
+	}
+	focus = {
+		id = FRA_ind_oil2
+		icon = GFX_goal_generic_oil_refinery
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_ind_oil1
+		}
+		x = 2
+		y = 15
+		completion_reward = {
+			 modify_building_resources = {
+				building = synthetic_refinery
+				resource = oil
+				amount = 2
+			 }
+		}
+	}
+	focus = {
+		id = FRA_ind_oil3
+		icon = GFX_focus_generic_offshore_oil_rig
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_ind_oil1
+		}
+		x = 4
+		y = 15
+		completion_reward = {
+			custom_effect_tooltip = "FRA_VEN_oil.tt"
+		}
+	}
+
+
+	focus = {
+		id = FRA_ind2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_ind1
+		}
+		x = 6
+		y = 14
+		completion_reward = {
+			18 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			} 
+			785 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}  			
+		}
+	}
+	focus = {
+		id = FRA_ind3
+		icon = GFX_goal_generic_construct_civilian
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_ind2
+		}
+		x = 6
+		y = 15
+		completion_reward = {
+			32 = {
+				limit = {
+					free_building_slots = {
+						building = var:industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			} 
+			21 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}  	
+			1 = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			} 
+			735 = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}  	
+		}
+	}
+	focus = {
+		id = FRA_ind4
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_ind1
+		}
+		x = 8
+		y = 14
+		completion_reward = {
+			#custom_effect_tooltip = FRA_tetudou_tt
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+				fallback = yes
+				path = { 5291 9559 }
+				start_province = 5291
+				target_province = 9559
+			}
+			#hidden_effect = {
+			build_railway = {
+				level = 5
+				build_only_on_allied = yes
+				fallback = yes
+				path = { 11506 9523 6547 11463 3509 3495 527 9495 11508 9225 6572 3552}
+				start_province = 11506
+				target_province = 3552
+			}
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+				fallback = yes
+				path = { 11506 9523 9725 512 6533 9492 3671 11896 629 11582 595 11865 9737}
+				start_province = 11506
+				target_province = 9737
+			}
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+				fallback = yes
+				path = { 11506 11491 3506 3669 3652 646 11794 6613 3589 780 762 11713 958 11834}
+				start_province = 11506
+				target_province = 11834
+			}
+		    #}
+		}
+	}
+	focus = {
+		id = FRA_ind5
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_ind4
+		}
+		x = 8
+		y = 15
+		
+		available = {
+			OR = {
+				has_full_control_of_state = 34
+				has_full_control_of_state = 18
+				has_full_control_of_state = 16
+				has_full_control_of_state = 785
+				has_full_control_of_state = 29
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_autobahn_tt
+			#hidden_effect = {
+				34 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				18 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				16 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				785 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				29 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+			#}	
+		}
+	}
+	focus = {
+		id = FRA_ind6
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_ind3
+		}
+		x = 4
+		y = 16
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}  
+		}
+	}
+	focus = {
+		id = FRA_ind7
+		icon = GFX_focus_generic_reorient_production
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_ind6
+		}
+		x = 4
+		y = 17
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}  
+		}
+	}
+	focus = {
+		id = FRA_ind_rec
+		icon = GFX_focus_research
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_ind3
+		}
+		x = 6
+		y = 16.5
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+
+
+	#福祉
+	focus = {
+		id = FRA_hukusi
+		icon = GFX_goal_unknown
+		cost = 8.00
+		x = 13
+		y = 12
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_hukusi_imin1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi
+		}
+		mutually_exclusive = {
+			focus = FRA_hukusi_syousika1
+		}
+		x = 12
+		y = 13
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_hukusi_imin2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_imin1
+		}
+		x = 12
+		y = 14
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_hukusi_imin3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_imin2
+		}
+		x = 12
+		y = 15
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_hukusi_imin4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_imin1
+		}
+		x = 10
+		y = 14
+
+	}
+	focus = {
+		id = FRA_hukusi_imin5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_imin4
+		}
+		x = 10
+		y = 15
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_hukusi_syousika1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi
+		}
+		mutually_exclusive = {
+			focus = FRA_hukusi_imin1
+		}
+		x = 14
+		y = 13
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_hukusi_syousika2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_syousika1
+		}
+		x = 14
+		y = 14
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_hukusi_syousika3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_syousika2
+		}
+		x = 14
+		y = 15
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_hukusi_syousika4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_syousika1
+		}
+		x = 16
+		y = 14
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_hukusi_syousika5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_syousika4
+		}
+		x = 16
+		y = 15
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_hukusi2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_imin3
+			focus = FRA_hukusi_syousika3
+		}
+		x = 13
+		y = 16
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_hukusi3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi2
+		}
+		prerequisite = {
+			focus = FRA_ind3
+		}
+		prerequisite = {
+			focus = FRA_ind5
+		}
+		x = 10
+		y = 17
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_hukusi_jyosei1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi
+		}
+		x = 18
+		y = 13
+		completion_reward = {
+			
+		}
+
+	}
+	focus = {
+		id = FRA_hukusi_jyosei2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_jyosei1
+		}
+		x = 18
+		y = 14
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_hukusi_jyosei3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi_jyosei2
+		}
+		x = 18
+		y = 16
+		completion_reward = {
+			
+		}
+
+	}
+
+
+
+
+
+
+	#軍事
+	focus = {
+		id = FRA_nav
+		icon = GFX_goal_unknown
+		cost = 8.00
+		mutually_exclusive = {
+			focus = FRA_mil
+		}
+		x = 28
+		y = 12
+
+	}
+	focus = {
+		id = FRA_mil
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = FRA_nav
+		}
+		x = 36
+		y = 12
+
+	}
+
+
+	focus = {
+		id = FRA_nav_mil1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav
+		}
+		x = 24
+		y = 13
+
+	}
+	focus = {
+		id = FRA_nav_mil2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav_mil1
+		}
+		x = 23
+		y = 15
+
+	}
+	focus = {
+		id = FRA_nav_mil3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav_mil1
+		}
+		x = 25
+		y = 15
+
+	}
+	focus = {
+		id = FRA_nav_mil4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav_mil3
+		}
+		prerequisite = {
+			focus = FRA_nav_mil2
+		}
+		x = 24
+		y = 16
+
+	}
+	focus = {
+		id = FRA_nav_midi
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav
+		}
+		x = 26
+		y = 13
+
+	}
+	focus = {
+		id = FRA_nav1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav
+		}
+		x = 29
+		y = 13
+
+	}
+	focus = {
+		id = FRA_nav5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav1
+		}
+		x = 27
+		y = 14
+
+	}
+	focus = {
+		id = FRA_nav6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav5
+		}
+		x = 27
+		y = 15
+
+	}
+	focus = {
+		id = FRA_nav2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav1
+		}
+		x = 29
+		y = 14
+
+	}
+	focus = {
+		id = FRA_nav3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav2
+		}
+		x = 29
+		y = 15
+
+	}
+	focus = {
+		id = FRA_air1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil
+			focus = FRA_nav
+		}
+		x = 33
+		y = 13
+
+	}
+	focus = {
+		id = FRA_air2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_air1
+		}
+		x = 33
+		y = 14
+
+	}
+	focus = {
+		id = FRA_nav_air
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_air2
+		}
+		prerequisite = {
+			focus = FRA_nav2
+		}
+		x = 31
+		y = 15
+
+	}
+	focus = {
+		id = FRA_nav4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_nav_air
+		}
+		prerequisite = {
+			focus = FRA_nav3
+		}
+		x = 30
+		y = 16
+
+	}
+	focus = {
+		id = FRA_air3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_air2
+		}
+		x = 33
+		y = 15
+
+	}
+	focus = {
+		id = FRA_air4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_air3
+		}
+		x = 33
+		y = 16
+
+	}
+	focus = {
+		id = FRA_mil1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil
+		}
+		x = 39
+		y = 13
+
+	}
+	focus = {
+		id = FRA_mil2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil1
+		}
+		x = 37
+		y = 14
+
+	}
+	focus = {
+		id = FRA_mil_air
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil2
+		}
+		prerequisite = {
+			focus = FRA_air2
+		}
+		x = 35
+		y = 15
+
+	}
+	focus = {
+		id = FRA_mil3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil2
+		}
+		x = 37
+		y = 15
+
+	}
+	focus = {
+		id = FRA_mil4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil3
+		}
+		x = 37
+		y = 16
+
+	}
+	focus = {
+		id = FRA_mil5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil4
+		}
+		x = 37
+		y = 17
+
+	}
+	focus = {
+		id = FRA_mil_tank1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil1
+		}
+		mutually_exclusive = {
+			focus = FRA_mil_arc1
+		}
+		x = 39
+		y = 14
+
+	}
+	focus = {
+		id = FRA_mil_tank2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil_tank1
+		}
+		x = 39
+		y = 15
+
+	}
+	focus = {
+		id = FRA_mil_arc1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil1
+		}
+		mutually_exclusive = {
+			focus = FRA_mil_tank1
+		}
+		x = 41
+		y = 14
+
+	}
+	focus = {
+		id = FRA_mil_arc2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil_arc1
+		}
+		x = 41
+		y = 15
+
+	}
+	focus = {
+		id = FRA_mil_nav1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil
+		}
+		x = 43
+		y = 13
+
+	}
+	focus = {
+		id = FRA_mil_nav2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil_nav1
+		}
+		x = 43
+		y = 14
+
+	}
+	focus = {
+		id = FRA_mil_nav3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil_nav2
+		}
+		x = 43
+		y = 15
+
+	}
+
+
+	focus = {
+		id = FRA_hukusi4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi3
+		}
+		x = 10
+		y = 18
+
+	}
+
+
+	focus = {
+		id = FRA_mil_nav4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_mil_nav2
+		}
+		x = 45
+		y = 15
+
+	}
 
 }

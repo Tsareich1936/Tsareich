@@ -1,0 +1,19 @@
+TR_POL_coup = {
+	every_state = {
+		limit = {
+			has_state_flag = TR_POL_resisting
+		}
+		create_unit = {
+			division = "name = \"chłopska partyzantka\" division_template = \"chłopska partyzantka\" start_experience_factor = 0.9" 
+			owner = POL
+		}
+		create_unit = {
+			division = "name = \"chłopska partyzantka\" division_template = \"chłopska partyzantka\" start_experience_factor = 0.9" 
+			owner = POL
+		}
+		create_unit = {
+			division = "name = \"chłopska partyzantka\" division_template = \"chłopska partyzantka\" start_experience_factor = 0.9" 
+			owner = POL
+		}
+	}
+}

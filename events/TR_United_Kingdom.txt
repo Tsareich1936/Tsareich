@@ -9,6 +9,9 @@ country_event = {#HOL 英国との同盟
 
 	option = {#accept
 		name = TR_uk_diplomacy.1.a
+		ai_chance = {
+			base = 80
+		}
 		ENG = {
 			country_event = {
 				id = TR_uk_diplomacy.2
@@ -18,6 +21,9 @@ country_event = {#HOL 英国との同盟
 	}
 	option = {#reject
 		name = TR_uk_diplomacy.1.b
+		ai_chance = {
+			base = 20
+		}
 		ENG = {
 			country_event = {
 				id = TR_uk_diplomacy.3
@@ -51,6 +57,72 @@ country_event = {#オランダが同盟を拒否
 		name = TR_uk_diplomacy.3.a
 	}
 }
+country_event = {#HOL ベルギーの帰還
+	id = TR_uk_diplomacy.4
+	title = TR_uk_diplomacy.4.t
+	desc = TR_uk_diplomacy.4.d
+
+	is_triggered_only = yes
+
+	option = {# accept
+		name = TR_uk_diplomacy.4.a
+		ENG = {
+			country_event = {
+				id = TR_uk_diplomacy.5
+				days = 3
+			}
+		}
+	}
+	option = {# reject
+		name = TR_uk_diplomacy.4.a
+		ENG = {
+			country_event = {
+				id = TR_uk_diplomacy.6
+				days = 3
+			}
+		}
+	}
+}
+country_event = {# オランダが承認
+	id = TR_uk_diplomacy.5
+	title = TR_uk_diplomacy.5.t
+	desc = TR_uk_diplomacy.5.d
+
+	is_triggered_only = yes
+
+	option = {# Good
+		name = TR_uk_diplomacy.5.a
+		BEL = {
+			country_event = TR_uk_diplomacy.7
+			transfer_state = 6
+			set_capital = {
+				state = 6
+			}
+		}
+	}
+}
+country_event = {# オランダが拒否
+	id = TR_uk_diplomacy.6
+	title = TR_uk_diplomacy.6.t
+	desc = TR_uk_diplomacy.6.d
+
+	is_triggered_only = yes
+
+	option = {# OK
+		name = TR_uk_diplomacy.6.a
+	}
+}
+country_event = {# BEL 本土への帰還
+	id = TR_uk_diplomacy.7
+	title = TR_uk_diplomacy.7.t
+	desc = TR_uk_diplomacy.7.d
+
+	is_triggered_only = yes
+
+	option = {# Good
+		name = TR_uk_diplomacy.7.a
+	}
+}
 country_event = {#財政問題
 	id = TR_uk.1
 	title = TR_uk.1.t
@@ -76,6 +148,7 @@ country_event = {#戦債問題
 	option = {#先送り
 		name = TR_uk.2.b
 		complete_national_focus = TR_ENG_postponement_of_repayments
+		custom_effect_tooltip = TR_ENG_trampling_down_of_war_bonds_tt
 		hidden_effect = {
 			USA = {
 				country_event = {#USA イギリスが返済の先送りを決定
@@ -101,9 +174,18 @@ country_event = {#USA イギリスが返済の先送りを決定
 				days = 7
 			}
 		}
+		ai_chance = {
+			base = 90
+		}
 	}
 	option = {#そんなことはどうでも良い
 		name = TR_uk.3.a
+		ai_chance = {
+			base = 10
+		}
+		ENG = {
+			complete_national_focus = TR_ENG_trampling_down_of_war_bonds
+		}
 	}
 }
 country_event = {#アメリカが返済を催促
@@ -126,6 +208,17 @@ country_event = {#アメリカが返済を催促
 	option = {#借金など踏み倒してしまえ！
 		name = TR_uk.4.b
 		complete_national_focus = TR_ENG_trampling_down_of_war_bonds
+		custom_effect_tooltip = TR_ENG_danger_america
+		USA = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = TR_ENG_non_repay
+			}
+			country_event = {
+				id = TR_uk.12
+				months = 6
+			}
+		}
 	}
 }
 country_event = {#経済的従属
@@ -138,6 +231,23 @@ country_event = {#経済的従属
 	option = {#もはやこれまでか…
 		name = TR_uk.5.a
 		complete_national_focus = TR_ENG_economic_subservience
+		every_country = {
+			limit = {
+				is_subject_of = ENG
+			}
+			USA = {
+				set_autonomy = {
+					target = PREV
+					autonomy_state = autonomy_puppet
+				}
+			}
+		}
+		USA = {
+			set_autonomy = {
+				target = ENG
+				autonomy_state = autonomy_puppet
+			}
+		}
 	}
 }
 country_event = {#トリガー用　戦債の完済
@@ -190,10 +300,10 @@ country_event = {#建艦問題
 			}
 		}
 	}
-	option = {#艦船を売却しろ
-		name = TR_uk.8.a
-		complete_national_focus = TR_ENG_sale_of_ships
-	}
+	# option = {#艦船を売却しろ
+	# 	name = TR_uk.8.a
+	# 	complete_national_focus = TR_ENG_sale_of_ships
+	# }
 }
 country_event = {#カイロ会談
 	id = TR_uk.9
@@ -239,5 +349,505 @@ country_event = {#カイロ会談の成功
 	option = {#グレート・ゲームは終わった
 		name = TR_uk.11.a
 		complete_national_focus = TR_ENG_the_end_of_the_great_game
+	}
+}
+country_event = {#イギリスが戦債の返済を拒否！
+	id = TR_uk.12
+	title = TR_uk.12.t
+	desc = TR_uk.12.d
+
+	is_triggered_only = yes
+
+	option = {#奴らに報復せねばなるまい
+		name = TR_uk.12.a
+		create_wargoal = {
+			target = ENG
+			type = topple_government
+		}
+	}
+}
+country_event = {#インド問題
+	id = TR_uk.13
+	title = TR_uk.13.t
+	desc = TR_uk.13.d
+
+	is_triggered_only = yes
+
+	option = {#インドに自治を！
+		name = TR_uk.13.a
+		complete_national_focus = TR_ENG_compromise_to_INC
+		
+	}
+	option = {#インド支配を強めろ！
+		name = TR_uk.13.b
+		complete_national_focus = TR_ENG_suppressed_independence_movement
+	}
+}
+country_event = {#インド自治
+	id = TR_uk.14
+	title = TR_uk.14.t
+	desc = TR_uk.14.d
+
+	is_triggered_only = yes
+
+	option = {#インドに王冠を！
+		name = TR_uk.14.a
+		complete_national_focus = TR_ENG_crown_to_india
+	}
+	option = {#インドに議会を！
+		name = TR_uk.14.b
+		complete_national_focus = TR_ENG_compromise_republic
+	}
+}
+country_event = {#宗教問題
+	id = TR_uk.15
+	title = TR_uk.15.t
+	desc = TR_uk.15.d
+
+	is_triggered_only = yes
+
+	option = {#分割して統治せよ
+		name = TR_uk.15.a
+		complete_national_focus = TR_ENG_partition_of_india
+	}
+}
+
+country_event = {#インドで革命
+	id = TR_uk.16
+	title = TR_uk.16.t
+	desc = TR_uk.16.d
+
+	is_triggered_only = yes
+	immediate = {
+		RAJ = {
+			set_capital = {
+				state = 431
+			}
+			start_civil_war = {
+				ideology = communism
+				size = 0.7
+				capital = 15
+				set_cosmetic_tag = IND
+				set_country_flag = TR_communism_india_alieas
+				set_rule = {
+					can_join_factions = no
+				}
+			}
+		}
+		if = {
+			limit = {
+				ENG = {
+					has_completed_focus = TR_ENG_proximity_to_princely_states
+				}
+			}
+			create_dynamic_country = {
+				original_tag = RAJ
+				copy_tag = RAJ
+				# reserve_dynamic_country = no
+				set_country_flag = TR_princely_india_alieas
+				set_cosmetic_tag = IPS
+				set_politics = {
+					ruling_party = neutrality
+				}
+				set_capital = {
+					state = 428
+				}
+				set_popularities = {
+					neutrality = 100
+				}
+				every_state = {
+					limit = {
+						has_state_flag = TR_indian_princely_states
+					}
+					transfer_state_to = PREV
+				}
+			}
+			IPS = {
+				division_template = {
+					name = "Guellira Division"
+					regiments = {
+						infantry = { x = 0 y = 0  }
+						infantry = { x = 0 y = 1  }
+						infantry = { x = 0 y = 2  }
+						infantry = { x = 0 y = 3  }
+					}
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+						owner = IPS
+					}
+					create_unit = {
+						division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+						owner = IPS
+					}
+					create_unit = {
+						division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+						owner = IPS
+					}
+					create_unit = {
+						division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+						owner = IPS
+					}
+					create_unit = {
+						division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+						owner = IPS
+					}
+					create_unit = {
+						division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+						owner = IPS
+					}
+					create_unit = {
+						division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+						owner = IPS
+					}
+					create_unit = {
+						division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+						owner = PREV
+					}
+				}
+			}
+			RAJ = {
+				declare_war_on = {
+					target = IPS
+					type = civil_war
+				}
+				add_civil_war_target = IPS
+			}
+			IND = {
+				declare_war_on = {
+					target = IPS
+					type = civil_war
+				}
+				add_civil_war_target = IPS
+			}
+		}
+		IND = {
+			set_war_support = 1
+			every_state = {
+				limit ={
+					is_core_of = PAK
+				}
+				add_core_of = IND
+			}
+			division_template = {
+				name = "Guellira Division"
+				regiments = {
+					infantry = { x = 0 y = 0  }
+					infantry = { x = 0 y = 1  }
+					infantry = { x = 0 y = 2  }
+				}
+			}
+			every_owned_state = {
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = IND
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = IND
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = IND
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = IND
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = IND
+				}
+				# create_unit = {
+				# 	division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+				# 	owner = IND
+				# }
+			}
+			capital = {
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = IND
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = IND
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = IND
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = IND
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = IND
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = IND
+				}
+			}
+		}
+		RAJ = {
+			division_template = {
+				name = "Guellira Division"
+				regiments = {
+					infantry = { x = 0 y = 0  }
+					infantry = { x = 0 y = 1  }
+					infantry = { x = 0 y = 2  }
+				}
+			}
+			every_owned_state = {
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = RAJ
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = RAJ
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = RAJ
+				}
+			}
+			capital = {
+				# create_unit = {
+				# 	division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+				# 	owner = RAJ
+				# }
+				# create_unit = {
+				# 	division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+				# 	owner = RAJ
+				# }
+			}
+		}
+		ENG = {
+			country_event = {
+				id = TR_uk.17
+				days = 35
+			}
+		}
+	}
+	option = {#なんということだ
+		name = TR_uk.16.a
+		trigger = {
+			always = yes
+		}
+	}
+	option = {#なんということだ
+		name = TR_uk.16.b
+	}
+}
+country_event = {#パキスタンが蜂起！
+	id = TR_uk.17
+	title = TR_uk.17.t
+	desc = TR_uk.17.d
+
+	is_triggered_only = yes
+	immediate = {
+		PAK = {
+			every_core_state = {
+				transfer_state_to = PREV
+			}
+			division_template = {
+				name = "Guellira Division"
+				regiments = {
+					infantry = { x = 0 y = 0  }
+					infantry = { x = 0 y = 1  }
+					infantry = { x = 0 y = 2  }
+				}
+			}
+			every_core_state = {
+				limit = {
+					is_core_of = PAK
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+			}
+			capital = {
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				
+				
+			}
+		}
+		RAJ = {
+			declare_war_on = {
+				target = PAK
+				type = civil_war
+			}
+			add_civil_war_target = PAK
+		}
+		IND = {
+			declare_war_on = {
+				target = PAK
+				type = civil_war
+			}
+			add_civil_war_target = PAK
+		}
+		IPS = {
+			declare_war_on = {
+				target = PAK
+				type = civil_war
+			}
+			add_civil_war_target = PAK
+		}
+		country_event = {
+			id = TR_uk.18
+			days = 35
+		}
+	}
+	option = {#なんということだ
+		name = TR_uk.17.a
+	}
+}
+country_event = {#ビルマが蜂起！
+	id = TR_uk.18
+	title = TR_uk.18.t
+	desc = TR_uk.18.d
+
+	is_triggered_only = yes
+	immediate = {
+		BRM = {
+			every_core_state = {
+				transfer_state_to = PREV
+			}
+			division_template = {
+				name = "Guellira Division"
+				regiments = {
+					infantry = { x = 0 y = 0  }
+					infantry = { x = 0 y = 1  }
+					infantry = { x = 0 y = 2  }
+				}
+			}
+			every_core_state = {
+				limit = {
+					is_core_of = BRM
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guellira Division\" division_template = \"Guellira Division\" start_experience_factor = 0.5" 
+					owner = PREV
+				}
+			}
+		}
+		RAJ = {
+			declare_war_on = {
+				target = BRM
+				type = civil_war
+			}
+			add_civil_war_target = BRM
+		}
+		IND = {
+			declare_war_on = {
+				target = BRM
+				type = civil_war
+			}
+			add_civil_war_target = BRM
+		}
+		IPS = {
+			declare_war_on = {
+				target = BRM
+				type = civil_war
+			}
+			add_civil_war_target = BRM
+		}
+		PAK = {
+			declare_war_on = {
+				target = BRM
+				type = civil_war
+			}
+			add_civil_war_target = BRM
+		}
+	}
+	option = {#なんということだ
+		name = TR_uk.18.a
 	}
 }

@@ -1,0 +1,16 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					tag = POL
+					FROM = { tag = RUS }
+					FROM.FROM = {
+						state = 10
+					}
+				}
+				news_event = TR_news.1    
+			}
+		} 
+	} 
+}
