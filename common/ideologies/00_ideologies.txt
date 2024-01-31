@@ -97,7 +97,7 @@ ideologies = {
 	
 			faction_modifiers = {
 				socialism_acceptance = 75
-				anarchism acceptance = 100
+				anarchism_acceptance = 100
 			}
 	
 		}

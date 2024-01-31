@@ -142,13 +142,15 @@ country_event = {      # 一か年計画
 	        idea = JAP_industrial_complex
 			days = 365
 		}
-		if = {
-			limit = {
+		ai_chance = {
+			base = 1
+			modifier = {
 				has_war = yes
+				factor = 10
 			}
-			ai_chance = {factor = 10}
-			else = {
-				ai_chance = {factor = 60}
+			modifier = {
+				has_war = no
+				factor = 60
 			}
 		}
 		hidden_effect = {
@@ -164,13 +166,15 @@ country_event = {      # 一か年計画
 			idea = JAP_arms_factory
 			days = 365
 		}
-		if = {
-			limit = {
+		ai_chance = {
+			base = 1
+			modifier = {
 				has_war = yes
+				factor = 45
 			}
-			ai_chance = {factor = 45}
-			else = {
-				ai_chance = {factor = 20}
+			modifier = {
+				has_war = no
+				factor = 20
 			}
 		}
 		hidden_effect = {
@@ -186,13 +190,15 @@ country_event = {      # 一か年計画
 			idea = JAP_dockyard
 			days = 365
 		}
-		if = {
-			limit = {
+		ai_chance = {
+			base = 1
+			modifier = {
 				has_war = yes
+				factor = 45
 			}
-			ai_chance = {factor = 45}
-			else = {
-				ai_chance = {factor = 20}
+			modifier = {
+				has_war = no
+				factor = 20
 			}
 		}
 		hidden_effect = {
@@ -216,13 +222,15 @@ country_event = {     # 一か年計画
 	        idea = JAP_industrial_complex
 			days = 365
 		}
-		if = {
-			limit = {
+		ai_chance = {
+			base = 1
+			modifier = {
 				has_war = yes
+				factor = 10
 			}
-			ai_chance = {factor = 10}
-			else = {
-				ai_chance = {factor = 60}
+			modifier = {
+				has_war = no
+				factor = 60
 			}
 		}
 		hidden_effect = {
@@ -238,13 +246,15 @@ country_event = {     # 一か年計画
 			idea = JAP_arms_factory
 			days = 365
 		}
-		if = {
-			limit = {
+		ai_chance = {
+			base = 1
+			modifier = {
 				has_war = yes
+				factor = 45
 			}
-			ai_chance = {factor = 45}
-			else = {
-				ai_chance = {factor = 20}
+			modifier = {
+				has_war = no
+				factor = 20
 			}
 		}
 		hidden_effect = {
@@ -260,13 +270,15 @@ country_event = {     # 一か年計画
 			idea = JAP_dockyard
 			days = 365
 		}
-		if = {
-			limit = {
+		ai_chance = {
+			base = 1
+			modifier = {
 				has_war = yes
+				factor = 45
 			}
-			ai_chance = {factor = 45}
-			else = {
-				ai_chance = {factor = 20}
+			modifier = {
+				has_war = no
+				factor = 20
 			}
 		}
 		hidden_effect = {
@@ -666,8 +678,10 @@ country_event = {          #　　国民の不満の高まり
 		}
 		hidden_effect = {
 			JAP = {
-				id = TR_japan.67
-				days = 30
+				country_event = {
+					id = TR_japan.67
+					days = 30
+				}
 			}
 		}
     }
@@ -1403,7 +1417,7 @@ country_event = {   # 中華民国
 	is_triggered_only = yes
 	hidden = yes
 	immediate = {
-		name = TR_japan.48.a
+		# name = TR_japan.48.a
 		JAP = {
 			add_to_faction = PREV
 		}
@@ -1762,7 +1776,7 @@ country_event = { #  クーデター
 		create_country_leader = {
 			name = JAP_Hisaichi_Terauchi
 			picture = GFX_Portrait_Hisaichi_Terauchi
-			ideology = fascism
+			ideology = fascism_ideology
 		}
 		if = {
 			limit = {
@@ -1817,7 +1831,7 @@ country_event = {   #  election score
 		create_country_leader = {
 			name = JAP_Nobusuke_Kishi
 			picture = GFX_PORTRAIT_Nobusuke_Kishi
-			ideology = fascism
+			ideology = fascism_ideology
 		}
 		load_focus_tree = TR_japan_bureaucracy
 	}
@@ -1843,7 +1857,7 @@ country_event = {   #  election score
 		create_country_leader = {
 			name = JAP_Sanzo_Nosaka
 			picture = GFX_Portrait_Sanzo_Nosaka
-			ideology = communism
+			ideology = luxemburgism
 		}
 	}
 }
@@ -1896,7 +1910,7 @@ country_event = {  ##  navyによる逆クーデター
 		create_country_leader = {
 			name = JAP_Kantoro_Suziki
 			picture = GFX_Portrait_Kantaro_Suzuki
-			ideology = fascism
+			ideology = fascism_ideology
 		}
 	}
 }

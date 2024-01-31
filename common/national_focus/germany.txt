@@ -12,47 +12,45 @@ focus_tree = {
 		id = GER_1936_party_conference
 		text = GER_1936_party_conference
 		icon = GFX_focus_generic_soviet_politics
-		cost = 5.00
+		cost = 5
 		x = 17
 		y = 0
 		ai_will_do = {
 			factor = 4000
 		}
-			available = {
-					has_country_flag = germany_election
-				}
-			completion_reward = {
-					country_event = {
-							id = TR_germany.2
-							days = 1
-						}
-					add_political_power = 100
-				}
-
+		available = {
+			has_country_flag = germany_election
+		}
+		completion_reward = {
+			country_event = {
+				id = TR_germany.2
+				days = 1
+			}
+			add_political_power = 100
+		}
 	}
 	focus = {
 		id = GER_focus_on_industry
 		icon = GFX_goal_generic_soviet_construction
-		cost = 10.00
+		cost = 10
 		x = 5
 		y = 0
 		ai_will_do = {
 			factor = 160
 		}
-			completion_reward = {
-					add_tech_bonus = {
-							name = GER_four_year_plan
-							bonus = 1.0
-							uses = 2
-							category = industry
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+		}
 	}
 	focus = {
 		id = GER_legacy_of_an_empire
 		icon = GFX_focus_ger_revive_kaiserreich
-		cost = 5.00
+		cost = 5
 		x = 32
 		y = 0
 		ai_will_do = {
@@ -62,298 +60,291 @@ focus_tree = {
 	focus = {
 		id = industry_2
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = GER_focus_on_industry
 		}
 		x = 2
 		y = 1
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = industry_6
 		icon = GFX_focus_SOV_organize_wreckers
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = industry_2
 		}
 		x = 2
 		y = 2
-
 	}
 	focus = {
 		id = industry_10
 		icon = GFX_goal_generic_construction2
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = industry_6
 		}
 		x = 2
 		y = 3
-
 	}
 	focus = {
 		id = industry_3
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = GER_focus_on_industry
 		}
 		x = 4
 		y = 1
-			complete_tooltip = {
-					every_state = {
-							limit = {
-									has_state_flag = GER_industrial_effort_2IC
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-						}
+		complete_tooltip = {
+			every_state = {
+				limit = {
+					has_state_flag = GER_industrial_effort_2IC
 				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-							set_state_flag = GER_industrial_effort_2IC
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-							set_state_flag = GER_industrial_effort_2IC
-						}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
-
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
 	}
 	focus = {
 		id = industry_7
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = industry_3
 		}
 		x = 4
 		y = 2
-			complete_tooltip = {
-					every_state = {
-							limit = {
-									has_state_flag = GER_industrial_effort_2IC
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-						}
+		complete_tooltip = {
+			every_state = {
+				limit = {
+					has_state_flag = GER_industrial_effort_2IC
 				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-							set_state_flag = GER_industrial_effort_2IC
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-							set_state_flag = GER_industrial_effort_2IC
-						}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
-
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
 	}
 	focus = {
 		id = industry_4
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = GER_focus_on_industry
 		}
 		x = 6
 		y = 1
-			complete_tooltip = {
-					every_state = {
-							limit = {
-									has_state_flag = GER_industrial_effort_2IC
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
+		complete_tooltip = {
+			every_state = {
+				limit = {
+					has_state_flag = GER_industrial_effort_2IC
 				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-							set_state_flag = GER_industrial_effort_2IC
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-							set_state_flag = GER_industrial_effort_2IC
-						}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
-
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2IC
+			}
+		}
 	}
 	focus = {
 		id = industry_8
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = industry_4
 		}
 		x = 6
 		y = 2
-			complete_tooltip = {
-					every_state = {
-							limit = {
-									has_state_flag = GER_industrial_effort_2_2IC
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
+		complete_tooltip = {
+			every_state = {
+				limit = {
+					has_state_flag = GER_industrial_effort_2_2IC
 				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-							set_state_flag = GER_industrial_effort_2_2IC
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-							set_state_flag = GER_industrial_effort_2_2IC
-						}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
-
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_industrial_effort_2_2IC
+			}
+		}
 	}
 	focus = {
 		id = GER_more_industry
 		icon = GFX_goal_generic_production2
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = industry_7
 		}
@@ -362,43 +353,40 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
-			completion_reward = {
-					add_ideas = GER_more_industry
-				}
-
+		completion_reward = {
+			add_ideas = GER_more_industry
+		}
 	}
 	focus = {
 		id = industry_5
 		icon = GFX_focus_generic_socialist_science
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = GER_focus_on_industry
 		}
 		x = 8
 		y = 1
-			completion_reward = {
-					add_research_slot = 1
-				}
-
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = industry_9
 		icon = GFX_focus_research2
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = industry_5
 		}
 		x = 8
 		y = 2
-			completion_reward = {
-					add_research_slot = 1
-				}
-
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = industry_11
 		icon = GFX_focus_rocketry
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = industry_9
 		}
@@ -407,7 +395,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = jet_rocket_bonus
-	                        bonus =1.0
+				bonus = 1
 				uses = 2
 				category = rocketry
 				category = jet_technology
@@ -418,7 +406,7 @@ focus_tree = {
 		id = GER_left
 		text = GER_left
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = GER_1936_party_conference
 		}
@@ -427,61 +415,57 @@ focus_tree = {
 		}
 		x = 12
 		y = 1
-			available = {
-					has_country_flag = germany_leftorright
-				}
-
+		available = {
+			has_country_flag = germany_leftorright
+		}
 	}
 	focus = {
 		id = GER_condemn_revisionists
 		text = GER_condemn_revisionists
 		icon = GFX_focus_generic_strike_at_democracy3
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_left
 		}
 		x = 12
 		y = 2
-			completion_reward = {
-					add_political_power = 25
-				}
-
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = GER_union_USPD
 		text = GER_union_USPD
 		icon = GFX_focus_SOV_the_supreme_soviet
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_condemn_revisionists
 		}
 		x = 11
 		y = 3
-			completion_reward = {
-					add_political_power = 25
-				}
-
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = GER_suppress_opposition
 		text = GER_suppress_opposition
 		icon = GFX_focus_spr_crush_the_revolution
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_condemn_revisionists
 		}
 		x = 13
 		y = 3
-			completion_reward = {
-					add_political_power = 25
-				}
-
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = GER_social_fascism
 		text = GER_social_fascism
 		icon = GFX_focus_generic_manpower
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_union_USPD
 		}
@@ -490,58 +474,55 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
-			completion_reward = {
-					add_political_power = 25
-				}
-
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = GER_organize_secret_police_force
 		text = GER_organize_secret_police_force
 		icon = GFX_focus_generic_annex_country_2
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_social_fascism
 		}
 		x = 13
 		y = 5
-			completion_reward = {
-					add_political_power = 25
-					if = {
-							limit = {
-									has_dlc = "La Resistance"
-									has_intelligence_agency = no
-								}
-							create_intelligence_agency = yes
-						}
+		completion_reward = {
+			add_political_power = 25
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+					has_intelligence_agency = no
 				}
-
+				create_intelligence_agency = yes
+			}
+		}
 	}
 	focus = {
 		id = GER_purge_dissidents
 		text = GER_purge_dissidents
 		icon = GFX_focus_SOV_the_last_purge
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_organize_secret_police_force
 		}
 		x = 13
 		y = 6
-			completion_reward = {
-					add_political_power = 25
-					remove_ideas = GER_left_right_divide
-					add_timed_idea = {
-							idea = GER_purge_dissidents
-							days = 90
-						}
-				}
-
+		completion_reward = {
+			add_political_power = 25
+			remove_ideas = GER_left_right_divide
+			add_timed_idea = {
+				idea = GER_purge_dissidents
+				days = 90
+			}
+		}
 	}
 	focus = {
 		id = GER_right
 		text = GER_right
 		icon = GFX_focus_ETH_callout_to_the_world
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = GER_1936_party_conference
 		}
@@ -550,16 +531,15 @@ focus_tree = {
 		}
 		x = 22
 		y = 1
-			available = {
-					has_country_flag = germany_leftorright
-				}
-
+		available = {
+			has_country_flag = germany_leftorright
+		}
 	}
 	focus = {
 		id = GER_socialist_economy
 		text = GER_socialist_economy
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_left
 			focus = GER_right
@@ -569,16 +549,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 160
 		}
-			completion_reward = {
-					add_political_power = 25
-					add_ideas = GER_socialist_economy
-				}
-
+		completion_reward = {
+			add_political_power = 25
+			add_ideas = GER_socialist_economy
+		}
 	}
 	focus = {
 		id = GER_facilitate_nationalization
 		icon = GFX_focus_SOV_merge_plants
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_socialist_economy
 		}
@@ -590,51 +569,49 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = GER_socialist_economy
-							add_idea = GER_socialist_economy_left
-						}
-						random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_socialist_economy
+				add_idea = GER_socialist_economy_left
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
 				}
-
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = GER_agricultural_collectivization
 		icon = GFX_focus_generic_workers_and_farmers_rise
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_facilitate_nationalization
 		}
 		x = 16
 		y = 4
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = GER_socialist_economy_left
-							add_idea = GER_socialist_economy_left2
-						}
-				}
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_socialist_economy_left
+				add_idea = GER_socialist_economy_left2
+			}
+		}
 	}
 	focus = {
 		id = socialist_economy2
 		text = socialist_economy2
 		icon = GFX_focus_generic_the_giant_wakes
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_socialist_economy
 		}
@@ -646,18 +623,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = GER_socialist_economy
-							add_idea = GER_socialist_economy_right
-						}
-				}
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_socialist_economy
+				add_idea = GER_socialist_economy_right
+			}
+		}
 	}
 	focus = {
 		id = GER_assist_small_medium_enterprises
 		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = socialist_economy2
 		}
@@ -666,34 +642,33 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = GER_socialist_economy_right
-							add_idea = GER_socialist_economy_right2
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_socialist_economy_right
+				add_idea = GER_socialist_economy_right2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
 				}
-
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = GER_new_socialism_economy
 		text = GER_new_socialism_economy
 		icon = GFX_focus_generic_communist_industry
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_agricultural_collectivization
 			focus = GER_assist_small_medium_enterprises
@@ -703,32 +678,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-			completion_reward = {
-					if = {
-							limit = {
-									has_idea = GER_socialist_economy_right2
-								}
-							swap_ideas = {
-									remove_idea = GER_socialist_economy_right2
-									add_idea = GER_new_socialism_economy_right
-								}
-						}
-					else if = {
-							limit = {
-									has_idea = GER_socialist_economy_left2
-								}
-							swap_ideas = {
-									remove_idea = GER_socialist_economy_left2
-									add_idea = GER_new_socialism_economy_left
-								}
-						}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = GER_socialist_economy_right2
 				}
-
+				swap_ideas = {
+					remove_idea = GER_socialist_economy_right2
+					add_idea = GER_new_socialism_economy_right
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GER_socialist_economy_left2
+				}
+				swap_ideas = {
+					remove_idea = GER_socialist_economy_left2
+					add_idea = GER_new_socialism_economy_left
+				}
+			}
+		}
 	}
 	focus = {
 		id = GER_socialist_realism
 		icon = GFX_focus_YUG_pan_slavic_congress
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_new_socialism_economy
 		}
@@ -743,7 +717,7 @@ focus_tree = {
 		id = GER_united_front_tatics
 		text = GER_united_front_tatics
 		icon = GFX_focus_generic_join_comintern
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_right
 		}
@@ -752,24 +726,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 160
 		}
-			completion_reward = {
-					add_political_power = 25
-					add_popularity = {
-							ideology = socialism
-							popularity = 0.1
-						}
-					add_popularity = {
-							ideology = communism
-							popularity = 0.1
-						}
-				}
-
+		completion_reward = {
+			add_political_power = 25
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
 	}
 	focus = {
 		id = GER_workers_government
 		text = GER_workers_government
 		icon = GFX_focus_generic_workers
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_united_front_tatics
 		}
@@ -781,21 +754,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 160
 		}
-			completion_reward = {
-					add_political_power = 25
-					add_stability = 0.05
-					add_popularity = {
-							ideology = socialism
-							popularity = 0.15
-						}
-				}
-
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.05
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.15
+			}
+		}
 	}
 	focus = {
 		id = GER_unite_SPD
 		text = GER_unite_SPD
 		icon = GFX_goal_generic_dangerous_deal
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_united_front_tatics
 		}
@@ -807,30 +779,29 @@ focus_tree = {
 		ai_will_do = {
 			factor = 160
 		}
-			completion_reward = {
-					add_political_power = 25
-					add_stability = -0.05
-					add_popularity = {
-							ideology = communism
-							popularity = 0.15
-						}
-					add_popularity = {
-							ideology = socialism
-							popularity = -1
-						}
-					set_party_name = {
-							ideology = communism
-							long_name = GER_communism_unite_party_long
-							name = GER_communism_unite_party
-						}
-				}
-
+		completion_reward = {
+			add_political_power = 25
+			add_stability = -0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = -1
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = GER_communism_unite_party_long
+				name = GER_communism_unite_party
+			}
+		}
 	}
 	focus = {
 		id = GER_totalitarianism
 		text = GER_totalitarianism
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_workers_government
 			focus = GER_unite_SPD
@@ -840,21 +811,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 90
 		}
-			completion_reward = {
-					add_political_power = 25
-					add_war_support = 0.15
-					remove_ideas = GER_Dolchstosslegende
-					add_timed_idea = {
-							idea = GER_totalitarian_oppression
-							days = 180
-						}
-				}
-
+		completion_reward = {
+			add_political_power = 25
+			add_war_support = 0.15
+			remove_ideas = GER_Dolchstosslegende
+			add_timed_idea = {
+				idea = GER_totalitarian_oppression
+				days = 180
+			}
+		}
 	}
 	focus = {
 		id = GER_positive_propaganda
 		icon = GFX_focus_por_workers_of_iberia
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_totalitarianism
 		}
@@ -863,19 +833,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 160
 		}
-			completion_reward = {
-					add_political_power = 25
-					add_timed_idea = {
-							idea = GER_positive_propaganda
-							days = 90
-						}
-				}
-
+		completion_reward = {
+			add_political_power = 25
+			add_timed_idea = {
+				idea = GER_positive_propaganda
+				days = 90
+			}
+		}
 	}
 	focus = {
 		id = GER_workers_democracy
 		icon = GFX_focus_SWE_refuge_for_revolutionaries
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_positive_propaganda
 		}
@@ -884,19 +853,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 160
 		}
-			completion_reward = {
-					add_political_power = 25
-					swap_ideas = {
-							remove_idea = GER_workers_democracy
-							add_idea = GER_workers_democracy2
-						}
-				}
-
+		completion_reward = {
+			add_political_power = 25
+			swap_ideas = {
+				remove_idea = GER_workers_democracy
+				add_idea = GER_workers_democracy2
+			}
+		}
 	}
 	focus = {
 		id = GER_leadership_reform
 		icon = GFX_focus_SWE_organize_a_putsch
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_totalitarianism
 		}
@@ -905,20 +873,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 160
 		}
-			completion_reward = {
-					add_political_power = 25
-					swap_ideas = {
-							remove_idea = GER_left_right_divide
-							add_idea = GER_left_right_divide2
-						}
-				}
-
+		completion_reward = {
+			add_political_power = 25
+			swap_ideas = {
+				remove_idea = GER_left_right_divide
+				add_idea = GER_left_right_divide2
+			}
+		}
 	}
 	focus = {
 		id = GER_pandering_to_the_left
 		text = GER_pandering_to_the_left
 		icon = GFX_goal_tripartite_pact
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_leadership_reform
 		}
@@ -927,16 +894,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 160
 		}
-			completion_reward = {
-					add_political_power = 25
-					remove_ideas = GER_left_right_divide2
-				}
-
+		completion_reward = {
+			add_political_power = 25
+			remove_ideas = GER_left_right_divide2
+		}
 	}
 	focus = {
 		id = GER_international_revolution
 		icon = GFX_focus_SOV_proclaim_soviet_hegemony
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_workers_democracy
 		}
@@ -948,34 +914,33 @@ focus_tree = {
 		ai_will_do = {
 			factor = 160
 		}
-			completion_reward = {
-					add_political_power = 50
-					ENG = {
-							add_opinion_modifier = {
-									target = GER
-									modifier = GER_international_revolution
-								}
-						}
-					FGE = {
-							add_opinion_modifier = {
-									target = GER
-									modifier = GER_international_revolution
-								}
-						}
-					RUS = {
-							add_opinion_modifier = {
-									target = GER
-									modifier = GER_international_revolution
-								}
-						}
+		completion_reward = {
+			add_political_power = 50
+			ENG = {
+				add_opinion_modifier = {
+					target = GER
+					modifier = GER_international_revolution
 				}
-
+			}
+			FGE = {
+				add_opinion_modifier = {
+					target = GER
+					modifier = GER_international_revolution
+				}
+			}
+			RUS = {
+				add_opinion_modifier = {
+					target = GER
+					modifier = GER_international_revolution
+				}
+			}
+		}
 	}
 	focus = {
 		id = GER_approaching_international
 		text = GER_approaching_international
 		icon = GFX_focus_ger_great_red_menace
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_international_revolution
 		}
@@ -984,26 +949,25 @@ focus_tree = {
 		ai_will_do = {
 			factor = 160
 		}
-			completion_reward = {
-					add_political_power = 50
-					GER = {
-							add_opinion_modifier = {
-									target = SRI
-									modifier = GER_approaching_international
-								}
-							add_opinion_modifier = {
-									target = FRA
-									modifier = GER_approaching_international
-								}
-						}
+		completion_reward = {
+			add_political_power = 50
+			GER = {
+				add_opinion_modifier = {
+					target = SRI
+					modifier = GER_approaching_international
 				}
-
+				add_opinion_modifier = {
+					target = FRA
+					modifier = GER_approaching_international
+				}
+			}
+		}
 	}
 	focus = {
 		id = GER_supporting_great_britain
 		text = GER_supporting_great_britain
 		icon = GFX_focus_ICE_infiltrating_the_british_isles
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_approaching_international
 		}
@@ -1013,7 +977,7 @@ focus_tree = {
 	focus = {
 		id = GER_declaration_of_war_on_america
 		icon = GFX_focus_spa_the_war_of_vengeance
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_supporting_great_britain
 		}
@@ -1026,7 +990,7 @@ focus_tree = {
 	focus = {
 		id = army_1
 		icon = GFX_goal_generic_axis_build_infantry
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = GER_legacy_of_an_empire
 		}
@@ -1045,7 +1009,7 @@ focus_tree = {
 	focus = {
 		id = army_2
 		icon = GFX_goal_generic_army_artillery
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = army_1
 		}
@@ -1054,7 +1018,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				bonus = 1.0
+				bonus = 1
 				uses = 1
 				category = infantry_weapons
 			}
@@ -1063,7 +1027,7 @@ focus_tree = {
 	focus = {
 		id = army_4
 		icon = GFX_goal_generic_army_artillery2
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = army_2
 		}
@@ -1072,7 +1036,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				bonus = 1.0
+				bonus = 1
 				uses = 1
 				category = artillery
 			}
@@ -1081,7 +1045,7 @@ focus_tree = {
 	focus = {
 		id = army6
 		icon = GFX_goal_generic_production2
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = army_4
 		}
@@ -1090,7 +1054,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				bonus = 1.0
+				bonus = 1
 				uses = 1
 				category = infantry_weapons
 				category = artillery
@@ -1100,7 +1064,7 @@ focus_tree = {
 	focus = {
 		id = army_3
 		icon = GFX_goal_generic_army_motorized
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = army_1
 		}
@@ -1109,7 +1073,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 1.0
+				bonus = 1
 				uses = 1
 				technology = motorised_infantry
 			}
@@ -1118,7 +1082,7 @@ focus_tree = {
 	focus = {
 		id = army5
 		icon = GFX_goal_generic_build_tank
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = army_3
 		}
@@ -1127,7 +1091,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 1.0
+				bonus = 1
 				uses = 1
 				category = motorized_equipment
 			}
@@ -1136,7 +1100,7 @@ focus_tree = {
 	focus = {
 		id = army_7
 		icon = GFX_goal_generic_army_tanks
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = army5
 		}
@@ -1145,7 +1109,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.0
+				bonus = 1
 				uses = 1
 				category = armor
 			}
@@ -1154,7 +1118,7 @@ focus_tree = {
 	focus = {
 		id = army_8
 		icon = GFX_focus_FIN_parmis_devils
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = army6
 		}
@@ -1176,7 +1140,7 @@ focus_tree = {
 	focus = {
 		id = airforce_1
 		icon = GFX_goal_generic_build_airforce
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = GER_legacy_of_an_empire
 		}
@@ -1195,7 +1159,7 @@ focus_tree = {
 	focus = {
 		id = airforce_2
 		icon = GFX_focus_generic_air_bases
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = airforce_1
 		}
@@ -1249,7 +1213,7 @@ focus_tree = {
 	focus = {
 		id = airforce_4
 		icon = GFX_focus_generic_air_defense
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = airforce_2
 		}
@@ -1258,7 +1222,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				bonus = 1.0
+				bonus = 1
 				uses = 1
 				category = cat_anti_air
 			}
@@ -1267,7 +1231,7 @@ focus_tree = {
 	focus = {
 		id = airforce_6
 		icon = GFX_focus_SWE_let_fly_all_guns
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = airforce_4
 		}
@@ -1276,7 +1240,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				bonus = 1.0
+				bonus = 1
 				uses = 1
 				category = cat_anti_air
 			}
@@ -1285,7 +1249,7 @@ focus_tree = {
 	focus = {
 		id = airforce_3
 		icon = GFX_goal_generic_air_fighter2
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = airforce_1
 		}
@@ -1294,7 +1258,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_base
-				bonus = 1.00
+				bonus = 1
 				uses = 1
 				category = light_air
 			}
@@ -1303,7 +1267,7 @@ focus_tree = {
 	focus = {
 		id = airforce_5
 		icon = GFX_goal_generic_air_fighter
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = airforce_3
 		}
@@ -1312,7 +1276,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_base
-				bonus = 1.00
+				bonus = 1
 				uses = 1
 				category = medium_air
 			}
@@ -1321,7 +1285,7 @@ focus_tree = {
 	focus = {
 		id = airforce_7
 		icon = GFX_goal_generic_air_bomber
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = airforce_5
 		}
@@ -1330,7 +1294,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_base
-				bonus = 1.00
+				bonus = 1
 				uses = 1
 				category = heavy_air
 			}
@@ -1339,7 +1303,7 @@ focus_tree = {
 	focus = {
 		id = airforce_8
 		icon = GFX_focus_SOV_flying_clubs
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = airforce_6
 		}
@@ -1361,14 +1325,14 @@ focus_tree = {
 	focus = {
 		id = navy_1
 		icon = GFX_goal_generic_build_navy
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = GER_legacy_of_an_empire
 		}
 		x = 37
 		y = 1
 		completion_reward = {
-			navy_experience = 25	
+			navy_experience = 25
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -1380,7 +1344,7 @@ focus_tree = {
 	focus = {
 		id = navy_2
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = navy_1
 		}
@@ -1394,7 +1358,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-		
 		completion_reward = {
 			if = {
 				limit = {
@@ -1432,7 +1395,9 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						has_country_flag = naval_effort_built
+					}
 					any_owned_state = {
 						dockyard > 0
 						free_building_slots = {
@@ -1465,7 +1430,7 @@ focus_tree = {
 	focus = {
 		id = navy_4
 		icon = GFX_focus_generic_refit_civilian_ships
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = navy_2
 		}
@@ -1516,7 +1481,9 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						has_country_flag = naval_effort_built
+					}
 					any_owned_state = {
 						dockyard > 0
 						free_building_slots = {
@@ -1549,7 +1516,7 @@ focus_tree = {
 	focus = {
 		id = navy_6
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = navy_4
 		}
@@ -1567,7 +1534,7 @@ focus_tree = {
 	focus = {
 		id = GER_war_mobilization_law
 		icon = GFX_goal_generic_military_sphere
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_preparing_for_battle
 		}
@@ -1578,33 +1545,33 @@ focus_tree = {
 		}
 		completion_reward = {
 			if = {
-				limit = { 
+				limit = {
 					has_idea = volunteer_only
 				}
 				swap_ideas = {
 					remove_idea = volunteer_only
 					add_idea = extensive_conscription
-				} 	
-			} 
+				}
+			}
 			else_if = {
-				limit = { 
-					has_idea =limited_conscription
+				limit = {
+					has_idea = limited_conscription
 				}
 				add_political_power = 100
 				swap_ideas = {
 					remove_idea = limited_conscription
 					add_idea = extensive_conscription
-				} 	
-			} 
+				}
+			}
 			else = {
 				add_political_power = 150
 			}
-		}  
+		}
 	}
 	focus = {
 		id = GER_war_economy
 		icon = GFX_goal_generic_major_war
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_preparing_for_battle
 		}
@@ -1613,87 +1580,88 @@ focus_tree = {
 		ai_will_do = {
 			factor = 160
 		}
-			complete_tooltip = {
-					every_state = {
-							limit = {
-									has_state_flag = GER_german_war_economy
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-						}
+		complete_tooltip = {
+			every_state = {
+				limit = {
+					has_state_flag = GER_german_war_economy
 				}
-			search_filters = { FOCUS_FILTER_INDUSTRY }
-			completion_reward = {
-					if = {
-							limit = {
-									NOT = {
-											has_idea = war_economy
-										}
-									NOT = {
-											has_idea = tot_economic_mobilisation
-										}
-								}
-							add_ideas = war_economy
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-							set_state_flag = GER_german_war_economy
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-							set_state_flag = GER_german_war_economy
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-							set_state_flag = GER_german_war_economy
-						}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
-
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = war_economy
+					}
+					NOT = {
+						has_idea = tot_economic_mobilisation
+					}
+				}
+				add_ideas = war_economy
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_german_war_economy
+			}
+		}
 	}
 	focus = {
 		id = navy_5
 		icon = GFX_goal_generic_navy_battleship
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = navy_3
 		}
@@ -1713,7 +1681,7 @@ focus_tree = {
 	focus = {
 		id = navy_3
 		icon = GFX_goal_generic_navy_cruiser
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = navy_1
 		}
@@ -1733,7 +1701,7 @@ focus_tree = {
 	focus = {
 		id = navy_8
 		icon = GFX_focus_generic_navy_battleship2
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = navy_6
 		}
@@ -1755,32 +1723,30 @@ focus_tree = {
 	focus = {
 		id = GER_proletariat_dictatorship
 		icon = GFX_focus_usa_voter_registration_act
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_social_fascism
 		}
 		x = 11
 		y = 5
-
 	}
 	focus = {
 		id = GER_first_five_year_plan
 		icon = GFX_focus_TUR_ratify_the_six_arrows
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = GER_state_function
 		}
 		x = 9
 		y = 7
-			completion_reward = {
-					add_political_power = 25
-				}
-
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = GER_one_country_socialism
 		icon = GFX_goal_support_communism
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_purge_dissidents
 		}
@@ -1789,52 +1755,49 @@ focus_tree = {
 		}
 		x = 12
 		y = 7
-			completion_reward = {
-					add_political_power = 100
-					drift_defence_factor = 0.05
-					defensive_war_stability_factor = 0.25
-				}
-
+		completion_reward = {
+			add_political_power = 100
+			# drift_defence_factor = 0.05
+			# defensive_war_stability_factor = 0.25
+		}
 	}
 	focus = {
 		id = GER_distance_from_international
 		text = GER_distance_from_international
 		icon = GFX_focus_SOV_builder_of_the_red_army
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_one_country_socialism
 		}
 		x = 14
 		y = 8
-			completion_reward = {
-					GER = {
-							add_opinion_modifier = {
-									target = SRI
-									modifier = GER_distance_from_international
-								}
-							add_opinion_modifier = {
-									target = FRA
-									modifier = GER_distance_from_international
-								}
-						}
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+					target = SRI
+					modifier = GER_distance_from_international
 				}
-
+				add_opinion_modifier = {
+					target = FRA
+					modifier = GER_distance_from_international
+				}
+			}
+		}
 	}
 	focus = {
 		id = GER_state_function
 		icon = GFX_focus_DEN_no_regulations
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_proletariat_dictatorship
 		}
 		x = 11
 		y = 6
-
 	}
 	focus = {
 		id = navy_7
 		icon = GFX_goal_generic_navy_submarine
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = navy_5
 		}
@@ -1848,12 +1811,11 @@ focus_tree = {
 				category = ss_tech
 			}
 		}
-
 	}
 	focus = {
 		id = GER_preparing_for_battle
 		icon = GFX_focus_SWE_refuge_for_revolutionaries
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_distance_from_international
 			focus = GER_approaching_international
@@ -1863,19 +1825,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 160
 		}
-			completion_reward = {
-				swap_ideas = {
-					remove_idea = GER_Opposition_to_War
-					add_idea = GER_preparing_for_battle
-				}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Opposition_to_War
+				add_idea = GER_preparing_for_battle
 			}
-
+		}
 	}
 	focus = {
 		id = GER_supporting_poland
 		text = GER_supporting_poland
 		icon = GFX_focus_generic_polish_deal
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_red_volunteer_army
 		}
@@ -1889,7 +1850,7 @@ focus_tree = {
 		id = GER_warsaw_uprising
 		text = GER_warsaw_uprising
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_supporting_poland
 		}
@@ -1903,7 +1864,7 @@ focus_tree = {
 		id = GER_protecting_czech_communists
 		text = GER_protecting_czech_communists
 		icon = GFX_focus_generic_provoke_border_clashes
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_red_volunteer_army
 		}
@@ -1912,22 +1873,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4000
 		}
-			available = {
-					has_country_flag = czech_revolution
-				}
-			completion_reward = {
-					country_event = {
-							id = TR_czech_revolution.2
-							days = 1
-						}
-				}
-
+		available = {
+			has_country_flag = czech_revolution
+		}
+		completion_reward = {
+			country_event = {
+				id = TR_czech_revolution.2
+				days = 1
+			}
+		}
 	}
 	focus = {
 		id = GER_war_plan_against_russia
 		text = GER_war_plan_against_russia
 		icon = GFX_focus_SOV_the_defense_of_moscow
-		cost = 2.50
+		cost = 2.5
 		prerequisite = {
 			focus = GER_protecting_czech_communists
 		}
@@ -1942,21 +1902,28 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4000
 		}
-			completion_reward = {
-					create_wargoal = {
-							type = take_state_focus
-							target = RUS
-							generator = { 86  807  85  5  763  188  762 }
-							expire = 0
-						}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = RUS
+				generator = {
+					86
+					807
+					85
+					5
+					763
+					188
+					762
 				}
-
+				expire = 0
+			}
+		}
 	}
 	focus = {
 		id = GER_swiss_partition
 		text = GER_swiss_partition
 		icon = GFX_focus_SWI_expand_the_federation
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_approaching_international
 		}
@@ -1969,37 +1936,38 @@ focus_tree = {
 	focus = {
 		id = GER_second_five_year_plan
 		icon = GFX_focus_SOV_the_road_of_life
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_first_five_year_plan
 		}
 		x = 9
 		y = 8
-
 	}
 	focus = {
 		id = GER_reclaiming_schleswig
 		icon = GFX_focus_generic_invade_denmark
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_distance_from_international
 		}
 		x = 11
 		y = 9
-			completion_reward = {
-					create_wargoal = {
-							type = take_state_focus
-							target = DEN
-							generator = { 909  912 }
-							expire = 0
-						}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = DEN
+				generator = {
+					909
+					912
 				}
-
+				expire = 0
+			}
+		}
 	}
 	focus = {
 		id = GER_state_atheism
 		icon = GFX_focus_mex_triumph_over_the_cristeros
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_thought_education
 			focus = GER_socialist_realism
@@ -2008,13 +1976,13 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			add_political_power = 25
-			stability_factor = 0.5
+			# stability_factor = 0.5
 		}
 	}
 	focus = {
 		id = GER_thought_education
 		icon = GFX_focus_NOR_moscows_education_centers
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_new_socialism_economy
 		}
@@ -2028,7 +1996,7 @@ focus_tree = {
 	focus = {
 		id = GER_support_finland
 		icon = GFX_focus_invite_finland
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_red_volunteer_army
 		}
@@ -2041,40 +2009,37 @@ focus_tree = {
 	focus = {
 		id = newfocus_100
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = GER_war_plan_against_russia
 		}
 		x = 16
 		y = 15
-
 	}
 	focus = {
 		id = newfocus_101
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = GER_war_plan_against_russia
 		}
 		x = 18
 		y = 15
-
 	}
 	focus = {
 		id = GER_south_tyrol
 		icon = GFX_focus_renounce_the_treaty_of_triannon
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_distance_from_international
 		}
 		x = 13
 		y = 9
-
 	}
 	focus = {
 		id = GER_red_volunteer_army
 		icon = GFX_focus_generic_limited_social_mobilization
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_war_mobilization_law
 		}
@@ -2096,7 +2061,7 @@ focus_tree = {
 	focus = {
 		id = GER_workers_take_up_arms
 		icon = GFX_focus_ETH_freedom_at_gunpoint
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_preparing_for_battle
 		}
@@ -2115,7 +2080,7 @@ focus_tree = {
 	focus = {
 		id = GER_support_for_the_spanish_civilwar
 		icon = GFX_focus_generic_befriend_republican_spain
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_red_volunteer_army
 		}
@@ -2128,18 +2093,17 @@ focus_tree = {
 	focus = {
 		id = GER_inciting_revolution_in_hungary
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = GER_red_volunteer_army
 		}
 		x = 21
 		y = 12
-
 	}
 	focus = {
 		id = GER_ask_for_reward
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_support_for_the_spanish_civilwar
 		}
@@ -2149,7 +2113,7 @@ focus_tree = {
 	focus = {
 		id = GER_selfgovernment_movement
 		icon = GFX_focus_FIN_suomalainen_sosialismi
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_support_finland
 		}

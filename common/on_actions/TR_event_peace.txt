@@ -9,9 +9,9 @@ on_actions = {
 					FROM = {
 						tag = JAP
 					}
-					has_grobal_flag = JAP_KOREA_WAR
+					has_global_flag = JAP_KOREA_WAR
 					not = {
-						has_grobal_flag = JAP_KOREA_WAR_FINISHED
+						has_global_flag = JAP_KOREA_WAR_FINISHED
 					}
 				}
 				FROM = {
@@ -20,7 +20,7 @@ on_actions = {
 						message = localization_key
 					}
 				}
-				set_grobal_flag = JAP_KOREA_WAR_FINISHED
+				set_global_flag = JAP_KOREA_WAR_FINISHED
 				JAP = {
 					country_event = {
 						id = TR_japan.71

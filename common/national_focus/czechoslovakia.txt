@@ -692,7 +692,7 @@ focus_tree = {
 			focus = CZE_fortress_fall
 		}
 		available = {
-			has = 1
+			# has = 1
 		}
 		x = 11
 		y = 8
@@ -811,6 +811,7 @@ focus_tree = {
 						add = 2
 					}
 				}
+				
 				fallback = yes
 				path = { 3569 3553 583 }
 				start_province = 3569
