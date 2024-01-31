@@ -46,11 +46,19 @@ on_actions = {
 				}
 			}
 		}
-		effect = {
+	effect = {
             GER = {
                 country_event = {
                     id = TR_germany.1
                     days = 89
+                }
+            }
+        }
+	effect = {
+            USA = {
+                country_event = {
+                    id = TR_usa_civil_war.1
+                    days = 307
                 }
             }
         }
