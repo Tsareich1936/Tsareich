@@ -7,3 +7,8 @@ IPS = {#Indian Princely States
 	original_tag = RAJ
 	has_country_flag = TR_princely_india_alieas
 }
+#Second American Civil War
+CSA = {#Confederation States of America
+	original_tag = USA
+	has_country_flag = TR_confederation_states_of_america_alieas
+}
