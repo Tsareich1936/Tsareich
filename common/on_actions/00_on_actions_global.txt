@@ -20,6 +20,21 @@ on_actions = {
 					array = not_poland_countries
 				}
 			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = USA
+						tag = CSA
+						tag = AMR
+						tag = ADR
+						tag = TXS
+						tag = DST
+					}
+				}
+				add_to_array = {
+					array = second_american_civil_war
+				}
+			}
 			# UI setup
 			for_each_scope_loop = {
 				array = global.players

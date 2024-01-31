@@ -55,6 +55,7 @@ POL_KPU = {
 	color = rgb { 0 0 0 }
 	color_ui = { 5 5 5 }
 }
+
 IND = {
 	color = rgb { 226  135  40 }
 	color_ui = rgb { 226  135  40 }
@@ -63,6 +64,20 @@ IPS = {
 	color = rgb { 217 174 88 }
 	color_ui = rgb { 217 174 88 }
 }
+
+CSA = {
+	color = rgb { 16 69 122  }
+	color_ui = rgb { 16 69 122 }
+}
+AMR = {
+	color = rgb { 21 202 234  }
+	color_ui = rgb { 21 202 234 }
+}
+ADR = {
+	color = rgb { 234 21 21  }
+	color_ui = rgb { 234 21 21 }
+}
+
 #original
 MAL_UK = {
     color = rgb { 201 56 93 }

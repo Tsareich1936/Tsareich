@@ -24,15 +24,167 @@ country_event = {
 
 	option = {
 		name = TR_debug.2.a
-		
-		random_owned_state = {
-			transfer_state_to = CSA
+		USA = {
+			set_politics = {
+				ruling_party = socialism
+			}
+			set_popularities = {
+				socialism = 100
+			}
+			set_cosmetic_tag = USA_USA
 		}
-		random_owned_state = {
-			transfer_state_to = ADR
+		CSA = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 363
+						state = 364
+						state = 365
+						state = 366
+						state = 367
+						state = 368
+						state = 370
+						state = 371
+						state = 375
+					}
+				}
+				transfer_state_to = PREV
+			}
+			set_capital = {
+				state = 365
+			}
 		}
-		random_owned_state = {
-			transfer_state_to = AMR
+		AMR = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 378
+						state = 379
+						state = 385
+						state = 386
+					}
+				}
+				transfer_state_to = PREV
+			}
+			set_capital = {
+				state = 378
+			}
+		}
+		ADR = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 261
+						state = 357
+						state = 358
+						state = 359
+						state = 360
+						state = 391
+						state = 393
+						state = 394
+					}
+				}
+				transfer_state_to = PREV
+			}
+			set_capital = {
+				state = 393
+			}
+		}
+		DST = {
+			transfer_state = 380
+		}
+		TXS = {
+			transfer_state = 375
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = CSA
+					tag = AMR
+					tag = ADR
+					tag = USA
+				}
+			}
+			declare_war_on = {
+				target = USA
+				type = civil_war
+			}
+			declare_war_on = {
+				target = CSA
+				type = civil_war
+			}
+			declare_war_on = {
+				target = AMR
+				type = civil_war
+			}
+			declare_war_on = {
+				target = ADR
+				type = civil_war
+			}
+			add_civil_war_target = USA
+			add_civil_war_target = CSA
+			add_civil_war_target = AMR
+			add_civil_war_target = ADR
+			division_template = {
+				name = "Milita Division"
+				regiments = {
+					infantry = { x = 0 y = 0  }
+					infantry = { x = 0 y = 1  }
+					infantry = { x = 0 y = 2  }
+					infantry = { x = 0 y = 3  }
+				}
+			}
+			every_owned_state = {
+				# create_unit = {
+				# 	division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+				# 	owner = PREV
+				# }
+				
+				if = {
+					limit = {
+						NOT = {
+							PREV = {
+								tag = USA
+							}
+						}
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+						owner = PREV
+					}
+					if = {
+						limit = {
+							prev = {
+								tag = AMR
+							}
+						}
+						create_unit = {
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+							owner = PREV
+						}
+					}
+				}
+			}
 		}
 	}
 }

@@ -59,8 +59,11 @@ create_dynamic_country = {
 	set_politics = {
 		ruling_party = conservatism
 	}
+	set_popularities = {
+		conservatism = 100
+	}
 	reserve_dynamic_country = yes
-	set_cosmetic_tag = USA_CSA
+	set_cosmetic_tag = CSA
 	inherit_technology = USA
 }
 create_dynamic_country = {
@@ -69,8 +72,11 @@ create_dynamic_country = {
 	set_politics = {
 		ruling_party = democratic
 	}
+	set_popularities = {
+		democratic = 100
+	}
 	reserve_dynamic_country = yes
-	set_cosmetic_tag = USA_perublic
+	set_cosmetic_tag = AMR
 	inherit_technology = USA
 }
 create_dynamic_country = {
@@ -79,8 +85,11 @@ create_dynamic_country = {
 	set_politics = {
 		ruling_party = communism
 	}
+	set_popularities = {
+		communism = 100
+	}
 	reserve_dynamic_country = yes
-	set_cosmetic_tag = USA_communism
+	set_cosmetic_tag = ADR
 	inherit_technology = USA
 }
 
