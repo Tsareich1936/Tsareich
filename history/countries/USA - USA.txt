@@ -61,6 +61,7 @@ create_dynamic_country = {
 	}
 	reserve_dynamic_country = yes
 	set_cosmetic_tag = USA_CSA
+	inherit_technology = USA
 }
 create_dynamic_country = {
 	original_tag = USA
@@ -70,6 +71,7 @@ create_dynamic_country = {
 	}
 	reserve_dynamic_country = yes
 	set_cosmetic_tag = USA_perublic
+	inherit_technology = USA
 }
 create_dynamic_country = {
 	original_tag = USA
@@ -79,6 +81,7 @@ create_dynamic_country = {
 	}
 	reserve_dynamic_country = yes
 	set_cosmetic_tag = USA_communism
+	inherit_technology = USA
 }
 
 
