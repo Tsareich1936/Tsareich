@@ -10,5 +10,13 @@ IPS = {#Indian Princely States
 #Second American Civil War
 CSA = {#Confederation States of America
 	original_tag = USA
-	has_country_flag = TR_confederation_states_of_america_alieas
+	has_country_flag = USA_CSA_flag
+}
+AMR = {#American Republic
+	original_tag = USA
+	has_country_flag = USA_republic_flag
+}
+ADR = {#Democratic Republic of America
+	original_tag = USA
+	has_country_flag = USA_communism_flag
 }

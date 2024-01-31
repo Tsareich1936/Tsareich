@@ -1,0 +1,38 @@
+add_namespace = TR_debug
+country_event = {
+	id = TR_debug.1
+	title = TR_debug.1.t
+	desc = TR_debug.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_debug.1.a
+		create_wargoal = {
+			target = MEX
+			type = independence_wargoal
+		}
+		load_oob = USA_1936
+	}
+}
+country_event = {
+	id = TR_debug.2
+	title = TR_debug.2.t
+	desc = TR_debug.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_debug.2.a
+		
+		random_owned_state = {
+			transfer_state_to = CSA
+		}
+		random_owned_state = {
+			transfer_state_to = ADR
+		}
+		random_owned_state = {
+			transfer_state_to = AMR
+		}
+	}
+}

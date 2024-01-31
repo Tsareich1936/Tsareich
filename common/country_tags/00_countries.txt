@@ -267,9 +267,9 @@ HNA = "countries/Hunan.txt"
 FJN = "countries/Fujian.txt"
 GRS = "countries/Greek Socialist.txt"
 
-CSA = "countries/CSA.txt"
-ARP = "countries/American Republic.txt"
-ADR= "countries/American Democratic Republic.txt"
+# CSA = "countries/CSA.txt"
+# ARP = "countries/American Republic.txt"
+# ADR= "countries/American Democratic Republic.txt"
 TXS= "countries/Republic of Texas.txt"
 DST= "countries/State of Deseret.txt"
 
