@@ -1,3 +1,4 @@
+#British Raj Civil War
 IND = {
 	original_tag = RAJ
 	has_country_flag = TR_communism_india_alieas
@@ -6,3 +7,16 @@ IPS = {#Indian Princely States
 	original_tag = RAJ
 	has_country_flag = TR_princely_india_alieas
 }
+#Second American Civil War
+CSA = { #Confederate States of America
+	original_tag = USA
+	has_country_flag = TR_csa_alieas
+}
+DRA = { #Democratic Republic of America
+	oroginal_tag = USA
+	has_country_flag = TR_dra_alieas
+}
+RPA = { #Republic of America
+	oroginal_tag = USA
+	has_country_flag = TR_rpa_alieas
+} 
