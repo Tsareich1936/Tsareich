@@ -2000,6 +2000,7 @@ country_event = {
 				picture = GFX_JAP_Toyotomi
 				ideology = despotism
 			}
+			load_focus_tree = japan_Toyotomi
 		}
 		if = {
 			limit = {
@@ -2034,7 +2035,17 @@ country_event = {
 country_event = {
 	id = TR_japan.70
 	is_triggered_only = yes
+	hidden = yes
 	immediate = {
 		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = {
+	id = TR_japan.71
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		puppet = KOR
 	}
 }
