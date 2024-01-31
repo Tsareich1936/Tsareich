@@ -20,3 +20,7 @@ ADR = {#Democratic Republic of America
 	original_tag = USA
 	has_country_flag = USA_communism_flag
 }
+AMG = {#American Military Government
+	original_tag = USA
+	has_country_flag = USA_military_flag
+}

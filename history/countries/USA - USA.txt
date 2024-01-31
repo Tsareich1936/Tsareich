@@ -92,7 +92,19 @@ create_dynamic_country = {
 	set_cosmetic_tag = ADR
 	inherit_technology = USA
 }
-
+create_dynamic_country = {
+	original_tag = USA
+	set_country_flag = USA_military_flag
+	set_politics = {
+		ruling_party = neutrality
+	}
+	set_popularities = {
+		conservatism = 100
+	}
+	reserve_dynamic_country = yes
+	set_cosmetic_tag = AMG
+	inherit_technology = USA
+}
 
 # Starting tech
 set_technology = {

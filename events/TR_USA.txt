@@ -8,13 +8,21 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		USA = {
-			country_event = {
-				id = TR_usa_civil_war.2
-				days = 3
-			}
-			set_rule = {
-				can_join_factions = no
+		hidden_effect = {
+			USA = {
+				country_event = {
+					id = TR_usa_civil_war.2
+					days = 3
+				}
+				set_rule = {
+					can_join_factions = no
+				}
+				set_politics = {
+					ruling_party = socialism
+				}
+				set_popularities = {
+					socialism = 100
+				}
 			}
 		}
 	}
@@ -30,71 +38,78 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		CSA = {
-			363 = {
-				transfer_state_to = CSA
-			}
-			364 = {
-				transfer_state_to = CSA
-			}
-			365 = {
-				transfer_state_to = CSA
-			}
-			366 = {
-				transfer_state_to = CSA
-			}
-			367 = {
-				transfer_state_to = CSA
-			}
-			368 = {
-				transfer_state_to = CSA
-			}
-			370 = {
-				transfer_state_to = CSA
-			}
-			371 = {
-				transfer_state_to = CSA
-			}
-			set_cosmetic_tag = CSA
-			set_rule = {
-				can_join_factions = no
-			}
-			division_template = {
-				name = "Milita Division"
-				regiments = {
-					infantry = { x = 0 y = 0  }
-					infantry = { x = 0 y = 1  }
-					infantry = { x = 0 y = 2  }
-					infantry = { x = 0 y = 3  }
+		hidden_effect = {
+			CSA = {
+				set_capital = {
+					state = 364
+					remember_old_capital = no
+				}
+				363 = {
+					transfer_state_to = CSA
+				}
+				364 = {
+					transfer_state_to = CSA
+				}
+				365 = {
+					transfer_state_to = CSA
+				}
+				366 = {
+					transfer_state_to = CSA
+				}
+				367 = {
+					transfer_state_to = CSA
+				}
+				368 = {
+					transfer_state_to = CSA
+				}
+				370 = {
+					transfer_state_to = CSA
+				}
+				371 = {
+					transfer_state_to = CSA
+				}
+				set_cosmetic_tag = CSA
+				set_rule = {
+					can_join_factions = no
+				}
+				division_template = {
+					name = "Milita Division"
+					regiments = {
+						infantry = { x = 0 y = 0  }
+						infantry = { x = 0 y = 1  }
+						infantry = { x = 0 y = 2  }
+						infantry = { x = 0 y = 3  }
+					}
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = CSA
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = CSA
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = CSA
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = CSA
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = CSA
+					}
 				}
 			}
-			every_owned_state = {
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = CSA
+			USA = {
+				country_event = {
+					id = TR_usa_civil_war.3
+					days = 3
 				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = CSA
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = CSA
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = CSA
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = CSA
-				}
-			}
-		}
-		USA = {
-			country_event = {
-				id = TR_usa_civil_war.3
-				days = 3
+				set_cosmetic_tag = USA_USA
 			}
 		}
 	}
@@ -112,64 +127,85 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		ARP = {
-			378 = {
-				transfer_state_to = ARP
-			}
-			379 = {
-				transfer_state_to = ARP
-			}
-			385 = {
-				transfer_state_to = ARP
-			}
-			386 = {
-				transfer_state_to = ARP
-			}
-			set_rule = {
-				can_join_factions = no
-			}
-			division_template = {
-				name = "Milita Division"
-				regiments = {
-					infantry = { x = 0 y = 0  }
-					infantry = { x = 0 y = 1  }
-					infantry = { x = 0 y = 2  }
-					infantry = { x = 0 y = 3  }
+		hidden_effect = {
+			ADR = {
+				set_capital = {
+					state = 393
+					remember_old_capital = no
+				}
+				261 = {
+					transfer_state_to = ADR
+				}
+				357 = {
+					transfer_state_to = ADR
+				}
+				358 = {
+					transfer_state_to = ADR
+				}
+				359 = {
+					transfer_state_to = ADR
+				}
+				360 = {
+					transfer_state_to = ADR
+				}
+				391 = {
+					transfer_state_to = ADR
+				}
+				393 = {
+					transfer_state_to = ADR
+				}
+				394 = {
+					transfer_state_to = ADR
+				}
+				set_rule = {
+					can_join_factions = no
+				}
+				division_template = {
+					name = "Milita Division"
+					regiments = {
+						infantry = { x = 0 y = 0  }
+						infantry = { x = 0 y = 1  }
+						infantry = { x = 0 y = 2  }
+						infantry = { x = 0 y = 3  }
+					}
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = ADR
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = ADR
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = ADR
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = ADR
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = ADR
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = ADR
+					}
 				}
 			}
-			every_owned_state = {
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = ARP
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = ARP
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = ARP
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = ARP
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = ARP
+			USA = {
+				country_event = {
+					id = TR_usa_civil_war.4
+					days = 3
 				}
 			}
 		}
-		USA = {
-			country_event = {
-				id = TR_usa_civil_war.4
-				days = 3
-			}
+		option = {
+			name = TR_usa_civil_war.3.a
 		}
-	}
-
-	option = {
-		name = TR_usa_civil_war.3.a
 	}
 }
 
@@ -181,109 +217,60 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		TXS = {
-			375 = {
-				transfer_state_to = TXS
-			}
-			set_rule = {
-				can_join_factions = no
-			}
-			division_template = {
-				name = "Milita Division"
-				regiments = {
-					infantry = { x = 0 y = 0  }
-					infantry = { x = 0 y = 1  }
-					infantry = { x = 0 y = 2  }
-					infantry = { x = 0 y = 3  }
+		hidden_effect = {
+			AMR = {
+				378 = {
+					transfer_state_to = AMR
+				}
+				379 = {
+					transfer_state_to = AMR
+				}
+				385 = {
+					transfer_state_to = AMR
+				}
+				386 = {
+					transfer_state_to = AMR
+				}
+				set_rule = {
+					can_join_factions = no
+				}
+				division_template = {
+					name = "Milita Division"
+					regiments = {
+						infantry = { x = 0 y = 0  }
+						infantry = { x = 0 y = 1  }
+						infantry = { x = 0 y = 2  }
+						infantry = { x = 0 y = 3  }
+					}
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = AMR
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = AMR
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = AMR
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = AMR
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = AMR
+					}
 				}
 			}
-			every_owned_state = {
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
+			USA = {
+				country_event = {
+					id = TR_usa_civil_war.5
+					days = 5
 				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = TXS
-				}
-			}
-		}
-		USA = {
-			country_event = {
-				id = TR_usa_civil_war.5
-				days = 5
 			}
 		}
 	}
@@ -301,74 +288,91 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		ADR = {
-			261 = {
-				transfer_state_to = ADR
-			}
-			357 = {
-				transfer_state_to = ADR
-			}
-			358 = {
-				transfer_state_to = ADR
-			}
-			359 = {
-				transfer_state_to = ADR
-			}
-			360 = {
-				transfer_state_to = ADR
-			}
-			391 = {
-				transfer_state_to = ADR
-			}
-			393 = {
-				transfer_state_to = ADR
-			}
-			394 = {
-				transfer_state_to = ADR
-			}
-			set_rule = {
-				can_join_factions = no
-			}
-			division_template = {
-				name = "Milita Division"
-				regiments = {
-					infantry = { x = 0 y = 0  }
-					infantry = { x = 0 y = 1  }
-					infantry = { x = 0 y = 2  }
-					infantry = { x = 0 y = 3  }
+		hidden_effect = {
+			TXS = {
+				375 = {
+					transfer_state_to = TXS
+				}
+				set_rule = {
+					can_join_factions = no
+				}
+				division_template = {
+					name = "Milita Division"
+					regiments = {
+						infantry = { x = 0 y = 0  }
+						infantry = { x = 0 y = 1  }
+						infantry = { x = 0 y = 2  }
+						infantry = { x = 0 y = 3  }
+					}
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = TXS
+					}
 				}
 			}
-			every_owned_state = {
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = ADR
+			USA = {
+				country_event = {
+					id = TR_usa_civil_war.6
+					days = 5
 				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = ADR
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = ADR
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = ADR
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = ADR
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = ADR
-				}
-			}
-		}
-		USA = {
-			country_event = {
-				id = TR_usa_civil_war.6
-				days = 5
 			}
 		}
 	}
@@ -386,73 +390,75 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		DST = {
-			set_capital = {
-  				state = 380
- 				 remember_old_capital = no
-			}
-			380 = {
-				transfer_state_to = DST
-			}
-			set_rule = {
-				can_join_factions = no
-			}
-			division_template = {
-				name = "Milita Division"
-				regiments = {
-					infantry = { x = 0 y = 0  }
-					infantry = { x = 0 y = 1  }
-					infantry = { x = 0 y = 2  }
-					infantry = { x = 0 y = 3  }
+		hidden_effect = {
+				DST = {
+				set_capital = {
+					state = 380
+					remember_old_capital = no
+				}
+				380 = {
+					transfer_state_to = DST
+				}
+				set_rule = {
+					can_join_factions = no
+				}
+				division_template = {
+					name = "Milita Division"
+					regiments = {
+						infantry = { x = 0 y = 0  }
+						infantry = { x = 0 y = 1  }
+						infantry = { x = 0 y = 2  }
+						infantry = { x = 0 y = 3  }
+					}
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = DST
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = DST
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = DST
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = DST
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = DST
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = DST
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = DST
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = DST
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = DST
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = DST
+					}
 				}
 			}
-			every_owned_state = {
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = DST
+			USA = {
+				country_event = {
+					id = TR_usa_civil_war.7
+					days = 5
 				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = DST
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = DST
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = DST
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = DST
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = DST
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = DST
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = DST
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = DST
-				}
-				create_unit = {
-					division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-					owner = DST
-				}
-			}
-		}
-		USA = {
-			country_event = {
-				id = TR_usa_civil_war.7
-				days = 5
 			}
 		}
 	}
@@ -469,141 +475,137 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		USA = {
-			declare_war_on = {
-				target = CSA
-				type = civil_war
+		hidden_effect = {
+			AMG = {
+				set_capital = {
+					state = 382
+					remember_old_capital = no
+				}
+				376 = {
+					transfer_state_to = AMG
+				}
+				377 = {
+					transfer_state_to = AMG
+				}
+				381 = {
+					transfer_state_to = AMG
+				}
+				382 = {
+					transfer_state_to = AMG
+				}
+				384 = {
+					transfer_state_to = AMG
+				}
+				387 = {
+					transfer_state_to = AMG
+				}
+				388 = {
+					transfer_state_to = AMG
+				}
+				389 = {
+					transfer_state_to = AMG
+				}
+				390 = {
+					transfer_state_to = AMG
+				}
+				set_rule = {
+					can_join_factions = no
+				}
+				division_template = {
+					name = "Milita Division"
+					regiments = {
+						infantry = { x = 0 y = 0  }
+						infantry = { x = 0 y = 1  }
+						infantry = { x = 0 y = 2  }
+						infantry = { x = 0 y = 3  }
+					}
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = AMG
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = AMG
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = AMG
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = AMG
+					}
+				}
 			}
-			declare_war_on = {
-				target = ADR
-				type = civil_war
-			}
-			declare_war_on = {
-				target = ARP
-				type = civil_war
-			}
-			declare_war_on = {
-				target = DST
-				type = civil_war
-			}
-			declare_war_on = {
-				target = TXS
-				type = civil_war
-			}
-		}
-		CSA = {
-			declare_war_on = {
-				target = USA
-				type = civil_war
-			}
-			declare_war_on = {
-				target = ADR
-				type = civil_war
-			}
-			declare_war_on = {
-				target = ARP
-				type = civil_war
-			}
-			declare_war_on = {
-				target = DST
-				type = civil_war
-			}
-			declare_war_on = {
-				target = TXS
-				type = civil_war
-			}
-		}
-		ADR = {
-			declare_war_on = {
-				target = USA
-				type = civil_war
-			}
-			declare_war_on = {
-				target = CSA
-				type = civil_war
-			}
-			declare_war_on = {
-				target = ARP
-				type = civil_war
-			}
-			declare_war_on = {
-				target = DST
-				type = civil_war
-			}
-			declare_war_on = {
-				target = TXS
-				type = civil_war
-			}
-		}
-		ARP = {
-			declare_war_on = {
-				target = USA
-				type = civil_war
-			}
-			declare_war_on = {
-				target = CSA
-				type = civil_war
-			}
-			declare_war_on = {
-				target = ADR
-				type = civil_war
-			}
-			declare_war_on = {
-				target = DST
-				type = civil_war
-			}
-			declare_war_on = {
-				target = TXS
-				type = civil_war
-			}
-		}
-		DST = {
-			declare_war_on = {
-				target = USA
-				type = civil_war
-			}
-			declare_war_on = {
-				target = CSA
-				type = civil_war
-			}
-			declare_war_on = {
-				target = ADR
-				type = civil_war
-			}
-			declare_war_on = {
-				target = ARP
-				type = civil_war
-			}
-			declare_war_on = {
-				target = TXS
-				type = civil_war
-			}
-		}
-		TXS = {
-			declare_war_on = {
-				target = USA
-				type = civil_war
-			}
-			declare_war_on = {
-				target = CSA
-				type = civil_war
-			}
-			declare_war_on = {
-				target = ADR
-				type = civil_war
-			}
-			declare_war_on = {
-				target = ARP
-				type = civil_war
-			}
-			declare_war_on = {
-				target = DST
-				type = civil_war
+			USA = {
+				country_event = {
+					id = TR_usa_civil_war.8
+					days = 5
+				}
 			}
 		}
 	}
 
 	option = {
 		name = TR_usa_civil_war.7.a
+	}
+}
+country_event = {
+	id =  TR_usa_civil_war.8
+	title = TR_usa_civil_war.8.t
+	desc =  TR_usa_civil_war.8.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = USA
+						tag = CSA
+						tag = AMR
+						tag = ADR
+						tag = TXS
+						tag = DST
+						tag = AMG
+					}
+				}
+				declare_war_on = {
+					target = USA
+					type = civil_war
+				}
+				declare_war_on = {
+					target = CSA
+					type = civil_war
+				}
+				declare_war_on = {
+					target = AMR
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ADR
+					type = civil_war
+				}
+				declare_war_on = {
+					target = DST
+					type = civil_war
+				}
+				declare_war_on = {
+					target = TXS
+					type = civil_war
+				}
+				declare_war_on = {
+					target = AMG
+					type = civil_war
+				}
+			}
+		}
+	}
+
+	option = {
+		name = TR_usa_civil_war.8.a
 	}
 }
