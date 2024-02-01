@@ -28,3 +28,20 @@ country_event = {#One Italy, One Nation
 		}
 	}
 }
+
+country_event = {#American Civil War
+	id = TR_super_event.2
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+
+	immediate = {
+		set_variable = {
+			TR_super_event_variable = 2 # event id
+		}
+		set_variable = {
+			TR_showing_super_event = 1 # 0:unvisible 1:visible
+		}
+	}
+}

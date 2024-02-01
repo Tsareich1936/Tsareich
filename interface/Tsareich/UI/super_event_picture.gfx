@@ -8,4 +8,9 @@ spriteTypes = {
 		textureFile = "gfx/interface/super_event/SE_one_Italy_Picture.png"
 
 	}
+	spriteType = {
+		name = GFX_SE_American_Civil_War_Picture
+		textureFile = "gfx/interface/super_event/SE_American_Civil_War_Picture.png"
+
+	}
 }

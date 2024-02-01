@@ -937,3 +937,7 @@ DST = {
 	color = rgb { 21 234 78 }
 	color_ui = rgb {  21 234 78 }
 }
+CRT = {
+	color = rgb { 168 85 67 }
+	color_ui = rgb { 168 85 67 }
+}

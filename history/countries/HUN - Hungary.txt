@@ -282,6 +282,10 @@ set_autonomy = {
 	target = SLO
 	autonomous_state = autonomy_puppet
 }
+set_autonomy = {
+	target = CRT
+	autonomous_state = autonomy_puppet
+}
 
 #Start Horty as neutral if DOD
 recruit_character = HUN_miklos_horthy
