@@ -13,6 +13,9 @@ state={
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 3
+			9950 = {
+				naval_base = 7
+			}
 		}
 	}
 	manpower=1233000

@@ -225,7 +225,7 @@ focus_tree = {
                 country = MAN
                 relation = non_aggression_pact
                 relation = guarantee
-                active = no
+                active = yes
                 }
         }
 
@@ -1216,13 +1216,12 @@ focus_tree = {
                     infantry = {x = 0 y = 0 }
                     infantry = {x = 0 y = 1 }
                     infantry = {x = 0 y = 2 }
-                    infantry = {x = 0 y = 3 }
                     infantry = {x = 1 y = 0 }
                     infantry = {x = 1 y = 1 }
                     infantry = {x = 1 y = 2 }
-                    infantry = {x = 1 y = 3 } 
-                    artillery = {x = 2 y = 0}
-                    artillery = {x = 2 y = 1}
+                    artillery_brigade = {x = 2 y = 0}
+                    artillery_brigade = {x = 2 y = 1}
+                    artillery_brigade = {x = 2 y = 2}
                 }
                 support = {
                     engineer = { x = 0 y = 0 }
@@ -2669,9 +2668,11 @@ focus_tree = {
     default = no
     reset_on_civilwar = no
 
+    # 国内統治体制
+
     focus = {
         id = jap_Kanpaku
-        x = 5
+        x = 2
         y = 0
         completion_reward = {
             
@@ -2681,7 +2682,7 @@ focus_tree = {
     focus = {
         id = jap_Buke
         relative_position_id = jap_Kanpaku
-        x = -1
+        x = -2
         y = 1
         prerequisite = {
             focus = jap_Kanpaku
@@ -2691,7 +2692,7 @@ focus_tree = {
     focus= {
         id = jap_Gotairo
         relative_position_id = jap_Kanpaku
-        x = -1
+        x = -2
         y = 2
         prerequisite = {
             focus = jap_Buke
@@ -2708,5 +2709,692 @@ focus_tree = {
         }
     }
 
+    focus = {
+        id = jap_history
+        relative_position_id = jap_Gobugyo
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Gobugyo
+        }
+    }
 
+    #　国民に向けて
+
+    focus = {
+        id = jap_gun_low
+        relative_position_id = jap_Kanpaku
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Kanpaku
+        }
+    }
+
+    focus = {
+        id = jap_fix_education
+        relative_position_id = jap_gun_low
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_gun_low
+        }
+    }
+
+    focus = {
+        id = jap_decree_regulating_public_morals
+        relative_position_id = jap_fix_education
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_fix_education
+        }
+    }
+
+    focus = {
+        id = jap_prohibition_against_trafficking_in_persons
+        relative_position_id = jap_decree_regulating_public_morals
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_decree_regulating_public_morals
+        }
+    }
+
+    # traditional culture
+
+    focus = {
+        id = jap_japanese_culture
+        relative_position_id = jap_Kanpaku
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_Kanpaku
+        }
+    }
+
+    focus = {
+        id = jap_Hanami
+        relative_position_id = jap_japanese_culture
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_japanese_culture
+        }
+    }
+
+    focus = {
+        id = jap_bukkyo
+        relative_position_id = jap_Hanami
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Hanami
+        }
+    }
+
+    focus = {
+        id = jap_Utayomi
+        relative_position_id = jap_bukkyo
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_bukkyo
+        }
+    }
+
+    # 内政
+
+    focus = {
+        id = jap_spirit
+        x = 8
+        y = 0
+    }
+
+    focus = {
+        id = jap_temple_and_shrine
+        relative_position_id = jap_spirit
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_spirit
+        }
+    }
+
+    focus = {
+        id = jap_money
+        relative_position_id = jap_temple_and_shrine
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_temple_and_shrine
+        }
+    }
+
+    focus = {
+        id = jap_Dam_construction
+        relative_position_id = jap_spirit
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_spirit
+        }
+    }
+
+    focus = {
+        id = jap_Bridge_building
+        relative_position_id = jap_Dam_construction
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Dam_construction
+        }
+    }
+
+    focus = {
+        id = jap_Taiko_Kenchi
+        relative_position_id = jap_spirit
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_spirit
+        } 
+    }
+
+    focus = {
+        id = jap_retuen_rumore
+        relative_position_id = jap_Taiko_Kenchi
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Taiko_Kenchi
+        }
+    }
+
+    # 外交
+
+    focus = {
+        id = jap_paying_tribute
+        x = 26
+        y = 0
+    }
+
+    focus = {
+        id = jap_invade_CHI
+        relative_position_id = jap_paying_tribute
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_paying_tribute
+        }
+    }
+
+    focus = {
+        id = jap_invade_KOR
+        relative_position_id = jap_invade_CHI
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_invade_CHI
+        }
+    }
+
+    focus = {
+        id = jap_invade_VIN
+        relative_position_id = jap_paying_tribute
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_paying_tribute
+        }
+    }
+
+    focus = {
+        id = jap_invade_PHI
+        relative_position_id = jap_invade_VIN
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_invade_VIN
+        }
+    }
+
+    focus = {
+        id = jap_Asia
+        relative_position_id = jap_paying_tribute
+        x = 0
+        y = 3
+        prerequisite = {
+            focus = jap_invade_KOR
+        }
+        prerequisite = {
+            focus = jap_invade_PHI
+        }
+    }
+
+    focus = {
+        id = jap_Bantenren_Expulsion_Order
+        relative_position_id = jap_Asia
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_Asia
+        }
+        mutually_exclusive = {
+            focus = jap_no_wat_order
+        }
+    }
+
+    focus = {
+        id = jap_invade_RAJ
+        relative_position_id = jap_Bantenren_Expulsion_Order
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Bantenren_Expulsion_Order
+        }
+    }
+
+    focus = {
+        id = jap_invade_SPA_and_POR
+        relative_position_id = jap_invade_RAJ
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_invade_RAJ
+        }
+    }
+
+    focus = {
+        id = jap_no_wat_order
+        relative_position_id = jap_Asia
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_Asia
+        }
+        mutually_exclusive = {
+            focus = jap_Bantenren_Expulsion_Order
+        }
+    }
+
+    focus = {
+        id = jap_invade_Asia
+        relative_position_id = jap_no_wat_order
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_no_wat_order
+        }
+    }
+
+    focus = {
+        id = jap_invade_Europe_and_America
+        relative_position_id = jap_invade_Asia
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_invade_Asia
+        }
+    }
+
+    #military
+
+    focus = {
+        id = jap_Toyotomi_army
+        x = 17
+        y = 0
+    }
+
+
+    # samurai
+
+    focus = {
+        id = jap_Toyotomi_army_1-1
+        relative_position_id = jap_Toyotomi_army
+        x = -1
+        y = 1
+        mutually_exclusive = {
+            focus = jap_Toyotomi_army_1-2
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_army
+        }
+        completion_reward = {
+            country_event = {
+                id = TR_japan.72
+            }
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_navy_1-1
+        relative_position_id = jap_Toyotomi_army_1-1
+        x = -4
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_1-1
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_army_2-1
+        relative_position_id = jap_Toyotomi_army_1-1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_1-1
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_navy_2-1
+        relative_position_id = jap_Toyotomi_navy_1-1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_navy_1-1
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_force_1
+        relative_position_id = jap_Toyotomi_army_2-1
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_navy_1-1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_army_2-1
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_army_3-1
+        relative_position_id = jap_Toyotomi_army_2-1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_2-1
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_navy_3-1
+        relative_position_id = jap_Toyotomi_navy_2-1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_navy_2-1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_force_1
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_force_2
+        relative_position_id = jap_Toyotomi_force_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_2-1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_force_1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_army_3-1
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_army_4-1
+        relative_position_id = jap_Toyotomi_army_3-1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_force_1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_army_3-1
+        }
+    }
+    focus = {
+        id = jap_Toyotomi_navy_4-1
+        relative_position_id = jap_Toyotomi_navy_3-1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_navy_3-1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_force_2
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_force_3
+        relative_position_id = jap_Toyotomi_force_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_3-1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_force_2
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_army_4-1
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_army_5-1
+        relative_position_id = jap_Toyotomi_army_4-1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_force_2
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_army_4-1
+        }
+    }
+    
+    focus = {
+        id = jap_Toyotomi_navy_5-1
+        relative_position_id = jap_Toyotomi_navy_4-1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_navy_4-1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_force_3
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_force_4
+        relative_position_id = jap_Toyotomi_force_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_4-1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_force_3
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_army_5-1
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_army_6-1
+        relative_position_id = jap_Toyotomi_army_5-1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_force_3
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_army_5-1
+        }
+    }
+    # modern
+
+    focus = {
+        id = jap_Toyotomi_army_1-2
+        relative_position_id = jap_Toyotomi_army
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army
+        }
+        mutually_exclusive = {
+            focus = jap_Toyotomi_army_1-1
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_army_2-2
+        relative_position_id = jap_Toyotomi_army_1-2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_1-2
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_navy_1-2
+        relative_position_id = jap_Toyotomi_army_1-2
+        x = 4
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_1-2
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_army_3-2
+        relative_position_id = jap_Toyotomi_army_2-2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_2-2
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_airforce_1-1
+        relative_position_id = jap_Toyotomi_army_2-2
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_2-2
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_navy_1-2
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_navy_2-2
+        relative_position_id = jap_Toyotomi_navy_1-2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_navy_1-2
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_army_4-2
+        relative_position_id = jap_Toyotomi_army_3-2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_3-2
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_airforce_1-1
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_airforce_2-1
+        relative_position_id = jap_Toyotomi_airforce_1-1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_3-2
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_airforce_1-1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_navy_2-2
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_navy_3-2
+        relative_position_id = jap_Toyotomi_navy_2-2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_airforce_1-1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_navy_2-2
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_army_5-2
+        relative_position_id = jap_Toyotomi_army_4-2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_4-2
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_airforce_2-1
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_airforce_3-1
+        relative_position_id = jap_Toyotomi_airforce_2-1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_4-2
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_airforce_2-1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_navy_3-2
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_navy_4-2
+        relative_position_id = jap_Toyotomi_navy_3-2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_airforce_2-1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_navy_3-2
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_army_6-2
+        relative_position_id = jap_Toyotomi_army_5-2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_5-2
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_airforce_3-1
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_airforce_4-1
+        relative_position_id = jap_Toyotomi_airforce_3-1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_army_5-2
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_airforce_3-1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_navy_4-2
+        }
+    }
+
+    focus = {
+        id = jap_Toyotomi_navy_5-2
+        relative_position_id = jap_Toyotomi_navy_4-2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Toyotomi_airforce_3-1
+        }
+        prerequisite = {
+            focus = jap_Toyotomi_navy_4-2
+        }
+    }
 }

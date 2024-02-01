@@ -2014,7 +2014,7 @@ JAP_KOR_WAR = {
 		allowed = {
 			tag = JAP
 		}
-		days_mission_timeout = 90
+		days_mission_timeout = 9
 		available = {
 
 			JAP = {
@@ -2049,7 +2049,7 @@ JAP_KOR_WAR = {
 		activation = {
 			always = no
 		}
-		days_mission_timeout = 180
+		days_mission_timeout = 18
 		is_good = yes
 		available = {
 			not = {
@@ -2074,7 +2074,7 @@ JAP_KOR_WAR = {
 				JAP = {
 					country_event = {
 						id = TR_japan.59
-						days = 60
+						days = 50
 					}
 				}
 
