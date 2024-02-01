@@ -1,0 +1,66 @@
+ideas = {
+    country = {
+        TR_SER_serbian_army = {
+            picture = generic_reserve_divisions
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                conscription_factor = 0.025
+                experience_gain_army_factor = 0.25
+            }
+        }
+        TR_SER_united_serbians = {
+            picture = FIN_finnish_federation_of_trade_unions_heavy
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = -0.15
+                production_speed_buildings_factor = 0.05
+                industrial_capacity_factory = 0.075
+                industrial_capacity_dockyard = 0.015
+            }
+        }
+
+        TR_SER_muslim = {
+            picture = raj_marginalized_muslim_community_angry
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                conscription_factor = -0.1
+                stability_factor = -0.15
+                resistance_damage_to_garrison_on_our_occupied_states = 0.35
+                resistance_growth_on_our_occupied_states = 0.25
+            }
+        }
+    }
+}
