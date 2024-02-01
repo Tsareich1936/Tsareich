@@ -1,5 +1,33 @@
 on_actions = {
 	on_capitulation_immediate = {
+		effect = {#JAP-KOR war peace
+			if = {
+				limit = {
+					ROOT = {
+						tag = KOR
+					}
+					FROM = {
+						tag = JAP
+					}
+					has_global_flag = JAP_KOREA_WAR
+					not = {
+						has_global_flag = JAP_KOREA_WAR_FINISHED
+					}
+				}
+				FROM = {
+					white_peace = {
+						tag = ROOT
+						message = localization_key
+					}
+				}
+				set_global_flag = JAP_KOREA_WAR_FINISHED
+				JAP = {
+					country_event = {
+						id = TR_japan.71
+					}
+				}
+			}
+		}
 		effect = {# SRI-CRO war peace
 			if = {
 				limit = {

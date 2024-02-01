@@ -1,0 +1,126 @@
+on_actions = {
+	on_startup = {
+	effect = {
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			add_to_array = {
+				# It will automatically add the scope
+				array = global.players
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					tag = POL
+				}
+			}
+			add_to_array = {
+				array = not_poland_countries
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = USA
+					tag = CSA
+					tag = AMR
+					tag = ADR
+					tag = TXS
+					tag = DST
+				}
+			}
+			add_to_array = {
+				array = second_american_civil_war
+			}
+		}
+		# UI setup
+		for_each_scope_loop = {
+			array = global.players
+			set_variable = {
+				TR_welcome_splash_variable = 1
+			}
+			set_variable = {
+				country_intro_page_count = 2
+			}
+			set_variable = {
+				showing_parties_window = 0 
+			}
+		}
+	}
+	effect = {
+		SRI = {
+			country_event = {
+				id = TR_north_italy.1
+				days = 5
+			}
+			set_truce = {
+				target = ITA
+				days = 999999
+			}
+		}
+	}
+	effect = {
+            GER = {
+                country_event = {
+                    id = TR_germany.1
+                    days = 89
+                }
+            }
+        }
+	effect = {
+            USA = {
+                country_event = {
+                    id = TR_usa_civil_war.1
+                    days = 307
+                }
+            }
+        }
+		effect = {
+            CZE = {
+                country_event = {
+                    id = TR_czech_revolution.1
+                    days = 1095
+                }
+            }
+        }
+		effect = {
+			POL = { become_exiled_in = { target = FRA legitimacy = 10 } }
+			every_state = {
+				limit = {
+					is_core_of = POL
+				}
+				add_to_array = {
+					array = POL_core
+				}
+			}
+		}
+		effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.27
+					days = 56
+				}
+			}
+		}
+		effect = {
+			#TEX gomu concessions			
+			VIN = {
+				give_resource_rights = { receiver = FRA state = 286 }
+				give_resource_rights = { receiver = FRA state = 741 }
+				give_resource_rights = { receiver = FRA state = 671 }
+			}
+		}
+	}
+	on_daily_JAP = {
+		effect = {
+			if = {
+				limit = {
+					has_war_with_major = yes
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+}
