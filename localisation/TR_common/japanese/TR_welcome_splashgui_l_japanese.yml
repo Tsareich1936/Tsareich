@@ -9,8 +9,13 @@
   # tab1 #
   TR_welcome_splash_tab_1_header: "[ROOT.GetCountryIntroHeader]"
   TR_welcome_splash_tab_1_content: "[ROOT.GetCountryIntroContent]"
+  TR_welcome_splash_tab_1_background_icon: "[ROOT.GetCountryIntroIcon]"
   default_intro_header: "Tsasreichの歴史"
   default_intro_content: "なんか書いてください"
+  RUS_intro_header0: "揺らぐ秩序"
+  RUS_intro_content0: "$TR_MAIN_FACTION_SLAVENTENTE$の盟主ロシアによる秩序は揺らぎつつある。\n先の大戦争では革命直後の不安定なドイツを攻撃し、大英帝国と共に勝者となったが、フィンランドの独立運動の激化、獲得した中東地域での民族運動など、多くの問題に直面している。\n英雄であるツァーリ・アレクセイは反動思想を強めており、国内では弾圧された共産主義者が邪悪な計画を練っている。\n陸軍は大規模なイランへの攻撃作戦を立案し、海軍はバルト艦隊の拡大を敢行する中、政府の統率はもはや取れていない。\nバルカンとスラブの盟主としての立ち位置すら揺らぐ今、帝国は大きな方針転換を求められている。"
+  SRI_intro_header0: "分かたれたイタリア"
+  SRI_intro_header1: "社会主義との対立"
 
   # tab 4 #
   TR_CURRENT_VERSION: "0.1"

@@ -138,7 +138,7 @@ guiTypes = {
 
 			iconType = {
 				name = "TR_welcome_splash_tab_1_background_icon"
-				#spriteType = "GFX_FRA_intro"
+				# spriteType = "GFX_country_intro"
 				position = { x = 2 y = 2 }
 			}
 		}
@@ -231,6 +231,24 @@ guiTypes = {
 			format = center
 			font = "hoi_18b"
 			maxWidth = 640
+		}
+	}
+
+	containerWindowType = {
+		name = show_intro
+		orientation = UPPER_RIGHT
+		position = {
+			x = 0
+			y = 0
+		}
+		buttonType = {
+			name = show_intro_button
+			position = {
+				x = -29
+				y = 34
+			}
+			quadTextureSprite = GFX_show_intro_button
+			Orientation = "UPPER_RIGHT"
 		}
 	}
 }

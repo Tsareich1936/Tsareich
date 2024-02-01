@@ -123,6 +123,11 @@ scripted_gui = {
 				TR_welcome_splash_variable = 1
 			}
 		}
+		properties = {
+			TR_welcome_splash_tab_1_background_icon = {
+				image = [ROOT.GetCountryIntroIcon]
+			}
+		}
 	}
 	TR_welcome_splash_tab_4 = {
 		context_type = player_context
@@ -135,6 +140,39 @@ scripted_gui = {
 		visible = {
 			check_variable = {
 				TR_welcome_splash_variable = 4
+			}
+		}
+	}
+	TR_show_intro_button = {
+		context_type = player_context
+		window_name = show_intro
+		parent_window_name = topbar
+		ai_enabled = {
+			always = no
+		}
+		visible = {
+			always = yes
+		}
+		effects = {
+			show_intro_button_click = {
+				if = {
+					limit = {
+						check_variable = {
+							TR_welcome_splash_variable = 0
+						}
+					}
+					set_variable = {
+						TR_welcome_splash_variable = 1
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							TR_welcome_splash_variable = 1
+						}
+					}
+					clear_variable = TR_welcome_splash_variable
+				}
 			}
 		}
 	}
