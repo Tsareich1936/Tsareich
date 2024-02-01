@@ -1,0 +1,36 @@
+equipments = {
+
+    sword = {
+		year = 1936
+
+		is_archetype = yes
+		
+		is_buildable = no
+		type = {
+			infantry
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		maximum_speed = 1
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+
+		build_cost_ic = 10
+		resources = {
+			steel = 1
+		}
+		
+	}
+
+	sword_1 = {
+		year = 1936
+
+		archetype = sword
+		priority = 30
+	}
+
+}

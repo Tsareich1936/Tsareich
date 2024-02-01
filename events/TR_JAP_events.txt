@@ -135,6 +135,7 @@ country_event = {      # 一か年計画
 		}
 	}
 	timeout_days = 21
+	is_triggered_only = yes
 
 	option = {
 		name = TR_japan.4.a
@@ -751,7 +752,6 @@ country_event = {        # 立憲政友会の総裁を決める
 
 country_event ={                 #########  右翼政治団体が首相を襲撃！      
 	id = TR_japan.18
-	is_triggered_only = yes
 	title = TR_japan.12.t
 	desc = TR_japan.12.d
 	is_triggered_only = yes
@@ -1676,7 +1676,7 @@ country_event = { # zaibatsu problem
 	}
 }
 
-country_event = { # civil war
+country_event = { # 暴動
 	id =  TR_japan.59
 	title = TR_japan.59.t
 	desc = TR_japan.59.d
@@ -1758,8 +1758,8 @@ country_event = { #  クーデター
 		name = TR_japan.62.a
 		set_party_name = {
 			ideology = fascism
-			long_name = JAP_Innovation_Bureaucracy_long
-			name = JAP_Innovation_Bureaucracy
+			long_name = JAP_ARMY_long
+			name = JAP_ARMY
 		}
 		set_political_party = {
 			ideology = fascism
@@ -1927,7 +1927,7 @@ country_event = {
 			ideology = ROOT
 			size = 0.3
 			states = {
-				953 967 535 959 960 962 963 955 965 949 958 282 964 968 970 971 973 950 981 982 977 978 979 530
+				953 967 535 959 962 963 955 965 949 958 282 964 968 970 971 973 950 981 982 977 978 979 530
 			}
 			
 		}
@@ -1942,15 +1942,22 @@ country_event = {
 	title = TR_japan.67.t
 	desc = TR_japan.67.d
 	is_triggered_only = yes
+		
 	option = {
-		name = TR_japan.67
-		JAP = {
-			country_event = {
-				id = TR_japan.68
-				days = 30
+		name = TR_japan.67.a
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.68
+					days = 30
+				}
 			}
 		}
+
 	}
+		
+
+
 }
 
 country_event = {
@@ -2061,5 +2068,19 @@ country_event = {
 	hidden = yes
 	immediate = {
 		puppet = KOR
+	}
+}
+
+country_event = {
+	id = TR_japan.72
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		enable_units = {
+			samurai
+		}
+		enable_equipment = {
+			sword_1
+		}
 	}
 }
