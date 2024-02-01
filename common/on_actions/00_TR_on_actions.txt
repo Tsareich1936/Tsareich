@@ -73,7 +73,7 @@ on_actions = {
             USA = {
                 country_event = {
                     id = TR_usa_civil_war.1
-                    days = 307
+                    days = 1
                 }
             }
         }

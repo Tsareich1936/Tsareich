@@ -77,6 +77,10 @@ ADR = {
 	color = rgb { 234 21 21  }
 	color_ui = rgb { 234 21 21 }
 }
+AMG = {
+	color = rgb { 145 163 176  }
+	color_ui = rgb { 186 205 219 }
+}
 
 #original
 MAL_UK = {
