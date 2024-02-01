@@ -1,48 +1,34 @@
 on_actions = {
 	on_startup = {
 	effect = {#global set up
-		every_country = {
-			limit = {
-				is_ai = no
-			}
-			add_to_array = {
-				# It will automatically add the scope
-				array = global.players
-			}
-		}
-		every_country = {
-			limit = {
-				OR = {
-					tag = USA
-					tag = CSA
-					tag = AMR
-					tag = ADR
-					tag = TXS
-					tag = DST
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				add_to_array = {
+					# It will automatically add the scope
+					array = global.players
 				}
 			}
-			add_to_array = {
-				array = second_american_civil_war
+			# UI setup
+			for_each_scope_loop = {
+				array = global.players
+				set_variable = {
+					TR_welcome_splash_variable = 1
+				}
+				set_variable = {
+					country_intro_page_count = 0
+				}
+				if = { limit = { tag = RUS } set_variable = { country_intro_page_count = 0 } }
+				if = { limit = { tag = GER } set_variable = { country_intro_page_count = 0 } }
+				if = { limit = { tag = FRA } set_variable = { country_intro_page_count = 0 } }
+				if = { limit = { tag = ENG } set_variable = { country_intro_page_count = 0 } }
+				if = { limit = { tag = SRI } set_variable = { country_intro_page_count = 1 } }
+				if = { limit = { tag = JAP } set_variable = { country_intro_page_count = 0 } }
+				if = { limit = { tag = USA } set_variable = { country_intro_page_count = 0 } }
 			}
 		}
-		# UI setup
-		for_each_scope_loop = {
-			array = global.players
-			set_variable = {
-				TR_welcome_splash_variable = 1
-			}
-			set_variable = {
-				country_intro_page_count = 0
-			}
-			if = { limit = { tag = RUS } set_variable = { country_intro_page_count = 0 } }
-			if = { limit = { tag = GER } set_variable = { country_intro_page_count = 0 } }
-			if = { limit = { tag = FRA } set_variable = { country_intro_page_count = 0 } }
-			if = { limit = { tag = ENG } set_variable = { country_intro_page_count = 0 } }
-			if = { limit = { tag = SRI } set_variable = { country_intro_page_count = 1 } }
-			if = { limit = { tag = JAP } set_variable = { country_intro_page_count = 0 } }
-			if = { limit = { tag = USA } set_variable = { country_intro_page_count = 0 } }
-		}
-	}
+	
 	effect = {#SRI set up
 			SRI = {
 				country_event = {
@@ -104,6 +90,23 @@ on_actions = {
 				give_resource_rights = { receiver = FRA state = 286 }
 				give_resource_rights = { receiver = FRA state = 741 }
 				give_resource_rights = { receiver = FRA state = 671 }
+			}
+		}
+	effect = {#USA set up
+			every_country = {
+				limit = {
+					OR = {
+						tag = USA
+						tag = CSA
+						tag = AMR
+						tag = ADR
+						tag = TXS
+						tag = DST
+					}
+				}
+				add_to_array = {
+					array = second_american_civil_war
+				}
 			}
 		}
 	}
