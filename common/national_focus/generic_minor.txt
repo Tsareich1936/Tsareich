@@ -25,10 +25,7 @@ focus_tree = {
 			add = 22
 			tag = ROM
 		}
-		modifier = {
-			add = 22
-			tag = SER
-		}
+
 		modifier = {
 			add = 22
 			tag = GRE
