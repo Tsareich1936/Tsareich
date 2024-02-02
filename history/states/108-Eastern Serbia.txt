@@ -13,7 +13,7 @@ state={
 		owner = SER
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 8
+			industrial_complex = 2
 
 		}
 		add_core_of = YUG
@@ -26,6 +26,6 @@ state={
 	}
 	manpower=707000
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category=large_city
 	local_supplies=5.000
 }

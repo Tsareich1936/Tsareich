@@ -9,10 +9,10 @@ country_event = {
 	option = {
 		name = TR_debug.1.a
 		create_wargoal = {
-			target = MEX
+			target = HOL
 			type = independence_wargoal
 		}
-		load_oob = USA_1936
+		# load_oob = USA_1936
 	}
 }
 country_event = {
@@ -185,6 +185,28 @@ country_event = {
 					}
 				}
 			}
+		}
+	}
+}
+country_event = {
+	id = TR_debug.3
+	title = TR_debug.3.t
+	desc = TR_debug.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_debug.3.a
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = TR_debug_war
+				}
+			}
+			set_global_flag = TR_debug_war
+		}
+		else = {
+			clr_global_flag = TR_debug_war
 		}
 	}
 }

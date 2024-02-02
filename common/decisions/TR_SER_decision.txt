@@ -1,0 +1,187 @@
+SER_prepare_for_the_war = {
+	SER_war_mission = {
+		activation = {
+			has_country_flag = SER_war_timer_start
+		}
+		visible = {
+			has_country_flag = SER_war_timer_start
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		priority = 99
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = SER_war_timer_start
+				}
+			}
+		}
+		icon = GFX_decision_generic_prepare_civil_war
+		is_good = yes
+		days_mission_timeout = 730
+		selectable_mission = no
+		timeout_effect = {
+			country_event = TR_Serbia.1
+		}
+	}
+}
+SER_core_d = {
+	SER_kill_musrim = {
+		state_target = yes
+        target_trigger = {
+            FROM = {
+				is_core_of = ALB
+				NOT = {
+					is_core_of = SER
+				}
+				is_controlled_by = SER
+			}
+        }
+		icon = GFX_decision_generic_civil_support
+        priority = 1
+        #days_remove = 90
+		fire_only_once = yes
+		ai_will_do = {
+			base = 2000
+		}
+		cost = 100
+		visible = {
+			has_country_flag = SER_is_kill_musrim_decision
+		}
+		complete_effect = {
+			add_stability = -0.025
+			add_war_support = -0.025
+		}		
+		remove_effect = {
+			FROM = {
+				add_resistance = -15
+				add_compliance = 30
+				add_manpower = -500
+			}
+			if = {
+				limit = {
+					has_idea = TR_SER_muslim
+				}
+				swap_ideas = {
+					remove_idea = TR_SER_muslim
+					add_idea = TR_SER_muslim_1
+				}
+			}
+			else = {
+				remove_ideas = TR_SER_muslim_1
+			}
+		}
+	}
+
+	SER_ALB_add_police = {
+		state_target = yes
+        target_trigger = {
+            FROM = {
+				is_core_of = ALB
+				NOT = {
+					is_core_of = SER
+				}
+				is_controlled_by = SER
+			}
+        }
+		icon = GFX_decision_oppression
+        priority = 5
+		cost = 100
+		fire_only_once = yes
+        #days_remove = 120
+		ai_will_do = {
+			base = 2000
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = SER_is_add_police_decision
+		}
+		complete_effect = {
+			add_manpower = -1500
+			
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}	
+		remove_effect = {
+			FROM = {
+				add_compliance = 30
+			}
+		}
+	}
+
+	SER_start_voting = {
+		state_target = yes
+        target_trigger = {
+            FROM = {
+				is_core_of = ALB
+				NOT = {
+					is_core_of = SER
+				}
+				is_controlled_by = SER
+				
+			}
+        }
+		icon = GFX_decision_ger_mefo_bills
+        priority = 10
+		cost = 100
+		fire_only_once = yes
+        #days_remove = 120
+		ai_will_do = {
+			base = 2000
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = SER_is_start_vote
+		}
+		complete_effect = {
+			
+		}
+		modifier = {
+			consumer_goods_factor = 0.15 
+		}	
+		remove_effect = {
+			FROM = {
+				add_compliance = 30
+			}
+		}
+	}
+
+	SER_become_core = {
+		state_target = yes
+        target_trigger = {
+            FROM = {
+				is_core_of = ALB
+				NOT = {
+					is_core_of = SER
+				}
+				is_controlled_by = SER
+			}
+        }
+		icon = GFX_decision_eng_trade_unions_support
+        priority = 15
+		fire_only_once = yes
+		ai_will_do = {
+			base = 2000
+		}
+		available = {
+			compliance > 95
+		}
+		visible = {
+		}
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			FROM = {
+				add_core_of = SER
+			}
+		}
+	}
+}

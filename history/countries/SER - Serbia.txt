@@ -2,19 +2,17 @@
 
 oob = "YUG_1936"
 
-
+set_country_flag = SER_war_timer_start
 # Starting tech
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		#set_naval_oob = "SOV_1936_naval_mtg"
-		set_naval_oob = "RUS_1936_naval_mtg"
+		
 	else = {
-		#set_naval_oob = "SOV_1936_naval_legacy"
+		
 	}
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "SOV_1936_air_bba"
 		set_technology = {
 			iw_small_airframe = 1
 			aa_lmg = 1
@@ -30,7 +28,6 @@ if = {
 			air_torpedoe_1 = 1
 		}
 	else = {
-		set_air_oob = "SOV_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
 			fighter1 = 1
@@ -232,13 +229,13 @@ add_ideas = {
 
 934 = {
 	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 35
+	set_compliance = 0
+	set_resistance = 70
 	set_garrison_strength = 1.0
 }
 44 = {
 	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 35
+	set_compliance = 0
+	set_resistance = 70
 	set_garrison_strength = 1.0
 }

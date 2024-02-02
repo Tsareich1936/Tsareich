@@ -1,0 +1,656 @@
+focus_tree = {
+	id = serbian_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 200
+			tag = SER
+		}
+	}
+	continuous_focus_position = {
+		x = 3500
+		y = 2000
+	}
+	default = no
+	focus = {
+		id = TR_SER_albania_christ
+		icon = GFX_focus_ITA_albanian_fascist_militia
+		cost = 10.00
+		x = 8
+		y = 0
+		completion_reward = {
+			add_stability = 0.1
+			934 = {
+				add_compliance = 15
+			}
+			44 = {
+				add_compliance = 15
+			}
+
+		}
+	}
+	focus = {
+		id = TR_SER_won_balkan
+		icon = GFX_focus_hol_united_netherlands
+		cost = 1.00
+		x = 25
+		y = 0
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = TR_SER_lose_balkan
+		icon = GFX_focus_CZE_german_puppet
+		cost = 1.00
+		x = 40
+		y = 0
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = TR_SER_arms_factory_2
+		icon = GFX_focus_generic_combined_arms
+		cost = 4.00
+		prerequisite = {
+			focus = TR_SER_albania_christ
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TR_SER_arms_factory_3
+		icon = GFX_focus_generic_coffee
+		cost = 4.00
+		prerequisite = {
+			focus = TR_SER_arms_factory_2
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TR_SER_arms_factory_1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 4.00
+		prerequisite = {
+			focus = TR_SER_albania_christ
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TR_SER_arms_factory_4
+		icon = GFX_focus_generic_industry_3
+		cost = 4.00
+		prerequisite = {
+			focus = TR_SER_arms_factory_1
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TR_SER_make_new_navies
+		icon = GFX_focus_SWE_coastal_support
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_arms_factory_4
+		}
+		prerequisite = {
+			focus = TR_SER_arms_factory_3
+		}
+		x = 8
+		y = 3
+		completion_reward = {
+			add_offsite_building = { type = dockyard level = 2 }
+			navy_experience = 50
+		}
+	}
+	focus = {
+		id = TR_SER_kings_country
+		icon = GFX_focus_hun_elect_a_king
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_make_new_navies
+		}
+		mutually_exclusive = {
+			focus = TR_SER_patriot_country
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = TR_SER_kings_country_idea
+		}
+	}
+	focus = {
+		id = TR_SER_patriot_country
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_make_new_navies
+		}
+		mutually_exclusive = {
+			focus = TR_SER_kings_country
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = TR_SER_patriot_country_idea
+		}
+	}
+	focus = {
+		id = TR_SER_national_army
+		icon = GFX_focus_generic_women_in_military
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_patriot_country
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = TR_SER_offensive_op
+		icon = GFX_focus_generic_tankette
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_national_army
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = TR_SER_walk_to_war
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_national_army
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = TR_SER_albania_1
+		icon = GFX_focus_generic_befriend_albania
+		cost = 5.00
+		prerequisite = {
+			focus = TR_SER_patriot_country
+			focus = TR_SER_kings_country
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+			unlock_decision_tooltip = SER_kill_musrim
+			hidden_effect = {
+				set_country_flag = SER_is_kill_musrim_decision
+			}
+		}
+	}
+	focus = {
+		id = TR_SER_albania_2
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 5.00
+		prerequisite = {
+			focus = TR_SER_albania_1
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+			unlock_decision_tooltip = SER_start_voting
+			hidden_effect = {
+				set_country_flag = SER_is_start_vote
+			}
+		}
+	}
+	focus = {
+		id = TR_SER_albania_3
+		icon = GFX_focus_SWE_state_paid_vacation
+		cost = 5.00
+		prerequisite = {
+			focus = TR_SER_albania_1
+		}
+		x = 9
+		y = 6
+		completion_reward = {
+			unlock_decision_tooltip = SER_ALB_add_police
+			hidden_effect = {
+				set_country_flag = SER_is_add_police_decision
+			}
+		}
+	}
+	focus = {
+		id = TR_SER_serbian_kingsunion
+		icon = GFX_focus_NORDIC_mon_army
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_albania_2
+		}
+		prerequisite = {
+			focus = TR_SER_albania_3
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = TR_SER_patriot_army
+		icon = GFX_focus_YUG_ikarus
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_kings_country
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = TR_SER_walk_to_future
+		icon = GFX_focus_POL_support_global_falangism
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_patriot_army
+		}
+		x = 3
+		y = 7
+
+	}
+	focus = {
+		id = TR_SER_defensive_op
+		icon = GFX_focus_SWE_hedgehog_defense
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_patriot_army
+		}
+		x = 5
+		y = 8
+
+	}
+	focus = {
+		id = TR_SER_prepare_war
+		icon = GFX_focus_generic_total_war
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_defensive_op
+			focus = TR_SER_offensive_op
+		}
+		x = 8
+		y = 9
+
+	}
+	focus = {
+		id = TR_SER_op_sophia
+		icon = GFX_focus_BUL_consolidate_the_third_bulgarian_state
+		cost = 5.00
+		prerequisite = {
+			focus = TR_SER_prepare_war
+		}
+		x = 9
+		y = 10
+
+	}
+	focus = {
+		id = TR_SER_op_budapest
+		icon = GFX_focus_ICE_thungur_hnifur
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_prepare_war
+		}
+		x = 7
+		y = 10
+
+	}
+	focus = {
+		id = TR_SER_national_research
+		icon = GFX_focus_research2
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_op_budapest
+		}
+		prerequisite = {
+			focus = TR_SER_op_sophia
+		}
+		x = 8
+		y = 11
+
+	}
+	focus = {
+		id = TR_SER_top_of_balkan
+		icon = GFX_focus_BUL_free_balkan_states
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_defensive_op
+			focus = TR_SER_national_research
+		}
+		prerequisite = {
+			focus = TR_SER_defensive_op
+		}
+		x = 5
+		y = 12
+
+	}
+	focus = {
+		id = TR_SER_great_serbia
+		icon = GFX_focus_YUG_dissolve_serbia
+		cost = 10.00
+		prerequisite = {
+			focus = TR_SER_offensive_op
+			focus = TR_SER_national_research
+		}
+		prerequisite = {
+			focus = TR_SER_offensive_op
+		}
+		x = 11
+		y = 12
+
+	}
+	focus = {
+		id = TR_SER_balkan_war
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 3.00
+		prerequisite = {
+			focus = TR_SER_great_serbia
+			focus = TR_SER_top_of_balkan
+		}
+		x = 8
+		y = 13
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = TR_SER_war_factory_civil_1
+		icon = GFX_goal_generic_consumer_goods
+		cost = 3.00
+		prerequisite = {
+			focus = TR_SER_balkan_war
+		}
+		x = 6
+		y = 14
+
+	}
+	focus = {
+		id = TR_SER_war_factory_arm_1
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+		cost = 3.00
+		prerequisite = {
+			focus = TR_SER_balkan_war
+		}
+		x = 10
+		y = 14
+
+	}
+	focus = {
+		id = TR_SER_war_factory_civil_2
+		icon = GFX_goal_generic_fortify_city
+		cost = 3.00
+		prerequisite = {
+			focus = TR_SER_war_factory_civil_1
+		}
+		x = 6
+		y = 15
+
+	}
+	focus = {
+		id = TR_SER_war_factory_arm_2
+		icon = GFX_focus_SWE_let_fly_all_guns
+		cost = 3.00
+		prerequisite = {
+			focus = TR_SER_war_factory_arm_1
+		}
+		x = 10
+		y = 15
+
+	}
+}
