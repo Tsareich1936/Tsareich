@@ -58,9 +58,72 @@ ideas = {
             modifier = {
                 conscription_factor = -0.1
                 stability_factor = -0.15
-                resistance_damage_to_garrison_on_our_occupied_states = 0.35
-                resistance_growth_on_our_occupied_states = 0.25
+
             }
         }
+        TR_SER_muslim_1 = {
+            picture = raj_marginalized_muslim_community_angry
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                conscription_factor = -0.05
+                stability_factor = -0.075
+
+            }
+        }
+        
+        TR_SER_kings_country_idea = {
+            picture = bra_monarchist_uprising
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                neutrality_drift = 0.04
+                political_power_factor = 0.05
+                stability_factor = 0.25
+            }
+        }
+
+        TR_SER_patriot_country_idea = {
+            picture = NORDIC_army_communist
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                neutrality_drift = 0.04
+                political_power_factor = 0.05
+                stability_factor = 0.05
+                weekly_casualties_war_support = 0.003
+            }
+        }
+
     }
 }

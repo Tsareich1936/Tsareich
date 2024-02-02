@@ -18,7 +18,16 @@ focus_tree = {
 		cost = 10.00
 		x = 8
 		y = 0
+		completion_reward = {
+			add_stability = 0.1
+			934 = {
+				add_compliance = 15
+			}
+			44 = {
+				add_compliance = 15
+			}
 
+		}
 	}
 	focus = {
 		id = TR_SER_won_balkan
@@ -26,7 +35,9 @@ focus_tree = {
 		cost = 1.00
 		x = 25
 		y = 0
-
+		available = {
+			always = no
+		}
 	}
 	focus = {
 		id = TR_SER_lose_balkan
@@ -34,7 +45,9 @@ focus_tree = {
 		cost = 1.00
 		x = 40
 		y = 0
-
+		available = {
+			always = no
+		}
 	}
 	focus = {
 		id = TR_SER_arms_factory_2
@@ -45,7 +58,68 @@ focus_tree = {
 		}
 		x = 7
 		y = 1
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = TR_SER_arms_factory_3
@@ -56,7 +130,68 @@ focus_tree = {
 		}
 		x = 7
 		y = 2
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = TR_SER_arms_factory_1
@@ -67,7 +202,68 @@ focus_tree = {
 		}
 		x = 9
 		y = 1
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = TR_SER_arms_factory_4
@@ -78,7 +274,68 @@ focus_tree = {
 		}
 		x = 9
 		y = 2
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = TR_SER_make_new_navies
@@ -92,7 +349,10 @@ focus_tree = {
 		}
 		x = 8
 		y = 3
-
+		completion_reward = {
+			add_offsite_building = { type = dockyard level = 2 }
+			navy_experience = 50
+		}
 	}
 	focus = {
 		id = TR_SER_kings_country
@@ -106,7 +366,10 @@ focus_tree = {
 		}
 		x = 5
 		y = 4
-
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = TR_SER_kings_country_idea
+		}
 	}
 	focus = {
 		id = TR_SER_patriot_country
@@ -120,7 +383,10 @@ focus_tree = {
 		}
 		x = 11
 		y = 4
-
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = TR_SER_patriot_country_idea
+		}
 	}
 	focus = {
 		id = TR_SER_national_army
@@ -165,7 +431,12 @@ focus_tree = {
 		}
 		x = 8
 		y = 5
-
+		completion_reward = {
+			unlock_decision_tooltip = SER_kill_musrim
+			hidden_effect = {
+				set_country_flag = SER_is_kill_musrim_decision
+			}
+		}
 	}
 	focus = {
 		id = TR_SER_albania_2
@@ -176,7 +447,12 @@ focus_tree = {
 		}
 		x = 7
 		y = 6
-
+		completion_reward = {
+			unlock_decision_tooltip = SER_start_voting
+			hidden_effect = {
+				set_country_flag = SER_is_start_vote
+			}
+		}
 	}
 	focus = {
 		id = TR_SER_albania_3
@@ -187,7 +463,12 @@ focus_tree = {
 		}
 		x = 9
 		y = 6
-
+		completion_reward = {
+			unlock_decision_tooltip = SER_ALB_add_police
+			hidden_effect = {
+				set_country_flag = SER_is_add_police_decision
+			}
+		}
 	}
 	focus = {
 		id = TR_SER_serbian_kingsunion
@@ -324,7 +605,9 @@ focus_tree = {
 		}
 		x = 8
 		y = 13
-
+		available = {
+			always = no
+		}
 	}
 	focus = {
 		id = TR_SER_war_factory_civil_1

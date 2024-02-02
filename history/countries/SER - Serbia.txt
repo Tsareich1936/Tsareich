@@ -2,7 +2,7 @@
 
 oob = "YUG_1936"
 
-
+set_country_flag = SER_war_timer_start
 # Starting tech
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -229,13 +229,13 @@ add_ideas = {
 
 934 = {
 	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 35
+	set_compliance = 0
+	set_resistance = 70
 	set_garrison_strength = 1.0
 }
 44 = {
 	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 35
+	set_compliance = 0
+	set_resistance = 70
 	set_garrison_strength = 1.0
 }

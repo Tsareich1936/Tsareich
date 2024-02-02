@@ -1,0 +1,24 @@
+SER_prepare_for_the_war = {
+    allowed = {
+        tag = SER
+    }
+    icon = GFX_decision_category_border_war
+    picture = GFX_decision_cat_picture_NOR_fascist_war
+    priority = {
+        base = 999
+    }
+    visible_when_empty = yes
+
+}
+SER_core_d = {
+    allowed = {
+        tag = SER
+    }
+    icon = GFX_decision_category_gre_investment_decisions
+    picture = GFX_decision_cat_picture_soviet_national_academy_of_sciences
+    priority = {
+        base = 999
+    }
+    visible_when_empty = no
+    
+}
