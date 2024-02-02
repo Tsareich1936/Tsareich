@@ -72,7 +72,7 @@ focus_tree = {
 	focus = {
 		id = TR_SER_arms_factory_4
 		icon = GFX_focus_generic_industry_3
-		cost = 10.00
+		cost = 4.00
 		prerequisite = {
 			focus = TR_SER_arms_factory_1
 		}
