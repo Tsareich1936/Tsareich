@@ -1671,7 +1671,7 @@ JAP_WAR_PLAN_COOP = {
 			modifier = {
 				add = -45
 				has_country_flag = {
-					flag = TR_japan.FGE
+					flag = TR_japan.FRA
 					days < 365
 				}
 			}
@@ -1705,7 +1705,7 @@ JAP_WAR_PLAN_COOP = {
 			modifier = {
 				add = -45
 				has_country_flag = {
-					flag = TR_japan.FGE
+					flag = TR_japan.FRA
 					days < 365
 				}
 			}
@@ -1726,7 +1726,7 @@ JAP_WAR_PLAN_COOP = {
 			}
 		}
 	}
-	JAP_FGE = {
+	JAP_FRA = {
 		allowed = {
 			always = no
 		}
@@ -1757,7 +1757,7 @@ JAP_WAR_PLAN_COOP = {
 			}
 		}
 		complete_effect = {
-			FGE = {
+			FRA = {
 				country_event = {
 					id = TR_japan.46
 					days = 1
@@ -1790,7 +1790,7 @@ JAP_WAR_PLAN_COOP = {
 			modifier = {
 				add = -5
 				has_country_flag = {
-					flag = TR_japan.FGE
+					flag = TR_japan.FRA
 					days < 365
 				}
 			}
@@ -1873,7 +1873,7 @@ JAP_WAR_PLAN_CREATE_2 = {
 			modifier = {
 				add = -45
 				has_country_flag = {
-					flag = TR_japan.FGE
+					flag = TR_japan.FRA
 					days < 365
 				}
 			}
@@ -1907,7 +1907,7 @@ JAP_WAR_PLAN_CREATE_2 = {
 			modifier = {
 				add = -45
 				has_country_flag = {
-					flag = TR_japan.FGE
+					flag = TR_japan.FRA
 					days < 365
 				}
 			}
@@ -1928,7 +1928,7 @@ JAP_WAR_PLAN_CREATE_2 = {
 			}
 		}
 	}
-	JAP_FGE.1 = {
+	JAP_FRA.1 = {
 		allowed = {
 			always = no
 		}
@@ -1959,7 +1959,7 @@ JAP_WAR_PLAN_CREATE_2 = {
 			}
 		}
 		complete_effect = {
-			FGE = {
+			FRA = {
 				country_event = {
 					id = TR_japan.55
 					days = 1

@@ -102,13 +102,6 @@ country_event = {  ############Toyotomi
 		ai_chance = { factor = 99 }
 	}
 
-	option = {
-		name = TR_japan.2.b
-		add_political_power = -100
-		ai_chance = { factor = 1 }
-		set_country_flag = TR.Japan.Toyotomi
-	}
-
 }
 
 country_event = {               # 皇室中心主義
@@ -697,6 +690,7 @@ country_event = {          # 公害問題
 	title = TR_japan.145.t
 	desc = TR_japan.15.d
 	fire_only_once = yes
+	is_triggered_only = yes
 	trigger = {
 		tag = JAP
 		JAP = {
@@ -1347,7 +1341,7 @@ country_event = {    # 米国との対決
 	}
 }
 
-country_event = {   # against FGE
+country_event = {   # against FRA
 	id = TR_japan.46
 	title = TR_japan.46.t
 	desc = TR_japan.46.d
@@ -1372,7 +1366,7 @@ country_event = {   # against FGE
 		}
 		hidden_effect = {
 			JAP = {
-				set_country_flag = TR_japan.FGE
+				set_country_flag = TR_japan.FRA
 			}
 		}
 		ai_chance = {
@@ -1592,7 +1586,7 @@ country_event = {  # 米国との対決
 	}
 }
 
-country_event = { # against FGE
+country_event = { # against FRA
 	id = TR_japan.55
 	title = TR_japan.55.t
 	desc = TR_japan.55.d
@@ -1616,7 +1610,7 @@ country_event = { # against FGE
 		}
 		hidden_effect = {
 			JAP = {
-				set_country_flag = TR_japan.FGE
+				set_country_flag = TR_japan.FRA
 			}
 		}
 		ai_chance = {
@@ -2068,19 +2062,5 @@ country_event = {
 	hidden = yes
 	immediate = {
 		puppet = KOR
-	}
-}
-
-country_event = {
-	id = TR_japan.72
-	is_triggered_only = yes
-	hidden = yes
-	immediate = {
-		enable_units = {
-			samurai
-		}
-		enable_equipment = {
-			sword_1
-		}
 	}
 }

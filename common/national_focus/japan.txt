@@ -3014,6 +3014,7 @@ focus_tree = {
         relative_position_id = jap_Toyotomi_army
         x = -1
         y = 1
+        cost = 1
         mutually_exclusive = {
             focus = jap_Toyotomi_army_1-2
         }
@@ -3021,8 +3022,11 @@ focus_tree = {
             focus = jap_Toyotomi_army
         }
         completion_reward = {
-            country_event = {
-                id = TR_japan.72
+            set_technology = {
+                sword = 1
+            }
+            set_technology = {
+                samurai_infantry = 1
             }
         }
     }
