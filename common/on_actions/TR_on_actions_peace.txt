@@ -1,4 +1,41 @@
 on_actions = {
+	on_capitulation_immediate = {#debug
+		effect = {#debug
+			if = {
+				limit = {
+					has_global_flag = TR_debug_war
+					# ROOT = {
+					# 	tag = HOL
+					# }
+					# FROM = {
+					# 	tag = GER
+					# }
+				}
+				ROOT = {
+					white_peace = {
+						tag = FROM
+						message = localization_key
+					}
+					every_owned_state = {
+						every_country = {
+							limit = {
+								has_war_with = ROOT
+								PREV = {
+									is_controlled_by = PREV
+								}
+							}
+							transfer_state = PREV
+						}
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+					}
+				}
+			}
+		}
+	}
 	on_capitulation_immediate = {
 		effect = {#JAP-KOR war peace
 			if = {
