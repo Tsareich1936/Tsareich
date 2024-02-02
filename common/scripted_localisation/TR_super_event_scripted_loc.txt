@@ -1,6 +1,6 @@
 defined_text = {
 	name = GetSuperEventTiltle
-	text = {
+	text = {#One Italy, One Nation
 		trigger = {
 			check_variable = {
 				TR_super_event_variable = 1
@@ -8,76 +8,7 @@ defined_text = {
 		}
 		localization_key = "SE_one_Italy_Title"
 	}
-	text = {
-		trigger = {
-			check_variable = {
-				TR_super_event_variable = 0
-			}
-		}
-		localization_key = "SE_Error_Title"
-	}
-}
-
-defined_text = {
-	name = GetSuperEventDesc
-	text = {
-		trigger = {
-			check_variable = {
-				TR_super_event_variable = 1
-			}
-		}
-		localization_key = "SE_one_Italy_Desc"
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				TR_super_event_variable = 0
-			}
-		}
-		localization_key = "SE_Error_Desc"
-	}
-}
-
-defined_text = {
-	name = GetSuperEventPicture
-	text = {
-		trigger = {
-			check_variable = {
-				TR_super_event_variable = 1
-			}
-		}
-		localization_key = "GFX_SE_one_Itary_Picture"
-	}
-	text = {
-		localization_key = "GFX_SE_Error_Picture"
-	}
-}
-
-defined_text = {
-	name = GetSuperEventButton
-	text = {
-		trigger = {
-			check_variable = {
-				TR_super_event_variable = 1
-			}
-		}
-		localization_key = SE_one_Italy_Button
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				TR_super_event_variable = 0
-			}
-		}
-		localization_key = SE_Error_Button
-	}
-}
-
-# American Civil War
-
-defined_text = {
-	name = GetSuperEventTiltle
-	text = {
+	text = {# American Civil War
 		trigger = {
 			check_variable = {
 				TR_super_event_variable = 2
@@ -85,7 +16,7 @@ defined_text = {
 		}
 		localization_key = "SE_American_Civil_War_Title"
 	}
-	text = {
+	text = {#Error Event
 		trigger = {
 			check_variable = {
 				TR_super_event_variable = 0
@@ -97,7 +28,15 @@ defined_text = {
 
 defined_text = {
 	name = GetSuperEventDesc
-	text = {
+	text = {#One Italy, One Nation
+		trigger = {
+			check_variable = {
+				TR_super_event_variable = 1
+			}
+		}
+		localization_key = "SE_one_Italy_Desc"
+	}
+	text = {# American Civil War
 		trigger = {
 			check_variable = {
 				TR_super_event_variable = 2
@@ -105,7 +44,7 @@ defined_text = {
 		}
 		localization_key = "SE_American_Civil_War_Desc"
 	}
-	text = {
+	text = {#Error Event
 		trigger = {
 			check_variable = {
 				TR_super_event_variable = 0
@@ -117,7 +56,15 @@ defined_text = {
 
 defined_text = {
 	name = GetSuperEventPicture
-	text = {
+	text = {#One Italy, One Nation
+		trigger = {
+			check_variable = {
+				TR_super_event_variable = 1
+			}
+		}
+		localization_key = "GFX_SE_one_Itary_Picture"
+	}
+	text = {# American Civil War
 		trigger = {
 			check_variable = {
 				TR_super_event_variable = 2
@@ -125,14 +72,22 @@ defined_text = {
 		}
 		localization_key = "GFX_SE_American_Civil_War_Picture"
 	}
-	text = {
+	text = {#Error Event
 		localization_key = "GFX_SE_Error_Picture"
 	}
 }
 
 defined_text = {
 	name = GetSuperEventButton
-	text = {
+	text = {#One Italy, One Nation
+		trigger = {
+			check_variable = {
+				TR_super_event_variable = 1
+			}
+		}
+		localization_key = SE_one_Italy_Button
+	}
+	text = {# American Civil War
 		trigger = {
 			check_variable = {
 				TR_super_event_variable = 2
@@ -140,12 +95,13 @@ defined_text = {
 		}
 		localization_key = SE_American_Civil_War_Button
 	}
-	text = {
+	text = {#Error Event
 		trigger = {
 			check_variable = {
 				TR_super_event_variable = 0
 			}
 		}
+		
 		localization_key = SE_Error_Button
 	}
 }
