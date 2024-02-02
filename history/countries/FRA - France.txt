@@ -156,11 +156,17 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	anarchism = 3
-	syndicalism = 12
-	communism = 30
-	socialism = 35
-	socialdemocratic = 20
+	anarchism = 5
+	syndicalism = 16
+	communism = 18
+	socialism = 11
+	fascism = 15
+	#民主
+	socialdemocratic = 18
+	democratic = 9
+	#その他
+	neutrality = 6
+	theocracy = 2
 }
 puppet = VIN
 create_faction = International

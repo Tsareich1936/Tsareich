@@ -1003,13 +1003,14 @@ focus_tree = {
 		x = 13
 		y = 12
 		completion_reward = {
-			
+			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = FRA_hukusi_imin1
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi
 		}
@@ -1019,64 +1020,78 @@ focus_tree = {
 		x = 12
 		y = 13
 		completion_reward = {
-			
+            add_ideas = TR_FRA_imin
 		}
 	}
 	focus = {
 		id = FRA_hukusi_imin2
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_imin1
 		}
 		x = 12
 		y = 14
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = TR_FRA_syousika_mondai
+				add_idea = TR_FRA_syousika_mondai_1i
+			}
 		}
 	}
 	focus = {
 		id = FRA_hukusi_imin3
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_imin2
 		}
 		x = 12
 		y = 15
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = TR_FRA_syousika_mondai_1i
+				add_idea = TR_FRA_syousika_mondai_2i
+			}
 		}
 	}
 	focus = {
 		id = FRA_hukusi_imin4
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_imin1
 		}
 		x = 10
 		y = 14
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TR_FRA_imin
+				add_idea = TR_FRA_imin1
+			}
+		}
 	}
 	focus = {
 		id = FRA_hukusi_imin5
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_imin4
 		}
 		x = 10
 		y = 15
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = TR_FRA_imin1
+				add_idea = TR_FRA_imin2
+			}
 		}
 	}
 
 	focus = {
 		id = FRA_hukusi_syousika1
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi
 		}
@@ -1086,66 +1101,78 @@ focus_tree = {
 		x = 14
 		y = 13
 		completion_reward = {
-			
+			add_ideas = TR_FRA_syousika
 		}
 	}
 	focus = {
 		id = FRA_hukusi_syousika2
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_syousika1
 		}
 		x = 14
 		y = 14
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = TR_FRA_syousika_mondai
+				add_idea = TR_FRA_syousika_mondai_1k
+			}
 		}
 	}
 	focus = {
 		id = FRA_hukusi_syousika3
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_syousika2
 		}
 		x = 14
 		y = 15
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = TR_FRA_syousika_mondai_1k
+				add_idea = TR_FRA_syousika_mondai_2k
+			}
 		}
 	}
 	focus = {
 		id = FRA_hukusi_syousika4
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_syousika1
 		}
 		x = 16
 		y = 14
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = TR_FRA_syousika
+				add_idea = TR_FRA_syousika1
+			}
 		}
 	}
 	focus = {
 		id = FRA_hukusi_syousika5
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_syousika4
 		}
 		x = 16
 		y = 15
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = TR_FRA_syousika1
+				add_idea = TR_FRA_syousika2
+			}
 		}
 	}
 
 	focus = {
 		id = FRA_hukusi2
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_imin3
 			focus = FRA_hukusi_syousika3
@@ -1153,13 +1180,13 @@ focus_tree = {
 		x = 13
 		y = 16
 		completion_reward = {
-			
+			add_stability = 0.2
 		}
 	}
 	focus = {
 		id = FRA_hukusi3
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi2
 		}
@@ -1172,48 +1199,77 @@ focus_tree = {
 		x = 10
 		y = 17
 		completion_reward = {
-			
+			add_ideas = TR_FRA_work_eiyuu
+		}
+	}
+
+	focus = {
+		id = FRA_hukusi4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_hukusi3
+		}
+		x = 10
+		y = 18
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TR_FRA_work_eiyuu
+				add_idea = TR_FRA_work_eiyuu1
+			}
 		}
 	}
 
 	focus = {
 		id = FRA_hukusi_jyosei1
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi
 		}
 		x = 18
 		y = 13
 		completion_reward = {
-			
+			add_stability = -0.05
+			swap_ideas = {
+				remove_idea = TR_FRA_kanzenkoyou
+				add_idea = TR_FRA_kanzenkoyou1
+			}
 		}
 
 	}
 	focus = {
 		id = FRA_hukusi_jyosei2
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_jyosei1
 		}
 		x = 18
 		y = 14
 		completion_reward = {
-			
+			add_stability = -0.05
+			swap_ideas = {
+				remove_idea = TR_FRA_kanzenkoyou1
+				add_idea = TR_FRA_kanzenkoyou2
+			}
 		}
 	}
 	focus = {
 		id = FRA_hukusi_jyosei3
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_jyosei2
 		}
 		x = 18
 		y = 16
 		completion_reward = {
-			
+			add_stability = -0.05
+			swap_ideas = {
+				remove_idea = TR_FRA_kanzenkoyou2
+				add_idea = TR_FRA_kanzenkoyou3
+			}
 		}
 
 	}
@@ -1588,17 +1644,7 @@ focus_tree = {
 	}
 
 
-	focus = {
-		id = FRA_hukusi4
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = FRA_hukusi3
-		}
-		x = 10
-		y = 18
 
-	}
 
 
 	focus = {
