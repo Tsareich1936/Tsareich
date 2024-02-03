@@ -1827,7 +1827,10 @@ country_event = {   #  election score
 			picture = GFX_PORTRAIT_Nobusuke_Kishi
 			ideology = fascism_ideology
 		}
-		load_focus_tree = TR_japan_bureaucracy
+		load_focus_tree = {
+			tree = TR_japan_bureaucracy
+			keep_completed = yes
+		}
 	}
 	option = { # ルクセンブルク主義
 		name = TR_japan.63.b
@@ -2024,7 +2027,7 @@ country_event = {
 			set_party_name = {
 				ideology = theocracy
 				long_name = JAP_Yamataikoku_long
-				name = JAP_Tamataikoku
+				name = JAP_Yamataikoku
 			}
 			set_political_party = {
 				ideology = theocracy
