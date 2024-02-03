@@ -1856,6 +1856,9 @@ country_event = {   #  election score
 			picture = GFX_Portrait_Sanzo_Nosaka
 			ideology = luxemburgism
 		}
+		load_focus_tree = {
+			tree = jaoan_Luxembourgism
+		}
 	}
 }
 
