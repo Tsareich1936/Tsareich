@@ -917,18 +917,18 @@ FJN = {
 	color = rgb { 204  178  14 }
 	color_ui = rgb { 204  178  14 }
 }
-CSA = {
-	color = rgb { 16 69 122  }
-	color_ui = rgb { 16 69 122 }
-}
-ARP = {
-	color = rgb { 21 202 234  }
-	color_ui = rgb { 21 202 234 }
-}
-ADR = {
-	color = rgb { 234 21 21  }
-	color_ui = rgb { 234 21 21 }
-}
+# CSA = {
+# 	color = rgb { 16 69 122  }
+# 	color_ui = rgb { 16 69 122 }
+# }
+# ARP = {
+# 	color = rgb { 21 202 234  }
+# 	color_ui = rgb { 21 202 234 }
+# }
+# ADR = {
+# 	color = rgb { 234 21 21  }
+# 	color_ui = rgb { 234 21 21 }
+# }
 TXS = {
 	color = rgb { 20 133 18  }
 	color_ui = rgb {  20 133 18 }

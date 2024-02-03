@@ -1091,6 +1091,9 @@ focus_tree = {
 				id = TR_ENG_protest_letter_france
 				icon = GFX_goal_generic_intelligence_exchange
 				cost = 3
+				mutually_exclusive = {
+					focus = TR_ENG_preemptive_strikes_against_france
+				}
 				prerequisite = {
 					focus = TR_ENG_expose_faults
 				}
