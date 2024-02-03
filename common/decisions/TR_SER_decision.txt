@@ -24,7 +24,9 @@ SER_prepare_for_the_war = {
 		days_mission_timeout = 730
 		selectable_mission = no
 		timeout_effect = {
-			country_event = TR_Serbia.1
+			# country_event = {
+			# 	id = TR_Serbia.1
+			# }
 		}
 	}
 }
@@ -91,7 +93,7 @@ SER_core_d = {
         priority = 5
 		cost = 100
 		fire_only_once = yes
-        #days_remove = 120
+        days_remove = 120
 		ai_will_do = {
 			base = 2000
 		}
@@ -130,7 +132,7 @@ SER_core_d = {
         priority = 10
 		cost = 100
 		fire_only_once = yes
-        #days_remove = 120
+        days_remove = 120
 		ai_will_do = {
 			base = 2000
 		}
@@ -170,7 +172,9 @@ SER_core_d = {
 			base = 2000
 		}
 		available = {
-			compliance > 95
+			FROM = {
+				compliance > 95
+			}
 		}
 		visible = {
 		}

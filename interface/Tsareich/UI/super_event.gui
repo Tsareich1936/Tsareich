@@ -44,10 +44,10 @@ guiTypes = {
 			iconType = {
 				name = SE_picture
 				position = { x = 15 y = -1 }
-				size = {
-					width = 690
-					height = 360
-				}
+				# size = {
+				# 	width = 690
+				# 	height = 360
+				# }
 				orientation = UPPER_LEFT
 			}
 			containerWindowType = {

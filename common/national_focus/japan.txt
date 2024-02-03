@@ -7,7 +7,7 @@ focus_tree = {
 			tag = JAP
 		}
 	}
-	default = yes
+	default = no
 	reset_on_civilwar = no
 
     # #　政治ツリー

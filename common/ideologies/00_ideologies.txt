@@ -41,13 +41,9 @@ ideologies = {
 				hidden_modifier = { join_faction_tension = -0.1 }
 				embargo_threshold_factor = 0.5
 				lend_lease_tension = 0.50
-				socialism_acceptance = 100
 			}
 	
 			faction_modifiers = {
-				communism_acceptance = 100
-				socialism_acceptance = 75
-				socialdemocratic_acceptance = 50
 			}
 	
 		}
@@ -92,12 +88,10 @@ ideologies = {
 				hidden_modifier = { join_faction_tension = -0.1 }
 				embargo_threshold_factor = 0.5
 				lend_lease_tension = 0.50
-				socialism_acceptance = 100
 			}
 	
 			faction_modifiers = {
-				socialism_acceptance = 75
-				anarchism_acceptance = 100
+				
 			}
 	
 		}
@@ -159,13 +153,9 @@ ideologies = {
 			hidden_modifier = { join_faction_tension = -0.1 }
 			embargo_threshold_factor = 0.5
 			lend_lease_tension = 0.50
-			socialism_acceptance = 100
 		}
 
 		faction_modifiers = {
-			communism_acceptance = 100
-			socialism_acceptance = 75
-			socialdemocratic_acceptance = 50
 		}
 
 	}
@@ -211,15 +201,9 @@ ideologies = {
 			hidden_modifier = { join_faction_tension = -0.1 }
 			embargo_threshold_factor = 0.5
 			lend_lease_tension = 0.50
-			communism_acceptance = 75
-			socialism_acceptance = 100
-			socialdemocratic_acceptance = 75
 		}
 
 		faction_modifiers = {
-			communism_acceptance = 75
-			socialism_acceptance = 100
-			socialdemocratic_acceptance = 75
 		}
 	}
 
@@ -271,10 +255,6 @@ ideologies = {
 			airforce_intel_to_others = 5
 			embargo_cost_factor = -0.5
 			embargo_threshold_factor = -0.5
-			communism_acceptance = 75
-			socialism_acceptance = 100
-			socialdemocratic_acceptance = 100
-			democratic_acceptance = 75
 		}
 
 		faction_modifiers = {
@@ -332,7 +312,6 @@ ideologies = {
 			embargo_cost_factor = -0.5
 			embargo_threshold_factor = -0.5
 			socialdemocratic_acceptance = 75
-			conservatism_acceptance = 100
 		}
 
 		faction_modifiers = {
@@ -360,7 +339,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 
-		color = { 55 54 74 }
+		color = { 39 80 113 }
 
 		rules = {
 			can_create_collaboration_government = no
@@ -391,7 +370,6 @@ ideologies = {
 			airforce_intel_to_others = 5
 			embargo_cost_factor = -0.5
 			embargo_threshold_factor = -0.5
-			democratic_acceptance = 100
 		}
 
 		faction_modifiers = {

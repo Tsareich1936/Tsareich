@@ -343,10 +343,10 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_naval_shipbuilding_problem
 					completion_reward = {
-						diplomatic_relation = {
-							country = RUS
-							relation = befriend
-						}
+						# diplomatic_relation = {
+						# 	country = RUS
+						# 	relation = befriend
+						# }
 					}
 				}
 				focus = {#グレート・ゲームの終焉
@@ -1997,7 +1997,7 @@ focus_tree = {
 				y = 3
 				relative_position_id = TR_ENG_prepare_for_war
 				completion_reward = {
-					
+					add_ideas = TR_ENG_full_scale_military_expansion
 				}
 			}
 			# land
@@ -2013,7 +2013,13 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_full_scale_military_expansion
 					completion_reward = {
-				
+						add_tech_bonus = {
+							name = TR_ENG_motorized_focus
+							category = motorized_equipment
+							uses = 2
+							bonus = 1
+							ahead_reduction = 2
+						}
 					}
 				}
 				focus = {
@@ -2027,7 +2033,13 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_motorized_focus
 					completion_reward = {
-				
+						add_tech_bonus = {
+							name = TR_ENG_tank_focus
+							category = armor
+							uses = 3
+							bonus = 1.5
+							ahead_reduction = 2
+						}
 					}
 				}
 			# air force
@@ -2045,7 +2057,7 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_full_scale_military_expansion
 					completion_reward = {
-				
+						air_experience = 50
 					}
 				}
 				focus = {
@@ -2148,6 +2160,7 @@ focus_tree = {
 					relative_position_id = TR_ENG_full_scale_military_expansion
 					completion_reward = {
 						TR_ENG_reforming_navy = yes
+						navy_experience = 50
 					}
 				}
 				focus = {

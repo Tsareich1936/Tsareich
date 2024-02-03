@@ -2663,7 +2663,7 @@ characters = {
   ######   #######  ##     ## ##     ##  #######  ##    ## ####  ######     ##    
 
 
- 	ITA_mario_ricci = {
+ 	SRI_mario_ricci = {
 		name = ITA_mario_ricci
 		portraits = {
 			army = {

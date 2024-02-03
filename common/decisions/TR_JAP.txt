@@ -959,7 +959,7 @@ JAP_NAVAL_PLAN_3 = {
 		icon = generic_construction
 		modifier = {
 			civilian_factory_use = 20
-			dockyard_use = 10
+			#dockyard_use = 10
 		}
 		cost = 100
 		complete_effect = {
@@ -1020,6 +1020,7 @@ JAP_NAVAL_PLAN_3 = {
 			always = no
 		}
 		available = {
+			tag = JAP
 			industrial_complex > 20
 		}
 		
@@ -1031,7 +1032,7 @@ JAP_NAVAL_PLAN_3 = {
 		icon = generic_construction
 		modifier = {
 			civilian_factory_use = 20
-			dockyard_use = 10
+			#dockyard_use = 10
 		}
 		allowed = {
 			always = no
@@ -1106,7 +1107,7 @@ JAP_NAVAL_PLAN_3 = {
 		allowed = { always = no }
 		modifier = {
 			civilian_factory_use = 20
-			dockyard_use = 10
+			#dockyard_use = 10
 		}
 		available = {
 			industrial_complex > 20
@@ -1198,7 +1199,7 @@ JAP_NAVAL_PLAN_3 = {
 		allowed = { always = no }
 		modifier = {
 			civilian_factory_use = 20
-			dockyard_use = 10
+			#dockyard_use = 10
 		}
 		available = {
 			industrial_complex > 20
@@ -1315,7 +1316,7 @@ JAP_NAVAL_PLAN_3 = {
 		allowed = { always = no }
 		modifier = {
 			civilian_factory_use = 20
-			dockyard_use = 10
+			#dockyard_use = 10
 		}
 		available = {
 			industrial_complex > 20
@@ -1431,7 +1432,7 @@ JAP_NAVAL_PLAN_3 = {
 		allowed = { always = no }
 		modifier = {
 			civilian_factory_use = 20
-			dockyard_use = 10
+			#dockyard_use = 10
 		}
 		available = {
 			industrial_complex > 20
@@ -1542,7 +1543,7 @@ JAP_NAVAL_PLAN_3 = {
 		allowed = { always = no }
 		modifier = {
 			civilian_factory_use = 20
-			dockyard_use = 10
+			#dockyard_use = 10
 		}
 		available = {
 			industrial_complex > 20
