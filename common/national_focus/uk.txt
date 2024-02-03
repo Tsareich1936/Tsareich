@@ -146,7 +146,7 @@ focus_tree = {
 					completion_reward = {
 						custom_effect_tooltip = TR_ENG_trampling_down_of_war_bonds_tt
 						custom_effect_tooltip = TR_ENG_danger_america
-						remove_ideas = TR_ENG_war_bond_issue
+						remove_ideas = TR_ENG_war_bond_issue_idea
 						hidden_effect = {
 							TR_ENG_proceed_financial_issue = yes
 						}
@@ -740,7 +740,14 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_all_african_autonomy
 					completion_reward = {
-				
+						TR_ENG_proceed_financial_issue = yes
+						every_country = {
+							limit = {
+								is_subject_of = ENG
+							}
+							add_war_support = 0.15
+							add_ideas = TR_ENG_independent_defence_force
+						}
 					}
 				}
 				focus = {
@@ -761,7 +768,8 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_strengthening_the_dominion
 					completion_reward = {
-				
+						add_stability = 0.1
+						add_political_power = 150
 					}
 				}
 				focus = {
@@ -776,7 +784,7 @@ focus_tree = {
 					}
 					ai_will_do = {
 						base = 1
-						factor = 184
+						factor = 190
 					}
 					x = 0
 					y = 2
@@ -806,6 +814,28 @@ focus_tree = {
 					x = 0
 					y = 2
 					relative_position_id = TR_ENG_dominion_expansion
+					completion_reward = {
+						every_country = {
+							limit = {
+								is_subject_of = ENG
+							}
+							add_war_support = 0.2
+							random_owned_state = {
+								add_extra_state_shared_building_slots = 2
+								add_building_construction = {
+									type = industrial_complex
+									level = 2
+								}
+							}
+							random_owned_state = {
+								add_extra_state_shared_building_slots = 2
+								add_building_construction = {
+									type = arms_factory
+									level = 2
+								}
+							}
+						}
+					}
 				}
 				focus = {
 					search_filters = {
@@ -819,12 +849,32 @@ focus_tree = {
 					}
 					ai_will_do = {
 						base = 1
-						factor = 184
+						factor = 190
 					}
 					x = -2
 					y = 2
 					relative_position_id = TR_ENG_imperial_conference
 					completion_reward = {
+						every_country = {
+							limit = {
+								is_subject_of = ENG
+							}
+							add_war_support = 0.2
+							random_owned_state = {
+								add_extra_state_shared_building_slots = 2
+								add_building_construction = {
+									type = arms_factory
+									level = 2
+								}
+							}
+							random_owned_state = {
+								add_extra_state_shared_building_slots = 2
+								add_building_construction = {
+									type = arms_factory
+									level = 2
+								}
+							}
+						}
 					}
 				}
 				focus = {
@@ -845,7 +895,14 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_military_decentralisation
 					completion_reward = {
-				
+						army_experience = 100
+						add_war_support = 0.05
+						every_country = {
+							limit = {
+								is_subject_of = ENG
+							}
+							army_experience = 50
+						}
 					}
 				}
 				focus = {
@@ -1075,6 +1132,10 @@ focus_tree = {
 					relative_position_id = TR_ENG_indian_affairs
 					completion_reward = {
 						add_stability = 0.05
+						set_autonomy = {
+							target = RAJ
+							autonomy_state = autonomy_dominion
+						}
 					}
 				}
 				focus = {
@@ -1172,15 +1233,11 @@ focus_tree = {
 					}
 					bypass = {
 						hidden_trigger = {
-							if = {
-								limit = {
-									RAJ = {
-										has_autonomy_state = autonomy_imperial_dominion
-									}
-									ENG = {
-										has_completed_focus = TR_ENG_compromise_to_INC
-									}
-								}
+							RAJ = {
+								has_autonomy_state = autonomy_imperial_dominion
+							}
+							ENG = {
+								has_completed_focus = TR_ENG_compromise_to_INC
 							}
 						}
 					}
@@ -1474,7 +1531,7 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_ENG_supporting_spain
 				completion_reward = {
-			
+					add_to_faction = POR
 				}
 			}
 			focus = {
@@ -1529,13 +1586,13 @@ focus_tree = {
 				}
 				ai_will_do = {
 						base = 1
-					factor = 180
+					factor = 190
 				}
 				x = 0
 				y = 2
 				relative_position_id = TR_ENG_belgian_issue
 				completion_reward = {
-			
+					add_to_faction = DEN
 				}
 			}
 			focus = {
@@ -1547,7 +1604,7 @@ focus_tree = {
 				}
 				ai_will_do = {
 						base = 1
-					factor = 170
+					factor = 190
 				}
 				x = 0
 				y = 3
@@ -1580,13 +1637,24 @@ focus_tree = {
 				}
 				ai_will_do = {
 						base = 1
-					factor = 168
+					factor = 190
 				}
 				x = 0
 				y = 2
 				relative_position_id = TR_ENG_contacts_with_russia
 				completion_reward = {
-			
+					every_country = {
+						limit = {
+							OR = {
+								tag = ENG
+								is_in_faction_with = ENG
+							}
+						}
+						leave_faction = yes
+						RUS = {
+							add_to_faction = PREV
+						}
+					}
 				}
 			}
 			focus = {
@@ -1634,7 +1702,7 @@ focus_tree = {
 				}
 				ai_will_do = {
 						base = 1
-					factor = 184
+					factor = 190
 				}
 				x = -1
 				y = 3
@@ -1655,7 +1723,7 @@ focus_tree = {
 				}
 				ai_will_do = {
 						base = 1
-					factor = 170
+					factor = 190
 				}
 				x = 0
 				y = 6
@@ -1677,13 +1745,24 @@ focus_tree = {
 				}
 				ai_will_do = {
 						base = 1
-					factor = 168
+					factor = 190
 				}
 				x = 0
 				y = 2
 				relative_position_id = TR_ENG_governmet_in_exile_recognised
 				completion_reward = {
-			
+					every_country = {
+						limit = {
+							OR = {
+								tag = RUS
+								is_in_faction_with = RUS
+							}
+						}
+						leave_faction = yes
+						ENG = {
+							add_to_faction = PREV
+						}
+					}
 				}
 			}
 			focus = {
@@ -1697,6 +1776,11 @@ focus_tree = {
 				ai_will_do = {
 						base = 1
 					factor = 150
+				}
+				available = {
+					NOT = {
+						has_completed_focus = TR_ENG_trampling_down_of_war_bonds
+					}
 				}
 				x = 2
 				y = 2
@@ -2222,6 +2306,7 @@ focus_tree = {
 							level = 2
 						}
 					}
+					add_ideas = TR_ENG_royal_army
 				}
 			}
 			focus = {
@@ -2344,6 +2429,7 @@ focus_tree = {
 					relative_position_id = TR_ENG_full_scale_military_expansion
 					completion_reward = {
 						air_experience = 50
+						
 					}
 				}
 				focus = {
@@ -2352,10 +2438,6 @@ focus_tree = {
 					cost = 3
 					prerequisite = {
 						focus = TR_ENG_air_military_expansion_focus
-					}
-					ai_will_do = {
-						base = 1
-						factor = 176
 					}
 					x = 0
 					y = 1
@@ -2371,10 +2453,6 @@ focus_tree = {
 					prerequisite = {
 						focus = TR_ENG_air_military_expansion_focus
 					}
-					ai_will_do = {
-						base = 1
-						factor = 176
-					}
 					x = -1
 					y = 2
 					relative_position_id = TR_ENG_air_military_expansion_focus
@@ -2388,10 +2466,6 @@ focus_tree = {
 					cost = 3
 					prerequisite = {
 						focus = TR_ENG_air_military_expansion_focus
-					}
-					ai_will_do = {
-						base = 1
-						factor = 176
 					}
 					x = 1
 					y = 2
@@ -2408,10 +2482,6 @@ focus_tree = {
 						focus = TR_ENG_fighter_command_focus
 						focus = TR_ENG_bomber_command_focus
 						focus = TR_ENG_coastal_command_focus
-					}
-					ai_will_do = {
-						base = 1
-						factor = 180
 					}
 					x = 0
 					y = 2
@@ -2431,7 +2501,7 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_aircraft_production_focus
 					completion_reward = {
-				
+						add_ideas = TR_ENG_royal_air_force
 					}
 				}
 			# navy
@@ -2483,14 +2553,7 @@ focus_tree = {
 					prerequisite = {
 						focus = TR_ENG_naval_reform
 					}
-					ai_will_do = {
-						base = 1
-						factor = 174
-					}
-					ai_will_do = {
-						base = 1
-						factor = 170
-					}
+					
 					x = 3
 					y = 1
 					relative_position_id = TR_ENG_naval_reform
@@ -2524,10 +2587,7 @@ focus_tree = {
 						prerequisite = {
 							focus = TR_ENG_destroyer_focus
 						}
-						ai_will_do = {
-						base = 1
-							factor = 170
-						}
+						
 						x = -1
 						y = 1
 						relative_position_id = TR_ENG_destroyer_focus
@@ -2556,10 +2616,7 @@ focus_tree = {
 						prerequisite = {
 							focus = TR_ENG_destroyer_focus
 						}
-						ai_will_do = {
-						base = 1
-							factor = 164
-						}
+						
 						x = 0
 						y = 2
 						relative_position_id = TR_ENG_destroyer_focus
@@ -2636,10 +2693,7 @@ focus_tree = {
 							focus = TR_ENG_carrier_focus
 							focus = TR_ENG_battleship_focus
 						}
-						ai_will_do = {
-						base = 1
-							factor = 164
-						}
+						
 						x = -1
 						y = 1
 						relative_position_id = TR_ENG_carrier_focus
@@ -2696,7 +2750,12 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_building_defence_networks
 					completion_reward = {
-				
+						add_tech_bonus = {
+							name = TR_ENG_air_defense_focus
+							category = cat_anti_air
+							uses = 1
+							bonus = 1
+						}
 					}
 				}
 				focus = {
@@ -2726,7 +2785,7 @@ focus_tree = {
 					}
 					ai_will_do = {
 						base = 1
-						factor = 170
+						factor = 100
 					}
 					x = 0
 					y = 2
@@ -2753,7 +2812,12 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_air_defense_focus
 					completion_reward = {
-				
+						add_tech_bonus = {
+							name = TR_ENG_air_defense_focus
+							category = cat_anti_air
+							uses = 1
+							bonus = 1
+						}
 					}
 				}
 				focus = {
@@ -2765,13 +2829,19 @@ focus_tree = {
 					}
 					ai_will_do = {
 						base = 1
-						factor = 172
+						factor = 100
 					}
 					x = 0
 					y = 2
 					relative_position_id = TR_ENG_focus_on_flak
 					completion_reward = {
-				
+						add_tech_bonus = {
+							name = TR_ENG_air_defense_focus
+							category = cat_anti_air
+							uses = 1
+							bonus = 2
+							ahead_reduction = 5
+						}
 					}
 				}
 				focus = {
@@ -2786,7 +2856,7 @@ focus_tree = {
 					}
 					ai_will_do = {
 						base = 1
-						factor = 164
+						factor = 100
 					}
 					x = 0
 					y = 2
@@ -2813,7 +2883,12 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_air_defense_focus
 					completion_reward = {
-				
+						add_tech_bonus = {
+							name = TR_ENG_air_defense_focus
+							category = radar_tech
+							uses = 2
+							bonus = 1
+						}
 					}
 				}
 				focus = {
@@ -2828,13 +2903,19 @@ focus_tree = {
 					}
 					ai_will_do = {
 						base = 1
-						factor = 172
+						factor = 100
 					}
 					x = 0
 					y = 2
 					relative_position_id = TR_ENG_radar
 					completion_reward = {
-				
+						add_tech_bonus = {
+							name = TR_ENG_air_defense_focus
+							category = radar_tech
+							uses = 1
+							bonus = 2
+							ahead_reduction = 5
+						}
 					}
 				}
 				focus = {
@@ -2849,7 +2930,7 @@ focus_tree = {
 					}
 					ai_will_do = {
 						base = 1
-						factor = 164
+						factor = 100
 					}
 					x = 0
 					y = 2
@@ -2904,7 +2985,7 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_building_defence_networks
 					completion_reward = {
-				
+						add_ideas = TR_ENG_secret_plan
 					}
 				}
 				focus = {
@@ -2918,11 +2999,22 @@ focus_tree = {
 						base = 1
 						factor = 182
 					}
+					available = {
+						NOT = {
+							has_completed_focus = TR_ENG_trampling_down_of_war_bonds
+						}
+					}
 					x = 0
 					y = 1
 					relative_position_id = TR_ENG_secret_weapon_development
 					completion_reward = {
-				
+						add_tech_bonus = {
+							name = TR_ENG_cooperation_USA
+							category = nuclear
+							uses = 1
+							bonus = 1
+							ahead_reduction = 5
+						}
 					}
 				}
 				focus = {
@@ -2940,7 +3032,7 @@ focus_tree = {
 					y = 3
 					relative_position_id = TR_ENG_cooperation_USA
 					completion_reward = {
-				
+						add_ideas = TR_ENG_uranium_mining
 					}
 				}
 				focus = {
@@ -2958,7 +3050,13 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_cooperation_USA
 					completion_reward = {
-				
+						add_tech_bonus = {
+							name = TR_ENG_cooperation_USA
+							category = nuclear
+							uses = 1
+							bonus = 1
+							ahead_reduction = 5
+						}
 					}
 				}
 				focus = {
@@ -3006,7 +3104,13 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_construction_of_reactors
 					completion_reward = {
-				
+						add_tech_bonus = {
+							name = TR_ENG_cooperation_USA
+							category = nuclear
+							uses = 1
+							bonus = 1
+							ahead_reduction = 5
+						}
 					}
 				}
 				focus = {
@@ -3027,6 +3131,9 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_sahara_experiments
 					completion_reward = {
+						set_technology = {
+							nukes = 1
+						}
 					}
 				}
 			# Home Island
@@ -3056,7 +3163,7 @@ focus_tree = {
 					}
 					ai_will_do = {
 						base = 1
-						factor = 176
+						factor = 100
 					}
 					x = -1
 					y = 2
@@ -3074,7 +3181,7 @@ focus_tree = {
 					}
 					ai_will_do = {
 						base = 1
-						factor = 170
+						factor = 100
 					}
 					x = 0
 					y = 2
@@ -3092,7 +3199,7 @@ focus_tree = {
 					}
 					ai_will_do = {
 						base = 1
-						factor = 176
+						factor = 100
 					}
 					x = 1
 					y = 2
@@ -3110,7 +3217,7 @@ focus_tree = {
 					}
 					ai_will_do = {
 						base = 1
-						factor = 170
+						factor = 100
 					}
 					x = 0
 					y = 2
@@ -3131,7 +3238,7 @@ focus_tree = {
 					}
 					ai_will_do = {
 						base = 1
-						factor = 160
+						factor = 100
 					}
 					x = 0
 					y = 6

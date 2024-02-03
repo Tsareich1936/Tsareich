@@ -349,5 +349,33 @@ ideas = {
 				}
 			}
 		}
+		TR_ENG_independent_defence_force = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.15
+				ai_focus_military_advancements_factor = 0.5
+			}
+		}
+		TR_ENG_secret_plan = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			research_bonus = {
+				nuclear = 0.25
+			}
+		}
+		TR_ENG_uranium_mining = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				nuclear_production_factor = 2.0
+			}
+		}
 	}
 }
