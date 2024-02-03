@@ -376,6 +376,9 @@ country_event = {#インド問題
 	option = {#インドに自治を！
 		name = TR_uk.13.a
 		complete_national_focus = TR_ENG_compromise_to_INC
+		ai_chance = {
+			base = 100
+		}
 		
 	}
 	option = {#インド支配を強めろ！

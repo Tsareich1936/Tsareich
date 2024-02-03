@@ -909,7 +909,7 @@ DNI = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 163 17 31 }
 }
-GXH = {
+GZH = {
 	color = rgb { 127 109 50 }
 	color_ui = rgb { 127 109 50 }
 }

@@ -2,32 +2,31 @@
 state={
 	id=804
 	name="STATE_804"
-	manpower =547200
-	
-	
-	state_category = rural
-	
 	resources={
-		aluminium=7 # was: 10
+		aluminium=7.000
 	}
 
 	history={
 		owner = SER
 		victory_points = {
-			9894 3
+			9894 3 
 		}
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = YUG
 		add_core_of = BOS
 		add_core_of = HRZ
 		add_core_of = SER
+
 	}
 
 	provinces={
-		953 6942 9894 11845 
+		6942 9894 11845 
 	}
-
-	local_supplies=0.0 
+	manpower=547200
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

@@ -1,0 +1,16 @@
+state={
+	id=995
+	name="STATE_995"
+	provinces={
+		606 11577 11741 
+	}
+	history = {
+		owner = SER
+		add_core_of = SER
+		add_core_of = BOS
+	}
+	manpower=382400
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

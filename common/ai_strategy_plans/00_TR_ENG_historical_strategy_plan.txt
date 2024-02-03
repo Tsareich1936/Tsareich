@@ -1,0 +1,69 @@
+ENG_historical_plan = {
+	name = "United Kingdom historical plan"
+	desc = "Historical behavior for United Kingdom"
+
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		TR_ENG_steady_as_she_goes #35
+		TR_ENG_withdrawal_france #35
+		TR_ENG_Focus_on_financial_issues #35
+		TR_ENG_war_bond_issue #35
+		TR_ENG_naval_shipbuilding_problem #35
+		TR_ENG_anticommunist #35
+		TR_ENG_prepare_for_war #21
+		TR_ENG_focus_on_defence #21
+		TR_ENG_focus_on_attack #21
+
+		TR_ENG_review_of_colonial_policy #70
+		TR_ENG_alliance_opposite_shore #35
+		TR_ENG_those_driven_by_vengeance #35
+		TR_ENG_strengthening_the_dominion #35
+		TR_ENG_shadow_scheme #21
+		TR_ENG_additional_research_slot #21
+		TR_ENG_belgian_issue #35
+		TR_ENG_north_african_losers #35
+		TR_ENG_full_scale_military_expansion #21
+		TR_ENG_imperial_conference #70
+		TR_ENG_autonomy_in_africa #70
+		TR_ENG_indian_affairs #70
+		TR_ENG_investment_in_public_works #70
+		TR_ENG_russia_land_britain_sea #70
+		TR_ENG_fiscal_reconstruction #35
+		TR_ENG_naval_reform #21
+
+		TR_ENG_alliance_denmark #35
+		TR_ENG_rhodes_loser #35
+		TR_ENG_governmet_in_exile_recognised #35
+		TR_ENG_contacts_with_russia #35
+		TR_ENG_anticommunist_allies #35
+
+		TR_ENG_autonomy_in_india #35
+		TR_ENG_dominion_expansion #70
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		home_defence_spirit = 1
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

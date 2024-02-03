@@ -1,4 +1,16 @@
 ideas = {
+	hidden_ideas = {
+		TR_war_of_liberation = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.75
+				army_core_defence_factor = 1
+			}
+		}
+	}
 	country = {
 		TR_POL_support_for_presants = {
 			allowed = {
@@ -55,16 +67,6 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				weekly_manpower = 500
-			}
-		}
-		TR_war_of_liberation = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			modifier = {
-				army_core_attack_factor = 0.5
-				army_core_defence_factor = 1
 			}
 		}
 	}

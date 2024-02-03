@@ -1,0 +1,18 @@
+state={
+	id=993
+	name="STATE_993"
+	provinces={
+		657 687 3076 9635 
+	}
+	history = {
+		owner = ROM
+		add_core_of = ROM
+		victory_points = {
+			657 3 
+		}
+	}
+	manpower=1000000
+	state_category = large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
