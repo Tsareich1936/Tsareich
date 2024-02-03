@@ -47,6 +47,24 @@ ENG_historical_plan = {
 
 		TR_ENG_autonomy_in_india #35
 		TR_ENG_dominion_expansion #70
+		TR_ENG_dominion_india #70
+
+		TR_ENG_royal_ordinance #21
+		TR_ENG_military_expansion #21
+
+		TR_ENG_military_decentralisation #70
+		TR_ENG_the_road_to_federalisation #70
+		TR_ENG_focus_on_industry #21
+		TR_ENG_joint_military_exercise #70
+		TR_ENG_small_arms #21
+		TR_ENG_all_african_autonomy #70
+		TR_ENG_focus_on_shipbuilding #21
+		TR_ENG_establish_neighbourhood_watch #35
+		TR_ENG_focus_on_aircraft #21
+		TR_ENG_EGY_one_ruler #35
+		TR_ENG_autonisation_of_sudan #35
+		TR_ENG_british_commonwealth #70
+		
 	}
 
 	research = {

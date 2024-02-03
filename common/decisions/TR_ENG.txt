@@ -123,14 +123,20 @@ TR_ENG_war_bonds = {
 	}
 }
 TR_autonomy_imperial_dominion1 = {
-	temporary = {
+	TR_ENG_set_imperial_dominion = {
 		target_array = subjects
+		visible = {
+			has_completed_focus = TR_ENG_dominion_expansion
+		}
 		target_trigger = {
 			FROM = {
-				# NOT = {
-				# 	has_autonomy_state = autonomy_imperial_dominion
-				# }
+				NOT = {
+					has_autonomy_state = autonomy_imperial_dominion
+				}
 			}
+		}
+		ai_will_do = {
+			base = 999
 		}
 		complete_effect = {
 			set_autonomy = {

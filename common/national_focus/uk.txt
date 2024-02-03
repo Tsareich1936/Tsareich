@@ -782,6 +782,7 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_imperial_conference
 					completion_reward = {
+						unlock_decision_tooltip = TR_ENG_set_imperial_dominion
 						set_autonomy = {
 							target = MAL
 							autonomy_state = autonomy_imperial_dominion
@@ -853,7 +854,7 @@ focus_tree = {
 					}
 					id = TR_ENG_british_commonwealth
 					icon = GFX_focus_eng_imperial_federation
-					cost = 15
+					cost = 10
 					prerequisite = {
 						focus = TR_ENG_autonisation_of_sudan
 					}
@@ -1168,6 +1169,20 @@ focus_tree = {
 					ai_will_do = {
 						base = 1
 						factor = 190
+					}
+					bypass = {
+						hidden_trigger = {
+							if = {
+								limit = {
+									RAJ = {
+										has_autonomy_state = autonomy_imperial_dominion
+									}
+									ENG = {
+										has_completed_focus = TR_ENG_compromise_to_INC
+									}
+								}
+							}
+						}
 					}
 					x = 0
 					y = 3
@@ -2650,7 +2665,7 @@ focus_tree = {
 			focus = {
 				id = TR_ENG_building_defence_networks
 				icon = GFX_goal_fortify_the_westwall
-				cost = 3
+				cost = 2
 				prerequisite = {
 					focus = TR_ENG_focus_on_defence
 				}
@@ -2669,7 +2684,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_air_defense_focus
 					icon = GFX_focus_generic_tank_air_support
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_building_defence_networks
 					}
@@ -2877,7 +2892,7 @@ focus_tree = {
 					}
 					id = TR_ENG_secret_weapon_development
 					icon = GFX_goal_generic_secret_weapon
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_building_defence_networks
 					}
@@ -2895,7 +2910,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_cooperation_USA
 					icon = GFX_focus_generic_befriend_usa
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_secret_weapon_development
 					}
@@ -2913,7 +2928,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_uranium_mining
 					icon = GFX_focus_generic_mining_industry
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_cooperation_USA
 					}
@@ -2931,7 +2946,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_construction_of_reactors
 					icon = GFX_goal_generic_construction
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_cooperation_USA
 					}
@@ -2952,7 +2967,7 @@ focus_tree = {
 					}
 					id = TR_ENG_securing_research_staff
 					icon = GFX_focus_research2
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_cooperation_USA
 					}
@@ -2973,7 +2988,7 @@ focus_tree = {
 					}
 					id = TR_ENG_sahara_experiments
 					icon = GFX_goal_poland_goal
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_construction_of_reactors
 					}
@@ -3000,7 +3015,7 @@ focus_tree = {
 					}
 					id = TR_ENG_the_ultimate_weapon
 					icon = GFX_focus_wonderweapons
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_sahara_experiments
 					}
@@ -3018,7 +3033,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_maritime_fort
 					icon = GFX_focus_generic_coastal_fort
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_building_defence_networks
 					}
@@ -3035,7 +3050,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_prevention_of_landing
 					icon = GFX_goal_generic_navy_cruiser
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_maritime_fort
 					}
@@ -3053,7 +3068,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_reinforced_maritime_fort
 					icon = GFX_focus_generic_coastal_fort
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_prevention_of_landing
 					}
@@ -3071,7 +3086,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_fort_of_england
 					icon = GFX_goal_generic_fortify_city
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_maritime_fort
 					}
@@ -3089,7 +3104,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_fort_of_scotland
 					icon = GFX_goal_generic_fortify_city
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_fort_of_england
 					}
@@ -3107,7 +3122,7 @@ focus_tree = {
 				focus = {
 					id = TR_ENG_absolute_defense_sphere 
 					icon = GFX_focus_ICE_infiltrating_the_british_isles
-					cost = 3
+					cost = 2
 					prerequisite = {
 						focus = TR_ENG_reinforced_maritime_fort
 					}
