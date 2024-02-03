@@ -89,7 +89,7 @@ ideas = {
 				production_speed_buildings_factor = -0.5
 			}
 		}
-
+		# Political Route
 		TR_ENG_small_repayment = {
 			allowed = {
 				always = no
@@ -149,7 +149,54 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
-
+		#Military Route
+		TR_ENG_focus_on_attack = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				command_power_gain = 0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.05
+			}
+		}
+		TR_ENG_focus_on_defence = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				command_power_gain = 0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.15
+			}
+		}
+		TR_ENG_full_scale_military_expansion = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
 		TR_ENG_royal_army = {
 			allowed = {
 				always = no
@@ -263,6 +310,43 @@ ideas = {
 				command_power_gain = 0.05
 				max_command_power = 60
 				experience_gain_air_factor = 0.2
+			}
+		}
+		#Industry
+		TR_ENG_military_expansion = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.03
+			}
+		}
+		TR_small_arms = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.10
+				}
+			}
+		}
+		TR_ENG_focus_on_aircraft = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.05
+				}
 			}
 		}
 	}

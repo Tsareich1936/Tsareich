@@ -1559,6 +1559,7 @@ focus_tree = {
 							level = 2
 						}
 					}
+					add_ideas = TR_ENG_focus_on_defence
 				}
 			}
 			focus = {
@@ -1576,6 +1577,7 @@ focus_tree = {
 				relative_position_id = TR_ENG_prepare_for_war
 				completion_reward = {
 					army_experience = 50
+					add_ideas = TR_ENG_focus_on_attack
 				}
 			}
 		# industry
@@ -1649,7 +1651,9 @@ focus_tree = {
 					}
 					else = {
 						random_owned_state = {
-
+							limit = {
+								is_core_of = ENG
+							}
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 								type = arms_factory
@@ -1657,7 +1661,9 @@ focus_tree = {
 							}
 						}
 						random_owned_state = {
-
+							limit = {
+								is_core_of = ENG
+							}
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 								type = arms_factory
@@ -1665,7 +1671,9 @@ focus_tree = {
 							}
 						}
 						random_owned_state = {
-
+							limit = {
+								is_core_of = ENG
+							}
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 								type = arms_factory
@@ -1699,7 +1707,9 @@ focus_tree = {
 					}
 					else = {
 						random_owned_state = {
-
+							limit = {
+								is_core_of = ENG
+							}
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 								type = arms_factory
@@ -1707,7 +1717,9 @@ focus_tree = {
 							}
 						}
 						random_owned_state = {
-
+							limit = {
+								is_core_of = ENG
+							}
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 								type = arms_factory
@@ -1715,7 +1727,9 @@ focus_tree = {
 							}
 						}
 						random_owned_state = {
-
+							limit = {
+								is_core_of = ENG
+							}
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 								type = arms_factory
@@ -1723,7 +1737,9 @@ focus_tree = {
 							}
 						}
 						random_owned_state = {
-
+							limit = {
+								is_core_of = ENG
+							}
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 								type = arms_factory
@@ -1747,7 +1763,34 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_ENG_shadow_scheme
 				completion_reward = {
-					
+					random_owned_state = {
+						limit = {
+							is_core_of = ENG
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = ENG
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+						}
+					}
 				}
 			}
 			focus = {
@@ -1764,7 +1807,26 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_ENG_royal_ordinance
 				completion_reward = {
-			
+					random_owned_state = {
+						limit = {
+							is_core_of = ENG
+						}
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+							type = industrial_complex
+							level = 3
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = ENG
+						}
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+							type = industrial_complex
+							level = 3
+						}
+					}
 				}
 			}
 			focus = {
@@ -1778,7 +1840,58 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_ENG_focus_on_industry
 				completion_reward = {
-			
+					random_owned_state = {
+						limit = {
+							is_core_of = ENG
+						}
+						limit = {
+							is_coastal = yes
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = dockyard
+							level = 2
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = ENG
+						}
+						limit = {
+							is_coastal = yes
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = dockyard
+							level = 2
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = ENG
+						}
+						limit = {
+							is_coastal = yes
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = dockyard
+							level = 2
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = ENG
+						}
+						limit = {
+							is_coastal = yes
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = dockyard
+							level = 2
+						}
+					}
 				}
 			}
 			focus = {
@@ -1795,7 +1908,17 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_ENG_shadow_scheme
 				completion_reward = {
-			
+					add_ideas = TR_ENG_military_expansion
+					random_owned_state = {
+						limit = {
+							is_core_of = ENG
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+						}
+					}
 				}
 			}
 			focus = {
@@ -1812,7 +1935,22 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_ENG_military_expansion
 				completion_reward = {
-			
+					add_tech_bonus = {
+						name = TR_ENG_small_arms
+						uses = 2
+						bonus = 1
+						category = infantry_weapons
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = ENG
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+						}
+					}
 				}
 			}
 			focus = {
@@ -1826,7 +1964,17 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_ENG_small_arms
 				completion_reward = {
-			
+					add_ideas = TR_ENG_focus_on_aircraft
+					random_owned_state = {
+						limit = {
+							is_core_of = ENG
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+						}
+					}
 				}
 			}
 		# army
@@ -1849,7 +1997,7 @@ focus_tree = {
 				y = 3
 				relative_position_id = TR_ENG_prepare_for_war
 				completion_reward = {
-			
+					
 				}
 			}
 			# land
