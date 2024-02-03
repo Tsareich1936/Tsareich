@@ -34,6 +34,7 @@ ENG_historical_plan = {
 		TR_ENG_imperial_conference #70
 		TR_ENG_autonomy_in_africa #70
 		TR_ENG_indian_affairs #70
+		TR_ENG_commencement_of_major_repayments #70
 		TR_ENG_investment_in_public_works #70
 		TR_ENG_russia_land_britain_sea #70
 		TR_ENG_fiscal_reconstruction #35

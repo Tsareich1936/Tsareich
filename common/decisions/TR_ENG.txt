@@ -16,7 +16,13 @@ TR_ENG_war_bonds = {
 			}
 		}
 		ai_will_do = {
-			factor = 999
+			base = 1
+			modifier = {
+				NOT = {
+					has_completed_focus = TR_ENG_commencement_of_major_repayments
+				}
+				factor = 699
+			}
 		}
 		cost = 20
 		days_remove = 14
