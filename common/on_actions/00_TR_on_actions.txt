@@ -109,7 +109,16 @@ on_actions = {
 				}
 			}
 		}
-	}
+	# effect = {
+	# 		SER = {
+	# 			country_event = {
+	# 				id = TR_balkan.1
+	# 				months = 19
+	# 				days = 9
+	# 			}
+	# 		}
+	# 	}
+	# }
 	on_daily_JAP = {
 		effect = {
 			if = {
