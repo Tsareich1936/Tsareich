@@ -143,6 +143,9 @@ country_event = {#戦債問題
 
 	option = {#返済
 		name = TR_uk.2.a
+		ai_chance = {
+			base = 70
+		}
 		complete_national_focus = TR_ENG_commencement_of_minor_repayments
 	}
 	option = {#先送り
@@ -280,7 +283,7 @@ country_event = {#戦債の完済
 
 	option = {
 		name = TR_uk.7.a
-		remove_ideas = TR_ENG_war_bond_issue
+		remove_ideas = TR_ENG_war_bond_issue_idea
 	}
 }
 country_event = {#建艦問題
