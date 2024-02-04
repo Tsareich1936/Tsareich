@@ -44,6 +44,17 @@ country_event = {#オランダが同盟を承諾
 		ENG = {
 			add_to_faction = HOL
 		}
+		if = {
+			limit = {
+				ENG = {
+					has_completed_focus = TR_ENG_RUS_allies
+				}
+				
+			}
+			RUS = {
+				add_to_faction = HOL
+			}
+		}
 	}
 }
 country_event = {#オランダが同盟を拒否
