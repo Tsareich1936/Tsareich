@@ -101,6 +101,22 @@
  IPS_DEF: "藩王連邦"
  IPS_ADJ: "藩王"
 
+ RAJ_empire: "インド"
+ RAJ_empire_DEF: "インド"
+ RAJ_empire_ADJ: "インド"
+ RAJ_empire_communism: "インド"
+ RAJ_empire_communism_DEF: "インド人民共和国"
+ RAJ_empire_communism_ADJ: "インド"
+ RAJ_empire_democratic: "インド連合王国"
+ RAJ_empire_democratic_DEF: "インド連合王国"
+ RAJ_empire_democratic_ADJ: "インド"
+ RAJ_empire_consercatism: "インド帝国"
+ RAJ_empire_conservatism_DEF: "インド帝国"
+ RAJ_empire_conservatism_ADJ: "インド"
+ RAJ_empire_neutrality: "インド連合王国"
+ RAJ_empire_neutrality_DEF: "インド連合王国"
+ RAJ_empire_neutrality_ADJ: "インド"
+
  
  
  

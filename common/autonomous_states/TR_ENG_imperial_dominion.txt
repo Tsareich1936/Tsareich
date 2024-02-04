@@ -41,6 +41,10 @@ autonomy_state = {
 	}
 
 	allowed = {
+		OVERLORD = {
+			tag = ENG
+			has_completed_focus = TR_ENG_dominion_expansion
+		}
 	}
 	
 	can_take_level = {
