@@ -230,6 +230,19 @@ country_event = {
 			building = synthetic_refinery
 			resource = oil
 			amount = 200
-		 }
+		}
+	}
+}
+country_event = {
+	id = TR_debug.5
+	title = TR_debug.5.t
+	desc = TR_debug.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_debug.5.a
+		add_ideas = war_economy
+		add_ideas = TR_debug_consumer_goods
 	}
 }
