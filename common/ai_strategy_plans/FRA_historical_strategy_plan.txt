@@ -1,0 +1,68 @@
+France_historical = {
+	name = "France historical plan"
+	desc = "Essentially historical behaviour for France"
+
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+	               is_historical_focus_on = yes
+	}
+
+	ai_national_focuses = {
+		# grab as fast as you can if available
+		FRA_dip
+        FRA_hukusi2
+
+		FRA_ind1
+		FRA_inter1
+		FRA_com1
+		FRA_com_purge1
+		FRA_com_purge2
+		FRA_com_purge3
+		FRA_com_purge4
+		FRA_ind2
+		FRA_ind3
+		FRA_com7
+		FRA_com8
+        FRA_ind_rec
+		FRA_hukusi
+		FRA_hukusi_jyosei1
+		FRA_hukusi_jyosei2
+		FRA_hukusi_jyosei3
+		FRA_mil
+		FRA_ind6
+		FRA_ind7
+
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		FRA_gaston_henry_haye = 10
+	}
+
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 111
+	}
+}
