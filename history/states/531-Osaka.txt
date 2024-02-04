@@ -11,9 +11,9 @@ state={
 		add_core_of = JAP
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 4
-			dockyard = 2
+			arms_factory = 3
+			industrial_complex = 1
+			dockyard = 1
 			7072 = {
 				naval_base = 3
 
@@ -24,17 +24,8 @@ state={
 			7072 40 
 		}
 		victory_points = {
-			13339 20 
+			13339 10
 		}
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-				industrial_complex = 5
-
-			}
-
-		}
-
 	}
 
 	provinces={
@@ -42,6 +33,6 @@ state={
 	}
 	manpower=4297000
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category= megalopolis
 	local_supplies=9.000
 }

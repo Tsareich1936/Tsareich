@@ -9,13 +9,17 @@ state={
 		add_core_of = JAP
 		buildings = {
 			industrial_complex = 1
+			dockyard = 1
 			infrastructure = 4
 			13350 = {
 				naval_base = 5
 			}
 		}
 		victory_points = {
-			11960 40
+			11960 35
+		}
+		victory_points = {
+		    13350 3
 		}
 	}
 	manpower=1703000

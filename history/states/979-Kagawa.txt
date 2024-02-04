@@ -11,9 +11,12 @@ state={
 			industrial_complex = 1
 			infrastructure = 2
 		}
+		victory_points = {
+			4094 3
+		}
 	}
 	manpower=749000
-	state_category = city
+	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

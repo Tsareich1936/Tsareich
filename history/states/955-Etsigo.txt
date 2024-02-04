@@ -8,6 +8,14 @@ state={
 		add_core_of = JAP
 		buildings = {
 			infrastructure = 3
+			fuel_silo = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			1117 8
+		}
+		victory_points = {
+			12007 1
 		}
 	}
 
