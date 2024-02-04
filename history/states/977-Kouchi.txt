@@ -9,7 +9,7 @@ state={
 		add_core_of = JAP
 		
 		victory_points = {
-			7197 10 
+			7197 3
 		}
 		buildings = {
 			infrastructure = 1

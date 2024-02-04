@@ -8,7 +8,7 @@ state={
 		owner = JAP
 		add_core_of = JAP
 		victory_points = {
-			9998 40 
+			9998 40
 		}
 		buildings = {
 			industrial_complex = 1

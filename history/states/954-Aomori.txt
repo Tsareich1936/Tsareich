@@ -6,12 +6,19 @@ state={
 		add_core_of = JAP
 		buildings = {
 			industrial_complex = 1
+			infrastructure = 2
 			9859 = {
 				naval_base = 6
 			}
 		}
-
+		victory_points = {
+			6994 5
+		}
+		victory_points = {
+			9859 5
+		}
 	}
+
 	provinces={
 		6873 6994 9859 
 	}
