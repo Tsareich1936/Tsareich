@@ -431,6 +431,14 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			add_political_power = 25
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = socialdemocratic
+				popularity = -0.05
+			}
 		}
 	}
 	focus = {
@@ -445,6 +453,19 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_political_power = 25
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.05
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = GER_communism_left_unite_party_long
+				name = GER_communism_left_unite_party
+			}
 		}
 	}
 	focus = {
@@ -459,6 +480,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_political_power = 25
+			add_stability = 0.10
 		}
 	}
 	focus = {
@@ -476,6 +498,12 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			add_political_power = 25
+			add_war_support = 0.15
+			remove_ideas = GER_Dolchstosslegende
+			add_timed_idea = {
+				idea = GER_social_fascism
+				days = 180
+			}
 		}
 	}
 	focus = {
@@ -792,8 +820,8 @@ focus_tree = {
 			}
 			set_party_name = {
 				ideology = communism
-				long_name = GER_communism_unite_party_long
-				name = GER_communism_unite_party
+				long_name = GER_communism_right_unite_party_long
+				name = GER_communism_right_unite_party
 			}
 		}
 	}
@@ -1729,6 +1757,10 @@ focus_tree = {
 		}
 		x = 11
 		y = 5
+		completion_reward = {
+			add_political_power = 25
+
+		}
 	}
 	focus = {
 		id = GER_first_five_year_plan
