@@ -47,7 +47,7 @@ focus_tree = {
 	focus = {
 		id = FRA_com_purge1
 		icon = GFX_goal_generic_war_with_comintern
-		cost = 8.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_com1
 		}
@@ -554,7 +554,7 @@ focus_tree = {
 	focus = {
 		id = FRA_ind1
 		icon = GFX_focus_generic_treaty
-		cost = 8.00
+		cost = 4
 		x = 6
 		y = 13
 		completion_reward = {
@@ -564,6 +564,10 @@ focus_tree = {
 				uses = 3
 				category = industry
 			} 
+			add_timed_idea = {
+				idea = TR_FRA_work_1936
+				days = 365
+			}
 		}
 	}
 	focus = {
@@ -610,11 +614,7 @@ focus_tree = {
 		x = 2
 		y = 15
 		completion_reward = {
-			 modify_building_resources = {
-				building = synthetic_refinery
-				resource = oil
-				amount = 2
-			 }
+			add_ideas = TR_FRA_more_oil
 		}
 	}
 	focus = {
@@ -998,8 +998,8 @@ focus_tree = {
 	#福祉
 	focus = {
 		id = FRA_hukusi
-		icon = GFX_goal_unknown
-		cost = 8.00
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 4
 		x = 13
 		y = 12
 		completion_reward = {
@@ -1009,7 +1009,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_hukusi_imin1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi
@@ -1025,7 +1025,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_hukusi_imin2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_imin1
@@ -1041,7 +1041,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_hukusi_imin3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_increase_nu
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_imin2
@@ -1057,7 +1057,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_hukusi_imin4
-		icon = GFX_goal_unknown
+		icon = GFX_goal_demand_sudetenland
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_imin1
@@ -1073,7 +1073,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_hukusi_imin5
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_imin4
@@ -1090,7 +1090,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_hukusi_syousika1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_increase_nu
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi
@@ -1106,7 +1106,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_hukusi_syousika2
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_syousika1
@@ -1122,7 +1122,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_hukusi_syousika3
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_syousika2
@@ -1138,7 +1138,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_hukusi_syousika4
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_treaty
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_syousika1
@@ -1154,7 +1154,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_hukusi_syousika5
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_syousika4
@@ -1171,7 +1171,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_hukusi2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_defence
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_imin3
@@ -1185,7 +1185,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_hukusi3
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_communist_industry
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi2
@@ -1205,8 +1205,8 @@ focus_tree = {
 
 	focus = {
 		id = FRA_hukusi4
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_focus_fra_revolution_utmost_shine
+		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi3
 		}
@@ -1222,7 +1222,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_hukusi_jyosei1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_womens_fascist_movement
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi
@@ -1240,7 +1240,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_hukusi_jyosei2
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_consumer_goods
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_jyosei1
@@ -1257,7 +1257,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_hukusi_jyosei3
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_democracy_shine
 		cost = 8
 		prerequisite = {
 			focus = FRA_hukusi_jyosei2
@@ -1280,67 +1280,64 @@ focus_tree = {
 
 
 	#軍事
+
+	#海軍優先
 	focus = {
 		id = FRA_nav
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 8.00
 		mutually_exclusive = {
 			focus = FRA_mil
 		}
 		x = 28
 		y = 12
-
-	}
-	focus = {
-		id = FRA_mil
-		icon = GFX_goal_unknown
-		cost = 10.00
-		mutually_exclusive = {
-			focus = FRA_nav
+		completion_reward = {
+			add_ideas = TR_FRA_nav
 		}
-		x = 36
-		y = 12
-
 	}
-
-
 	focus = {
 		id = FRA_nav_mil1
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_chi_army_reform
+		cost = 8
 		prerequisite = {
 			focus = FRA_nav
 		}
 		x = 24
 		y = 13
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_nav_mil2
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_SOV_the_road_of_life
+		cost = 8
 		prerequisite = {
 			focus = FRA_nav_mil1
 		}
 		x = 23
 		y = 15
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_nav_mil3
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_focus_fra_maquis
+		cost = 8
 		prerequisite = {
 			focus = FRA_nav_mil1
 		}
 		x = 25
 		y = 15
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_nav_mil4
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_build_tank
+		cost = 8
 		prerequisite = {
 			focus = FRA_nav_mil3
 		}
@@ -1349,115 +1346,66 @@ focus_tree = {
 		}
 		x = 24
 		y = 16
-
+		completion_reward = {
+			add_ideas = TR_FRA_mil
+		}
 	}
 	focus = {
 		id = FRA_nav_midi
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_SWI_fortify_border_with_france
+		cost = 8
 		prerequisite = {
 			focus = FRA_nav
 		}
 		x = 26
 		y = 13
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_nav1
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 8
 		prerequisite = {
 			focus = FRA_nav
 		}
 		x = 29
 		y = 13
-
-	}
-	focus = {
-		id = FRA_nav5
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = FRA_nav1
+		completion_reward = {
+			
 		}
-		x = 27
-		y = 14
-
-	}
-	focus = {
-		id = FRA_nav6
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = FRA_nav5
-		}
-		x = 27
-		y = 15
-
 	}
 	focus = {
 		id = FRA_nav2
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 8
 		prerequisite = {
 			focus = FRA_nav1
 		}
 		x = 29
 		y = 14
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_nav3
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 8
 		prerequisite = {
 			focus = FRA_nav2
 		}
 		x = 29
 		y = 15
-
-	}
-	focus = {
-		id = FRA_air1
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = FRA_mil
-			focus = FRA_nav
+		completion_reward = {
+			
 		}
-		x = 33
-		y = 13
-
-	}
-	focus = {
-		id = FRA_air2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = FRA_air1
-		}
-		x = 33
-		y = 14
-
-	}
-	focus = {
-		id = FRA_nav_air
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = FRA_air2
-		}
-		prerequisite = {
-			focus = FRA_nav2
-		}
-		x = 31
-		y = 15
-
 	}
 	focus = {
 		id = FRA_nav4
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_navy_carrier
+		cost = 8
 		prerequisite = {
 			focus = FRA_nav_air
 		}
@@ -1466,56 +1414,156 @@ focus_tree = {
 		}
 		x = 30
 		y = 16
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
+		id = FRA_nav5
+		icon = GFX_goal_generic_navy_battleship
+		cost = 8
+		prerequisite = {
+			focus = FRA_nav1
+		}
+		x = 27
+		y = 14
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_nav6
+		icon = GFX_goal_continuous_naval_production
+		cost = 8
+		prerequisite = {
+			focus = FRA_nav5
+		}
+		x = 27
+		y = 15
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TR_FRA_nav
+				add_idea = TR_FRA_nav1
+			}
+		}
+	}
+	focus = {
+		id = FRA_nav_air
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 8
+		prerequisite = {
+			focus = FRA_air2
+		}
+		prerequisite = {
+			focus = FRA_nav2
+		}
+		x = 31
+		y = 15
+		completion_reward = {
+			
+		}
+	}
+
+
+	#空軍
+	focus = {
+		id = FRA_air1
+		icon = GFX_goal_generic_air_fighter
+		cost = 8
+		prerequisite = {
+			focus = FRA_mil
+			focus = FRA_nav
+		}
+		x = 33
+		y = 13
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_air2
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 8
+		prerequisite = {
+			focus = FRA_air1
+		}
+		x = 33
+		y = 14
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
 		id = FRA_air3
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_generic_aircraft_production
+		cost = 8
 		prerequisite = {
 			focus = FRA_air2
 		}
 		x = 33
 		y = 15
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_air4
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_continuous_air_production
+		cost = 8
 		prerequisite = {
 			focus = FRA_air3
 		}
 		x = 33
 		y = 16
-
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_mil
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 8
+		mutually_exclusive = {
+			focus = FRA_nav
+		}
+		x = 36
+		y = 12
+		completion_reward = {
+			add_ideas = TR_FRA_mil
+		}
 	}
 	focus = {
 		id = FRA_mil1
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_SOV_mobilization_plan
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil
 		}
 		x = 39
 		y = 13
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_mil2
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_focus_fra_maquis
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil1
 		}
 		x = 37
 		y = 14
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_mil_air
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_SOV_flying_clubs
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil2
 		}
@@ -1524,45 +1572,56 @@ focus_tree = {
 		}
 		x = 35
 		y = 15
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_mil3
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_SOV_support_spanish_poum
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil2
 		}
 		x = 37
 		y = 15
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_mil4
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil3
 		}
 		x = 37
 		y = 16
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_mil5
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_fra_le_deluge
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil4
 		}
 		x = 37
 		y = 17
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TR_FRA_mil
+				add_idea = TR_FRA_mil1
+			}
+		}
 	}
 	focus = {
 		id = FRA_mil_tank1
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_generic_tank_production
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil1
 		}
@@ -1571,23 +1630,27 @@ focus_tree = {
 		}
 		x = 39
 		y = 14
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_mil_tank2
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil_tank1
 		}
 		x = 39
 		y = 15
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_mil_arc1
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_army_artillery2
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil1
 		}
@@ -1596,67 +1659,74 @@ focus_tree = {
 		}
 		x = 41
 		y = 14
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_mil_arc2
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_army_artillery
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil_arc1
 		}
 		x = 41
-		y = 15
-
+		y = 15		
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_mil_nav1
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon =GFX_goal_generic_construct_naval_dockyard
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil
 		}
 		x = 43
 		y = 13
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_mil_nav2
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil_nav1
 		}
 		x = 43
 		y = 14
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = FRA_mil_nav3
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_navy_submarine
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil_nav2
 		}
 		x = 43
 		y = 15
-
+		completion_reward = {
+			
+		}
 	}
-
-
-
-
-
 	focus = {
 		id = FRA_mil_nav4
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_navy_battleship
+		cost = 8
 		prerequisite = {
 			focus = FRA_mil_nav2
 		}
 		x = 45
 		y = 15
-
+		completion_reward = {
+			add_ideas = TR_FRA_nav
+		}
 	}
 
 }
