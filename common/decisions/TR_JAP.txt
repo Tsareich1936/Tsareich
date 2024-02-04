@@ -2083,3 +2083,130 @@ JAP_KOR_WAR = {
 		}
 	}
 }
+
+JAP_balance_of_power_category = {
+	JAP_bop_high_cost = {
+		days_re_enable = 365
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			not = {
+				has_country_flag = JAP_bop_low_cost
+			}
+		}
+		complete_effect = {
+			set_country_flag = JAP_bop_high_cost
+			hidden_effect = {
+				country_event = {
+					id = TR_japan.72
+					days = 365
+				}
+			}
+			add_timed_idea = {
+				idea = JAP_military_buff
+				days = 365
+			}
+			add_power_balance_value = {
+				id = JAP_balance_of_power
+				value = 0.1
+			}
+		}
+		cost = 25
+		
+	}
+
+	JAP_bop_low_cost = {
+		days_re_enable = 365
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			not = {
+				has_country_flag = JAP_bop_high_cost
+			}
+		}
+		complete_effect = {
+			set_country_flag = JAP_bop_low_cost
+			hidden_effect = {
+				country_event = {
+					id = TR_japan.73
+					days = 365
+				}
+			}
+			add_timed_idea = {
+				idea = JAP_military_debuff
+				days = 365
+			}
+			add_power_balance_value = {
+				id = JAP_balance_of_power
+				value = -0.1
+			}
+			
+		}
+		cost = 25
+	}
+
+	JAP_pro_military_propaganda = {
+		days_re_enable = 365
+		allowed = {
+			original_tag = JAP
+		}
+		complete_effect = {
+			add_power_balance_modifier = {
+				id = JAP_balance_of_power
+				modifier = JAP_pro_military_propaganda
+			}
+		}
+	}
+
+	JAP_Taking_in_the_General = {
+		days_re_enable = 180
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			not = {
+				has_country_flag = JAP_Taking_in_the_cabinet_ministers
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = JAP_Taking_in_the_Generalb
+				country_event = {
+					id = TR_japan.74
+					days = 180
+				}
+			}
+			add_power_balance_value = {
+				id = JAP_balance_of_power
+				value = -0.1
+			}
+		}
+	}
+
+	JAP_Taking_in_the_cabinet_ministers = {
+		days_re_enable = 180
+		available = {
+			not = {
+				has_country_flag = JAP_Taking_in_the_General
+			}
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = JAP_Taking_in_the_cabinet_ministers
+				country_event = {
+					id = TR_japan.75
+					days = 180
+				}
+			}
+			add_power_balance_value = {
+				id = JAP_balance_of_power
+				value = 0.1
+			}
+		}
+	}
+}

@@ -2067,3 +2067,63 @@ country_event = {
 		puppet = KOR
 	}
 }
+
+country_event = {
+	id = TR_japan.72
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		clr_country_flag = JAP_bop_high_cost
+	}
+}
+
+country_event = {
+	id = TR_japan.73
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		clr_country_flag = JAP_bop_low_cost
+	}
+}
+
+country_event = {
+	id = TR_japan.74
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		clr_country_flag = JAP_Taking_in_the_Generalb
+	}
+}
+
+country_event = {
+	id = TR_japan.75
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		clr_country_flag = JAP_Taking_in_the_cabinet_ministers
+	}
+}
+
+country_event = {
+	id = TR_japan.76
+	title = TR_japan.76.t
+	desc = TR_japan.76.d
+	trigger = {
+		date > 1936.4.1
+	}
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.76.a
+		add_power_balance_value = {
+			id = JAP_balance_of_power
+			value = -0.25
+		}
+	}
+	option = {
+		name = TR_japan.76.b
+		add_power_balance_value = {
+			id = JAP_balance_of_power
+			value = 0.25
+		}
+	}
+}
