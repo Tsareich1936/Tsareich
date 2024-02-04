@@ -1,0 +1,15 @@
+# add_nameplase = TR_balkan
+# country_event = {#セルビア民族解放の機運
+# 	id = TR_balkan.1
+# 	title = TR_balkan.1.t
+# 	desc = TR_balkan.1.d
+
+# 	is_triggered_only = yes
+
+# 	immediate = {
+		
+# 	}
+# 	option = {#対処が必要だな
+# 		name = TR_balkan.1.a
+# 	}
+# }

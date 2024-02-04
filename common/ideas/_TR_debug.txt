@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		TR_debug_consumer_goods = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -1
+			}
+		}
+	}
+}

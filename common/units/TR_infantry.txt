@@ -24,13 +24,13 @@ sub_units = {
 		
 		combat_width = 0.5
 		
-		soft_attack = 2.5
-		hard_attack = 10
-		defense = 30
+		soft_attack = 1.2
+		hard_attack = 6
+		defense = 15
 		air_attack = 200
 		#Size Definitions
-		max_strength = 140
-		max_organisation = 140
+		max_strength = 110
+		max_organisation = 120
 		default_morale = 0.8
 		manpower = 100
 	
@@ -47,29 +47,29 @@ sub_units = {
 		}
 	
 		hills = {
-			attack = 0.35
-			defence = 0.35
-			movement = 0.45
+			attack = 0.15
+			defence = 0.25
+			movement = 0.35
 		}
 		urban = {
-			attack = 0.65
-			defence = 0.65
+			attack = 0.35
+			defence = 0.45
 			movement = 0.45
 		}
 		forest = {
-			attack = 0.65
-			defence = 0.65
+			attack = 0.35
+			defence = 0.45
 			movement = 0.45
 		}
 		mountain = {
-			attack = 0.35
-			defence = 0.1
+			attack = 0.25
+			defence = 0.35
 			movement = 0.2
 		}
 		river = {
-			attack = 2
-			defence = 2
-			movement = 2
+			attack = 1
+			defence = 1
+			movement = 0.3
 		}
 	}
 

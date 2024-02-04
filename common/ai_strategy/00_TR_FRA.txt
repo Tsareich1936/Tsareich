@@ -10,6 +10,23 @@
 # protect
 # influence
 
+FRA_civilian_industry = {
+	allowed = {
+		tag = FRA
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		date > 1937.2.1 
+	}
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 120
+	}
+}
+
 FRA_unit_production = {
 	allowed = { original_tag = FRA }
 	enable = {

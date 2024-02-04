@@ -68,7 +68,7 @@
 
 
  #軍事
- FRA_nav: "海軍優先"
+ FRA_nav: "海軍優先の継続"
  FRA_nav1: "造船計画の始動"
  FRA_nav2: "護衛艦"
  FRA_nav3: "対空戦闘"
@@ -80,7 +80,7 @@
  FRA_nav_mil1: "人民陸軍"
  FRA_nav_mil2: "陸軍の機械化"
  FRA_nav_mil3: "歩兵装備の更新"
- FRA_nav_mil4: "陸軍ドクトリンの発展あ"
+ FRA_nav_mil4: "陸軍の発展"
 
  FRA_mil: "大陸軍の復活"
  FRA_mil1: "陸軍国家"
@@ -89,7 +89,7 @@
  FRA_mil4: "ドクトリンの発展Ⅱ"
  FRA_mil5: "我は洪水なり"
  FRA_mil_tank1: "戦車開発"
- FRA_mil_tank2: "戦車軍"
+ FRA_mil_tank2: "戦車軍団"
  FRA_mil_arc1: "戦場の女神"
  FRA_mil_arc2: "更なる砲兵を"
  FRA_mil_air: "航空支援"
