@@ -217,6 +217,9 @@ TR_POL_resistance = {
 				has_country_flag = TR_POL_start_resistance
 				has_country_flag = TR_POL_start_coup
 			}
+			GER = {
+				has_completed_focus = GER_warsaw_uprising
+			}
 		}
 		visible = {
 			NOT = {

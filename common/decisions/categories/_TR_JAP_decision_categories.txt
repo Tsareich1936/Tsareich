@@ -100,3 +100,9 @@ JAP_KOR_WAR = {
 	}
 	visible_when_empty = no
 }
+
+JAP_balance_of_power_category = {
+	allowed = {
+		tag = JAP
+	}
+}

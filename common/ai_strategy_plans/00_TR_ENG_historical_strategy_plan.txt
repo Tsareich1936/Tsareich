@@ -44,7 +44,7 @@ ENG_historical_plan = {
 		TR_ENG_rhodes_loser #35
 		TR_ENG_governmet_in_exile_recognised #35
 		TR_ENG_contacts_with_russia #35
-		TR_ENG_anticommunist_allies #35
+		TR_ENG_RUS_allies #35
 
 		TR_ENG_autonomy_in_india #35
 		TR_ENG_dominion_expansion #70

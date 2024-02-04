@@ -1,0 +1,3 @@
+JAP_pro_military_propaganda = {
+	power_balance_weekly = 0.005
+}

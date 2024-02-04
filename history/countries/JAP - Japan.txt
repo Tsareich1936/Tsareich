@@ -27,6 +27,9 @@ add_ideas = {
 	JAP_agriculture
 }
 
+set_power_balance = {
+	id = JAP_balance_of_power
+}
 diplomatic_relation = {
     country = KOR
     relation = guarantee
