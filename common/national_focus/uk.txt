@@ -2514,7 +2514,37 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_air_military_expansion_focus
 					completion_reward = {
-				
+						if = {
+							limit = {
+								NOT = { has_dlc = "By Blood Alone" }
+							}
+							air_experience = 25
+							add_tech_bonus = {
+								name = bomber_command_focus
+								bonus = 1.5							uses = 2
+								category = cat_strategic_bomber
+								category = tactical_bomber
+							}
+						}
+						else_if = {
+							limit = {
+								has_dlc = "By Blood Alone"
+							}
+							air_experience = 25
+							add_tech_bonus = {
+								name = bomber_command_focus
+								bonus = 1.5
+								uses = 1
+								category = cat_strategic_bomber
+								category = tactical_bomber
+							}
+							add_doctrine_cost_reduction = {
+								name = ENG_bomber_command_focus #land_doc_bonus
+								cost_reduction = 0.5
+								uses = 2
+								category = air_doctrine
+							}
+						}
 					}
 				}
 				focus = {
@@ -2528,7 +2558,38 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_air_military_expansion_focus
 					completion_reward = {
-				
+						if = {
+							limit = {
+								NOT = { has_dlc = "By Blood Alone" }
+							}
+							air_experience = 25
+							add_tech_bonus = {
+								name = fighter_command_focus
+								bonus = 1.0
+								uses = 2
+								category = light_fighter
+								category = cat_heavy_fighter
+							}
+						}
+						else_if = {
+							limit = {
+								has_dlc = "By Blood Alone"
+							}
+							air_experience = 25
+							add_tech_bonus = {
+								name = fighter_command_focus
+								bonus = 1.0
+								uses = 1
+								category = light_fighter
+								category = cat_heavy_fighter
+							}
+							add_doctrine_cost_reduction = {
+								name = ENG_fighter_command_focus #land_doc_bonus
+								cost_reduction = 0.5
+								uses = 2
+								category = air_doctrine
+							}
+						}
 					}
 				}
 				focus = {
@@ -2542,7 +2603,38 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_air_military_expansion_focus
 					completion_reward = {
-				
+						if = {
+							limit = {
+								NOT = { has_dlc = "By Blood Alone" }
+							}
+							air_experience = 25
+							add_tech_bonus = {
+								name = coastal_command_focus
+								bonus = 1.0
+								uses = 2
+								category = naval_bomber
+								category = cas_bomber
+							}
+						}
+						else_if = {
+							limit = {
+								has_dlc = "By Blood Alone"
+							}
+							air_experience = 25
+							add_tech_bonus = {
+								name = coastal_command_focus
+								bonus = 1.5
+								uses = 1
+								category = naval_bomber
+								category = cas_bomber
+							}
+							add_doctrine_cost_reduction = {
+								name = ENG_coastal_command_focus #land_doc_bonus
+								cost_reduction = 0.5
+								uses = 2
+								category = air_doctrine
+							}
+						}
 					}
 				}
 				focus = {
@@ -2558,7 +2650,7 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_bomber_command_focus
 					completion_reward = {
-				
+						add_ideas = british_fighter_discount
 					}
 				}
 				focus = {
@@ -2573,6 +2665,13 @@ focus_tree = {
 					relative_position_id = TR_ENG_aircraft_production_focus
 					completion_reward = {
 						add_ideas = TR_ENG_royal_air_force
+						add_tech_bonus = {
+							name = uk_jet_focus
+							bonus = 1.5
+							uses = 4
+							ahead_reduction = 2
+							category = jet_technology
+						}
 					}
 				}
 			# navy
@@ -2597,6 +2696,17 @@ focus_tree = {
 					completion_reward = {
 						TR_ENG_reforming_navy = yes
 						navy_experience = 50
+						random_owned_state = {
+							limit = {
+								is_core_of = ENG
+								is_coastal = yes
+							}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = dockyard
+								level = 1
+							}
+						}
 					}
 				}
 				focus = {
@@ -2614,7 +2724,18 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_naval_reform
 					completion_reward = {
-				
+						add_tech_bonus = {
+							name = uk_amphibious_focus
+							bonus = 1.0
+							uses = 1
+							category = marine_tech
+						}
+						add_tech_bonus = {
+							name = uk_amphibious_focus
+							bonus = 1.0
+							uses = 2
+							category = tp_tech
+						}
 					}
 				}
 				focus = {
@@ -2629,7 +2750,18 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_naval_reform
 					completion_reward = {
-				
+						add_tech_bonus = {
+							name = ENG_anti_non_contact_committee
+							bonus = 1.0
+							uses = 1
+							category = naval_minelaying
+						}
+						add_tech_bonus = {
+							name = ENG_anti_non_contact_committee
+							bonus = 1.0
+							uses = 2
+							category = naval_minesweeping
+						}
 					}
 				}
 				# destroyer
@@ -2648,7 +2780,12 @@ focus_tree = {
 						y = 2
 						relative_position_id = TR_ENG_naval_reform
 						completion_reward = {
-					
+							add_tech_bonus = {
+								name = dd_bonus
+								bonus = 1.0
+								uses = 2
+								category = dd_tech
+							}
 						}
 					}
 					focus = {
@@ -2663,7 +2800,7 @@ focus_tree = {
 						y = 1
 						relative_position_id = TR_ENG_destroyer_focus
 						completion_reward = {
-					
+							add_ideas = british_convoy_discount
 						}
 					}
 					focus = {
@@ -2677,7 +2814,13 @@ focus_tree = {
 						y = 2
 						relative_position_id = TR_ENG_convoy_focus
 						completion_reward = {
-					
+							add_doctrine_cost_reduction = {
+								name = ENG_anti_submarine_training_school
+								cost_reduction = 0.35
+								uses = 2
+								category = convoy_defense_tree
+							}
+							add_ideas = ENG_anti_submarine_training_school
 						}
 					}
 					focus = {
@@ -2692,12 +2835,18 @@ focus_tree = {
 						y = 2
 						relative_position_id = TR_ENG_destroyer_focus
 						completion_reward = {
-					
+							add_tech_bonus = {
+								name = ENG_asw_warfare
+								bonus = 1.0
+								ahead_reduction = 2
+								uses = 2
+								category = asw_tech
+							}	
 						}
 					}
 				# Big BIg BIG
 					focus = {
-						id = TR_ENG_waves_focus
+						id = TR_ENG_elect_few
 						icon = GFX_goal_generic_navy_doctrines_tactics
 						cost = 3
 						prerequisite = {
@@ -2711,7 +2860,8 @@ focus_tree = {
 						y = 2
 						relative_position_id = TR_ENG_naval_reform
 						completion_reward = {
-					
+							TR_ENG_reforming_navy = yes
+							remove_ideas = TR_ENG_papier_mache_navy
 						}
 					}
 					focus = {
@@ -2719,7 +2869,7 @@ focus_tree = {
 						icon = GFX_goal_generic_navy_carrier
 						cost = 3
 						prerequisite = {
-							focus = TR_ENG_waves_focus
+							focus = TR_ENG_elect_few
 						}
 						mutually_exclusive = {
 							focus = TR_ENG_battleship_focus
@@ -2730,9 +2880,15 @@ focus_tree = {
 						}
 						x = -1
 						y = 1
-						relative_position_id = TR_ENG_waves_focus
+						relative_position_id = TR_ENG_elect_few
 						completion_reward = {
-					
+							add_tech_bonus = {
+								name = TR_ENG_carrier_focus
+								uses = 2
+								bonus = 2
+								category = cv_tech
+								ahead_reduction = 2
+							}
 						}
 					}
 					focus = {
@@ -2740,7 +2896,7 @@ focus_tree = {
 						icon = GFX_goal_generic_navy_battleship
 						cost = 3
 						prerequisite = {
-							focus = TR_ENG_waves_focus
+							focus = TR_ENG_elect_few
 						}
 						mutually_exclusive = {
 							focus = TR_ENG_carrier_focus
@@ -2751,9 +2907,15 @@ focus_tree = {
 						}
 						x = 1
 						y = 1
-						relative_position_id = TR_ENG_waves_focus
+						relative_position_id = TR_ENG_elect_few
 						completion_reward = {
-					
+							add_tech_bonus = {
+								name = TR_ENG_carrier_focus
+								uses = 2
+								bonus = 2
+								category = bb_tech
+								ahead_reduction = 2
+							}
 						}
 					}
 					focus = {
@@ -2769,7 +2931,28 @@ focus_tree = {
 						y = 1
 						relative_position_id = TR_ENG_carrier_focus
 						completion_reward = {
-					
+							random_owned_state = {
+								limit = {
+									is_core_of = ENG
+									is_coastal = yes
+								}
+								add_extra_state_shared_building_slots = 2
+								add_building_construction = {
+									type = dockyard
+									level = 2
+								}
+							}
+							random_owned_state = {
+								limit = {
+									is_core_of = ENG
+									is_coastal = yes
+								}
+								add_extra_state_shared_building_slots = 2
+								add_building_construction = {
+									type = dockyard
+									level = 2
+								}
+							}
 						}
 					}
 					focus = {
@@ -2783,7 +2966,29 @@ focus_tree = {
 						y = 2
 						relative_position_id = TR_ENG_battleship_focus
 						completion_reward = {
-					
+							create_equipment_variant = {
+								name = "Vanguard"
+								type = ship_hull_heavy_4
+								parent_version = 0
+								modules = {
+									fixed_ship_battery_slot = ship_heavy_battery_3
+									fixed_ship_anti_air_slot = ship_anti_air_4
+									fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+									fixed_ship_radar_slot = ship_radar_3
+									fixed_ship_engine_slot = heavy_ship_engine_4
+									fixed_ship_secondaries_slot = dp_ship_secondaries_3
+									fixed_ship_armor_slot = ship_armor_bb_3
+									front_1_custom_slot = ship_heavy_battery_3
+									mid_1_custom_slot = ship_anti_air_4
+									mid_2_custom_slot = dp_ship_secondaries_3
+									mid_3_custom_slot = ship_airplane_launcher_2
+									rear_1_custom_slot = ship_heavy_battery_3
+								}
+							}
+							133 = {
+								custom_effect_tooltip = ENG_vanguard_tt_hms
+							}
+							hidden_effect = { load_oob = "ENG_vanguard_hms" }
 						}
 					}
 		# defence
