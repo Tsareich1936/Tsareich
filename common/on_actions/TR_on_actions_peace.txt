@@ -178,6 +178,12 @@ on_actions = {
 						set_state_controller_to = CRO
 					}
 				}
+				SER = {
+					country_event = {
+						id = TR_north_italy.socialism.22
+						days = 1
+					}
+				}
 			}
 		}
 	}	
