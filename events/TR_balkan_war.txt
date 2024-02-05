@@ -13,3 +13,163 @@ country_event = {#セルビア民族解放の機運
 		name = TR_balkan.1.a
 	}
 }
+country_event = {#軍部が侵攻計画を提案
+	id = TR_balkan.2
+	title = TR_balkan.2.t
+	desc = TR_balkan.2.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	option = {#良きにはからえ
+		name = TR_balkan.2.a
+	}
+
+country_event = {#ルーマニアとの密約
+	id = TR_balkan.3
+	title = TR_balkan.3.t
+	desc = TR_balkan.3.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	option = {#果報を待とう
+		name = TR_balkan.3.a
+	}
+}
+country_event = {#セルビアからの密使
+	id = TR_balkan.4
+	title = TR_balkan.4.t
+	desc = TR_balkan.4.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	option = {#これは良い機会だ
+		name = TR_balkan.4.a
+	}
+}
+country_event = {#ルーマニアが同盟を承認
+	id = TR_balkan.5
+	title = TR_balkan.5.t
+	desc = TR_balkan.5.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	option = {#マジャール人よ、今に見ていろ
+		name = TR_balkan.5.a
+	}
+}
+country_event = {#徴兵の拡大
+	id = TR_balkan.6
+	title = TR_balkan.6.t
+	desc = TR_balkan.6.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	option = {#勝利を求めよ
+		name = TR_balkan.6.a
+	}
+}
+country_event = {#セルビアの動向
+	id = TR_balkan.7
+	title = TR_balkan.7.t
+	desc = TR_balkan.7.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	option = {#備えが必要だ
+		name = TR_balkan.7.a
+	}
+}
+country_event = {#最高民族解放宣言
+	id = TR_balkan.8
+	title = TR_balkan.8.t
+	desc = TR_balkan.8.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	option = {#セルビアを解放するのだ
+		name = TR_balkan.8.a
+	}
+}
+country_event = {#セルビアからの最後通牒
+	id = TR_balkan.9
+	title = TR_balkan.9.t
+	desc = TR_balkan.9.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	option = {#かかってこい、相手になってやる
+		name = TR_balkan.9.a
+	}
+}
+country_event = {#ハンガリーが最後通牒を拒否
+	id = TR_balkan.10
+	title = TR_balkan.10.t
+	desc = TR_balkan.10.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	option = {#兵を進めろ
+		name = TR_balkan.10.a
+	}
+}
+country_event = {#バルカン戦争
+	id = TR_balkan.11
+	title = TR_balkan.11.t
+	desc = TR_balkan.11.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	option = {#トランシルヴァニアは我らのものだ
+		name = TR_balkan.11.a
+	}
+	option = {#盟約に従わなくてはならない
+		name = TR_balkan.11.b
+	}
+	option = {#セルビアに兵をおくれ
+		name = TR_balkan.11.c
+	}
+}
+news_event = {#バルカン戦争
+	id = TR_balkan.12
+	title = TR_balkan.12.t
+	desc = TR_balkan.12.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+	option = {#一体何度倉庫を建て直せばいいんだ
+		name = TR_balkan.10.a
+	}
+}
