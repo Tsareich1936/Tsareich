@@ -1891,12 +1891,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 160
 		}
+		available = {
+			date > 1940.01.01
+		}
 	}
 	focus = {
 		id = GER_protecting_czech_communists
 		text = GER_protecting_czech_communists
 		icon = GFX_focus_generic_provoke_border_clashes
-		cost = 5
+		cost = 2.5
 		prerequisite = {
 			focus = GER_red_volunteer_army
 		}
@@ -1919,7 +1922,7 @@ focus_tree = {
 		id = GER_war_plan_against_russia
 		text = GER_war_plan_against_russia
 		icon = GFX_focus_SOV_the_defense_of_moscow
-		cost = 2.5
+		cost = 5
 		prerequisite = {
 			focus = GER_protecting_czech_communists
 		}
@@ -2153,6 +2156,9 @@ focus_tree = {
 		y = 13
 		ai_will_do = {
 			factor = 4000
+		}
+		available = {
+			date > 1940.01.01
 		}
 	}
 }
