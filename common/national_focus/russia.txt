@@ -1,343 +1,423 @@
-### search_filters = {FOCUS_FILTER_POLITICAL}
-### search_filters = {FOCUS_FILTER_RESEARCH}
-### search_filters = {FOCUS_FILTER_INDUSTRY}
-### search_filters = {FOCUS_FILTER_STABILITY}
-### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
-### search_filters = {FOCUS_FILTER_MANPOWER}
-### search_filters = {FOCUS_FILTER_ANNEXATION}
-
-
 focus_tree = {
 	id = russia_focus
-	
 	country = {
 		factor = 0
-		
 		modifier = {
-			add = 25
+			add = 100
 			tag = RUS
 		}
 	}
-    default = no
-	reset_on_civilwar = no
-
-    continuous_focus_position = {
-		x = 100
-		y = 25000
+	default = no
+	focus = {
+		id = RUS_FkV_notsar
+		icon = GFX_focus_hun_elect_a_king
+		cost = 1.00
+		mutually_exclusive = {
+			focus = RUS_FkV_broken_country
+			focus = RUS_FkV_communist_win
+		}
+		x = 30
+		y = 0
+		available = {
+			always = no
+		}
 	}
+	focus = {
+		id = RUS_FkV_broken_country
+		icon = GFX_focus_generic_fascist_troops
+		cost = 1.00
+		mutually_exclusive = {
+			focus = RUS_FkV_notsar
+		}
+		x = 2
+		y = 0
+		relative_position_id = RUS_FkV_notsar
+		search_filters = FOCUS_FILTER_POLITICAL
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = RUS_FkV_communist_win
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		cost = 1.00
+		mutually_exclusive = {
+			focus = RUS_FkV_notsar
+		}
+		x = -2
+		y = 0
+		search_filters = FOCUS_FILTER_POLITICAL
+		relative_position_id = RUS_FkV_notsar
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = RUS_newtsar
+		icon = GFX_focus_SOV_panslavic_nationalism
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_FkV_notsar
+		}
+		mutually_exclusive = {
+			focus = RUS_oldtsar
+		}
+		x = 18
+		y = 2
+		search_filters = FOCUS_FILTER_POLITICAL
+		completion_reward = {
+			custom_effect_tooltip = TR_Russia.tt.2
+			hidden_effect = {
+				RUS = {
+					kill_country_leader = yes
+					set_country_flag = Tsar_kirill
+					promote_character = {
+						character = RUS_kirill_vladimirovich
+						ideology = Neutrality
+					}
+				}
+			}
 
+		}
 
-    ### 新時代の皇帝
-    focus = {
-        id = RUS_newtsar          
-        icon = GFX_focus_SOV_panslavic_nationalism
-        x = 17
-        y = 0
-        cost = 4
-    
-        search_filters = FOCUS_FILTER_POLITICAL
+	}
+	focus = {
+		id = RUS_oldtsar
+		icon = GFX_focus_SOV_zemsky_sobor
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_FkV_notsar
+		}
+		mutually_exclusive = {
+			focus = RUS_newtsar
+		}
+		search_filters = FOCUS_FILTER_POLITICAL
+		x = 42
+		y = 2
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = RUS_empire_diplo
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_newtsar
+			focus = RUS_oldtsar
+		}
+		x = 30
+		y = 3
 
-        available = {
-            always = no
-        }
-        completion_reward = {
-            add_political_power = 100
-        }
-			
-    }
-    ### 政治犯の釈放
-    focus = {
-        id = RUS_unprison
-        icon = GFX_focus_mex_arrest_general_cedillo
-        x = -1
-        y = 1
-        cost = 4
-        relative_position_id = RUS_newtsar
-        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL_CHARACTER }
-        prerequisite = { focus = RUS_newtsar }
+	}
+	focus = {
+		id = RUS_unprison
+		icon = GFX_focus_mex_arrest_general_cedillo
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_newtsar
+		}
+		x = -1
+		y = 2
+		relative_position_id = RUS_newtsar
+		search_filters = { FOCUS_FILTER_POLITICAL  FOCUS_FILTER_ARMY_XP  FOCUS_FILTER_NAVY_XP  FOCUS_FILTER_AIR_XP  FOCUS_FILTER_WAR_SUPPORT  FOCUS_FILTER_POLITICAL_CHARACTER }
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
 
-        ai_will_do = { factor = 200 }
-        available = {
+		}
+		completion_reward = {
+			add_trait = {
+				character = RUS_kirill_vladimirovich
+				ideology = despotism
+				trait = TR_krill_evolutional_government
+			}
+		}
 
-        }
-        completion_reward = {
-            add_trait = {
-                character = RUS_kirill_vladimirovich
-                ideology = despotism
-                trait = TR_krill_evolutional_government
-            }
-        }
-        
-    }
-    
-    ### 宮廷親衛隊の創設
-    focus = {
-        id = RUS_tsar_infantry
-        icon = GFX_focus_DEN_expand_haerens_tekniske_korps
-        x = 1
-        y = 1
-        cost = 4
-        relative_position_id = RUS_newtsar
-        search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL_CHARACTER }
-        prerequisite = { focus = RUS_newtsar }
+	}
+	focus = {
+		id = RUS_tsar_infantry
+		icon = GFX_focus_DEN_expand_haerens_tekniske_korps
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_newtsar
+		}
+		x = 1
+		y = 2
+		relative_position_id = RUS_newtsar
+		search_filters = { FOCUS_FILTER_POLITICAL  FOCUS_FILTER_STABILITY  FOCUS_FILTER_POLITICAL_CHARACTER }
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
 
-        ai_will_do = { factor = 40 }
-        available = {
+		}
+		completion_reward = {
+			remove_trait = {
+				character = RUS_kirill_vladimirovich
+				ideology = despotism
+				trait = TR_krill_conflicts_in_the_court
+			}
+		}
 
-        }
-        completion_reward = {
-            remove_trait = {
-                character = RUS_kirill_vladimirovich
-                ideology = despotism
-                trait = TR_krill_conflicts_in_the_court
-            }
-        }
-        
-    }
+	}
+	focus = {
+		id = RUS_remake_national_government
+		icon = GFX_focus_NOR_continue_nygaardsvold_government
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_tsar_infantry
+		}
+		prerequisite = {
+			focus = RUS_unprison
+		}
+		x = 0
+		y = 3
+		relative_position_id = RUS_newtsar
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
 
-    focus = {
-        id = RUS_remake_national_government
-        icon = GFX_focus_NOR_continue_nygaardsvold_government
-        x = 0
-        y = 2
-        relative_position_id = RUS_newtsar
-        cost = 4
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_agricultural_economy
+				add_idea = RUS_agricultural_economy_1
+			}
+			hidden_effect = {
+				news_event = TR_Russia_news.2
+			}
+		}
 
-        search_filters = { FOCUS_FILTER_POLITICAL}
-        prerequisite = { focus = RUS_tsar_infantry }
-        prerequisite = { focus = RUS_unprison }
+	}
+	focus = {
+		id = RUS_development_of_siberia
+		icon = GFX_focus_GRE_a_land_of_mountains
+		cost = 1.00
+		prerequisite = {
+			focus = RUS_remake_national_government
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_POLITICAL
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
 
-        ai_will_do = { factor = 40 }
-        available = {
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = RUS_start_siberia_decision
+			}
+			custom_effect_tooltip = TR_Russia.tt.3
+		}
 
-        }
-        completion_reward = {
-            swap_ideas = {
-                remove_idea = RUS_agricultural_economy
-                add_idea = RUS_agricultural_economy_1
-            }
-            hidden_effect = {
-                news_event = TR_Russia_news.2
-            }
-        }
-        
-    }
+	}
+	focus = {
+		id = RUS_MNE_Lyceum
+		icon = GFX_focus_generic_university_1
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_development_of_siberia
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_RESEARCH
+		ai_will_do = {
+			factor = 160
+		}
+		available = {
+			NOT = {
+				has_active_mission = RUS_siberia_mission
+			}
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = RUS_MNE_Lyceum_idea
+		}
 
-    #シベリア測量
-    focus = {
-        id = RUS_development_of_siberia
-        icon = GFX_focus_GRE_a_land_of_mountains
-        x = 0
-        y = 1
-        relative_position_id = RUS_remake_national_government
-        cost = 1
+	}
+	focus = {
+		id = RUS_oil_to_rubber_factory
+		icon = GFX_focus_generic_offshore_oil_rig
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_development_of_siberia
+		}
+		x = -2
+		y = 2
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_INDUSTRY
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = {
+				has_active_mission = RUS_siberia_mission
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = RUS_rubber_factory_flag
+			}
+			custom_effect_tooltip = TR_Russia.tt.4
+		}
 
-        search_filters = FOCUS_FILTER_POLITICAL
-        prerequisite = { focus = RUS_remake_national_government }
+	}
+	focus = {
+		id = RUS_remove_census
+		icon = GFX_focus_generic_horse_studs
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_development_of_siberia
+		}
+		x = 2
+		y = 2
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_MANPOWER
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = {
+				has_active_mission = RUS_siberia_mission
+			}
+		}
+		completion_reward = {
+			remove_ideas = RUS_nomad_of_russia
+		}
 
-        ai_will_do = { factor = 80 }
-        available = {
+	}
+	focus = {
+		id = RUS_battle_with_PER
+		icon = GFX_focus_generic_attack_iran
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_remove_census
+		}
+		prerequisite = {
+			focus = RUS_oil_to_rubber_factory
+		}
+		prerequisite = {
+			focus = RUS_MNE_Lyceum
+		}
+		x = 0
+		y = 3
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_ANNEXATION
+		ai_will_do = {
+			factor = 240
+		}
+		available = {
 
-        }
-        completion_reward = {
-            hidden_effect = {
-                set_country_flag = RUS_start_siberia_decision
-            }
-            custom_effect_tooltip = TR_Russia.tt.3
-        }
-        
-    }
+		}
+		completion_reward = {
+			custom_effect_tooltip = TR_Russia.tt.5
+			country_event = TR_Russia.5
+		}
 
-    #第一近代化ツリー
-    focus = {
-        id = RUS_MNE_Lyceum
-        icon = GFX_focus_generic_university_1
-        x = 0
-        y = 2
-        relative_position_id = RUS_remake_national_government
-        cost = 4
+	}
+	focus = {
+		id = RUS_remake_russian_constitution
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_battle_with_PER
+		}
+		x = 0
+		y = 4
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_POLITICAL
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
 
-        search_filters = FOCUS_FILTER_RESEARCH
-        prerequisite = { focus = RUS_development_of_siberia }
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = RUS_winner_of_wwi_1
+				remove_idea = RUS_winner_of_wwi
+			}
+		}
 
-        ai_will_do = { factor = 160 }
-        available = {
-            NOT = {   	
-                has_active_mission = RUS_siberia_mission
-            }
-        }
-        completion_reward = {
-            add_research_slot = 1
-            add_ideas = RUS_MNE_Lyceum_idea
-        }
-        
-    }
+	}
+	focus = {
+		id = RUS_build_stock_exchange
+		icon = GFX_focus_mex_privatisation
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_remake_national_government
+		}
+		x = -5
+		y = 1
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_INDUSTRY
+		ai_will_do = {
+			factor = 30
+		}
+		available = {
 
-    focus = {
-        id = RUS_oil_to_rubber_factory
-        icon = GFX_focus_generic_offshore_oil_rig
-        x = -2
-        y = 2
-        relative_position_id = RUS_remake_national_government
-        cost = 4
+		}
+		completion_reward = {
+			add_ideas = RUS_stock_exchange
+		}
 
-        search_filters = FOCUS_FILTER_INDUSTRY
-        prerequisite = { focus = RUS_development_of_siberia }
+	}
+	focus = {
+		id = RUS_add_more_academy
+		icon = GFX_focus_research
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_build_stock_exchange
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_build_stock_exchange
+		search_filters = FOCUS_FILTER_RESEARCH
+		ai_will_do = {
+			factor = 800
+		}
+		available = {
 
-        ai_will_do = { factor = 100 }
-        available = {
-            NOT = {   	
-                has_active_mission = RUS_siberia_mission
-            }
-        }
-        completion_reward = {
-            hidden_effect = {
-                set_country_flag = RUS_rubber_factory_flag
-            }
-            custom_effect_tooltip = TR_Russia.tt.4
-        }
-        
-    }
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 3
+				category = industry
+				category = electronics
+			}
+			remove_ideas = RUS_low_research
+		}
 
-    focus = {
-        id = RUS_remove_census
-        icon = GFX_focus_generic_horse_studs
-        x = 2
-        y = 2
-        relative_position_id = RUS_remake_national_government
-        cost = 4
+	}
+	focus = {
+		id = RUS_remake_economical_government
+		icon = GFX_focus_LAT_suspend_constitution_of_latvia
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_add_more_academy
+		}
+		x = 1
+		y = 2
+		relative_position_id = RUS_build_stock_exchange
+		search_filters = FOCUS_FILTER_RESEARCH
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
 
-        search_filters = FOCUS_FILTER_MANPOWER
-        prerequisite = { focus = RUS_development_of_siberia }
-
-        ai_will_do = { factor = 100 }
-        available = {
-            NOT = {   	
-                has_active_mission = RUS_siberia_mission
-            }
-        }
-        completion_reward = {
-            remove_ideas = RUS_nomad_of_russia
-        }
-        
-    }
-
-    focus = {
-        id = RUS_battle_with_PER
-        icon = GFX_focus_generic_attack_iran
-        x = 0
-        y = 3
-        relative_position_id = RUS_remake_national_government
-        cost = 4
-
-        search_filters = FOCUS_FILTER_ANNEXATION
-        prerequisite = { focus = RUS_remove_census }
-        prerequisite = { focus = RUS_oil_to_rubber_factory }
-        prerequisite = { focus = RUS_MNE_Lyceum }
-
-        ai_will_do = { factor = 240 }
-        available = {
-            
-        }
-        completion_reward = {
-            custom_effect_tooltip = TR_Russia.tt.5
-            country_event  = TR_Russia.5
-        }
-        
-    }
-
-    focus = {
-        id = RUS_remake_russian_constitution
-        icon = GFX_focus_hol_the_foundations_of_defense
-        x = 0
-        y = 4
-        relative_position_id = RUS_remake_national_government
-        cost = 4
-
-        search_filters = FOCUS_FILTER_POLITICAL
-        prerequisite = { focus = RUS_battle_with_PER }
-
-        ai_will_do = { factor = 80 }
-        available = {
-            
-        }
-        completion_reward = {
-            swap_ideas = {
-                add_idea = RUS_winner_of_wwi_1
-                remove_idea = RUS_winner_of_wwi
-            }
-        }
-        
-    }
-
-    #産業近代化
-    focus = {
-        id = RUS_build_stock_exchange
-        icon = GFX_focus_mex_privatisation
-        x = -5
-        y = 1
-        relative_position_id = RUS_remake_national_government
-        cost = 4
-
-        search_filters = FOCUS_FILTER_INDUSTRY
-        prerequisite = { focus = RUS_remake_national_government }
-
-        ai_will_do = { factor = 30 }
-        available = {
-
-        }
-        completion_reward = {
-            add_ideas = RUS_stock_exchange
-        }
-        
-    }
-
-    focus = {
-        id = RUS_add_more_academy
-        icon = GFX_focus_research
-        x = 1
-        y = 1
-        relative_position_id = RUS_build_stock_exchange
-        cost = 4
-
-        search_filters = FOCUS_FILTER_RESEARCH
-        prerequisite = { focus = RUS_build_stock_exchange }
-
-        ai_will_do = { factor = 800 }
-        available = {
-
-        }
-        completion_reward = {
-            add_research_slot = 1
-            add_tech_bonus = {
-                bonus = 1.5
-                uses = 3
-                category = industry
-                category = electronics
-            }
-            remove_ideas = RUS_low_research
-        }
-        
-    }
-
-
-    focus = {
-        id = RUS_remake_economical_government
-        icon = GFX_focus_LAT_suspend_constitution_of_latvia
-        x = 1
-        y = 2
-        relative_position_id = RUS_build_stock_exchange
-        cost = 4
-
-        search_filters = FOCUS_FILTER_RESEARCH
-        prerequisite = { focus = RUS_add_more_academy }
-
-        ai_will_do = { factor = 40 }
-        available = {
-
-        }
-        completion_reward = {
-            random_owned_controlled_state = {
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -367,7 +447,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-            random_owned_controlled_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -397,7 +477,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-            random_owned_controlled_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -427,7 +507,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-            random_owned_controlled_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -457,396 +537,470 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-        }
-        
-    }
+		}
 
-    focus = {
-        id = RUS_develop_of_ukrine
-        icon = GFX_focus_SWE_beneath_sticks_and_stone
-        x = -1
-        y = 1
-        relative_position_id = RUS_build_stock_exchange
-        cost = 4
+	}
+	focus = {
+		id = RUS_develop_of_ukrine
+		icon = GFX_focus_SWE_beneath_sticks_and_stone
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_build_stock_exchange
+		}
+		x = -1
+		y = 1
+		relative_position_id = RUS_build_stock_exchange
+		search_filters = FOCUS_FILTER_INDUSTRY
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
 
-        search_filters = FOCUS_FILTER_INDUSTRY
-        prerequisite = { focus = RUS_build_stock_exchange }
+		}
+		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					is_core_of = UKR
+					has_state_category = large_town
+				}
+				set_state_category = city
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = UKR
+					has_state_category = town
+				}
+				set_state_category = large_town
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			every_controlled_state = {
+				limit = {
+					is_core_of = UKR
+					has_state_category = rural
+				}
+				set_state_category = town
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 
-        ai_will_do = { factor = 40 }
-        available = {
+	}
+	focus = {
+		id = RUS_national_construction
+		icon = GFX_focus_SWE_hygienic_housing
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_develop_of_ukrine
+		}
+		x = -1
+		y = 2
+		relative_position_id = RUS_build_stock_exchange
+		search_filters = FOCUS_FILTER_INDUSTRY
+		ai_will_do = {
+			factor = 240
+		}
+		available = {
 
-        }
-        completion_reward = {
-            every_controlled_state = {
-                limit = {
-                    is_core_of = UKR
-                    has_state_category = large_town
-                }
-                set_state_category = city
-                add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            every_controlled_state = {
-                limit = {
-                    is_core_of = UKR
-                    has_state_category = town
-                }
-                set_state_category = large_town
-                add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            every_controlled_state = {
-                limit = {
-                    is_core_of = UKR
-                    has_state_category = rural
-                }
-                set_state_category = town
-                add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-            }
-        }
-        
-    }
+		}
+		completion_reward = {
+			add_ideas = RUS_national_construction_idea
+		}
 
-    focus = {
-        id = RUS_national_construction
-        icon = GFX_focus_SWE_hygienic_housing
-        x = -1
-        y = 2
-        relative_position_id = RUS_build_stock_exchange
-        cost = 4
+	}
+	focus = {
+		id = RUS_moscow_economy
+		icon = GFX_focus_SWE_landsverk
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_national_construction
+		}
+		prerequisite = {
+			focus = RUS_remake_economical_government
+		}
+		x = 0
+		y = 3
+		relative_position_id = RUS_build_stock_exchange
+		search_filters = FOCUS_FILTER_INDUSTRY
+		ai_will_do = {
+			factor = 800
+		}
+		available = {
 
-        search_filters = FOCUS_FILTER_INDUSTRY
-        prerequisite = { focus = RUS_develop_of_ukrine }
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_agricultural_economy_1
+				add_idea = RUS_agricultural_economy_2
+			}
+			swap_ideas = {
+				remove_idea = RUS_stock_exchange
+				add_idea = RUS_stock_exchange_1
+			}
+		}
 
-        ai_will_do = { factor = 240 }
-        available = {
+	}
+	focus = {
+		id = RUS_buy_arms_factory
+		icon = GFX_focus_generic_combined_arms
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_remake_national_government
+		}
+		x = 5
+		y = 1
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_INDUSTRY
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
 
-        }
-        completion_reward = {
-            add_ideas = RUS_national_construction_idea
-        }
-        
-    }
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = RUS_cost_of_buying_arms_factory
+				days = 180
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 10
+			}
+		}
 
-    focus = {
-        id = RUS_moscow_economy
-        icon = GFX_focus_SWE_landsverk
-        x = 0
-        y = 3
-        relative_position_id = RUS_build_stock_exchange
-        cost = 4
+	}
+	focus = {
+		id = RUS_russia_fire_training
+		icon = GFX_focus_chi_army_reform
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_buy_arms_factory
+		}
+		x = -1
+		y = 1
+		relative_position_id = RUS_buy_arms_factory
+		search_filters = FOCUS_FILTER_ARMY_XP
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			#has_war = no
+		}
+		#has_war = no
+		completion_reward = {
+			army_experience = 100
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
 
-        search_filters = FOCUS_FILTER_INDUSTRY
-        prerequisite = { focus = RUS_national_construction }
-        prerequisite = { focus = RUS_remake_economical_government }
+	}
+	focus = {
+		id = RUS_guard_tank_divisions
+		icon = GFX_focus_generic_tank_production
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_russia_fire_training
+		}
+		x = -1
+		y = 2
+		relative_position_id = RUS_buy_arms_factory
+		search_filters = FOCUS_FILTER_WAR_SUPPORT
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
 
-        ai_will_do = { factor = 800 }
-        available = {
+		}
+		completion_reward = {
+			set_technology = {
+				basic_medium_tank_chassis = 1
+			}
+			division_template = {
+				name = "Tankovjy Polk"
+				regiments = {
+					medium_armor = {
+						x = 0
+						y = 0
+					}
+					medium_armor = {
+						x = 0
+						y = 1
+					}
+					medium_armor = {
+						x = 0
+						y = 2
+					}
+					medium_armor = {
+						x = 0
+						y = 3
+					}
+					medium_armor = {
+						x = 1
+						y = 0
+					}
+					medium_armor = {
+						x = 1
+						y = 1
+					}
+					medium_armor = {
+						x = 1
+						y = 2
+					}
+					medium_armor = {
+						x = 1
+						y = 3
+					}
+					motorized = {
+						x = 2
+						y = 0
+					}
+					motorized = {
+						x = 2
+						y = 1
+					}
+					motorized = {
+						x = 2
+						y = 2
+					}
+					motorized = {
+						x = 2
+						y = 3
+					}
+					motorized = {
+						x = 3
+						y = 0
+					}
+					motorized = {
+						x = 3
+						y = 1
+					}
+					motorized = {
+						x = 3
+						y = 2
+					}
+					motorized = {
+						x = 3
+						y = 3
+					}
+				}
+				support = {
 
-        }
-        completion_reward = {
-            swap_ideas = {
-                remove_idea = RUS_agricultural_economy_1
-                add_idea = RUS_agricultural_economy_2
-            }
-            swap_ideas = {
-                remove_idea = RUS_stock_exchange
-                add_idea = RUS_stock_exchange_1
-            }
-        }
-        
-    }
+				}
+			}
+			create_equipment_variant = {
+				name = "Imperatorskiy tank II Mark.IV"
+				type = medium_tank_chassis_1
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_high_velocity_cannon
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 18
+					tank_nsb_armor_upgrade = 4
+				}
+				icon = "GFX_GER_basic_medium_tank_medium"
+				allow_without_tech = yes
+			}
+			custom_effect_tooltip = TR_Russia.tt.6
+			hidden_effect = {
+				219 = {
+					create_unit = {
+						division = "name = \"1.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+						owner = RUS
+					}
+					create_unit = {
+						division = "name = \"2.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+						owner = RUS
+					}
+					create_unit = {
+						division = "name = \"3.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
+						owner = RUS
+					}
+				}
+			}
+		}
 
+	}
+	focus = {
+		id = RUS_navy_doctrine
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_buy_arms_factory
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_buy_arms_factory
+		search_filters = FOCUS_FILTER_INDUSTRY
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
 
-    #軍事近代化
-    focus = {
-        id = RUS_buy_arms_factory
-        icon = GFX_focus_generic_combined_arms
-        x = 5
-        y = 1
-        relative_position_id = RUS_remake_national_government
-        cost = 4
+		}
+		completion_reward = {
+			add_ideas = RUS_navy_doctrine
+		}
 
-        search_filters = FOCUS_FILTER_INDUSTRY
-        prerequisite = { focus = RUS_remake_national_government }
+	}
+	focus = {
+		id = RUS_shikolsky_planes
+		icon = GFX_focus_generic_copy_plane_designs
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_navy_doctrine
+		}
+		x = 1
+		y = 2
+		relative_position_id = RUS_buy_arms_factory
+		search_filters = FOCUS_FILTER_INDUSTRY
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
 
-        ai_will_do = { factor = 80 }
-        available = {
+		}
+		completion_reward = {
+			add_ideas = RUS_shikolsky_planes_idea
+		}
 
-        }
-        completion_reward = {
-            add_timed_idea = { idea = RUS_cost_of_buying_arms_factory days = 180 }
-            add_offsite_building = { type = arms_factory level = 10 }
-        }
-        
-    }
+	}
+	focus = {
+		id = RUS_operational_doctrine
+		icon = GFX_focus_generic_military_mission
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_shikolsky_planes
+		}
+		prerequisite = {
+			focus = RUS_guard_tank_divisions
+		}
+		x = 0
+		y = 3
+		relative_position_id = RUS_buy_arms_factory
+		search_filters = FOCUS_FILTER_WAR_SUPPORT
+		ai_will_do = {
+			factor = 800
+		}
+		available = {
 
-    focus = {
-        id = RUS_russia_fire_training
-        icon = GFX_focus_chi_army_reform
-        x = -1
-        y = 1
-        relative_position_id = RUS_buy_arms_factory
-        cost = 4
+		}
+		completion_reward = {
+			remove_ideas = RUS_wwi_army
+		}
 
-        search_filters = FOCUS_FILTER_ARMY_XP
-        prerequisite = { focus = RUS_buy_arms_factory }
+	}
+	focus = {
+		id = RUS_3_year_buildup
+		icon = GFX_focus_generic_hydroelectric_energy
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_moscow_economy
+		}
+		prerequisite = {
+			focus = RUS_remake_russian_constitution
+		}
+		x = -3
+		y = 5
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_WAR_SUPPORT
+		ai_will_do = {
+			factor = 2000
+		}
+		available = {
 
-        ai_will_do = { factor = 40 }
-        available = {
-            #has_war = no
-        }
-        completion_reward = {
-            army_experience = 100
-            add_doctrine_cost_reduction = {
-                cost_reduction = 0.5
-                uses = 2
-                category = land_doctrine
-            }
-        }
-        
-    }
+		}
+		completion_reward = {
+			remove_ideas = RUS_agricultural_economy_2
+			add_timed_idea = {
+				idea = RUS_three_year_buildup
+				days = 1080
+			}
+		}
 
-    focus = {
-        id = RUS_guard_tank_divisions
-        icon = GFX_focus_generic_tank_production
-        x = -1
-        y = 2
-        relative_position_id = RUS_buy_arms_factory
-        cost = 4
+	}
+	focus = {
+		id = RUS_deep_battle_doctrine
+		icon = GFX_focus_SOV_approach_tukahchevsky
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_operational_doctrine
+		}
+		prerequisite = {
+			focus = RUS_remake_russian_constitution
+		}
+		x = 3
+		y = 5
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_WAR_SUPPORT
+		ai_will_do = {
+			factor = 2000
+		}
+		available = {
 
-        search_filters = FOCUS_FILTER_WAR_SUPPORT
-        prerequisite = { focus = RUS_russia_fire_training }
+		}
+		completion_reward = {
+			add_ideas = RUS_deep_battle
+			every_army_leader = {
+				limit = {
+					is_character = RUS_mikhail_tukhachevsky
+				}
+				add_skill_level = 2
+				add_attack = 1
+				add_logistics = 1
+			}
+			custom_effect_tooltip = TR_Russia.tt.8
+			hidden_effect = {
+				every_army_leader = {
+					add_skill_level = 1
+					add_attack = 1
+					add_logistics = 1
+				}
+			}
+		}
 
-        ai_will_do = { factor = 40 }
-        available = {
-        }
-        completion_reward = {
-            set_technology = {
-                basic_medium_tank_chassis = 1
-            }
-            division_template = {
-                name = "Tankovjy Polk"
-                regiments = {
-                    medium_armor = { x = 0 y = 0 }
-                    medium_armor = { x = 0 y = 1 }
-                    medium_armor = { x = 0 y = 2 }
-                    medium_armor = { x = 0 y = 3 }
-                    medium_armor = { x = 1 y = 0 }
-                    medium_armor = { x = 1 y = 1 }
-                    medium_armor = { x = 1 y = 2 }
-                    medium_armor = { x = 1 y = 3 }
-                    motorized = { x = 2 y = 0 }
-                    motorized = { x = 2 y = 1 }
-                    motorized = { x = 2 y = 2 }
-                    motorized = { x = 2 y = 3 }
-                    motorized = { x = 3 y = 0 }
-                    motorized = { x = 3 y = 1 }
-                    motorized = { x = 3 y = 2 }
-                    motorized = { x = 3 y = 3 }
-                }
-                support = {
-                    
-                }
-            }
-            create_equipment_variant = {
-                name = "Imperatorskiy tank II Mark.IV"
-                type = medium_tank_chassis_1
-                parent_version = 0
-                modules = {
-                    main_armament_slot = tank_high_velocity_cannon
-                    turret_type_slot = tank_medium_three_man_tank_turret
-                    suspension_type_slot = tank_bogie_suspension
-                    armor_type_slot = tank_welded_armor
-                    engine_type_slot = tank_gasoline_engine
-                }
-                upgrades = {
-                    tank_nsb_engine_upgrade = 18
-                    tank_nsb_armor_upgrade = 4
-                }
-                icon = "GFX_GER_basic_medium_tank_medium"
-                allow_without_tech = yes
-                
-            }
-            custom_effect_tooltip = TR_Russia.tt.6
-            #custom_effect_tooltip = TR_Russia.tt.7
-            hidden_effect = {
-                219 = {
-                    create_unit = {
-                        division = "name = \"1.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"2.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                    create_unit = {
-                        division = "name = \"3.Gvardeyskiy tankovjy polk\" division_template = \"Tankovjy Polk\" start_experience_factor = 0.85"
-                        owner = RUS
-                    }
-                }
-            }
-        }
-        
-    }
+	}
+	focus = {
+		id = RUS_alaska_development
+		icon = GFX_focus_SOV_old_eastern_empire
+		cost = 10.00
+		prerequisite = {
+			focus = RUS_deep_battle_doctrine
+		}
+		prerequisite = {
+			focus = RUS_3_year_buildup
+		}
+		x = 0
+		y = 6
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_WAR_SUPPORT
+		ai_will_do = {
+			factor = 1200
+		}
+		available = {
 
-    focus = {
-        id = RUS_navy_doctrine
-        icon = GFX_focus_generic_navy_battleship2
-        x = 1
-        y = 1
-        relative_position_id = RUS_buy_arms_factory
-        cost = 4
+		}
+		completion_reward = {
+			country_event = TR_Russia.15
+		}
 
-        search_filters = FOCUS_FILTER_INDUSTRY
-        prerequisite = { focus = RUS_buy_arms_factory }
-
-        ai_will_do = { factor = 200 }
-        available = {
-            
-        }
-        completion_reward = {
-            add_ideas = RUS_navy_doctrine
-        }
-        
-    }
-
-    focus = {
-        id = RUS_shikolsky_planes
-        icon = GFX_focus_generic_copy_plane_designs
-        x = 1
-        y = 2
-        relative_position_id = RUS_buy_arms_factory
-        cost = 4
-
-        search_filters = FOCUS_FILTER_INDUSTRY
-        prerequisite = { focus = RUS_navy_doctrine }
-
-        ai_will_do = { factor = 40 }
-        available = {
-            
-        }
-        completion_reward = {
-            add_ideas = RUS_shikolsky_planes_idea
-        }
-        
-    }
-
-    focus = {
-        id = RUS_operational_doctrine
-        icon = GFX_focus_generic_military_mission
-        x = 0
-        y = 3
-        relative_position_id = RUS_buy_arms_factory
-        cost = 4
-
-        search_filters = FOCUS_FILTER_WAR_SUPPORT
-        prerequisite = { focus = RUS_shikolsky_planes }
-        prerequisite = { focus = RUS_guard_tank_divisions }
-
-        ai_will_do = { factor = 800 }
-        available = {
-            
-        }
-        completion_reward = {
-            remove_ideas = RUS_wwi_army
-        }
-        
-    }
-
-
-    focus = {
-        id = RUS_3_year_buildup
-        icon = GFX_focus_generic_hydroelectric_energy
-        x = -3
-        y = 5
-        relative_position_id = RUS_remake_national_government
-        cost = 4
-
-        search_filters = FOCUS_FILTER_WAR_SUPPORT
-        prerequisite = { focus = RUS_moscow_economy }
-        prerequisite = { focus = RUS_remake_russian_constitution }
-
-        ai_will_do = { factor = 2000 }
-        available = {
-            
-        }
-        completion_reward = {
-            remove_ideas = RUS_agricultural_economy_2
-            add_timed_idea = { idea = RUS_three_year_buildup days = 1080 }
-        }
-        
-    }
-
-    focus = {
-        id = RUS_deep_battle_doctrine
-        icon = GFX_focus_SOV_approach_tukahchevsky
-        x = 3
-        y = 5
-        relative_position_id = RUS_remake_national_government
-        cost = 4
-
-        search_filters = FOCUS_FILTER_WAR_SUPPORT
-        prerequisite = { focus = RUS_operational_doctrine }
-        prerequisite = { focus = RUS_remake_russian_constitution }
-
-        ai_will_do = { factor = 2000 }
-        available = {
-            
-        }
-        completion_reward = {
-            add_ideas = RUS_deep_battle
-            every_army_leader = {
-                limit = {
-                    is_character = RUS_mikhail_tukhachevsky
-                }
-                add_skill_level = 2
-                add_attack = 1
-                add_logistics = 1
-            }
-            custom_effect_tooltip = TR_Russia.tt.8
-            hidden_effect = {
-                every_army_leader = {
-                    add_skill_level = 1
-                    add_attack = 1
-                    add_logistics = 1
-                }
-            }
-
-        }
-        
-    }
-
-    focus = {
-        id = RUS_alaska_development
-        icon = GFX_focus_SOV_old_eastern_empire
-        x = 0
-        y = 6
-        relative_position_id = RUS_remake_national_government
-        cost = 10
-
-        search_filters = FOCUS_FILTER_WAR_SUPPORT
-        prerequisite = { focus = RUS_deep_battle_doctrine }
-        prerequisite = { focus = RUS_3_year_buildup }
-
-        ai_will_do = { factor = 1200 }
-        available = {
-            
-        }
-        completion_reward = {
-            country_event = TR_Russia.15
-        }
-        
-    }
-
+	}
 }
