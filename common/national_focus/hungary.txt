@@ -1,0 +1,520 @@
+focus_tree = {
+	id = hungarian_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 300
+			tag = HUN
+		}
+	}
+	continuous_focus_position = { x = 20 y = 1200 }
+	default = no
+	focus = {
+		id = HUN_focus_0
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 10.00
+		x = 23
+		y = 0
+
+	}
+	focus = {
+		id = HUN_main_focus_0
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_focus_0
+		}
+		mutually_exclusive = {
+			focus = HUN_reduction
+		}
+		x = 16
+		y = 1
+
+	}
+	focus = {
+		id = HUN_federation_focus_0
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_main_focus_0
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = HUN_federation_left_focus_0
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_focus_0
+		}
+		mutually_exclusive = {
+			focus = HUN_federation_right_focus_0
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = HUN_federation_left_focus_1
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_left_focus_0
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = HUN_federation_left_focus_3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_left_focus_1
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = HUN_federation_left_focus_2
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_left_focus_1
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = HUN_federation_right_focus_0
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_focus_0
+		}
+		mutually_exclusive = {
+			focus = HUN_federation_left_focus_0
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = HUN_federation_focus_1
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = HUN_federation_focus_0
+			focus = HUN_federation_right_focus_0
+			focus = HUN_federation_left_focus_0
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = HUN_federation_focus_3
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_focus_1
+		}
+		prerequisite = {
+			focus = HUN_federation_left_focus_0
+		}
+		mutually_exclusive = {
+			focus = HUN_federation_focus_2
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = HUN_federation_focus_2
+		icon = GFX_focus_generic_limited_social_mobilization
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_focus_1
+		}
+		prerequisite = {
+			focus = HUN_federation_right_focus_0
+		}
+		mutually_exclusive = {
+			focus = HUN_federation_focus_3
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = HUN_federation_focus_4
+		icon = GFX_goal_generic_position_armies
+		cost = 5.00
+		prerequisite = {
+			focus = HUN_federation_focus_2
+		}
+		prerequisite = {
+			focus = HUN_federation_focus_3
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = HUN_federation_right_focus_1
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_right_focus_0
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = HUN_federation_right_focus_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_right_focus_1
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = HUN_federation_right_focus_3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_right_focus_2
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = HUN_federation_right_focus_4
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_right_focus_2
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = HUN_federation_right_focus_6
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_right_focus_1
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = HUN_federation_right_focus_8
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_right_focus_1
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = HUN_federation_right_focus_9
+		icon = GFX_focus_research2
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_right_focus_8
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = HUN_main_focus_1
+		icon = GFX_focus_SWE_organize_a_putsch
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_main_focus_0
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = HUN_main_focus_2
+		icon = GFX_focus_generic_limited_social_mobilization
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_main_focus_1
+		}
+		mutually_exclusive = {
+			focus = HUN_main_focus_3
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = HUN_main_focus_4
+		icon = GFX_focus_generic_industrialists
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_main_focus_2
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = HUN_main_focus_3
+		icon = GFX_focus_generic_workers
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_main_focus_1
+		}
+		mutually_exclusive = {
+			focus = HUN_main_focus_2
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = HUN_main_focus_6
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_main_focus_2
+		}
+		prerequisite = {
+			focus = HUN_main_focus_3
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = HUN_main_focus_7
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_main_focus_6
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = HUN_main_focus_8
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_main_focus_7
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = HUN_main_focus_9
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_main_focus_3
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = HUN_main_focus_10
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_main_focus_9
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = HUN_federation_right_focus_5
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_right_focus_3
+		}
+		prerequisite = {
+			focus = HUN_federation_right_focus_4
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = HUN_federation_left_focus_6
+		icon = GFX_goal_continuous_research
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_left_focus_8
+		}
+		prerequisite = {
+			focus = HUN_federation_left_focus_4
+		}
+		x = 6
+		y = 7
+
+	}
+	focus = {
+		id = HUN_federation_left_focus_4
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_focus_3
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = HUN_federation_focus_5
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_right_focus_5
+		}
+		prerequisite = {
+			focus = HUN_federation_left_focus_6
+		}
+		prerequisite = {
+			focus = HUN_federation_left_focus_7
+		}
+		prerequisite = {
+			focus = HUN_federation_focus_4
+		}
+		x = 0
+		y = 2
+		relative_position_id = HUN_federation_focus_4
+
+	}
+	focus = {
+		id = HUN_reduction
+		icon = GFX_goal_generic_defence
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_focus_0
+		}
+		mutually_exclusive = {
+			focus = HUN_main_focus_0
+		}
+		x = 30
+		y = 1
+
+	}
+	focus = {
+		id = HUN_main_focus_11
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_main_focus_10
+		}
+		prerequisite = {
+			focus = HUN_main_focus_8
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = HUN_main_focus_12
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_main_focus_5
+		}
+		prerequisite = {
+			focus = HUN_main_focus_8
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = HUN_main_focus_5
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_main_focus_4
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = HUN_reduction_right_focus_0
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_reduction
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = HUN_federation_left_focus_5
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_left_focus_3
+		}
+		x = 3
+		y = 6
+
+	}
+	focus = {
+		id = HUN_federation_left_focus_7
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_left_focus_5
+		}
+		x = 3
+		y = 7
+
+	}
+	focus = {
+		id = HUN_federation_left_focus_8
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_left_focus_2
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = HUN_federation_right_focus_7
+		icon = GFX_focus_generic_steel
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_federation_right_focus_6
+		}
+		x = 15
+		y = 7
+
+	}
+}
