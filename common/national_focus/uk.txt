@@ -3007,7 +3007,31 @@ focus_tree = {
 				y = 3
 				relative_position_id = TR_ENG_prepare_for_war
 				completion_reward = {
-			
+					add_ideas = TR_ENG_building_defence_networks
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						936	= {
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province =6449 
+							}
+						}
+						937	= {
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province =575 
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province =11548 
+							}
+						}
+					}
 				}
 			}
 			# buildings
@@ -3045,11 +3069,82 @@ focus_tree = {
 						base = 1
 						factor = 176
 					}
+					available = {
+						is_in_faction_with = HOL
+					}
 					x = 0
 					y = 2
 					relative_position_id = TR_ENG_air_defense_focus
 					completion_reward = {
-				
+						HOL = {
+							add_ideas = TR_ENG_building_defence_networks
+							6 = {
+								add_building_construction = {
+									type = bunker
+									level = 3
+									province =6446
+								}
+								add_building_construction = {
+									type = bunker
+									level = 3
+									province =3576 
+								}
+								add_building_construction = {
+									type = bunker
+									level = 3
+									province =516 
+								}
+								add_building_construction = {
+									type = bunker
+									level = 3
+									province =13068 
+								}
+								add_building_construction = {
+									type = bunker
+									level = 3
+									province =9574 
+								}
+							} 
+							35 = {
+								add_building_construction = {
+									type = bunker
+									level = 3
+									province =11562
+								}
+								add_building_construction = {
+									type = bunker
+									level = 3
+									province =6500 
+								}
+								add_building_construction = {
+									type = bunker
+									level = 3
+									province =11456 
+								}
+							}
+							36 = {
+								add_building_construction = {
+									type = bunker
+									level = 3
+									province =9363 
+								}
+								add_building_construction = {
+									type = bunker
+									level = 3
+									province =9403 
+								}
+								add_building_construction = {
+									type = bunker
+									level = 3
+									province =9309 
+								}
+								add_building_construction = {
+									type = bunker
+									level = 3
+									province =11318 
+								}
+							}
+						}
 					}
 				}
 				focus = {
@@ -3067,7 +3162,19 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_defence_assistance_to_opposite_shore
 					completion_reward = {
-				
+						add_ideas = TR_ENG_building_defence_networks
+						909	= {
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =3231 
+							}
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =317 
+							}
+						}
 					}
 				}
 				focus = {
@@ -3138,7 +3245,23 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_reinforced_flak
 					completion_reward = {
-				
+						every_country = {
+							limit = {
+								is_in_faction_with = ENG
+								NOT = {
+									tag = ENG
+								}
+								NOT = {
+									tag = RUS
+								}
+							}
+							every_owned_state = {
+								add_building_construction = {
+									type = anti_air_building
+									level = 3
+								}
+							}
+						}
 					}
 				}
 				focus = {
@@ -3212,7 +3335,23 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_reinforced_radar
 					completion_reward = {
-				
+						every_country = {
+							limit = {
+								is_in_faction_with = ENG
+								NOT = {
+									tag = ENG
+								}
+								NOT = {
+									tag = RUS
+								}
+							}
+							every_owned_state = {
+								add_building_construction = {
+									type = radar_station
+									level = 3
+								}
+							}
+						}
 					}
 				}
 				focus = {
@@ -3239,7 +3378,12 @@ focus_tree = {
 					y = 3
 					relative_position_id = TR_ENG_fortification_in_ally
 					completion_reward = {
-				
+						every_country = {
+							limit = {
+								is_in_faction_with = ENG
+							}
+							add_ideas = TR_ENG_protect_everything
+						}
 					}
 				}
 			# nuclear
@@ -3428,6 +3572,31 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_ENG_building_defence_networks
 					completion_reward = {
+						add_ideas = TR_ENG_maritime_fort
+						if = {
+							limit = {
+								is_ai = yes
+							}
+							936	= {
+								add_building_construction = {
+									type = coastal_bunker
+									level = 4
+									province =6449 
+								}
+							}
+							937	= {
+								add_building_construction = {
+									type = coastal_bunker
+									level = 4
+									province =575 
+								}
+								add_building_construction = {
+									type = coastal_bunker
+									level = 4
+									province =11548 
+								}
+							}
+						}
 					}
 				}
 				focus = {
@@ -3445,7 +3614,55 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_maritime_fort
 					completion_reward = {
-				
+						123 = {
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =6526 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =540 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =3463 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =3422 
+							}
+						}
+						127	= {
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =6489 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =9458 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =11446 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =3501 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =13070 
+							}
+						}
 					}
 				}
 				focus = {
@@ -3463,7 +3680,55 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_prevention_of_landing
 					completion_reward = {
-				
+						123 = {
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =6526 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =540 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =3463 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =3422 
+							}
+						}
+						127	= {
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =6489 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =9458 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =11446 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =3501 
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province =13070 
+							}
+						}
 					}
 				}
 				focus = {
@@ -3481,7 +3746,55 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_maritime_fort
 					completion_reward = {
-				
+						123 = {
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =6526 
+							}
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =540 
+							}
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =3463 
+							}
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =3422 
+							}
+						}
+						127	= {
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =6489 
+							}
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =9458 
+							}
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =11446 
+							}
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =3501 
+							}
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =13070 
+							}
+						}
 					}
 				}
 				focus = {
@@ -3499,7 +3812,37 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_ENG_fort_of_england
 					completion_reward = {
-				
+						130 = {
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =11297 
+							}
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =11317 
+							}
+						}
+						219 = {
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =11332 
+							}
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =219 
+							}
+						}
+						131 = {
+							add_building_construction = {
+								type = bunker
+								level = 8
+								province =11299 
+							}
+						}
 					}
 				}
 				focus = {
@@ -3520,7 +3863,7 @@ focus_tree = {
 					y = 6
 					relative_position_id = TR_ENG_maritime_fort
 					completion_reward = {
-				
+						
 					}
 				}
 	### unhistorical route ###

@@ -108,7 +108,7 @@ on_actions = {
 					array = second_american_civil_war
 				}
 			}
-		}i
+		}
 	effect = {
 			SER = {
 				country_event = {
