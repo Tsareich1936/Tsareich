@@ -26,7 +26,7 @@ country_event = {#軍部が侵攻計画を提案
 	option = {#良きにはからえ
 		name = TR_balkan.2.a
 	}
-
+}
 country_event = {#ルーマニアとの密約
 	id = TR_balkan.3
 	title = TR_balkan.3.t
