@@ -3881,7 +3881,7 @@ focus_tree = {
             }
         }
         allow_branch = {
-            has_country_flag = a                    
+            has_country_flag = jap_government                    
         }
         available = {
             is_subject = no
