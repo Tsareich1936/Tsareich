@@ -25,7 +25,7 @@ focus_tree = {
 	focus = {
 		id = FRA_com1
 		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
-		cost = 4
+		cost = 1
 		prerequisite = {
 			focus = FRA_inter1
 		}
@@ -71,6 +71,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		completion_reward = {
+			add_stability = 0.05
 			add_popularity = {
 				ideology = socialism
 				popularity = -0.1
@@ -80,7 +81,10 @@ focus_tree = {
 				popularity = -0.1
 			}
 			add_manpower = -1000
-			add_ideas = TR_jinzaibusoku_kanryou
+			add_timed_idea = {
+				idea = TR_jinzaibusoku_kanryou
+				days = 720
+			}
 		}
 		
 	}
@@ -96,6 +100,7 @@ focus_tree = {
 		x = 3
 		y = 3
 		completion_reward = {
+			add_stability = 0.05
 			add_popularity = {
 				ideology = fascism
 				popularity = -0.1
@@ -105,7 +110,10 @@ focus_tree = {
 				popularity = -0.1
 			}
 			add_manpower = -1000
-			add_ideas = TR_jinzaibusoku_syoukou
+			add_timed_idea = {
+				idea = TR_jinzaibusoku_syoukou
+				days = 720
+			}
 		}
 	}
 	focus = {
@@ -121,7 +129,7 @@ focus_tree = {
 		x = 2
 		y = 4
 		completion_reward = {
-			add_stability = 0.15
+			add_stability = 0.2
 			remove_ideas = TR_FRA_seijiteki_hunsou1
 		}
 	}
@@ -227,6 +235,7 @@ focus_tree = {
 			base = 100
 		}
 		completion_reward = {
+			add_war_support = 0.1
 			custom_effect_tooltip = "FRA_SPA_sibaku1.tt"
 		}
 	}
@@ -240,6 +249,7 @@ focus_tree = {
 		x = 2
 		y = 6
 		completion_reward = {
+			add_war_support = 0.1
 			custom_effect_tooltip = "FRA_SPA_sibaku2.tt"
 		}
 	}
@@ -253,6 +263,7 @@ focus_tree = {
 		x = 2
 		y = 7
 		completion_reward = {
+			add_war_support = 0.1
 			custom_effect_tooltip = "FRA_SPA_sibaku3.tt"
 			swap_ideas = {
 				remove_idea = TR_FRA_kokuminno_situbou
@@ -283,6 +294,7 @@ focus_tree = {
 		x = 4
 		y = 7
 		completion_reward = {
+			add_stability = 0.1
 			swap_ideas = {
 				remove_idea = TR_FRA_SCpolice
 				add_idea = TR_FRA_SCpolice1
@@ -301,7 +313,7 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			remove_ideas = TR_jinzaibusoku_kanryou
-			add_stability = 0.05
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -374,7 +386,7 @@ focus_tree = {
 	focus = {
 		id = FRA_sadc
 		icon = GFX_focus_focus_fra_revolution_utmost_shine
-		cost = 8.00
+		cost = 1
 		available = {
 			always = no
 		}
@@ -393,7 +405,7 @@ focus_tree = {
 	focus = {
 		id = FRA_bonp
 		icon = GFX_focus_fra_milice
-		cost = 8.00
+		cost = 1
 		available = {
 			always = no
 		}
@@ -412,7 +424,7 @@ focus_tree = {
 	focus = {
 		id = FRA_anaky
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		cost = 8.00
+		cost = 1
 		available = {
 			always = no
 		}
@@ -433,21 +445,45 @@ focus_tree = {
 
 	#外交
 	focus = {
-		id = FRA_dip
-		icon = GFX_focus_focus_fra_fascist_threat
-		cost = 8.00
+		id = FRA_dip0
+		icon = GFX_goal_continuous_boost_freedom
 		available = {
 			not ={
 				has_idea = TR_FRA_kokuminno_situbou
 				has_idea = TR_FRA_kokuminno_situbou1
 			}
+			has_army_manpower = { size > 499999 }
 		}
-		x = 6
-		y = 9
+		x = 36
+		y = 1
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = FRA_dip
+		icon = GFX_focus_focus_fra_fascist_threat
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_dip0
+		}
+		available = {
+			has_army_manpower = { size > 749999 }
+		}
+		x = 30
+		y = 2
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
 				target = FGE
+				expire = 0
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ENG
 				expire = 0
 			}
 		}
@@ -459,14 +495,12 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_dip
 		}
-		x = 6
-		y = 10
+		x = 30
+		y = 3
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = ENG
-				expire = 0
-			}
+			ENG ={
+				add_war_support = -0.15
+		        }
 		}
 	}
 	focus = {
@@ -476,8 +510,11 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_dip1
 		}
-		x = 6
-		y = 11
+		available = {
+			has_army_manpower = { size > 999999 }
+		}
+		x = 30
+		y = 4
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -497,14 +534,111 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = FRA_dip_nuke
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_dip0
+		}
+		x = 33
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuke_bonus
+				bonus = 1
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+	focus = {
+		id = FRA_dip_nuke1
+		icon = GFX_goal_continuous_increase_nu
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_dip_nuke
+		}
+		x = 33
+		y = 3
+		completion_reward = {
+			FRA = {
+			    add_tech_bonus = {
+				    name = nuke_bonus
+				    bonus = 1
+				    uses = 2
+				    category = nuclear
+			    }
+		    }
+			GER = {
+			    add_tech_bonus = {
+				    name = nuke_bonus
+				    bonus = 1
+				    uses = 1
+				    category = nuclear
+			    }
+		    }
+			SRI = {
+				add_tech_bonus = {
+					name = nuke_bonus
+					bonus = 1
+					uses = 1
+					category = nuclear
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_dip_power
+		icon = GFX_goal_support_communism_shine
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_dip0
+		}
+		x = 38
+		y = 2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TR_FRA_kakumei_honou
+				add_idea = TR_FRA_kakumei_honou1
+			}
+		}
+	}
+	focus = {
+		id = FRA_dip_power1
+		icon = GFX_goal_support_communism_shine
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_dip_power
+		}
+		available = {
+			has_army_manpower = { size > 799999 }
+			has_full_control_of_state = 458
+			has_full_control_of_state = 459
+		}
+		x = 38
+		y = 3
+		completion_reward = {
+			add_state_core = 458
+			add_state_core = 459
+			add_state_core = 460
+			add_state_core = 513
+			add_state_core = 665
+			swap_ideas = {
+				remove_idea = TR_FRA_kakumei_honou1
+				add_idea = TR_FRA_kakumei_honou2
+			}			
+		}
+	}
+
+	focus = {
 		id = FRA_dip_inter1
 		icon = GFX_goal_support_communism_shine
 		cost = 8.00
 		prerequisite = {
-			focus = FRA_dip
+			focus = FRA_dip0
 		}
-		x = 9
-		y = 10
+		x = 42
+		y = 2
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -516,8 +650,8 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_dip_inter1
 		}
-		x = 9
-		y = 11
+		x = 42
+		y = 3
 		completion_reward = {
 			add_political_power = 50			
 		}
@@ -527,8 +661,11 @@ focus_tree = {
 		id = FRA_com_EU
 		icon = GFX_goal_molotov_ribbentrop_pact
 		cost = 8.00
-		x = 2
-		y = 11
+		prerequisite = {
+			focus = FRA_dip_inter2
+		}
+		x = 42
+		y = 4
 		completion_reward = {
 			add_political_power = 50	
 		}
@@ -540,8 +677,8 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_com_EU
 		}
-		x = 2
-		y = 12
+		x = 42
+		y = 5
 		completion_reward = {
 			add_political_power = 50	
 		}
@@ -1293,6 +1430,23 @@ focus_tree = {
 		y = 12
 		completion_reward = {
 			add_ideas = TR_FRA_nav
+			navy_experience = 30
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1305,7 +1459,13 @@ focus_tree = {
 		x = 24
 		y = 13
 		completion_reward = {
-			
+			army_experience = 20
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1318,7 +1478,12 @@ focus_tree = {
 		x = 23
 		y = 15
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 	}
 	focus = {
@@ -1331,7 +1496,12 @@ focus_tree = {
 		x = 25
 		y = 15
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
@@ -1348,6 +1518,12 @@ focus_tree = {
 		y = 16
 		completion_reward = {
 			add_ideas = TR_FRA_mil
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1360,7 +1536,7 @@ focus_tree = {
 		x = 26
 		y = 13
 		completion_reward = {
-			
+			custom_effect_tooltip = "FRA_midi_unga"
 		}
 	}
 	focus = {
@@ -1373,7 +1549,38 @@ focus_tree = {
 		x = 29
 		y = 13
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1386,7 +1593,19 @@ focus_tree = {
 		x = 29
 		y = 14
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = dd_tech
+				category = bc_tech
+			}
 		}
 	}
 	focus = {
@@ -1399,7 +1618,12 @@ focus_tree = {
 		x = 29
 		y = 15
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1415,7 +1639,14 @@ focus_tree = {
 		x = 30
 		y = 16
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.5
+				uses = 1
+				category = cv_tech
+
+			}
+			add_ideas = TR_FRA_kuubo
 		}
 	}
 	focus = {
@@ -1428,7 +1659,18 @@ focus_tree = {
 		x = 27
 		y = 14
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = bb_tech
+			}
 		}
 	}
 	focus = {
@@ -1445,6 +1687,21 @@ focus_tree = {
 				remove_idea = TR_FRA_nav
 				add_idea = TR_FRA_nav1
 			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = bb_tech
+				category = cv_tech
+				category = bc_tech
+
+			}
 		}
 	}
 	focus = {
@@ -1460,7 +1717,7 @@ focus_tree = {
 		x = 31
 		y = 15
 		completion_reward = {
-			
+			add_ideas = TR_FRA_navy_air
 		}
 	}
 
@@ -1477,7 +1734,13 @@ focus_tree = {
 		x = 33
 		y = 13
 		completion_reward = {
-			
+			air_experience = 30
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1490,7 +1753,42 @@ focus_tree = {
 		x = 33
 		y = 14
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			} 
 		}
 	}
 
@@ -1505,7 +1803,12 @@ focus_tree = {
 		x = 33
 		y = 15
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = air_base
+				bonus = 1
+				uses = 1
+				category = air_equipment
+			}
 		}
 	}
 	focus = {
@@ -1518,7 +1821,12 @@ focus_tree = {
 		x = 33
 		y = 16
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = air_base
+				bonus = 1
+				uses = 1
+				category = air_equipment
+			}
 		}
 	}
 	focus = {
@@ -1532,6 +1840,22 @@ focus_tree = {
 		y = 12
 		completion_reward = {
 			add_ideas = TR_FRA_mil
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			} 
 		}
 	}
 	focus = {
@@ -1544,7 +1868,13 @@ focus_tree = {
 		x = 39
 		y = 13
 		completion_reward = {
-			
+			army_experience = 30
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1557,7 +1887,12 @@ focus_tree = {
 		x = 37
 		y = 14
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.8
+				uses = 2
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
@@ -1573,7 +1908,12 @@ focus_tree = {
 		x = 35
 		y = 15
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = air_base
+				bonus = 0.75
+				uses = 2
+				category = cat_anti_tank
+			}
 		}
 	}
 	focus = {
@@ -1586,7 +1926,13 @@ focus_tree = {
 		x = 37
 		y = 15
 		completion_reward = {
-			
+			army_experience = 20
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1599,7 +1945,13 @@ focus_tree = {
 		x = 37
 		y = 16
 		completion_reward = {
-			
+			army_experience = 20
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1616,6 +1968,12 @@ focus_tree = {
 				remove_idea = TR_FRA_mil
 				add_idea = TR_FRA_mil1
 			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1631,7 +1989,12 @@ focus_tree = {
 		x = 39
 		y = 14
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = tank_bonus
+				bonus = 1
+				uses = 1
+				category = armor
+	     	}
 		}
 	}
 	focus = {
@@ -1644,7 +2007,13 @@ focus_tree = {
 		x = 39
 		y = 15
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = tank_bonus
+				bonus = 1
+				uses = 1
+				category = armor
+	     	}
+			add_ideas = TR_FRA_tank
 		}
 	}
 	focus = {
@@ -1660,7 +2029,12 @@ focus_tree = {
 		x = 41
 		y = 14
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 	focus = {
@@ -1673,7 +2047,13 @@ focus_tree = {
 		x = 41
 		y = 15		
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1
+				uses = 1
+				category = artillery
+	     	}
+			add_ideas = TR_FRA_artillery
 		}
 	}
 	focus = {
@@ -1686,7 +2066,13 @@ focus_tree = {
 		x = 43
 		y = 13
 		completion_reward = {
-			
+			navy_experience = 30
+			add_doctrine_cost_reduction = {
+				name = land_navy_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1699,7 +2085,18 @@ focus_tree = {
 		x = 43
 		y = 14
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = {
+				name = land_navy_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = ss_tech
+			}
 		}
 	}
 	focus = {
@@ -1712,7 +2109,12 @@ focus_tree = {
 		x = 43
 		y = 15
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
 		}
 	}
 	focus = {
@@ -1726,6 +2128,12 @@ focus_tree = {
 		y = 15
 		completion_reward = {
 			add_ideas = TR_FRA_nav
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = bb_tech
+			}
 		}
 	}
 

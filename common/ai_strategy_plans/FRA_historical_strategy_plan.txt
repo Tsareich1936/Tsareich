@@ -12,7 +12,6 @@ France_historical = {
 	ai_national_focuses = {
 		# grab as fast as you can if available
 		FRA_dip
-        FRA_hukusi2
 
 		FRA_ind1
 		FRA_inter1
@@ -33,7 +32,10 @@ France_historical = {
 		FRA_mil
 		FRA_ind6
 		FRA_ind7
-
+		FRA_com2
+		FRA_com3
+		FRA_com4
+        FRA_com5
 	}
 
 	research = {

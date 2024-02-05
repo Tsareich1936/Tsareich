@@ -27,13 +27,19 @@
 
 
  #外交
+ FRA_dip0: "外交方針を再確認"
  FRA_com_EU: "EUへの夢"
  FRA_com_EU2: "EUの結成"
  FRA_dip: "反乱軍を鎮圧"
  FRA_dip1: "イギリスを打倒"
  FRA_dip2: "石油を確保"
+ FRA_dip_nuke: "キュリー計画"
+ FRA_dip_nuke1: "共同核開発"
+
  FRA_dip_inter1: "インターナショナル会議を開催"
  FRA_dip_inter2: "インターナショナルの結束を強化"
+ FRA_dip_power: "国民を鼓舞"
+ FRA_dip_power1: "勝利の凱旋"
 
 
  #産業
@@ -72,7 +78,7 @@
  FRA_nav1: "造船計画の始動"
  FRA_nav2: "護衛艦"
  FRA_nav3: "対空戦闘"
- FRA_nav4: "空の支配"
+ FRA_nav4: "空母艦隊"
  FRA_nav5: "主力艦"
  FRA_nav6: "フランスは海を統べる！"
  FRA_nav_midi: "ミディ運河の近代化"

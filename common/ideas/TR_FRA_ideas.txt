@@ -16,6 +16,36 @@ ideas = {
 				can_create_factions = yes
 			}
 		}
+		TR_FRA_kakumei_honou1 = {
+			picture = "generic_communism_drift_bonus"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.2
+				weekly_manpower = 1200
+				ai_desired_divisions_factor = 2
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		TR_FRA_kakumei_honou2 = {
+			picture = "generic_communism_drift_bonus"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.3
+				weekly_manpower = 2500
+				ai_desired_divisions_factor = 2
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
 
 
 
@@ -231,7 +261,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_factor = -0.15
-                consumer_goods_factor = 0.15
+                stability_factor = -0.15
 			}
 		}
 		TR_jinzaibusoku_syoukou = {
@@ -253,7 +283,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_weekly_factor = -0.001
+				stability_weekly = -0.001
 				war_support_factor = -0.5
 				surrender_limit = -0.5
 			}
@@ -289,7 +319,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_weekly_factor = 0.003
+				stability_weekly = 0.003
 				drift_defence_factor = 0.5
 				political_power_factor = 0.1
 			}
@@ -339,7 +369,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = -0.2
+				consumer_goods_factor = -0.33
                 production_speed_industrial_complex_factor = 0.25
 			}
 		}
@@ -410,6 +440,51 @@ ideas = {
 			modifier = {
 				conscription_factor = 0.25
 				conscription = 0.03
+			}
+		}
+
+		TR_FRA_kuubo = {
+			picture = "generic_fuel_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				sortie_efficiency = 0.2
+				navy_capital_ship_defence_factor = 0.2
+			}
+		}
+		TR_FRA_navy_air = {
+			picture = "generic_fuel_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				naval_strike_attack_factor = 0.2
+				air_nav_efficiency = 0.2
+			}
+		}
+		TR_FRA_artillery = {
+			picture = "generic_fuel_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_artillery_attack_factor = 0.15
+				max_planning = 0.15
+			}
+		}
+		TR_FRA_tank = {
+			picture = "generic_fuel_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_armor_attack_factor = 0.15
+				army_speed_factor = 0.15
 			}
 		}
 	}	
