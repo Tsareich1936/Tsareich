@@ -7,6 +7,9 @@ JAP_balance_of_power = {
 		id = mid_range
 		max = 0.2
 		min = -0.2
+		modifier = {
+			generate_wargoal_tension = -0.25
+		}
 	}
 
 	side = {
@@ -15,16 +18,35 @@ JAP_balance_of_power = {
 			id = government_high
 			min = -0.8
 			max = -1.0
+			modifier = {
+				stability_factor = 0.2
+				political_power_factor = 0.5
+				generate_wargoal_tension = 0.5
+			}
+			on_activate = {
+				set_country_flag = jap_government
+				mark_focus_tree_layout_dirty = yes
+			}
+			
 		}
 		range = {
 			id = government_midle
 			max = -0.8
 			min = -0.5
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.25
+				generate_wargoal_tension = 0.25
+			}
 		}
 		range = {
 			id = government_low
 			max = -0.5
 			min = -0.2
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.1
+			}
 		}
 	}
 
@@ -34,16 +56,31 @@ JAP_balance_of_power = {
 			id = military_high 
 			min = 1.0
 			max = 0.8
+			modifier = {
+				war_support_factor = 0.2
+				political_power_factor = -0.5
+				generate_wargoal_tension = -0.5
+			}
 		}
 		range = {
 			id = military_midle
 			min = 0.8
 			max = 0.5
+			modifier = {
+				war_support_factor = 0.1
+				political_power_factor = -0.25
+				generate_wargoal_tension = -0.75
+			}
 		}
 		range = {
 			id = miliraly_low
 			min = 0.5
 			max = 0.2
+			modifier = {
+				war_support_factor = 0.05
+				political_power_factor = -0.1
+				generate_wargoal_tension = -1
+			}
 		}
 	}
 

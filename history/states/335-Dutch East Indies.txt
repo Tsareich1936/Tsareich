@@ -1,0 +1,36 @@
+
+state={
+	id=335
+	name="STATE_335"
+
+	history={
+		owner = INS
+		add_core_of = INS
+		victory_points = {
+			7381 5 
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			air_base = 3
+			7381 = {
+				naval_base = 6
+
+			}
+
+
+		}
+
+	}
+
+	provinces={
+		7381 
+	}
+	manpower=1628143
+
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=5.000
+}

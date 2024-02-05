@@ -36,7 +36,7 @@ country_event = {        # 19選挙
 			ruling_party = democratic
 		}
 		
-		ai_chance = { factor = 40 }
+		ai_chance = { base = 40 }
 	}
 	option = {
 		name = TR_Japan.1.b
@@ -58,7 +58,7 @@ country_event = {        # 19選挙
 			ruling_party = conservatism
 		}
 		
-		ai_chance = { factor = 40 }
+		ai_chance = { base = 40 }
 	}
 	option = {
 		name = TR_Japan.1.c
@@ -80,7 +80,7 @@ country_event = {        # 19選挙
 			ruling_party = socialdemocratic
 		}
 		
-		ai_chance = { factor = 20 }
+		ai_chance = { base = 20 }
 	}
 }
 
@@ -99,7 +99,7 @@ country_event = {  ############Toyotomi
 	option = {
 		name = TR_japan.2.a
 		add_political_power = 100
-		ai_chance = { factor = 99 }
+		ai_chance = { base = 99 }
 	}
 
 }
@@ -449,7 +449,7 @@ country_event = {              ######〇３計画
 	option = {
 		name = TR_japan.7.a
 		ai_chance = {
-			factor = 40
+			base = 40
 		}
 		JAP = {
 			country_event = {
@@ -463,7 +463,7 @@ country_event = {              ######〇３計画
 	option = {
 		name = TR_japan.7.b
 		ai_chance = {
-			factor = 20
+			base = 20
 		}
 		JAP = {
 			country_event = {
@@ -474,7 +474,7 @@ country_event = {              ######〇３計画
 	option = {
 		name = TR_japan.7.c
 		ai_chance = {
-			factor = 20
+			base = 20
 		}
 
 		JAP = {
@@ -500,7 +500,7 @@ country_event = {              ######〇３計画
 		}
 	    complete_national_focus = jap_NAVY_1_2
 		
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 	option = {
 		name = TR_Japan.8.b
@@ -509,7 +509,7 @@ country_event = {              ######〇３計画
 		}
 	    complete_national_focus = jap_NAVY_1_2
 		
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 }
 
@@ -556,7 +556,7 @@ country_event = {              ######〇３計画
 		}
 	    complete_national_focus = jap_NAVY_1_2
 		
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 	option = {
 		name = TR_Japan.10.b
@@ -565,7 +565,7 @@ country_event = {              ######〇３計画
 		}
 	    complete_national_focus = jap_NAVY_1_2
 		
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 }
 
@@ -584,7 +584,7 @@ country_event = {              ######〇３計画
 		}
 	    complete_national_focus = jap_NAVY_1_2
 		
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 	option = {
 		name = TR_Japan.11.b
@@ -593,7 +593,7 @@ country_event = {              ######〇３計画
 		}
 	    complete_national_focus = jap_NAVY_1_2
 		
-		ai_chance = { factor = 1 }
+		ai_chance = { base = 1 }
 	}
 }
 
@@ -627,7 +627,7 @@ country_event = {                    #　国家保護法
 		add_political_power = 100
 		add_stability = 0.1
 		ai_chance = {
-			factor = 99
+			base = 99
 		}
 	}
 	option = {                         ## 否決
@@ -635,7 +635,7 @@ country_event = {                    #　国家保護法
 		add_political_power = -100
 		add_stability = -0.3
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 		hidden_effect = {
 			JAP = {
@@ -656,7 +656,7 @@ country_event = {          #　　国民の不満の高まり
 	option = {            #########  国民の不満の高まり　朝鮮に侵攻する
 		name = TR_japan.14.a
 		ai_chance = {
-			factor = 99
+			base = 99
 		}
 		JAP = {
 		    activate_targeted_decision = {
@@ -668,7 +668,7 @@ country_event = {          #　　国民の不満の高まり
 	option = {          ####       否
 		name = TR_japan.14.b
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 		hidden_effect = {
 			JAP = {
@@ -1023,7 +1023,7 @@ country_event = {            # アメリカ同盟
 			}
 		}
 		ai_chance = {
-			factor = 99
+			base = 99
 		}
 	}
 	option = {
@@ -1032,7 +1032,7 @@ country_event = {            # アメリカ同盟
 			complete_national_focus = jap_unyielding
 		}
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 }
@@ -1082,6 +1082,9 @@ country_event = {            # 人種差別撤廃条約
 				days = 7
 			}
 		}
+		ai_chance = {
+			base = 10
+		}
 
 	}
 	option = {
@@ -1093,7 +1096,7 @@ country_event = {            # 人種差別撤廃条約
 			}
 		}
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 	}
 }
@@ -1133,14 +1136,14 @@ country_event = {         # 英国同盟
 			add_to_faction = JAP
 		}
 		ai_chance = {
-			factor = 99
+			base = 99
 		}
 	}
 	option = {
 		name = TR_japan.37.b
 		complete_national_focus = jap_unyielding
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 }
@@ -1159,7 +1162,7 @@ country_event = {       # アメリカ同盟
 			add_to_faction = USA
 		}
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 	option = {
@@ -1171,7 +1174,7 @@ country_event = {       # アメリカ同盟
 			add_to_faction = USA
 		}
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 }
@@ -1187,13 +1190,13 @@ country_event = {      # 協力大東亜
 			add_to_faction = PREV
 		}
 		ai_chance = {
-			factor = 90
+			base = 90
 		}
 	}
 	option = {
 		name = TR_japan.39.b
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 	}
 }
@@ -1281,7 +1284,7 @@ country_event = {    # 英国との対決
 			add_to_faction = MAL
 		}
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 	option = {
@@ -1302,7 +1305,7 @@ country_event = {    # 英国との対決
 			}
 		}
 		ai_chance = {
-			factor = 99
+			base = 99
 		}
 	}
 }
@@ -1319,7 +1322,7 @@ country_event = {    # 米国との対決
 			add_to_faction = PHI
 		}
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 	option = {
@@ -1336,7 +1339,7 @@ country_event = {    # 米国との対決
 			}
 		}
 		ai_chance = {
-			factor = 99
+			base = 99
 		}
 	}
 }
@@ -1353,7 +1356,7 @@ country_event = {   # against FRA
 			add_to_faction = VIN
 		}
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 	option = {
@@ -1370,7 +1373,7 @@ country_event = {   # against FRA
 			}
 		}
 		ai_chance = {
-			factor = 99
+			base = 99
 		}
 	}
 }
@@ -1384,7 +1387,7 @@ country_event = {   # 協力大東亜
 		name = TR_japan.47.a
 
 		ai_chance = {
-			factor = 90
+			base = 90
 		}
 		hidden_effect = {
 			every_country = {
@@ -1401,7 +1404,7 @@ country_event = {   # 協力大東亜
 	option = {
 		name = TR_japan.47.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 	}
 }
@@ -1430,7 +1433,7 @@ country_event = {  # against HOL
 			add_to_faction = INS
 		}
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 	option = {
@@ -1447,7 +1450,7 @@ country_event = {  # against HOL
 			}
 		}
 		ai_chance = {
-			factor = 99
+			base = 99
 		}
 	}
 }
@@ -1467,7 +1470,7 @@ country_event = {  # 対決大東亜
 			}
 		}
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 	option = {
@@ -1478,7 +1481,7 @@ country_event = {  # 対決大東亜
 			}
 		}
 		ai_chance = {
-			factor = 4
+			base = 4
 		}
 	}
 }
@@ -1504,13 +1507,13 @@ country_event = {  #  war
 			type = puppet_wargoal_focus
 		}
 		ai_chance = {
-			factor = 3
+			base = 3
 		}
 	}
 	option = {
 		add_political_power = -150
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 }
@@ -1527,7 +1530,7 @@ country_event = { # 英国との対決
 			puppet = MAL
 		}
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 	option = {
@@ -1548,7 +1551,7 @@ country_event = { # 英国との対決
 			}
 		}
 		ai_chance = {
-			factor = 99
+			base = 99
 		}
 	}
 }
@@ -1564,7 +1567,7 @@ country_event = {  # 米国との対決
 			puppet = PHI
 		}
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 	option = {
@@ -1581,7 +1584,7 @@ country_event = {  # 米国との対決
 			}
 		}
 		ai_chance = {
-			factor = 99
+			base = 99
 		}
 	}
 }
@@ -1597,7 +1600,7 @@ country_event = { # against FRA
 			puppet = VIN
 		}
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 	option = {
@@ -1614,7 +1617,7 @@ country_event = { # against FRA
 			}
 		}
 		ai_chance = {
-			factor = 99
+			base = 99
 		}
 	}
 }
@@ -1630,7 +1633,7 @@ country_event = { # against HOL
 		        puppet = INS
 		    }
 		ai_chance = {
-			factor = 1
+			base = 1
 		}
 	}
 	option = {
@@ -1647,7 +1650,7 @@ country_event = { # against HOL
 			}
 		}
 		ai_chance = {
-			factor = 99
+			base = 99
 		}
 	}
 }
