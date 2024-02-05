@@ -108,17 +108,17 @@ on_actions = {
 					array = second_american_civil_war
 				}
 			}
+		}i
+	effect = {
+			SER = {
+				country_event = {
+					id = TR_balkan.1
+					months = 19
+					days = 9
+				}
+			}
 		}
-	# effect = {
-	# 		SER = {
-	# 			country_event = {
-	# 				id = TR_balkan.1
-	# 				months = 19
-	# 				days = 9
-	# 			}
-	# 		}
-	# 	}
-	# }
+	}
 	on_daily_JAP = {
 		effect = {
 			if = {
