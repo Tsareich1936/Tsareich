@@ -12,6 +12,7 @@ TR_SER_balkan_war_peace = {
 			autonomy_state = autonomy_cleansing_area
 			freedom_level = 0
 		}
+		dismantle_faction = yes
 	}
 	ROM = {
 		transfer_state = 76
@@ -19,6 +20,7 @@ TR_SER_balkan_war_peace = {
 		transfer_state = 83
 		transfer_state = 84
 		transfer_state = 935
+		leave_faction = yes
 	}
 	CZE = {
 		SLO = {
@@ -26,9 +28,6 @@ TR_SER_balkan_war_peace = {
 			transfer_state = 71
 			transfer_state = 73
 			transfer_state = 664
-			SER = {
-				add_to_faction = SLO
-			}
 		}
 		# set_autonomy = {
 		# 	target = SLO

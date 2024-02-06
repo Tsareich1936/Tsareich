@@ -248,6 +248,7 @@ country_event = {
 }
 country_event = {
 	id = TR_debug.0
+	is_triggered_only = yes
 	immediate = {
 		TR_SER_balkan_war_peace = yes
 	}

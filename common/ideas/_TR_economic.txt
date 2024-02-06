@@ -48,20 +48,20 @@ ideas = {
 			
 			modifier = {
 				hidden_modifier = {
-					production_speed_buildings_factor = 2.0
-					conversion_cost_civ_to_mil_factor= -1.0
-					conversion_cost_mil_to_civ_factor = -1.0
-					production_speed_arms_factory_factor = 2
-					conscription = 3.33
-					conscription_factor = 6.66
-					army_infantry_attack_factor = 1.5
-					army_infantry_defence_factor = 5.0
-					supply_node_range = 9.0
-					supply_factor = 9.0
+					production_speed_buildings_factor = 1.0
+					conversion_cost_civ_to_mil_factor= -0.5
+					conversion_cost_mil_to_civ_factor = -0.5
+					production_speed_arms_factory_factor = 0.3
+					conscription = 0.5
+					conscription_factor = 0.33
+					army_infantry_attack_factor = 1.0
+					army_infantry_defence_factor = 2.0
+					supply_node_range = 3.0
+					supply_factor = 3.0
 					consumer_goods_factor = -0.33
 				}
 				consumer_goods_expected_value = 0.01
-				training_time_army_factor = -0.9
+				training_time_army_factor = -0.5
 			}
 			ai_will_do = {
    				factor = 10
