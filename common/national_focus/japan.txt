@@ -379,7 +379,7 @@ focus_tree = {
         }
         completion_reward = {
             
-            remove_idea = JAP_inflation
+            remove_ideas = JAP_inflation
             add_timed_idea = {
                 idea = JAP_deflation
                 days = 365
@@ -2040,6 +2040,7 @@ focus_tree = {
         id = jap_industry
         x = 28
         y = 8
+        cost = 5
         allow_branch = {
             or = {
                 has_completed_focus = jap_Long_live_liberalism 
@@ -2047,17 +2048,39 @@ focus_tree = {
                 has_completed_focus = jap_Building_Japanese-style_Socialism
             }
         }
+        completion_reward = {
+            random_state = {
+                limit = {
+                    is_core_of = JAP
+                }
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 3
+                }
+            }
+        }
         
     }
 
     focus = {
         id = jap_industry_Hokkaido
-        cost = x
+        cost = 5
         relative_position_id = jap_industry
         x = 1
         y = 1
         completion_reward = { 
-
+            536 = {
+                add_resource = {
+                    type = steel
+                    amount = 28
+                }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                }
+            }
         }
         prerequisite = {
             focus = jap_industry
@@ -2065,12 +2088,25 @@ focus_tree = {
     }
     
     focus = {
+        cost = 5
         id = jap_industry_Tohoku
         relative_position_id = jap_industry
         x =  -1
         y = 1
         completion_reward = {
-            
+            952 = {
+                add_resource = {
+                    type = oil
+                    amount = 26
+                }
+            }
+            533 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                }
+            }
         }
         prerequisite = {
             focus = jap_industry
@@ -2079,9 +2115,13 @@ focus_tree = {
 
     focus = {
         id = jap_industry_Korea
+        cost = 5
         relative_position_id = jap_industry
         x = 0
         y = 2
+        bypass = {
+            has_war_with = KOR
+        }
         prerequisite = {
             focus = jap_industry_Hokkaido
         }
@@ -2089,15 +2129,25 @@ focus_tree = {
             focus = jap_industry_Tohoku
         }
         completion_reward = {
-            
+            KOR = {
+                country_event = {
+                    id = TR_japan.78
+                }
+            }
         }
     }
 
     focus = {
+        cost = 5
         id = jap_industry_Palao
         relative_position_id = jap_industry
         x = 3
         y = 2
+        bypass = {
+            647 = {
+                is_controlled_by = JAP
+            }
+        }
         prerequisite = {
             focus = jap_industry_Hokkaido
         }
@@ -2105,15 +2155,24 @@ focus_tree = {
             focus = jap_industry_Tohoku
         }
         completion_reward = {
-            
+            647 = {
+                add_resource = {
+                    type = aluminium
+                    amount = 18
+                }
+            }
         }
     }
 
     focus = {
+        cost = 5
         id = jap_industry_MAN
         relative_position_id = jap_industry
         x = -3
         y = 2
+        bypass = {
+            has_war_with = MAN
+        }
         prerequisite = {
             focus = jap_industry_Hokkaido
         }
@@ -2121,11 +2180,16 @@ focus_tree = {
             focus = jap_industry_Tohoku
         }
         completion_reward = {
-            
+            MAN = {
+                country_event = {
+                    id = TR_japan.79
+                }
+            }
         }
     }
 
     focus = {
+        cost = 5
         id = jap_colony
         relative_position_id = jap_industry
         x = 0
@@ -2140,11 +2204,14 @@ focus_tree = {
             focus = jap_industry_Korea
         }
         completion_reward = {
-            
+            country_event = {
+                id = TR_japan.80
+            }
         }
     }
 
     focus = {
+        cost = 10
         id = jap_bank
         relative_position_id = jap_industry
         x = 2
@@ -2156,11 +2223,12 @@ focus_tree = {
             focus = jap_colony
         }
         completion_reward = {
-            
+            add_ideas = JAP_bank
         }
     }
 
     focus = {
+        cost = 10
         id = jap_abroad
         relative_position_id = jap_industry
         x = -2
@@ -2172,11 +2240,12 @@ focus_tree = {
             focus = jap_colony
         }
         completion_reward = {
-            
+            add_ideas = JAP_abroad
         }
     }
 
     focus = {
+        cost = 10
         id = jap_steel_Kamaishi
         relative_position_id = jap_industry
         x = 1
@@ -2185,11 +2254,17 @@ focus_tree = {
             focus = jap_bank
         }
         completion_reward = {
-            
+            956 = {
+                add_resource = {
+                    type = steel
+                    amount = 35
+                }
+            }
         }
     }
 
     focus = {
+        cost = 10
         id = jap_steel_Hokkaido
         relative_position_id = jap_industry
         x = 3
@@ -2198,12 +2273,18 @@ focus_tree = {
             focus = jap_bank
         }
         completion_reward = {
-            
+            536 = {
+                add_resource = {
+                    type = steel
+                    amount = 36
+                }
+            }
         }
     }
 
     focus = {
-        id = jap_tang_Bilma
+        cost = 10
+        id = jap_steel_RAJ
         relative_position_id = jap_industry
         x = -3
         y = 5
@@ -2211,12 +2292,17 @@ focus_tree = {
             focus = jap_abroad
         }
         completion_reward = {
-            
+            RAJ = {
+                country_event = {
+                    id = TR_japan.86
+                }
+            }
         }
     }
 
     focus = {
-        id = jap_AL_Malay
+        cost = 10
+        id = jap_AL_BRA
         relative_position_id = jap_industry
         x = -1
         y = 5
@@ -2224,11 +2310,16 @@ focus_tree = {
             focus = jap_abroad
         }
         completion_reward = {
-            
+            BRA = {
+                country_event = {
+                    id = TR_japan.85
+                }
+            }
         }
     }
 
     focus = {
+        cost = 10
         id = jap_kuromu_Tottori
         relative_position_id = jap_industry
         x = 1
@@ -2237,11 +2328,17 @@ focus_tree = {
             focus = jap_steel_Kamaishi
         }
         completion_reward = {
-            
+            976 = {
+                add_resource = {
+                    type = chromium
+                    amount = 24
+                }
+            }
         }
     }
 
     focus = {
+        cost = 10
         id = jap_oil
         relative_position_id = jap_industry
         x = 3
@@ -2250,33 +2347,50 @@ focus_tree = {
             focus = jap_steel_Hokkaido
         }
         completion_reward = {
-            
+            955 = {
+                add_resource = {
+                    type = oil
+                    amount = 24
+                }
+            }
         }
     }
 
     focus = {
+        cost = 10
         id = jap_steel_Australia
         relative_position_id = jap_industry
         x = -3
         y = 6
         prerequisite = {
-            focus = jap_tang_Bilma
+            focus = jap_steel_RAJ
         }
         completion_reward = {
-            
+            AST = {
+                country_event = {
+                    id = TR_japan.87
+                }
+            }
+
         }
     }
 
     focus = {
+        cost = 10
         id = jap_gom_Sumatora
         relative_position_id = jap_industry
         x = -1
         y = 6
         prerequisite = {
-            focus = jap_AL_Malay
+            focus = jap_AL_BRA
         }
         completion_reward = {
-            
+            INS = {
+                country_event = {
+                    id = TR_japan.88
+                }
+            }
+
         }
     }
 
@@ -2293,8 +2407,23 @@ focus_tree = {
             focus = jap_kuromu_Tottori
             focus = jap_gom_Sumatora
         }
+        cost = 10
         completion_reward = {
-            
+            524 = {
+                add_extra_state_shared_building_slots = 8
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 4
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                }
+            }
         }
     }
 
@@ -2331,7 +2460,7 @@ focus_tree = {
     }
 
     focus = {
-        id = jap_lolo_ship
+        id = jap_roro_ship
         relative_position_id = jap_industry
         x = -1
         y = 8
@@ -2342,7 +2471,7 @@ focus_tree = {
             focus = jap_railway
         }
         completion_reward = {
-            
+            add_ideas = JAP_roro_ship
         }
     }
 
