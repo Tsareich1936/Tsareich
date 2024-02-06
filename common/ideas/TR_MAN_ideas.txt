@@ -1,0 +1,40 @@
+ideas = {
+	country = {
+		MAN_right = {
+			allowed = {
+				always = no
+			}
+			available = {
+				not = {
+					has_war = yes
+				}
+				not = {
+					is_puppet = yes
+				}
+
+			}
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = JAP
+				cic_to_target_factor = 0.05
+				trade_cost_for_target_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = ENG
+				cic_to_target_factor = 0.05
+				trade_cost_for_target_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = USA
+				cic_to_target_factor = 0.05
+				trade_cost_for_target_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = RUS
+				cic_to_target_factor = 0.05
+				trade_cost_for_target_factor = -0.25
+			}
+		}
+	}
+}

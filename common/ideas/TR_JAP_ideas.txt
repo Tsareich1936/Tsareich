@@ -1029,6 +1029,66 @@ ideas = {
 			}
 		}
 
-		
+		JAP_bank = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+
+		JAP_abroad = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.1
+				consumer_goods_factor = -0.2
+			}
+		}
+
+		JAP_roro_ship = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+			    convoy ={
+					build_cost_ic = -0.2
+				}
+			}
+		}
+
+		JAP_nation_railway = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				supply_node_range = 0.1
+			}
+		}
+
+		JAP_Japan_Railway = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				production_speed_rail_way_factor = 0.1
+			}
+		}
+
 	}
+
 }

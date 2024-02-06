@@ -104,6 +104,49 @@ RUS_debug_decision_c = {
             }
         }
     }
+    RUS_debug_warfare = {
+        allowed = {
+            tag = RUS
+        }
+        available = {
+            
+        }
+        icon = GFX_decision_unknown
+        priority = 28
+		cost = 0
+        days_remove = 999999
+        modifier = {
+            mobilization_speed = 0.15
+            conscription = 0.03
+            production_speed_buildings_factor = 0.1
+            production_speed_arms_factory_factor = 0.15
+            industrial_capacity_factory = 0.25
+            industrial_capacity_dockyard = 0.1
+            training_time_factor = -0.35
+
+        }
+        complete_effect = {
+			add_ideas = service_by_requirement
+            add_ideas = tot_economic_mobilisation
+            add_war_support = 1
+        }
+    }
+    RUS_debug_ser = {
+        allowed = {
+            tag = RUS
+        }
+        available = {
+            
+        }
+        icon = GFX_decision_unknown
+        priority = 28
+		cost = 0
+        days_remove = 0
+        complete_effect = {
+			add_to_faction = SER
+            add_to_faction = ROM
+        }
+    }
 
 
 }

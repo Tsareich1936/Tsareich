@@ -67,3 +67,6 @@ create_country_leader = {
 		#
 	}
 }
+add_ideas = {
+	KOR_JAP
+}

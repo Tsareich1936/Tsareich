@@ -1,0 +1,29 @@
+state={
+	id=1008
+	name="STATE_1008"
+	provinces={
+		4306 4608 7654 10479 12472 
+	}
+	history = {
+		victory_points = {
+			4608 3 
+		}
+		owner = INS
+		add_core_of = INS
+		buildings = {
+			infrastructure = 1
+			4608 = {
+				naval_base = 3
+
+			}
+		}
+	}
+	state_category = rural
+	resources = {
+		rubber = 35
+	}
+	manpower=12103843
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
