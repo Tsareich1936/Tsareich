@@ -7,17 +7,359 @@ units = {
 		task_force = {
 			name = "Shtabnoy flot"
 			location = 3151 
-			ship = { name = "Imperatrica Mariq" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = RUS version_name = "Imperatrica Mariq Class"} } }
-            
-            ship = { name = "Imperator Nikolay I" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperator Nikolay I Class"} } }
-            ship = { name = "Imperator Nikolay II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperator Nikolay I Class"} } }
-
-            ship = { name = "Tsaritsyn" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperator Aleksey Class"} } }
+			ship = { name = "Imperator Aleksey" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperator Aleksey Class"} } }
+			ship = { name = "Tsaritsyn" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperator Aleksey Class"} } }
             ship = { name = "Yekaterinburg" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperator Aleksey Class"} } }
-            
+			ship = { name = "Perun" definition = battleship start_experience_factor = 0.25 pride_of_the_fleet = yes equipment = { ship_hull_heavy_2 = { amount = 1 owner = RUS version_name = "Perun Class"} } }
+            ship = { name = "Stribog" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = RUS version_name = "Perun Class"} } }
+			ship = { name = "Veles" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = RUS version_name = "Perun Class"} } }
+			ship = { name = "Xors" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = RUS version_name = "Perun Class"} } }
+			
+			ship = { name = "Rous" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = RUS version_name = "Rous Class"} } }
+			ship = { name = "Izmail" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Borodino Class"} } }
+			
+			ship = { name = "Sevastopol" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Sevastopol Class"} } }
+			ship = { name = "Baku" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Sevastopol Class"} } }
+			ship = { name = "Rostov" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Sevastopol Class"} } }
+			
+			ship = { name = "Ryga-B01" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Ryga Class"} } }
+			ship = { name = "Ryga-B02" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Ryga Class"} } }
+			ship = { name = "Ryga-B03" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Ryga Class"} } }
+			ship = { name = "Ryga-B04" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Ryga Class"} } }
+			ship = { name = "Ryga-B05" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Ryga Class"} } }
+			ship = { name = "Barklay-B01" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Barklay Class"} } }
+			ship = { name = "Barklay-B02" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Barklay Class"} } }
+			
+			ship = { name = "D23-B01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B05" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B06" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B07" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B08" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B09" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B10" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B11" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B12" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B13" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B14" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B15" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-B16" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			
+			
 		}
 
+		task_force = {
+			name = "Baltiiskii udarnyi flot"
+			location = 6332
+			ship = { name = "Mokosh" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = RUS version_name = "Perun Class"} } }
+			ship = { name = "Berkut" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = RUS version_name = "Berkut Class"} } }
+			ship = { name = "Moscow" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = RUS version_name = "Berkut Class"} } }
+			
+			ship = { name = "Borodino" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Borodino Class"} } }
+			
+			ship = { name = "Soti" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Sevastopol Class"} } }
+			ship = { name = "Rürik" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Rürik Class"} } }
+			ship = { name = "Origa" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Rürik Class"} } }
+			ship = { name = "Krev" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Rürik Class"} } }
+			
+			ship = { name = "Ryga-B06" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Ryga Class"} } }
+			ship = { name = "Ryga-B07" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Ryga Class"} } }
+			ship = { name = "Ryga-B08" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Ryga Class"} } }
+			ship = { name = "Ryga-B09" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Ryga Class"} } }
+			
+			ship = { name = "KaptanBelli-B06" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B07" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B08" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B11" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B12" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B13" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B14" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B15" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B16" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B17" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B18" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B19" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B10" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B21" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "Orfey-B01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-B02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-B03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-B06" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-B07" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-B08" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-B09" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			
+		}
+		task_force = {
+			name = "Rezervnyi flot"
+			location = 9340
+			ship = { name = "Imperatrica Mariq" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = RUS version_name = "Imperatrica Mariq Class"} } }
+            ship = { name = "Imperator Nikolay I" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperator Nikolay I Class"} } }
+            ship = { name = "Imperator Nikolay II" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperator Nikolay I Class"} } }
+			
+			ship = { name = "Amurskiy-B01" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Amurskiy Class"} } }
+			ship = { name = "Amurskiy-B02" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Amurskiy Class"} } }
+
+			ship = { name = "D15-B03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-B04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-B05" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-B06" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-B07" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-B08" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-B09" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "Derzky-B01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Derzky Class"} } }
+			ship = { name = "Derzky-B02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Derzky Class"} } }
+			ship = { name = "Derzky-B03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Derzky Class"} } }
 		
+		}
+		task_force = {
+			name = "Finskaia armada"
+			location = 11105
+
+			ship = { name = "Kharkov" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Sevastopol Class"} } }
+			ship = { name = "Suomi-B01" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Suomi Class"} } }	
+			ship = { name = "Orfey-B10" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-B11" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-B12" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-B13" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "D15-B01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-B02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			
+		}
+		task_force = {
+			name = "Severnyi gvardeiskii flot"
+			location = 3122
+
+			ship = { name = "Barklay-B03" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Barklay Class"} } }
+			
+			ship = { name = "KaptanBelli-B03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B05" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			
+		}
+		task_force = {
+			name = "Morskoi desantnyi flot"
+			location = 362
+
+			
+			ship = { name = "Orfey-B04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-B05" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			
+			ship = { name = "SS-Imperiya-B01" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-B02" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-B03" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-B04" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-B05" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-B06" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-B07" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			
+		}
+		task_force = {
+			name = "Podvodnyi flot kanala"
+			location = 6287
+
+			ship = { name = "KaptanBelli-B09" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B10" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			
+			ship = { name = "SS-Imperiya-B08" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-B09" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Khabarovsk-B01" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Khabarovsk Class"} } }
+			ship = { name = "SS-Khabarovsk-B02" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Khabarovsk Class"} } }
+		
+		}
+		task_force = {
+			name = "Baltiiskii uchebnyi flot"
+			location = 3152
+			ship = { name = "Barklay-B04" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Barklay Class"} } }
+			ship = { name = "D23-B17" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "KaptanBelli-B01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			ship = { name = "KaptanBelli-B02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Kaptan Belli Class"} } }
+			
+		}
 	}
+	fleet = {
+		name = "Arkticheskii flot"
+		naval_base = 3134
+		task_force = {
+			name = "Arkticheskii udarnyi flot"
+			location = 3134
+			ship = { name = "Mstislav" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Rürik Class"} } }
+			
+			ship = { name = "D15-Ak01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-Ak02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-Ak03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-Ak04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-Ak05" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			
+		}
+		task_force = {
+			name = "Arkticheskii shakhtnyi flot"
+			location = 3338
+			ship = { name = "Novo-Svetlana-Ak01" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Novo-Svetlana Class"} } }
+			ship = { name = "D15-Ak06" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-Ak07" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			
+		}
+		task_force = {
+			name = "Flot pogranichnogo patrulia"
+			location = 12530
+			ship = { name = "Orfey-Ak01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-Ak02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			
+		}
+
+	}
+	fleet = {
+		name = "Tikhookeanskii flot"
+		location = 957
+		task_force = {
+			name = "Okeanskii udarnyi flot"
+			location = 957
+			ship = { name = "Minsk" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = RUS version_name = "Berkut Class"} } }
+			ship = { name = "Mihairof" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = RUS version_name = "Berkut Class"} } }
+			ship = { name = "Bagration" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Bagration Class"} } }
+			ship = { name = "Rossiq" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_2 = { amount = 1 owner = RUS version_name = "Rossiq Class"} } }
+			
+
+			ship = { name = "Kinburn" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Borodino Class"} } }
+			ship = { name = "Navarin" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Borodino Class"} } }
+
+			ship = { name = "Vseslav" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Rürik Class"} } }
+			ship = { name = "Iziaslav" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Rürik Class"} } }
+			
+			ship = { name = "Ryga-A01" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Ryga Class"} } }
+			ship = { name = "Ryga-A02" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Ryga Class"} } }
+			ship = { name = "Svetlana-A01" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Svetlana Class"} } }
+			
+			ship = { name = "D27-A03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "27 Class"} } }
+			ship = { name = "D27-A04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "27 Class"} } }
+			ship = { name = "D27-A05" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "27 Class"} } }
+			ship = { name = "D27-A06" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "27 Class"} } }
+			ship = { name = "D27-A07" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "27 Class"} } }
+			ship = { name = "D27-A08" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "27 Class"} } }
+			ship = { name = "D23-A01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "Orfey-A02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-A03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-A04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-A05" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-A06" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			
+			
+		}
+		task_force = {
+			name = "Vladivostokskaia eskadra kreiserov"
+			location = 957
+
+			ship = { name = "Petropavlovsk" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = RUS version_name = "Gangut Class"} } }
+            ship = { name = "Rostov" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = RUS version_name = "Rostov Class"} } }
+			ship = { name = "Svetlana-A03" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Svetlana Class"} } }
+			ship = { name = "Svetlana-A04" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Svetlana Class"} } }
+			ship = { name = "D23-A02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-A03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-A04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-A05" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-A06" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			
+		}
+		task_force = {
+			name = "Shturmovoi flot v Tikhom okeane"
+			location = 9604
+
+			ship = { name = "Orfey-A10" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-A11" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "D15-B05" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-B06" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "SS-Novo-Arxangelsk-A01" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = RUS version_name = "Novo-Arxangelsk Class"} } }
+			ship = { name = "SS-Novo-Arxangelsk-A02" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = RUS version_name = "Novo-Arxangelsk Class"} } }
+			ship = { name = "SS-Novo-Arxangelsk-A03" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = RUS version_name = "Novo-Arxangelsk Class"} } }
+			ship = { name = "SS-Novo-Arxangelsk-A04" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = RUS version_name = "Novo-Arxangelsk Class"} } }
+			ship = { name = "SS-Novo-Arxangelsk-A05" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = RUS version_name = "Novo-Arxangelsk Class"} } }
+			ship = { name = "SS-Novo-Arxangelsk-A06" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = RUS version_name = "Novo-Arxangelsk Class"} } }
+			ship = { name = "SS-Novo-Arxangelsk-A07" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_2 = { amount = 1 owner = RUS version_name = "Novo-Arxangelsk Class"} } }
+			ship = { name = "SS-Imperiya-A01" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A02" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A03" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A04" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			
+		}
+		task_force = {
+			name = "Garnizonnyi flot na poluostrove"
+			location = 13204
+
+			ship = { name = "Orfey-A07" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "Orfey-A08" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			ship = { name = "SS-Imperiya-A18" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A19" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			
+		}
+		task_force = {
+			name = "Sakhalinskii monitoringovyi flot"
+			location = 12446
+			ship = { name = "Orfey-A09" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class"} } }
+			
+			ship = { name = "SS-Imperiya-A10" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A11" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A12" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			
+		}
+		task_force = {
+			name = "Patrul-nyi flot"
+			location = 13067
+			ship = { name = "D27-A01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "27 Class"} } }
+			ship = { name = "D27-A02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "27 Class"} } }
+			
+			ship = { name = "SS-Imperiya-A05" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A06" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A09" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			
+		}
+		task_force = {
+			name = "Rossiiskii flot Iuzhnogo okeana"
+			location = 12207
+
+			ship = { name = "Svetlana-A02" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Svetlana Class"} } }
+			
+
+			ship = { name = "D15-B01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-B02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-B03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-B04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			
+			ship = { name = "SS-Imperiya-A07" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A08" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A13" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A14" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A15" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A16" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			ship = { name = "SS-Imperiya-A17" definition = submarine start_experience_factor = 0.25 equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "Imperiya Class"} } }
+			
+		}
+
+	}
+	fleet = {
+		name = "Aliaskinskii flot"
+		naval_base = 13203
+		task_force = {
+			name = "Okhrannyi flot"
+			location = 13203
+			ship = { name = "Novo-Svetlana-Al01" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Novo-Svetlana Class"} } }
+			ship = { name = "D23-Al03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D15-Al01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-Al02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			ship = { name = "D15-Al03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "15 Class"} } }
+			
+		}
+		task_force = {
+			name = "Transportnyi flot Aliaski"
+			location = 4833
+			ship = { name = "D23-Al01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-Al02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			ship = { name = "D23-Al04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
+			
+		}
+	}
+
 
 }
