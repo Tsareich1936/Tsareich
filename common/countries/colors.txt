@@ -941,3 +941,8 @@ CRT = {
 	color = rgb { 168 85 67 }
 	color_ui = rgb { 168 85 67 }
 }
+
+OTT = {
+	color = rgb { 156 230 147}
+	color_ui = rgb {  156 230 147}
+}

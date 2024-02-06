@@ -353,11 +353,13 @@ units = {
 		}
 		task_force = {
 			name = "Transportnyi flot Aliaski"
+			location = 4833
 			ship = { name = "D23-Al01" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
 			ship = { name = "D23-Al02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
 			ship = { name = "D23-Al04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = RUS version_name = "23 Class"} } }
 			
 		}
 	}
+
 
 }
