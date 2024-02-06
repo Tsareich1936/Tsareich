@@ -18,6 +18,24 @@ wargoal_types = {
 		threat = 0.20
 	}
 
+	balkan_wars = {
+		war_name = BALKAN_WAR
+		allowed = {
+			always = no
+		}
+		puppet = {
+			always = no
+		}
+		available = {
+			
+		}
+		take_states = {
+			
+		}
+		take_states_cost = 9999999999
+		threat = 0.25
+	}
+
 	take_state = {
 		# PREV = original target country
 		# ROOT = goal owner country

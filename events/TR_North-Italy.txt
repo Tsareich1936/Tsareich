@@ -842,6 +842,35 @@ country_event = {
 		name = TR_north_italy.socialism.21.a
 	}
 }
+country_event = {#クロアチアの敗北
+	id = TR_north_italy.socialism.22
+	title = TR_north_italy.socialism.22.t
+	desc = TR_north_italy.socialism.22.d
+
+	is_triggered_only = yes
+
+	option = {#クロアチアを要求しろ
+		name = TR_north_italy.socialism.22.a
+		SRI = {
+			country_event = TR_north_italy.socialism.23
+		}
+	}
+}
+country_event = {#セルビアがクロアチアを要求
+	id = TR_north_italy.socialism.23
+	title = TR_north_italy.socialism.23.t
+	desc = TR_north_italy.socialism.23.d
+
+	is_triggered_only = yes
+
+	option = {#まあ良いだろう
+		name = TR_north_italy.socialism.23.a
+		SER = {
+			transfer_state = 109
+			109 = { add_core_of = SER }
+		}
+	}
+}
 ## Legft main route ##
 
 # make Greek Socialism

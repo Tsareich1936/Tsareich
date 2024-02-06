@@ -9,5 +9,14 @@ ideas = {
 				consumer_goods_factor = -1
 			}
 		}
+		TR_debug_conscription3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.02
+			}
+		}
 	}
 }
