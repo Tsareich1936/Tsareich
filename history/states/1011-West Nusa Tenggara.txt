@@ -1,0 +1,25 @@
+state={
+	id=1011
+	name="STATE_1011"
+	provinces={
+		1298 4301 7321 10175 10219 12151 
+	}
+	resources = {
+		rubber = 3
+	}
+	history = {
+		owner = INS
+		add_core_of = INS
+		buildings = {
+			10175 = {
+				naval_base = 1
+
+			}
+			infrastructure = 1
+		}
+	}
+	manpower=1476078
+    state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

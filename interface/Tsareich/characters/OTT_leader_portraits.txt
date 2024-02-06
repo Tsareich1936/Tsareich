@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_Caliph_Abdulmecid_2"
+		textureFile = "gfx/leaders/OTT/Portrait_Caliph_Abdulmecid_2.dds"
+	}
+}

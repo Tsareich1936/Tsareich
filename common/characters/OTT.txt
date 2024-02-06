@@ -1,0 +1,14 @@
+characters = {
+	OTT_Caliph_Abdulmecid_II = {
+		name = OTT_Caliph_Abdulmecid_II
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Caliph_Abdulmecid_2
+			}
+		}
+		country_leader={
+			ideology = despotism
+			id=-1			
+		}
+	}
+}

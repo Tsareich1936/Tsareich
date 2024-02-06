@@ -206,7 +206,7 @@ characters = {
 		}
 	}
 
-	JAP_Showa_Emoeror ={
+	JAP_Showa_Emperor ={
 
 		name = JAP_Showa_Emperor
 		portraits = {

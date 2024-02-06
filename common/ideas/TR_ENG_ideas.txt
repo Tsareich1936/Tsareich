@@ -377,5 +377,48 @@ ideas = {
 				nuclear_production_factor = 2.0
 			}
 		}
+		TR_ENG_building_defence_networks = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_bunker_factor = 0.5
+			}
+		}
+		TR_ENG_maritime_fort = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.5
+			}
+		}
+		TR_ENG_protect_everything = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				defense_bonus_against = 0.3
+			}
+			equipment_bonus = {
+				infantry = {
+					build_cost_ic = -0.2
+					defense = 0.2
+				}
+			}
+		}
+		TR_ENG_absolute_defense_sphere = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.33
+			}
+		}
 	}
 }

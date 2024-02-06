@@ -1,0 +1,35 @@
+
+state={
+	id=667
+	name="STATE_667"
+	resources={
+		rubber=3
+	}
+
+	history={
+		owner = INS
+		add_core_of = INS
+		buildings = {
+			infrastructure = 2
+			1355 = {
+				naval_base = 1
+
+			}
+
+			12234 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1339 1355 4358 12219 12234 
+	}
+	manpower=1657000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=3.000
+}
