@@ -399,7 +399,7 @@ ideas = {
 
          ###軍事###
 		 TR_FRA_nav = {
-			picture = "generic_fuel_reserves"
+			picture = "ETH_navy_3"
 			allowed = {
 				always = no
 			}
@@ -410,7 +410,7 @@ ideas = {
 			}
 		}
 		TR_FRA_nav1 = {
-			picture = "generic_fuel_reserves"
+			picture = "ETH_navy_3"
 			allowed = {
 				always = no
 			}
@@ -421,7 +421,7 @@ ideas = {
 			}
 		}
 		TR_FRA_mil = {
-			picture = "generic_fuel_reserves"
+			picture = "FRA_national_mobilization_focus"
 			allowed = {
 				always = no
 			}
@@ -432,7 +432,7 @@ ideas = {
 			}
 		}
 		TR_FRA_mil1 = {
-			picture = "generic_fuel_reserves"
+			picture = "FRA_national_mobilization_focus"
 			allowed = {
 				always = no
 			}
@@ -444,7 +444,7 @@ ideas = {
 		}
 
 		TR_FRA_kuubo = {
-			picture = "generic_fuel_reserves"
+			picture = "generic_navy_carrier_bonus"
 			allowed = {
 				always = no
 			}
@@ -455,7 +455,7 @@ ideas = {
 			}
 		}
 		TR_FRA_navy_air = {
-			picture = "generic_fuel_reserves"
+			picture = "generic_air_payment"
 			allowed = {
 				always = no
 			}
@@ -466,7 +466,7 @@ ideas = {
 			}
 		}
 		TR_FRA_artillery = {
-			picture = "generic_fuel_reserves"
+			picture = "generic_mountain_warfare"
 			allowed = {
 				always = no
 			}
@@ -477,7 +477,7 @@ ideas = {
 			}
 		}
 		TR_FRA_tank = {
-			picture = "generic_fuel_reserves"
+			picture = "generic_license_production"
 			allowed = {
 				always = no
 			}
@@ -485,6 +485,18 @@ ideas = {
 			modifier = {
 				army_armor_attack_factor = 0.15
 				army_speed_factor = 0.15
+			}
+		}
+
+		TR_FRA_midi = {
+			picture = "generic_sea_focused_navy"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				convoy_retreat_speed = 0.5
+				convoy_escort_efficiency = 0.5
 			}
 		}
 	}	
