@@ -2130,3 +2130,52 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = TR_japan.77
+	title = TR_japan.77.t
+	desc = TR_japan.77.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = TR_japan.77.a
+		OTT = {
+			transfer_state = 287
+			transfer_state = 617
+			transfer_state = 618
+			transfer_state = 619
+			transfer_state = 759
+			transfer_state = 760
+		}
+		hidden_effect = {
+			OTT = {
+				create_country_leader = {
+					name = OTT_Caliph_Abdulmecid_II
+					picture = GFX_Portrait_Caliph_Abdulmecid_2
+					ideology = despotism
+				}
+			}
+			287 = {
+				add_core_of = OTT
+			}
+			617 = {
+				add_core_of = OTT
+			}
+			618 = {
+				add_core_of = OTT
+			}
+			619 = {
+				add_core_of = OTT
+			}
+			759 = {
+				add_core_of = OTT
+			}
+			760 = {
+				add_core_of = OTT
+			}
+		}
+	}
+	option = {
+		name = TR_japan.77.b
+	}
+}

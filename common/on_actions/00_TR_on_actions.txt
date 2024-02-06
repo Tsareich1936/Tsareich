@@ -129,4 +129,87 @@ on_actions = {
 			}
 		}
 	}
+	on_monthly = {
+		effect = {
+			every_country = {
+				limit = {
+					not = {
+						or = {
+							JAP = {
+								has_government = communism
+							}
+							JAP = {
+								has_government = syndicalism
+							}
+							JAP = {
+								has_government = anarchism
+							}
+						}
+					}
+					
+					287 = {
+					    is_fully_controlled_by = controller
+					    controller = {
+						    OR = {
+							    is_puppet_of = JAP
+							    original_tag = JAP
+						    }
+					    }
+					   }
+					617 = {
+						is_fully_controlled_by = controller
+						controller = {
+							OR = {
+								is_puppet_of = JAP
+								original_tag = JAP
+							}
+						}
+					}
+					618 = {
+						is_fully_controlled_by = controller
+						controller = {
+							OR = {
+								is_puppet_of = JAP
+								original_tag = JAP
+							}
+						}
+					}
+					619 = {
+						is_fully_controlled_by = controller
+						controller = {
+							OR = {
+								is_puppet_of = JAP
+								original_tag = JAP
+							}
+						}
+					}
+					759 = {
+						is_fully_controlled_by = controller
+						controller = {
+							OR = {
+								is_puppet_of = JAP
+								original_tag = JAP
+							}
+						}
+					}
+					760 = {
+					is_fully_controlled_by = controller
+						controller = {
+							OR = {
+								is_puppet_of = JAP
+				    			original_tag = JAP
+							}
+						}
+					}
+				}
+					
+				
+				JAP = {
+					country_event = {
+						id = TR_japan.77
+					}
+				}
+			}
+		}
+	}
 }
