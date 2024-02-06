@@ -104,6 +104,26 @@ RUS_debug_decision_c = {
             }
         }
     }
+    RUS_debug_warfare = {
+        allowed = {
+            tag = RUS
+        }
+        available = {
+            
+        }
+        icon = GFX_decision_unknown
+        priority = 28
+		cost = 0
+        days_remove = 10
+        modifier = {
+            mobilization_speed = 100
+        }
+        complete_effect = {
+			add_ideas = service_by_requirement
+            add_ideas = tot_economic_mobilisation
+            add_war_support = 1
+        }
+    }
 
 
 }
