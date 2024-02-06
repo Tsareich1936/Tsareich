@@ -1,0 +1,14 @@
+state={
+	id=1019
+	name="STATE_1019"
+	provinces={
+		11830 
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+	}
+	manpower=10
+	state_category = rural
+	local_supplies=0.000
+}

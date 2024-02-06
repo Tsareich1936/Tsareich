@@ -1,0 +1,14 @@
+state={
+	id=1018
+	name="STATE_1018"
+	provinces={
+		715 718 905 908 3710 3906 6732 
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+	}
+	manpower=10
+	state_category = rural
+	local_supplies=0.000
+}

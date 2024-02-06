@@ -1,0 +1,14 @@
+state={
+	id=1023
+	name="STATE_1023"
+	provinces={
+		1073 1157 4119 7015 7093 7518 9948 12008 12048 12065 
+	}
+	history = {
+		owner = VIN
+		add_core_of = VIN
+	}
+	manpower=10
+	state_category = rural
+	local_supplies=0.000
+}
