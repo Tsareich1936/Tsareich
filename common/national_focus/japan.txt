@@ -2500,6 +2500,9 @@ focus_tree = {
         allow_branch = {
             has_war_with_major = yes
         }
+        completion_reward = {
+            add_ideas = war_economy
+        }
         
     }
 
@@ -2512,7 +2515,7 @@ focus_tree = {
             focus = jap_war
         }
         completion_reward = {
-            
+            add_ideas = tot_economic_mobilisation  
         }
     }
 
@@ -2525,7 +2528,7 @@ focus_tree = {
             focus = jap_war_economy
         }
         completion_reward = {
-            
+            upgrade_intelligence_agency = upgrade_army_department
         }
         mutually_exclusive = {
             focus = jap_government_information
@@ -2544,7 +2547,7 @@ focus_tree = {
             focus = jap_army_information
         }
         completion_reward = {
-            
+            upgrade_intelligence_agency = upgrade_economy_civilian
         }
     }
 
@@ -2558,7 +2561,11 @@ focus_tree = {
             focus = jap_army_information
         }
         completion_reward = {
-            
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 3
+                category = land_doctrine
+            }
         }
     }
 
@@ -2572,7 +2579,11 @@ focus_tree = {
             focus = jap_army_information
         }
         completion_reward = {
-            
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 3
+                category = air_doctrine
+            }
         }
     }
 
@@ -2586,7 +2597,11 @@ focus_tree = {
             focus = jap_army_information
         }
         completion_reward = {
-            
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 3
+                category = naval_doctrine
+            }
         }
     }
 
@@ -2691,7 +2706,6 @@ focus_tree = {
         x = 1
         y = 2
         completion_reward = {
-            
         }
         prerequisite = {
             focus = jap_Metal_Supply_and_Order
