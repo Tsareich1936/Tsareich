@@ -1,0 +1,14 @@
+state={
+	id=1033
+	name="STATE_1033"
+	provinces={
+		823 941 986 1651 3784 3840 4518 4657 4727 6861 6881 7667 7986 9855 9911 10387 10483 11763 11795 11859 11876 12303 12374 
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+	}
+	manpower=10
+	state_category = rural
+	local_supplies=0.000
+}
