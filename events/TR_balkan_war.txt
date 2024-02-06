@@ -193,6 +193,10 @@ country_event = {#ハンガリーが最後通牒を拒否
 				hours = 6
 			}
 		}
+		set_global_flag = {
+			flag = TR_balkan_war
+			value = 1
+		}
 	}
 	option = {#兵を進めろ
 		name = TR_balkan.10.a

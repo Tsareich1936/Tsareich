@@ -246,3 +246,10 @@ country_event = {
 		add_ideas = TR_debug_consumer_goods
 	}
 }
+country_event = {
+	id = TR_debug.0
+	immediate = {
+		TR_SER_balkan_war_peace = yes
+	}
+	hidden = yes
+}
