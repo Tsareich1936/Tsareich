@@ -24,8 +24,3 @@ AMG = {#American Military Government
 	original_tag = USA
 	has_country_flag = USA_military_flag
 }
-#Balkan War
-MDR = {#Madarska
-	original_tag = HUN
-	has_country_flag = HUN_madarska
-}
