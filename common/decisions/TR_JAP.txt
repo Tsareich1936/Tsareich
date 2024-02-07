@@ -468,7 +468,9 @@ JAP_industry_Takahashi = {
 		available = {
 			num_of_available_civilian_factories > 2
 		}
-		
+		ai_will_do = {
+			base = 200
+		}
 		remove_effect = {
 			random_owned_state = {
 				limit = {
@@ -500,7 +502,9 @@ JAP_industry_Takahashi = {
 	}
 
 	JAP_Civilian_factory_2 = {
-		
+		ai_will_do = {
+			base = 200
+		}
 		available = {
 			num_of_available_civilian_factories > 2
 		}
@@ -535,6 +539,9 @@ JAP_industry_Takahashi = {
 
 	JAP_Military_factory_1 = {
 		icon = generic_construction
+		ai_will_do = {
+			base = 200
+		}
 		allowed = { always = no }
 		available = {
 			num_of_available_civilian_factories > 2
@@ -572,7 +579,9 @@ JAP_industry_Takahashi = {
 	}
 
 	JAP_Military_factory_2 = {
-		
+		ai_will_do = {
+			base = 200
+		}
 		available = {
 			num_of_available_civilian_factories > 2
 		}
@@ -606,6 +615,9 @@ JAP_industry_Takahashi = {
 	}
 
 	JAP_Infrastructure_1 = {
+		ai_will_do = {
+			base = 200
+		}
 		icon = generic_construction
 		allowed = { always = no }
 		available = {
@@ -644,7 +656,9 @@ JAP_industry_Takahashi = {
 	}
 
 	JAP_Infrastructure_2 = {
-		
+		ai_will_do = {
+			base = 200
+		}
 		available = {
 			num_of_available_civilian_factories > 2
 		}
@@ -678,6 +692,9 @@ JAP_industry_Takahashi = {
 	}
 
 	JAP_Naval_dockyard_1 = {
+		ai_will_do = {
+			base = 200
+		}
 		icon = generic_construction
 		allowed = { always = no }
 		available = {
@@ -716,6 +733,9 @@ JAP_industry_Takahashi = {
 	}
 
 	JAP_Naval_dockyard_2 = {
+		ai_will_do = {
+			base = 200
+		}
 		
 		available = {
 			num_of_available_civilian_factories > 2
@@ -750,6 +770,9 @@ JAP_industry_Takahashi = {
 	}
 
 	JAP_synthetic_refinery_1 = {
+		ai_will_do = {
+			base = 200
+		}
 		icon = generic_construction
 		allowed = { always = no }
 		available = {
@@ -788,6 +811,9 @@ JAP_industry_Takahashi = {
 	}
 
 	JAP_synthetic_refinery_2 = {
+		ai_will_do = {
+			base = 200
+		}
 		
 		available = {
 			num_of_available_civilian_factories > 2
@@ -822,6 +848,9 @@ JAP_industry_Takahashi = {
 	}
 
 	JAP_air_base_1 = {
+		ai_will_do = {
+			base = 200
+		}
 		icon = generic_construction
 		allowed = { always = no }
 		available = {
@@ -860,7 +889,9 @@ JAP_industry_Takahashi = {
 	}
 
 	JAP_air_base_2 = {
-		
+		ai_will_do = {
+			base = 200
+		}
 		available = {
 			num_of_available_civilian_factories > 2
 		}
