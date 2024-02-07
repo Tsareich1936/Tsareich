@@ -3,7 +3,7 @@ state={
 	id=357
 	name="STATE_357"
 	resources={
-		steel=12.000
+		steel=12
 	}
 
 	history={
@@ -14,33 +14,17 @@ state={
 			industrial_complex = 5
 			dockyard = 4
 			air_base = 10
-			6732 = {
-				naval_base = 8
-
-			}
-			9832 = {
-				naval_base = 3
-
-			}
-
 		}
 		add_core_of = USA
 		victory_points = {
-			6732 20 
+			9850 2
 		}
-		victory_points = {
-			12459 1 
-		}
-		victory_points = {
-			9832 1 
-		}
-
 	}
 
 	provinces={
-		6909 9832 9847 9850 13158 
+		6909 9832 9847 9850 
 	}
-	manpower=8404713
+	manpower=1674713
 	buildings_max_level_factor=1.000
 	state_category=metropolis
 	local_supplies=0.000

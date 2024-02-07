@@ -7,8 +7,16 @@ state={
 	history = {
 		owner = USA
 		add_core_of = USA
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			6897 2
+		}
 	}
-	manpower=10
-	state_category = rural
+	manpower=112100
+	state_category = town
 	local_supplies=0.000
 }

@@ -14,6 +14,9 @@ state={
 		victory_points = {
 			6682 1 
 		}
+		victory_points = {
+			6711 5 
+		}
 		add_core_of = ROM
 		add_core_of = TRA
 

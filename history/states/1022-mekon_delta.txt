@@ -7,6 +7,10 @@ state={
 	history = {
 		owner = VIN
 		add_core_of = VIN
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = { 12133 2 }
 	}
 	manpower=10
 	state_category = rural
