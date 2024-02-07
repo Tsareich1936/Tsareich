@@ -12,7 +12,7 @@ state={
 		}
 		victory_points = { 12133 2 }
 	}
-	manpower=10
-	state_category = rural
+	manpower=1501000
+	state_category = town
 	local_supplies=0.000
 }

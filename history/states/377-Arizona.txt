@@ -4,7 +4,7 @@ state={
 	name="STATE_377"
 	manpower = 435572
 	
-	state_category = town
+	state_category = large_town
 	
 	resources={
 		steel=20 # was: 40
@@ -16,7 +16,7 @@ state={
 		owner = USA
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 2
 			air_base = 2
 		}
 		add_core_of = USA
