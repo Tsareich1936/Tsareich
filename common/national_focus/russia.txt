@@ -16,11 +16,12 @@ focus_tree = {
 			focus = RUS_FkV_broken_country
 			focus = RUS_FkV_communist_win
 		}
-		x = 30
+		x = 37
 		y = 0
 		available = {
 			always = no
 		}
+
 	}
 	focus = {
 		id = RUS_FkV_broken_country
@@ -36,6 +37,7 @@ focus_tree = {
 		available = {
 			always = no
 		}
+
 	}
 	focus = {
 		id = RUS_FkV_communist_win
@@ -46,11 +48,12 @@ focus_tree = {
 		}
 		x = -2
 		y = 0
-		search_filters = FOCUS_FILTER_POLITICAL
 		relative_position_id = RUS_FkV_notsar
+		search_filters = FOCUS_FILTER_POLITICAL
 		available = {
 			always = no
 		}
+
 	}
 	focus = {
 		id = RUS_newtsar
@@ -62,7 +65,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = RUS_oldtsar
 		}
-		x = 18
+		x = 14
 		y = 2
 		search_filters = FOCUS_FILTER_POLITICAL
 		completion_reward = {
@@ -77,37 +80,7 @@ focus_tree = {
 					}
 				}
 			}
-
 		}
-
-	}
-	focus = {
-		id = RUS_oldtsar
-		icon = GFX_focus_SOV_zemsky_sobor
-		cost = 4.00
-		prerequisite = {
-			focus = RUS_FkV_notsar
-		}
-		mutually_exclusive = {
-			focus = RUS_newtsar
-		}
-		search_filters = FOCUS_FILTER_POLITICAL
-		x = 42
-		y = 2
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = RUS_empire_diplo
-		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 4.00
-		prerequisite = {
-			focus = RUS_newtsar
-			focus = RUS_oldtsar
-		}
-		x = 30
-		y = 3
 
 	}
 	focus = {
@@ -191,164 +164,9 @@ focus_tree = {
 
 	}
 	focus = {
-		id = RUS_development_of_siberia
-		icon = GFX_focus_GRE_a_land_of_mountains
-		cost = 1.00
-		prerequisite = {
-			focus = RUS_remake_national_government
-		}
-		x = 0
-		y = 1
-		relative_position_id = RUS_remake_national_government
-		search_filters = FOCUS_FILTER_POLITICAL
-		ai_will_do = {
-			factor = 80
-		}
-		available = {
-
-		}
-		completion_reward = {
-			hidden_effect = {
-				set_country_flag = RUS_start_siberia_decision
-			}
-			custom_effect_tooltip = TR_Russia.tt.3
-		}
-
-	}
-	focus = {
-		id = RUS_MNE_Lyceum
-		icon = GFX_focus_generic_university_1
-		cost = 4.00
-		prerequisite = {
-			focus = RUS_development_of_siberia
-		}
-		x = 0
-		y = 2
-		relative_position_id = RUS_remake_national_government
-		search_filters = FOCUS_FILTER_RESEARCH
-		ai_will_do = {
-			factor = 160
-		}
-		available = {
-			NOT = {
-				has_active_mission = RUS_siberia_mission
-			}
-		}
-		completion_reward = {
-			add_research_slot = 1
-			add_ideas = RUS_MNE_Lyceum_idea
-		}
-
-	}
-	focus = {
-		id = RUS_oil_to_rubber_factory
-		icon = GFX_focus_generic_offshore_oil_rig
-		cost = 4.00
-		prerequisite = {
-			focus = RUS_development_of_siberia
-		}
-		x = -2
-		y = 2
-		relative_position_id = RUS_remake_national_government
-		search_filters = FOCUS_FILTER_INDUSTRY
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			NOT = {
-				has_active_mission = RUS_siberia_mission
-			}
-		}
-		completion_reward = {
-			hidden_effect = {
-				set_country_flag = RUS_rubber_factory_flag
-			}
-			custom_effect_tooltip = TR_Russia.tt.4
-		}
-
-	}
-	focus = {
-		id = RUS_remove_census
-		icon = GFX_focus_generic_horse_studs
-		cost = 4.00
-		prerequisite = {
-			focus = RUS_development_of_siberia
-		}
-		x = 2
-		y = 2
-		relative_position_id = RUS_remake_national_government
-		search_filters = FOCUS_FILTER_MANPOWER
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			NOT = {
-				has_active_mission = RUS_siberia_mission
-			}
-		}
-		completion_reward = {
-			remove_ideas = RUS_nomad_of_russia
-		}
-
-	}
-	focus = {
-		id = RUS_battle_with_PER
-		icon = GFX_focus_generic_attack_iran
-		cost = 4.00
-		prerequisite = {
-			focus = RUS_remove_census
-		}
-		prerequisite = {
-			focus = RUS_oil_to_rubber_factory
-		}
-		prerequisite = {
-			focus = RUS_MNE_Lyceum
-		}
-		x = 0
-		y = 3
-		relative_position_id = RUS_remake_national_government
-		search_filters = FOCUS_FILTER_ANNEXATION
-		ai_will_do = {
-			factor = 240
-		}
-		available = {
-
-		}
-		completion_reward = {
-			custom_effect_tooltip = TR_Russia.tt.5
-			country_event = TR_Russia.5
-		}
-
-	}
-	focus = {
-		id = RUS_remake_russian_constitution
-		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 4.00
-		prerequisite = {
-			focus = RUS_battle_with_PER
-		}
-		x = 0
-		y = 4
-		relative_position_id = RUS_remake_national_government
-		search_filters = FOCUS_FILTER_POLITICAL
-		ai_will_do = {
-			factor = 80
-		}
-		available = {
-
-		}
-		completion_reward = {
-			swap_ideas = {
-				add_idea = RUS_winner_of_wwi_1
-				remove_idea = RUS_winner_of_wwi
-			}
-		}
-
-	}
-	focus = {
 		id = RUS_build_stock_exchange
 		icon = GFX_focus_mex_privatisation
-		cost = 3
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_remake_national_government
 		}
@@ -370,7 +188,7 @@ focus_tree = {
 	focus = {
 		id = RUS_add_more_academy
 		icon = GFX_focus_research
-		cost = 3
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_build_stock_exchange
 		}
@@ -399,7 +217,7 @@ focus_tree = {
 	focus = {
 		id = RUS_remake_economical_government
 		icon = GFX_focus_LAT_suspend_constitution_of_latvia
-		cost = 3
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_add_more_academy
 		}
@@ -538,9 +356,300 @@ focus_tree = {
 
 	}
 	focus = {
+		id = RUS_development_of_siberia
+		icon = GFX_focus_GRE_a_land_of_mountains
+		cost = 1.00
+		prerequisite = {
+			focus = RUS_remake_national_government
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_POLITICAL
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = RUS_start_siberia_decision
+			}
+			custom_effect_tooltip = TR_Russia.tt.3
+		}
+
+	}
+	focus = {
+		id = RUS_remove_census
+		icon = GFX_focus_generic_horse_studs
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_development_of_siberia
+		}
+		x = 2
+		y = 2
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_MANPOWER
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = {
+				has_active_mission = RUS_siberia_mission
+			}
+		}
+		completion_reward = {
+			remove_ideas = RUS_nomad_of_russia
+		}
+
+	}
+	focus = {
+		id = RUS_buy_arms_factory
+		icon = GFX_focus_generic_combined_arms
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_remake_national_government
+		}
+		x = 5
+		y = 1
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_INDUSTRY
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = RUS_cost_of_buying_arms_factory
+				days = 180
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 10
+			}
+		}
+
+	}
+	focus = {
+		id = RUS_oldtsar
+		icon = GFX_focus_SOV_zemsky_sobor
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_FkV_notsar
+		}
+		mutually_exclusive = {
+			focus = RUS_newtsar
+		}
+		x = 60
+		y = 2
+		search_filters = FOCUS_FILTER_POLITICAL
+		completion_reward = {
+			add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = RUS_empire_diplo
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_newtsar
+			focus = RUS_oldtsar
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = RUS_ankara_treaty
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_empire_diplo
+		}
+		x = 6
+		y = 1
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_corp_TUR
+		icon = GFX_focus_generic_befriend_turkey
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_ankara_treaty
+		}
+		mutually_exclusive = {
+			focus = RUS_push_TUR
+		}
+		x = 5
+		y = 2
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_push_TUR
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10.00
+		prerequisite = {
+			focus = RUS_ankara_treaty
+		}
+		mutually_exclusive = {
+			focus = RUS_corp_TUR
+		}
+		x = 7
+		y = 2
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_send_pros
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_empire_diplo
+		}
+		x = 10
+		y = 1
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_send_tech_pro
+		icon = GFX_focus_spa_the_spanish_miracle
+		cost = 5.00
+		prerequisite = {
+			focus = RUS_send_pros
+		}
+		x = 9
+		y = 2
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_send_army_pro
+		icon = GFX_focus_POL_beck_ribbentrop
+		cost = 5.00
+		prerequisite = {
+			focus = RUS_send_pros
+		}
+		x = 11
+		y = 2
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_MNE_Lyceum
+		icon = GFX_focus_generic_university_1
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_development_of_siberia
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_RESEARCH
+		ai_will_do = {
+			factor = 160
+		}
+		available = {
+			NOT = {
+				has_active_mission = RUS_siberia_mission
+			}
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = RUS_MNE_Lyceum_idea
+		}
+
+	}
+	focus = {
+		id = RUS_oil_to_rubber_factory
+		icon = GFX_focus_generic_offshore_oil_rig
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_development_of_siberia
+		}
+		x = -2
+		y = 2
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_INDUSTRY
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = {
+				has_active_mission = RUS_siberia_mission
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = RUS_rubber_factory_flag
+			}
+			custom_effect_tooltip = TR_Russia.tt.4
+		}
+
+	}
+	focus = {
+		id = RUS_propaganda
+		icon = GFX_goal_generic_propaganda
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_remove_census
+		}
+		prerequisite = {
+			focus = RUS_oil_to_rubber_factory
+		}
+		prerequisite = {
+			focus = RUS_MNE_Lyceum
+		}
+		x = 0
+		y = 3
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_POLITICAL
+		ai_will_do = {
+			factor = 240
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_war_support = 0.15
+		}
+
+	}
+	focus = {
+		id = RUS_remake_russian_constitution
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_propaganda
+		}
+		x = 0
+		y = 4
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_POLITICAL
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = RUS_winner_of_wwi_1
+				remove_idea = RUS_winner_of_wwi
+			}
+		}
+
+	}
+	focus = {
 		id = RUS_develop_of_ukrine
 		icon = GFX_focus_SWE_beneath_sticks_and_stone
-		cost = 3
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_build_stock_exchange
 		}
@@ -597,7 +706,7 @@ focus_tree = {
 	focus = {
 		id = RUS_national_construction
 		icon = GFX_focus_SWE_hygienic_housing
-		cost = 3
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_develop_of_ukrine
 		}
@@ -619,7 +728,7 @@ focus_tree = {
 	focus = {
 		id = RUS_moscow_economy
 		icon = GFX_focus_SWE_landsverk
-		cost = 3
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_national_construction
 		}
@@ -649,38 +758,9 @@ focus_tree = {
 
 	}
 	focus = {
-		id = RUS_buy_arms_factory
-		icon = GFX_focus_generic_combined_arms
-		cost = 3
-		prerequisite = {
-			focus = RUS_remake_national_government
-		}
-		x = 5
-		y = 1
-		relative_position_id = RUS_remake_national_government
-		search_filters = FOCUS_FILTER_INDUSTRY
-		ai_will_do = {
-			factor = 80
-		}
-		available = {
-
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = RUS_cost_of_buying_arms_factory
-				days = 180
-			}
-			add_offsite_building = {
-				type = arms_factory
-				level = 10
-			}
-		}
-
-	}
-	focus = {
 		id = RUS_russia_fire_training
 		icon = GFX_focus_chi_army_reform
-		cost = 3
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_buy_arms_factory
 		}
@@ -693,7 +773,10 @@ focus_tree = {
 		}
 		available = {
 			#has_war = no
+			#has_war = no
 		}
+		#has_war = no
+		#has_war = no
 		#has_war = no
 		completion_reward = {
 			army_experience = 100
@@ -708,7 +791,7 @@ focus_tree = {
 	focus = {
 		id = RUS_guard_tank_divisions
 		icon = GFX_focus_generic_tank_production
-		cost = 3
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_russia_fire_training
 		}
@@ -839,7 +922,7 @@ focus_tree = {
 	focus = {
 		id = RUS_navy_doctrine
 		icon = GFX_focus_generic_navy_battleship2
-		cost = 3
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_buy_arms_factory
 		}
@@ -861,7 +944,7 @@ focus_tree = {
 	focus = {
 		id = RUS_shikolsky_planes
 		icon = GFX_focus_generic_copy_plane_designs
-		cost = 3
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_navy_doctrine
 		}
@@ -883,7 +966,7 @@ focus_tree = {
 	focus = {
 		id = RUS_operational_doctrine
 		icon = GFX_focus_generic_military_mission
-		cost = 3
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_shikolsky_planes
 		}
@@ -998,6 +1081,332 @@ focus_tree = {
 		completion_reward = {
 			country_event = TR_Russia.15
 		}
+
+	}
+	focus = {
+		id = RUS_europe_diplo
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_empire_diplo
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_nord_anticommune
+		icon = GFX_goal_anti_comintern_pact
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_europe_diplo
+		}
+		x = 1
+		y = 2
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_money_to_SER
+		icon = GFX_focus_invite_yugoslavia
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_europe_diplo
+		}
+		x = -1
+		y = 2
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_money_to_ROM
+		icon = GFX_focus_invite_romania
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_money_to_SER
+		}
+		prerequisite = {
+			focus = RUS_nord_anticommune
+		}
+		mutually_exclusive = {
+			focus = RUS_push_ROM
+		}
+		x = -1
+		y = 3
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_push_ROM
+		icon = GFX_focus_rom_preserve_romania
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nord_anticommune
+		}
+		prerequisite = {
+			focus = RUS_money_to_SER
+		}
+		mutually_exclusive = {
+			focus = RUS_money_to_ROM
+		}
+		x = 1
+		y = 3
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_corp_POR
+		icon = GFX_focus_generic_befriend_portugal
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_money_to_SER
+		}
+		x = -3
+		y = 3
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_invade_nord
+		icon = GFX_focus_generic_attack_nordic_territory
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nord_anticommune
+		}
+		x = 3
+		y = 3
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_money_to_FGE
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_money_to_ROM
+		}
+		x = -3
+		y = 4
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_diplo_help_CZE
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_money_to_ROM
+			focus = RUS_push_ROM
+		}
+		x = 0
+		y = 4
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_no_money_to_GE
+		icon = GFX_focus_fra_devalue_the_franc
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_push_ROM
+		}
+		x = 3
+		y = 4
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_knockout_commune
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = RUS_diplo_help_CZE
+		}
+		x = 0
+		y = 5
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_corp_with_DEN
+		icon = GFX_focus_generic_befriend_denmark
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_diplo_help_CZE
+		}
+		x = -2
+		y = 5
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_help_HOL
+		icon = GFX_focus_hol_oranje_boven
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_diplo_help_CZE
+		}
+		x = 2
+		y = 5
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_diplo_US
+		icon = GFX_goal_generic_national_unity
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_empire_diplo
+		}
+		x = -6
+		y = 1
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_treaty_with_USA
+		icon = GFX_focus_generic_befriend_usa
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_diplo_US
+		}
+		x = -5
+		y = 2
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_naval_pro_JAP
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 10.00
+		prerequisite = {
+			focus = RUS_diplo_US
+		}
+		mutually_exclusive = {
+			focus = RUS_air_pro_US
+		}
+		x = -7
+		y = 3
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_international_industrial_pro
+		icon = GFX_focus_generic_industrialists
+		cost = 10.00
+		prerequisite = {
+			focus = RUS_send_army_pro
+			focus = RUS_send_tech_pro
+		}
+		mutually_exclusive = {
+			focus = RUS_international_army_pro
+		}
+		x = 9
+		y = 3
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_international_army_pro
+		icon = GFX_focus_SOV_mobilization_plan
+		cost = 10.00
+		prerequisite = {
+			focus = RUS_send_tech_pro
+			focus = RUS_send_army_pro
+		}
+		mutually_exclusive = {
+			focus = RUS_international_industrial_pro
+		}
+		x = 11
+		y = 3
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_air_pro_US
+		icon = GFX_focus_generic_long_range_aircraft
+		cost = 10.00
+		prerequisite = {
+			focus = RUS_treaty_with_USA
+		}
+		mutually_exclusive = {
+			focus = RUS_naval_pro_JAP
+		}
+		x = -5
+		y = 3
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_battle_with_PER
+		icon = GFX_focus_generic_attack_iran
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_empire_diplo
+		}
+		x = -10
+		y = 1
+		relative_position_id = RUS_empire_diplo
+		completion_reward = {
+			custom_effect_tooltip = TR_Russia.tt.5
+			country_event = TR_Russia.5
+		}
+	}
+	focus = {
+		id = RUS_afgan_diplo
+		icon = GFX_focus_generic_befriend_afghanistan
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_battle_with_PER
+		}
+		x = -9
+		y = 2
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_iraq_diplo
+		icon = GFX_goal_generic_oil_refinery
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_battle_with_PER
+		}
+		x = -11
+		y = 2
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_invade_mid
+		icon = GFX_focus_ETH_an_arabic_base
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_afgan_diplo
+			focus = RUS_iraq_diplo
+		}
+		mutually_exclusive = {
+			focus = RUS_friend_mid
+		}
+		x = -11
+		y = 3
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_friend_mid
+		icon = GFX_focus_TUR_treaty_of_saadabad
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_afgan_diplo
+			focus = RUS_iraq_diplo
+		}
+		mutually_exclusive = {
+			focus = RUS_invade_mid
+		}
+		x = -9
+		y = 3
+		relative_position_id = RUS_empire_diplo
 
 	}
 }

@@ -1,39 +1,54 @@
 TR_SER_balkan_war_peace = {
-	MDR = {
-		transfer_state = 43
-		transfer_state = 154
-		transfer_state = 155
-	}
-	SER = {
-		transfer_state = 45
-		transfer_state = 764
-		set_autonomy = {
-			target = MDR
-			autonomy_state = autonomy_cleansing_area
-			freedom_level = 0
-		}
-		dismantle_faction = yes
-	}
-	ROM = {
-		transfer_state = 76
-		transfer_state = 82
-		transfer_state = 83
-		transfer_state = 84
-		transfer_state = 935
+	HUN = {
 		leave_faction = yes
-	}
-	CZE = {
-		SLO = {
-			transfer_state = 70
-			transfer_state = 71
-			transfer_state = 73
-			transfer_state = 664
+		MDR = {
+			transfer_state = 43
+			transfer_state = 154
+			transfer_state = 155
 		}
-		# set_autonomy = {
-		# 	target = SLO
-		# 	autonomy_state = autonomy_collaboration_government
-		# 	freedom_level = 0
-		# }
-		leave_faction = yes
+		SER = {
+			transfer_state = 45
+			transfer_state = 764
+			set_autonomy = {
+				target = MDR
+				autonomy_state = autonomy_cleansing_area
+				freedom_level = 0
+			}
+		}
+		ROM = {
+			transfer_state = 76
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 84
+			transfer_state = 935
+		}
+		CZE = {
+			SLO = {
+				white_peace = SER
+				SER = {
+					add_to_faction = PREV
+				}
+				transfer_state = 70
+				transfer_state = 71
+				transfer_state = 73
+				transfer_state = 664
+			}
+			# set_autonomy = {
+			# 	target = SLO
+			# 	autonomy_state = autonomy_collaboration_government
+			# 	freedom_level = 0
+			# }
+		}
+		BUL = {
+			every_owned_state = {
+				set_state_controller_to = SER
+			}
+			SER = {
+				start_peace_conference = {
+					tag = BUL
+					score_factor = 100
+				}
+			}
+		}
 	}
 }

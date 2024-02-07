@@ -1,0 +1,81 @@
+ENG_historical_plan = {
+	name = "Russia historical plan"
+	desc = "Historical behavior for Russia"
+
+	allowed = {
+		original_tag = RUS
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		RUS_new_tsar #28
+		RUS_unprison #28
+		RUS_tsar_infantry #28
+		RUS_remake_national_government #28
+		
+		RUS_development_of_siberia #7
+		RUS_build_stock_exchange #28
+		RUS_add_more_academy #28
+		RUS_remake_economical_government #28
+		RUS_buy_arms_factory #28
+		RUS_russia_fire_training #28
+		RUS_guard_tank_divisions #28
+		RUS_navy_doctrine #28
+		RUS_shikolsky_planes #28
+		RUS_operational_doctrine #28
+
+		RUS_empire_diplo #28
+		RUS_battle_with_PER #28
+
+		RUS_remove_census #28
+		RUS_MNE_Lyceum #28
+		RUS_oil_to_rubber_factory #28
+		RUS_propaganda #28
+		RUS_remake_russian_constitution #28
+		RUS_develop_of_ukrine #28
+		RUS_national_construction #28
+		RUS_moscow_economy #28
+
+		RUS_europe_diplo #28
+		RUS_money_to_SER #28
+		RUS_money_to_ROM #28
+
+		RUS_3_year_buildup #28
+		RUS_deep_battle_doctrine #28
+
+		RUS_send_pros #28
+		RUS_send_army_pro #35
+		RUS_international_army_pro #25
+
+		RUS_alaska_development #70
+
+		RUS_ankara_treaty #28
+		RUS_push_TUR #70
+		RUS_send_tech_pro #28
+		RUS_diplo_help_CZE #28
+		RUS_knockout_commune #70
+
+	}
+
+	research = {
+		
+	}
+
+	ideas = {
+		
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
