@@ -12,13 +12,13 @@ state={
 		add_core_of = USA
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
+			industrial_complex = 4
 		}
 		victory_points = {
 			12459 1
 		}
 	}
-	manpower= 8301000
+	manpower= 830100
 	state_category = city
 	local_supplies=0.000
 }
