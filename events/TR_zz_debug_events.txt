@@ -254,3 +254,27 @@ country_event = {
 	}
 	hidden = yes
 }
+country_event = {
+	id = TR_debug.6
+	is_triggered_only = yes
+	immediate = {
+		division_template = {
+			name = "GEBUG"
+			regiments = {
+				guellira = { x = 0 y = 0  }
+				guellira = { x = 0 y = 1  }
+				guellira = { x = 0 y = 2  }
+			}
+		}
+		every_owned_state = {
+			create_unit = {
+				division = "name = \"GEBUG\" division_template = \"GEBUG\" start_experience_factor = 1" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"GEBUG\" division_template = \"GEBUG\" start_experience_factor = 1" 
+				owner = ROOT
+			}
+		}
+	}
+}
