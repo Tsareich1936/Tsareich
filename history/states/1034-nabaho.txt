@@ -1,0 +1,22 @@
+state={
+	id=1034
+	name="STATE_1034"
+	provinces={
+		4796 6897 7821 10573 
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			6897 2
+		}
+	}
+	manpower=112100
+	state_category = town
+	local_supplies=0.000
+}

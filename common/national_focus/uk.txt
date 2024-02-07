@@ -1643,11 +1643,8 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_ENG_belgian_issue
 				completion_reward = {
-					diplomatic_relation = {
-						country = DEN
-						relation = guarantee
-					}
-				}
+					add_to_faction = DEN
+										}
 			}
 			focus = {
 				id = TR_ENG_contacts_with_russia

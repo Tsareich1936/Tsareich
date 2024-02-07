@@ -1,0 +1,22 @@
+state={
+	id=1037
+	name="STATE_1037"
+	provinces={
+		859 3878 
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 6
+			dockyard = 3
+		}
+		victory_points = {
+			3878 50 
+		}
+	}
+	manpower=7755000
+	state_category = megalopolis
+	local_supplies=0.000
+}

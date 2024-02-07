@@ -13,20 +13,3 @@ TR_POL_resistance = {
 		has_country_flag = TR_POL_start_resistance
 	}
 }
-TR_POL_resistance_suppression = {
-	allowed = {
-		tag = RUS
-	}
-	priority = 999
-	icon = icon
-	visible_when_empty = yes
-	visible = {
-		has_war_with = POL
-		NOT = {
-			has_global_flag = TR_poland_recognized_flag
-		}
-		POL = {
-			has_country_flag = TR_POL_start_resistance
-		}
-	}
-}
