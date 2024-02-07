@@ -1644,7 +1644,7 @@ focus_tree = {
 				relative_position_id = TR_ENG_belgian_issue
 				completion_reward = {
 					add_to_faction = DEN
-				}
+										}
 			}
 			focus = {
 				id = TR_ENG_contacts_with_russia

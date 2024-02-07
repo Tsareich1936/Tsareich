@@ -1,9 +1,8 @@
-
 state={
 	id=286
 	name="STATE_286"
 	resources={
-		rubber=55.000
+		rubber=55 # was: 94.000
 	}
 
 	history={
@@ -12,7 +11,6 @@ state={
 		victory_points = {
 			4401 10
 		}
-
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -28,8 +26,10 @@ state={
 
 	provinces={
 		1396 4401 7238 7347 10232 10261 12150 12176 12232 
+		
 	}
-	manpower= 5515000
-	state_category= city
+	manpower=5245000
+	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }
