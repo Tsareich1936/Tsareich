@@ -1032,7 +1032,7 @@ focus_tree = {
 			}
 			country_event = { 
 				id = CZE_ban_com
-			}   
+			}
 		}
 	}
 

@@ -1,0 +1,19 @@
+state={
+	id=1025
+	name="STATE_1025"
+	provinces={
+		10330 10356 10456 
+	}
+	history = {
+		owner = VIN
+		add_core_of = VIN
+		add_core_of = CAM
+		add_core_of = SIA
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower= 36500
+	state_category = rural
+	local_supplies=0.0001
+}
