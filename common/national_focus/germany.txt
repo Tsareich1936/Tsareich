@@ -818,6 +818,9 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_state_function
 		}
+		prerequisite = {
+		focus = GER_one_country_socialism
+		}
 		x = 19
 		y = 8
 			completion_reward = {
@@ -846,6 +849,9 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_heavy_industry
 		}
+		prerequisite = {
+			focus = GER_international_revolution
+			}
 		x = 25
 		y = 8
 
