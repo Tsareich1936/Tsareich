@@ -12,8 +12,9 @@ replace_path = "events"
 # replace_path = "common/decisions"
 #バグ対策?
 replace_path = "common/national_focus"
-replace_path = "common/scripted_Effects"
+replace_path = "common/scripted_effects"
 replace_path = "common/decions/formable_nation_decions.txt"
 replace_path = "common/scripted_localisation"
+replace_path = "common/scripted_trigger"
 
 
