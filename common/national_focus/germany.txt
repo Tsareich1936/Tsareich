@@ -44,7 +44,9 @@ focus_tree = {
 		cost = 10.00
 		x = 22
 		y = 0
-
+		available = {
+			has_country_flag = germany_election
+		}
 	}
 	focus = {
 		id = industry_2
@@ -414,7 +416,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 1
-
+		available = {
+			has_country_flag = germany_SPD
+		}
 	}
 	focus = {
 		id = GER_national_assembly
@@ -478,13 +482,9 @@ focus_tree = {
 					factor = 4000
 				}
 			available = {
-					has_country_flag = germany_election
+					has_country_flag = germany_KPD
 				}
 			completion_reward = {
-					country_event = {
-							id = TR_germany.2
-							days = 1
-						}
 					add_political_power = 100
 				}
 
@@ -504,6 +504,9 @@ focus_tree = {
 		y = 2
 			available = {
 					has_country_flag = germany_leftorright
+				}
+				completion_reward = {
+					remove_ideas = GER_left_right_divide
 				}
 
 	}
@@ -529,19 +532,41 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GER_proletariat_dictatorship
-		icon = GFX_focus_usa_voter_registration_act
+		id = GER_suppress_opposition
+		text = GER_suppress_opposition
+		icon = GFX_focus_spr_crush_the_revolution
 		cost = 5.00
 		prerequisite = {
 			focus = GER_social_fascism
-		}
-		mutually_exclusive = {
-			focus = GER_union_USPD
 		}
 		x = 16
 		y = 4
 			completion_reward = {
 					add_political_power = 25
+					add_stability = 0.10
+				}
+
+	}
+	focus = {
+		id = GER_condemn_revisionists
+		text = GER_condemn_revisionists
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 5.00
+		prerequisite = {
+			focus = GER_social_fascism
+		}
+		x = 18
+		y = 4
+			completion_reward = {
+					add_political_power = 25
+					add_popularity = {
+							ideology = socialism
+							popularity = -0.05
+						}
+					add_popularity = {
+							ideology = socialdemocratic
+							popularity = -0.05
+						}
 				}
 
 	}
@@ -551,13 +576,10 @@ focus_tree = {
 		icon = GFX_focus_SOV_the_supreme_soviet
 		cost = 5.00
 		prerequisite = {
-			focus = GER_social_fascism
-		}
-		mutually_exclusive = {
-			focus = GER_proletariat_dictatorship
+			focus = GER_condemn_revisionists
 		}
 		x = 18
-		y = 4
+		y = 5
 			completion_reward = {
 					add_political_power = 25
 					add_popularity = {
@@ -577,41 +599,16 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GER_condemn_revisionists
-		text = GER_condemn_revisionists
-		icon = GFX_focus_generic_strike_at_democracy3
+		id = GER_proletariat_dictatorship
+		icon = GFX_focus_usa_voter_registration_act
 		cost = 5.00
 		prerequisite = {
 			focus = GER_union_USPD
 		}
 		x = 18
-		y = 5
-			completion_reward = {
-					add_political_power = 25
-					add_popularity = {
-							ideology = socialism
-							popularity = -0.05
-						}
-					add_popularity = {
-							ideology = socialdemocratic
-							popularity = -0.05
-						}
-				}
-
-	}
-	focus = {
-		id = GER_suppress_opposition
-		text = GER_suppress_opposition
-		icon = GFX_focus_spr_crush_the_revolution
-		cost = 5.00
-		prerequisite = {
-			focus = GER_condemn_revisionists
-		}
-		x = 18
 		y = 6
 			completion_reward = {
 					add_political_power = 25
-					add_stability = 0.10
 				}
 
 	}
@@ -631,7 +628,9 @@ focus_tree = {
 			available = {
 					has_country_flag = germany_leftorright
 				}
-
+		completion_reward = {
+			remove_ideas = GER_left_right_divide
+		}
 	}
 	focus = {
 		id = GER_socialist_economy
@@ -659,6 +658,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = GER_socialist_economy
+		}
+		prerequisite = {
+			focus = GER_left
 		}
 		x = 21
 		y = 4
@@ -712,6 +714,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = GER_socialist_economy
+		}
+		prerequisite = {
+			focus = GER_right
 		}
 		x = 23
 		y = 4
@@ -804,56 +809,19 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_new_socialism_economy
 		}
-		prerequisite = {
-			focus = GER_agricultural_collectivization
-		}
 		x = 20
 		y = 7
 
 	}
 	focus = {
-		id = GER_first_five_year_plan
-		icon = GFX_focus_generic_industry_1
-		cost = 10.00
-		prerequisite = {
-			focus = GER_state_function
-		}
-		prerequisite = {
-		focus = GER_one_country_socialism
-		}
-		x = 19
-		y = 8
-			completion_reward = {
-					add_political_power = 25
-				}
-
-	}
-	focus = {
 		id = GER_heavy_industry
 		icon = GFX_goal_generic_production
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_new_socialism_economy
 		}
-		prerequisite = {
-			focus = GER_assist_small_medium_enterprises
-		}
 		x = 24
 		y = 7
-
-	}
-	focus = {
-		id = GER_out_of_country_experts
-		icon = GFX_focus_generic_military_academy
-		cost = 10.00
-		prerequisite = {
-			focus = GER_heavy_industry
-		}
-		prerequisite = {
-			focus = GER_international_revolution
-			}
-		x = 25
-		y = 8
 
 	}
 	focus = {
@@ -883,18 +851,53 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GER_workers_government
-		text = GER_workers_government
-		icon = GFX_focus_generic_workers
+		id = GER_Revisionism
+		text = GER_Revisionism
+		icon = GFX_goal_generic_dangerous_deal
 		cost = 5.00
 		prerequisite = {
 			focus = GER_united_front_tatics
 		}
-		mutually_exclusive = {
-			focus = GER_unite_SPD
-		}
 		x = 26
 		y = 4
+			ai_will_do = {
+					factor = 160
+				}
+			completion_reward = {
+					add_political_power = 25
+				}
+
+	}
+	focus = {
+		id = GER_leadership_reform
+		icon = GFX_focus_SWE_organize_a_putsch
+		cost = 5.00
+		prerequisite = {
+			focus = GER_united_front_tatics
+		}
+		x = 28
+		y = 4
+			ai_will_do = {
+					factor = 160
+				}
+			completion_reward = {
+					add_political_power = 25
+				}
+
+	}
+	focus = {
+		id = GER_workers_government
+		text = GER_workers_government
+		icon = GFX_focus_generic_workers
+		cost = 10.00
+		prerequisite = {
+			focus = GER_leadership_reform
+		}
+		prerequisite = {
+			focus = GER_Revisionism
+		}
+		x = 27
+		y = 5
 			ai_will_do = {
 					factor = 160
 				}
@@ -909,72 +912,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GER_unite_SPD
-		text = GER_unite_SPD
-		icon = GFX_goal_generic_dangerous_deal
-		cost = 5.00
-		prerequisite = {
-			focus = GER_united_front_tatics
-		}
-		mutually_exclusive = {
-			focus = GER_workers_government
-		}
-		x = 28
-		y = 4
-			ai_will_do = {
-					factor = 160
-				}
-			completion_reward = {
-					add_political_power = 25
-					add_stability = -0.05
-					add_popularity = {
-							ideology = communism
-							popularity = 0.15
-						}
-					add_popularity = {
-							ideology = socialism
-							popularity = -1
-						}
-					set_party_name = {
-							ideology = communism
-							long_name = GER_communism_right_unite_party_long
-							name = GER_communism_right_unite_party
-						}
-				}
-
-	}
-	focus = {
 		id = GER_workers_democracy
 		icon = GFX_focus_SWE_refuge_for_revolutionaries
-		cost = 10.00
-		prerequisite = {
-			focus = GER_workers_government
-			focus = GER_unite_SPD
-		}
-		x = 27
-		y = 5
-			ai_will_do = {
-					factor = 160
-				}
-			completion_reward = {
-					add_political_power = 25
-					swap_ideas = {
-							remove_idea = GER_workers_democracy
-							add_idea = GER_workers_democracy2
-						}
-				}
-
-	}
-	focus = {
-		id = GER_pandering_to_the_left
-		text = GER_pandering_to_the_left
-		icon = GFX_goal_tripartite_pact
 		cost = 5.00
 		prerequisite = {
 			focus = GER_workers_government
-		}
-		prerequisite = {
-			focus = GER_workers_democracy
 		}
 		x = 26
 		y = 6
@@ -982,33 +924,30 @@ focus_tree = {
 					factor = 160
 				}
 			completion_reward = {
-					add_political_power = 25
-					remove_ideas = GER_left_right_divide2
+				add_political_power = 25
+				swap_ideas = {
+					remove_idea = GER_workers_democracy
+					add_idea = GER_workers_democracy2
 				}
+			}
 
 	}
 	focus = {
-		id = GER_leadership_reform
-		icon = GFX_focus_SWE_organize_a_putsch
+		id = GER_totalitarianism
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		cost = 5.00
 		prerequisite = {
-			focus = GER_unite_SPD
-		}
-		prerequisite = {
-			focus = GER_workers_democracy
+			focus = GER_workers_government
 		}
 		x = 28
 		y = 6
-			ai_will_do = {
-					factor = 160
-				}
-			completion_reward = {
-					add_political_power = 25
-					swap_ideas = {
-							remove_idea = GER_left_right_divide
-							add_idea = GER_left_right_divide2
-						}
-				}
+		completion_reward = {
+			add_political_power = 25
+			swap_ideas = {
+				remove_idea = GER_Dolchstosslegende
+				add_idea = GER_totalitarian_oppression
+			}
+		}
 
 	}
 	focus = {
@@ -1016,8 +955,10 @@ focus_tree = {
 		icon = GFX_focus_SOV_proclaim_soviet_hegemony
 		cost = 5.00
 		prerequisite = {
-			focus = GER_pandering_to_the_left
-			focus = GER_leadership_reform
+			focus = GER_totalitarianism
+		}
+		prerequisite = {
+			focus = GER_workers_democracy
 		}
 		x = 27
 		y = 7
@@ -1045,6 +986,20 @@ focus_tree = {
 								}
 						}
 				}
+
+	}
+	focus = {
+		id = GER_out_of_country_experts
+		icon = GFX_focus_generic_military_academy
+		cost = 5.00
+		prerequisite = {
+			focus = GER_heavy_industry
+		}
+		prerequisite = {
+			focus = GER_international_revolution
+		}
+		x = 25
+		y = 8
 
 	}
 	focus = {
@@ -1541,7 +1496,9 @@ focus_tree = {
 		}
 		x = 43
 		y = 1
-
+		available = {
+			has_country_flag = germany_NSAP
+		}
 	}
 	focus = {
 		id = army_1
@@ -2136,7 +2093,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_positive_propaganda
 		}
-		x = 20
+		x = 21
 		y = 9
 			completion_reward = {
 					add_political_power = 25
@@ -2199,7 +2156,7 @@ focus_tree = {
 		icon = GFX_focus_generic_annex_country_2
 		cost = 5.00
 		prerequisite = {
-			focus = GER_proletariat_dictatorship
+			focus = GER_suppress_opposition
 		}
 		x = 16
 		y = 5
@@ -2301,12 +2258,31 @@ focus_tree = {
 
 	}
 	focus = {
+		id = GER_first_five_year_plan
+		icon = GFX_focus_generic_industry_1
+		cost = 5.00
+		prerequisite = {
+			focus = GER_state_function
+		}
+		prerequisite = {
+			focus = GER_one_country_socialism
+		}
+		x = 19
+		y = 8
+			completion_reward = {
+					add_political_power = 25
+				}
+
+	}
+	focus = {
 		id = GER_one_country_socialism
 		icon = GFX_goal_support_communism
 		cost = 5.00
 		prerequisite = {
 			focus = GER_purge_dissidents
-			focus = GER_suppress_opposition
+		}
+		prerequisite = {
+			focus = GER_proletariat_dictatorship
 		}
 		x = 17
 		y = 7
@@ -2353,7 +2329,7 @@ focus_tree = {
 			focus = GER_positive_propaganda
 		}
 		x = 22
-		y = 9
+		y = 10
 			completion_reward = {
 					add_political_power = 25
 				}
@@ -2366,7 +2342,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_positive_propaganda
 		}
-		x = 24
+		x = 23
 		y = 9
 			completion_reward = {
 					add_political_power = 25
@@ -2449,7 +2425,7 @@ focus_tree = {
 	focus = {
 		id = GER_industrial_advisor_from_france
 		icon = GFX_focus_chi_reach_out_to_france
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_out_of_country_experts
 		}

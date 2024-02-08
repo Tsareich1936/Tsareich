@@ -53,19 +53,6 @@ ideas = {
 			}
 		}
 
-		GER_left_right_divide2 = {
-			picture = "generic_neutrality_drift_bonus"
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			modifier = {
-				political_power_cost = 0.25
-				stability_factor = -0.15
-			}
-
-		} 
-
 		GER_workers_democracy = {
 			picture = "SOV_stakhanovite_movement"
 			allowed = {

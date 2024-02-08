@@ -1,38 +1,58 @@
 add_namespace = "TR_germany"
 
-
 country_event = {
 	id = TR_germany.1
 	title = TR_germany.1.t
 	desc = TR_germany.1.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			GER = {
+				country_event = {
+					id = TR_germany.2
+					days = 5
+				}
+			}
+		}
+	}
 	option = {
 		name = TR_germany.1.a
 		set_country_flag = germany_election
-	}
-
-	option = {
-		name = TR_germany.1.b
-        ai_chance = { base = 0 }
-		set_country_flag = germany_election
-	}
-
-	option = {
-		name = TR_germany.1.c
-        ai_chance = { base = 0 }
-		set_country_flag = germany_election
+		complete_national_focus = GER_council_election
 	}
 }
-
 country_event = {
 	id = TR_germany.2
 	title = TR_germany.2.t
 	desc = TR_germany.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			GER = {
+				country_event = {
+					id = TR_germany.3
+					days = 3
+				}
+			}
+		}
+	}
+	option = {
+		name = TR_germany.2.a
+		set_country_flag = germany_KPD
+		complete_national_focus = GER_1936_party_conference
+	}
+}
+
+country_event = {
+	id = TR_germany.3
+	title = TR_germany.3.t
+	desc = TR_germany.3.d
 	is_triggered_only = yes
 	picture = GFX_report_event_german_speech
 	option = {
-		name = TR_germany.2.a
+		name = TR_germany.3.a
 		complete_national_focus = GER_right
 		set_country_flag = germany_leftorright
 		promote_character = {
@@ -41,12 +61,11 @@ country_event = {
 			
 		}
 	}
-
 	option = {
-		name = TR_germany.2.b
+		name = TR_germany.3.b
         ai_chance = { base = 0 }
-		set_country_flag = germany_leftorright
 		complete_national_focus = GER_left
+		set_country_flag = germany_leftorright
 		promote_character = {
 			character = GER_ernst_thalmann
 			ideology = stalinism
