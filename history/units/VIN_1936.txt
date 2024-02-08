@@ -100,7 +100,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "VEN"
+			creator = "VIN"
 		}
 		requested_factories = 1
 		progress = 0.89

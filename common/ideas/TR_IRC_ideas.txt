@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+		IRC_kibou = {
+			picture = "FRA_national_mobilization_focus"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				surrender_limit = 0.20
+				army_core_defence_factor = 0.33
+				army_org_factor = 0.1
+			}
+		}
+	}
+	country = {
+		IRC_mil_nation = {
+			picture = "generic_manpower_bonus"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.03
+				weekly_manpower = 777
+			}
+		}
+	}
+}
