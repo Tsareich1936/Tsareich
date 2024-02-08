@@ -196,6 +196,7 @@ on_actions = {
 						OR = {
 							tag	= SER
 							tag = HUN
+							tag = CZE
 						}
 					}
 					has_global_flag = TR_balkan_war

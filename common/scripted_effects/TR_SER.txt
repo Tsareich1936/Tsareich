@@ -24,10 +24,8 @@ TR_SER_balkan_war_peace = {
 		}
 		CZE = {
 			SLO = {
+				leave_faction = yes
 				white_peace = SER
-				SER = {
-					add_to_faction = PREV
-				}
 				transfer_state = 70
 				transfer_state = 71
 				transfer_state = 73
@@ -50,5 +48,8 @@ TR_SER_balkan_war_peace = {
 				}
 			}
 		}
+	}
+	SER = {
+		dismantle_faction = yes
 	}
 }

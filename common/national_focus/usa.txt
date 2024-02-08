@@ -32,24 +32,27 @@ focus_tree = {
 				}
 			}
 			x = 30
-			y = 0
+			y = 1
 			completion_reward = {
 				effect_tooltip = {
 					custom_effect_tooltip = "TR_USA_1936_presidential_election_effect_tt"
 				}
 			}
 		}
-	### HISTORICAL COMMUNISM ###
-		focus = {
-			id = TR_USA_
-			icon = GFX_
-			cost = 5
+	### SELECT IDEOLOGY ###
+		## LEFT-WINGS ##
+			# HISTORICAL COMMUNISMT #
+				focus = {
+					id = TR_USA_go_where_people_wanna_go
+					icon = GFX_
+					cost = 5
 
-			x = -10
-			y = 0
-			relative_position_id = TR_USA_1936_presidential_election
-			completion_reward = {
-		
-			}
-		}
+					x = -6
+					y = -1
+					relative_position_id = TR_USA_1936_presidential_election
+					completion_reward = {
+						
+					}
+				}
+			
 }
