@@ -10,7 +10,7 @@
 # protect
 # influence
 
-SOV_unit_production = {
+RUS_unit_production = {
 	allowed = {
 		original_tag = RUS
 	}
@@ -36,7 +36,7 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = mountaineers
-		value = 2
+		value = 0
 	}
 
 	ai_strategy = {
@@ -48,31 +48,31 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = cavalry
-		value = 0
+		value = -100
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
-		value = 1
+		value = 3
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = mechanized
-		value = 0
+		value = 4
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 12
+		value = 5
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 55 #because doctrine 70
+		value = 60 #because doctrine 70
 	}
 
 	#Air unit factors
@@ -85,7 +85,7 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
-		value = 2 #because doctrine this = 15
+		value = 5 #because doctrine this = 15
 	}
 
 	ai_strategy = {
@@ -103,7 +103,7 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = naval_bomber
-		value = 0
+		value = -100
 	}
 
 
@@ -111,7 +111,7 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = capital_ship
-		value = 15
+		value = 5
 	}
 	ai_strategy = {
 		type = unit_ratio
@@ -121,19 +121,19 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = submarine
-		value = 20
+		value = 5
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
-		value = 40
+		value = 15
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = convoy
-		value = 20
+		value = 10
 	}
 	ai_strategy = {
 		type = equipment_production_min_factories
@@ -156,13 +156,13 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
-		value = 10 #Accounted for
+		value = 15 #Accounted for
 	}
 
 	ai_strategy = {
 		type = equipment_production_factor
 		id = cas
-		value = 5
+		value = 15
 	}
 
 	ai_strategy = {
@@ -174,89 +174,24 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
-		value = 15
+		value = 20
 	}
 
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
-		value = 60
+		value = 50
 	}
 
 	ai_strategy = {
 		type = equipment_production_min_factories
 		id = artillery
-		value = 4
+		value = 5
 	}
 
 	ai_strategy = {
 		type = equipment_production_factor
 		id = armor
-		value = 25
-	}
-}
-
-SOV_bomber_production = {
-	allowed = {
-		original_tag = RUS
-	}
-	enable = {
-		num_of_military_factories > 30
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = tactical_bomber
-		value = 1
-	}
-
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = strategic_bomber
-		value = 1
-	}
-}
-
-SOV_market_management = {
-	allowed = {
-		original_tag = RUS
-	}
-	enable = {
-		always = yes
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = equipment_market_for_sale_factor
-		id = infantry
-		value = -50  # put less rifles up for sale
-	}
-}
-
-SOV_anti_armor = {
-	allowed = {
-		original_tag = RUS
-	}
-	enable = {
-		ai_wants_divisions > 5 #Decreasing the amount of motorized the AI wants
-
-		any_enemy_country = {
-			ROOT = {
-				estimated_intel_max_armor = {
-					tag = PREV
-					value > 25
-				}
-			}
-		}
-	}
-	abort = {
-		ai_wants_divisions < 6 #Decreasing the amount of motorized the AI wants
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = motorized
-		value = 5
+		value = 20
 	}
 }
