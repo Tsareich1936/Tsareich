@@ -15,7 +15,7 @@ focus_tree = {
 	# }
 
 	### ELECTION ###
-		focus = {
+		focus = {#1936アメリカ合衆国大統領選挙
 			id = TR_USA_1936_presidential_election
 			icon = GFX_focus_generic_strike_at_democracy3
 			cost = 43.715 #307 days
@@ -41,18 +41,29 @@ focus_tree = {
 		}
 	### SELECT IDEOLOGY ###
 		## LEFT-WINGS ##
-			# HISTORICAL COMMUNISMT #
-				focus = {
-					id = TR_USA_go_where_people_wanna_go
-					icon = GFX_
-					cost = 5
+			focus = {#民衆が望む道
+				id = TR_USA_way_the_people_want
+				icon = GFX_
+				cost = 5
 
-					x = -6
-					y = -1
-					relative_position_id = TR_USA_1936_presidential_election
-					completion_reward = {
-						
-					}
+				x = -6
+				y = -1
+				relative_position_id = TR_USA_1936_presidential_election
+				completion_reward = {
+					
 				}
+			}
+		## RIGHT-WINGS ##
+			focus = {#White Anglo-Saxson Protestant
+				id = TR_USA_WASP
+				icon = GFX_
+				cost = 5
+				
+				x = 6
+				y = -1
+				relative_position_id = TR_USA_1936_presidential_election
+				completion_reward = {
 			
+				}
+			}
 }
