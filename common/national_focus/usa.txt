@@ -54,7 +54,7 @@ focus_tree = {
 				}
 			}
 		## RIGHT-WINGS ##
-			focus = {#自由を保て
+			focus = {#White Anglo-Saxson Protestant
 				id = TR_USA_WASP
 				icon = GFX_
 				cost = 5
