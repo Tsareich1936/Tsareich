@@ -1040,7 +1040,7 @@ JAP_NAVAL_PLAN_3 = {
 						mid_2_custom_slot = ship_airplane_launcher_1
 						rear_1_custom_slot = ship_heavy_battery_2
 					}
-					obsolete = no
+					# obsolete = no
 				}
 			}
 			if = {

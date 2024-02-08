@@ -216,9 +216,8 @@ focus_tree = {
         x = 0
         y = 1
         cost = 4
-        prerequisite = { focus = jap_Convention_Center_Definition }]
+        prerequisite = { focus = jap_Convention_Center_Definition }
         available = {
-
         }
         completion_reward = {
             diplomatic_relation = {
@@ -1835,10 +1834,10 @@ focus_tree = {
                     target = JAP
                     decision = JAP_USA
                 }
-                activate_targeted_decision = {
-                    target = JAP
-                    decision = JAP_FGE
-                }
+                # activate_targeted_decision = {
+                #     target = JAP
+                #     decision = JAP_FGE
+                # }
                 activate_targeted_decision = {
                     target = JAP
                     decision = JAP_HOL
@@ -1856,10 +1855,10 @@ focus_tree = {
                     target = JAP
                     decision = JAP_USA.1
                 }
-                activate_targeted_decision = {
-                    target = JAP
-                    decision = JAP_FGE.1
-                }
+                # activate_targeted_decision = {
+                #     target = JAP
+                #     decision = JAP_FGE.1
+                # }
                 activate_targeted_decision = {
                     target = JAP
                     decision = JAP_HOL.1
@@ -2834,9 +2833,9 @@ focus_tree = {
         prerequisite = {
             focus = jap_Political_reform_3
         }
-        completion_reward = {
-            load_focus_tree = jap_bureaucracy_2
-        }
+        # completion_reward = {
+        #     load_focus_tree = jap_bureaucracy_2
+        # }
     }
 
     continuous_focus_position = {

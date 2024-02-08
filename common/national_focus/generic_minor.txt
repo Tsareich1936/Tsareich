@@ -1259,8 +1259,8 @@ focus_tree = {
 		available = {
 			num_of_factories >15
 		}
-		cancel_if_invalid = min_no
-		continue_if_invalid = min_yes
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		x = 0
 		y = 1
 		relative_position_id = min_production_effort
@@ -1434,8 +1434,8 @@ focus_tree = {
 		available = {
 			num_of_factories > 30
 		}
-		cancel_if_invalid = min_no
-		continue_if_invalid = min_yes
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		x = 0
 		y = 1
 		relative_position_id = min_production_effort_2
@@ -1609,8 +1609,8 @@ focus_tree = {
 		available = {
 			num_of_factories > 45
 		}
-		cancel_if_invalid = min_no
-		continue_if_invalid = min_yes
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		x = 2
 		y = 1
 		relative_position_id = min_infrastructure_effort
@@ -1718,8 +1718,8 @@ focus_tree = {
 		available = {
 			num_of_factories > 15
 		}
-		cancel_if_invalid = min_no
-		continue_if_invalid = min_yes
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		x = 0
 		y = 1
 		relative_position_id = min_infrastructure_effort_2
@@ -1741,8 +1741,8 @@ focus_tree = {
 		available = {
 			num_of_factories > 50
 		}
-		cancel_if_invalid = min_no
-		continue_if_invalid = min_yes
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		x = 0
 		y = 1
 		relative_position_id = min_extra_tech_slot
@@ -2239,7 +2239,7 @@ focus_tree = {
 			}
 		}
 
-		continue_if_invalid = min_yes
+		continue_if_invalid = yes
 		
 		x = -2
 		y = 1
