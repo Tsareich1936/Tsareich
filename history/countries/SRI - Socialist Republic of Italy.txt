@@ -1,4 +1,4 @@
-capital = 64
+capital = 159
 set_oob = SRI_1936
 # Starting tech
 set_technology = {

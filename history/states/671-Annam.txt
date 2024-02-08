@@ -7,8 +7,8 @@ state={
 	state_category = large_city
 	
 	resources={
-		chromium=6 # was: 8
-		tungsten=29 # was: 38
+		steel = 10
+		tungsten= 4
 	}
 
 
@@ -18,13 +18,22 @@ state={
 		victory_points = {
 			4075 20
 		}
+		victory_points = {
+			4119 5
+		}
+		victory_points = {
+			1185 2
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			arms_factory = 1
 			air_base = 2
 			1185 = {
-				naval_base = 2
+				naval_base = 1
+			}
+			4119 = {
+				naval_base = 6
 			}
 
 		}
@@ -32,7 +41,7 @@ state={
 	}
 
 	provinces={
-		1185 4075 10129 11936
+		1185 4075 10129 11936 4119 
 	}
 	manpower= 3874000
 	buildings_max_level_factor=1.000

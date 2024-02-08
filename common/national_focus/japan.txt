@@ -216,9 +216,8 @@ focus_tree = {
         x = 0
         y = 1
         cost = 4
-        prerequisite = { focus = jap_Convention_Center_Definition }]
+        prerequisite = { focus = jap_Convention_Center_Definition }
         available = {
-
         }
         completion_reward = {
             diplomatic_relation = {
@@ -560,6 +559,7 @@ focus_tree = {
             
         }
         completion_reward = {
+            remove_ideas = JAP_inflation
             country_event = TR_japan.4
         }
     }
@@ -1834,10 +1834,10 @@ focus_tree = {
                     target = JAP
                     decision = JAP_USA
                 }
-                activate_targeted_decision = {
-                    target = JAP
-                    decision = JAP_FGE
-                }
+                # activate_targeted_decision = {
+                #     target = JAP
+                #     decision = JAP_FGE
+                # }
                 activate_targeted_decision = {
                     target = JAP
                     decision = JAP_HOL
@@ -1855,10 +1855,10 @@ focus_tree = {
                     target = JAP
                     decision = JAP_USA.1
                 }
-                activate_targeted_decision = {
-                    target = JAP
-                    decision = JAP_FGE.1
-                }
+                # activate_targeted_decision = {
+                #     target = JAP
+                #     decision = JAP_FGE.1
+                # }
                 activate_targeted_decision = {
                     target = JAP
                     decision = JAP_HOL.1
@@ -2144,8 +2144,10 @@ focus_tree = {
         x = 3
         y = 2
         bypass = {
-            647 = {
-                is_controlled_by = JAP
+            not = {
+                647 = {
+                    is_controlled_by = JAP
+                }
             }
         }
         prerequisite = {
@@ -2484,7 +2486,7 @@ focus_tree = {
             focus = jap_Taiwan
         }
         mutually_exclusive = {
-            focus = jap_lolo_ship
+            focus = jap_roro_ship
         }
         completion_reward = {
             
@@ -2760,7 +2762,7 @@ focus_tree = {
 
 
 focus_tree = {
-	id = japan_focus_Military
+	id = japan_focus_Army
 	country = {
 		factor = 0
 		modifier = {
@@ -2831,9 +2833,9 @@ focus_tree = {
         prerequisite = {
             focus = jap_Political_reform_3
         }
-        completion_reward = {
-            load_focus_tree = jap_bureaucracy_2
-        }
+        # completion_reward = {
+        #     load_focus_tree = jap_bureaucracy_2
+        # }
     }
 
     continuous_focus_position = {
@@ -3224,9 +3226,7 @@ focus_tree = {
         relative_position_id = jap_Japan_as_a_bureaucratic_nation
         x = -9
         y = 1
-        prerequisite = {
-            focus = jap_Japan_as_a_bureaucratic_nation
-        }
+
     }
 
     focus = {
@@ -4057,9 +4057,7 @@ focus_tree = {
         relative_position_id = jap_Japan_as_a_bureaucratic_nation
         x = 9
         y = 1
-        prerequisite = {
-            focus = jap_Japan_as_a_bureaucratic_nation
-        }
+
     }
 
     focus = {
@@ -4159,6 +4157,206 @@ focus_tree = {
         y = 1
         prerequisite = {
             focus = jap_Asia_Economic_dominance_2
+        }
+    }
+
+    focus = {
+        id = jap_Europe_b
+        relative_position_id = jap_diplomacy
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_diplomacy
+        }
+    }
+
+    focus = {
+        id = jap_Europe_support_1
+        relative_position_id = jap_Europe_b
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_Europe_b
+        }
+    }
+
+    focus = {
+        id = jap_Europe_invailed_1
+        relative_position_id = jap_Europe_b
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Europe_b
+        }
+    }
+
+    focus = {
+        id = jap_Europe_Economic_dominance_1
+        relative_position_id = jap_Europe_b
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_Europe_b
+        }
+    }
+
+    focus = {
+        id = jap_Europe_support_2
+        relative_position_id = jap_Europe_support_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Europe_support_1
+        }
+    }
+
+    focus = {
+        id = jap_Europe_invailed_2
+        relative_position_id = jap_Europe_invailed_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Europe_invailed_1
+        }
+    }
+
+    focus = {
+        id = jap_Europe_Economic_dominance_2
+        relative_position_id = jap_Europe_Economic_dominance_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Europe_Economic_dominance_1
+        }
+    }
+
+    focus = {
+        id = jap_Europe_support_3
+        relative_position_id = jap_Europe_support_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Europe_support_2
+        }
+    }
+
+    focus = {
+        id = jap_Europe_invailed_3
+        relative_position_id = jap_Europe_invailed_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Europe_invailed_2
+        }
+    }
+
+    focus = {
+        id = jap_Europe_Economic_dominance_3
+        relative_position_id = jap_Europe_Economic_dominance_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Europe_Economic_dominance_2
+        }
+    }
+
+    focus = {
+        id = jap_America_b
+        relative_position_id = jap_diplomacy
+        x = 6
+        y = 1
+        prerequisite = {
+            focus = jap_diplomacy
+        }
+    }
+
+    focus = {
+        id = jap_America_support_1
+        relative_position_id = jap_America_b
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_America_b
+        }
+    }
+
+    focus = {
+        id = jap_America_invailed_1
+        relative_position_id = jap_America_b
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_America_b
+        }
+    }
+
+    focus = {
+        id = jap_America_Economic_dominance_1
+        relative_position_id = jap_America_b
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_America_b
+        }
+    }
+
+    focus = {
+        id = jap_America_support_2
+        relative_position_id = jap_America_support_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_America_support_1
+        }
+    }
+
+    focus = {
+        id = jap_America_invailed_2
+        relative_position_id = jap_America_invailed_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_America_invailed_1
+        }
+    }
+
+    focus = {
+        id = jap_America_Economic_dominance_2
+        relative_position_id = jap_America_Economic_dominance_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_America_Economic_dominance_1
+        }
+    }
+
+    focus = {
+        id = jap_America_support_3
+        relative_position_id = jap_America_support_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_America_support_2
+        }
+    }
+
+    focus = {
+        id = jap_America_invailed_3
+        relative_position_id = jap_America_invailed_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_America_invailed_2
+        }
+    }
+
+    focus = {
+        id = jap_America_Economic_dominance_3
+        relative_position_id = jap_America_Economic_dominance_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_America_Economic_dominance_2
         }
     }
 }

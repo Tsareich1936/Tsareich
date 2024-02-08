@@ -1,4 +1,14 @@
 ﻿division_template = {
+	name = "División cavalry"  
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+division_template = {
 	name = "División infantry"	
 
 	regiments = {
@@ -10,16 +20,7 @@
 		infantry = { x = 2 y = 1 }
 	}
 }
-division_template = {
-	name = "División cavalry"  
 
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-}
 
 units = {
 	##### Alto Mando de Venezuela #####
@@ -40,10 +41,51 @@ units = {
 
 	}
 	division= {	
-		name = "sư đoàn kỵ binh"
+		name = "3 phân công"
 		location = 1185
-		division_template = "División cavalry"
-		start_experience_factor = 0.2
+		division_template = "División infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+
+	division= {	
+		name = "4 phân công"
+		location = 4119
+		division_template = "División infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "5 phân công"
+		location = 1464
+		division_template = "División infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "6 phân công"
+		location = 10177
+		division_template = "División infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "7 phân công"
+		location = 9948
+		division_template = "División infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "8 phân công"
+		location = 12319
+		division_template = "División infantry"
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
 
 	}
@@ -58,7 +100,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "VEN"
+			creator = "VIN"
 		}
 		requested_factories = 1
 		progress = 0.89

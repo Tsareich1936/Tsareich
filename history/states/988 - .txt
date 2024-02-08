@@ -8,9 +8,17 @@ state={
 		owner = KOR
 		add_core_of = KOR
 		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
 			4056 = {
-				naval_base = 3
+				naval_base = 4
 			}
+		}
+		victory_points = {
+			4056 15
+		}
+		victory_points = {
+			1081 5
 		}
 	}
 	manpower=3571026

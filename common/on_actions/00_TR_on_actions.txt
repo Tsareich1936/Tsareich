@@ -85,11 +85,12 @@ on_actions = {
 			}
 		}
 	effect = {#VIN set up
-			#TEX gomu concessions			
+			#VIN gomu concessions			
 			VIN = {
-				give_resource_rights = { receiver = FRA state = 286 }
 				give_resource_rights = { receiver = FRA state = 741 }
-				give_resource_rights = { receiver = FRA state = 671 }
+				give_resource_rights = { receiver = FRA state = 1022 }
+				give_resource_rights = { receiver = FRA state = 1028 }
+				give_resource_rights = { receiver = FRA state = 1029 } 
 			}
 		}
 	effect = {#USA set up

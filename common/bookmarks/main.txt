@@ -13,6 +13,16 @@ bookmarks = {
 		"FRA"={
 			history = "TR_FRA_MAIN_SCENARIO_DESC"
 			ideology = communism
+			ideas = {
+				TR_FRA_kakumei_honou
+				TR_FRA_syousika_mondai
+				TR_FRA_seijiteki_hunsou
+			}
+			focuses = {
+				FRA_dip
+				FRA_hukusi4
+				FRA_mil5
+			}
 		}
 		"SRI"={
 			history = "TR_SRI_MAIN_SCENARIO_DESC"
@@ -21,7 +31,7 @@ bookmarks = {
 		"GER"={
 			history = "TR_GER_MAIN_SCENARIO_DESC"
 			ideology = communism
-			ideas = {]
+			ideas = {
 				GER_successful_revolution
 				GER_workers_democracy
 				GER_left_right_divide
@@ -63,6 +73,15 @@ bookmarks = {
 			history = "TR_CZE_MAIN_SCENARIO_DESC"
 			ideology = democratic
 			minor = yes
+			ideas = {
+				TR_CZE_skoda_works
+				TR_CZE_demo_oppo
+			}
+			focuses = {
+				CZE_sko3
+				CZE_dem6
+				CZE_ban_com
+			}
 		}
 		"GRE"={
 			history = "TR_GRE_MAIN_SCENARIO_DESC"

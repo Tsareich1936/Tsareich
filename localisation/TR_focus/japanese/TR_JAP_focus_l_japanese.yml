@@ -225,7 +225,7 @@ jap_industry: "国力のさらなる成長"
 
 jap_industry_Tohoku: "東北の振興"
 
-jap_industy_Hokkaido: "北海道の振興"
+jap_industry_Hokkaido: "北海道の振興"
 
 jap_industry_Korea: "韓国への投資"
 
@@ -234,3 +234,33 @@ jap_industry_MAN: "満州への投資"
 jap_industry_Palao: "パラオへの投資"
 
 jap_colony: "植民統治の見直し"
+
+jap_abroad: "海外への投資"
+
+jap_bank: "国策銀行を設立"
+
+jap_steel_RAJ: "インドへの投資"
+
+jap_AL_BRA: "ブラジルへの投資"
+
+jap_steel_Australia: "オーストラリアへの投資"
+
+jap_gom_Sumatora: "スマトラ島への投資"
+
+jap_steel_Kamaishi: "釜石への投資"
+
+jap_steel_Hokkaido: "北海道への投資"
+
+jap_kuromu_Tottori: "鳥取への投資"
+
+jap_oil: "新潟への投資"
+
+jap_Taiwan: "台湾への投資"
+
+jap_railway: "鉄道事業の見直し"
+
+jap_roro_ship: "効率的な輸送船"
+
+jap_water_dum: "水力発電の推進"
+
+jap_fire: "火力発電の推進"

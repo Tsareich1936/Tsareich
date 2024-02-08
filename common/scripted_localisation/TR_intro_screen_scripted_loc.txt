@@ -6,6 +6,8 @@ defined_text = {
 	text = { trigger = { tag = SRI check_variable = { curr_page = 0 } } localization_key = "SRI_intro_header0" }
 	text = { trigger = { tag = SRI check_variable = { curr_page = 1 } } localization_key = "SRI_intro_header1" }
 
+	text = { trigger = { tag = JAP check_variable = { curr_page = 0 } } localization_key = "JAP_intro_header0" } 
+
 
 	#Default
 	text = {
@@ -17,6 +19,7 @@ defined_text = {
 	name = GetCountryIntroContent
 
 	text = { trigger = { tag = RUS check_variable = { curr_page = 0 } } localization_key = "RUS_intro_content0" }
+	text = { trigger = { tag = JAP check_variable = { curr_page = 0 } } localization_key = "JAP_intro_content0" } 
 	
 
 

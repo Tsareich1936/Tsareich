@@ -193,10 +193,8 @@ country_event = {#ハンガリーが最後通牒を拒否
 				hours = 6
 			}
 		}
-		set_global_flag = {
-			flag = TR_balkan_war
-			value = 1
-		}
+		set_global_flag = TR_balkan_war
+
 	}
 	option = {#兵を進めろ
 		name = TR_balkan.10.a
@@ -223,6 +221,7 @@ country_event = {#バルカン戦争
 			CZE = {
 				country_event = {
 					id = TR_balkan.13
+					days = 11
 				}
 			}
 		}
@@ -278,7 +277,6 @@ country_event = {#バルカン戦争への参戦
 	desc = TR_balkan.13.d
 
 	is_triggered_only = yes
-	major = yes
 
 	immediate = {
 		

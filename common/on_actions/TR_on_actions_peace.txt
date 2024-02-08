@@ -196,23 +196,18 @@ on_actions = {
 						OR = {
 							tag	= SER
 							tag = HUN
+							tag = CZE
 						}
 					}
-					has_global_flag = {
-						flag = TR_balkan_war
-						value = 1
+					has_global_flag = TR_balkan_war
+					NOT = {
+						has_global_flag = TR_balkan_war_finished
 					}
 				}
 				FROM = {
-					white_peace = {
-						tag = ROOT
-						message = TR_balkan_war_peace_tt
-					}
+					
 				}
-				set_global_flag = {
-					flag = TR_balkan_war
-					value = 2
-				}
+				set_global_flag = TR_balkan_war_finished
 				TR_SER_balkan_war_peace = yes
 			}
 		}

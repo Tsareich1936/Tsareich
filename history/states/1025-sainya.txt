@@ -8,7 +8,7 @@ state={
 		owner = VIN
 		add_core_of = VIN
 		add_core_of = CAM
-		add_core_of = SIA
+		add_core_of = LAO
 		buildings = {
 			infrastructure = 1
 		}

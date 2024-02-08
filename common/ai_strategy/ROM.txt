@@ -1,0 +1,14 @@
+temp = {
+	allowed = {
+		original_tag = ROM
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 110 #more focus here
+	}
+}

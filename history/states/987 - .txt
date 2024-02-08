@@ -7,6 +7,12 @@ state={
 	history = {
 		owner = KOR
 		add_core_of = KOR
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			10110 3
+		}
 	}
 	manpower=2856821
 	state_category = large_town

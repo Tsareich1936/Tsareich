@@ -1,0 +1,58 @@
+focus_tree = {
+    id = usa_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 22
+            tag = USA
+        }
+    }
+    default = no
+	reset_on_civilwar = no
+
+	# initial_show_position = {
+	# 	focus = <任意のNFのID>
+	# }
+
+	### ELECTION ###
+		focus = {
+			id = TR_USA_1936_presidential_election
+			icon = GFX_focus_generic_strike_at_democracy3
+			cost = 43.715 #307 days
+			bypass = {
+				custom_trigger_tooltip = {
+					tooltip = "TR_USA_1936_presidential_election_trigger_tt"
+					always = no
+				}
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = "TR_USA_1936_presidential_election_trigger_tt"
+					always = no
+				}
+			}
+			x = 30
+			y = 1
+			completion_reward = {
+				effect_tooltip = {
+					custom_effect_tooltip = "TR_USA_1936_presidential_election_effect_tt"
+				}
+			}
+		}
+	### SELECT IDEOLOGY ###
+		## LEFT-WINGS ##
+			# HISTORICAL COMMUNISMT #
+				focus = {
+					id = TR_USA_go_where_people_wanna_go
+					icon = GFX_
+					cost = 5
+
+					x = -6
+					y = -1
+					relative_position_id = TR_USA_1936_presidential_election
+					completion_reward = {
+						
+					}
+				}
+			
+}

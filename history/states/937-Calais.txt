@@ -11,9 +11,10 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 2
-		    6449 = {
-				naval_base = 4
+		    11548 = {
+				naval_base = 3
 			}
+
 		}
 		add_core_of = FRA
 		owner = ENG
