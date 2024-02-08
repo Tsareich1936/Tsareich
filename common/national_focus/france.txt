@@ -80,6 +80,14 @@ focus_tree = {
 				ideology = democratic
 				popularity = -0.1
 			}
+			add_popularity = {
+				ideology = socialdemocratic
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
 			add_manpower = -1000
 			add_timed_idea = {
 				idea = TR_jinzaibusoku_kanryou
@@ -109,6 +117,14 @@ focus_tree = {
 				ideology = anarchism
 				popularity = -0.1
 			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
 			add_manpower = -1000
 			add_timed_idea = {
 				idea = TR_jinzaibusoku_syoukou
@@ -131,6 +147,10 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.2
 			remove_ideas = TR_FRA_seijiteki_hunsou1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
 		}
 	}
 	focus = {
@@ -155,7 +175,7 @@ focus_tree = {
 	focus = {
 		id = FRA_com_antiger2
 		icon = GFX_focus_generic_total_war
-		cost = 8.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_com_antiger1
 		}
@@ -209,7 +229,7 @@ focus_tree = {
 	focus = {
 		id = FRA_com_antiger3
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 8.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_com_antiger2
 		}
@@ -222,7 +242,7 @@ focus_tree = {
 	focus = {
 		id = FRA_com2
 		icon = GFX_goal_generic_improve_relations
-		cost = 8.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_com_purge4
 		}
@@ -242,7 +262,7 @@ focus_tree = {
 	focus = {
 		id = FRA_com3
 		icon = GFX_goal_generic_military_sphere
-		cost = 8.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_com2
 		}
@@ -256,7 +276,7 @@ focus_tree = {
 	focus = {
 		id = FRA_com4
 		icon = GFX_focus_generic_attack_republican_spain_shine
-		cost = 8.00
+		cost = 4
 		prerequisite = {
 			focus = FRA_com3
 		}
@@ -375,7 +395,6 @@ focus_tree = {
 		x = 0
 		y = 8
 		completion_reward = {
-			add_research_slot = 1
 			add_ideas = TR_FRA_tech
 		}
 	}
@@ -1148,7 +1167,7 @@ focus_tree = {
 	focus = {
 		id = FRA_hukusi_imin1
 		icon = GFX_goal_generic_propaganda
-		cost = 8
+		cost = 4
 		prerequisite = {
 			focus = FRA_hukusi
 		}
@@ -1164,7 +1183,7 @@ focus_tree = {
 	focus = {
 		id = FRA_hukusi_imin2
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 8
+		cost = 4
 		prerequisite = {
 			focus = FRA_hukusi_imin1
 		}
@@ -1180,7 +1199,7 @@ focus_tree = {
 	focus = {
 		id = FRA_hukusi_imin3
 		icon = GFX_goal_continuous_increase_nu
-		cost = 8
+		cost = 4
 		prerequisite = {
 			focus = FRA_hukusi_imin2
 		}
@@ -1196,7 +1215,7 @@ focus_tree = {
 	focus = {
 		id = FRA_hukusi_imin4
 		icon = GFX_goal_demand_sudetenland
-		cost = 8
+		cost = 4
 		prerequisite = {
 			focus = FRA_hukusi_imin1
 		}
@@ -1212,24 +1231,22 @@ focus_tree = {
 	focus = {
 		id = FRA_hukusi_imin5
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 8
+		cost = 4
 		prerequisite = {
 			focus = FRA_hukusi_imin4
 		}
 		x = 10
 		y = 15
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = TR_FRA_imin1
-				add_idea = TR_FRA_imin2
-			}
+			remove_ideas = TR_FRA_imin1
+			add_political_power = 25
 		}
 	}
 
 	focus = {
 		id = FRA_hukusi_syousika1
 		icon = GFX_goal_continuous_increase_nu
-		cost = 8
+		cost = 4
 		prerequisite = {
 			focus = FRA_hukusi
 		}
@@ -1245,7 +1262,7 @@ focus_tree = {
 	focus = {
 		id = FRA_hukusi_syousika2
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 8
+		cost = 4
 		prerequisite = {
 			focus = FRA_hukusi_syousika1
 		}
@@ -1261,7 +1278,7 @@ focus_tree = {
 	focus = {
 		id = FRA_hukusi_syousika3
 		icon = GFX_focus_hol_abandon_the_gold_standard
-		cost = 8
+		cost = 4
 		prerequisite = {
 			focus = FRA_hukusi_syousika2
 		}
@@ -1277,7 +1294,7 @@ focus_tree = {
 	focus = {
 		id = FRA_hukusi_syousika4
 		icon = GFX_focus_generic_treaty
-		cost = 8
+		cost = 4
 		prerequisite = {
 			focus = FRA_hukusi_syousika1
 		}
@@ -1293,17 +1310,15 @@ focus_tree = {
 	focus = {
 		id = FRA_hukusi_syousika5
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 8
+		cost = 4
 		prerequisite = {
 			focus = FRA_hukusi_syousika4
 		}
 		x = 16
 		y = 15
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = TR_FRA_syousika1
-				add_idea = TR_FRA_syousika2
-			}
+			remove_ideas = TR_FRA_syousika1
+			add_political_power = 25
 		}
 	}
 
@@ -1361,7 +1376,7 @@ focus_tree = {
 	focus = {
 		id = FRA_hukusi_jyosei1
 		icon = GFX_focus_SOV_womens_fascist_movement
-		cost = 8
+		cost = 4
 		prerequisite = {
 			focus = FRA_hukusi
 		}
@@ -1379,7 +1394,7 @@ focus_tree = {
 	focus = {
 		id = FRA_hukusi_jyosei2
 		icon = GFX_goal_generic_consumer_goods
-		cost = 8
+		cost = 4
 		prerequisite = {
 			focus = FRA_hukusi_jyosei1
 		}
@@ -1396,7 +1411,7 @@ focus_tree = {
 	focus = {
 		id = FRA_hukusi_jyosei3
 		icon = GFX_goal_support_democracy_shine
-		cost = 8
+		cost = 4
 		prerequisite = {
 			focus = FRA_hukusi_jyosei2
 		}

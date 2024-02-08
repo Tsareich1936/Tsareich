@@ -2,7 +2,8 @@ state={
 	id=670
 	name="STATE_670"
 	resources={
-		steel = 12
+		aluminium = 4
+		chromium = 4
 	}
 	manpower = 1184000
 	
@@ -13,7 +14,7 @@ state={
 		add_core_of = LAO
 		add_core_of = VIN
 		victory_points = {
-			1464 1
+			1464 3
 		}
 		buildings = {
 			infrastructure = 2

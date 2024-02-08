@@ -3,7 +3,7 @@ state={
 	id=741
 	name="STATE_741"
 	resources={
-		rubber=30
+		rubber=12
 	}
 	
 	history={
@@ -11,7 +11,7 @@ state={
 		add_core_of = VIN
 		owner = VIN
 		victory_points = {
-			7376 3
+			7376 5
 		}
 		buildings = {
 			infrastructure = 2
