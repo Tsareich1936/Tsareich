@@ -266,13 +266,14 @@ GZH = "countries/Guizhou.txt"
 HNA = "countries/Hunan.txt"
 FJN = "countries/Fujian.txt"
 GRS = "countries/Greek Socialist.txt"
-IRC="countries/Iroquois.txt"
+IRC = "countries/Iroquois.txt"
+TXS = "countries/Republic of Texas.txt"
+DST = "countries/State of Deseret.txt"
+OTT = "countries/Ottoman Empire.txt"
 
-# CSA = "countries/CSA.txt"
-# ARP = "countries/American Republic.txt"
-# ADR= "countries/American Democratic Republic.txt"
-TXS= "countries/Republic of Texas.txt"
-DST= "countries/State of Deseret.txt"
-OTT= "countries/Ottoman Empire.txt"
-#NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")
+
+ # CSA = "countries/CSA.txt"
+ # ARP = "countries/American Republic.txt"
+ # ADR = "countries/American Democratic Republic.txt"
+ #NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")
 
