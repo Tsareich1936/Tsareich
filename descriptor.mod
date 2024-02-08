@@ -14,5 +14,6 @@ replace_path = "events"
 replace_path = "common/national_focus"
 replace_path = "common/scripted_Effects"
 replace_path = "common/decions/formable_nation_decions.txt"
+replace_path = "common/scripted_localisation"
 
 
