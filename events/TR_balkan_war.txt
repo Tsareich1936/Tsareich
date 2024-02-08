@@ -221,6 +221,7 @@ country_event = {#バルカン戦争
 			CZE = {
 				country_event = {
 					id = TR_balkan.13
+					days = 11
 				}
 			}
 		}
@@ -276,7 +277,6 @@ country_event = {#バルカン戦争への参戦
 	desc = TR_balkan.13.d
 
 	is_triggered_only = yes
-	major = yes
 
 	immediate = {
 		
