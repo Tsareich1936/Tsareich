@@ -54,16 +54,16 @@ focus_tree = {
 				}
 			}
 		## RIGHT-WINGS ##
-		focus = {
-			id = TR_USA_preserve_your_freedom
-			icon = GFX_
-			cost = 5
+			focus = {#自由を保て
+				id = TR_USA_WASP
+				icon = GFX_
+				cost = 5
+				
+				x = 6
+				y = -1
+				relative_position_id = TR_USA_1936_presidential_election
+				completion_reward = {
 			
-			x = 6
-			y = -1
-			relative_position_id = TR_USA_1936_presidential_election
-			completion_reward = {
-		
+				}
 			}
-		}
 }
