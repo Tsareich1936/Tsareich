@@ -1030,9 +1030,7 @@ focus_tree = {
 				ideology = communism
 			    popularity = -0.2
 			}
-			country_event = { 
-				id = CZE_ban_com
-			}
+			#country_event = CZE_ban_com
 		}
 	}
 

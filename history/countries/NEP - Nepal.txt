@@ -35,9 +35,6 @@ set_technology = {
 set_war_support = 0.1
 set_stability = 0.8
 
-323 = { #Nepal
-	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
-}
 
 1939.1.1 = {
 
