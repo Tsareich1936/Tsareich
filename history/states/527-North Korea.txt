@@ -12,10 +12,16 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+			4052 = {
+				naval_base = 4
+			}
 
 		}
 		victory_points = {
-			4052 1 
+			4052 15
+		}
+		victory_points = {
+			11835 1
 		}
 		add_core_of = KOR
 

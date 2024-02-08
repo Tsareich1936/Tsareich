@@ -7,6 +7,18 @@ state={
 	history = {
 		owner = KOR
 		add_core_of = KOR
+		buildings = {
+			infrastructure = 1
+			898 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			6928 3
+		}
+		victory_points = {
+			898 1
+		}
 	}
 	manpower=1354800
 	state_category = rural
