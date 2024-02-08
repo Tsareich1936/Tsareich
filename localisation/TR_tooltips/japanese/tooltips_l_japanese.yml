@@ -43,6 +43,10 @@
   TR_ENG_trampling_down_of_war_bonds_tt: "戦債の返済義務を放棄する"
   TR_ENG_danger_america: "§Rこの選択はアメリカとの関係を大幅に悪化させるだろう！§!"
   TR_ENG_british_commonwealth_tt: "帝国は一つの国家として再編され、§Y$ENG_imperial_federation_unified$§!となる。"
+
+  TR_USA_1936_presidential_election_trigger_tt: "選挙は1936年11月3日に実施される。"
+  TR_USA_1936_presidential_election_effect_tt: "§Y1936年アメリカ合衆国大統領選挙§!が実施される。"
+
   TR_nosupport: "§Rこの選択肢は現バージョンでは実装されていない！§!"
   TR_focus_nosupport: "§Rこの選択肢には現実味がない§!"
   TR_avaiable_on_events_tt: "この方針はイベントによって達成される。"
