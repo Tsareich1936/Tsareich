@@ -8,6 +8,10 @@ IPS = {#Indian Princely States
 	has_country_flag = TR_princely_india_alieas
 }
 #Second American Civil War
+FGA = {#Federal Government of America
+	original_tag = USA
+	has_country_flag = USA_federation_flag
+}
 CSA = {#Confederation States of America
 	original_tag = USA
 	has_country_flag = USA_CSA_flag

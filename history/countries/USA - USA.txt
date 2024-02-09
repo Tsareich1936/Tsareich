@@ -55,6 +55,18 @@ USA_recalc_congress_icon_frames = yes
 #Second American Civil War
 create_dynamic_country = {
 	original_tag = USA
+	set_country_flag = USA_federation_flag
+	set_politics = {
+		ruling_party = socialism
+	}
+	set_popularities = {
+		socialism = 100
+	}
+	reserve_dynamic_country = yes
+	inherit_technology = USA
+}
+create_dynamic_country = {
+	original_tag = USA
 	set_country_flag = USA_CSA_flag
 	set_politics = {
 		ruling_party = conservatism
@@ -224,9 +236,13 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 98
+	democratic = 31
+	socialism = 30
+	conservatism = 28
+	communism = 7
+	syndicalism = 2
+	anarchism = 1
 	fascism = 1
-	communism = 1
 }
 
 add_ideas = {
