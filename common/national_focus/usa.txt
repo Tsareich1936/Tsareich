@@ -39,7 +39,7 @@ focus_tree = {
 				}
 			}
 		}
-		focus = {
+		focus = {#選挙人との接触
 			id = TR_USA_contacting_the_electorate
 			icon = GFX_
 			cost = 5
@@ -53,7 +53,7 @@ focus_tree = {
 		
 			}
 		}
-		focus = {
+		focus = {#大衆演説
 			id = TR_USA_mass_oratory
 			icon = GFX_
 			cost = 5
@@ -67,7 +67,7 @@ focus_tree = {
 		
 			}
 		}
-		focus = {
+		focus = {#選挙妨害工作
 			id = TR_USA_obstructing_the_election
 			icon = GFX_
 			cost = 5
@@ -81,7 +81,7 @@ focus_tree = {
 		
 			}
 		}
-		focus = {
+		focus = {#議会を襲撃
 			id = TR_USA_raid_on_parliament
 			icon = GFX_
 			cost = 5
@@ -95,7 +95,7 @@ focus_tree = {
 		
 			}
 		}
-		focus = {
+		focus = {#運命の時
 			id = TR_THE_FATAL_DAY
 			icon = GFX_
 			cost = 5
@@ -112,7 +112,7 @@ focus_tree = {
 		}
 	### SELECT IDEOLOGY ###
 		## LEFT-WINGS ##
-			focus = {#民衆が望む道
+			focus = {#新たなる道
 				id = TR_USA_the_new_way
 				icon = GFX_
 				cost = 5
@@ -127,7 +127,7 @@ focus_tree = {
 					
 				}
 			}
-			focus = {
+			focus = {#恐慌脱出への糸口
 				id = TR_USA_clues_to_escape_the_depression
 				icon = GFX_
 				cost = 5
@@ -142,7 +142,7 @@ focus_tree = {
 				}
 			}
 			# American Democratic Republic #
-				focus = {
+				focus = {#労働組合の強化
 					id = TR_USA_strengthen_trade_unions
 					icon = GFX_
 					cost = 5
@@ -161,7 +161,7 @@ focus_tree = {
 						
 					}
 				}
-				focus = {
+				focus = {#北部の労働者への呼びかけ
 					id = TR_USA_call_to_north_workers
 					icon = GFX_
 					cost = 5
@@ -175,7 +175,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#共産主義国家の樹立
 					id = TR_USA_communist_state_establishment
 					icon = GFX_
 					cost = 5
@@ -197,7 +197,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#労働組合自治
 					id = TR_trade_union_self_government
 					icon = GFX_
 					cost = 5
@@ -219,7 +219,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#真なる自由
 					id = TR_USA_true_freedom
 					icon = GFX_
 					cost = 5
@@ -242,7 +242,7 @@ focus_tree = {
 					}
 				}
 			# United States America #
-				focus = {
+				focus = {#大きな政府
 					id = TR_USA_big_government
 					icon = GFX_
 					cost = 5
@@ -261,7 +261,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#福祉重視政策
 					id = TR_USA_welfare_oriented_policy
 					icon = GFX_
 					cost = 5
@@ -276,7 +276,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#社会主義国家の実現
 					id = TR_USA_realisation_of_socialist_state
 					icon = GFX_
 					cost = 5
@@ -299,7 +299,7 @@ focus_tree = {
 					}
 				}
 			# OTHER SIDE #
-				focus = {
+				focus = {#平らかに、等しく
 					id = TR_USA_flatly_and_equally
 					icon = GFX_
 					cost = 5
@@ -318,7 +318,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#信教の自由
 					id = TR_USA_religious_liberty
 					icon = GFX_
 					cost = 5
@@ -336,7 +336,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#三位一体の否定
 					id = TR_denial_of_the_trinity
 					icon = GFX_
 					cost = 5
@@ -358,7 +358,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#白き者への抵抗
 					id = TR_USA_resist_the_white
 					icon = GFX_
 					cost = 5
@@ -376,7 +376,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#アメリカは誰のためにあるのか
 					id = TR_USA_who_is_the_USA_for
 					icon = GFX_
 					cost = 5
@@ -399,7 +399,7 @@ focus_tree = {
 					}
 				}
 		## RIGHT-WINGS ##
-			focus = {#White Anglo-Saxson Protestant
+			focus = {#古き道
 				id = TR_USA_the_old_way
 				icon = GFX_
 				cost = 5
@@ -415,7 +415,7 @@ focus_tree = {
 				}
 			}
 			# Confederation states of America #
-				focus = {
+				focus = {#白人至上主義
 					id = TR_USA_white_supremacy
 					icon = GFX_
 					cost = 5
@@ -433,7 +433,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#黒人への迫害
 					id = TR_USA_persecution_of_blacks
 					icon = GFX_
 					cost = 5
@@ -447,7 +447,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#KKKとの協力
 					id = TR_USA_cooperation_with_KKK
 					icon = GFX_
 					cost = 5
@@ -464,7 +464,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#White Anglo-Saxson Protestant
 					id = TR_USA_WASP
 					icon = GFX_
 					cost = 5
@@ -485,7 +485,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#KKKとの敵対
 					id = TR_USA_hostility_with_KKK
 					icon = GFX_
 					cost = 5
@@ -502,7 +502,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#南部諸州への接触
 					id = TR_USA_contact_with_southern_states
 					icon = GFX_
 					cost = 5
@@ -524,7 +524,7 @@ focus_tree = {
 					}
 				}
 			# American Republic #
-				focus = {
+				focus = {#部分的な社会主義を許容
 					id = TR_USA_accept_partial_socialism
 					icon = GFX_
 					cost = 5
@@ -542,7 +542,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#政権を維持
 					id = TR_USA_hold_on_to_power
 					icon = GFX_
 					cost = 5
@@ -559,7 +559,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#国家雇用政策
 					id = TR_USA_national_employment_policy
 					icon = GFX_
 					cost = 5
@@ -573,7 +573,7 @@ focus_tree = {
 					completion_reward = {
 					}
 				}
-				focus = {
+				focus = {#巻き返し
 					id = TR_USA_new_deal
 					icon = GFX_
 					cost = 5
@@ -595,7 +595,7 @@ focus_tree = {
 					}
 				}
 			# American Military Government #
-				focus = {
+				focus = {#軍部との接触
 					id = TR_USA_military_contacts
 					icon = GFX_
 					cost = 5
@@ -612,7 +612,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#自由の戦士
 					id = TR_USA_freedom_fighters
 					icon = GFX_
 					cost = 5
@@ -626,7 +626,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#中央部諸州への接触
 					id = TR_USA_contact_with_central_states
 					icon = GFX_
 					cost = 5
@@ -648,7 +648,7 @@ focus_tree = {
 					}
 				}
 			# Unexpected choices #
-				focus = {
+				focus = {#ニューヨーク独立を支持
 					id = TR_USA_support_for_New_York_independence
 					icon = GFX_
 					cost = 5
@@ -670,7 +670,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#ニューヨークの大統領
 					id = TR_USA_endorsement_of_NYM_for_president
 					icon = GFX_
 					cost = 5
@@ -684,7 +684,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#神聖国家
 					id = TR_USA_holy_land
 					icon = GFX_
 					cost = 5
@@ -698,7 +698,7 @@ focus_tree = {
 				
 					}
 				}
-				focus = {
+				focus = {#アメリカの皇帝
 					id = TR_USA_american_imperator
 					icon = GFX_
 					cost = 5
