@@ -1,4 +1,193 @@
 ideas = {
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		kure_naval_arsenal = {
+			
+			
+			allowed = {
+				original_tag = JAP
+			}
+	
+			available = {
+			}
+	
+			cost = 75
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { battlefleet_designer } 
+	
+		}
+		
+		yokosuka_naval_arsenal = {
+						
+			allowed = {
+				original_tag = JAP
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer } 
+	
+			equipment_bonus = {
+				# 
+			}
+		}
+		
+		maizuru_naval_arsenal = {
+						
+			allowed = {
+				original_tag = JAP
+			}
+				
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { convoy_escort_naval_manufacturer } 
+	
+			equipment_bonus = {
+				# 
+			}
+		}
+		
+		sasebo_naval_arsenal = {
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { coastal_defence_naval_manufacturer } 
+			
+			equipment_bonus = {
+				
+			}
+		}	
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		mitsubishi = {
+						
+			allowed = {
+				original_tag = JAP		
+			}
+			
+			available = {
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer_2 }
+	
+			modifier = {
+	
+			}
+		}
+	
+		aichi = {
+			
+			allowed = {
+				original_tag = JAP
+			}
+	
+			available = {
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { fuel_efficient_aircraft_manufacturer }
+		}
+		
+		nakajima = {
+						
+			allowed = {
+				original_tag = JAP
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+	
+		}
+		
+		yokosuka = {
+						
+			allowed = {
+				original_tag = JAP
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+	}
+	
+	industrial_concern = {
+		
+		kawasaki = {
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}
+		
+		
+		sumitomo = {
+						
+			allowed = {
+				original_tag = JAP
+			}
+						
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+	
+		JAP_idemitsu_kosan = {
+						
+			picture = generic_industrial_concern_2
+			
+			allowed = {
+				original_tag = JAP
+			}
+						
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			
+			traits = { refinery_concern }
+		}
+	}
 	country = {
 
 		JAP_lifting_of_a_gold_embargo = {
@@ -1162,3 +1351,4 @@ ideas = {
 	}
 
 }
+
