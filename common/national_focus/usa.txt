@@ -53,6 +53,197 @@ focus_tree = {
 					
 				}
 			}
+			focus = {
+				id = TR_USA_clues_to_escape_the_depression
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_USA_way_the_people_want
+				}
+				x = 0
+				y = 1
+				relative_position_id = TR_USA_way_the_people_want
+				completion_reward = {
+			
+				}
+			}
+			# American Democratic Republic #
+				focus = {
+					id = TR_USA_strengthen_trade_unions
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_clues_to_escape_the_depression
+					}
+					x = -4
+					y = 1
+					relative_position_id = TR_USA_clues_to_escape_the_depression
+					completion_reward = {
+						
+					}
+				}
+				focus = {
+					id = TR_USA_call_to_north_workers
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_strengthen_trade_unions
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_USA_strengthen_trade_unions
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_USA_communist_state_establishment
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_call_to_north_workers
+					}
+					mutually_exclusive = {
+						focus = TR_trade_union_self_government
+						# focus = TR_USA_communist_state_establishment
+						focus = TR_USA_true_freedom
+						focus = TR_USA_realisation_of_socialist_state
+						focus = TR_USA_new_deal
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_USA_call_to_north_workers
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_trade_union_self_government
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_call_to_north_workers
+					}
+					mutually_exclusive = {
+						# focus = TR_trade_union_self_government
+						focus = TR_USA_communist_state_establishment
+						focus = TR_USA_true_freedom
+						focus = TR_USA_realisation_of_socialist_state
+						focus = TR_USA_new_deal
+					}
+					x = -2
+					y = 2
+					relative_position_id = TR_USA_call_to_north_workers
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_USA_true_freedom
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_call_to_north_workers
+					}
+					mutually_exclusive = {
+						focus = TR_trade_union_self_government
+						focus = TR_USA_communist_state_establishment
+						# focus = TR_USA_true_freedom
+						focus = TR_USA_realisation_of_socialist_state
+						focus = TR_USA_new_deal
+					}
+					x = 2
+					y = 2
+					relative_position_id = TR_USA_call_to_north_workers
+					completion_reward = {
+				
+					}
+				}
+			# United States America #
+				focus = {
+					id = TR_USA_big_government
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_clues_to_escape_the_depression
+					}
+					x = 2
+					y = 1
+					relative_position_id = TR_USA_clues_to_escape_the_depression
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_USA_welfare_oriented_policy
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_big_government
+					}
+					x = -2
+					y = 1
+					relative_position_id = TR_USA_big_government
+					completion_reward = {
+				
+					}
+				}
+				focus = {
+					id = TR_USA_realisation_of_socialist_state
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_welfare_oriented_policy
+					}
+					mutually_exclusive = {
+						focus = TR_trade_union_self_government
+						focus = TR_USA_communist_state_establishment
+						focus = TR_USA_true_freedom
+						# focus = TR_USA_realisation_of_socialist_state
+						focus = TR_USA_new_deal
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_USA_welfare_oriented_policy
+					completion_reward = {
+				
+					}
+				}
+			# American Republic #
+				focus = {
+					id = TR_USA_national_employment_policy
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_big_government
+					}
+					x = 1
+					y = 2
+					relative_position_id = TR_USA_big_government
+					completion_reward = {
+					}
+				}
+				focus = {
+					id = TR_USA_new_deal
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_national_employment_policy
+					}
+					mutually_exclusive = {
+						focus = TR_trade_union_self_government
+						focus = TR_USA_communist_state_establishment
+						focus = TR_USA_true_freedom
+						focus = TR_USA_realisation_of_socialist_state
+						# focus = TR_USA_new_deal
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_USA_national_employment_policy
+					completion_reward = {
+				
+					}
+				}
 		## RIGHT-WINGS ##
 			focus = {#White Anglo-Saxson Protestant
 				id = TR_USA_WASP
@@ -62,6 +253,20 @@ focus_tree = {
 				x = 6
 				y = -1
 				relative_position_id = TR_USA_1936_presidential_election
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = TR_USA_white_supremacy
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = TR_USA_WASP
+				}
+				x = -2
+				y = 1
+				relative_position_id = TR_USA_WASP
 				completion_reward = {
 			
 				}

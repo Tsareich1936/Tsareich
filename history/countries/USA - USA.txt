@@ -99,7 +99,7 @@ create_dynamic_country = {
 		ruling_party = neutrality
 	}
 	set_popularities = {
-		conservatism = 100
+		neutrality = 100
 	}
 	reserve_dynamic_country = yes
 	set_cosmetic_tag = AMG

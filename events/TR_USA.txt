@@ -622,7 +622,7 @@ add_namespace = TR_usa_civil_war_legacy
 		desc = TR_usa_election.1.d
 
 		is_triggered_only = yes
-
+		
 		option = {
 			name = TR_usa_election.1.a
 		}
