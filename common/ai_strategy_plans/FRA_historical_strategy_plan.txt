@@ -29,7 +29,6 @@ France_historical = {
 		FRA_hukusi_jyosei1
 		FRA_hukusi_jyosei2
 		FRA_hukusi_jyosei3
-		FRA_mil
 		FRA_ind6
 		FRA_ind7
 		FRA_com2

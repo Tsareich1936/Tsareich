@@ -17,9 +17,10 @@ state={
 
 		}
 		add_core_of = FRA
+		add_core_of = FGE
 		owner = ENG
-
-
+        set_resistance = 55
+        set_compliance = 20
 	}
 
 	provinces={

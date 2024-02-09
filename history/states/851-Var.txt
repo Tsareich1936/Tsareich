@@ -20,6 +20,7 @@ state={
 			}
 		}
 		add_core_of = OCC
+		add_core_of = FGE
 		add_core_of = FRA
 	}
 

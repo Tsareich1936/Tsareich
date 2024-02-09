@@ -2,12 +2,12 @@ state={
 	id=898
 	name="STATE_898"
 	manpower = 498718
-	state_category = wasteland
+	state_category = pastoral
 
 	history={
 		owner = FWA
 		add_core_of = MLI
-		
+		add_claim_by = FRA
 		buildings = {
 			infrastructure = 2
 

@@ -6,6 +6,7 @@ state={
 
 	history={
 		owner = FGE
+		add_claim_by = FRA
 		buildings = {
 			infrastructure = 2
 			373 = {

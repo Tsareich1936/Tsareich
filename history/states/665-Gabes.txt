@@ -5,6 +5,7 @@ state={
 	history={
 		owner = FGE
 		add_core_of = TUN
+		add_claim_by = FRA
 		victory_points = {
 			7005 1 
 		}
@@ -14,7 +15,7 @@ state={
 		}
 	}
 	
-	state_category = pastoral
+	state_category = rural
 
 	provinces={
 		1105 3987 4992 7005 9983 10026 10082 11935 11957 12000 13145 13179 

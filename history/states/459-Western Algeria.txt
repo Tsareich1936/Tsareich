@@ -2,8 +2,8 @@
 state={
 	id=459
 	name="STATE_459" # Algiers
-	manpower = 3089944
-	state_category = town
+	manpower = 3589944
+	state_category = city
 	
 	resources={
 		steel=65 # was:26 was: 36
@@ -13,9 +13,9 @@ state={
 		owner = FGE
 		add_core_of = FGE
 		add_core_of = ALG
-
+		add_claim_by = FRA
 		victory_points = {
-			1145 5 
+			1145 20
 		}
 		victory_points = {
 			7132 5 
@@ -24,6 +24,7 @@ state={
 			infrastructure = 2
 			air_base = 5
 			arms_factory = 1
+			dockyard = 1
 			1145 = {
 				naval_base = 2
 			}

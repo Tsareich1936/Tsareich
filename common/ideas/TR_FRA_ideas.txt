@@ -39,7 +39,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				war_support_factor = 0.3
-				weekly_manpower = 2500
+				weekly_manpower = 2000
 				ai_desired_divisions_factor = 2
 			}
 			rule = {

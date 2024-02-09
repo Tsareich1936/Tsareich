@@ -476,6 +476,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 1
+		ai_will_do = {
+			factor = 50
+		}
 		completion_reward = {
 			add_war_support = 0.1
 			add_stability = 0.1
@@ -491,8 +494,29 @@ focus_tree = {
 		available = {
 			has_army_manpower = { size > 749999 }
 		}
-		x = 30
+		x = 33
 		y = 2
+		ai_will_do = {
+			modifier = {
+				factor = 0
+				OR = {
+					has_army_manpower = { size < 899999 }
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { 
+					any_home_area_neighbor_country = {
+						tag = ENG
+					}
+				}
+			}
+			modifier = {
+				factor = 50
+				date > 1939.12.1 
+				has_army_manpower = { size > 999999 }
+			}
+		}	
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -515,7 +539,7 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_dip
 		}
-		x = 30
+		x = 33
 		y = 3
 		completion_reward = {
 			ENG ={
@@ -533,7 +557,7 @@ focus_tree = {
 		available = {
 			has_army_manpower = { size > 999999 }
 		}
-		x = 30
+		x = 32
 		y = 4
 		completion_reward = {
 			create_wargoal = {
@@ -554,13 +578,104 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = FRA_dip_ALG
+		icon = GFX_goal_generic_position_armies
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_dip1
+		}
+		available = {
+			has_full_control_of_state = 458
+			has_full_control_of_state = 459
+		}
+		x = 34
+		y = 4
+		completion_reward = {
+			add_state_core = 458
+			add_state_core = 459
+			add_state_core = 460
+			add_state_core = 513
+			add_state_core = 665
+			add_state_core = 461
+			add_state_core = 452
+		}
+	}
+	focus = {
+		id = FRA_dip_ALG2
+		icon = GFX_focus_generic_total_war
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_dip1
+		}
+		available = {
+			has_full_control_of_state = 458
+			has_full_control_of_state = 459
+			has_full_control_of_state = 461
+			has_full_control_of_state = 513
+			has_full_control_of_state = 772
+			has_full_control_of_state = 272
+		}
+		x = 34
+		y = 5
+		completion_reward = {
+			annex_country = {
+				target = FWA
+			}
+			annex_country = {
+				target = FEA
+			}
+			annex_country = {
+				target = FGE
+			}
+			FGE = {
+				every_core_state = {
+					remove_core_of = PREV
+			    }
+				add_war_support = -10
+				add_stability = -10
+			}
+			FEA = {
+				every_core_state = {
+					remove_core_of = PREV
+			    }
+				add_war_support = -10
+				add_stability = -10
+			}
+			FWA = {
+				every_core_state = {
+					remove_core_of = PREV
+			    }
+				add_war_support = -10
+				add_stability = -10
+			}
+		}
+	}
+	focus = {
+		id = FRA_dip_BEL
+		icon =GFX_goal_generic_position_armies
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_dip1
+		}
+		available = {
+			has_full_control_of_state = 6
+		}
+		x = 36
+		y = 4
+		completion_reward = {
+			add_state_core = 6
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
 		id = FRA_dip_nuke
 		icon = GFX_goal_tfv_generic_tech_sharing
 		cost = 8.00
 		prerequisite = {
 			focus = FRA_dip0
 		}
-		x = 33
+		x = 39
 		y = 2
 		completion_reward = {
 			add_tech_bonus = {
@@ -578,7 +693,7 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_dip_nuke
 		}
-		x = 33
+		x = 39
 		y = 3
 		completion_reward = {
 			FRA = {
@@ -614,8 +729,11 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_dip0
 		}
-		x = 38
+		x = 30
 		y = 2
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = TR_FRA_kakumei_honou
@@ -635,8 +753,12 @@ focus_tree = {
 			has_full_control_of_state = 458
 			has_full_control_of_state = 459
 		}
-		x = 38
+
+		x = 30
 		y = 3
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			add_state_core = 458
 			add_state_core = 459
@@ -1176,6 +1298,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 13
+		ai_will_do = {
+			factor = 8
+		}
 		completion_reward = {
             add_ideas = TR_FRA_imin
 		}
@@ -1189,6 +1314,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 14
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = TR_FRA_syousika_mondai
@@ -1205,6 +1333,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 15
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = TR_FRA_syousika_mondai_1i
@@ -1221,6 +1352,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 14
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = TR_FRA_imin
@@ -1237,6 +1371,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 15
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {
 			remove_ideas = TR_FRA_imin1
 			add_political_power = 25
@@ -1255,6 +1392,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 13
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 			add_ideas = TR_FRA_syousika
 		}
@@ -1268,6 +1408,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 14
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = TR_FRA_syousika_mondai
@@ -1284,6 +1427,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 15
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = TR_FRA_syousika_mondai_1k
@@ -1300,6 +1446,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 14
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = TR_FRA_syousika
@@ -1316,6 +1465,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 15
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {
 			remove_ideas = TR_FRA_syousika1
 			add_political_power = 25
@@ -1444,6 +1596,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 12
+		ai_will_do = {
+			factor = 20
+		}
 		completion_reward = {
 			add_ideas = TR_FRA_nav
 			navy_experience = 30
@@ -1855,6 +2010,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 12
+		ai_will_do = {
+			factor = 30
+		}
 		completion_reward = {
 			add_ideas = TR_FRA_mil
 			random_owned_controlled_state = {

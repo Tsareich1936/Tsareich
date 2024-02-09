@@ -9,6 +9,7 @@ state={
 	history={
 		owner = FGE
 		add_core_of = CAY
+		add_claim_by = FRA
 		buildings = {
 			infrastructure = 1
 			12885 = {

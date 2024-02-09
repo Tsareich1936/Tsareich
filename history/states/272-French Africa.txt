@@ -7,17 +7,21 @@ state={
 		steel=3 # was: 4
 	}
 	
-	state_category = pastoral
+	state_category = town
 
 	history={
 		owner = FWA
 		add_core_of = SEN
+		add_claim_by = FRA
+		add_core_of = FWA
 		victory_points = {
-			4948 5 
+			4948 8
 		}
 		buildings = {
 			infrastructure = 2
 			air_base = 4
+			industrial_complex = 1
+			arms_factory = 1
 			4948 = {
 				naval_base = 3
 			}

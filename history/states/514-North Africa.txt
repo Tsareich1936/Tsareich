@@ -10,6 +10,7 @@ state={
 	history={
 		owner = FGE
 		add_core_of = ALG
+		add_claim_by = FRA
 		buildings = {
 			infrastructure = 0
 		}

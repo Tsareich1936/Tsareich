@@ -16,6 +16,9 @@ state={
 		}
 		owner = ENG
 		add_core_of = FRA
+		add_core_of = FGE
+		set_resistance = 55
+        set_compliance = 20
 		}
 	manpower=10000
 	state_category= rural

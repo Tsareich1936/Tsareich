@@ -10,6 +10,7 @@ state={
 	history={
 		owner = FWA
 		add_core_of = MLI
+		add_claim_by = FRA
 		buildings = {
 			infrastructure = 0
 		}

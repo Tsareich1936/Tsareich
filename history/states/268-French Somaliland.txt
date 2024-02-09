@@ -11,6 +11,7 @@ state={
 		add_core_of = DJI
 		add_core_of = AFA
 		add_core_of = SOM
+		add_claim_by = FRA
 		victory_points = {
 			8124 1
 		}
