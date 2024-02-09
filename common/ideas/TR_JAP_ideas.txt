@@ -850,31 +850,6 @@ ideas = {
 			}
 		}
 
-		JAP_zaibatsus = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = jap_zaibatsu
-			
-			modifier = {
-				political_power_cost = 0.5
-				trade_laws_cost_factor = 0.5
-				economy_cost_factor = 0.5
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = 0.1
-				consumer_goods_factor = 0.20
-			}
-		}
-
 		JAP_zaibatsus_2 = {
 
 			allowed = {
@@ -1086,6 +1061,101 @@ ideas = {
 
 			modifier = {
 				production_speed_rail_way_factor = 0.1
+			}
+		}
+
+		state_shintoism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				industry_air_damage_factor = -0.1
+				army_morale_factor = 0.1
+			}
+		}
+
+		JAP_zaibatsus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu
+			
+			modifier = {
+				political_power_cost = 0.25
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				consumer_goods_factor = 0.10
+			}
+		}
+
+		the_long_lance = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				naval_torpedo_screen_penetration_factor = 0.2
+			}
+		}
+
+		JAP_duplicate_research_efforts = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+			
+			research_bonus = { air_equipment = -0.10 }
+		}
+
+		JAP_hirohito = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			removal_cost = -1
+
+			picture = jap_hirohito
+			
+			modifier = {
+				stability_factor = 0.5
 			}
 		}
 

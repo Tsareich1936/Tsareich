@@ -154,18 +154,6 @@ characters = {
 		}
 	}
 
-	JAP_Hisaichi_Terauchi = {
-		name = JAP_Hisaichi_Terauchi
-		portraits = {
-			civilian = {
-				large = GFX_Portrait_Hisaichi_Terauchi
-			}
-		}
-		country_leader = {
-			ideology = fascism_ideology
-			id = -1
-		}
-	}
 
 	JAP_Kantoro_Suziki = {
 		name = JAP_Kantoro_Suziki
@@ -273,8 +261,12 @@ characters = {
 		portraits={
 			army={
 				small="GFX_idea_hisaichi_terauchi"
-				large=GFX_portrait_JAP_hisaichi_terauchi
+				large = GFX_Portrait_Hisaichi_Terauchi
 			}
+		}
+		country_leader={
+			ideology = fascism_ideology
+			id=-1			
 		}
 		advisor={
 			cost = 100
@@ -1610,49 +1602,6 @@ characters = {
 			do_effect = {
 				NOT = {
 					has_government = communism 
-				}
-			}
-			ai_will_do = {
-				factor = 0.000
-			}
-		}
-	}
-
-	JAP_kijuro_shidehara={
-		name=JAP_kijuro_shidehara
-		portraits={
-			army={
-				small="GFX_idea_kijuro_shidehara"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = kijuro_shidehara
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Waking the Tiger"
-					}
-					has_completed_focus = JAP_strengthen_civilian_government 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				democratic_reformer 
-			}
-			do_effect = {
-				NOT = {
-					has_government = democratic 
 				}
 			}
 			ai_will_do = {
