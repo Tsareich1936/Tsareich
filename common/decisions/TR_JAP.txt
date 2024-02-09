@@ -459,7 +459,6 @@ JAP_interservice_rivalry = {
 	}
 }
 
-
 JAP_industry_Takahashi = {
 	
 	JAP_Civilian_factory_1 = {

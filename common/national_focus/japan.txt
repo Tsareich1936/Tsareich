@@ -3660,6 +3660,7 @@ shared_focus = {
     completion_reward = {
         country_event = {
             id = TR_japan.19
+
         }
     }
 }
@@ -3672,9 +3673,6 @@ shared_focus = {
     cost = 4
     available = {
         
-    }
-    prerequisite = {
-        focus = jap_navy_1
     }
     completion_reward = {
         swap_ideas = {
@@ -3721,9 +3719,6 @@ shared_focus = {
     x = 4
     y = 0
     cost = 4
-    prerequisite = {
-        focus = jap_navy_1
-    }
     completion_reward = {
         country_event = {
             id = TR_japan.20
@@ -3840,9 +3835,6 @@ shared_focus = {
     x = 2
     y = 0
     cost = 4
-    prerequisite = {
-        focus = jap_airforce_1
-    }
     completion_reward = {
         swap_ideas = {
             remove_idea = JAP_AIRFORCE
@@ -3888,9 +3880,6 @@ shared_focus = {
     x = 4
     y = 0
     cost = 4
-    prerequisite = {
-        focus = jap_airforce_1
-    }
     completion_reward = {
         add_tech_bonus = {
             name = jap_AIRFORCE_3_1
@@ -4035,9 +4024,6 @@ shared_focus = {
     x = 2
     y = 0
     cost = 4
-    prerequisite = {
-        focus = jap_army_1
-    }
     available = {
         
     }
@@ -4092,9 +4078,6 @@ shared_focus = {
     x = 4
     y = 0
     cost = 4
-    prerequisite = {
-        focus = jap_army_1
-    }
     available = {
         
     }

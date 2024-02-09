@@ -1231,12 +1231,14 @@ country_event = {    # 大東亜会議
 	option = {
 		name = TR_japan.41.a
 		every_country = {
-			limit = {is_in_faction_with = JAP}
-			limit = { 
+			limit = {
+				is_in_faction_with = JAP
 				not = {
-				    original_tag = JAP
-			    }
-		    }
+					original_tag = JAP
+			   }
+			}
+
+		    
 		
 			country_event = {
 				id = TR_japan.42

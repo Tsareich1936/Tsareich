@@ -53,45 +53,13 @@ JAP_maizuru_naval_arsenal_organization = {
 	icon = GFX_idea_maizuru_naval_arsenal
 	
 	allowed = {	 
-		OR = {
-			tag = JAP 
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
-			}
-		}
-	}
-	
-	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
-	}
-	
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = JAP } }
-			}
-			FROM = { NOT = { has_war_with = JAP } }
-		}
 
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_JAP_maizuru_naval_arsenal_organization_flag
-				}
-			}
-		}
+		tag = JAP 
+
 	}
+	
+	
+ 
 }
 
 JAP_sasebo_naval_arsenal_organization = {
@@ -119,23 +87,12 @@ JAP_mitsubishi_organization = {
 	icon = GFX_idea_mitsubishi
 	
 	allowed = {	 
-		OR = {
-			tag = JAP 
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
-			}
-		}
+		
+		tag = JAP 
+		
 	}
 	
-	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
-	}
+
 	
 } 
 
@@ -200,43 +157,11 @@ JAP_nissan_organization = {
 	include = generic_motorized_mechanized_organization 
 	icon = GFX_idea_nissan
 	allowed = {	 
-		OR = {
-			tag = JAP 
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
-			}
-		}
-	}
 	
-	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
-	}
-	
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = JAP } }
-			}
-			FROM = { NOT = { has_war_with = JAP } }
-		}
+		tag = JAP 
 
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_JAP_nissan_organization_flag
-				}
-			}
-		}
 	}
+	
+
+	
 }
