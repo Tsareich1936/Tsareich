@@ -13,8 +13,8 @@ focus_tree = {
 		icon = GFX_focus_hun_elect_a_king
 		cost = 1.00
 		mutually_exclusive = {
-			focus = RUS_FkV_broken_country
 			focus = RUS_FkV_communist_win
+			focus = RUS_FkV_broken_country
 		}
 		x = 37
 		y = 0
@@ -27,13 +27,14 @@ focus_tree = {
 		id = RUS_FkV_broken_country
 		icon = GFX_focus_generic_fascist_troops
 		cost = 1.00
-		mutually_exclusive = {
-			focus = RUS_FkV_notsar
-		}
 		x = 2
 		y = 0
 		relative_position_id = RUS_FkV_notsar
 		search_filters = FOCUS_FILTER_POLITICAL
+		mutually_exclusive = {
+			focus = RUS_FkV_communist_win
+			focus = RUS_FkV_notsar
+		}
 		available = {
 			always = no
 		}
@@ -45,6 +46,7 @@ focus_tree = {
 		cost = 1.00
 		mutually_exclusive = {
 			focus = RUS_FkV_notsar
+			focus = RUS_FkV_broken_country
 		}
 		x = -2
 		y = 0
@@ -53,6 +55,63 @@ focus_tree = {
 		available = {
 			always = no
 		}
+
+	}
+	focus = {
+		id = RUS_indp_air
+		icon = GFX_goal_unknown
+		cost = 4.00
+		mutually_exclusive = {
+			focus = RUS_army_airforce
+		}
+		x = -1
+		y = 13
+		relative_position_id = RUS_FkV_notsar
+
+	}
+	focus = {
+		id = RUS_army_airforce
+		icon = GFX_goal_unknown
+		cost = 4.00
+		mutually_exclusive = {
+			focus = RUS_indp_air
+		}
+		x = 2
+		y = 0
+		relative_position_id = RUS_indp_air
+
+	}
+	focus = {
+		id = RUS_arm_tsar_factory
+		icon = GFX_goal_unknown
+		cost = 4.00
+		x = 0
+		y = 2
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_infantry
+		icon = GFX_goal_unknown
+		cost = 4.00
+		mutually_exclusive = {
+			focus = RUS_arm_armor
+		}
+		x = 2
+		y = 1
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_armor
+		icon = GFX_goal_unknown
+		cost = 4.00
+		mutually_exclusive = {
+			focus = RUS_arm_infantry
+		}
+		x = -2
+		y = 1
+		relative_position_id = RUS_advance_army
 
 	}
 	focus = {
@@ -356,55 +415,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = RUS_development_of_siberia
-		icon = GFX_focus_GRE_a_land_of_mountains
-		cost = 1.00
-		prerequisite = {
-			focus = RUS_remake_national_government
-		}
-		x = 0
-		y = 1
-		relative_position_id = RUS_remake_national_government
-		search_filters = FOCUS_FILTER_POLITICAL
-		ai_will_do = {
-			factor = 80
-		}
-		available = {
-
-		}
-		completion_reward = {
-			hidden_effect = {
-				set_country_flag = RUS_start_siberia_decision
-			}
-			custom_effect_tooltip = TR_Russia.tt.3
-		}
-
-	}
-	focus = {
-		id = RUS_remove_census
-		icon = GFX_focus_generic_horse_studs
-		cost = 4.00
-		prerequisite = {
-			focus = RUS_development_of_siberia
-		}
-		x = 2
-		y = 2
-		relative_position_id = RUS_remake_national_government
-		search_filters = FOCUS_FILTER_MANPOWER
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-			NOT = {
-				has_active_mission = RUS_siberia_mission
-			}
-		}
-		completion_reward = {
-			remove_ideas = RUS_nomad_of_russia
-		}
-
-	}
-	focus = {
 		id = RUS_buy_arms_factory
 		icon = GFX_focus_generic_combined_arms
 		cost = 4.00
@@ -491,21 +501,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = RUS_push_TUR
-		icon = GFX_goal_generic_more_territorial_claims
-		cost = 10.00
-		prerequisite = {
-			focus = RUS_ankara_treaty
-		}
-		mutually_exclusive = {
-			focus = RUS_corp_TUR
-		}
-		x = 7
-		y = 2
-		relative_position_id = RUS_empire_diplo
-
-	}
-	focus = {
 		id = RUS_send_pros
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 4.00
@@ -520,7 +515,7 @@ focus_tree = {
 	focus = {
 		id = RUS_send_tech_pro
 		icon = GFX_focus_spa_the_spanish_miracle
-		cost = 5.00
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_send_pros
 		}
@@ -532,11 +527,75 @@ focus_tree = {
 	focus = {
 		id = RUS_send_army_pro
 		icon = GFX_focus_POL_beck_ribbentrop
-		cost = 5.00
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_send_pros
 		}
 		x = 11
+		y = 2
+		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_development_of_siberia
+		icon = GFX_focus_GRE_a_land_of_mountains
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_remake_national_government
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_POLITICAL
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = RUS_start_siberia_decision
+			}
+			custom_effect_tooltip = TR_Russia.tt.3
+		}
+
+	}
+	focus = {
+		id = RUS_remove_census
+		icon = GFX_focus_generic_horse_studs
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_development_of_siberia
+		}
+		x = 2
+		y = 2
+		relative_position_id = RUS_remake_national_government
+		search_filters = FOCUS_FILTER_MANPOWER
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			NOT = {
+				has_active_mission = RUS_siberia_mission
+			}
+		}
+		completion_reward = {
+			remove_ideas = RUS_nomad_of_russia
+		}
+
+	}
+	focus = {
+		id = RUS_push_TUR
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10.00
+		prerequisite = {
+			focus = RUS_ankara_treaty
+		}
+		mutually_exclusive = {
+			focus = RUS_corp_TUR
+		}
+		x = 7
 		y = 2
 		relative_position_id = RUS_empire_diplo
 
@@ -774,7 +833,11 @@ focus_tree = {
 		available = {
 			#has_war = no
 			#has_war = no
+			#has_war = no
+			#has_war = no
 		}
+		#has_war = no
+		#has_war = no
 		#has_war = no
 		#has_war = no
 		#has_war = no
@@ -1061,7 +1124,7 @@ focus_tree = {
 	focus = {
 		id = RUS_alaska_development
 		icon = GFX_focus_SOV_old_eastern_empire
-		cost = 10.00
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_deep_battle_doctrine
 		}
@@ -1219,7 +1282,7 @@ focus_tree = {
 	focus = {
 		id = RUS_knockout_commune
 		icon = GFX_goal_generic_war_with_comintern
-		cost = 10.00
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_diplo_help_CZE
 		}
@@ -1279,7 +1342,7 @@ focus_tree = {
 	focus = {
 		id = RUS_naval_pro_JAP
 		icon = GFX_focus_chi_collaboration_with_the_japanese
-		cost = 10.00
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_diplo_US
 		}
@@ -1294,7 +1357,7 @@ focus_tree = {
 	focus = {
 		id = RUS_international_industrial_pro
 		icon = GFX_focus_generic_industrialists
-		cost = 10.00
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_send_army_pro
 			focus = RUS_send_tech_pro
@@ -1310,7 +1373,7 @@ focus_tree = {
 	focus = {
 		id = RUS_international_army_pro
 		icon = GFX_focus_SOV_mobilization_plan
-		cost = 10.00
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_send_tech_pro
 			focus = RUS_send_army_pro
@@ -1326,7 +1389,7 @@ focus_tree = {
 	focus = {
 		id = RUS_air_pro_US
 		icon = GFX_focus_generic_long_range_aircraft
-		cost = 10.00
+		cost = 4.00
 		prerequisite = {
 			focus = RUS_treaty_with_USA
 		}
@@ -1352,6 +1415,7 @@ focus_tree = {
 			custom_effect_tooltip = TR_Russia.tt.5
 			country_event = TR_Russia.5
 		}
+
 	}
 	focus = {
 		id = RUS_afgan_diplo
@@ -1407,6 +1471,1229 @@ focus_tree = {
 		x = -9
 		y = 3
 		relative_position_id = RUS_empire_diplo
+
+	}
+	focus = {
+		id = RUS_corp_with_church
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_alaska_development
+		}
+		x = 3
+		y = 1
+		relative_position_id = RUS_alaska_development
+
+	}
+	focus = {
+		id = RUS_no_church
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_alaska_development
+		}
+		x = -3
+		y = 1
+		relative_position_id = RUS_alaska_development
+
+	}
+	focus = {
+		id = RUS_law_church
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_corp_with_church
+		}
+		x = 4
+		y = 2
+		relative_position_id = RUS_alaska_development
+
+	}
+	focus = {
+		id = RUS_law_christ
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_no_church
+		}
+		x = -4
+		y = 2
+		relative_position_id = RUS_alaska_development
+
+	}
+	focus = {
+		id = RUS_law_war_economy
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_alaska_development
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_alaska_development
+
+	}
+	focus = {
+		id = RUS_pol_industry_comp
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_law_war_economy
+		}
+		mutually_exclusive = {
+			focus = RUS_pol_industry_arm
+		}
+		x = 1
+		y = 3
+		relative_position_id = RUS_alaska_development
+
+	}
+	focus = {
+		id = RUS_pol_industry_arm
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_law_war_economy
+		}
+		mutually_exclusive = {
+			focus = RUS_pol_industry_comp
+		}
+		x = -1
+		y = 3
+		relative_position_id = RUS_alaska_development
+
+	}
+	focus = {
+		id = RUS_great_fatherland_war
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_no_church
+		}
+		x = -3
+		y = 4
+		relative_position_id = RUS_alaska_development
+
+	}
+	focus = {
+		id = RUS_holy_war
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_corp_with_church
+		}
+		x = 3
+		y = 4
+		relative_position_id = RUS_alaska_development
+
+	}
+	focus = {
+		id = RUS_to_the_war
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_great_fatherland_war
+			focus = RUS_holy_war
+			focus = RUS_pol_industry_arm
+			focus = RUS_pol_industry_comp
+		}
+		x = 0
+		y = 5
+		relative_position_id = RUS_alaska_development
+
+	}
+	focus = {
+		id = RUS_indp_army
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_alaska_development
+		}
+		prerequisite = {
+			focus = RUS_FkV_notsar
+		}
+		mutually_exclusive = {
+			focus = RUS_advance_navy
+		}
+		x = -9
+		y = 12
+		relative_position_id = RUS_FkV_notsar
+
+	}
+	focus = {
+		id = RUS_advance_army
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_indp_army
+			focus = RUS_advance_navy
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_indp_army
+
+	}
+	focus = {
+		id = RUS_law_of_army
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_indp_army
+		}
+		x = -7
+		y = 1
+		relative_position_id = RUS_indp_army
+
+	}
+	focus = {
+		id = RUS_advance_navy
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_alaska_development
+		}
+		mutually_exclusive = {
+			focus = RUS_indp_army
+		}
+		x = 9
+		y = 12
+		relative_position_id = RUS_FkV_notsar
+
+	}
+	focus = {
+		id = RUS_forth_build_plan
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_advance_navy
+			focus = RUS_indp_army
+		}
+		prerequisite = {
+			focus = RUS_advance_navy
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_advance_navy
+
+	}
+	focus = {
+		id = RUS_law_great_navy
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_advance_navy
+		}
+		x = 7
+		y = 1
+		relative_position_id = RUS_advance_navy
+
+	}
+	focus = {
+		id = RUS_air_generations
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_indp_air
+			focus = RUS_army_airforce
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_indp_air
+
+	}
+	focus = {
+		id = RUS_op_airforce
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_indp_air
+		}
+		x = -1
+		y = 1
+		relative_position_id = RUS_indp_air
+
+	}
+	focus = {
+		id = RUS_sup_airforce
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_army_airforce
+		}
+		x = 3
+		y = 1
+		relative_position_id = RUS_indp_air
+
+	}
+	focus = {
+		id = RUS_air_money_for_battle
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_op_airforce
+		}
+		mutually_exclusive = {
+			focus = RUS_air_money_for_develop
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_indp_air
+
+	}
+	focus = {
+		id = RUS_air_money_for_develop
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_op_airforce
+		}
+		mutually_exclusive = {
+			focus = RUS_air_money_for_battle
+		}
+		x = -2
+		y = 2
+		relative_position_id = RUS_indp_air
+
+	}
+	focus = {
+		id = RUS_air_money_for_army
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_sup_airforce
+		}
+		mutually_exclusive = {
+			focus = RUS_air_money_for_navy
+		}
+		x = 2
+		y = 2
+		relative_position_id = RUS_indp_air
+
+	}
+	focus = {
+		id = RUS_air_money_for_navy
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_sup_airforce
+		}
+		mutually_exclusive = {
+			focus = RUS_air_money_for_army
+		}
+		x = 4
+		y = 2
+		relative_position_id = RUS_indp_air
+
+	}
+	focus = {
+		id = RUS_long_range_fighter
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_air_money_for_develop
+			focus = RUS_air_money_for_battle
+			focus = RUS_air_money_for_army
+			focus = RUS_air_money_for_navy
+		}
+		x = 1
+		y = 3
+		relative_position_id = RUS_indp_air
+
+	}
+	focus = {
+		id = RUS_air_force_anti_air
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_air_money_for_army
+			focus = RUS_air_money_for_navy
+		}
+		x = 3
+		y = 3
+		relative_position_id = RUS_indp_air
+
+	}
+	focus = {
+		id = RUS_air_research_center
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_air_money_for_develop
+			focus = RUS_air_money_for_battle
+		}
+		x = -1
+		y = 3
+		relative_position_id = RUS_indp_air
+
+	}
+	focus = {
+		id = RUS_air_next_engine
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_long_range_fighter
+		}
+		prerequisite = {
+			focus = RUS_air_force_anti_air
+			focus = RUS_air_force_anti_air
+			focus = RUS_air_research_center
+		}
+		prerequisite = {
+			focus = RUS_long_range_fighter
+		}
+		x = 1
+		y = 4
+		relative_position_id = RUS_indp_air
+
+	}
+	focus = {
+		id = RUS_air_power
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_air_next_engine
+		}
+		x = 2
+		y = 1
+		relative_position_id = RUS_air_next_engine
+
+	}
+	focus = {
+		id = RUS_air_rader
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_air_next_engine
+		}
+		prerequisite = {
+			focus = RUS_air_next_engine
+		}
+		x = -2
+		y = 1
+		relative_position_id = RUS_air_next_engine
+
+	}
+	focus = {
+		id = RUS_air_jet
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_air_rader
+		}
+		prerequisite = {
+			focus = RUS_air_power
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_air_next_engine
+
+	}
+	focus = {
+		id = RUS_hammer_of_tsar
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_air_jet
+		}
+		x = 0
+		y = 3
+		relative_position_id = RUS_air_next_engine
+
+	}
+	focus = {
+		id = RUS_arm_armor_battle
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_armor
+		}
+		x = -2
+		y = 2
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_arte
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_infantry
+		}
+		x = 2
+		y = 2
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_unite_train
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_armor_battle
+			focus = RUS_arm_arte
+		}
+		x = 0
+		y = 3
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_bike_infantry
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_armor_battle
+		}
+		x = -2
+		y = 3
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_anti_panzer
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_arte
+		}
+		x = 2
+		y = 3
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_rush_strategy
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_arte
+		}
+		x = 4
+		y = 3
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_main_tank
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_armor_battle
+		}
+		x = -4
+		y = 3
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_radical_motor
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_main_tank
+		}
+		prerequisite = {
+			focus = RUS_arm_bike_infantry
+		}
+		x = -3
+		y = 4
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_many_arte
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_anti_panzer
+		}
+		prerequisite = {
+			focus = RUS_arm_rush_strategy
+		}
+		x = 3
+		y = 4
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_armor_fire
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_radical_motor
+		}
+		x = -5
+		y = 5
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_many_armor_infantry
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_armor_fire
+		}
+		x = -5
+		y = 6
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_all_minitank
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_radical_motor
+		}
+		x = -3
+		y = 6
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_modern_tank
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_many_armor_infantry
+		}
+		prerequisite = {
+			focus = RUS_arm_all_minitank
+		}
+		x = -4
+		y = 7
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_steal_in_enemy
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_many_arte
+		}
+		x = 5
+		y = 5
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_big_prepare_attack
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_many_arte
+		}
+		x = 3
+		y = 6
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_night_vision
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_steal_in_enemy
+		}
+		x = 5
+		y = 6
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_many_railgun
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_big_prepare_attack
+		}
+		prerequisite = {
+			focus = RUS_arm_night_vision
+		}
+		x = 4
+		y = 7
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_conscription_more
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_unite_train
+		}
+		x = 1
+		y = 4
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_more_nocore
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_unite_train
+		}
+		prerequisite = {
+			focus = RUS_arm_unite_train
+		}
+		prerequisite = {
+			focus = RUS_arm_unite_train
+		}
+		prerequisite = {
+			focus = RUS_arm_unite_train
+		}
+		x = -1
+		y = 4
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_navy_attack
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_more_nocore
+			focus = RUS_conscription_more
+		}
+		x = 0
+		y = 5
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_new_infantry_gun
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_navy_attack
+		}
+		x = -1
+		y = 6
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_research_support
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_navy_attack
+		}
+		x = 1
+		y = 6
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_unite_volk
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_research_support
+			focus = RUS_arm_new_infantry_gun
+		}
+		x = 0
+		y = 7
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_national_MP
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_research_support
+			focus = RUS_arm_new_infantry_gun
+		}
+		x = 2
+		y = 7
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_arm_propaganda_in_enemy
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_arm_research_support
+			focus = RUS_arm_new_infantry_gun
+		}
+		x = -2
+		y = 7
+		relative_position_id = RUS_advance_army
+
+	}
+	focus = {
+		id = RUS_army_top_manager
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_law_of_army
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_law_of_army
+
+	}
+	focus = {
+		id = RUS_more_special_force
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_law_of_army
+		}
+		x = -1
+		y = 1
+		relative_position_id = RUS_law_of_army
+
+	}
+	focus = {
+		id = RUS_clean_consc
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_more_special_force
+		}
+		prerequisite = {
+			focus = RUS_army_top_manager
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_law_of_army
+
+	}
+	focus = {
+		id = RUS_the_best_army
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_clean_consc
+			focus = RUS_arm_modern_tank
+			focus = RUS_many_railgun
+		}
+		prerequisite = {
+			focus = RUS_clean_consc
+		}
+		x = 0
+		y = 8
+		relative_position_id = RUS_law_of_army
+
+	}
+	focus = {
+		id = RUS_nav_more_dock
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_forth_build_plan
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_focus_CC
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_forth_build_plan
+		}
+		mutually_exclusive = {
+			focus = RUS_nav_focus_BB
+		}
+		x = -2
+		y = 1
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_focus_BB
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_forth_build_plan
+		}
+		mutually_exclusive = {
+			focus = RUS_nav_focus_CC
+		}
+		x = 2
+		y = 1
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_CC_research_quick
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_focus_CC
+		}
+		x = -2
+		y = 2
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_better_guns_tech
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_focus_BB
+		}
+		x = 2
+		y = 2
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_speedy_CC
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_CC_research_quick
+		}
+		x = -2
+		y = 3
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_speedy_BB
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_better_guns_tech
+		}
+		x = 2
+		y = 3
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_SS_search
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_CC_research_quick
+		}
+		x = -4
+		y = 3
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_SS_attack
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_better_guns_tech
+		}
+		x = 4
+		y = 3
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_focus_to_fronts
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_CC_research_quick
+			focus = RUS_nav_better_guns_tech
+		}
+		x = 0
+		y = 3
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_protect_east
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_focus_to_fronts
+		}
+		x = 1
+		y = 4
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_protect_west
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_focus_to_fronts
+		}
+		x = -1
+		y = 4
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_mechanical_dock
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_protect_west
+			focus = RUS_nav_protect_east
+		}
+		x = 0
+		y = 5
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_anti_SS
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_mechanical_dock
+		}
+		x = -1
+		y = 6
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_trp_research
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_mechanical_dock
+		}
+		x = 1
+		y = 6
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_seamines
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_anti_SS
+			focus = RUS_nav_trp_research
+		}
+		x = 0
+		y = 7
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_front_armor
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_anti_SS
+			focus = RUS_nav_trp_research
+		}
+		x = 2
+		y = 7
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_fleet_front
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_anti_SS
+			focus = RUS_nav_trp_research
+		}
+		x = -2
+		y = 7
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_CC_tsar
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_speedy_CC
+		}
+		prerequisite = {
+			focus = RUS_nav_SS_search
+		}
+		x = -3
+		y = 4
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_BB_tsar
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_speedy_BB
+		}
+		prerequisite = {
+			focus = RUS_nav_SS_attack
+		}
+		x = 3
+		y = 4
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_research_kill_fire
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_CC_tsar
+		}
+		x = -3
+		y = 6
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_research_gun_tech_more
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_BB_tsar
+		}
+		x = 3
+		y = 6
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_BB_outsource
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_BB_tsar
+		}
+		x = 5
+		y = 5
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_reduce_oil_freet
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_BB_outsource
+		}
+		x = 5
+		y = 6
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_guard_CC
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_research_gun_tech_more
+		}
+		prerequisite = {
+			focus = RUS_nav_reduce_oil_freet
+		}
+		x = 4
+		y = 7
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_CC_outsource
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_CC_tsar
+		}
+		x = -5
+		y = 5
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_long_range_cc_air
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_CC_outsource
+		}
+		x = -5
+		y = 6
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_nav_guard_CA
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_research_kill_fire
+		}
+		prerequisite = {
+			focus = RUS_nav_long_range_cc_air
+		}
+		x = -4
+		y = 7
+		relative_position_id = RUS_forth_build_plan
+
+	}
+	focus = {
+		id = RUS_pacific_SS_attack
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_law_great_navy
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_law_great_navy
+
+	}
+	focus = {
+		id = RUS_speed_repair
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_law_great_navy
+		}
+		x = -1
+		y = 1
+		relative_position_id = RUS_law_great_navy
+
+	}
+	focus = {
+		id = RUS_more_naval_port
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_speed_repair
+		}
+		prerequisite = {
+			focus = RUS_pacific_SS_attack
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_law_great_navy
+
+	}
+	focus = {
+		id = RUS_rule_seas
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = RUS_nav_guard_CC
+			focus = RUS_nav_guard_CA
+		}
+		prerequisite = {
+			focus = RUS_more_naval_port
+		}
+		x = 0
+		y = 8
+		relative_position_id = RUS_law_great_navy
 
 	}
 }

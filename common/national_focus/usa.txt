@@ -32,38 +32,691 @@ focus_tree = {
 				}
 			}
 			x = 30
-			y = 1
+			y = 0
 			completion_reward = {
 				effect_tooltip = {
 					custom_effect_tooltip = "TR_USA_1936_presidential_election_effect_tt"
 				}
 			}
 		}
+		focus = {#選挙人との接触
+			id = TR_USA_contacting_the_electorate
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_USA_1936_presidential_election
+			}
+			x = -1
+			y = 1
+			relative_position_id = TR_USA_1936_presidential_election
+			completion_reward = {
+		
+			}
+		}
+		focus = {#大衆演説
+			id = TR_USA_mass_oratory
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_USA_contacting_the_electorate
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_USA_contacting_the_electorate
+			completion_reward = {
+		
+			}
+		}
+		focus = {#選挙妨害工作
+			id = TR_USA_obstructing_the_election
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_USA_1936_presidential_election
+			}
+			x = 1
+			y = 1
+			relative_position_id = TR_USA_1936_presidential_election
+			completion_reward = {
+		
+			}
+		}
+		focus = {#議会を襲撃
+			id = TR_USA_raid_on_parliament
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_USA_obstructing_the_election
+			}
+			x = 0
+			y = 2
+			relative_position_id = TR_USA_obstructing_the_election
+			completion_reward = {
+		
+			}
+		}
+		focus = {#運命の時
+			id = TR_THE_FATAL_DAY
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = TR_USA_mass_oratory
+				focus = TR_USA_raid_on_parliament
+			}
+			x = 0
+			y = 4
+			relative_position_id = TR_USA_1936_presidential_election
+			completion_reward = {
+		
+			}
+		}
 	### SELECT IDEOLOGY ###
 		## LEFT-WINGS ##
-			focus = {#民衆が望む道
-				id = TR_USA_way_the_people_want
+			focus = {#新たなる道
+				id = TR_USA_the_new_way
 				icon = GFX_
 				cost = 5
-
+				mutually_exclusive = {
+					# focus = TR_USA_the_new_way
+					focus = TR_USA_the_old_way
+				}
 				x = -6
-				y = -1
+				y = 2
 				relative_position_id = TR_USA_1936_presidential_election
 				completion_reward = {
 					
 				}
 			}
-		## RIGHT-WINGS ##
-			focus = {#White Anglo-Saxson Protestant
-				id = TR_USA_WASP
+			focus = {#恐慌脱出への糸口
+				id = TR_USA_clues_to_escape_the_depression
 				icon = GFX_
 				cost = 5
+				prerequisite = {
+					focus = TR_USA_the_new_way
+				}
+				x = 0
+				y = 1
+				relative_position_id = TR_USA_the_new_way
+				completion_reward = {
+			
+				}
+			}
+			# American Democratic Republic #
+				focus = {#労働組合の強化
+					id = TR_USA_strengthen_trade_unions
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_clues_to_escape_the_depression
+					}
+					mutually_exclusive = {
+						# focus = TR_USA_strengthen_trade_unions
+						focus = TR_USA_big_government
+						focus = TR_USA_flatly_and_equally
+					}
+					x = -4
+					y = 1
+					relative_position_id = TR_USA_clues_to_escape_the_depression
+					completion_reward = {
+						
+					}
+				}
+				focus = {#北部の労働者への呼びかけ
+					id = TR_USA_call_to_north_workers
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_strengthen_trade_unions
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_USA_strengthen_trade_unions
+					completion_reward = {
 				
+					}
+				}
+				focus = {#共産主義国家の樹立
+					id = TR_USA_communist_state_establishment
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_call_to_north_workers
+					}
+					mutually_exclusive = {
+						focus = TR_trade_union_self_government
+						# focus = TR_USA_communist_state_establishment
+						focus = TR_USA_true_freedom
+						focus = TR_USA_realisation_of_socialist_state
+						focus = TR_denial_of_the_trinity
+						focus = TR_USA_who_is_the_USA_for
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_USA_call_to_north_workers
+					completion_reward = {
+				
+					}
+				}
+				focus = {#労働組合自治
+					id = TR_trade_union_self_government
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_call_to_north_workers
+					}
+					mutually_exclusive = {
+						# focus = TR_trade_union_self_government
+						focus = TR_USA_communist_state_establishment
+						focus = TR_USA_true_freedom
+						focus = TR_USA_realisation_of_socialist_state
+						focus = TR_denial_of_the_trinity
+						focus = TR_USA_who_is_the_USA_for
+					}
+					x = -2
+					y = 2
+					relative_position_id = TR_USA_call_to_north_workers
+					completion_reward = {
+				
+					}
+				}
+				focus = {#真なる自由
+					id = TR_USA_true_freedom
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_call_to_north_workers
+					}
+					mutually_exclusive = {
+						focus = TR_trade_union_self_government
+						focus = TR_USA_communist_state_establishment
+						# focus = TR_USA_true_freedom
+						focus = TR_USA_realisation_of_socialist_state
+						focus = TR_denial_of_the_trinity
+						focus = TR_USA_who_is_the_USA_for
+					}
+					x = 2
+					y = 2
+					relative_position_id = TR_USA_call_to_north_workers
+					completion_reward = {
+				
+					}
+				}
+			# United States America #
+				focus = {#大きな政府
+					id = TR_USA_big_government
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_clues_to_escape_the_depression
+					}
+					mutually_exclusive = {
+						focus = TR_USA_strengthen_trade_unions
+						# focus = TR_USA_big_government
+						focus = TR_USA_flatly_and_equally
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_USA_clues_to_escape_the_depression
+					completion_reward = {
+				
+					}
+				}
+				focus = {#福祉重視政策
+					id = TR_USA_welfare_oriented_policy
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_big_government
+					}
+					
+					x = 0
+					y = 1
+					relative_position_id = TR_USA_big_government
+					completion_reward = {
+				
+					}
+				}
+				focus = {#社会主義国家の実現
+					id = TR_USA_realisation_of_socialist_state
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_welfare_oriented_policy
+					}
+					mutually_exclusive = {
+						focus = TR_trade_union_self_government
+						focus = TR_USA_communist_state_establishment
+						focus = TR_USA_true_freedom
+						# focus = TR_USA_realisation_of_socialist_state
+						focus = TR_denial_of_the_trinity
+						focus = TR_USA_who_is_the_USA_for
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_USA_welfare_oriented_policy
+					completion_reward = {
+				
+					}
+				}
+			# OTHER SIDE #
+				focus = {#平らかに、等しく
+					id = TR_USA_flatly_and_equally
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_clues_to_escape_the_depression
+					}
+					mutually_exclusive = {
+						focus = TR_USA_strengthen_trade_unions
+						focus = TR_USA_big_government
+						# focus = TR_USA_flatly_and_equally
+					}
+					x = 3
+					y = 1
+					relative_position_id = TR_USA_clues_to_escape_the_depression
+					completion_reward = {
+				
+					}
+				}
+				focus = {#信教の自由
+					id = TR_USA_religious_liberty
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_flatly_and_equally
+					}
+					mutually_exclusive = {
+						# focus = TR_USA_religious_liberty
+						focus = TR_USA_resist_the_white
+					}
+					x = -1
+					y = 1
+					relative_position_id = TR_USA_flatly_and_equally
+					completion_reward = {
+				
+					}
+				}
+				focus = {#三位一体の否定
+					id = TR_denial_of_the_trinity
+					icon = GFX_
+					cost = 5
+					mutually_exclusive = {
+						focus = TR_trade_union_self_government
+						focus = TR_USA_communist_state_establishment
+						focus = TR_USA_true_freedom
+						focus = TR_USA_realisation_of_socialist_state
+						# focus = TR_denial_of_the_trinity
+						focus = TR_USA_who_is_the_USA_for
+					}
+					prerequisite = {
+						focus = TR_USA_religious_liberty
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_USA_religious_liberty
+					completion_reward = {
+				
+					}
+				}
+				focus = {#白き者への抵抗
+					id = TR_USA_resist_the_white
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_flatly_and_equally
+					}
+					mutually_exclusive = {
+						focus = TR_USA_religious_liberty
+						# focus = TR_USA_resist_the_white
+					}
+					x = 1
+					y = 1
+					relative_position_id = TR_USA_flatly_and_equally
+					completion_reward = {
+				
+					}
+				}
+				focus = {#アメリカは誰のためにあるのか
+					id = TR_USA_who_is_the_USA_for
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_resist_the_white
+					}
+					mutually_exclusive = {
+						focus = TR_trade_union_self_government
+						focus = TR_USA_communist_state_establishment
+						focus = TR_USA_true_freedom
+						focus = TR_USA_realisation_of_socialist_state
+						focus = TR_denial_of_the_trinity
+						# focus = TR_USA_who_is_the_USA_for
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_USA_resist_the_white
+					completion_reward = {
+				
+					}
+				}
+		## RIGHT-WINGS ##
+			focus = {#古き道
+				id = TR_USA_the_old_way
+				icon = GFX_
+				cost = 5
+				mutually_exclusive = {
+					focus = TR_USA_the_new_way
+					# focus = TR_USA_the_old_way
+				}
 				x = 6
-				y = -1
+				y = 2
 				relative_position_id = TR_USA_1936_presidential_election
 				completion_reward = {
 			
 				}
 			}
+			# Confederation states of America #
+				focus = {#白人至上主義
+					id = TR_USA_white_supremacy
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_the_old_way
+					}
+					mutually_exclusive = {
+						focus = TR_USA_accept_partial_socialism
+						focus = TR_USA_support_for_New_York_independence
+					}
+					x = -3
+					y = 1
+					relative_position_id = TR_USA_the_old_way
+					completion_reward = {
+				
+					}
+				}
+				focus = {#黒人への迫害
+					id = TR_USA_persecution_of_blacks
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_white_supremacy
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_USA_white_supremacy
+					completion_reward = {
+				
+					}
+				}
+				focus = {#KKKとの協力
+					id = TR_USA_cooperation_with_KKK
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_persecution_of_blacks
+					}
+					mutually_exclusive = {
+						focus = TR_USA_hostility_with_KKK
+					}
+					x = 1
+					y = 1
+					relative_position_id = TR_USA_persecution_of_blacks
+					completion_reward = {
+				
+					}
+				}
+				focus = {#White Anglo-Saxson Protestant
+					id = TR_USA_WASP
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_cooperation_with_KKK
+					}
+					mutually_exclusive = {
+						focus = TR_USA_contact_with_southern_states
+						# focus = TR_USA_WASP
+						focus = TR_USA_american_imperator
+						focus = TR_USA_new_deal
+						focus = TR_USA_contact_with_central_states
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_USA_cooperation_with_KKK
+					completion_reward = {
+				
+					}
+				}
+				focus = {#KKKとの敵対
+					id = TR_USA_hostility_with_KKK
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_persecution_of_blacks
+					}
+					mutually_exclusive = {
+						focus = TR_USA_cooperation_with_KKK
+					}
+					x = -1
+					y = 1
+					relative_position_id = TR_USA_persecution_of_blacks
+					completion_reward = {
+				
+					}
+				}
+				focus = {#南部諸州への接触
+					id = TR_USA_contact_with_southern_states
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_hostility_with_KKK
+					}
+					mutually_exclusive = {
+						# focus = TR_USA_contact_with_southern_states
+						focus = TR_USA_WASP
+						focus = TR_USA_american_imperator
+						focus = TR_USA_new_deal
+						focus = TR_USA_contact_with_central_states
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_USA_hostility_with_KKK
+					completion_reward = {
+				
+					}
+				}
+			# American Republic #
+				focus = {#部分的な社会主義を許容
+					id = TR_USA_accept_partial_socialism
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_the_old_way
+					}
+					mutually_exclusive = {
+						focus = TR_USA_white_supremacy
+						focus = TR_USA_support_for_New_York_independence
+					}
+					x = 3
+					y = 1
+					relative_position_id = TR_USA_the_old_way
+					completion_reward = {
+				
+					}
+				}
+				focus = {#政権を維持
+					id = TR_USA_hold_on_to_power
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_accept_partial_socialism
+					}
+					mutually_exclusive = {
+						focus = TR_USA_military_contacts
+					}
+					x = -1
+					y = 1
+					relative_position_id = TR_USA_accept_partial_socialism
+					completion_reward = {
+				
+					}
+				}
+				focus = {#国家雇用政策
+					id = TR_USA_national_employment_policy
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_hold_on_to_power
+					}
+					
+					x = 0
+					y = 1
+					relative_position_id = TR_USA_hold_on_to_power
+					completion_reward = {
+					}
+				}
+				focus = {#巻き返し
+					id = TR_USA_new_deal
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_national_employment_policy
+					}
+					mutually_exclusive = {
+						focus = TR_USA_contact_with_southern_states
+						focus = TR_USA_WASP
+						focus = TR_USA_american_imperator
+						# focus = TR_USA_new_deal
+						focus = TR_USA_contact_with_central_states
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_USA_national_employment_policy
+					completion_reward = {
+				
+					}
+				}
+			# American Military Government #
+				focus = {#軍部との接触
+					id = TR_USA_military_contacts
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_accept_partial_socialism
+					}
+					mutually_exclusive = {
+						focus = TR_USA_hold_on_to_power
+					}
+					x = 1
+					y = 1
+					relative_position_id = TR_USA_accept_partial_socialism
+					completion_reward = {
+				
+					}
+				}
+				focus = {#自由の戦士
+					id = TR_USA_freedom_fighters
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_military_contacts
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_USA_military_contacts
+					completion_reward = {
+				
+					}
+				}
+				focus = {#中央部諸州への接触
+					id = TR_USA_contact_with_central_states
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_freedom_fighters
+					}
+					mutually_exclusive = {
+						focus = TR_USA_contact_with_southern_states
+						focus = TR_USA_WASP
+						focus = TR_USA_american_imperator
+						focus = TR_USA_new_deal
+						# focus = TR_USA_contact_with_central_states
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_USA_freedom_fighters
+					completion_reward = {
+				
+					}
+				}
+			# Unexpected choices #
+				focus = {#ニューヨーク独立を支持
+					id = TR_USA_support_for_New_York_independence
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_the_old_way
+					}
+					mutually_exclusive = {
+						focus = TR_USA_accept_partial_socialism
+						focus = TR_USA_white_supremacy
+						# focus = TR_USA_support_for_New_York_independence
+					}
+					allow_branch = {
+						has_country_flag = TR_USA_Holy_New_York_Empire_avaiabled
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_USA_the_old_way
+					completion_reward = {
+				
+					}
+				}
+				focus = {#ニューヨークの大統領
+					id = TR_USA_endorsement_of_NYM_for_president
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_support_for_New_York_independence
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_USA_support_for_New_York_independence
+					completion_reward = {
+				
+					}
+				}
+				focus = {#神聖国家
+					id = TR_USA_holy_land
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_endorsement_of_NYM_for_president
+					}
+					x = 0
+					y = 1
+					relative_position_id = TR_USA_endorsement_of_NYM_for_president
+					completion_reward = {
+				
+					}
+				}
+				focus = {#アメリカの皇帝
+					id = TR_USA_american_imperator
+					icon = GFX_
+					cost = 5
+					prerequisite = {
+						focus = TR_USA_holy_land
+					}
+					mutually_exclusive = {
+						focus = TR_USA_contact_with_southern_states
+						focus = TR_USA_WASP
+						# focus = TR_USA_american_imperator
+						focus = TR_USA_new_deal
+						focus = TR_USA_contact_with_central_states
+					}
+					x = 0
+					y = 2
+					relative_position_id = TR_USA_holy_land
+					completion_reward = {
+				
+					}
+				}
 }
