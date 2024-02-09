@@ -3,7 +3,7 @@ autonomy_state = {
 	
 	min_freedom_level = 0
 	
-	manpower_influence = 0
+	manpower_influence = 1
 
 	use_overlord_color  = yes
 	rule = {
@@ -20,8 +20,8 @@ autonomy_state = {
 		overlord_trade_cost_factor = -1
 		peace_score_ratio_transferred_to_overlord = 1
 		lend_lease_tension_with_overlord = -1.0
-		cic_to_overlord_factor = 1
-		mic_to_overlord_factor = 1
+		cic_to_overlord_factor = 2
+		mic_to_overlord_factor = 2
 		stability_factor = -1
 		war_support_factor = -1
 	}
