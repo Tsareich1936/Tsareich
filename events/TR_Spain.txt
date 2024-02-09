@@ -2,13 +2,13 @@
 # Spanish Events
 ###########################
 
-add_namespace = TRspain
+add_namespace = TR_spain
 
 # Spanish Civil War
 country_event = {
-	id = TRspain.1
-	title = TRpain.1.t
-	desc = TRspain.1.d
+	id = TR_spain.1
+	title = TR_spain.1.t
+	desc = TR_spain.1.d
 	picture = GFX_report_event_spain_civil_war_soldiers
 
 	fire_only_once = yes
@@ -47,7 +47,7 @@ country_event = {
 	}
 
 	option = { # Support Nationalists
-		name = TRspain.1.a
+		name = TR_spain.1.a
 		trigger = { is_ai = no }
 		hidden_effect = {
 			set_capital = { state = 176 }
@@ -100,7 +100,7 @@ country_event = {
 		custom_effect_tooltip = nationalists_chosen
 	}
 	option = { # Support Republicans
-		name = TRspain.1.b
+		name = TR_spain.1.b
 		hidden_effect = {
 			start_civil_war = {
 				ideology = fascism
