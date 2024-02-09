@@ -1,0 +1,21 @@
+state={
+	id=1042
+	name="STATE_1042"
+	provinces={
+		858 3986 6800 6914 9881 11863 13224 13229 
+	}
+	history = {
+		owner = SPR
+		add_core_of = SPR
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+		}
+		victory_points = {
+			858 5
+		}
+	}
+	manpower=400100
+	state_category = town
+	local_supplies=0.000
+}
