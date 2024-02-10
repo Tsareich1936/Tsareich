@@ -1193,16 +1193,6 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		if = {
-			limit = {
-				tag = RUS
-				has_war = yes
-			}
-			custom_trigger_tooltip = {
-				tooltip = x
-				always = yes
-			}
-		}
 		else = {
 			always = yes
 		}

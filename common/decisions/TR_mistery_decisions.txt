@@ -1,0 +1,35 @@
+TR_mistery = {
+	TR_approach_to_mistery = {
+		allowed = {
+			tag = BRA
+			is_historical_focus_on = no
+		}
+		visible = {
+			date = 1936.1.2
+		}
+		available = {
+			is_ai = no
+			NOT = {
+				has_global_flag = TR_mistery_appeared
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 0
+		complete_effect = {
+			280 = {
+				transfer_state_to = NAB
+			}
+			NAB = {
+				hidden_effect = {
+					every_state = {
+						add_core_of = NAB
+					}
+					change_tag_from = BRA
+				}
+			}
+			set_global_flag = TR_mistery_appeared
+		}
+	}
+}
