@@ -32,7 +32,7 @@
 	# set_global_flag = TR_poland_recognized_flag
 	declare_war_on = {
 		target = RUS
-		type = independence_wargoal
+		type = liberate_wargoal
 	}
 	set_cosmetic_tag = POL_KPU
 	create_intelligence_agency = yes
