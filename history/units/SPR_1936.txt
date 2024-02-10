@@ -69,7 +69,6 @@ division_template = {
 }
 division_template = {
 	name = "SPR milicia"
-	is_locked = yes
 	division_names_group = SPR_INF_02
 	regiments = {
 		infantry = { x = 0 y = 0 }

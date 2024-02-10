@@ -1196,3 +1196,8 @@ SPD = {
 	color = rgb { 188 13 13 }
 	color_ui = rgb { 230 255 255 }
 }
+
+SPE = {
+	color = rgb { 238 232 170 }
+	color_ui = rgb { 230 255 255 }
+}

@@ -480,5 +480,15 @@ ideas = {
 				convoy_escort_efficiency = 0.5
 			}
 		}
+
+		TR_inetr_supSPC = {
+			picture = "generic_war_preparation"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				lend_lease_tension = -0.5
+		}
 	}	
 }

@@ -127,6 +127,7 @@ on_actions = {
 				remove_core_of = SPB
 				remove_core_of = SPC
 				remove_core_of = SPD
+				remove_core_of = SPE
 			}
 		}
 		every_country = {
@@ -136,6 +137,7 @@ on_actions = {
 					tag = SPB
 					tag = SPC
 					tag = SPD
+					tag = SPE
 				}
 			}
 		}

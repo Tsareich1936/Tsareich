@@ -1,0 +1,49 @@
+﻿l_japanese:
+TR_FRA_SPsibaku.1: "カタルーニャを要求"
+TR_FRA_SPsibaku.1.t: "カタルーニャを要求"
+TR_FRA_SPsibaku.1.d: "我々はカタルーニャを占拠している諸勢力に対しフランスに返還するように外交文書を送ることにした。"
+TR_FRA_SPsibaku.1.a: "各勢力に外交文書を送ろう"
+
+TR_FRA_SPsibaku.2: "フランスからの要求！" #コミューン
+TR_FRA_SPsibaku.2.t: "フランスからの要求！"
+TR_FRA_SPsibaku.2.d: "フランス政府が我々が領有してるカタルーニャ地域の引き渡しを要求してきた！"
+TR_FRA_SPsibaku.2.a: "仕方あるまい、引き渡そう..."
+
+TR_FRA_SPsibaku.3: "フランスからの最後通牒" #アナキスト
+TR_FRA_SPsibaku.3.t: "フランスからの最後通牒"
+TR_FRA_SPsibaku.3.d: "フランスは我々が支配しているカタルーニャの支配権を要求してきた！引き渡さない場合は戦争も辞さないと脅している！"
+TR_FRA_SPsibaku.3.a: "ここでフランスを敵に回すわけにはいかない..."
+TR_FRA_SPsibaku.3.b: "有り得ない！"
+
+TR_FRA_SPsibaku.4: "フランスからの最後通牒" #カタルーニャ
+TR_FRA_SPsibaku.4.t: "フランスからの最後通牒"
+TR_FRA_SPsibaku.4.d: "フランスは我々が支配しているカタルーニャの支配権を要求してきた！引き渡さない場合は戦争も辞さないと脅している！"
+TR_FRA_SPsibaku.4.a: "内戦中のスペインよりはフランスの支配下のほうがいいかもしれない...§R(注意:ゲームオーバーになります！)§!"
+TR_FRA_SPsibaku.4.b: "有り得ない！"
+
+TR_FRA_SPsibaku.5: "成功！" #コミューン成功
+TR_FRA_SPsibaku.5.t: "成功！"
+TR_FRA_SPsibaku.5.d: "コミューンは我々の要求に答え、カタルーニャを引き渡した！"
+TR_FRA_SPsibaku.5.a: "素晴らしい！"
+
+TR_FRA_SPsibaku.6: "成功！"  #アナキスト成功
+TR_FRA_SPsibaku.6.t: "成功！"
+TR_FRA_SPsibaku.6.d: "アナキストは我々の要求に答え、カタルーニャを引き渡した！"
+TR_FRA_SPsibaku.6.a: "素晴らしい！"
+
+TR_FRA_SPsibaku.7: "成功！" #カタルーニャ成功
+TR_FRA_SPsibaku.7.t: "成功！"
+TR_FRA_SPsibaku.7.d: "カタルーニャの自治政府は我々の要求に答え、カタルーニャを引き渡した！"
+TR_FRA_SPsibaku.7.a: "素晴らしい！"
+
+TR_FRA_SPsibaku.8: "失敗..."  #アナキスト失敗
+TR_FRA_SPsibaku.8.t: "失敗..."
+TR_FRA_SPsibaku.8.d: "アナキストどもは我々の寛大な要求を拒否した！"
+TR_FRA_SPsibaku.8.a: "奴らを攻撃しなければならない！"
+TR_FRA_SPsibaku.8.a: "ここが引き際かもしれない..."
+
+TR_FRA_SPsibaku.9: "失敗..." #カタルーニャ失敗
+TR_FRA_SPsibaku.9.t: "失敗..."
+TR_FRA_SPsibaku.9.d: "カタルーニャの自治政府どもは我々の寛大な要求を拒否した！"
+TR_FRA_SPsibaku.9.a: "奴らを攻撃しなければならない！"
+TR_FRA_SPsibaku.9.a: "ここが引き際かもしれない..."
