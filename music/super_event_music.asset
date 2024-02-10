@@ -1,0 +1,10 @@
+music = {
+    name = "risorgimento_italiano"
+    file = "risorgimento_italiano.ogg"
+    volume = 1.00
+}
+music = {
+    name = "when_johnny_comes_marching_home"
+    file = "when_johnny_comes_marching_home.ogg"
+    volume = 1.00
+}

@@ -26,6 +26,9 @@ country_event = {#One Italy, One Nation
 		set_variable = {
 			TR_showing_super_event = 1 # 0:unvisible 1:visible
 		}
+		hidden_effect = {
+			play_song = "risorgimento_italiano"
+		}
 	}
 }
 
@@ -42,6 +45,9 @@ country_event = {#American Civil War
 		}
 		set_variable = {
 			TR_showing_super_event = 1 # 0:unvisible 1:visible
+		}
+		hidden_effect = {
+			play_song = "when_johnny_comes_marching_home"
 		}
 	}
 }
