@@ -10,9 +10,9 @@ focus_tree = {
     default = no
 	reset_on_civilwar = no
 
-	# initial_show_position = {
-	# 	focus = <任意のNFのID>
-	# }
+	initial_show_position = {
+		focus = TR_USA_1936_presidential_election
+	}
 
 	### ELECTION ###
 		focus = {#1936アメリカ合衆国大統領選挙
