@@ -27,6 +27,9 @@ JAP_balance_of_power = {
 				set_country_flag = jap_government
 				mark_focus_tree_layout_dirty = yes
 			}
+			on_deactivate = {
+				clr_country_flag = jap_government
+			}
 			
 		}
 		range = {
