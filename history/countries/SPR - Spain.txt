@@ -216,13 +216,13 @@ create_dynamic_country = {
 	inherit_technology = SPR
 }
 create_dynamic_country = {
-	original_tag = SPD
+	original_tag = SPR
 	set_country_flag = SPR_anarchism_flag
 	set_politics = {
-		ruling_party = neutrality
+		ruling_party = anarchism
 	}
 	set_popularities = {
-		neutrality = 100
+		anarchism = 100
 	}
 	reserve_dynamic_country = yes
 	set_cosmetic_tag = SPD

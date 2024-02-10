@@ -48,5 +48,5 @@ SPC = {#Democratic Republic of America
 }
 SPD = {#Democratic Republic of America
 	original_tag = SPR
-	has_country_flag = SPR_neutrality_flag
+	has_country_flag = SPR_anarchism_flag
 }

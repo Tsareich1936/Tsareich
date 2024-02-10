@@ -24,16 +24,21 @@ country_event = {
 	}
 	immediate = {
 		hidden_effect = {
+			add_ideas = TR_SPR_civwar
             169  = { transfer_state_to = SPA }
 			171  = { transfer_state_to = SPA }
 			170  = { transfer_state_to = SPA }
 			789  = { transfer_state_to = SPA }
 			290  = { transfer_state_to = SPA }
 			699  = { transfer_state_to = SPA }
-			create_wargoal = {
+			declare_war_on = {
 				target = SPA
-				type = annex_everything
+				type = civil_war
 			}
+			SPA = {
+				add_ideas = TR_SPR_civwar
+			}
+			set_country_flag = TR_spr_civwar
 		}
 	}
 
@@ -47,7 +52,6 @@ country_event = {
 	option = { # Support Republicans
 		name = TR_spain.1.b
 		hidden_effect = {
-			
 		}
 		custom_effect_tooltip = republicans_chosen
 	}
@@ -67,7 +71,7 @@ country_event = {
 
 	trigger = {
 		tag = SPR
-		has_war = yes
+		has_country_flag =  TR_spr_civwar
 		date > 1936.3.16 # Trigger at some point after 1936 elections
 	}
 
@@ -87,25 +91,128 @@ country_event = {
 			1043  = { transfer_state_to = SPD }
 			165  = { transfer_state_to = CAT }
 			792  = { transfer_state_to = NAV }
-			create_wargoal = {
-				target = SPB
-				type = annex_everything
+			add_ideas = TR_SPR_no_morale
+			SPA = {
+				add_ideas = TR_SPR_civwar
+				declare_war_on = {
+					target = SPB
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPC
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPD
+					type = civil_war
+				}
+				declare_war_on = {
+					target = CAT
+					type = civil_war
+				}
+				declare_war_on = {
+					target = NAV
+					type = civil_war
+				}
 			}
-			create_wargoal = {
-				target = SPC
-				type = annex_everything
+			SPB = {
+				add_ideas = TR_SPR_civwar
+				declare_war_on = {
+					target = SPR
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPC
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPD
+					type = civil_war
+				}
+				declare_war_on = {
+					target = CAT
+					type = civil_war
+				}
+				declare_war_on = {
+					target = NAV
+					type = civil_war
+				}
 			}
-			create_wargoal = {
-				target = SPD
-				type = annex_everything
+			SPC = {
+				add_ideas = TR_SPR_civwar
+				declare_war_on = {
+					target = SPR
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPC
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPD
+					type = civil_war
+				}
+				declare_war_on = {
+					target = CAT
+					type = civil_war
+				}
+				declare_war_on = {
+					target = NAV
+					type = civil_war
+				}
 			}
-			create_wargoal = {
-				target = NAV
-				type = annex
+			SPD = {
+				add_ideas = TR_SPR_civwar
+				declare_war_on = {
+					target = SPR
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPC
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPD
+					type = civil_war
+				}
+				declare_war_on = {
+					target = CAT
+					type = civil_war
+				}
+				declare_war_on = {
+					target = NAV
+					type = civil_war
+				}
 			}
-			create_wargoal = {
-				target = CAT
-				type = annex_everything
+			NAV = {
+				add_ideas = TR_SPR_civwar
+				declare_war_on = {
+					target = SPR
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPC
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPD
+					type = civil_war
+				}
+			}
+			CAT = {
+				add_ideas = TR_SPR_civwar
+				declare_war_on = {
+					target = SPR
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPC
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPD
+					type = civil_war
+				}
 			}
 		}
 	}
