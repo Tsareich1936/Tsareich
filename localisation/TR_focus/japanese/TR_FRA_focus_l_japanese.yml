@@ -30,6 +30,10 @@
  FRA_dip0: "外交方針を再確認"
  FRA_com_EU: "EUへの夢"
  FRA_com_EU2: "EUの結成"
+
+ FRA_dip_SPR: "スペインでの直接介入"
+ FRA_dip_SPR2: "コミューン政府への支援"
+
  FRA_dip: "反乱軍を鎮圧"
  FRA_dip1: "イギリスを打倒"
  FRA_dip_BEL: "フランドルの統合"

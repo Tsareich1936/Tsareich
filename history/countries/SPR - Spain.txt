@@ -228,6 +228,19 @@ create_dynamic_country = {
 	set_cosmetic_tag = SPD
 	inherit_technology = SPR
 }
+create_dynamic_country = {
+	original_tag = SPR
+	set_country_flag = SPR_theocracy_flag
+	set_politics = {
+		ruling_party = theocracy
+	}
+	set_popularities = {
+		theocracy  = 100
+	}
+	reserve_dynamic_country = yes
+	set_cosmetic_tag = SPE
+	inherit_technology = SPR
+}
 
 set_research_slots = 3
 

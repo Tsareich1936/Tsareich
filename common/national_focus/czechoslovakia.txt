@@ -1041,7 +1041,12 @@ focus_tree = {
 		icon = GFX_goal_anti_comintern_pact
 		cost = 0.00
 		available = {
-			always = no
+			GER = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+				}
+			}
 		}
 		x = 26
 		y = 0

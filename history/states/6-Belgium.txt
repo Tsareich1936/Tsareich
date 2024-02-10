@@ -33,6 +33,7 @@ state={
 		
 		add_core_of = HOL
 		add_core_of = BEL
+	    add_claim_by = FRA
 	}
 
 	provinces={
