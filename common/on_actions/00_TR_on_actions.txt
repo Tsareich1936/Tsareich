@@ -120,6 +120,26 @@ on_actions = {
 				}
 			}
 		}
+	effect = {#SPR set up
+		SPR = {
+			every_core_state = {
+				remove_core_of = SPA
+				remove_core_of = SPB
+				remove_core_of = SPC
+				remove_core_of = SPD
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = SPA
+					tag = SPB
+					tag = SPC
+					tag = SPD
+				}
+			}
+		}
+	}
 	effect = {#SER set up
 			SER = {
 				country_event = {

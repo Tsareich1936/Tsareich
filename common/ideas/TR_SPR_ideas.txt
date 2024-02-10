@@ -27,4 +27,18 @@ ideas = {
 			}
 		}
 	}	
+	country = {
+		TR_SPR_inter_war= {
+			picture = "SPR_international_brigades"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				military_factory_donations = 2
+				army_morale_factor = 0.15
+				weekly_manpower = 1500
+			}
+		}
+	}
 }
