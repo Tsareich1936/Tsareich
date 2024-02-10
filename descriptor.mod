@@ -16,5 +16,6 @@ replace_path = "common/scripted_effects"
 replace_path = "common/decions/formable_nation_decions.txt"
 replace_path = "common/scripted_localisation"
 replace_path = "common/scripted_trigger"
+replace_path = "common/country_tag_aliases"
 
 

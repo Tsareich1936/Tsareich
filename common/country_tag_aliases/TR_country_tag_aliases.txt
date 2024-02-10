@@ -33,3 +33,20 @@ MDR = {#Madarska
 	original_tag = HUN
 	has_country_flag = HUN_madarska
 }
+
+SPA= {#American Republic
+	original_tag = SPR
+	has_country_flag = SPR_fascism_flag
+}
+SPB = {#American Military Government
+	original_tag = SPR
+	has_country_flag = SPR_kingdom_flag
+}
+SPC = {#Democratic Republic of America
+	original_tag = SPR
+	has_country_flag = SPR_communism_flag
+}
+SPD = {#Democratic Republic of America
+	original_tag = SPR
+	has_country_flag = SPR_neutrality_flag
+}

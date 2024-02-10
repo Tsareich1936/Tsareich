@@ -1,23 +1,18 @@
-
 state={
-	id=166
-	name="STATE_166"
+	id=170
+	name="STATE_170"
 	resources={
-		steel=12
+		tungsten=4.000
 	}
 
 	history={
 		owner = SPR
 		victory_points = {
-			3816 3 
-		}
-		victory_points = {
-			7213 1 
+			6902 1 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 3 #was: 5
 			industrial_complex = 1
-			air_base = 3
 
 		}
 		add_core_of = SPR
@@ -25,10 +20,11 @@ state={
 	}
 
 	provinces={
-		813 948 3816 6878 7213 9812 11737 
+		809 931 985 3930 6866 6902 6948 6954 9839 9877 9917 9925 11756 11780 11798 11851 13230 
 	}
-	manpower=268365
+	manpower=1417652
 	buildings_max_level_factor=1.000
 	state_category=town
-	local_supplies=13.000
+
+	local_supplies=0.0 
 }
