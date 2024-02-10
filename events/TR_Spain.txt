@@ -133,10 +133,6 @@ country_event = {
 					target = CAT
 					type = civil_war
 				}
-				declare_war_on = {
-					target = NAV
-					type = civil_war
-				}
 			}
 			SPC = {
 				add_ideas = TR_SPR_civwar
