@@ -25,6 +25,14 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_ideas = TR_SPR_civwar
+			SPR = {
+				every_core_state = {
+					add_core_of = SPA
+					add_core_of = SPB
+					add_core_of = SPC
+					add_core_of = SPD
+				}
+			}
             169  = { transfer_state_to = SPA }
 			171  = { transfer_state_to = SPA }
 			170  = { transfer_state_to = SPA }
@@ -37,8 +45,53 @@ country_event = {
 			}
 			SPA = {
 				add_ideas = TR_SPR_civwar
+			    add_ideas = war_economy
+				add_ideas = extensive_conscription
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPA
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPA
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPA
+					}
+				}
+				171= {
+					create_unit = {
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						owner = SPA
+					}
+					create_unit = {
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						owner = SPA
+					}
+					create_unit = {
+						division = "name = \División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						owner = SPA
+					}
+				}
+				290= {
+					create_unit = {
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5"
+						owner = SPA
+					}
+					create_unit = {
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						owner = SPA
+					}
+					create_unit = {
+						division = "name = \División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						owner = SPA
+					}
+				}
+
 			}
-			set_country_flag = TR_spr_civwar
+			set_country_flag = TR_spr_civ_war
 		}
 	}
 
@@ -71,7 +124,7 @@ country_event = {
 
 	trigger = {
 		tag = SPR
-		has_country_flag =  TR_spr_civwar
+		has_country_flag =  TR_spr_civ_war
 		date > 1936.3.16 # Trigger at some point after 1936 elections
 	}
 
@@ -91,7 +144,16 @@ country_event = {
 			1043  = { transfer_state_to = SPD }
 			165  = { transfer_state_to = CAT }
 			792  = { transfer_state_to = NAV }
-			add_ideas = TR_SPR_no_morale
+			SPR = {
+				add_ideas = TR_SPR_no_morale
+			every_owned_state = {
+				create_unit = {
+					division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+					owner = SPR
+				}
+			}
+			}
+			
 			SPA = {
 				add_ideas = TR_SPR_civwar
 				declare_war_on = {
@@ -117,6 +179,51 @@ country_event = {
 			}
 			SPB = {
 				add_ideas = TR_SPR_civwar
+			    add_ideas = war_economy
+				add_ideas = extensive_conscription
+				add_manpower = 70000
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPB
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPB
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPB
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPB
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPB
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPB
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPB
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPB
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPB
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPB
+					}
+				}
 				declare_war_on = {
 					target = SPR
 					type = civil_war
@@ -133,13 +240,35 @@ country_event = {
 					target = CAT
 					type = civil_war
 				}
-				declare_war_on = {
-					target = NAV
-					type = civil_war
-				}
 			}
 			SPC = {
+				add_ideas = TR_SPR_inter_war
 				add_ideas = TR_SPR_civwar
+			    add_ideas = war_economy
+				add_ideas = extensive_conscription
+				add_manpower = 100000
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPC
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPC
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPC
+					}
+					create_unit = {
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						owner = SPC
+					}
+					create_unit = {
+						division = "name = \División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						owner = SPC
+					}
+				}
 				declare_war_on = {
 					target = SPR
 					type = civil_war
@@ -163,6 +292,44 @@ country_event = {
 			}
 			SPD = {
 				add_ideas = TR_SPR_civwar
+			    add_ideas = war_economy
+				add_ideas = extensive_conscription
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPD
+					}
+					create_unit = {
+						division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPD
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPD
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPD
+					}
+					create_unit = {
+						division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPD
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPD
+					}
+				}
+				1043 = {
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPD
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPD
+					}
+				}
 				declare_war_on = {
 					target = SPR
 					type = civil_war
@@ -186,6 +353,30 @@ country_event = {
 			}
 			NAV = {
 				add_ideas = TR_SPR_civwar
+			    add_ideas = war_economy
+				add_ideas = extensive_conscription
+				792 = {
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = NAV
+					}
+					create_unit = {
+						division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = NAV
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = NAV
+					}
+					create_unit = {
+						division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = NAV
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = NAV
+					}
+				}
 				declare_war_on = {
 					target = SPR
 					type = civil_war
@@ -200,7 +391,44 @@ country_event = {
 				}
 			}
 			CAT = {
-				add_ideas = TR_SPR_civwar
+			}
+			add_ideas = TR_SPR_civwar
+			add_ideas = war_economy
+			add_ideas = extensive_conscription
+			165 = {
+				create_unit = {
+					division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+					owner = CAT
+				}
+				create_unit = {
+					division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+					owner = CAT
+				}
+				create_unit = {
+					division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+					owner = CAT
+				}
+				create_unit = {
+					division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+					owner = CAT
+				}
+				create_unit = {
+					division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+					owner = CAT
+				}
+				create_unit = {
+					division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+					owner = CAT
+				}
+				create_unit = {
+					division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+					owner = CAT
+				}
+				create_unit = {
+					division = "name = \División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+					owner = CAT
+				}
+			}
 				declare_war_on = {
 					target = SPR
 					type = civil_war
