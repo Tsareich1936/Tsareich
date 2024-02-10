@@ -7,3 +7,11 @@ TR_mistery = {
 		date = 1936.1.2
 	}
 }
+TR_mistery_occupation = {
+	allowed = {
+		tag = NAB
+	}
+	visible = {
+		always = yes
+	}
+}

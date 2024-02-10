@@ -96,5 +96,7 @@ set_popularities = {
 	anarchism = 100
 }
 
-# add_ideas = {
-# }
+add_ideas = {
+	revolutional_economic
+	TR_mistery_power
+}
