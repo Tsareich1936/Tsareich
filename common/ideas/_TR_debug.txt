@@ -18,5 +18,19 @@ ideas = {
 				conscription_factor = 0.02
 			}
 		}
+		TR_mistery_power = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 999
+				production_factory_efficiency_gain_factor = 100
+				production_factory_start_efficiency_factor = 100
+				production_factory_max_efficiency_factor = 100
+				industrial_capacity_factory = 100
+				weekly_manpower = 1000000
+			}
+		}
 	}
 }

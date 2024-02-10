@@ -1,0 +1,187 @@
+TR_mistery = {
+	TR_approach_to_mistery = {
+		allowed = {
+			tag = BRA
+			is_historical_focus_on = no
+		}
+		visible = {
+			date = 1936.1.2
+		}
+		available = {
+			is_ai = no
+			NOT = {
+				has_global_flag = TR_mistery_appeared
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		priority = 0
+		complete_effect = {
+			280 = {
+				transfer_state_to = NAB
+			}
+			NAB = {
+				hidden_effect = {
+					every_state = {
+						add_core_of = NAB
+					}
+					change_tag_from = BRA
+				}
+			}
+			set_global_flag = TR_mistery_appeared
+		}
+	}
+}
+TR_mistery_occupation = {
+	TR_mistery_war = {
+		allowed = {
+			tag = NAB
+		}
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			base = 100000
+		}
+		priority = 100000
+		complete_effect = {
+			NAB = {
+				every_country = {
+					NAB = {
+						create_wargoal = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+				}
+			}
+		}
+	}
+	TR_mistery_resource = {
+		allowed = {
+			tag = NAB
+		}
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			base = 100000
+		}
+		priority = 100000
+		days_re_enable = 7
+		complete_effect = {
+			NAB = {
+				every_owned_state = {
+					add_resource = {
+						type = steel
+						amount = 6666
+					}
+					add_resource = {
+						type = aluminium
+						amount = 6666
+					}
+					add_resource = {
+						type = oil
+						amount = 6666
+					}
+					add_resource = {
+						type = tungsten
+						amount = 6666
+					}
+					add_resource = {
+						type = rubber
+						amount = 6666
+					}
+					add_resource = {
+						type = chromium
+						amount = 6666
+					}
+				}
+			}
+		}
+	}
+	TR_mistery_factory = {
+		allowed = {
+			tag = NAB
+		}
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			base = 100000
+		}
+		priority = 100000
+		days_re_enable = 7
+		complete_effect = {
+			NAB = {
+				add_offsite_building = {
+					type = arms_factory
+					level = 10
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
+				}
+				280 = {
+					set_state_controller_to = BRA
+					transfer_state_to = NAB
+				}
+			}
+		}
+	}
+	TR_mistery_unit = {
+		allowed = {
+			tag = NAB
+		}
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				num_divisions < 500
+				factor = 99999
+				
+			}
+		}
+		days_re_enable = 7
+		priority = 100000
+		complete_effect = {
+			NAB = {
+				division_template = {
+					name = "∇"
+					regiments = {
+						guellira = { x = 0 y = 0  }
+						guellira = { x = 0 y = 1  }
+						guellira = { x = 0 y = 2  }
+						guellira = { x = 0 y = 3  }
+						guellira = { x = 0 y = 4  }
+						guellira = { x = 1 y = 0  }
+						guellira = { x = 1 y = 1  }
+						guellira = { x = 1 y = 2  }
+						guellira = { x = 1 y = 3  }
+						guellira = { x = 1 y = 4  }
+						guellira = { x = 2 y = 0  }
+						guellira = { x = 2 y = 1  }
+						guellira = { x = 2 y = 2  }
+						guellira = { x = 2 y = 3  }
+						guellira = { x = 2 y = 4  }
+						guellira = { x = 3 y = 0  }
+						guellira = { x = 3 y = 1  }
+						guellira = { x = 3 y = 2  }
+						guellira = { x = 3 y = 3  }
+						guellira = { x = 3 y = 4  }
+					}
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"∇\" division_template = \"∇\" start_experience_factor = 1" 
+						owner = PREV
+						count = 5
+					}
+				}
+			}
+		}
+	}
+}

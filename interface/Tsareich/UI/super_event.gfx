@@ -3,9 +3,13 @@ spriteTypes = {
 		name = GFX_TR_super_event_window
 		textureFile = "gfx/interface/UI/super_event_window.dds"
 	}
+	# spriteType = {
+	# 	name = GFX_TR_super_event_descriptionbg
+	# 	textureFile = "gfx/interface/UI/super_event_descriptionbg.dds"
+	# }
 	spriteType = {
-		name = GFX_TR_super_event_descriptionbg
-		textureFile = "gfx/interface/UI/super_event_descriptionbg.dds"
+		name = GFX_TR_super_event_blank
+		textureFile = "gfx/interface/UI/super_event_window_blank.dds"
 	}
 	spriteType = {
 		name = GFX_TR_super_event_button
