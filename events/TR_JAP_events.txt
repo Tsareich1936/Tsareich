@@ -759,24 +759,6 @@ country_event ={                 #########  右翼政治団体が首相を襲撃
 	}
 }
 
-country_event = {            #〇4
-	id = TR_japan.19
-	title = TR_japan.19.t
-	desc = TR_japan.19.d
-	is_triggered_only = yes
-	immediate = {
-		navy_experience = 100
-	}
-	option = {
-		name = TR_japan.19.a
-		add_ideas =JAP_Navy_4_1
-	}
-	option = {
-		name = TR_japan.19.b
-		add_ideas = JAP_Navy_4_2
-	}
-}
-
 country_event = {            # 戦艦か空母か
 	id = TR_japan.20
 	title = TR_japan.20.t
@@ -977,20 +959,6 @@ country_event = {        # 公害問題
 	option = {
 		name = TR_japan.29.a
 		add_ideas = JAP_pollution
-	}
-}
-
-country_event = {       #
-	id = TR_japan.30
-	title = TR_japan.30.t
-	desc = TR_japan.30.d
-	is_triggered_only = yes
-	option = {
-		name = TR_japan.30.a
-		
-	}
-	option = {
-		name = TR_japan.30.b
 	}
 }
 
@@ -1735,7 +1703,7 @@ country_event = {  # 戒厳令
 country_event = { # election
 	id = TR_japan.61
 	title = TR_japan.61.t
-	desc = TR_japa.61.d
+	desc = TR_japan.61.d
 	is_triggered_only = yes
 	option = {
 		name = TR_japan.61.a
@@ -1773,9 +1741,13 @@ country_event = { #  クーデター
 			}
 		}
 		create_country_leader = {
-			name = JAP_Hisaichi_Terauchi
+			name = JAP_hisaichi_terauchi
 			picture = GFX_Portrait_Hisaichi_Terauchi
 			ideology = fascism_ideology
+		}
+		load_focus_tree = {
+			tree = TR_japan_focus_army
+
 		}
 		if = {
 			limit = {
@@ -1908,6 +1880,9 @@ country_event = {  ##  navyによる逆クーデター
 			JAP = {
 				retire_country_leader = yes
 			}
+		}
+		load_focus_tree = {
+			tree = TR_japan_focus_navy
 		}
 		create_country_leader = {
 			name = JAP_Kantoro_Suziki
@@ -2554,3 +2529,78 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = TR_japan.91
+	is_triggered_only = yes
+	title = TR_japan.91.t
+	desc = TR_japan.91.d
+	immediate = {
+		navy_experience = 100
+	}
+	option = {
+		name = TR_japan.91.a
+		add_ideas = JAP_Navy_4_1
+	}
+	option = {
+		name = TR_japan.91.b
+		add_ideas = JAP_Navy_4_2
+	}
+}
+
+country_event = {
+	id = TR_japan.92
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				JAP = {
+					or = {
+						has_idea = JAP_interservice_rivalry_army_dominant
+						has_idea = JAP_interservice_rivalry_army_strengthened
+					}
+				}
+			}
+			JAP = {
+				country_event = {
+					id = TR_japan.93
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					or = {
+						has_idea = JAP_interservice_rivalry_navy_dominant
+						has_idea = JAP_interservice_rivalry_navy_strengthened
+					}
+				}
+			}
+			JAP = {
+				country_event = {
+					id = TR_japan.94
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TR_japan.93
+	is_triggered_only = yes
+	title = TR_japan.93.t
+	desc = TR_japan.93.d
+	option = {
+		name = TR_japan.93.a
+		load_focus_tree = japan_focus_Army
+		complete_national_focus = jap_Minister_of_War_of_Active_Military_Service
+		remove_power_balance = {
+			id = JAP_balance_of_power
+		}
+	}
+}
+
+country_event = {
+	id = TR_japan.94
+
+}

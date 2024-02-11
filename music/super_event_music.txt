@@ -1,0 +1,15 @@
+music_station = "super_event_music"
+music = {
+    song = "risorgimento_italiano"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+music = {
+    song = "when_johnny_comes_marching_home"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}

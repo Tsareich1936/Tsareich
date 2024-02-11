@@ -50,3 +50,7 @@ SPD = {#Democratic Republic of America
 	original_tag = SPR
 	has_country_flag = SPR_anarchism_flag
 }
+SPE = {#Democratic Republic of America
+	original_tag = SPR
+	has_country_flag = SPR_theocracy_flag
+}	

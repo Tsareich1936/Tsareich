@@ -24,7 +24,6 @@ country_event = {
 	}
 	immediate = {
 		hidden_effect = {
-			add_ideas = TR_SPR_civwar
 			SPR = {
 				every_core_state = {
 					add_core_of = SPA
@@ -60,6 +59,10 @@ country_event = {
 						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 						owner = SPA
 					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPA
+					}
 				}
 				171= {
 					create_unit = {
@@ -71,7 +74,7 @@ country_event = {
 						owner = SPA
 					}
 					create_unit = {
-						division = "name = \División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
 						owner = SPA
 					}
 				}
@@ -86,6 +89,20 @@ country_event = {
 					}
 					create_unit = {
 						division = "name = \División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						owner = SPA
+					}
+				}
+				169= {
+					create_unit = {
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5"
+						owner = SPA
+					}
+					create_unit = {
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						owner = SPA
+					}
+					create_unit = {
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
 						owner = SPA
 					}
 				}
@@ -137,7 +154,6 @@ country_event = {
 			791  = { transfer_state_to = SPB }
 			172  = { transfer_state_to = SPC }
 			1041  = { transfer_state_to = SPC }
-			177  = { transfer_state_to = SPC }
 			1044  = { transfer_state_to = SPC }
 			167  = { transfer_state_to = SPD }
 			794  = { transfer_state_to = SPD }
@@ -223,6 +239,10 @@ country_event = {
 						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 						owner = SPB
 					}
+					create_unit = {
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						owner = SPB
+					}
 				}
 				declare_war_on = {
 					target = SPR
@@ -261,11 +281,23 @@ country_event = {
 						owner = SPC
 					}
 					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPC
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPC
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPC
+					}
+					create_unit = {
 						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
 						owner = SPC
 					}
 					create_unit = {
-						division = "name = \División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
 						owner = SPC
 					}
 				}
@@ -300,7 +332,11 @@ country_event = {
 						owner = SPD
 					}
 					create_unit = {
-						division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPD
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 						owner = SPD
 					}
 					create_unit = {
@@ -312,7 +348,7 @@ country_event = {
 						owner = SPD
 					}
 					create_unit = {
-						division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 						owner = SPD
 					}
 					create_unit = {
@@ -321,6 +357,10 @@ country_event = {
 					}
 				}
 				1043 = {
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPD
+					}
 					create_unit = {
 						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 						owner = SPD
@@ -369,11 +409,23 @@ country_event = {
 						owner = NAV
 					}
 					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = NAV
+					}
+					create_unit = {
 						division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 						owner = NAV
 					}
 					create_unit = {
 						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = NAV
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = NAV
+					}
+					create_unit = {
+						division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 						owner = NAV
 					}
 				}
@@ -391,7 +443,6 @@ country_event = {
 				}
 			}
 			CAT = {
-			}
 			add_ideas = TR_SPR_civwar
 			add_ideas = war_economy
 			add_ideas = extensive_conscription
@@ -421,11 +472,19 @@ country_event = {
 					owner = CAT
 				}
 				create_unit = {
+					division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+					owner = CAT
+				}
+				create_unit = {
+					division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+					owner = CAT
+				}
+				create_unit = {
 					division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
 					owner = CAT
 				}
 				create_unit = {
-					division = "name = \División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+					division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
 					owner = CAT
 				}
 			}
@@ -461,6 +520,126 @@ country_event = {
 	}
 }
 
+
+
+country_event = {
+	id = TR_spain.3
+	title = TR_spain.3.t
+	desc = TR_spain.3.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPR
+		has_country_flag = TR_spr_civ_war
+		date > 1936.4.6 # Trigger at some point after 1936 elections
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		hidden_effect = {
+			SPR = {
+				every_core_state = {
+					add_core_of = SPE
+				}
+			}
+            175  = { transfer_state_to = SPE }
+			1042  = { transfer_state_to = SPE }
+			declare_war_on = {
+				target = SPE
+				type = civil_war
+			}
+			SPA = {
+				declare_war_on = {
+					target = SPE
+					type = civil_war
+				}
+			}	
+			SPE = {
+				add_ideas = TR_SPR_civwar
+			    add_ideas = war_economy
+				add_ideas = extensive_conscription
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPE
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPE
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPE
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPE
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPE
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = SPE
+					}
+				}
+				175= {
+					create_unit = {
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						owner = SPE
+					}
+					create_unit = {
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						owner = SPE
+					}
+					create_unit = {
+						division = "name = \"División de Infantería\" division_template = \"División de Infantería\" start_experience_factor = 0.5" 
+						owner = SPE
+					}
+				}
+				declare_war_on = {
+					target = SPB
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPC
+					type = civil_war
+				}
+				declare_war_on = {
+					target = SPD
+					type = civil_war
+				}
+				declare_war_on = {
+					target = NAv
+					type = civil_war
+				}
+				declare_war_on = {
+					target = CAT
+					type = civil_war
+				}
+			}
+		}
+
+		option = { # Support Nationalists
+		    name = TR_spain.3.a
+		    trigger = { is_ai = no }
+		    hidden_effect = {
+		    }
+		    custom_effect_tooltip = nationalists_chosen
+	    }
+	    option = { # Support Republicans
+		    name = TR_spain.3.b
+		    hidden_effect = {
+			
+		    }
+		    custom_effect_tooltip = republicans_chosen
+	    }
+	}
 
 
 

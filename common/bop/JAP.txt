@@ -27,6 +27,9 @@ JAP_balance_of_power = {
 				set_country_flag = jap_government
 				mark_focus_tree_layout_dirty = yes
 			}
+			on_deactivate = {
+				clr_country_flag = jap_government
+			}
 			
 		}
 		range = {
@@ -61,6 +64,17 @@ JAP_balance_of_power = {
 				political_power_factor = -0.5
 				generate_wargoal_tension = -0.5
 			}
+			on_activate = {
+				hidden_effect = {
+					JAP = {
+						country_event = {
+							id = TR_japan.92
+						}
+					}
+				}
+
+
+			}
 		}
 		range = {
 			id = military_midle
@@ -81,6 +95,7 @@ JAP_balance_of_power = {
 				political_power_factor = -0.1
 				generate_wargoal_tension = -1
 			}
+
 		}
 	}
 
