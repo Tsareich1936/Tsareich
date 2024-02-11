@@ -3797,12 +3797,13 @@ focus_tree = {
     focus = {
         id = jap_navy_industry
         relative_position_id = jap_navy_nation_4
-        x = 7
+        x = 11
         y = 1
         prerequisite = {
             focus = jap_navy_nation_4
         }
     }
+
     focus = {
         id = jap_navy_industry_1
         relative_position_id = jap_navy_industry
@@ -4051,6 +4052,398 @@ focus_tree = {
             focus = jap_navy_bureancy_industry_2
         }
     }
+
+    # military
+
+    focus = {
+        id = jap_navy_military
+        relative_position_id = jap_navy_nation_4
+        x = -11
+        y = 1
+        prerequisite = {
+            focus = jap_navy_nation_4
+        }
+    }
+
+    focus = {
+        id = jap_navy_naval
+        relative_position_id = jap_navy_military
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_military
+        }
+    }
+
+    focus = {
+        id = jap_navy_BB
+        relative_position_id = jap_navy_naval
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_naval
+        }
+    }
+
+    focus = {
+        id = jap_navy_BB_1
+        relative_position_id = jap_navy_BB
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_BB
+        }
+    }
+
+    focus = {
+        id = jap_navy_BB_2
+        relative_position_id = jap_navy_BB_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_BB_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_BB_3
+        relative_position_id = jap_navy_BB_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_BB_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_DD
+        relative_position_id = jap_navy_naval
+        x = 4
+        y = 1
+        prerequisite = {
+            focus = jap_navy_naval
+        }
+    }
+
+    focus = {
+        id = jap_navy_DD_1
+        relative_position_id = jap_navy_DD
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_DD
+        }
+    }
+
+    focus = {
+        id = jap_navy_DD_2
+        relative_position_id = jap_navy_DD_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_DD_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_DD_3
+        relative_position_id = jap_navy_DD_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_DD_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_SS_1
+        relative_position_id = jap_navy_DD
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_DD
+        }
+    }
+
+    focus = {
+        id = jap_navy_SS_2
+        relative_position_id = jap_navy_SS_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_SS_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_SS_3
+        relative_position_id = jap_navy_SS_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_SS_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_CV
+        relative_position_id = jap_navy_naval
+        x = -4
+        y = 1
+        prerequisite = {
+            focus = jap_navy_naval
+        }
+    }
+
+    focus = {
+        id = jap_navy_CV_1
+        relative_position_id = jap_navy_CV
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_CV
+        }
+    }
+
+    focus = {
+        id = jap_navy_CV_2
+        relative_position_id = jap_navy_CV_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_CV_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_CV_3
+        relative_position_id = jap_navy_CV_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_CV_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_air
+        relative_position_id = jap_navy_CV
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_CV
+        }
+    }
+
+    focus = {
+        id = jap_navy_air_1
+        relative_position_id = jap_navy_air
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_air
+        }
+    }
+
+    focus = {
+        id = jap_navy_air_2
+        relative_position_id = jap_navy_air_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_air_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_army
+        relative_position_id = jap_navy_military
+        x = -4
+        y = 1
+        prerequisite = {
+            focus = jap_navy_military
+        }
+    }
+
+    focus = {
+        id = jap_navy_army_1
+        relative_position_id = jap_navy_army
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_army
+        }
+    }
+
+    focus = {
+        id = jap_navy_army_2
+        relative_position_id = jap_navy_army_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_army_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_army_3
+        relative_position_id = jap_navy_army_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_army_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_army_4
+        relative_position_id = jap_navy_army_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_army_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_military_1
+        relative_position_id = jap_navy_military
+        x = 0
+        y = 6
+        prerequisite = {
+            focus = jap_navy_army_4
+        }
+        prerequisite = {
+            focus = jap_navy_CV_3
+            focus = jap_navy_air_2
+        }
+        prerequisite = {
+            focus = jap_navy_BB_3
+        }
+        prerequisite = {
+            focus = jap_navy_SS_3
+            focus = jap_navy_DD_3
+        }
+    }
+
+
+    # 外交
+
+    focus = {
+        id = jap_navy_KOR
+        relative_position_id = jap_navy_nation_4
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_nation_4
+        }
+    }
+
+    focus = {
+        id = jap_navy_J_E
+        relative_position_id = jap_navy_KOR
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_KOR
+        }
+        mutually_exclusive = {
+            focus = jap_navy_J_U
+        }
+    }
+
+    focus = {
+        id = jap_navy_J_U
+        relative_position_id = jap_navy_KOR
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_KOR
+        }
+        mutually_exclusive = {
+            focus = jap_navy_J_E
+        }
+    }
+
+    focus = {
+        id = jap_navy_J_E_1
+        relative_position_id = jap_navy_J_E
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_navy_J_E
+        }
+    }
+
+    focus = {
+        id = jap_navy_J_E_2
+        relative_position_id = jap_navy_J_E
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_navy_J_E
+        }
+    }
+
+    focus = {
+        id = jap_navy_J_E_3
+        relative_position_id = jap_navy_J_E_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_J_E_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_J_E_4
+        relative_position_id = jap_navy_J_E_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_J_E_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_J_U_1
+        relative_position_id = jap_navy_J_U
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_navy_J_U
+        }
+    }
+
+    focus = {
+        id = jap_navy_J_U_2
+        relative_position_id = jap_navy_J_U
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_navy_J_U
+        }
+    }
+
+    focus = {
+        id = jap_navy_J_U_3
+        relative_position_id = jap_navy_J_U_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_J_U_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_J_U_4
+        relative_position_id = jap_navy_J_U_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_J_U_2
+        }
+    }    
 }
 
 focus_tree = {
