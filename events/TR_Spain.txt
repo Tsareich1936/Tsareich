@@ -49,6 +49,7 @@ country_event = {
 				add_ideas = TR_SPR_civwar
 			    add_ideas = war_economy
 				add_ideas = extensive_conscription
+				load_focus_tree = SPR_foucs
 				every_owned_state = {
 					create_unit = {
 						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
@@ -175,6 +176,7 @@ country_event = {
 			
 			SPA = {
 				add_ideas = TR_SPR_civwar
+				load_focus_tree = SPR_foucs
 				declare_war_on = {
 					target = SPB
 					type = civil_war
@@ -275,6 +277,7 @@ country_event = {
 				add_ideas = TR_SPR_civwar
 			    add_ideas = war_economy
 				add_ideas = extensive_conscription
+				load_focus_tree = SPR_foucs
 				add_manpower = 100000
 				every_owned_state = {
 					create_unit = {
@@ -338,6 +341,7 @@ country_event = {
 				add_ideas = TR_SPR_civwar
 			    add_ideas = war_economy
 				add_ideas = extensive_conscription
+				load_focus_tree = SPR_foucs
 				every_owned_state = {
 					create_unit = {
 						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
@@ -410,6 +414,7 @@ country_event = {
 				add_ideas = TR_SPR_civwar
 			    add_ideas = war_economy
 				add_ideas = extensive_conscription
+				load_focus_tree = SPR_foucs
 				792 = {
 					create_unit = {
 						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
@@ -464,6 +469,7 @@ country_event = {
 			add_ideas = TR_SPR_civwar
 			add_ideas = war_economy
 			add_ideas = extensive_conscription
+			load_focus_tree = SPR_foucs
 			165 = {
 				create_unit = {
 					division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
@@ -583,6 +589,7 @@ country_event = {
 				add_ideas = TR_SPR_civwar
 			    add_ideas = war_economy
 				add_ideas = extensive_conscription
+				load_focus_tree = SPR_foucs
 				every_owned_state = {
 					create_unit = {
 						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 

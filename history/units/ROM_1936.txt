@@ -305,7 +305,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 16
 		}
-		location = 6682
+		location = 6667
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -317,7 +317,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 17
 		}
-		location = 6697
+		location = 11605
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -329,7 +329,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 18
 		}
-		location = 3696
+		location = 6695
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -341,7 +341,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 20
 		}
-		location = 713
+		location = 660
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -353,7 +353,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 6682
+		location = 6667
 		division_template = "Brigada de Cavalerie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -367,7 +367,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 690
+		location = 11619
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -379,7 +379,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 690
+		location = 11619
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -391,7 +391,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 19
 		}
-		location = 690
+		location = 11619
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -405,7 +405,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 6711
+		location = 11689
 		division_template = "Brigada de Munte"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -417,7 +417,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 6711
+		location = 11689
 		division_template = "Brigada de Munte"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -429,7 +429,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 6711
+		location = 11689
 		division_template = "Brigada de Munte"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -441,7 +441,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 6711
+		location =  11689
 		division_template = "Brigada de Munte"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
