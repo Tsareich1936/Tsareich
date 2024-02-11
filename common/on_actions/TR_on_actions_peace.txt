@@ -195,7 +195,7 @@ on_actions = {
 					FROM = {
 						OR = {
 							tag	= SER
-							tag = HUN
+							tag = ROM
 							tag = CZE
 						}
 					}

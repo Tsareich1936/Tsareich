@@ -22,10 +22,16 @@
   JAP_intro_content0: "極東の憲兵にしてアジアで唯一の列強国たる大日本帝国は積極財政により幾度かの経済危機も乗り越え順調に国力を伸ばしている。\n先の戦争では日英同盟を口実に介入し、ドイツのアジア利権も獲得したことで国際的地位が高まっている。\nしかし、臣民はそうは思っていないようだ。臣民は今の大日本帝国の国際的立ち位置が国力に見合っていないものだと不満を募らせている。\n日清戦争以降、大規模な戦争を経験していない大日本帝国の軍隊は見かけ以上に弱体だ。\n臣民の不満と軍部からの政治的圧力に苦しむ政府はどのようにこの帝国をかじ取りしていくのだろうか。\n\n\n旭日は永遠に"
 
   # tab 4 #
-  TR_CURRENT_VERSION: "0.1"
+  TR_CURRENT_VERSION: "α 0.1"
   TR_CURRENT_VERSION_COMBINED: "Tsareich $TR_CURRENT_VERSION$"
   TR_welcome_splash_tab_4_header: "§Y $TR_CURRENT_VERSION_COMBINED$ にようこそ！\n\n\n\n\n\nTsarreich team§"
-  TR_welcome_splash_tab_4_content: "以下アルファベット順\nTop Dev: $TR_welcome_splash_tab_4_content_01$ \nDev:  $TR_welcome_splash_tab_4_content_02$"
+  TR_welcome_splash_tab_4_content: "以下アルファベット順\nTop Dev : $TR_welcome_splash_tab_4_content_01$\nStory : $TR_welcome_splash_tab_4_content_03$\nCoding : $TR_welcome_splash_tab_4_content_04$\nGraphics : $TR_welcome_splash_tab_4_content_05$\nGUI : $TR_welcome_splash_tab_4_content_06$\nGUI Coding : $TR_welcome_splash_tab_4_content_07$\nLocalize : $TR_welcome_splash_tab_4_content_08$"
   TR_welcome_splash_tab_4_content_00: "このMOD、Tsareich はまだ開発中のMODです。\n\nまだ要素などが出来上がっていませんが、雰囲気などを楽しんでください！"
   TR_welcome_splash_tab_4_content_01: "Min4r・Rin Kagura"
   TR_welcome_splash_tab_4_content_02: "Glocken Schneider・Lucy Prismriver・Mitibiki・Miraata・NY・saa_roog・Tdnjpn・UDL"
+  TR_welcome_splash_tab_4_content_03: "Min4r・Rin Kagura・UDL"
+  TR_welcome_splash_tab_4_content_04: "Jigoku・Min4r・Mitibiki・NY・Rin Kagura"
+  TR_welcome_splash_tab_4_content_05: "Lucy・NY・Tdnjpn・T75 kareraisu"
+  TR_welcome_splash_tab_4_content_06: "T75 kareraisu"
+  TR_welcome_splash_tab_4_content_07: "NY"
+  TR_welcome_splash_tab_4_content_08: "caesarinejiropkwministries"
