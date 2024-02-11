@@ -22,6 +22,7 @@ ideas = {
             }
             rule = {
 				can_create_factions = yes
+                can_send_volunteers = yes
 			}
         }
 
@@ -547,6 +548,31 @@ ideas = {
                 army_morale_factor = 0.1
                 supply_consumption_factor = -0.125
                 winter_attrition_factor = -0.75
+            }
+        }
+
+        RUS_empire_diplo = {
+            picture = generic_intel_bonus
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                send_volunteers_tension = -1
+                
+                lend_lease_tension = -1
+                hidden_modifier = {
+                    send_volunteer_factor = 1.5
+                }
             }
         }
 
