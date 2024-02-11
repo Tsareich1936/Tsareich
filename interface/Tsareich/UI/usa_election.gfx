@@ -125,7 +125,7 @@ spriteTypes = {
 		}
 	spriteType = {
 		name = GFX_TR_USA_west_virginia_lib
-		textureFile = "gfx/interface/UI/usa_election/states/westirginia_lib.dds"
+		textureFile = "gfx/interface/UI/usa_election/states/west_virginia_lib.dds"
 		}
 	spriteType = {
 		name = GFX_TR_USA_oklahoma_com
