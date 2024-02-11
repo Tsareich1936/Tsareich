@@ -851,8 +851,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GER_Revisionism
-		text = GER_Revisionism
+		id = GER_compromise_with_revisionists
+		text = GER_compromise_with_revisionists
 		icon = GFX_goal_generic_dangerous_deal
 		cost = 5.00
 		prerequisite = {
@@ -894,7 +894,7 @@ focus_tree = {
 			focus = GER_leadership_reform
 		}
 		prerequisite = {
-			focus = GER_Revisionism
+			focus = GER_compromise_with_revisionists
 		}
 		x = 27
 		y = 5
@@ -943,6 +943,10 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			add_political_power = 25
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
 			swap_ideas = {
 				remove_idea = GER_Dolchstosslegende
 				add_idea = GER_totalitarian_oppression
@@ -1047,7 +1051,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_support_for_the_spanish_civilwar
-		icon = GFX_focus_generic_befriend_republican_spain
+		text = GER_support_for_the_spanish_civilwar
+		icon = GFX_focus_generic_befriend_communist_spain_focus
 		cost = 5.00
 		prerequisite = {
 			focus = GER_approaching_international
@@ -1062,7 +1067,7 @@ focus_tree = {
 	focus = {
 		id = GER_preparing_for_battle
 		icon = GFX_focus_SWE_refuge_for_revolutionaries
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_1936_party_conference
 		}
@@ -1082,7 +1087,7 @@ focus_tree = {
 	focus = {
 		id = GER_war_mobilization_law
 		icon = GFX_goal_generic_military_sphere
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = GER_preparing_for_battle
 		}
@@ -1120,7 +1125,7 @@ focus_tree = {
 	focus = {
 		id = GER_workers_take_up_arms
 		icon = GFX_focus_ETH_freedom_at_gunpoint
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = GER_preparing_for_battle
 		}
@@ -1140,7 +1145,7 @@ focus_tree = {
 	focus = {
 		id = GER_war_economy
 		icon = GFX_goal_generic_major_war
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = GER_preparing_for_battle
 		}
@@ -1229,7 +1234,7 @@ focus_tree = {
 	focus = {
 		id = GER_red_volunteer_army
 		icon = GFX_focus_generic_limited_social_mobilization
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_workers_take_up_arms
 		}
@@ -1252,7 +1257,7 @@ focus_tree = {
 	focus = {
 		id = GER_Western_Europe
 		icon = GFX_focus_SWE_the_threat_of_the_iron_curtain
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_red_volunteer_army
 		}
@@ -1264,13 +1269,15 @@ focus_tree = {
 	focus = {
 		id = GER_Eastern_Europe
 		icon = GFX_focus_usa_focus_on_europe
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_red_volunteer_army
 		}
 		x = 32
 		y = 5
-
+		ai_will_do = {
+			factor = 320
+		}
 	}
 	focus = {
 		id = GER_supporting_great_britain
@@ -1282,12 +1289,14 @@ focus_tree = {
 		}
 		x = 31
 		y = 6
-
+		ai_will_do = {
+			factor = 160
+		}
 	}
 	focus = {
 		id = GER_break_off_a_bridgehead
 		icon = GFX_focus_hol_gateway_to_europe
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_Eastern_Europe
 		}
@@ -1337,7 +1346,7 @@ focus_tree = {
 	focus = {
 		id = GER_inciting_revolution_in_hungary
 		icon = GFX_goal_generic_attack_allies
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_protecting_czech_communists
 		}
@@ -1366,13 +1375,15 @@ focus_tree = {
 	focus = {
 		id = GER_Nordic
 		icon = GFX_focus_generic_nordic_territory
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_red_volunteer_army
 		}
 		x = 40
 		y = 5
-
+		ai_will_do = {
+			factor = 160
+		}
 	}
 	focus = {
 		id = GER_support_finland
@@ -1459,7 +1470,7 @@ focus_tree = {
 	focus = {
 		id = GER_DEN
 		icon = GFX_focus_generic_befriend_denmark
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_Nordic
 		}
@@ -1473,7 +1484,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_104
 		icon = GFX_focus_generic_scandinavia_flags
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_reclaiming_schleswig
 		}
@@ -2127,7 +2138,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_south_tyrol
-		icon = GFX_focus_renounce_the_treaty_of_triannon
+		icon = GFX_goal_generic_small_arms
 		cost = 5.00
 		prerequisite = {
 			focus = GER_distance_from_international
@@ -2378,7 +2389,7 @@ focus_tree = {
 	focus = {
 		id = GER_UKR
 		icon = GFX_goal_generic_military_deal
-		cost = 10.00
+		cost = 2.50
 		prerequisite = {
 			focus = GER_war_plan_against_russia
 		}
@@ -2389,7 +2400,7 @@ focus_tree = {
 	focus = {
 		id = GER_balt
 		icon = GFX_goal_generic_military_deal
-		cost = 10.00
+		cost = 2.50
 		prerequisite = {
 			focus = GER_war_plan_against_russia
 		}
@@ -2400,7 +2411,7 @@ focus_tree = {
 	focus = {
 		id = GER_Straits_of_Dover
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_supporting_great_britain
 		}
@@ -2414,7 +2425,7 @@ focus_tree = {
 	focus = {
 		id = GER_siegfried_fortress_line
 		icon = GFX_goal_generic_construct_military
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_distance_from_international
 		}
@@ -2432,5 +2443,22 @@ focus_tree = {
 		x = 25
 		y = 10
 
+	}
+	focus = {
+		id = GER_attack_france
+		icon = GFX_focus_attack_france
+		cost = 2.50
+		prerequisite = {
+			focus = GER_siegfried_fortress_line
+		}
+		x = 17
+		y = 10
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+				expire = 0
+			}
+		}
 	}
 }
