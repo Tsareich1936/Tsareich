@@ -19,4 +19,581 @@ spriteTypes = {
 		name = GFX_maine_com
 		textureFile = "gfx/interface/UI/usa_election/states/maine_com.dds"
 	}
+	spriteType = {
+		name = GFX_TR_USA_arkansas_com
+		textureFile = "gfx/interface/UI/usa_election/states/arkansas_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_arkansas_con
+		textureFile = "gfx/interface/UI/usa_election/states/arkansas_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_arkansas_lib
+		textureFile = "gfx/interface/UI/usa_election/states/arkansas_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_iowa_com
+		textureFile = "gfx/interface/UI/usa_election/states/iowa_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_iowa_con
+		textureFile = "gfx/interface/UI/usa_election/states/iowa_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_iowa_lib
+		textureFile = "gfx/interface/UI/usa_election/states/iowa_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_idaho_com
+		textureFile = "gfx/interface/UI/usa_election/states/idaho_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_idaho_con
+		textureFile = "gfx/interface/UI/usa_election/states/idaho_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_idaho_lib
+		textureFile = "gfx/interface/UI/usa_election/states/idaho_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_alabama_com
+		textureFile = "gfx/interface/UI/usa_election/states/alabama_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_alabama_con
+		textureFile = "gfx/interface/UI/usa_election/states/alabama_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_alabama_lib
+		textureFile = "gfx/interface/UI/usa_election/states/alabama_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_arizona_com
+		textureFile = "gfx/interface/UI/usa_election/states/arizona_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_arizona_con
+		textureFile = "gfx/interface/UI/usa_election/states/arizona_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_arizona_lib
+		textureFile = "gfx/interface/UI/usa_election/states/arizona_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_illinois_com
+		textureFile = "gfx/interface/UI/usa_election/states/illinois_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_illinois_con
+		textureFile = "gfx/interface/UI/usa_election/states/illinois_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_illinois_lib
+		textureFile = "gfx/interface/UI/usa_election/states/illinois_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_indiana_com
+		textureFile = "gfx/interface/UI/usa_election/states/indiana_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_indiana_con
+		textureFile = "gfx/interface/UI/usa_election/states/indiana_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_indiana_lib
+		textureFile = "gfx/interface/UI/usa_election/states/indiana_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_wisconsin_com
+		textureFile = "gfx/interface/UI/usa_election/states/wisconsin_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_wisconsin_con
+		textureFile = "gfx/interface/UI/usa_election/states/wisconsin_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_wisconsin_lib
+		textureFile = "gfx/interface/UI/usa_election/states/wisconsin_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_west_virginia_com
+		textureFile = "gfx/interface/UI/usa_election/states/west_virginia_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_west_virginia_con
+		textureFile = "gfx/interface/UI/usa_election/states/west_virginia_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_west_virginia_lib
+		textureFile = "gfx/interface/UI/usa_election/states/westirginia_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_oklahoma_com
+		textureFile = "gfx/interface/UI/usa_election/states/oklahoma_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_oklahoma_con
+		textureFile = "gfx/interface/UI/usa_election/states/oklahoma_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_oklahoma_lib
+		textureFile = "gfx/interface/UI/usa_election/states/oklahoma_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_ohio_com
+		textureFile = "gfx/interface/UI/usa_election/states/ohio_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_ohio_con
+		textureFile = "gfx/interface/UI/usa_election/states/ohio_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_ohio_lib
+		textureFile = "gfx/interface/UI/usa_election/states/ohio_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_oregon_com
+		textureFile = "gfx/interface/UI/usa_election/states/oregon_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_oregon_con
+		textureFile = "gfx/interface/UI/usa_election/states/oregon_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_oregon_lib
+		textureFile = "gfx/interface/UI/usa_election/states/oregon_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_california_com
+		textureFile = "gfx/interface/UI/usa_election/states/california_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_california_con
+		textureFile = "gfx/interface/UI/usa_election/states/california_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_california_lib
+		textureFile = "gfx/interface/UI/usa_election/states/california_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_kansas_com
+		textureFile = "gfx/interface/UI/usa_election/states/kansas_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_kansas_con
+		textureFile = "gfx/interface/UI/usa_election/states/kansas_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_kansas_lib
+		textureFile = "gfx/interface/UI/usa_election/states/kansas_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_kentucky_com
+		textureFile = "gfx/interface/UI/usa_election/states/kentucky_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_kentucky_con
+		textureFile = "gfx/interface/UI/usa_election/states/kentucky_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_kentucky_lib
+		textureFile = "gfx/interface/UI/usa_election/states/kentucky_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_connecticut_com
+		textureFile = "gfx/interface/UI/usa_election/states/connecticut_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_connecticut_con
+		textureFile = "gfx/interface/UI/usa_election/states/connecticut_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_connecticut_lib
+		textureFile = "gfx/interface/UI/usa_election/states/connecticut_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_colorado_com
+		textureFile = "gfx/interface/UI/usa_election/states/colorado_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_colorado_con
+		textureFile = "gfx/interface/UI/usa_election/states/colorado_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_colorado_lib
+		textureFile = "gfx/interface/UI/usa_election/states/colorado_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_south_carolina_com
+		textureFile = "gfx/interface/UI/usa_election/states/south_carolina_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_south_carolina_con
+		textureFile = "gfx/interface/UI/usa_election/states/south_carolina_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_south_carolina_lib
+		textureFile = "gfx/interface/UI/usa_election/states/south_carolina_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_south_dakota_com
+		textureFile = "gfx/interface/UI/usa_election/states/south_dakota_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_south_dakota_con
+		textureFile = "gfx/interface/UI/usa_election/states/south_dakota_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_south_dakota_lib
+		textureFile = "gfx/interface/UI/usa_election/states/south_dakota_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_georgia_com
+		textureFile = "gfx/interface/UI/usa_election/states/georgia_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_georgia_con
+		textureFile = "gfx/interface/UI/usa_election/states/georgia_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_georgia_lib
+		textureFile = "gfx/interface/UI/usa_election/states/georgia_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_texas_com
+		textureFile = "gfx/interface/UI/usa_election/states/texas_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_texas_con
+		textureFile = "gfx/interface/UI/usa_election/states/texas_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_texas_lib
+		textureFile = "gfx/interface/UI/usa_election/states/texas_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_tennessee_com
+		textureFile = "gfx/interface/UI/usa_election/states/tennessee_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_tennessee_con
+		textureFile = "gfx/interface/UI/usa_election/states/tennessee_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_tennessee_lib
+		textureFile = "gfx/interface/UI/usa_election/states/tennessee_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_delaware_com
+		textureFile = "gfx/interface/UI/usa_election/states/delaware_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_delaware_con
+		textureFile = "gfx/interface/UI/usa_election/states/delaware_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_delaware_lib
+		textureFile = "gfx/interface/UI/usa_election/states/delaware_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_new_jersey_com
+		textureFile = "gfx/interface/UI/usa_election/states/new_jersey_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_new_jersey_con
+		textureFile = "gfx/interface/UI/usa_election/states/new_jersey_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_new_jersey_lib
+		textureFile = "gfx/interface/UI/usa_election/states/new_jersey_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_new_hampshire_com
+		textureFile = "gfx/interface/UI/usa_election/states/new_hampshire_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_new_hampshire_con
+		textureFile = "gfx/interface/UI/usa_election/states/new_hampshire_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_new_hampshire_lib
+		textureFile = "gfx/interface/UI/usa_election/states/new_hampshire_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_new_mexico_com
+		textureFile = "gfx/interface/UI/usa_election/states/new_mexico_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_new_mexico_con
+		textureFile = "gfx/interface/UI/usa_election/states/new_mexico_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_new_mexico_lib
+		textureFile = "gfx/interface/UI/usa_election/states/new_mexico_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_new_york_com
+		textureFile = "gfx/interface/UI/usa_election/states/new_york_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_new_york_con
+		textureFile = "gfx/interface/UI/usa_election/states/new_york_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_new_york_lib
+		textureFile = "gfx/interface/UI/usa_election/states/new_york_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_nevada_com
+		textureFile = "gfx/interface/UI/usa_election/states/nevada_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_nevada_con
+		textureFile = "gfx/interface/UI/usa_election/states/nevada_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_nevada_lib
+		textureFile = "gfx/interface/UI/usa_election/states/nevada_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_nebraska_com
+		textureFile = "gfx/interface/UI/usa_election/states/nebraska_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_nebraska_con
+		textureFile = "gfx/interface/UI/usa_election/states/nebraska_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_nebraska_lib
+		textureFile = "gfx/interface/UI/usa_election/states/nebraska_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_north_carolina_com
+		textureFile = "gfx/interface/UI/usa_election/states/north_carolina_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_north_carolina_con
+		textureFile = "gfx/interface/UI/usa_election/states/north_carolina_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_north_carolina_lib
+		textureFile = "gfx/interface/UI/usa_election/states/north_carolina_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_north_dakota_com
+		textureFile = "gfx/interface/UI/usa_election/states/north_dakota_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_north_dakota_con
+		textureFile = "gfx/interface/UI/usa_election/states/north_dakota_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_north_dakota_lib
+		textureFile = "gfx/interface/UI/usa_election/states/north_dakota_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_virginia_com
+		textureFile = "gfx/interface/UI/usa_election/states/virginia_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_virginia_con
+		textureFile = "gfx/interface/UI/usa_election/states/virginia_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_virginia_lib
+		textureFile = "gfx/interface/UI/usa_election/states/virginia_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_vermont_com
+		textureFile = "gfx/interface/UI/usa_election/states/vermont_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_vermont_con
+		textureFile = "gfx/interface/UI/usa_election/states/vermont_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_vermont_lib
+		textureFile = "gfx/interface/UI/usa_election/states/vermont_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_florida_com
+		textureFile = "gfx/interface/UI/usa_election/states/florida_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_florida_con
+		textureFile = "gfx/interface/UI/usa_election/states/florida_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_florida_lib
+		textureFile = "gfx/interface/UI/usa_election/states/florida_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_pennsylvania_com
+		textureFile = "gfx/interface/UI/usa_election/states/pennsylvania_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_pennsylvania_con
+		textureFile = "gfx/interface/UI/usa_election/states/pennsylvania_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_pennsylvania_lib
+		textureFile = "gfx/interface/UI/usa_election/states/pennsylvania_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_massachusetts_com
+		textureFile = "gfx/interface/UI/usa_election/states/massachusetts_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_massachusetts_con
+		textureFile = "gfx/interface/UI/usa_election/states/massachusetts_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_massachusetts_lib
+		textureFile = "gfx/interface/UI/usa_election/states/massachusetts_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_michigan_com
+		textureFile = "gfx/interface/UI/usa_election/states/michigan_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_michigan_con
+		textureFile = "gfx/interface/UI/usa_election/states/michigan_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_michigan_lib
+		textureFile = "gfx/interface/UI/usa_election/states/michigan_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_mississippi_com
+		textureFile = "gfx/interface/UI/usa_election/states/mississippi_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_mississippi_con
+		textureFile = "gfx/interface/UI/usa_election/states/mississippi_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_mississippi_lib
+		textureFile = "gfx/interface/UI/usa_election/states/mississippi_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_missouri_com
+		textureFile = "gfx/interface/UI/usa_election/states/missouri_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_missouri_con
+		textureFile = "gfx/interface/UI/usa_election/states/missouri_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_missouri_lib
+		textureFile = "gfx/interface/UI/usa_election/states/missouri_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_minnesota_com
+		textureFile = "gfx/interface/UI/usa_election/states/minnesota_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_minnesota_con
+		textureFile = "gfx/interface/UI/usa_election/states/minnesota_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_minnesota_lib
+		textureFile = "gfx/interface/UI/usa_election/states/minnesota_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_maine_com
+		textureFile = "gfx/interface/UI/usa_election/states/maine_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_maine_con
+		textureFile = "gfx/interface/UI/usa_election/states/maine_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_maine_lib
+		textureFile = "gfx/interface/UI/usa_election/states/maine_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_maryland_com
+		textureFile = "gfx/interface/UI/usa_election/states/maryland_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_maryland_con
+		textureFile = "gfx/interface/UI/usa_election/states/maryland_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_maryland_lib
+		textureFile = "gfx/interface/UI/usa_election/states/maryland_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_montana_com
+		textureFile = "gfx/interface/UI/usa_election/states/montana_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_montana_con
+		textureFile = "gfx/interface/UI/usa_election/states/montana_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_montana_lib
+		textureFile = "gfx/interface/UI/usa_election/states/montana_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_utah_com
+		textureFile = "gfx/interface/UI/usa_election/states/utah_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_utah_con
+		textureFile = "gfx/interface/UI/usa_election/states/utah_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_utah_lib
+		textureFile = "gfx/interface/UI/usa_election/states/utah_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_louisiana_com
+		textureFile = "gfx/interface/UI/usa_election/states/louisiana_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_louisiana_con
+		textureFile = "gfx/interface/UI/usa_election/states/louisiana_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_louisiana_lib
+		textureFile = "gfx/interface/UI/usa_election/states/louisiana_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_rhode_island_com
+		textureFile = "gfx/interface/UI/usa_election/states/rhode_island_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_rhode_island_con
+		textureFile = "gfx/interface/UI/usa_election/states/rhode_island_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_rhode_island_lib
+		textureFile = "gfx/interface/UI/usa_election/states/rhode_island_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_wyoming_com
+		textureFile = "gfx/interface/UI/usa_election/states/wyoming_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_wyoming_con
+		textureFile = "gfx/interface/UI/usa_election/states/wyoming_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_wyoming_lib
+		textureFile = "gfx/interface/UI/usa_election/states/wyoming_lib.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_washington_com
+		textureFile = "gfx/interface/UI/usa_election/states/washington_com.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_washington_con
+		textureFile = "gfx/interface/UI/usa_election/states/washington_con.dds"
+		}
+	spriteType = {
+		name = GFX_TR_USA_washington_lib
+		textureFile = "gfx/interface/UI/usa_election/states/washington_lib.dds"
+		}
+	
 }
