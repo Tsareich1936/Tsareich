@@ -1,4 +1,4 @@
-focus_tree = {
+focus_tree = { # nomal
 	id = japan_focus
 	country = {
 		factor = 0
@@ -578,6 +578,9 @@ focus_tree = {
         }
         completion_reward = {
             add_ideas = planned_economy
+            hidden_effect = {
+                set_country_flag = TR_japan_20
+            }
         }
     }
 
@@ -591,7 +594,10 @@ focus_tree = {
             focus = jap_planned_economy
         }
         available = {
-            
+            has_country_flag = {
+                flag = TR_japan_20
+                days > 365
+            }
         }
         completion_reward = {
             add_ideas = JAP_wealth_redistribution
@@ -2014,7 +2020,7 @@ focus_tree = {
 }
 
 
-focus_tree = {
+focus_tree = {  # army bop
 	id = japan_focus_Army
 	country = {
 		factor = 0
@@ -2040,7 +2046,7 @@ focus_tree = {
     }
 } 
 
-focus_tree = {
+focus_tree = { # navy bop
 	id = japan_focus_Navy
 	country = {
 		factor = 0
@@ -2066,7 +2072,7 @@ focus_tree = {
     }
 } 
 
-focus_tree = {
+focus_tree = { # bureancy
     id = TR_japan_bureaucracy
     country = {
         factor = 0
@@ -2824,7 +2830,7 @@ focus_tree = {
     }
 }
 
-focus_tree = {
+focus_tree = {  # army event
     id = TR_japan_focus_army
 
     country = {
@@ -3651,7 +3657,7 @@ focus_tree = {
     
 }
 
-focus_tree = {
+focus_tree = {  # army event
     id = TR_japan_focus_navy
 
     country = {
@@ -4446,7 +4452,7 @@ focus_tree = {
     }    
 }
 
-focus_tree = {
+focus_tree = {  # Toyotomi
     id = japan_Toyotomi
     country = {
         factor = 0
@@ -5193,7 +5199,339 @@ focus_tree = {
     }
 }
 
+focus_tree = { # Yamataikoku
+	id = japan_Yamataikoku
+	country = {
+		factor = 0
+		modifier = {
+			add = 101
+			tag = JAP
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+    continuous_focus_position = {
+        x = 700
+        y = 2000
+    }
 
+    focus = {
+        id = jap_Yamataikoku
+        x = 10
+        y = 0
+        cost = 0
+        available = {
+            always = no
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_Kinki
+        relative_position_id = jap_Yamataikoku
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku
+        }
+        mutually_exclusive = {
+            focus = jap_Yamataikoku_Kyusyu
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_Kyusyu
+        relative_position_id = jap_Yamataikoku
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku
+        }
+        mutually_exclusive = {
+            focus = jap_Yamataikoku_Kinki
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_industry_1
+        relative_position_id = jap_Yamataikoku
+        x = 0
+        y = 2
+        prerequisite = {
+            focus = jap_Yamataikoku_Kinki
+            focus = jap_Yamataikoku_Kyusyu
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_industry_1_1
+        relative_position_id = jap_Yamataikoku_industry_1
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_industry_1_2
+        relative_position_id = jap_Yamataikoku_industry_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_industry_1_3
+        relative_position_id = jap_Yamataikoku_industry_1
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_industry_2_1
+        relative_position_id = jap_Yamataikoku_industry_1_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_industry_1_1
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_industry_2_2
+        relative_position_id = jap_Yamataikoku_industry_1_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_industry_1_2
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_industry_2_3
+        relative_position_id = jap_Yamataikoku_industry_1_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_industry_1_3
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_industry_3_1
+        relative_position_id = jap_Yamataikoku_industry_2_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_industry_2_1
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_industry_3_2
+        relative_position_id = jap_Yamataikoku_industry_2_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_industry_2_2
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_industry_3_3
+        relative_position_id = jap_Yamataikoku_industry_2_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_industry_2_3
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_industry_2
+        relative_position_id = jap_Yamataikoku_industry_3_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_industry_3_1        
+        }
+        prerequisite = {
+            focus = jap_Yamataikoku_industry_3_2
+        }
+        prerequisite = {
+            focus = jap_Yamataikoku_industry_3_3
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_diplomacy
+        relative_position_id = jap_Yamataikoku_industry_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_industry_2
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_MAN
+        relative_position_id = jap_Yamataikoku_diplomacy
+        x = -4
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_diplomacy
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_military_army_1
+        relative_position_id = jap_Yamataikoku_MAN
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_MAN
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_military_navy_1
+        relative_position_id = jap_Yamataikoku_MAN
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_MAN
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_military_airforce_1
+        relative_position_id = jap_Yamataikoku_MAN
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_MAN
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_break_government
+        relative_position_id = jap_Yamataikoku_military_airforce_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_military_navy_1
+        }
+        prerequisite = {
+            focus = jap_Yamataikoku_military_airforce_1
+        }
+        prerequisite = {
+            focus = jap_Yamataikoku_military_army_1
+        }
+    }
+
+    focus = {
+        id = jap_Yamataioku_become_non-government
+        relative_position_id = jap_Yamataikoku_break_government
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_break_government
+        }
+    }
+    focus = {
+        id = jap_Yamataikoku_attack
+        relative_position_id = jap_Yamataikoku_diplomacy
+        x = 4
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_diplomacy
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_military_army
+        relative_position_id = jap_Yamataikoku_attack
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_attack
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_military_navy
+        relative_position_id = jap_Yamataikoku_attack
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_attack
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_military_airforce
+        relative_position_id = jap_Yamataikoku_attack
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_attack
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_Asia
+        relative_position_id = jap_Yamataikoku_military_airforce
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_military_navy
+        }
+        prerequisite = {
+            focus = jap_Yamataikoku_military_airforce
+        }
+        prerequisite = {
+            focus = jap_Yamataikoku_military_army
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_Europe
+        relative_position_id = jap_Yamataikoku_Asia
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Yamataikoku_Asia
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_North_America
+        relative_position_id = jap_Yamataikoku_Europe
+        x = -2
+        y = 0
+        prerequisite = {
+            focus = jap_Yamataikoku_Asia
+        }
+    }
+
+    focus = {
+        id = jap_Yamataikoku_South_America
+        relative_position_id = jap_Yamataikoku_Europe
+        x = 2
+        y = 0
+        prerequisite = {
+            focus = jap_Yamataikoku_Asia
+        }
+    }
+} 
 
 
 shared_focus = {

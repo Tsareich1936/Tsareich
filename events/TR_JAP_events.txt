@@ -1892,7 +1892,7 @@ country_event = {  ##  navyによる逆クーデター
 	}
 }
 
-country_event = {
+country_event = { # civil war by communist
 	id = TR_japan.66
 	title = TR_japan.66.t
 	desc = TR_japan.66.d
@@ -2023,7 +2023,9 @@ country_event = {
 				name = JAP_Himiko
 				picture = GFX_Portrait_Himiko
 				ideology = animism 
-
+			}
+			load_focus_tree = {
+				id = jap_Yamataikoku
 			}
 		}
 
