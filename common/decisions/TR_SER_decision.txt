@@ -24,9 +24,9 @@ SER_prepare_for_the_war = {
 		days_mission_timeout = 730
 		selectable_mission = no
 		timeout_effect = {
-			# country_event = {
-			# 	id = TR_Serbia.1
-			# }
+			country_event = {
+				id = TR_balkan.10
+			}
 		}
 	}
 }
