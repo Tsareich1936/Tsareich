@@ -1,0 +1,1008 @@
+iconType = {
+	name = TR_USA_arkansas_com_button
+	quadTextureSprite = GFX_TR_USA_arkansas_com
+	pdx_tooltip = TR_USA_arkansas_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_arkansas_con_button
+	quadTextureSprite = GFX_TR_USA_arkansas_con
+	pdx_tooltip = TR_USA_arkansas_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_arkansas_lib_button
+	quadTextureSprite = GFX_TR_USA_arkansas_lib
+	pdx_tooltip = TR_USA_arkansas_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_iowa_com_button
+	quadTextureSprite = GFX_TR_USA_iowa_com
+	pdx_tooltip = TR_USA_iowa_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_iowa_con_button
+	quadTextureSprite = GFX_TR_USA_iowa_con
+	pdx_tooltip = TR_USA_iowa_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_iowa_lib_button
+	quadTextureSprite = GFX_TR_USA_iowa_lib
+	pdx_tooltip = TR_USA_iowa_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_idaho_com_button
+	quadTextureSprite = GFX_TR_USA_idaho_com
+	pdx_tooltip = TR_USA_idaho_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_idaho_con_button
+	quadTextureSprite = GFX_TR_USA_idaho_con
+	pdx_tooltip = TR_USA_idaho_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_idaho_lib_button
+	quadTextureSprite = GFX_TR_USA_idaho_lib
+	pdx_tooltip = TR_USA_idaho_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_alabama_com_button
+	quadTextureSprite = GFX_TR_USA_alabama_com
+	pdx_tooltip = TR_USA_alabama_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_alabama_con_button
+	quadTextureSprite = GFX_TR_USA_alabama_con
+	pdx_tooltip = TR_USA_alabama_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_alabama_lib_button
+	quadTextureSprite = GFX_TR_USA_alabama_lib
+	pdx_tooltip = TR_USA_alabama_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_arizona_com_button
+	quadTextureSprite = GFX_TR_USA_arizona_com
+	pdx_tooltip = TR_USA_arizona_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_arizona_con_button
+	quadTextureSprite = GFX_TR_USA_arizona_con
+	pdx_tooltip = TR_USA_arizona_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_arizona_lib_button
+	quadTextureSprite = GFX_TR_USA_arizona_lib
+	pdx_tooltip = TR_USA_arizona_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_illinois_com_button
+	quadTextureSprite = GFX_TR_USA_illinois_com
+	pdx_tooltip = TR_USA_illinois_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_illinois_con_button
+	quadTextureSprite = GFX_TR_USA_illinois_con
+	pdx_tooltip = TR_USA_illinois_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_illinois_lib_button
+	quadTextureSprite = GFX_TR_USA_illinois_lib
+	pdx_tooltip = TR_USA_illinois_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_indiana_com_button
+	quadTextureSprite = GFX_TR_USA_indiana_com
+	pdx_tooltip = TR_USA_indiana_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_indiana_con_button
+	quadTextureSprite = GFX_TR_USA_indiana_con
+	pdx_tooltip = TR_USA_indiana_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_indiana_lib_button
+	quadTextureSprite = GFX_TR_USA_indiana_lib
+	pdx_tooltip = TR_USA_indiana_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_wisconsin_com_button
+	quadTextureSprite = GFX_TR_USA_wisconsin_com
+	pdx_tooltip = TR_USA_wisconsin_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_wisconsin_con_button
+	quadTextureSprite = GFX_TR_USA_wisconsin_con
+	pdx_tooltip = TR_USA_wisconsin_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_wisconsin_lib_button
+	quadTextureSprite = GFX_TR_USA_wisconsin_lib
+	pdx_tooltip = TR_USA_wisconsin_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_west_virginia_com_button
+	quadTextureSprite = GFX_TR_USA_west_virginia_com
+	pdx_tooltip = TR_USA_west_virginia_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_west_virginia_con_button
+	quadTextureSprite = GFX_TR_USA_west_virginia_con
+	pdx_tooltip = TR_USA_west_virginia_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_west_virginia_lib_button
+	quadTextureSprite = GFX_TR_USA_west_virginia_lib
+	pdx_tooltip = TR_USA_west_virginia_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_oklahoma_com_button
+	quadTextureSprite = GFX_TR_USA_oklahoma_com
+	pdx_tooltip = TR_USA_oklahoma_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_oklahoma_con_button
+	quadTextureSprite = GFX_TR_USA_oklahoma_con
+	pdx_tooltip = TR_USA_oklahoma_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_oklahoma_lib_button
+	quadTextureSprite = GFX_TR_USA_oklahoma_lib
+	pdx_tooltip = TR_USA_oklahoma_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_ohio_com_button
+	quadTextureSprite = GFX_TR_USA_ohio_com
+	pdx_tooltip = TR_USA_ohio_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_ohio_con_button
+	quadTextureSprite = GFX_TR_USA_ohio_con
+	pdx_tooltip = TR_USA_ohio_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_ohio_lib_button
+	quadTextureSprite = GFX_TR_USA_ohio_lib
+	pdx_tooltip = TR_USA_ohio_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_oregon_com_button
+	quadTextureSprite = GFX_TR_USA_oregon_com
+	pdx_tooltip = TR_USA_oregon_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_oregon_con_button
+	quadTextureSprite = GFX_TR_USA_oregon_con
+	pdx_tooltip = TR_USA_oregon_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_oregon_lib_button
+	quadTextureSprite = GFX_TR_USA_oregon_lib
+	pdx_tooltip = TR_USA_oregon_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_california_com_button
+	quadTextureSprite = GFX_TR_USA_california_com
+	pdx_tooltip = TR_USA_california_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_california_con_button
+	quadTextureSprite = GFX_TR_USA_california_con
+	pdx_tooltip = TR_USA_california_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_california_lib_button
+	quadTextureSprite = GFX_TR_USA_california_lib
+	pdx_tooltip = TR_USA_california_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_kansas_com_button
+	quadTextureSprite = GFX_TR_USA_kansas_com
+	pdx_tooltip = TR_USA_kansas_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_kansas_con_button
+	quadTextureSprite = GFX_TR_USA_kansas_con
+	pdx_tooltip = TR_USA_kansas_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_kansas_lib_button
+	quadTextureSprite = GFX_TR_USA_kansas_lib
+	pdx_tooltip = TR_USA_kansas_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_kentucky_com_button
+	quadTextureSprite = GFX_TR_USA_kentucky_com
+	pdx_tooltip = TR_USA_kentucky_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_kentucky_con_button
+	quadTextureSprite = GFX_TR_USA_kentucky_con
+	pdx_tooltip = TR_USA_kentucky_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_kentucky_lib_button
+	quadTextureSprite = GFX_TR_USA_kentucky_lib
+	pdx_tooltip = TR_USA_kentucky_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_connecticut_com_button
+	quadTextureSprite = GFX_TR_USA_connecticut_com
+	pdx_tooltip = TR_USA_connecticut_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_connecticut_con_button
+	quadTextureSprite = GFX_TR_USA_connecticut_con
+	pdx_tooltip = TR_USA_connecticut_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_connecticut_lib_button
+	quadTextureSprite = GFX_TR_USA_connecticut_lib
+	pdx_tooltip = TR_USA_connecticut_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_colorado_com_button
+	quadTextureSprite = GFX_TR_USA_colorado_com
+	pdx_tooltip = TR_USA_colorado_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_colorado_con_button
+	quadTextureSprite = GFX_TR_USA_colorado_con
+	pdx_tooltip = TR_USA_colorado_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_colorado_lib_button
+	quadTextureSprite = GFX_TR_USA_colorado_lib
+	pdx_tooltip = TR_USA_colorado_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_south_carolina_com_button
+	quadTextureSprite = GFX_TR_USA_south_carolina_com
+	pdx_tooltip = TR_USA_south_carolina_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_south_carolina_con_button
+	quadTextureSprite = GFX_TR_USA_south_carolina_con
+	pdx_tooltip = TR_USA_south_carolina_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_south_carolina_lib_button
+	quadTextureSprite = GFX_TR_USA_south_carolina_lib
+	pdx_tooltip = TR_USA_south_carolina_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_south_dakota_com_button
+	quadTextureSprite = GFX_TR_USA_south_dakota_com
+	pdx_tooltip = TR_USA_south_dakota_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_south_dakota_con_button
+	quadTextureSprite = GFX_TR_USA_south_dakota_con
+	pdx_tooltip = TR_USA_south_dakota_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_south_dakota_lib_button
+	quadTextureSprite = GFX_TR_USA_south_dakota_lib
+	pdx_tooltip = TR_USA_south_dakota_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_georgia_com_button
+	quadTextureSprite = GFX_TR_USA_georgia_com
+	pdx_tooltip = TR_USA_georgia_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_georgia_con_button
+	quadTextureSprite = GFX_TR_USA_georgia_con
+	pdx_tooltip = TR_USA_georgia_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_georgia_lib_button
+	quadTextureSprite = GFX_TR_USA_georgia_lib
+	pdx_tooltip = TR_USA_georgia_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_texas_com_button
+	quadTextureSprite = GFX_TR_USA_texas_com
+	pdx_tooltip = TR_USA_texas_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_texas_con_button
+	quadTextureSprite = GFX_TR_USA_texas_con
+	pdx_tooltip = TR_USA_texas_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_texas_lib_button
+	quadTextureSprite = GFX_TR_USA_texas_lib
+	pdx_tooltip = TR_USA_texas_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_tennessee_com_button
+	quadTextureSprite = GFX_TR_USA_tennessee_com
+	pdx_tooltip = TR_USA_tennessee_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_tennessee_con_button
+	quadTextureSprite = GFX_TR_USA_tennessee_con
+	pdx_tooltip = TR_USA_tennessee_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_tennessee_lib_button
+	quadTextureSprite = GFX_TR_USA_tennessee_lib
+	pdx_tooltip = TR_USA_tennessee_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_delaware_com_button
+	quadTextureSprite = GFX_TR_USA_delaware_com
+	pdx_tooltip = TR_USA_delaware_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_delaware_con_button
+	quadTextureSprite = GFX_TR_USA_delaware_con
+	pdx_tooltip = TR_USA_delaware_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_delaware_lib_button
+	quadTextureSprite = GFX_TR_USA_delaware_lib
+	pdx_tooltip = TR_USA_delaware_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_new_jersey_com_button
+	quadTextureSprite = GFX_TR_USA_new_jersey_com
+	pdx_tooltip = TR_USA_new_jersey_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_new_jersey_con_button
+	quadTextureSprite = GFX_TR_USA_new_jersey_con
+	pdx_tooltip = TR_USA_new_jersey_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_new_jersey_lib_button
+	quadTextureSprite = GFX_TR_USA_new_jersey_lib
+	pdx_tooltip = TR_USA_new_jersey_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_new_hampshire_com_button
+	quadTextureSprite = GFX_TR_USA_new_hampshire_com
+	pdx_tooltip = TR_USA_new_hampshire_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_new_hampshire_con_button
+	quadTextureSprite = GFX_TR_USA_new_hampshire_con
+	pdx_tooltip = TR_USA_new_hampshire_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_new_hampshire_lib_button
+	quadTextureSprite = GFX_TR_USA_new_hampshire_lib
+	pdx_tooltip = TR_USA_new_hampshire_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_new_mexico_com_button
+	quadTextureSprite = GFX_TR_USA_new_mexico_com
+	pdx_tooltip = TR_USA_new_mexico_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_new_mexico_con_button
+	quadTextureSprite = GFX_TR_USA_new_mexico_con
+	pdx_tooltip = TR_USA_new_mexico_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_new_mexico_lib_button
+	quadTextureSprite = GFX_TR_USA_new_mexico_lib
+	pdx_tooltip = TR_USA_new_mexico_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_new_york_com_button
+	quadTextureSprite = GFX_TR_USA_new_york_com
+	pdx_tooltip = TR_USA_new_york_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_new_york_con_button
+	quadTextureSprite = GFX_TR_USA_new_york_con
+	pdx_tooltip = TR_USA_new_york_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_new_york_lib_button
+	quadTextureSprite = GFX_TR_USA_new_york_lib
+	pdx_tooltip = TR_USA_new_york_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_nevada_com_button
+	quadTextureSprite = GFX_TR_USA_nevada_com
+	pdx_tooltip = TR_USA_nevada_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_nevada_con_button
+	quadTextureSprite = GFX_TR_USA_nevada_con
+	pdx_tooltip = TR_USA_nevada_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_nevada_lib_button
+	quadTextureSprite = GFX_TR_USA_nevada_lib
+	pdx_tooltip = TR_USA_nevada_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_nebraska_com_button
+	quadTextureSprite = GFX_TR_USA_nebraska_com
+	pdx_tooltip = TR_USA_nebraska_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_nebraska_con_button
+	quadTextureSprite = GFX_TR_USA_nebraska_con
+	pdx_tooltip = TR_USA_nebraska_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_nebraska_lib_button
+	quadTextureSprite = GFX_TR_USA_nebraska_lib
+	pdx_tooltip = TR_USA_nebraska_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_north_carolina_com_button
+	quadTextureSprite = GFX_TR_USA_north_carolina_com
+	pdx_tooltip = TR_USA_north_carolina_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_north_carolina_con_button
+	quadTextureSprite = GFX_TR_USA_north_carolina_con
+	pdx_tooltip = TR_USA_north_carolina_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_north_carolina_lib_button
+	quadTextureSprite = GFX_TR_USA_north_carolina_lib
+	pdx_tooltip = TR_USA_north_carolina_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_north_dakota_com_button
+	quadTextureSprite = GFX_TR_USA_north_dakota_com
+	pdx_tooltip = TR_USA_north_dakota_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_north_dakota_con_button
+	quadTextureSprite = GFX_TR_USA_north_dakota_con
+	pdx_tooltip = TR_USA_north_dakota_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_north_dakota_lib_button
+	quadTextureSprite = GFX_TR_USA_north_dakota_lib
+	pdx_tooltip = TR_USA_north_dakota_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_virginia_com_button
+	quadTextureSprite = GFX_TR_USA_virginia_com
+	pdx_tooltip = TR_USA_virginia_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_virginia_con_button
+	quadTextureSprite = GFX_TR_USA_virginia_con
+	pdx_tooltip = TR_USA_virginia_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_virginia_lib_button
+	quadTextureSprite = GFX_TR_USA_virginia_lib
+	pdx_tooltip = TR_USA_virginia_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_vermont_com_button
+	quadTextureSprite = GFX_TR_USA_vermont_com
+	pdx_tooltip = TR_USA_vermont_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_vermont_con_button
+	quadTextureSprite = GFX_TR_USA_vermont_con
+	pdx_tooltip = TR_USA_vermont_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_vermont_lib_button
+	quadTextureSprite = GFX_TR_USA_vermont_lib
+	pdx_tooltip = TR_USA_vermont_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_florida_com_button
+	quadTextureSprite = GFX_TR_USA_florida_com
+	pdx_tooltip = TR_USA_florida_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_florida_con_button
+	quadTextureSprite = GFX_TR_USA_florida_con
+	pdx_tooltip = TR_USA_florida_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_florida_lib_button
+	quadTextureSprite = GFX_TR_USA_florida_lib
+	pdx_tooltip = TR_USA_florida_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_pennsylvania_com_button
+	quadTextureSprite = GFX_TR_USA_pennsylvania_com
+	pdx_tooltip = TR_USA_pennsylvania_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_pennsylvania_con_button
+	quadTextureSprite = GFX_TR_USA_pennsylvania_con
+	pdx_tooltip = TR_USA_pennsylvania_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_pennsylvania_lib_button
+	quadTextureSprite = GFX_TR_USA_pennsylvania_lib
+	pdx_tooltip = TR_USA_pennsylvania_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_massachusetts_com_button
+	quadTextureSprite = GFX_TR_USA_massachusetts_com
+	pdx_tooltip = TR_USA_massachusetts_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_massachusetts_con_button
+	quadTextureSprite = GFX_TR_USA_massachusetts_con
+	pdx_tooltip = TR_USA_massachusetts_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_massachusetts_lib_button
+	quadTextureSprite = GFX_TR_USA_massachusetts_lib
+	pdx_tooltip = TR_USA_massachusetts_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_michigan_com_button
+	quadTextureSprite = GFX_TR_USA_michigan_com
+	pdx_tooltip = TR_USA_michigan_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_michigan_con_button
+	quadTextureSprite = GFX_TR_USA_michigan_con
+	pdx_tooltip = TR_USA_michigan_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_michigan_lib_button
+	quadTextureSprite = GFX_TR_USA_michigan_lib
+	pdx_tooltip = TR_USA_michigan_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_mississippi_com_button
+	quadTextureSprite = GFX_TR_USA_mississippi_com
+	pdx_tooltip = TR_USA_mississippi_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_mississippi_con_button
+	quadTextureSprite = GFX_TR_USA_mississippi_con
+	pdx_tooltip = TR_USA_mississippi_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_mississippi_lib_button
+	quadTextureSprite = GFX_TR_USA_mississippi_lib
+	pdx_tooltip = TR_USA_mississippi_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_missouri_com_button
+	quadTextureSprite = GFX_TR_USA_missouri_com
+	pdx_tooltip = TR_USA_missouri_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_missouri_con_button
+	quadTextureSprite = GFX_TR_USA_missouri_con
+	pdx_tooltip = TR_USA_missouri_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_missouri_lib_button
+	quadTextureSprite = GFX_TR_USA_missouri_lib
+	pdx_tooltip = TR_USA_missouri_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_minnesota_com_button
+	quadTextureSprite = GFX_TR_USA_minnesota_com
+	pdx_tooltip = TR_USA_minnesota_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_minnesota_con_button
+	quadTextureSprite = GFX_TR_USA_minnesota_con
+	pdx_tooltip = TR_USA_minnesota_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_minnesota_lib_button
+	quadTextureSprite = GFX_TR_USA_minnesota_lib
+	pdx_tooltip = TR_USA_minnesota_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_maine_com_button
+	quadTextureSprite = GFX_TR_USA_maine_com
+	pdx_tooltip = TR_USA_maine_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_maine_con_button
+	quadTextureSprite = GFX_TR_USA_maine_con
+	pdx_tooltip = TR_USA_maine_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_maine_lib_button
+	quadTextureSprite = GFX_TR_USA_maine_lib
+	pdx_tooltip = TR_USA_maine_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_maryland_com_button
+	quadTextureSprite = GFX_TR_USA_maryland_com
+	pdx_tooltip = TR_USA_maryland_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_maryland_con_button
+	quadTextureSprite = GFX_TR_USA_maryland_con
+	pdx_tooltip = TR_USA_maryland_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_maryland_lib_button
+	quadTextureSprite = GFX_TR_USA_maryland_lib
+	pdx_tooltip = TR_USA_maryland_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_montana_com_button
+	quadTextureSprite = GFX_TR_USA_montana_com
+	pdx_tooltip = TR_USA_montana_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_montana_con_button
+	quadTextureSprite = GFX_TR_USA_montana_con
+	pdx_tooltip = TR_USA_montana_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_montana_lib_button
+	quadTextureSprite = GFX_TR_USA_montana_lib
+	pdx_tooltip = TR_USA_montana_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_utah_com_button
+	quadTextureSprite = GFX_TR_USA_utah_com
+	pdx_tooltip = TR_USA_utah_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_utah_con_button
+	quadTextureSprite = GFX_TR_USA_utah_con
+	pdx_tooltip = TR_USA_utah_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_utah_lib_button
+	quadTextureSprite = GFX_TR_USA_utah_lib
+	pdx_tooltip = TR_USA_utah_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_louisiana_com_button
+	quadTextureSprite = GFX_TR_USA_louisiana_com
+	pdx_tooltip = TR_USA_louisiana_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_louisiana_con_button
+	quadTextureSprite = GFX_TR_USA_louisiana_con
+	pdx_tooltip = TR_USA_louisiana_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_louisiana_lib_button
+	quadTextureSprite = GFX_TR_USA_louisiana_lib
+	pdx_tooltip = TR_USA_louisiana_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_rhode_island_com_button
+	quadTextureSprite = GFX_TR_USA_rhode_island_com
+	pdx_tooltip = TR_USA_rhode_island_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_rhode_island_con_button
+	quadTextureSprite = GFX_TR_USA_rhode_island_con
+	pdx_tooltip = TR_USA_rhode_island_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_rhode_island_lib_button
+	quadTextureSprite = GFX_TR_USA_rhode_island_lib
+	pdx_tooltip = TR_USA_rhode_island_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_wyoming_com_button
+	quadTextureSprite = GFX_TR_USA_wyoming_com
+	pdx_tooltip = TR_USA_wyoming_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_wyoming_con_button
+	quadTextureSprite = GFX_TR_USA_wyoming_con
+	pdx_tooltip = TR_USA_wyoming_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_wyoming_lib_button
+	quadTextureSprite = GFX_TR_USA_wyoming_lib
+	pdx_tooltip = TR_USA_wyoming_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_washington_com_button
+	quadTextureSprite = GFX_TR_USA_washington_com
+	pdx_tooltip = TR_USA_washington_com_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_washington_con_button
+	quadTextureSprite = GFX_TR_USA_washington_con
+	pdx_tooltip = TR_USA_washington_con_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
+iconType = {
+	name = TR_USA_washington_lib_button
+	quadTextureSprite = GFX_TR_USA_washington_lib
+	pdx_tooltip = TR_USA_washington_lib_tt
+	scale = 0.75
+	alwaystransparent = yes
+}
