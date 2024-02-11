@@ -1,6 +1,9 @@
 ﻿capital = 41
 
 oob = "SPR_1936"
+set_rule = {
+	can_join_factions = no
+}
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "SPR_1936_naval_mtg"
