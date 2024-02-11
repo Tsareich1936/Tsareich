@@ -25,6 +25,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			SPR = {
+				load_focus_tree = SPR_foucs
 				every_core_state = {
 					add_core_of = SPA
 					add_core_of = SPB
