@@ -12,11 +12,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/UI/usa_election/usa_border.dds"
 	}
 	spriteType = {
-		name = GFX_maine_com
-		textureFile = "gfx/interface/UI/usa_election/states/maine_com.dds"
-	}
-	spriteType = {
 		name = GFX_states
 		textureFile = "gfx/interface/UI/usa_election/states.dds"
+	}
+	spriteType = {
+		name = GFX_maine_com
+		textureFile = "gfx/interface/UI/usa_election/states/maine_com.dds"
 	}
 }

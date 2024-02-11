@@ -103,6 +103,6 @@ RUS_debug_decision_c = {
                 message = TR_Russia_per_peace_tt.1
             }
         }
-    }S
+    }
 
 }

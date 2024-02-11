@@ -4,11 +4,67 @@ RUS_spain_civilwar_decision_c = {
             has_global_flag = TR_spr_civ_war
         }
         available = {
-            any_country = {
-                has_cosmetic_tag = SPB
+            hidden_trigger = {
+                any_country = {
+                    has_cosmetic_tag = SPB
+                }
             }
         } 
         icon = GFX_decision_onmap_recruit_operative
         priority = 999
+        days_remove = 30
+        fire_only_once = yes
+        ai_will_do = {
+			base = 4000
+		}
+        complete_effect = {
+            add_manpower = -10000
+        }
+        remove_effect = {
+            every_country = {
+                limit = {
+                    has_cosmetic_tag = SPB
+                }
+                division_template = {
+                    name = "Russian army volunteer"
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 1 y = 0 }
+                        infantry = { x = 2 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 1 y = 1 }
+                        infantry = { x = 2 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                        infantry = { x = 1 y = 2 }
+                        infantry = { x = 2 y = 2 }
+                    }
+                    support = {
+                        
+                    }
+                }
+                176 = {
+                    create_unit = {
+                        division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
+                        owner = PREV
+                    }
+                    create_unit = {
+                        division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
+                        owner = PREV
+                    }
+                }
+            }
+        }
     }
 }
