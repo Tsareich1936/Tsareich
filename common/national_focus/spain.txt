@@ -1,0 +1,526 @@
+﻿focus_tree = {
+	id = SPR_foucs
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = SPR
+		}
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+
+	#政治
+	focus = {
+		id = SPR_1
+		icon = GFX_goal_tripartite_pact
+		cost = 10
+		available = {
+			NOT = {
+				has_government = socialdemocratic
+			}
+		}
+		x = 14
+		y = 1
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {   
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = SPR_2
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { 
+			focus = SPR_1
+		}
+		x = 15
+		y = 2
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {   
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = SPR_3
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { 
+			focus = SPR_2
+		}
+		x = 15
+		y = 3
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {   
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = SPR_4
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10
+		prerequisite = { 
+			focus = SPR_3
+		}
+		x = 15
+		y = 4
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {   
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = SPR_5
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = { 
+			focus = SPR_1
+		}
+		x = 17
+		y = 2
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {   
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = SPR_6
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = { 
+			focus = SPR_5
+		}
+		x = 17
+		y = 3
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {   
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = SPR_7
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = { 
+			focus = SPR_6
+		}
+		x = 17
+		y = 4
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {   
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+	#軍事
+	focus = {
+		id = SPR_m1
+		icon = GFX_goal_rhineland
+		cost = 10
+		prerequisite = { 
+			focus = SPR_1
+		}
+		x = 13
+		y = 2
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {   
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = SPR_m2
+		icon = GFX_goal_rhineland
+		cost = 10
+		prerequisite = { 
+			focus = SPR_m1
+		}
+		x = 13
+		y = 3
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {   
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = SPR_m3
+		icon = GFX_goal_rhineland
+		cost = 10
+		prerequisite = { 
+			focus = SPR_m2
+		}
+		x = 13
+		y = 4
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {   
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = SPR_m4
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = { 
+			focus = SPR_1
+		}
+		x = 11
+		y = 2
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {   
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_m5
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = { 
+			focus = SPR_m4
+		}
+		x = 11
+		y = 3
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {   
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_m6
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = { 
+			focus = SPR_m5
+		}
+		x = 11
+		y = 4
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {   
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#内戦の終結
+	focus = {
+		id = SPR_fin
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 5
+        available = {
+			has_war = no
+			has_civil_war = no
+		}
+		x = 20
+		y = 1
+		ai_will_do = {
+			factor = 500
+		}
+		completion_reward = {   
+			add_stability = 0.2
+			remove_ideas = TR_SPR_civwar
+			remove_ideas = TR_SPR_civwar1
+			remove_ideas = TR_SPR_civwar2
+			remove_ideas = TR_SPR_civwar3
+			load_focus_tree = generic_focus
+		}
+	}
+
+
+	#内戦
+	focus = {
+		id = SPR1
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 5
+		available = {
+			NOT = {
+				has_government = socialdemocratic
+			}
+		}
+		x = 27
+		y = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {   
+			add_stability = 0.25
+		}
+	}
+
+	focus = {
+		id = SPR_mil1
+		icon = GFX_focus_generic_military_mission
+		cost = 5
+		prerequisite = { 
+			focus = SPR1
+		}
+		available = {
+			date > 1937.1.1
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 28
+		y = 2
+		completion_reward = {   
+			swap_ideas = {
+				remove_idea = TR_SPR_civwar
+				add_idea = TR_SPR_civwar1
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_mil2
+		icon = GFX_focus_generic_military_mission
+		cost = 5
+		prerequisite = { 
+			focus = SPR_mil1
+		}
+		available = {
+			date > 1938.1.1
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 28
+		y = 3
+		completion_reward = {   
+			swap_ideas = {
+				remove_idea = TR_SPR_civwar1
+				add_idea = TR_SPR_civwar2
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_mil3
+		icon = GFX_focus_generic_military_mission
+		cost = 5
+		prerequisite = { 
+			focus = SPR_mil2
+		}
+		available = {
+			date > 1938.8.1
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 28
+		y = 4
+		completion_reward = {   
+			swap_ideas = {
+				remove_idea = TR_SPR_civwar2
+				add_idea = TR_SPR_civwar3
+			}
+		}
+	}
+
+	focus = {
+		id = SPR2
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 5
+		prerequisite = { 
+			focus = SPR1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 26
+		y = 2
+		completion_reward = {   
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = SPR3
+		icon = GFX_goal_generic_propaganda
+		cost = 5
+		prerequisite = { 
+			focus = SPR2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 26
+		y = 3
+		completion_reward = {   
+			add_manpower = 15000
+		}
+	}
+	focus = {
+		id = SPR4
+		icon = GFX_focus_generic_reorient_production
+		cost = 5
+		prerequisite = { 
+			focus = SPR3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 26
+		y = 4
+		completion_reward = {   
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			} 
+		}
+	}
+}
+

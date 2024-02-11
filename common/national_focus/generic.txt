@@ -1,11 +1,17 @@
 ﻿search_filter_prios = {
 	FOCUS_FILTER_POLITICAL = 1010
-
 	
 	FOCUS_FILTER_RESEARCH = 522
-
 	
 	FOCUS_FILTER_INDUSTRY = 509
+
+	FOCUS_FILTER_BALANCE_OF_POWER = 200
+	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
+	FOCUS_FILTER_PROPAGANDA = 110
+	FOCUS_FILTER_MISSIOLINI = 110
+	FOCUS_FILTER_ARMY_XP = 103
+	FOCUS_FILTER_NAVY_XP = 102
+	FOCUS_FILTER_AIR_XP = 101
 
 }
 
@@ -13,14 +19,11 @@ focus_tree = {
 	id = generic_focus
 	
 	country = {
-		factor = 0
-		modifier = {
-			add = 21
-		}
+		factor = 21
 	}
 	
 	default = yes
-	reset_on_civilwar = yes
+	reset_on_civilwar = no
 
 	initial_show_position = {
 		focus = industrial_effort
@@ -37,7 +40,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 30
+			army_experience = 5
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -88,7 +91,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 5.0
+				bonus = 3.0
 				technology = motorised_infantry
 			}
 		}
@@ -108,7 +111,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-            add_manpower = 20000
+			army_experience = 5
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -179,6 +182,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 5
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -204,7 +208,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-                                bonus = 1.5
+				ahead_reduction = 2
 				uses = 1
 				category = infantry_weapons
 				category = artillery
@@ -229,7 +233,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = armor
 			}
 		}
@@ -279,7 +283,7 @@ focus_tree = {
 
 
 		complete_tooltip = {
-			air_experience = 30
+			air_experience = 25
 			if = { limit = { has_country_flag = aviation_effort_AB }
 				add_building_construction = {
 					type = air_base
@@ -292,7 +296,7 @@ focus_tree = {
 				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
-			}
+			}			
 		}
 
 		completion_reward = {
@@ -369,14 +373,9 @@ focus_tree = {
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 1.0
-				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
-				technology = heavy_fighter1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
 			}
 		}
 	}
@@ -399,10 +398,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1.0
-				uses = 1
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-				technology = strategic_bomber3
+				uses = 2
+				category = cat_strategic_bomber
 				category = tactical_bomber
 			}
 		}
@@ -424,8 +421,15 @@ focus_tree = {
 
 		complete_tooltip = {
 			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_2_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
 			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
+				name =  air_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
@@ -482,7 +486,7 @@ focus_tree = {
 				}
 			}
 			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
+				name =  air_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
@@ -508,6 +512,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAS_bonus
 				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = cas_bomber
 			}
@@ -531,7 +536,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = jet_rocket_bonus
-	                        bonus =1.0
+				ahead_reduction = 2
 				uses = 2
 				category = rocketry
 				category = jet_technology
@@ -565,6 +570,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = nav_bomber_bonus
 				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = naval_bomber
 			}
@@ -731,7 +737,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = sub_op_bonus
 				cost_reduction = 0.5
-				uses = 3
+				uses = 2
 				technology = convoy_interdiction_ti
 				technology = unrestricted_submarine_warfare
 				technology = wolfpacks
@@ -755,7 +761,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-	
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -772,13 +778,13 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = fleet_in_being_bonus
-				cost_reduction = 0.5
+				cost_reduction = 0.25
 				uses = 2
 				category = fleet_in_being_tree
 			}
 		}
 	}
-				
+
 	focus = {
 		id = submarine_effort
 		icon = GFX_goal_generic_navy_submarine
@@ -809,7 +815,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ss_bonus
-				bonus = 1.5
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = ss_tech
 			}
@@ -846,7 +853,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = cr_bonus
-				bonus = 1.5
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = cl_tech
 				category = ca_tech
@@ -884,7 +892,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 1.5
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = dd_tech
 			}
@@ -918,9 +927,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			navy_experience = 25
 			add_tech_bonus = {
 				name = capital_ships_bonus
-				bonus = 1.5
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = bc_tech
 				category = bb_tech
@@ -943,8 +954,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.75
-				uses = 2
+				bonus = 1.0
+				uses = 1
 				category = industry
 			}
 		}
@@ -1153,10 +1164,10 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}		
@@ -1185,10 +1196,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1202,8 +1213,6 @@ focus_tree = {
 		available = {
 			num_of_factories >15
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 		x = 0
 		y = 1
 		relative_position_id = production_effort
@@ -1336,7 +1345,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1375,10 +1384,8 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = production_effort_2 }
 		available = {
-			num_of_factories > 30
+			num_of_factories >30
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 		x = 0
 		y = 1
 		relative_position_id = production_effort_2
@@ -1410,7 +1417,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}		
@@ -1439,10 +1446,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1511,7 +1518,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1550,10 +1557,8 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = infrastructure_effort }
 		available = {
-			num_of_factories > 45
+			num_of_factories >45
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 		x = 2
 		y = 1
 		relative_position_id = infrastructure_effort
@@ -1582,10 +1587,10 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 3
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -1614,10 +1619,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1659,10 +1664,8 @@ focus_tree = {
 		icon = GFX_focus_research
 		prerequisite = { focus = infrastructure_effort_2 }
 		available = {
-			num_of_factories > 15
+			num_of_factories >15
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 		x = 0
 		y = 1
 		relative_position_id = infrastructure_effort_2
@@ -1682,7 +1685,7 @@ focus_tree = {
 		icon = GFX_focus_research
 		prerequisite = { focus = extra_tech_slot }
 		available = {
-			num_of_factories > 50
+			num_of_factories > 45
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -1717,7 +1720,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = secret_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 4
 				category = electronics
 				category = nuclear
 				category = rocketry
@@ -1745,7 +1748,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 120
 		}
 	}
 
@@ -1783,13 +1786,16 @@ focus_tree = {
 					has_idea = neutrality_idea
 				}
 			}
+			modifier = {
+				factor = 20
+				has_idea = SOV_russian_political_influence
+			}
 		}
 
 		completion_reward = {
-			add_ideas = collectivist_ethos_focus 
+			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
 		}
 	}
-
 
 	focus = {
 		id = nationalism_focus
@@ -1827,6 +1833,10 @@ focus_tree = {
 					is_historical_focus_on = yes
 					NOT = { has_government = fascism }
 				}
+			}
+			modifier = {
+				factor = 10
+				has_idea = SOV_russian_political_influence
 			}
 		}
 
@@ -1956,6 +1966,7 @@ focus_tree = {
 				remove_ideas = neutrality_idea
 			}			
 			add_ideas = militarism_focus
+			army_experience = 20
 			set_rule = { can_send_volunteers = yes }
 		}
 	}
@@ -1978,7 +1989,7 @@ focus_tree = {
 				limit = { has_idea = neutrality_idea }
 				remove_ideas = neutrality_idea
 			}		
-			add_political_power = 150
+			add_political_power = 200
 			add_ideas = idea_political_correctness
 		}
 	}
@@ -2002,6 +2013,12 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				tag = AUS
+			}
+			modifier = {
+				factor = 0
+				tag = SAU
+				is_in_faction_with = SOV
+				SOV = { has_government = communism }
 			}
 		}
 
@@ -2062,7 +2079,7 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 20
-                       add_manpower = 15000
+            add_manpower = 15000
 			if = {
 				limit = { has_government = fascism }
 				add_popularity = {
@@ -2236,7 +2253,7 @@ focus_tree = {
 					popularity = 0.2
 				}
 			}
-			add_political_power = 100
+			add_political_power = 200
 		}
 	}
 

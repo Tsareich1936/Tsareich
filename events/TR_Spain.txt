@@ -25,6 +25,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			SPR = {
+				load_focus_tree = SPR_foucs
 				every_core_state = {
 					add_core_of = SPA
 					add_core_of = SPB
@@ -49,6 +50,7 @@ country_event = {
 				add_ideas = TR_SPR_civwar
 			    add_ideas = war_economy
 				add_ideas = extensive_conscription
+				load_focus_tree = SPR_foucs
 				every_owned_state = {
 					create_unit = {
 						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
@@ -175,6 +177,7 @@ country_event = {
 			
 			SPA = {
 				add_ideas = TR_SPR_civwar
+				load_focus_tree = SPR_foucs
 				declare_war_on = {
 					target = SPB
 					type = civil_war
@@ -203,6 +206,7 @@ country_event = {
 				add_ideas = TR_SPR_civwar
 			    add_ideas = war_economy
 				add_ideas = extensive_conscription
+				load_focus_tree = SPR_foucs
 				add_manpower = 70000
 				every_owned_state = {
 					create_unit = {
@@ -275,6 +279,7 @@ country_event = {
 				add_ideas = TR_SPR_civwar
 			    add_ideas = war_economy
 				add_ideas = extensive_conscription
+				load_focus_tree = SPR_foucs
 				add_manpower = 100000
 				every_owned_state = {
 					create_unit = {
@@ -338,6 +343,7 @@ country_event = {
 				add_ideas = TR_SPR_civwar
 			    add_ideas = war_economy
 				add_ideas = extensive_conscription
+				load_focus_tree = SPR_foucs
 				every_owned_state = {
 					create_unit = {
 						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
@@ -410,13 +416,18 @@ country_event = {
 				add_ideas = TR_SPR_civwar
 			    add_ideas = war_economy
 				add_ideas = extensive_conscription
+				load_focus_tree = SPR_foucs
 				792 = {
 					create_unit = {
 						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 						owner = NAV
 					}
 					create_unit = {
-						division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						owner = NAV
+					}
+					create_unit = {
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 						owner = NAV
 					}
 					create_unit = {
@@ -428,10 +439,6 @@ country_event = {
 						owner = NAV
 					}
 					create_unit = {
-						division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
-						owner = NAV
-					}
-					create_unit = {
 						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 						owner = NAV
 					}
@@ -440,7 +447,7 @@ country_event = {
 						owner = NAV
 					}
 					create_unit = {
-						division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 						owner = NAV
 					}
 				}
@@ -464,13 +471,18 @@ country_event = {
 			add_ideas = TR_SPR_civwar
 			add_ideas = war_economy
 			add_ideas = extensive_conscription
+			load_focus_tree = SPR_foucs
 			165 = {
 				create_unit = {
 					division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 					owner = CAT
 				}
 				create_unit = {
-					division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+					division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+					owner = CAT
+				}
+				create_unit = {
+					division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 					owner = CAT
 				}
 				create_unit = {
@@ -482,15 +494,11 @@ country_event = {
 					owner = CAT
 				}
 				create_unit = {
-					division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
-					owner = CAT
-				}
-				create_unit = {
 					division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 					owner = CAT
 				}
 				create_unit = {
-					division = "name = \"SPR milicia"\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
+					division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
 					owner = CAT
 				}
 				create_unit = {
@@ -583,6 +591,7 @@ country_event = {
 				add_ideas = TR_SPR_civwar
 			    add_ideas = war_economy
 				add_ideas = extensive_conscription
+				load_focus_tree = SPR_foucs
 				every_owned_state = {
 					create_unit = {
 						division = "name = \"SPR milicia\" division_template = \"SPR milicia\" start_experience_factor = 0.3" 
@@ -646,7 +655,9 @@ country_event = {
 			}
 		}
 
-		option = { # Support Nationalists
+		
+	}
+	option = { # Support Nationalists
 		    name = TR_spain.3.a
 		    trigger = { is_ai = no }
 		    hidden_effect = {
@@ -660,367 +671,7 @@ country_event = {
 		    }
 		    custom_effect_tooltip = republicans_chosen
 	    }
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 country_event = {
 	id = spain.1
 	title = spain.1.t
@@ -1064,7 +715,7 @@ country_event = {
 					popularity = 0.35
 				}
 			}
-			news_event = { hours = 6 id = news.63 }
+			# news_event = { hours = 6 id = news.63 }
 			set_global_flag = spanish_civil_war
 			set_country_flag = scw_no_lar_nationalists
 
@@ -1110,7 +761,7 @@ country_event = {
 				#country_event = { id = spain.2 days = 1 }
 				load_oob = "SPA_Civil_War"
 			}
-			news_event = { hours = 6 id = news.63 }
+			# news_event = { hours = 6 id = news.63 }
 			set_global_flag = spanish_civil_war
 			set_country_flag = scw_no_lar_republicans
 
