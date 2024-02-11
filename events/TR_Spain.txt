@@ -206,6 +206,7 @@ country_event = {
 				add_ideas = TR_SPR_civwar
 			    add_ideas = war_economy
 				add_ideas = extensive_conscription
+				load_focus_tree = SPR_foucs
 				add_manpower = 70000
 				every_owned_state = {
 					create_unit = {
