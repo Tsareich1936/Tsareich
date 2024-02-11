@@ -2041,6 +2041,32 @@ focus_tree = {
 } 
 
 focus_tree = {
+	id = japan_focus_Navy
+	country = {
+		factor = 0
+		modifier = {
+			add = 101
+			tag = JAP
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+
+    focus = {
+        id = jap_Minister_of_War_of_Active_Military_Service_1
+        x = 10
+        y = 0
+        cost = 0
+        available = {
+            always = no
+        }
+        completion_reward = {
+            
+        }
+    }
+} 
+
+focus_tree = {
     id = TR_japan_bureaucracy
     country = {
         factor = 0
@@ -3649,6 +3675,382 @@ focus_tree = {
         x = 10
         y = 0
     }
+
+    focus = {
+        id = jap_navy_nation
+        relative_position_id = jap_navy_leader
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_leader
+        }
+    }
+
+    focus = {
+        id = jap_militalism_1_1
+        relative_position_id = jap_navy_nation
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_nation
+        }
+    }
+
+    focus = {
+        id = jap_navy_nation_2_1
+        relative_position_id = jap_navy_nation
+        x = 0
+        y = 1
+        prerequisite = {
+            foucs = jap_navy_nation
+        }
+    }
+
+    focus = {
+        id = jap_navy_nation_3_1
+        relative_position_id = jap_navy_nation
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_nation
+        }
+    }
+
+    focus = {
+        id = jap_navy_nation_1_2
+        relative_position_id = jap_militalism_1_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_militalism_1_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_nation_2_2
+        relative_position_id = jap_navy_nation_2_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_nation_2_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_nation_3_2
+        relative_position_id = jap_navy_nation_3_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_nation_3_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_nation_1_3
+        relative_position_id = jap_navy_nation_1_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_nation_1_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_nation_2_3
+        relative_position_id = jap_navy_nation_2_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_nation_2_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_nation_3_3
+        relative_position_id = jap_navy_nation_3_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_nation_3_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_nation_4
+        relative_position_id = jap_navy_nation_2_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_nation_1_3
+        }
+        prerequisite = {
+            focus = jap_navy_nation_2_3
+        }
+        prerequisite = {
+            focus = jap_navy_nation_3_3
+        }
+    }
+
+    # industry
+    
+    focus = {
+        id = jap_navy_industry
+        relative_position_id = jap_navy_nation_4
+        x = 7
+        y = 1
+        prerequisite = {
+            focus = jap_navy_nation_4
+        }
+    }
+    focus = {
+        id = jap_navy_industry_1
+        relative_position_id = jap_navy_industry
+        x = -4
+        y = 1
+        prerequisite = {
+            focus = jap_navy_industry
+        }
+        mutually_exclusive = {
+            focus = jap_navy_bureancy
+        }
+    }
+
+    focus = {
+        id = jap_navy_industry_1_1
+        relative_position_id = jap_navy_industry_1
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_industry_1_2
+        relative_position_id = jap_navy_industry_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_industry_1_3
+        relative_position_id = jap_navy_industry_1
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_industry_2_1
+        relative_position_id = jap_navy_industry_1_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_industry_1_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_industry_2_2
+        relative_position_id = jap_navy_industry_1_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_industry_1_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_industry_2_3
+        relative_position_id = jap_navy_industry_1_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_industry_1_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_industry_3_1
+        relative_position_id = jap_navy_industry_2_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_industry_2_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_industry_3_2
+        relative_position_id = jap_navy_industry_2_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_industry_2_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_industry_3_3
+        relative_position_id = jap_navy_industry_2_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_industry_2_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_industry_2
+        relative_position_id = jap_navy_industry_3_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_industry_3_1        
+        }
+        prerequisite = {
+            focus = jap_navy_industry_3_2
+        }
+        prerequisite = {
+            focus = jap_navy_industry_3_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_bureancy
+        relative_position_id = jap_navy_industry
+        x = 4
+        y = 1
+        prerequisite = {
+            focus = jap_navy_industry
+        }
+        mutually_exclusive = {
+            focus = jap_navy_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bureancy_1_1
+        relative_position_id = jap_navy_bureancy
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bureancy
+        }
+    }
+
+    focus = {
+        id = jap_navy_bureancy_1_2
+        relative_position_id = jap_navy_bureancy
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bureancy
+        }
+    }
+
+    focus = {
+        id = jap_navy_bureancy_1_3
+        relative_position_id = jap_navy_bureancy
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bureancy
+        }
+    }
+
+    focus = {
+        id = jap_navy_bureancy_2_1
+        relative_position_id = jap_navy_bureancy_1_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bureancy_1_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bureancy_2_2
+        relative_position_id = jap_navy_bureancy_1_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bureancy_1_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bureancy_2_3
+        relative_position_id = jap_navy_bureancy_1_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bureancy_1_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_bureancy_3_1
+        relative_position_id = jap_navy_bureancy_2_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bureancy_2_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bureancy_3_2
+        relative_position_id = jap_navy_bureancy_2_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bureancy_2_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bureancy_3_3
+        relative_position_id = jap_navy_bureancy_2_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bureancy_2_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_bureancy_industry_2
+        relative_position_id = jap_navy_bureancy_3_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bureancy_3_1        
+        }
+        prerequisite = {
+            focus = jap_navy_bureancy_3_2
+        }
+        prerequisite = {
+            focus = jap_navy_bureancy_3_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_industry_3
+        relative_position_id = jap_navy_industry
+        x = 0
+        y = 6
+        prerequisite = {
+            focus = jap_navy_industry_2
+            focus = jap_navy_bureancy_industry_2
+        }
+    }
 }
 
 focus_tree = {
@@ -4404,7 +4806,7 @@ focus_tree = {
 shared_focus = {
     id = jap_NAVY_1_1
     x = 0
-    y = 1
+    y = 0
     cost = 4
     available = {
         

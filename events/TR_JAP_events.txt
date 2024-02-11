@@ -2603,4 +2603,22 @@ country_event = {
 country_event = {
 	id = TR_japan.94
 	is_triggered_only = yes
+	title = TR_japan.94.t
+	desc = TR_japan.94.d
+	option = {
+		name = TR_japan.94.a
+		load_focus_tree = japan_focus_Navy
+		complete_national_focus = jap_Minister_of_War_of_Active_Military_Service_1
+		if = {
+			limit = {
+				has_power_balance = {
+					id = JAP_balance_of_power
+				}
+			}
+			remove_power_balance = {
+				id = JAP_balance_of_power
+			}
+		}
+
+	}
 }

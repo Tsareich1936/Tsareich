@@ -2582,6 +2582,11 @@ JAP_balance_of_power_category = {
 	JAP_FOR_debug_1 = {
 		allowed = {
 			original_tag = JAP
+		}
+		visible = {
+			is_debug = yes
+		}
+		available = {
 			is_debug = yes
 		}
 		complete_effect = {
@@ -2594,6 +2599,11 @@ JAP_balance_of_power_category = {
 	JAP_FOR_debug_2 = {
 		allowed = {
 			original_tag = JAP
+		}
+		visible = {
+			is_debug = yes
+		}
+		available = {
 			is_debug = yes
 		}
 		complete_effect = {
