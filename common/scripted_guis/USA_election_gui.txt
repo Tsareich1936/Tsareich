@@ -1,0 +1,40 @@
+scripted_gui = {
+	TR_USA_Show_Election_Map = {
+		context_type = player_context
+		parent_window_name = countrypoliticsview
+		window_name = TR_USA_show_election_map
+		triggers = {
+			
+		}
+		visible = {
+			original_tag = USA
+		}
+		effects = {
+			show_election_click = {
+				if = {
+					limit = {
+						check_variable = {
+							USA.TR_USA_show_election_var = 1
+						}
+					}
+					clear_variable = USA.TR_USA_show_election_var
+				}
+				else = {
+					set_variable = {
+						USA.TR_USA_show_election_var = 1
+					}
+				}
+			}
+		}
+	}
+	TR_USA_Election_Map_Window = {
+		window_name = TR_USA_election_map_window
+		context_type = player_context
+		visible = {
+			check_variable = {
+				USA.TR_USA_show_election_var = 1
+			}
+		}	
+	}
+
+}

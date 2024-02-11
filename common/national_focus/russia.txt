@@ -67,7 +67,10 @@ focus_tree = {
 		x = -1
 		y = 13
 		relative_position_id = RUS_FkV_notsar
-
+		prerequisite = {
+			focus = RUS_indp_army
+			focus = RUS_advance_navy
+		}
 	}
 	focus = {
 		id = RUS_army_airforce
@@ -79,7 +82,10 @@ focus_tree = {
 		x = 2
 		y = 0
 		relative_position_id = RUS_indp_air
-
+		prerequisite = {
+			focus = RUS_indp_army
+			focus = RUS_advance_navy
+		}
 	}
 	focus = {
 		id = RUS_arm_tsar_factory
@@ -88,14 +94,17 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = RUS_advance_army
-
+		prerequisite = {
+			focus = RUS_arm_armor
+			focus = RUS_arm_infantry
+		}
 	}
 	focus = {
 		id = RUS_arm_infantry
 		icon = GFX_goal_unknown
 		cost = 4.00
-		mutually_exclusive = {
-			focus = RUS_arm_armor
+		prerequisite = {
+			focus = RUS_advance_army
 		}
 		x = 2
 		y = 1
@@ -108,6 +117,9 @@ focus_tree = {
 		cost = 4.00
 		mutually_exclusive = {
 			focus = RUS_arm_infantry
+		}
+		prerequisite = {
+			focus = RUS_advance_army
 		}
 		x = -2
 		y = 1
@@ -1609,9 +1621,6 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_alaska_development
 		}
-		prerequisite = {
-			focus = RUS_FkV_notsar
-		}
 		mutually_exclusive = {
 			focus = RUS_advance_navy
 		}
@@ -1905,7 +1914,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 4.00
 		prerequisite = {
-			focus = RUS_arm_armor
+			focus = RUS_advance_army
 		}
 		x = -2
 		y = 2

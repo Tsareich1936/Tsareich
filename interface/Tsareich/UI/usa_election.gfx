@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_TR_USA_show_election
+		textureFile = "gfx/interface/UI/usa_election/usa_show_election_button.dds"
+	}
+	spriteType = {
+		name = GFX_TR_USA_election_bg
+		textureFile = "gfx/interface/UI/usa_election/usa_election_bg.dds"
+	}
+	spriteType = {
+		name = GFX_TR_USA_election_border
+		textureFile = "gfx/interface/UI/usa_election/usa_border.dds"
+	}
+	spriteType = {
+		name = GFX_maine_com
+		textureFile = "gfx/interface/UI/usa_election/states/maine_com.dds"
+	}
+	spriteType = {
+		name = GFX_states
+		textureFile = "gfx/interface/UI/usa_election/states.dds"
+	}
+}

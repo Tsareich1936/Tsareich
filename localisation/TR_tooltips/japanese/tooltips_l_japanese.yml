@@ -46,6 +46,7 @@
 
   TR_USA_1936_presidential_election_trigger_tt: "選挙は1936年11月3日に実施される。"
   TR_USA_1936_presidential_election_effect_tt: "§Y1936年アメリカ合衆国大統領選挙§!が実施される。"
+  TR_USA_show_election_map_tt: "各州の支持"
 
   TR_nosupport: "§Rこの選択肢は現バージョンでは実装されていない！§!"
   TR_focus_nosupport: "§Rこの選択肢には現実味がない§!"
