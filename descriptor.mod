@@ -1,9 +1,9 @@
-version="0.0.1"
+version="0.0.3"
 tags={
 	"Alternative History"
 }
 name="Tsareich"
-supported_version="1.13.6"
+supported_version="1.13.7"
 replace_path = "gfx/loadingscreens"
 replace_path="common/on_actions"
 replace_path="common/dynamic_modifiers"
