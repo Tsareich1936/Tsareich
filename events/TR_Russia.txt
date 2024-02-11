@@ -775,6 +775,51 @@ country_event = {
 
 }
 
+###スペイン内戦
+country_event = {
+    id = TR_Russia.16
+    title = TR_Russia.16.t
+    desc = TR_Russia.16.d
+    picture = GFX_report_event_chinese_soldiers_02
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.16.a #勝利へ！
+        
+    }
+
+}
+
+country_event = {
+    id = TR_Russia.17
+    title = TR_Russia.17.t
+    desc = TR_Russia.17.d
+    picture = GFX_report_event_generic_construction_site
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.17.a #勝利へ！
+        
+    }
+
+}
+
+country_event = {
+    id = TR_Russia.18
+    title = TR_Russia.18.t
+    desc = TR_Russia.18.d
+    picture = GFX_report_event_chinese_japanese_handshake
+
+    is_triggered_only = yes
+
+    option = {
+        name = TR_Russia.18.a #勝利へ！
+        
+    }
+
+}
 
 
 

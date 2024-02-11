@@ -575,6 +575,46 @@ ideas = {
                 }
             }
         }
+        RUS_spa_tsar_bank = {
+            picture = tur_balkan_central_bank_wealthy_greece
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = -0.35
+                industrial_capacity_factory = 0.2
+            }
+        }
+
+        RUS_spa_tsar_bank_rus = {
+            picture = tur_balkan_central_bank_wealthy_greece
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.075
+            }
+        }
 
 
     }
