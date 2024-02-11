@@ -57,6 +57,14 @@ on_actions = {
     #             }
     #         }
     #     }
+	effect = {
+		KOR = {
+			give_resource_rights = {
+				receiver = JAP
+				state = 527
+			}
+		}
+	}
 	effect = {#CZE set up
             CZE = {
                 country_event = {

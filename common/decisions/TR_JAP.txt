@@ -62,22 +62,22 @@ JAP_interservice_rivalry = {
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_navy_dominant
-					}
-				}
-				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_navy_dominant
-					add_idea = JAP_interservice_rivalry_navy_strengthened
-				}
-			}
-			if = {
-				limit = {
-					JAP = {
 						has_idea = JAP_interservice_rivalry_navy_strengthened
 					}
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_navy_dominant
+				}
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_idea = JAP_interservice_rivalry_navy_dominant
+					}
+				}
+				swap_ideas = {
+					remove_idea = JAP_interservice_rivalry_navy_dominant
 					add_idea = JAP_interservice_rivalry_balanced
 				}
 			}
@@ -89,18 +89,18 @@ JAP_interservice_rivalry = {
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_balanced
-					add_idea = JAP_interservice_rivalry_army_strengthened
+					add_idea = JAP_interservice_rivalry_army_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_strengthened
+						has_idea = JAP_interservice_rivalry_army_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_strengthened
-					add_idea = JAP_interservice_rivalry_army_dominant
+					remove_idea = JAP_interservice_rivalry_army_dominant
+					add_idea = JAP_interservice_rivalry_army_strengthened
 				}
 			}
 			set_country_flag = JAP_steel_for_guns
@@ -150,22 +150,22 @@ JAP_interservice_rivalry = {
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_dominant
+						has_idea = JAP_interservice_rivalry_navy_strengthened
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_dominant
-					add_idea = JAP_interservice_rivalry_army_strengthened
+					remove_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_navy_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_strengthened
+						has_idea = JAP_interservice_rivalry_navy_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_strengthened
+					remove_idea = JAP_interservice_rivalry_navy_dominant
 					add_idea = JAP_interservice_rivalry_balanced
 				}
 			}
@@ -177,18 +177,18 @@ JAP_interservice_rivalry = {
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_balanced
-					add_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_army_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_navy_strengthened
+						has_idea = JAP_interservice_rivalry_army_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_navy_strengthened
-					add_idea = JAP_interservice_rivalry_navy_dominant
+					remove_idea = JAP_interservice_rivalry_army_dominant
+					add_idea = JAP_interservice_rivalry_army_strengthened
 				}
 			}
 			random_owned_state = {
@@ -245,22 +245,22 @@ JAP_interservice_rivalry = {
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_navy_dominant
-					}
-				}
-				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_navy_dominant
-					add_idea = JAP_interservice_rivalry_navy_strengthened
-				}
-			}
-			if = {
-				limit = {
-					JAP = {
 						has_idea = JAP_interservice_rivalry_navy_strengthened
 					}
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_navy_dominant
+				}
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_idea = JAP_interservice_rivalry_navy_dominant
+					}
+				}
+				swap_ideas = {
+					remove_idea = JAP_interservice_rivalry_navy_dominant
 					add_idea = JAP_interservice_rivalry_balanced
 				}
 			}
@@ -272,18 +272,18 @@ JAP_interservice_rivalry = {
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_balanced
-					add_idea = JAP_interservice_rivalry_army_strengthened
+					add_idea = JAP_interservice_rivalry_army_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_strengthened
+						has_idea = JAP_interservice_rivalry_army_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_strengthened
-					add_idea = JAP_interservice_rivalry_army_dominant
+					remove_idea = JAP_interservice_rivalry_army_dominant
+					add_idea = JAP_interservice_rivalry_army_strengthened
 				}
 			}
 			set_country_flag = JAP_prioritize_army_aircraft_construction
@@ -320,22 +320,22 @@ JAP_interservice_rivalry = {
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_dominant
+						has_idea = JAP_interservice_rivalry_navy_strengthened
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_dominant
-					add_idea = JAP_interservice_rivalry_army_strengthened
+					remove_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_navy_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_strengthened
+						has_idea = JAP_interservice_rivalry_navy_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_strengthened
+					remove_idea = JAP_interservice_rivalry_navy_dominant
 					add_idea = JAP_interservice_rivalry_balanced
 				}
 			}
@@ -347,18 +347,18 @@ JAP_interservice_rivalry = {
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_balanced
-					add_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_army_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_navy_strengthened
+						has_idea = JAP_interservice_rivalry_army_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_navy_strengthened
-					add_idea = JAP_interservice_rivalry_navy_dominant
+					remove_idea = JAP_interservice_rivalry_army_dominant
+					add_idea = JAP_interservice_rivalry_army_strengthened
 				}
 			}
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
@@ -401,22 +401,22 @@ JAP_interservice_rivalry = {
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_navy_dominant
-					}
-				}
-				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_navy_dominant
-					add_idea = JAP_interservice_rivalry_navy_strengthened
-				}
-			}
-			if = {
-				limit = {
-					JAP = {
 						has_idea = JAP_interservice_rivalry_navy_strengthened
 					}
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_navy_dominant
+				}
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_idea = JAP_interservice_rivalry_navy_dominant
+					}
+				}
+				swap_ideas = {
+					remove_idea = JAP_interservice_rivalry_navy_dominant
 					add_idea = JAP_interservice_rivalry_balanced
 				}
 			}
@@ -428,18 +428,18 @@ JAP_interservice_rivalry = {
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_balanced
-					add_idea = JAP_interservice_rivalry_army_strengthened
+					add_idea = JAP_interservice_rivalry_army_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_strengthened
+						has_idea = JAP_interservice_rivalry_army_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_strengthened
-					add_idea = JAP_interservice_rivalry_army_dominant
+					remove_idea = JAP_interservice_rivalry_army_dominant
+					add_idea = JAP_interservice_rivalry_army_strengthened
 				}
 			}
 			set_country_flag = JAP_everybody_serves
@@ -480,22 +480,22 @@ JAP_interservice_rivalry = {
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_dominant
+						has_idea = JAP_interservice_rivalry_navy_strengthened
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_dominant
-					add_idea = JAP_interservice_rivalry_army_strengthened
+					remove_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_navy_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_strengthened
+						has_idea = JAP_interservice_rivalry_navy_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_strengthened
+					remove_idea = JAP_interservice_rivalry_navy_dominant
 					add_idea = JAP_interservice_rivalry_balanced
 				}
 			}
@@ -507,18 +507,18 @@ JAP_interservice_rivalry = {
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_balanced
-					add_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_army_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_navy_strengthened
+						has_idea = JAP_interservice_rivalry_army_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_navy_strengthened
-					add_idea = JAP_interservice_rivalry_navy_dominant
+					remove_idea = JAP_interservice_rivalry_army_dominant
+					add_idea = JAP_interservice_rivalry_army_strengthened
 				}
 			}
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
@@ -561,22 +561,22 @@ JAP_interservice_rivalry = {
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_navy_dominant
-					}
-				}
-				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_navy_dominant
-					add_idea = JAP_interservice_rivalry_navy_strengthened
-				}
-			}
-			if = {
-				limit = {
-					JAP = {
 						has_idea = JAP_interservice_rivalry_navy_strengthened
 					}
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_navy_dominant
+				}
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_idea = JAP_interservice_rivalry_navy_dominant
+					}
+				}
+				swap_ideas = {
+					remove_idea = JAP_interservice_rivalry_navy_dominant
 					add_idea = JAP_interservice_rivalry_balanced
 				}
 			}
@@ -588,18 +588,18 @@ JAP_interservice_rivalry = {
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_balanced
-					add_idea = JAP_interservice_rivalry_army_strengthened
+					add_idea = JAP_interservice_rivalry_army_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_strengthened
+						has_idea = JAP_interservice_rivalry_army_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_strengthened
-					add_idea = JAP_interservice_rivalry_army_dominant
+					remove_idea = JAP_interservice_rivalry_army_dominant
+					add_idea = JAP_interservice_rivalry_army_strengthened
 				}
 			}
 		}
@@ -641,22 +641,22 @@ JAP_interservice_rivalry = {
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_dominant
+						has_idea = JAP_interservice_rivalry_navy_strengthened
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_dominant
-					add_idea = JAP_interservice_rivalry_army_strengthened
+					remove_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_navy_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_strengthened
+						has_idea = JAP_interservice_rivalry_navy_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_strengthened
+					remove_idea = JAP_interservice_rivalry_navy_dominant
 					add_idea = JAP_interservice_rivalry_balanced
 				}
 			}
@@ -668,18 +668,18 @@ JAP_interservice_rivalry = {
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_balanced
-					add_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_army_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_navy_strengthened
+						has_idea = JAP_interservice_rivalry_army_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_navy_strengthened
-					add_idea = JAP_interservice_rivalry_navy_dominant
+					remove_idea = JAP_interservice_rivalry_army_dominant
+					add_idea = JAP_interservice_rivalry_army_strengthened
 				}
 			}
 		}
@@ -743,22 +743,22 @@ JAP_interservice_rivalry = {
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_navy_dominant
-					}
-				}
-				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_navy_dominant
-					add_idea = JAP_interservice_rivalry_navy_strengthened
-				}
-			}
-			if = {
-				limit = {
-					JAP = {
 						has_idea = JAP_interservice_rivalry_navy_strengthened
 					}
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_navy_dominant
+				}
+			}
+			if = {
+				limit = {
+					JAP = {
+						has_idea = JAP_interservice_rivalry_navy_dominant
+					}
+				}
+				swap_ideas = {
+					remove_idea = JAP_interservice_rivalry_navy_dominant
 					add_idea = JAP_interservice_rivalry_balanced
 				}
 			}
@@ -770,18 +770,18 @@ JAP_interservice_rivalry = {
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_balanced
-					add_idea = JAP_interservice_rivalry_army_strengthened
+					add_idea = JAP_interservice_rivalry_army_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_strengthened
+						has_idea = JAP_interservice_rivalry_army_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_strengthened
-					add_idea = JAP_interservice_rivalry_army_dominant
+					remove_idea = JAP_interservice_rivalry_army_dominant
+					add_idea = JAP_interservice_rivalry_army_strengthened
 				}
 			}
 		}
@@ -845,22 +845,22 @@ JAP_interservice_rivalry = {
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_dominant
+						has_idea = JAP_interservice_rivalry_navy_strengthened
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_dominant
-					add_idea = JAP_interservice_rivalry_army_strengthened
+					remove_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_navy_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_army_strengthened
+						has_idea = JAP_interservice_rivalry_navy_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_army_strengthened
+					remove_idea = JAP_interservice_rivalry_navy_dominant
 					add_idea = JAP_interservice_rivalry_balanced
 				}
 			}
@@ -872,18 +872,18 @@ JAP_interservice_rivalry = {
 				}
 				swap_ideas = {
 					remove_idea = JAP_interservice_rivalry_balanced
-					add_idea = JAP_interservice_rivalry_navy_strengthened
+					add_idea = JAP_interservice_rivalry_army_dominant
 				}
 			}
 			if = {
 				limit = {
 					JAP = {
-						has_idea = JAP_interservice_rivalry_navy_strengthened
+						has_idea = JAP_interservice_rivalry_army_dominant
 					}
 				}
 				swap_ideas = {
-					remove_idea = JAP_interservice_rivalry_navy_strengthened
-					add_idea = JAP_interservice_rivalry_navy_dominant
+					remove_idea = JAP_interservice_rivalry_army_dominant
+					add_idea = JAP_interservice_rivalry_army_strengthened
 				}
 			}
 		}
@@ -2579,6 +2579,30 @@ JAP_KOR_WAR = {
 }
 
 JAP_balance_of_power_category = {
+	JAP_FOR_debug_1 = {
+		allowed = {
+			original_tag = JAP
+			is_debug = yes
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = JAP_balance_of_power
+				value = -1.0
+			}
+		}
+	}
+	JAP_FOR_debug_2 = {
+		allowed = {
+			original_tag = JAP
+			is_debug = yes
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = JAP_balance_of_power
+				value = 1.0
+			}
+		}
+	}
 	JAP_bop_high_cost = {
 		days_re_enable = 365
 		allowed = {

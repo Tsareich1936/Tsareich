@@ -943,8 +943,8 @@ CRT = {
 }
 
 OTT = {
-	color = rgb { 156 230 147}
-	color_ui = rgb {  156 230 147}
+	color = rgb { 236 244 217}
+	color_ui = rgb {  236 244 217}
 }
 NAB = {
 	color = rgb{ 0 0 0 }
