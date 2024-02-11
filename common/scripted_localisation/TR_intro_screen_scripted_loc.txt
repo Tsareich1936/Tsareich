@@ -32,6 +32,7 @@ defined_text = {
 	name = GetCountryIntroIcon
 
 	text = { trigger = { tag = RUS } localization_key = "GFX_RUS_intro" }
+	text = { trigger = {tag = JAP }  localization_key = "GFX_JAP_intro"}
 	
 
 
