@@ -1,0 +1,184 @@
+﻿focus_tree = {
+	id = SPR_foucs
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = SPR
+		}
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+
+	focus = {
+		id = SPR1
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 5
+		available = {
+			NOT = {
+				has_government = SPR
+			}
+		}
+		x = 27
+		y = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {   
+			add_stability = 0.25
+		}
+	}
+
+	focus = {
+		id = SPR_mil1
+		icon = GFX_focus_generic_military_mission
+		cost = 5
+		prerequisite = { 
+			focus = SPR1
+		}
+		available = {
+			date > 1937.1.1
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 28
+		y = 2
+		completion_reward = {   
+			swap_ideas = {
+				remove_idea = TR_SPR_civwar
+				add_idea = TR_SPR_civwar1
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_mil2
+		icon = GFX_focus_generic_military_mission
+		cost = 5
+		prerequisite = { 
+			focus = SPR_mil1
+		}
+		available = {
+			date > 1938.1.1
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 28
+		y = 3
+		completion_reward = {   
+			swap_ideas = {
+				remove_idea = TR_SPR_civwar1
+				add_idea = TR_SPR_civwar2
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_mil3
+		icon = GFX_focus_generic_military_mission
+		cost = 5
+		prerequisite = { 
+			focus = SPR_mil2
+		}
+		available = {
+			date > 1938.8.1
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 28
+		y = 4
+		completion_reward = {   
+			swap_ideas = {
+				remove_idea = TR_SPR_civwar2
+				add_idea = TR_SPR_civwar3
+			}
+		}
+	}
+
+	focus = {
+		id = SPR2
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 5
+		prerequisite = { 
+			focus = SPR1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 26
+		y = 2
+		completion_reward = {   
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = SPR3
+		icon = GFX_goal_generic_propaganda
+		cost = 5
+		prerequisite = { 
+			focus = SPR2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 26
+		y = 3
+		completion_reward = {   
+			add_manpower = 15000
+		}
+	}
+	focus = {
+		id = SPR_p
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 5
+		prerequisite = { 
+			focus = SPR2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 24
+		y = 3
+		completion_reward = {   
+			add_political_power = 50
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = SPR4
+		icon = GFX_focus_generic_reorient_production
+		cost = 5
+		prerequisite = { 
+			focus = SPR3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 26
+		y = 4
+		completion_reward = {   
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			} 
+		}
+	}
+}
+
