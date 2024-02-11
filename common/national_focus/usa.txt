@@ -115,7 +115,7 @@ focus_tree = {
 			focus = {#新たなる道
 				id = TR_USA_the_new_way
 				icon = GFX_
-				cost = 5
+				cost = 9
 				mutually_exclusive = {
 					# focus = TR_USA_the_new_way
 					focus = TR_USA_the_old_way
@@ -130,7 +130,7 @@ focus_tree = {
 			focus = {#恐慌脱出への糸口
 				id = TR_USA_clues_to_escape_the_depression
 				icon = GFX_
-				cost = 5
+				cost = 8
 				prerequisite = {
 					focus = TR_USA_the_new_way
 				}
@@ -145,7 +145,7 @@ focus_tree = {
 				focus = {#労働組合の強化
 					id = TR_USA_strengthen_trade_unions
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_clues_to_escape_the_depression
 					}
@@ -164,7 +164,7 @@ focus_tree = {
 				focus = {#北部の労働者への呼びかけ
 					id = TR_USA_call_to_north_workers
 					icon = GFX_
-					cost = 5
+					cost = 8
 					prerequisite = {
 						focus = TR_USA_strengthen_trade_unions
 					}
@@ -178,7 +178,7 @@ focus_tree = {
 				focus = {#共産主義国家の樹立
 					id = TR_USA_communist_state_establishment
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_call_to_north_workers
 					}
@@ -200,7 +200,7 @@ focus_tree = {
 				focus = {#労働組合自治
 					id = TR_trade_union_self_government
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_call_to_north_workers
 					}
@@ -222,7 +222,7 @@ focus_tree = {
 				focus = {#真なる自由
 					id = TR_USA_true_freedom
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_call_to_north_workers
 					}
@@ -245,7 +245,7 @@ focus_tree = {
 				focus = {#大きな政府
 					id = TR_USA_big_government
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_clues_to_escape_the_depression
 					}
@@ -264,7 +264,7 @@ focus_tree = {
 				focus = {#福祉重視政策
 					id = TR_USA_welfare_oriented_policy
 					icon = GFX_
-					cost = 5
+					cost = 8
 					prerequisite = {
 						focus = TR_USA_big_government
 					}
@@ -279,7 +279,7 @@ focus_tree = {
 				focus = {#社会主義国家の実現
 					id = TR_USA_realisation_of_socialist_state
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_welfare_oriented_policy
 					}
@@ -302,7 +302,7 @@ focus_tree = {
 				focus = {#平らかに、等しく
 					id = TR_USA_flatly_and_equally
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_clues_to_escape_the_depression
 					}
@@ -321,7 +321,7 @@ focus_tree = {
 				focus = {#信教の自由
 					id = TR_USA_religious_liberty
 					icon = GFX_
-					cost = 5
+					cost = 8
 					prerequisite = {
 						focus = TR_USA_flatly_and_equally
 					}
@@ -339,7 +339,7 @@ focus_tree = {
 				focus = {#三位一体の否定
 					id = TR_denial_of_the_trinity
 					icon = GFX_
-					cost = 5
+					cost = 9
 					mutually_exclusive = {
 						focus = TR_trade_union_self_government
 						focus = TR_USA_communist_state_establishment
@@ -361,7 +361,7 @@ focus_tree = {
 				focus = {#白き者への抵抗
 					id = TR_USA_resist_the_white
 					icon = GFX_
-					cost = 5
+					cost = 8
 					prerequisite = {
 						focus = TR_USA_flatly_and_equally
 					}
@@ -379,7 +379,7 @@ focus_tree = {
 				focus = {#アメリカは誰のためにあるのか
 					id = TR_USA_who_is_the_USA_for
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_resist_the_white
 					}
@@ -402,7 +402,7 @@ focus_tree = {
 			focus = {#古き道
 				id = TR_USA_the_old_way
 				icon = GFX_
-				cost = 5
+				cost = 9
 				mutually_exclusive = {
 					focus = TR_USA_the_new_way
 					# focus = TR_USA_the_old_way
@@ -418,7 +418,7 @@ focus_tree = {
 				focus = {#白人至上主義
 					id = TR_USA_white_supremacy
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_the_old_way
 					}
@@ -450,7 +450,7 @@ focus_tree = {
 				focus = {#KKKとの協力
 					id = TR_USA_cooperation_with_KKK
 					icon = GFX_
-					cost = 5
+					cost = 8
 					prerequisite = {
 						focus = TR_USA_persecution_of_blacks
 					}
@@ -467,7 +467,7 @@ focus_tree = {
 				focus = {#White Anglo-Saxson Protestant
 					id = TR_USA_WASP
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_cooperation_with_KKK
 					}
@@ -488,7 +488,7 @@ focus_tree = {
 				focus = {#KKKとの敵対
 					id = TR_USA_hostility_with_KKK
 					icon = GFX_
-					cost = 5
+					cost = 8
 					prerequisite = {
 						focus = TR_USA_persecution_of_blacks
 					}
@@ -505,7 +505,7 @@ focus_tree = {
 				focus = {#南部諸州への接触
 					id = TR_USA_contact_with_southern_states
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_hostility_with_KKK
 					}
@@ -527,7 +527,7 @@ focus_tree = {
 				focus = {#部分的な社会主義を許容
 					id = TR_USA_accept_partial_socialism
 					icon = GFX_
-					cost = 5
+					cost = 8
 					prerequisite = {
 						focus = TR_USA_the_old_way
 					}
@@ -545,7 +545,7 @@ focus_tree = {
 				focus = {#政権を維持
 					id = TR_USA_hold_on_to_power
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_accept_partial_socialism
 					}
@@ -562,7 +562,7 @@ focus_tree = {
 				focus = {#国家雇用政策
 					id = TR_USA_national_employment_policy
 					icon = GFX_
-					cost = 5
+					cost = 8
 					prerequisite = {
 						focus = TR_USA_hold_on_to_power
 					}
@@ -576,7 +576,7 @@ focus_tree = {
 				focus = {#巻き返し
 					id = TR_USA_new_deal
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_national_employment_policy
 					}
@@ -598,7 +598,7 @@ focus_tree = {
 				focus = {#軍部との接触
 					id = TR_USA_military_contacts
 					icon = GFX_
-					cost = 5
+					cost = 8
 					prerequisite = {
 						focus = TR_USA_accept_partial_socialism
 					}
@@ -615,7 +615,7 @@ focus_tree = {
 				focus = {#自由の戦士
 					id = TR_USA_freedom_fighters
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_military_contacts
 					}
@@ -629,7 +629,7 @@ focus_tree = {
 				focus = {#中央部諸州への接触
 					id = TR_USA_contact_with_central_states
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_freedom_fighters
 					}
@@ -651,7 +651,7 @@ focus_tree = {
 				focus = {#ニューヨーク独立を支持
 					id = TR_USA_support_for_New_York_independence
 					icon = GFX_
-					cost = 5
+					cost = 8
 					prerequisite = {
 						focus = TR_USA_the_old_way
 					}
@@ -673,7 +673,7 @@ focus_tree = {
 				focus = {#ニューヨークの大統領
 					id = TR_USA_endorsement_of_NYM_for_president
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_support_for_New_York_independence
 					}
@@ -687,7 +687,7 @@ focus_tree = {
 				focus = {#神聖国家
 					id = TR_USA_holy_land
 					icon = GFX_
-					cost = 5
+					cost = 8
 					prerequisite = {
 						focus = TR_USA_endorsement_of_NYM_for_president
 					}
@@ -701,7 +701,7 @@ focus_tree = {
 				focus = {#アメリカの皇帝
 					id = TR_USA_american_imperator
 					icon = GFX_
-					cost = 5
+					cost = 9
 					prerequisite = {
 						focus = TR_USA_holy_land
 					}
