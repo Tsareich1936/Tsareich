@@ -1,4 +1,35 @@
 ﻿l_japanese:
- TR_czech_revolution.1.t: "チェコ革命"
- TR_czech_revolution.1.a: "今は為す術がない"
- TR_czech_revolution_news.1.t: "チェコで共産主義者が権力を握る"
+ TR_czech_revolution.1.t: "プラハ暴動"
+ TR_czech_revolution.1.a: "軍隊を動員せよ"
+ TR_czech_revolution.1.b: "彼らの要求を聞いてみよう"
+
+ TR_czech_revolution.2.t: "要求-自由選挙"
+ TR_czech_revolution.2.a: "選挙権を制限するならば..."
+ TR_czech_revolution.2.b: "権力を明け渡すつもりはない"
+
+ TR_czech_revolution.3.t: "要求-財閥"
+ TR_czech_revolution.3.a: "部分的に民営化しよう"
+ TR_czech_revolution.3.b: "財閥は我々の生命線だ"
+
+ TR_czech_revolution.4.t: "要求-政治犯の釈放"
+ TR_czech_revolution.4.a: "仕方あるまい..."
+ TR_czech_revolution.4.b: "奴らはテロリストだ"
+
+ TR_czech_revolution.5.t: "合意成功"
+ TR_czech_revolution.5.a: "ひとまず収まった"
+
+ TR_czech_revolution.6.t: "合意失敗"
+ TR_czech_revolution.6.a: "戦いは続く..."
+
+ TR_czech_revolution.7.t: "鎮圧成功"
+ TR_czech_revolution.7.a: "素晴らしい"
+
+ TR_czech_revolution.8.t: "鎮圧失敗"
+ TR_czech_revolution.8.a: "なんということだ"
+
+ TR_czech_revolution.9.t: "チェコ革命が失敗に終わる"
+ TR_czech_revolution.9.a: "即時介入せよ"
+
+ TR_czech_revolution.10.t: "チェコの保護"
+ TR_czech_revolution.10.a: "対等な立場であるべきだ"
+ TR_czech_revolution.10.b: "自治共和国として取り込もう"
