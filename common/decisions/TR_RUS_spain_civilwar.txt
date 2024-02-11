@@ -1,0 +1,14 @@
+RUS_spain_civilwar_decision_c = {
+    RUS_send_volunteer_army = {
+        visible = {
+            has_global_flag = TR_spr_civ_war
+        }
+        available = {
+            any_country = {
+                has_cosmetic_tag = SPB
+            }
+        } 
+        icon = GFX_decision_onmap_recruit_operative
+        priority = 999
+    }
+}
