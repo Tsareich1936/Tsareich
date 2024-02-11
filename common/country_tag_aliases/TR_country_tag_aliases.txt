@@ -8,6 +8,10 @@ IPS = {#Indian Princely States
 	has_country_flag = TR_princely_india_alieas
 }
 #Second American Civil War
+FGA = {#Federal Government of America
+	original_tag = USA
+	has_country_flag = USA_federation_flag
+}
 CSA = {#Confederation States of America
 	original_tag = USA
 	has_country_flag = USA_CSA_flag
@@ -29,3 +33,24 @@ MDR = {#Madarska
 	original_tag = HUN
 	has_country_flag = HUN_madarska
 }
+
+SPA= {#American Republic
+	original_tag = SPR
+	has_country_flag = SPR_fascism_flag
+}
+SPB = {#American Military Government
+	original_tag = SPR
+	has_country_flag = SPR_kingdom_flag
+}
+SPC = {#Democratic Republic of America
+	original_tag = SPR
+	has_country_flag = SPR_communism_flag
+}
+SPD = {#Democratic Republic of America
+	original_tag = SPR
+	has_country_flag = SPR_anarchism_flag
+}
+SPE = {#Democratic Republic of America
+	original_tag = SPR
+	has_country_flag = SPR_theocracy_flag
+}	

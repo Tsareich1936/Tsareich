@@ -67,7 +67,18 @@ division_template = {
 		engineer = { x = 0 y = 0 }   # Eng Bn
 	}
 }
-
+division_template = {
+	name = "SPR milicia"
+	division_names_group = SPR_INF_02
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
 ###### OOB ######
 units = {
 	#####LAND UNITS #####

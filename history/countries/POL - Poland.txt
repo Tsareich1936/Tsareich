@@ -30,9 +30,25 @@
 # }
 1936.1.1 = {
 	# set_global_flag = TR_poland_recognized_flag
+	RUS = {
+		declare_war_on = {
+			target = POL
+			type = annex_everything
+		}
+	}
+	create_wargoal = {
+		target = RUS
+		type = independence_wargoal
+	}
 	declare_war_on = {
 		target = RUS
 		type = independence_wargoal
+	}
+	RUS = {
+		remove_wargoal = {
+			target = POL
+			type = annex_everything
+		}
 	}
 	set_cosmetic_tag = POL_KPU
 	create_intelligence_agency = yes

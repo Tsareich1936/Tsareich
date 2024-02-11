@@ -1,17 +1,211 @@
 add_namespace = "TR_czech"
+add_namespace = "TR_czech_BANcom_news"
 
 country_event = {
-	id = CZE_ex_rus
-	title = CZE_ex_rus.1
-	desc = CZE_ex_rus.d
+	id = TR_czech.1 #ロシアに戦車生産を提案？
+	title = TR_czech.1.t
+	desc = TR_czech.1.d
 	picture = GFX_report_event_generic_handshake
 	is_triggered_only = yes
 	option = {
-		name = CZE_ex_a
+		name = TR_czech.1.a
 		ai_chance = {
 			factor = 100
+		}
+		RUS = {
+			country_event = { 
+				id = TR_czech.2
+				days = 1
+			}   
+		}
+	}
+	option = {
+		name = TR_czech.1.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = TR_czech.2 #チェコが戦車の委託生産を提案
+	title = TR_czech.2.t
+	desc = TR_czech.2.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_czech.2.a
+		ai_chance = {
+			factor = 50
+		}
+		CZE = {
+			country_event = { 
+				id = TR_czech.3
+				days = 1
+			}   
+		}
+		RUS = {
+			custom_effect_tooltip = TR_CZE_RUStank.tt
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_2
+					variant_name = "TNH"
+					allow_without_tech = yes
+					amount = 300
+					producer = CZE
+				}
+			}
+
+			add_timed_idea = {
+				idea = TR_CZE_RUStank
+				days = 180
+			}
+		}
+	}
+	option = {
+		name = TR_czech.2.b
+		ai_chance = {
+			factor = 5
+		}
+		CZE = {
+			country_event = { 
+				id = TR_czech.4
+				days = 1
+			}   
+		}
+		add_political_power = 25
+	}
+}
+country_event = {
+	id = TR_czech.3 #委託生産を成功
+	title = TR_czech.3.t
+	desc = TR_czech.3.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_czech.3.a
+		ai_chance = {
+			factor = 50
+		}
+
+	}
+}
+
+country_event = {
+	id = TR_czech.4 #委託生産失敗
+	title = TR_czech.4.t
+	desc = TR_czech.4.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_czech.4.a
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = -20
+	}
+}
+
+country_event = {
+	id = TR_czech.5 #チェコがスロバキアの保護を提案
+	title = TR_czech.5.t
+	desc = TR_czech.5.d
+	picture = GFX_report_event_cze_divided_nation
+	is_triggered_only = yes
+	option = { #Yes
+		name = TR_czech.5.a
+		ai_chance = {
+			factor = 50
+		}
+		CZE = {
+			country_event = { 
+				id = TR_czech.6
+				days = 1
+			}   
+		} 
+	}
+	option = { #No!
+		name = TR_czech.5.a
+		ai_chance = {
+			factor = 5
+		}
+		CZE = {
+			country_event = { 
+				id = TR_czech.7
+				days = 1
+			}   
+		} 
+	}
+}
+
+country_event = {
+	id = TR_czech.6 #併合成功
+	title = TR_czech.6.t
+	desc = TR_czech.6.d
+	picture = GFX_report_event_cze_divided_nation
+	is_triggered_only = yes
+	option = {
+		name = TR_czech.6.a
+		ai_chance = {
+			factor = 50
+		}
+		annex_country = {
+			target = SLO
+		}
+		CZE.GetName = チェコスロバキア国
+		add_political_power = 100
+		add_stability = 0.1
+	}
+}
+
+country_event = {
+	id = TR_czech.7 #併合失敗
+	title = TR_czech.7.t
+	desc = TR_czech.7.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_czech.7.a
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = -10
+	}
+}
+
+country_event = {
+	id = TR_czech.8 #投げ捨て
+	title = TR_czech.8.t
+	desc = TR_czech.8.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_czech.8.a
+		ai_chance = {
+			factor = 50
+		}
+		set_global_flag = TR_CZE_BANcom
+		add_stability = 0.1
+		news_event = { 
+			hours = 1 
+			id = TR_czech_BANcom_news.1 
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.2
 		}
 	}
 }
 
- 
+news_event = {
+	id = TR_czech_BANcom_news.1 #投げ捨てニュース
+	title = TR_czech_BANcom_news.1.t
+	desc = TR_czech_BANcom_news.1.d
+	picture = GFX_news_event_ast_parliament_house
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = TR_czech_BANcom_news.1.a
+	}
+}

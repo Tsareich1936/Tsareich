@@ -1,0 +1,167 @@
+ideas = {
+	country = {
+		TR_SPR_civwar= {
+			picture = "chi_war_of_resistance"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				military_factory_donations = 1
+				army_core_defence_factor = 0.66
+				army_attack_factor = -0.33
+				weekly_manpower = 777
+			}
+		}
+	}	
+	country = {
+		TR_SPR_civwar1= {
+			picture = "chi_war_of_resistance"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				military_factory_donations = 1
+				army_core_defence_factor = 0.50
+				army_attack_factor = -0.15
+				weekly_manpower = 777
+			}
+		}
+	}	
+	country = {
+		TR_SPR_civwar2= {
+			picture = "chi_war_of_resistance"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				military_factory_donations = 1
+				army_core_defence_factor = 0.20
+				weekly_manpower = 777
+			}
+			targeted_modifier = {
+				tag = SPA
+				attack_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = SPB
+				attack_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = SPC
+				attack_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = SPD
+				attack_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = SPE
+				attack_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = SPR
+				attack_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = NAV
+				attack_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = CAT
+				attack_bonus_against = 0.2
+			}
+		}
+	}	
+	country = {
+		TR_SPR_civwar3= {
+			picture = "chi_war_of_resistance"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				military_factory_donations = 1
+				weekly_manpower = 777
+			}
+			targeted_modifier = {
+				tag = SPA
+				attack_bonus_against = 1
+			}
+			targeted_modifier = {
+				tag = SPB
+				attack_bonus_against = 1
+			}
+			targeted_modifier = {
+				tag = SPC
+				attack_bonus_against = 1
+			}
+			targeted_modifier = {
+				tag = SPD
+				attack_bonus_against = 1
+			}
+			targeted_modifier = {
+				tag = SPE
+				attack_bonus_against = 1
+			}
+			targeted_modifier = {
+				tag = SPR
+				attack_bonus_against = 1
+			}
+			targeted_modifier = {
+				tag = NAV
+				attack_bonus_against = 1
+			}
+			targeted_modifier = {
+				tag = CAT
+				attack_bonus_against = 1
+			}
+		}
+	}	
+
+	country = {
+		TR_SPR_no_morale= {
+			picture = "ENG_the_war_to_end_all_wars"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.1
+				army_org_regain = -0.33
+				war_support_factor = -0.3
+			}
+		}
+	}	
+	country = {
+		TR_SPR_inter_war= {
+			picture = "SPR_international_brigades"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				military_factory_donations = 2
+				army_morale_factor = 0.15
+				weekly_manpower = 1000
+			}
+		}
+	}
+	country = {
+		TR_SPR_inter_war1= {
+			picture = "SPR_international_brigades"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				military_factory_donations = 3
+				army_morale_factor = 0.15
+				army_core_attack_factor = 0.5
+				weekly_manpower = 1500
+			}
+		}
+	}
+}

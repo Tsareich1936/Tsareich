@@ -2,19 +2,228 @@
 # German Events
 ###########################
 
-add_namespace = trfrance
+add_namespace = TR_france
+add_namespace = TR_FRA_SPsibaku
 
 
 country_event = {
-    id = trfrance.1
-    title = trfrance.1.t
-	desc = trfrance.1.d
+    id = TR_FRA_SPsibaku.1
+    title = TR_FRA_SPsibaku.1.t
+	desc = TR_FRA_SPsibaku.1.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
     option = { # Yes!
-		name = trfrance.1.a
+		name = TR_FRA_SPsibaku.1.a
 		ai_chance = {
 			factor = 100
 		}
+		
+		SPC = {
+			country_event = { 
+				id = TR_FRA_SPsibaku.2
+				days = 1
+				}   
+		}
+		SPD = {
+			country_event = { 
+				id = TR_FRA_SPsibaku.3
+				days = 1
+			}   
+		}
+		CAT = {
+			country_event = { 
+				id = TR_FRA_SPsibaku.4
+				days = 1
+			}   
+		}
+		
 	}
+}
+
+country_event = {
+    id = TR_FRA_SPsibaku.2 #SPC(共産)への要求
+    title = TR_FRA_SPsibaku.2.t
+	desc = TR_FRA_SPsibaku.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+    option = { # Yes!
+		name = TR_FRA_SPsibaku.2.a
+		ai_chance = {
+			factor = 100
+		}
+		1044 = { transfer_state_to = FRA }
+		FRA = {
+			country_event = { 
+				id = TR_FRA_SPsibaku.5
+				days = 1
+			}   
+		}
+	}
+}
+
+country_event = {
+    id = TR_FRA_SPsibaku.3 #SPD(アナキスト)への要求
+    title = TR_FRA_SPsibaku.3.t
+	desc = TR_FRA_SPsibaku.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+    option = { # Yes!
+		name = TR_FRA_SPsibaku.3.a
+		ai_chance = {
+			factor = 50
+		}
+		1043 = { transfer_state_to = FRA }
+		FRA = {
+			country_event = { 
+				id = TR_FRA_SPsibaku.6
+				days = 1
+			}   
+		}
+	}
+	option = { # No!
+	name = TR_FRA_SPsibaku.3.b
+	    ai_chance = {
+		    factor = 5
+	    }
+	    FRA = {
+		    country_event = { 
+			    id = TR_FRA_SPsibaku.8
+			    days = 1
+		    }   
+	    }
+	}
+
+}
+
+country_event = {
+    id = TR_FRA_SPsibaku.4 #CAT(カタルーニャ)への要求
+    title = TR_FRA_SPsibaku.4.t
+	desc = TR_FRA_SPsibaku.4.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+    option = { # Yes!
+		name = TR_FRA_SPsibaku.4.a
+		ai_chance = {
+			factor = 20
+		}
+		165  = { transfer_state_to = FRA }
+		FRA = {
+			country_event = { 
+				id = TR_FRA_SPsibaku.7
+				days = 1
+			}   
+		}
+
+	}
+	option = { # No!
+	    name = TR_FRA_SPsibaku.4.b
+	    ai_chance = {
+		    factor = 30
+	    }	
+	    FRA = {
+		    country_event = { 
+			id = TR_FRA_SPsibaku.9
+			days = 1
+		    } 
+		}	  
+	}
+}
+
+country_event = {
+    id = TR_FRA_SPsibaku.5 #SPC(共産)での成功
+    title = TR_FRA_SPsibaku.5.t
+	desc = TR_FRA_SPsibaku.5.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+    option = { # Yes!
+		name = TR_FRA_SPsibaku.5.a
+		ai_chance = {
+			factor = 100
+		}
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+    id = TR_FRA_SPsibaku.6 #SPD(アナーキズム)での成功
+    title = TR_FRA_SPsibaku.6.t
+	desc = TR_FRA_SPsibaku.6.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+    option = { # Yes!
+		name =TR_FRA_SPsibaku.6.a
+		ai_chance = {
+			factor = 100
+		}
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+    id = TR_FRA_SPsibaku.7 #CAT(カタルーニャ)での成功
+    title = TR_FRA_SPsibaku.7.t
+	desc = TR_FRA_SPsibaku.7.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+    option = { # Yes!
+		name = TR_FRA_SPsibaku.7.a
+		ai_chance = {
+			factor = 100
+		}
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+    id = TR_FRA_SPsibaku.8 #SPD(アナーキスト)での失敗
+    title = TR_FRA_SPsibaku.8.t
+	desc = TR_FRA_SPsibaku.8.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+    option = { # Yes!
+		name = TR_FRA_SPsibaku.8.a
+		ai_chance = {
+			factor = 10
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SPD
+			expire = 0
+		}
+		add_war_support = 0.08
+	}
+	option = { # No!
+	    name = trfrance.8.b
+	    ai_chance = {
+		    factor = 0
+		    add_war_support = -0.2
+	    }
+    }
+}
+
+country_event = {
+    id = TR_FRA_SPsibaku.9 #CAT(カタルーニャ)での失敗
+    title = TR_FRA_SPsibaku.9.t
+	desc = TR_FRA_SPsibaku.9.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+    option = { # Yes!
+		name = TR_FRA_SPsibaku.9.a
+		ai_chance = {
+			factor = 10
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = CAT
+			expire = 0
+		}
+		add_war_support = 0.08
+	}
+	option = { # No!
+	    name = trfrance.9.b
+	    ai_chance = {
+		    factor = 0
+		    add_war_support = -0.2
+	    }
+    }
 }

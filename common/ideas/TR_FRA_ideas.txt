@@ -11,6 +11,7 @@ ideas = {
 				war_support_factor = 0.1
 				weekly_manpower = 700
 				ai_desired_divisions_factor = 2
+				resistance_target_on_our_occupied_states = 0.2
 			}
 			rule = {
 				can_create_factions = yes
@@ -26,6 +27,7 @@ ideas = {
 				war_support_factor = 0.2
 				weekly_manpower = 1200
 				ai_desired_divisions_factor = 2
+				resistance_target_on_our_occupied_states = 0.25
 			}
 			rule = {
 				can_create_factions = yes
@@ -41,6 +43,7 @@ ideas = {
 				war_support_factor = 0.3
 				weekly_manpower = 2000
 				ai_desired_divisions_factor = 2
+				resistance_target_on_our_occupied_states = 0.3
 			}
 			rule = {
 				can_create_factions = yes
@@ -476,6 +479,16 @@ ideas = {
 				convoy_retreat_speed = 0.5
 				convoy_escort_efficiency = 0.5
 			}
+		}
+
+		TR_inetr_supSPC = {
+			picture = "generic_war_preparation"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				lend_lease_tension = -0.5
 		}
 	}	
 }

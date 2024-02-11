@@ -5,6 +5,9 @@ TR_SER_balkan_war_peace = {
 			transfer_state = 43
 			transfer_state = 154
 			transfer_state = 155
+			every_owned_state = {
+				add_core_of = PREV
+			}
 		}
 		SER = {
 			transfer_state = 45

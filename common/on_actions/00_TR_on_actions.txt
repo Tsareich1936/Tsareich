@@ -57,6 +57,14 @@ on_actions = {
     #             }
     #         }
     #     }
+	effect = {
+		KOR = {
+			give_resource_rights = {
+				receiver = JAP
+				state = 527
+			}
+		}
+	}
 	effect = {#CZE set up
             CZE = {
                 country_event = {
@@ -94,6 +102,15 @@ on_actions = {
 			}
 		}
 	effect = {#USA set up
+			USA = {
+				every_core_state = {
+					remove_core_of = FGA
+					remove_core_of = CSA
+					remove_core_of = ADR
+					remove_core_of = AMR
+					remove_core_of = AMG
+				}
+			}
 			every_country = {
 				limit = {
 					OR = {
@@ -101,6 +118,7 @@ on_actions = {
 						tag = CSA
 						tag = AMR
 						tag = ADR
+						tag = AMG
 						tag = TXS
 						tag = DST
 					}
@@ -110,12 +128,41 @@ on_actions = {
 				}
 			}
 		}
-	effect = {
+	effect = {#SPR set up
+		SPR = {
+			every_core_state = {
+				remove_core_of = SPA
+				remove_core_of = SPB
+				remove_core_of = SPC
+				remove_core_of = SPD
+				remove_core_of = SPE
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = SPA
+					tag = SPB
+					tag = SPC
+					tag = SPD
+					tag = SPE
+				}
+			}
+		}
+	}
+	effect = {#SER set up
 			SER = {
 				country_event = {
 					id = TR_balkan.1
 					months = 19
 					days = 9
+				}
+			}
+		}
+	effect = {
+			HUN = {
+				every_core_state = {
+					remove_core_of = MDR
 				}
 			}
 		}
