@@ -82,16 +82,17 @@ country_event = {
 	}
 	option = { # No!
 	name = TR_FRA_SPsibaku.3.b
-	ai_chance = {
-		factor = 5
-		FRA = {
-			country_event = { 
-				id = TR_FRA_SPsibaku.8
-				days = 1
-			}   
-		}
+	    ai_chance = {
+		    factor = 5
+	    }
+	    FRA = {
+		    country_event = { 
+			    id = TR_FRA_SPsibaku.8
+			    days = 1
+		    }   
+	    }
 	}
-}
+
 }
 
 country_event = {
@@ -115,15 +116,16 @@ country_event = {
 
 	}
 	option = { # No!
-	name = TR_FRA_SPsibaku.4.b
-	ai_chance = {
-		factor = 30
-		FRA = {
-			country_event = { 
-				id = TR_FRA_SPsibaku.9
-				days = 1
-			}   
-		}
+	    name = TR_FRA_SPsibaku.4.b
+	    ai_chance = {
+		    factor = 30
+	    }	
+	    FRA = {
+		    country_event = { 
+			id = TR_FRA_SPsibaku.9
+			days = 1
+		    } 
+		}	  
 	}
 }
 

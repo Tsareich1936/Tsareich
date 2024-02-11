@@ -11,7 +11,9 @@ ideas = {
 				army_core_defence_factor = 0.66
 				army_attack_factor = -0.33
 				weekly_manpower = 777
+				join_faction = no
 			}
+			join_faction = no
 		}
 	}	
 	country = {

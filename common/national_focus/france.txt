@@ -170,7 +170,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			FRA = {
-				leave_faction = GER
+				remove_from_faction = GER
 			}
 			add_war_support = 0.15
 		}
@@ -452,7 +452,7 @@ focus_tree = {
 			base = 100
 		}
 		completion_reward = {
-			remove_core_of = 28
+			remove_state_core = 28
 			add_war_support = -0.05
 			add_political_power = 50
 		}
@@ -467,6 +467,9 @@ focus_tree = {
 		x = 2
 		y = 6
 		completion_reward = {
+			add_state_claim = 165
+			add_state_claim = 1043
+			add_state_claim = 1044
 			country_event = { 
 				id = TR_FRA_SPsibaku.1
 				days = 1
@@ -570,6 +573,15 @@ focus_tree = {
 		x = 2
 		y = 8
 		completion_reward = {
+			custom_effect_tooltip = TR_FRA_tyukaku_tt
+			hidden_effect = {
+				remove_state_claim = 165
+				remove_state_claim =  1043
+				remove_state_claim = 1044
+				add_state_core  = 165
+				add_state_core  = 1043
+				add_state_core  = 1044
+			}
 			remove_ideas = TR_FRA_kokuminno_situbou1
 		}
 	}
@@ -699,6 +711,7 @@ focus_tree = {
 		}
 		available = {
 			has_army_manpower = { size > 749999 }
+			date > 1941.3.1 
 		}
 		x = 33
 		y = 2
@@ -898,6 +911,9 @@ focus_tree = {
 		}
 		x = 35
 		y = 2
+		ai_will_do = {
+			factor = 50
+		}
 		completion_reward = {
 			FRA = {
 				add_to_faction = SPC
@@ -941,6 +957,9 @@ focus_tree = {
 		}
 		x = 35
 		y = 3
+		ai_will_do = {
+			factor = 50
+		}
 		completion_reward = {
 			SPC = {
 				swap_ideas = {

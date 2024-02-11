@@ -20,6 +20,9 @@ focus_tree = {
 		cost = 8.00
 		x = 5
 		y = 0
+		ai_will_do = {
+			factor = 50
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -57,6 +60,9 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 		        add_political_power = 50
 				add_timed_idea = {
@@ -89,6 +95,9 @@ focus_tree = {
 		}
 		x = 1
 		y = 2
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			add_political_power = 50
 			add_offsite_building = { 
@@ -109,6 +118,9 @@ focus_tree = {
 		}
 		x = 3
 		y = 1
+		ai_will_do = {
+			factor = 30
+		}
 		completion_reward = {
 			add_resource = {
 				type = steel
@@ -131,6 +143,9 @@ focus_tree = {
 		}
 		x = 3
 		y = 2
+		ai_will_do = {
+			factor = 30
+		}
 		completion_reward = {
 			add_resource = {
 				type = oil
@@ -158,6 +173,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 1
+		ai_will_do = {
+			factor = 50
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -202,6 +220,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 2
+		ai_will_do = {
+			factor = 50
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -246,6 +267,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
+		ai_will_do = {
+			factor = 50
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -325,7 +349,7 @@ focus_tree = {
 				add_idea = CZE_ex2
 			}      
 			country_event = { 
-				id = CZE_ex_rus
+				id = TR_czech.1
 				days = 1
 			}   
 		}
@@ -344,6 +368,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 4
+		ai_will_do = {
+			factor = 30
+		}
 		completion_reward = {
 			add_research_slot = 1          
 		}
@@ -357,6 +384,9 @@ focus_tree = {
 	    cost = 8.00
 	    x = 5
 	    y = 6
+		ai_will_do = {
+			factor = 6
+		}
 		completion_reward = {
   			add_ideas = TR_CZE_fortress      
 		}
@@ -370,6 +400,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 7
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {   
 			75= {
 			add_building_construction = {
@@ -433,6 +466,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 8
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {   
 			75= {
 				add_building_construction = {
@@ -496,6 +532,15 @@ focus_tree = {
 		}
 		x = 5
 		y = 9
+		ai_will_do = {
+			factor = 5
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {   
 			75= {
 				add_building_construction = {
@@ -560,6 +605,9 @@ focus_tree = {
 		}
 		x = 3
 		y = 8
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {   
 			75= {
 				add_building_construction = {
@@ -572,7 +620,18 @@ focus_tree = {
 					id = 6590
 					}
 				}
-			}				
+			}		
+			72= {
+				add_building_construction = {
+					type = bunker
+					level = 6
+					instant_build = yes
+					province = {
+					id = 9551
+					id = 9567
+					}
+				}
+			}		
 		}
 	}
 
@@ -631,6 +690,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 8
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {   
 			75= {
 				add_building_construction = {
@@ -660,12 +722,22 @@ focus_tree = {
 		icon = GFX_goal_continuous_boost_freedom
 		cost = 8.00
 		available = {
-			always = no
+			SLO = {
+				is_subject = no
+			}
 		}
 		x = 11
 		y = 6
+		ai_will_do = {
+			factor = 25
+		}
 		completion_reward = {   
-			
+			SLO = {
+				country_event = { 
+					id = TR_czech.5
+					days = 1
+				}  
+			}
 		}
 	}
 	focus = {
@@ -675,10 +747,48 @@ focus_tree = {
 		prerequisite = {
 			focus = CZE_slo1
 		}
+		available = {
+			has_full_control_of_state = 70
+			has_full_control_of_state = 71
+		}
 		x = 11
 		y = 7
-		completion_reward = {   
-			
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			70 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}  
+			71 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}  
 		}
 	}
 	focus = {
@@ -692,12 +802,35 @@ focus_tree = {
 			focus = CZE_fortress_fall
 		}
 		available = {
-			# has = 1
+			has_full_control_of_state = 70
+			has_full_control_of_state = 71
 		}
 		x = 11
 		y = 8
 		completion_reward = {   
-			
+			70 = {
+				add_building_construction = {
+					type = bunker
+					level = 6
+					instant_build = yes
+					province = {
+					id = 9692
+					id = 541
+					id = 11522
+					id = 11539
+					}
+				}
+			}
+			71= {
+				add_building_construction = {
+					type = bunker
+					level = 6
+					instant_build = yes
+					province = {
+					id = 3581
+					}
+				}
+			}
 		}
 	}
 
@@ -712,6 +845,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 0
+		ai_will_do = {
+			factor = 55
+		}
 		completion_reward = {
 			add_political_power = 150
 		}
@@ -725,6 +861,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 1
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {
 		    remove_ideas = TR_CZE_demo_oppo
 			add_stability = -0.1
@@ -739,6 +878,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 2
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {
 			add_stability = 0.15
 			swap_ideas = {
@@ -756,6 +898,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = TR_CZE_skoda_works1
@@ -843,6 +988,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 4
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = TR_CZE_skoda_works2
@@ -860,6 +1008,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 			add_research_slot = 1   
 		}
@@ -873,6 +1024,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 3
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 			add_political_power = 100
 			add_popularity = {
@@ -892,6 +1046,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 0
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 			remove_ideas = TR_CZE_demo_oppo
 			swap_ideas = {
@@ -915,6 +1072,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 1
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {
 			add_political_power = 100
 			add_popularity = {
@@ -932,6 +1092,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 2
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {
 			add_political_power = 100
 			random_owned_controlled_state = {
@@ -966,6 +1129,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 3
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 			add_political_power = 100
 			add_popularity = {
@@ -983,6 +1149,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 4
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.2
@@ -997,6 +1166,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 5
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 			add_research_slot = 1   
 		}
@@ -1010,6 +1182,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 3
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
 			add_ideas = CZE_dem_strong
 		}
@@ -1025,12 +1200,15 @@ focus_tree = {
 		}
 		x = 16
 		y = 4
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {
-			add_popularity = {
-				ideology = communism
-			    popularity = -0.2
-			}
-			#country_event = CZE_ban_com
+			custom_effect_tooltip = TR_CZE_BANcom.tt
+			country_event = { 
+				id = TR_czech.8
+				days = 1
+			}   
 		}
 	}
 
@@ -1050,6 +1228,9 @@ focus_tree = {
 		}
 		x = 26
 		y = 0
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 
 		}
@@ -1080,7 +1261,7 @@ focus_tree = {
 		x = 24
 		y = 2
 		completion_reward = {
-
+            add_political_power = 50
 		}
 	}
 	focus = {
@@ -1093,7 +1274,7 @@ focus_tree = {
 		x = 23
 		y = 3
 		completion_reward = {
-
+            add_political_power = 50
 		}
 	}
 	focus = {
@@ -1122,7 +1303,10 @@ focus_tree = {
 		x = 28
 		y = 2
 		completion_reward = {
-
+            set_rule = {
+	            can_create_factions = yes
+            }
+			create_faction = "チェコ協商"
 		}
 	}
 	focus = {
@@ -1153,7 +1337,38 @@ focus_tree = {
 		x = 25
 		y = 4
 		completion_reward = {
-
+			70 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}  
+			71 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			} 
 		}
 	}
 	focus = {
@@ -1184,7 +1399,10 @@ focus_tree = {
 		x = 27
 		y = 4
 		completion_reward = {
-
+			remove_state_claim = 73
+			remove_state_claim =  664
+			add_state_core  = 73
+			add_state_core  = 664
 		}
 	}
 	focus = {
@@ -1197,7 +1415,8 @@ focus_tree = {
 		x = 30
 		y = 3
 		completion_reward = {
-
+            add_political_power = 50
+			add_stability = -0.05
 		}
 	}
 	focus = {
@@ -1227,7 +1446,7 @@ focus_tree = {
 		x = 29
 		y = 5
 		completion_reward = {
-
+			add_state_core  = 65
 		}
 	}
 	focus = {
@@ -1257,7 +1476,9 @@ focus_tree = {
 		x = 31
 		y = 5
 		completion_reward = {
-
+			add_state_core  = 66
+			add_state_core  = 67
+			add_state_core  = 762
 		}
 	}
 	focus = {
@@ -1290,7 +1511,19 @@ focus_tree = {
 		x = 30
 		y = 7
 		completion_reward = {
+			add_state_core = 10
+			add_state_core = 90
+			add_state_core = 88
+			add_state_core = 89
 
+			add_state_core = 91
+			add_state_core = 92
+			add_state_core = 97
+
+			add_state_core = 85
+			add_state_core = 86
+			add_state_core = 87
+			add_state_core = 807
 		}
 	}
 	focus = {
@@ -1303,7 +1536,8 @@ focus_tree = {
 		x = 30
 		y = 8
 		completion_reward = {
-
+			add_stability = 0.1
+			add_political_power = 100
 		}
 	}
 
@@ -1343,6 +1577,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 1
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {
 			add_ideas = TR_CZE_inf
 		}
@@ -1482,6 +1719,9 @@ focus_tree = {
 		}
 		x = 40
 		y = 1
+		ai_will_do = {
+			factor = 8
+		}
 		completion_reward = {
 			add_ideas = TR_CZE_tank
 		}
