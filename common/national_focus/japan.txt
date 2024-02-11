@@ -3620,13 +3620,36 @@ focus_tree = {
         prerequisite = {
             focus = jap_army_America
         }
+        
     }
     
 }
-    
 
+focus_tree = {
+    id = TR_japan_focus_navy
 
+    country = {
+		factor = 0
+		modifier = {
+			add = 101
+			tag = JAP
+		}
+	}
 
+    continuous_focus_position = {
+        x = 1110
+        y = 2500
+    }
+
+	default = no
+	reset_on_civilwar = no
+
+    focus = {
+        id = jap_navy_leader
+        x = 10
+        y = 0
+    }
+}
 
 focus_tree = {
     id = japan_Toyotomi
@@ -4374,6 +4397,9 @@ focus_tree = {
         }
     }
 }
+
+
+
 
 shared_focus = {
     id = jap_NAVY_1_1

@@ -64,6 +64,17 @@ JAP_balance_of_power = {
 				political_power_factor = -0.5
 				generate_wargoal_tension = -0.5
 			}
+			on_activate = {
+				hidden_effect = {
+					JAP = {
+						country_event = {
+							id = TR_japan.92
+						}
+					}
+				}
+
+
+			}
 		}
 		range = {
 			id = military_midle
@@ -84,6 +95,7 @@ JAP_balance_of_power = {
 				political_power_factor = -0.1
 				generate_wargoal_tension = -1
 			}
+
 		}
 	}
 
