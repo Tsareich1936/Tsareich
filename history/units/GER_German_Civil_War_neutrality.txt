@@ -124,7 +124,7 @@ units = {
 	}
 	division = {
 		name = "23. Landsturmregiment"
-		location = 6488  # Frankfurt
+		location = 444  # Frankfurt
 		division_template = "Landsturmregiment"
 	}
 	division = {
