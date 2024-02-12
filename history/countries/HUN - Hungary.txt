@@ -60,22 +60,6 @@ if = {
 
 if = {
 	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	add_ideas = {
-	}
-	if = {
-		limit = { has_dlc = "Arms Against Tyranny" }
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "Arms Against Tyranny" }
-		}
-		add_ideas = { HUN_treaty_of_triannon }
-	}
-}
-if = {
-	limit = {
 		has_dlc = "By Blood Alone"
 	}
 	create_equipment_variant = {

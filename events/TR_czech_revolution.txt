@@ -2,49 +2,113 @@ add_namespace = "TR_czech_revolution"
 add_namespace = "TR_czech_revolution_news"
 
 
-country_event = {#プラハ暴動
+country_event = {#プラハ革命
 	id = TR_czech_revolution.1
 	title = TR_czech_revolution.1.t
 	desc = TR_czech_revolution.1.d
 	picture = GFX_report_event_german_speech
-	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = CZE
+		has_global_flag = TR_balkan_war_finished
+		date > 1939.1.1
+		NOT = {
+			has_global_flag = TR_CZE_BANcom
+		}
+	}
 	option = {
-		name = TR_czech_revolution.1.a
+		name = TR_czech_revolution.1.a #彼らに政権を引き渡そう...
+		ai_chance = {
+			factor = 5
+		}
 		country_event = {
-			id = TR_czech_revolution.8
+			id = TR_czech_revolution.5
 			days = 3
 		}
 	}
 	option = {
-		name = TR_czech_revolution.1.b
-		country_event = {
-			id = TR_czech_revolution.2
-			days = 3
+		name = TR_czech_revolution.1.b #ドイツ人の売国奴の話を聞く必要はない！鎮圧せよ！
+		ai_chance = {
+			factor = 50
+		}
+		random_list = {
+			80 = { #鎮圧失敗
+			country_event = {
+				id = TR_czech_revolution.3
+				days = 3
+			}
+			GER = {
+				country_event = {
+					id = TR_czech_revolution.6
+					days = 3
+				}
+			}
+			}
+			20 = { #鎮圧成功
+			country_event = {
+				id = TR_czech_revolution.4
+				days = 3
+			}
+			GER = {
+				country_event = {
+					id = TR_czech_revolution.7
+					days = 3
+				}
+			}
+			}
 		}
 	}
 }
-country_event = {
+
+
+country_event = {#プラハ暴動失敗
 	id = TR_czech_revolution.2
 	title = TR_czech_revolution.2.t
 	desc = TR_czech_revolution.2.d
 	picture = GFX_report_event_german_speech
-	is_triggered_only = yes
-	option = {
-		name = TR_czech_revolution.2.a
-		country_event = {
-			id = TR_czech_revolution.3
-			days = 3
-		}
+	fire_only_once = yes
+	trigger = {
+		tag = CZE
+		has_global_flag = TR_balkan_war_finished
+		date > 1939.1.1
+		has_global_flag = TR_CZE_BANcom
 	}
 	option = {
-		name = TR_czech_revolution.2.b
-		country_event = {
-			id = TR_czech_revolution.6
-			days = 3
+		name = TR_czech_revolution.2.a #反乱軍は事前に鎮圧された
+		ai_chance = {
+			factor = 100
 		}
-	}
+		add_stability = 0.2	
+		80 = { #普通
+		    GER = {
+			    country_event = {
+				    id = TR_czech_revolution.7
+				    days = 3
+			    }
+		    }
+	    }
+	    18 = { #反乱1
+		    GER = {
+			    country_event = {
+				    id = TR_czech_revolution.8
+				    days = 3
+			    }
+		    }
+		}	
+		2 = { #反乱2
+		    GER = {
+				country_event = {
+					id = TR_czech_revolution.9
+					days = 3
+				}
+			}
+        }	
+    }
 }
-country_event = {
+
+
+
+country_event = { #チェコ内戦！
 	id = TR_czech_revolution.3
 	title = TR_czech_revolution.3.t
 	desc = TR_czech_revolution.3.d
@@ -52,41 +116,31 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = TR_czech_revolution.3.a
-		country_event = {
-			id = TR_czech_revolution.4
-			days = 3
-		}
-	}
-	option = {
-		name = TR_czech_revolution.2.b
-		country_event = {
-			id = TR_czech_revolution.6
-			days = 3
+		start_civil_war = {
+			ruling_party = conservatism
+			ideology = communism
+			size = 0.5
+			capital = 9
+			states = {
+				9 941 942
+			}
+			keep_political_leader = yes
+			keep_political_party_members = yes
 		}
 	}
 }
-country_event = {
+country_event = { #鎮圧成功
 	id = TR_czech_revolution.4
 	title = TR_czech_revolution.4.t
 	desc = TR_czech_revolution.4.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
 	option = {
-		name = TR_czech_revolution.4.a
-		country_event = {
-			id = TR_czech_revolution.5
-			days = 3
-		}
-	}
-	option = {
-		name = TR_czech_revolution.2.b
-		country_event = {
-			id = TR_czech_revolution.6
-			days = 3
-		}
+		add_stability = -0.1
 	}
 }
-country_event = {#合意達成
+
+country_event = {#共産主義者が政権を掌握！
 	id = TR_czech_revolution.5
 	title = TR_czech_revolution.5.t
 	desc = TR_czech_revolution.5.d
@@ -94,9 +148,21 @@ country_event = {#合意達成
 	is_triggered_only = yes
 	option = {
 		name = TR_czech_revolution.5.a
+		set_political_party = {
+			ideology = communism
+			popularity = 100
+		}
+		add_ideas = TR_CZE_skoda_anti
+		add_ideas = TR_CZE_anti 
+		add_stability = =0.5
+		remove_ideas = TR_CZE_skoda_works
+		remove_ideas = TR_CZE_skoda_works1
+		remove_ideas = TR_CZE_skoda_works2
+		remove_ideas = TR_CZE_skoda_works3
+		remove_ideas = TR_CZE_antiGER
 	}
 }
-country_event = {#合意失敗
+country_event = {#GERチェコで内戦！
 	id = TR_czech_revolution.6
 	title = TR_czech_revolution.6.t
 	desc = TR_czech_revolution.6.d
@@ -117,7 +183,7 @@ country_event = {#合意失敗
 		}
 	}
 }
-country_event = {#鎮圧成功
+country_event = {#チェコ革命の失敗
 	id = TR_czech_revolution.7
 	title = TR_czech_revolution.7.t
 	desc = TR_czech_revolution.7.d
@@ -125,15 +191,9 @@ country_event = {#鎮圧成功
 	picture = GFX_report_event_german_speech
 	option = {
 		name = TR_czech_revolution.7.a
-		GER = {
-			country_event = {
-				id = TR_czech_revolution.9
-				days = 3
-			}
-		}
 	}
 }
-country_event = {#鎮圧失敗
+country_event = {#シレジアでスラブ人が蜂起！
 	id = TR_czech_revolution.8
 	title = TR_czech_revolution.8.t
 	desc = TR_czech_revolution.8.d
@@ -141,33 +201,46 @@ country_event = {#鎮圧失敗
 	picture = GFX_report_event_german_speech
 	option = {
 		name = TR_czech_revolution.8.a
-		start_civil_war = {
-			ruling_party = conservatism
-			ideology = communism
-			size = 0.5
-			capital = 9
-			states = {
-				9 941 942
+		GER = {
+			start_civil_war = {
+				ruling_party = communism
+				ideology = conservatism
+				size = 0.5
+				capital = 66
+				states = {
+					66
+				}
+				keep_political_leader = yes
+				keep_political_party_members = yes
 			}
-			keep_political_leader = yes
-			keep_political_party_members = yes
 		}
 	}
 }
-country_event = {#チェコ革命失敗
+country_event = {#ドイツで反動主義者が蜂起！
 	id = TR_czech_revolution.9
 	title = TR_czech_revolution.9.t
 	desc = TR_czech_revolution.9.d
 	is_triggered_only = yes
 	picture = GFX_report_event_german_speech
 	option = {
-		name = TR_czech_revolution.9.a
-		declare_war_on = {
-			target = CZE
-			type = annex_everything
+		name = TR_czech_revolution.8.a
+		GER = {
+			start_civil_war = {
+				ruling_party = communism
+				ideology = conservatism
+				size = 0.5
+				capital = 4
+				states = {
+					4 152 52 53
+				}
+				keep_political_leader = yes
+				keep_political_party_members = yes
+			}
 		}
+
 	}
 }
+
 country_event = {#チェコの保護
 	id = TR_czech_revolution.10
 	title = TR_czech_revolution.10.t
