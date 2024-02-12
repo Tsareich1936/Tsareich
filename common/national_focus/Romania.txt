@@ -13,18 +13,319 @@ focus_tree = {
 
 	focus = {
 		id = ROM_1
-		icon = GFX_goal_unknown
-		cost = 8.00
+		icon =  GFX_focus_rom_preserve_romania
+		cost = 8
 		x = 9
 		y = 0
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.2
+		}
 
 	}
 	focus = {
+		id = ROM_2
+		icon = GFX_focus_rom_handle_king
+		cost = 8
+		prerequisite = {
+			focus = ROM_1
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+			add_stability = -0.1
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.2
+			}
+		}
+	}
+	focus = {
+		id = ROM_3
+		icon = GFX_focus_research
+		cost = 8
+		prerequisite = {
+			focus = ROM_2
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+			add_stability = 0.1
+			add_research_slot = 1
+		}
+	}
+
+
+	#軍事
+	focus = {
+		id = ROM_mil_1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8
+		prerequisite = {
+			focus = ROM_1
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons 
+				category = artillery
+			}	
+		}
+	}
+
+	focus = {
+		id = ROM_mil_2
+		icon = GFX_focus_generic_fascist_propaganda
+		cost = 8
+		prerequisite = {
+			focus = ROM_mil_1
+		}
+		x = 3
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons 
+				category = artillery
+			}	
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			} 
+		}
+	}
+	focus = {
+		id = ROM_mil_3
+		icon = GFX_goal_generic_construct_military
+		cost = 8
+		prerequisite = {
+			focus = ROM_mil_2
+		}
+		x = 1
+		y = 3
+		completion_reward = {
+			add_ideas = x
+		}
+	}
+	focus = {
+		id = ROM_mil_nav
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 8
+		prerequisite = {
+			focus = ROM_mil_3
+		}
+		x = 1
+		y = 4
+		completion_reward = {
+			navy_experience = 30
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ROM_mil_5
+		icon = GFX_goal_generic_small_arms
+		cost = 8
+		prerequisite = {
+			focus = ROM_mil_2
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+			army_experience = 15
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ROM_mil_6
+		icon =GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_mil_5
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+			army_experience = 15
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ROM_mil_7
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_mil_6
+		}
+		x = 3
+		y = 5
+		completion_reward = {
+			army_experience = 15
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ROM_mil_ind1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8
+		prerequisite = {
+			focus = ROM_mil_2
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			} 
+		}
+	}
+	focus = {
+		id = ROM_mil_ind2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 8
+		prerequisite = {
+			focus = ROM_mil_ind1
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			} 
+		}
+	}
+
+
+
+
+
+
+    #バルカン戦争での勝利
+	focus = {
 		id = ROM_win1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 10.00
 		x = 23
 		y = 0
+		available = {
+			always = no
+		}
 
 	}
 	focus = {
@@ -35,94 +336,7 @@ focus_tree = {
 		y = 7
 
 	}
-	focus = {
-		id = ROM_imil_1
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_1
-		}
-		x = 3
-		y = 1
 
-	}
-	focus = {
-		id = ROM_imil_2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_imil_1
-		}
-		x = 3
-		y = 2
-
-	}
-	focus = {
-		id = ROM_imil_3
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_imil_2
-		}
-		x = 1
-		y = 3
-
-	}
-	focus = {
-		id = ROM_imil_5
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_imil_2
-		}
-		x = 3
-		y = 3
-
-	}
-	focus = {
-		id = ROM_imil_6
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_imil_5
-		}
-		x = 3
-		y = 4
-
-	}
-	focus = {
-		id = ROM_imil_7
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_imil_6
-		}
-		x = 3
-		y = 5
-
-	}
-	focus = {
-		id = ROM_imil_ind1
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_imil_2
-		}
-		x = 5
-		y = 3
-
-	}
-	focus = {
-		id = ROM_imil_ind2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_imil_ind1
-		}
-		x = 5
-		y = 4
-
-	}
 	focus = {
 		id = newfocus_23
 		icon = GFX_goal_unknown
@@ -136,7 +350,7 @@ focus_tree = {
 	}
 	focus = {
 		id = newfocus_28
-		icon = GFX_goal_unknown
+		icon = GFX_focus_invite_romania
 		cost = 10.00
 		prerequisite = {
 			focus = newfocus_22
@@ -172,28 +386,8 @@ focus_tree = {
 		y = 10
 
 	}
-	focus = {
-		id = ROM_imil_nav
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_imil_2
-		}
-		x = 7
-		y = 3
 
-	}
-	focus = {
-		id = ROM_2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_1
-		}
-		x = 9
-		y = 1
 
-	}
 	focus = {
 		id = newfocus_24
 		icon = GFX_goal_unknown
@@ -249,105 +443,236 @@ focus_tree = {
 		y = 9
 
 	}
-	focus = {
-		id = newfocus_34
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = newfocus_26
-		}
-		x = 13
-		y = 10
 
-	}
+	#産業
 	focus = {
 		id = ROM_ind_1
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 8
 		prerequisite = {
 			focus = ROM_1
 		}
 		x = 14
 		y = 1
-
+		completion_reward = {
+			add_political_power = 50
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			} 
+		}
 	}
+
 	focus = {
 		id = ROM_ind_2
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_generic_industry_3
+		cost = 8
 		prerequisite = {
 			focus = ROM_ind_1
 		}
 		x = 14
 		y = 2
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			} 
+		}
 	}
 	focus = {
-		id = ROM_ind_r1
-		icon = GFX_goal_unknown
-		cost = 10.00
+		id = ROM_ind_3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 8
 		prerequisite = {
 			focus = ROM_ind_2
 		}
 		x = 12
 		y = 3
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ROM_ind_4
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 8
+		prerequisite = {
+			focus = ROM_ind_3
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = ROM_ind_5
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_build_tank
+		cost = 8
 		prerequisite = {
 			focus = ROM_ind_2
 		}
 		x = 14
 		y = 3
-
+		completion_reward = {
+			add_political_power = 15
+		}
 	}
 	focus = {
 		id = ROM_ind_6
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_build_tank
+		cost = 8
 		prerequisite = {
 			focus = ROM_ind_5
 		}
 		x = 14
 		y = 4
-
+		completion_reward = {
+			add_political_power = 15
+		}
 	}
 	focus = {
 		id = ROM_ind_7
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_build_tank
+		cost = 8
 		prerequisite = {
 			focus = ROM_ind_6
 		}
 		x = 14
 		y = 5
-
+		completion_reward = {
+			add_political_power = 15
+		}
 	}
 	focus = {
-		id = ROM_ind_3
-		icon = GFX_goal_unknown
-		cost = 10.00
+		id = ROM_ind_r1
+		icon =GFX_focus_generic_steel
+		cost = 8
 		prerequisite = {
 			focus = ROM_ind_2
 		}
 		x = 16
 		y = 3
-
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 12
+				state = 46
+			}
+			add_resource = {
+				type = steel
+				amount = 6
+				state = 79
+			}  
+		}
 	}
 	focus = {
-		id = ROM_ind_4
-		icon = GFX_goal_unknown
-		cost = 10.00
+		id = ROM_ind_r2
+		icon = GFX_goal_generic_oil_refinery
+		cost = 8
 		prerequisite = {
-			focus = ROM_ind_3
+			focus = ROM_ind_r1
 		}
 		x = 16
 		y = 4
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 46
+			} 
+			add_tech_bonus = {
+				name = fuel_bonus
+				bonus = 1
+				uses = 1
+				category = cat_synth_oil
+			} 
+		}
 
 	}
+
 	focus = {
 		id = ROM_win2
 		icon = GFX_goal_unknown
@@ -416,7 +741,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_win10
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_pope
 		cost = 10.00
 		prerequisite = {
 			focus = ROM_win9
@@ -425,28 +750,8 @@ focus_tree = {
 		y = 5
 
 	}
-	focus = {
-		id = ROM_imil_4
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_imil_3
-		}
-		x = 1
-		y = 4
 
-	}
-	focus = {
-		id = ROM_ind_r2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_ind_r1
-		}
-		x = 12
-		y = 4
 
-	}
 	focus = {
 		id = newfocus_30
 		icon = GFX_goal_unknown
@@ -467,6 +772,17 @@ focus_tree = {
 		}
 		x = 5
 		y = 11
+
+	}
+	focus = {
+		id = newfocus_34
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_26
+		}
+		x = 13
+		y = 10
 
 	}
 	focus = {
