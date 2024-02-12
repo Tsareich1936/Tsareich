@@ -2,19 +2,19 @@ add_namespace = "TR_czech_revolution"
 add_namespace = "TR_czech_revolution_news"
 
 
-country_event = {#プラハ革命
+country_event = {#プラハ暴動
 	id = TR_czech_revolution.1
 	title = TR_czech_revolution.1.t
 	desc = TR_czech_revolution.1.d
 	picture = GFX_report_event_german_speech
+
 	fire_only_once = yes
+
 	trigger = {
 		tag = CZE
+		has_defensive_war = no
+		date > 1938.1.1
 		has_global_flag = TR_balkan_war_finished
-		date > 1939.1.1
-		NOT = {
-			has_global_flag = TR_CZE_BANcom
-		}
 	}
 	option = {
 		name = TR_czech_revolution.1.a #彼らに政権を引き渡そう...
@@ -22,7 +22,7 @@ country_event = {#プラハ革命
 			factor = 35
 		}
 		country_event = {
-			id = TR_czech_revolution.5
+			id = TR_czech_revolution.8
 			days = 3
 		}
 	}
@@ -58,9 +58,7 @@ country_event = {#プラハ革命
 		}
 	}
 }
-
-
-country_event = {#プラハ暴動失敗
+country_event = {#要求-自由選挙
 	id = TR_czech_revolution.2
 	title = TR_czech_revolution.2.t
 	desc = TR_czech_revolution.2.d
@@ -102,17 +100,14 @@ country_event = {#プラハ暴動失敗
         }	
     }
 }
-
-
-
-country_event = { #チェコ内戦！
+	country_event = {#要求-財閥
 	id = TR_czech_revolution.3
 	title = TR_czech_revolution.3.t
 	desc = TR_czech_revolution.3.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
 
-	option = { #内戦
+	option = {#部分的に民営化しよう
 		name = TR_czech_revolution.3.a
 		ai_chance = { factor = 100 }
 		start_civil_war = {
@@ -198,7 +193,7 @@ country_event = {#チェコ革命の失敗
 		ai_chance = { factor = 100 }
 	}
 }
-country_event = {#シレジアでスラブ人が蜂起！
+country_event = {#鎮圧失敗
 	id = TR_czech_revolution.8
 	title = TR_czech_revolution.8.t
 	desc = TR_czech_revolution.8.d
@@ -241,10 +236,12 @@ country_event = {#シレジアでスラブ人が蜂起！
 				target = CZE
 				type = annex_all
 			}
+			keep_political_leader = yes
+			keep_political_party_members = yes
 		}
 	}
 }
-country_event = {#ドイツで反動主義者が蜂起！
+country_event = {#チェコ革命失敗
 	id = TR_czech_revolution.9
 	title = TR_czech_revolution.9.t
 	desc = TR_czech_revolution.9.d
@@ -267,10 +264,8 @@ country_event = {#ドイツで反動主義者が蜂起！
 				keep_political_party_members = yes
 			}
 		}
-
 	}
 }
-
 country_event = {#チェコの保護
 	id = TR_czech_revolution.10
 	title = TR_czech_revolution.10.t
@@ -314,5 +309,3 @@ news_event = {
 		}
 	}
 }
-
- 
