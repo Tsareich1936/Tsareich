@@ -2944,7 +2944,7 @@ characters = {
 				}
 				modifier = {
 					factor = 0
-					ITA_is_socialist_ai = yes
+					# ITA_is_socialist_ai = yes
 				}
 			}
 		}
@@ -2987,7 +2987,7 @@ characters = {
 				base = 1.000
 				modifier = {
 					factor = 0
-					ITA_is_socialist_ai = yes
+					# ITA_is_socialist_ai = yes
 				}
 			}
 		}
@@ -3113,7 +3113,7 @@ characters = {
 				base = 0.300
 				modifier = {
 					factor = 0
-					ITA_is_socialist_ai = yes
+					# ITA_is_socialist_ai = yes
 				}
 			}
 		}
