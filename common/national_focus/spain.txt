@@ -361,6 +361,7 @@
 		}
 		completion_reward = {   
 			add_stability = 0.2
+			set_capital = { state = 41 }
 			remove_ideas = TR_SPR_civwar
 			remove_ideas = TR_SPR_civwar1
 			remove_ideas = TR_SPR_civwar2

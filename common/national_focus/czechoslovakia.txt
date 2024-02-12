@@ -656,7 +656,27 @@ focus_tree = {
 					id = 6590
 					}
 				}
-			}				
+			}	
+			941 = {
+				add_building_construction = {
+					type = bunker
+					level = 6
+					instant_build = yes
+					province = {
+					id = 9421
+					}
+				}
+			}		
+			942 = {
+				add_building_construction = {
+					type = bunker
+					level = 6
+					instant_build = yes
+					province = {
+					id = 9429
+					}
+				}
+			}					
 		}
 	}
 	focus = {
@@ -1317,6 +1337,10 @@ focus_tree = {
 			focus = CZE_dip_big2
 			focus = CZE_dip2
 		}
+		bypass = { 
+			has_full_control_of_state = 70
+			has_full_control_of_state = 71
+		}
 		x = 25
 		y = 3
 		completion_reward = {
@@ -1379,6 +1403,10 @@ focus_tree = {
 			focus = CZE_dip_big2
 			focus = CZE_dip2
 		}
+		bypass = { 
+			has_full_control_of_state = 73
+			has_full_control_of_state = 664
+		}
 		x = 27
 		y = 3
 		completion_reward = {
@@ -1426,6 +1454,9 @@ focus_tree = {
 		prerequisite = {
 			focus = CZE_dip_big3
 		}
+		bypass = { 
+			has_full_control_of_state = 65
+		}
 		x = 29
 		y = 4
 		completion_reward = {
@@ -1455,6 +1486,11 @@ focus_tree = {
 		cost = 8.00
 		prerequisite = {
 			focus = CZE_dip_big3
+		}
+		bypass = { 
+			has_full_control_of_state = 66
+			has_full_control_of_state = 67
+			has_full_control_of_state = 762
 		}
 		x = 31
 		y = 4
@@ -1533,11 +1569,16 @@ focus_tree = {
 		prerequisite = {
 			focus = CZE_dip_pol
 		}
+		available = {
+			has_full_control_of_state = 10
+			has_full_control_of_state = 66
+		}
 		x = 30
 		y = 8
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 100
+			set_cosmetic_tag = CZEZPL
 		}
 	}
 
