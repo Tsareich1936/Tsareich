@@ -106,3 +106,17 @@ JAP_balance_of_power_category = {
 		tag = JAP
 	}
 }
+
+JAP_airbornes = {
+	allowed = {
+		tag = JAP
+	}
+
+	
+	priority = {
+		base = 11
+	}
+	
+	
+	visible_when_empty = no
+}

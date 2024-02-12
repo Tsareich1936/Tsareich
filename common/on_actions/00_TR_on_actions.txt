@@ -65,14 +65,14 @@ on_actions = {
 			}
 		}
 	}
-	effect = {#CZE set up
-            CZE = {
-                country_event = {
-                    id = TR_czech_revolution.1
-                    days = 1095
-                }
-            }
-        }
+	#effect = {#CZE set up
+        #    CZE = {
+        #        country_event = {
+        #            id = TR_czech_revolution.1
+        #            days = 1095
+        #        }
+       #     }
+       # }
 	effect = {#POL set up
 			POL = { become_exiled_in = { target = FRA legitimacy = 10 } }
 			every_state = {

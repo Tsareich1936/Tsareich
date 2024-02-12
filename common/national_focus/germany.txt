@@ -1264,6 +1264,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_red_volunteer_army
+		ai_will_do = {
+			factor = 320
+		}
 
 	}
 	focus = {
