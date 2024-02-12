@@ -641,7 +641,7 @@ country_event = {                    #　国家保護法
 			JAP = {
 				country_event = {
 					id = TR_japan.14
-					days = 3
+					days = 365
 				}
 			}
 		}
@@ -1979,6 +1979,9 @@ country_event = {
 			set_politics = {
 				ruling_party = neutrality
 			}
+			load_focus_tree = {
+				tree = japan_focus_Kodoha
+			}
 		}
 		if = {
 			limit = {
@@ -2004,7 +2007,9 @@ country_event = {
 				picture = GFX_JAP_Toyotomi
 				ideology = despotism
 			}
-			load_focus_tree = japan_Toyotomi
+			load_focus_tree = {
+				tree = japan_Toyotomi
+			}
 		}
 		if = {
 			limit = {
@@ -2031,7 +2036,7 @@ country_event = {
 				ideology = animism 
 			}
 			load_focus_tree = {
-				id = jap_Yamataikoku
+				tree = japan_Yamataikoku
 			}
 		}
 

@@ -2138,6 +2138,9 @@ focus_tree = { # bureancy
         relative_position_id = jap_Political_reform_4
         x = 0
         y = 1
+        prerequisite = {
+            focus = jap_Political_reform_4
+        }
     }
 
     # controlled economy
@@ -3698,7 +3701,7 @@ focus_tree = {  # navy event
     }
 
     focus = {
-        id = jap_militalism_1_1
+        id = jap_navy_nation_1_1
         relative_position_id = jap_navy_nation
         x = -2
         y = 1
@@ -3713,7 +3716,7 @@ focus_tree = {  # navy event
         x = 0
         y = 1
         prerequisite = {
-            foucs = jap_navy_nation
+            focus = jap_navy_nation
         }
     }
 
@@ -3729,11 +3732,11 @@ focus_tree = {  # navy event
 
     focus = {
         id = jap_navy_nation_1_2
-        relative_position_id = jap_militalism_1_1
+        relative_position_id = jap_navy_nation_1_1
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_militalism_1_1
+            focus = jap_navy_nation_1_1
         }
     }
 
