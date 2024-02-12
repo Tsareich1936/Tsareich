@@ -79,7 +79,13 @@ RUS_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
-		value = 20
+		value = -10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = heavy_fighter
+		value = 100
 	}
 
 	ai_strategy = {
@@ -153,10 +159,21 @@ RUS_unit_production = {
 		value = -20
 	}
 
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 50
+	}
+
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
-		value = 15 #Accounted for
+		value = -10 #Accounted for
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = 20 #Accounted for
 	}
 
 	ai_strategy = {
@@ -237,17 +254,16 @@ RUS_unit_production = {
 		id = SRI
 		value = -1000
 	}
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 100
+	}
 
 
 	#army
 	ai_strategy = {
-		type = front_unit_request
-		tag = PER
-		value = 35
-	}
-	ai_strategy = {
-		type = front_unit_request
-		tag = GER
-		value = 300
+		type = prepare_for_war
+		id = PER
+		value = 100
 	}
 }
