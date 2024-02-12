@@ -84,4 +84,31 @@ RUS_europe_diplo_c = {
 		}
 	}
 
+	RUS_allies_anti_pact = {
+		visible = {
+			RUS = {
+				has_completed_focus = RUS_europe_diplo
+			}
+		}
+		available = {
+			country_exists = ENG
+		}
+		icon = GFX_decision_generic_factory
+		priority = 201
+		ai_will_do = {
+			base = 4000
+		}
+		targets = {
+			ENG
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					is_ally_with = ENG
+				}
+				country_event = TR_Russia_diplo.11
+			}
+		}
+	}
+
 }
