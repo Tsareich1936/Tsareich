@@ -12,7 +12,7 @@ country_event = {
 		name = TR_germany_civil_war.1.a
 		hidden_effect = {
 
-			set_capital = { state = 55 }
+			set_capital = { state = 64 }
 			start_civil_war = {
 				ruling_party = communism
 				ideology = fascism
@@ -34,6 +34,8 @@ country_event = {
 			
 			set_stability = 0.9
 			set_war_support = 0.8
+
+			leave_faction = yes
 		}
 		custom_effect_tooltip = GER_fascism_civil_war_tt
 		add_stability = -0.25
