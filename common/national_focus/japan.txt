@@ -1705,7 +1705,14 @@ focus_tree = { # nomal
             focus = jap_fire
         }
         completion_reward = {
-            
+            add_ideas = JAP_dom
+            949 = {
+                set_building_level = {
+                    type = industrial_complex
+                    level = 5
+                }
+            }
+
         }
     }
 
@@ -1721,7 +1728,7 @@ focus_tree = { # nomal
             focus = jap_water_dum
         }
         completion_reward = {
-            
+            add_ideas = JAP_fire
         }
     }
 
@@ -1763,6 +1770,7 @@ focus_tree = { # nomal
         id = jap_war
         x = 40
         y = 8
+        cost = 5
         allow_branch = {
             has_war_with_major = yes
         }
@@ -1777,11 +1785,13 @@ focus_tree = { # nomal
         relative_position_id = jap_war
         x = 0
         y = 1
+        cost = 10
         prerequisite = {
             focus = jap_war
         }
         completion_reward = {
             add_ideas = tot_economic_mobilisation  
+            add_ideas = extensive_conscription
         }
     }
 
@@ -1790,6 +1800,7 @@ focus_tree = { # nomal
         relative_position_id = jap_war_economy
         x = 2
         y = 1
+        cost = 5
         prerequisite = {
             focus = jap_war_economy
         }
@@ -1806,6 +1817,7 @@ focus_tree = { # nomal
         relative_position_id = jap_war_economy
         x = -2
         y = 1
+        cost = 5
         prerequisite = {
             focus = jap_war_economy
         }
@@ -1822,6 +1834,7 @@ focus_tree = { # nomal
         relative_position_id = jap_government_information
         x = 0
         y = 1
+        cost = 5
         prerequisite = {
             focus = jap_government_information
             focus = jap_army_information
@@ -1840,6 +1853,7 @@ focus_tree = { # nomal
         relative_position_id = jap_army_doc
         x = 2
         y = 0
+        cost = 5
         prerequisite = {
             focus = jap_government_information
             focus = jap_army_information
@@ -1858,6 +1872,7 @@ focus_tree = { # nomal
         relative_position_id = jap_air_doc
         x = 2
         y = 0
+        cost = 5
         prerequisite = {
             focus = jap_government_information
             focus = jap_army_information
@@ -1876,6 +1891,12 @@ focus_tree = { # nomal
         relative_position_id = jap_air_doc
         x = -1
         y = 1
+        cost = 10
+        available = {
+            not = {
+                has_completed_focus = jap_Establishment_of_the_Ministry_of_War
+            }
+        }
         prerequisite = {
             focus = jap_army_doc
         }
@@ -1887,6 +1908,9 @@ focus_tree = { # nomal
         }
         mutually_exclusive = {
             focus = jap_Marine_escort_force
+        }
+        completion_reward = {
+            add_ideas = JAP_army_ship
         }
     }
 
@@ -1907,6 +1931,9 @@ focus_tree = { # nomal
         mutually_exclusive = {
             focus = jap_army_transport_fleet
         }
+        completion_reward = {
+            add_ideas = JAP_navy_ship
+        }
     }
 
     focus = {
@@ -1923,6 +1950,10 @@ focus_tree = { # nomal
 
             }
         }
+        cost = 10
+        completion_reward = {
+            add_ideas = JAP_No_defeat
+        }
         x = 47
         y = 8
     }
@@ -1935,8 +1966,59 @@ focus_tree = { # nomal
         relative_position_id = jap_No_defeat
         x = -2
         y = 1
+        cost = 10
         completion_reward = {
-            
+            282 = {
+                add_resource = {
+                    type = steel
+                    amount = 10
+                }
+                add_resource = {
+                    type = aluminium
+                    amount = 10
+                }
+            }
+            531 = {
+                add_resource = {
+                    type = steel
+                    amount = 10
+                }
+                add_resource = {
+                    type = aluminium
+                    amount = 10
+                }
+            }
+            529 = {
+                add_resource = {
+                    type = steel
+                    amount = 10
+                }
+                add_resource = {
+                    type = aluminium
+                    amount = 10
+                }
+            }
+            528 = {
+                add_resource = {
+                    type = steel
+                    amount = 10
+                }
+                add_resource = {
+                    type = aluminium
+                    amount = 10
+                }
+            }
+            533 = {
+                add_resource = {
+                    type = steel
+                    amount = 10
+                }
+                add_resource = {
+                    type = aluminium
+                    amount = 10
+                }
+            }
+            add_stability = -0.2
         }
     }
 
@@ -1947,9 +2029,10 @@ focus_tree = { # nomal
         }
         relative_position_id = jap_No_defeat
         x = 0
+        cost = 10
         y = 1
         completion_reward = {
-            
+            add_ideas = JAP_student_going_war
         }
     }
 
@@ -1958,17 +2041,19 @@ focus_tree = { # nomal
         prerequisite = {
             focus = jap_No_defeat
         }
+        cost = 10
         relative_position_id = jap_No_defeat
         x = 2
         y = 1
         completion_reward = {
-            
+            add_ideas = JAP_psychological_mobilization
         }
     }
 
     focus = {
         id = jap_Kamikaze
         relative_position_id = jap_No_defeat
+        icon = GFX_focus_generic_japanese_imperial_glory
         x = 1
         y = 2
         completion_reward = {
@@ -1981,6 +2066,20 @@ focus_tree = { # nomal
         }
         prerequisite = {
             focus = jap_psychological_mobilization
+        }
+        completion_reward = {
+            hidden_effect = {
+				set_rule = {
+					can_use_kamikaze_pilots = yes
+				}
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
+			if = { 
+				limit = {
+					has_dlc = "Waking the Tiger"
+				}
+				custom_effect_tooltip = cost_reduced_last_stand 
+			}
         }
     }
 
@@ -1998,6 +2097,18 @@ focus_tree = { # nomal
         prerequisite = {
             focus = jap_psychological_mobilization
         }
+        completion_reward = {
+            activate_targeted_decision = {
+                target = JAP
+                decision = Okinawa
+            }
+
+            activate_targeted_decision = {
+                target = JAP
+                decision = Iojima
+            }
+        }
+
     }
 
     focus = {
@@ -2011,6 +2122,30 @@ focus_tree = { # nomal
         prerequisite = {
             focus = jap_volunteer_corps
         }
+        completion_reward = {
+            division_template = {
+                name = Kokuminngiyutai
+                regiments = {
+                    militia = {x = 0  y = 0}
+                    militia = {x = 0  y = 1}
+                    militia = {x = 0  y = 2}
+                    militia = {x = 0  y = 3}
+                    militia = {x = 0  y = 4}                    
+                }
+            }
+            every_state = {
+                limit = {
+                    is_core_of = JAP
+                    is_controlled_by = JAP
+                }
+                create_unit = {
+                    division = Kokuminngiyutai
+                    owner = JAP
+                    count = 3
+                }
+            }
+        
+        }
     }
 
     focus = {
@@ -2020,6 +2155,9 @@ focus_tree = { # nomal
         y = 4
         prerequisite = {
             focus = jap_National_Volunteer_Army
+        }
+        completion_reward = {
+            add_ideas = JAP_operetion_Ketsu
         }
     }
 }
@@ -2183,7 +2321,7 @@ focus_tree = {  # army bop
     }
 
     focus = {
-        id = jap_navy_focus 
+        id = jap_army_bop_navy_focus 
         relative_position_id = jap_army_bop_military_1
         x = -6
         y = 1
@@ -2193,42 +2331,42 @@ focus_tree = {  # army bop
     }
 
     focus = {
-        id = jap_navy_focus_1
-        relative_position_id = jap_navy_focus
+        id = jap_army_bop_navy_focus_1
+        relative_position_id = jap_army_bop_navy_focus
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_navy_focus
+            focus = jap_army_bop_navy_focus
         }
     }
 
     focus = {
-        id = jap_navy_focus_2
-        relative_position_id = jap_navy_focus_1
+        id = jap_army_bop_navy_focus_2
+        relative_position_id = jap_army_bop_navy_focus_1
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_navy_focus_1
+            focus = jap_army_bop_navy_focus_1
         }
     }
 
     focus = {
-        id = jap_navy_focus_3
-        relative_position_id = jap_navy_focus_2
+        id = jap_army_bop_navy_focus_3
+        relative_position_id = jap_army_bop_navy_focus_2
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_navy_focus_2
+            focus = jap_army_bop_navy_focus_2
         }
     }
 
     focus = {
-        id = jap_navy_focus_4
-        relative_position_id = jap_navy_focus_3
+        id = jap_army_bop_navy_focus_4
+        relative_position_id = jap_army_bop_navy_focus_3
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_navy_focus_3
+            focus = jap_army_bop_navy_focus_3
         }
     }
 
@@ -2448,7 +2586,7 @@ focus_tree = {  # army bop
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_navy_focus_4
+            focus = jap_army_bop_navy_focus_4
         }
         prerequisite = {
             focus = jap_army_bop_tank_3
@@ -3537,7 +3675,7 @@ focus_tree = { # navy bop
 
 
     focus = {
-        id = jap_army_bop_make_faction
+        id = jap_navy_bop_make_faction
         relative_position_id = jap_navy_bop_nation_4
         x = 0
         y = 8
@@ -3550,105 +3688,105 @@ focus_tree = { # navy bop
     }
 
     focus = {
-        id = jap_army_bop_KOR
-        relative_position_id = jap_army_bop_make_faction
+        id = jap_navy_bop_KOR
+        relative_position_id = jap_navy_bop_make_faction
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_army_bop_make_faction
+            focus = jap_navy_bop_make_faction
         }
     }
 
     # Aisa
 
     focus = {
-        id = jap_army_bop_Asia
-        relative_position_id = jap_army_bop_KOR
+        id = jap_navy_bop_Asia
+        relative_position_id = jap_navy_bop_KOR
         x = -6
         y = 1
         prerequisite = {
-            focus = jap_army_bop_KOR
+            focus = jap_navy_bop_KOR
         }
     }
 
     focus = {
-        id = jap_army_bop_MAN
-        relative_position_id = jap_army_bop_Asia
+        id = jap_navy_bop_MAN
+        relative_position_id = jap_navy_bop_Asia
         x = 0
         y = 1
     }
 
     focus = {
-        id = jap_army_bop_SIA
-        relative_position_id = jap_army_bop_Asia
+        id = jap_navy_bop_SIA
+        relative_position_id = jap_navy_bop_Asia
         x = 2
         y = 1
         prerequisite = {
-            focus = jap_army_bop_Asia
+            focus = jap_navy_bop_Asia
         }
     }
 
     # Europe
     
     focus = {
-        id = jap_army_bop_Europe
-        relative_position_id = jap_army_bop_KOR
+        id = jap_navy_bop_Europe
+        relative_position_id = jap_navy_bop_KOR
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_army_bop_KOR
+            focus = jap_navy_bop_KOR
         }
     }
 
     focus = {
-        id = jap_army_bop_ENG
-        relative_position_id = jap_army_bop_Europe
+        id = jap_navy_bop_ENG
+        relative_position_id = jap_navy_bop_Europe
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_army_bop_Europe
+            focus = jap_navy_bop_Europe
         }
     }
 
     focus = {
-        id = jap_army_bop_GER
-        relative_position_id = jap_army_bop_Europe
+        id = jap_navy_bop_GER
+        relative_position_id = jap_navy_bop_Europe
         x = -2
         y = 1
         prerequisite = {
-            focus = jap_army_bop_Europe
+            focus = jap_navy_bop_Europe
         }
     }
 
     focus = {
-        id = jap_army_bop_RUS
-        relative_position_id = jap_army_bop_Europe
+        id = jap_navy_bop_RUS
+        relative_position_id = jap_navy_bop_Europe
         x = 2
         y = 1
         prerequisite = {
-            focus = jap_army_bop_Europe
+            focus = jap_navy_bop_Europe
         }
     }
 
     # America
 
     focus = {
-        id = jap_army_bop_America
-        relative_position_id = jap_army_bop_KOR
+        id = jap_navy_bop_America
+        relative_position_id = jap_navy_bop_KOR
         x = 4
         y = 1
         prerequisite = {
-            focus = jap_army_bop_KOR
+            focus = jap_navy_bop_KOR
         }
     }
 
     focus = {
-        id = jap_army_bop_USA
-        relative_position_id = jap_army_bop_America
+        id = jap_navy_bop_USA
+        relative_position_id = jap_navy_bop_America
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_army_bop_America
+            focus = jap_navy_bop_America
         }
         
     }
@@ -4569,7 +4707,7 @@ focus_tree = {  # army event
     }
 
     focus = {
-        id = jap_navy_focus 
+        id = jap_army_navy_focus 
         relative_position_id = jap_army_military_1
         x = -6
         y = 1
@@ -4579,42 +4717,42 @@ focus_tree = {  # army event
     }
 
     focus = {
-        id = jap_navy_focus_1
-        relative_position_id = jap_navy_focus
+        id = jap_army_navy_focus_1
+        relative_position_id = jap_army_navy_focus
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_navy_focus
+            focus = jap_army_navy_focus
         }
     }
 
     focus = {
-        id = jap_navy_focus_2
-        relative_position_id = jap_navy_focus_1
+        id = jap_army_navy_focus_2
+        relative_position_id = jap_army_navy_focus_1        
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_navy_focus_1
+            focus = jap_army_navy_focus_1
         }
     }
 
     focus = {
-        id = jap_navy_focus_3
-        relative_position_id = jap_navy_focus_2
+        id = jap_army_navy_focus_3
+        relative_position_id = jap_army_navy_focus_2
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_navy_focus_2
+            focus = jap_army_navy_focus_2
         }
     }
 
     focus = {
-        id = jap_navy_focus_4
-        relative_position_id = jap_navy_focus_3
+        id = jap_army_navy_focus_4
+        relative_position_id = jap_army_navy_focus_3
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_navy_focus_3
+            focus = jap_army_navy_focus_3
         }
     }
 
@@ -4834,7 +4972,7 @@ focus_tree = {  # army event
         x = 0
         y = 1
         prerequisite = {
-            focus = jap_navy_focus_4
+            focus = jap_army_navy_focus_4
         }
         prerequisite = {
             focus = jap_army_tank_3
