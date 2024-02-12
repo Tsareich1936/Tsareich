@@ -1,0 +1,460 @@
+JAP_unit_production = {
+
+	allowed = {	original_tag = JAP }
+	enable = {
+		always = yes
+	}
+	abort = {
+		JAP = {
+			naval_strength_ratio = {
+				tag = enemies
+				ratio < 0.5
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 10
+	}
+
+	# Old garrison system against resistance
+	# ai_strategy = {
+	# 	type = role_ratio
+	# 	id = suppression
+	# 	value = 1
+	# }
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 70
+	}
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 55
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 100
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 45
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 10
+	}
+
+}
+
+ENG_bomber_production = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		num_of_military_factories > 30
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = tactical_bomber
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = strategic_bomber
+		value = 1
+	}
+}
+
+bba_air_prod_1 = {
+	# TODO BFW:
+	allowed = { original_tag = ENG }
+	enable = {
+		date < 1940.1.1
+	}
+	abort_when_not_enabled = yes
+
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 200
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 1
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 15 #because doctrine this = 15
+	}
+
+ 	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = cas
+		value = 1
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 2
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = large_plane_airframe
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = 2
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = heavy_fighter
+		value = 2
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = scout_plane
+		value = 1
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cv_fighter
+		value = 25
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cv_naval_bomber
+		value = 25
+	}
+}
+
+bba_air_prod_2 = {
+	# TODO BFW:
+	allowed = { original_tag = ENG }
+	enable = {
+		date > 1940.1.1
+	}
+	abort_when_not_enabled = yes
+
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 200
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = cas
+		value = 3
+	}
+ 
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = large_plane_airframe
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = heavy_fighter
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = scout_plane
+		value = 1
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cv_fighter
+		value = 25
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cv_naval_bomber
+		value = 25
+	}
+
+}
+
+build_more_patrol_bombers = {
+
+	enable = {
+		has_dlc = "By Blood Alone"
+		has_navy_size = {
+			size > 1
+		}
+		tag = ENG
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = unit_ratio
+		id = maritime_patrol_plane
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = maritime_patrol_plane
+		value = 15
+	}
+}
+
+eng_fighter_enhanced_production = {
+	allowed = { original_tag = ENG }
+
+	enable = {
+		date < 1943.1.1
+	}
+
+	abort = {
+		has_equipment = { small_plane_airframe > 4000 }
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 20
+	}
+
+	ai_strategy = {
+		type = air_xp_spend_priority
+		id = upgrade_xp_cutoff
+		value = 100
+	}
+
+}
+
+eng_the_home_fleet  = {
+	allowed = { original_tag = ENG }
+
+	enable = {
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 16 # north sea
+	}
+}
+
+eng_the_med_fleet  = {
+	allowed = { original_tag = ENG }
+
+	enable = {
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 69 # nice #eastern med
+	}
+}
+
+eng_build_kgv_battleships = {
+	allowed = { original_tag = ENG }
+
+	enable = {
+		date > 1936.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 20
+	}
+
+	ai_strategy = {
+		type = navy_xp_spend_priority
+		id = upgrade_xp_cutoff
+		value = 100
+	}
+}

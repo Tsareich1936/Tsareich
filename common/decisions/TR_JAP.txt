@@ -2882,3 +2882,26 @@ JAP_airbornes = {
 		}
 	}
 }
+
+JAP_lack_food = {
+	JAP_lack_food = {
+		fire_only_once = yes
+		days_mission_timeout = 730
+		allowed = {
+			tag = JAP
+		}
+		available = {
+			any_enemy_country = {
+				is_major = yes
+				has_capitulated = no
+			}
+		}
+		timeout_effect = {
+			add_ideas = JAP_lack_food
+		}
+		activation = {
+			always = no
+		}
+		selectable_mission = no
+	}
+}
