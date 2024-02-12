@@ -137,6 +137,7 @@ country_event = { #鎮圧成功
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
 	option = {
+		name = TR_czech_revolution.4.a
 		add_stability = -0.1
 	}
 }
