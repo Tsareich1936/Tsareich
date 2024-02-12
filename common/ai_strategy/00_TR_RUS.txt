@@ -198,14 +198,29 @@ RUS_unit_production = {
 
 	### diplo
 	ai_strategy = {
-		type = support
+		type = contain
+		id = PER
+		value = 100
+	}
+	ai_strategy = {
+		type = befriend
 		id = SER
 		value = 1000
 	}
 	ai_strategy = {
-		type = support
+		type = befriend
 		id = SPB
 		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SPB
+		value = 100
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SPB
+		value = 100
 	}
 	ai_strategy = {
 		type = antagonize

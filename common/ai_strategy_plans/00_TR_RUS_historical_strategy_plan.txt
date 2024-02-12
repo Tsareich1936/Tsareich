@@ -12,7 +12,9 @@ ENG_historical_plan = {
 	}
 
 	ai_national_focuses = {
+
 		RUS_newtsar #28
+		RUS_empire_diplo #28
 		RUS_unprison #28
 		RUS_tsar_infantry #28
 		RUS_remake_national_government #28
@@ -27,8 +29,6 @@ ENG_historical_plan = {
 		RUS_navy_doctrine #28
 		RUS_shikolsky_planes #28
 		RUS_operational_doctrine #28
-
-		RUS_empire_diplo #28
 		RUS_battle_with_PER #28
 
 		RUS_remove_census #28
