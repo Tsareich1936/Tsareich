@@ -623,7 +623,27 @@ add_namespace = TR_usa_civil_war_legacy
 		
 		hidden = yes
 		immediate = {
-			
+			USA = {
+				hidden_effect = {
+					complete_national_focus = TR_USA_1936_presidential_election
+					country_event = TR_usa_election.1
+					country_event = {
+						id = TR_usa_election.2
+						days = 11
+						months = 1
+					}
+					country_event = {
+						id = TR_usa_election.3
+						months = 2
+						days = 3
+					}
+					country_event = {
+						id = TR_usa_election.4
+						months = 2
+						days = 17
+					}
+				}
+			}
 		}
 	}
 	country_event = {
@@ -632,8 +652,242 @@ add_namespace = TR_usa_civil_war_legacy
 		desc = TR_usa_election.1.d
 	
 		is_triggered_only = yes
-	
+		picture = GFX_report_event_election_vote
 		option = {
 			name = TR_usa_election.1.a
+		}
+	}
+	country_event = {#12/14:after 1 month 11 days #選挙人投票日
+		id = TR_usa_election.2
+		title = TR_usa_election.2.t
+		desc = TR_usa_election.2.d
+	
+		is_triggered_only = yes
+		
+	
+		option = {
+			name = TR_usa_election.2.a
+		}
+	}
+	country_event = {#社会党が選挙に勝利
+		id = TR_usa_election.3
+		title = TR_usa_election.3.t
+		desc = TR_usa_election.3.d
+	
+		is_triggered_only = yes
+		
+	
+		option = {
+			name = TR_usa_election.3.a
+		}
+	}
+	country_event = {#大統領就任
+		id = TR_usa_election.4
+		title = TR_usa_election.4.t
+		desc = TR_usa_election.4.d
+	
+		is_triggered_only = yes
+		immediate = {
+			set_politics = {
+				ruling_party = socialism
+			}
+			country_event = {
+				id = TR_usa_election.5
+				days = 7
+			}
+			country_event = {
+				id = TR_usa_election.6
+				days = 12
+			}
+			country_event = {
+				id = TR_usa_election.7
+				days = 15
+			}
+			country_event = {
+				id = TR_usa_election.8
+				days = 18
+			}
+			country_event = {
+				id = TR_usa_election.9
+				days = 24
+			}
+		}
+		option = {
+			name = TR_usa_election.4.a
+		}
+	}
+	country_event = {#連合国独立宣言
+		id = TR_usa_election.5
+		title = TR_usa_election.5.t
+		desc = TR_usa_election.5.d
+	
+		is_triggered_only = yes
+		
+	
+		option = {
+			name = TR_usa_election.5.a
+			trigger = {
+				NOT = {
+					OR = {
+						has_completed_focus = TR_USA_contact_with_southern_states
+						has_completed_focus = TR_USA_WASP
+					}
+				}
+			}
+			USA = {
+				every_core_state = {
+					add_core_of = CSA
+				}
+				CSA = {
+					transfer_state = 364
+					transfer_state = 365
+					transfer_state = 366
+					transfer_state = 367
+					set_capital = {
+						state = 367
+					}
+				}
+				transfer_units_fraction = {
+					target = CSA
+					size = 0.2
+				}
+			}
+		}
+		option = {
+			name = TR_usa_election.5.b
+			trigger = {
+				OR = {
+					has_completed_focus = TR_USA_contact_with_southern_states
+					has_completed_focus = TR_USA_WASP
+				}
+			}
+		}
+	}
+	country_event = {#ミシシッピ州などが合衆国から離脱
+		id = TR_usa_election.6
+		title = TR_usa_election.6.t
+		desc = TR_usa_election.6.d
+	
+		is_triggered_only = yes
+		
+		immediate = {
+			USA = {
+				CSA = {
+					transfer_state = 370
+					transfer_state = 371
+					transfer_state = 372
+				}
+				transfer_units_fraction = {
+					target = CSA
+					size = 0.1
+				}
+			}
+		}
+		option = {
+			name = TR_usa_election.6.a
+		}
+	}
+	country_event = {#テキサスが合衆国から離脱
+		id = TR_usa_election.7
+		title = TR_usa_election.7.t
+		desc = TR_usa_election.7.d
+	
+		is_triggered_only = yes
+		
+		immediate = {
+			USA = {
+				CSA = {
+					transfer_state = 375
+					transfer_state = 1021
+				}
+				transfer_units_fraction = {
+					target = CSA
+					size = 0.1
+				}
+			}
+		}
+		option = {
+			name = TR_usa_election.8.a
+		}
+	}
+	country_event = {#カロライナが合衆国から離脱
+		id = TR_usa_election.8
+		title = TR_usa_election.8.t
+		desc = TR_usa_election.8.d
+	
+		is_triggered_only = yes
+		
+		immediate = {
+			USA = {
+				CSA = {
+					transfer_state = 363
+					transfer_state = 364
+					transfer_state = 368
+				}
+				transfer_units_fraction = {
+					target = CSA
+					size = 0.1
+				}
+			}
+		}
+		option = {
+			name = TR_usa_election.8.a
+		}
+	}
+	country_event = {#国境地帯での軍事的衝突
+		id = TR_usa_election.9
+		title = TR_usa_election.9.t
+		desc = TR_usa_election.9.d
+	
+		is_triggered_only = yes
+		immediate = {
+			USA = {
+				country_event = {
+					id = TR_usa_election.10
+					days = 3
+				}
+			}
+		}
+		option = {
+			name = TR_usa_election.9.a
+		}
+	}
+	country_event = {#避けられぬ運命
+		id = TR_usa_election.10
+		title = TR_usa_election.10.t
+		desc = TR_usa_election.10.d
+	
+		is_triggered_only = yes
+		immediate = {
+			hidden_effect = {
+				CSA = {
+					declare_war_on = {
+						target = USA
+						type = civil_war
+					}
+				}
+				add_civil_war_target = USA
+				set_global_flag = TR_USA_civil_war
+				news_event = TR_usa_civil_war.1
+			}
+		}
+		option = {
+			name = TR_usa_election.10.a
+			hidden_effect = {
+				country_event = TR_super_event.2
+			}
+		}
+	}
+	#CIVIL-WAR
+	news_event = {
+		id = TR_usa_civil_war.1
+		title = TR_usa_civil_war.1.t
+		desc = TR_usa_civil_war.1.d
+		picture = GFX_news_event_032
+		is_triggered_only = yes
+		major = yes
+	
+		option = {
+			name = TR_usa_civil_war.1.a
 		}
 	}

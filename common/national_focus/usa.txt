@@ -37,6 +37,9 @@ focus_tree = {
 				effect_tooltip = {
 					custom_effect_tooltip = "TR_USA_1936_presidential_election_effect_tt"
 				}
+				hidden_effect = {
+					country_event = TR_usa_election.1
+				}
 			}
 		}
 		focus = {#選挙人との接触
@@ -45,6 +48,9 @@ focus_tree = {
 			cost = 5
 			prerequisite = {
 				focus = TR_USA_1936_presidential_election
+			}
+			mutually_exclusive = {
+				focus = TR_USA_obstructing_the_election
 			}
 			x = -1
 			y = 1
@@ -56,7 +62,7 @@ focus_tree = {
 		focus = {#大衆演説
 			id = TR_USA_mass_oratory
 			icon = GFX_
-			cost = 5
+			cost = 4
 			prerequisite = {
 				focus = TR_USA_contacting_the_electorate
 			}
@@ -74,6 +80,9 @@ focus_tree = {
 			prerequisite = {
 				focus = TR_USA_1936_presidential_election
 			}
+			mutually_exclusive = {
+				focus = TR_USA_contacting_the_electorate
+			}
 			x = 1
 			y = 1
 			relative_position_id = TR_USA_1936_presidential_election
@@ -84,7 +93,7 @@ focus_tree = {
 		focus = {#議会を襲撃
 			id = TR_USA_raid_on_parliament
 			icon = GFX_
-			cost = 5
+			cost = 4
 			prerequisite = {
 				focus = TR_USA_obstructing_the_election
 			}
@@ -98,7 +107,7 @@ focus_tree = {
 		focus = {#運命の時
 			id = TR_THE_FATAL_DAY
 			icon = GFX_
-			cost = 5
+			cost = 3
 			prerequisite = {
 				focus = TR_USA_mass_oratory
 				focus = TR_USA_raid_on_parliament
@@ -107,7 +116,7 @@ focus_tree = {
 			y = 4
 			relative_position_id = TR_USA_1936_presidential_election
 			completion_reward = {
-		
+				
 			}
 		}
 	### SELECT IDEOLOGY ###

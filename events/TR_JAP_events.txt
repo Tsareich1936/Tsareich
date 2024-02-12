@@ -1181,7 +1181,8 @@ country_event = {    # 陸海軍の統合
 	}
 	option = {
 		name = TR_japan.40.b
-		TR_japan.40
+		army_experience = 20
+		navy_experience = 20
 	}
 	
 }

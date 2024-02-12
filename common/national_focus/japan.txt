@@ -6547,6 +6547,10 @@ focus_tree = {  # Toyotomi
             set_technology = {
                 samurai_infantry = 1
             }
+            hidden_effect = {
+                set_country_flag = TR_japan.Sengoku.War                
+            }
+
         }
     }
 
@@ -6740,6 +6744,7 @@ focus_tree = {  # Toyotomi
         mutually_exclusive = {
             focus = jap_Toyotomi_army_1-1
         }
+        
     }
 
     focus = {

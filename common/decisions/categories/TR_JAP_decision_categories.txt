@@ -120,3 +120,14 @@ JAP_airbornes = {
 	
 	visible_when_empty = no
 }
+
+JAP_lack_food = {
+	allowed = {
+		tag = JAP
+	}
+
+	priority = {
+		base = 100
+	}
+	visible_when_empty = no
+}

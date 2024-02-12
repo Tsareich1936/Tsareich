@@ -1,0 +1,92 @@
+JAP_historical_plan = {
+	name = "Japan historical plan"
+	desc = "Historical behavior for Japan"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		has_completed_focus = jap_19th_General_Election
+	}
+
+	ai_national_focuses = {
+
+		
+	}
+
+	research = {
+		
+	}
+
+	ideas = {
+		home_defence_spirit = 1
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+JAP_historical_plan = {
+	name = "Japan historical plan Rikkenseiyukai"
+	desc = "Historical behavior for Japan Rikkenseiyuukai"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_completed_focus = jap_Rikken_Seiyukai
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		jap_Continuation_of_Takahashi_Financing
+		jap_Royal_Center_Definition
+		jap_social_reform
+		jap_NAVY_1_1
+		jap_Keynesian_Studies_in_Practice
+		jap_Controlling_inflation
+		jap_extensive_transportation_network
+		jap_ARMY_1_1
+		jap_Developing_Mori_Diplomacy
+		jap_AIRFORCE_2_1
+		jap_AIRFORCE_2_2
+		jap_zaibatsu
+		jap_AIRFORCE_2_3
+		jap_policy_of_imperialisation
+		jap_agrarian_reform_1
+		jap_Growth_based_on_Keynesian_studies
+		jap_agrarian_reform_2
+		jap_NAVY_2_1
+		jap_ARMY_2_2
+		jap_Foreign_Policy
+	}
+
+	research = {
+		
+	}
+
+	ideas = {
+		home_defence_spirit = 1
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
