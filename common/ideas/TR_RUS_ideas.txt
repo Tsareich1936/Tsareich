@@ -50,6 +50,31 @@ ideas = {
 			}
         }
 
+        RUS_winner_of_wwi_2 = {
+            picture = SOV_the_true_tsars
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                drift_defence_factor = 0.5
+                enemy_justify_war_goal_time = 1
+                stability_factor = 0.2
+                conscription_factor = 0.35
+            }
+            rule = {
+				can_create_factions = yes
+			}
+        }
+
 
         RUS_wwi_army = {
             picture = chi_army_corruption2
@@ -884,6 +909,25 @@ ideas = {
                     armor_value = -0.05
                     instant = yes
                 }
+            }
+        }
+        RUS_more_nocore = {
+            picture = eng_imperial_conscription
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                non_core_manpower = 0.35
             }
         }
 

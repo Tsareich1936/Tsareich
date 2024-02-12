@@ -2277,7 +2277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_conscription_more
-		icon = GFX_goal_unknown
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 		cost = 4
 		prerequisite = {
 			focus = RUS_arm_unite_train
@@ -2285,26 +2285,27 @@ focus_tree = {
 		x = 1
 		y = 4
 		relative_position_id = RUS_advance_army
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_winner_of_wwi_1
+				add_idea = RUS_winner_of_wwi_2
+			}
+		}
 	}
 	focus = {
 		id = RUS_more_nocore
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_manpower
 		cost = 4
 		prerequisite = {
 			focus = RUS_arm_unite_train
 		}
-		prerequisite = {
-			focus = RUS_arm_unite_train
-		}
-		prerequisite = {
-			focus = RUS_arm_unite_train
-		}
-		prerequisite = {
-			focus = RUS_arm_unite_train
-		}
+
 		x = -1
 		y = 4
 		relative_position_id = RUS_advance_army
+		completion_reward = {
+			add_ideas = RUS_more_nocore
+		}
 	}
 	focus = {
 		id = RUS_arm_navy_attack
