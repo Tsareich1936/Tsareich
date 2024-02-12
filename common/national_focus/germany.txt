@@ -1325,6 +1325,9 @@ focus_tree = {
 					generator = { 6  35 7 36 }
 					expire = 0
 				}
+				available = {
+					date > 1941.01.01
+				}
 		}
 	}
 	focus = {
