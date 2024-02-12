@@ -568,11 +568,7 @@ ideas = {
             removal_cost = -1
             modifier = {
                 send_volunteers_tension = -1
-                
                 lend_lease_tension = -1
-                hidden_modifier = {
-                    send_volunteer_factor = 1.5
-                }
             }
         }
         RUS_spa_tsar_bank = {
@@ -613,6 +609,29 @@ ideas = {
             removal_cost = -1
             modifier = {
                 consumer_goods_factor = 0.075
+            }
+        }
+
+        RUS_money_by_Russia = {
+            picture = generic_foreign_capital
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = -0.15
+                industrial_capacity_factory = 0.15
+                production_speed_buildings_factor = 0.15
+                research_speed_factor = 0.025
             }
         }
 

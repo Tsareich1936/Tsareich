@@ -3,9 +3,51 @@ defined_text = {
 
 	text = {
 		trigger = {
+			has_government = anarchism
+		}
+		localization_key = "[GetSubIdeologyAna]"
+	}
+	text = {
+		trigger = {
+			has_government = syndicalism
+		}
+		localization_key = "[GetSubIdeologySyn]"
+	}
+	text = {
+		trigger = {
+			has_government = communism
+		}
+		localization_key = "[GetSubIdeologyCom]"
+	}
+	text = {
+		trigger = {
+			has_government = socialism
+		}
+		localization_key = "[GetSubIdeologySoc]"
+	}
+	text = {
+		trigger = {
+			has_government = socialism
+		}
+		localization_key = "[GetSubIdeologySDe]"
+	}
+	text = {
+		trigger = {
 			has_government = democratic
 		}
 		localization_key = "[GetSubIdeologyDem]"
+	}
+	text = {
+		trigger = {
+			has_government = conservatism
+		}
+		localization_key = "[GetSubIdeologyCon]"
+	}
+	text = {
+		trigger = {
+			has_government = theocracy
+		}
+		localization_key = "[GetSubIdeologyThe]"
 	}
 	text = {
 		trigger = {
@@ -19,12 +61,6 @@ defined_text = {
 		}
 		localization_key = "[GetSubIdeologyFas]"
 	}
-	text = {
-		trigger = {
-			has_government = communism
-		}
-		localization_key = "[GetSubIdeologyCom]"
-	}
 	# text = {
 	# 	trigger = {
 	# 		has_government = coalition
@@ -33,25 +69,119 @@ defined_text = {
 	# }
 }
 defined_text = {
-	name = GetSubIdeologyDem
+	name = GetSubIdeologyAna
 	text = {
 		trigger = {
-			has_country_leader_ideology = conservatism
+			has_country_leader_ideology = anarchism
 		}
-		localization_key = conservatism
+		localization_key = anarchism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = anarchist_communism
+		}
+		localization_key = anarchist_communism
+	}
+	text = {
+		localization_key = anarchism
+	}
+}
+defined_text = {
+	name = GetSubIdeologySyn
+	text = {
+		trigger = {
+			has_country_leader_ideology = syndicalism
+		}
+		localization_key = syndicalism
+	}
+	text = {
+		localization_key = anarchism
+	}
+}
+defined_text = {
+	name = GetSubIdeologyCom
+	text = {
+		trigger = {
+			has_country_leader_ideology = marxism
+		}
+		localization_key = marxism
 		
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = leninism
+		}
+		localization_key = leninism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = luxemburgism
+		}
+		localization_key = luxemburgism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = stalinism
+		}
+		localization_key = stalinism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = anti_revisionism
+		}
+		localization_key = anti_revisionism
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = Lcoalition
+		}
+		localization_key = Lcoalition
+	}
+}
+defined_text = {
+	name = GetSubIdeologySoc
+	text = {
+		trigger = {
+			has_country_leader_ideology = socialism
+		}
+		localization_key = socialism
+	}
+	text = {
+		localization_key = socialism
+	}
+}
+defined_text = {
+	name = GetSubIdeologySDe
+	text = {
+		trigger = {
+			has_country_leader_ideology = socialdemocratic
+		}
+		localization_key = socialdemocratic
+	}
+	text = {
+		localization_key = socialdemocratic
+	}
+}
+defined_text = {
+	name = GetSubIdeologyDem
 	text = {
 		trigger = {
 			has_country_leader_ideology = liberalism
 		}
 		localization_key = liberalism
 	}
+}
+defined_text = {
+	name = GetSubIdeologyCon
 	text = {
 		trigger = {
-			has_country_leader_ideology = socialism
+			has_country_leader_ideology = conservatism
 		}
-		localization_key = socialism
+		localization_key = conservatism
+	}
+	text = {
+		localization_key = conservatism
 	}
 }
 defined_text = {
@@ -61,12 +191,6 @@ defined_text = {
 			has_country_leader_ideology = despotism
 		}
 		localization_key = despotism
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = anarchism
-		}
-		localization_key = anarchism
 	}
 	text = {
 		trigger = {
@@ -85,6 +209,150 @@ defined_text = {
 			has_country_leader_ideology = centrism
 		}
 		localization_key = centrism
+	}
+}
+defined_text = {
+	name = GetSubIdeologyThe
+	text = {
+		trigger = {
+			has_country_leader_ideology = catholicism
+		}
+		localization_key = catholicism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = protestantism
+		}
+		localization_key = protestantism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = orthodoxy
+		}
+		localization_key = orthodoxy
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = adamism
+		}
+		localization_key = adamism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = hussites
+		}
+		localization_key = hussites
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = shia_islamism
+		}
+		localization_key = shia_islamism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = sunni_islamism
+		}
+		localization_key = sunni_islamism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = judaism
+		}
+		localization_key = judaism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = mahayana_buddhism
+		}
+		localization_key = mahayana_buddhism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = theravada_buddhism
+		}
+		localization_key = theravada_buddhism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = hinduism
+		}
+		localization_key = hinduism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = animism
+		}
+		localization_key = animism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = shintoism
+		}
+		localization_key = shintoism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = zoroastrianism
+		}
+		localization_key = zoroastrianism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = roman_polytheism
+		}
+		localization_key = roman_polytheism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = greek_polytheism
+		}
+		localization_key = greek_polytheism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = confucianism
+		}
+		localization_key = confucianism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = hedonism
+		}
+		localization_key = hedonism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = mysticism
+		}
+		localization_key = mysticism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = cosmopolitanism
+		}
+		localization_key = cosmopolitanism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = satanism
+		}
+		localization_key = satanism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = political_correctness
+		}
+		localization_key = political_correctness
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = veganism
+		}
+		localization_key = veganism
+	}
+	text = {
+		localization_key = theocracy
 	}
 }
 defined_text = {
@@ -121,58 +389,4 @@ defined_text = {
 		localization_key = rexism
 	}
 }
-defined_text = {
-	name = GetSubIdeologyCom
-	text = {
-		trigger = {
-			has_country_leader_ideology = marxism
-		}
-		localization_key = marxism
-		
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = leninism
-		}
-		localization_key = leninism
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = stalinism
-		}
-		localization_key = stalinism
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = luxemburgism
-		}
-		localization_key = luxemburgism
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = anti_revisionism
-		}
-		localization_key = anti_revisionism
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = anarchist_communism
-		}
-		localization_key = anarchist_communism
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = Lcoalition
-		}
-		localization_key = Lcoalition
-	}
-}
-defined_text = {
-	name = GetSubIdeologyLC
-	# text = {
-	# 	trigger = {
-	# 		has_country_leader_ideology = Lcoalition
-	# 	}
-	# 	localization_key = Lcoalition
-	# }
-}
+

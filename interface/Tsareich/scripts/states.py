@@ -7,7 +7,7 @@ states = [
     "illinois",
     "indiana",
     "wisconsin",
-    "west Virginia",
+    "west_virginia",
     "oklahoma",
     "ohio",
     "oregon",
@@ -16,23 +16,23 @@ states = [
     "kentucky",
     "connecticut",
     "colorado",
-    "south Carolin",
-    "south Dakotaa",
+    "south_carolina",
+    "south_dakota",
     "georgia",
     "texas",
     "tennessee",
     "delaware",
-    "new Jersey	",
-    "new Hampshire",
-    "new Mexico",
-    "new York",
+    "new_jersey",
+    "new_hampshire",
+    "new_mexico",
+    "new_york",
     "nevada",
     "nebraska",
-    "north Carolina",
-    "north Dakota",
+    "north_carolina",
+    "north_dakota",
     "virginia",
     "vermont",
-    "vlorida",
+    "florida",
     "pennsylvania",
     "massachusetts",
     "michigan",
@@ -44,7 +44,7 @@ states = [
     "montana",
     "utah",
     "louisiana",
-    "rhode Island",
+    "rhode_island",
     "wyoming",
     "washington"
 ]
@@ -53,11 +53,40 @@ ideologies = [
     "con",
     "lib"
 ]
+ideologies1 = [
+    "1",
+    "2",
+    "3"
+]
 first = "spriteType = {"
 second = "\n\tname = GFX_TR_USA_"
 third = "\n\ttextureFile = \"gfx/interface/UI/usa_election/states/"
 forth = ".dds\"\n\t}\n"
-with open("interface/Tsareich/scripts/states.txt","w")as f:
+# with open("interface/Tsareich/scripts/states.txt","w")as f:
+#     for i in range(0,len(states)):
+#         for j in range(0,len(ideologies)):
+#             f.write(first+second+states[i]+"_"+ideologies[j]+third+states[i]+"_"+ideologies[j]+forth)
+# fg = "iconType = {"
+# sg = "\n\tname = TR_USA_"
+# tg = "_button\n\tquadTextureSprite = GFX_TR_USA_"
+# fog = "\n\tpdx_tooltip = TR_USA_"
+# fig = "_tt\n\tscale = 0.75\n\talwaystransparent = yes\n}\n"
+# with open("interface/Tsareich/scripts/gui.txt","w")as f:
+#     for i in range(0,len(states)):
+#         for j in range(0,len(ideologies)):
+            # f.write(fg+sg+states[i]+"_"+ideologies[j]+tg+states[i]+"_"+ideologies[j]+fog+states[i]+"_"+ideologies[j]+fig)
+# fg = "TR_USA_"
+# sg = "_button_visible = {"
+# tg = "\n\tcheck_variable = {\n\t\tROOT.TR_USA_"
+# fog = "\n\t}\n}\n"
+# with open("interface/Tsareich/scripts/gui_tr.txt","w")as f:
+#     for i in range(0,len(states)):
+#         for j in range(0,len(ideologies)):
+#             f.write(fg+states[i]+"_"+ideologies[j]+sg+tg+states[i]+"_var = "+ideologies1[j]+fog)
+fg = "set_variable = {"
+sg = " ROOT.TR_USA_"
+tg = "_var = "
+fog = " }\n"
+with open("interface/Tsareich/scripts/var_set.txt","w")as f:
     for i in range(0,len(states)):
-        for j in range(0,len(ideologies)):
-            f.write(first+second+states[i]+"_"+ideologies[j]+third+states[i]+"_"+ideologies[j]+forth)
+        f.write(fg+sg+states[i]+tg+"3"+fog)

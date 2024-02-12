@@ -87,7 +87,7 @@ country_event = {#ルーマニアが同盟を承認
 		SER = {
 			country_event = {
 				id = TR_balkan.6
-				days = 3
+				days = 7
 			}
 		}
 	}
@@ -126,7 +126,7 @@ country_event = {#セルビアの動向
 		SER = {
 			country_event = {
 				id = TR_balkan.8
-				days = 5
+				days = 7
 			}
 		}
 	}
@@ -162,10 +162,6 @@ country_event = {#セルビアからの最後通牒
 
 	immediate = {#12.30.24
 		SER = {
-			country_event = {
-				id = TR_balkan.10
-				days = 1
-			}
 		}
 	}
 	option = {#かかってこい、相手になってやる

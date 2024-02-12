@@ -34,7 +34,744 @@ scripted_gui = {
 			check_variable = {
 				USA.TR_USA_show_election_var = 1
 			}
-		}	
+		}
+		effects = {
+			close_button_click = {
+				clear_variable = USA.TR_USA_show_election_var
+			}
+		}
 	}
-
+	TR_USA_Election_States_Map = {
+		window_name = TR_USA_election_states_map
+		context_type = player_context
+		parent_window_name = TR_USA_election_map_window
+		visible = {
+			check_variable = {
+				USA.TR_USA_show_election_var = 1
+			}
+		}
+		triggers = {
+			TR_USA_arkansas_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_arkansas_var = 1
+				}
+			}
+			TR_USA_arkansas_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_arkansas_var = 2
+				}
+			}
+			TR_USA_arkansas_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_arkansas_var = 3
+				}
+			}
+			TR_USA_iowa_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_iowa_var = 1
+				}
+			}
+			TR_USA_iowa_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_iowa_var = 2
+				}
+			}
+			TR_USA_iowa_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_iowa_var = 3
+				}
+			}
+			TR_USA_idaho_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_idaho_var = 1
+				}
+			}
+			TR_USA_idaho_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_idaho_var = 2
+				}
+			}
+			TR_USA_idaho_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_idaho_var = 3
+				}
+			}
+			TR_USA_alabama_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_alabama_var = 1
+				}
+			}
+			TR_USA_alabama_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_alabama_var = 2
+				}
+			}
+			TR_USA_alabama_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_alabama_var = 3
+				}
+			}
+			TR_USA_arizona_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_arizona_var = 1
+				}
+			}
+			TR_USA_arizona_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_arizona_var = 2
+				}
+			}
+			TR_USA_arizona_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_arizona_var = 3
+				}
+			}
+			TR_USA_illinois_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_illinois_var = 1
+				}
+			}
+			TR_USA_illinois_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_illinois_var = 2
+				}
+			}
+			TR_USA_illinois_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_illinois_var = 3
+				}
+			}
+			TR_USA_indiana_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_indiana_var = 1
+				}
+			}
+			TR_USA_indiana_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_indiana_var = 2
+				}
+			}
+			TR_USA_indiana_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_indiana_var = 3
+				}
+			}
+			TR_USA_wisconsin_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_wisconsin_var = 1
+				}
+			}
+			TR_USA_wisconsin_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_wisconsin_var = 2
+				}
+			}
+			TR_USA_wisconsin_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_wisconsin_var = 3
+				}
+			}
+			TR_USA_west_virginia_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_west_virginia_var = 1
+				}
+			}
+			TR_USA_west_virginia_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_west_virginia_var = 2
+				}
+			}
+			TR_USA_west_virginia_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_west_virginia_var = 3
+				}
+			}
+			TR_USA_oklahoma_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_oklahoma_var = 1
+				}
+			}
+			TR_USA_oklahoma_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_oklahoma_var = 2
+				}
+			}
+			TR_USA_oklahoma_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_oklahoma_var = 3
+				}
+			}
+			TR_USA_ohio_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_ohio_var = 1
+				}
+			}
+			TR_USA_ohio_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_ohio_var = 2
+				}
+			}
+			TR_USA_ohio_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_ohio_var = 3
+				}
+			}
+			TR_USA_oregon_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_oregon_var = 1
+				}
+			}
+			TR_USA_oregon_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_oregon_var = 2
+				}
+			}
+			TR_USA_oregon_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_oregon_var = 3
+				}
+			}
+			TR_USA_california_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_california_var = 1
+				}
+			}
+			TR_USA_california_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_california_var = 2
+				}
+			}
+			TR_USA_california_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_california_var = 3
+				}
+			}
+			TR_USA_kansas_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_kansas_var = 1
+				}
+			}
+			TR_USA_kansas_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_kansas_var = 2
+				}
+			}
+			TR_USA_kansas_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_kansas_var = 3
+				}
+			}
+			TR_USA_kentucky_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_kentucky_var = 1
+				}
+			}
+			TR_USA_kentucky_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_kentucky_var = 2
+				}
+			}
+			TR_USA_kentucky_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_kentucky_var = 3
+				}
+			}
+			TR_USA_connecticut_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_connecticut_var = 1
+				}
+			}
+			TR_USA_connecticut_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_connecticut_var = 2
+				}
+			}
+			TR_USA_connecticut_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_connecticut_var = 3
+				}
+			}
+			TR_USA_colorado_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_colorado_var = 1
+				}
+			}
+			TR_USA_colorado_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_colorado_var = 2
+				}
+			}
+			TR_USA_colorado_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_colorado_var = 3
+				}
+			}
+			TR_USA_south_carolina_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_south_carolina_var = 1
+				}
+			}
+			TR_USA_south_carolina_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_south_carolina_var = 2
+				}
+			}
+			TR_USA_south_carolina_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_south_carolina_var = 3
+				}
+			}
+			TR_USA_south_dakota_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_south_dakota_var = 1
+				}
+			}
+			TR_USA_south_dakota_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_south_dakota_var = 2
+				}
+			}
+			TR_USA_south_dakota_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_south_dakota_var = 3
+				}
+			}
+			TR_USA_georgia_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_georgia_var = 1
+				}
+			}
+			TR_USA_georgia_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_georgia_var = 2
+				}
+			}
+			TR_USA_georgia_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_georgia_var = 3
+				}
+			}
+			TR_USA_texas_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_texas_var = 1
+				}
+			}
+			TR_USA_texas_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_texas_var = 2
+				}
+			}
+			TR_USA_texas_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_texas_var = 3
+				}
+			}
+			TR_USA_tennessee_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_tennessee_var = 1
+				}
+			}
+			TR_USA_tennessee_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_tennessee_var = 2
+				}
+			}
+			TR_USA_tennessee_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_tennessee_var = 3
+				}
+			}
+			TR_USA_delaware_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_delaware_var = 1
+				}
+			}
+			TR_USA_delaware_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_delaware_var = 2
+				}
+			}
+			TR_USA_delaware_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_delaware_var = 3
+				}
+			}
+			TR_USA_new_jersey_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_new_jersey_var = 1
+				}
+			}
+			TR_USA_new_jersey_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_new_jersey_var = 2
+				}
+			}
+			TR_USA_new_jersey_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_new_jersey_var = 3
+				}
+			}
+			TR_USA_new_hampshire_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_new_hampshire_var = 1
+				}
+			}
+			TR_USA_new_hampshire_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_new_hampshire_var = 2
+				}
+			}
+			TR_USA_new_hampshire_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_new_hampshire_var = 3
+				}
+			}
+			TR_USA_new_mexico_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_new_mexico_var = 1
+				}
+			}
+			TR_USA_new_mexico_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_new_mexico_var = 2
+				}
+			}
+			TR_USA_new_mexico_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_new_mexico_var = 3
+				}
+			}
+			TR_USA_new_york_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_new_york_var = 1
+				}
+			}
+			TR_USA_new_york_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_new_york_var = 2
+				}
+			}
+			TR_USA_new_york_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_new_york_var = 3
+				}
+			}
+			TR_USA_nevada_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_nevada_var = 1
+				}
+			}
+			TR_USA_nevada_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_nevada_var = 2
+				}
+			}
+			TR_USA_nevada_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_nevada_var = 3
+				}
+			}
+			TR_USA_nebraska_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_nebraska_var = 1
+				}
+			}
+			TR_USA_nebraska_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_nebraska_var = 2
+				}
+			}
+			TR_USA_nebraska_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_nebraska_var = 3
+				}
+			}
+			TR_USA_north_carolina_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_north_carolina_var = 1
+				}
+			}
+			TR_USA_north_carolina_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_north_carolina_var = 2
+				}
+			}
+			TR_USA_north_carolina_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_north_carolina_var = 3
+				}
+			}
+			TR_USA_north_dakota_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_north_dakota_var = 1
+				}
+			}
+			TR_USA_north_dakota_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_north_dakota_var = 2
+				}
+			}
+			TR_USA_north_dakota_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_north_dakota_var = 3
+				}
+			}
+			TR_USA_virginia_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_virginia_var = 1
+				}
+			}
+			TR_USA_virginia_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_virginia_var = 2
+				}
+			}
+			TR_USA_virginia_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_virginia_var = 3
+				}
+			}
+			TR_USA_vermont_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_vermont_var = 1
+				}
+			}
+			TR_USA_vermont_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_vermont_var = 2
+				}
+			}
+			TR_USA_vermont_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_vermont_var = 3
+				}
+			}
+			TR_USA_florida_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_florida_var = 1
+				}
+			}
+			TR_USA_florida_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_florida_var = 2
+				}
+			}
+			TR_USA_florida_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_florida_var = 3
+				}
+			}
+			TR_USA_pennsylvania_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_pennsylvania_var = 1
+				}
+			}
+			TR_USA_pennsylvania_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_pennsylvania_var = 2
+				}
+			}
+			TR_USA_pennsylvania_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_pennsylvania_var = 3
+				}
+			}
+			TR_USA_massachusetts_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_massachusetts_var = 1
+				}
+			}
+			TR_USA_massachusetts_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_massachusetts_var = 2
+				}
+			}
+			TR_USA_massachusetts_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_massachusetts_var = 3
+				}
+			}
+			TR_USA_michigan_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_michigan_var = 1
+				}
+			}
+			TR_USA_michigan_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_michigan_var = 2
+				}
+			}
+			TR_USA_michigan_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_michigan_var = 3
+				}
+			}
+			TR_USA_mississippi_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_mississippi_var = 1
+				}
+			}
+			TR_USA_mississippi_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_mississippi_var = 2
+				}
+			}
+			TR_USA_mississippi_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_mississippi_var = 3
+				}
+			}
+			TR_USA_missouri_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_missouri_var = 1
+				}
+			}
+			TR_USA_missouri_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_missouri_var = 2
+				}
+			}
+			TR_USA_missouri_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_missouri_var = 3
+				}
+			}
+			TR_USA_minnesota_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_minnesota_var = 1
+				}
+			}
+			TR_USA_minnesota_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_minnesota_var = 2
+				}
+			}
+			TR_USA_minnesota_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_minnesota_var = 3
+				}
+			}
+			TR_USA_maine_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_maine_var = 1
+				}
+			}
+			TR_USA_maine_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_maine_var = 2
+				}
+			}
+			TR_USA_maine_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_maine_var = 3
+				}
+			}
+			TR_USA_maryland_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_maryland_var = 1
+				}
+			}
+			TR_USA_maryland_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_maryland_var = 2
+				}
+			}
+			TR_USA_maryland_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_maryland_var = 3
+				}
+			}
+			TR_USA_montana_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_montana_var = 1
+				}
+			}
+			TR_USA_montana_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_montana_var = 2
+				}
+			}
+			TR_USA_montana_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_montana_var = 3
+				}
+			}
+			TR_USA_utah_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_utah_var = 1
+				}
+			}
+			TR_USA_utah_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_utah_var = 2
+				}
+			}
+			TR_USA_utah_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_utah_var = 3
+				}
+			}
+			TR_USA_louisiana_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_louisiana_var = 1
+				}
+			}
+			TR_USA_louisiana_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_louisiana_var = 2
+				}
+			}
+			TR_USA_louisiana_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_louisiana_var = 3
+				}
+			}
+			TR_USA_rhode_island_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_rhode_island_var = 1
+				}
+			}
+			TR_USA_rhode_island_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_rhode_island_var = 2
+				}
+			}
+			TR_USA_rhode_island_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_rhode_island_var = 3
+				}
+			}
+			TR_USA_wyoming_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_wyoming_var = 1
+				}
+			}
+			TR_USA_wyoming_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_wyoming_var = 2
+				}
+			}
+			TR_USA_wyoming_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_wyoming_var = 3
+				}
+			}
+			TR_USA_washington_com_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_washington_var = 1
+				}
+			}
+			TR_USA_washington_con_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_washington_var = 2
+				}
+			}
+			TR_USA_washington_lib_button_visible = {
+				check_variable = {
+					ROOT.TR_USA_washington_var = 3
+				}
+			}
+			
+		}
+	}
 }

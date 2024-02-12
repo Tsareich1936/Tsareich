@@ -27,6 +27,10 @@ spriteTypes = {
 		textureFile = "gfx/introscreen/GFX_TR_intro.dds"
 	}
 	spriteType = {
+		name = "GFX_JAP_intro"
+		textureFile = "gfx/introscreen/GFX_TR_intro_JAP.dds"
+	}
+	spriteType = {
 		name = "GFX_show_intro_button"
 		texturefile = "gfx//interface//topbar//button_help.tga"
 		effectFile = "gfx/FX/buttonstate.lua"

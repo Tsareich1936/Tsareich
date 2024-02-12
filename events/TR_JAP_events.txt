@@ -641,7 +641,7 @@ country_event = {                    #　国家保護法
 			JAP = {
 				country_event = {
 					id = TR_japan.14
-					days = 3
+					days = 365
 				}
 			}
 		}
@@ -1833,6 +1833,9 @@ country_event = {   #  election score
 			picture = GFX_Portrait_Sanzo_Nosaka
 			ideology = luxemburgism
 		}
+		load_focus_tree = {
+			tree = japan_focus_Luxembourgism
+		}
 	}
 }
 
@@ -1892,7 +1895,7 @@ country_event = {  ##  navyによる逆クーデター
 	}
 }
 
-country_event = {
+country_event = { # civil war by communist
 	id = TR_japan.66
 	title = TR_japan.66.t
 	desc = TR_japan.66.d
@@ -1910,6 +1913,9 @@ country_event = {
 		}
 		hidden_effect = {
 			remove_ideas = JAP_KOR_DEFEAT
+		}
+		load_focus_tree = {
+			tree = japan_focus_communist
 		}
 	}
 }
@@ -1973,6 +1979,9 @@ country_event = {
 			set_politics = {
 				ruling_party = neutrality
 			}
+			load_focus_tree = {
+				tree = japan_focus_Kodoha
+			}
 		}
 		if = {
 			limit = {
@@ -1998,7 +2007,9 @@ country_event = {
 				picture = GFX_JAP_Toyotomi
 				ideology = despotism
 			}
-			load_focus_tree = japan_Toyotomi
+			load_focus_tree = {
+				tree = japan_Toyotomi
+			}
 		}
 		if = {
 			limit = {
@@ -2023,7 +2034,9 @@ country_event = {
 				name = JAP_Himiko
 				picture = GFX_Portrait_Himiko
 				ideology = animism 
-
+			}
+			load_focus_tree = {
+				tree = japan_Yamataikoku
 			}
 		}
 
