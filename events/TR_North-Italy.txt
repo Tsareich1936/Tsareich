@@ -503,7 +503,7 @@ country_event = {
 			tag = CRO
 		}
 		ai_chance = {
-			base = 50
+			base = 2
 		}
 		SRI = {
 			country_event = {
@@ -517,7 +517,7 @@ country_event = {
 			tag = CRO
 		}
 		ai_chance = {
-			base = 50
+			base = 98
 		}
 		SRI = {
 			country_event = {
