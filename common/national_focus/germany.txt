@@ -1318,15 +1318,15 @@ focus_tree = {
 		}
 		x = 33
 		y = 6
+		available = {
+			date > 1941.01.01
+		}
 		completion_reward = {
 			create_wargoal = {
 					type = take_state_focus
 					target = HOL
 					generator = { 6  35 7 36 }
 					expire = 0
-				}
-				available = {
-					date > 1941.01.01
 				}
 		}
 	}
