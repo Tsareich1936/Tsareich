@@ -568,11 +568,7 @@ ideas = {
             removal_cost = -1
             modifier = {
                 send_volunteers_tension = -1
-                
                 lend_lease_tension = -1
-                hidden_modifier = {
-                    send_volunteer_factor = 1.5
-                }
             }
         }
         RUS_spa_tsar_bank = {

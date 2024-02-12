@@ -16,6 +16,6 @@ RUS_spain_civilwar_decision_c = {
 	}
 	
 
-	visible_when_empty = yes
+	visible_when_empty = no
 
 }
