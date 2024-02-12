@@ -7,7 +7,16 @@ country_event = {#プラハ暴動
 	title = TR_czech_revolution.1.t
 	desc = TR_czech_revolution.1.d
 	picture = GFX_report_event_german_speech
-	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = CZE
+		has_defensive_war = no
+		date > 1939.1.1
+		has_global_flag = balkan_war_finished
+	}
+
 	option = {
 		name = TR_czech_revolution.1.a
 		country_event = {
