@@ -266,5 +266,33 @@ ideas = {
 				consumer_goods_factor = 0.1
 			} 
 		}
+		TR_CZE_anti = {
+			picture = FRA_matignon_agreements
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				land_bunker_effectiveness_factor = -1
+				war_stability_factor = -0.5
+			}
+		}
+		TR_CZE_antiGER = {
+			picture = CZE_planning_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.01
+				army_core_defence_factor = 0.33
+				communism_drift = -0.05
+				communism_acceptance = -50
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.2
+			}
+		}
 	}
 }

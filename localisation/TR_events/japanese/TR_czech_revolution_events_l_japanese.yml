@@ -15,8 +15,8 @@
  TR_czech_revolution.4.a: "仕方あるまい..."
  TR_czech_revolution.4.b: "奴らはテロリストだ"
 
- TR_czech_revolution.5.t: "合意成功"
- TR_czech_revolution.5.a: "ひとまず収まった"
+ TR_czech_revolution.5.t: "合意達成"
+ TR_czech_revolution.5.a: "ひとまずは収まった"
 
  TR_czech_revolution.6.t: "合意失敗"
  TR_czech_revolution.6.a: "戦いは続く..."
@@ -27,9 +27,6 @@
  TR_czech_revolution.8.t: "鎮圧失敗"
  TR_czech_revolution.8.a: "なんということだ"
 
- TR_czech_revolution.9.t: "チェコ革命が失敗に終わる"
- TR_czech_revolution.9.a: "即時介入せよ"
-
- TR_czech_revolution.10.t: "チェコの保護"
- TR_czech_revolution.10.a: "対等な立場であるべきだ"
- TR_czech_revolution.10.b: "自治共和国として取り込もう"
+ TR_czech_revolution.9.t: "チェコの保護?"
+ TR_czech_revolution.9.a: "対等な同盟国であるべきだ"
+ TR_czech_revolution.9.b: "自治共和国として取り込もう"

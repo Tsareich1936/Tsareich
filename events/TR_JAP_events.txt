@@ -774,7 +774,7 @@ country_event = {            # 戦艦か空母か
 	}
 	option = {
 		add_tech_bonus = {
-			name = TR_japan.20.1
+			name = TR_japan.20.a
 			bonus = 3
 			uses = 1
 			category = bb_tech
@@ -782,7 +782,7 @@ country_event = {            # 戦艦か空母か
 	}
 	option = {
 		add_tech_bonus = {
-			name = TR_japan.20.2
+			name = TR_japan.20.b
 			bonus = 3
 			uses  = 1
 			category = cv_tech
@@ -1176,9 +1176,13 @@ country_event = {    # 陸海軍の統合
 	is_triggered_only = yes
 	option = {
 		name = TR_japan.40.a
+		army_experience = 20
+		navy_experience = 20
 	}
 	option = {
 		name = TR_japan.40.b
+		army_experience = 20
+		navy_experience = 20
 	}
 	
 }

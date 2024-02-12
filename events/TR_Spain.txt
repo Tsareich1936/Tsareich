@@ -548,7 +548,7 @@ country_event = {
 
 
 
-country_event = {
+country_event = { #神聖スペイン
 	id = TR_spain.3
 	title = TR_spain.3.t
 	desc = TR_spain.3.d
@@ -672,7 +672,13 @@ country_event = {
 		    custom_effect_tooltip = republicans_chosen
 	    }
 }
-country_event = {
+
+
+
+
+
+
+country_event = { #バニライベント(不発)
 	id = spain.1
 	title = spain.1.t
 	desc = spain.1.d

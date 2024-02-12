@@ -1510,6 +1510,25 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.5
 			}
 		}
+
+		JAP_lack_food = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			available = {
+				has_war = yes
+			}
+			modifier = {
+				political_power_cost = -0.5
+				stability_factor = -0.5
+				war_support_factor = -0.5
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				industry_air_damage_factor = 1.0
+				industry_repair_factor = -0.5
+			}
+		}
 	}
 
 }

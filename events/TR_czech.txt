@@ -153,6 +153,7 @@ country_event = {
 		annex_country = {
 			target = SLO
 		}
+		set_cosmetic_tag = CZESLO
 		add_political_power = 100
 		add_stability = 0.1
 	}
