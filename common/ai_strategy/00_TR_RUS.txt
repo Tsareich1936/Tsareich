@@ -85,7 +85,7 @@ RUS_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
-		value = 5 #because doctrine this = 15
+		value = 10 #because doctrine this = 15
 	}
 
 	ai_strategy = {
@@ -193,5 +193,33 @@ RUS_unit_production = {
 		type = equipment_production_factor
 		id = armor
 		value = 20
+	}
+
+
+	### diplo
+	ai_strategy = {
+		type = support
+		id = SER
+		value = 1000
+	}
+	ai_strategy = {
+		type = support
+		id = SPB
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = GER
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = FRA
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = SRI
+		value = -1000
 	}
 }
