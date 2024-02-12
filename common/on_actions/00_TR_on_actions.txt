@@ -49,14 +49,14 @@ on_actions = {
                 }
             }
         }
-	# effect = {#USA set up
-    #         USA = {
-    #             country_event = {
-    #                 id = TR_usa_civil_war.1
-    #                 days = 1
-    #             }
-    #         }
-    #     }
+	effect = {#USA set up
+            USA = {
+                country_event = {
+                    id = TR_usa_election.0
+                    days = 306
+                }
+            }
+        }
 	effect = {
 		KOR = {
 			give_resource_rights = {

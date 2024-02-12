@@ -6353,7 +6353,9 @@
  USA_fascism_subject_DEF: "$OVERLORDADJ$アメリカ保護国"
  USA_communism_subject: "北アメリカ社会主義共和国"
  USA_communism_subject_DEF: "北アメリカ社会主義共和国"
-
+ USA_before: "アメリカ合衆国"
+ USA_before_DEF: "アメリカ合衆国"
+ USA_before_ADJ: "アメリカ"
  USA_USA: "合衆国政府"
  USA_USA_DEF: "アメリカ合衆国"
  USA_USA_ADJ: "アメリカ"
