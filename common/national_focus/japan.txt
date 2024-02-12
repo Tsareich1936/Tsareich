@@ -5533,7 +5533,7 @@ focus_tree = { # Yamataikoku
     }
 } 
 
-focus_tree = {
+focus_tree = { # Kodoha
     id = japan_focus_Kodoha
 	country = {
 		factor = 0
@@ -5840,7 +5840,7 @@ focus_tree = {
             
                 activate_targeted_decision = {
                     target = JAP
-                    decision = JAP_KOD_NAVY_3_1_1
+                    decision = JAP_NAVY_3_1_1
                 }
             }
             if = {
@@ -5849,7 +5849,7 @@ focus_tree = {
                 }
                 activate_targeted_decision = {
                     target = JAP
-                    decision = JAP_KOD_NAVY_3_1_2
+                    decision = JAP_NAVY_3_1_2
                 }
             }
             if = {
@@ -5858,7 +5858,7 @@ focus_tree = {
                 }
                 activate_targeted_decision = {
                     target = JAP
-                    decision = JAP_KOD_NAVY_3_2_1
+                    decision = JAP_NAVY_3_2_1
                 }
             }
             if = {
@@ -5868,7 +5868,7 @@ focus_tree = {
             
                 activate_targeted_decision = {
                     target = jap
-                    decision = JAP_KOD_NAVY_3_2_2
+                    decision = JAP_NAVY_3_2_2
                 }
             }
             if = {
@@ -5878,7 +5878,7 @@ focus_tree = {
             
                 activate_targeted_decision = {
                     target = jap
-                    decision = JAP_KOD_NAVY_3_2_3
+                    decision = JAP_NAVY_3_2_3
                 }
             }
             if = {
@@ -5888,7 +5888,7 @@ focus_tree = {
             
                 activate_targeted_decision = {
                     target = JAP
-                    decision = JAP_KOD_NAVY_3_3_1
+                    decision = JAP_NAVY_3_3_1
                 }
             }
             if = {
@@ -5897,7 +5897,7 @@ focus_tree = {
                 }
                 activate_targeted_decision = {
                     target = JAP
-                    decision = JAP_KOD_NAVY_3_3_2
+                    decision = JAP_NAVY_3_3_2
                 }
             }
             
@@ -5930,8 +5930,8 @@ focus_tree = {
         }
         completion_reward = {
             swap_ideas = {
-                remove_idea = JAP_KOD_NAVY
-                add_idea = JAP_KOD_NAVY_1
+                remove_idea = JAP_NAVY
+                add_idea = JAP_NAVY_1
             }
         }
         prerequisite = {
@@ -5950,8 +5950,8 @@ focus_tree = {
         }
         completion_reward = {
             swap_ideas = {
-                remove_idea = JAP_KOD_NAVY_1
-                add_idea = JAP_KOD_NAVY_2
+                remove_idea = JAP_NAVY_1
+                add_idea = JAP_NAVY_2
             }
         }
     }
@@ -5966,7 +5966,7 @@ focus_tree = {
             focus = jap_KOD_NAVY_2_2
         }
         completion_reward = {
-            remove_ideas = JAP_KOD_NAVY_2
+            remove_ideas = JAP_NAVY_2
         }
     }
     
@@ -6013,7 +6013,7 @@ focus_tree = {
         }
         completion_reward = {
             add_tech_bonus = {
-                name = jap_KOD_NAVY_3_3
+                name = jap_NAVY_3_3
                 uses = 1
                 bonus = 3
                 category = ss_tech
@@ -6044,10 +6044,12 @@ focus_tree = {
     }
     
     
-     #　空軍ツリー
+
     
+#　空軍ツリー
+
     focus = {
-        id = jap_AIRFORCE_1_1
+        id = jap_KOD_AIRFORCE_1_1
         relative_position_id = jap_KOD_NAVY_1_1
         x = 6
         y = 0
@@ -6059,15 +6061,15 @@ focus_tree = {
             focus = jaP_KOD_military
         }
     }
-    
+
     focus = {
-        id = jap_AIRFORCE_1_2
-        relative_position_id = jap_AIRFORCE_1_1
+        id = jap_KOD_AIRFORCE_1_2
+        relative_position_id = jap_KOD_AIRFORCE_1_1
         x = 0
         y = 1
         cost = 4
         prerequisite = {
-            focus = jap_AIRFORCE_1_1
+            focus = jap_KOD_AIRFORCE_1_1
         }
         completion_reward = {
             swap_ideas = {
@@ -6075,48 +6077,51 @@ focus_tree = {
                 add_idea = JAP_AIRFORCE_5
             }
         }
-        
-    }
+        prerequisite = {
+            focus = jaP_KOD_military
+        }
     
+}
+
     focus = {
-        id = jap_AIRFORCE_1_3
-        relative_position_id = jap_AIRFORCE_1_2
+        id = jap_KOD_AIRFORCE_1_3
+        relative_position_id = jap_KOD_AIRFORCE_1_2
         x = 0
         y = 1
         cost = 4
         prerequisite = {
-            focus = jap_AIRFORCE_1_2
-        }
-        completion_reward = {
-            add_ideas = JAP_AIRFORCE_4
+            focus = jap_KOD_AIRFORCE_1_2
+        }    
+        completion_reward = {        
+             add_ideas = JAP_AIRFORCE_4
         }
     }
-    
+
     focus = {
-        id = jap_AIRFORCE_2_1
-        relative_position_id = jap_AIRFORCE_1_1
+        id = jap_KOD_AIRFORCE_2_1
+        relative_position_id = jap_KOD_AIRFORCE_1_1
         x = 2
         y = 0
         cost = 4
+        prerequisite = {
+            focus = jaP_KOD_military
+        }
         completion_reward = {
             swap_ideas = {
                 remove_idea = JAP_AIRFORCE
                 add_idea = JAP_AIRFORCE_1
             }
         }
-        prerequisite = {
-            focus = jaP_KOD_military
-        }        
     }
-    
+
     focus = {
-        id = jap_AIRFORCE_2_2
-        relative_position_id = jap_AIRFORCE_2_1
+        id = jap_KOD_AIRFORCE_2_2
+        relative_position_id = jap_KOD_AIRFORCE_2_1
         x = 0
         y = 1
         cost = 4
         prerequisite = {
-            focus = jap_AIRFORCE_2_1
+            focus = jap_KOD_AIRFORCE_2_1
         }
         completion_reward = {
             swap_ideas = {
@@ -6125,48 +6130,48 @@ focus_tree = {
             }
         }
     }
-    
+
     focus = {
-        id = jap_AIRFORCE_2_3
-        relative_position_id = jap_AIRFORCE_2_2
+        id = jap_KOD_AIRFORCE_2_3
+        relative_position_id = jap_KOD_AIRFORCE_2_2
         x = 0
         y = 1
         cost = 4
         prerequisite = {
-            focus = jap_AIRFORCE_2_2
+            focus = jap_KOD_AIRFORCE_2_2
         }
         completion_reward = {
             remove_ideas = JAP_AIRFORCE_2
         }
     }
-    
+
     focus = {
-        id = jap_AIRFORCE_3_1
-        relative_position_id = jap_AIRFORCE_1_1
+        id = jap_KOD_AIRFORCE_3_1
+        relative_position_id = jap_KOD_AIRFORCE_1_1
         x = 4
         y = 0
         cost = 4
+        prerequisite = {
+            focus = jaP_KOD_military
+        }
         completion_reward = {
             add_tech_bonus = {
                 name = jap_AIRFORCE_3_1
                 bonus = 2
                 uses = 2
                 category = light_air
-            }
-        }
-        prerequisite = {
-            focus = jaP_KOD_military
+           }
         }
     }
-    
+
     focus = {
-        id = jap_AIRFORCE_3_2
-        relative_position_id = jap_AIRFORCE_3_1
+        id = jap_KOD_AIRFORCE_3_2
+        relative_position_id = jap_KOD_AIRFORCE_3_1
         x = 0
         y = 1
         cost = 4
         prerequisite = {
-            focus = jap_AIRFORCE_3_1
+            focus = jap_KOD_AIRFORCE_3_1
         }
         completion_reward = {
             add_tech_bonus = {
@@ -6177,17 +6182,17 @@ focus_tree = {
             }
         }
     }
-    
+
     focus = {
-        id = jap_AIRFORCE_3_3
-        relative_position_id = jap_AIRFORCE_3_2
+        id = jap_KOD_AIRFORCE_3_3
+        relative_position_id = jap_KOD_AIRFORCE_3_2
         x = 0
         y = 1
         cost = 4
         prerequisite = {
-            focus = jap_AIRFORCE_3_2
+            focus = jap_KOD_AIRFORCE_3_2
         }
-    
+
         completion_reward = {
             add_tech_bonus = {
                 name = jap_AIRFORCE_3_3
@@ -6197,21 +6202,21 @@ focus_tree = {
             }
         }
     }
-    
+
     focus = {
-        id = jap_AIRFORCE_10
-        relative_position_id = jap_AIRFORCE_2_3
+        id = jap_KOD_AIRFORCE_10
+        relative_position_id = jap_KOD_AIRFORCE_2_3
         x = 0
         y = 1
         cost = 10
         prerequisite = {
-            focus = jap_AIRFORCE_1_3
+            focus = jap_KOD_AIRFORCE_1_3
         }
         prerequisite = {
-            focus = jap_AIRFORCE_2_3
+            focus = jap_KOD_AIRFORCE_2_3
         }
         prerequisite = {
-            focus = jap_AIRFORCE_3_3
+            focus = jap_KOD_AIRFORCE_3_3
         }
         completion_reward = {
             country_event = {
@@ -6219,6 +6224,8 @@ focus_tree = {
             }
         }
     }
+
+
     
     #　陸軍ツリー
     
@@ -6269,7 +6276,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            add_ideas = JAP_KOD_ARMY_3
+            add_ideas = JAP_ARMY_3
         }
     }
     
@@ -6286,7 +6293,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            add_ideas = JAP_KOD_ARMY_4
+            add_ideas = JAP_ARMY_4
         }
     }
     
@@ -6304,8 +6311,8 @@ focus_tree = {
         }
         completion_reward = {
             swap_ideas = {
-                remove_idea = JAP_KOD_ARMY
-                add_idea = JAP_KOD_ARMY_1
+                remove_idea = JAP_ARMY
+                add_idea = JAP_ARMY_1
             }
         }
     }
@@ -6324,8 +6331,8 @@ focus_tree = {
         }
         completion_reward = {
             swap_ideas = {
-                remove_idea = JAP_KOD_ARMY_1
-                add_idea = JAP_KOD_ARMY_2
+                remove_idea = JAP_ARMY_1
+                add_idea = JAP_ARMY_2
             }
         }
     }
@@ -6343,7 +6350,7 @@ focus_tree = {
             
         }
         completion_reward = {
-            remove_ideas = JAP_KOD_ARMY_2
+            remove_ideas = JAP_ARMY_2
         }
     }
     
@@ -6361,7 +6368,7 @@ focus_tree = {
         }
         completion_reward = {
             add_tech_bonus = {
-                name = jap_KOD_ARMY_3_1
+                name = jap_ARMY_3_1
                 bonus = 2
                 uses = 2
                 category = infantry_weapons
@@ -6383,7 +6390,7 @@ focus_tree = {
         }
         completion_reward = {
             add_tech_bonus = {
-                name = jap_KOD_ARMY_3_2
+                name = jap_ARMY_3_2
                 bonus = 2
                 uses = 2
                 category = artillery
@@ -6405,7 +6412,7 @@ focus_tree = {
         }
         completion_reward = {
             add_tech_bonus = {
-                name = jap_KOD_ARMY_3_3
+                name = jap_ARMY_3_3
                 bonus = 1.0
                 uses = 1
                 category = armor
@@ -6583,6 +6590,21 @@ focus_tree = {
         }
     }
 }
+
+focus_tree = {  # Luxembourgism
+	id = japan_focus_Luxembourgism
+	country = {
+		factor = 0
+		modifier = {
+			add = 101
+			tag = JAP
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+
+
+} 
 
 
 shared_focus = {
