@@ -976,10 +976,120 @@ country_event = {
 
 }
 
+#DEN 島
+country_event = {
+    id = TR_Russia_diplo.6
+    title = TR_Russia_diplo.6.t
+    desc = TR_Russia_diplo.6.d
+    picture = GFX_report_event_hitler_handshake
+
+    is_triggered_only = yes
+
+    option = { 
+        name = TR_Russia_diplo.6.a
+        ai_chance = { base = 95 }
+        RUS = {
+            country_event = { id = TR_Russia_diplo.7 days = 4 }
+        }
+        custom_effect_tooltip = TR_Russia_diplo.tt.2
+    }
+    option = { 
+        name = TR_Russia_diplo.6.b
+        ai_chance = { base = 5 }
+        RUS = {
+            country_event = { id = TR_Russia_diplo.8 days = 4 }
+        }
+    }
 
 
+}
+#受諾！
+country_event = {
+    id = TR_Russia_diplo.7
+    title = TR_Russia_diplo.7.t
+    desc = TR_Russia_diplo.7.d
+    picture = GFX_report_event_hitler_handshake
 
+    is_triggered_only = yes
 
+    option = { 
+        name = TR_Russia_diplo.7.a
+        910 = {
+            transfer_state_to = RUS
+        }
+        RUS = {
+            give_resource_rights = {
+                receiver = DEN
+                state = 189
+            }
+            give_resource_rights = {
+                receiver = DEN
+                state = 12
+            }
+            give_resource_rights = {
+                receiver = DEN
+                state = 13
+            }
+            give_resource_rights = {
+                receiver = DEN
+                state = 808
+            }
+        }
+        hidden_effect = {
+            add_resource = {
+                type = steel
+                amount = 5
+                state = 189
+            }
+            add_resource = {
+                type = steel
+                amount = 5
+                state = 12
+            }
+            add_resource = {
+                type = steel
+                amount = 5
+                state = 13
+            }
+            add_resource = {
+                type = steel
+                amount = 5
+                state = 808
+            }
+        }
+    }
+
+}
+
+country_event = {
+    id = TR_Russia_diplo.8
+    title = TR_Russia_diplo.8.t
+    desc = TR_Russia_diplo.8.d
+    picture = GFX_report_event_hitler_handshake
+
+    is_triggered_only = yes
+
+    option = { 
+        name = TR_Russia_diplo.8.a
+        
+    }
+
+}
+
+country_event = {
+    id = TR_Russia_diplo.9
+    title = TR_Russia_diplo.9.t
+    desc = TR_Russia_diplo.9.d
+    picture = GFX_report_event_generic_construction_site
+
+    is_triggered_only = yes
+
+    option = { 
+        name = TR_Russia_diplo.9.a
+        
+    }
+
+}
 
 
 

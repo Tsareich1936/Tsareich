@@ -478,6 +478,11 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_ideas = RUS_empire_diplo
+			unlock_decision_category_tooltip = RUS_spain_civilwar_decision_c
+			unlock_decision_tooltip = RUS_spa_add_factory
+			unlock_decision_tooltip = RUS_spa_build_bank
+			unlock_decision_tooltip = RUS_send_volunteer_army
+
 		}
 	}
 	focus = {
@@ -1126,6 +1131,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = RUS_empire_diplo
+		completion_reward = {
+			unlock_decision_category_tooltip = RUS_europe_diplo_c
+			unlock_decision_tooltip = RUS_ankara_treaty_1
+			unlock_decision_tooltip = RUS_buy_bornholm_island
+		}
 	}
 	focus = {
 		id = RUS_nord_anticommune
@@ -1148,6 +1158,9 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = RUS_empire_diplo
+		completion_reward = {
+			unlock_decision_tooltip = RUS_ser_build_industrial_complex
+		}
 	}
 	focus = {
 		id = RUS_money_to_ROM

@@ -25,4 +25,63 @@ RUS_europe_diplo_c = {
 			}
 		}
 	}
+
+	RUS_buy_bornholm_island = {
+		visible = {
+			RUS = {
+				has_completed_focus = RUS_europe_diplo
+			}
+		}
+		available = {
+			910 = {
+				is_controlled_by = DEN
+			}
+		}
+		targets = { DEN }
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 10
+		fire_only_once = yes
+		ai_will_do = {
+			base = 4000
+		}
+		remove_effect = {
+			DEN = {
+				country_event = { id = TR_Russia_diplo.6 }
+			}
+		}
+	}
+
+	RUS_ser_build_industrial_complex = {
+		visible = {
+			RUS = {
+				#has_completed_focus = RUS_money_to_SER
+			}
+		}
+		available = {
+			country_exists = SER
+			SER = {
+				has_war = no
+			}
+		}
+		targets = { SER }
+		icon = GFX_decision_generic_factory
+		priority = 201
+		ai_will_do = {
+			base = 4000
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			SER = {
+				add_offsite_building = {
+					type = industrial_complex level = 1
+				}
+				country_event = TR_Russia_diplo.9
+			}
+
+		}
+	}
+
 }
