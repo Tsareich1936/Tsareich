@@ -114,7 +114,8 @@ country_event = { #チェコ内戦！
 	desc = TR_czech_revolution.3.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
-	option = {
+
+	option = {#部分的に民営化しよう
 		name = TR_czech_revolution.3.a
 		start_civil_war = {
 			ruling_party = conservatism
@@ -170,17 +171,6 @@ country_event = {#GERチェコで内戦！
 	picture = GFX_report_event_german_speech
 	option = {
 		name = TR_czech_revolution.6.a
-		start_civil_war = {
-			ruling_party = conservatism
-			ideology = communism
-			size = 0.5
-			capital = 9
-			states = {
-				9 941 942
-			}
-			keep_political_leader = yes
-			keep_political_party_members = yes
-		}
 	}
 }
 country_event = {#チェコ革命の失敗
@@ -249,12 +239,14 @@ country_event = {#チェコの保護
 	picture = GFX_report_event_german_speech
 	option = {
 		name = TR_czech_revolution.10.a
+		ai_chance = { base = 50 }
 		FRA = {
 			add_to_faction = CZE
 		}
 	}
 	option = {
 		name = TR_czech_revolution.10.b
+		ai_chance = { base = 50 }
 		set_autonomy = {
 			target = CZE
 			autonomous_state = autonomy_puppet

@@ -16,6 +16,10 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				conscription_factor = 0.02
+				river_crossing_factor = 0.25
+			}
+			equipment_bonus = {
+				
 			}
 		}
 		TR_mistery_power = {
