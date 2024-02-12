@@ -941,7 +941,7 @@ characters = {
 			maneuvering_skill = 1
 			coordination_skill = 2
 			legacy_id = 406
-			
+			ey
 		}
 	}
 
@@ -2572,6 +2572,9 @@ characters = {
 			traits = {
 				patriarch_of_moscow_and_all_russia 
 			}
+			available = {
+                has_completed_focus = RUS_corp_with_church
+            }
 		}
 	}
 	
@@ -2597,6 +2600,9 @@ characters = {
 			traits = {
 				orthodox_rabblerouser
 			}
+			available = {
+                has_completed_focus = RUS_corp_with_church
+            }
 		}		
 	}
 
@@ -2623,6 +2629,9 @@ characters = {
 			traits = {
 				theocratic_diplomat
 			}
+			available = {
+                has_completed_focus = RUS_corp_with_church
+            }
 		}
 	}
 
@@ -2649,6 +2658,9 @@ characters = {
 			traits = {
 				driver_of_the_faithful
 			}
+			available = {
+                has_completed_focus = RUS_corp_with_church
+            }
 		}		
 	}
 

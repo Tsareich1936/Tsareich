@@ -71,7 +71,7 @@ ENG_historical_plan = {
 		RUS_nav_CC_tsar
 		RUS_ankara_treaty
 		RUS_knockout_commune
-		
+		RUS_help_HOL
 		RUS_holy_war
 		RUS_to_the_war
 		#1940-------
