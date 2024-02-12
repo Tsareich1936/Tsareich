@@ -89,6 +89,16 @@ country_event = {
 			factor = 50
 		}
 
+		add_offsite_building = { 
+			type = arms_factory
+			level = 3
+		} 
+		add_equipment_to_stockpile = {
+			type = light_tank_chassis_2
+			allow_without_tech = yes
+			amount = -300
+			producer = CZE
+		}
 	}
 }
 

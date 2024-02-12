@@ -199,7 +199,8 @@ set_popularities = {
 	communism = 7
 	conservatism = 65
 }
-
+give_guarantee = ROM
+give_guarantee = SER
 add_ideas = {
 	TR_CZE_skoda_works
 	TR_CZE_demo_oppo

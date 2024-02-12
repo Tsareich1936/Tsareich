@@ -492,12 +492,40 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.1
 			add_ideas = TR_inetr_supSPC
+			add_opinion_modifier = {
+				target = SPC
+				modifier = FRA_international
+			}
 			GER = {
 				add_ideas = TR_inetr_supSPC
+				add_opinion_modifier = {
+					target = SPC
+					modifier = FRA_international
+				}
 			}
 			SRI = {
 				add_ideas = TR_inetr_supSPC
+				add_opinion_modifier = {
+					target = SPC
+					modifier = FRA_international
+				}
 			}
+			SPC = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = FRA_international
+				}
+				add_opinion_modifier = {
+					target = GER
+					modifier = FRA_international
+				}
+				add_opinion_modifier = {
+					target = SRI
+					modifier = FRA_international
+				}
+			}
+
+
 		}
 	}
 	focus = {
@@ -962,13 +990,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			SPC = {
-				swap_ideas = {
-					remove_idea = TR_SPR_inter_war
-					add_idea = TR_SPR_inter_war1
-				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
 					amount = 4000
+					producer = FRA
+				}
+				swap_ideas = {
+					remove_idea = TR_SPR_inter_war
+					add_idea = TR_SPR_inter_war1
 				}
 			}		
 		}
