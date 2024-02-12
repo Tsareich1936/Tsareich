@@ -1,5 +1,9 @@
 spriteTypes = {
 	spriteType = {
+		name = GFX_invisible_bg
+		textureFile = "gfx/interface/UI/invisible_bg.dds"
+	}
+	spriteType = {
 		name = GFX_TR_USA_show_election
 		textureFile = "gfx/interface/UI/usa_election/usa_show_election_button.dds"
 	}

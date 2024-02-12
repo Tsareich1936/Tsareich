@@ -1,3 +1,4 @@
+#!gfx:pdx_launcher\game\interface\launcher.gfx
 guiTypes = {
 	containerWindowType = {
 		name = TR_USA_show_election_map
@@ -18,7 +19,7 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = TR_USA_election_map_window
-		
+		moveable = yes
 		position = {
 			x = 0
 			y = 3600
@@ -36,11 +37,15 @@ guiTypes = {
 		}
 		origo = center
 		orientation = CENTER
-
+		background = {
+			name = background
+			spriteType = GFX_invisible_bg
+		}
 		iconType = {
 			name = "bg"
 			spriteType = GFX_TR_USA_election_bg
 			scale = 0.75
+			alwaystransparent = yes
 		}
 		
 		# iconType = {
@@ -48,6 +53,16 @@ guiTypes = {
 		# 	spriteType = GFX_states
 		# 	scale = 0.75
 		# }
+		buttonType = {
+			name = "close_button"
+			position = { x = -32 y = 0 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
 	}
 	containerWindowType = {
 		name = TR_USA_election_states_map
@@ -72,6 +87,7 @@ guiTypes = {
 			name = "border"
 			spriteType = GFX_TR_USA_election_border
 			scale = 0.75
+			alwaystransparent = yes
 		}
 		# states
 			iconType = {

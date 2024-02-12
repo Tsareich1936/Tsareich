@@ -9,6 +9,9 @@ ideologies = {
 				anarchist_communism = {
 
 				}
+				libertarianism = {
+
+				}
 			}
 	
 			dynamic_faction_names = {

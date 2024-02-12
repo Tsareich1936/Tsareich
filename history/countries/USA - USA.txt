@@ -118,28 +118,28 @@ create_dynamic_country = {
 	inherit_technology = USA
 }
 # election variables #
-	set_variable = { ROOT.TR_USA_arkansas_var = 3 }
+	set_variable = { ROOT.TR_USA_arkansas_var = 2 }
 	set_variable = { ROOT.TR_USA_iowa_var = 3 }
-	set_variable = { ROOT.TR_USA_idaho_var = 3 }
+	set_variable = { ROOT.TR_USA_idaho_var = 1 }
 	set_variable = { ROOT.TR_USA_alabama_var = 2 }
-	set_variable = { ROOT.TR_USA_arizona_var = 3 }
+	set_variable = { ROOT.TR_USA_arizona_var = 2 }
 	set_variable = { ROOT.TR_USA_illinois_var = 1 }
 	set_variable = { ROOT.TR_USA_indiana_var = 1 }
 	set_variable = { ROOT.TR_USA_wisconsin_var = 1 }
 	set_variable = { ROOT.TR_USA_west_virginia_var = 3 }
-	set_variable = { ROOT.TR_USA_oklahoma_var = 3 }
+	set_variable = { ROOT.TR_USA_oklahoma_var = 2 }
 	set_variable = { ROOT.TR_USA_ohio_var = 1 }
 	set_variable = { ROOT.TR_USA_oregon_var = 3 }
 	set_variable = { ROOT.TR_USA_california_var = 3 }
-	set_variable = { ROOT.TR_USA_kansas_var = 3 }
+	set_variable = { ROOT.TR_USA_kansas_var = 2 }
 	set_variable = { ROOT.TR_USA_kentucky_var = 3 }
 	set_variable = { ROOT.TR_USA_connecticut_var = 1 }
-	set_variable = { ROOT.TR_USA_colorado_var = 3 }
+	set_variable = { ROOT.TR_USA_colorado_var = 1 }
 	set_variable = { ROOT.TR_USA_south_carolina_var = 2 }
 	set_variable = { ROOT.TR_USA_south_dakota_var = 3 }
 	set_variable = { ROOT.TR_USA_georgia_var = 2 }
-	set_variable = { ROOT.TR_USA_texas_var = 3 }
-	set_variable = { ROOT.TR_USA_tennessee_var = 3 }
+	set_variable = { ROOT.TR_USA_texas_var = 1 }
+	set_variable = { ROOT.TR_USA_tennessee_var = 2 }
 	set_variable = { ROOT.TR_USA_delaware_var = 3 }
 	set_variable = { ROOT.TR_USA_new_jersey_var = 1 }
 	set_variable = { ROOT.TR_USA_new_hampshire_var = 1 }
@@ -147,24 +147,24 @@ create_dynamic_country = {
 	set_variable = { ROOT.TR_USA_new_york_var = 1 }
 	set_variable = { ROOT.TR_USA_nevada_var = 3 }
 	set_variable = { ROOT.TR_USA_nebraska_var = 3 }
-	set_variable = { ROOT.TR_USA_north_carolina_var = 3 }
+	set_variable = { ROOT.TR_USA_north_carolina_var = 2 }
 	set_variable = { ROOT.TR_USA_north_dakota_var = 3 }
 	set_variable = { ROOT.TR_USA_virginia_var = 3 }
-	set_variable = { ROOT.TR_USA_vermont_var = 3 }
+	set_variable = { ROOT.TR_USA_vermont_var = 1 }
 	set_variable = { ROOT.TR_USA_florida_var = 2 }
 	set_variable = { ROOT.TR_USA_pennsylvania_var = 1 }
 	set_variable = { ROOT.TR_USA_massachusetts_var = 1 }
 	set_variable = { ROOT.TR_USA_michigan_var = 1 }
 	set_variable = { ROOT.TR_USA_mississippi_var = 2 }
-	set_variable = { ROOT.TR_USA_missouri_var = 3 }
+	set_variable = { ROOT.TR_USA_missouri_var = 2 }
 	set_variable = { ROOT.TR_USA_minnesota_var = 3 }
 	set_variable = { ROOT.TR_USA_maine_var = 1 }
 	set_variable = { ROOT.TR_USA_maryland_var = 3 }
-	set_variable = { ROOT.TR_USA_montana_var = 3 }
-	set_variable = { ROOT.TR_USA_utah_var = 3 }
-	set_variable = { ROOT.TR_USA_louisiana_var = 3 }
+	set_variable = { ROOT.TR_USA_montana_var = 1 }
+	set_variable = { ROOT.TR_USA_utah_var = 1 }
+	set_variable = { ROOT.TR_USA_louisiana_var = 2 }
 	set_variable = { ROOT.TR_USA_rhode_island_var = 1 }
-	set_variable = { ROOT.TR_USA_wyoming_var = 3 }
+	set_variable = { ROOT.TR_USA_wyoming_var = 1 }
 	set_variable = { ROOT.TR_USA_washington_var = 3 }
 
 # Starting tech
