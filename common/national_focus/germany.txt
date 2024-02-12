@@ -1483,6 +1483,9 @@ focus_tree = {
 		}
 		x = 39
 		y = 6
+		available = {
+			date > 1941.01.01
+		}
 			completion_reward = {
 					create_wargoal = {
 							type = take_state_focus
