@@ -54,7 +54,7 @@ RUS_europe_diplo_c = {
 	RUS_ser_build_industrial_complex = {
 		visible = {
 			RUS = {
-				#has_completed_focus = RUS_money_to_SER
+				has_completed_focus = RUS_money_to_SER
 			}
 		}
 		available = {
