@@ -146,8 +146,6 @@ if = {
 }
 
 set_convoys = 10
-add_manpower = 50000
-
 set_politics = {
 	ruling_party = fascism
 	last_election = "1933.12.20"
