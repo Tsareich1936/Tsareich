@@ -237,4 +237,12 @@ RUS_unit_production = {
 		id = SRI
 		value = -1000
 	}
+
+
+	#army
+	ai_strategy = {
+		type = front_unit_request
+		tag = GER
+		value = 2000
+	}
 }
