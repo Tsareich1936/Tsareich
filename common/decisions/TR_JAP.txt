@@ -2816,3 +2816,69 @@ JAP_balance_of_power_category = {
 		cost = 100
 	}
 }
+
+JAP_airbornes = {
+	Okinawa = {
+		allowed = {
+			always = no
+		}
+		fire_only_once = yes
+		available = {
+			has_tech = paratroopers
+			num_battalions_in_states = {
+				count > 1
+				states = {982 }
+				exclude = {
+					paratrooper
+				}
+			}
+			not = {
+				has_country_flag = JAP_Iojima
+			}
+		}
+		cost = 100
+		complete_effect = {
+			526 = {
+				damage_building = {
+					type = air_base
+					damage = 2
+				}
+			}
+			hidden_effect = {
+				set_country_flag = JAP_Okinawa
+			}
+		}
+	}
+
+	Iojima = {
+		allowed = {
+			always = no
+		}
+		fire_only_once = yes
+		available = {
+			has_tech = paratroopers
+			num_battalions_in_states = {
+				count > 1
+				states = {963 }
+				exclude = {
+					paratrooper
+				}
+			}
+			not = {
+				has_country_flag = JAP_Okinawa
+			}
+		}
+		cost = 100
+		complete_effect = {
+			645 = {
+				damage_building = {
+					type = air_base
+					damage = 2
+				}
+			}
+			hidden_effect = {
+				set_country_flag = JAP_Iojima
+			}
+		}
+	}
+}
