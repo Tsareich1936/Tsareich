@@ -1359,7 +1359,10 @@ focus_tree = {
 					factor = 4000
 				}
 			available = {
-					has_country_flag = czech_revolution
+					has_global_flag = czech_revolution
+					NOT = {
+						has_global_flag = czech_revolution_failed
+					}
 				}
 			completion_reward = {
 					country_event = {
