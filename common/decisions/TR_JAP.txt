@@ -966,7 +966,7 @@ JAP_industry_Takahashi = {
 		icon = generic_construction
 		allowed = { always = no }
 		available = {
-			num_of_available_civilian_factories > 2
+			num_of_available_civilian_factories > 1
 		}
 		ai_will_do = {
 			base = 200
@@ -1006,7 +1006,7 @@ JAP_industry_Takahashi = {
 			base = 200
 		}
 		available = {
-			num_of_available_civilian_factories > 2
+			num_of_available_civilian_factories > 1
 		}
 		remove_effect = {
 			random_owned_state = {
@@ -1044,7 +1044,7 @@ JAP_industry_Takahashi = {
 		}
 		allowed = { always = no }
 		available = {
-			num_of_available_civilian_factories > 2
+			num_of_available_civilian_factories > 1
 		}
 		
 		remove_effect = {
@@ -1083,7 +1083,7 @@ JAP_industry_Takahashi = {
 			base = 200
 		}
 		available = {
-			num_of_available_civilian_factories > 2
+			num_of_available_civilian_factories > 1
 		}
 		remove_effect = {
 			random_owned_state = {
@@ -1121,7 +1121,7 @@ JAP_industry_Takahashi = {
 		icon = generic_construction
 		allowed = { always = no }
 		available = {
-			num_of_available_civilian_factories > 2
+			num_of_available_civilian_factories > 1
 		}
 		
 		remove_effect = {
@@ -1160,7 +1160,7 @@ JAP_industry_Takahashi = {
 			base = 200
 		}
 		available = {
-			num_of_available_civilian_factories > 2
+			num_of_available_civilian_factories > 1
 		}
 		remove_effect = {
 			random_owned_state = {
@@ -1198,7 +1198,7 @@ JAP_industry_Takahashi = {
 		icon = generic_construction
 		allowed = { always = no }
 		available = {
-			num_of_available_civilian_factories > 2
+			num_of_available_civilian_factories > 1
 		}
 		
 		remove_effect = {
@@ -1238,7 +1238,7 @@ JAP_industry_Takahashi = {
 		}
 		
 		available = {
-			num_of_available_civilian_factories > 2
+			num_of_available_civilian_factories > 1
 		}
 		remove_effect = {
 			random_owned_state = {
@@ -1276,7 +1276,7 @@ JAP_industry_Takahashi = {
 		icon = generic_construction
 		allowed = { always = no }
 		available = {
-			num_of_available_civilian_factories > 2
+			num_of_available_civilian_factories > 1
 		}
 		
 		remove_effect= {
@@ -1316,7 +1316,7 @@ JAP_industry_Takahashi = {
 		}
 		
 		available = {
-			num_of_available_civilian_factories > 2
+			num_of_available_civilian_factories > 1
 		}
 		remove_effect = {
 			random_owned_state = {
@@ -1354,7 +1354,7 @@ JAP_industry_Takahashi = {
 		icon = generic_construction
 		allowed = { always = no }
 		available = {
-			num_of_available_civilian_factories > 2
+			num_of_available_civilian_factories > 1
 		}
 		
 		remove_effect = {
@@ -1393,7 +1393,7 @@ JAP_industry_Takahashi = {
 			base = 200
 		}
 		available = {
-			num_of_available_civilian_factories > 2
+			num_of_available_civilian_factories > 1
 		}
 		remove_effect = {
 			random_owned_state = {
