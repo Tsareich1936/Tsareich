@@ -237,6 +237,7 @@ create_dynamic_country = {
 	set_politics = {
 		ruling_party = theocracy
 	}
+	set_country_leader_ideology = catholicism
 	set_popularities = {
 		theocracy  = 100
 	}
