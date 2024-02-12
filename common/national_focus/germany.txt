@@ -1066,6 +1066,9 @@ focus_tree = {
 			ai_will_do = {
 					factor = 80
 				}
+			available = {
+				has_global_flag = TR_spr_civ_war
+			}
 
 	}
 	focus = {
@@ -2391,7 +2394,6 @@ focus_tree = {
 		}
 		x = 29
 		y = 10
-
 	}
 	focus = {
 		id = GER_Allies
