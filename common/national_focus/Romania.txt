@@ -1,0 +1,502 @@
+focus_tree = {
+	id = rom
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = ROM
+		}
+	}
+	default = no
+	focus = {
+		id = ROM_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 9
+		y = 0
+
+	}
+	focus = {
+		id = ROM_win1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 23
+		y = 0
+
+	}
+	focus = {
+		id = newfocus_22
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = ROM_imil_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_1
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = ROM_imil_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_imil_1
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = ROM_imil_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_imil_2
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = ROM_imil_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_imil_2
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = ROM_imil_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_imil_5
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = ROM_imil_7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_imil_6
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = ROM_imil_ind1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_imil_2
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = ROM_imil_ind2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_imil_ind1
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = newfocus_23
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_22
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = newfocus_28
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_22
+		}
+		x = 9
+		y = 8
+
+	}
+	focus = {
+		id = newfocus_27
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_23
+			focus = newfocus_28
+		}
+		mutually_exclusive = {
+			focus = newfocus_26
+			focus = newfocus_25
+		}
+		x = 5
+		y = 9
+
+	}
+	focus = {
+		id = newfocus_32
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_27
+		}
+		x = 5
+		y = 10
+
+	}
+	focus = {
+		id = ROM_imil_nav
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_imil_2
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = ROM_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_1
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = newfocus_24
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_22
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = newfocus_25
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_28
+			focus = newfocus_24
+			focus = newfocus_23
+		}
+		mutually_exclusive = {
+			focus = newfocus_26
+			focus = newfocus_27
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = {
+		id = newfocus_29
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_25
+		}
+		x = 9
+		y = 10
+
+	}
+	focus = {
+		id = newfocus_26
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_24
+			focus = newfocus_28
+		}
+		mutually_exclusive = {
+			focus = newfocus_25
+			focus = newfocus_27
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = newfocus_34
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_26
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = ROM_ind_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_1
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = ROM_ind_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_ind_1
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = ROM_ind_r1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_ind_2
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = ROM_ind_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_ind_2
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = ROM_ind_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_ind_5
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = ROM_ind_7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_ind_6
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = ROM_ind_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_ind_2
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = ROM_ind_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_ind_3
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = ROM_win2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win1
+		}
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = ROM_win3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win2
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = ROM_win6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win1
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = ROM_win7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win6
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = ROM_win8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win7
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = ROM_win9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win8
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = ROM_win10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win9
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = ROM_imil_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_imil_3
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = ROM_ind_r2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_ind_r1
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = newfocus_30
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_29
+		}
+		x = 9
+		y = 11
+
+	}
+	focus = {
+		id = newfocus_31
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_32
+		}
+		x = 5
+		y = 11
+
+	}
+	focus = {
+		id = newfocus_33
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_34
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = ROM_win5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win4
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = ROM_win4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win1
+		}
+		x = 25
+		y = 1
+
+	}
+}

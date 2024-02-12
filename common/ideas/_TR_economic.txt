@@ -35,10 +35,10 @@ ideas = {
 			picture = generic_flexible_foreign_policy2
 						
 			available = {
-				tag = GRS
+				always = no
 			}				
 			visible = {
-				original_tag = GRS
+				always = no
 			}
 			removal_cost = -1
 			level = -1

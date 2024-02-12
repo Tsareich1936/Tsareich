@@ -204,6 +204,7 @@ add_ideas = {
 	TR_CZE_skoda_works
 	TR_CZE_demo_oppo
 	partial_economic_mobilisation
+	TR_CZE_antiGER
 }
 
 
