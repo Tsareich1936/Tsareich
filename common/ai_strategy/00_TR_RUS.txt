@@ -79,13 +79,19 @@ RUS_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
-		value = 20
+		value = -10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = heavy_fighter
+		value = 100
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
-		value = 5 #because doctrine this = 15
+		value = 10 #because doctrine this = 15
 	}
 
 	ai_strategy = {
@@ -153,10 +159,21 @@ RUS_unit_production = {
 		value = -20
 	}
 
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 50
+	}
+
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
-		value = 15 #Accounted for
+		value = -10 #Accounted for
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = 20 #Accounted for
 	}
 
 	ai_strategy = {
@@ -193,5 +210,60 @@ RUS_unit_production = {
 		type = equipment_production_factor
 		id = armor
 		value = 20
+	}
+
+
+	### diplo
+	ai_strategy = {
+		type = contain
+		id = PER
+		value = 100
+	}
+	ai_strategy = {
+		type = befriend
+		id = SER
+		value = 1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = SPB
+		value = 1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SPB
+		value = 100
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SPB
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = GER
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = FRA
+		value = -1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = SRI
+		value = -1000
+	}
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 100
+	}
+
+
+	#army
+	ai_strategy = {
+		type = prepare_for_war
+		id = PER
+		value = 100
 	}
 }

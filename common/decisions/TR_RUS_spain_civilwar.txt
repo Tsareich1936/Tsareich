@@ -1,146 +1,178 @@
 RUS_spain_civilwar_decision_c = {
-    RUS_send_volunteer_army = {
-        visible = {
-            has_global_flag = TR_spr_civ_war
-        }
-        available = {
-            hidden_trigger = {
-                any_country = {
-                    has_cosmetic_tag = SPB
-                }
-            }
-        } 
-        icon = GFX_decision_generic_prepare_civil_war
-        priority = 999
-        days_remove = 30
-        fire_only_once = yes
-        ai_will_do = {
+	RUS_send_volunteer_army = {
+		visible = {
+			has_global_flag = TR_spr_civ_war
+		}
+		available = {
+			hidden_trigger = {
+				any_country = {
+					has_cosmetic_tag = SPB
+				}
+			}
+		}
+		icon = GFX_decision_generic_prepare_civil_war
+		priority = 999
+		days_remove = 30
+		fire_only_once = yes
+		targets = { SPB }
+		ai_will_do = {
 			base = 4000
 		}
-        complete_effect = {
-            add_manpower = -15000
-        }
-        remove_effect = {
-            army_experience = 30
-            every_country = {
-                limit = {
-                    has_cosmetic_tag = SPB
-                }
-                country_event = TR_Russia.16
-                division_template = {
-                    name = "Russian army volunteer"
+		complete_effect = {
+			add_manpower = -15000
+		}
+		remove_effect = {
+			army_experience = 30
+			every_country = {
+				limit = {
+					has_cosmetic_tag = SPB
+				}
+				country_event = TR_Russia.16
+				division_template = {
+					name = "Russian army volunteer"
+                    is_locked = yes
+                    division_cap = 5
+                    template_counter = 3
                     regiments = {
-                        infantry = { x = 0 y = 0 }
-                        infantry = { x = 1 y = 0 }
-                        infantry = { x = 2 y = 0 }
-                        infantry = { x = 0 y = 1 }
-                        infantry = { x = 1 y = 1 }
-                        infantry = { x = 2 y = 1 }
-                        infantry = { x = 0 y = 2 }
-                        infantry = { x = 1 y = 2 }
-                        infantry = { x = 2 y = 2 }
-                    }
-                    support = {
-                        
-                    }
-                }
-                custom_effect_tooltip = TR_Russia.tt.6
-                hidden_effect = {
-                    176 = {
-                        create_unit = {
-                            division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
-                            owner = PREV
-                        }
-                        create_unit = {
-                            division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
-                            owner = PREV
-                        }
-                        create_unit = {
-                            division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
-                            owner = PREV
-                        }
-                        create_unit = {
-                            division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
-                            owner = PREV
-                        }
-                        create_unit = {
-                            division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
-                            owner = PREV
-                        }
-                    }
-                }
-            }
-            
-        }
-    }
-    RUS_spa_add_factory = {
-        visible = {
-            has_global_flag = TR_spr_civ_war
-        }
-        available = {
-            hidden_trigger = {
-                any_country = {
-                    has_cosmetic_tag = SPB
-                }
-            }
-        } 
-        icon = GFX_decision_ger_military_buildup
-        priority = 998
-        days_remove = 30
-        fire_only_once = yes
-        ai_will_do = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+					}
+					support = {
+					}
+				}
+				custom_effect_tooltip = TR_Russia.tt.6
+				hidden_effect = {
+					176 = {
+						create_unit = {
+							division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Russian volunteer division\" division_template = \"Russian army volunteer\""
+							owner = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+	RUS_spa_add_factory = {
+		visible = {
+			has_global_flag = TR_spr_civ_war
+		}
+		targets = { SPB }
+		available = {
+			hidden_trigger = {
+				any_country = {
+					has_cosmetic_tag = SPB
+				}
+			}
+		}
+		icon = GFX_decision_ger_military_buildup
+		priority = 998
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
 			base = 4000
 		}
-        modifier = {
-            civilian_factory_use = 5
-        }
-        remove_effect = {
-            every_country = {
-                limit = {
-                    has_cosmetic_tag = SPB
-                }
-                
-                country_event = TR_Russia.17
-                add_offsite_building = { type = arms_factory level = 3 }
-            }
-        } 
-    }
-    RUS_spa_build_bank = {
-        visible = {
-            has_global_flag = TR_spr_civ_war
-        }
-        available = {
-            hidden_trigger = {
-                any_country = {
-                    has_cosmetic_tag = SPB
-                }
-            }
-        } 
-        icon = GFX_decision_ger_military_buildup
-        priority = 998
-        days_remove = 30
-        fire_only_once = yes
-        ai_will_do = {
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					has_cosmetic_tag = SPB
+				}
+				country_event = TR_Russia.17
+				add_offsite_building = {
+					type = arms_factory
+					level = 3
+				}
+			}
+		}
+	}
+	RUS_spa_build_bank = {
+		visible = {
+			has_global_flag = TR_spr_civ_war
+		}
+		available = {
+			hidden_trigger = {
+				any_country = {
+					has_cosmetic_tag = SPB
+				}
+			}
+		}
+		targets = { SPB }
+		icon = GFX_decision_ger_military_buildup
+		priority = 998
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
 			base = 4000
 		}
-        complete_effect = {
-            add_timed_idea = {
-                idea = RUS_spa_tsar_bank_rus
-                days = 180
-            }
-        }
-        remove_effect = {
-            every_country = {
-                limit = {
-                    has_cosmetic_tag = SPB
-                }
-                
-                country_event = TR_Russia.18
-                add_timed_idea = {
-                    idea = RUS_spa_tsar_bank
-                    days = 720
-                }
-            }
-        }
-    }
+		complete_effect = {
+			add_timed_idea = {
+				idea = RUS_spa_tsar_bank_rus
+				days = 180
+			}
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					has_cosmetic_tag = SPB
+				}
+				country_event = TR_Russia.18
+				add_timed_idea = {
+					idea = RUS_spa_tsar_bank
+					days = 720
+				}
+			}
+		}
+	}
 }

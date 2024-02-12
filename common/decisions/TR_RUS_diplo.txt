@@ -1,0 +1,28 @@
+RUS_europe_diplo_c = {
+	RUS_ankara_treaty_1 = {
+		visible = {
+			RUS = {
+				has_completed_focus = RUS_europe_diplo
+			}
+		}
+		available = {
+			country_exists = TUR
+			army_manpower_in_state = {
+				amount > 1000
+				state = 344
+			}
+		}
+		targets = { TUR }
+		icon = GFX_decision_tur_unifying_the_country
+		priority = 10
+		fire_only_once = yes
+		ai_will_do = {
+			base = 2000
+		}
+		remove_effect = {
+			TUR = {
+				country_event = { id = TR_Russia_diplo.1 }
+			}
+		}
+	}
+}
