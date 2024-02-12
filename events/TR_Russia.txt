@@ -1091,7 +1091,21 @@ country_event = {
 
 }
 
+#投資！
+country_event = {
+    id = TR_Russia_diplo.10
+    title = TR_Russia_diplo.10.t
+    desc = TR_Russia_diplo.10.d
+    picture = GFX_report_event_generic_construction_site
 
+    is_triggered_only = yes
+
+    option = { 
+        name = TR_Russia_diplo.10.a
+        add_ideas = RUS_money_by_Russia
+    }
+
+}
 
 
 

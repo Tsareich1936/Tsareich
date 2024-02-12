@@ -1159,6 +1159,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = RUS_empire_diplo
 		completion_reward = {
+			SER = {
+				country_event = TR_Russia_diplo.10
+			}
 			unlock_decision_tooltip = RUS_ser_build_industrial_complex
 		}
 	}
