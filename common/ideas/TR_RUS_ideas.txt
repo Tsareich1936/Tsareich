@@ -50,6 +50,31 @@ ideas = {
 			}
         }
 
+        RUS_winner_of_wwi_2 = {
+            picture = SOV_the_true_tsars
+            allowed = {
+            }
+            available = {
+
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                drift_defence_factor = 0.5
+                enemy_justify_war_goal_time = 1
+                stability_factor = 0.2
+                conscription_factor = 0.35
+            }
+            rule = {
+				can_create_factions = yes
+			}
+        }
+
 
         RUS_wwi_army = {
             picture = chi_army_corruption2
@@ -884,6 +909,99 @@ ideas = {
                     armor_value = -0.05
                     instant = yes
                 }
+            }
+        }
+        RUS_more_nocore = {
+            picture = eng_imperial_conscription
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                non_core_manpower = 0.35
+            }
+        }
+        RUS_arm_unite_volk = {
+            picture = FRA_scw_intervention_nationalists_focus
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                army_core_attack_factor = 0.025
+                army_core_defence_factor = 0.1
+                supply_node_range = 0.075
+            }
+        }
+        RUS_cc = {
+            picture = generic_navy_carrier_bonus
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            equipment_bonus = {
+                carrier = {
+                    build_cost_ic = -0.125
+                    carrier_size = 20
+                    fuel_consumption_factor = 0.25 
+                    instant = yes
+                }
+            }
+            modifier = {
+                experience_gain_carrier_combat_factor = 0.1
+            }
+        }
+        RUS_nav_SS_search = {
+            picture = generic_coastal_navy
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            equipment_bonus = {
+                submarine = {
+                    build_cost_ic = -0.15
+                    surface_detection = 0.35
+                    sub_visibility = -0.25
+                }
+            }
+            modifier = {
+                navy_submarine_attack_factor = -0.05
             }
         }
 
