@@ -1458,6 +1458,9 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = RUS_alaska_development
+		mutually_exclusive = {
+			focus = RUS_no_church
+		}
 	}
 	focus = {
 		id = RUS_no_church
@@ -1469,6 +1472,9 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = RUS_alaska_development
+		mutually_exclusive = {
+			focus = RUS_corp_with_church
+		}
 	}
 	focus = {
 		id = RUS_law_church
