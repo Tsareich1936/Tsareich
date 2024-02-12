@@ -1403,6 +1403,10 @@ focus_tree = {
 			focus = CZE_dip_big2
 			focus = CZE_dip2
 		}
+		bypass = { 
+			has_full_control_of_state = 73
+			has_full_control_of_state = 664
+		}
 		x = 27
 		y = 3
 		completion_reward = {
@@ -1450,6 +1454,9 @@ focus_tree = {
 		prerequisite = {
 			focus = CZE_dip_big3
 		}
+		bypass = { 
+			has_full_control_of_state = 65
+		}
 		x = 29
 		y = 4
 		completion_reward = {
@@ -1479,6 +1486,11 @@ focus_tree = {
 		cost = 8.00
 		prerequisite = {
 			focus = CZE_dip_big3
+		}
+		bypass = { 
+			has_full_control_of_state = 66
+			has_full_control_of_state = 67
+			has_full_control_of_state = 762
 		}
 		x = 31
 		y = 4

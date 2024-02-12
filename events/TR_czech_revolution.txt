@@ -115,7 +115,7 @@ country_event = { #チェコ内戦！
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
 
-	option = {#部分的に民営化しよう
+	option = { #内戦
 		name = TR_czech_revolution.3.a
 		start_civil_war = {
 			ruling_party = conservatism
@@ -155,7 +155,7 @@ country_event = {#共産主義者が政権を掌握！
 		}
 		add_ideas = TR_CZE_skoda_anti
 		add_ideas = TR_CZE_anti 
-		add_stability = =0.5
+		add_stability = = -0.5
 		remove_ideas = TR_CZE_skoda_works
 		remove_ideas = TR_CZE_skoda_works1
 		remove_ideas = TR_CZE_skoda_works2
