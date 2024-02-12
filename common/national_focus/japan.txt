@@ -7790,6 +7790,1209 @@ focus_tree = {  # Luxembourgism
 
 } 
 
+focus_tree = {  # communist
+	id = japan_focus_communist
+	country = {
+		factor = 0
+		modifier = {
+			add = 101
+			tag = JAP
+		}
+	}
+    continuous_focus_position = {
+        x = 450
+        y = 2000
+    }
+	default = no
+	reset_on_civilwar = no
+
+    focus = {
+        id = jap_communist_empoer
+        x = 5
+        y = 0
+    }
+
+    focus = {
+        id = jap_Communist_nation
+        relative_position_id = jap_communist_empoer
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_communist_empoer
+        }
+    }
+
+    focus = {
+        id = jap_Communist_nation_1_1
+        relative_position_id = jap_Communist_nation
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_nation
+        }
+    }
+
+    focus = {
+        id = jap_Communist_nation_2_1
+        relative_position_id = jap_Communist_nation
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_nation
+        }
+    }
+
+    focus = {
+        id = jap_Communist_nation_3_1
+        relative_position_id = jap_Communist_nation
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_nation
+        }
+    }
+
+    focus = {
+        id = jap_Communist_nation_1_2
+        relative_position_id = jap_Communist_nation_1_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_nation_1_1
+        }
+    }
+
+    focus = {
+        id = jap_Communist_nation_2_2
+        relative_position_id = jap_Communist_nation_2_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_nation_2_1
+        }
+    }
+
+    focus = {
+        id = jap_Communist_nation_3_2
+        relative_position_id = jap_Communist_nation_3_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_nation_3_1
+        }
+    }
+
+    focus = {
+        id = jap_Communist_nation_1_3
+        relative_position_id = jap_Communist_nation_1_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_nation_1_2
+        }
+    }
+
+    focus = {
+        id = jap_Communist_nation_2_3
+        relative_position_id = jap_Communist_nation_2_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_nation_2_2
+        }
+    }
+
+    focus = {
+        id = jap_Communist_nation_3_3
+        relative_position_id = jap_Communist_nation_3_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_nation_3_2
+        }
+    }
+
+    focus = {
+        id = jap_Communist_nation_4
+        relative_position_id = jap_Communist_nation_2_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_nation_1_3
+        }
+        prerequisite = {
+            focus = jap_Communist_nation_2_3
+        }
+        prerequisite = {
+            focus = jap_Communist_nation_3_3
+        }
+    }
+
+    # diplomacy
+
+    focus = {
+        id = jap_Communist_diplomacy
+        relative_position_id = jap_Communist_nation_4
+        x = 3
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_nation_4
+        }
+    }
+
+    focus = {
+        id = jap_Communist_diplomacy_1
+        relative_position_id = jap_Communist_diplomacy
+        x = 0
+        y = 2
+        prerequisite = {
+            focus = jap_Communist_J_original_faction
+            focus = jap_Communist_J_F
+        }
+    }
+
+    focus = {
+        id = jap_Communist_diplomacy_2
+        relative_position_id = jap_Communist_diplomacy_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_diplomacy_1
+        }
+        prerequisite = {
+            focus = jap_Communist_J_original_faction_1
+            focus = jap_Communist_J_F_1
+        }
+    }
+
+    focus = {
+        id = jap_Communist_diplomacy_3
+        relative_position_id = jap_Communist_diplomacy_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_diplomacy_2
+        }
+        prerequisite = {
+            focus = jap_Communist_J_original_faction_2
+            focus = jap_Communist_J_F_2
+        }
+    }
+
+    focus = {
+        id = jap_Communist_J_original_faction
+        relative_position_id = jap_Communist_diplomacy
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_diplomacy
+        }
+        mutually_exclusive = {
+            focus = jap_Communist_J_F
+        }
+    }
+
+    focus = {
+        id = jap_Communist_J_original_faction_1
+        relative_position_id = jap_Communist_J_original_faction
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_J_original_faction
+        }
+    }
+
+    focus = {
+        id = jap_Communist_J_original_faction_2
+        relative_position_id = jap_Communist_J_original_faction_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_J_original_faction_1
+        }
+    }
+
+    focus = {
+        id = jap_Communist_J_original_faction_3
+        relative_position_id = jap_Communist_J_original_faction_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_J_original_faction_2
+        }
+    }
+
+    focus = {
+        id = jap_Communist_J_F
+        relative_position_id = jap_Communist_diplomacy
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_diplomacy
+        }
+        mutually_exclusive = {
+            focus = jap_Communist_J_original_faction
+        }
+    }
+
+    focus = {
+        id = jap_Communist_J_F_1
+        relative_position_id = jap_Communist_J_F
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_J_F
+        }
+    }
+
+    focus = {
+        id = jap_Communist_J_F_2
+        relative_position_id = jap_Communist_J_F_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_J_F_1
+        }
+    }
+
+    focus = {
+        id = jap_Communist_J_F_3
+        relative_position_id = jap_Communist_J_F_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_J_F_2
+        }
+    }
+
+    # industry
+
+    focus = {
+        id = jap_Communist_industry_1
+        relative_position_id = jap_Communist_nation_4
+        x = 10
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_nation_4
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_1_1
+        relative_position_id = jap_Communist_industry_1
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_1_2
+        relative_position_id = jap_Communist_industry_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_1_3
+        relative_position_id = jap_Communist_industry_1
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_2_1
+        relative_position_id = jap_Communist_industry_1_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_1_1
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_2_2
+        relative_position_id = jap_Communist_industry_1_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_1_2
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_2_3
+        relative_position_id = jap_Communist_industry_1_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_1_3
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_3_1
+        relative_position_id = jap_Communist_industry_2_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_2_1
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_3_2
+        relative_position_id = jap_Communist_industry_2_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_2_2
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_3_3
+        relative_position_id = jap_Communist_industry_2_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_2_3
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_4
+        relative_position_id = jap_Communist_industry_3_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_3_1
+        }
+        prerequisite = {
+            focus = jap_Communist_industry_3_2
+        }
+        prerequisite = {
+            focus = jap_Communist_industry_3_3
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_5_1
+        relative_position_id = jap_Communist_industry_4
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_4
+        }
+        mutually_exclusive = {
+            focus = jap_Communist_industry_5_2
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_5_2
+        relative_position_id = jap_Communist_industry_4
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_4
+        }
+        mutually_exclusive = {
+            focus = jap_Communist_industry_5_1
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_6_1
+        relative_position_id = jap_Communist_industry_5_1
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_5_1
+            focus = jap_Communist_industry_5_2
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_6_2
+        relative_position_id = jap_Communist_industry_5_1
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_5_1
+            focus = jap_Communist_industry_5_2
+        }
+    }
+
+    focus = {
+        id = jap_Communist_industry_6_3
+        relative_position_id = jap_Communist_industry_5_1
+        x = 3
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_industry_5_1
+            focus = jap_Communist_industry_5_2
+        }
+    }
+
+    # military
+
+    focus = {
+        id = jaP_Communist_military
+        relative_position_id = jap_Communist_nation_4
+        x = -10
+        y = 1
+        prerequisite = {
+            focus = jap_Communist_nation_4
+        }
+    }
+
+    focus = {
+        id = jap_Communist_NAVY_1_1
+        relative_position_id = jaP_Communist_military
+        x = -8
+        y = 1
+        cost = 4
+        available = {
+            
+        }
+        completion_reward = {
+            country_event = TR_japan.7
+        }
+        prerequisite = {
+            focus = jaP_Communist_military
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_NAVY_1_2
+        relative_position_id = jap_Communist_NAVY_1_1
+        x = 0
+        y = 1
+        cost = 0
+        prerequisite = {
+            focus = jap_Communist_NAVY_1_1
+        }
+        available = {
+            always = no   
+        }
+        completion_reward = {
+            if = {
+                limit = {
+                    has_country_flag = 	TR_japan_9
+                }
+            
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_NAVY_3_1_1
+                }
+            }
+            if = {
+                limit = { 
+                    has_country_flag = TR_japan_10
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_NAVY_3_1_2
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = TR_japan11
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_NAVY_3_2_1
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = TR_japan_12
+                }
+            
+                activate_targeted_decision = {
+                    target = jap
+                    decision = JAP_NAVY_3_2_2
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = TR_japan_13
+                }
+            
+                activate_targeted_decision = {
+                    target = jap
+                    decision = JAP_NAVY_3_2_3
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = TR_japan14
+                }
+            
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_NAVY_3_3_1
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = TR_japan_15
+                }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_NAVY_3_3_2
+                }
+            }
+            
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_NAVY_1_3
+        relative_position_id = jap_Communist_NAVY_1_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_NAVY_1_2
+        }
+        completion_reward = {
+            country_event = TR_japan.91
+            
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_NAVY_2_1
+        relative_position_id = jap_Communist_NAVY_1_1
+        x = 2
+        y = 0
+        cost = 4
+        available = {
+            
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = JAP_NAVY
+                add_idea = JAP_NAVY_1
+            }
+        }
+        prerequisite = {
+            focus = jaP_Communist_military
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_NAVY_2_2
+        relative_position_id = jap_Communist_NAVY_2_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_NAVY_2_1
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = JAP_NAVY_1
+                add_idea = JAP_NAVY_2
+            }
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_NAVY_2_3
+        relative_position_id = jap_Communist_NAVY_2_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_NAVY_2_2
+        }
+        completion_reward = {
+            remove_ideas = JAP_NAVY_2
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_NAVY_3_1
+        relative_position_id = jap_Communist_NAVY_1_1
+        x = 4
+        y = 0
+        cost = 4
+        completion_reward = {
+            country_event = {
+                id = TR_japan.20
+            }
+        }
+        prerequisite = {
+            focus = jaP_Communist_military
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_NAVY_3_2
+        relative_position_id = jap_Communist_NAVY_3_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_NAVY_3_1
+        }
+        completion_reward = {
+            country_event = {
+                id = TR_japan.21
+            }
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_NAVY_3_3
+        relative_position_id = jap_Communist_NAVY_3_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_NAVY_3_2
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                name = jap_NAVY_3_3
+                uses = 1
+                bonus = 3
+                category = ss_tech
+            }
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_NAVY_10
+        relative_position_id = jap_Communist_NAVY_2_3
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Communist_NAVY_1_3
+        }
+        prerequisite = {
+            focus = jap_Communist_NAVY_2_3
+        }
+        prerequisite = {
+            focus = jap_Communist_NAVY_3_3
+        }
+        completion_reward = {
+            country_event = {
+                id = TR_japan.21
+            }
+        }
+    }
+    
+    
+
+    
+    #　空軍ツリー
+
+    focus = {
+        id = jap_Communist_AIRFORCE_1_1
+        relative_position_id = jap_Communist_NAVY_1_1
+        x = 6
+        y = 0
+        cost = 4
+        completion_reward = {
+            add_ideas = JAP_AIRFORCE_3
+        }
+        prerequisite = {
+            focus = jaP_Communist_military
+        }
+    }
+
+    focus = {
+        id = jap_Communist_AIRFORCE_1_2
+        relative_position_id = jap_Communist_AIRFORCE_1_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_AIRFORCE_1_1
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = JAP_AIRFORCE_3
+                add_idea = JAP_AIRFORCE_5
+            }
+        }
+        prerequisite = {
+            focus = jaP_Communist_military
+        }
+    
+    }
+
+    focus = {
+        id = jap_Communist_AIRFORCE_1_3
+        relative_position_id = jap_Communist_AIRFORCE_1_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_AIRFORCE_1_2
+        }    
+        completion_reward = {        
+             add_ideas = JAP_AIRFORCE_4
+        }
+    }
+
+    focus = {
+        id = jap_Communist_AIRFORCE_2_1
+        relative_position_id = jap_Communist_AIRFORCE_1_1
+        x = 2
+        y = 0
+        cost = 4
+        prerequisite = {
+            focus = jaP_Communist_military
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = JAP_AIRFORCE
+                add_idea = JAP_AIRFORCE_1
+            }
+        }
+    }
+
+    focus = {
+        id = jap_Communist_AIRFORCE_2_2
+        relative_position_id = jap_Communist_AIRFORCE_2_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_AIRFORCE_2_1
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = JAP_AIRFORCE_1
+                add_idea = JAP_AIRFORCE_2
+            }
+        }
+    }
+
+    focus = {
+        id = jap_Communist_AIRFORCE_2_3
+        relative_position_id = jap_Communist_AIRFORCE_2_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_AIRFORCE_2_2
+        }
+        completion_reward = {
+            remove_ideas = JAP_AIRFORCE_2
+        }
+    }
+
+    focus = {
+        id = jap_Communist_AIRFORCE_3_1
+        relative_position_id = jap_Communist_AIRFORCE_1_1
+        x = 4
+        y = 0
+        cost = 4
+        prerequisite = {
+            focus = jaP_Communist_military
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                name = jap_AIRFORCE_3_1
+                bonus = 2
+                uses = 2
+                category = light_air
+           }
+        }
+    }
+
+    focus = {
+        id = jap_Communist_AIRFORCE_3_2
+        relative_position_id = jap_Communist_AIRFORCE_3_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_AIRFORCE_3_1
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                name = jap_AIRFORCE_3_2
+                bonus = 2
+                uses = 2
+                category = medium_air
+            }
+        }
+    }
+
+    focus = {
+        id = jap_Communist_AIRFORCE_3_3
+        relative_position_id = jap_Communist_AIRFORCE_3_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_AIRFORCE_3_2
+        }
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = jap_AIRFORCE_3_3
+                bonus = 2
+                uses = 2
+                category = cat_air_engine
+            }
+        }
+    }
+
+    focus = {
+        id = jap_Communist_AIRFORCE_10
+        relative_position_id = jap_Communist_AIRFORCE_2_3
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Communist_AIRFORCE_1_3
+        }
+        prerequisite = {
+            focus = jap_Communist_AIRFORCE_2_3
+        }
+        prerequisite = {
+            focus = jap_Communist_AIRFORCE_3_3
+        }
+        completion_reward = {
+            country_event = {
+                id = TR_japan.22
+            }
+        }
+    }
+
+
+    
+    #　陸軍ツリー
+    
+    focus = {
+        id = jap_Communist_ARMY_1_1
+        relative_position_id = jap_Communist_NAVY_1_1
+        x = 12
+        y = 0
+        cost = 4
+        completion_reward = {
+            army_experience = 50
+            division_template = {
+                name = "Shin-Hoheishidan"
+                regiments = {
+                    infantry = {x = 0 y = 0 }
+                    infantry = {x = 0 y = 1 }
+                    infantry = {x = 0 y = 2 }
+                    infantry = {x = 1 y = 0 }
+                    infantry = {x = 1 y = 1 }
+                    infantry = {x = 1 y = 2 }
+                    artillery_brigade = {x = 2 y = 0}
+                    artillery_brigade = {x = 2 y = 1}
+                    artillery_brigade = {x = 2 y = 2}
+                }
+                support = {
+                    engineer = { x = 0 y = 0 }
+                    recon = { x = 0 y = 1 }
+                    artillery = { x = 0 y = 2 }
+                }
+                
+            }
+        }
+        prerequisite = {
+            focus = jaP_Communist_military
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_ARMY_1_2
+        relative_position_id = jap_Communist_ARMY_1_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_ARMY_1_1
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_ideas = JAP_ARMY_3
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_ARMY_1_3
+        relative_position_id = jap_Communist_ARMY_1_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_ARMY_1_2
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_ideas = JAP_ARMY_4
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_ARMY_2_1
+        relative_position_id = jap_Communist_ARMY_1_1
+        x = 2
+        y = 0
+        prerequisite = {
+            focus = jaP_Communist_military
+        }
+        cost = 4
+        available = {
+            
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = JAP_ARMY
+                add_idea = JAP_ARMY_1
+            }
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_ARMY_2_2
+        relative_position_id = jap_Communist_ARMY_2_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_ARMY_2_1
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = JAP_ARMY_1
+                add_idea = JAP_ARMY_2
+            }
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_ARMY_2_3
+        relative_position_id = jap_Communist_ARMY_2_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_ARMY_2_2
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            remove_ideas = JAP_ARMY_2
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_ARMY_3_1
+        relative_position_id = jap_Communist_ARMY_1_1
+        x = 4
+        y = 0
+        cost = 4
+        prerequisite = {
+            focus = jaP_Communist_military
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                name = jap_ARMY_3_1
+                bonus = 2
+                uses = 2
+                category = infantry_weapons
+            }
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_ARMY_3_2
+        relative_position_id = jap_Communist_ARMY_3_1
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_ARMY_3_1
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                name = jap_ARMY_3_2
+                bonus = 2
+                uses = 2
+                category = artillery
+            }
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_ARMY_3_3
+        relative_position_id = jap_Communist_ARMY_3_2
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = jap_Communist_ARMY_3_2
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                name = jap_ARMY_3_3
+                bonus = 1.0
+                uses = 1
+                category = armor
+            }
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_ARMY_10
+        relative_position_id = jap_Communist_ARMY_2_3
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Communist_ARMY_1_3
+        }
+        prerequisite = {
+            focus = jap_Communist_ARMY_2_3
+        }
+        prerequisite = {
+            focus = jap_Communist_ARMY_3_3
+        }
+        available = {
+            
+        }
+        completion_reward = {
+            country_event = {
+                id = TR_japan.23
+            }
+        }
+    }
+    
+    # 軍事ツリー下部
+    
+    focus = {
+        id = jap_Communist_Integration_of_Army_and_Navy
+        relative_position_id = jap_Communist_AIRFORCE_10
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Communist_NAVY_10
+        }
+        prerequisite = {
+            focus = jap_Communist_AIRFORCE_10
+        }
+        prerequisite = {
+            focus = jap_Communist_ARMY_10
+        }
+    
+       
+        completion_reward = {
+            country_event = {
+                id = TR_japan.40
+                days = 7
+                
+            }
+        }
+    
+    
+    }
+    
+    focus = {
+        id = jap_Communist_NAVY
+        relative_position_id = jap_Communist_Integration_of_Army_and_Navy
+        x = -4
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Communist_Integration_of_Army_and_Navy
+        }
+        mutually_exclusive = {
+            focus = jap_Communist_ARMY
+            focus = jap_Communist_Establishment_of_the_Ministry_of_War
+        }
+        completion_reward = {
+            country_event = {
+                id = TR_japan.24
+            }
+        }
+    }
+    
+    focus = {                        ###################### country_triger
+        id = jap_Communist_Establishment_of_the_Ministry_of_War
+        relative_position_id = jap_Communist_Integration_of_Army_and_Navy
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Communist_Integration_of_Army_and_Navy
+        }
+        mutually_exclusive = {
+            focus = jap_Communist_NAVY
+            focus = jap_Communist_ARMY
+        }
+        completion_reward = {
+            country_event = {
+                id = TR_japan.26
+            }
+        }
+        allow_branch = {
+            has_country_flag = jap_government                    
+        }
+        available = {
+            is_subject = no
+        }
+    }
+    
+    focus = {
+        id = jap_Communist_ARMY
+        relative_position_id = jap_Communist_Integration_of_Army_and_Navy
+        x = 4
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = jap_Communist_Integration_of_Army_and_Navy
+        }
+        mutually_exclusive = {
+            focus = jap_Communist_NAVY
+            focus = jap_Communist_Establishment_of_the_Ministry_of_War
+        }
+        completion_reward = {
+            country_event = {
+                id = TR_japan.25
+            }
+        }
+    }
+
+} 
 
 shared_focus = {
     id = jap_NAVY_1_1

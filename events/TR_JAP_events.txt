@@ -1833,6 +1833,9 @@ country_event = {   #  election score
 			picture = GFX_Portrait_Sanzo_Nosaka
 			ideology = luxemburgism
 		}
+		load_focus_tree = {
+			tree = japan_focus_Luxembourgism
+		}
 	}
 }
 
@@ -1910,6 +1913,9 @@ country_event = { # civil war by communist
 		}
 		hidden_effect = {
 			remove_ideas = JAP_KOR_DEFEAT
+		}
+		load_focus_tree = {
+			tree = japan_focus_communist
 		}
 	}
 }
