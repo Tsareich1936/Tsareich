@@ -1,0 +1,5 @@
+opinion_modifiers = {
+	FRA_international = {
+		value = 150
+	}
+}

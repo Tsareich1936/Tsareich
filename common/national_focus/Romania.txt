@@ -8,6 +8,9 @@ focus_tree = {
 		}
 	}
 	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 2000 y = 1000 }
+
 	focus = {
 		id = ROM_1
 		icon = GFX_goal_unknown
