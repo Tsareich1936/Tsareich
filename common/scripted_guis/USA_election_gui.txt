@@ -34,7 +34,12 @@ scripted_gui = {
 			check_variable = {
 				USA.TR_USA_show_election_var = 1
 			}
-		}	
+		}
+		effects = {
+			close_button_click = {
+				clear_variable = USA.TR_USA_show_election_var
+			}
+		}
 	}
 	TR_USA_Election_States_Map = {
 		window_name = TR_USA_election_states_map
