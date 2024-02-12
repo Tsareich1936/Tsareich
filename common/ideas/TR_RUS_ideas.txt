@@ -634,6 +634,35 @@ ideas = {
                 research_speed_factor = 0.025
             }
         }
+        RUS_anti_commune_pact = {
+            picture = anti_soviet_pact
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                hidden_modifier = {
+                    anarchism_acceptance = -40
+                    syndicalism_acceptance = -40
+                    communism_acceptance = -40
+                    socialism_acceptance = -40
+                    anarchism_drift = -0.02
+                    syndicalism_drift = -0.02
+                    communism_drift = -0.02
+                    socialism_drift = -0.02
+                }
+                custom_modifier_tooltip = RUS_antipact.tt
+            }
+        }
 
 
     }

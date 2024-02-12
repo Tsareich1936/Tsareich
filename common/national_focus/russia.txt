@@ -1147,6 +1147,19 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = RUS_empire_diplo
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = SWE
+						tag = ICE
+						tag = DEN
+						tag = NOR
+					}
+				}
+				country_event = TR_Russia_diplo.11
+			}
+		}
 	}
 	focus = {
 		id = RUS_money_to_SER
