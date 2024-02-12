@@ -2309,7 +2309,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_arm_navy_attack
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_baltic_sea_fleet
 		cost = 4
 		prerequisite = {
 			focus = RUS_more_nocore
@@ -2318,10 +2318,17 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = RUS_advance_army
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = tp_tech
+			}
+		}
 	}
 	focus = {
 		id = RUS_arm_new_infantry_gun
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 4
 		prerequisite = {
 			focus = RUS_arm_navy_attack
@@ -2329,6 +2336,13 @@ focus_tree = {
 		x = -1
 		y = 6
 		relative_position_id = RUS_advance_army
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = infantry_tech
+			}
+		}
 	}
 	focus = {
 		id = RUS_arm_research_support
@@ -2343,7 +2357,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_arm_unite_volk
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_selector_civilian
 		cost = 4
 		prerequisite = {
 			focus = RUS_arm_research_support
@@ -2352,6 +2366,9 @@ focus_tree = {
 		x = 0
 		y = 7
 		relative_position_id = RUS_advance_army
+		completion_reward = {
+			add_ideas = RUS_arm_unite_volk
+		}
 	}
 	focus = {
 		id = RUS_arm_national_MP
@@ -2431,7 +2448,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_nav_more_dock
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 4
 		prerequisite = {
 			focus = RUS_forth_build_plan
@@ -2439,10 +2456,16 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = RUS_forth_build_plan
+		completion_reward = {
+			add_offsite_building = {
+				type = dockyard
+				level = 8
+			}
+		}
 	}
 	focus = {
 		id = RUS_nav_focus_CC
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_carrier
 		cost = 4
 		prerequisite = {
 			focus = RUS_forth_build_plan
@@ -2453,6 +2476,12 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = RUS_forth_build_plan
+		completion_reward = {
+			add_offsite_building = {
+				type = dockyard
+				level = 8
+			}
+		}
 	}
 	focus = {
 		id = RUS_nav_focus_BB
@@ -2470,7 +2499,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_nav_CC_research_quick
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tfv_generic_tech_sharing
 		cost = 4
 		prerequisite = {
 			focus = RUS_nav_focus_CC
@@ -2478,6 +2507,12 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = RUS_forth_build_plan
+		completion_reward = {
+			set_technology = {
+				early_ship_hull_carrier = 1
+				basic_ship_hull_carrier = 1
+			}
+		}
 	}
 	focus = {
 		id = RUS_nav_better_guns_tech
@@ -2492,7 +2527,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_nav_speedy_CC
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_dem_navy
 		cost = 4
 		prerequisite = {
 			focus = RUS_nav_CC_research_quick
@@ -2500,6 +2535,9 @@ focus_tree = {
 		x = -2
 		y = 3
 		relative_position_id = RUS_forth_build_plan
+		completion_reward = {
+			add_ideas = RUS_cc
+		}
 	}
 	focus = {
 		id = RUS_nav_speedy_BB
@@ -2514,7 +2552,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_nav_SS_search
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 4
 		prerequisite = {
 			focus = RUS_nav_CC_research_quick
@@ -2522,6 +2560,9 @@ focus_tree = {
 		x = -4
 		y = 3
 		relative_position_id = RUS_forth_build_plan
+		completion_reward = {
+			add_ideas = RUS_nav_SS_search
+		}
 	}
 	focus = {
 		id = RUS_nav_SS_attack
@@ -2640,7 +2681,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_nav_CC_tsar
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 4
 		prerequisite = {
 			focus = RUS_nav_speedy_CC
@@ -2651,6 +2692,80 @@ focus_tree = {
 		x = -3
 		y = 4
 		relative_position_id = RUS_forth_build_plan
+		completion_reward = {
+			hidden_effect = {
+				set_technology = {
+					improved_ship_hull_carrier = 1
+					improved_airplane_launcher = 1
+				}
+			}
+			create_equipment_variant = {
+				name = "Tsar Class"
+				type = ship_hull_carrier_2
+				name_group = USA_CV_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = carrier_ship_engine_2
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					fixed_ship_armor_slot = ship_armor_cruiser_2
+					front_1_custom_slot = ship_deck_space
+					mid_1_custom_slot = ship_deck_space
+					mid_2_custom_slot = ship_armor_carrier_deck
+				}
+			}
+			custom_effect_tooltip = RUS_tsarCC_tt
+				hidden_effect = {
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_2
+							creator = "RUS" 
+							version_name = "Tsar Class"
+						}
+						name = "Tsar I " 
+						requested_factories = 5
+						progress = 0.9
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_2
+							creator = "RUS" 
+							version_name = "Tsar Class"
+						}
+						name = "Tsar I " 
+						requested_factories = 5
+						progress = 0.7
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_2
+							creator = "RUS" 
+							version_name = "Tsar Class"
+						}
+						name = "Tsar I " 
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_2
+							creator = "RUS" 
+							version_name = "Tsar Class"
+						}
+						name = "Tsar I " 
+						requested_factories = 5
+						progress = 0.3
+						amount = 1
+					}
+				}
+
+		}
 	}
 	focus = {
 		id = RUS_nav_BB_tsar
