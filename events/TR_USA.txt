@@ -734,6 +734,7 @@ add_namespace = TR_usa_civil_war_legacy
 					}
 				}
 			}
+			set_country_flag = TR_USA_soc_route
 			USA = {
 				every_core_state = {
 					add_core_of = CSA
@@ -751,6 +752,7 @@ add_namespace = TR_usa_civil_war_legacy
 					target = CSA
 					size = 0.2
 				}
+				set_country_flag = USA_federation_flag
 			}
 		}
 		option = {
@@ -760,6 +762,37 @@ add_namespace = TR_usa_civil_war_legacy
 					has_completed_focus = TR_USA_contact_with_southern_states
 					has_completed_focus = TR_USA_WASP
 				}
+			}
+			set_politics = {
+				ruling_party = conservatism
+			}
+			set_popularities = {
+				conservatism = 100
+			}
+			set_country_flag = USA_CSA_flag
+			set_cosmetic_tag = CSA
+			every_owned_state = {
+				limit = {
+					NOT = {
+						state = 364
+						state = 365
+						state = 366
+						state = 367
+					}
+				}
+				transfer_state_to = FGA
+			}
+			transfer_units_fraction = {
+				target = FGA
+				size = 0.8
+			}
+			FGA = {
+				set_capital = {
+					state = 361
+				}
+			}
+			set_capital = {
+				state = 367
 			}
 		}
 	}
@@ -771,7 +804,7 @@ add_namespace = TR_usa_civil_war_legacy
 		is_triggered_only = yes
 		
 		immediate = {
-			USA = {
+			FGA = {
 				CSA = {
 					transfer_state = 370
 					transfer_state = 371
@@ -795,7 +828,7 @@ add_namespace = TR_usa_civil_war_legacy
 		is_triggered_only = yes
 		
 		immediate = {
-			USA = {
+			FGA = {
 				CSA = {
 					transfer_state = 375
 					transfer_state = 1021
@@ -818,7 +851,7 @@ add_namespace = TR_usa_civil_war_legacy
 		is_triggered_only = yes
 		
 		immediate = {
-			USA = {
+			FGA = {
 				CSA = {
 					transfer_state = 363
 					transfer_state = 364
@@ -861,10 +894,12 @@ add_namespace = TR_usa_civil_war_legacy
 		immediate = {
 			hidden_effect = {
 				CSA = {
+					load_focus_tree = generic_focus
 					declare_war_on = {
-						target = USA
+						target = FGA
 						type = civil_war
 					}
+					add_civil_war_target = FGA
 					division_template = {
 						name = "Milita Division"
 						regiments = {
@@ -894,10 +929,10 @@ add_namespace = TR_usa_civil_war_legacy
 						can_join_factions = no
 					}
 				}
-				add_civil_war_target = USA
+				
 				set_global_flag = TR_USA_civil_war
 				news_event = TR_usa_civil_war.1
-				USA = {
+				FGA = {
 					set_cosmetic_tag = USA_USA
 					load_focus_tree = generic_focus
 					division_template = {
@@ -913,12 +948,12 @@ add_namespace = TR_usa_civil_war_legacy
 						if = {
 							limit = {
 								check_variable = {
-									USA.num_armies < 60
+									FGA.num_armies < 60
 								}
 							}
 							create_unit = {
 								division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-								owner = USA
+								owner = FGA
 								count = 1
 							}
 						}
@@ -936,7 +971,13 @@ add_namespace = TR_usa_civil_war_legacy
 		option = {
 			name = TR_usa_election.10.a
 			hidden_effect = {
-				country_event = TR_super_event.2
+				every_country = {
+					limit = {
+						original_tag = USA
+						exists = yes
+					}
+					country_event = TR_super_event.2
+				}
 			}
 		}
 	}
@@ -961,7 +1002,7 @@ add_namespace = TR_usa_civil_war_legacy
 		is_triggered_only = yes
 		immediate = {
 			AMR = {
-				USA = {
+				FGA = {
 					every_core_state = {
 						add_core_of = AMR
 					}
@@ -1005,7 +1046,7 @@ add_namespace = TR_usa_civil_war_legacy
 				if = {
 					limit = {
 						check_variable = {
-							USA.num_armies < 80
+							FGA.num_armies < 80
 						}
 					}
 					create_unit = {
