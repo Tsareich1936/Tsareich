@@ -311,140 +311,7 @@ focus_tree = {
 		}
 	}
 
-
-
-
-
-
-    #バルカン戦争での勝利
-	focus = {
-		id = ROM_win1
-		icon = GFX_goal_generic_propaganda
-		cost = 10.00
-		x = 23
-		y = 0
-		available = {
-			always = no
-		}
-
-	}
-	focus = {
-		id = newfocus_22
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 9
-		y = 7
-
-	}
-
-	focus = {
-		id = newfocus_23
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = newfocus_22
-		}
-		x = 6
-		y = 8
-
-	}
-	focus = {
-		id = newfocus_28
-		icon = GFX_focus_invite_romania
-		cost = 10.00
-		prerequisite = {
-			focus = newfocus_22
-		}
-		x = 9
-		y = 8
-
-	}
-	focus = {
-		id = newfocus_27
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = newfocus_23
-			focus = newfocus_28
-		}
-		mutually_exclusive = {
-			focus = newfocus_26
-			focus = newfocus_25
-		}
-		x = 5
-		y = 9
-
-	}
-	focus = {
-		id = newfocus_32
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = newfocus_27
-		}
-		x = 5
-		y = 10
-
-	}
-
-
-	focus = {
-		id = newfocus_24
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = newfocus_22
-		}
-		x = 12
-		y = 8
-
-	}
-	focus = {
-		id = newfocus_25
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = newfocus_28
-			focus = newfocus_24
-			focus = newfocus_23
-		}
-		mutually_exclusive = {
-			focus = newfocus_26
-			focus = newfocus_27
-		}
-		x = 9
-		y = 9
-
-	}
-	focus = {
-		id = newfocus_29
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = newfocus_25
-		}
-		x = 9
-		y = 10
-
-	}
-	focus = {
-		id = newfocus_26
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = newfocus_24
-			focus = newfocus_28
-		}
-		mutually_exclusive = {
-			focus = newfocus_25
-			focus = newfocus_27
-		}
-		x = 13
-		y = 9
-
-	}
-
-	#産業
+    #産業
 	focus = {
 		id = ROM_ind_1
 		icon = GFX_goal_generic_construct_civ_factory
@@ -464,7 +331,6 @@ focus_tree = {
 			} 
 		}
 	}
-
 	focus = {
 		id = ROM_ind_2
 		icon = GFX_focus_generic_industry_3
@@ -672,7 +538,20 @@ focus_tree = {
 		}
 
 	}
-
+    #バルカン戦争での勝利
+	focus = {
+		id = ROM_win1
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		x = 23
+		y = 0
+		available = {
+			always = no
+		}
+	    completion_reward = {
+			
+		}
+	}	
 	focus = {
 		id = ROM_win2
 		icon = GFX_goal_unknown
@@ -682,7 +561,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 1
-
+	    completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = ROM_win3
@@ -693,119 +574,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 2
-
-	}
-	focus = {
-		id = ROM_win6
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_win1
+	    completion_reward = {
+			
 		}
-		x = 23
-		y = 1
-
-	}
-	focus = {
-		id = ROM_win7
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_win6
-		}
-		x = 23
-		y = 2
-
-	}
-	focus = {
-		id = ROM_win8
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_win7
-		}
-		x = 23
-		y = 3
-
-	}
-	focus = {
-		id = ROM_win9
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_win8
-		}
-		x = 23
-		y = 4
-
-	}
-	focus = {
-		id = ROM_win10
-		icon = GFX_focus_generic_pope
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_win9
-		}
-		x = 23
-		y = 5
-
-	}
-
-
-	focus = {
-		id = newfocus_30
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = newfocus_29
-		}
-		x = 9
-		y = 11
-
-	}
-	focus = {
-		id = newfocus_31
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = newfocus_32
-		}
-		x = 5
-		y = 11
-
-	}
-	focus = {
-		id = newfocus_34
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = newfocus_26
-		}
-		x = 13
-		y = 10
-
-	}
-	focus = {
-		id = newfocus_33
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = newfocus_34
-		}
-		x = 13
-		y = 11
-
-	}
-	focus = {
-		id = ROM_win5
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ROM_win4
-		}
-		x = 25
-		y = 2
-
 	}
 	focus = {
 		id = ROM_win4
@@ -816,6 +587,292 @@ focus_tree = {
 		}
 		x = 25
 		y = 1
-
+	    completion_reward = {
+			
+		}
 	}
+	focus = {
+		id = ROM_win5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win4
+		}
+		x = 25
+		y = 2
+	    completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ROM_win6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win1
+		}
+		x = 23
+		y = 1
+	    completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ROM_win7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win6
+		}
+		x = 23
+		y = 2
+	    completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ROM_win8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win7
+		}
+		x = 23
+		y = 3
+	    completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ROM_win9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win8
+		}
+		x = 23
+		y = 4
+	    completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ROM_win10
+		icon = GFX_focus_generic_pope
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_win9
+		}
+		x = 23
+		y = 5
+	    completion_reward = {
+			
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+	#外交
+    focus = {
+		id = ROM_dip
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 9
+		y = 7
+		available = {
+			always = no
+		}
+		completion_reward = {
+			
+		}
+	
+	}
+	
+	focus = {
+		id = ROM_dip_left
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_dip
+		}
+		x = 6
+		y = 8
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ROM_dip_rom
+		icon = focus_invite_romania
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_dip
+		}
+		x = 9
+		y = 8
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ROM_dip_right
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_dip
+		}
+		x = 12
+		y = 8
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ROM_dip1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_dip_left
+			focus = ROM_dip_rom
+		}
+		mutually_exclusive = {
+			focus = ROM_dip4
+			focus = ROM_dip7
+		}
+		x = 5
+		y = 9
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ROM_dip2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_dip1
+		}
+		x = 5
+		y = 10
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ROM_dip3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_dip2
+		}
+		x = 5
+		y = 11
+		completion_reward = {
+			
+		}
+	}
+	
+
+	focus = {
+		id = ROM_dip4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_dip_left
+			focus = ROM_dip_rom
+			focus = ROM_dip_right
+		}
+		mutually_exclusive = {
+			focus = ROM_dip1
+			focus = ROM_dip4
+		}
+		x = 9
+		y = 9
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ROM_dip5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_dip4
+		}
+		x = 9
+		y = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ROM_dip6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_dip5
+		}
+		x = 9
+		y = 11
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ROM_dip7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_dip_right
+			focus = ROM_dip_rom
+		}
+		mutually_exclusive = {
+			focus = ROM_dip1
+			focus = ROM_dip4
+		}
+		x = 13
+		y = 9
+		completion_reward = {
+			
+		}	
+	}
+
+	focus = {
+		id = ROM_dip8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_dip7
+		}
+		x = 13
+		y = 10
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = nROM_dip9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ROM_dip8
+		}
+		x = 13
+		y = 11
+		completion_reward = {
+			
+		}
+	}
+
 }
