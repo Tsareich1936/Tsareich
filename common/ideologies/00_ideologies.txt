@@ -4,7 +4,10 @@ ideologies = {
 	
 			types = {
 				anarchism = {
-					can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+					# can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+				}
+				anarchist_communism = {
+
 				}
 			}
 	
@@ -446,8 +449,10 @@ ideologies = {
 			orthodoxy = {#正教
 			}
 			adamism = {#キリスト教アダム派
+				can_be_randomly_selected = no
 			}
 			hussites = {#キリスト教フス派
+				can_be_randomly_selected = no
 			}
 
 			shia_islamism = {#シーア派
@@ -476,25 +481,33 @@ ideologies = {
 			}
 
 			roman_polytheism = {#ローマ多神教
+				can_be_randomly_selected = no
 			}
 			greek_polytheism = {#ギリシャ多神教
+				can_be_randomly_selected = no
 			}
 
 			confucianism = {#儒学
 			}
 
 			hedonism = {#快楽主義
+				can_be_randomly_selected = no
 			}
 			mysticism = {#神秘主義
+				can_be_randomly_selected = no
 			}
 			cosmopolitanism = {#宇宙主義
+				can_be_randomly_selected = no
 			}
 			satanism = {#悪魔崇拝
+				can_be_randomly_selected = no
 			}
 
 			political_correctness = {#ポリコレ
+				can_be_randomly_selected = no
 			}
 			veganism = {#ヴィーガン
+				can_be_randomly_selected = no
 			}
 		}
 

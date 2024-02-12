@@ -1,0 +1,46 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_ideology_theocracy_group
+		textureFile = "gfx/interface/ideologies/theocracy_groups.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_protestantism
+		textureFile = "gfx/interface/ideologies/protestantism.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_orthodoxy
+		textureFile = "gfx/interface/ideologies/orthodoxy.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_hussites
+		textureFile = "gfx/interface/ideologies/hussites.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_shia_islamism
+		textureFile = "gfx/interface/ideologies/shia_islamism.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_sunni_islamism
+		textureFile = "gfx/interface/ideologies/sunni_islamism.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_hinduism
+		textureFile = "gfx/interface/ideologies/hinduism.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_animism
+		textureFile = "gfx/interface/ideologies/animism.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_shintoism
+		textureFile = "gfx/interface/ideologies/shintoism.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_zoroastrianism
+		textureFile = "gfx/interface/ideologies/zoroastrianism.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_confucianism
+		textureFile = "gfx/interface/ideologies/confucianism.dds"
+	}
+}
