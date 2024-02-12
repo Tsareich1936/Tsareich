@@ -2037,9 +2037,13 @@ focus_tree = {  # army bop
 	default = no
 	reset_on_civilwar = no
 
+    continuous_focus_position = {
+        x = 2000
+        y = 1900
+    }
     focus = {
         id = jap_Minister_of_War_of_Active_Military_Service
-        x = 10
+        x = 5
         y = 0
         cost = 0
         available = {
@@ -2048,6 +2052,807 @@ focus_tree = {  # army bop
         completion_reward = {
             
         }
+    }
+
+    focus = {
+        id = jap__army_bop__1_1
+        relative_position_id = jap_Minister_of_War_of_Active_Military_Service
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_Minister_of_War_of_Active_Military_Service
+        }
+    }
+
+    focus = {
+        id = jap__army_bop__2_1
+        relative_position_id = jap_Minister_of_War_of_Active_Military_Service
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Minister_of_War_of_Active_Military_Service
+        }
+    }
+
+    focus = {
+        id = jap__army_bop__3_1
+        relative_position_id = jap_Minister_of_War_of_Active_Military_Service
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_Minister_of_War_of_Active_Military_Service
+        }
+    }
+
+    focus = {
+        id = jap__army_bop__1_2
+        relative_position_id = jap__army_bop__1_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap__army_bop__1_1
+        }
+    }
+
+    focus = {
+        id = jap__army_bop__2_2
+        relative_position_id = jap__army_bop__2_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap__army_bop__2_1
+        }
+    }
+
+    focus = {
+        id = jap__army_bop__3_2
+        relative_position_id = jap__army_bop__3_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap__army_bop__3_1
+        }
+    }
+
+    focus = {
+        id = jap__army_bop__1_3
+        relative_position_id = jap__army_bop__1_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap__army_bop__1_2
+        }
+    }
+
+    focus = {
+        id = jap__army_bop__2_3
+        relative_position_id = jap__army_bop__2_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap__army_bop__2_2
+        }
+    }
+
+    focus = {
+        id = jap__army_bop__3_3
+        relative_position_id = jap__army_bop__3_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap__army_bop__3_2
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_military
+        relative_position_id = jap__army_bop__2_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap__army_bop__1_3
+        }
+        prerequisite = {
+            focus = jap__army_bop__2_3
+        }
+        prerequisite = {
+            focus = jap__army_bop__3_3
+        }
+    }
+
+    # military
+
+    focus = {
+        id = jap_army_bop_military_1
+        relative_position_id = jap_army_bop_military
+        x = -8
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_military
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_focus 
+        relative_position_id = jap_army_bop_military_1
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_military_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_focus 
+        relative_position_id = jap_army_bop_military_1
+        x = -6
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_military_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_focus_1
+        relative_position_id = jap_navy_focus
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_focus
+        }
+    }
+
+    focus = {
+        id = jap_navy_focus_2
+        relative_position_id = jap_navy_focus_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_focus_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_focus_3
+        relative_position_id = jap_navy_focus_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_focus_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_focus_4
+        relative_position_id = jap_navy_focus_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_focus_3
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_tank
+        relative_position_id = jap_army_bop_focus
+        x = -6
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_focus
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_air_ship
+        relative_position_id = jap_army_bop_focus
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_focus
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_air_ship_1
+        relative_position_id = jap_army_bop_air_ship
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_air_ship
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_air_ship_3
+        relative_position_id = jap_army_bop_air_ship_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_air_ship_1
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_air_ship_5
+        relative_position_id = jap_army_bop_air_ship_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_air_ship_3
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_air_ship_2
+        relative_position_id = jap_army_bop_air_ship
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_air_ship
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_air_ship_4
+        relative_position_id = jap_army_bop_air_ship_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_air_ship_2
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_air_ship_6
+        relative_position_id = jap_army_bop_air_ship_4
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_air_ship_4
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_special_1
+        relative_position_id = jap_army_bop_air_ship
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_air_ship
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_special_2
+        relative_position_id = jap_army_bop_special_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_special_1
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_special_3
+        relative_position_id = jap_army_bop_special_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_special_2
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_artillery
+        relative_position_id = jap_army_bop_focus
+        x = 4
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_focus
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_artillery_1
+        relative_position_id = jap_army_bop_artillery
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_artillery
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_artillery_2
+        relative_position_id = jap_army_bop_artillery_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_artillery_1
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_artillery_3
+        relative_position_id = jap_army_bop_artillery_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_artillery_2
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_tank_1
+        relative_position_id = jap_army_bop_tank
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_tank
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_tank_2
+        relative_position_id = jap_army_bop_tank_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_tank_1
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_tank_3
+        relative_position_id = jap_army_bop_tank_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_tank_3
+        }
+    }
+
+    focus = {
+        id = jap__armymortrize_1
+        relative_position_id = jap_army_bop_tank
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_tank
+        }
+    }
+
+    focus = {
+        id = jap_army_mortrize_2
+        relative_position_id = jap__armymortrize_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap__armymortrize_1
+        }
+    }
+
+    focus = {
+        id = jap_army_mortrize_3
+        relative_position_id = jap_army_mortrize_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_mortrize_3
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_military_2
+        relative_position_id = jap_army_bop_air_ship_6
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_focus_4
+        }
+        prerequisite = {
+            focus = jap_army_bop_tank_3
+            focus = jap_army_mortrize_3
+        }
+        prerequisite = {
+            focus = jap_army_bop_air_ship_6
+            focus = jap_army_bop_air_ship_5
+            focus = jap_army_bop_special_3
+        }
+        prerequisite = {
+            focus = jap_army_bop_artillery_3
+        }
+    }
+
+    # industry
+
+    focus = {
+        id = jap_army_bop_industry
+        relative_position_id = jap_army_bop_military
+        x = 8
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_military
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_industry_1
+        relative_position_id = jap_army_bop_industry
+        x = -4
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_industry
+        }
+        mutually_exclusive = {
+            focus = jap_army_bop_bureancy
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_industry_1_1
+        relative_position_id = jap_army_bop_industry_1
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_industry_1_2
+        relative_position_id = jap_army_bop_industry_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_industry_1_3
+        relative_position_id = jap_army_bop_industry_1
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_industry_2_1
+        relative_position_id = jap_army_bop_industry_1_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_industry_1_1
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_industry_2_2
+        relative_position_id = jap_army_bop_industry_1_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_industry_1_2
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_industry_2_3
+        relative_position_id = jap_army_bop_industry_1_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_industry_1_3
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_industry_3_1
+        relative_position_id = jap_army_bop_industry_2_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_industry_2_1
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_industry_3_2
+        relative_position_id = jap_army_bop_industry_2_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_industry_2_2
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_industry_3_3
+        relative_position_id = jap_army_bop_industry_2_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_industry_2_3
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_industry_2
+        relative_position_id = jap_army_bop_industry_3_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_industry_3_1        
+        }
+        prerequisite = {
+            focus = jap_army_bop_industry_3_2
+        }
+        prerequisite = {
+            focus = jap_army_bop_industry_3_3
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_bureancy
+        relative_position_id = jap_army_bop_industry
+        x = 4
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_industry
+        }
+        mutually_exclusive = {
+            focus = jap_army_bop_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_bureancy_1_1
+        relative_position_id = jap_army_bop_bureancy
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_bureancy
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_bureancy_1_2
+        relative_position_id = jap_army_bop_bureancy
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_bureancy
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_bureancy_1_3
+        relative_position_id = jap_army_bop_bureancy
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_bureancy
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_bureancy_2_1
+        relative_position_id = jap_army_bop_bureancy_1_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_bureancy_1_1
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_bureancy_2_2
+        relative_position_id = jap_army_bop_bureancy_1_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_bureancy_1_2
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_bureancy_2_3
+        relative_position_id = jap_army_bop_bureancy_1_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_bureancy_1_3
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_bureancy_3_1
+        relative_position_id = jap_army_bop_bureancy_2_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_bureancy_2_1
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_bureancy_3_2
+        relative_position_id = jap_army_bop_bureancy_2_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_bureancy_2_2
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_bureancy_3_3
+        relative_position_id = jap_army_bop_bureancy_2_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_bureancy_2_3
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_bureancy_industry_2
+        relative_position_id = jap_army_bop_bureancy_3_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_bureancy_3_1        
+        }
+        prerequisite = {
+            focus = jap_army_bop_bureancy_3_2
+        }
+        prerequisite = {
+            focus = jap_army_bop_bureancy_3_3
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_industry_3
+        relative_position_id = jap_army_bop_industry
+        x = 0
+        y = 6
+        prerequisite = {
+            focus = jap_army_bop_industry_2
+            focus = jap_army_bop_bureancy_industry_2
+        }
+    }
+
+    ## 
+
+    focus = {
+        id  = jap_army_bop_perfect_revolution
+        relative_position_id = jap_army_bop_military
+        x = 0
+        y = 8
+        prerequisite = {
+            focus = jap_army_bop_military_2
+        }
+        prerequisite = {
+            focus = jap_army_bop_industry_3
+        }
+    }
+    ### 外交
+
+    focus = {
+        id = jap_army_bop_make_faction
+        relative_position_id = jap_army_bop_perfect_revolution
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_perfect_revolution
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_KOR
+        relative_position_id = jap_army_bop_make_faction
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_make_faction
+        }
+    }
+
+    # Aisa
+
+    focus = {
+        id = jap_army_bop_Asia
+        relative_position_id = jap_army_bop_KOR
+        x = -6
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_KOR
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_MAN
+        relative_position_id = jap_army_bop_Asia
+        x = 0
+        y = 1
+    }
+
+    focus = {
+        id = jap_army_bop_SIA
+        relative_position_id = jap_army_bop_Asia
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_Asia
+        }
+    }
+
+    # Europe
+    
+    focus = {
+        id = jap_army_bop_Europe
+        relative_position_id = jap_army_bop_KOR
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_KOR
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_ENG
+        relative_position_id = jap_army_bop_Europe
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_Europe
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_GER
+        relative_position_id = jap_army_bop_Europe
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_Europe
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_RUS
+        relative_position_id = jap_army_bop_Europe
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_Europe
+        }
+    }
+
+    # America
+
+    focus = {
+        id = jap_army_bop_America
+        relative_position_id = jap_army_bop_KOR
+        x = 4
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_KOR
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_USA
+        relative_position_id = jap_army_bop_America
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_America
+        }
+        
     }
 } 
 
@@ -2074,6 +2879,778 @@ focus_tree = { # navy bop
         completion_reward = {
             
         }
+    }
+
+    focus = {
+        id = jap_navy_bop_nation
+        relative_position_id = jap_Minister_of_War_of_Active_Military_Service_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Minister_of_War_of_Active_Military_Service_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_nation_1_1
+        relative_position_id = jap_navy_bop_nation
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_nation
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_nation_2_1
+        relative_position_id = jap_navy_bop_nation
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_nation
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_nation_3_1
+        relative_position_id = jap_navy_bop_nation
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_nation
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_nation_1_2
+        relative_position_id = jap_navy_bop_nation_1_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_nation_1_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_nation_2_2
+        relative_position_id = jap_navy_bop_nation_2_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_nation_2_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_nation_3_2
+        relative_position_id = jap_navy_bop_nation_3_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_nation_3_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_nation_1_3
+        relative_position_id = jap_navy_bop_nation_1_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_nation_1_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_nation_2_3
+        relative_position_id = jap_navy_bop_nation_2_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_nation_2_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_nation_3_3
+        relative_position_id = jap_navy_bop_nation_3_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_nation_3_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_nation_4
+        relative_position_id = jap_navy_bop_nation_2_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_nation_1_3
+        }
+        prerequisite = {
+            focus = jap_navy_bop_nation_2_3
+        }
+        prerequisite = {
+            focus = jap_navy_bop_nation_3_3
+        }
+    }
+
+    # industry
+    
+    focus = {
+        id = jap_navy_bop_industry
+        relative_position_id = jap_navy_bop_nation_4
+        x = 8
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_nation_4
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_industry_1
+        relative_position_id = jap_navy_bop_industry
+        x = -4
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_industry
+        }
+        mutually_exclusive = {
+            focus = jap_navy_bop_bureancy
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_industry_1_1
+        relative_position_id = jap_navy_bop_industry_1
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_industry_1_2
+        relative_position_id = jap_navy_bop_industry_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_industry_1_3
+        relative_position_id = jap_navy_bop_industry_1
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_industry_2_1
+        relative_position_id = jap_navy_bop_industry_1_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_industry_1_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_industry_2_2
+        relative_position_id = jap_navy_bop_industry_1_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_industry_1_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_industry_2_3
+        relative_position_id = jap_navy_bop_industry_1_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_industry_1_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_industry_3_1
+        relative_position_id = jap_navy_bop_industry_2_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_industry_2_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_industry_3_2
+        relative_position_id = jap_navy_bop_industry_2_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_industry_2_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_industry_3_3
+        relative_position_id = jap_navy_bop_industry_2_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_industry_2_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_industry_2
+        relative_position_id = jap_navy_bop_industry_3_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_industry_3_1        
+        }
+        prerequisite = {
+            focus = jap_navy_bop_industry_3_2
+        }
+        prerequisite = {
+            focus = jap_navy_bop_industry_3_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_bureancy
+        relative_position_id = jap_navy_bop_industry
+        x = 4
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_industry
+        }
+        mutually_exclusive = {
+            focus = jap_navy_bop_industry_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_bureancy_1_1
+        relative_position_id = jap_navy_bop_bureancy
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_bureancy
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_bureancy_1_2
+        relative_position_id = jap_navy_bop_bureancy
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_bureancy
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_bureancy_1_3
+        relative_position_id = jap_navy_bop_bureancy
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_bureancy
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_bureancy_2_1
+        relative_position_id = jap_navy_bop_bureancy_1_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_bureancy_1_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_bureancy_2_2
+        relative_position_id = jap_navy_bop_bureancy_1_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_bureancy_1_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_bureancy_2_3
+        relative_position_id = jap_navy_bop_bureancy_1_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_bureancy_1_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_bureancy_3_1
+        relative_position_id = jap_navy_bop_bureancy_2_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_bureancy_2_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_bureancy_3_2
+        relative_position_id = jap_navy_bop_bureancy_2_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_bureancy_2_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_bureancy_3_3
+        relative_position_id = jap_navy_bop_bureancy_2_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_bureancy_2_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_bureancy_industry_2
+        relative_position_id = jap_navy_bop_bureancy_3_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_bureancy_3_1        
+        }
+        prerequisite = {
+            focus = jap_navy_bop_bureancy_3_2
+        }
+        prerequisite = {
+            focus = jap_navy_bop_bureancy_3_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_industry_3
+        relative_position_id = jap_navy_bop_industry
+        x = 0
+        y = 6
+        prerequisite = {
+            focus = jap_navy_bop_industry_2
+            focus = jap_navy_bop_bureancy_industry_2
+        }
+    }
+
+    # military
+
+    focus = {
+        id = jap_navy_bop_military
+        relative_position_id = jap_navy_bop_nation_4
+        x = -8
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_nation_4
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_naval
+        relative_position_id = jap_navy_bop_military
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_military
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_BB
+        relative_position_id = jap_navy_bop_naval
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_naval
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_BB_1
+        relative_position_id = jap_navy_bop_BB
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_BB
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_BB_2
+        relative_position_id = jap_navy_bop_BB_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_BB_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_BB_3
+        relative_position_id = jap_navy_bop_BB_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_BB_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_DD
+        relative_position_id = jap_navy_bop_naval
+        x = 4
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_naval
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_DD_1
+        relative_position_id = jap_navy_bop_DD
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_DD
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_DD_2
+        relative_position_id = jap_navy_bop_DD_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_DD_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_DD_3
+        relative_position_id = jap_navy_bop_DD_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_DD_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_SS_1
+        relative_position_id = jap_navy_bop_DD
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_DD
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_SS_2
+        relative_position_id = jap_navy_bop_SS_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_SS_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_SS_3
+        relative_position_id = jap_navy_bop_SS_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_SS_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_CV
+        relative_position_id = jap_navy_bop_naval
+        x = -4
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_naval
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_CV_1
+        relative_position_id = jap_navy_bop_CV
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_CV
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_CV_2
+        relative_position_id = jap_navy_bop_CV_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_CV_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_CV_3
+        relative_position_id = jap_navy_bop_CV_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_CV_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_air
+        relative_position_id = jap_navy_bop_CV
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_CV
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_air_1
+        relative_position_id = jap_navy_bop_air
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_air
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_air_2
+        relative_position_id = jap_navy_bop_air_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_air_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_army
+        relative_position_id = jap_navy_bop_military
+        x = -4
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_military
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_army_1
+        relative_position_id = jap_navy_bop_army
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_army
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_army_2
+        relative_position_id = jap_navy_bop_army_1
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_army_1
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_army_3
+        relative_position_id = jap_navy_bop_army_2
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_army_2
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_army_4
+        relative_position_id = jap_navy_bop_army_3
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_navy_bop_army_3
+        }
+    }
+
+    focus = {
+        id = jap_navy_bop_military_1
+        relative_position_id = jap_navy_bop_military
+        x = 0
+        y = 6
+        prerequisite = {
+            focus = jap_navy_bop_army_4
+        }
+        prerequisite = {
+            focus = jap_navy_bop_CV_3
+            focus = jap_navy_bop_air_2
+        }
+        prerequisite = {
+            focus = jap_navy_bop_BB_3
+        }
+        prerequisite = {
+            focus = jap_navy_bop_SS_3
+            focus = jap_navy_bop_DD_3
+        }
+    }
+
+
+    # 外交
+
+
+
+    focus = {
+        id = jap_army_bop_make_faction
+        relative_position_id = jap_navy_bop_nation_4
+        x = 0
+        y = 8
+        prerequisite = {
+            focus = jap_navy_bop_military_1
+        }
+        prerequisite = {
+            focus = jap_navy_bop_industry_3
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_KOR
+        relative_position_id = jap_army_bop_make_faction
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_make_faction
+        }
+    }
+
+    # Aisa
+
+    focus = {
+        id = jap_army_bop_Asia
+        relative_position_id = jap_army_bop_KOR
+        x = -6
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_KOR
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_MAN
+        relative_position_id = jap_army_bop_Asia
+        x = 0
+        y = 1
+    }
+
+    focus = {
+        id = jap_army_bop_SIA
+        relative_position_id = jap_army_bop_Asia
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_Asia
+        }
+    }
+
+    # Europe
+    
+    focus = {
+        id = jap_army_bop_Europe
+        relative_position_id = jap_army_bop_KOR
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_KOR
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_ENG
+        relative_position_id = jap_army_bop_Europe
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_Europe
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_GER
+        relative_position_id = jap_army_bop_Europe
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_Europe
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_RUS
+        relative_position_id = jap_army_bop_Europe
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_Europe
+        }
+    }
+
+    # America
+
+    focus = {
+        id = jap_army_bop_America
+        relative_position_id = jap_army_bop_KOR
+        x = 4
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_KOR
+        }
+    }
+
+    focus = {
+        id = jap_army_bop_USA
+        relative_position_id = jap_army_bop_America
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_army_bop_America
+        }
+        
     }
 } 
 
