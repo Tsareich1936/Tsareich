@@ -242,7 +242,12 @@ RUS_unit_production = {
 	#army
 	ai_strategy = {
 		type = front_unit_request
+		tag = PER
+		value = 35
+	}
+	ai_strategy = {
+		type = front_unit_request
 		tag = GER
-		value = 2000
+		value = 300
 	}
 }
