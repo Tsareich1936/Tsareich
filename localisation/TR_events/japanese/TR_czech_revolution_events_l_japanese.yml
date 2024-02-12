@@ -1,32 +1,40 @@
 ﻿l_japanese:
  TR_czech_revolution.1.t: "プラハ暴動"
+ TR_czech_revolution.2.d: "我々の政策に反対する労働者による暴動が発生した。当初プラハに限られていた暴動は、今や瞬く間に全土に波及し、鎮圧部隊でも対処が困難になっている。軍隊を動員し強硬的に終わらせるのも手だが、これが革命に発展してしまう可能性がある。彼らの要求を聞き入れるべきだろうか？"
  TR_czech_revolution.1.a: "軍隊を動員せよ"
  TR_czech_revolution.1.b: "彼らの要求を聞いてみよう"
 
+# 要求
  TR_czech_revolution.2.t: "要求-自由選挙"
+ TR_czech_revolution.2.d: "暴動を起こした民衆により選ばれた代表者は、まず我々に対して民主主義的な選挙の実施を要求した。"
  TR_czech_revolution.2.a: "選挙権を制限するならば..."
  TR_czech_revolution.2.b: "権力を明け渡すつもりはない"
 
  TR_czech_revolution.3.t: "要求-財閥"
- TR_czech_revolution.3.a: "部分的に民営化しよう"
+ TR_czech_revolution.2.d: "代表者は、労働者の自由を侵害しているとして財閥の解体を求めた。"
+ TR_czech_revolution.3.a: "財閥への支援を打ち切ろう"
  TR_czech_revolution.3.b: "財閥は我々の生命線だ"
 
  TR_czech_revolution.4.t: "要求-政治犯の釈放"
+ TR_czech_revolution.4.d: "そして、最後の要求として政治犯の釈放を求めた。"
  TR_czech_revolution.4.a: "仕方あるまい..."
  TR_czech_revolution.4.b: "奴らはテロリストだ"
 
+# 合意結果
  TR_czech_revolution.5.t: "合意達成"
  TR_czech_revolution.5.a: "ひとまずは収まった"
 
  TR_czech_revolution.6.t: "合意失敗"
  TR_czech_revolution.6.a: "戦いは続く..."
 
+# 鎮圧結果
  TR_czech_revolution.7.t: "鎮圧成功"
  TR_czech_revolution.7.a: "素晴らしい"
 
  TR_czech_revolution.8.t: "鎮圧失敗"
  TR_czech_revolution.8.a: "なんということだ"
 
- TR_czech_revolution.9.t: "チェコの保護?"
+# ドイツ側
+ TR_czech_revolution.9.t: "チェコの共産主義者が保護を求める"
  TR_czech_revolution.9.a: "対等な同盟国であるべきだ"
  TR_czech_revolution.9.b: "自治共和国として取り込もう"
