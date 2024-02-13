@@ -123,6 +123,10 @@
  MDR_autonomy_cleansing_area: "パンノニア浄化区域"
  MDR_autonomy_cleansing_area_DEF: "パンノニア浄化区域"
 
+CZE_conservatism_democratic: "チェコ共和国"
+CZE_communism_government: "チェコ革命戦線"
+CZE_communism: "チェコ社会主義共和国"
+
 CZESLO: "チェコスロバキア国"
 CZESLO_DEF: "チェコスロバキア国"
 CZEZPL: "ザパドスラヴィア"
@@ -131,6 +135,6 @@ HROM: "神聖ローマニア軍団国"
 HROM_DEF: "神聖ローマニア軍団国"
 
 HBUL: "モエシア＝トラキア文化再生地域"
-HBUL_DEF: "モエシア＝トラキア文化再生地域"
- 
+HBUL_DEF: "モエシア＝トラキア文化再生地域" 
+
  

@@ -335,4 +335,32 @@ on_actions = {
 			}
 		}
 	}
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = CZE
+						has_government = conservatism
+					}
+					original_tag = CZE
+					has_government = communism
+				}
+				country_event = { id = TR_czech_revolution.10 }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = CZE
+						has_government = communism
+					}
+					original_tag = CZE
+					has_government = conservatism
+				}
+				country_event = { id = TR_czech_revolution.11 }
+			}
+		}
+	}
 }
