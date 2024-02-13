@@ -22,7 +22,80 @@ JAP_historical_plan = {
 	}
 
 	ideas = {
-		home_defence_spirit = 1
+	}
+
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 100
+	}
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = 20
+	}
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+JAP_historical_plan_RS = {
+	name = "Japan historical plan Rikkenseiyukai"
+	desc = "Historical behavior for Japan Rikkenseiyuukai"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_completed_focus = jap_Rikken_Seiyukai
+	}
+	abort = {
+		or = { 
+			has_completed_focus = jap_diplomacy
+			has_war_with_major = yes
+		}
+	}
+
+	ai_national_focuses = {
+		jap_Continuation_of_Takahashi_Financing
+		jap_NAVY_1_1
+		jap_ARMY_3_1
+		jap_Royal_Center_Definition
+		jap_AIRFORCE_2_1
+		jap_Keynesian_Studies_in_Practice
+		jap_social_reform
+		jap_Controlling_inflation
+		jap_ARMY_2_1
+		jap_NAVY_2_1
+		jap_NAVY_3_1
+		jap_NAVY_1_3
+		jap_ARMY_2_2
+		jap_ARMY_2_2
+		jap_extensive_transportation_network
+		jap_Developing_Mori_Diplomacy
+		jap_Protect_the_Constitution
+		jap_Growth_based_on_Keynesian_studies
+		jap_policy_of_imperialisation
+	}
+
+	research = {
+		
+	}
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 100
+	}
+	ideas = {
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -36,48 +109,41 @@ JAP_historical_plan = {
 
 }
 
-JAP_historical_plan = {
-	name = "Japan historical plan Rikkenseiyukai"
-	desc = "Historical behavior for Japan Rikkenseiyuukai"
+JAP_historical_plan_RS_war = {
+	name = "Japan historical plan Rikkenseiyukai_war"
+	desc = "Historical behavior for Japan Rikkenseiyuukai_war"
 
 	allowed = {
 		original_tag = JAP
 	}
 	enable = {
-		has_completed_focus = jap_Rikken_Seiyukai
+		or = { 
+			has_completed_focus = jap_diplomacy
+			has_war_with_major = yes
+		}
 	}
 	abort = {
+		always = no
 	}
 
 	ai_national_focuses = {
-		jap_Continuation_of_Takahashi_Financing
-		jap_Royal_Center_Definition
-		jap_social_reform
-		jap_NAVY_1_1
-		jap_Keynesian_Studies_in_Practice
-		jap_Controlling_inflation
-		jap_extensive_transportation_network
-		jap_ARMY_1_1
-		jap_Developing_Mori_Diplomacy
-		jap_AIRFORCE_2_1
-		jap_AIRFORCE_2_2
-		jap_zaibatsu
-		jap_AIRFORCE_2_3
-		jap_policy_of_imperialisation
-		jap_agrarian_reform_1
-		jap_Growth_based_on_Keynesian_studies
-		jap_agrarian_reform_2
-		jap_NAVY_2_1
-		jap_ARMY_2_2
-		jap_Foreign_Policy
+
 	}
 
 	research = {
 		
 	}
-
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 70
+	}
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 30
+	}
 	ideas = {
-		home_defence_spirit = 1
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -89,4 +155,235 @@ JAP_historical_plan = {
 		}
 	}
 
+}
+
+JAP_historical_plan_RM = {
+	name = "Japan historical plan Rikkenminseito"
+	desc = "Historical behavior for Japan Rikkenminseito"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_completed_focus = jap_Constitutional_Democratic_Party
+	}
+	abort = {
+		or = { 
+			has_completed_focus = jap_diplomacy
+			has_war_with_major = yes
+		}
+	}
+
+	ai_national_focuses = {
+
+	}
+
+	research = {
+		
+	}
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 100
+	}
+	ideas = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+JAP_historical_plan_s = {
+	name = "Japan historical plan Syakaitaisyu"
+	desc = "Historical behavior for Japan Syakaitaisyu"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_completed_focus = jap_Shakai_Taishuto
+	}
+	abort = {
+		or = { 
+			has_completed_focus = jap_diplomacy
+			has_war_with_major = yes
+			has_completed_focus = jap_socialist_economy
+		}
+	}
+
+	ai_national_focuses = {
+
+	}
+
+	research = {
+		
+	}
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 100
+	}
+	ideas = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+JAP_historical_plan_1 = {
+	name = "Japan historical plan Syakaitaisyu_1"
+	desc = "Historical behavior for Japan Syakaitaisyu_1"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_idea = JAP_industrial_complex
+	}
+	abort = {
+		or = { 
+			has_completed_focus = jap_diplomacy
+			has_war_with_major = yes
+			not = {
+				has_idea = JAP_industrial_complex
+			}
+		}
+	}
+
+	ai_national_focuses = {
+
+	}
+
+	research = {
+		
+	}
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 100
+	}
+	ai_strategy = {
+		type = building_target
+		id = infrastructure
+		value = 20
+	}
+	ai_strategy = {
+		type = building_target
+		id = synthetic_refinery
+		value = 20
+	}
+	ideas = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+JAP_historical_plan_2 = {
+	name = "Japan historical plan Syakaitaisyu_2"
+	desc = "Historical behavior for Japan Syakaitaisyu_2"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_idea = JAP_arms_factory
+	}
+	abort = {
+		or = { 
+			has_completed_focus = jap_diplomacy
+			has_war_with_major = yes
+			not = {
+				has_idea = JAP_arms_factory
+			}
+		}
+	}
+
+	ai_national_focuses = {
+
+	}
+
+	research = {
+		
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 100
+	}
+	ideas = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+JAP_historical_plan_3 = {
+	name = "Japan historical plan Syakaitaisyu_3"
+	desc = "Historical behavior for Japan Syakaitaisyu_3"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_idea = JAP_dockyard
+	}
+	abort = {
+		or = { 
+			has_completed_focus = jap_diplomacy
+			has_war_with_major = yes
+			not = {
+				has_idea = JAP_dockyard
+			}
+		}
+	}
+
+	ai_national_focuses = {
+
+	}
+
+	research = {
+		
+	}
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 100
+	}
+	ideas = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
 }

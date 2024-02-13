@@ -111,7 +111,12 @@ focus_tree = { # nomal
             
         }
         completion_reward = {
-            add_ideas = JAP_Streamlined_enterprise
+            swap_ideas = {
+                remove_idea = JAP_lifting_of_a_gold_embargo_2
+                add_idea = JAP_Streamlined_enterprise
+            }
+            
+
         }
     }
 
@@ -284,7 +289,7 @@ focus_tree = { # nomal
         completion_reward = {
             activate_targeted_decision = { 
                 target = JAP 
-                decision = JAP_Civilian_factory_1
+                decision = JAP_Civilian_factory_1  
             }
             activate_targeted_decision = { 
                 target = JAP 
@@ -10721,7 +10726,7 @@ shared_focus = {
     id = jap_NAVY_1_1
     x = 0
     y = 0
-    cost = 4
+    cost = 5
     available = {
         
     }
@@ -10819,7 +10824,7 @@ shared_focus = {
     relative_position_id = jap_NAVY_1_2
     x = 0
     y = 1
-    cost = 4
+    cost = 5
     prerequisite = {
         focus = jap_NAVY_1_2
     }
@@ -10834,7 +10839,7 @@ shared_focus = {
     relative_position_id = jap_NAVY_1_1
     x = 2
     y = 0
-    cost = 4
+    cost = 8
     available = {
         
     }
@@ -10851,7 +10856,7 @@ shared_focus = {
     relative_position_id = jap_NAVY_2_1
     x = 0
     y = 1
-    cost = 4
+    cost = 8
     prerequisite = {
         focus = jap_NAVY_2_1
     }
@@ -10868,7 +10873,7 @@ shared_focus = {
     relative_position_id = jap_NAVY_2_2
     x = 0
     y = 1
-    cost = 4
+    cost = 8
     prerequisite = {
         focus = jap_NAVY_2_2
     }
@@ -10882,7 +10887,7 @@ shared_focus = {
     relative_position_id = jap_NAVY_1_1
     x = 4
     y = 0
-    cost = 4
+    cost = 5
     completion_reward = {
         country_event = {
             id = TR_japan.20
@@ -10895,7 +10900,7 @@ shared_focus = {
     relative_position_id = jap_NAVY_3_1
     x = 0
     y = 1
-    cost = 4
+    cost = 5
     prerequisite = {
         focus = jap_NAVY_3_1
     }
@@ -10911,7 +10916,7 @@ shared_focus = {
     relative_position_id = jap_NAVY_3_2
     x = 0
     y = 1
-    cost = 4
+    cost = 5
     prerequisite = {
         focus = jap_NAVY_3_2
     }
@@ -10942,7 +10947,7 @@ shared_focus = {
     }
     completion_reward = {
         country_event = {
-            id = TR_japan.21
+            id = TR_japan.58
         }
     }
 }
@@ -10955,7 +10960,7 @@ shared_focus = {
     relative_position_id = jap_NAVY_1_1
     x = 6
     y = 0
-    cost = 4
+    cost = 5
     completion_reward = {
         add_ideas = JAP_AIRFORCE_3
     }
@@ -10966,7 +10971,7 @@ shared_focus = {
     relative_position_id = jap_AIRFORCE_1_1
     x = 0
     y = 1
-    cost = 4
+    cost = 5
     prerequisite = {
         focus = jap_AIRFORCE_1_1
     }
@@ -10984,7 +10989,7 @@ shared_focus = {
     relative_position_id = jap_AIRFORCE_1_2
     x = 0
     y = 1
-    cost = 4
+    cost = 5
     prerequisite = {
         focus = jap_AIRFORCE_1_2
     }
@@ -10998,7 +11003,7 @@ shared_focus = {
     relative_position_id = jap_AIRFORCE_1_1
     x = 2
     y = 0
-    cost = 4
+    cost = 8
     completion_reward = {
         swap_ideas = {
             remove_idea = JAP_AIRFORCE
@@ -11012,7 +11017,7 @@ shared_focus = {
     relative_position_id = jap_AIRFORCE_2_1
     x = 0
     y = 1
-    cost = 4
+    cost = 5
     prerequisite = {
         focus = jap_AIRFORCE_2_1
     }
@@ -11029,7 +11034,7 @@ shared_focus = {
     relative_position_id = jap_AIRFORCE_2_2
     x = 0
     y = 1
-    cost = 4
+    cost = 8
     prerequisite = {
         focus = jap_AIRFORCE_2_2
     }
@@ -11043,7 +11048,7 @@ shared_focus = {
     relative_position_id = jap_AIRFORCE_1_1
     x = 4
     y = 0
-    cost = 4
+    cost = 5
     completion_reward = {
         add_tech_bonus = {
             name = jap_AIRFORCE_3_1
@@ -11059,7 +11064,7 @@ shared_focus = {
     relative_position_id = jap_AIRFORCE_3_1
     x = 0
     y = 1
-    cost = 4
+    cost = 5
     prerequisite = {
         focus = jap_AIRFORCE_3_1
     }
@@ -11078,7 +11083,7 @@ shared_focus = {
     relative_position_id = jap_AIRFORCE_3_2
     x = 0
     y = 1
-    cost = 4
+    cost = 5
     prerequisite = {
         focus = jap_AIRFORCE_3_2
     }
@@ -11122,7 +11127,7 @@ shared_focus = {
     relative_position_id = jap_NAVY_1_1
     x = 12
     y = 0
-    cost = 4
+    cost = 5
     completion_reward = {
         army_experience = 50
         division_template = {
@@ -11153,7 +11158,7 @@ shared_focus = {
     relative_position_id = jap_ARMY_1_1
     x = 0
     y = 1
-    cost = 4
+    cost = 5
     prerequisite = {
         focus = jap_ARMY_1_1
     }
@@ -11170,7 +11175,7 @@ shared_focus = {
     relative_position_id = jap_ARMY_1_2
     x = 0
     y = 1
-    cost = 4
+    cost = 5
     prerequisite = {
         focus = jap_ARMY_1_2
     }
@@ -11187,7 +11192,7 @@ shared_focus = {
     relative_position_id = jap_ARMY_1_1
     x = 2
     y = 0
-    cost = 4
+    cost = 8
     available = {
         
     }
@@ -11204,7 +11209,7 @@ shared_focus = {
     relative_position_id = jap_ARMY_2_1
     x = 0
     y = 1
-    cost = 4
+    cost = 8
     prerequisite = {
         focus = jap_ARMY_2_1
     }
@@ -11224,7 +11229,7 @@ shared_focus = {
     relative_position_id = jap_ARMY_2_2
     x = 0
     y = 1
-    cost = 4
+    cost = 8
     prerequisite = {
         focus = jap_ARMY_2_2
     }
@@ -11241,7 +11246,7 @@ shared_focus = {
     relative_position_id = jap_ARMY_1_1
     x = 4
     y = 0
-    cost = 4
+    cost = 5
     available = {
         
     }
@@ -11260,7 +11265,7 @@ shared_focus = {
     relative_position_id = jap_ARMY_3_1
     x = 0
     y = 1
-    cost = 4
+    cost = 5
     prerequisite = {
         focus = jap_ARMY_3_1
     }
@@ -11282,7 +11287,7 @@ shared_focus = {
     relative_position_id = jap_ARMY_3_2
     x = 0
     y = 1
-    cost = 4
+    cost = 5
     prerequisite = {
         focus = jap_ARMY_3_2
     }
