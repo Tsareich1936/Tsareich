@@ -1,0 +1,86 @@
+sub_units = {
+	TR_poison_gus_support = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+		}
+
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 25
+		default_morale = 0.15
+		manpower = 200
+		training_time = 90
+
+		#Misc Abilities
+		# weight = 0.1
+		supply_consumption = 0.25
+		
+		
+		battalion_mult = {
+			category = category_light_infantry
+			attack = 0.3
+			add = yes
+
+		}
+
+				
+		breakthrough = 0.5
+
+		# Support nerfs to combat abilities
+		soft_attack = 1.5
+		defence = -0.25
+
+		essential = {
+			support_equipment
+		}
+
+		need = {
+			infantry_equipment = 5
+			support_equipment = 60
+		}
+
+		can_be_parachuted = yes
+		forest = {
+			attack = 0.25
+		}
+		urban = {
+			attack = 0.35
+		}
+
+		hills = {
+		}
+
+		jungle = {
+		}
+
+		marsh = {
+		}
+
+		fort = {
+			attack = 0.35
+		}
+
+		amphibious = {
+			attack = 0.15
+		}
+	}
+}
