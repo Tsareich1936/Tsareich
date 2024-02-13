@@ -260,8 +260,6 @@ on_actions = {
 			}
 		}
 	}
-<<<<<<< Updated upstream
-=======
 	on_daily_JAP = {
 		effect = {
 			if = {
@@ -320,5 +318,4 @@ on_actions = {
 			}
 		}
 	}
->>>>>>> Stashed changes
 }
