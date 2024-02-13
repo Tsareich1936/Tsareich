@@ -1532,7 +1532,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
-				target = GER
+				target = RUS
 				expire = 0
 			}
 		}
@@ -2171,7 +2171,7 @@ focus_tree = {
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
-							size > 2
+							size > 1
 							include_locked = yes
 						}
 					}

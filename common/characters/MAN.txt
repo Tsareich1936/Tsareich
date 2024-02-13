@@ -1,0 +1,14 @@
+characters = {
+	MAN_Zhang_Zuolin = {
+		name = MAN_Zhang_Zuolin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MAN_Zhang_Zuolin
+			}
+		}
+		country_leader={
+			ideology = despotism
+			id=-1			
+		}
+	}
+}

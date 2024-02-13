@@ -13,7 +13,7 @@ default_unit_production = {
 				original_tag = ENG
 				original_tag = SRI
 				original_tag = JAP
-				original_tag = USA
+				# original_tag = USA
 			}
 		}
 	}

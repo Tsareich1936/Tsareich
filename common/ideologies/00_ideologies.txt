@@ -123,7 +123,8 @@ ideologies = {
 
 			anarchist_communism = {
 			}
-			Lcoalition = {}
+			Lcoalition = {
+			}
 		}
 
 		dynamic_faction_names = {

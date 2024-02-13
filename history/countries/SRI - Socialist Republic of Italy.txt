@@ -225,8 +225,8 @@ set_politics = {
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
-
 }
+# set_country_leader_ideology = Lcoalition
 set_popularities = {
 	communism = 100
 }
@@ -235,7 +235,7 @@ set_party_name = {
 	long_name = SRI_coalition_party_long
 	name = SRI_coalition_party
 }
-
+promote_character = SRI_dAnnunzio
 
 add_ideas = {
 	SRI_divided_italy

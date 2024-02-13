@@ -225,6 +225,7 @@ ideas = {
 			modifier = {
 				production_factory_max_efficiency_factor = 0.2
 				industrial_capacity_factory = 0.2
+				stability_factor = 0.2
 			}
 
 		}
@@ -357,6 +358,7 @@ ideas = {
 			modifier = {
 				stability_weekly = -0.005
 				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.2
 			}
 		}
 
@@ -369,6 +371,7 @@ ideas = {
 	    	modifier = {
 		    	stability_weekly = 0.005
 		    	industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.2
 	    	}
 		}
 
@@ -404,7 +407,7 @@ ideas = {
     		}
 	    	removal_cost = -1
 			modifier = {
-				compliance_gain = 0.2
+				compliance_gain = 0.005
 			}
 		}
 
@@ -1181,9 +1184,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_buildings_factor = -0.2
 				industrial_capacity_factory = -0.2
-				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.2
 				stability_factor = -0.2
 			}
 		}
@@ -1200,9 +1202,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_buildings_factor = -0.1
 				industrial_capacity_factory = -0.1
-				consumer_goods_factor = 0.075
+				industrial_capacity_factory = -0.2
 				stability_factor = -0.1
 			}
 		}
