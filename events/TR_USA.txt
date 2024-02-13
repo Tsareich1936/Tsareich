@@ -1415,7 +1415,7 @@ add_namespace = TR_usa_civil_war_legacy
 						create_unit = {
 							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
 							owner = TXS
-							count = 15
+							count = 10
 						}
 					}
 				}
