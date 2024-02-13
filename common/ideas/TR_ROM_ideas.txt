@@ -1,0 +1,114 @@
+ideas = {
+	country = {
+		TR_ROM_army = {
+			picture = "SPR_relocate_the_gold_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				max_command_power = 50
+				max_planning = 0.2
+				naval_speed_factor = 0.1
+				air_agility_factor = 0.1
+			}
+		}
+		TR_ROM_big = {
+			picture = "SPR_relocate_the_gold_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.01
+				war_stability_factor = 0.2
+			}
+		}
+
+		TR_ROM_pray = {
+			picture = "SPR_relocate_the_gold_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.15
+				political_power_factor = 0.05
+			}
+		}
+		TR_ROM_pray1 = {
+			picture = "SPR_relocate_the_gold_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.30
+				political_power_factor = 0.075
+				research_speed_factor = 0.05
+				conscription = 0.005
+			}
+		}
+		TR_ROM_pray2 = {
+			picture = "SPR_relocate_the_gold_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.5
+				political_power_factor = 0.1
+				research_speed_factor = 0.1
+				conscription = 0.01
+			}
+		}
+		TR_ROM_BUL = {
+			picture = "SPR_relocate_the_gold_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = -0.002
+				monthly_population = -3
+				consumer_goods_factor = 10
+			}
+		}
+
+		TR_ROM_BUL1 = {
+			picture = "SPR_relocate_the_gold_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.002
+				war_support_weekly = -0.004
+				monthly_population = -6
+				consumer_goods_factor = 10
+			}
+		}
+		TR_ROM_join = {
+			picture = "SPR_relocate_the_gold_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		ROM_RUSarmy = {
+			picture = "SPR_relocate_the_gold_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.1
+				conscription_factor = 0.1
+			}
+		}
+	}	
+}

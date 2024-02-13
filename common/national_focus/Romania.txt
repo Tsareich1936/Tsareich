@@ -19,7 +19,7 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			add_political_power = 100
-			add_war_support = 0.2
+			add_ideas = TR_ROM_big
 		}
 
 	}
@@ -34,6 +34,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_stability = -0.1
+			add_manpower = -578
 			add_popularity = {
 				ideology = neutrality
 				popularity = -0.2
@@ -127,7 +128,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		completion_reward = {
-			add_ideas = x
+			add_ideas = TR_ROM_army 
 		}
 	}
 	focus = {
@@ -464,6 +465,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_political_power = 15
+			add_ideas = TR_ROM_pray
 		}
 	}
 	focus = {
@@ -477,6 +479,10 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			add_political_power = 15
+			swap_ideas = {
+				remove_idea = TR_ROM_pray
+				add_idea = TR_ROM_pray1
+			}
 		}
 	}
 	focus = {
@@ -490,6 +496,10 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			add_political_power = 15
+			swap_ideas = {
+				remove_idea = TR_ROM_pray1
+				add_idea = TR_ROM_pray2
+			}
 		}
 	}
 	focus = {
@@ -542,46 +552,68 @@ focus_tree = {
 	focus = {
 		id = ROM_win1
 		icon = GFX_goal_generic_propaganda
-		cost = 10.00
+		cost = 4
 		x = 23
 		y = 0
 		available = {
-			always = no
+			is_subject = no
+            
+			BUL = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+				}
+			}
+			HUN = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+				}
+			}
 		}
 	    completion_reward = {
-			
+			add_political_power = 100
+			add_research_slot = 1
 		}
 	}	
 	focus = {
 		id = ROM_win2
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_secret_weapon
+		cost = 8
 		prerequisite = {
 			focus = ROM_win1
 		}
 		x = 21
 		y = 1
 	    completion_reward = {
-			
+			212 = { add_manpower = -28000 }
+			BUL = { add_stability = -0.1 }
+			add_stability = 0.05
+			add_political_power = 50
 		}
 	}
 	focus = {
 		id = ROM_win3
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		cost = 8
 		prerequisite = {
 			focus = ROM_win2
 		}
 		x = 21
 		y = 2
 	    completion_reward = {
-			
+			211 = { add_manpower = -20000 }
+			212 = { add_manpower = -20000 }
+			801 = { add_manpower = -20000 }
+			BUL = { add_stability = -0.2 }
+			add_stability = 0.15
+			add_political_power = 25
 		}
 	}
 	focus = {
 		id = ROM_win4
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 8
 		prerequisite = {
 			focus = ROM_win1
 		}
@@ -593,81 +625,185 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_win5
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_construction2
+		cost = 8
 		prerequisite = {
 			focus = ROM_win4
 		}
 		x = 25
 		y = 2
 	    completion_reward = {
-			
+			212 = {
+				add_building_construction = {
+					type = arms_factory
+					level = -1
+					instant_build = yes
+				}
+			}
+			211 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = -1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = ROM_win6
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 8
+		available = {
+			has_full_control_of_state = 801
+			has_full_control_of_state = 212
+			has_full_control_of_state = 221
+		}
 		prerequisite = {
 			focus = ROM_win1
 		}
 		x = 23
 		y = 1
 	    completion_reward = {
-			
+			211 = { add_manpower = -15000 }
+			212 = { add_manpower = -15000 }
+			801 = { add_manpower = -15000 }
+			add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = ROM_win7
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 8
 		prerequisite = {
 			focus = ROM_win6
 		}
 		x = 23
 		y = 2
 	    completion_reward = {
-			
+			puppet = BUL
+			BUL = {
+				transfer_state = 211
+				transfer_state = 222
+				transfer_state = 801
+				add_timed_idea = {
+					idea = TR_ROM_BUL
+					days = 720
+				}
+				set_cosmetic_tag = HBUL
+			}
+
 		}
 	}
 	focus = {
 		id = ROM_win8
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_focus_fra_fascist_threat
+		cost = 8
 		prerequisite = {
 			focus = ROM_win7
 		}
 		x = 23
 		y = 3
 	    completion_reward = {
-			
+			BUL = {
+				swap_ideas = {
+					remove_idea = TR_ROM_BUL
+					add_idea = TR_ROM_BUL1
+				}
+				211 = { add_manpower = -36000 }
+				212 = { add_manpower = -42000 }
+				801 = { add_manpower = -32000 }
+			}
 		}
 	}
 	focus = {
 		id = ROM_win9
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_generic_population_growth
+		cost = 8
 		prerequisite = {
 			focus = ROM_win8
 		}
 		x = 23
 		y = 4
 	    completion_reward = {
-			
+			211 = { add_manpower = 224300 }
+			212 = { add_manpower = 287500 }
+			801 = { add_manpower = 205300 }
+			add_timed_idea = {
+				idea = TR_ROM_join
+				days = 200
+			}
+
 		}
 	}
 	focus = {
 		id = ROM_win10
 		icon = GFX_focus_generic_pope
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = ROM_win9
 		}
 		x = 23
 		y = 5
 	    completion_reward = {
-			
+			annex_country = {
+				target = BUL
+			}
+			custom_effect_tooltip = TR_ROM.1.tt
+			hidden_effect = {
+				add_state_core  = 211
+				add_state_core  = 212
+				add_state_core  = 801
+			}
+			set_cosmetic_tag = HROM
 		}
 	}
 
@@ -684,23 +820,24 @@ focus_tree = {
 	#外交
     focus = {
 		id = ROM_dip
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_improve_relations
+		cost = 4
 		x = 9
 		y = 7
 		available = {
-			always = no
+			date > 1939.1.1
+			is_subject = no
 		}
 		completion_reward = {
-			
+			add_political_power = 50
 		}
 	
 	}
 	
 	focus = {
 		id = ROM_dip_left
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 8
 		prerequisite = {
 			focus = ROM_dip
 		}
@@ -712,21 +849,21 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_dip_rom
-		icon = focus_invite_romania
-		cost = 10.00
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 8
 		prerequisite = {
 			focus = ROM_dip
 		}
 		x = 9
 		y = 8
 		completion_reward = {
-			
+			add_political_power = 50
 		}
 	}
 	focus = {
 		id = ROM_dip_right
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_TR_ENG_contacts_with_russia_shine
+		cost = 8
 		prerequisite = {
 			focus = ROM_dip
 		}
@@ -738,8 +875,8 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_dip1
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_major_alliance
+		cost = 8
 		prerequisite = {
 			focus = ROM_dip_left
 			focus = ROM_dip_rom
@@ -756,36 +893,71 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_dip2
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_oil_refinery
+		cost = 8
 		prerequisite = {
 			focus = ROM_dip1
 		}
 		x = 5
 		y = 10
 		completion_reward = {
-			
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 46
+			} 
 		}
 	}
 	focus = {
 		id = ROM_dip3
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_construction
+		cost = 8
 		prerequisite = {
 			focus = ROM_dip2
 		}
 		x = 5
 		y = 11
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			} 
 		}
 	}
 	
 
 	focus = {
 		id = ROM_dip4
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 8
 		prerequisite = {
 			focus = ROM_dip_left
 			focus = ROM_dip_rom
@@ -793,32 +965,54 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = ROM_dip1
-			focus = ROM_dip4
+			focus = ROM_dip7
 		}
 		x = 9
 		y = 9
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_ideas = neutrality_idea
 		}
 	}
 	focus = {
 		id = ROM_dip5
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_oil_refinery
+		cost = 8
 		prerequisite = {
 			focus = ROM_dip4
 		}
 		x = 9
 		y = 10
 		completion_reward = {
-			
+			add_resource = {
+				type = oil
+				amount = 7
+				state = 46
+			} 		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			} 	
 		}
+
 	}
 
 	focus = {
 		id = ROM_dip6
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_generic_coastal_fort
+		cost = 8
 		prerequisite = {
 			focus = ROM_dip5
 		}
@@ -831,8 +1025,8 @@ focus_tree = {
 
 	focus = {
 		id = ROM_dip7
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_major_alliance
+		cost = 8
 		prerequisite = {
 			focus = ROM_dip_right
 			focus = ROM_dip_rom
@@ -850,28 +1044,59 @@ focus_tree = {
 
 	focus = {
 		id = ROM_dip8
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_rhineland
+		cost = 8
 		prerequisite = {
 			focus = ROM_dip7
 		}
 		x = 13
 		y = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			} 
 		}
 	}
 	focus = {
-		id = nROM_dip9
-		icon = GFX_goal_unknown
-		cost = 10.00
+		id = ROM_dip9
+		icon = GFX_focus_generic_military_mission
+		cost = 8
 		prerequisite = {
 			focus = ROM_dip8
 		}
 		x = 13
 		y = 11
 		completion_reward = {
-			
+			add_ideas = ROM_RUSarmy
 		}
 	}
 
