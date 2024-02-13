@@ -37,10 +37,6 @@ country_event = {#要求-自由選挙
 	id = TR_czech_revolution.2
 	title = TR_czech_revolution.2.t
 	desc = TR_czech_revolution.2.d
-<<<<<<< Updated upstream
-	picture = GFX_report_event_german_speech
-=======
->>>>>>> Stashed changes
 	is_triggered_only = yes
 	option = {#選挙権を制限するならば...
 		name = TR_czech_revolution.2.a
@@ -77,16 +73,9 @@ country_event = {#要求-自由選挙
 	id = TR_czech_revolution.3
 	title = TR_czech_revolution.3.t
 	desc = TR_czech_revolution.3.d
-<<<<<<< Updated upstream
-	picture = GFX_report_event_german_speech
-	is_triggered_only = yes
-
-	option = {#部分的に民営化しよう
-=======
 	is_triggered_only = yes
 
 	option = {#解体は難しいが、財閥への支援を打ち切ることはできる
->>>>>>> Stashed changes
 		name = TR_czech_revolution.3.a
 		swap_ideas = {
 			remove_idea = TR_CZE_skoda_works
@@ -98,7 +87,7 @@ country_event = {#要求-自由選挙
 		}
 	}
 	option = {#財閥は我々の生命線だ
-		name = TR_czech_revolution.2.b
+		name = TR_czech_revolution.3.b
 		add_stability = -0.05
 		country_event = {
 			id = TR_czech_revolution.6
@@ -110,10 +99,6 @@ country_event = {#要求-政治犯の釈放
 	id = TR_czech_revolution.4
 	title = TR_czech_revolution.4.t
 	desc = TR_czech_revolution.4.d
-<<<<<<< Updated upstream
-	picture = GFX_report_event_german_speech
-=======
->>>>>>> Stashed changes
 	is_triggered_only = yes
 	option = {#仕方あるまい...
 		name = TR_czech_revolution.4.a
@@ -132,11 +117,7 @@ country_event = {#要求-政治犯の釈放
 		}
 	}
 	option = {#奴らはテロリストだ
-<<<<<<< Updated upstream
-		name = TR_czech_revolution.2.b
-=======
 		name = TR_czech_revolution.4.b
->>>>>>> Stashed changes
 		add_stability = -0.05
 		country_event = {
 			id = TR_czech_revolution.6
@@ -148,17 +129,10 @@ country_event = {#合意達成
 	id = TR_czech_revolution.5
 	title = TR_czech_revolution.5.t
 	desc = TR_czech_revolution.5.d
-<<<<<<< Updated upstream
-	picture = GFX_report_event_german_speech
-	is_triggered_only = yes
-	option = {
-		name = TR_czech_revolution.5.a
-=======
 	is_triggered_only = yes
 	option = {
 		name = TR_czech_revolution.5.a
 		set_cosmetic_tag = CZE_conservatism_democratic
->>>>>>> Stashed changes
 	}
 }
 country_event = {#合意失敗
@@ -166,27 +140,11 @@ country_event = {#合意失敗
 	title = TR_czech_revolution.6.t
 	desc = TR_czech_revolution.6.d
 	is_triggered_only = yes
-<<<<<<< Updated upstream
-	picture = GFX_report_event_german_speech
-	option = {
-		name = TR_czech_revolution.6.a
-		start_civil_war = {
-			ruling_party = conservatism
-			ideology = communism
-			size = 0.5
-			capital = 9
-			states = {
-				9 941 942
-			}
-			keep_political_leader = yes
-			keep_political_party_members = yes
-=======
 	option = {
 		name = TR_czech_revolution.6.a
 		country_event = {
 			id = TR_czech_revolution.9
 			days = 3
->>>>>>> Stashed changes
 		}
 	}
 }
@@ -195,20 +153,8 @@ country_event = {#鎮圧成功
 	title = TR_czech_revolution.7.t
 	desc = TR_czech_revolution.7.d
 	is_triggered_only = yes
-<<<<<<< Updated upstream
-	picture = GFX_report_event_german_speech
 	option = {
 		name = TR_czech_revolution.7.a
-		GER = {
-			country_event = {
-				id = TR_czech_revolution.9
-				days = 3
-			}
-		}
-=======
-	option = {
-		name = TR_czech_revolution.7.a
->>>>>>> Stashed changes
 	}
 }
 country_event = {#鎮圧失敗
@@ -216,11 +162,6 @@ country_event = {#鎮圧失敗
 	title = TR_czech_revolution.8.t
 	desc = TR_czech_revolution.8.d
 	is_triggered_only = yes
-<<<<<<< Updated upstream
-	picture = GFX_report_event_german_speech
-	option = {
-		name = TR_czech_revolution.8.a
-=======
 	option = {
 		name = TR_czech_revolution.8.a
 		country_event = {
@@ -236,7 +177,6 @@ country_event = {#チェコ内戦
 	is_triggered_only = yes
 	option = {
 		name = TR_czech_revolution.9.a
->>>>>>> Stashed changes
 		start_civil_war = {
 			ruling_party = conservatism
 			ideology = communism
@@ -247,34 +187,6 @@ country_event = {#チェコ内戦
 			}
 			keep_political_leader = yes
 			keep_political_party_members = yes
-<<<<<<< Updated upstream
-		}
-	}
-}
-country_event = {#チェコ革命失敗
-	id = TR_czech_revolution.9
-	title = TR_czech_revolution.9.t
-	desc = TR_czech_revolution.9.d
-	is_triggered_only = yes
-	picture = GFX_report_event_german_speech
-	option = {
-		name = TR_czech_revolution.9.a
-		declare_war_on = {
-			target = CZE
-			type = annex_everything
-		}
-	}
-}
-country_event = {#チェコの保護
-	id = TR_czech_revolution.10
-	title = TR_czech_revolution.10.t
-	desc = TR_czech_revolution.10.d
-	is_triggered_only = yes
-	picture = GFX_report_event_german_speech
-	option = {
-		name = TR_czech_revolution.10.a
-		ai_chance = { base = 50 }
-=======
 			set_cosmetic_tag = CZE_communism_government
 		}
 		set_global_flag = TR_czech_revolution
@@ -337,16 +249,10 @@ country_event = {#チェコが保護を求める
 	is_triggered_only = yes
 	option = {
 		name = TR_czech_revolution.12.a
->>>>>>> Stashed changes
 		FRA = {
 			add_to_faction = CZE
 		}
 	}
-<<<<<<< Updated upstream
-	option = {
-		name = TR_czech_revolution.10.b
-		ai_chance = { base = 50 }
-=======
 }
 country_event = {#内戦への介入
 	id = TR_czech_revolution.13
@@ -374,7 +280,6 @@ country_event = {#チェコの運命
 	option = {
 		name = TR_czech_revolution.14.b
 		ai_chance = { base = 100 }
->>>>>>> Stashed changes
 		set_autonomy = {
 			target = CZE
 			autonomous_state = autonomy_puppet
@@ -383,13 +288,6 @@ country_event = {#チェコの運命
 		}
 	}
 }
-<<<<<<< Updated upstream
-news_event = {
-	id = TR_czech_revolution_news.1
-	title = TR_czech_revolution_news.1.t
-	desc = TR_czech_revolution_news.1.d
-	picture = GFX_news_event_hitler_speech
-=======
 country_event = {#チェコ革命失敗
 	id = TR_czech_revolution.15
 	title = TR_czech_revolution.15.t
@@ -411,21 +309,9 @@ news_event = {#チェコ内戦ニュース
 	id = TR_czech_revolution_news.1
 	title = TR_czech_revolution_news.1.t
 	desc = TR_czech_revolution_news.1.d
->>>>>>> Stashed changes
 	major = yes
 	is_triggered_only = yes
 	option = {
 		name = TR_czech_revolution_news.1.a
-<<<<<<< Updated upstream
-		trigger = {
-			NOT = {
-				tag = CZE
-			}
-		}
-		GER = {
-			set_country_flag = czech_revolution
-		}
-=======
->>>>>>> Stashed changes
 	}
 }

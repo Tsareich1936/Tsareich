@@ -1356,14 +1356,7 @@ focus_tree = {
 					factor = 4000
 				}
 			available = {
-<<<<<<< Updated upstream
 					has_country_flag = czech_revolution
-=======
-					has_country_flag = TR_czech_revolution_ger
-					NOT = {
-						has_global_flag = R_czech_revolution_end_conservatism
-					}
->>>>>>> Stashed changes
 				}
 			completion_reward = {
 					country_event = {
