@@ -358,6 +358,7 @@ ideas = {
 			modifier = {
 				stability_weekly = -0.005
 				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.2
 			}
 		}
 
@@ -370,6 +371,7 @@ ideas = {
 	    	modifier = {
 		    	stability_weekly = 0.005
 		    	industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.2
 	    	}
 		}
 
