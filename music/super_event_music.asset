@@ -13,3 +13,8 @@ music = {
     file = "Army_Detachment_March.ogg"
     volume = 1.00
 }
+music = {
+    name = "einheitsfrontlied"
+    file = "einheitsfrontlied.ogg"
+    volume = 1.00
+}

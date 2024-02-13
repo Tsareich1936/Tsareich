@@ -44,20 +44,8 @@ country_event = {
 				original_tag = GER
 				has_government = fascism
 			}
-			set_cosmetic_tag = GER_civil_war
+			set_cosmetic_tag = GER_Schwarze_Front
 			hidden_effect = { activate_mission = GER_mefo_bills_mission }
-		}
-		GER_august_von_mackensen = {
-			add_country_leader_role = {
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						great_war_hero
-					}
-				}
-				promote_leader = yes
-			}
 		}
 		hidden_effect = {
 			random_other_country = {

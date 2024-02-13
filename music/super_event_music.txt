@@ -19,3 +19,9 @@ music = {
     modifier = {factor = 1}
   }
 }
+music = {
+  song = "einheitsfrontlied"
+  chance = {
+    modifier = {factor = 1}
+  }
+}

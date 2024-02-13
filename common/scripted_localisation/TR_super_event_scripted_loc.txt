@@ -24,6 +24,14 @@ defined_text = {
 	    }
 	    localization_key = "SE_Japan_China_war_Title"
     }
+	text = {# German Civil War
+	    trigger = {
+		    check_variable = {
+			    TR_super_event_variable = 4
+		    }
+	    }
+	    localization_key = "SE_German_Civil_War_Title"
+    }
 	text = {#Error Event
 		trigger = {
 			check_variable = {
@@ -59,6 +67,14 @@ defined_text = {
 		    }
 	    }
 	    localization_key = "SE_Japana_China_war_Desc"
+    }
+	text = {# German Civil War
+	    trigger = {
+		    check_variable = {
+			    TR_super_event_variable = 4
+		    }
+	    }
+	    localization_key = "SE_German_Civil_War_Desc"
     }
 	text = {#Error Event
 		trigger = {
@@ -96,6 +112,14 @@ defined_text = {
 		}
 		localization_key = "GFX_SE_Japan-China-war_Picture"
 	}
+	text = {# German Civil War
+		trigger = {
+			check_variable = {
+				TR_super_event_variable = 4
+			}
+		}
+		localization_key = "GFX_SE_German_Civil_War_Picture"
+	}
 	text = {#Error Event
 		localization_key = "GFX_SE_Error_Picture"
 	}
@@ -126,6 +150,14 @@ defined_text = {
 		    }
 	    }
 	    localization_key = SE_Japan_China_war_Button
+    }
+	text = {# German Civil War
+	    trigger = {
+		    check_variable = {
+			    TR_super_event_variable = 4
+		    }
+	    }
+	    localization_key = SE_German_Civil_War_Button
     }
 	text = {#Error Event
 		trigger = {

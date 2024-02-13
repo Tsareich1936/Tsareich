@@ -1207,3 +1207,8 @@ SPE = {
 	color = rgb { 238 232 170 }
 	color_ui = rgb { 230 255 255 }
 }
+
+GER_Schwarze_Front = {
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
+}
