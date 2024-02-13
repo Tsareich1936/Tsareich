@@ -83,8 +83,8 @@ JAP_historical_plan_RS = {
 		jap_extensive_transportation_network
 		jap_Developing_Mori_Diplomacy
 		jap_Protect_the_Constitution
-		jap_Growth_based_on_Keynesian_studies
 		jap_policy_of_imperialisation
+		jap_Growth_based_on_Keynesian_studies
 	}
 
 	research = {

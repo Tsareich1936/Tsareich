@@ -92,6 +92,14 @@ on_actions = {
 				}
 			}
 		}
+	effect = {
+		JAP = {
+			country_event = {
+				id = TR_japan.95
+				days = 30
+			}
+		}
+	}
 	effect = {#VIN set up
 			#VIN gomu concessions			
 			VIN = {
@@ -287,18 +295,6 @@ on_actions = {
 					has_war = yes
 				}
 			    set_country_flag = TR_japan.wer
-			}
-		}
-	}
-	on_monthly_JAP = {
-		effect = {
-			if = {
-				limit = {
-					has_war = no
-				}
-				country_event = {
-					id = TR_japan.95
-				}
 			}
 		}
 	}
