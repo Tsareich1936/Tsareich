@@ -25,17 +25,9 @@ JAP_historical_plan = {
 	}
 
 	ai_strategy = {
-		type = added_military_to_civilian_factory_ratio
-		value = 0
-	}
-	ai_strategy = {
 		type = building_target
 		id = industrial_complex
 		value = 100
-	}
-	ai_strategy = {
-		type = dockyard_to_military_factory_ratio
-		value = 20
 	}
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
@@ -60,7 +52,7 @@ JAP_historical_plan_RS = {
 	}
 	abort = {
 		or = { 
-			has_completed_focus = jap_diplomacy
+			has_completed_focus = jap_Foreign_Policy
 			has_war_with_major = yes
 		}
 	}
@@ -79,22 +71,30 @@ JAP_historical_plan_RS = {
 		jap_NAVY_3_1
 		jap_NAVY_1_3
 		jap_ARMY_2_2
-		jap_ARMY_2_2
+		jap_decentralization_of_power
+		jap_ARMY_2_3
 		jap_extensive_transportation_network
 		jap_Developing_Mori_Diplomacy
 		jap_Protect_the_Constitution
 		jap_policy_of_imperialisation
 		jap_Growth_based_on_Keynesian_studies
+		jap_NAVY_3_2
+		jap_AIRFORCE_1_1
+		jap_ARMY_1_1
+		jap_AIRFORCE_3_1
+		jap_ARMY_3_2
+		jap_zaibatsu
+		jap_agrarian_reform_1
+		jap_AIRFORCE_3_2
+		jap_AIRFORCE_1_2
+		jap_ARMY_1_2
+		jap_Foreign_Policy
 	}
 
 	research = {
 		
 	}
-	ai_strategy = {
-		type = building_target
-		id = industrial_complex
-		value = 100
-	}
+
 	ideas = {
 	}
 
@@ -109,7 +109,7 @@ JAP_historical_plan_RS = {
 
 }
 
-JAP_historical_plan_RS_war = {
+JAP_historical_plan_war = {
 	name = "Japan historical plan Rikkenseiyukai_war"
 	desc = "Historical behavior for Japan Rikkenseiyuukai_war"
 
@@ -118,7 +118,7 @@ JAP_historical_plan_RS_war = {
 	}
 	enable = {
 		or = { 
-			has_completed_focus = jap_diplomacy
+			has_completed_focus = jap_unyielding
 			has_war_with_major = yes
 		}
 	}
@@ -127,22 +127,53 @@ JAP_historical_plan_RS_war = {
 	}
 
 	ai_national_focuses = {
-
+		jap_Greater_East_Asian_Co-prosperity_Sphere_concept
+		jap_Create_allies
 	}
 
 	research = {
 		
 	}
-	ai_strategy = {
-		type = building_target
-		id = arms_factory
-		value = 70
+
+	ideas = {
 	}
-	ai_strategy = {
-		type = building_target
-		id = dockyard
-		value = 30
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
 	}
+
+}
+
+JAP_historical_plan_RS_war_1 = {
+	name = "Japan historical plan Rikkenseiyukai_war"
+	desc = "Historical behavior for Japan Rikkenseiyuukai_war"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		or = { 
+			has_completed_focus = jap_cooperation
+			has_war_with_major = yes
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_national_focuses = {
+		jap_japan-england
+	}
+
+	research = {
+		
+	}
+
 	ideas = {
 	}
 
@@ -169,22 +200,48 @@ JAP_historical_plan_RM = {
 	}
 	abort = {
 		or = { 
-			has_completed_focus = jap_diplomacy
+			has_completed_focus = jap_Foreign_Policy
 			has_war_with_major = yes
 		}
 	}
 
 	ai_national_focuses = {
-
+		jap_Inoue
+		jap_Liquidation_of_unprofitable_companies
+		jap_NAVY_1_1
+		jap_ARMY_3_1
+		jap_Convention_Center_Definition
+		jap_AIRFORCE_2_1
+		jap_social_reform
+		jap_Improving_corporate_efficiency
+		jap_ARMY_2_1
+		jap_NAVY_2_1
+		jap_NAVY_3_1
+		jap_education
+		jap_NAVY_1_3
+		jap_ARMY_2_2
+		jap_ARMY_2_3
+		jap_State_Control_of_Electricity
+		jap_Continuation_of_Shidehara_foreign_policy
+		jap_constitutional_amendment
+		jap_ARMY_2_3
+		jap_administrative_reform
+		jap_Long_live_liberalism
+		jap_NAVY_3_2
+		jap_AIRFORCE_1_1
+		jap_ARMY_1_1
+		jap_AIRFORCE_3_1
+		jap_ARMY_3_2
+		jap_zaibatsu
+		jap_agrarian_reform_1
+		jap_AIRFORCE_3_2
+		jap_AIRFORCE_1_2
+		jap_ARMY_1_2
+		jap_Foreign_Policy
 	}
 
 	research = {
 		
-	}
-	ai_strategy = {
-		type = building_target
-		id = industrial_complex
-		value = 100
 	}
 	ideas = {
 	}
@@ -212,23 +269,48 @@ JAP_historical_plan_s = {
 	}
 	abort = {
 		or = { 
-			has_completed_focus = jap_diplomacy
+			has_completed_focus = jap_Foreign_Policy
 			has_war_with_major = yes
-			has_completed_focus = jap_socialist_economy
 		}
 	}
 
 	ai_national_focuses = {
-
+		jap_socialist_economy
+		jap_planned_economy
+		jap_NAVY_1_1
+		jap_ARMY_3_1
+		jap_social_democracy
+		jap_AIRFORCE_2_1
+		jap_social_reform
+		jap_ARMY_2_1
+		jap_NAVY_2_1
+		jap_NAVY_3_1
+		jap_dismantling_of_the_Ministry_of_Home_Affairs
+		jap_NAVY_1_3
+		jap_ARMY_2_2
+		jap_ARMY_2_3
+		jap_Development_of_insurance_system
+		jap_wealth_redistribution
+		jap_Cooperation_with_Socialist_Countries
+		jap_revise_the_constitution
+		jap_ARMY_2_3
+		jap_administrative_reform
+		jap_Building_Japanese-style_Socialism
+		jap_NAVY_3_2
+		jap_AIRFORCE_1_1
+		jap_ARMY_1_1
+		jap_AIRFORCE_3_1
+		jap_ARMY_3_2
+		jap_zaibatsu
+		jap_agrarian_reform_1
+		jap_AIRFORCE_3_2
+		jap_AIRFORCE_1_2
+		jap_ARMY_1_2
+		jap_Foreign_Policy
 	}
 
 	research = {
 		
-	}
-	ai_strategy = {
-		type = building_target
-		id = industrial_complex
-		value = 100
 	}
 	ideas = {
 	}
@@ -255,7 +337,7 @@ JAP_historical_plan_1 = {
 	}
 	abort = {
 		or = { 
-			has_completed_focus = jap_diplomacy
+			has_completed_focus = jap_Foreign_Policy
 			has_war_with_major = yes
 			not = {
 				has_idea = JAP_industrial_complex
@@ -310,7 +392,7 @@ JAP_historical_plan_2 = {
 	}
 	abort = {
 		or = { 
-			has_completed_focus = jap_diplomacy
+			has_completed_focus = jap_Foreign_Policy
 			has_war_with_major = yes
 			not = {
 				has_idea = JAP_arms_factory
@@ -355,7 +437,7 @@ JAP_historical_plan_3 = {
 	}
 	abort = {
 		or = { 
-			has_completed_focus = jap_diplomacy
+			has_completed_focus = jap_Foreign_Policy
 			has_war_with_major = yes
 			not = {
 				has_idea = JAP_dockyard
@@ -385,5 +467,89 @@ JAP_historical_plan_3 = {
 		modifier = {
 			factor = 1.0
 		}
+	}
+}
+
+JAP_building = {
+	allowed = {
+		tag = JAP
+	}
+	enable = {
+		has_completed_focus = jap_19th_General_Election
+	}
+	abort = {
+		or = {
+			date > 	1938.6.1
+			has_completed_focus = jap_socialist_economy
+			has_war = yes
+		}
+
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 100
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = synthetic_refinery
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = infrastructure
+		value = 10
+	}
+}
+
+JAP_building_1 = {
+	allowed = {
+		tag = JAP
+	}
+	enable = {
+		or = {
+			date > 	1938.6.1
+			has_war = yes
+		}
+	}
+	abort = {
+		always = no
+
+	}
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 70
+	}
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 30
+	}
+	ai_strategy = {
+		type = building_target
+		id = synthetic_refinery
+		value = 10
+	}
+	ai_strategy = {
+		type = building_target
+		id = infrastructure
+		value = 0
 	}
 }

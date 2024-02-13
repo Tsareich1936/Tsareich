@@ -1481,7 +1481,7 @@ country_event = {  #  war
 			type = puppet_wargoal_focus
 		}
 		ai_chance = {
-			base = 3
+			base = 99
 		}
 	}
 	option = {
@@ -2651,14 +2651,14 @@ country_event = {
 			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = industrial_complex
-				level = 3
+				level = 4
 			}
 		}
 		hidden_effect = {
 			JAP = {
 				country_event = {
 					id = TR_japan.97
-					days = 60
+					days = 90
 				}
 			}
 		}
@@ -2675,9 +2675,13 @@ country_event = {
 			}
 		}
 		random_owned_controlled_state = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = synthetic_refinery
+				level = 1
+			}
+			add_building_construction = {
+				type = dockyard
 				level = 1
 			}
 		}
@@ -2685,7 +2689,7 @@ country_event = {
 			JAP = {
 				country_event = {
 					id = TR_japan.97
-					days = 60
+					days = 90
 				}
 			}
 		}
@@ -2706,7 +2710,7 @@ country_event = {
 			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = industrial_complex
-				level = 3
+				level = 4
 			}
 		}
 		ai_chance = {
@@ -2716,7 +2720,7 @@ country_event = {
 			JAP = {
 				country_event = {
 					id = TR_japan.97
-					days = 60
+					days = 90
 				}
 			}			
 		}
@@ -2725,15 +2729,13 @@ country_event = {
 	option = {
 		name = TR_japan.95.b
 		random_owned_controlled_state = {
-			add_building_construction = {
-				type = infrastructure
-				level = 2
-			}
-		}
-		random_owned_controlled_state = {
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = synthetic_refinery
+				level = 1
+			}
+			add_building_construction = {
+				type = dockyard
 				level = 1
 			}
 		}
@@ -2741,7 +2743,7 @@ country_event = {
 			JAP = {
 				country_event = {
 					id = TR_japan.97
-					days = 60
+					days = 90
 				}
 			}			
 		}
