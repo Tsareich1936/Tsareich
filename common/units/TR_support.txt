@@ -48,7 +48,7 @@ sub_units = {
 		breakthrough = 0.5
 
 		# Support nerfs to combat abilities
-		soft_attack = 2.67
+		soft_attack = 2.75
 		defence = -1
 
 		essential = {
