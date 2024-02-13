@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_TR_tech_poison_gus_medium
+		textureFile = "gfx/interface/technologies/TR_tech_poison_gus.dds"
+	}
+	spriteType = {
+		name = GFX_TR_tech_poison_gus2_medium
+		textureFile = "gfx/interface/technologies/TR_tech_poison_gus2.dds"
+	}
+	spriteType = {
+		name = GFX_TR_tech_poison_gus3_medium
+		textureFile = "gfx/interface/technologies/TR_tech_poison_gus3.dds"
+	}
+	spriteType = {
+		name = GFX_TR_tech_poison_gus4_medium
+		textureFile = "gfx/interface/technologies/TR_tech_poison_gus4.dds"
+	}
+}
