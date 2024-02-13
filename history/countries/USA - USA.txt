@@ -300,7 +300,7 @@ add_ideas = {
 	great_depression
 	disarmed_nation
 	free_trade
-	home_of_the_free
+	# home_of_the_free
 }
 
 
