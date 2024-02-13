@@ -294,7 +294,7 @@ JAP_historical_plan_s = {
 		jap_Cooperation_with_Socialist_Countries
 		jap_revise_the_constitution
 		jap_ARMY_2_3
-		jap_administrative_reform
+		jap_Establishment_of_the_Ministry_of_Labor
 		jap_Building_Japanese-style_Socialism
 		jap_NAVY_3_2
 		jap_AIRFORCE_1_1

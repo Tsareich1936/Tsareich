@@ -51,3 +51,23 @@ country_event = {#American Civil War
 		}
 	}
 }
+
+country_event = {
+	id = TR_super_event.3
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		set_variable = {
+			TR_super_event_variable = 3
+		}
+		set_variable = {
+			TR_showing_super_event = 1
+		}
+		hidden_effect = {
+			play_song = "Army_Detachment_March"
+		}
+	}
+}

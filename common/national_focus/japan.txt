@@ -777,7 +777,7 @@ focus_tree = { # nomal
         y = 0
         cost = 1
         available = {
-            date > 1939.1.1
+  
         }
         completion_reward = {
              country_event = {
@@ -1025,7 +1025,7 @@ focus_tree = { # nomal
             }
             MAN = {
                 country_event = {
-                    id = TR_japan.50
+                    id = TR_japan.100
                 }
             }
             SIA = {

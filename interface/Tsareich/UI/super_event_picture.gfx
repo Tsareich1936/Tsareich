@@ -11,4 +11,8 @@ spriteTypes = {
 		name = GFX_SE_American_Civil_War_Picture
 	 	textureFile = "gfx/interface/super_event/SE_American_Civil_War_Picture.png"
 	}
+	spriteType = {
+		name = GFX_SE_Japan-China-war_Picture
+	 	textureFile = "gfx/interface/super_event/SE_Japan-China-war_Picture.png"
+	}
 }
