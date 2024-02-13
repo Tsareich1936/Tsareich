@@ -62,6 +62,7 @@ create_dynamic_country = {
 	set_popularities = {
 		socialism = 100
 	}
+	set_cosmetic_tag = USA_USA
 	reserve_dynamic_country = yes
 	inherit_technology = USA
 }
@@ -374,7 +375,10 @@ recruit_character = USA_henry_stimson
 recruit_character = USA_victor_perlo
 recruit_character = USA_charles_coughlin
 recruit_character = USA_harry_white
-
+promote_character = {
+	character = USA_franklin_delano_roosevelt
+	ideology = liberalism
+}
 
 if = {
 	limit = { has_dlc = "La Resistance" }

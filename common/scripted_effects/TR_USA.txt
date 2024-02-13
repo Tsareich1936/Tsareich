@@ -1,0 +1,34 @@
+TR_USA_coup = {
+	every_country = {
+		limit = {
+			OR = {
+				tag = USA
+				tag = FGA
+				tag = CSA
+				tag = AMR
+				tag = ADR
+				tag = AMG
+				tag = TXS
+				tag = DST
+				tag = IRC
+			}
+		}
+		add_to_array = {
+			array = global.second_american_civil_war
+		}
+	}
+	every_country = {
+		limit = {
+			is_in_array = {
+				global.second_american_civil_war = THIS
+			}
+		}
+		PREV = {
+			declare_war_on = {
+				target = PREV
+				type = civil_war
+			}
+			add_civil_war_target = prev
+		}
+	}
+}
