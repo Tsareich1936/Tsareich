@@ -144,7 +144,7 @@ country_event = {#合意失敗
 		name = TR_czech_revolution.6.a
 		country_event = {
 			id = TR_czech_revolution.9
-			days = 3
+			days = 1
 		}
 	}
 }
