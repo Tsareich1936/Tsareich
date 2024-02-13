@@ -79,19 +79,19 @@ RUS_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
-		value = -10
+		value = 15
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = heavy_fighter
-		value = 100
+		value = 0
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
-		value = 10 #because doctrine this = 15
+		value = 15 #because doctrine this = 15
 	}
 
 	ai_strategy = {
@@ -122,7 +122,7 @@ RUS_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = carrier
-		value = 1
+		value = 15
 	}
 	ai_strategy = {
 		type = unit_ratio
@@ -168,12 +168,12 @@ RUS_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
-		value = -10 #Accounted for
+		value = 15 #Accounted for
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = heavy_fighter
-		value = 20 #Accounted for
+		value = 10 #Accounted for
 	}
 
 	ai_strategy = {
@@ -211,7 +211,11 @@ RUS_unit_production = {
 		id = armor
 		value = 20
 	}
-
+	ai_strategy = {
+		type = unit_ratio
+		id = cv_naval_bomber
+		value = 10
+	}
 
 	### diplo
 	ai_strategy = {
@@ -258,6 +262,7 @@ RUS_unit_production = {
 		type = naval_invasion_focus
 		value = 100
 	}
+
 
 
 	#army
