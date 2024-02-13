@@ -58,7 +58,7 @@ ENG_historical_plan = {
 		RUS_diplo_help_CZE
 		RUS_send_pros
 		RUS_send_army_pro
-		RUS_diplo_US
+		RUS_nav_focus_CC
 		
 		#1939
 		RUS_corp_with_church

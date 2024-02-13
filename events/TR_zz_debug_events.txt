@@ -278,3 +278,23 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = TR_debug.7
+	title = TR_debug.7.t
+	desc = TR_debug.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_debug.7.a
+		ROOT = {
+			for_each_scope_loop = {
+				array = global.majors
+				declare_war_on = {
+					target = PREV.PREV
+					type = annex_everything
+				}
+			}
+		}
+	}
+}

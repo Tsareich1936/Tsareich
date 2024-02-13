@@ -133,7 +133,7 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_USA_1936_presidential_election
 				completion_reward = {
-					
+					set_country_flag = TR_USA_left_route
 				}
 			}
 			focus = {#恐慌脱出への糸口
@@ -163,11 +163,19 @@ focus_tree = {
 						focus = TR_USA_big_government
 						focus = TR_USA_flatly_and_equally
 					}
+					available = {
+						hidden_trigger = {
+							always = no
+						}
+						custom_trigger_tooltip = {
+							tooltip = TR_focus_nosupport
+						}
+					}
 					x = -4
 					y = 1
 					relative_position_id = TR_USA_clues_to_escape_the_depression
 					completion_reward = {
-						
+						set_country_flag = TR_USA_adr_route
 					}
 				}
 				focus = {#北部の労働者への呼びかけ
@@ -203,7 +211,7 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_USA_call_to_north_workers
 					completion_reward = {
-				
+						set_country_flag = TR_USA_com_route
 					}
 				}
 				focus = {#労働組合自治
@@ -225,7 +233,7 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_USA_call_to_north_workers
 					completion_reward = {
-				
+						set_country_flag = TR_USA_syn_route
 					}
 				}
 				focus = {#真なる自由
@@ -247,7 +255,7 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_USA_call_to_north_workers
 					completion_reward = {
-				
+						set_country_flag = TR_USA_ana_route
 					}
 				}
 			# United States America #
@@ -267,7 +275,7 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_USA_clues_to_escape_the_depression
 					completion_reward = {
-				
+						set_country_flag = TR_USA_soc_route
 					}
 				}
 				focus = {#福祉重視政策
@@ -320,6 +328,14 @@ focus_tree = {
 						focus = TR_USA_big_government
 						# focus = TR_USA_flatly_and_equally
 					}
+					available = {
+						hidden_trigger = {
+							always = no
+						}
+						custom_trigger_tooltip = {
+							tooltip = TR_focus_nosupport
+						}
+					}
 					x = 3
 					y = 1
 					relative_position_id = TR_USA_clues_to_escape_the_depression
@@ -342,7 +358,7 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_USA_flatly_and_equally
 					completion_reward = {
-				
+						set_country_flag = TR_USA_the_route
 					}
 				}
 				focus = {#三位一体の否定
@@ -382,7 +398,7 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_USA_flatly_and_equally
 					completion_reward = {
-				
+						set_country_flag = TR_USA_irc_route
 					}
 				}
 				focus = {#アメリカは誰のためにあるのか
@@ -404,7 +420,6 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_USA_resist_the_white
 					completion_reward = {
-				
 					}
 				}
 		## RIGHT-WINGS ##
@@ -420,7 +435,7 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_USA_1936_presidential_election
 				completion_reward = {
-			
+					set_country_flag = TR_USA_right_route
 				}
 			}
 			# Confederation states of America #
@@ -439,7 +454,7 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_USA_the_old_way
 					completion_reward = {
-				
+						set_country_flag = TR_USA_south_route
 					}
 				}
 				focus = {#黒人への迫害
@@ -466,11 +481,19 @@ focus_tree = {
 					mutually_exclusive = {
 						focus = TR_USA_hostility_with_KKK
 					}
+					available = {
+						hidden_trigger = {
+							always = no
+						}
+						custom_trigger_tooltip = {
+							tooltip = TR_focus_nosupport
+						}
+					}
 					x = 1
 					y = 1
 					relative_position_id = TR_USA_persecution_of_blacks
 					completion_reward = {
-				
+						set_country_flag = TR_USA_kkk_route
 					}
 				}
 				focus = {#White Anglo-Saxson Protestant
@@ -508,7 +531,7 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_USA_persecution_of_blacks
 					completion_reward = {
-				
+						set_country_flag = TR_USA_csa_route
 					}
 				}
 				focus = {#南部諸州への接触
@@ -529,7 +552,6 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_USA_hostility_with_KKK
 					completion_reward = {
-				
 					}
 				}
 			# American Republic #
@@ -548,7 +570,6 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_USA_the_old_way
 					completion_reward = {
-				
 					}
 				}
 				focus = {#政権を維持
@@ -565,7 +586,7 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_USA_accept_partial_socialism
 					completion_reward = {
-				
+						set_country_flag = TR_USA_west_route
 					}
 				}
 				focus = {#国家雇用政策
@@ -614,11 +635,19 @@ focus_tree = {
 					mutually_exclusive = {
 						focus = TR_USA_hold_on_to_power
 					}
+					available = {
+						hidden_trigger = {
+							always = no
+						}
+						custom_trigger_tooltip = {
+							tooltip = TR_focus_nosupport
+						}
+					}
 					x = 1
 					y = 1
 					relative_position_id = TR_USA_accept_partial_socialism
 					completion_reward = {
-				
+						set_country_flag = TR_USA_military_route
 					}
 				}
 				focus = {#自由の戦士

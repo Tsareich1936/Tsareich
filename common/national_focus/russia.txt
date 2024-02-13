@@ -1694,9 +1694,6 @@ focus_tree = {
 			focus = RUS_advance_navy
 			focus = RUS_indp_army
 		}
-		prerequisite = {
-			focus = RUS_advance_navy
-		}
 		x = 0
 		y = 1
 		relative_position_id = RUS_advance_navy
