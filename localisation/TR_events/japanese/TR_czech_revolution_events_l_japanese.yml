@@ -1,22 +1,39 @@
 ﻿l_japanese:
  TR_czech_revolution.1.t: "プラハ暴動"
+<<<<<<< Updated upstream
  TR_czech_revolution.2.d: "我々の政策に反対する労働者による暴動が発生した。当初プラハに限られていた暴動は、今や瞬く間に全土に波及し、鎮圧部隊でも対処が困難になっている。軍隊を動員し強硬的に終わらせるのも手だが、これが革命に発展してしまう可能性がある。彼らの要求を聞き入れるべきだろうか？"
+=======
+ TR_czech_revolution.1.d: "我々の政策に反対する労働者による暴動が発生した。当初プラハに限られていた暴動は瞬く間に全土に波及し、今や鎮圧部隊でも対処が困難な状況になっている。軍隊を動員し強硬的に終わらせるのも手だが、暴動を更に刺激させ革命に発展してしまう可能性がある。彼らの要求を聞き入れるべきだろうか？"
+>>>>>>> Stashed changes
  TR_czech_revolution.1.a: "軍隊を動員せよ"
  TR_czech_revolution.1.b: "彼らの要求を聞いてみよう"
 
 # 要求
  TR_czech_revolution.2.t: "要求-自由選挙"
+<<<<<<< Updated upstream
  TR_czech_revolution.2.d: "暴動を起こした民衆により選ばれた代表者は、まず我々に対して民主主義的な選挙の実施を要求した。"
+=======
+ TR_czech_revolution.2.d: "暴動を起こした民衆により選ばれた代表者は、まず我々に対して民主的な選挙の実施を要求した。"
+>>>>>>> Stashed changes
  TR_czech_revolution.2.a: "選挙権を制限するならば..."
  TR_czech_revolution.2.b: "権力を明け渡すつもりはない"
 
  TR_czech_revolution.3.t: "要求-財閥"
+<<<<<<< Updated upstream
  TR_czech_revolution.2.d: "代表者は、労働者の自由を侵害しているとして財閥の解体を求めた。"
  TR_czech_revolution.3.a: "財閥への支援を打ち切ろう"
  TR_czech_revolution.3.b: "財閥は我々の生命線だ"
 
  TR_czech_revolution.4.t: "要求-政治犯の釈放"
  TR_czech_revolution.4.d: "そして、最後の要求として政治犯の釈放を求めた。"
+=======
+ TR_czech_revolution.3.d: "更に代表者は財閥の解体を求めた。"
+ TR_czech_revolution.3.a: "解体は難しいが、財閥への支援を打ち切ろう"
+ TR_czech_revolution.3.b: "財閥は我々の生命線だ"
+
+ TR_czech_revolution.4.t: "要求-政治犯の釈放"
+ TR_czech_revolution.4.d: "そして、最後の要求として我々の収容所に収監されている政治犯の釈放を求めた。"
+>>>>>>> Stashed changes
  TR_czech_revolution.4.a: "仕方あるまい..."
  TR_czech_revolution.4.b: "奴らはテロリストだ"
 
@@ -29,12 +46,53 @@
 
 # 鎮圧結果
  TR_czech_revolution.7.t: "鎮圧成功"
+ TR_czech_revolution.7.d: "我々の忠実な軍隊は暴動の鎮圧に成功した。これにより数千人の反乱分子が拘束され、特に過激な行動を取った者達に対しては厳罰が下された。"
  TR_czech_revolution.7.a: "素晴らしい"
 
  TR_czech_revolution.8.t: "鎮圧失敗"
+ TR_czech_revolution.8.d: "鎮圧に向かった軍隊は数千の民間人を前に発砲することができず暴徒に圧倒されてしまった。加えて一部の軍隊は我々から離反しており、秩序の崩壊は目前だ。"
  TR_czech_revolution.8.a: "なんということだ"
 
+<<<<<<< Updated upstream
 # ドイツ側
  TR_czech_revolution.9.t: "チェコの共産主義者が保護を求める"
  TR_czech_revolution.9.a: "対等な同盟国であるべきだ"
  TR_czech_revolution.9.b: "自治共和国として取り込もう"
+=======
+# チェコ内戦
+ TR_czech_revolution.9.t: "チェコ内戦"
+ TR_czech_revolution.9.d: "暴動の加わった労働者や兵士はプラハにてチェコ革命戦線を組織し、戦闘が各地で始まりつつある。チェコは内戦状態となってしまった。"
+ TR_czech_revolution.9.a: "我々は抵抗する"
+
+# 共産勢力勝利
+ TR_czech_revolution.10.t: "内戦終結"
+ TR_czech_revolution.10.a: "素晴らしい"
+
+# 保守勢力勝利
+ TR_czech_revolution.11.t: "内戦終結"
+ TR_czech_revolution.11.a: "素晴らしい"
+
+# フランス側
+ TR_czech_revolution.12.t: "チェコが保護を求める"
+ TR_czech_revolution.12.d: "革命に成功したチェコ新政府はインターナショナルへの加盟を申請し、無事に承認された。"
+ TR_czech_revolution.12.a: "インターナショナルへようこそ"
+
+# ドイツ側
+  # 内戦への介入
+ TR_czech_revolution.13.t: "チェコで革命が発生"
+ TR_czech_revolution.13.d: "プラハにおいて発生した暴動は遂に革命に発展し、我々の勢力を拡大する好機が訪れた。"
+ TR_czech_revolution.13.a: "武器を送ろう"
+ TR_czech_revolution.13.b: "チェコ人に構う余裕はない"
+
+ # チェコの運命
+ TR_czech_revolution.14.t: "チェコの運命"
+ TR_czech_revolution.14.d: "革命への協力の見返りとして、新しいチェコ革命政府を我々の支配下に置くことができるだろう。"
+ TR_czech_revolution.14.a: "対等な同盟国であるべきだ"
+ TR_czech_revolution.14.b: "自治共和国として取り込もう"
+
+ # 内戦失敗
+ TR_czech_revolution.15.t: "チェコ革命の失敗"
+ TR_czech_revolution.15.d: "労働者の奮闘も空しく革命は失敗に終わってしまった。"
+ TR_czech_revolution.15.a: "残念だ"
+ TR_czech_revolution.15.b: "まだ諦めてはならない"
+>>>>>>> Stashed changes

@@ -260,4 +260,65 @@ on_actions = {
 			}
 		}
 	}
+<<<<<<< Updated upstream
+=======
+	on_daily_JAP = {
+		effect = {
+			if = {
+				limit = {
+					has_war_with_major = yes
+					surrender_progress > 0.01
+					not = {
+						or = {
+							has_ideology = anarchism
+							has_ideology = animism
+						}
+					}
+				}
+				activate_targeted_decision = {
+					target = JAP
+					decision = JAP_lack_food
+				}
+			}
+		}
+	}
+	on_daily_JAP = {
+		effect = {
+			if = {
+				limit = {
+					has_war = yes
+				}
+			    set_country_flag = TR_japan.wer
+			}
+		}
+	}
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = CZE
+						has_government = conservatism
+					}
+					original_tag = CZE
+					has_government = communism
+				}
+				country_event = { id = TR_czech_revolution.10 }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = CZE
+						has_government = communism
+					}
+					original_tag = CZE
+					has_government = conservatism
+				}
+				country_event = { id = TR_czech_revolution.11 }
+			}
+		}
+	}
+>>>>>>> Stashed changes
 }

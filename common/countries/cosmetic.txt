@@ -26,7 +26,10 @@ ARM_puppet_PER = {
 	color_ui = rgb { 94 0 77 }
 }
 
-
+CZE_communism_government = {
+	color = rgb { 135 48 48 }
+	color_ui = rgb { 135 48 48 }
+}
 CZE_communism = {
 	color = rgb { 135 48 48 }
 	color_ui = rgb { 135 48 48 }
