@@ -1359,14 +1359,14 @@ focus_tree = {
 					factor = 4000
 				}
 			available = {
-					has_global_flag = czech_revolution
-					NOT = {
-						has_global_flag = czech_revolution_failed
-					}
+				has_country_flag = TR_czech_revolution_ger
+				NOT = {
+					has_global_flag = TR_czech_revolution_end_conservatism
 				}
+			}
 			completion_reward = {
 					country_event = {
-							id = TR_czech_revolution.10
+							id = TR_czech_revolution.14
 							days = 1
 						}
 				}
