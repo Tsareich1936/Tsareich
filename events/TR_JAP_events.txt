@@ -627,7 +627,7 @@ country_event = {                    #　国家保護法
 		add_political_power = 100
 		add_stability = 0.1
 		ai_chance = {
-			base = 99
+			base = 100
 		}
 	}
 	option = {                         ## 否決
@@ -635,7 +635,7 @@ country_event = {                    #　国家保護法
 		add_political_power = -100
 		add_stability = -0.3
 		ai_chance = {
-			base = 1
+			base = 0
 		}
 		hidden_effect = {
 			JAP = {
@@ -2637,5 +2637,31 @@ country_event = {
 			}
 		}
 
+	}
+}
+
+country_event = {
+	id = TR_japan.95
+	is_triggered_only = yes
+	title = TR_japan.95.t
+	desc = TR_japan.95.d
+	option = {
+		name = TR_japan.95.a
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+	option = {
+		name = TR_japan.95.b
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+			}
+		}
 	}
 }
