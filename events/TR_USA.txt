@@ -892,6 +892,11 @@ add_namespace = TR_usa_civil_war_legacy
 		immediate = {
 			hidden_effect = {
 				FGA = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 10000
+						producer = THIS
+					}
 					set_cosmetic_tag = USA_USA
 					load_focus_tree = generic_focus
 					division_template = {
@@ -930,6 +935,11 @@ add_namespace = TR_usa_civil_war_legacy
 					}
 				}
 				CSA = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 10000
+						producer = THIS
+					}
 					load_focus_tree = generic_focus
 					TR_USA_coup = yes
 					division_template = {
@@ -1011,6 +1021,7 @@ add_namespace = TR_usa_civil_war_legacy
 					}
 				}
 				AMR = {
+					
 					FGA = {
 						every_core_state = {
 							add_core_of = AMR
@@ -1043,6 +1054,11 @@ add_namespace = TR_usa_civil_war_legacy
 							}
 						}
 					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 10000
+						producer = THIS
+					}
 				}
 			}
 			USA = {
@@ -1063,24 +1079,26 @@ add_namespace = TR_usa_civil_war_legacy
 			}
 			AMR = {
 				TR_USA_coup = yes
-			}
-			every_owned_state = {
-				if = {
-					limit = {
-						check_variable = {
-							FGA.num_armies < 80
-						}
-					}
-					create_unit = {
-						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-						owner = USA
-						count = 1
-					}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = THIS
 				}
 			}
-			hidden_effect = {
-				AMR = {
-					TR_USA_coup = yes
+			FGA = {
+				every_owned_state = {
+					if = {
+						limit = {
+							check_variable = {
+								FGA.num_armies < 80
+							}
+						}
+						create_unit = {
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+							owner = FGA
+							count = 1
+						}
+					}
 				}
 			}
 		}
@@ -1165,6 +1183,14 @@ add_namespace = TR_usa_civil_war_legacy
 				FGA = {
 					TR_USA_coup = yes
 				}
+				AMR = {
+					TR_USA_coup = yes
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 10000
+						producer = THIS
+					}
+				}
 			}
 		}
 	}
@@ -1203,24 +1229,29 @@ add_namespace = TR_usa_civil_war_legacy
 					if = {
 						limit = {
 							check_variable = {
-								DST.num_armies < 15
+								DST.num_armies < 20
 							}
 						}
 						create_unit = {
 							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-							owner = ADR
+							owner = DST
 							count = 15
 						}
 					}
 				}
-				
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = THIS
+				}
+				DST = {
+					TR_USA_coup = yes
+				}
 			}
 		}
 		option = {
 			name = TR_usa_civil_war.3.a
-			DST = {
-				TR_USA_coup = yes
-			}
+			
 		}
 	}
 	country_event = {#北部の共産主義者たちが蜂起
@@ -1271,13 +1302,19 @@ add_namespace = TR_usa_civil_war_legacy
 					id = TR_usa_civil_war.5
 					days = 5
 				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = THIS
+				}
+				ADR = {
+					TR_USA_coup = yes
+				}
 			}
 		}
 		option = {
 			name = TR_usa_civil_war.4.a
-			ADR = {
-				TR_USA_coup = yes
-			}
+			
 		}
 	}
 	country_event = {#先住民が蜂起
@@ -1310,23 +1347,29 @@ add_namespace = TR_usa_civil_war_legacy
 					if = {
 						limit = {
 							check_variable = {
-								IRC.num_armies < 15
+								IRC.num_armies < 20
 							}
 						}
 						create_unit = {
 							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-							owner = ADR
+							owner = IRC
 							count = 15
 						}
 					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = THIS
+				}
+				IRC = {
+					TR_USA_coup = yes
 				}
 			}
 		}
 		option = {
 			name = TR_usa_civil_war.5.a
-			IRC = {
-				TR_USA_coup = yes
-			}
+			
 		}
 	}
 	country_event = {#黒人が蜂起
@@ -1366,22 +1409,28 @@ add_namespace = TR_usa_civil_war_legacy
 					if = {
 						limit = {
 							check_variable = {
-								TXS.num_armies < 15
+								TXS.num_armies < 20
 							}
 						}
 						create_unit = {
 							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-							owner = ADR
+							owner = TXS
 							count = 15
 						}
 					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = THIS
+				}
+				TXS = {
+					TR_USA_coup = yes
 				}
 			}
 		}
 		option = {
 			name = TR_usa_civil_war.5.a
-			IRC = {
-				TR_USA_coup = yes
-			}
+			
 		}
 	}

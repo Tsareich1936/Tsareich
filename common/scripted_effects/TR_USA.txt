@@ -10,6 +10,7 @@ TR_USA_coup = {
 				tag = AMG
 				tag = TXS
 				tag = DST
+				tag = IRC
 			}
 		}
 		add_to_array = {
