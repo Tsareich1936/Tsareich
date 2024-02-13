@@ -1,0 +1,39 @@
+ENG_historical_plan = {
+	name = "United States historical plan"
+	desc = "Historical behavior for United States"
+
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		TR_USA_the_new_way
+		TR_USA_clues_to_escape_the_depression
+		TR_USA_big_government
+		TR_USA_welfare_oriented_policy
+		TR_USA_realisation_of_socialist_state
+	}
+
+	research = {
+		
+	}
+
+	ideas = {
+		home_defence_spirit = 1
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

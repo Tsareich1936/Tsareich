@@ -642,6 +642,7 @@ add_namespace = TR_usa_civil_war_legacy
 						months = 2
 						days = 17
 					}
+					
 				}
 			}
 		}
@@ -729,12 +730,10 @@ add_namespace = TR_usa_civil_war_legacy
 			trigger = {
 				NOT = {
 					OR = {
-						has_completed_focus = TR_USA_contact_with_southern_states
-						has_completed_focus = TR_USA_WASP
+						has_country_flag = TR_USA_south_route
 					}
 				}
 			}
-			set_country_flag = TR_USA_soc_route
 			USA = {
 				every_core_state = {
 					add_core_of = CSA
@@ -759,8 +758,7 @@ add_namespace = TR_usa_civil_war_legacy
 			name = TR_usa_election.5.b
 			trigger = {
 				OR = {
-					has_completed_focus = TR_USA_contact_with_southern_states
-					has_completed_focus = TR_USA_WASP
+					has_country_flag = TR_USA_south_route
 				}
 			}
 			set_politics = {
@@ -893,45 +891,6 @@ add_namespace = TR_usa_civil_war_legacy
 		is_triggered_only = yes
 		immediate = {
 			hidden_effect = {
-				CSA = {
-					load_focus_tree = generic_focus
-					declare_war_on = {
-						target = FGA
-						type = civil_war
-					}
-					add_civil_war_target = FGA
-					division_template = {
-						name = "Milita Division"
-						regiments = {
-							infantry = { x = 0 y = 0  }
-							infantry = { x = 0 y = 1  }
-							infantry = { x = 0 y = 2  }
-							infantry = { x = 0 y = 3  }
-						}
-						
-					}
-					every_owned_state = {
-						if = {
-							limit = {
-								check_variable = {
-									CSA.num_armies < 55
-								}
-							}
-							create_unit = {
-								division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-								owner = CSA
-								count = 5
-							}
-						}
-						
-					}
-					set_rule = {
-						can_join_factions = no
-					}
-				}
-				
-				set_global_flag = TR_USA_civil_war
-				news_event = TR_usa_civil_war.1
 				FGA = {
 					set_cosmetic_tag = USA_USA
 					load_focus_tree = generic_focus
@@ -965,7 +924,49 @@ add_namespace = TR_usa_civil_war_legacy
 						id = TR_usa_civil_war.2
 						months = 6
 					}
+					country_event = {
+						id = TR_usa_civil_war.4
+						months = 12
+					}
 				}
+				CSA = {
+					load_focus_tree = generic_focus
+					TR_USA_coup = yes
+					division_template = {
+						name = "Milita Division"
+						regiments = {
+							infantry = { x = 0 y = 0  }
+							infantry = { x = 0 y = 1  }
+							infantry = { x = 0 y = 2  }
+							infantry = { x = 0 y = 3  }
+						}
+						
+					}
+					every_owned_state = {
+						if = {
+							limit = {
+								check_variable = {
+									CSA.num_armies < 55
+								}
+							}
+							create_unit = {
+								division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+								owner = CSA
+								count = 5
+							}
+						}
+						
+					}
+					set_rule = {
+						can_join_factions = no
+					}
+					country_event = {
+						id = TR_usa_civil_war.6
+						months = 9
+					}
+				}
+				set_global_flag = TR_USA_civil_war
+				news_event = TR_usa_civil_war.1
 			}
 		}
 		option = {
@@ -1001,46 +1002,67 @@ add_namespace = TR_usa_civil_war_legacy
 	
 		is_triggered_only = yes
 		immediate = {
-			AMR = {
-				FGA = {
-					every_core_state = {
-						add_core_of = AMR
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_country_flag = TR_USA_west_route
+						}
 					}
 				}
-				transfer_state = 378
-				transfer_state = 379
-				transfer_state = 385
-				transfer_state = 386
-				transfer_state = 1031
-				transfer_state = 1032
-				transfer_state = 1033
-				set_capital = {
-					state = 1031
-				}
-				set_rule = {
-					can_join_factions = no
-				}
-				every_owned_state = {
-					if = {
-						limit = {
-							check_variable = {
-								AMR.num_armies < 40
+				AMR = {
+					FGA = {
+						every_core_state = {
+							add_core_of = AMR
+						}
+					}
+					transfer_state = 378
+					transfer_state = 379
+					transfer_state = 385
+					transfer_state = 386
+					transfer_state = 1031
+					transfer_state = 1032
+					transfer_state = 1033
+					set_capital = {
+						state = 1031
+					}
+					set_rule = {
+						can_join_factions = no
+					}
+					every_owned_state = {
+						if = {
+							limit = {
+								check_variable = {
+									AMR.num_armies < 40
+								}
+							}
+							create_unit = {
+								division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+								owner = AMR
+								count = 6
 							}
 						}
-						create_unit = {
-							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
-							owner = AMR
-							count = 6
-						}
 					}
+				}
+			}
+			USA = {
+				country_event = {
+					days = 7
+					id = TR_usa_civil_war.3
 				}
 			}
 		}
 		option = {
 			name = TR_usa_civil_war.2.a
-			declare_war_on = {
-				target = AMR
-				type = civil_war
+			trigger = {
+				NOT = {
+					OR = {
+						has_country_flag = TR_USA_west_route
+					}
+				}
+			}
+			AMR = {
+				TR_USA_coup = yes
 			}
 			every_owned_state = {
 				if = {
@@ -1056,15 +1078,310 @@ add_namespace = TR_usa_civil_war_legacy
 					}
 				}
 			}
-			add_civil_war_target = AMR
 			hidden_effect = {
-				CSA = {
-					declare_war_on = {
-						target = AMR
-						type = civil_war
-					}
-					add_civil_war_target = AMR
+				AMR = {
+					TR_USA_coup = yes
 				}
+			}
+		}
+		option = {
+			name = TR_usa_civil_war.2.b
+			trigger = {
+				has_country_flag = TR_USA_west_route
+			}
+			USA = {
+				set_country_flag = USA_republic_flag
+				clr_country_flag = USA_federation_flag
+				every_core_state = {
+					add_core_of = FGA
+				}
+			}
+			AMR = {
+				every_owned_state = {
+					limit = {
+						NOT = {
+							OR = {
+								state = 378
+								state = 379
+								state = 385
+								state = 386
+								state = 1031
+								state = 1032
+								state = 1033
+							}
+						}
+					}
+					transfer_state_to = FGA
+				}
+				every_controlled_state = {
+					limit = {
+						NOT = {
+							OR = {
+								state = 378
+								state = 379
+								state = 385
+								state = 386
+								state = 1031
+								state = 1032
+								state = 1033
+							}
+						}
+					}
+					set_state_controller_to = FGA
+				}
+				transfer_units_fraction = {
+					target = FGA
+					size = 0.8
+				}
+				set_capital = {
+					state = 1031
+				}
+				FGA = {
+					set_rule = {
+						can_join_factions = no
+					}
+				}
+				every_owned_state = {
+					if = {
+						limit = {
+							check_variable = {
+								AMR.num_armies < 40
+							}
+						}
+						create_unit = {
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+							owner = AMR
+							count = 6
+						}
+					}
+				}
+				set_cosmetic_tag = AMR
+				set_politics = {
+					ruling_party = democratic
+				}
+				set_popularities = {
+					democratic = 100
+				}
+				FGA = {
+					TR_USA_coup = yes
+				}
+			}
+		}
+	}
+	country_event = {#デゼラトが蜂起
+		id = TR_usa_civil_war.3
+		title = TR_usa_civil_war.3.t
+		desc = TR_usa_civil_war.3.d
+	
+		is_triggered_only = yes
+		immediate = {
+			
+			DST = {
+				USA = {
+					every_core_state = {
+						add_core_of = DST
+					}
+				}
+				transfer_state = 380
+				set_rule = {
+					can_join_factions = no
+				}
+				set_capital = {
+					state = 380
+				}
+				division_template = {
+					name = "Milita Division"
+					regiments = {
+						infantry = { x = 0 y = 0  }
+						infantry = { x = 0 y = 1  }
+						infantry = { x = 0 y = 2  }
+						infantry = { x = 0 y = 3  }
+					}
+					
+				}
+				every_owned_state = {
+					if = {
+						limit = {
+							check_variable = {
+								DST.num_armies < 15
+							}
+						}
+						create_unit = {
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+							owner = ADR
+							count = 15
+						}
+					}
+				}
+				
+			}
+		}
+		option = {
+			name = TR_usa_civil_war.3.a
+			DST = {
+				TR_USA_coup = yes
+			}
+		}
+	}
+	country_event = {#北部の共産主義者たちが蜂起
+		id = TR_usa_civil_war.4
+		title = TR_usa_civil_war.4.t
+		desc = TR_usa_civil_war.4.d
+	
+		is_triggered_only = yes
+		immediate = {
+			ADR = {
+				USA = {
+					every_core_state = {
+						add_core_of = ADR
+					}
+				}
+				transfer_state = 261
+				transfer_state = 358
+				transfer_state = 391
+				transfer_state = 392
+				transfer_state = 392
+				transfer_state = 394
+				transfer_state = 395
+				transfer_state = 396
+				transfer_state = 1020
+				transfer_state = 1038
+				transfer_state = 1039
+				set_capital = {
+					state = 394
+				}
+				set_rule = {
+					can_join_factions = no
+				}
+				every_owned_state = {
+					if = {
+						limit = {
+							check_variable = {
+								ADR.num_armies < 40
+							}
+						}
+						create_unit = {
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+							owner = ADR
+							count = 6
+						}
+					}
+				}
+				country_event = {
+					id = TR_usa_civil_war.5
+					days = 5
+				}
+			}
+		}
+		option = {
+			name = TR_usa_civil_war.4.a
+			ADR = {
+				TR_USA_coup = yes
+			}
+		}
+	}
+	country_event = {#先住民が蜂起
+		id = TR_usa_civil_war.5
+		title = TR_usa_civil_war.5.t
+		desc = TR_usa_civil_war.5.d
+	
+		is_triggered_only = yes
+		immediate = {
+			
+			IRC = {
+				transfer_state = 1038
+				set_rule = {
+					can_join_factions = no
+				}
+				set_capital = {
+					state = 1038
+				}
+				division_template = {
+					name = "Milita Division"
+					regiments = {
+						infantry = { x = 0 y = 0  }
+						infantry = { x = 0 y = 1  }
+						infantry = { x = 0 y = 2  }
+						infantry = { x = 0 y = 3  }
+					}
+					
+				}
+				every_owned_state = {
+					if = {
+						limit = {
+							check_variable = {
+								IRC.num_armies < 15
+							}
+						}
+						create_unit = {
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+							owner = ADR
+							count = 15
+						}
+					}
+				}
+			}
+		}
+		option = {
+			name = TR_usa_civil_war.5.a
+			IRC = {
+				TR_USA_coup = yes
+			}
+		}
+	}
+	country_event = {#黒人が蜂起
+		id = TR_usa_civil_war.6
+		title = TR_usa_civil_war.6.t
+		desc = TR_usa_civil_war.6.d
+	
+		is_triggered_only = yes
+		immediate = {
+			
+			TXS = {
+				375	= {
+					add_core_of = TXS
+				}
+				1021 = {
+					add_core_of = TXS
+				}
+				transfer_state = 375
+				transfer_state = 1021
+				set_rule = {
+					can_join_factions = no
+				}
+				set_capital = {
+					state = 375
+				}
+				division_template = {
+					name = "Milita Division"
+					regiments = {
+						infantry = { x = 0 y = 0  }
+						infantry = { x = 0 y = 1  }
+						infantry = { x = 0 y = 2  }
+						infantry = { x = 0 y = 3  }
+					}
+					
+				}
+				every_owned_state = {
+					if = {
+						limit = {
+							check_variable = {
+								TXS.num_armies < 15
+							}
+						}
+						create_unit = {
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+							owner = ADR
+							count = 15
+						}
+					}
+				}
+			}
+		}
+		option = {
+			name = TR_usa_civil_war.5.a
+			IRC = {
+				TR_USA_coup = yes
 			}
 		}
 	}
