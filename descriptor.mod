@@ -1,4 +1,4 @@
-version="0.0.1"
+version="ALPHA-0.0.1"
 tags={
 	"Alternative History"
 }

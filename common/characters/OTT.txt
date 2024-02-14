@@ -12,6 +12,7 @@ characters = {
 		}
 	}
 }
+
 #SRI
 characters = {
 	SRI_dAnnunzio = {

@@ -1870,7 +1870,7 @@ JAP_NAVAL_PLAN_3 = {
 		icon = generic_construction
 		allowed = { always = no }
 		modifier = {
-			civilian_factory_use = 20
+			civilian_factory_use = 10
 			#dockyard_use = 10
 		}
 		ai_will_do = {

@@ -29,9 +29,9 @@ JAP_naval_bomber = {
 		}
 		allowed_modules = {
 			torpedo_mounting
-			lmg_defense_turret
-			bomb_locks
-			engine_2_2x
+			engine_2_1x
+			drop_tanks
+			fuel_tanks_small
 		}
 	}
 	naval_bomber_2 = {
@@ -52,7 +52,8 @@ JAP_naval_bomber = {
 			torpedo_mounting
 			lmg_defense_turret
 			bomb_locks
-			engine_2_2x
+			engine_2_1x
+			engine_3_1x
 		}
 	}
 
@@ -76,6 +77,9 @@ JAP_naval_bomber = {
 			torpedo_mounting
 			bomb_locks
 			engine_3_1x
+			engine_4_1x
+			fuel_tanks_small
+			drop_tanks
 		}
 	}
 }
@@ -125,7 +129,6 @@ JAP_cv_fighter = {
 			light_mg_4x
 			aircraft_cannon_1_1x
 			engine_2_1x
-			armor_plate_small
 		}
 	}
 
@@ -149,8 +152,8 @@ JAP_cv_fighter = {
 		}
 
 		allowed_modules = {
-			light_mg_4x
-			aircraft_cannon_1_2x
+			
+			heavy_mg_4x
 			engine_3_1x
 		}
 	}
@@ -175,10 +178,10 @@ JAP_cv_fighter = {
 		}
 
 		allowed_modules = { 
-			aircraft_cannon_1_2x
+			
 			heavy_mg_4x
 			engine_4_1x
-			armor_plate_small
+			
 		}
 	}
 	jet_cv_fighter_default = {
@@ -201,10 +204,10 @@ JAP_cv_fighter = {
 		}
 
 		allowed_modules = { 
-			aircraft_cannon_2_2x
-			aircraft_cannon_2_2x
+			
+			heavy_mg_4x
 			jet_engine_2x
-			armor_plate_small
+			
 		}
 	}
 }
@@ -251,9 +254,9 @@ JAP_fighter = {
 
 		allowed_modules = {
 			light_mg_4x
-			aircraft_cannon_1_1x
+			
 			engine_2_1x
-			armor_plate_small
+			
 		}
 	}
 
@@ -277,8 +280,10 @@ JAP_fighter = {
 		}
 
 		allowed_modules = {
-			light_mg_4x
-			aircraft_cannon_1_2x
+			heavy_mg_4x
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+			drop_tanks
 			engine_3_1x
 		}
 	}
@@ -303,11 +308,12 @@ JAP_fighter = {
 			}
 		}
 
-		allowed_modules = { 
-			aircraft_cannon_1_2x
+		allowed_modules = {
 			heavy_mg_4x
-			engine_4_1x
 			armor_plate_small
+			self_sealing_fuel_tanks_small
+			drop_tanks
+			engine_4_1x
 		}
 	}
 	jet_cv_fighter_default = {
@@ -329,11 +335,12 @@ JAP_fighter = {
 			}
 		}
 
-		allowed_modules = { 
-			aircraft_cannon_2_2x
-			aircraft_cannon_2_2x
-			jet_engine_2x
+		allowed_modules = {
+			heavy_mg_4x
 			armor_plate_small
+			self_sealing_fuel_tanks_small
+			drop_tanks
+			jet_engine_2x
 		}
 	}
 }
@@ -376,9 +383,9 @@ JAP_cv_naval_bomber = {
 		}
 		allowed_modules = {
 			torpedo_mounting
-			lmg_defense_turret
-			bomb_locks
-			engine_2_2x
+			fuel_tanks_small
+			drop_tanks
+			engine_2_1x
 		}
 	}
 	cv_naval_bomber_2 = {
@@ -397,9 +404,9 @@ JAP_cv_naval_bomber = {
 		}
 		allowed_modules = {
 			torpedo_mounting
-			lmg_defense_turret
-			bomb_locks
-			engine_2_2x
+			fuel_tanks_small
+			drop_tanks
+			engine_3_1x
 		}
 	}
 
@@ -421,8 +428,10 @@ JAP_cv_naval_bomber = {
 
 		allowed_modules = {
 			torpedo_mounting
-			bomb_locks
+			fuel_tanks_small
+			drop_tanks
 			engine_3_1x
+			engine_4_1x
 		}
 	}
 }
@@ -472,6 +481,7 @@ JAP_tactical_bomber = {
 		allowed_modules = {
 			medium_bomb_bay
 			engine_2_2x
+			drop_tanks
 		}
 	}
 	tac_bomber_2_default = {
@@ -496,9 +506,9 @@ JAP_tactical_bomber = {
 
 		allowed_modules = {
 			medium_bomb_bay
-			bomb_locks
 			engine_3_2x
-			lmg_defense_turret_2x
+			drop_tanks
+			armor_plate_medium
 		}
 	}
 
@@ -520,13 +530,11 @@ JAP_tactical_bomber = {
 			}
 			
 		}
-
 		allowed_modules = {
 			medium_bomb_bay
-			bomb_locks
-			torpedo_mounting
 			engine_4_2x
-			lmg_defense_turret_2x
+			drop_tanks
+			armor_plate_medium
 		}
 	}
 	jet_tac_bomber_default = {
@@ -549,9 +557,9 @@ JAP_tactical_bomber = {
 
 		allowed_modules = {
 			medium_bomb_bay
-			bomb_locks
-			fuel_tanks_medium
 			jet_engine_2x
+			drop_tanks
+			armor_plate_medium
 		}
 	}
 }
@@ -595,7 +603,7 @@ JAP_heavy_fighter = {
 
 		allowed_modules = {
 			light_mg_4x
-			aircraft_cannon_1_2x
+			fuel_tanks_medium
 			engine_2_2x
 		}
 	}
@@ -623,7 +631,8 @@ JAP_heavy_fighter = {
 
 		allowed_modules = {
 			heavy_mg_4x
-			aircraft_cannon_1_2x
+			armor_plate_medium
+			fuel_tanks_medium
 			engine_3_2x
 		}
 	}
@@ -651,7 +660,8 @@ JAP_heavy_fighter = {
 
 		allowed_modules = {
 			heavy_mg_4x
-			aircraft_cannon_2_2x
+			armor_plate_medium
+			fuel_tanks_medium
 			engine_4_2x
 		}
 	}
@@ -698,8 +708,8 @@ JAP_strategic_bomber = {
 		allowed_modules = {
 			large_bomb_bay
 			engine_2_4x
-			lmg_defense_turret_2x
-			lmg_defense_turret
+			bomb_sights_1
+			fuel_tanks_large
 		}
 	}
 
@@ -727,8 +737,9 @@ JAP_strategic_bomber = {
 		allowed_modules = {
 			large_bomb_bay
 			engine_3_4x
-			hmg_defense_turret_2x
-			lmg_defense_turret_2x
+			radio_navigation_2
+			fuel_tanks_large
+			bomb_sights_2
 		}
 	}
 
@@ -757,9 +768,260 @@ JAP_strategic_bomber = {
 		allowed_modules = {
 			large_bomb_bay
 			engine_4_4x
-			cannon_defense_turret_2x
-			hmg_defense_turret_2x
+			fuel_tanks_large
+			armor_plate_large
+			radio_navigation_2
+			bomb_sights_2
 		}
 	}
 }
 
+JAP_cas = {
+	category = air
+
+	blocked_for = {  }
+
+	available_for = {JAP}
+
+	roles = {
+		air_cas
+	}
+
+	priority = {
+		factor = 1000
+		modifier = {
+			has_navy_size = {
+				unit = carrier
+ 	  			size < 1
+			}
+			factor = 0
+		}
+	}
+
+
+	basic_cas_default = {
+		priority = {
+			factor = 100
+		}
+
+		target_variant = {
+			match_value = 2000
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty	
+			}
+		}
+
+		allowed_modules = {
+			small_bomb_bay
+			engine_2_1x
+		}
+	}
+
+	improved_cas_default = {
+		priority = {
+			factor = 10
+		}
+
+		target_variant = {
+			match_value = 3000
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = drop_tanks
+				special_type_slot_2 = dive_brakes_small
+			}
+		}
+
+		allowed_modules = {
+			small_bomb_bay
+			engine_3_1x
+			drop_tanks
+			dive_brakes_small
+		}
+	}
+
+	advanced_cas_default = {
+		priority = {
+			factor = 10
+		}
+
+		target_variant = {
+			match_value = 4000
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+				engine_type_slot = engine_4_1x
+				special_type_slot_1 = drop_tanks
+				special_type_slot_2 = dive_brakes_small
+			}
+		}
+
+		allowed_modules = {
+			small_bomb_bay
+			engine_4_1x
+			drop_tanks
+			dive_brakes_small
+		}
+	}
+	jet_cv_cas_default = {
+		priority = {
+			factor = 10
+		}
+
+		target_variant = {
+			match_value = 4000
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+				engine_type_slot = jet_engine_2x
+				special_type_slot_1 = drop_tanks
+				special_type_slot_2 = dive_brakes_small
+
+			}
+		}
+
+		allowed_modules = {
+			small_bomb_bay
+			jet_engine_1x
+			drop_tanks
+			dive_brakes_small
+		}
+	}
+}
+
+JAP_cv_cas = {
+	category = air
+
+	blocked_for = {  }
+
+	available_for = {JAP}
+
+	roles = {
+		air_cv_cas
+	}
+
+	priority = {
+		factor = 1000
+		modifier = {
+			has_navy_size = {
+				unit = carrier
+ 	  			size < 1
+			}
+			factor = 0
+		}
+	}
+
+
+	basic_cv_cas_default = {
+		priority = {
+			factor = 100
+		}
+
+		target_variant = {
+			match_value = 2000
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty	
+			}
+		}
+
+		allowed_modules = {
+			small_bomb_bay
+			engine_2_1x
+		}
+	}
+
+	improved_cv_cas_default = {
+		priority = {
+			factor = 10
+		}
+
+		target_variant = {
+			match_value = 3000
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = drop_tanks
+				special_type_slot_2 = dive_brakes_small
+			}
+		}
+
+		allowed_modules = {
+			small_bomb_bay
+			engine_3_1x
+			drop_tanks
+			dive_brakes_small
+		}
+	}
+
+	advanced_cv_cas_default = {
+		priority = {
+			factor = 10
+		}
+
+		target_variant = {
+			match_value = 4000
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+				engine_type_slot = engine_4_1x
+				special_type_slot_1 = drop_tanks
+				special_type_slot_2 = dive_brakes_small
+			}
+		}
+
+		allowed_modules = {
+			small_bomb_bay
+			engine_4_1x
+			drop_tanks
+			dive_brakes_small
+		}
+	}
+	jet_cv_cas_default = {
+		priority = {
+			factor = 10
+		}
+
+		target_variant = {
+			match_value = 4000
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+				engine_type_slot = jet_engine_2x
+				special_type_slot_1 = drop_tanks
+				special_type_slot_2 = dive_brakes_small
+
+			}
+		}
+
+		allowed_modules = {
+			small_bomb_bay
+			jet_engine_1x
+			drop_tanks
+			dive_brakes_small
+		}
+	}
+}

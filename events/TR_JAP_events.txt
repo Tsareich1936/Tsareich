@@ -19,72 +19,83 @@ country_event = {        # 19選挙
 	option = {
 		name = TR_Japan.1.a
 
+		custom_effect_tooltip = TR_japan.RikkenMinseito
 	    complete_national_focus = jap_Constitutional_Democratic_Party
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.21
+		hidden_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.21
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = socialdemocratic
+				popularity = -0.06
+			}
+			set_politics = {
+				ruling_party = democratic
+			}			
 		}
-		add_popularity = {
-			ideology = conservatism
-			popularity = -0.15
-		}
-		add_popularity = {
-			ideology = socialdemocratic
-			popularity = -0.06
-		}
-		set_politics = {
-			ruling_party = democratic
-		}
+
 		
 		ai_chance = { base = 40 }
 	}
 	option = {
 		name = TR_Japan.1.b
-
+		hidden_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = socialdemocratic
+				popularity = -0.05
+			}
+			set_politics = {
+				ruling_party = conservatism
+			}			
+		}
+		custom_effect_tooltip = TR_japan.RikkennSeiyukai
 	    complete_national_focus = jap_Rikken_Seiyukai
-		add_popularity = {
-			ideology = democratic
-			popularity = -0.1
-		}
-		add_popularity = {
-			ideology = conservatism
-			popularity = 0.15
-		}
-		add_popularity = {
-			ideology = socialdemocratic
-			popularity = -0.05
-		}
-		set_politics = {
-			ruling_party = conservatism
-		}
+
 		
 		ai_chance = { base = 40 }
 	}
 	option = {
 		name = TR_Japan.1.c
 		
+		custom_effect_tooltip = TR_japan.SyakaiTaisyu
 	    complete_national_focus = jap_Shakai_Taishuto
-		add_popularity = {
-			ideology = democratic
-			popularity = -0.12
+		hidden_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.12
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = -0.14
+			}
+			add_popularity = {
+				ideology = socialdemocratic
+				popularity = 0.26
+			}
+			set_politics = {
+				ruling_party = socialdemocratic
+			}			
 		}
-		add_popularity = {
-			ideology = conservatism
-			popularity = -0.14
-		}
-		add_popularity = {
-			ideology = socialdemocratic
-			popularity = 0.26
-		}
-		set_politics = {
-			ruling_party = socialdemocratic
-		}
+
 		
 		ai_chance = { base = 20 }
 	}
 }
 
-country_event = {  ############Toyotomi
+country_event = {  
 	id = TR_japan.2
 	title = TR_japan.2.t
 	desc = TR_japan.2.d
@@ -637,6 +648,7 @@ country_event = {                    #　国家保護法
 		ai_chance = {
 			base = 0
 		}
+		custom_effect_tooltip = TR_japan.Low
 		hidden_effect = {
 			JAP = {
 				country_event = {
@@ -658,18 +670,23 @@ country_event = {          #　　国民の不満の高まり
 		ai_chance = {
 			base = 99
 		}
-		JAP = {
-		    activate_targeted_decision = {
-				target = JAP
-				decision = JAP_KOR_WAR_PREPARE
-			}
+		custom_effect_tooltip = TR_japan_KOR_war
+		hidden_effect = {
+			JAP = {
+				activate_targeted_decision = {
+					target = JAP
+					decision = JAP_KOR_WAR_PREPARE
+				}
+			}			
 		}
+
 	}
 	option = {          ####       否
 		name = TR_japan.14.b
 		ai_chance = {
 			base = 1
 		}
+		custom_effect_tooltip = TR_japan_KOR_wat_no
 		hidden_effect = {
 			JAP = {
 				country_event = {
@@ -707,34 +724,42 @@ country_event = {        # 立憲政友会の総裁を決める
 	is_triggered_only = yes
 	option = {
 		name = TR_japan.17.a
-		retire_country_leader = yes
-		create_country_leader = {
-			name = JAP_fusanosuke_kuhara
-			picture = GFX_portrait_Fusanosuke_Kuhara
-			ideology = conservatism
-			expire = "1965.1.29"
-		}
-		JAP = {
-			country_event = {
-				id = TR_japan.13
+		custom_effect_tooltip = TR_japan.Fusanosuke
+		hidden_effect = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = JAP_fusanosuke_kuhara
+				picture = GFX_portrait_Fusanosuke_Kuhara
+				ideology = conservatism
+				expire = "1965.1.29"
 			}
+			JAP = {
+				country_event = {
+					id = TR_japan.13
+				}
+			}			
 		}
+
 
 	}
 	option = {
 		name = TR_japan.17.b
-		retire_country_leader = yes
-		create_country_leader = {
-			name = JAP_chikuhei_nakajima
-			picture = GFX_portrait_Chikuhei_Nakajima
-			ideology = conservatism
-			expire = "1949.10.29"
-		}
-		JAP = {
-			country_event = {
-				id = TR_japan.13
+		custom_effect_tooltip = TR_japan.Chikuhei
+		hidden_effect = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = JAP_chikuhei_nakajima
+				picture = GFX_portrait_Chikuhei_Nakajima
+				ideology = conservatism
+				expire = "1949.10.29"
 			}
+			JAP = {
+				country_event = {
+					id = TR_japan.13
+				}
+			}			
 		}
+
 
 	}
 }
@@ -924,38 +949,26 @@ country_event = {       #　犬養首相が死亡
 		name = TR_japan.28.a
 		kill_country_leader = yes
 
-		create_country_leader = {
-		    name = JAP_Korekiyo_Takahashi
-		    picture = GFX_portrait_Korekiyo_Takahashi
-		    ideology = conservatism
-	    }
-		add_manpower = -1
-		JAP = {
-			country_event = {
-				id = TR_japan.17
-				days = 7
+		custom_effect_tooltip = TR_japan.2.26
+		hidden_effect = {
+			create_country_leader = {
+				name = JAP_Korekiyo_Takahashi
+				picture = GFX_portrait_Korekiyo_Takahashi
+				ideology = conservatism
 			}
+			add_manpower = -1
+			JAP = {
+				country_event = {
+					id = TR_japan.17
+					days = 7
+				}
+			}			
 		}
+
 	}
 
 }
 
-country_event = {        # 公害問題
-	id = TR_japan.29
-	title = TR_japan.29.t
-	desc = TR_japan.29.d
-	is_triggered_only = yes
-	trigger = {
-		tag = JAP
-		JAP = {
-			num_of_factories > 150
-		}
-	}
-	option = {
-		name = TR_japan.29.a
-		add_ideas = JAP_pollution
-	}
-}
 
 country_event = {            # 外交方針
 	id = TR_japan.31
@@ -965,10 +978,16 @@ country_event = {            # 外交方針
 	option = {
 		name = TR_japan.31.a
 		complete_national_focus = jap_cooperation
+		ai_chance = {
+			base = 1
+		}
 	}
 	option = {
 		name = TR_japan.31.b
 		complete_national_focus = jap_unyielding
+		ai_chance = {
+			base = 4
+		}
 	}
 }
 
@@ -1058,6 +1077,7 @@ country_event = {            # 人種差別撤廃条約
 				days = 7
 			}
 		}
+		custom_effect_tooltip = TR_japan.racial.no
 		ai_chance = {
 			base = 0
 		}
@@ -1084,6 +1104,9 @@ country_event = {            # 人種差別撤廃条約 no
 	desc = TR_japan.36.d
 	option = {
 		name = TR_japan.36.a
+		hidden_effect = {
+			set_country_flag = TR_japan.racial_no
+		}
 	}
 }
 
@@ -1658,6 +1681,7 @@ country_event = { # 暴動
 	}
 	option = {   #  通常の治安維持
 		name = TR_japan.59.b
+		custom_effect_tooltip = TR_japan_com
 		hidden_effect = {
 			JAP = {
 				country_event = {
@@ -1781,60 +1805,68 @@ country_event = {   #  election score
 	is_triggered_only = yes
 	option = { # 　官僚
 		name = TR_japan.63.a
-		set_party_name = {
-			ideology = fascism
-			long_name = JAP_Innovation_Bureaucracy_long
-			name = JAP_Innovation_Bureaucracy
-		}
-		set_political_party = {
-			ideology = fascism
-			popularity = 80
-		}
-		set_politics = {
-			ruling_party = fascism
-		}
+		custom_effect_tooltip = TR_japan.bureaucracy
 		hidden_effect = {
-			JAP = {
-				retire_country_leader = yes
+			set_party_name = {
+				ideology = fascism
+				long_name = JAP_Innovation_Bureaucracy_long
+				name = JAP_Innovation_Bureaucracy
 			}
+			set_political_party = {
+				ideology = fascism
+				popularity = 80
+			}
+			set_politics = {
+				ruling_party = fascism
+			}
+			hidden_effect = {
+				JAP = {
+					retire_country_leader = yes
+				}
+			}
+			create_country_leader = {
+				name = JAP_Nobusuke_Kishi
+				picture = GFX_PORTRAIT_Nobusuke_Kishi
+				ideology = fascism_ideology
+			}
+			load_focus_tree = {
+				tree = TR_japan_bureaucracy
+				keep_completed = yes
+			}			
 		}
-		create_country_leader = {
-			name = JAP_Nobusuke_Kishi
-			picture = GFX_PORTRAIT_Nobusuke_Kishi
-			ideology = fascism_ideology
-		}
-		load_focus_tree = {
-			tree = TR_japan_bureaucracy
-			keep_completed = yes
-		}
+
 	}
 	option = { # ルクセンブルク主義
 		name = TR_japan.63.b
-		set_party_name = {
-			ideology = communism
-			long_name = JAP_socialism_party_r_long
-			name = JAP_socialism_party_r
-		}
-		set_political_party = {
-			ideology = communism
-			popularity = 80
-		}
-		set_politics = {
-			ruling_party = communism
-		}
+		custom_effect_tooltip = TR_japan.Lux
 		hidden_effect = {
-			JAP = {
-				retire_country_leader = yes
+			set_party_name = {
+				ideology = communism
+				long_name = JAP_socialism_party_r_long
+				name = JAP_socialism_party_r
 			}
+			set_political_party = {
+				ideology = communism
+				popularity = 80
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+			hidden_effect = {
+				JAP = {
+					retire_country_leader = yes
+				}
+			}
+			create_country_leader = {
+				name = JAP_Sanzo_Nosaka
+				picture = GFX_Portrait_Sanzo_Nosaka
+				ideology = luxemburgism
+			}
+			load_focus_tree = {
+				tree = japan_focus_Luxembourgism
+			}			
 		}
-		create_country_leader = {
-			name = JAP_Sanzo_Nosaka
-			picture = GFX_Portrait_Sanzo_Nosaka
-			ideology = luxemburgism
-		}
-		load_focus_tree = {
-			tree = japan_focus_Luxembourgism
-		}
+
 	}
 }
 
@@ -1901,21 +1933,26 @@ country_event = { # civil war by communist
 	is_triggered_only = yes
 	option = {
 		name = TR_japan.66.a
-		start_civil_war = {
-			ruling_party = communism
-			ideology = ROOT
-			size = 0.3
-			states = {
-				953 967 535 959 962 963 955 965 949 958 282 964 968 970 971 973 950 981 982 977 978 979 530
-			}
-			
+		custom_effect_tooltip = TR_japan.civil_war
+		hidden_effect = {
+			start_civil_war = {
+				ruling_party = communism
+				ideology = ROOT
+				size = 0.3
+				states = {
+					953 967 535 959 962 963 955 965 949 958 282 964 968 970 971 973 950 981 982 977 978 979 530
+				}
+				
+			}		
+			load_focus_tree = {
+				tree = japan_focus_communist
+			}	
 		}
+
 		hidden_effect = {
 			remove_ideas = JAP_KOR_DEFEAT
 		}
-		load_focus_tree = {
-			tree = japan_focus_communist
-		}
+
 	}
 }
 
@@ -2128,43 +2165,47 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = TR_japan.77.a
-		OTT = {
-			transfer_state = 287
-			transfer_state = 617
-			transfer_state = 618
-			transfer_state = 619
-			transfer_state = 759
-			transfer_state = 760
-		}
+		custom_effect_tooltip = TR_japan_OTT
 		hidden_effect = {
-			inherit_technology = OTT
 			OTT = {
-				create_country_leader = {
-					name = OTT_Caliph_Abdulmecid_II
-					picture = GFX_Portrait_Caliph_Abdulmecid_2
-					ideology = despotism
+				transfer_state = 287
+				transfer_state = 617
+				transfer_state = 618
+				transfer_state = 619
+				transfer_state = 759
+				transfer_state = 760
+			}
+			hidden_effect = {
+				inherit_technology = OTT
+				OTT = {
+					create_country_leader = {
+						name = OTT_Caliph_Abdulmecid_II
+						picture = GFX_Portrait_Caliph_Abdulmecid_2
+						ideology = despotism
+					}
+	
 				}
-
-			}
-			287 = {
-				add_core_of = OTT
-			}
-			617 = {
-				add_core_of = OTT
-			}
-			618 = {
-				add_core_of = OTT
-			}
-			619 = {
-				add_core_of = OTT
-			}
-			759 = {
-				add_core_of = OTT
-			}
-			760 = {
-				add_core_of = OTT
-			}
+				287 = {
+					add_core_of = OTT
+				}
+				617 = {
+					add_core_of = OTT
+				}
+				618 = {
+					add_core_of = OTT
+				}
+				619 = {
+					add_core_of = OTT
+				}
+				759 = {
+					add_core_of = OTT
+				}
+				760 = {
+					add_core_of = OTT
+				}
+			}			
 		}
+
 		ai_chance = {
 			base = 0
 		}
@@ -2975,6 +3016,12 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = TR_japan.102.b
+		ai_chance = {
+			base = 0
+		}
+	}
 }
 country_event = {
 	id = TR_japan.103
@@ -2989,6 +3036,12 @@ country_event = {
 				target = XSM
 				transfer_troops = yes
 			}
+		}
+	}
+	option = {
+		name = TR_japan.102.b
+		ai_chance = {
+			base = 0
 		}
 	}
 }
@@ -3007,6 +3060,12 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = TR_japan.102.b
+		ai_chance = {
+			base = 0
+		}
+	}
 }
 country_event = {
 	id = TR_japan.105
@@ -3021,6 +3080,12 @@ country_event = {
 				target = YUN
 				transfer_troops = yes
 			}
+		}
+	}
+	option = {
+		name = TR_japan.102.b
+		ai_chance = {
+			base = 0
 		}
 	}
 }
@@ -3039,6 +3104,12 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = TR_japan.102.b
+		ai_chance = {
+			base = 0
+		}
+	}
 }
 country_event = {
 	id = TR_japan.107
@@ -3053,6 +3124,12 @@ country_event = {
 				target = HNA
 				transfer_troops = yes
 			}
+		}
+	}
+	option = {
+		name = TR_japan.102.b
+		ai_chance = {
+			base = 0
 		}
 	}
 }
@@ -3071,6 +3148,12 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = TR_japan.102.b
+		ai_chance = {
+			base = 0
+		}
+	}
 }
 country_event = {
 	id = TR_japan.109
@@ -3087,6 +3170,12 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = TR_japan.102.b
+		ai_chance = {
+			base = 0
+		}
+	}
 }
 country_event = {
 	id = TR_japan.110
@@ -3101,6 +3190,12 @@ country_event = {
 				target = HNA
 				transfer_troops = yes
 			}
+		}
+	}
+	option = {
+		name = TR_japan.102.b
+		ai_chance = {
+			base = 0
 		}
 	}
 }
