@@ -91,8 +91,8 @@ JAP_historical_plan_RS = {
 		jap_Foreign_Policy
 	}
 
+	
 	research = {
-		
 	}
 
 	ideas = {
@@ -129,6 +129,12 @@ JAP_historical_plan_war = {
 	ai_national_focuses = {
 		jap_Greater_East_Asian_Co-prosperity_Sphere_concept
 		jap_Create_allies
+		jap_NAVY_2_2
+		jap_war
+		jap_AIRFORCE_2_1
+		jap_war_economy
+		jap_AIRFORCE_2_2
+		jap_AIRFORCE_2_3
 	}
 
 	research = {
@@ -219,6 +225,7 @@ JAP_historical_plan_RM = {
 		jap_NAVY_3_1
 		jap_education
 		jap_NAVY_1_3
+		jap_Long_live_liberalism
 		jap_ARMY_2_2
 		jap_ARMY_2_3
 		jap_State_Control_of_Electricity
@@ -226,7 +233,6 @@ JAP_historical_plan_RM = {
 		jap_constitutional_amendment
 		jap_ARMY_2_3
 		jap_administrative_reform
-		jap_Long_live_liberalism
 		jap_NAVY_3_2
 		jap_AIRFORCE_1_1
 		jap_ARMY_1_1
