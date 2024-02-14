@@ -51,7 +51,7 @@ focus_tree = {
 	focus = {
 		id = industry_2
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_focus_on_industry
 		}
@@ -110,7 +110,7 @@ focus_tree = {
 	focus = {
 		id = industry_3
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_focus_on_industry
 		}
@@ -168,7 +168,7 @@ focus_tree = {
 	focus = {
 		id = industry_7
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = industry_3
 		}
@@ -226,7 +226,7 @@ focus_tree = {
 	focus = {
 		id = industry_4
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_focus_on_industry
 		}
@@ -284,7 +284,7 @@ focus_tree = {
 	focus = {
 		id = industry_8
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = industry_4
 		}
@@ -342,7 +342,7 @@ focus_tree = {
 	focus = {
 		id = GER_more_industry
 		icon = GFX_goal_generic_production2
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = industry_7
 		}
@@ -359,7 +359,7 @@ focus_tree = {
 	focus = {
 		id = industry_5
 		icon = GFX_focus_generic_socialist_science
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_focus_on_industry
 		}
@@ -373,7 +373,7 @@ focus_tree = {
 	focus = {
 		id = industry_9
 		icon = GFX_focus_research2
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = industry_5
 		}
@@ -387,7 +387,7 @@ focus_tree = {
 	focus = {
 		id = industry_11
 		icon = GFX_focus_rocketry
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = industry_9
 		}
@@ -950,9 +950,10 @@ focus_tree = {
 				ideology = fascism
 				popularity = -0.1
 			}
-			swap_ideas = {
-				remove_idea = GER_Dolchstosslegende
-				add_idea = GER_totalitarian_oppression
+			remove_idea = GER_Dolchstosslegende
+			add_timed_idea = {
+				idea = GER_totalitarian_oppression
+				days = 90
 			}
 		}
 
@@ -1439,10 +1440,7 @@ focus_tree = {
 		y = 8
 			ai_will_do = {
 					factor = 4000
-				}
-			available = {
-					date > 1940.01.01
-				}
+			}
 
 	}
 	focus = {
@@ -1546,7 +1544,7 @@ focus_tree = {
 	focus = {
 		id = army_1
 		icon = GFX_goal_generic_axis_build_infantry
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_legacy_of_an_empire
 		}
@@ -1566,7 +1564,7 @@ focus_tree = {
 	focus = {
 		id = army_2
 		icon = GFX_goal_generic_army_artillery
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = army_1
 		}
@@ -1585,7 +1583,7 @@ focus_tree = {
 	focus = {
 		id = army_4
 		icon = GFX_goal_generic_army_artillery2
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = army_2
 		}
@@ -1604,7 +1602,7 @@ focus_tree = {
 	focus = {
 		id = army6
 		icon = GFX_goal_generic_production2
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = army_4
 		}
@@ -1624,7 +1622,7 @@ focus_tree = {
 	focus = {
 		id = army_3
 		icon = GFX_goal_generic_army_motorized
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = army_1
 		}
@@ -1643,7 +1641,7 @@ focus_tree = {
 	focus = {
 		id = army5
 		icon = GFX_goal_generic_build_tank
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = army_3
 		}
@@ -1662,7 +1660,7 @@ focus_tree = {
 	focus = {
 		id = army_7
 		icon = GFX_goal_generic_army_tanks
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = army5
 		}
@@ -1681,7 +1679,7 @@ focus_tree = {
 	focus = {
 		id = army_8
 		icon = GFX_focus_FIN_parmis_devils
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = army6
 		}
@@ -1704,7 +1702,7 @@ focus_tree = {
 	focus = {
 		id = airforce_1
 		icon = GFX_goal_generic_build_airforce
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_legacy_of_an_empire
 		}
@@ -1724,7 +1722,7 @@ focus_tree = {
 	focus = {
 		id = airforce_2
 		icon = GFX_focus_generic_air_bases
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = airforce_1
 		}
@@ -1779,7 +1777,7 @@ focus_tree = {
 	focus = {
 		id = airforce_4
 		icon = GFX_focus_generic_air_defense
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = airforce_2
 		}
@@ -1798,7 +1796,7 @@ focus_tree = {
 	focus = {
 		id = airforce_6
 		icon = GFX_focus_SWE_let_fly_all_guns
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = airforce_4
 		}
@@ -1817,7 +1815,7 @@ focus_tree = {
 	focus = {
 		id = airforce_3
 		icon = GFX_goal_generic_air_fighter2
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = airforce_1
 		}
@@ -1836,7 +1834,7 @@ focus_tree = {
 	focus = {
 		id = airforce_5
 		icon = GFX_goal_generic_air_fighter
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = airforce_3
 		}
@@ -1855,7 +1853,7 @@ focus_tree = {
 	focus = {
 		id = airforce_7
 		icon = GFX_goal_generic_air_bomber
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = airforce_5
 		}
@@ -1874,7 +1872,7 @@ focus_tree = {
 	focus = {
 		id = airforce_8
 		icon = GFX_focus_SOV_flying_clubs
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = airforce_6
 		}
@@ -1897,7 +1895,7 @@ focus_tree = {
 	focus = {
 		id = navy_1
 		icon = GFX_goal_generic_build_navy
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_legacy_of_an_empire
 		}
@@ -1917,7 +1915,7 @@ focus_tree = {
 	focus = {
 		id = navy_2
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = navy_1
 		}
@@ -2004,7 +2002,7 @@ focus_tree = {
 	focus = {
 		id = navy_4
 		icon = GFX_focus_generic_refit_civilian_ships
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = navy_2
 		}
@@ -2091,7 +2089,7 @@ focus_tree = {
 	focus = {
 		id = navy_6
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = navy_4
 		}
@@ -2239,7 +2237,7 @@ focus_tree = {
 	focus = {
 		id = navy_5
 		icon = GFX_goal_generic_navy_battleship
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = navy_3
 		}
@@ -2260,7 +2258,7 @@ focus_tree = {
 	focus = {
 		id = navy_3
 		icon = GFX_goal_generic_navy_cruiser
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = navy_1
 		}
@@ -2281,7 +2279,7 @@ focus_tree = {
 	focus = {
 		id = navy_8
 		icon = GFX_focus_generic_navy_battleship2
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = navy_6
 		}
@@ -2338,7 +2336,7 @@ focus_tree = {
 	focus = {
 		id = navy_7
 		icon = GFX_goal_generic_navy_submarine
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = navy_5
 		}
