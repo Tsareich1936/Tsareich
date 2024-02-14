@@ -117,18 +117,15 @@ country_event = {
 		}
 	}
 
-	option = { # Support Nationalists
+	option = { # Support Republicans
 		name = TR_spain.1.a
 		trigger = { is_ai = no }
-		hidden_effect = {
-		}
-		custom_effect_tooltip = nationalists_chosen
-	}
-	option = { # Support Republicans
-		name = TR_spain.1.b
-		hidden_effect = {
-		}
 		custom_effect_tooltip = republicans_chosen
+	}
+	option = { # Support Nationalists
+		name = TR_spain.1.b
+		custom_effect_tooltip = nationalists_chosen
+	    SPA = { change_tag_from = SPR }
 	}
 }
 
@@ -529,20 +526,34 @@ country_event = {
 			}
 		}
 	}
-
-	option = { # Support Nationalists
-		name = TR_spain.2.a
-		trigger = { is_ai = no }
-		hidden_effect = {
-		}
-		custom_effect_tooltip = nationalists_chosen
-	}
 	option = { # Support Republicans
-		name = TR_spain.2.b
-		hidden_effect = {
-			
-		}
+		name = TR_spain.2.a
 		custom_effect_tooltip = republicans_chosen
+	}
+	option = { # Support Royalists
+		name = TR_spain.2.b
+		trigger = { is_ai = no }
+	    SPB = { change_tag_from = SPR }
+	}
+	option = { # Support Communist
+		name = TR_spain.2.c
+		trigger = { is_ai = no }
+	    SPC = { change_tag_from = SPR }
+	}
+	option = { # Support anarchist
+		name = TR_spain.2.d
+		trigger = { is_ai = no }
+	    SPD = { change_tag_from = SPR }
+	}
+	option = { # Support Catalonia
+		name = TR_spain.2.e
+		trigger = { is_ai = no }
+	    CAT = { change_tag_from = SPR }
+	}
+	option = { # Support Navara
+	    name = TR_spain.2.f
+	    trigger = { is_ai = no }
+		NAV = { change_tag_from = SPR }
 	}
 }
 
@@ -657,20 +668,15 @@ country_event = { #神聖スペイン
 
 		
 	}
-	option = { # Support Nationalists
-		    name = TR_spain.3.a
-		    trigger = { is_ai = no }
-		    hidden_effect = {
-		    }
-		    custom_effect_tooltip = nationalists_chosen
-	    }
-	    option = { # Support Republicans
-		    name = TR_spain.3.b
-		    hidden_effect = {
-			
-		    }
-		    custom_effect_tooltip = republicans_chosen
-	    }
+	option = { # Support Republicans
+	    name = TR_spain.3.a
+    }	
+	option = {
+		name = TR_spain.3.b
+		trigger = { is_ai = no }
+		SPE = { change_tag_from = SPR }
+	}
+
 }
 
 
