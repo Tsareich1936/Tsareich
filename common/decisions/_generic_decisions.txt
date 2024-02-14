@@ -1680,6 +1680,16 @@ war_measures = {
                     has_war_support > 0.84
                     has_stability > 0.7
                 }
+				AND = {
+					has_government = socialdemocratic
+					has_war_support > 0.84
+					has_stability > 0.7
+				}
+				AND = {
+					has_government = conservatism
+					has_war_support > 0.84
+					has_stability > 0.7
+				}
             }
         }
         visible = {
@@ -1701,7 +1711,7 @@ war_measures = {
 			factor = 1
 
 			modifier = {
-				factor = 3
+				factor = 100
 				has_manpower < 100000
 			}
 		}
