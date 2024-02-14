@@ -540,23 +540,38 @@ country_event = {
 		trigger = { is_ai = no }
 	    SPC = { change_tag_from = SPR }
 	}
+	option = { # Support other
+	name = TR_spain.2.e
+	trigger = { is_ai = no }
+	country_event = TR.TR_spain.4
+}
+
+
+country_event = { #選択肢追加
+	id = TR_spain.4
+	title = TR_spain.4.t
+	desc = TR_spain.4.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	trigger = {
+		always = no
+	}
+	fire_only_once = yes
+
 	option = { # Support anarchist
-		name = TR_spain.2.d
-		trigger = { is_ai = no }
+		name = TR_spain.4.a
 	    SPD = { change_tag_from = SPR }
 	}
 	option = { # Support Catalonia
-		name = TR_spain.2.e
+		name = TR_spain.4.b
 		trigger = { is_ai = no }
 	    CAT = { change_tag_from = SPR }
 	}
 	option = { # Support Navara
-	    name = TR_spain.2.f
+	    name = TR_spain.4.c
 	    trigger = { is_ai = no }
 		NAV = { change_tag_from = SPR }
 	}
 }
-
 
 
 country_event = { #神聖スペイン
