@@ -207,7 +207,7 @@ focus_tree = {
 	focus = {
 		id = ROM_mil_7
 		icon = GFX_goal_generic_small_arms
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = ROM_mil_6
 		}
@@ -561,13 +561,13 @@ focus_tree = {
 			BUL = {
 				OR = {
 					exists = no
-					has_capitulated = yes
+					is_puppet = yes
 				}
 			}
 			HUN = {
 				OR = {
 					exists = no
-					has_capitulated = yes
+					is_puppet = yes
 				}
 			}
 		}
@@ -620,7 +620,16 @@ focus_tree = {
 		x = 25
 		y = 1
 	    completion_reward = {
-			
+			add_timed_idea = {
+				idea = TR_ROM_gold
+				days = 200
+			}
+			BUL = {
+				add_timed_idea = {
+					idea = TR_ROM_BULgold
+					days = 200
+				}
+			}
 		}
 	}
 	focus = {
@@ -689,7 +698,7 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 801
 			has_full_control_of_state = 212
-			has_full_control_of_state = 221
+			has_full_control_of_state = 211
 		}
 		prerequisite = {
 			focus = ROM_win1
@@ -732,7 +741,7 @@ focus_tree = {
 			puppet = BUL
 			BUL = {
 				transfer_state = 211
-				transfer_state = 222
+				transfer_state = 212
 				transfer_state = 801
 				add_timed_idea = {
 					idea = TR_ROM_BUL
@@ -770,6 +779,13 @@ focus_tree = {
 		cost = 8
 		prerequisite = {
 			focus = ROM_win8
+		}
+		available = {
+			NOT = {
+				BUL = {
+					has_idea = TR_ROM_BUL1
+				}
+			}
 		}
 		x = 23
 		y = 4
@@ -844,7 +860,7 @@ focus_tree = {
 		x = 6
 		y = 8
 		completion_reward = {
-			
+			country_event = TR_ROM.1
 		}
 	}
 	focus = {
@@ -857,7 +873,7 @@ focus_tree = {
 		x = 9
 		y = 8
 		completion_reward = {
-			add_political_power = 50
+            add_political_power = 50
 		}
 	}
 	focus = {
@@ -870,16 +886,18 @@ focus_tree = {
 		x = 12
 		y = 8
 		completion_reward = {
-			
+			country_event = TR_ROM.6
 		}
 	}
 	focus = {
 		id = ROM_dip1
 		icon = GFX_goal_generic_major_alliance
 		cost = 8
+		available = {
+			has_country_flag = TR_ROM_FRA_alliy
+		}
 		prerequisite = {
 			focus = ROM_dip_left
-			focus = ROM_dip_rom
 		}
 		mutually_exclusive = {
 			focus = ROM_dip4
@@ -888,7 +906,9 @@ focus_tree = {
 		x = 5
 		y = 9
 		completion_reward = {
-			
+			FRA = {
+				country_event = TR_ROM.5
+			}
 		}
 	}
 	focus = {
@@ -1019,7 +1039,7 @@ focus_tree = {
 		x = 9
 		y = 11
 		completion_reward = {
-			
+			add_ideas = TR_ROM_tate
 		}
 	}
 
@@ -1028,17 +1048,25 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 		cost = 8
 		prerequisite = {
-			focus = ROM_dip_right
 			focus = ROM_dip_rom
+			focus = ROM_dip_right
 		}
 		mutually_exclusive = {
 			focus = ROM_dip1
 			focus = ROM_dip4
 		}
+		bypass = {
+			ROM = {
+				is_in_faction_with = RUS
+			}
+
+		}
 		x = 13
 		y = 9
 		completion_reward = {
-			
+			RUS = {
+				country_event = TR_ROM.11
+			}
 		}	
 	}
 
@@ -1096,7 +1124,7 @@ focus_tree = {
 		x = 13
 		y = 11
 		completion_reward = {
-			add_ideas = ROM_RUSarmy
+			add_ideas = TR_ROM_RUSarmy
 		}
 	}
 

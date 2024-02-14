@@ -1,0 +1,293 @@
+add_namespace = "TR_ROM"
+
+country_event = {
+	id = TR_ROM.1 #フランスとの交渉
+	title = TR_ROM.1.t
+	desc = TR_ROM.1.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_ROM.1.a
+		ai_chance = {
+			factor = 50
+		}
+		FRA = {
+			country_event = { 
+				id = TR_ROM.2
+				days = 1
+			}   
+		}
+	}
+	option = {
+		name = TR_ROM.1.b
+		ai_chance = {
+			factor = 5
+		}
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = TR_ROM.2 #FRAルーマニアとの交渉
+	title = TR_ROM.2.t
+	desc = TR_ROM.2.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_ROM.2.a
+		ai_chance = {
+			factor = 50
+		}
+		ROM = {
+			country_event = { 
+				id = TR_ROM.3
+				days = 1
+			}   
+		}
+	}
+	option = {
+		name = TR_ROM.2.b
+		ai_chance = {
+			factor = 35
+		}
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = TR_ROM.3 #フランスとの交渉成功
+	title = TR_ROM.3.t
+	desc = TR_ROM.3.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_ROM.3.a
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = TR_ROM_FRA_alliy
+	}
+}
+
+country_event = {
+	id = TR_ROM.4 #フランスとの交渉失敗
+	title = TR_ROM.4.t
+	desc = TR_ROM.4.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_ROM.4.a
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {
+	id = TR_ROM.5 #ルーマニアが協定履行
+	title = TR_ROM.5.t
+	desc = TR_ROM.5.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_ROM.5.a
+		ai_chance = {
+			factor = 50
+		}
+		FRA = {
+			add_to_faction = ROM
+		}
+		ROM = {
+			add_state_core = 192
+			add_state_core = 834
+			add_state_core = 934
+			
+			add_state_core = 340
+			add_state_core = 797
+			add_state_core = 943
+			add_state_core = 341
+		}
+	}
+}
+
+
+
+
+country_event = {
+	id = TR_ROM.6 #ロシアとの交渉
+	title = TR_ROM.6.t
+	desc = TR_ROM.6.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_ROM.6.a
+		ai_chance = {
+			factor = 50
+		}
+		RUS = {
+			country_event = { 
+				id = TR_ROM.7
+				days = 1
+			}   
+		}
+	}
+	option = {
+		name = TR_ROM.6.b
+		ai_chance = {
+			factor = 30
+		}
+		RUS = {
+			country_event = { 
+				id = TR_ROM.11
+				days = 1
+			}   
+		}
+		
+	}
+	option = {
+		name = TR_ROM.6.c
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.1
+	}
+}
+
+country_event = {
+	id = TR_ROM.7 #RUSルーマニアとの交渉
+	title = TR_ROM.7.t
+	desc = TR_ROM.7.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_ROM.7.a
+		ai_chance = {
+			factor = 10
+		}
+		ROM = {
+			country_event = { 
+				id = TR_ROM.8
+				days = 1
+			}   
+		}
+	}
+	option = {
+		name = TR_ROM.7.b
+		ai_chance = {
+			factor = 60
+		}
+		ROM = {
+			country_event = { 
+				id = TR_ROM.9
+				days = 1
+			}   
+		}
+	}
+	option = {
+		name = TR_ROM.7.c
+		ai_chance = {
+			factor = 30
+		}
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = TR_ROM.8 #ロシアとの交渉成功
+	title = TR_ROM.8.t
+	desc = TR_ROM.8.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_ROM.8.a
+		ai_chance = {
+			factor = 50
+		}
+		RUS = {
+			add_to_faction = ROM
+		}
+		ROM = {
+			transfer_state = 78
+			transfer_state = 80
+			transfer_state = 766
+
+			transfer_state = 340
+			transfer_state = 797
+			transfer_state = 943
+			transfer_state = 341
+			
+			add_state_core = 340
+			add_state_core = 797
+			add_state_core = 943
+			add_state_core = 341
+		}
+	}
+}
+
+country_event = {
+	id = TR_ROM.9 #ロシアとの交渉一部
+	title = TR_ROM.9.t
+	desc = TR_ROM.9.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_ROM.9.a
+		ai_chance = {
+			factor = 60
+		}
+		RUS = {
+			add_to_faction = ROM
+		}
+		ROM = {
+			transfer_state = 78
+			transfer_state = 80
+			transfer_state = 766
+		}
+	}
+	option = {
+		name = TR_ROM.9.b
+		ai_chance = {
+			factor = 40
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = TR_ROM.10 #ロシアとの交渉失敗
+	title = TR_ROM.10.t
+	desc = TR_ROM.10.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_ROM.10.a
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {
+	id = TR_ROM.11 #RUSルーマニアとの同盟
+	title = TR_ROM.11.t
+	desc = TR_ROM.11.d
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only = yes
+	option = {
+		name = TR_ROM.11.a
+		ai_chance = {
+			factor = 50
+		}
+		RUS = {
+			add_to_faction = ROM
+		}
+        add_political_power = 20
+	}
+	option = {
+		name = TR_ROM.11.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.05
+	}
+}

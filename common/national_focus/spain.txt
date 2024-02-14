@@ -351,9 +351,14 @@
 		icon = GFX_focus_generic_strike_at_democracy1
 		cost = 5
         available = {
-			has_war = no
-			has_civil_war = no
-		}
+			all_country = {
+			   limit = {
+				  NOT = { tag = ROOT }
+				  original_tag = SPR
+			   }
+			   exist = no
+			}
+		 }
 		x = 20
 		y = 1
 		ai_will_do = {
