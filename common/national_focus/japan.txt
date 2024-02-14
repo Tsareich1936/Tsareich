@@ -777,7 +777,7 @@ focus_tree = { # nomal
         y = 0
         cost = 1
         available = {
-            date > 1939.1.1
+  
         }
         completion_reward = {
              country_event = {
@@ -861,6 +861,9 @@ focus_tree = { # nomal
         available = {
             is_in_faction = yes
         }
+        available = {
+            has_war_with_major = yes
+        }
         mutually_exclusive = {
             focus = jap_massive_troops
         }
@@ -883,6 +886,9 @@ focus_tree = { # nomal
         cost = 10
         available = {
             is_in_faction = yes
+        }
+        available = {
+            has_war_with_major = yes
         }
         mutually_exclusive = {
             focus = jap_Logistical_support
@@ -1019,7 +1025,7 @@ focus_tree = { # nomal
             }
             MAN = {
                 country_event = {
-                    id = TR_japan.50
+                    id = TR_japan.100
                 }
             }
             SIA = {
@@ -10976,10 +10982,9 @@ shared_focus = {
         focus = jap_AIRFORCE_1_1
     }
     completion_reward = {
-        swap_ideas = {
-            remove_idea = JAP_AIRFORCE_3
-            add_idea = JAP_AIRFORCE_5
-        }
+
+        add_ideas = JAP_AIRFORCE_5
+        
     }
     
 }

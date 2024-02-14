@@ -95,6 +95,7 @@ RUS_europe_diplo_c = {
 		}
 		icon = GFX_decision_generic_factory
 		priority = 201
+		fire_only_once = yes
 		ai_will_do = {
 			base = 4000
 		}

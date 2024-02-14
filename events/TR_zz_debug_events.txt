@@ -298,3 +298,20 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = TR_debug.8
+	title = TR_debug.8.t
+	desc = TR_debug.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_debug.8.a
+		set_technology = {
+			TR_tech_poison_gus = 1
+			TR_tech_poison_gus2 = 1
+			TR_tech_poison_gus3 = 1
+			TR_tech_poison_gus4 = 1
+		}
+	}
+}

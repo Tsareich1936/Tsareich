@@ -8,3 +8,13 @@ music = {
     file = "when_johnny_comes_marching_home.ogg"
     volume = 1.00
 }
+music = {
+    name = "Army_Detachment_March"
+    file = "Army_Detachment_March.ogg"
+    volume = 1.00
+}
+music = {
+    name = "einheitsfrontlied"
+    file = "einheitsfrontlied.ogg"
+    volume = 1.00
+}

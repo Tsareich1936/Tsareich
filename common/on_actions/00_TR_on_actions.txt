@@ -292,4 +292,75 @@ on_actions = {
 			}
 		}
 	}
+	on_daily_JAP = {
+		effect = {
+			if = {
+				limit = {
+					num_of_civilian_factories > 75
+				}
+				country_event = {
+					id= TR_japan.15
+				}
+			}
+		}
+	}
+	on_daily_JAP = {
+		effect = {
+			if = {
+				limit = {
+					has_war_with = MAN
+					has_global_flag = TR_japan.J.C.war
+				}
+				country_event = {
+					id = TR_super_event.3
+				}
+			}
+		}
+	}
+	on_daily_MAN = {
+		effect = {
+			if = {
+				limit = {
+					has_war_with = JAP
+					has_global_flag = TR_japan.J.C.war
+
+				}
+				country_event = {
+					id = TR_japan.98
+						
+				}
+				
+
+				
+			}
+		}
+	}
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = CZE
+						has_government = conservatism
+					}
+					original_tag = CZE
+					has_government = communism
+				}
+				country_event = { id = TR_czech_revolution.10 }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = CZE
+						has_government = communism
+					}
+					original_tag = CZE
+					has_government = conservatism
+				}
+				country_event = { id = TR_czech_revolution.11 }
+			}
+		}
+	}
 }

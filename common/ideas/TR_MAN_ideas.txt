@@ -36,5 +36,17 @@ ideas = {
 				trade_cost_for_target_factor = -0.25
 			}
 		}
+		MAN_CHI = {
+			allowed = {
+				always = no
+			}
+			available = {
+				has_war_with = JAP
+			}
+			removal_cost = -1	
+			modifier = {
+				surrender_limit = 0.5
+			}		
+		}
 	}
 }

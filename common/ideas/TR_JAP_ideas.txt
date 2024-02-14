@@ -407,7 +407,7 @@ ideas = {
     		}
 	    	removal_cost = -1
 			modifier = {
-				compliance_gain = 0.005
+				compliance_gain = 0.05
 			}
 		}
 
@@ -1185,7 +1185,7 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = -0.2
-				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.2
 				stability_factor = -0.2
 			}
 		}
@@ -1203,7 +1203,7 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = -0.1
-				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.1
 				stability_factor = -0.1
 			}
 		}

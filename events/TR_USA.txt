@@ -1271,7 +1271,7 @@ add_namespace = TR_usa_civil_war_legacy
 				transfer_state = 358
 				transfer_state = 391
 				transfer_state = 392
-				transfer_state = 392
+				transfer_state = 393
 				transfer_state = 394
 				transfer_state = 395
 				transfer_state = 396
@@ -1279,7 +1279,7 @@ add_namespace = TR_usa_civil_war_legacy
 				transfer_state = 1038
 				transfer_state = 1039
 				set_capital = {
-					state = 394
+					state = 393
 				}
 				set_rule = {
 					can_join_factions = no
@@ -1288,7 +1288,7 @@ add_namespace = TR_usa_civil_war_legacy
 					if = {
 						limit = {
 							check_variable = {
-								ADR.num_armies < 40
+								ADR.num_armies < 50
 							}
 						}
 						create_unit = {
@@ -1415,7 +1415,7 @@ add_namespace = TR_usa_civil_war_legacy
 						create_unit = {
 							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
 							owner = TXS
-							count = 15
+							count = 10
 						}
 					}
 				}

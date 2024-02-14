@@ -13,3 +13,15 @@ music = {
       #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
     }
 }
+music = {
+  song = "Army_Detachment_March"
+  chance = {
+    modifier = {factor = 1}
+  }
+}
+music = {
+  song = "einheitsfrontlied"
+  chance = {
+    modifier = {factor = 1}
+  }
+}

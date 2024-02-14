@@ -2,3 +2,22 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_guellira_infantry_unit_icon_medium"							texturefile = "gfx/interface/counters/divisions_large/unit_fake_intel_unit_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_guellira_infantry_unit_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_fake_intel_unit_icon.dds" noOfFrames = 2 }
 }
+spriteTypes = {	
+
+	spriteType = { 
+		name = "GFX_unit_TR_poison_gus_support_icon_medium"				
+		textureFile = "gfx/interface/counters/divisions_large/poison_gus_support_icon.dds"  ## Thats the paradox shepe, but you can use any path and file naming you want
+	}
+
+	spriteType = { 
+		name = "GFX_unit_TR_poison_gus_support_icon_medium_white" # Do not omit "medium"						
+		textureFile = "gfx/interface/counters/division_small/poison_gus_support_icon_small.dds" 
+	}
+
+	spriteType = {
+		name = "GFX_unit_TR_poison_gus_support_icon_small"
+		textureFile = "gfx/interface/counters/division_small/poison_gus_support_icon_small.dds" 
+		legacy_lazy_load = no
+	}		
+
+}
