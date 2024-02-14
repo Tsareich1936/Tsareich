@@ -3,6 +3,11 @@ state={
 	name="STATE_935"
 	history={
 		owner = TRA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
 		add_core_of = ROM
 		add_core_of = TRA
 		}
