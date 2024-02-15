@@ -65,15 +65,24 @@ on_actions = {
                     days = 306
                 }
             }
+			USA = {
+				every_core_state = {
+					remove_core_of = FGA
+					remove_core_of = CSA
+					remove_core_of = ADR
+					remove_core_of = AMR
+					remove_core_of = AMG
+				}
+			}
         }
-	effect = {
-		KOR = {
-			give_resource_rights = {
-				receiver = JAP
-				state = 527
+	effect = {#KOR set up
+			KOR = {
+				give_resource_rights = {
+					receiver = JAP
+					state = 527
+				}
 			}
 		}
-	}
 	#effect = {#CZE set up
         #    CZE = {
         #        country_event = {
@@ -100,15 +109,13 @@ on_actions = {
 					days = 56
 				}
 			}
-		}
-	effect = {
-		JAP = {
-			country_event = {
-				id = TR_japan.95
-				days = 30
+			JAP = {
+				country_event = {
+					id = TR_japan.95
+					days = 30
+				}
 			}
 		}
-	}
 	effect = {#VIN set up
 			#VIN gomu concessions			
 			VIN = {
@@ -117,18 +124,6 @@ on_actions = {
 				give_resource_rights = { receiver = FRA state = 1028 }
 				give_resource_rights = { receiver = FRA state = 1029 } 
 			}
-		}
-	effect = {#USA set up
-			USA = {
-				every_core_state = {
-					remove_core_of = FGA
-					remove_core_of = CSA
-					remove_core_of = ADR
-					remove_core_of = AMR
-					remove_core_of = AMG
-				}
-			}
-			
 		}
 	effect = {#SPR set up
 		SPR = {
@@ -151,7 +146,7 @@ on_actions = {
 				}
 			}
 		}
-	}
+		}
 	effect = {#SER set up
 			SER = {
 				country_event = {
@@ -161,7 +156,7 @@ on_actions = {
 				}
 			}
 		}
-	effect = {
+	effect = {#HUN set up
 			HUN = {
 				every_core_state = {
 					remove_core_of = MDR
@@ -176,6 +171,53 @@ on_actions = {
 					has_war_with_major = yes
 				}
 				mark_focus_tree_layout_dirty = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_war_with_major = yes
+					surrender_progress > 0.01
+					not = {
+						or = {
+							has_ideology = anarchism
+							has_ideology = animism
+						}
+					}
+				}
+				activate_targeted_decision = {
+					target = JAP
+					decision = JAP_lack_food
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_war = yes
+				}
+			    set_country_flag = TR_japan.wer
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					num_of_civilian_factories > 75
+				}
+				country_event = {
+					id= TR_japan.15
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_war_with = MAN
+					has_global_flag = TR_japan.J.C.war
+				}
+				country_event = {
+					id = TR_super_event.3
+				}
 			}
 		}
 	}
@@ -262,61 +304,6 @@ on_actions = {
 			}
 		}
 	}
-	on_daily_JAP = {
-		effect = {
-			if = {
-				limit = {
-					has_war_with_major = yes
-					surrender_progress > 0.01
-					not = {
-						or = {
-							has_ideology = anarchism
-							has_ideology = animism
-						}
-					}
-				}
-				activate_targeted_decision = {
-					target = JAP
-					decision = JAP_lack_food
-				}
-			}
-		}
-	}
-	on_daily_JAP = {
-		effect = {
-			if = {
-				limit = {
-					has_war = yes
-				}
-			    set_country_flag = TR_japan.wer
-			}
-		}
-	}
-	on_daily_JAP = {
-		effect = {
-			if = {
-				limit = {
-					num_of_civilian_factories > 75
-				}
-				country_event = {
-					id= TR_japan.15
-				}
-			}
-		}
-	}
-	on_daily_JAP = {
-		effect = {
-			if = {
-				limit = {
-					has_war_with = MAN
-					has_global_flag = TR_japan.J.C.war
-				}
-				country_event = {
-					id = TR_super_event.3
-				}
-			}
-		}
-	}
 	on_daily_MAN = {
 		effect = {
 			if = {
@@ -360,6 +347,56 @@ on_actions = {
 					has_government = conservatism
 				}
 				country_event = { id = TR_czech_revolution.11 }
+			}
+		}
+	}
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						has_idea = RUS_anti_commune_pact
+						NOT = {
+							all_country = {
+								limit = {
+									OR = {
+										tag = GER
+										tag = FRA
+										tag = SRI
+									}
+								}
+								has_war_with = FROM
+							}
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = GER
+							tag = FRA
+							tag = SRI
+						}
+						OR = {
+							has_government = syndicalism
+							has_government = communism
+							has_government = socialism
+						}
+					}
+				}
+				if = {
+					limit = {
+						RUS = {
+							is_faction_leader = yes
+						}
+					}
+					ROOT = {
+						save_global_event_target_as = communist_invader
+					}
+					RUS = {
+						country_event = {
+							id = TR_Russia_diplo.14
+						}
+					}
+				}
 			}
 		}
 	}
