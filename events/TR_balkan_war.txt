@@ -261,7 +261,8 @@ news_event = {#バルカン戦争
 	id = TR_balkan.12
 	title = TR_balkan.12.t
 	desc = TR_balkan.12.d
-
+	picture = GFX_news_event_TR_balkan_war
+	
 	is_triggered_only = yes
 	major = yes
 
@@ -276,6 +277,7 @@ country_event = {#バルカン戦争への参戦
 	id = TR_balkan.13
 	title = TR_balkan.13.t
 	desc = TR_balkan.13.d
+	picture = GFX_report_event_cze_divided_nation
 
 	is_triggered_only = yes
 

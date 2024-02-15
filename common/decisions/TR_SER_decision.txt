@@ -27,6 +27,7 @@ SER_prepare_for_the_war = {
 		timeout_effect = {
 			country_event = {
 				id = TR_balkan.8
+				hours = 1
 			}
 		}
 	}
