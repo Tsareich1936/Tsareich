@@ -140,6 +140,7 @@ focus_tree = { # nomal
             add_research_slot = 1
             hidden_effect = {
                 mark_focus_tree_layout_dirty = yes
+                country_event = TR_japan.111
             }
         }
 
@@ -10982,8 +10983,11 @@ shared_focus = {
         focus = jap_AIRFORCE_1_1
     }
     completion_reward = {
+        swap_ideas = {
+            remove_idea = JAP_AIRFORCE_3
+            add_idea = CSA_avionJAP_AIRFORCE_5s_fairey
+        }
 
-        add_ideas = JAP_AIRFORCE_5
         
     }
     
@@ -11057,7 +11061,7 @@ shared_focus = {
     completion_reward = {
         add_tech_bonus = {
             name = jap_AIRFORCE_3_1
-            bonus = 2
+            bonus = 3
             uses = 2
             category = light_air
         }
@@ -11076,7 +11080,7 @@ shared_focus = {
     completion_reward = {
         add_tech_bonus = {
             name = jap_AIRFORCE_3_2
-            bonus = 2
+            bonus = 3
             uses = 2
             category = medium_air
         }
@@ -11096,7 +11100,7 @@ shared_focus = {
     completion_reward = {
         add_tech_bonus = {
             name = jap_AIRFORCE_3_3
-            bonus = 2
+            bonus = 3
             uses = 2
             category = cat_air_engine
         }

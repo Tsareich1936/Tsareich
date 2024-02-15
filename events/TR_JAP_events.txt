@@ -986,7 +986,7 @@ country_event = {            # 外交方針
 		name = TR_japan.31.b
 		complete_national_focus = jap_unyielding
 		ai_chance = {
-			base = 4
+			base = 99
 		}
 	}
 }
@@ -1610,6 +1610,15 @@ country_event = { # against FRA
 		}
 		ai_chance = {
 			base = 99
+			modifier = {
+				if = {
+					limit = {
+						has_war_with_major = yes
+					}
+					factor = 0
+				}
+
+			}
 		}
 	}
 }
@@ -3180,7 +3189,7 @@ country_event = {
 country_event = {
 	id = TR_japan.110
 	title = TR_japan.102.t
-	desc = TR_japan.102.d
+	desc = TR_japan.102.
 	is_triggered_only = yes
 	option = {
 		name = TR_japan.102.a
@@ -3196,6 +3205,33 @@ country_event = {
 		name = TR_japan.102.b
 		ai_chance = {
 			base = 0
+		}
+	}
+}
+country_event = {
+	id = TR_japan.111
+	is_triggered_only = yes
+	title = TR_japan.95.t
+	desc = TR_japan.95.d
+	option = {
+		name = TR_japan.95.a
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.111
+					days = 60
+				}
+			}
+		}
+		ai_chance = {
+			base = 7
 		}
 	}
 }

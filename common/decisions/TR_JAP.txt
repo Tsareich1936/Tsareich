@@ -2368,9 +2368,9 @@ JAP_WAR_PLAN_CREATE = {
 			civilian_factory_use = 5
 		}
 		ai_will_do = {
-			base = 100
+			base = 300
 		}
-		days_remove = 180
+		days_remove = 120
 	}
 	FOR_WAR_2 = {
 		available = {
@@ -2383,9 +2383,9 @@ JAP_WAR_PLAN_CREATE = {
 			civilian_factory_use = 5
 		}
 		ai_will_do = {
-			base = 100
+			base = 300
 		}
-		days_remove = 180
+		days_remove = 120
 	}
 	FOR_WAR_3 = {
 		available = {
@@ -2397,13 +2397,13 @@ JAP_WAR_PLAN_CREATE = {
 		modifier = {
 			civilian_factory_use = 5
 		}
-		days_remove = 180
+		days_remove = 120
 		remove_effect = {
 			add_ideas = JAP_imperial_resolve
 			unlock_national_focus = jap_final_war
 		}
 		ai_will_do = {
-			base = 100
+			base = 300
 		}
 		
 	}
