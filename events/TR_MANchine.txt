@@ -1,0 +1,82 @@
+add_namespace = TR_MAN
+add_namespace = TR_MAN_news
+
+country_event = {#爆殺
+	id = TR_MAN.1
+	title = TR_MAN.1.t
+	desc = TR_MAN.1.d
+
+	trigger = {
+		date > 1936.5.15
+		tag = MAN
+	}
+	immediate = {
+		hidden_effect = {
+			news_event = TR_MAN_news.1
+			set_global_flag = TR_bomb_MAN
+
+		}
+	}
+
+	option = {#OK
+		name = TR_MAN.1.a
+		add_stability = -0.25
+	}
+}
+
+country_event = {#爆殺内戦
+	id = TR_MAN.2
+	title = TR_MAN.2.t
+	desc = TR_MAN.2.d
+
+	trigger = {
+		date > 1936.5.20
+		has_global_flag = TR_bomb_MAN
+	}
+	immediate = {
+		hidden_effect = {
+			MAN = {
+				remove_from_faction = FJN
+				remove_from_faction = GXC
+				remove_from_faction = HNA
+				remove_from_faction = GZH
+				remove_from_faction = SIC
+				remove_from_faction = YUN
+				remove_from_faction = XSM
+			}
+			615 = { transfer_state_to = PRC }
+			607  = { transfer_state_to = PRC }
+			FJN = {
+				declare_war_on = {
+					target = MAN
+					type = annex_everything
+				}
+			}	
+			PRC = {
+				declare_war_on = {
+					target = MAN
+					type = annex_everything
+				}
+			}
+
+		}
+	}
+
+	option = {#OK
+		name = TR_MAN.2.a
+		add_stability = -0.4
+	}
+}
+
+
+news_event = {#爆殺
+	id = TR_spain_news.1
+	title = TR_spain_news.1.t
+	desc = TR_spain_news.1.d
+	picture = GFX_news_event_033
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = TR_spain_news.1.a
+	}
+}

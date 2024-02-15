@@ -212,6 +212,7 @@ create_faction = Slav_Entente
 add_to_faction = FIN
 add_to_faction = ARM
 add_to_faction = SYR
+add_to_faction = MON
 
 add_to_tech_sharing_group = slav_entente_research
 FIN = {
