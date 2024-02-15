@@ -5,3 +5,5 @@
  world_war_ii_desc: "$STATE|Y$を$TARGET|Y$から獲得せよ。"
  world_war_ii_short_desc: "この戦争目標は、講和会議が自動で行われる！(未実装)"
  WORLD_WAR_II: "第二次世界大戦"
+ WORLD_WAR_II_normal: "第二次世界大戦"
+ WORLD_WAR_II_RUS: "大祖国戦争"
