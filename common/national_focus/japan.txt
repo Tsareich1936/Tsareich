@@ -13,6 +13,7 @@ focus_tree = { # nomal
     # #　政治ツリー
 
 	focus = {
+        icon = GFX_goal_generic_neutrality_focus
 		id = jap_19th_General_Election
         x = 28
         y = 0
@@ -54,6 +55,7 @@ focus_tree = { # nomal
    
     focus = {                                    
         id = jap_Inoue
+		icon = GFX_focus_usa_reestablish_the_gold_standard
         relative_position_id = jap_Constitutional_Democratic_Party 
         x = 0
         y = 1
@@ -78,7 +80,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Liquidation_of_unprofitable_companies
-
+		icon = GFX_goal_generic_consumer_goods
         prerequisite = { 
             focus = jap_Inoue 
         }
@@ -100,6 +102,7 @@ focus_tree = { # nomal
  
     focus = {                                
         id = jap_Improving_corporate_efficiency
+        icon = GFX_focus_generic_license_production
         prerequisite = {
             focus = jap_Liquidation_of_unprofitable_companies
         }
@@ -123,6 +126,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Long_live_liberalism
+        icon = GFX_focus_mex_privatisation
         prerequisite = {
             focus = jap_Improving_corporate_efficiency
         }
@@ -148,6 +152,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_education
+        icon = GFX_focus_research
         relative_position_id = jap_Constitutional_Democratic_Party
         x = 2
         y = 1
@@ -167,6 +172,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_State_Control_of_Electricity
+        icon = GFX_focus_generic_hydroelectric_energy
         relative_position_id = jap_education
         x = 0
         y = 1
@@ -185,6 +191,7 @@ focus_tree = { # nomal
     
     focus = {
         id = jap_administrative_reform
+        icon = GFX_goal_generic_production
         relative_position_id = jap_State_Control_of_Electricity
         x = 0
         y = 1
@@ -202,6 +209,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Convention_Center_Definition
+        icon = GFX_goal_support_democracy
         relative_position_id = jap_Constitutional_Democratic_Party
         x = -2
         y = 1
@@ -218,6 +226,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Continuation_of_Shidehara_foreign_policy
+        icon = GFX_goal_generic_intelligence_exchange
         relative_position_id = jap_Convention_Center_Definition
         x = 0
         y = 1
@@ -238,6 +247,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_constitutional_amendment
+        icon = GFX_focus_renounce_the_treaty_of_trianon
         relative_position_id = jap_Continuation_of_Shidehara_foreign_policy
         x = 0
         y = 1
@@ -280,6 +290,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Continuation_of_Takahashi_Financing
+        icon = GFX_goal_generic_construct_civ_factory
         relative_position_id = jap_Rikken_Seiyukai
         x = 0
         y = 1
@@ -317,6 +328,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Keynesian_Studies_in_Practice
+        icon = GFX_goal_generic_construct_civ_factory
         relative_position_id =  jap_Continuation_of_Takahashi_Financing
         x = 0 
         y = 1
@@ -372,6 +384,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Controlling_inflation
+        icon = GFX_goal_generic_trade
         relative_position_id = jap_Keynesian_Studies_in_Practice
         x = 0
         y = 1
@@ -395,6 +408,8 @@ focus_tree = { # nomal
     
     focus = {
         id = jap_Growth_based_on_Keynesian_studies
+        icon = GFX_focus_generic_offshore_oil_rig
+
         relative_position_id = jap_Controlling_inflation
         x = 0
         y = 1
@@ -419,6 +434,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_decentralization_of_power
+        icon = GFX_goal_generic_construct_infrastructure
         relative_position_id = jap_Rikken_Seiyukai
         x = 2
         y = 1
@@ -462,6 +478,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_policy_of_imperialisation
+
         relative_position_id = jap_extensive_transportation_network
         x = 0
         y = 1
@@ -476,6 +493,7 @@ focus_tree = { # nomal
 
     focus = {                                                       
         id = jap_Royal_Center_Definition
+        icon = GFX_goal_tfv_strengthen_commonwealth_ties
         relative_position_id = jap_Rikken_Seiyukai
         x = -2
         y = 1
@@ -496,6 +514,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Developing_Mori_Diplomacy
+        icon = GFX_goal_tfv_saf_anti_colonialist_crusade
         relative_position_id = jap_Royal_Center_Definition
         x = 0
         y = 1
@@ -513,6 +532,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Protect_the_Constitution
+        icon = GFX_goal_generic_defence
         relative_position_id = jap_Developing_Mori_Diplomacy
         x = 0
         y = 1
@@ -554,6 +574,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_socialist_economy
+        icon = GFX_focus_generic_industry_1
         relative_position_id = jap_Shakai_Taishuto
         x = 0
         y = 1
@@ -572,6 +593,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_planned_economy
+        icon = GFX_focus_generic_industry_2
         relative_position_id = jap_socialist_economy
         x = 0
         y = 1
@@ -592,6 +614,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_wealth_redistribution
+        icon = GFX_goal_generic_national_unity
         relative_position_id = jap_planned_economy
         x = 0
         y = 1
@@ -612,6 +635,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Building_Japanese-style_Socialism
+        icon = GFX_focus_spa_the_spanish_miracle
         relative_position_id = jap_wealth_redistribution
         x = 0
         y = 1
@@ -633,6 +657,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_dismantling_of_the_Ministry_of_Home_Affairs
+        icon = GFX_goal_generic_demand_territory
         relative_position_id = jap_Shakai_Taishuto
         x = 2
         y = 1
@@ -650,6 +675,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Development_of_insurance_system
+		icon = GFX_goal_generic_construction2
         relative_position_id = jap_dismantling_of_the_Ministry_of_Home_Affairs
         x = 0
         y = 1
@@ -667,6 +693,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Establishment_of_the_Ministry_of_Labor
+        icon = GFX_goal_generic_production
         relative_position_id = jap_Development_of_insurance_system
         x = 0
         y = 1
@@ -684,6 +711,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_social_democracy
+        icon = GFX_focus_generic_the_giant_wakes
         relative_position_id = jap_Shakai_Taishuto
         x = -2
         y = 1
@@ -704,6 +732,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Cooperation_with_Socialist_Countries
+        icon = GFX_goal_generic_major_alliance
         relative_position_id = jap_social_democracy
         x = 0
         y = 1
@@ -737,6 +766,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_revise_the_constitution
+        icon = GFX_focus_renounce_the_treaty_of_trianon
         relative_position_id = jap_Cooperation_with_Socialist_Countries
         x = 0
         y = 1
@@ -774,7 +804,8 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Foreign_Policy
-        x = 46
+        icon = GFX_goal_generic_military_deal
+        x = 43
         y = 0
         cost = 1
         available = {
@@ -792,8 +823,9 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_cooperation
+        icon = GFX_goal_tripartite_pact
         relative_position_id = jap_Foreign_Policy
-        x = -4
+        x = -2
         y = 1
         cost = 0
         prerequisite = {
@@ -809,8 +841,9 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_japan-england
+        icon = GFX_focus_chi_british_cooperation
         relative_position_id = jap_cooperation
-        x = -2
+        x = -1
         y = 1
         cost = 5
         prerequisite = {
@@ -831,8 +864,9 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_japan-usa
+        icon = GFX_focus_generic_befriend_usa
         relative_position_id = jap_cooperation
-        x = 2
+        x = 1
         y = 1
         cost = 5
         available = {
@@ -855,6 +889,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Logistical_support
+        icon = GFX_goal_generic_position_armies
         relative_position_id = jap_japan-england
         x = 0
         y = 1
@@ -881,8 +916,9 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_massive_troops
+        icon = GFX_goal_generic_more_territorial_claims
         relative_position_id = jap_Logistical_support
-        x = 4
+        x = 2
         y = 0
         cost = 10
         available = {
@@ -905,6 +941,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_War_lessons_from_our_allies
+        icon = GFX_goal_generic_national_unity
         relative_position_id = jap_cooperation
         x = 0
         y = 3
@@ -924,6 +961,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Convention_on_the_Elimination_of_All_Forms_of_Racial_Discrimination
+		icon = GFX_focus_generic_treaty
         relative_position_id = jap_War_lessons_from_our_allies
         x = 0
         y = 1
@@ -945,8 +983,9 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_unyielding
+        icon = GFX_goal_demand_sudetenland
         relative_position_id = jap_Foreign_Policy
-        x = 4
+        x = 2
         y = 1
         cost = 0
         available = {
@@ -962,6 +1001,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Greater_East_Asian_Co-prosperity_Sphere_concept
+        icon = GFX_goal_generic_alliance
         relative_position_id = jap_unyielding
         x = 0
         y = 1
@@ -977,8 +1017,9 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Find_an_ally
+        icon = GFX_focus_generic_diplomatic_treaty
         relative_position_id = jap_Greater_East_Asian_Co-prosperity_Sphere_concept
-        x = -2
+        x = -1
         y = 1
         cost = 5
         prerequisite = {
@@ -1008,8 +1049,9 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Create_allies
+        icon = GFX_focus_generic_support_the_left_right
         relative_position_id = jap_Greater_East_Asian_Co-prosperity_Sphere_concept
-        x = 2
+        x = 1
         y = 1
         cost = 5
         prerequisite = {
@@ -1055,6 +1097,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_war_plan
+        icon = GFX_goal_generic_territory_or_war
         relative_position_id = jap_Create_allies
         x = 0
         y = 1
@@ -1083,6 +1126,7 @@ focus_tree = { # nomal
         relative_position_id = jap_Greater_East_Asian_Co-prosperity_Sphere_concept
         x = 0
         y = 3
+        icon = GFX_focus_jap_strike_south
         cost = 10
         available = {
             if = {
@@ -1147,7 +1191,8 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_social_reform
-        x = 57
+        icon = GFX_goal_generic_demand_territory
+        x = 51
         y = 0
         cost = 4
         completion_reward = {
@@ -1208,6 +1253,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_zaibatsu
+        icon = GFX_focus_jap_zaibatsu
         relative_position_id = jap_social_reform
         x = 2
         y = 1
@@ -1225,6 +1271,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_low
+        icon = GFX_focus_hol_the_foundations_of_defense
         relative_position_id = jap_zaibatsu
         x = 0
         y = 1
@@ -1239,6 +1286,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_zaibutsu_2
+        icon = GFX_focus_jap_zaibatsu
         relative_position_id = jap_low
         x = 0
         y = 1
@@ -1491,6 +1539,7 @@ focus_tree = { # nomal
     focus = {
         cost = 10
         id = jap_bank
+        icon = GFX_goal_generic_improve_relations
         relative_position_id = jap_industry
         x = 2
         y = 4
@@ -1507,6 +1556,7 @@ focus_tree = { # nomal
 
     focus = {
         cost = 10
+        icon = GFX_goal_generic_positive_trade_relations
         id = jap_abroad
         relative_position_id = jap_industry
         x = -2
@@ -1780,6 +1830,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_war
+        icon = GFX_goal_generic_axis_build_infantry
         x = 40
         y = 8
         cost = 5
@@ -1794,6 +1845,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_war_economy
+        icon = GFX_goal_generic_political_pressure
         relative_position_id = jap_war
         x = 0
         y = 1
@@ -1843,6 +1895,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_army_doc
+        icon = GFX_goal_generic_army_doctrines
         relative_position_id = jap_government_information
         x = 0
         y = 1
@@ -1862,6 +1915,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_air_doc
+        icon = GFX_goal_generic_air_doctrine
         relative_position_id = jap_army_doc
         x = 2
         y = 0
@@ -1881,6 +1935,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_navy_doc
+        icon = GFX_goal_generic_navy_doctrines_tactics
         relative_position_id = jap_air_doc
         x = 2
         y = 0
@@ -1950,6 +2005,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_No_defeat
+        icon = GFX_focus_jap_showa_restoration
         allow_branch = {
             or = {
                 surrender_progress > 0.1
@@ -2050,6 +2106,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_psychological_mobilization
+        icon = GFX_focus_jap_spiritual_mobilization
         prerequisite = {
             focus = jap_No_defeat
         }
@@ -2097,6 +2154,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_volunteer_corps
+        icon = GFX_focus_ETH_the_lion_and_the_sun
         relative_position_id = jap_No_defeat
         x = -1
         y = 2
@@ -2125,6 +2183,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_National_Volunteer_Army
+        icon = GFX_focus_ETH_an_empire_in_the_shade_of_the_sun
         relative_position_id = jap_No_defeat
         x = 0
         y = 3
@@ -10732,8 +10791,9 @@ focus_tree = {  # communist
 shared_focus = {
     id = jap_NAVY_1_1
     x = 0
+    icon = GFX_goal_generic_navy_battleship
     y = 0
-    cost = 5
+    cost = 4
     available = {
         
     }
@@ -10745,6 +10805,7 @@ shared_focus = {
 shared_focus = {
     id = jap_NAVY_1_2
     relative_position_id = jap_NAVY_1_1
+    icon = GFX_goal_generic_navy_battleship
     x = 0
     y = 1
     cost = 0
@@ -10829,9 +10890,10 @@ shared_focus = {
 shared_focus = {
     id = jap_NAVY_1_3
     relative_position_id = jap_NAVY_1_2
+    icon = GFX_goal_generic_navy_battleship
     x = 0
     y = 1
-    cost = 5
+    cost = 4
     prerequisite = {
         focus = jap_NAVY_1_2
     }
@@ -10843,6 +10905,7 @@ shared_focus = {
 
 shared_focus = {
     id = jap_NAVY_2_1
+    icon = GFX_goal_generic_navy_doctrines_tactics
     relative_position_id = jap_NAVY_1_1
     x = 2
     y = 0
@@ -10850,6 +10913,7 @@ shared_focus = {
     available = {
         
     }
+    icon = GFX_goal_generic_navy_doctrines_tactics
     completion_reward = {
         swap_ideas = {
             remove_idea = JAP_NAVY
@@ -10873,11 +10937,13 @@ shared_focus = {
             add_idea = JAP_NAVY_2
         }
     }
+    icon = GFX_goal_generic_navy_doctrines_tactics
 }
 
 shared_focus = {
     id = jap_NAVY_2_3
     relative_position_id = jap_NAVY_2_2
+    icon = GFX_goal_generic_navy_doctrines_tactics
     x = 0
     y = 1
     cost = 8
@@ -10891,10 +10957,11 @@ shared_focus = {
 
 shared_focus = {
     id = jap_NAVY_3_1
+    icon = GFX_goal_generic_construct_naval_dockyard
     relative_position_id = jap_NAVY_1_1
     x = 4
     y = 0
-    cost = 5
+    cost = 4
     completion_reward = {
         country_event = {
             id = TR_japan.20
@@ -10904,10 +10971,11 @@ shared_focus = {
 
 shared_focus = {
     id = jap_NAVY_3_2
+    icon = GFX_goal_generic_navy_cruiser
     relative_position_id = jap_NAVY_3_1
     x = 0
     y = 1
-    cost = 5
+    cost = 4
     prerequisite = {
         focus = jap_NAVY_3_1
     }
@@ -10920,10 +10988,11 @@ shared_focus = {
 
 shared_focus = {
     id = jap_NAVY_3_3
+    icon = GFX_goal_generic_navy_submarine
     relative_position_id = jap_NAVY_3_2
     x = 0
     y = 1
-    cost = 5
+    cost = 4
     prerequisite = {
         focus = jap_NAVY_3_2
     }
@@ -10939,6 +11008,7 @@ shared_focus = {
 
 shared_focus = {
     id = jap_NAVY_10
+    icon = GFX_goal_generic_build_navy
     relative_position_id = jap_NAVY_2_3
     x = 0
     y = 1
@@ -10964,10 +11034,11 @@ shared_focus = {
 
 shared_focus = {
     id = jap_AIRFORCE_1_1
+    icon = GFX_focus_SOV_flying_clubs
     relative_position_id = jap_NAVY_1_1
     x = 6
     y = 0
-    cost = 5
+    cost = 4
     completion_reward = {
         add_ideas = JAP_AIRFORCE_3
     }
@@ -10975,10 +11046,11 @@ shared_focus = {
 
 shared_focus = {
     id = jap_AIRFORCE_1_2
+    icon = GFX_goal_generic_air_production
     relative_position_id = jap_AIRFORCE_1_1
     x = 0
     y = 1
-    cost = 5
+    cost = 4
     prerequisite = {
         focus = jap_AIRFORCE_1_1
     }
@@ -10995,10 +11067,11 @@ shared_focus = {
 
 shared_focus = {
     id = jap_AIRFORCE_1_3
+    icon = GFX_focus_SOV_women_in_aviation
     relative_position_id = jap_AIRFORCE_1_2
     x = 0
     y = 1
-    cost = 5
+    cost = 4
     prerequisite = {
         focus = jap_AIRFORCE_1_2
     }
@@ -11009,6 +11082,7 @@ shared_focus = {
 
 shared_focus = {
     id = jap_AIRFORCE_2_1
+    icon = GFX_goal_generic_air_doctrine
     relative_position_id = jap_AIRFORCE_1_1
     x = 2
     y = 0
@@ -11023,6 +11097,7 @@ shared_focus = {
 
 shared_focus = {
     id = jap_AIRFORCE_2_2
+    icon = GFX_goal_generic_air_doctrine
     relative_position_id = jap_AIRFORCE_2_1
     x = 0
     y = 1
@@ -11040,6 +11115,7 @@ shared_focus = {
 
 shared_focus = {
     id = jap_AIRFORCE_2_3
+    icon = GFX_goal_generic_air_doctrine
     relative_position_id = jap_AIRFORCE_2_2
     x = 0
     y = 1
@@ -11054,14 +11130,15 @@ shared_focus = {
 
 shared_focus = {
     id = jap_AIRFORCE_3_1
+    icon = GFX_goal_generic_air_bomber
     relative_position_id = jap_AIRFORCE_1_1
     x = 4
     y = 0
-    cost = 5
+    cost = 4
     completion_reward = {
         add_tech_bonus = {
             name = jap_AIRFORCE_3_1
-            bonus = 3
+            bonus = 2
             uses = 2
             category = light_air
         }
@@ -11070,17 +11147,18 @@ shared_focus = {
 
 shared_focus = {
     id = jap_AIRFORCE_3_2
+    icon = GFX_goal_generic_air_fighter
     relative_position_id = jap_AIRFORCE_3_1
     x = 0
     y = 1
-    cost = 5
+    cost = 4
     prerequisite = {
         focus = jap_AIRFORCE_3_1
     }
     completion_reward = {
         add_tech_bonus = {
             name = jap_AIRFORCE_3_2
-            bonus = 3
+            bonus = 2
             uses = 2
             category = medium_air
         }
@@ -11089,10 +11167,11 @@ shared_focus = {
 
 shared_focus = {
     id = jap_AIRFORCE_3_3
+    icon = GFX_goal_generic_build_airforce
     relative_position_id = jap_AIRFORCE_3_2
     x = 0
     y = 1
-    cost = 5
+    cost = 4
     prerequisite = {
         focus = jap_AIRFORCE_3_2
     }
@@ -11100,7 +11179,7 @@ shared_focus = {
     completion_reward = {
         add_tech_bonus = {
             name = jap_AIRFORCE_3_3
-            bonus = 3
+            bonus = 2
             uses = 2
             category = cat_air_engine
         }
@@ -11109,6 +11188,7 @@ shared_focus = {
 
 shared_focus = {
     id = jap_AIRFORCE_10
+    icon = GFX_goal_generic_CAS
     relative_position_id = jap_AIRFORCE_2_3
     x = 0
     y = 1
@@ -11133,10 +11213,11 @@ shared_focus = {
 
 shared_focus = {
     id = jap_ARMY_1_1
+    icon = GFX_goal_generic_army_artillery
     relative_position_id = jap_NAVY_1_1
     x = 12
     y = 0
-    cost = 5
+    cost = 4
     completion_reward = {
         army_experience = 50
         division_template = {
@@ -11148,9 +11229,12 @@ shared_focus = {
                 infantry = {x = 1 y = 0 }
                 infantry = {x = 1 y = 1 }
                 infantry = {x = 1 y = 2 }
-                artillery_brigade = {x = 2 y = 0}
-                artillery_brigade = {x = 2 y = 1}
-                artillery_brigade = {x = 2 y = 2}
+                infantry = {x = 2 y = 0 }
+                infantry = {x = 2 y = 1 }
+                infantry = {x = 2 y = 2 }
+                artillery_brigade = {x = 3 y = 0}
+                artillery_brigade = {x = 3 y = 1}
+                artillery_brigade = {x = 3 y = 2}
             }
             support = {
                 engineer = { x = 0 y = 0 }
@@ -11164,10 +11248,11 @@ shared_focus = {
 
 shared_focus = {
     id = jap_ARMY_1_2
+    icon = GFX_goal_reichsautobahn
     relative_position_id = jap_ARMY_1_1
     x = 0
     y = 1
-    cost = 5
+    cost = 4
     prerequisite = {
         focus = jap_ARMY_1_1
     }
@@ -11181,10 +11266,11 @@ shared_focus = {
 
 shared_focus = {
     id = jap_ARMY_1_3
+    icon = GFX_goal_demand_sudetenland
     relative_position_id = jap_ARMY_1_2
     x = 0
     y = 1
-    cost = 5
+    cost = 4
     prerequisite = {
         focus = jap_ARMY_1_2
     }
@@ -11198,6 +11284,7 @@ shared_focus = {
 
 shared_focus = {
     id = jap_ARMY_2_1
+    icon = GFX_goal_generic_army_doctrines
     relative_position_id = jap_ARMY_1_1
     x = 2
     y = 0
@@ -11215,6 +11302,7 @@ shared_focus = {
 
 shared_focus = {
     id = jap_ARMY_2_2
+    icon = GFX_goal_generic_army_doctrines
     relative_position_id = jap_ARMY_2_1
     x = 0
     y = 1
@@ -11235,6 +11323,7 @@ shared_focus = {
 
 shared_focus = {
     id = jap_ARMY_2_3
+    icon = GFX_goal_generic_army_doctrines
     relative_position_id = jap_ARMY_2_2
     x = 0
     y = 1
@@ -11252,10 +11341,11 @@ shared_focus = {
 
 shared_focus = {
     id = jap_ARMY_3_1
+    icon = GFX_goal_generic_small_arms
     relative_position_id = jap_ARMY_1_1
     x = 4
     y = 0
-    cost = 5
+    cost = 4
     available = {
         
     }
@@ -11272,9 +11362,10 @@ shared_focus = {
 shared_focus = {
     id = jap_ARMY_3_2
     relative_position_id = jap_ARMY_3_1
+    icon = GFX_goal_generic_army_artillery2
     x = 0
     y = 1
-    cost = 5
+    cost = 4
     prerequisite = {
         focus = jap_ARMY_3_1
     }
@@ -11294,9 +11385,10 @@ shared_focus = {
 shared_focus = {
     id = jap_ARMY_3_3
     relative_position_id = jap_ARMY_3_2
+    icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
     x = 0
     y = 1
-    cost = 5
+    cost = 4
     prerequisite = {
         focus = jap_ARMY_3_2
     }
@@ -11317,6 +11409,7 @@ shared_focus = {
     id = jap_ARMY_10
     relative_position_id = jap_ARMY_2_3
     x = 0
+    icon = GFX_focus_SOV_mobilization_plan
     y = 1
     cost = 10
     prerequisite = {
@@ -11342,6 +11435,7 @@ shared_focus = {
 
 shared_focus = {
     id = jap_Integration_of_Army_and_Navy
+    icon = GFX_goal_generic_propaganda
     relative_position_id = jap_AIRFORCE_10
     x = 0
     y = 1
@@ -11373,6 +11467,7 @@ shared_focus = {
     relative_position_id = jap_Integration_of_Army_and_Navy
     x = -4
     y = 1
+    icon = GFX_focus_ETH_an_ethiopian_navy_in_exile
     cost = 10
     prerequisite = {
         focus = jap_Integration_of_Army_and_Navy
@@ -11390,6 +11485,7 @@ shared_focus = {
 
 shared_focus = {                        ###################### country_triger
     id = jap_Establishment_of_the_Ministry_of_War
+    icon = GFX_goal_tfv_strengthen_commonwealth_ties
     relative_position_id = jap_Integration_of_Army_and_Navy
     x = 0
     y = 1
@@ -11417,6 +11513,7 @@ shared_focus = {                        ###################### country_triger
 shared_focus = {
     id = jap_ARMY
     relative_position_id = jap_Integration_of_Army_and_Navy
+    icon = GFX_focus_generic_tank_production
     x = 4
     y = 1
     cost = 10
