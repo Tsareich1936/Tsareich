@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = TR_spain
+add_namespace = TR_spain_news
 
 # Spanish Civil War
 country_event = {
@@ -146,12 +147,12 @@ country_event = {
 		has_global_flag = TR_spr_civ_war
 		date > 1936.3.16 # Trigger at some point after 1936 elections
 	}
-
 	mean_time_to_happen = {
 		days = 1
 	}
 	immediate = {
 		hidden_effect = {
+			news_event = TR_spain_news.1
             176  = { transfer_state_to = SPB }
 			791  = { transfer_state_to = SPB }
 			172  = { transfer_state_to = SPC }
@@ -529,21 +530,28 @@ country_event = {
 	option = { # Support Republicans
 		name = TR_spain.2.a
 		custom_effect_tooltip = republicans_chosen
+
 	}
+
 	option = { # Support Royalists
 		name = TR_spain.2.b
 		trigger = { is_ai = no }
 	    SPB = { change_tag_from = SPR }
+
 	}
 	option = { # Support Communist
 		name = TR_spain.2.c
 		trigger = { is_ai = no }
 	    SPC = { change_tag_from = SPR }
+
 	}
 	option = { # Support other
-	name = TR_spain.2.e
-	trigger = { is_ai = no }
-	country_event = TR.TR_spain.4
+	    name = TR_spain.2.e
+	    trigger = { is_ai = no }
+	    country_event = TR.TR_spain.4
+
+
+    }
 }
 
 
@@ -694,7 +702,17 @@ country_event = { #神聖スペイン
 
 }
 
-
+news_event = {#スペイン内戦
+	id = TR_spain_news.1
+	title = TR_spain_news.1.t
+	desc = TR_spain_news.1.d
+	picture = GFX_news_event_033
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = TR_spain_news.1.a
+	}
+}
 
 
 
@@ -703,7 +721,7 @@ country_event = { #バニライベント(不発)
 	id = spain.1
 	title = spain.1.t
 	desc = spain.1.d
-	picture = GFX_report_event_spain_civil_war_soldiers
+	picture = GFX_news_event_033
 
 	fire_only_once = yes
 
@@ -827,7 +845,7 @@ country_event = { #バニライベント(不発)
 
 # Civil war over. Move Capital
 country_event = {
-	id = TR_spain.8
+	id = spain.8
 	title = TR_spain.8.t
 	desc = TR_spain.8.d
 	picture = GFX_report_event_spain_civil_war_volunteers_01

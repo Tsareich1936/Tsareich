@@ -124,10 +124,10 @@ country_event = {#セルビアの動向
 
 	immediate = {#12.25
 		SER = {
-			country_event = {
-				id = TR_balkan.8
-				days = 7
-			}
+			# country_event = {
+			# 	id = TR_balkan.8
+			# 	days = 7
+			# }
 		}
 	}
 	option = {#備えが必要だ
@@ -142,15 +142,16 @@ country_event = {#最高民族解放宣言
 	is_triggered_only = yes
 
 	immediate = {#12.30.12
+		
+	}
+	option = {#セルビアを解放するのだ
+		name = TR_balkan.8.a
 		HUN = {
 			country_event = {
 				id = TR_balkan.9
 				hours = 12
 			}
 		}
-	}
-	option = {#セルビアを解放するのだ
-		name = TR_balkan.8.a
 	}
 }
 country_event = {#セルビアからの最後通牒
@@ -162,6 +163,9 @@ country_event = {#セルビアからの最後通牒
 
 	immediate = {#12.30.24
 		SER = {
+			country_event = {
+				id = TR_balkan.10
+			}
 		}
 	}
 	option = {#かかってこい、相手になってやる
@@ -176,6 +180,16 @@ country_event = {#ハンガリーが最後通牒を拒否
 	is_triggered_only = yes
 
 	immediate = {
+		
+
+	}
+	option = {#兵を進めろ
+		name = TR_balkan.10.a
+		create_faction = BALKAN_ENTENTE_FACTION
+		declare_war_on = {
+			target = HUN
+			type = balkan_wars
+		}
 		every_country = {
 			limit = {
 				OR = {
@@ -190,15 +204,6 @@ country_event = {#ハンガリーが最後通牒を拒否
 			}
 		}
 		set_global_flag = TR_balkan_war
-
-	}
-	option = {#兵を進めろ
-		name = TR_balkan.10.a
-		create_faction = BALKAN_ENTENTE_FACTION
-		declare_war_on = {
-			target = HUN
-			type = balkan_wars
-		}
 	}
 }
 country_event = {#バルカン戦争
@@ -256,7 +261,8 @@ news_event = {#バルカン戦争
 	id = TR_balkan.12
 	title = TR_balkan.12.t
 	desc = TR_balkan.12.d
-
+	picture = GFX_news_event_TR_balkan_war
+	
 	is_triggered_only = yes
 	major = yes
 
@@ -271,6 +277,7 @@ country_event = {#バルカン戦争への参戦
 	id = TR_balkan.13
 	title = TR_balkan.13.t
 	desc = TR_balkan.13.d
+	picture = GFX_report_event_cze_divided_nation
 
 	is_triggered_only = yes
 
