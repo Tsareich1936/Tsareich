@@ -15,6 +15,7 @@ country_event = {#プラハ暴動
 		has_defensive_war = no
 		date > 1938.1.1
 		has_global_flag = TR_balkan_war_finished
+		always = no
 	}
 
 	option = {#軍隊を動員せよ
@@ -24,6 +25,7 @@ country_event = {#プラハ暴動
 			days = 3
 		}
 	}
+
 	option = {#彼らの要求を聞いてみよう
 		name = TR_czech_revolution.1.b
 		ai_chance = { base = 0 }
