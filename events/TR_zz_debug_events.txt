@@ -315,3 +315,28 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = TR_debug.9
+	title = TR_debug.9.t
+	desc = TR_debug.9.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_debug.9.a
+		every_country = {
+			limit = {
+				NOT = {
+					tag = ROOT
+				}
+			}
+			ROOT = {
+				
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}	
+	}
+}

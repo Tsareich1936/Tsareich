@@ -678,6 +678,12 @@ ideas = {
                 always = yes
             }
             removal_cost = -1
+            on_add = {
+                set_country_flag = TR_anti_commune_pact_flag
+            }
+            on_remove = {
+                clr_country_flag = TR_anti_commune_pact_flag
+            }
             modifier = {
                 hidden_modifier = {
                     anarchism_acceptance = -40
@@ -691,6 +697,7 @@ ideas = {
                 }
                 custom_modifier_tooltip = RUS_antipact.tt
             }
+            
         }
 
         RUS_church_law = {
