@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology= Lcoalition
+			ideology= national_syndicalism
 			traits={ TR_italy_little_hero }
 			expire="1965.1.1.1"
 			id=-1
@@ -21,7 +21,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology= Lcoalition
+			ideology= national_syndicalism
 			traits={ TR_divided_politics }
 			expire="1965.1.1.1"
 			id=-1
@@ -35,7 +35,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology= Lcoalition
+			ideology= national_syndicalism
 			traits={ }
 			expire="1965.1.1.1"
 			id=-1

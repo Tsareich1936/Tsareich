@@ -564,8 +564,9 @@ focus_tree = {
 			complete_tooltip = {
 				promote_character = {
 					character = SRI_consiglio_socialista
-					ideology = Lcoalition
-				}effect_tooltip = {
+					ideology = national_syndicalism
+				}
+				effect_tooltip = {
 					custom_effect_tooltip = "SRI_unlock_alt_bop"
 				}
 				set_popularities = {
@@ -579,7 +580,7 @@ focus_tree = {
 				SRI = {
 					promote_character = {
 						character = SRI_consiglio_socialista
-						ideology = Lcoalition
+						ideology = national_syndicalism
 					}
 					set_popularities = {
 						communism = 15

@@ -58,3 +58,5 @@
 
   RULL_JOIN_ALLY_POLAND_TOOLTIP: "§Y[POL.GetNameDef]§!は戦争を行っていない。"
   RULE_ALLOW_RELEASE_NATIONS_RUSSIA_POLAND_TOOLTIP: "§Y[ROOT.GetNameDefCap]§!は§Y[POL.GetNameDef]§!の解放ができません。"
+  CANT_JOIN_FACTION: "§Rイベント以外での陣営加盟は禁止されている!§!"
+  CANT_OFFER_JOIN_FACTION: "§Rイベント以外での陣営招待は禁止されている!§!"
