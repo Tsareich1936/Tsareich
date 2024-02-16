@@ -1,0 +1,22 @@
+unique_id = Tsareich_achievements
+
+# TR_test = {
+# 	possible = {
+# 		tag = SER
+#       always = no
+# 	}
+# 	happened = {
+#         date > 1936.01.02
+#     }
+# }
+TR_balkan_winner = {
+	possible = {
+		tag = SER
+	}
+	happened = {
+        custom_trigger_tooltip = {
+            tooltip = TR_balkan_winner_tt
+            has_global_flag = TR_balkan_war_finished
+        }
+    }
+}

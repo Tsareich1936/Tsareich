@@ -109,13 +109,15 @@ on_actions = {
 					days = 56
 				}
 			}
-			JAP = {
-				country_event = {
-					id = TR_japan.95
-					days = 30
-				}
+		}
+	effect = {
+		JAP = {
+			country_event = {
+				id = TR_japan.95
+				days = 60
 			}
 		}
+	}
 	effect = {#VIN set up
 			#VIN gomu concessions			
 			VIN = {
@@ -400,4 +402,5 @@ on_actions = {
 			}
 		}
 	}
+    
 }

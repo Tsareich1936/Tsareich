@@ -3226,7 +3226,7 @@ country_event = {
 			JAP = {
 				country_event = {
 					id = TR_japan.111
-					days = 60
+					days = 120
 				}
 			}
 		}

@@ -1464,7 +1464,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					create_wargoal = {
-							type = take_state_focus
+							type = world_war_ii
 							target = RUS
 							generator = { 86  807  85  5  763  188  762 }
 							expire = 0

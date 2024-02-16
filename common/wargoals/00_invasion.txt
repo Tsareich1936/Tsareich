@@ -36,6 +36,26 @@ wargoal_types = {
 		threat = 0.25
 	}
 
+	world_war_ii = {
+		war_name = WORLD_WAR_II
+		allowed = {
+			always = no
+		}
+
+		available = {
+
+		}
+
+		take_states = {
+
+		}
+
+		#take_states_limit = 1
+		#take_states_cost = -50 		#50% cheaper warcost for states
+
+		threat = 3
+	}
+
 	take_state = {
 		# PREV = original target country
 		# ROOT = goal owner country

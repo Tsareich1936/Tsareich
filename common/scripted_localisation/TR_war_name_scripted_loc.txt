@@ -1,0 +1,12 @@
+# defined_text = {
+# 	name = GetWWIIName
+# 	text = {
+# 		trigger = {
+# 			tag = RUS
+# 		}
+# 		localization_key = WORLD_WAR_II_RUS
+# 	}
+# 	text = {
+# 		localization_key = WORLD_WAR_II_normal
+# 	}
+# }
