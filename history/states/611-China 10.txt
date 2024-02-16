@@ -4,8 +4,7 @@ state={
 	name="STATE_611" # South Chahar
 	manpower = 1470000
 	
-	state_category = pastoral
-
+	state_category = rural
 	history={
 		owner = MAN
 		add_core_of = MEN
@@ -14,7 +13,6 @@ state={
 		add_core_of = MAN
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
 		}
 		victory_points = {
 			11752 4

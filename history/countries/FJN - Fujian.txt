@@ -1,7 +1,7 @@
 ﻿capital = 595
 
-#oob = ""
-
+oob = FJN_1936
+ 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

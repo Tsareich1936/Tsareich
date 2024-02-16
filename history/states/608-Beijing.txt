@@ -14,20 +14,17 @@ state={
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
+			arms_factory = 1
 			air_base = 3
 			10068 = {
 				naval_base = 2
 			}
 		}
 		victory_points = {
-			9843 20
+			9843 25
 		}
 		victory_points = {
-			10068 1 
-		}
-
-		1938.10.25 = {
-			controller = JAP
+			10068 5
 		}
 	}
 

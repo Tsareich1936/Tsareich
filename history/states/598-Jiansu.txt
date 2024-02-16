@@ -3,21 +3,34 @@ state={
 	id=598
 	name="STATE_598"
 	
-	state_category = town
+	state_category = city
 
 	history={
 		owner = MAN
 		add_core_of = CHI
 		add_core_of = PRC
 		add_core_of = MAN
+		victory_points = {
+			7025 5
+		}
+		victory_points = {
+			1121 3 
+		}
+		victory_points = {
+			1029 1
+		}
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
+			1029 = {
+				naval_base = 2
+				coastal_bunker = 1
+				bunker = 1
+			}
 
 		}
 
-		1938.10.25 = {
-			controller = JAP
-		}
+
 	}
 
 	provinces={

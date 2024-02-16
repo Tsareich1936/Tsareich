@@ -1,13 +1,11 @@
-state=
-{
+state={
 	id=597
 	name="STATE_597"
 	manpower = 38373200
-	state_category = town
+	state_category = city
 	
 	
-	history=
-	{
+	history={
 		owner = MAN
 		add_core_of = CHI
 		add_core_of = PRC
@@ -15,19 +13,18 @@ state=
 		victory_points = {
 			1069 3 
 		}
+		victory_points = {
+			1200 1
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 3
-			4205 = {
+			1200 = {
 				naval_base = 2
 				coastal_bunker = 1
 				bunker = 1
 			}
-		}
-
-		1938.10.25 = {
-			controller = JAP
 		}
 	}
 	provinces={

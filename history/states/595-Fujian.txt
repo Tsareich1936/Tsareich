@@ -2,33 +2,39 @@ state= {
 	id=595
 	name="STATE_595"
 	manpower = 11755600
+	resources = {
+		steel = 4
+	}
 	state_category = city
-	history=
-	{
+	history = {
 		owner = FJN
 		add_core_of = FJN
 		add_core_of = CHI
 		add_core_of = PRC
 		add_core_of = MAN
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
+			arms_factory = 1
 			7071 = {
 				naval_base = 1
 				coastal_bunker = 1
 				bunker = 1
 			}
 			4196 = {
-				naval_base = 3
+				naval_base = 4
 				coastal_bunker = 1
 				bunker = 1
 			}
 		}
 		victory_points = { 
-			4196 3 
+			4196 8
 		}
 		victory_points = { 
-			7071 1 
+			7071 3
+		}
+		victory_points = { 
+			11986 1
 		}
 
 		1938.10.25 = {		

@@ -1,6 +1,6 @@
 ﻿capital = 602
 
-#oob = ""
+oob = HNA_1936
 
 # Starting tech
 set_technology = {
