@@ -14,10 +14,27 @@ division_template = {
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 	
+	}
+}
+division_template = {
+	name = "División infantry2"	
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 }
 
@@ -28,16 +45,14 @@ units = {
 		name = "1 phân công"
 		location = 4075
 		division_template = "División infantry"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_experience_factor = 1
 
 	}
 	division= {	
 		name = "2 phân công"
 		location = 4401
 		division_template = "División infantry"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.8
 
 	}
 	division= {	
@@ -45,7 +60,7 @@ units = {
 		location = 1185
 		division_template = "División infantry"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 
@@ -54,7 +69,7 @@ units = {
 		location = 4119
 		division_template = "División infantry"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division= {	
@@ -62,7 +77,7 @@ units = {
 		location = 1464
 		division_template = "División infantry"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division= {	
@@ -70,7 +85,7 @@ units = {
 		location = 10177
 		division_template = "División infantry"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division= {	
@@ -78,7 +93,7 @@ units = {
 		location = 9948
 		division_template = "División infantry"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division= {	
@@ -86,7 +101,23 @@ units = {
 		location = 12319
 		division_template = "División infantry"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "9 phân công"
+		location = 4379
+		division_template = "División infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "10 phân công"
+		location = 4405
+		division_template = "División infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 
@@ -99,11 +130,21 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "VIN"
 		}
 		requested_factories = 1
 		progress = 0.89
 		efficiency = 100
 	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "VIN"
+		}
+		requested_factories = 1
+		progress = 0.89
+		efficiency = 100
+	}
+
 }

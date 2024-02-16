@@ -44,17 +44,52 @@ country_event = {#爆殺内戦
 				remove_from_faction = YUN
 				remove_from_faction = XSM
 				remove_from_faction = SIK
+				remove_from_faction = BKN
+				remove_from_faction = EXC
+				remove_from_faction = MAN
 			}
-			615 = { transfer_state_to = PRC }
-			607  = { transfer_state_to = PRC }
-			FJN = {
+			622 = { transfer_state_to = PRC }
+			744  = { transfer_state_to = PRC }
+			621  = { transfer_state_to = SHX }
+			SHX = {
 				declare_war_on = {
 					target = MAN
 					type = annex_everything
 				}
-				create_unit = {
-					division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
-					owner = FJN
+				621 = {
+					create_unit = {
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+						owner = SHX
+					}
+					create_unit = {
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+						owner = SHX
+					}
+					create_unit = {
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+						owner = SHX
+					}
+					create_unit = {
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+						owner = SHX
+					}
+				}
+			}
+			FJN = {
+				set_cosmetic_tag = NKCHI
+				add_research_slot = 1
+				set_capital = {
+					state = 613
+				}
+				declare_war_on = {
+					target = MAN
+					type = annex_everything
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0.1" 
+						owner = FJN
+					}
 				}
 			}	
 			PRC = {
@@ -64,27 +99,23 @@ country_event = {#爆殺内戦
 				}
 				every_owned_state = {
 					create_unit = {
-						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
 						owner = PRC
 					}
 					create_unit = {
-						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
 						owner = PRC
 					}
 					create_unit = {
-						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
 						owner = PRC
 					}
 					create_unit = {
-						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
 						owner = PRC
 					}
 					create_unit = {
-						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
-						owner = PRC
-					}
-					create_unit = {
-						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
 						owner = PRC
 					}
 				}
@@ -95,10 +126,96 @@ country_event = {#爆殺内戦
 
 	option = {#OK
 		name = TR_MAN.2.a
-		add_stability = -0.4
+		add_stability = -0.2
+		ai_chance = {
+			factor = 5
+		}
 	}
+	option = { # play PRC
+	    name = TR_MAN.2.b
+	    trigger = { is_ai = no }
+	    PRC = { change_tag_from = MAN }
+    }
+	option = { # play SHX
+	    name = TR_MAN.2.c
+	    trigger = { is_ai = no }
+	    SHX = { change_tag_from = MAN }
+    }
 }
 
+country_event = {#中原からの撤退
+	id = TR_MAN.3
+	title = TR_MAN.1.t
+	desc = TR_MAN.1.d
+	fire_only_once = yes
+	trigger = {
+		date > 1936.5.15
+		tag = MAN
+		NOT = {
+			has_full_control_of_state = 615
+			has_full_control_of_state = 607
+			has_full_control_of_state = 597
+		}
+	}
+
+
+	option = {#OK
+		name = TR_MAN.3.a
+		ai_chance = {
+			factor = 100
+		}
+		add_war_support = -0.1
+		MAN = {
+			white_peace = FJN
+			white_peace = NKCHI
+			white_peace = PRC
+			white_peace = SHX
+			597 = { transfer_state_to = SAN }
+			615  = { transfer_state_to = SHX }
+			746  = { transfer_state_to = PRC }
+			744  = { transfer_state_to = PRC }
+			606  = { transfer_state_to = FJN }
+			607  = { transfer_state_to = FJN }
+			598  = { transfer_state_to = FJN }
+		}
+		
+		SAN = {
+			add_state_core = 597
+			every_owned_state = {
+				create_unit = {
+					division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+					owner = SAN
+				}
+				create_unit = {
+					division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+					owner = SAN
+				}
+				create_unit = {
+					division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+					owner = SAN
+				}
+				create_unit = {
+					division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+					owner = SAN
+				}
+			}
+		}
+		FJN = {
+			add_state_core = 597
+			add_state_core = 606
+			add_state_core = 607
+			add_state_core = 598
+		}
+
+	}
+
+	option = {#NO
+	    name = TR_MAN.3.b
+	    add_stability = -0.25
+		add_war_support = -0.25
+		add_political_power = -200
+    }
+}
 
 news_event = {#爆殺
 	id = TR_spain_news.1

@@ -271,7 +271,8 @@ TXS = "countries/Republic of Texas.txt"
 DST = "countries/State of Deseret.txt"
 OTT = "countries/Ottoman Empire.txt"
 BKN = "countries/Wuhan.txt"
-
+SAN = "countries/Santou.txt"
+EXC = "countries/Kanton.txt"
 
  # CSA = "countries/CSA.txt"
  # ARP = "countries/American Republic.txt"

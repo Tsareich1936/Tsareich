@@ -15,27 +15,12 @@ state = {
 		add_core_of = MAN
 
 		victory_points = {
-			12732 10 #Was 3 when it was Lanzhou, but should be Xining, the capital of Xibei 
+			12732 5 #Was 3 when it was Lanzhou, but should be Xining, the capital of Xibei 
 		}
 
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
-		}
-
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-			}
 		}
 	}
 

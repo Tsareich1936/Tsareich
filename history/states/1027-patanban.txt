@@ -15,10 +15,13 @@ state={
 			infrastructure = 2
 		}
 		victory_points = {
-			10177 1
+			10177 2
+		}
+		victory_points = {
+			4302 1
 		}
 	}
 	manpower= 1501000
-	state_category = town
+	state_category = rural
 	local_supplies=0.000
 }

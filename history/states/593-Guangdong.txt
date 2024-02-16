@@ -10,11 +10,17 @@ state= {
 	}
 
 	history= {
-		owner = GXC
-		add_core_of = GXC
+		owner = EXC
+		add_core_of = EXC
 		add_core_of = CHI
 		add_core_of = PRC
 		add_core_of = MAN
+		victory_points = {
+			9938 5
+		}
+		victory_points = {
+			9970 1
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -23,18 +29,6 @@ state= {
 				coastal_bunker = 1
 				bunker = 1
 			}
-		}
-
-		1938.10.25 = {		
-			remove_core_of = GXC
-			owner = CHI
-			JAP = {
-				set_province_controller = 1202
-				set_province_controller = 4050
-				set_province_controller = 7108
-				set_province_controller = 9938
-				set_province_controller = 12095
-			} 			
 		}
 	}
 	provinces={

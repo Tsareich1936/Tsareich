@@ -10,16 +10,16 @@ state={
 	}
 
 	history={
-		owner = GXC
-		add_core_of = GXC
+		owner = EXC
+		add_core_of = EXC
 		add_core_of = CHI
 		add_core_of = PRC
 		
 		add_core_of = MAN
 		buildings = {
 			infrastructure = 2
-			arms_factory = 2
-			industrial_complex = 1
+			arms_factory = 1
+			industrial_complex = 2
 			dockyard = 1
 			air_base = 3
 			1047 = {
@@ -31,6 +31,12 @@ state={
 		}
 		victory_points = {
 			1047 20
+		}
+		victory_points = {
+			7152 5
+		}
+		victory_points = {
+			1131 3
 		}
 
 	}

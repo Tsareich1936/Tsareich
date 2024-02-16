@@ -1,4 +1,4 @@
-state={
+state = {
 	id=1022
 	name="STATE_1022"
 	resources={
@@ -14,6 +14,7 @@ state={
 			infrastructure = 3
 		}
 		victory_points = { 12133 2 }
+		victory_points = { 4341 1 }
 	}
 	manpower=1501000
 	state_category = town

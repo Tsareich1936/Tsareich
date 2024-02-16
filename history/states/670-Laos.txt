@@ -14,10 +14,11 @@ state={
 		add_core_of = LAO
 		add_core_of = VIN
 		victory_points = {
-			1464 3
+			1464 5
 		}
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
 		}
 
 	}
@@ -25,7 +26,7 @@ state={
 	provinces={
 		1362 1390 1464 1507 4339 4568 4613 7075 7103 7218 7356 9961 10496 12332 12392 12433 
 	}
-	manpower= 653000
+	manpower= 668000
 	state_category=town
 	local_supplies=0.000
 }
