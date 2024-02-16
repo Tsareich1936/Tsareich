@@ -1,6 +1,6 @@
 ﻿capital = 620
 
-oob = HBE_1936
+oob = BKN_1936
 
 # Starting tech
 set_technology = {
