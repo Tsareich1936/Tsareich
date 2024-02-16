@@ -205,163 +205,665 @@ focus_tree = {
 		}
 	}
 	### navy focus ###
-		focus = {
-			id = SRI_navy_focus_1
-			icon = GFX_goal_generic_navy_battleship
-			cost = 5
-			allow_branch = {
-				has_country_flag = dAnnunzio_death
-			}
-			ai_will_do = {
-				base = 1
-				modifier = {
-					has_completed_focus = SRI_reunification
-					factor = 3
-				}
-			}
+		# Legacy
+			# focus = {
+			# 	id = SRI_navy_focus_1
+			# 	icon = GFX_goal_generic_navy_battleship
+			# 	cost = 5
+			# 	allow_branch = {
+			# 		has_country_flag = dAnnunzio_death
+			# 	}
+			# 	ai_will_do = {
+			# 		base = 1
+			# 		modifier = {
+			# 			has_completed_focus = SRI_reunification
+			# 			factor = 3
+			# 		}
+			# 	}
+			# 	x = 35
+			# 	y = 10
+			# 	completion_reward = {
+			# 		navy_experience = 50
+			# 	}
+			# }
+			# focus = {
+			# 	id = SRI_navy_focus_2
+			# 	icon = GFX_focus_generic_navy_battleship2
+			# 	cost = 5
+			# 	prerequisite = {
+			# 		focus = SRI_navy_focus_1
+			# 	}
+			# 	x = -2
+			# 	y = 2
+			# 	relative_position_id = SRI_navy_focus_1
+			# 	completion_reward = {
+			# 		add_tech_bonus = {
+			# 			name = SRI_ships_bonus
+			# 			bonus = 2
+			# 			uses = 2
+			# 			category = dd_tech
+			# 		}
+			# 	}
+			# }
+			# focus = {
+			# 	id = SRI_navy_focus_3
+			# 	icon = GFX_goal_generic_navy_submarine
+			# 	cost = 5
+			# 	prerequisite = {
+			# 		focus = SRI_navy_focus_1
+			# 	}
+			# 	x = 0
+			# 	y = 2
+			# 	relative_position_id = SRI_navy_focus_1
+			# 	completion_reward = {
+			# 		add_tech_bonus = {
+			# 			name = SRI_artillery_bonus
+			# 			bonus = 2
+			# 			uses = 1
+			# 			category = ss_tech
+			# 		}
+			# 	}
+			# }
+			# focus = {
+			# 	id = SRI_navy_focus_4
+			# 	icon = GFX_goal_generic_navy_carrier
+			# 	cost = 5
+			# 	prerequisite = {
+			# 		focus = SRI_navy_focus_1
+			# 	}
+			# 	x = 2
+			# 	y = 2
+			# 	relative_position_id = SRI_navy_focus_1
+			# 	completion_reward = {
+			# 		add_tech_bonus = {
+			# 			name = SRI_naval_air_bonus
+			# 			bonus = 2
+			# 			uses = 2
+			# 			category = cv_tech
+			# 		}
+			# 	}
+			# }
+			# focus = {
+			# 	id = SRI_navy_focus_5
+			# 	icon = GFX_goal_generic_amphibious_assault
+			# 	cost = 5
+			# 	prerequisite = {
+			# 		focus = SRI_navy_focus_2
+			# 	}
+			# 	x = 0
+			# 	y = 1
+			# 	relative_position_id = SRI_navy_focus_2
+			# 	completion_reward = {
+			# 		add_tech_bonus = {
+			# 			name = SRI_naval_air_bonus
+			# 			bonus = 2
+			# 			uses = 4
+			# 			category = ca_tech
+			# 			category = cl_tech
+			# 			category = bb_tech
+			# 			category = bc_tech
+			# 		}
+			# 	}
+			# }
+			# focus = {
+			# 	id = SRI_navy_focus_6
+			# 	icon = GFX_goal_generic_navy_anti_submarine
+			# 	cost = 5
+			# 	prerequisite = {
+			# 		focus = SRI_navy_focus_3
+			# 	}
+			# 	x = 0
+			# 	y = 1
+			# 	relative_position_id = SRI_navy_focus_3
+			# 	completion_reward = {
+			# 		add_ideas = {
+			# 			SRI_subship
+			# 		}
+			# 	}
+			# }
+			# focus = {
+			# 	id = SRI_navy_focus_7
+			# 	icon = GFX_goal_generic_air_naval_bomber
+			# 	cost = 5
+			# 	prerequisite = {
+			# 		focus = SRI_navy_focus_4
+			# 	}
+			# 	x = 0
+			# 	y = 1
+			# 	relative_position_id = SRI_navy_focus_4
+			# 	completion_reward = {
+			# 		add_ideas = {
+			# 			SRI_naval_bomber
+			# 		}
+			# 	}
+			# }
+			# focus = {
+			# 	id = SRI_navy_focus_8
+			# 	icon = GFX_goal_generic_navy_doctrines_tactics
+			# 	cost = 5
+			# 	prerequisite = {
+			# 		focus = SRI_navy_focus_5
+			# 	}
+			# 	prerequisite = {
+			# 		focus = SRI_navy_focus_6
+			# 	}
+			# 	prerequisite = {
+			# 		focus = SRI_navy_focus_7
+			# 	}
+			# 	x = 0
+			# 	y = 2
+			# 	relative_position_id = SRI_navy_focus_6
+			# 	completion_reward = {
+			# 		navy_experience = 100
+			# 		add_doctrine_cost_reduction = {
+			# 			cost_reduction = 0.75
+			# 			category = naval_doctrine
+			# 			uses = 3
+			# 			name = SRI_army_doctrines
+			# 		}
+			# 	}
+			# }
+		focus = {#Tradizioni delle repubbliche marinare
+			#海洋共和国の伝統
+			id = SRI_TDRM
+			icon = GFX_
+			cost = 4
 			x = 35
-			y = 4
+			y = 10
 			completion_reward = {
-				navy_experience = 50
+				
 			}
 		}
-		focus = {
-			id = SRI_navy_focus_2
-			icon = GFX_focus_generic_navy_battleship2
+		focus = {#上陸作戦
+			id = SRI_landing_operations
+			icon = GFX_
 			cost = 5
 			prerequisite = {
-				focus = SRI_navy_focus_1
-			}
-			x = -2
-			y = 2
-			relative_position_id = SRI_navy_focus_1
-			completion_reward = {
-				add_tech_bonus = {
-					name = SRI_ships_bonus
-					bonus = 2
-					uses = 2
-					category = dd_tech
-				}
-			}
-		}
-		focus = {
-			id = SRI_navy_focus_3
-			icon = GFX_goal_generic_navy_submarine
-			cost = 5
-			prerequisite = {
-				focus = SRI_navy_focus_1
-			}
-			x = 0
-			y = 2
-			relative_position_id = SRI_navy_focus_1
-			completion_reward = {
-				add_tech_bonus = {
-					name = SRI_artillery_bonus
-					bonus = 2
-					uses = 1
-					category = ss_tech
-				}
-			}
-		}
-		focus = {
-			id = SRI_navy_focus_4
-			icon = GFX_goal_generic_navy_carrier
-			cost = 5
-			prerequisite = {
-				focus = SRI_navy_focus_1
-			}
-			x = 2
-			y = 2
-			relative_position_id = SRI_navy_focus_1
-			completion_reward = {
-				add_tech_bonus = {
-					name = SRI_naval_air_bonus
-					bonus = 2
-					uses = 2
-					category = cv_tech
-				}
-			}
-		}
-		focus = {
-			id = SRI_navy_focus_5
-			icon = GFX_goal_generic_amphibious_assault
-			cost = 5
-			prerequisite = {
-				focus = SRI_navy_focus_2
+				focus = SRI_TDRM
 			}
 			x = 0
 			y = 1
-			relative_position_id = SRI_navy_focus_2
+			relative_position_id = SRI_TDRM
 			completion_reward = {
-				add_tech_bonus = {
-					name = SRI_naval_air_bonus
-					bonus = 2
-					uses = 4
-					category = ca_tech
-					category = cl_tech
-					category = bb_tech
-					category = bc_tech
-				}
+		
 			}
 		}
-		focus = {
-			id = SRI_navy_focus_6
-			icon = GFX_goal_generic_navy_anti_submarine
+		focus = {#海兵の強化
+			id = SRI_strengthening_marines
+			icon = GFX_
 			cost = 5
 			prerequisite = {
-				focus = SRI_navy_focus_3
+				focus = SRI_landing_operations
 			}
 			x = 0
 			y = 1
-			relative_position_id = SRI_navy_focus_3
+			relative_position_id = SRI_landing_operations
 			completion_reward = {
-				add_ideas = {
-					SRI_subship
-				}
+		
 			}
 		}
-		focus = {
-			id = SRI_navy_focus_7
-			icon = GFX_goal_generic_air_naval_bomber
-			cost = 5
-			prerequisite = {
-				focus = SRI_navy_focus_4
-			}
-			x = 0
-			y = 1
-			relative_position_id = SRI_navy_focus_4
-			completion_reward = {
-				add_ideas = {
-					SRI_naval_bomber
+		## Amalfi ##
+			focus = {#アマルフィの伝統
+				id = SRI_amalfi_traditions
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_TDRM
+				}
+				x = -4
+				y = 2
+				relative_position_id = SRI_TDRM
+				completion_reward = {
+			
 				}
 			}
-		}
-		focus = {
-			id = SRI_navy_focus_8
-			icon = GFX_goal_generic_navy_doctrines_tactics
-			cost = 5
-			prerequisite = {
-				focus = SRI_navy_focus_5
-			}
-			prerequisite = {
-				focus = SRI_navy_focus_6
-			}
-			prerequisite = {
-				focus = SRI_navy_focus_7
-			}
-			x = 0
-			y = 2
-			relative_position_id = SRI_navy_focus_6
-			completion_reward = {
-				navy_experience = 100
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.75
-					category = naval_doctrine
-					uses = 3
-					name = SRI_army_doctrines
+			focus = {#シチリアへの拡張
+				id = SRI_extension_to_sicily
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_amalfi_traditions
+				}
+				x = 0
+				y = 1
+				relative_position_id = SRI_amalfi_traditions
+				completion_reward = {
+			
 				}
 			}
-		}
+			focus = {#島嶼部の防衛
+				id = SRI_island_defence
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_extension_to_sicily
+				}
+				x = -1
+				y = 1
+				relative_position_id = SRI_extension_to_sicily
+				completion_reward = {
+			
+				}
+			}
+			focus = {#南方海軍
+				id = SRI_southern_navy
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_extension_to_sicily
+				}
+				x = 0
+				y = 2
+				relative_position_id = SRI_extension_to_sicily
+				completion_reward = {
+			
+				}
+			}
+			focus = {#潜水艦への注力
+				id = SRI_focus_on_submarines
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_southern_navy
+				}
+				x = 0
+				y = 1
+				relative_position_id = SRI_southern_navy
+				completion_reward = {
+			
+				}
+			}
+			focus = {#シュノーケルへの注力
+				id = SRI_focus_on_snorkel
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_focus_on_submarines
+				}
+				x = 0
+				y = 1
+				relative_position_id = SRI_focus_on_submarines
+				completion_reward = {
+			
+				}
+			}
+			focus = {#魚雷への注力
+				id = SRI_focus_on_torpedo
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_focus_on_submarines
+				}
+				x = -1
+				y = 2
+				relative_position_id = SRI_focus_on_submarines
+				completion_reward = {
+			
+				}
+			}
+			focus = {#深海の覇者
+				id = SRI_DEEP_SEA_CHAMPION
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_focus_on_snorkel
+					focus = SRI_focus_on_torpedo
+				}
+				x = 0
+				y = 2
+				relative_position_id = SRI_focus_on_snorkel
+				completion_reward = {
+			
+				}
+			}
+		## Pisa ##
+			focus = {#ピサの伝統
+				id = SRI_pisa_traditions
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_TDRM
+				}
+				x = 4
+				y = 2
+				relative_position_id = SRI_TDRM
+				completion_reward = {
+			
+				}
+			}
+			focus = {#ラツィオへの拡張
+				id = SRI_extension_to_lazio
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_pisa_traditions
+				}
+				x = 0
+				y = 1
+				relative_position_id = SRI_pisa_traditions
+				completion_reward = {
+			
+				}
+			}
+			focus = {#ローマ海軍
+				id = SRI_roman_navy
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_extension_to_lazio
+				}
+				x = 1
+				y = 1
+				relative_position_id = SRI_extension_to_lazio
+				completion_reward = {
+			
+				}
+			}
+			focus = {#大ローマ港
+				id = SRI_il_porto
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_extension_to_lazio
+				}
+				x = 0
+				y = 2
+				relative_position_id = SRI_extension_to_lazio
+				completion_reward = {
+			
+				}
+			}
+			focus = {#安寧なる海
+				id = SRI_peace_sea
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_il_porto
+				}
+				x = 0
+				y = 1
+				relative_position_id = SRI_il_porto
+				completion_reward = {
+			
+				}
+			}
+			focus = {#駆逐艦への注力
+				id = SRI_focus_on_destroyer
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_peace_sea
+				}
+				x = 0
+				y = 1
+				relative_position_id = SRI_peace_sea
+				completion_reward = {
+			
+				}
+			}
+			focus = {#巡洋艦への注力
+				id = SRI_focus_on_cruiser
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_peace_sea
+				}
+				x = 1
+				y = 2
+				relative_position_id = SRI_peace_sea
+				completion_reward = {
+			
+				}
+			}
+			focus = {#絶対的防御
+				id = SRI_ABSOLUTE_DEFENCE
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_focus_on_destroyer
+					focus = SRI_focus_on_cruiser
+				}
+				x = 0
+				y = 2
+				relative_position_id = SRI_focus_on_destroyer
+				completion_reward = {
+			
+				}
+			}
+		## Venezia ##
+			focus = {
+				id = SRI_venezia_traditions
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_TDRM
+				}
+				x = -2
+				y = 1
+				relative_position_id = SRI_TDRM
+				completion_reward = {
+			
+				}
+			}
+			focus = {#アドリアの女王
+				id = SRI_adrian_queen
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_venezia_traditions
+				}
+				x = 0
+				y = 1
+				relative_position_id = SRI_venezia_traditions
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = SRI_warship_queen
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_adrian_queen
+				}
+				x = 1
+				y = 2
+				relative_position_id = SRI_adrian_queen
+				completion_reward = {
+			
+				}
+			}
+		## Genova ##
+			focus = {
+				id = SRI_genova_traditions
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_TDRM
+				}
+				x = 2
+				y = 1
+				relative_position_id = SRI_TDRM
+				completion_reward = {
+			
+				}
+			}
+			focus = {#サルデーニャへの拡大
+				id = SRI_extension_to_sardegna
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_genova_traditions
+				}
+				x = 0
+				y = 1
+				relative_position_id = SRI_genova_traditions
+				completion_reward = {
+			
+				}
+			}
+			focus = {#軍艦の王
+				id = SRI_warship_king
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_extension_to_sardegna
+				}
+				x = -1
+				y = 2
+				relative_position_id = SRI_extension_to_sardegna
+				completion_reward = {
+			
+				}
+			}
+		## main force ##
+			focus = {#第一次建艦計画
+				id = SRI_building_warship_plan1
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_warship_queen
+					focus = SRI_warship_king
+				}
+				x = 0
+				y = 5
+				relative_position_id = SRI_TDRM
+				completion_reward = {
+			
+				}
+			}
+			focus = {#造船所の大拡張
+				id = SRI_extension_dockyard
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_building_warship_plan1
+				}
+				x = 0
+				y = 1
+				relative_position_id = SRI_building_warship_plan1
+				completion_reward = {
+			
+				}
+			}
+			focus = {#英雄の船
+				id = SRI_hero_ship
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_building_warship_plan1
+				}
+				x = -2
+				y = 1
+				relative_position_id = SRI_building_warship_plan1
+				completion_reward = {
+			
+				}
+			}
+			focus = {#皇帝の船
+				id = SRI_imperial_ship
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_building_warship_plan1
+				}
+				x = 2
+				y = 1
+				relative_position_id = SRI_building_warship_plan1
+				completion_reward = {
+			
+				}
+			}
+			focus = {#海軍研究機関の拡張
+				id = SRI_naval_research_institutes_expansion
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_hero_ship
+					focus = SRI_imperial_ship
+				}
+				x = 0
+				y = 1
+				relative_position_id = SRI_extension_dockyard
+				completion_reward = {
+			
+				}
+			}
+			focus = {#特殊部隊の拡張
+				id = SRI_expansion_commando
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_naval_research_institutes_expansion
+				}
+				x = 0
+				y = 1
+				relative_position_id = SRI_naval_research_institutes_expansion
+				completion_reward = {
+			
+				}
+			}
+			focus = {#艦載機への注力
+				id = SRI_focus_on_ship_based_aircraft
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_hero_ship
+					focus = SRI_imperial_ship
+				}
+				x = 0
+				y = 2
+				relative_position_id = SRI_hero_ship
+				completion_reward = {
+			
+				}
+			}
+			focus = {#火力への注力
+				id = SRI_focus_on_power
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_hero_ship
+					focus = SRI_imperial_ship
+				}
+				x = 0
+				y = 2
+				relative_position_id = SRI_imperial_ship
+				completion_reward = {
+			
+				}
+			}
+			focus = {#第ニ次建艦計画
+				id = SRI_building_warship_plan2
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_focus_on_ship_based_aircraft
+					focus = SRI_focus_on_power
+				}
+				x = 0
+				y = 4
+				relative_position_id = SRI_building_warship_plan1
+				completion_reward = {
+			
+				}
+			}
+			focus = {#我らが海へと
+				id = SRI_to_the_our_sea
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = SRI_building_warship_plan2
+					focus = SRI_DEEP_SEA_CHAMPION
+					focus = SRI_ABSOLUTE_DEFENCE
+				}
+				x = 0
+				y = 2
+				relative_position_id = SRI_building_warship_plan2
+				completion_reward = {
+			
+				}
+			}
 	### air force focus ###
 		focus = {
 			id = SRI_air_force_focus_1
