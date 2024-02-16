@@ -62,6 +62,7 @@
  anarchism: "無政府主義"
  anarchism_desc: "無政府主義とは、権威そのものを拒否することであり、社会を単一の中央集権国家ではなく、自己管理と自治の集団に分割することを促進するものである。"
  anarchist_communism: "無政府共産主義"
+ national_syndicalism: "国家サンディカリズム"
  libertarianism: "リバタリアニズム"
  catholicism: "カトリック"
  protestantism: "プロテスタント"
@@ -1137,8 +1138,8 @@
  SRI_neutrality_party_long: "君主国家党"
  SRI_fascism_party: "PNF"
  SRI_fascism_party_long: "国家ファシスト党"
- SRI_coalition_party: "FSUNI"
- SRI_coalition_party_long: "イタリア民族統一社会主義戦線"
+ SRI_syndicalism_party: "FSUNI"
+ SRI_syndicalism_party_long: "イタリア民族統一社会主義戦線"
 
 
  RUS_anarchism_party: "NMU"

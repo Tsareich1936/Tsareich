@@ -1328,6 +1328,18 @@ DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = {
+		limit = {
+			NOT = { has_global_flag = TR_poland_recognized_flag }
+			ROOT = {
+				tag = POL
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULL_JOIN_ALLY_POLAND_TOOLTIP
+			always = no
+		}
+	}
 }
 DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 	if = {
@@ -1343,18 +1355,27 @@ DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = {
+		limit = {
+			NOT = { has_global_flag = TR_poland_recognized_flag }
+			FROM = {
+				tag = POL
+			}
+			
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULL_JOIN_ALLY_POLAND_TOOLTIP
+			always = no
+		}
+	}
 }
 DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
 	if = { 
 		limit = {
-			has_dlc = "Arms Against Tyranny"
-			original_tag = DEN
-			has_country_flag = DEN_is_protectorate_flag
-			is_subject = yes 
-
+			always = yes
 		}
 		custom_trigger_tooltip = {
-			tooltip = DENMARK_IS_A_PUPPET_FACTION
+			tooltip = CANT_JOIN_FACTION
 			always = no
 		}
 	}
@@ -1362,15 +1383,10 @@ DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
 DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
 	if = { 
 		limit = {
-			has_dlc = "Arms Against Tyranny"
-			FROM = {
-				original_tag = DEN
-				has_country_flag = DEN_is_protectorate_flag
-				is_subject = yes 
-			}
+			always = yes
 		}
 		custom_trigger_tooltip = {
-			tooltip = DENMARK_IS_A_PUPPET_FACTION
+			tooltip = CANT_OFFER_JOIN_FACTION
 			always = no
 		}
 	}

@@ -16,29 +16,24 @@ country_event = {
 				set_country_flag = dAnnunzio_death
 				promote_character = {
 					character = SRI_blank_leader
-					ideology = Lcoalition
+					ideology = national_syndicalism
 				}
 				mark_focus_tree_layout_dirty = yes
 				# load_focus_tree = {
 				# 	tree = north_italy_focus
 				# 	keep_completed = yes
 				# }
-				set_party_name = {
-					ideology = communism
-					long_name = SRI_communism_party_long
-					name = SRI_communism_party
-				}
 			}
 		}
 	}
 	option = {
 		name = TR_north_italy.1.a
 		mark_focus_tree_layout_dirty = yes
-		unlock_national_focus = SRI_emergency_council
+		# unlock_national_focus = SRI_emergency_council
 		complete_national_focus = SRI_emergency_council
 		promote_character = {
 			character = SRI_consiglio_socialista
-			ideology = Lcoalition
+			ideology = national_syndicalism
 		}
 		effect_tooltip = {
 			custom_effect_tooltip = "SRI_unlock_alt_bop"

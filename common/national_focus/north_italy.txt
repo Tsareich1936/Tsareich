@@ -2,34 +2,7 @@
 
 
 #BOP effect template
-	# if = {
-	# 	limit = {
-	# 		NOT = {
-	# 			OR = {
-	# 				check_variable = {
-	# 					SRI_bop_L_var = 1
-	# 				}
-	# 				check_variable = {
-	# 					SRI_bop_R_var = 1
-	# 				}
-	# 			}
-	# 			OR = {
-	# 				check_variable = {
-	# 					SRI_bop_L_var = 0
-	# 				}
-	# 				check_variable = {
-	# 					SRI_bop_R_var = 0
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	add_to_variable = {
-	# 		SRI_bop_L_var = 0.1
-	# 	}
-	# 	add_to_variable = {
-	# 		SRI_bop_R_var = 0.1
-	# 	}
-	# }
+
 #focus template
 	# focus = {
 	# 	id = id
@@ -564,8 +537,9 @@ focus_tree = {
 			complete_tooltip = {
 				promote_character = {
 					character = SRI_consiglio_socialista
-					ideology = Lcoalition
-				}effect_tooltip = {
+					ideology = national_syndicalism
+				}
+				effect_tooltip = {
 					custom_effect_tooltip = "SRI_unlock_alt_bop"
 				}
 				set_popularities = {
@@ -579,19 +553,13 @@ focus_tree = {
 				SRI = {
 					promote_character = {
 						character = SRI_consiglio_socialista
-						ideology = Lcoalition
+						ideology = national_syndicalism
 					}
 					set_popularities = {
 						communism = 15
 						socialism = 35
 						socialdemocratic = 15
 						fascism = 35
-					}
-					set_variable = {
-						SRI_bop_R_var = 0.5
-					}
-					set_variable = {
-						SRI_bop_L_var = 0.5
 					}
 				}
 			}
@@ -637,22 +605,11 @@ focus_tree = {
 						OR = {
 							AND = {
 								has_completed_focus = SRI_just_socialim
-								check_variable = {
-									SRI_bop_L_var > 0.7
-								}
-								custom_trigger_tooltip = {
-									tooltip = "req_bop_l_07"
-								}
+								has_completed_focus = SRI_arrest_Mussolini
 							}
 							AND = {
 								has_completed_focus = SRI_national_socialism
-								check_variable = {
-									SRI_bop_R_var > 0.7
-								}
-								custom_trigger_tooltip = {
-									tooltip = "req_bop_r_07"
-								}
-
+								has_completed_focus = SRI_smash_PSI
 							}
 						}
 					}
@@ -803,12 +760,6 @@ focus_tree = {
 					ideology = socialism
 					popularity = 0.07
 				}
-				set_variable = {
-					SRI_bop_L_var = 0.6
-				}
-				set_variable = {
-					SRI_bop_R_var = 0.4
-				}
 			}
 		}
 	# center left
@@ -848,9 +799,7 @@ focus_tree = {
 				factor = 15
 			}
 			available = {
-				check_variable = {
-					SRI_bop_L_var = 1
-				}
+				has_completed_focus = SRI_arrest_Mussolini
 			}
 			x = -1
 			y = 3
@@ -923,34 +872,6 @@ focus_tree = {
 					days = 100
 				}
 				
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 1
-								}
-								check_variable = {
-									SRI_bop_R_var = 1
-								}
-							}
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 0
-								}
-								check_variable = {
-									SRI_bop_R_var = 0
-								}
-							}
-						}
-					}
-					add_to_variable = {
-						SRI_bop_L_var = 0.1
-					}
-					add_to_variable = {
-						SRI_bop_R_var = -0.1
-					}
-				}
 			}
 		}
 		focus = {
@@ -970,34 +891,6 @@ focus_tree = {
 				add_timed_idea = {
 					idea = SRI_labor_union_law
 					days = 365
-				}
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 1
-								}
-								check_variable = {
-									SRI_bop_R_var = 1
-								}
-							}
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 0
-								}
-								check_variable = {
-									SRI_bop_R_var = 0
-								}
-							}
-						}
-					}
-					add_to_variable = {
-						SRI_bop_L_var = 0.1
-					}
-					add_to_variable = {
-						SRI_bop_R_var = -0.1
-					}
 				}
 			}
 		}
@@ -1119,34 +1012,6 @@ focus_tree = {
 					popularity = -1
 				}
 				add_stability = 0.1
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 1
-								}
-								check_variable = {
-									SRI_bop_R_var = 1
-								}
-							}
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 0
-								}
-								check_variable = {
-									SRI_bop_R_var = 0
-								}
-							}
-						}
-					}
-					add_to_variable = {
-						SRI_bop_L_var = 0.1
-					}
-					add_to_variable = {
-						SRI_bop_R_var = -0.1
-					}
-				}
 			}
 		}
 		focus = {
@@ -1196,34 +1061,6 @@ focus_tree = {
 					popularity = -1
 				}
 				add_stability = -0.1
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 1
-								}
-								check_variable = {
-									SRI_bop_R_var = 1
-								}
-							}
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 0
-								}
-								check_variable = {
-									SRI_bop_R_var = 0
-								}
-							}
-						}
-					}
-					add_to_variable = {
-						SRI_bop_L_var = 0.1
-					}
-					add_to_variable = {
-						SRI_bop_R_var = -0.1
-					}
-				}
 			}
 		}
 		focus = {
@@ -1268,12 +1105,6 @@ focus_tree = {
 					ideology = fascism
 					popularity = -1
 				}
-				set_variable = {
-					SRI_bop_L_var = 1
-				}
-				set_variable = {
-					SRI_bop_R_var = 0
-				}
 				set_politics = {
 					ruling_party = socialism
 				}
@@ -1313,12 +1144,6 @@ focus_tree = {
 					ideology = fascism
 					popularity = 0.07
 				}
-				set_variable = {
-					SRI_bop_L_var = 0.4
-				}
-				set_variable = {
-					SRI_bop_R_var = 0.6
-				}
 			}
 		}
 	# center right
@@ -1352,9 +1177,6 @@ focus_tree = {
 				focus = SRI_call_to_zara
 			}
 			available = {
-				check_variable = {
-					SRI_bop_R_var = 1
-				}
 			}
 			x = 1
 			y = 3
@@ -1383,34 +1205,6 @@ focus_tree = {
 					popularity = 0.07
 				}
 				add_war_support = 0.1
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 1
-								}
-								check_variable = {
-									SRI_bop_R_var = 1
-								}
-							}
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 0
-								}
-								check_variable = {
-									SRI_bop_R_var = 0
-								}
-							}
-						}
-					}
-					add_to_variable = {
-						SRI_bop_L_var = -0.1
-					}
-					add_to_variable = {
-						SRI_bop_R_var = 0.1
-					}
-				}
 			}
 		}
 		focus = {
@@ -1430,34 +1224,6 @@ focus_tree = {
 				}
 				add_ideas = {
 					SRI_support_fascism
-				}
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 1
-								}
-								check_variable = {
-									SRI_bop_R_var = 1
-								}
-							}
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 0
-								}
-								check_variable = {
-									SRI_bop_R_var = 0
-								}
-							}
-						}
-					}
-					add_to_variable = {
-						SRI_bop_L_var = -0.1
-					}
-					add_to_variable = {
-						SRI_bop_R_var = 0.1
-					}
 				}
 			}
 		}
@@ -1631,34 +1397,6 @@ focus_tree = {
 				add_war_support = 0.05
 				add_stability = 0.05
 				army_experience = 50
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 1
-								}
-								check_variable = {
-									SRI_bop_R_var = 1
-								}
-							}
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 0
-								}
-								check_variable = {
-									SRI_bop_R_var = 0
-								}
-							}
-						}
-					}
-					add_to_variable = {
-						SRI_bop_L_var = -0.1
-					}
-					add_to_variable = {
-						SRI_bop_R_var = 0.1
-					}
-				}
 			}
 		}
 		focus = {
@@ -1702,34 +1440,6 @@ focus_tree = {
 					popularity = -1
 				}
 				add_stability = -0.1
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 1
-								}
-								check_variable = {
-									SRI_bop_R_var = 1
-								}
-							}
-							OR = {
-								check_variable = {
-									SRI_bop_L_var = 0
-								}
-								check_variable = {
-									SRI_bop_R_var = 0
-								}
-							}
-						}
-					}
-					add_to_variable = {
-						SRI_bop_L_var = -0.1
-					}
-					add_to_variable = {
-						SRI_bop_R_var = 0.1
-					}
-				}
 			}
 		}
 		focus = {
@@ -1775,12 +1485,6 @@ focus_tree = {
 				add_popularity = {
 					ideology = socialism
 					popularity = -1
-				}
-				set_variable = {
-					SRI_bop_L_var = 0
-				}
-				set_variable = {
-					SRI_bop_R_var = 1
 				}
 				set_politics = {
 					ruling_party = fascism
