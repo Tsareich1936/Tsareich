@@ -241,14 +241,12 @@ news_event = {#爆殺
 		name = TR_MAN_news.1.a
 	}
 }
-news_event = {#人民共和国建国宣言
-	id = TR_MAN_news.2
-	title = TR_MAN_news.2.t
-	desc = TR_MAN_news.2.d
-	picture = GFX_news_event_prc_declared
-	major = yes
-	is_triggered_only = yes
-	option = {
-		name = TR_MAN_news.2.a
-	}
-}
+#news_event = {#人民共和国建国宣言
+#	title = TR_MAN_news.2.t
+#	desc = TR_MAN_news.2.d
+#	picture = GFX_news_event_prc_declared
+#	major = yes
+#	is_triggered_only = yes
+#		name = TR_MAN_news.2.a
+#	}
+#}
