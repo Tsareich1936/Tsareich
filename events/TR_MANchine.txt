@@ -5,7 +5,7 @@ country_event = {#爆殺
 	id = TR_MAN.1
 	title = TR_MAN.1.t
 	desc = TR_MAN.1.d
-
+	fire_only_once = yes
 	trigger = {
 		date > 1936.5.15
 		tag = MAN
@@ -21,6 +21,7 @@ country_event = {#爆殺
 	option = {#OK
 		name = TR_MAN.1.a
 		add_stability = -0.25
+		demote_leader = 
 	}
 }
 
@@ -28,7 +29,7 @@ country_event = {#爆殺内戦
 	id = TR_MAN.2
 	title = TR_MAN.2.t
 	desc = TR_MAN.2.d
-
+	fire_only_once = yes
 	trigger = {
 		date > 1936.5.20
 		has_global_flag = TR_bomb_MAN
@@ -43,6 +44,7 @@ country_event = {#爆殺内戦
 				remove_from_faction = SIC
 				remove_from_faction = YUN
 				remove_from_faction = XSM
+				remove_from_faction = SIK
 			}
 			615 = { transfer_state_to = PRC }
 			607  = { transfer_state_to = PRC }

@@ -285,7 +285,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				conscription = 0.01
-				army_core_defence_factor = 0.33
+				army_core_defence_factor = 0.2
 				communism_drift = -0.05
 				communism_acceptance = -50
 			}

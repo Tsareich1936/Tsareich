@@ -156,7 +156,7 @@ focus_tree = {
 	focus = {
 		id = FRA_com_antiger1
 		icon = GFX_goal_generic_attack_allies
-		cost = 8.00
+		cost = 4.00
 		prerequisite = {
 			focus = FRA_com_purge4
 		}
@@ -172,7 +172,7 @@ focus_tree = {
 			FRA = {
 				remove_from_faction = GER
 			}
-			add_war_support = 0.15
+			add_war_support = 0.2
 		}
 	}
 	focus = {
@@ -246,6 +246,7 @@ focus_tree = {
 				OR = {
 					exists = no
 					has_capitulated = yes
+				    is_puppet_of = FRA
 				}
 			}
 		}
@@ -415,12 +416,15 @@ focus_tree = {
 								tag = SHL
 								tag = WUR
 								tag = CZE
+								tag = AUS
 							}
 						}
 					}
 					NOT = {
 						state = 42
 						state = 51
+						state = 8
+						state = 28
 					}
 				}
 				PRE = {
