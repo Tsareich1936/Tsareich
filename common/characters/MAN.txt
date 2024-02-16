@@ -11,4 +11,16 @@ characters = {
 			id=-1			
 		}
 	}
+	MAN_Zhang_Xueliang = {
+		name = MAN_Zhang_Xueliang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MAN_Zhang_Xueliang
+			}
+		}
+		country_leader={
+			ideology = despotism
+			id=-1			
+		}
+	}
 }

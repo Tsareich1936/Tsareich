@@ -16,6 +16,7 @@ if = {
 	recruit_character = MAN_songgotu_zhanshan
 }
 recruit_character = MAN_Zhang_Zuolin
+recruit_character = MAN_Zhang_Xueliang
 # recruit_character = MAN_aisin_gioro_puyi
 recruit_character = MAN_zhang_haipeng
 recruit_character = MAN_zhang_jinghui
