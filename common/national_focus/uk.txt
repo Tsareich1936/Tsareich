@@ -2301,8 +2301,6 @@ focus_tree = {
 					random_owned_state = {
 						limit = {
 							is_core_of = ENG
-						}
-						limit = {
 							is_coastal = yes
 						}
 						add_extra_state_shared_building_slots = 2
