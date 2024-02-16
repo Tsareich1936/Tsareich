@@ -1,13 +1,12 @@
-﻿capital = 605
+﻿capital = 620
 
-oob = SIC_1936
+oob = BKN_1936
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
 }
-
-set_convoys = 20
 
 1939.1.1 = {
 	#generic focuses
@@ -55,3 +54,4 @@ set_popularities = {
 	communism = 0
 	neutrality = 100
 }
+set_research_slots = 3

@@ -21,7 +21,6 @@ country_event = {#爆殺
 	option = {#OK
 		name = TR_MAN.1.a
 		add_stability = -0.25
-		demote_leader = 
 	}
 }
 
@@ -53,11 +52,41 @@ country_event = {#爆殺内戦
 					target = MAN
 					type = annex_everything
 				}
+				create_unit = {
+					division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
+					owner = FJN
+				}
 			}	
 			PRC = {
 				declare_war_on = {
 					target = MAN
 					type = annex_everything
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
+						owner = PRC
+					}
+					create_unit = {
+						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
+						owner = PRC
+					}
+					create_unit = {
+						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
+						owner = PRC
+					}
+					create_unit = {
+						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
+						owner = PRC
+					}
+					create_unit = {
+						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
+						owner = PRC
+					}
+					create_unit = {
+						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0" 
+						owner = PRC
+					}
 				}
 			}
 

@@ -1,6 +1,6 @@
 ﻿capital = 603
 
-#oob = ""
+oob = GZH_1936
 
 # Starting tech
 set_technology = {

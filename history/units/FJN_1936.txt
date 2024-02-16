@@ -1,0 +1,178 @@
+﻿division_template = {
+	name = "Juntuán"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
+	division_names_group = PRC_INF_01
+									#	PRC divisions were well-trained in guerilla mountain tactics.
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Renmin Jundui"				# Represents three-column local militia groups (Triangular Corps); poorly-equipped, lowest experience
+	division_names_group = PRC_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+	##### Eighth Route Army (CO: Mao Zedong, Zhu De) #####
+	division = {
+		name = "1 Bubing Shi"
+		location = 1153
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "2 Bubing Shi"
+		location = 11937
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "3 Bubing Shi"
+		location = 1099
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "4 Bubing Shi"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "5 Bubing Shi"
+		location = 1089
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "6 Bubing Shi"
+		location = 4091
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	
+	### Provincial Forces ###
+	division = { 
+		name = "1 Shensi Juntuán"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = { 
+	    name = "1 Shensi Juntuán"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = { 
+		name = "3 Shensi Juntuán"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = { 
+	    name = "4 Shensi Juntuán"
+		location = 11913
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = { 
+		name = "5 Shensi Juntuán"
+		location = 7191
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = { 
+	    name = "6 Shensi Juntuán"
+		location = 7191
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = { 
+		name = "7 Shensi Juntuán"
+		location = 7191
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = { 
+	    name = "8 Shensi Juntuán"
+		location = 7191
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = { 
+		name = "9 Shensi Juntuán"
+		location = 4196
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = { 
+	    name = "10 Shensi Juntuán"
+		location = 4196
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = { 
+		name = "11 Shensi Juntuán"
+		location = 4196
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = { 
+	    name = "12 Shensi Juntuán"
+		location = 4196
+		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+
+}
+
+##### STARTING PRODUCTION #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "PRC"
+		}
+		requested_factories = 2
+		progress = 0.33
+		efficiency = 100
+	}
+}

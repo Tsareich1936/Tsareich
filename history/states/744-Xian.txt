@@ -11,7 +11,10 @@ state={
 		add_core_of = CHI
 		add_core_of = MAN
 		victory_points = {
-			7418 1 
+			7418 5
+		}
+		victory_points = {
+			4295 1 
 		}
 		buildings = {
 			infrastructure = 2

@@ -4,8 +4,7 @@ state=
 	name="STATE_596"
 	manpower = 21230700
 	state_category = city
-	history=
-	{
+	history= {
 		owner = FJN
 		add_core_of = FJN
 		add_core_of = CHI
@@ -13,15 +12,19 @@ state=
 		add_core_of = MAN
 		
 		victory_points = { 
-			9974 1 
+			9974 3
 		}
 		victory_points = { 
-			7191 1 
+			7191 5
+		}
+		victory_points = { 
+			1055 1 
 		}
 		
 		buildings = {
 			infrastructure = 2
-
+			industrial_complex = 1
+			arms_factory = 1
 			7191 = {
 				naval_base = 1
 				coastal_bunker = 1
@@ -37,20 +40,6 @@ state=
 				coastal_bunker = 1
 				bunker = 1
 			}
-		}
-
-		1938.10.25 = {		
-			JAP = {
-				set_province_controller = 1055
-				set_province_controller = 1096
-				set_province_controller = 4042
-				set_province_controller = 7058
-				set_province_controller = 7191
-				set_province_controller = 9974
-				set_province_controller = 10014
-				set_province_controller = 10101
-				set_province_controller = 11991
-			} 			
 		}
 	}
 	provinces={
