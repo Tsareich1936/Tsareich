@@ -2,7 +2,7 @@
 # German Events
 ###########################
 
-add_namespace = TR_france
+add_namespace = TR_FRA
 add_namespace = TR_FRA_SPsibaku
 
 
@@ -226,4 +226,15 @@ country_event = {
 		    add_war_support = -0.2
 	    }
     }
+}
+
+country_event = {
+	id = TR_FRA.1 #CAT(カタルーニャ)での失敗
+    title = TR_FRA.1.t
+	desc = TR_FRA.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+    option = { # Yes!
+		name = TR_FRA.1.a
+	}
 }
