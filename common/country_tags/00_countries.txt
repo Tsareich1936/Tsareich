@@ -270,7 +270,7 @@ IRC = "countries/Iroquois.txt"
 TXS = "countries/Republic of Texas.txt"
 DST = "countries/State of Deseret.txt"
 OTT = "countries/Ottoman Empire.txt"
-BKN = "countries/Wuhan.txt"
+HBE = "countries/Hubei.txt"
 SAN = "countries/Santou.txt"
 EXC = "countries/Kanton.txt"
 
