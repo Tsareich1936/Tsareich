@@ -1252,9 +1252,7 @@ focus_tree = {
 		x = 4
 		y = 15
 		completion_reward = {
-			VEN = {
-				country_event = TR_FRA.1
-			}
+			custom_effect_tooltip = "FRA_VEN_oil.tt"
 		}
 	}
 

@@ -11,6 +11,10 @@ country_event = {#プラハ暴動
 	fire_only_once = yes
 
 	trigger = {
+		tag = CZE
+		has_defensive_war = no
+		date > 1938.1.1
+		has_global_flag = TR_balkan_war_finished
 		always = no
 	}
 
