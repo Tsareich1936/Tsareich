@@ -1,0 +1,96 @@
+SRI_naval_plan1 = {
+	SRI_building_CV = {
+		allowed = {
+			tag = SRI
+		}
+		visible = {
+			has_completed_focus = SRI_warship_queen
+		}
+		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				num_of_naval_factories > 40
+			}
+			else = {
+				always = yes
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 999
+			base = 999
+		}
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			create_equipment_variant = {
+				name = "Duce d'Annunzio"
+				type = ship_hull_carrier_2
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = carrier_ship_engine_2
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					front_1_custom_slot = ship_deck_space	
+					mid_1_custom_slot = ship_deck_space
+				}
+				allow_without_tech = yes
+			}
+			create_equipment_variant = {
+				type = small_plane_naval_bomber_airframe_2
+				modules = {
+					fixed_main_weapon_slot = torpedo_mounting
+					engine_type_slot = engine_2_1x
+					special_type_slot_1 = drop_tanks
+					special_type_slot_2 = fuel_tanks_small	
+				}
+				allow_without_tech = yes
+			}
+			create_equipment_variant = {
+				type = cv_small_plane_airframe_2
+				modules = {
+					fixed_main_weapon_slot = heavy_mg_4x
+					fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+					fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+						
+					engine_type_slot = engine_3_1x
+					special_type_slot_1 = empty
+					special_type_slot_2 = empty	
+				}
+				allow_without_tech = yes
+			}
+			create_equipment_variant = {
+				type = cv_small_plane_naval_bomber_airframe_2
+				modules = {
+					fixed_main_weapon_slot = torpedo_mounting
+					engine_type_slot = engine_2_1x
+					special_type_slot_1 = drop_tanks
+					special_type_slot_2 = fuel_tanks_small	
+				}
+				allow_without_tech = yes
+			}
+			create_equipment_variant = {
+				type = cv_small_plane_airframe_2
+				modules = {
+					fixed_main_weapon_slot = small_bomb_bay
+					fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+					engine_type_slot = engine_2_1x
+					special_type_slot_1 = empty
+					special_type_slot_2 = empty	
+				}
+				allow_without_tech = yes
+			}
+		}
+		remove_effect = {
+			load_oob = SRI_building_carrier
+		}
+	}
+}

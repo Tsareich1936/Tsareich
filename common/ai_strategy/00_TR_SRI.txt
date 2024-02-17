@@ -183,3 +183,95 @@ ITA_trade_with_germany = {
 		value = 40
 	}
 }
+
+SRI_cv = {
+	allowed = {
+		original_tag = SRI
+	}
+	enable = {
+		has_idea = SRI_focus_on_ship_based_aircraft
+		num_of_available_military_factories > 25
+	}
+	abort = {
+		always = no
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = cv_cas
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = cv_nav_bomber
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = cv_fighter
+		value = 5
+	}
+}
+SRI_air = {
+	allowed = {	tag = JAP }
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = cv_fighter
+		value = 5
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = fighter
+		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = cas
+		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = cv_cas
+		value = -100
+	}
+
+	ai_strategy = {
+		type = 	equipment_variant_production_factor
+		id = cv_naval_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = heavy_fighter
+		value = 50
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = tactical_bomber
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = naval_bomber
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = strategic_bomber
+		value = 0
+	}
+}

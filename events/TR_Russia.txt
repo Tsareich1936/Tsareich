@@ -1186,6 +1186,14 @@ country_event = {#防共協定加盟国が攻撃された際発生するイベ�
             }
             RUS = {
                 add_to_faction = PREV
+                every_country = {
+                    limit = {
+                        is_in_faction_with = PREV.PREV
+                    }
+                    RUS = {
+                        add_to_faction = PREV
+                    }
+                }
             }
         }
         RUS = {

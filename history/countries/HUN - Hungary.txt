@@ -37,7 +37,7 @@ set_technology = {
 create_faction = Balkan_revive_ally
 add_to_faction = SLO
 add_to_faction = BUL
-
+set_major = yes
 
 if = {
 	limit = {

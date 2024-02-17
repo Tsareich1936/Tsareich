@@ -12,29 +12,29 @@ on_actions = {
 				news_event = TR_news.1    
 			}
 		}
-		effect = {
-			if = {
-				limit = {
-					OR = {
-						tag = PRC
-						tag = FJN
-					}
-					FROM = { tag = MAN }
-					FROM.FROM = {
-						state = 608
-					}
-					NOT = {
-						has_global_flag = TR_fall_bejing
-					}
-				}
-				MAN = {
-					country_event = TR_MAN.3
-				}
-				PRC = {
-					country_event = TR_MAN.4
-				}
-				set_global_flag = TR_fall_bejing
-			}
-		}
+		# effect = {
+		# 	if = {
+		# 		limit = {
+		# 			OR = {
+		# 				tag = PRC
+		# 				tag = FJN
+		# 			}
+		# 			FROM = { tag = MAN }
+		# 			FROM.FROM = {
+		# 				state = 608
+		# 			}
+		# 			NOT = {
+		# 				has_global_flag = TR_fall_bejing
+		# 			}
+		# 		}
+		# 		MAN = {
+		# 			country_event = TR_MAN.3
+		# 		}
+		# 		PRC = {
+		# 			country_event = TR_MAN.4
+		# 		}
+		# 		set_global_flag = TR_fall_bejing
+		# 	}
+		# }
 	} 
 }

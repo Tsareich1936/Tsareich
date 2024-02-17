@@ -1,0 +1,100 @@
+ENG_historical_plan = {
+	name = "North Italy historical plan"
+	desc = "Historical behavior for North Italy"
+
+	allowed = {
+		original_tag = SRI
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		SRI_north-south_problem
+		SRI_TDRM
+		SRI_just_socialim
+		SRI_international_proximity
+		SRI_labor_union_law
+		SRI_recall_defections
+		SRI_agrarian_reform
+		SRI_reconciliation_communism
+		SRI_organise_secret_police
+		SRI_arrest_Mussolini
+
+		SRI_force_ettlement
+		SRI_socialist_work_south
+		SRI_incit_farmers_south
+		SRI_incitement_in_rome
+		SRI_united_volunteer_soldiers
+		SRI_risorgimento
+
+		SRI_support_socialism
+		SRI_appeal_help
+		SRI_foreign_industrial_advisers
+		SRI_GER_adviser
+		SRI_FRA_adviser
+		
+		SRI_reunification
+		SRI_revival
+
+		SRI_cooperation_for_spain
+		SRI_perfect_italy
+		SRI_red_Adria
+		SRI_focus_relation_europe
+		SRI_red_greece
+
+		SRI_agrarian_reform_south
+		SRI_industrialisation_south
+		SRI_five_year_plan
+		SRI_large-scale_developments_south
+		SRI_red_Balkans
+		SRI_african_charenge
+		SRI_large-scale_steel_mill
+
+		SRI_venezia_traditions
+		SRI_genova_traditions
+		SRI_adrian_queen
+		SRI_extension_to_sardegna
+		SRI_additional_research_slot
+		SRI_amalfi_traditions
+		SRI_pisa_traditions
+		SRI_extension_to_sicily
+		SRI_extension_to_lazio
+		SRI_warship_queen
+		SRI_southern_navy
+		SRI_il_porto
+		SRI_building_warship_plan1
+		SRI_army_focus_1
+		SRI_army_focus_4
+		SRI_air_force_focus_1
+
+		SRI_extension_dockyard
+		SRI_hero_ship
+		SRI_focus_on_ship_based_aircraft
+
+		SRI_building_warship_plan2
+		SRI_focus_on_submarines
+		SRI_peace_sea
+		
+	}
+
+	research = {
+		
+	}
+
+	ideas = {
+		home_defence_spirit = 1
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
