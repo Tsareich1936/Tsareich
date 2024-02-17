@@ -229,7 +229,7 @@ country_event = {
 }
 
 country_event = {
-	id = TR_FRA.1 #CAT(カタルーニャ)での失敗
+	id = TR_FRA.1 #ベネズエラ国民
     title = TR_FRA.1.t
 	desc = TR_FRA.1.d
 	picture = GFX_report_event_german_speech
@@ -243,7 +243,7 @@ country_event = {
 }
 
 country_event = {
-	id = TR_FRA.1 #CAT(カタルーニャ)での失敗
+	id = TR_FRA.2 #ベネズエラ成功
     title = TR_FRA.1.t
 	desc = TR_FRA.1.d
 	picture = GFX_report_event_german_speech
@@ -254,7 +254,7 @@ country_event = {
 }
 
 country_event = {
-	id = TR_FRA.1 #CAT(カタルーニャ)での失敗
+	id = TR_FRA.3 #ベネズエラ失敗
     title = TR_FRA.1.t
 	desc = TR_FRA.1.d
 	picture = GFX_report_event_german_speech
