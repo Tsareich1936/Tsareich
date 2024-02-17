@@ -67,5 +67,5 @@ add_to_faction = HNA
 add_to_faction = GXC
 add_to_faction = GZH
 add_to_faction = SIK
-add_to_faction = HBE
+add_to_faction = BKN
 add_to_faction = EXC
