@@ -76,7 +76,7 @@ country_event = {#プラハ暴動失敗
 		name = TR_czech_revolution.2.a #反乱軍は事前に鎮圧された
 		ai_chance = { factor = 100 }
 		add_stability = 0.2	
-		85 = { #普通
+		75 = { #普通
 		    GER = {
 			    country_event = {
 				    id = TR_czech_revolution.7
@@ -84,7 +84,7 @@ country_event = {#プラハ暴動失敗
 			    }
 		    }
 	    }
-	    13 = { #反乱1
+	    25 = { #反乱1
 		    GER = {
 			    country_event = {
 				    id = TR_czech_revolution.8
@@ -92,14 +92,15 @@ country_event = {#プラハ暴動失敗
 			    }
 		    }
 		}	
-		2 = { #反乱2
-		    GER = {
-				country_event = {
-					id = TR_czech_revolution.9
-					days = 3
-				}
-			}
-        }	
+		
+		#2 = { #反乱2
+		#    GER = {
+		#		country_event = {
+		#			id = TR_czech_revolution.9
+		#			days = 3
+		#		}
+		#	}
+        #}	
     }
 }
 
@@ -210,6 +211,14 @@ country_event = {#シレジアでスラブ人が蜂起！
 		CZE = {
 			66  = { transfer_state_to = CZE }
 			every_owned_state = {
+				create_unit = {
+					division = "name = \"Pěší divize\" division_template = \"Pěší divize\" start_experience_factor = 0.9" 
+					owner = CZE
+				}
+				create_unit = {
+					division = "name = \"Pěší divize\" division_template = \"Pěší divize\" start_experience_factor = 0.9" 
+					owner = CZE
+				}
 				create_unit = {
 					division = "name = \"Pěší divize\" division_template = \"Pěší divize\" start_experience_factor = 0.9" 
 					owner = CZE
