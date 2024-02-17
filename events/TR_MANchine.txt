@@ -74,7 +74,7 @@ country_event = {#爆殺内戦
 				remove_from_faction = YUN
 				remove_from_faction = XSM
 				remove_from_faction = SIK
-				remove_from_faction = HBE
+				remove_from_faction = BKN
 				remove_from_faction = EXC
 				remove_from_faction = MAN
 			}
