@@ -489,6 +489,20 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				lend_lease_tension = -0.5
+			}	
 		}
+
+		
+		TR_FRA_pay = {
+			picture = "SPR_relocate_the_gold_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+			
 	}	
 }

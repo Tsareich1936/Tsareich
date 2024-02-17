@@ -1,5 +1,6 @@
 add_namespace = TR_MAN
 add_namespace = TR_FJN
+add_namespace = TR_PRC
 add_namespace = TR_MAN_news
 
 country_event = {#爆殺
@@ -29,30 +30,7 @@ country_event = {#爆殺
 	}
 }
 
-country_event = {#南京国民政府
-	id = TR_FJN.1
-	title = TR_FJN.1.t
-	desc = TR_FJN.1.d
-	fire_only_once = yes
-	trigger = {
-		date > 1936.5.15
-		tag = FJN
-		has_global_flag = TR_bomb_MAN
-	}
 
-	option = {#OK
-		name = TR_FJN.1.a
-		add_war_support = 0.1
-		set_cosmetic_tag = NKCHI
-		set_capital = {
-			state = 613
-		}
-		declare_war_on = {
-			target = MAN
-			type = annex_everything
-		}
-	}
-}
 
 country_event = {#爆殺内戦
 	id = TR_MAN.2
@@ -74,12 +52,10 @@ country_event = {#爆殺内戦
 				remove_from_faction = YUN
 				remove_from_faction = XSM
 				remove_from_faction = SIK
-				remove_from_faction = HBE
+				remove_from_faction = BKN
 				remove_from_faction = EXC
 				remove_from_faction = MAN
 			}
-			622 = { transfer_state_to = PRC }
-			744  = { transfer_state_to = PRC }
 			621  = { transfer_state_to = SHX }
 			SHX = {
 				declare_war_on = {
@@ -112,6 +88,10 @@ country_event = {#爆殺内戦
 						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
 						owner = SHX
 					}
+					create_unit = {
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+						owner = SHX
+					}
 				}
 			}
 			FJN = {
@@ -125,6 +105,7 @@ country_event = {#爆殺内戦
 						infantry = { x = 0 y = 3 }
 					}
 				}
+				country_event = TR_FJN.1
 				every_owned_state = {
 					create_unit = {
 						division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0.1" 
@@ -168,6 +149,8 @@ country_event = {#爆殺内戦
 						owner = PRC
 					}
 				}
+			BKN = {
+				country_event = TR_PRC.1
 			}
 
 		}
@@ -180,19 +163,16 @@ country_event = {#爆殺内戦
 			factor = 5
 		}
 	}
-	option = { # play PRC
-	    name = TR_MAN.2.b
-	    trigger = { is_ai = no }
-	    PRC = { change_tag_from = MAN }
-    }
 	option = { # play SHX
-	    name = TR_MAN.2.c
+	    name = TR_MAN.2.b
 	    trigger = { is_ai = no }
 	    SHX = { change_tag_from = MAN }
     }
 }
 
-country_event = {#中原からの撤退
+
+
+country_event = {#中原からの撤退(講和)
 	id = TR_MAN.3
 	title = TR_MAN.3.t
 	desc = TR_MAN.3.d
@@ -221,8 +201,8 @@ country_event = {#中原からの撤退
 			white_peace = SHX
 			597 = { transfer_state_to = SAN }
 			615  = { transfer_state_to = SHX }
-			746  = { transfer_state_to = PRC }
-			744  = { transfer_state_to = PRC }
+			746  = { transfer_state_to = SHX }
+			622  = { transfer_state_to = PRC }
 			606  = { transfer_state_to = FJN }
 			607  = { transfer_state_to = FJN }
 			598  = { transfer_state_to = FJN }
@@ -263,10 +243,11 @@ country_event = {#中原からの撤退
 			add_state_core = 606
 			add_state_core = 607
 			add_state_core = 598
-			country_event = {
-				id = TR_FJN.2
-				days = 1
-			}
+			add_state_core = 620
+			country_event = TR_FJN.2
+		}
+		PRC = {
+			country_event = TR_PRC.2
 		}
 
 	}
@@ -277,6 +258,27 @@ country_event = {#中原からの撤退
 		add_war_support = -0.25
 		add_political_power = -200
     }
+}
+
+country_event = {#南京国民政府
+	id = TR_FJN.1
+	title = TR_FJN.1.t
+	desc = TR_FJN.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {#OK
+		name = TR_FJN.1.a
+		add_war_support = 0.1
+		set_cosmetic_tag = NKCHI
+		set_capital = {
+			state = 613
+		}
+		declare_war_on = {
+			target = MAN
+			type = annex_everything
+		}
+	}
 }
 
 country_event = {#講和
@@ -294,6 +296,79 @@ country_event = {#講和
 	    name = TR_FJN.2.b
 		SAN = { change_tag_from = FJN }
     }
+}
+
+country_event = {#武漢根拠地
+	id = TR_PRC.1
+	title = TR_PRC.1.t
+	desc = TR_PRC.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {#OK
+		name = TR_PRC.1.a
+		add_war_support = 0.1
+		set_cosmetic_tag = NKCHI
+		620 = { transfer_state_to = PRC }
+		MAN = {
+			744  = { transfer_state_to = PRC }
+		}
+		PRC= { change_tag_from = BKN }
+		PRC = {
+			
+			division_template = {
+				name = "Juntuán"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+			}
+			every_owned_state = {
+				create_unit = {
+					division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0.1" 
+					owner = PRC
+				}
+				create_unit = {
+					division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0.1" 
+					owner = PRC
+				}
+				create_unit = {
+					division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0.1" 
+					owner = PRC
+				}
+				create_unit = {
+					division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0.1" 
+					owner = PRC
+				}
+				create_unit = {
+					division = "name = \"Juntuán\" division_template = \"Juntuán\" start_experience_factor = 0.1" 
+					owner = PRC
+				}
+			}
+			declare_war_on = {
+				target = MAN
+				type = annex_everything
+			}
+		}
+
+
+	}
+}
+
+country_event = {#講和
+	id = TR_PRC.2
+	title = TR_PRC.2.t
+	desc = TR_PRC.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {#OK
+		name = TR_PRC.2.a
+        add_stability = 0.01
+	}
 }
 
 news_event = {#爆殺
@@ -315,4 +390,4 @@ news_event = {#爆殺
 #	is_triggered_only = yes
 #		name = TR_MAN_news.2.a
 #	}
-#}
+#

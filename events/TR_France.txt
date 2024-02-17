@@ -229,12 +229,73 @@ country_event = {
 }
 
 country_event = {
-	id = TR_FRA.1 #CAT(カタルーニャ)での失敗
+	id = TR_FRA.1 #ベネズエラ国民
     title = TR_FRA.1.t
 	desc = TR_FRA.1.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
     option = { # Yes!
 		name = TR_FRA.1.a
+		ai_chance = {
+			factor = 50
+		}
+		add_resource = {
+			type = oil
+			amount = 10
+			state = 307
+		} 		
+		add_resource = {
+			type = oil
+			amount = 10
+			state = 489
+		} 	
+		add_ideas = VIN_FRA_sien
+	    FRA = {
+			country_event = TR_FRA.2
+		}
+	}
+	option = { # NO!
+	    name = TR_FRA.1.b
+        add_stability = 0.01
+		FRA = {
+			country_event = TR_FRA.3
+		}
+    }
+}
+
+country_event = {
+	id = TR_FRA.2 #ベネズエラ成功
+    title = TR_FRA.2.t
+	desc = TR_FRA.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+    option = { # Yes!
+		name = TR_FRA.2.a
+		ai_chance = {
+			factor = 50
+		}
+        VEN = { 
+			give_resource_rights = { receiver = FRA state = 489 } 
+			
+		}	
+		add_timed_idea = {
+			idea = TR_FRA_pay
+	    	days = 150
+		}
+	}
+}
+
+country_event = {
+	id = TR_FRA.3 #ベネズエラ失敗
+    title = TR_FRA.3.t
+	desc = TR_FRA.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+    option = { # Yes!
+		name = TR_FRA.3.a
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = -20
 	}
 }
