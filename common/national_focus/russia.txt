@@ -198,6 +198,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_stability = -0.15
 			add_trait = {
 				character = RUS_kirill_vladimirovich
 				ideology = despotism

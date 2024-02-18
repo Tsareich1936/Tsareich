@@ -25,6 +25,7 @@ leader_traits = {
 	}
 	TR_krill_evolutional_government = {
 		random = no
+		stability_factor = -0.05
 		war_support_factor = 0.1
 		land_doctrine_cost_factor = -0.1
 		naval_doctrine_cost_factor = -0.1
