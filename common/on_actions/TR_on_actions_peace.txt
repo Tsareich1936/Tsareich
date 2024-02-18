@@ -190,7 +190,12 @@ on_actions = {
 			if = {
 				limit = {
 					ROOT = {
-						tag = HUN
+						OR = {
+							tag = HUN
+							AND = {
+								tag = BUL
+							}							
+						}
 					}
 					FROM = {
 						OR = {

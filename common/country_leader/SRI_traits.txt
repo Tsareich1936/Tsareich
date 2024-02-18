@@ -10,4 +10,9 @@ leader_traits = {
 		war_support_factor = -0.3
 		political_power_gain = -0.3
 	}
+	TR_reunifier = {
+		random = no
+		political_power_gain = 0.3
+		political_power_factor = 0.33
+	}
 }

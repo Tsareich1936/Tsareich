@@ -387,6 +387,9 @@ on_actions = {
 						RUS = {
 							is_faction_leader = yes
 						}
+						FROM = {
+							is_in_faction = no
+						}
 					}
 					ROOT = {
 						save_global_event_target_as = communist_invader

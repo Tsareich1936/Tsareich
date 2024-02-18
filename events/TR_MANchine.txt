@@ -62,6 +62,15 @@ country_event = {#爆殺内戦
 					target = MAN
 					type = annex_everything
 				}
+				division_template = {
+					name = "Qu Jun"
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+					}
+				}
 				621 = {
 					create_unit = {
 						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
@@ -87,6 +96,15 @@ country_event = {#爆殺内戦
 			}
 			FJN = {
                 add_research_slot = 1
+				division_template = {
+					name = "Qu Jun"
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+					}
+				}
 				country_event = TR_FJN.1
 				every_owned_state = {
 					create_unit = {
@@ -95,6 +113,42 @@ country_event = {#爆殺内戦
 					}
 				}
 			}	
+			PRC = {
+				declare_war_on = {
+					target = MAN
+					type = annex_everything
+				}
+				division_template = {
+					name = "Qu Jun"
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+					}
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+						owner = PRC
+					}
+					create_unit = {
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+						owner = PRC
+					}
+					create_unit = {
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+						owner = PRC
+					}
+					create_unit = {
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+						owner = PRC
+					}
+					create_unit = {
+						division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
+						owner = PRC
+					}
+				}
 			BKN = {
 				country_event = TR_PRC.1
 			}
@@ -142,6 +196,7 @@ country_event = {#中原からの撤退(講和)
 		add_war_support = -0.1
 		MAN = {
 			white_peace = FJN
+			# white_peace = NKCHI
 			white_peace = PRC
 			white_peace = SHX
 			597 = { transfer_state_to = SAN }
@@ -155,6 +210,15 @@ country_event = {#中原からの撤退(講和)
 		
 		SAN = {
 			add_state_core = 597
+			division_template = {
+				name = "Qu Jun"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+				}
+			}
 			every_owned_state = {
 				create_unit = {
 					division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
@@ -326,4 +390,4 @@ news_event = {#爆殺
 #	is_triggered_only = yes
 #		name = TR_MAN_news.2.a
 #	}
-#}
+#

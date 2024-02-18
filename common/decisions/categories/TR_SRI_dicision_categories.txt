@@ -1,0 +1,11 @@
+SRI_naval_plan1 = {
+	icon = navy
+	priority = 100
+	allowed = {
+		tag = SRI
+	}
+	visible = {
+		# has_completed_focus = SRI_building_warship_plan1
+	}
+	visible_when_empty = no
+}

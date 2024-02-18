@@ -950,3 +950,11 @@ NAB = {
 	color = rgb{ 0 0 0 }
 	color_ui = rgb{ 0 0 0 }
 }
+SAN = {
+	color = rgb{ 0 0 0 }
+	color_ui = rgb{ 0 0 0 }
+}
+EXC = {
+	color = rgb{ 0 0 0 }
+	color_ui = rgb{ 0 0 0 }
+}
