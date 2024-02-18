@@ -1,0 +1,54 @@
+units = {
+	fleet = {
+		name = "Duce d'Annunzio II"
+		naval_base = 11584
+		task_force = {
+			name = "Duce d'Annunzio II"
+			location = 11584
+			ship = {
+				definition = carrier
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_carrier_3 = {
+						amount = 1
+						owner = SRI
+						version_name = "Duce d'Annunzio"
+					}
+				}
+			}
+			ship = {
+				definition = carrier
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_carrier_3 = {
+						amount = 1
+						owner = SRI
+						version_name = "Duce d'Annunzio II"
+					}
+				}
+			}
+			ship = {
+				definition = carrier
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_carrier_3 = {
+						amount = 1
+						owner = SRI
+						version_name = "Duce d'Annunzio II"
+					}
+				}
+			}
+			ship = {
+				definition = carrier
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_carrier_3 = {
+						amount = 1
+						owner = SRI
+						version_name = "Duce d'Annunzio II"
+					}
+				}
+			}
+		}
+	}
+}

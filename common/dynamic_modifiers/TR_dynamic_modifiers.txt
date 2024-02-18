@@ -6,3 +6,20 @@ TR_POL_resisting = {
 	# resistance_target = 75
 	# resistance_growth = 0.125
 }
+SRI_destroyer = {
+	enable = {
+		always = yes
+	}
+	
+}
+TR_test = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_ALB_king_zog
+	stability_factor = RUS.test_var
+	nuclear_production_factor = RUS.test_var
+	war_support_factor = 1
+	nuclear_production = 1
+	custom_modifier_tooltip = "[?test_var]"
+}

@@ -13,12 +13,12 @@ country_event = {
 			type = ship_hull_carrier_2
 			parent_version = 0
 			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
+				fi10ed_ship_deck_slot_1 = ship_deck_space
+				fi10ed_ship_deck_slot_2 = ship_deck_space
+				fi10ed_ship_anti_air_slot = ship_anti_air_2
+				fi10ed_ship_radar_slot = empty
+				fi10ed_ship_engine_slot = carrier_ship_engine_2
+				fi10ed_ship_secondaries_slot = ship_secondaries_2
 				front_1_custom_slot = ship_deck_space	
 				mid_1_custom_slot = ship_deck_space
 			}
@@ -27,8 +27,8 @@ country_event = {
 		create_equipment_variant = {
 			type = small_plane_naval_bomber_airframe_2
 			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				engine_type_slot = engine_2_1x
+				fi10ed_main_weapon_slot = torpedo_mounting
+				engine_type_slot = engine_2_110
 				special_type_slot_1 = drop_tanks
 				special_type_slot_2 = fuel_tanks_small	
 			}
@@ -37,11 +37,11 @@ country_event = {
 		create_equipment_variant = {
 			type = cv_small_plane_airframe_2
 			modules = {
-				fixed_main_weapon_slot = heavy_mg_4x
-				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
-				fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+				fi10ed_main_weapon_slot = heavy_mg_410
+				fi10ed_au10iliary_weapon_slot_1 = heavy_mg_410
+				fi10ed_au10iliary_weapon_slot_2 = heavy_mg_410
 					
-				engine_type_slot = engine_3_1x
+				engine_type_slot = engine_3_110
 				special_type_slot_1 = empty
 				special_type_slot_2 = empty	
 			}
@@ -50,8 +50,8 @@ country_event = {
 		create_equipment_variant = {
 			type = cv_small_plane_naval_bomber_airframe_2
 			modules = {
-				fixed_main_weapon_slot = torpedo_mounting
-				engine_type_slot = engine_2_1x
+				fi10ed_main_weapon_slot = torpedo_mounting
+				engine_type_slot = engine_2_110
 				special_type_slot_1 = drop_tanks
 				special_type_slot_2 = fuel_tanks_small	
 			}
@@ -60,9 +60,9 @@ country_event = {
 		create_equipment_variant = {
 			type = cv_small_plane_airframe_2
 			modules = {
-				fixed_main_weapon_slot = small_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
-				engine_type_slot = engine_2_1x
+				fi10ed_main_weapon_slot = small_bomb_bay
+				fi10ed_au10iliary_weapon_slot_1 = small_bomb_bay
+				engine_type_slot = engine_2_110
 				special_type_slot_1 = empty
 				special_type_slot_2 = empty	
 			}
@@ -149,7 +149,7 @@ country_event = {
 		DST = {
 			transfer_state = 380
 		}
-		TXS = {
+		T10S = {
 			transfer_state = 375
 		}
 		every_country = {
@@ -184,15 +184,15 @@ country_event = {
 			division_template = {
 				name = "Milita Division"
 				regiments = {
-					infantry = { x = 0 y = 0  }
-					infantry = { x = 0 y = 1  }
-					infantry = { x = 0 y = 2  }
-					infantry = { x = 0 y = 3  }
+					infantry = { 10 = 0 y = 0  }
+					infantry = { 10 = 0 y = 1  }
+					infantry = { 10 = 0 y = 2  }
+					infantry = { 10 = 0 y = 3  }
 				}
 			}
 			every_owned_state = {
 				# create_unit = {
-				# 	division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+				# 	division = "name = \"Milita Division\" division_template = \"Milita Division\" start_e10perience_factor = 0.5"
 				# 	owner = PREV
 				# }
 				
@@ -205,15 +205,15 @@ country_event = {
 						}
 					}
 					create_unit = {
-						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_e10perience_factor = 0.5"
 						owner = PREV
 					}
 					create_unit = {
-						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_e10perience_factor = 0.5"
 						owner = PREV
 					}
 					create_unit = {
-						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_e10perience_factor = 0.5"
 						owner = PREV
 					}
 					if = {
@@ -223,19 +223,19 @@ country_event = {
 							}
 						}
 						create_unit = {
-							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_e10perience_factor = 0.5"
 							owner = PREV
 						}
 						create_unit = {
-							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_e10perience_factor = 0.5"
 							owner = PREV
 						}
 						create_unit = {
-							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_e10perience_factor = 0.5"
 							owner = PREV
 						}
 						create_unit = {
-							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5"
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_e10perience_factor = 0.5"
 							owner = PREV
 						}
 					}
@@ -276,7 +276,7 @@ country_event = {
 	option = {
 		name = TR_debug.4.a
 		every_owned_state = {
-			add_extra_state_shared_building_slots = 1
+			add_e10tra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = synthetic_refinery
 				level = 1
@@ -306,7 +306,7 @@ country_event = {
 	id = TR_debug.0
 	is_triggered_only = yes
 	immediate = {
-		TR_SER_balkan_war_peace = yes
+		TR_debugSER_balkan_war_peace = yes
 	}
 	hidden = yes
 }
@@ -317,18 +317,18 @@ country_event = {
 		division_template = {
 			name = "GEBUG"
 			regiments = {
-				guellira = { x = 0 y = 0  }
-				guellira = { x = 0 y = 1  }
-				guellira = { x = 0 y = 2  }
+				guellira = { 10 = 0 y = 0  }
+				guellira = { 10 = 0 y = 1  }
+				guellira = { 10 = 0 y = 2  }
 			}
 		}
 		every_owned_state = {
 			create_unit = {
-				division = "name = \"GEBUG\" division_template = \"GEBUG\" start_experience_factor = 1" 
+				division = "name = \"GEBUG\" division_template = \"GEBUG\" start_e10perience_factor = 1" 
 				owner = ROOT
 			}
 			create_unit = {
-				division = "name = \"GEBUG\" division_template = \"GEBUG\" start_experience_factor = 1" 
+				division = "name = \"GEBUG\" division_template = \"GEBUG\" start_e10perience_factor = 1" 
 				owner = ROOT
 			}
 		}
@@ -348,7 +348,7 @@ country_event = {
 				array = global.majors
 				declare_war_on = {
 					target = PREV.PREV
-					type = annex_everything
+					type = anne10_everything
 				}
 			}
 		}
@@ -364,10 +364,10 @@ country_event = {
 	option = {
 		name = TR_debug.8.a
 		set_technology = {
-			TR_tech_poison_gus = 1
-			TR_tech_poison_gus2 = 1
-			TR_tech_poison_gus3 = 1
-			TR_tech_poison_gus4 = 1
+			TR_debugtech_poison_gus = 1
+			TR_debugtech_poison_gus2 = 1
+			TR_debugtech_poison_gus3 = 1
+			TR_debugtech_poison_gus4 = 1
 		}
 	}
 }
@@ -390,9 +390,29 @@ country_event = {
 				
 				create_wargoal = {
 					target = PREV
-					type = annex_everything
+					type = anne10_everything
 				}
 			}
 		}	
+	}
+}
+country_event = {
+	id = TR_debug.10
+	title = TR_debug.10.t
+	desc = TR_debug.10.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_debug.10.a
+		add_dynamic_modifier = {
+			modifier = TR_test
+		}
+	}
+	option = {
+		name = TR_debug.10.a
+		remove_dynamic_modifier = {
+			modifier = TR_test
+		}
 	}
 }

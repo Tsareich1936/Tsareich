@@ -1011,7 +1011,8 @@ focus_tree = {
 				y = 4
 				relative_position_id = SRI_building_warship_plan1
 				completion_reward = {
-			
+					unlock_decision_category_tooltip = SRI_naval_plan2
+					add_political_power = 100
 				}
 			}
 			focus = {#我らが海へと
