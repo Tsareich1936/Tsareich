@@ -35,4 +35,14 @@ technologies = {
 			sword_1
 		}
 	}
+	co_cavalry = {
+		allow = {
+			always = no
+		}
+		research_cost = 1
+		start_year = 1
+		enable_subunits = {
+			co_cavalry
+		}
+	}
 }

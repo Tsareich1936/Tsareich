@@ -47,6 +47,7 @@ set_technology = {
 	support_weapons = 1
 	tech_support = 1
 	synth_oil_experiments = 1
+	co_cavalry = 1
 }
 
 if = {

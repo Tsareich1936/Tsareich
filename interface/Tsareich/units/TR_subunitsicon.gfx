@@ -1,6 +1,6 @@
 spriteTypes = {
-	spriteType = { name = "GFX_unit_guellira_infantry_unit_icon_medium"							texturefile = "gfx/interface/counters/divisions_large/unit_fake_intel_unit_icon.dds" noOfFrames = 2}
-	spriteType = { name = "GFX_unit_guellira_infantry_unit_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_fake_intel_unit_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_guellira_icon_medium"							texturefile = "gfx/interface/counters/divisions_large/unit_fake_intel_unit_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_guellira_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_fake_intel_unit_icon.dds" noOfFrames = 2 }
 }
 spriteTypes = {	
 
@@ -20,4 +20,20 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}		
 
+	spriteType = {
+		name = "GFX_unit_co_cavalry_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_co_cavalry_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_co_cavalry_icon_medium_white"
+		textureFile = "gfx/interface/counters/division_small/onmap_unit_co_cavalry_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_co_cavalry_icon_small"
+		textureFile = "gfx/interface/counters/division_small/onmap_unit_co_cavalry_icon.dds"
+		noOfFrames = 2
+		legacy_lazy_load = no
+	}
 }
