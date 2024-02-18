@@ -219,39 +219,15 @@
 		x = 11
 		y = 2
 		ai_will_do = {
-			factor = 5
+			factor = 3
 		}
 		completion_reward = {   
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			} 
 		}
 	}
 	focus = {
@@ -264,7 +240,7 @@
 		x = 11
 		y = 3
 		ai_will_do = {
-			factor = 5
+			factor = 3
 		}
 		completion_reward = {   
 			random_owned_controlled_state = {
@@ -309,7 +285,7 @@
 		x = 11
 		y = 4
 		ai_will_do = {
-			factor = 5
+			factor = 3
 		}
 		completion_reward = {   
 			random_owned_controlled_state = {
@@ -467,11 +443,11 @@
 		prerequisite = { 
 			focus = SPR1
 		}
-		ai_will_do = {
-			factor = 1
-		}
 		x = 26
 		y = 2
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {   
 			add_political_power = 150
 		}
@@ -483,27 +459,27 @@
 		prerequisite = { 
 			focus = SPR2
 		}
-		ai_will_do = {
-			factor = 1
-		}
 		x = 26
 		y = 3
+		ai_will_do = {
+			factor = 15
+		}
 		completion_reward = {   
 			add_manpower = 15000
 		}
 	}
-	focus = {
+    focus = {
 		id = SPR4
 		icon = GFX_focus_generic_reorient_production
 		cost = 5
 		prerequisite = { 
 			focus = SPR3
 		}
-		ai_will_do = {
-			factor = 1
-		}
 		x = 26
 		y = 4
+		ai_will_do = {
+			factor = 5
+		}
 		completion_reward = {   
 			random_owned_controlled_state = {
 				limit = {
@@ -514,7 +490,7 @@
 					}
 				
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1

@@ -13,6 +13,7 @@ ideas = {
 	}
 	country = {
 		TR_POL_support_for_presants = {
+			picture = "SPR_relocate_the_gold_reserves"
 			allowed = {
 				always = no
 			}
@@ -22,6 +23,7 @@ ideas = {
 			}
 		}
 		TR_POL_willingness_to_go_indepent = {
+			picture = "SPR_relocate_the_gold_reserves"
 			allowed = {
 				always = no
 			}
@@ -33,6 +35,7 @@ ideas = {
 			}
 		}
 		TR_POL_low_legitimacy = {
+			picture = "SPR_relocate_the_gold_reserves"
 			allowed = {
 				always = no
 			}
@@ -42,6 +45,7 @@ ideas = {
 			}
 		}
 		TR_POL_repression_by_Russia = {
+			picture = "SPR_relocate_the_gold_reserves"
 			allowed = {
 				always = no
 			}
@@ -52,6 +56,7 @@ ideas = {
 		}
 
 		TR_POL_support_to_poland = { 
+			picture = "SPR_relocate_the_gold_reserves"
 			allowed = {
 				always = no
 			}
@@ -61,6 +66,7 @@ ideas = {
 			}
 		}
 		TR_POL_call_in_volunteer = {
+			picture = "SPR_relocate_the_gold_reserves"
 			allowed = {
 				always = no
 			}

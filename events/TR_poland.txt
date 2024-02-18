@@ -49,8 +49,9 @@ country_event = {
 			amount = 1000
 			target = POL
 		}
-		add_ideas = {
-			TR_POL_support_to_poland
+		add_timed_idea = {
+			idea = TR_POL_support_to_poland
+	    	days = 200
 		}
 	}
 	option = {#reject
