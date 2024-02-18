@@ -32,23 +32,24 @@ country_event = {
     is_triggered_only = yes
     immediate = {
         hidden_effect = {
-            RUS = {
-                kill_country_leader = yes
-                set_country_flag = Tsar_death
-                promote_character = {
-                    character = RUS_notsar
-                    ideology = Neutrality
-                }
-            }
+            
         }
     }
     option = {
         name = TR_Russia.2.a
-        custom_effect_tooltip = TR_Russia.tt.1
+        #custom_effect_tooltip = TR_Russia.tt.1
         hidden_effect = {
             RUS = { complete_national_focus = RUS_FkV_notsar }
             news_event = { hours = 24 id = TR_Russia_news.1 }
+            kill_country_leader = yes
+            set_country_flag = Tsar_death
         }
+        kill_country_leader = yes
+        promote_character = {
+            character = RUS_notsar
+            ideology = Neutrality
+        }
+        #TODO 空位になる！
     }
     option = {
         name = TR_Russia.2.b
@@ -56,6 +57,14 @@ country_event = {
         custom_effect_tooltip = TR_nosupport
         hidden_effect = {
             RUS = { complete_national_focus = RUS_FkV_broken_country }
+            news_event = { hours = 24 id = TR_Russia_news.1 }
+            kill_country_leader = yes
+            set_country_flag = Tsar_death
+        }
+        kill_country_leader = yes
+        promote_character = {
+            character = RUS_notsar
+            ideology = Neutrality
         }
     }
     option = {
@@ -64,6 +73,15 @@ country_event = {
         custom_effect_tooltip = TR_nosupport
         hidden_effect = {
             RUS = { complete_national_focus = RUS_FkV_communist_win }
+            news_event = { hours = 24 id = TR_Russia_news.1 }
+            
+        
+        set_country_flag = Tsar_death
+        }
+        kill_country_leader = yes
+        promote_character = {
+            character = RUS_notsar
+            ideology = Neutrality
         }
     }
 }

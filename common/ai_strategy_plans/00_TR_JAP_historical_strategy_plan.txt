@@ -23,6 +23,7 @@ JAP_historical_plan = {
 
 	ideas = {
 	}
+	
 
 	ai_strategy = {
 		type = building_target
