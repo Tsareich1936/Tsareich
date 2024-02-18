@@ -1611,12 +1611,20 @@ technologies = {
 	TR_tech_poison_gus = {
 		allow_branch = {
 			ROOT = {
-				tag = SER
+				OR = {
+					tag = SER
+					tag = ROM
+					tag = PRC
+				}
 			}
 		}
 		allow = {
 			ROOT = {
-				tag = SER
+				OR = {
+					tag = SER
+					tag = ROM
+					tag = PRC
+				}
 			}
 		}
 		path = {
@@ -1627,7 +1635,7 @@ technologies = {
 			name = support_folder
 			position = { x = 14 y = @1936 }
 		}
-		research_cost = 5
+		research_cost = 3
 		start_year = 1936
 
 		enable_subunits = {
@@ -1640,7 +1648,11 @@ technologies = {
 	TR_tech_poison_gus2 = {
 		allow = {
 			ROOT = {
-				tag = SER
+				OR = {
+					tag = SER
+					tag = ROM
+					tag = PRC
+				}
 			}
 		}
 		folder = {
@@ -1651,7 +1663,7 @@ technologies = {
 			leads_to_tech = TR_tech_poison_gus3
 			research_cost_coeff = 1
 		}
-		research_cost = 5
+		research_cost = 3
 		start_year = 1939
 
 		categories = {
@@ -1673,7 +1685,11 @@ technologies = {
 	TR_tech_poison_gus3 = {
 		allow = {
 			ROOT = {
-				tag = SER
+				OR = {
+					tag = SER
+					tag = ROM
+					tag = PRC
+				}
 			}
 		}
 		folder = {
@@ -1684,7 +1700,7 @@ technologies = {
 			leads_to_tech = TR_tech_poison_gus4
 			research_cost_coeff = 1
 		}
-		research_cost = 5
+		research_cost = 3
 		start_year = 1942
 
 		categories = {
@@ -1706,14 +1722,18 @@ technologies = {
 	TR_tech_poison_gus4 = {
 		allow = {
 			ROOT = {
-				tag = SER
+				OR = {
+					tag = SER
+					tag = ROM
+					tag = PRC
+				}
 			}
 		}
 		folder = {
 			name = support_folder
 			position = { x = 14 y = @1945 }
 		}
-		research_cost = 5
+		research_cost = 3
 		start_year = 1945
 
 		categories = {
