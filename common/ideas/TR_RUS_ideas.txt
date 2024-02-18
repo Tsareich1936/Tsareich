@@ -15,14 +15,13 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                drift_defence_factor = 0.5
-                conscription_factor = -0.3
-                mobilization_speed = -0.2 
-                enemy_justify_war_goal_time = 1
+                stability_factor = 0.35
+                war_support_factor = -0.35
+                political_power_factor = 0.15
+                neutrality_drift = 0.02
             }
             rule = {
 				can_create_factions = yes
-                can_send_volunteers = yes
 			}
         }
 
@@ -91,14 +90,15 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                army_attack_factor = -0.075
+                army_attack_factor = -0.1
                 army_defence_factor = -0.1
-                army_org_factor = -0.15
-                experience_loss_factor = 0.35
+                land_doctrine_cost_factor = 0.15
+                naval_doctrine_cost_factor = 0.15
+                air_doctrine_cost_factor = 0.3
             }
         }
 
-        RUS_nomad_of_russia = {
+        RUS_nomad_of_russia = { #todo name change
             picture = ETH_national_studs
             allowed = {
             }
@@ -113,7 +113,8 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                conscription_factor = -0.2
+                conscription_factor = -0.35
+                mobilization_speed = -0.25
             }
         }
 
@@ -132,8 +133,11 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
+                war_support_factor = -0.25
                 consumer_goods_factor = 0.75
-                local_resources_factor = -0.75 
+                local_resources_factor = -0.25
+                industrial_capacity_factory = -0.25
+                industrial_capacity_dockyard = -0.25
                 production_speed_buildings_factor = -0.3
             }
         }
@@ -153,8 +157,11 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
+                war_support_factor = -0.25
                 consumer_goods_factor = 0.5
-                local_resources_factor = -0.5
+                local_resources_factor = -0.15
+                industrial_capacity_factory = -0.15
+                industrial_capacity_dockyard = -0.15
                 production_speed_buildings_factor = -0.2
             }
         }
@@ -174,33 +181,9 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
+                war_support_factor = -0.25
                 consumer_goods_factor = 0.25
-                local_resources_factor = -0.25
                 production_speed_buildings_factor = -0.1
-            }
-        }
-
-        RUS_MGI = {
-            picture = NOR_printing_money
-            allowed = {
-            }
-            available = {
-
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                political_power_gain = 0.2
-                experience_gain_army = 0.1
-                army_core_defence_factor = 0.25
-                country_resource_cost_steel = 24
-                country_resource_cost_aluminium = 24
-                country_resource_cost_tungsten = 20
             }
         }
 
@@ -219,7 +202,7 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                research_speed_factor = -0.2
+                research_speed_factor = -0.3
             }
 
         }
