@@ -153,6 +153,7 @@ set_popularities = {
 }
 
 recruit_character = RUS_Alexei_Nikolaevich
+
 recruit_character = RUS_notsar
 recruit_character = RUS_kirill_vladimirovich
 

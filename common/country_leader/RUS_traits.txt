@@ -1,31 +1,33 @@
 leader_traits = {
 	TR_hero_of_wwi = {
 		random = no
+		war_support_factor = 0.15
 		political_power_factor = 0.15
-		non_core_manpower = 0.3
+		non_core_manpower = 0.1
 	}
 	TR_confusion_of_notsar = {
 		random = no
-		stability_factor = -1
-		war_support_factor = -1
-		political_power_gain = -1
+		stability_factor = -0.5
+		war_support_factor = -0.5
+		political_power_factor = -1
 	}
 	TR_krill_reformal_tsar = {
 		random = no
 		political_power_factor = 0.35
-		research_speed_factor = 0.1
-		neutrality_drift = 0.0008
+		research_speed_factor = 0.08
+		neutrality_drift = 0.0005
 	}
 	TR_krill_conflicts_in_the_court = {
 		random = no
 		political_power_cost = 1
-		drift_defence_factor = -0.25
+		drift_defence_factor = -0.4
+		stability_factor = -0.125
 	}
 	TR_krill_evolutional_government = {
 		random = no
-		war_support_factor = 0.2
-		land_doctrine_cost_factor = -0.15
-		naval_doctrine_cost_factor = -0.15
-		air_doctrine_cost_factor = -0.15
+		war_support_factor = 0.1
+		land_doctrine_cost_factor = -0.1
+		naval_doctrine_cost_factor = -0.1
+		air_doctrine_cost_factor = -0.1
 	}
 }

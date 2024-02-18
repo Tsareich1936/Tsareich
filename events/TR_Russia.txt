@@ -41,15 +41,20 @@ country_event = {
         hidden_effect = {
             RUS = { complete_national_focus = RUS_FkV_notsar }
             news_event = { hours = 24 id = TR_Russia_news.1 }
-            kill_country_leader = yes
             set_country_flag = Tsar_death
         }
         kill_country_leader = yes
-        promote_character = {
-            character = RUS_notsar
-            ideology = Neutrality
-        }
-        #TODO 空位になる！
+        
+        custom_effect_tooltip = TR_Russia.leader_notsar
+		hidden_effect = {
+            promote_character = RUS_notsar
+			set_politics = {
+				ruling_party = neutrality
+                last_election = "1936.1.1"
+	            election_frequency = 48
+	            elections_allowed = no
+			}
+		}
     }
     option = {
         name = TR_Russia.2.b
@@ -58,14 +63,19 @@ country_event = {
         hidden_effect = {
             RUS = { complete_national_focus = RUS_FkV_broken_country }
             news_event = { hours = 24 id = TR_Russia_news.1 }
-            kill_country_leader = yes
             set_country_flag = Tsar_death
         }
         kill_country_leader = yes
-        promote_character = {
-            character = RUS_notsar
-            ideology = Neutrality
-        }
+        custom_effect_tooltip = TR_Russia.leader_notsar
+		hidden_effect = {
+            promote_character = RUS_notsar
+			set_politics = {
+				ruling_party = neutrality
+                last_election = "1936.1.1"
+	            election_frequency = 48
+	            elections_allowed = no
+			}
+		}
     }
     option = {
         name = TR_Russia.2.c
@@ -79,10 +89,16 @@ country_event = {
         set_country_flag = Tsar_death
         }
         kill_country_leader = yes
-        promote_character = {
-            character = RUS_notsar
-            ideology = Neutrality
-        }
+        custom_effect_tooltip = TR_Russia.leader_notsar
+		hidden_effect = {
+            promote_character = RUS_notsar
+			set_politics = {
+				ruling_party = neutrality
+                last_election = "1936.1.1"
+	            election_frequency = 48
+	            elections_allowed = no
+			}
+		}
     }
 }
 

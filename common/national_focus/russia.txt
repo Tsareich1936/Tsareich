@@ -157,12 +157,21 @@ focus_tree = {
 				RUS = {
 					kill_country_leader = yes
 					set_country_flag = Tsar_kirill
-					promote_character = {
-						character = RUS_kirill_vladimirovich
-						ideology = Neutrality
-					}
+					
 				}
 			}
+			promote_character = {
+				character = RUS_kirill_vladimirovich
+			}
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+			}
+			
 		}
 	}
 	focus = {

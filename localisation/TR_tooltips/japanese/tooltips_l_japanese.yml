@@ -33,6 +33,8 @@
 
   TR_Persia_tt.1: "§Gロシア§!から略奪した機器とバクーの施設を工場に転換する！"
 
+  TR_Russia.leader_notsar: "皇帝の座は§Y空位§!となる。"
+
 
 
   TR_North_Italy_win_soc_tt: "§Yイタリア半島§!は§R$TR_North_Italy_name$§!により統一された。\n§G$TR_South_Italy_name$§!は§Yドデカネス諸島§!へと§Y亡命§!した！"
