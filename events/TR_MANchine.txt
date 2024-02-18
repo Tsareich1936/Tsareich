@@ -149,10 +149,10 @@ country_event = {#爆殺内戦
 						owner = PRC
 					}
 				}
+			}
 			BKN = {
 				country_event = TR_PRC.1
 			}
-
 		}
 	}
 

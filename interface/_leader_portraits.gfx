@@ -17,18 +17,6 @@ spriteTypes = {
 		texturefile = "gfx/leaders/leader_unknown_female.dds"
 	}
 
-	### RUS
-
-	spriteType = {
-		name = "GFX_portrait_RUS_alexei_nikolaevich"
-		texturefile = "gfx/leaders/RUS/Portrait_Russia_Alexei_Nikolaevich.dds"
-	}
-
-	spriteType = {
-		name = "GFX_portrait_RUS_kirill_vladimirovich"
-		texturefile = "gfx/leaders/RUS/Portrait_Russia_Kirill_Vladimirovich.dds"
-	}
-
 	### GER
 
 	spriteType = {

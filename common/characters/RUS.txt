@@ -41,8 +41,20 @@ characters = {
 			id = -1
 		}
 	}
-
-
+	RUS_Joseph_Stalin = {
+		name = RUS_Joseph_Stalin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_RUS_Joseph_Stalin
+			}
+		}
+		country_leader = {
+			ideology = orthodoxy
+			traits = {  }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
 	
 	RUS_georgy_zhukov = {
 		name = SOV_georgy_zhukov

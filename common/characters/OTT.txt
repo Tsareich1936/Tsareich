@@ -19,7 +19,7 @@ characters = {
 # 		name = "SRI_dAnnunzio"
 # 		portraits = {
 # 			civilian = {
-# 				large = GFX_portraits_SRI_dAnnunzio
+# 				large = GFX_portrait_SRI_dAnnunzio
 # 			}
 # 		}
 # 		country_leader={

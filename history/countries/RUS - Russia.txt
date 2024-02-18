@@ -316,7 +316,7 @@ set_variable = { var = rus_finland_autonomous_power value = 20 }
 
 #人
 recruit_character = RUS_georgy_zhukov
-
+recruit_character = RUS_Joseph_Stalin
 
 #POLITICAL ADVISORS
 recruit_character = RUS_mikhail_kalinin
