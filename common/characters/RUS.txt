@@ -46,6 +46,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_portrait_RUS_Joseph_Stalin
+				small = GFX_idea_Joseph_Stalin
 			}
 		}
 		country_leader = {
@@ -54,6 +55,18 @@ characters = {
 			expire = "1965.1.1.1"
 			id = -1
 		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = Joseph_Stalin
+			allowed = {
+				tag = RUS
+				always = no
+			}
+			traits = {
+				patriarch_of_moscow_and_all_russia
+			}
+		}	
 	}
 	
 	RUS_georgy_zhukov = {

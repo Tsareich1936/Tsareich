@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_idea_Joseph_Stalin
+		textureFile = "gfx/interface/ideas/minister/idea_Russia_Joseph_Stalin.dds"	
+	}
+	
+}
