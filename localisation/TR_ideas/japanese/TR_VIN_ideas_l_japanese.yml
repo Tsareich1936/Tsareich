@@ -1,3 +1,11 @@
 ﻿l_japanese:
- VIN_FRA_sien: "フランスからの支援"
- VIN_FRA_sien_desc: "フランスからの支援によって経済は順調に成長しているがフランス政府の影響下にある"
+ TR_VIN_FRA_sien: "フランスからの支援"
+ TR_VIN_FRA_sien1: "フランスからの支援"
+ TR_VIN_FRA_sien_desc: "フランスからの支援によって経済は順調に成長しているが我々はフランス政府の影響下にある"
+ TR_VIN_FRAsea: "越仏海洋協定"
+ TR_VIN_FRA_jyouyaku: "不平等条約の残骸"
+ #追加idea
+ TR_VIN_FRA_study: "留学生の帰国"
+ TR_VIN_call_army: "ベトコンの招集"
+ TR_VIN_rice: "コメの価格統制"
+ TR_VIN_rice1: "コメの価格統制"

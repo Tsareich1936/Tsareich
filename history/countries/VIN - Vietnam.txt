@@ -105,7 +105,9 @@ set_popularities = {
 	neutrality = 5
 }
 add_ideas = {
-	VIN_FRA_sien
+	TR_VIN_FRA_sien
+	TR_VIN_FRAsea
+    TR_VIN_FRA_jyouyaku
 }	
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!

@@ -45,7 +45,7 @@ if = {
 set_convoys = 40
 set_research_slots = 3
 
-
+add_ideas = TR_MAN_right
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

@@ -1,6 +1,7 @@
 ideas = {
 	country = {
-		MAN_right = {
+		TR_MAN_right = {
+			picture = "jap_intervene_in_china"
 			allowed = {
 				always = no
 			}

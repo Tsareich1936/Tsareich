@@ -31,7 +31,7 @@ VIN_CHI3: "中国内陸部の開発"
 VIN_CHI_HNA: "長沙作戦"
 VIN_CHI1: "遷都に向けた整備開発"
 VIN_CHI2: "ハノイ広州鉄道"
-VIN_CHI4: "越南人民共和国宣言"
+VIN_CHI4: "大越人民共和国宣言"
 #北
 VIN_CHI_NTH: "北部の鎮定開始"
 VIN_CHI_JAP: "日本との交渉"
@@ -46,9 +46,9 @@ VIN_CHI_SEA1: "海上での作戦"
 VIN_CHI_HOL: "インドネシアの開放"
 VIN_CHI_RAJ: "インドの開放"
 #他
-VIN_CHI_NTH: "南京国民政府を打倒"
-VIN_CHI_NTH: "長江流域での支配権確率"
-VIN_CHI_NTH: "米帝を討伐"
+VIN_CHI_FJN: "南京国民政府を打倒"
+VIN_CHI5: "長江流域での支配権確率"
+VIN_CHI_uSA: "米帝を討伐"
 
 #フランス
 VIN_FRA1: "フランスとの交渉"
