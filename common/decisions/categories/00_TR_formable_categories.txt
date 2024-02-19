@@ -1,0 +1,11 @@
+form_west_slavia_category = {
+	icon = generic_formable_nations
+	allowed = {
+		always = yes
+	}
+	visible_when_empty = no
+	on_map_area = {
+		name = form_west_slavia
+		zoom = 250
+	}
+}
