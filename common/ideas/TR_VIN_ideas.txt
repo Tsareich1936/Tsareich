@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		VIN_FRA_sien = {
+		TR_VIN_FRA_sien = {
 			picture = "SPR_relocate_the_gold_reserves"
 			allowed = {
 				always = no
@@ -8,7 +8,106 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				industrial_factory_donations = 1
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.20
+			}
+		}
+		TR_VIN_FRA_sien1 = {
+			picture = "SPR_relocate_the_gold_reserves"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.2
+				consumer_goods_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+		TR_VIN_FRAsea = {
+			picture = "generic_the_london_naval_treaty"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = -10
+			}
+		}
+		TR_VIN_FRA_jyouyaku = {
+			picture = "HUN_treaty_of_triannon"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.25
+			}
+			targeted_modifier = {
+				tag = FRA
+				cic_to_target_factor = 0.05
+			}
+		}
+
+		
+		#追加系
+		TR_VIN_call_army = {
+			picture = "CCHI_war_of_resistance3"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 3000
+			}
+		}
+
+		TR_VIN_FRA_study = {
+			picture = "JAP_duplicate_research"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.2
+			}
+		}
+		TR_VIN_rice= {
+			picture = "generic_political_support"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.001
+				monthly_population = 0.2
+				consumer_goods_factor = 0.15
+			}
+		}
+		TR_VIN_rice1 = {
+			picture = "generic_political_support"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.001
+				monthly_population = 0.4
+				consumer_goods_factor = 0.075
+			}
+		}
+		TR_VIN_ind = {
+			picture = "chi_hyper_inflation3"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.001
+				monthly_population = 0.4
+				consumer_goods_factor = 0.075
 			}
 		}
 	}	

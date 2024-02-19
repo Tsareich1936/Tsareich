@@ -1,6 +1,7 @@
 ideas = {
 	country = {
 		KOR_JAP = {
+			picture = "chi_wargaming_division"
 			allowed = {
 				always = no
 			}
