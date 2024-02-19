@@ -1,0 +1,1601 @@
+focus_tree = {
+	id = vin
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VIN
+		}
+	}
+	default = no
+	focus = {
+		id = VIN_1
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 26
+		y = 0
+
+	}
+	focus = {
+		id = VIN_CHI_army1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 26
+		y = 13
+
+	}
+	focus = {
+		id = VIN_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_1
+		}
+		mutually_exclusive = {
+			focus = VINv_1
+		}
+		x = 16
+		y = 1
+
+	}
+	focus = {
+		id = VIN_CHI_ind1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_2
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = VIN_CHI_ind2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_ind1
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = VIN_CHI_ind_rec1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_ind1
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = VIN_CHI_ind_rec2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_ind_rec1
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = VIN_CHI_ind3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_ind2
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = VIN_CHI_ind4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_ind1
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = VIN_CHI_ind5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_ind4
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = VIN_CHI_ind6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_ind3
+		}
+		prerequisite = {
+			focus = VIN_CHI_ind5
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = VIN_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_2
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = VIN_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_3
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = VIN_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_3
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = VIN_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_5
+		}
+		prerequisite = {
+			focus = VIN_4
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = VIN_CHI_GXC
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_6
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = VIN_CHI_YUN
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_GXC
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = VIN_CHI_GZH
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_YUN
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = VIN_CHI_EXC
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_GXC
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = VIN_CHI_admGZC
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_EXC
+		}
+		prerequisite = {
+			focus = VIN_CHI_YUN
+		}
+		x = 16
+		y = 7
+
+	}
+	focus = {
+		id = VIN_CHI_admHNA
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_admGZC
+		}
+		x = 15
+		y = 8
+
+	}
+	focus = {
+		id = VIN_CHI_admYUN
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_admGZC
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = VIN_CHI_admSIC
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_admYUN
+		}
+		prerequisite = {
+			focus = VIN_CHI_admHNA
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = VIN_CHI_SIC
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_GZH
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = VIN_CHI3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_SIC
+		}
+		x = 11
+		y = 9
+
+	}
+	focus = {
+		id = VIN_CHI_HNA
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_EXC
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = VIN_CHI1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_HNA
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = VIN_CHI4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_admSIC
+		}
+		prerequisite = {
+			focus = VIN_CHI_SIC
+		}
+		prerequisite = {
+			focus = VIN_CHI1
+		}
+		x = 16
+		y = 10
+
+	}
+	focus = {
+		id = VIN_CHI_NTH
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI4
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = VIN_CHI_STH
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI4
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = VIN_CHI_SEA1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_STH
+		}
+		x = 21
+		y = 12
+
+	}
+	focus = {
+		id = VIN_CHI_HOL
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_SEA1
+		}
+		x = 20
+		y = 13
+
+	}
+	focus = {
+		id = VIN_CHI2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI1
+		}
+		x = 21
+		y = 9
+
+	}
+	focus = {
+		id = VIN_FRA1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_1
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = VIN_FRA2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_FRA1
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = VIN_FRA3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_FRA1
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = VIN_FRA5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_FRA1
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = VIN_FRA4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_FRA1
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = VIN_FRA6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_FRA5
+		}
+		prerequisite = {
+			focus = VIN_FRA4
+		}
+		prerequisite = {
+			focus = VIN_FRA3
+		}
+		prerequisite = {
+			focus = VIN_FRA2
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = VIN_navy1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_FRA6
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = VIN_navy6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_navy1
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = VIN_navy8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_navy6
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = VIN_navy7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_navy6
+		}
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = VIN_navy10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_navy1
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = VIN_navy11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_navy10
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = VIN_navy9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_navy7
+		}
+		prerequisite = {
+			focus = VIN_navy8
+		}
+		x = 23
+		y = 9
+
+	}
+	focus = {
+		id = VIN_navy2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_navy1
+		}
+		x = 29
+		y = 7
+
+	}
+	focus = {
+		id = VIN_navy4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_navy2
+		}
+		x = 28
+		y = 8
+
+	}
+	focus = {
+		id = VIN_navy3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_navy2
+		}
+		x = 30
+		y = 8
+
+	}
+	focus = {
+		id = VIN_navy5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_navy3
+		}
+		prerequisite = {
+			focus = VIN_navy4
+		}
+		x = 29
+		y = 9
+
+	}
+	focus = {
+		id = VIN_navy12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_navy5
+			focus = VIN_navy9
+		}
+		prerequisite = {
+			focus = VIN_navy11
+		}
+		x = 26
+		y = 10
+
+	}
+	focus = {
+		id = VIN_CHI_a1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_army1
+		}
+		x = 30
+		y = 14
+
+	}
+	focus = {
+		id = VIN_CHI_a3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_a1
+		}
+		x = 29
+		y = 15
+
+	}
+	focus = {
+		id = VIN_CHI_a2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_a1
+		}
+		x = 31
+		y = 15
+
+	}
+	focus = {
+		id = VINv_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_1
+		}
+		mutually_exclusive = {
+			focus = VIN_2
+		}
+		x = 36
+		y = 1
+
+	}
+	focus = {
+		id = VINv_ind1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_1
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = VINv_i5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_ind1
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = VINv_i9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_i5
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = VINv_i1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_ind1
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = VINv_ind2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_ind1
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = VINv_ind3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_ind2
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = VINv_ind4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_ind3
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = VINv_ind5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_ind4
+		}
+		x = 36
+		y = 6
+
+	}
+	focus = {
+		id = VINv_ind6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_ind5
+		}
+		x = 36
+		y = 8
+
+	}
+	focus = {
+		id = VINv_r1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_ind1
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = VINv_r2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_r1
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = VINv_r3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_r2
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = VINv_r4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_r3
+		}
+		x = 38
+		y = 6
+
+	}
+	focus = {
+		id = VINv_r5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_ind1
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = VINv_r6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_r5
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = VINv_r7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_r6
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = VINv_r9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_r5
+		}
+		x = 42
+		y = 4
+
+	}
+	focus = {
+		id = VINv_r10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_r9
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = VINv_r8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_r7
+		}
+		prerequisite = {
+			focus = VINv_r10
+		}
+		x = 40
+		y = 6
+
+	}
+	focus = {
+		id = VINv_dip1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_1
+		}
+		x = 48
+		y = 2
+
+	}
+	focus = {
+		id = VINv_dip_nav1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip1
+		}
+		x = 46
+		y = 3
+
+	}
+	focus = {
+		id = VINv_dip_nav2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_nav1
+		}
+		x = 46
+		y = 4
+
+	}
+	focus = {
+		id = VINv_dip_FRA
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip1
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = VINv_dip_nav
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_FRA
+		}
+		prerequisite = {
+			focus = VINv_dip_nav2
+		}
+		x = 46
+		y = 5
+
+	}
+	focus = {
+		id = VINv_dip_MAL
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_nav
+		}
+		x = 45
+		y = 6
+
+	}
+	focus = {
+		id = VINv_dip_HOl
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_nav
+		}
+		x = 47
+		y = 6
+
+	}
+	focus = {
+		id = VINv_dip_SRL
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_MAL
+		}
+		prerequisite = {
+			focus = VINv_dip_HOl
+		}
+		x = 46
+		y = 7
+
+	}
+	focus = {
+		id = VINv_dip_EAF
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_SRL
+		}
+		x = 46
+		y = 8
+
+	}
+	focus = {
+		id = VINv_dip_inter
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_EAF
+		}
+		x = 46
+		y = 9
+
+	}
+	focus = {
+		id = VINv_dip_JAP
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip1
+		}
+		x = 50
+		y = 3
+
+	}
+	focus = {
+		id = VINv_dip_JAP2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_JAP
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = VINv_dip_CHI
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip1
+		}
+		x = 56
+		y = 3
+
+	}
+	focus = {
+		id = VINv_dip_GXC
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_CHI
+		}
+		x = 53
+		y = 4
+
+	}
+	focus = {
+		id = VINv_dip_land
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_FRA
+		}
+		prerequisite = {
+			focus = VINv_dip_GXC
+		}
+		x = 50
+		y = 5
+
+	}
+	focus = {
+		id = VINv_dip_SIA
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_land
+		}
+		x = 51
+		y = 6
+
+	}
+	focus = {
+		id = VINv_dip_EXC
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_CHI
+		}
+		x = 57
+		y = 4
+
+	}
+	focus = {
+		id = VINv_dip_CHI1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_EXC
+		}
+		x = 57
+		y = 5
+
+	}
+	focus = {
+		id = VINv_dip_CHI2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_CHI1
+		}
+		x = 56
+		y = 6
+
+	}
+	focus = {
+		id = VIN_CHI_FJN
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI4
+		}
+		x = 16
+		y = 11
+
+	}
+	focus = {
+		id = VIN_CHI_TIB
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_NTH
+		}
+		x = 13
+		y = 12
+
+	}
+	focus = {
+		id = VIN_CHI_JAP
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_NTH
+		}
+		x = 11
+		y = 12
+
+	}
+	focus = {
+		id = VIN_CHI_SIK
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_TIB
+		}
+		x = 13
+		y = 13
+
+	}
+	focus = {
+		id = VIN_CHI_XSM
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_NTH
+		}
+		x = 15
+		y = 12
+
+	}
+	focus = {
+		id = VIN_CHI_MAN
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_JAP
+		}
+		x = 11
+		y = 13
+
+	}
+	focus = {
+		id = VIN_CHI_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_FJN
+		}
+		x = 16
+		y = 13
+
+	}
+	focus = {
+		id = VIN_CHI_SIA
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_STH
+		}
+		x = 19
+		y = 12
+
+	}
+	focus = {
+		id = VIN_CHI_RAJ
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_SEA1
+		}
+		x = 22
+		y = 13
+
+	}
+	focus = {
+		id = VIN_CHI_army3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_army2
+		}
+		x = 26
+		y = 15
+
+	}
+	focus = {
+		id = VIN_CHI_army2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_army1
+		}
+		x = 26
+		y = 14
+
+	}
+	focus = {
+		id = VIN_CHI_army4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_army3
+		}
+		mutually_exclusive = {
+			focus = VIN_CHI_army5
+		}
+		x = 25
+		y = 16
+
+	}
+	focus = {
+		id = VIN_CHI_army5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_army3
+		}
+		mutually_exclusive = {
+			focus = VIN_CHI_army4
+		}
+		x = 27
+		y = 16
+
+	}
+	focus = {
+		id = VIN_CHI_a4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_a2
+		}
+		prerequisite = {
+			focus = VIN_CHI_a3
+		}
+		x = 30
+		y = 16
+
+	}
+	focus = {
+		id = VIN_CHI_army6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_army1
+		}
+		x = 22
+		y = 14
+
+	}
+	focus = {
+		id = VIN_CHI_army7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_army6
+		}
+		x = 22
+		y = 15
+
+	}
+	focus = {
+		id = VIN_CHI_army8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_army7
+		}
+		x = 22
+		y = 16
+
+	}
+	focus = {
+		id = VIN_CHI_army9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_army1
+		}
+		x = 24
+		y = 14
+
+	}
+	focus = {
+		id = VINv_i2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_i1
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = VINv_i3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_i2
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = VINv_i4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_i3
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = VINv_i6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_i5
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = VINv_i7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_i6
+		}
+		x = 32
+		y = 5
+
+	}
+	focus = {
+		id = VINv_i8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_i7
+		}
+		prerequisite = {
+			focus = VINv_i10
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = VINv_i10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_i9
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = VINv_i11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_i4
+		}
+		prerequisite = {
+			focus = VINv_i8
+		}
+		x = 32
+		y = 7
+
+	}
+	focus = {
+		id = VINv_r11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_r8
+		}
+		prerequisite = {
+			focus = VINv_r4
+		}
+		x = 40
+		y = 7
+
+	}
+	focus = {
+		id = VIN_CHI_USA
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_5
+		}
+		x = 16
+		y = 15
+
+	}
+	focus = {
+		id = VIN_CHI_army10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_army9
+		}
+		x = 24
+		y = 15
+
+	}
+	focus = {
+		id = VINv_dip_RAJ
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_land
+		}
+		prerequisite = {
+			focus = VINv_dip_SIA
+		}
+		x = 50
+		y = 7
+
+	}
+	focus = {
+		id = VINv_dip_PER
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_RAJ
+		}
+		x = 50
+		y = 8
+
+	}
+	focus = {
+		id = VINv_dip_RUS
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_PER
+		}
+		x = 50
+		y = 9
+
+	}
+	focus = {
+		id = VINv_dip_CHI3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_dip_CHI1
+		}
+		x = 58
+		y = 6
+
+	}
+	focus = {
+		id = VINv_CHI_army6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_army4
+		}
+		mutually_exclusive = {
+			focus = VINv_CHI_army10
+			focus = VINv_CHI_army13
+		}
+		x = 23
+		y = 17
+
+	}
+	focus = {
+		id = VINv_CHI_army7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_CHI_army6
+		}
+		x = 23
+		y = 18
+
+	}
+	focus = {
+		id = VINv_CHI_army8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_CHI_army7
+		}
+		x = 22
+		y = 19
+
+	}
+	focus = {
+		id = VINv_CHI_army9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_CHI_army7
+		}
+		x = 24
+		y = 19
+
+	}
+	focus = {
+		id = VINv_CHI_army10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_army5
+			focus = VIN_CHI_army4
+		}
+		mutually_exclusive = {
+			focus = VINv_CHI_army6
+			focus = VINv_CHI_army13
+		}
+		x = 26
+		y = 17
+
+	}
+	focus = {
+		id = VINv_CHI_army11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_CHI_army10
+		}
+		x = 26
+		y = 18
+
+	}
+	focus = {
+		id = VINv_CHI_army12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_CHI_army11
+		}
+		x = 26
+		y = 19
+
+	}
+	focus = {
+		id = VINv_CHI_army13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VIN_CHI_army5
+		}
+		mutually_exclusive = {
+			focus = VINv_CHI_army10
+			focus = VINv_CHI_army6
+		}
+		x = 29
+		y = 17
+
+	}
+	focus = {
+		id = VINv_CHI_army14
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_CHI_army13
+		}
+		x = 29
+		y = 18
+
+	}
+	focus = {
+		id = VINv_CHI_army15
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_CHI_army14
+		}
+		x = 28
+		y = 19
+
+	}
+	focus = {
+		id = VINv_CHI_army16
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VINv_CHI_army14
+		}
+		x = 30
+		y = 19
+
+	}
+}
