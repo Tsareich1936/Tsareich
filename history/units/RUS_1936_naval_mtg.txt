@@ -469,7 +469,7 @@ units = {
 		}
 		task_force = {
 			name = "Armianskii garnizonnyi flot"
-			location = 3653
+			location = 9932
 			ship = { name = "Fidonisy-C02" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Fidonisy Class"} } }
 			ship = { name = "Fidonisy-C03" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Fidonisy Class"} } }
 			ship = { name = "Fidonisy-C04" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Fidonisy Class"} } }
