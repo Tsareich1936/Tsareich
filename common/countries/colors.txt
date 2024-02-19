@@ -946,15 +946,15 @@ OTT = {
 	color = rgb { 236 244 217}
 	color_ui = rgb {  236 244 217}
 }
-NAB = {
-	color = rgb{ 252 233 58 }
-	color_ui = rgb{ 0 0 0 }
-}
 SAN = {
 	color = rgb{ 0 204 204 }
 	color_ui = rgb{ 0 0 0 }
 }
 EXC = {
 	color = rgb{ 0 0 204 }
+	color_ui = rgb{ 0 0 0 }
+}
+NAB = {
+	color = rgb{ 0 0 0 }
 	color_ui = rgb{ 0 0 0 }
 }
