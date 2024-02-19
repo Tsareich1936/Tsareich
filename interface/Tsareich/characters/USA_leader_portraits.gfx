@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_Portrait_USA_Henry_Louis_Mencken
+		textureFile = "gfx/leaders/USA/Portrait_USA_Henry_Louis_Mencken.dds"
+	}
+}

@@ -83,6 +83,12 @@ defined_text = {
 		localization_key = anarchist_communism
 	}
 	text = {
+		trigger = {
+			has_country_leader_ideology = libertarianism
+		}
+		localization_key = libertarianism
+	}
+	text = {
 		localization_key = anarchism
 	}
 }
