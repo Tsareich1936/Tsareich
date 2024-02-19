@@ -1,0 +1,59 @@
+﻿l_japanese:
+VIN_1: "第一次四ヵ年計画の報告書"
+#左産業
+VIN_CHI_ind1: "経済開発"
+VIN_CHI_ind2: "工業化の進捗"
+VIN_CHI_ind3: "地方でのインフラ整備"
+VIN_CHI_ind4: "コメの価格統制"
+VIN_CHI_ind5: "農家の保全"
+VIN_CHI_ind6: "好景気"
+VIN_CHI_ind_rec1: "フランス留学生"
+VIN_CHI_ind_rec2: "ハノイ大学"
+
+#越南人民共和国
+VIN_2: "「悪い夢」を見る"
+VIN_3: "ベトコンの再招集"
+VIN_4: "装備生産力の確保"
+VIN_5: "インターナショナルから武器を募る"
+VIN_6: "戦時経済への移行"
+VIN_CHI_GXC: "中越国境を越境"
+VIN_CHI_YUN: "ビルマからの遮断"
+VIN_CHI_EXC: "広州市を奪取"
+
+VIN_CHI_admGZC: "両広を平定"
+VIN_CHI_admHNA: "湖南の安定化"
+VIN_CHI_admYUN: "雲南と貴州での統治整備"
+VIN_CHI_admSIC: "四川での支配確立"
+
+VIN_CHI_GZH: "貴州を破壊"
+VIN_CHI_SIC: "四川省への侵入"
+VIN_CHI3: "中国内陸部の開発"
+VIN_CHI_HNA: "長沙作戦"
+VIN_CHI1: "遷都に向けた整備開発"
+VIN_CHI2: "ハノイ広州鉄道"
+VIN_CHI4: "越南人民共和国宣言"
+#北
+VIN_CHI_NTH: "北部の鎮定開始"
+VIN_CHI_JAP: "日本との交渉"
+VIN_CHI_MAN: "奉天政府の打倒"
+VIN_CHI_TIB: "チベットを脅しつける"
+VIN_CHI_SIK: "ウィグルの従属化"
+VIN_CHI_XSM: "回族への侵攻作戦"
+#南
+VIN_CHI_STH: "南方での作戦"
+VIN_CHI_SIA: "シャムの領土を請求"
+VIN_CHI_SEA1: "海上での作戦"
+VIN_CHI_HOL: "インドネシアの開放"
+VIN_CHI_RAJ: "インドの開放"
+#他
+VIN_CHI_NTH: "南京国民政府を打倒"
+VIN_CHI_NTH: "長江流域での支配権確率"
+VIN_CHI_NTH: "米帝を討伐"
+
+#フランス
+VIN_FRA1: "フランスとの交渉"
+VIN_FRA2: "北部の鉱山の鉱業権"
+VIN_FRA3: "越仏海洋協定の改正"
+VIN_FRA4: "不平等条約の改正"
+VIN_FRA5: "南部のゴム農園の権利"
+VIN_FRA6: "交渉の結果..."

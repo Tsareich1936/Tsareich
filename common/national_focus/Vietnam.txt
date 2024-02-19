@@ -3,122 +3,195 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 30
 			tag = VIN
 		}
 	}
 	default = no
+	reset_on_civilwar = no
+
 	focus = {
 		id = VIN_1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_treaty
 		cost = 2.00
 		x = 26
 		y = 0
-
-	}
-	focus = {
-		id = VIN_CHI_army1
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 26
-		y = 13
-
-	}
-	focus = {
-		id = VIN_2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_1
+	    
+        completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.75
+				uses = 2
+				category = industry
+			} 
 		}
-		mutually_exclusive = {
-			focus = VINv_1
-		}
-		x = 16
-		y = 1
-
 	}
+
+
+	#左産業
 	focus = {
 		id = VIN_CHI_ind1
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_NORDIC_com_capstone_civilian
+		cost = 8
 		prerequisite = {
 			focus = VIN_2
 		}
 		x = 9
 		y = 2
-
+        completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = VIN_CHI_ind2
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_NORDIC_com_civilian
+		cost = 8
 		prerequisite = {
 			focus = VIN_CHI_ind1
 		}
 		x = 7
 		y = 3
-
-	}
-	focus = {
-		id = VIN_CHI_ind_rec1
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_CHI_ind1
+        completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			} 
 		}
-		x = 9
-		y = 3
-
-	}
-	focus = {
-		id = VIN_CHI_ind_rec2
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_CHI_ind_rec1
-		}
-		x = 9
-		y = 4
-
 	}
 	focus = {
 		id = VIN_CHI_ind3
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_NORDIC_com_capstone_civilian
+		cost = 8
 		prerequisite = {
 			focus = VIN_CHI_ind2
 		}
 		x = 7
 		y = 4
-
+        completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			} 	
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			} 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			} 		
+		}
 	}
 	focus = {
 		id = VIN_CHI_ind4
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_NORDIC_com_capstone_materiel
+		cost = 8
 		prerequisite = {
 			focus = VIN_CHI_ind1
 		}
 		x = 11
 		y = 3
-
+        completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = VIN_CHI_ind5
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_NORDIC_com_selector_civilian
+		cost =  8
 		prerequisite = {
 			focus = VIN_CHI_ind4
 		}
 		x = 11
 		y = 4
-
+        completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = VIN_CHI_ind6
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_soviet_construction
+		cost =  8
 		prerequisite = {
 			focus = VIN_CHI_ind3
 		}
@@ -127,103 +200,195 @@ focus_tree = {
 		}
 		x = 9
 		y = 5
-
+        completion_reward = {
+			
+		}
 	}
+	focus = {
+		id = VIN_CHI_ind_rec1
+		icon = GFX_focus_NORDIC_com_capstone_research
+		cost = 8
+		prerequisite = {
+			focus = VIN_CHI_ind1
+		}
+		x = 9
+		y = 3
+        completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = VIN_CHI_ind_rec2
+		icon = GFX_focus_NORDIC_com_research
+		cost = 8
+		prerequisite = {
+			focus = VIN_CHI_ind_rec1
+		}
+		x = 9
+		y = 4
+        completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+
+
+    #左ルート	
+	focus = {
+		id = VIN_2
+		icon = GFX_focus_CZE_german_puppet
+		cost = 4
+		prerequisite = {
+			focus = VIN_1
+		}
+		mutually_exclusive = {
+			focus = VINv_1
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+			add_political_power = 50
+		}
+		completion_reward = {
+			
+		}
+	}
+
 	focus = {
 		id = VIN_3
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 4
 		prerequisite = {
 			focus = VIN_2
 		}
 		x = 16
 		y = 2
-
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = VIN_4
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 4
 		prerequisite = {
 			focus = VIN_3
 		}
 		x = 15
 		y = 3
-
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			} 
+		}
 	}
 	focus = {
 		id = VIN_5
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 4
 		prerequisite = {
 			focus = VIN_3
 		}
 		x = 17
 		y = 3
-
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 4000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 400
+				producer = FRA
+			}
+		}
 	}
 	focus = {
 		id = VIN_6
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 4
 		prerequisite = {
 			focus = VIN_5
 		}
 		prerequisite = {
 			focus = VIN_4
 		}
+		bypass = {
+			has_idea = war_economy
+			has_idea = tot_economic_mobilisation
+		}
 		x = 16
 		y = 4
-
+		completion_reward = {
+			add_ideas = war_economy
+		}
 	}
 	focus = {
 		id = VIN_CHI_GXC
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 4
 		prerequisite = {
 			focus = VIN_6
 		}
 		x = 16
 		y = 5
-
+        completion_reward = {
+	        create_wargoal = {
+				target = GXC
+				type = annex_everything
+			} 
+        }
 	}
 	focus = {
 		id = VIN_CHI_YUN
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_GXC
 		}
 		x = 14
 		y = 6
-
-	}
-	focus = {
-		id = VIN_CHI_GZH
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_CHI_YUN
+		completion_reward = {
+			create_wargoal = {
+				target = YUN
+				type = annex_everything
+			} 
 		}
-		x = 12
-		y = 7
-
 	}
 	focus = {
 		id = VIN_CHI_EXC
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_GXC
 		}
 		x = 18
 		y = 6
-
+		completion_reward = {
+			create_wargoal = {
+				target = EXC
+				type = annex_everything
+			} 
+		}
 	}
 	focus = {
 		id = VIN_CHI_admGZC
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_EXC
 		}
@@ -232,34 +397,41 @@ focus_tree = {
 		}
 		x = 16
 		y = 7
-
+		completion_reward = {
+	    
+		}
 	}
 	focus = {
 		id = VIN_CHI_admHNA
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_admGZC
 		}
 		x = 15
 		y = 8
-
+		completion_reward = {
+	    
+		}
 	}
 	focus = {
 		id = VIN_CHI_admYUN
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_admGZC
 		}
 		x = 17
 		y = 8
-
+		completion_reward = {
+	    
+		}
 	}
+
 	focus = {
 		id = VIN_CHI_admSIC
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_admYUN
 		}
@@ -268,56 +440,103 @@ focus_tree = {
 		}
 		x = 16
 		y = 9
-
+		completion_reward = {
+	    
+		}
 	}
+	focus = {
+		id = VIN_CHI_GZH
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = VIN_CHI_YUN
+		}
+		x = 12
+		y = 7
+		completion_reward = {
+	        create_wargoal = {
+				target = GZH
+				type = annex_everything
+			} 
+		}
+	}
+
 	focus = {
 		id = VIN_CHI_SIC
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_GZH
 		}
 		x = 12
 		y = 8
-
+		completion_reward = {
+			create_wargoal = {
+				target = SIC
+				type = annex_everything
+			} 
+		}
 	}
 	focus = {
 		id = VIN_CHI3
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_SIC
 		}
 		x = 11
 		y = 9
-
+		completion_reward = {
+	    
+		}
 	}
 	focus = {
 		id = VIN_CHI_HNA
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_EXC
 		}
 		x = 20
 		y = 7
-
+		completion_reward = {
+			create_wargoal = {
+				target = HNA
+				type = annex_everything
+			} 
+		}
 	}
 	focus = {
 		id = VIN_CHI1
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_HNA
 		}
 		x = 20
 		y = 8
-
+		completion_reward = {
+	    
+		}
 	}
+	focus = {
+		id = VIN_CHI2
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = VIN_CHI1
+		}
+		x = 21
+		y = 9
+		completion_reward = {
+	    
+		}
+	}
+	#追加外交
 	focus = {
 		id = VIN_CHI4
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_admSIC
 		}
@@ -329,122 +548,277 @@ focus_tree = {
 		}
 		x = 16
 		y = 10
-
+		completion_reward = {
+	        
+		}
 	}
+	#北伐
 	focus = {
 		id = VIN_CHI_NTH
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI4
 		}
 		x = 13
 		y = 11
-
+		completion_reward = {
+	    
+		}
 	}
+
+	focus = {
+		id = VIN_CHI_JAP
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 6
+		prerequisite = {
+			focus = VIN_CHI_NTH
+		}
+		x = 11
+		y = 12
+		completion_reward = {
+	        
+		}
+	}
+	focus = {
+		id = VIN_CHI_MAN
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = VIN_CHI_JAP
+		}
+		x = 11
+		y = 13
+		completion_reward = {
+	        
+		}
+	}
+	focus = {
+		id = VIN_CHI_TIB
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = VIN_CHI_NTH
+		}
+		x = 13
+		y = 12
+		completion_reward = {
+	        
+		}
+	}
+	focus = {
+		id = VIN_CHI_SIK
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = VIN_CHI_TIB
+		}
+		x = 13
+		y = 13
+		completion_reward = {
+	        
+		}
+	}
+	focus = {
+		id = VIN_CHI_XSM
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = VIN_CHI_NTH
+		}
+		x = 15
+		y = 12
+		completion_reward = {
+	        
+		}
+	}
+
+
+
+	#その他
+	focus = {
+		id = VIN_CHI_FJN
+		icon = GFX_focus_attack_china
+		cost = 6
+		prerequisite = {
+			focus = VIN_CHI4
+		}
+		x = 16
+		y = 11
+		completion_reward = {
+	        
+		}
+	}
+	focus = {
+		id = VIN_CHI_5
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = VIN_CHI_FJN
+		}
+		x = 16
+		y = 13
+		completion_reward = {
+	        
+		}
+	}
+	focus = {
+		id = VIN_CHI_USA
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = VIN_CHI_5
+		}
+		x = 16
+		y = 15
+		completion_reward = {
+	        
+		}
+	}
+
+	#南伐
 	focus = {
 		id = VIN_CHI_STH
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI4
 		}
 		x = 19
 		y = 11
-
+		completion_reward = {
+	    
+		}
+	}
+	focus = {
+		id = VIN_CHI_SIA
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = VIN_CHI_STH
+		}
+		x = 19
+		y = 12
+		completion_reward = {
+	        
+		}
 	}
 	focus = {
 		id = VIN_CHI_SEA1
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_STH
 		}
 		x = 21
 		y = 12
-
+		completion_reward = {
+	    
+		}
 	}
 	focus = {
 		id = VIN_CHI_HOL
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_SEA1
 		}
 		x = 20
 		y = 13
-
+		completion_reward = {
+	        
+		}
 	}
 	focus = {
-		id = VIN_CHI2
+		id = VIN_CHI_RAJ
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 6
 		prerequisite = {
-			focus = VIN_CHI1
+			focus = VIN_CHI_SEA1
 		}
-		x = 21
-		y = 9
+		x = 22
+		y = 13
 
 	}
+
+
+
+
+
+	#フランス
 	focus = {
 		id = VIN_FRA1
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 4
 		prerequisite = {
 			focus = VIN_1
 		}
 		x = 26
 		y = 2
-
+		completion_reward = {
+			FRA = {
+				end_puppet = VIN
+			}
+			add_political_power = 40
+		}
 	}
 	focus = {
 		id = VIN_FRA2
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_improve_relations
+		cost = 4
 		prerequisite = {
 			focus = VIN_FRA1
 		}
 		x = 23
 		y = 3
-
+		completion_reward = {
+	        
+		}
 	}
 	focus = {
 		id = VIN_FRA3
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_improve_relations
+		cost = 4
 		prerequisite = {
 			focus = VIN_FRA1
 		}
 		x = 25
 		y = 3
-
-	}
-	focus = {
-		id = VIN_FRA5
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_FRA1
+		completion_reward = {
+	        
 		}
-		x = 29
-		y = 3
-
 	}
 	focus = {
 		id = VIN_FRA4
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_goal_generic_improve_relations
+		cost = 4
 		prerequisite = {
 			focus = VIN_FRA1
 		}
 		x = 27
 		y = 3
-
+		completion_reward = {
+	        
+		}
 	}
 	focus = {
+		id = VIN_FRA5
+		icon = GFX_goal_generic_improve_relations
+		cost = 4
+		prerequisite = {
+			focus = VIN_FRA1
+		}
+		x = 29
+		y = 3
+		completion_reward = {
+	        
+		}
+	}
+
+	focus = {
 		id = VIN_FRA6
-		icon = GFX_goal_unknown
-		cost = 10.00
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 4
 		prerequisite = {
 			focus = VIN_FRA5
 		}
@@ -459,14 +833,23 @@ focus_tree = {
 		}
 		x = 26
 		y = 4
-
+		completion_reward = {
+	        
+		}
 	}
+
+    #海軍
 	focus = {
 		id = VIN_navy1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 10.00
 		prerequisite = {
 			focus = VIN_FRA6
+		}
+		available = {
+			NOT = {
+				has_idea = TR_VIN_FRAsea
+			}
 		}
 		x = 26
 		y = 6
@@ -1080,102 +1463,12 @@ focus_tree = {
 		y = 6
 
 	}
-	focus = {
-		id = VIN_CHI_FJN
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_CHI4
-		}
-		x = 16
-		y = 11
 
-	}
 	focus = {
-		id = VIN_CHI_TIB
+		id = VIN_CHI_army1
 		icon = GFX_goal_unknown
 		cost = 10.00
-		prerequisite = {
-			focus = VIN_CHI_NTH
-		}
-		x = 13
-		y = 12
-
-	}
-	focus = {
-		id = VIN_CHI_JAP
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_CHI_NTH
-		}
-		x = 11
-		y = 12
-
-	}
-	focus = {
-		id = VIN_CHI_SIK
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_CHI_TIB
-		}
-		x = 13
-		y = 13
-
-	}
-	focus = {
-		id = VIN_CHI_XSM
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_CHI_NTH
-		}
-		x = 15
-		y = 12
-
-	}
-	focus = {
-		id = VIN_CHI_MAN
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_CHI_JAP
-		}
-		x = 11
-		y = 13
-
-	}
-	focus = {
-		id = VIN_CHI_5
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_CHI_FJN
-		}
-		x = 16
-		y = 13
-
-	}
-	focus = {
-		id = VIN_CHI_SIA
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_CHI_STH
-		}
-		x = 19
-		y = 12
-
-	}
-	focus = {
-		id = VIN_CHI_RAJ
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_CHI_SEA1
-		}
-		x = 22
+		x = 26
 		y = 13
 
 	}
@@ -1395,17 +1688,7 @@ focus_tree = {
 		y = 7
 
 	}
-	focus = {
-		id = VIN_CHI_USA
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = VIN_CHI_5
-		}
-		x = 16
-		y = 15
 
-	}
 	focus = {
 		id = VIN_CHI_army10
 		icon = GFX_goal_unknown

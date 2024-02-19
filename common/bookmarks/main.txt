@@ -93,6 +93,11 @@ bookmarks = {
 			ideology = socialdemocratic
 			minor = yes
 		}
+		"VIN"={
+			history = "TR_VIN_MAIN_SCENARIO_DESC"
+			ideology = communism
+			minor = yes
+		}
 
 		#minor-entente
 		"SER"={
