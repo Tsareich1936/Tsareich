@@ -105,9 +105,13 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_weekly = 0.001
-				monthly_population = 0.4
-				consumer_goods_factor = 0.075
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				produciton_speed_industrial_complex = 0.2
 			}
 		}
 	}	

@@ -39,7 +39,12 @@ focus_tree = {
 		x = 9
 		y = 2
         completion_reward = {
-			
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.7
+				uses = 2
+				category = cat_production
+			} 
 		}
 	}
 	focus = {
@@ -206,7 +211,10 @@ focus_tree = {
 		x = 9
 		y = 5
         completion_reward = {
-			
+			add_timed_idea = {
+				idea = TR_VIN_ind
+				days = 800
+			}
 		}
 	}
 	focus = {
@@ -515,7 +523,65 @@ focus_tree = {
 		x = 11
 		y = 9
 		completion_reward = {
-	    
+			325 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			} 
+			605 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			} 
 		}
 	}
 	focus = {
@@ -555,6 +621,38 @@ focus_tree = {
 			add_victory_points = {
 				province = 7108
 				value = 5
+			} 
+			592 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			} 
+			593 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			} 
 		}
 	}
@@ -624,7 +722,7 @@ focus_tree = {
 	#北伐
 	focus = {
 		id = VIN_CHI_NTH
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anschluss
 		cost = 6
 		prerequisite = {
 			focus = VIN_CHI4
@@ -632,7 +730,8 @@ focus_tree = {
 		x = 13
 		y = 11
 		completion_reward = {
-	    
+	        army_experience = 20
+			add_war_support = 0.08
 		}
 	}
 
@@ -643,6 +742,9 @@ focus_tree = {
 		prerequisite = {
 			focus = VIN_CHI_NTH
 		}
+		available = {
+			always = no
+		}
 		x = 11
 		y = 12
 		completion_reward = {
@@ -651,7 +753,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_CHI_MAN
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_war
 		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_JAP
@@ -659,12 +761,15 @@ focus_tree = {
 		x = 11
 		y = 13
 		completion_reward = {
-	        
+            create_wargoal = {
+				target = MAN
+				type = annex_everything
+			}        
 		}
 	}
 	focus = {
 		id = VIN_CHI_TIB
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_boost_freedom
 		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_NTH
@@ -672,12 +777,15 @@ focus_tree = {
 		x = 13
 		y = 12
 		completion_reward = {
-	        
+			create_wargoal = {
+				target = TIB
+				type = puppet_wargoal_focus
+			}   
 		}
 	}
 	focus = {
 		id = VIN_CHI_SIK
-		icon = GFX_goal_unknown
+		icon = GFX_goal_continuous_boost_freedom
 		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_TIB
@@ -685,12 +793,15 @@ focus_tree = {
 		x = 13
 		y = 13
 		completion_reward = {
-	        
+			create_wargoal = {
+				target = SIK
+				type = puppet_wargoal_focus
+			}   
 		}
 	}
 	focus = {
 		id = VIN_CHI_XSM
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_war
 		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_NTH
@@ -698,7 +809,10 @@ focus_tree = {
 		x = 15
 		y = 12
 		completion_reward = {
-	        
+			create_wargoal = {
+				target = XSM
+				type = annex_everything
+			}		
 		}
 	}
 
@@ -715,12 +829,15 @@ focus_tree = {
 		x = 16
 		y = 11
 		completion_reward = {
-	        
+			create_wargoal = {
+				target = FJN
+				type = annex_everything
+			}   
 		}
 	}
 	focus = {
-		id = VIN_CHI_5
-		icon = GFX_goal_unknown
+		id = VIN_CHI5
+		icon = GFX_goal_generic_neutrality_focus
 		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_FJN
@@ -733,48 +850,84 @@ focus_tree = {
 	}
 	focus = {
 		id = VIN_CHI_USA
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_attack_allies
 		cost = 6
 		prerequisite = {
-			focus = VIN_CHI_5
+			focus = VIN_CHI5
+		}
+		available = {
+			always = no
 		}
 		x = 16
 		y = 15
 		completion_reward = {
-	        
+			create_wargoal = {
+				target = USA
+				type = topple_government
+			}   
 		}
 	}
 
 	#南伐
 	focus = {
 		id = VIN_CHI_STH
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_position_armies
 		cost = 6
 		prerequisite = {
 			focus = VIN_CHI4
 		}
+		available = {
+			FRA = {
+			    has_war_with = ENG
+			}
+		}
 		x = 19
 		y = 11
 		completion_reward = {
-	    
+            add_war_support = 0.08
+			navy_experience = 20
 		}
 	}
 	focus = {
 		id = VIN_CHI_SIA
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_more_territorial_claims
 		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_STH
 		}
-		x = 19
+		x = 18
 		y = 12
 		completion_reward = {
-	        
+	        create_wargoal = {
+				target = SIA
+				type = take_state
+			}
+			add_state_claim = 868
+			add_state_claim = 869
+		}
+	}
+	focus = {
+		id = VIN_CHI_RAJ
+		icon = GFX_focus_RAJ_seek_help_from_soviet
+		cost = 6
+		prerequisite = {
+			focus = VIN_CHI_SIA
+		}
+		x = 18
+		y = 13
+		completion_reward = {
+	        RAJ = {
+				add_war_support = -0.15
+			}
+			create_wargoal = {
+				target = RAJ
+				type = topple_government
+			}
 		}
 	}
 	focus = {
 		id = VIN_CHI_SEA1
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_STH
@@ -782,35 +935,76 @@ focus_tree = {
 		x = 21
 		y = 12
 		completion_reward = {
-	    
+			navy_experience = 30
+			add_tech_bonus = {
+				name = nav_bonus
+				bonus = 1.5
+				uses = 1
+				category = tp_tech
+			} 
 		}
 	}
 	focus = {
 		id = VIN_CHI_HOL
-		icon = GFX_goal_unknown
+
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_SEA1
+		}
+		available = {
+			FRA = {
+				has_war_with = HOL
+			}
 		}
 		x = 20
 		y = 13
 		completion_reward = {
-	        
+	        INS = {
+				add_war_support = -0.1
+				add_stability = -0.2
+			}
+			create_wargoal = {
+				target = INS
+				type = topple_government
+			}
+			create_wargoal = {
+				target = MAL
+				type = topple_government
+			}
 		}
 	}
+
 	focus = {
-		id = VIN_CHI_RAJ
-		icon = GFX_goal_unknown
+		id = VIN_CHI_AST
+
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		cost = 6
 		prerequisite = {
 			focus = VIN_CHI_SEA1
 		}
+		available = {
+			FRA = {
+				has_war_with = ENG
+			}
+		}
+		bypass = {
+			has_war_with = AST
+			has_war_with = NZL
+		}
 		x = 22
 		y = 13
-
+		completion_reward = {
+			create_wargoal = {
+				target = AST
+				type = topple_government
+			}
+			create_wargoal = {
+				target = NZL
+				type = topple_government
+			}
+		}
 	}
-
-
 
 
 
@@ -1118,6 +1312,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = VIN_2
+		}
+		available = {
+			always = no
 		}
 		x = 36
 		y = 1
