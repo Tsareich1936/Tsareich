@@ -128,6 +128,19 @@ characters={
 			id=-1
 		}
 	}
+	USA_Henry_Louis_Mencken = {
+		name = USA_Henry_Louis_Mencken
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_USA_Henry_Louis_Mencken
+			}
+		}
+		country_leader = {
+			ideology = libertarianism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 
 	USA_george_s_patton={
 		name=USA_george_s_patton
