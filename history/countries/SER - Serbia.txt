@@ -1,6 +1,6 @@
 ﻿capital = 107
 
-oob = "YUG_1936"
+oob = "YUG_1936_nsb"
 
 set_country_flag = SER_war_timer_start
 # Starting tech
