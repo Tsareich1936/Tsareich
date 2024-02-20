@@ -1,0 +1,34 @@
+
+
+
+### Air Wings ###
+air_wings = {
+	671 = { 																	
+		small_plane_airframe_1  = { 
+			owner = SRI
+		    amount = 96
+		    version_name = "G.50"
+	    }	
+		medium_plane_airframe_1 =  { 
+			owner = SRI
+			
+			amount = 72
+			version_name = "SM.81"
+		}	
+
+	}
+	286 = {																
+		small_plane_airframe_1  = { 
+			owner = SRI
+		    amount = 96
+		    version_name = "G.50"
+	    }	
+		medium_plane_airframe_1 =  { 
+			owner = SRI
+			creator = SRI
+			amount = 72
+			version_name = "SM.81"
+			
+		}	
+	}
+}

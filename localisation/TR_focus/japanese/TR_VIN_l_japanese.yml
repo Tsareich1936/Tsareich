@@ -1,5 +1,7 @@
 ﻿l_japanese:
 VIN_1: "第一次四ヵ年計画の報告書"
+VINv_1: "未実装！！"
+VINv_1_desc: "そのうち実装されるよそう、たぶん、きっと..."
 #左産業
 VIN_CHI_ind1: "経済開発"
 VIN_CHI_ind2: "工業化の進捗"
@@ -19,35 +21,33 @@ VIN_6: "戦時経済への移行"
 VIN_CHI_GXC: "中越国境を越境"
 VIN_CHI_YUN: "ビルマからの遮断"
 VIN_CHI_EXC: "広州市を奪取"
-
+#拡大開始
 VIN_CHI_admGZC: "両広を平定"
 VIN_CHI_admHNA: "湖南の安定化"
 VIN_CHI_admYUN: "雲南と貴州での統治整備"
 VIN_CHI_admSIC: "四川での支配確立"
-
-VIN_CHI_GZH: "貴州を破壊"
+VIN_CHI_GZH: "貴州を破壊" #拡大2
 VIN_CHI_SIC: "四川省への侵入"
 VIN_CHI3: "中国内陸部の開発"
 VIN_CHI_HNA: "長沙作戦"
 VIN_CHI1: "遷都に向けた整備開発"
 VIN_CHI2: "ハノイ広州鉄道"
 VIN_CHI4: "大越人民共和国宣言"
-#北
-VIN_CHI_NTH: "北部の鎮定開始"
+#宣言後
+VIN_CHI_NTH: "北部の鎮定開始" #北
 VIN_CHI_JAP: "日本との交渉"
 VIN_CHI_MAN: "奉天政府の打倒"
 VIN_CHI_TIB: "チベットを脅しつける"
 VIN_CHI_SIK: "ウィグルの従属化"
 VIN_CHI_XSM: "回族への侵攻作戦"
-#南
-VIN_CHI_STH: "南方での作戦"
+VIN_CHI_STH: "南方での作戦" #南
 VIN_CHI_SIA: "シャムの領土を請求"
 VIN_CHI_SEA1: "海上での作戦"
 VIN_CHI_HOL: "インドネシアの開放"
 VIN_CHI_RAJ: "インドの開放"
-#他
-VIN_CHI_FJN: "南京国民政府を打倒"
-VIN_CHI5: "長江流域での支配権確率"
+VIN_CHI_AST: "オーストラリアでの革命"
+VIN_CHI_FJN: "南京国民政府を打倒" #他
+VIN_CHI5: "長江流域での支配権確立"
 VIN_CHI_USA: "米帝を討伐"
 
 #フランス
@@ -57,3 +57,48 @@ VIN_FRA3: "越仏海洋協定の改正"
 VIN_FRA4: "不平等条約の改正"
 VIN_FRA5: "南部のゴム農園の権利"
 VIN_FRA6: "交渉の結果..."
+
+#海軍
+VIN_navy1: "a"
+VIN_navy2: "a"
+VIN_navy3: "a"
+VIN_navy4: "a"
+VIN_navy5: "a"
+VIN_navy6: "a"
+VIN_navy7: "a"
+VIN_navy8: "a"
+VIN_navy9: "a"
+VIN_navy10: "a"
+VIN_navy11: "a"
+VIN_navy12: "a"
+
+#陸軍
+VIN_CHI_army1: "a"
+VIN_CHI_army2: "a"
+VIN_CHI_army3: "a"
+VIN_CHI_army4: "a"
+VIN_CHI_army5: "a"
+VIN_CHI_army6: "a"
+VIN_CHI_army7: "a"
+VIN_CHI_army8: "a"
+VIN_CHI_army9: "a"
+VIN_CHI_army10: "a"
+#空軍
+VIN_CHI_a1: "a"
+VIN_CHI_a2: "a"
+VIN_CHI_a3: "a"
+VIN_CHI_a4: "a"
+VIN_CHI_a5: "a"
+VIN_CHI_a5: "a"
+#陸軍後半
+VIN_CHI_army11: "a"
+VIN_CHI_army12: "a"
+VIN_CHI_army13: "a"
+VIN_CHI_army14: "a"
+VIN_CHI_army15: "a"
+VIN_CHI_army16: "a"
+VIN_CHI_army17: "a"
+VIN_CHI_army18: "a"
+VIN_CHI_army19: "a"
+VIN_CHI_army20: "a"
+VIN_CHI_army21: "a"
