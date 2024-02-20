@@ -10,3 +10,19 @@
  TR_VIN_rice: "コメの価格統制"
  TR_VIN_rice1: "コメの価格統制"
  TR_VIN_ind: "好景気"
+ #ベトナムの精神
+ TR_VIN_land: "ベトナムのゲリラ精神"
+ TR_VIN_land1: "ベトナムのゲリラ精神"
+ TR_VIN_landa1: "ベトナムのゲリラ精神"
+ TR_VIN_landa2: "ベトナムのゲリラ精神"
+ TR_VIN_landd1: "ベトナムのゲリラ精神"
+ TR_VIN_landd2: "ベトナムのゲリラ精神"
+ #陸
+ TR_VIN_attack: "外に打って出る"
+ TR_VIN_defense: "インドシナ国家の防衛"
+ TR_VIN_army_school: "ハノイ士官学校"
+ TR_VIN_army_school1: "ハノイ士官学校"
+ #空
+ TR_VIN_killUSA: "北爆(北米爆撃)"
+ #海
+ TR_VIN_navy: "潜水艦の増産"
