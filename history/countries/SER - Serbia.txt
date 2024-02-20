@@ -218,7 +218,7 @@ create_country_leader = {
 add_ideas = {
 	limited_conscription
 	export_focus
-	partial_economic_mobilisation
+	extensive_conscription
 
 	TR_SER_serbian_army
 	TR_SER_muslim
