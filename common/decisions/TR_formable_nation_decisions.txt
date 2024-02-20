@@ -186,6 +186,36 @@ form_south_slavia_category = {
 		}
 		highlight_states = {
 			highlight_state_targets = {
+				state = 44
+				state = 45
+				state = 48
+				state = 102
+				state = 103
+				state = 104
+				state = 105
+				state = 106
+				state = 107
+				state = 108
+				state = 109
+				state = 109
+				state = 163
+				state = 211
+				state = 212
+				state = 736
+				state = 764
+				state = 801
+				state = 802
+				state = 803
+				state = 804
+				state = 852
+				state = 853
+				state = 934
+				state = 945
+				state = 985
+				state = 986
+				state = 994
+				state = 995
+				state = 996
 			}
 			highlight_color_while_active = 3
 		}
@@ -201,21 +231,50 @@ form_south_slavia_category = {
 			is_subject = no
 			custom_trigger_tooltip = {
 				tooltip = form_country_serbia_required_states_tt
+				controls_state = 45
+				controls_state = 105
+				controls_state = 107
+				controls_state = 108
+				controls_state = 764
+				controls_state = 802
+				controls_state = 803
+				controls_state = 985
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_bosna_required_states_tt
+				controls_state = 104
+				controls_state = 804
+				controls_state = 986
+				controls_state = 994
+				controls_state = 995
+				controls_state = 996
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_albania_required_states_tt
+				controls_state = 44
+				controls_state = 934
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_bulgaria_required_states_tt
+				controls_state = 48
+				controls_state = 211
+				controls_state = 212
+				controls_state = 801
+				controls_state = 945
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_macedonia_required_states_tt
+				controls_state = 106
 			}
 			custom_trigger_tooltip = {
 				tooltip = form_country_croatia_required_states_tt
+				controls_state = 102
+				controls_state = 103
+				controls_state = 109
+				controls_state = 163
+				controls_state = 736
+				controls_state = 852
+				controls_state = 853
 			}
 		}
 		visible = {
@@ -235,21 +294,50 @@ form_south_slavia_category = {
 			set_cosmetic_tag = SOUTH_SLAV
 			custom_effect_tooltip = form_country_serbia_coring_states_tt
 			hidden_effect = {
+				add_state_core = 45
+				add_state_core = 105
+				add_state_core = 107
+				add_state_core = 108
+				add_state_core = 764
+				add_state_core = 802
+				add_state_core = 803
+				add_state_core = 985
 			}
 			custom_effect_tooltip = form_country_bosna_coring_states_tt
 			hidden_effect = {
+				add_state_core = 104
+				add_state_core = 804
+				add_state_core = 986
+				add_state_core = 994
+				add_state_core = 995
+				add_state_core = 996
 			}
 			custom_effect_tooltip = form_country_albania_coring_states_tt
 			hidden_effect = {
+				add_state_core = 44
+				add_state_core = 934
 			}
 			custom_effect_tooltip = form_country_bulgaria_coring_states_tt
 			hidden_effect = {
+				add_state_core = 48
+				add_state_core = 211
+				add_state_core = 212
+				add_state_core = 801
+				add_state_core = 945
 			}
 			custom_effect_tooltip = form_country_macedonia_coring_states_tt
 			hidden_effect = {
+				add_state_core = 106
 			}
 			custom_effect_tooltip = form_country_croatia_coring_states_tt
 			hidden_effect = {
+				add_state_core = 102
+				add_state_core = 103
+				add_state_core = 109
+				add_state_core = 163
+				add_state_core = 736
+				add_state_core = 852
+				add_state_core = 853
 			}
 		}
 		ai_will_do = {

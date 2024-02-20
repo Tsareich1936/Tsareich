@@ -19,4 +19,40 @@ form_south_slavia_category = {
 		name = form_south_slavia
 		zoom = 250
 	}
+	on_map_area = {
+		name = form_south_slavia
+		zoom = 250
+		targets = {
+			44
+			45
+			48
+			102
+			103
+			104
+			105
+			106
+			107
+			108
+			109
+			109
+			163
+			211
+			212
+			736
+			764
+			801
+			802
+			803
+			804
+			852
+			853
+			934
+			945
+			985
+			986
+			994
+			995
+			996
+		}
+	}
 }
