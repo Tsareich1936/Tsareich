@@ -4,18 +4,50 @@
 ### Air Wings ###
 air_wings = {
 	158 = { 																
-		small_plane_airframe_0 = { owner = "SRI" amount = 84 version_name = "CR.42" }	
-		medium_plane_airframe_1 =  { owner = "SRI" amount = 62 version_name = "BR.20"}	
-		medium_plane_airframe_1 =  { owner = "SRI" amount = 62 version_name = "BR.20"}	
+		small_plane_airframe_0 = { 
+			owner = "SRI" 
+			amount = 84 
+			version_name = "CR.32" 
+		}	
+		small_plane_airframe_1 = { 
+			owner = "SRI" 
+			amount = 20
+			version_name = "G.50"
+		}	
+		medium_plane_airframe_1 =  { 
+			owner = "SRI" 
+			amount = 62 
+			version_name = "SM.81"
+		}	
+		medium_plane_airframe_1 =  { 
+			owner = "SRI" 
+			amount = 62 
+			version_name = "SM.81" 
+		}	
 
 	}
 	160 = {																
-		small_plane_airframe_0 = { owner = "SRI" amount = 84 version_name = "CR.42" }
-		medium_plane_airframe_1 =  { owner = "SRI" amount = 68 version_name = "SM.79" }	
+		small_plane_airframe_0 = { 
+			owner = "SRI" 
+			amount = 84 
+			version_name = "CR.32" 
+		}
+		medium_plane_airframe_1 =  { 
+			owner = "SRI" amount = 68 
+			version_name = "SM.79" 
+		}	
 	}
 	162 = {																	
-		small_plane_airframe_1 = { owner = "SRI" amount = 96 version_name = "G.50"}		
-		medium_plane_airframe_1 =  { owner = "SRI" amount = 88 version_name = "SM.79" }	
+		small_plane_airframe_1 = { 
+			owner = "SRI" 
+			amount = 96 
+			version_name = "G.50"
+		}		
+		medium_plane_airframe_1 =  { 
+			owner = "SRI" 
+			amount = 88 
+			version_name = "SM.79" 
+		}	
 	}
 }
 
@@ -30,9 +62,9 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = small_plane_airframe_2
-			creator = "ITA" 
-			version_name = "Re.2000"
+			type = small_plane_airframe_1
+			creator = "SRI" 
+			version_name = "G.50"
 		}
 		requested_factories = 1
 		progress = 0.2
@@ -43,7 +75,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = small_plane_cas_airframe_1
-			creator = "ITA" 
+			creator = "SRi" 
 			version_name = "Ba.65"
 		}
 		requested_factories = 1

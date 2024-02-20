@@ -174,3 +174,90 @@ form_west_slavia_category = {
 		}
 	}
 }
+form_south_slavia_category = {
+	form_south_slavia = {
+		icon = generic_form_nation
+		allowed = {
+			OR = {
+				original_tag = SER
+				original_tag = CRO
+				original_tag = BUL
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+			}
+			highlight_color_while_active = 3
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = form_south_slavia_flag
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = form_south_slavia_flag
+					}
+				}
+			}
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = form_country_serbia_required_states_tt
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_bosna_required_states_tt
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_albania_required_states_tt
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_bulgaria_required_states_tt
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_macedonia_required_states_tt
+			}
+			custom_trigger_tooltip = {
+				tooltip = form_country_croatia_required_states_tt
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = SER
+				original_tag = CRO
+				original_tag = BUL
+			}
+			NOT = { has_country_flag = form_south_slavia_flag }
+			NOT = { has_global_flag = formed_south_slavia_flag }
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = form_south_slavia_flag
+				set_global_flag = formed_south_slavia_flag
+			}
+			set_cosmetic_tag = SOUTH_SLAV
+			custom_effect_tooltip = form_country_serbia_coring_states_tt
+			hidden_effect = {
+			}
+			custom_effect_tooltip = form_country_bosna_coring_states_tt
+			hidden_effect = {
+			}
+			custom_effect_tooltip = form_country_albania_coring_states_tt
+			hidden_effect = {
+			}
+			custom_effect_tooltip = form_country_bulgaria_coring_states_tt
+			hidden_effect = {
+			}
+			custom_effect_tooltip = form_country_macedonia_coring_states_tt
+			hidden_effect = {
+			}
+			custom_effect_tooltip = form_country_croatia_coring_states_tt
+			hidden_effect = {
+			}
+		}
+		ai_will_do = {
+			factor = 200
+			# modifier = {
+			# 	factor = 0
+			# 	is_historical_focus_on = yes
+			# }
+		}
+	}
+}

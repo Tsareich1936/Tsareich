@@ -15,7 +15,7 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                conscription = 0.02
+                conscription = 0.05
                 experience_gain_army_factor = 0.25
             }
         }

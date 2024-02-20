@@ -14,13 +14,13 @@ division_template = {
 }
 units = {
 	division = {
-		location = 6857
+		location = 6875
 		division_template = "Esercito Popolare di Liberazione"
 		start_experience_factor = 0.6
 		start_equipment_factor = 0.75
 	}
 	division = {
-		location = 6857
+		location = 6875
 		division_template = "Esercito Popolare di Liberazione"
 		start_experience_factor = 0.6
 		start_equipment_factor = 0.75

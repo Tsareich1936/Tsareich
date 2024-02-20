@@ -1,0 +1,33 @@
+﻿
+
+
+
+##### AIR WINGS #####
+air_wings = { 
+	671 = {
+		fighter_equipment_1 = { 
+			amount = 96
+			owner = SRI
+		} 
+		tac_bomber_equipment_1 = { 
+			amount = 72
+			owner = SRI
+		}
+	} 
+
+	286 = { 
+		fighter_equipment_1 = { 
+			amount = 96
+			owner = SRI
+		} 
+		tac_bomber_equipment_1 = { 
+			amount = 72
+			owner = SRI
+		} 
+	} 
+} 
+
+
+####### Starting Production Queue #######
+instant_effect = { 
+} 
