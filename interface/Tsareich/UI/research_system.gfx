@@ -1,0 +1,12 @@
+# NAtion selection sccreen back drops
+spriteTypes = {
+	spriteType = {
+		name = "GFX_TR_open_reserch_system"
+		textureFile = "gfx/interface/UI/research_system/research.dds"
+	}
+	spriteType = {
+		name = "GFX_TR_focus_research"
+		textureFile = "gfx/interface/UI/research_system/focus_research.png"
+	}
+
+}

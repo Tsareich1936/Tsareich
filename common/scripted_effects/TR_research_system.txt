@@ -1,0 +1,36 @@
+TR_research_system = {
+	for_each_scope_loop = {
+		array = TR_research_system_variable
+		set_variable = {
+			THIS.political_debaff = 0
+		}
+		set_variable = {
+			THIS.infantry_equipment = 0
+		}
+		set_variable = {
+			THIS.support_wquipment = 0
+		}
+		set_variable = {
+			THIS.artillery_equipment = 0
+		}
+		set_variable = {
+			THIS.tank_equipment = 0
+		}
+		set_variable = {
+			THIS.navy_equipment = 0
+		}
+		set_variable = {
+			THIS.navy_sypport_equipment = 0
+		}
+		set_variable = {
+			THIS.air_equimpent = 0
+		}
+		set_variable = {
+			THIS.electric = 0
+		}
+		set_variable = {
+			THIS.industry = 0
+		}
+
+	}
+}
