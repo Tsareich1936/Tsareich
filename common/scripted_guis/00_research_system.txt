@@ -5,7 +5,9 @@ scripted_gui = {
 		parent_window_token = politics_tab
 		visible = {
 			is_ai = no
+			tag = JAP
 		}
+		
 		effects = {
 			reserach_system_open_click = {
 				if = {
