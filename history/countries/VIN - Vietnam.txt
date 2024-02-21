@@ -19,6 +19,7 @@ set_technology = {
 	interwar_antiair = 1
 	trench_warfare = 1
 	fleet_in_being = 1
+	basic_train = 1
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -98,6 +99,7 @@ if = {
 		early_ship_hull_cruiser = 1
 		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
 		early_ship_hull_carrier = 1
 		mtg_transport = 1
 		basic_battery = 1
@@ -125,6 +127,44 @@ add_ideas = {
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
 
+recruit_character = Ho_Chi_Minh
+recruit_character = Vo_Nguyen_Giap
+recruit_character = Van_Tien_Dung
+recruit_character =VIN_nguyen_van_hinh
+
+#中国共産党
+recruit_character = PRC_mao_zedong
+recruit_character = PRC_zhou_enlai
+recruit_character = PRC_liu_shaoqi
+recruit_character = wang_jingwei
+recruit_character = PRC_zhu_de
+
+
+
+### Field Marshals ###
+recruit_character = VIN_nguyen_van_hinh
+recruit_character = VIN_duong_van_minh
+
+### Corps Commanders ###
+recruit_character = VIN_le_van_ty
+recruit_character = VIN_tran_quang_vinh
+recruit_character = VIN_le_quang_vinh
+
+### Naval Commander ###
+recruit_character = VIN_le_quang_my
+recruit_character = VIN_tran_van_chon
+
+# Advisors
+recruit_character = VIN_nguyen_ton_hoan
+recruit_character = VIN_tran_trong_kim
+recruit_character = VIN_hoang_xuan_han
+recruit_character = VIN_ngo_dinh_can
+recruit_character = VIN_ngo_dinh_thuc
+recruit_character = VIN_ha_thuc_ky
+recruit_character = VIN_nguyen_giac_ngo
+recruit_character = VIN_le_van_vien
+recruit_character = VIN_vuong_thua_vu
+
 create_country_leader = {
 	name = "Phan Bôi Châu" 
 	desc = ""
@@ -136,16 +176,6 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Ho Chí Minh" 
-	desc = ""
-	picture = GFX_portrait_Ho_Chi_Minh
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
 
 create_country_leader = {
 	name = "Ngô Đình Diêm"

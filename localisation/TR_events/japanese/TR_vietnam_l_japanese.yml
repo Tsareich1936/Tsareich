@@ -7,6 +7,34 @@ TR_vietnam.2.t: "大越人民共和国宣言"
 TR_vietnam.2.d: "我々は中華南部を統一し、大越人民共和国を名乗ることにした"
 TR_vietnam.2.a: "素晴らしい！"
 
+TR_vietnam.3.t: "大越からの最後通牒！"
+TR_vietnam.3.d: "大越から傀儡化を迫る最後通牒が届いた"
+TR_vietnam.3.a: "従うほかあるまい..."
+TR_vietnam.3.b: "我々は抵抗する！"
+
+TR_vietnam.4.t: "チベットが要求を受諾"
+TR_vietnam.4.d: "チベットが我々の要求を受諾した"
+TR_vietnam.4.a: "素晴らしい！"
+
+TR_vietnam.5.t: "チベットが要求を無視"
+TR_vietnam.5.d: "チベットが我々の要求を無視した"
+TR_vietnam.5.a: "戦争だ"
+
+TR_vietnam.6.t: "大越からの最後通牒！"
+TR_vietnam.6.d: "大越から傀儡化を迫る最後通牒が届いた"
+TR_vietnam.6.a: "従うほかあるまい..."
+TR_vietnam.6.b: "我々は抵抗する！"
+
+TR_vietnam.7.t: "新疆が要求を受諾"
+TR_vietnam.7.d: "新疆が我々の要求を受諾した"
+TR_vietnam.7.a: "素晴らしい！"
+
+TR_vietnam.8.t: "新疆が要求を無視"
+TR_vietnam.8.d: "新疆が我々の要求を無視した"
+TR_vietnam.8.a: "戦争だ"
+
+
+
 TR_vietnam_news.1.t: "大越人民共和国宣言"
 TR_vietnam_news.1.d: "東アジアから新たなニュースだ。旧ベトナム政府は首都をハノイから広州に遷都し、国号を大越人民共和国に改めることを発表した。大越政府は中華統一に意欲を示しており、近い将来中国が再統一されるかもしれない。"
 TR_vietnam_news.1.a: "中国の内戦はいつ終わるのだろうか？"

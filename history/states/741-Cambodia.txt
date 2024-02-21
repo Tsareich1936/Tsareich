@@ -9,6 +9,7 @@ state={
 	history={
 		add_core_of = CAM
 		add_core_of = VIN
+		add_claim_by = SIA
 		owner = VIN
 		victory_points = {
 			7376 8

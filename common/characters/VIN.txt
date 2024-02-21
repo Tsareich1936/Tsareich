@@ -1,0 +1,300 @@
+characters = {
+	Ho_Chi_Minh = {
+		name = "Ho_Chi_Minh" 
+		picture = GFX_portrait_Ho_Chi_Minh
+		portraits={
+			army={
+				large="GFX_portrait_Ho_Chi_Minh"
+				small=GFX_portrait_Ho_Chi_Minh_small
+			}
+			civilian={
+				large="GFX_portrait_Ho_Chi_Minh"
+				small=GFX_portrait_Ho_Chi_Minh
+			}
+		}
+		field_marshal={
+			traits={ organizer jungle_rat ranger adaptable }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=6
+			logistics_skill=4
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=marxism
+			traits={ man_of_the_nation }
+			expire = "1953.3.1"
+			id=-1
+		}
+	}
+    Vo_Nguyen_Giap = {
+		name = "Vo_Nguyen_Giap" 
+		portraits = {
+			army = {
+				small = ""
+				large = ""
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist  war_hero }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor={
+			slot = army_chief
+			idea_token =  Vo_Nguyen_Giap
+			traits = { army_chief_organizational_3 }
+			ai_will_do = {
+				factor = 4.000
+			}
+		}
+		advisor={
+			slot = theorist 
+			idea_token =  Vo_Nguyen_Giap
+			traits = { grand_battle_plan_expert }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+    Van_Tien_Dung = {
+		name = "Van_Tien_Dung" 
+		portraits = {
+			army = {
+				small = ""
+				large = ""
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+
+
+
+	#中国共産党
+	PRC_mao_zedong={
+		name=PRC_mao_zedong
+		portraits={
+			army={
+				large="GFX_portrait_prc_mao_zedong"
+				small=GFX_portrait_PRC_mao_zedong_small
+			}
+			civilian={
+				large="GFX_portrait_prc_mao_zedong"
+				small=GFX_portrait_PRC_mao_zedong_small
+			}
+		}
+		corps_commander={
+			traits = { trickster guerilla_fighter trait_cautious }
+			skill=4
+			attack_skill=2
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PRC_mao_zedong
+			traits = { guerilla_warfare_expert }
+		}
+		advisor = {
+			slot = theorist 
+			idea_token = PRC_mao_zedong
+			traits = { mass_assault_expert }
+		}
+	}
+	PRC_zhu_de={
+		name=PRC_zhu_de
+		portraits={
+			army={
+				large="GFX_portrait_prc_zhu_de"
+				small="GFX_idea_PRC_zhu_de"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = PRC_zhu_de
+			traits = { army_infantry_3 }
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits={ infantry_officer organizer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+    PRC_zhou_enlai={
+		name=PRC_zhou_enlai
+		portraits={
+			civilian={
+				small="GFX_idea_PRC_zhou_enlai"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			traits  = {
+				industry_reformer
+			}
+		}
+	}
+	
+    PRC_liu_shaoqi={
+		name=PRC_liu_shaoqi
+		portraits={
+			civilian={
+				small="GFX_idea_PRC_liu_shaoqi"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			traits  = {
+				devoted_corporatist
+			}
+		}
+	}
+    wang_jingwei={
+		name = "wang_jingwei"
+		portraits={
+			civilian={
+				small="GFX_idea_china_luo_ruiqing"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+
+
+
+	#インドシナわー
+	VIN_nguyen_van_hinh = {
+		name = "VIN_nguyen_van_hinh"
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/VIN/VIN_nguyen_van_hinh.png"
+				large = "gfx/leaders/VIN/Portrait_Vietnam_Nguyen_Van_Hinh.png"
+			}
+		}
+		field_marshal = {
+			traits = { aggressive_assaulter }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = VIN_nguyen_van_hinh
+			traits = { army_regrouping_2}
+		}
+	}
+	VIN_duong_van_minh = {
+		name = "VIN_duong_van_minh"
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/VIN/VIN_duong_van_minh.png"
+				large = "gfx/leaders/VIN/Portrait_Vietnam_Duong_Van_Minh.png"
+			}
+		}
+		field_marshal = {
+			traits = { organisational_leader }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	VIN_le_van_ty = {
+		name ="VIN_le_van_ty"
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/VIN/VIN_le_van_ty.png"
+				large = "gfx/leaders/VIN/Portrait_Vietnam_Le_Van_Ty.png"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	VIN_tran_quang_vinh = {
+		name = "VIN_tran_quang_vinh"
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/VIN/VIN_tran_quang_vinh.png"
+				large = "gfx/leaders/VIN/Portrait_Vietnam_Tran_Quang_Vinh.png"
+			}
+		}
+		corps_commander = {
+			traits = { organizer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	VIN_le_quang_my = {
+		name = "VIN_le_quang_m"
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/VIN/VIN_le_quang_my.png"
+				large = "gfx/leaders/VIN/Portrait_Vietnam_Le_Quang_My.png"
+			}
+		}
+		navy_leader = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	VIN_tran_van_chon = {
+		name = "VIN_tran_van_chon"
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/VIN/VIN_tran_van_chon.png"
+				large = "gfx/leaders/VIN/Portrait_Vietnam_Tran_Van_Chon.png"
+			}
+		}
+		navy_leader = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+}

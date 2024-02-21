@@ -9,6 +9,7 @@ VIN_CHI_ind3: "地方でのインフラ整備"
 VIN_CHI_ind4: "コメの価格統制"
 VIN_CHI_ind5: "農家の保全"
 VIN_CHI_ind6: "好景気"
+VIN_CHI_ind7: "更なる工業化"
 VIN_CHI_ind_rec1: "フランス留学生"
 VIN_CHI_ind_rec2: "ハノイ大学"
 
@@ -40,6 +41,7 @@ VIN_CHI_MAN: "奉天政府の打倒"
 VIN_CHI_TIB: "チベットを脅しつける"
 VIN_CHI_SIK: "ウィグルの従属化"
 VIN_CHI_XSM: "回族への侵攻作戦"
+VIN_CHI_SHX: "北部の軍閥を解体"
 VIN_CHI_STH: "南方での作戦" #南
 VIN_CHI_SIA: "シャムの領土を請求"
 VIN_CHI_SEA1: "海上での作戦"
@@ -47,8 +49,17 @@ VIN_CHI_HOL: "インドネシアの開放"
 VIN_CHI_RAJ: "インドの開放"
 VIN_CHI_AST: "オーストラリアでの革命"
 VIN_CHI_FJN: "南京国民政府を打倒" #他
+VIN_CHI_PRC: "過激派を鎮圧" 
 VIN_CHI5: "長江流域での支配権確立"
 VIN_CHI_USA: "米帝を討伐"
+
+#中国共産党の支援
+VIN_PRC1: "中国共産党の支援"
+VIN_PRC2: "超限戦"
+VIN_PRC3: "農民を扇動"
+VIN_PRC4: "反日闘争"
+VIN_PRC5: "ゲリラ戦"
+VIN_PRC6: "資本家から資産を接収"
 
 #フランス
 VIN_FRA1: "フランスとの交渉"
@@ -71,6 +82,7 @@ VIN_navy9: "潜水艦の増産"
 VIN_navy10: "造船所の拡張"
 VIN_navy11: "ドクトリンの発展"
 VIN_navy12: "ドクトリンの発展Ⅱ"
+VIN_navy13: "ドクトリンの発展Ⅲ"
 
 TR_VIN_nav_haiphong: "1936年型駆逐艦船体派生型の§Yハイフォン級§!駆逐艦が生産ラインに50%完成した状態でに§Y4§!隻追加される。"
 TR_VIN_nav_saigon: "1936年型大型艦船体派生型の§Yサイゴン級§!戦艦と§Yフエ級§!戦艦が生産ラインに65%完成した状態でに追加される。"
