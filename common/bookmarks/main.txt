@@ -97,6 +97,16 @@ bookmarks = {
 			history = "TR_VIN_MAIN_SCENARIO_DESC"
 			ideology = communism
 			minor = yes
+			ideas = {
+			    TR_VIN_FRA_sien
+				TR_VIN_FRA_jyouyaku
+				TR_VIN_FRAsea
+			}
+			focuses = {
+				VIN_CHI4
+				VIN_CHI_army2
+				VIN_CHI_a6
+			}
 		}
 
 		#minor-entente

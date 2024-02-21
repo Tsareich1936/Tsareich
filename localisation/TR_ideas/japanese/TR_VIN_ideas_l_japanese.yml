@@ -10,6 +10,7 @@
  TR_VIN_rice: "コメの価格統制"
  TR_VIN_rice1: "コメの価格統制"
  TR_VIN_ind: "好景気"
+ TR_VIN_CHIwar: "統一戦争の開始"
  #ベトナムの精神
  TR_VIN_land: "ベトナムのゲリラ精神"
  TR_VIN_land1: "ベトナムのゲリラ精神"
@@ -23,6 +24,11 @@
  TR_VIN_army_school: "ハノイ士官学校"
  TR_VIN_army_school1: "ハノイ士官学校"
  #空
- TR_VIN_killUSA: "北爆(北米爆撃)"
+ TR_VIN_killUSA: "北爆"
  #海
  TR_VIN_navy: "潜水艦の増産"
+ #中国共産党
+ TR_VIN_PRC: "民間戦争"
+ TR_VIN_PRC1: "民間戦争"
+ TR_VIN_PRC2: "民間戦争"
+ TR_VIN_PRCcom: "資本家の資産を没収"

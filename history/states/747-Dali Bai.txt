@@ -1,6 +1,9 @@
 state={
 	id=747
 	name="STATE_747"
+	resources = {
+		steel = 8
+	}
 	provinces={
 		4559 4937 5009 7965 7976 8126 10413 10863 12789 12898 
 	}

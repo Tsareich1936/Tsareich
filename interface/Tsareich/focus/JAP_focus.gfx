@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_japanese_election"
+		textureFile = "gfx/interface/goals/Tsareich/japanese_election.dds"
+	}
+	spriteType = {
+		name = "GFX_Imperialization-policy"
+		textureFile = "gfx/interface/goals/Tsareich/Imperialization-policy.dds"
+	}
+	spriteType = {
+		name = "GFX_Greater_East_Asia_Conference"
+		textureFile = "gfx/interface/goals/Tsareich/Greater_East_Asia_Conference.dds"
+	}
+}

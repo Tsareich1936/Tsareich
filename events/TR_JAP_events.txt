@@ -1609,16 +1609,7 @@ country_event = { # against FRA
 			}
 		}
 		ai_chance = {
-			base = 99
-			modifier = {
-				if = {
-					limit = {
-						has_war_with_major = yes
-					}
-					factor = 0
-				}
-
-			}
+			base = 0
 		}
 	}
 }

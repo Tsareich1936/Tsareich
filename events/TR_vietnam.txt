@@ -13,7 +13,7 @@ country_event = {#start resistance
 	}
 }
 
-country_event = {#start resistance
+country_event = {
 	id = TR_vietnam.2
 	title = TR_vietnam.2.t
 	desc = TR_vietnam.2.d
@@ -28,7 +28,8 @@ country_event = {#start resistance
 	}
 }
 
-news_event = {#爆殺
+
+news_event = { #大越
 	id = TR_vietnam_news.1
 	title = TR_vietnam_news.1.t
 	desc = TR_vietnam_news.1.d
@@ -37,5 +38,113 @@ news_event = {#爆殺
 	is_triggered_only = yes
 	option = {
 		name = TR_vietnam_news.1.a
+	}
+}
+ 
+
+#チベット傀儡化
+country_event = { 
+	id = TR_vietnam.3
+	title = TR_vietnam.3.t
+	desc = TR_vietnam.3.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = TR_vietnam.3.a
+		VIN = {
+			puppet = TIB
+			country_event = TR_vietnam.4
+		}	
+     
+	}
+	option = {
+		name = TR_vietnam.3.b
+		VIN = {
+			country_event = TR_vietnam.5
+		}
+
+	}
+}
+country_event = {
+	id = TR_vietnam.4
+	title = TR_vietnam.4.t
+	desc = TR_vietnam.4.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = TR_vietnam.4.a
+		add_political_power = 50
+	}
+}
+country_event = {
+	id = TR_vietnam.5
+	title = TR_vietnam.5.t
+	desc = TR_vietnam.5.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = TR_vietnam.5.a
+		create_wargoal = {
+			target = TIB
+			type = puppet_wargoal_focus
+		}
+
+	}
+}
+
+
+#ウイグル傀儡化
+country_event = {
+	id = TR_vietnam.6
+	title = TR_vietnam.6.t
+	desc = TR_vietnam.6.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = TR_vietnam.6.a
+		VIN = {
+			puppet = SIK
+			country_event = TR_vietnam.7
+		}	
+     
+	}
+	option = {
+		name = TR_vietnam.6.b
+		VIN = {
+			country_event = TR_vietnam.8
+		}
+
+	}
+}
+country_event = {
+	id = TR_vietnam.7
+	title = TR_vietnam.7.t
+	desc = TR_vietnam.7.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = TR_vietnam.7.a
+		add_political_power = 50
+	}
+}
+country_event = {
+	id = TR_vietnam.8
+	title = TR_vietnam.8.t
+	desc = TR_vietnam.8.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = TR_vietnam.8.a
+		create_wargoal = {
+			target = TIB
+			type = puppet_wargoal_focus
+		}
+
 	}
 }

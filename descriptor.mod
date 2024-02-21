@@ -4,6 +4,7 @@ tags={
 }
 name="Tsareich"
 replace_path="gfx/loadingscreens"
+replace_path="history/countries"
 replace_path="common/on_actions"
 replace_path="common/dynamic_modifiers"
 replace_path="common/units/names_divisions"
