@@ -2235,7 +2235,7 @@ focus_tree = {
 				}
 				every_state = {
 					limit = {
-						is_core_of = LIB
+						is_core_of = LBA
 					}
 					add_resource = {
 						type = oil
