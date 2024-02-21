@@ -176,14 +176,23 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					not = {
+						526 = {
+							is_controlled_by = JAP
+						}
+						645 = {
+							is_controlled_by = JAP
+						}
+					}
+
 					has_war_with_major = yes
-					surrender_progress > 0.01
 					not = {
 						or = {
 							has_ideology = anarchism
 							has_ideology = animism
 						}
 					}
+					
 				}
 				activate_targeted_decision = {
 					target = JAP

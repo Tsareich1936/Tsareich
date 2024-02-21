@@ -7,6 +7,26 @@ form_west_slavia_category = {
 	on_map_area = {
 		name = form_west_slavia
 		zoom = 250
+		targets = {
+			9
+			72
+			75
+			940
+			941
+			942
+			70
+			71
+			664
+			10
+			86
+			87
+			88
+			90
+			92
+			97
+			98
+			762
+		}
 	}
 }
 form_south_slavia_category = {

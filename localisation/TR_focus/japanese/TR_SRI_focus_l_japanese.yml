@@ -103,7 +103,7 @@
  SRI_red_Adria: "赤きアドリア"
  SRI_focus_relation_europe: "ヨーロッパとの関係性を重視"
  SRI_red_greece: "ギリシャの社会主義化"
- SRI_red_Balkans: "バルカンの社会主義化"
+ SRI_red_Balkans: "バルカンの抵抗勢力への接近"
  SRI_african_charenge: "アフリカへの挑戦"
  SRI_mediterranean_sea: "地中海条約"
  SRI_friendship_with_turkey: "トルコとの友好"
@@ -125,6 +125,23 @@
  SRI_attack_to_russia: "ロシアへの攻撃"
  SRI_cooperation_for_greek: "ギリシャへの協力"
  SRI_attack_to_britain: "帝国主義を破壊せよ"
+
+ SRI_army_focus_1: "陸軍改革"
+ SRI_army_focus_2: "砲への注力"
+ SRI_army_focus_3: "イタリアの豆戦車"
+ SRI_army_focus_3: "陸軍拡大"
+ SRI_army_focus_5: "砲兵の拡大"
+ SRI_army_focus_6: "戦車への注力"
+ SRI_army_focus_7: "機械化への注力"
+ SRI_army_focus_8: "ドクトリンへの注力"
+ SRI_air_force_focus_1: "空軍改革"
+ SRI_air_force_focus_2: "武装への注力"
+ SRI_air_force_focus_3: "戦闘機への注力"
+ SRI_air_force_focus_4: "爆撃機への注力"
+ SRI_air_force_focus_5: "空挺部隊の開設"
+ SRI_air_force_focus_6: "戦闘機訓練"
+ SRI_air_force_focus_7: "対艦攻撃"
+ SRI_air_force_focus_8: "ジェット戦闘機"
 
 
 

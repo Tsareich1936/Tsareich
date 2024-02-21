@@ -15,6 +15,7 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
+                war_support_factor = -0.15
                 stability_factor = 0.35
                 political_power_factor = 0.15
                 neutrality_drift = 0.02
@@ -42,10 +43,12 @@ ideas = {
             modifier = {
                 stability_factor = 0.35
                 political_power_factor = 0.15
-                neutrality_drift = 0.02
+                neutrality_drift = 0.03
+                conscription = 0.005
             }
             rule = {
 				can_create_factions = yes
+                can_send_volunteers = yes
 			}
         }
 
@@ -66,8 +69,9 @@ ideas = {
             modifier = {
                 stability_factor = 0.35
                 political_power_factor = 0.15
-                neutrality_drift = 0.02
-                conscription_factor = 0.25
+                neutrality_drift = 0.03
+                conscription = 0.005
+                mobilization_speed = 0.15
             }
             rule = {
 				can_create_factions = yes
@@ -350,9 +354,8 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                military_industrial_organization_research_bonus = 0.25
-                military_industrial_organization_design_team_assign_cost = -0.5
-                production_speed_buildings_factor = 0.1
+                military_industrial_organization_design_team_assign_cost = -0.35
+                production_speed_buildings_factor = 0.05
                 industrial_capacity_factory = 0.1
                 industrial_capacity_dockyard = 0.1
                 
@@ -375,13 +378,11 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                military_industrial_organization_research_bonus = 0.25
-                military_industrial_organization_design_team_assign_cost = -0.5
-                production_speed_buildings_factor = 0.15
-                industrial_capacity_factory = 0.15
-                industrial_capacity_dockyard = 0.15
+                military_industrial_organization_design_team_assign_cost = -0.35
+                production_speed_buildings_factor = 0.1
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
                 production_factory_efficiency_gain_factor = 0.1
-                production_factory_max_efficiency_factor = 0.15
             }
         }
         
@@ -422,64 +423,7 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                consumer_goods_factor = 0.15
-            }
-        }
-
-        RUS_navy_doctrine = {
-            picture = generic_coastal_navy
-            allowed = {
-                
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            equipment_bonus = {
-
-                ship_hull_light = {
-					instant = yes
-					build_cost_ic = -0.15
-                }
-                ship_hull_cruiser = {
-					instant = yes
-					build_cost_ic = -0.15
-				}
-            }	
-            modifier = {
-                navy_max_range_factor = -0.2
-                navy_screen_attack_factor = 0.15
-                navy_screen_defence_factor = 0.15
-            }
-        }
-
-        RUS_tank_divisions = {
-            picture = man_five_year_plan_tank
-            allowed = {
-                
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            equipment_bonus = {
-                medium_tank_chassis = {
-					instant = yes
-					build_cost_ic = -0.1
-                    maximum_speed = 0.05
-				}
+                consumer_goods_factor = 0.2
             }
         }
 
@@ -501,11 +445,11 @@ ideas = {
             equipment_bonus = {
                 medium_plane_fighter_airframe = {
 					instant = yes
-					build_cost_ic = -0.15
+					build_cost_ic = -0.05
 				}
                 small_plane_airframe = {
 					instant = yes
-					build_cost_ic = -0.15
+					build_cost_ic = -0.05
 				}
             }
         }
@@ -526,9 +470,9 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                production_speed_arms_factory_factor = 0.35
-                production_speed_dockyard_factor = 0.35
-                consumer_goods_factor = -0.25
+                production_speed_arms_factory_factor = 0.5
+                production_speed_dockyard_factor = 0.5
+                consumer_goods_factor = -0.35
             }
         }
 
@@ -547,19 +491,12 @@ ideas = {
                 always = yes
             }
             removal_cost = -1
-            equipment_bonus = {
-                infantry_equipment = {
-					instant = yes
-					build_cost_ic = -0.25
-				}
-            }
             modifier = {
-                army_attack_factor = 0.1
-                army_defence_factor = 0.08
-                army_org_factor = 0.15
-                army_morale_factor = 0.1
-                supply_consumption_factor = -0.125
-                winter_attrition_factor = -0.75
+                army_attack_factor = 0.08
+                army_defence_factor = 0.05
+                army_org_factor = 0.1
+                supply_consumption_factor = -0.1
+                winter_attrition_factor = -0.5
             }
         }
 
@@ -699,8 +636,9 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                stability_factor = 0.15
-                army_morale_factor = 0.05
+                political_power_factor = 0.1
+                research_speed_factor = -0.025
+                army_org_factor = 0.075
             }
         }
 
@@ -720,9 +658,9 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                war_support_factor = 0.35
-                mobilization_speed = 0.15
-                conscription = 0.025
+                command_power_gain_mult = 0.1
+                army_core_defence_factor = 0.05
+                conscription_factor = 0.15
             }
         }
         RUS_op_air = {
