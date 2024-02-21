@@ -348,7 +348,7 @@ ideas = {
 			}
 		}
 		TR_VIN_PRCcom= {
-			picture = "mex_callistas"
+			picture = "MEX_callistas"
 			allowed = {
 				always = no
 			}
@@ -360,7 +360,7 @@ ideas = {
 		}
         #統一戦争
 		TR_VIN_CHIwar= {
-			picture = "mex_callistas"
+			picture = "chi_war_of_resistance3"
 			allowed = {
 				always = no
 			}

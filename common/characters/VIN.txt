@@ -155,6 +155,7 @@ characters = {
 		}
 		advisor={
 			slot = political_advisor
+			idea_token = PRC_zhou_enlai
 			traits  = {
 				industry_reformer
 			}
@@ -170,6 +171,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
+			idea_token = PRC_liu_shaoqi
 			traits  = {
 				devoted_corporatist
 			}
@@ -184,6 +186,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
+			idea_token = wang_jingwei
 			traits  = {
 				silent_workhorse 
 			}
