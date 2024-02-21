@@ -270,7 +270,7 @@ JAP_navy_unit_production = {
 		always = yes
 	}
 	abort = {
-		date > 1938.1.1
+		date < 1937.12.31
 	}
     # Naval unit factors
     ai_strategy = {
