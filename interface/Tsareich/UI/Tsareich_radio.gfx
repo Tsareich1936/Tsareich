@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+      name = "GFX_radio_station_cover_Tsareich_radio"
+      textureFile = "gfx/interface/UI/radio_station_cover_Tsareich_radio.png"
+      noOfFrames = 2
+    }
+}
