@@ -92,6 +92,10 @@ USA_USA = {
 	color = rgb { 20 133 237 }
 	color_ui = rgb { 87 160 255 }
 }
+GRA_COL = {
+	color = rgb { 208 154 27 }
+	color_ui = rgb { 200 165 48 }
+}
 #original
 MAL_UK = {
     color = rgb { 201 56 93 }
