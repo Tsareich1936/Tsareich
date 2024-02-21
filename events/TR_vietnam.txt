@@ -52,6 +52,9 @@ country_event = {
 
 	option = {
 		name = TR_vietnam.3.a
+		ai_chance = {
+			factor = 50
+		}
 		VIN = {
 			puppet = TIB
 			country_event = TR_vietnam.4
@@ -60,6 +63,9 @@ country_event = {
 	}
 	option = {
 		name = TR_vietnam.3.b
+		ai_chance = {
+			factor = 50
+		}
 		VIN = {
 			country_event = TR_vietnam.5
 		}
@@ -87,6 +93,9 @@ country_event = {
 
 	option = {
 		name = TR_vietnam.5.a
+		ai_chance = {
+			factor = 50
+		}
 		create_wargoal = {
 			target = TIB
 			type = puppet_wargoal_focus
@@ -106,6 +115,9 @@ country_event = {
 
 	option = {
 		name = TR_vietnam.6.a
+		ai_chance = {
+			factor = 50
+		}
 		VIN = {
 			puppet = SIK
 			country_event = TR_vietnam.7
@@ -114,6 +126,9 @@ country_event = {
 	}
 	option = {
 		name = TR_vietnam.6.b
+		ai_chance = {
+			factor = 50
+		}
 		VIN = {
 			country_event = TR_vietnam.8
 		}
@@ -129,6 +144,9 @@ country_event = {
 
 	option = {
 		name = TR_vietnam.7.a
+		ai_chance = {
+			factor = 50
+		}
 		add_political_power = 50
 	}
 }
@@ -141,8 +159,11 @@ country_event = {
 
 	option = {
 		name = TR_vietnam.8.a
+		ai_chance = {
+			factor = 50
+		}
 		create_wargoal = {
-			target = TIB
+			target = SIK
 			type = puppet_wargoal_focus
 		}
 
