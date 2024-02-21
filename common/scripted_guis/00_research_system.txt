@@ -1,0 +1,1170 @@
+scripted_gui = {
+	TR_research_system_open = {
+		context_type = player_context
+		window_name = "TR_reserach_system_GUI_open"
+		parent_window_token = politics_tab
+		visible = {
+			is_ai = no
+		}
+		effects = {
+			reserach_system_open_click = {
+				if = {
+					limit = {
+						has_country_flag = TR_research_system_open_flag
+					} 
+					clr_country_flag = TR_research_system_open_flag
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = TR_research_system_open_flag
+						}
+					} 
+					set_country_flag = TR_research_system_open_flag
+				}
+			}
+		}
+	}
+	TR_research_system = {
+		context_type = player_context
+		window_name = "TR_research_system_GUI"
+		visible = {
+			has_country_flag = TR_research_system_open_flag
+		}
+		
+		triggers = {
+			TR_research_infantry_equipment_r_click_enabled = {
+				TR_research_infantry_equipment_r_triggers = yes
+			}
+			TR_research_artillery_equipment_r_click_enabled = {
+				TR_research_artillery_equipment_r_triggers = yes
+			}
+			TR_research_support_equipment_r_click_enabled = {
+				TR_research_support_equipment_r_triggers = yes
+			}
+			TR_research_tank_equipment_r_click_enabled = {
+				TR_research_tank_equipment_r_triggers = yes
+			}
+			TR_research_ship_equipment_r_click_enabled = {
+				TR_research_ship_equipment_r_triggers = yes
+			}
+			TR_research_ship_sub_equipment_r_click_enabled = {
+				TR_research_ship_sub_equipment_r_triggers = yes
+			}
+			TR_research_air_equipment_r_click_enabled = {
+				TR_research_air_equipment_r_triggers = yes
+		    }
+			TR_research_elect_equipment_r_click_enabled = {
+				TR_research_elect_equipment_r_triggers = yes
+			}
+			TR_research_industry_equipment_r_click_enabled = {
+				TR_research_industry_equipment_r_triggers = yes
+			}
+		}
+		effects = {
+			TR_research_system_GUI_close_click = {
+				clr_country_flag = TR_research_system_open_flag
+			}
+			TR_research_infantry_equipment_r_click = {
+				if = {
+					limit = {
+						not = {
+							THIS = {
+								has_idea = TR_research_infantry_equipment
+							}
+
+						}
+					}
+					THIS = {
+						add_ideas = TR_research_infantry_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_3
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+						}
+						THIS = {
+							swap_ideas = {
+							    remove_idea = TR_research_system_debuff_1
+							    add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							not = {
+								THIS = {
+									has_idea = TR_research_system_debuff_1
+								}
+							}
+						}
+						THIS = {
+							add_ideas = TR_research_system_debuff_1
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						THIS = {
+							has_idea = TR_research_infantry_equipment
+						}
+
+					}
+					THIS = {
+						remove_ideas = TR_research_infantry_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+
+						}
+						THIS = {
+							remove_ideas = TR_research_system_debuff_1
+						}
+
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_1
+							}
+						}
+
+					}
+					if = {
+						limit = {
+							THIS= {
+								has_idea = TR_research_system_debuff_3
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_3
+								add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TR_r_in = 2
+						}
+					}
+					set_variable = {
+						TR_r_in = 1
+					}
+				}
+				else = {
+					set_variable = {
+						TR_r_in = 2
+					}
+				}
+			}
+			TR_research_artillery_equipment_r_click = {
+				if = {
+					limit = {
+						not = {
+							THIS = {
+								has_idea = TR_research_artillery_equipment
+							}
+
+						}
+					}
+					THIS = {
+						add_ideas = TR_research_artillery_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_3
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+						}
+						THIS = {
+							swap_ideas = {
+							    remove_idea = TR_research_system_debuff_1
+							    add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							not = {
+								THIS = {
+									has_idea = TR_research_system_debuff_1
+								}
+							}
+						}
+						THIS = {
+							add_ideas = TR_research_system_debuff_1
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						THIS = {
+							has_idea = TR_research_artillery_equipment
+						}
+
+					}
+					THIS = {
+						remove_ideas = TR_research_artillery_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+
+						}
+						THIS = {
+							remove_ideas = TR_research_system_debuff_1
+						}
+
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_1
+							}
+						}
+
+					}
+					if = {
+						limit = {
+							THIS= {
+								has_idea = TR_research_system_debuff_3
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_3
+								add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TR_r_ar = 2
+						}
+					}
+					set_variable = {
+						TR_r_ar = 1
+					}
+				}
+				else = {
+					set_variable = {
+						TR_r_ar = 2
+					}
+				}
+			}
+			TR_research_support_equipment_r_click = {
+				if = {
+					limit = {
+						not = {
+							THIS = {
+								has_idea = TR_research_support_equipment
+							}
+
+						}
+					}
+					THIS = {
+						add_ideas = TR_research_support_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_3
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+						}
+						THIS = {
+							swap_ideas = {
+							    remove_idea = TR_research_system_debuff_1
+							    add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							not = {
+								THIS = {
+									has_idea = TR_research_system_debuff_1
+								}
+							}
+						}
+						THIS = {
+							add_ideas = TR_research_system_debuff_1
+						}
+					}
+
+				}
+				else_if = {
+					limit = {
+						THIS = {
+							has_idea = TR_research_support_equipment
+						}
+
+					}
+					THIS = {
+						remove_ideas = TR_research_support_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+
+						}
+						THIS = {
+							remove_ideas = TR_research_system_debuff_1
+						}
+
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_1
+							}
+						}
+
+					}
+					if = {
+						limit = {
+							THIS= {
+								has_idea = TR_research_system_debuff_3
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_3
+								add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TR_r_su = 2
+						}
+					}
+					set_variable = {
+						TR_r_su = 1
+					}
+				}
+				else = {
+					set_variable = {
+						TR_r_su = 2
+					}
+				}
+			}
+			TR_research_tank_equipment_r_click = {
+				if = {
+					limit = {
+						not = {
+							THIS = {
+								has_idea = TR_research_tank_equipment
+							}
+
+						}
+					}
+					THIS = {
+						add_ideas = TR_research_tank_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_3
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+						}
+						THIS = {
+							swap_ideas = {
+							    remove_idea = TR_research_system_debuff_1
+							    add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							not = {
+								THIS = {
+									has_idea = TR_research_system_debuff_1
+								}
+							}
+						}
+						THIS = {
+							add_ideas = TR_research_system_debuff_1
+						}
+					}
+
+				}
+				else_if = {
+					limit = {
+						THIS = {
+							has_idea = TR_research_tank_equipment
+						}
+
+					}
+					THIS = {
+						remove_ideas = TR_research_tank_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+
+						}
+						THIS = {
+							remove_ideas = TR_research_system_debuff_1
+						}
+
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_1
+							}
+						}
+
+					}
+					if = {
+						limit = {
+							THIS= {
+								has_idea = TR_research_system_debuff_3
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_3
+								add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TR_r_ta = 2
+						}
+					}
+					set_variable = {
+						TR_r_ta = 1
+					}
+				}
+				else = {
+					set_variable = {
+						TR_r_ta = 2
+					}
+				}
+			}
+			TR_research_ship_equipment_r_click = {
+				if = {
+					limit = {
+						not = {
+							THIS = {
+								has_idea = TR_research_ship_equipment
+							}
+
+						}
+					}
+					THIS = {
+						add_ideas = TR_research_ship_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_3
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+						}
+						THIS = {
+							swap_ideas = {
+							    remove_idea = TR_research_system_debuff_1
+							    add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							not = {
+								THIS = {
+									has_idea = TR_research_system_debuff_1
+								}
+							}
+						}
+						THIS = {
+							add_ideas = TR_research_system_debuff_1
+						}
+					}
+
+				}
+				else_if = {
+					limit = {
+						THIS = {
+							has_idea = TR_research_ship_equipment
+						}
+
+					}
+					THIS = {
+						remove_ideas = TR_research_ship_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+
+						}
+						THIS = {
+							remove_ideas = TR_research_system_debuff_1
+						}
+
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_1
+							}
+						}
+
+					}
+					if = {
+						limit = {
+							THIS= {
+								has_idea = TR_research_system_debuff_3
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_3
+								add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TR_r_na = 2
+						}
+					}
+					set_variable = {
+						TR_r_na = 1
+					}
+				}
+				else = {
+					set_variable = {
+						TR_r_na = 2
+					}
+				}
+			}
+			TR_research_ship_sub_equipment_r_click = {
+				if = {
+					limit = {
+						not = {
+							THIS = {
+								has_idea = TR_research_ship_sub_equipment
+							}
+
+						}
+					}
+					THIS = {
+						add_ideas = TR_research_ship_sub_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_3
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+						}
+						THIS = {
+							swap_ideas = {
+							    remove_idea = TR_research_system_debuff_1
+							    add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							not = {
+								THIS = {
+									has_idea = TR_research_system_debuff_1
+								}
+							}
+						}
+						THIS = {
+							add_ideas = TR_research_system_debuff_1
+						}
+					}
+
+				}
+				else_if = {
+					limit = {
+						THIS = {
+							has_idea = TR_research_ship_sub_equipment
+						}
+
+					}
+					THIS = {
+						remove_ideas = TR_research_ship_sub_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+
+						}
+						THIS = {
+							remove_ideas = TR_research_system_debuff_1
+						}
+
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_1
+							}
+						}
+
+					}
+					if = {
+						limit = {
+							THIS= {
+								has_idea = TR_research_system_debuff_3
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_3
+								add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TR_r_ss = 2
+						}
+					}
+					set_variable = {
+						TR_r_ss = 1
+					}
+				}
+				else = {
+					set_variable = {
+						TR_r_ss = 2
+					}
+				}
+			}
+			TR_research_air_equipment_r_click = {
+				if = {
+					limit = {
+						not = {
+							THIS = {
+								has_idea = TR_research_air_equipment
+							}
+
+						}
+					}
+					THIS = {
+						add_ideas = TR_research_air_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_3
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+						}
+						THIS = {
+							swap_ideas = {
+							    remove_idea = TR_research_system_debuff_1
+							    add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							not = {
+								THIS = {
+									has_idea = TR_research_system_debuff_1
+								}
+							}
+						}
+						THIS = {
+							add_ideas = TR_research_system_debuff_1
+						}
+					}
+
+				}
+				else_if = {
+					limit = {
+						THIS = {
+							has_idea = TR_research_air_equipment
+						}
+
+					}
+					THIS = {
+						remove_ideas = TR_research_air_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+
+						}
+						THIS = {
+							remove_ideas = TR_research_system_debuff_1
+						}
+
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_1
+							}
+						}
+
+					}
+					if = {
+						limit = {
+							THIS= {
+								has_idea = TR_research_system_debuff_3
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_3
+								add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TR_r_ai = 2
+						}
+					}
+					set_variable = {
+						TR_r_ai = 1
+					}
+				}
+				else = {
+					set_variable = {
+						TR_r_ai = 2
+					}
+				}
+			}
+			TR_research_elect_equipment_r_click = {
+				if = {
+					limit = {
+						not = {
+							THIS = {
+								has_idea = TR_research_elect_equipment
+							}
+
+						}
+					}
+					THIS = {
+						add_ideas = TR_research_elect_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_3
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+						}
+						THIS = {
+							swap_ideas = {
+							    remove_idea = TR_research_system_debuff_1
+							    add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							not = {
+								THIS = {
+									has_idea = TR_research_system_debuff_1
+								}
+							}
+						}
+						THIS = {
+							add_ideas = TR_research_system_debuff_1
+						}
+					}
+
+				}
+				else_if = {
+					limit = {
+						THIS = {
+							has_idea = TR_research_elect_equipment
+						}
+
+					}
+					THIS = {
+						remove_ideas = TR_research_elect_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+
+						}
+						THIS = {
+							remove_ideas = TR_research_system_debuff_1
+						}
+
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_1
+							}
+						}
+
+					}
+					if = {
+						limit = {
+							THIS= {
+								has_idea = TR_research_system_debuff_3
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_3
+								add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TR_r_el = 2
+						}
+					}
+					set_variable = {
+						TR_r_el = 1
+					}
+				}
+				else = {
+					set_variable = {
+						TR_r_el = 2
+					}
+				}
+			}
+			TR_research_industry_equipment_r_click = {
+				if = {
+					limit = {
+						not = {
+							THIS = {
+								has_idea = TR_research_industry_equipment
+							}
+
+						}
+					}
+					THIS = {
+						add_ideas = TR_research_industry_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_3
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+						}
+						THIS = {
+							swap_ideas = {
+							    remove_idea = TR_research_system_debuff_1
+							    add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							not = {
+								THIS = {
+									has_idea = TR_research_system_debuff_1
+								}
+							}
+						}
+						THIS = {
+							add_ideas = TR_research_system_debuff_1
+						}
+					}
+
+				}
+				else_if = {
+					limit = {
+						THIS = {
+							has_idea = TR_research_industry_equipment
+						}
+
+					}
+					THIS = {
+						remove_ideas = TR_research_industry_equipment
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_1
+							}
+
+						}
+						THIS = {
+							remove_ideas = TR_research_system_debuff_1
+						}
+
+					}
+					if = {
+						limit = {
+							THIS = {
+								has_idea = TR_research_system_debuff_2
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_2
+								add_idea = TR_research_system_debuff_1
+							}
+						}
+
+					}
+					if = {
+						limit = {
+							THIS= {
+								has_idea = TR_research_system_debuff_3
+							}
+						}
+						THIS = {
+							swap_ideas = {
+								remove_idea = TR_research_system_debuff_3
+								add_idea = TR_research_system_debuff_2
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TR_r_id = 2
+						}
+					}
+					set_variable = {
+						TR_r_id = 1
+					}
+				}
+				else = {
+					set_variable = {
+						TR_r_id = 2
+					}
+				}
+			}
+		}
+		properties = {
+			TR_research_infantry_equipment_r = {
+				frame = TR_r_in
+			}
+			TR_research_artillery_equipment_r = {
+				frame = TR_r_ar
+			}
+			TR_research_support_equipment_r = {
+				frame = TR_r_su
+			}
+			TR_research_tank_equipment_r = {
+				frame = TR_r_ta
+			}
+			TR_research_ship_equipment_r = {
+				frame = TR_r_na
+			}
+			TR_research_ship_sub_equipment_r = {
+				frame = TR_r_ss
+			}
+			TR_research_air_equipment_r = {
+				frame = TR_r_ai
+			}
+			TR_research_elect_equipment_r = {
+				frame = TR_r_el
+			}
+			TR_research_industry_equipment_r = {
+				frame = TR_r_id
+			}
+		}
+	}
+
+
+}

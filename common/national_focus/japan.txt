@@ -13,7 +13,7 @@ focus_tree = { # nomal
     # #　政治ツリー
 
 	focus = {
-        icon = GFX_goal_generic_neutrality_focus
+        icon = 	GFX_japanese_election
 		id = jap_19th_General_Election
         x = 28
         y = 0
@@ -478,7 +478,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_policy_of_imperialisation
-
+        icon = GFX_Imperialization-policy
         relative_position_id = jap_extensive_transportation_network
         x = 0
         y = 1
@@ -1085,6 +1085,7 @@ focus_tree = { # nomal
         x = 0
         y = 1
         cost = 10
+        icon = GFX_Greater_East_Asia_Conference
         prerequisite = {
             focus = jap_Find_an_ally
         }

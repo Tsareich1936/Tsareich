@@ -1,0 +1,12 @@
+﻿l_japanese:
+ TR_research_system: "研究とは未来への投資であり、可能であればすべてに投資することが望ましいが現在の悪化する社会情勢を鑑みるにすぐに役立たないものに投資する余裕など残されていない。研究リソースを集中することで、短期的にはメリットを受けられるだろう。"
+ TR_research_in_desc: "歩兵装備への注力"
+ TR_research_artillery_desc: "砲への注力"
+ TR_research_support_desc: "支援中隊への注力"
+ TR_research_tank_desc: "戦車への注力"
+ TR_research_ship_desc: "艦船への注力"
+ TR_research_ship_sub_equipment_desc: "海軍装備への注力"
+ TR_research_air_desc: "航空機への注力"
+ TR_research_elect_desc: "電子工学への注力"
+ TR_research_industry_desc: "産業への注力"
+ TR_research_deatil: "研究リソースへの注力は最大3分野で可能である。また、研究リソースを集中させることは他の選ばれなかった研究分野の科学者達は不満を持つだろう。"

@@ -1,0 +1,163 @@
+TR_research_infantry_equipment_r_triggers = {
+	or = {
+		and = {
+			not = {
+				THIS = {
+					has_idea = TR_research_system_debuff_3
+				}
+			}
+			not = {
+				THIS= {
+					has_idea = TR_research_infantry_equipment
+				}
+			}
+		}
+		THIS= {
+			has_idea = TR_research_infantry_equipment
+		}
+	}
+}
+TR_research_artillery_equipment_r_triggers = {
+	if = {
+		limit = {
+			THIS= {
+				has_idea = TR_research_artillery_equipment
+			}
+		}
+		always = yes
+	}
+	else = {
+		not = {
+			THIS= {
+				has_idea = TR_research_system_debuff_3
+			}
+
+		}
+	}
+}
+TR_research_support_equipment_r_triggers = {
+	if = {
+		limit = {
+			THIS= {
+				has_idea = TR_research_support_equipment
+			}
+		}
+		always = yes
+	}
+	else = {
+		not = {
+			THIS= {
+				has_idea = TR_research_system_debuff_3
+			}
+
+		}
+	}
+}
+TR_research_tank_equipment_r_triggers = {
+	if = {
+		limit = {
+			THIS= {
+				has_idea = TR_research_tank_equipment
+			}
+		}
+		always = yes
+	}
+	else = {
+		not = {
+			THIS= {
+				has_idea = TR_research_system_debuff_3
+			}
+
+		}
+	}
+}
+TR_research_ship_equipment_r_triggers = {
+	if = {
+		limit = {
+			THIS= {
+				has_idea = TR_research_ship_equipment
+			}
+		}
+		always = yes
+	}
+	else = {
+		not = {
+			THIS= {
+				has_idea = TR_research_system_debuff_3
+			}
+
+		}
+	}
+}
+TR_research_ship_sub_equipment_r_triggers = {
+	if = {
+		limit = {
+			THIS= {
+				has_idea = TR_research_ship_sub_equipment
+			}
+		}
+		always = yes
+	}
+	else = {
+		not = {
+			THIS= {
+				has_idea = TR_research_system_debuff_3
+			}
+
+		}
+	}
+}
+TR_research_air_equipment_r_triggers = {
+	if = {
+		limit = {
+			THIS= {
+				has_idea = TR_research_air_equipment
+			}
+		}
+		always = yes
+	}
+	else = {
+		not = {
+			THIS= {
+				has_idea = TR_research_system_debuff_3
+			}
+
+		}
+	}
+}
+TR_research_elect_equipment_r_triggers = {
+	if = {
+		limit = {
+			THIS= {
+				has_idea = TR_research_elect_equipment
+			}
+		}
+		always = yes
+	}
+	else = {
+		not = {
+			THIS= {
+				has_idea = TR_research_system_debuff_3
+			}
+
+		}
+	}
+}
+TR_research_industry_equipment_r_triggers = {
+	if = {
+		limit = {
+			THIS= {
+				has_idea = 		TR_research_industry_equipment 
+			}
+		}
+		always = yes
+	}
+	else = {
+		not = {
+			THIS= {
+				has_idea = TR_research_system_debuff_3
+			}
+
+		}
+	}
+}
