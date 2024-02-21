@@ -6,7 +6,7 @@
 #focus template
 	# focus = {
 	# 	id = id
-	# 	icon = GFX_
+	# 	icon = GFX_focus_generic_navy_battleship2
 	# 	cost = 5
 	# 	prerequisite = {
 	# 		focus = SRI_
@@ -352,7 +352,7 @@ focus_tree = {
 		focus = {#Tradizioni delle repubbliche marinare
 			#海洋共和国の伝統
 			id = SRI_TDRM
-			icon = GFX_
+			icon = GFX_focus_generic_navy_battleship2
 			cost = 4
 			x = 35
 			y = 10
@@ -363,7 +363,7 @@ focus_tree = {
 		}
 		focus = {#上陸作戦
 			id = SRI_landing_operations
-			icon = GFX_
+			icon = GFX_focus_generic_navy_battleship2
 			cost = 4
 			prerequisite = {
 				focus = SRI_TDRM
@@ -377,7 +377,7 @@ focus_tree = {
 		}
 		focus = {#海兵の強化
 			id = SRI_strengthening_marines
-			icon = GFX_
+			icon = GFX_focus_generic_navy_battleship2
 			cost = 4
 			prerequisite = {
 				focus = SRI_landing_operations
@@ -392,7 +392,7 @@ focus_tree = {
 		## Amalfi ##
 			focus = {#アマルフィの伝統
 				id = SRI_amalfi_traditions
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 4
 				prerequisite = {
 					focus = SRI_TDRM
@@ -420,7 +420,7 @@ focus_tree = {
 			}
 			focus = {#シチリアへの拡張
 				id = SRI_extension_to_sicily
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 4
 				prerequisite = {
 					focus = SRI_amalfi_traditions
@@ -445,7 +445,7 @@ focus_tree = {
 			}
 			focus = {#島嶼部の防衛
 				id = SRI_island_defence
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_extension_to_sicily
@@ -459,7 +459,7 @@ focus_tree = {
 			}
 			focus = {#南方海軍
 				id = SRI_southern_navy
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 4
 				prerequisite = {
 					focus = SRI_extension_to_sicily
@@ -473,7 +473,7 @@ focus_tree = {
 			}
 			focus = {#潜水艦への注力
 				id = SRI_focus_on_submarines
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_southern_navy
@@ -493,7 +493,7 @@ focus_tree = {
 			}
 			focus = {#シュノーケルへの注力
 				id = SRI_focus_on_snorkel
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_focus_on_submarines
@@ -507,7 +507,7 @@ focus_tree = {
 			}
 			focus = {#魚雷への注力
 				id = SRI_focus_on_torpedo
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_focus_on_submarines
@@ -527,7 +527,7 @@ focus_tree = {
 			}
 			focus = {#深海の覇者
 				id = SRI_DEEP_SEA_CHAMPION
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_focus_on_snorkel
@@ -543,7 +543,7 @@ focus_tree = {
 		## Pisa ##
 			focus = {#ピサの伝統
 				id = SRI_pisa_traditions
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 4
 				prerequisite = {
 					focus = SRI_TDRM
@@ -568,7 +568,7 @@ focus_tree = {
 			}
 			focus = {#ラツィオへの拡張
 				id = SRI_extension_to_lazio
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 4
 				prerequisite = {
 					focus = SRI_pisa_traditions
@@ -596,7 +596,7 @@ focus_tree = {
 			}
 			focus = {#ローマ海軍
 				id = SRI_roman_navy
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_extension_to_lazio
@@ -610,7 +610,7 @@ focus_tree = {
 			}
 			focus = {#大ローマ港
 				id = SRI_il_porto
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_extension_to_lazio
@@ -635,7 +635,7 @@ focus_tree = {
 			}
 			focus = {#安寧なる海
 				id = SRI_peace_sea
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_il_porto
@@ -649,7 +649,7 @@ focus_tree = {
 			}
 			focus = {#駆逐艦への注力
 				id = SRI_focus_on_destroyer
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_peace_sea
@@ -669,7 +669,7 @@ focus_tree = {
 			}
 			focus = {#巡洋艦への注力
 				id = SRI_focus_on_cruiser
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_peace_sea
@@ -689,7 +689,7 @@ focus_tree = {
 			}
 			focus = {#絶対的防御
 				id = SRI_ABSOLUTE_DEFENCE
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_focus_on_destroyer
@@ -705,7 +705,7 @@ focus_tree = {
 		## Venezia ##
 			focus = {
 				id = SRI_venezia_traditions
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 4
 				prerequisite = {
 					focus = SRI_TDRM
@@ -730,7 +730,7 @@ focus_tree = {
 			}
 			focus = {#アドリアの女王
 				id = SRI_adrian_queen
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 4
 				prerequisite = {
 					focus = SRI_venezia_traditions
@@ -756,7 +756,7 @@ focus_tree = {
 			}
 			focus = {
 				id = SRI_warship_queen
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 4
 				prerequisite = {
 					focus = SRI_adrian_queen
@@ -780,7 +780,7 @@ focus_tree = {
 		## Genova ##
 			focus = {
 				id = SRI_genova_traditions
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 4
 				prerequisite = {
 					focus = SRI_TDRM
@@ -805,7 +805,7 @@ focus_tree = {
 			}
 			focus = {#サルデーニャへの拡大
 				id = SRI_extension_to_sardegna
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 4
 				prerequisite = {
 					focus = SRI_genova_traditions
@@ -833,7 +833,7 @@ focus_tree = {
 			}
 			focus = {#軍艦の王
 				id = SRI_warship_king
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 4
 				prerequisite = {
 					focus = SRI_extension_to_sardegna
@@ -860,7 +860,7 @@ focus_tree = {
 		## main force ##
 			focus = {#第一次建艦計画
 				id = SRI_building_warship_plan1
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 4
 				prerequisite = {
 					focus = SRI_warship_queen
@@ -876,7 +876,7 @@ focus_tree = {
 			}
 			focus = {#造船所の大拡張
 				id = SRI_extension_dockyard
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_building_warship_plan1
@@ -899,7 +899,7 @@ focus_tree = {
 			}
 			focus = {#英雄の船
 				id = SRI_hero_ship
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_building_warship_plan1
@@ -916,7 +916,7 @@ focus_tree = {
 			}
 			focus = {#皇帝の船
 				id = SRI_imperial_ship
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_building_warship_plan1
@@ -936,7 +936,7 @@ focus_tree = {
 			}
 			focus = {#海軍研究機関の拡張
 				id = SRI_naval_research_institutes_expansion
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_hero_ship
@@ -951,7 +951,7 @@ focus_tree = {
 			}
 			focus = {#特殊部隊の拡張
 				id = SRI_expansion_commando
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_naval_research_institutes_expansion
@@ -965,7 +965,7 @@ focus_tree = {
 			}
 			focus = {#艦載機への注力
 				id = SRI_focus_on_ship_based_aircraft
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_hero_ship
@@ -986,7 +986,7 @@ focus_tree = {
 			}
 			focus = {#火力への注力
 				id = SRI_focus_on_power
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_hero_ship
@@ -1001,7 +1001,7 @@ focus_tree = {
 			}
 			focus = {#第ニ次建艦計画
 				id = SRI_building_warship_plan2
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_focus_on_ship_based_aircraft
@@ -1017,7 +1017,7 @@ focus_tree = {
 			}
 			focus = {#我らが海へと
 				id = SRI_to_the_our_sea
-				icon = GFX_
+				icon = GFX_focus_generic_navy_battleship2
 				cost = 5
 				prerequisite = {
 					focus = SRI_building_warship_plan2
@@ -2565,8 +2565,14 @@ focus_tree = {
 			
 			relative_position_id = SRI_perfect_italy
 			completion_reward = {
-				country_event = {
-					id = TR_north_italy.socialism.13
+				# country_event = {
+				# 	id = TR_north_italy.socialism.13
+				# }
+				SER = {
+					add_timed_idea = {
+						idea = TR_socialist_influence
+						days = 180
+					}
 				}
 				GRE = {
 					add_timed_idea = {
@@ -2627,7 +2633,24 @@ focus_tree = {
 			y = 1
 			relative_position_id = SRI_focus_relation_europe
 			completion_reward = {
-				
+				MDR = {
+					add_timed_idea = {
+						idea = TR_socialist_influence
+						days = 360
+					}
+				}
+				ROM = {
+					add_timed_idea = {
+						idea = TR_socialist_influence
+						days = 360
+					}
+				}
+				BUL = {
+					add_timed_idea = {
+						idea = TR_socialist_influence
+						days = 360
+					}
+				}
 			}
 		}
 		focus = {
@@ -2789,7 +2812,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SRI_URSR
-			icon = GFX_
+			icon = GFX_focus_generic_navy_battleship2
 			cost = 10
 			prerequisite = {
 				focus = SRI_friendship_with_egypt
@@ -2908,7 +2931,7 @@ focus_tree = {
 		}
 		focus = {
 			id = SRI_augusutus
-			icon = GFX_
+			icon = GFX_focus_generic_navy_battleship2
 			cost = 5
 			prerequisite = {
 				focus = SRI_strengthening_power_duce
