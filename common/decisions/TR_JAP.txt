@@ -2890,7 +2890,7 @@ JAP_lack_food = {
 		available = {
 			any_enemy_country = {
 				is_major = yes
-				has_capitulated = no
+				has_capitulated = yes
 			}
 		}
 		timeout_effect = {

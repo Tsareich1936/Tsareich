@@ -2196,7 +2196,7 @@ focus_tree = { # nomal
         }
         completion_reward = {
             division_template = {
-                name = Kokuminngiyutai
+                name = "Kokuminngiyutai"
                 regiments = {
                     militia = {x = 0  y = 0}
                     militia = {x = 0  y = 1}
@@ -2205,15 +2205,15 @@ focus_tree = { # nomal
                     militia = {x = 0  y = 4}                    
                 }
             }
-            every_state = {
+            every_core_state = {
                 limit = {
-                    is_core_of = JAP
-                    is_controlled_by = JAP
+                    is_owned_by = JAP
                 }
                 create_unit = {
-                    division = Kokuminngiyutai
+                    division = "name = \"Kokumingiyutai\" division_template = \"Kokuminngiyutai\" start_experience_factor = 0" 
                     owner = JAP
                     count = 3
+                    
                 }
             }
         
