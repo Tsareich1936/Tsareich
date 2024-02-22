@@ -1560,6 +1560,9 @@ focus_tree = {
 						base = 1
 					factor = 184
 				}
+				available = {
+					has_global_flag = TR_spr_civ_war
+				}
 				x = 0
 				y = 2
 				relative_position_id = TR_ENG_anticommunist
@@ -1590,11 +1593,49 @@ focus_tree = {
 						base = 1
 					factor = 180
 				}
+				bypass = {
+					POR = {
+						is_in_faction_with = ROOT
+					}
+				}
 				x = 0
 				y = 2
 				relative_position_id = TR_ENG_supporting_spain
 				completion_reward = {
-					add_to_faction = POR
+					if = {
+						limit = {
+							ROOT = {
+								is_faction_leader = yes
+							}
+						}
+						add_to_faction = POR
+					}
+					else_if = {
+						limit = {
+							ROOT = {
+								is_in_faction = yes
+							}
+						}
+						every_country = {
+							limit = {
+								NOT = {
+									tag = ROOT
+								}
+								is_in_faction_with = ROOT
+								is_faction_leader = yes
+							}
+							add_to_faction = POR
+						}
+					}
+					else_if = {
+						limit = {
+							is_in_faction = no
+						}
+						ROOT = {
+							create_faction = yes
+							add_to_faction = POR
+						}
+					}
 				}
 			}
 			focus = {
@@ -1748,7 +1789,7 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_ENG_anticommunist
 				completion_reward = {
-			
+					add_political_power = 100
 				}
 			}
 			focus = {
@@ -1766,7 +1807,10 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_ENG_those_driven_by_vengeance
 				completion_reward = {
-			
+					FRA = {
+						set_stability = -1
+						set_war_support = -1
+					}
 				}
 			}
 			focus = {
@@ -1780,11 +1824,47 @@ focus_tree = {
 						base = 1
 					factor = 190
 				}
+				available = {
+					has_global_flag = SRI_one_Italy
+				}
 				x = -1
 				y = 3
 				relative_position_id = TR_ENG_those_driven_by_vengeance
 				completion_reward = {
-			
+					if = {
+						limit = {
+							ROOT = {
+								is_faction_leader = yes
+							}
+						}
+						add_to_faction = ITA
+					}
+					else_if = {
+						limit = {
+							ROOT = {
+								is_in_faction = yes
+							}
+						}
+						every_country = {
+							limit = {
+								NOT = {
+									tag = ROOT
+								}
+								is_in_faction_with = ROOT
+								is_faction_leader = yes
+							}
+							add_to_faction = ITA
+						}
+					}
+					else_if = {
+						limit = {
+							is_in_faction = no
+						}
+						ROOT = {
+							create_faction = yes
+							add_to_faction = ITA
+						}
+					}
 				}
 			}
 			focus = {
@@ -1805,7 +1885,18 @@ focus_tree = {
 				y = 6
 				relative_position_id = TR_ENG_those_driven_by_vengeance
 				completion_reward = {
-			
+					FRA = {
+						add_offsite_building = {
+							type = arms_factory
+							level = 2
+						}
+					}
+					ITA = { 
+						add_offsite_building = {
+							type = arms_factory
+							level = 2
+						}
+					}
 				}
 			}
 			focus = {
@@ -1872,7 +1963,40 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_ENG_anticommunist_allies
 				completion_reward = {
-			
+					if = {
+						limit = {
+							ROOT = {
+								is_faction_leader = yes
+							}
+						}
+						add_to_faction = AMR
+					}
+					else_if = {
+						limit = {
+							ROOT = {
+								is_in_faction = yes
+							}
+						}
+						every_country = {
+							limit = {
+								NOT = {
+									tag = ROOT
+								}
+								is_in_faction_with = ROOT
+								is_faction_leader = yes
+							}
+							add_to_faction = AMR
+						}
+					}
+					else_if = {
+						limit = {
+							is_in_faction = no
+						}
+						ROOT = {
+							create_faction = yes
+							add_to_faction = AMR
+						}
+					}
 				}
 			}
 			focus = {
@@ -1890,7 +2014,10 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_ENG_anticommunist
 				completion_reward = {
-			
+					diplomatic_relation = {
+						country = JAP
+						relation = non_aggression_pact
+					}
 				}
 			}
 			focus = {
@@ -1904,11 +2031,49 @@ focus_tree = {
 						base = 1
 					factor = 170
 				}
+				bypass = {
+					JAP = {
+						is_in_faction_with = ROOT
+					}
+				}
 				x = 0
 				y = 4
 				relative_position_id = TR_ENG_colonial_security
 				completion_reward = {
-			
+					if = {
+						limit = {
+							ROOT = {
+								is_faction_leader = yes
+							}
+						}
+						add_to_faction = JAP
+					}
+					else_if = {
+						limit = {
+							ROOT = {
+								is_in_faction = yes
+							}
+						}
+						every_country = {
+							limit = {
+								NOT = {
+									tag = ROOT
+								}
+								is_in_faction_with = ROOT
+								is_faction_leader = yes
+							}
+							add_to_faction = JAP
+						}
+					}
+					else_if = {
+						limit = {
+							is_in_faction = no
+						}
+						ROOT = {
+							create_faction = yes
+							add_to_faction = JAP
+						}
+					}
 				}
 			}
 		## army and industrial
