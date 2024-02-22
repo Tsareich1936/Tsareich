@@ -1376,7 +1376,8 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_ENG_steady_as_she_goes
 				completion_reward = {
-			
+					add_political_power = 100
+					country_event = TR_uk_center.1
 				}
 			}
 			focus = {
@@ -1443,6 +1444,9 @@ focus_tree = {
 					focus = TR_ENG_protest_letter_france
 					focus = TR_ENG_preemptive_strikes_against_france
 				}
+				allow_branch = {
+					always = no
+				}
 				x = 0
 				y = 2
 				relative_position_id = TR_ENG_protest_letter_france
@@ -1467,11 +1471,14 @@ focus_tree = {
 					focus = TR_ENG_abandon_greece
 					focus = TR_ENG_intervention_greece
 				}
+				bypass = {
+					has_global_flag = TR_balkan_war
+				}
 				x = 0
 				y = 2
 				relative_position_id = TR_ENG_abandon_greece
 				completion_reward = {
-			
+					
 				}
 			}
 			focus = {
@@ -1486,7 +1493,10 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_ENG_abandon_czecho
 				completion_reward = {
-			
+					create_wargoal = {
+						target = FRA
+						type = world_war_ii
+					}
 				}
 			}
 		## main
@@ -4077,11 +4087,14 @@ focus_tree = {
 				focus = TR_ENG_a_change_in_course
 				focus = TR_ENG_steady_as_she_goes
 			}
+			allow_branch = {
+				always = no
+			}
 			x = -3
 			y = 1
 			relative_position_id = TR_ENG_a_change_in_course
 			completion_reward = {
-		
+				add_political_power = -150
 			}
 		}
 		focus = {
@@ -4100,6 +4113,9 @@ focus_tree = {
 					tooltip = TR_avaiable_on_events_tt
 					always = no
 				}
+			}
+			allow_branch = {
+				always = no
 			}
 			x = 0
 			y = 2
@@ -4172,6 +4188,9 @@ focus_tree = {
 				focus = TR_ENG_abandon_greece
 				focus = TR_ENG_intervention_greece
 			}
+			allow_branch = {
+				always = no
+			}
 			x = 0
 			y = 2
 			relative_position_id = TR_ENG_intervention_greece
@@ -4191,7 +4210,10 @@ focus_tree = {
 			y = 2
 			relative_position_id = TR_ENG_intervention_czecho
 			completion_reward = {
-		
+				create_wargoal = {
+					target = GER
+					type = world_war_ii
+				}
 			}
 		}
 }

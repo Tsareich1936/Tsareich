@@ -413,6 +413,9 @@ country_event = {
 				}
 			}
 		}
+		hidden_effect = {
+			unlock_national_focus = TR_ENG_intervention_greece
+		}
 	}
 }
 #11 Iraklion Conference Start
