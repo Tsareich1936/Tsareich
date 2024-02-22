@@ -11,4 +11,28 @@ spriteTypes = {
 		name = "GFX_Greater_East_Asia_Conference"
 		textureFile = "gfx/interface/goals/Tsareich/Greater_East_Asia_Conference.dds"
 	}
+	spriteType = {
+		name = "GFX_hamaguti"
+		textureFile = "gfx/interface/goals/Tsareich/hamaguti.dds"
+	}
+	spriteType = {
+		name = "GFX_abe"
+		textureFile = "gfx/interface/goals/Tsareich/abe.dds"
+	}
+	spriteType = {
+		name = "GFX_inukai"
+		textureFile = "gfx/interface/goals/Tsareich/inukai.dds"
+	}
+	spriteType = {
+		name = "GFX_shinkansen"
+		textureFile = "gfx/interface/goals/Tsareich/shinkansen.dds"
+	}
+	spriteType = {
+		name = "GFX_Pollution_measures"
+		textureFile = "gfx/interface/goals/Tsareich/Pollution_measures.dds"
+	}
+	spriteType = {
+		name = "GFX_land_reform"
+		textureFile = "gfx/interface/goals/Tsareich/land_reform.dds"
+	}
 }

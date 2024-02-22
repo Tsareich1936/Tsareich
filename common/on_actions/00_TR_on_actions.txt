@@ -176,15 +176,19 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					not = {
-						526 = {
-							is_controlled_by = JAP
+					or = {
+						JAP = {
+							surrender_progress > 0.05
 						}
-						645 = {
-							is_controlled_by = JAP
+						not = {
+							526 = {
+								is_controlled_by = JAP
+							}
+							645 = {
+								is_controlled_by = JAP
+							}
 						}
 					}
-
 					has_war_with_major = yes
 					not = {
 						or = {
