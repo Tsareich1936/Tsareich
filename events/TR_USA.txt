@@ -724,9 +724,13 @@ add_namespace = TR_usa_civil_war_legacy
 	
 		is_triggered_only = yes
 		
+		immediate = {
+			retire_character = USA_franklin_delano_roosevelt
+		}
 	
 		option = {
 			name = TR_usa_election.5.a
+			retire_character = USA_Alf_Landon
 			trigger = {
 				NOT = {
 					OR = {
@@ -753,8 +757,16 @@ add_namespace = TR_usa_civil_war_legacy
 				}
 				set_country_flag = USA_federation_flag
 			}
+			CSA = {
+				recruit_character = USA_Alf_Landon
+				promote_character = {
+					character = USA_Alf_Landon
+					ideology = conservatism
+				}
+			}
 		}
 		option = {
+			retire_character = USA_Norman_Thomas
 			name = TR_usa_election.5.b
 			trigger = {
 				OR = {
@@ -785,6 +797,11 @@ add_namespace = TR_usa_civil_war_legacy
 				size = 0.8
 			}
 			FGA = {
+				recruit_character = USA_Norman_Thomas
+				promote_character = {
+					character = USA_Norman_Thomas
+					ideology = socialism
+				}
 				set_capital = {
 					state = 361
 				}
@@ -1078,6 +1095,11 @@ add_namespace = TR_usa_civil_war_legacy
 				}
 			}
 			AMR = {
+				recruit_character = USA_franklin_delano_roosevelt
+				promote_character = {
+					character = USA_franklin_delano_roosevelt
+					ideology = liberalism
+				}
 				TR_USA_coup = yes
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
@@ -1104,6 +1126,7 @@ add_namespace = TR_usa_civil_war_legacy
 		}
 		option = {
 			name = TR_usa_civil_war.2.b
+			retire_character = USA_Norman_Thomas
 			trigger = {
 				has_country_flag = TR_USA_west_route
 			}
@@ -1115,6 +1138,11 @@ add_namespace = TR_usa_civil_war_legacy
 				}
 			}
 			AMR = {
+				recruit_character = USA_franklin_delano_roosevelt
+				promote_character = {
+					character = USA_franklin_delano_roosevelt
+					ideology = liberalism
+				}
 				every_owned_state = {
 					limit = {
 						NOT = {
@@ -1192,6 +1220,13 @@ add_namespace = TR_usa_civil_war_legacy
 					}
 				}
 			}
+			FGA = {
+				recruit_character = USA_Norman_Thomas
+				promote_character = {
+					character = USA_Norman_Thomas
+					ideology = socialism
+				}
+			}
 		}
 	}
 	country_event = {#デゼラトが蜂起
@@ -1261,7 +1296,15 @@ add_namespace = TR_usa_civil_war_legacy
 	
 		is_triggered_only = yes
 		immediate = {
+			USA = {
+				retire_character = USA_earl_browder
+			}
 			ADR = {
+				recruit_character = USA_earl_browder
+				promote_character = {
+					character = USA_earl_browder
+					ideology = marxism
+				}
 				USA = {
 					every_core_state = {
 						add_core_of = ADR
