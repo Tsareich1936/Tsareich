@@ -163,7 +163,7 @@ ideas = {
 			}	
 		}
 		TR_CZE_tank = {
-			picture = cze_planning_bonus
+			picture = CZE_planning_bonus
 			allowed = {
 				always = no
 			}
@@ -176,7 +176,7 @@ ideas = {
 		}
 
 		TR_CZE_ind_tank = {
-			picture = cze_skoda_armor
+			picture = CZE_skoda_armor
 			allowed = {
 				always = no
 			}
@@ -186,7 +186,7 @@ ideas = {
 			}	
 		}
 		TR_CZE_ind_tank1 = {
-			picture = cze_skoda_armor
+			picture = CZE_skoda_armor
 			allowed = {
 				always = no
 			}
@@ -278,7 +278,7 @@ ideas = {
 			}
 		}
 		TR_CZE_antiGER = {
-			picture = CZE_planning_bonus
+			picture = generic_communism_banned
 			allowed = {
 				always = no
 			}
