@@ -1564,7 +1564,19 @@ focus_tree = {
 				y = 2
 				relative_position_id = TR_ENG_anticommunist
 				completion_reward = {
-			
+					ENG = {
+						add_dynamic_modifier = {
+							modifier = TR_ENG_support_for_SPR
+						}
+					}
+					SPB = {
+						add_dynamic_modifier = {
+							modifier = TR_ENG_support_from_ENG
+						}
+					}
+					set_variable = {
+						ENG.support_SPR_var = 3
+					}
 				}
 			}
 			focus = {

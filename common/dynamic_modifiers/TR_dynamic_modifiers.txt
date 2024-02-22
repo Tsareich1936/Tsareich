@@ -23,3 +23,44 @@ TR_test = {
 	nuclear_production = 1
 	custom_modifier_tooltip = "[?test_var]"
 }
+TR_ENG_support_for_SPR = {
+	enable = {
+		always = yes
+	}
+	icon = aaa
+	remove_trigger = {
+		NOT = {
+			all_country = {
+				limit = {
+					original_tag = SPR
+					NOT = {
+						tag = SPB
+					}
+				}
+				exists = yes
+			}
+		}
+	}
+	civilian_factory_use = ENG.support_SPR_var
+}
+TR_ENG_support_from_ENG = {
+	enable = {
+		always = yes
+	}
+	icon = aaa
+	remove_trigger = {
+		NOT = {
+			all_country = {
+				limit = {
+					original_tag = SPR
+					NOT = {
+						tag = SPB
+					}
+				}
+				exists = yes
+			}
+		}
+	}
+	military_factory_donations = ENG.support_SPR_var
+	industrial_factory_donations = ENG.support_SPR_var
+}
