@@ -746,6 +746,10 @@ focus_tree = {
 				is_subject = no
 			}
 		}
+		bypass = { 
+			has_full_control_of_state = 70
+			has_full_control_of_state = 71
+		}
 		x = 11
 		y = 6
 		ai_will_do = {
@@ -1229,6 +1233,29 @@ focus_tree = {
 				id = TR_czech.8
 				days = 1
 			}   
+		}
+	}
+
+	focus = {
+		id = CZE_join_rus
+		icon = GFX_TR_ENG_contacts_with_russia_shine
+		cost = 8.00
+		prerequisite = {
+			focus = CZE_ban_com
+		}
+		available = {
+			date > 1939.6.1
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		x = 16
+		y = 5
+
+		completion_reward = {
+			RUS = {
+				country_event = TR_czech.9
+			}
 		}
 	}
 

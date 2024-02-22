@@ -13,6 +13,7 @@ state={
 		owner = VIN
 		add_core_of = LAO
 		add_core_of = VIN
+		add_claim_by = SIA
 		victory_points = {
 			1464 5
 		}
