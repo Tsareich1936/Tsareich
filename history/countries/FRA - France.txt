@@ -198,7 +198,7 @@ add_ideas = {
 
 
 recruit_character = FRA_ludovic_oscar_frossard
-recruit_character = FRA_philippe_petain
+# recruit_character = FRA_philippe_petain
 recruit_character = FRA_pierre_laval
 recruit_character = FRA_edouard_daladier
 recruit_character = FRA_jean_de_lattre_de_tassigny
@@ -207,7 +207,7 @@ recruit_character = FRA_maurice_gamelin
 recruit_character = FRA_maxime_weygand
 recruit_character = FRA_alphonse_georges
 recruit_character = FRA_antoinemariebenoit_besson
-recruit_character = FRA_charles_de_gaulle
+# recruit_character = FRA_charles_de_gaulle
 recruit_character = FRA_philippe_leclerc
 recruit_character = FRA_henri_giraud
 recruit_character = FRA_charles_huntziger

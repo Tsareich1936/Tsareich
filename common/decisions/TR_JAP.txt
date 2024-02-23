@@ -2310,7 +2310,7 @@ JAP_WAR_PLAN_COOP = {
 			}
 		}
 		complete_effect = {
-			FRA = {
+			VEN = {
 				country_event = {
 					id = TR_japan.46
 					days = 1
@@ -2521,7 +2521,7 @@ JAP_WAR_PLAN_CREATE_2 = {
 			}
 		}
 		complete_effect = {
-			FRA = {
+			VEN = {
 				country_event = {
 					id = TR_japan.55
 					days = 1

@@ -263,88 +263,138 @@ air = {
 	}
 }
 
-JAP_navy_unit_production = {
-
-	allowed = {	tag = JAP }
+JAP_NAVY = {
+	allowed = {
+		tag = JAP
+	}
 	enable = {
 		always = yes
 	}
 	abort = {
-		date < 1937.12.31
+		date > 1938.6.1
 	}
-    # Naval unit factors
-    ai_strategy = {
-	    type = unit_ratio
-	    id = naval_cruiser_light
-	    value = 20
-    }
-
-    ai_strategy = {
-	    type = unit_ratio
-	    id = naval_carrier
-	    value = 30
-    }
-
-    ai_strategy = {
-	    type = unit_ratio
-	    id = naval_submarine
-	    value = 0
-    }
-
-    ai_strategy = {
-	    type = unit_ratio
-	    id = naval_destroy
-	    value = 40
-    }
-
-    ai_strategy = {
-	    type = unit_ratio
-	    id = convoy
-	    value = 80
-    }
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = -120
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 6
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 60
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 30
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 36
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_destroy
+		value = 160
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = destroyer
+		value = 20
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 20
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 5
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = light_cruiser
+		value = 10
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 80
+	}
 }
-
-JAP_navy_unit_production_1 = {
-
-	allowed = {	tag = JAP }
+JAP_NAVY_1 = {
+	allowed = {
+		tag = JAP
+	}
 	enable = {
-		date > 1938.1.1
+		date > 1938.6.1
 	}
 	abort = {
 		always = no
 	}
-    # Naval unit factors
-    ai_strategy = {
-	    type = unit_ratio
-	    id = naval_cruiser_light
-	    value = 40
-    }
-
-    ai_strategy = {
-	    type = unit_ratio
-	    id = naval_carrier
-	    value = 20
-    }
-
-    ai_strategy = {
-	    type = unit_ratio
-	    id = naval_submarine
-	    value = 20
-    }
-
-    ai_strategy = {
-	    type = unit_ratio
-	    id = naval_destroy
-	    value = 60
-    }
-
-    ai_strategy = {
-	    type = unit_ratio
-	    id = convoy
-	    value = 20
-    }
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 20
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 24
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 72
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 30
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 48
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_destroy
+		value = 220
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = destroyer
+		value = 20
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 20
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 30
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = light_cruiser
+		value = 60
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 20
+	}
 }
-
 JAP_armor = {
 	allowed = {	tag = JAP }
 	enable = {

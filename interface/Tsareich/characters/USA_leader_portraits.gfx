@@ -3,4 +3,8 @@ spriteTypes = {
 		name = GFX_Portrait_USA_Henry_Louis_Mencken
 		textureFile = "gfx/leaders/USA/Portrait_USA_Henry_Louis_Mencken.dds"
 	}
+	spriteType = {
+		name = GFX_Portrait_USA_Norman_Thomas
+		textureFile = "gfx/leaders/USA/Portrait_USA_Norman_Thomas.dds"
+	}
 }

@@ -309,9 +309,9 @@ set_autonomy = {
 	target = PHI
 	autonomous_state =  autonomy_puppet
 }
-
+recruit_character = USA_Alf_Landon
 recruit_character = USA_Henry_Louis_Mencken
-
+recruit_character = USA_Norman_Thomas
 
 recruit_character = USA_earl_browder
 recruit_character = USA_william_dudley_pelley

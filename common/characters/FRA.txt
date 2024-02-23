@@ -117,11 +117,11 @@ characters={
 				large=GFX_portrait_FRA_philippe_petain
 			}
 		}
-		
-		
-		
-		
-		
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1"
+			id = -1
+		}
 	}
 
 	FRA_jean_de_lattre_de_tassigny={
@@ -323,7 +323,11 @@ characters={
 				}
 			}
 		}
-		
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1"
+			id = -1
+		}
 		corps_commander={
 			traits={ media_personality harsh_leader armor_officer }
 			skill=4
