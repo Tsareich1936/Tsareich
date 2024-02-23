@@ -173,6 +173,7 @@ create_faction = International
 add_to_faction = GER
 add_to_faction = SRI
 add_to_faction = VIN
+add_to_faction = VEN
 
 add_to_tech_sharing_group = inter_research
 SRI = {
@@ -185,6 +186,9 @@ POL = {
 	add_to_tech_sharing_group = inter_research
 }
 VIN = {
+	add_to_tech_sharing_group = inter_research
+}
+VEN = {
 	add_to_tech_sharing_group = inter_research
 }
 
