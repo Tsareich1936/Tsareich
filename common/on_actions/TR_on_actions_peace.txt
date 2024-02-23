@@ -216,5 +216,50 @@ on_actions = {
 				TR_SER_balkan_war_peace = yes
 			}
 		}
-	}	
+	}
+	on_state_control_changed = {
+		effect = {
+			if = { 
+				limit = {
+					has_global_flag = TR_risorgimento_war
+					NOT = { has_global_flag = TR_risorgimento_war_finished }
+					ROOT = {
+						tag = SRI
+					}
+					FROM = {
+						tag = ITA
+						surrender_progress > 0.7
+					}
+				}
+				SRI = {
+					set_global_flag = SRI_one_Italy
+					country_event = {
+						id = TR_north_italy.4
+						days = 5
+					}
+				}
+			}
+		}
+	}
+	on_weekly_SRI = {
+		effect = {
+			if = { 
+				limit = {
+					has_global_flag = TR_risorgimento_war
+					NOT = { has_global_flag = TR_risorgimento_war_finished }
+					ROOT = {
+						tag = SRI
+					}
+					FROM = {
+						tag = ITA
+						surrender_progress > 0.75
+					}
+				}
+				SRI = {
+					set_global_flag = SRI_one_Italy
+					country_event = TR_north_italy.4
+				}
+			}
+		}
+	}
 }

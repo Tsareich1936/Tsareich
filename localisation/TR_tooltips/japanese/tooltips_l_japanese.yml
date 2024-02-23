@@ -59,6 +59,7 @@
 
 
   RULL_JOIN_ALLY_POLAND_TOOLTIP: "§Y[POL.GetNameDef]§!は戦争を行っていない。"
+  RULL_JOIN_ALLY_NORTH_ITALY_TOOLTIP: "§Yこの戦争は、参戦、参加、及びそれらの要請は禁止されている。"
   RULE_ALLOW_RELEASE_NATIONS_RUSSIA_POLAND_TOOLTIP: "§Y[ROOT.GetNameDefCap]§!は§Y[POL.GetNameDef]§!の解放ができません。"
   DISABLE_CREATE_WARGOAL_FOR_FRANCE: "§Rまだその時ではない!\n@FGEフランス亡命政府への戦争目標の正当化は1941.3.1まで不可能である!§!"
   CANT_JOIN_FACTION: "§Rイベント以外での陣営加盟は禁止されている!§!"

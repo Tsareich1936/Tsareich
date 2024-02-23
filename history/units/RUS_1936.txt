@@ -1,1098 +1,791 @@
 division_template = {
-	name = "Imperskaq pexotnaq diviziq"
+	name = "Pekhotnye divizii"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
 division_template = {
-	name = "Divizii -geroev- Velikoy voynj"
-	template_counter = 1
+	name = "Strelkovye divizii"
+	template_counter = 3
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 } 
+		artillery = { x = 0 y = 1 }
 	}
+}
+division_template = {
+	name = "Kavkazskaia strelkovaia diviziia"
+	template_counter = 3
+	is_locked = yes
+	force_allow_recruiting = yes
+	division_cap = 4
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Turkestanskaia strelkovaia diviziia"
+	template_counter = 3
+	is_locked = yes
+	force_allow_recruiting = yes
+	division_cap = 12
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Sibirskaia strelkovaia diviziia"
+	template_counter = 3
+	is_locked = yes
+	division_cap = 22
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Grenaderskaia diviziia"
 	priority = 2
+	template_counter = 33
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
 }
 division_template = {
-	template_counter = 7
-	name = "Otdelnjy korpus pogranichnoy strazhi"
+	name = "Kavkazskaia grenaderskaia diviziia"
+	priority = 2
+	template_counter = 33
+	is_locked = yes
+	force_allow_recruiting = yes
+	division_cap = 2
 	regiments = {
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
 		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Gvardeiskaia pekhotnaia diviziia"
+	priority = 2
+	template_counter = 6
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Kavaleriiskie divizii"
+	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
 	}
-	priority = 0
+	support = {
+		recon = { x = 0 y = 0 }
+	}
 }
 division_template = {
-	template_counter = 12
-	name = "Polqrnoe oboronnoe podrazdelenie"
+	name = "Kavkazskaia kavaleriiskaia divizii"
+	is_locked = yes
+	force_allow_recruiting = yes
+	division_cap = 2
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Gvardeiskaia kavaleriiskaia diviziia "
+	template_counter = 5
+	priority = 2
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Kazach-i divizii"
+	is_locked = yes
+	force_allow_recruiting = yes
+	division_cap = 6
+	regiments = {
+		co_cavalry = { x = 0 y = 0 }
+		co_cavalry = { x = 0 y = 1 }
+		co_cavalry = { x = 0 y = 2 }
+		co_cavalry = { x = 0 y = 3 }
+		co_cavalry = { x = 1 y = 0 }
+		co_cavalry = { x = 1 y = 1 }
+		co_cavalry = { x = 1 y = 2 }
+		co_cavalry = { x = 1 y = 3 }
+		co_cavalry = { x = 2 y = 0 }
+		co_cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Kavkazskaia kazach-ia divizii"
+	is_locked = yes
+	force_allow_recruiting = yes
+	division_cap = 20
+	regiments = {
+		co_cavalry = { x = 0 y = 0 }
+		co_cavalry = { x = 0 y = 1 }
+		co_cavalry = { x = 0 y = 2 }
+		co_cavalry = { x = 0 y = 3 }
+		co_cavalry = { x = 1 y = 0 }
+		co_cavalry = { x = 1 y = 1 }
+		co_cavalry = { x = 1 y = 2 }
+		co_cavalry = { x = 1 y = 3 }
+		co_cavalry = { x = 2 y = 0 }
+		co_cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Turkestanskaia kazach-ia diviziia"
+	is_locked = yes
+	force_allow_recruiting = yes
+	division_cap = 2
+	regiments = {
+		co_cavalry = { x = 0 y = 0 }
+		co_cavalry = { x = 0 y = 1 }
+		co_cavalry = { x = 0 y = 2 }
+		co_cavalry = { x = 0 y = 3 }
+		co_cavalry = { x = 1 y = 0 }
+		co_cavalry = { x = 1 y = 1 }
+		co_cavalry = { x = 1 y = 2 }
+		co_cavalry = { x = 1 y = 3 }
+		co_cavalry = { x = 2 y = 0 }
+		co_cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Bronetankovaia diviziia"
+	priority = 2
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Otdelnjy korpus pogranichnoy strazhi"
+	priority = 1
+	template_counter = 7
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
-	priority = 0
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Zhandarmeriia"
+	template_counter = 75
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Desantnye sily"
+	priority = 2
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Vozdushno-desantnaia diviziia"
+	priority = 2
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
 }
 units = {
-	#ドイツ国境
+	#infantry
 	division = {
-		location = 9263
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
+		location = 306
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 334
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
+		location = 6567
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 334
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
+		location = 382
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 11232
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
+		location = 11274
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 388
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
+		location = 6593
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 388
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
+		location = 3310
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 3532
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 3532
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 9532
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 9532
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 11558
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 584
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 584
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 9546
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 506
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 6464
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 6464
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 9567
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	#ドイツ付近の都市
-	division = {
-		location = 6558
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 9427
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 9508
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 362
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 3295
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 6375
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
+		location = 413
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
 		location = 3544
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 3460
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-
-	#西側国境
-	division = {
-		location = 9551
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 11398
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 3410
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 6431
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 9425
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 3577
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 3707
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 3701
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 9412
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.22
-		start_equipment_factor = 0.65
-	}
-	division = {
-		location = 466
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.22
-		start_equipment_factor = 0.65
-	}
-	division = {
-		location = 3434
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.22
-		start_equipment_factor = 0.65
-	}
-	division = {
-		location = 9548
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.22
-		start_equipment_factor = 0.65
-	}
-	division = {
-		location = 3407
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.22
-		start_equipment_factor = 0.65
-	}
-	division = {
-		location = 565
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.22
-		start_equipment_factor = 0.65
-	}
-	division = {
-		location = 3724
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.22
-		start_equipment_factor = 0.65
-	}
-
-	#西側英雄師団
-	division = {
-		location = 9263
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-	division = {
-		location = 6558
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-	division = {
-		location = 6464
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-	division = {
-		location = 279
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-	division = {
-		location = 3460
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-	division = {
-		location = 3544
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-	#トルコ国境
-	division = {
-		location = 9932
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 9860
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 3979
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 11797
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 7620
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 9912
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 6813
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 3889
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 806
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-
-	#中東
-	division = {
-		location = 4473
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 11704
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 4660
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 12320
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 6935
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 12476
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 1549
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 12316
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-
-	#イギリス中東
-	division = {
-		location = 11919
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 4486
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.35
-		start_equipment_factor = 0.7
-	}
-
-	#アジア歩兵
-	division = {
-		location = 11879
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.65
-	}
-	division = {
-		location = 12446
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.65
-	}
-	division = {
-		location = 12189
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.65
-	}
-	division = {
-		location = 4797
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.65
-	}
-	division = {
-		location = 12333
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.65
-	}
-	division = {
-		location = 4549
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.65
-	}
-
-	#アジア国境警備
-	division = {
-		location = 3977
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 3787
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 6686
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 4805
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 7801
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 7763
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 7851
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 12622
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 12507
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 12509
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 1698
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 10315
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 4843
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 4973
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 5087
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 5003
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 10357
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-	division = {
-		location = 12359
-		division_template = "Otdelnjy korpus pogranichnoy strazhi"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.3
-	}
-
-	#海峡
-	division = {
-		location = 922
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.85
-	}
-	division = {
-		location = 11842
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.85
-	}
-	division = {
-		location = 3893
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.85
-	}
-	division = {
-		location = 849
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.85
-	}
-	division = {
-		location = 3851
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.85
-	}
-	division = {
-		location = 3786
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.85
-	}
-	division = {
-		location = 947
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.85
-	}
-	division = {
-		location = 11867
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.85
-	}
-	division = {
-		location = 785
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.85
-	}
-	division = {
-		location = 11778
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.85
-	}
-	division = {
-		location = 9799
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.85
-	}
-	division = {
-		location = 6864
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.85
-	}
-	division = {
-		location = 849
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-	division = {
-		location = 9799
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-	division = {
-		location = 947
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-	division = {
-		location = 11829
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-	division = {
-		location = 9833
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-	division = {
-		location = 9833
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-	division = {
-		location = 11842
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-	division = {
-		location = 11746
-		division_template = "Divizii -geroev- Velikoy voynj"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.95
-	}
-
-	#極地
-	division = {
-		location = 9140
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 3134
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 3338
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 12530
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 198
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 13204
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 13202
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 7884
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 1135
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 12683
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 12207
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 13067
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 4728
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		location = 855
-		division_template = "Polqrnoe oboronnoe podrazdelenie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-
-	#駐屯
-	division = {
-		location = 3686
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 721
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 11670
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 3757
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 3457
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 422
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 3392
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 11301
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 6332
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 6296
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 3288
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 265
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 310
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 185
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 9221
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 3152
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 3151
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 9098
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 11504
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
 		location = 117
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 6380
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 572
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 6414
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 3457
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 6245
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 3686
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 306
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 3707
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 3335
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 11670
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 525
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 11301
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 3580
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 320
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 11437
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 11399
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 11409
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 6669
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 9628
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 117
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 3152
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 11202
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 310
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 3393
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 3320
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 6296
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 9340
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 11370
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
 		location = 418
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 9417
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 6557
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 3734
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 525
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 7661
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 11437
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 6338
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 11248
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 1821
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 9355
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 4333
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 3151
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 7835
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 3392
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
-		location = 957
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 13091
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
-	}
-	division = {
-		location = 222
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		location = 6895
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
 	}
 	division = {
 		location = 3350
-		division_template = "Imperskaq pexotnaq diviziq"
-		start_experience_factor = 0.45
-		start_equipment_factor = 0.4
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 6338
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 525
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 3320
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 3580
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 9258
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 121
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 3578
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 11225
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 7375
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 3151
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 654
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	division = {
+		location = 9645
+		division_template = "Pekhotnye divizii"
+start_experience_factor = 0.5
+	}
+	#52
+
+
+	#to 88
+	
+	#grenadier
+	division = {
+		location = 6414
+		division_template = "Grenaderskaia diviziia"
+		start_experience_factor = 0.8
+	}
+	division = {
+		location = 3327
+		division_template = "Grenaderskaia diviziia"
+		start_experience_factor = 0.8
+	}
+	division = {
+		location = 11268
+		division_template = "Grenaderskaia diviziia"
+		start_experience_factor = 0.8
+	}
+	division = {
+		location = 1599
+		division_template = "Kavkazskaia grenaderskaia diviziia"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.75
 	}
 
-}
-
-
-
-instant_effect = {
-
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "RUS"
-		}
-		requested_factories = 15
-		progress = 0.1
-		efficiency = 35
+	#guard
+	division = {
+		location = 3151
+		division_template = "Kavkazskaia grenaderskaia diviziia"
+		start_experience_factor = 0.65
+	}
+	division = {
+		location = 149
+		division_template = "Kavkazskaia grenaderskaia diviziia"
+		start_experience_factor = 0.65
+	}
+	division = {
+		location = 3544
+		division_template = "Kavkazskaia grenaderskaia diviziia"
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.98
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "RUS" 
-		}
-		requested_factories = 4
-		progress = 0.3
-		efficiency = 23
+	#tank
+	division = {
+		location = 6380
+		division_template = "Bronetankovaia diviziia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.77
+	}
+	division = {
+		location = 3151
+		division_template = "Bronetankovaia diviziia"
+		start_experience_factor = 0.28
+		start_equipment_factor = 0.82
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "RUS" 
-		}
-		requested_factories = 3
-		progress = 0.3
-		efficiency = 17
+	#MP
+	division = {
+		location = 3544
+		division_template = "Zhandarmeriia"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
 	}
+	division = {
+		location = 6332
+		division_template = "Zhandarmeriia"
+		start_equipment_factor = 0.72
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 6558
+		division_template = "Zhandarmeriia"
+		start_equipment_factor = 0.38
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 9833
+		division_template = "Zhandarmeriia"
+		start_experience_factor = 0.5
+	}
+	#marine
+	division = {
+		location = 3151
+		division_template = "Desantnye sily"
+		start_experience_factor = 0.88
+	}
+	division = {
+		location = 3686
+		division_template = "Desantnye sily"
+		start_experience_factor = 0.74
+		start_equipment_factor = 0.65
+	}
+	#para
+	division = {
+		location = 6414
+		division_template = "Vozdushno-desantnaia diviziia"
+		start_experience_factor = 0.21
+		start_equipment_factor = 0.7
+	}
+	division = {
+		location = 6414
+		division_template = "Vozdushno-desantnaia diviziia"
+		start_experience_factor = 0.17
+		start_equipment_factor = 0.56
+	}
+	division = {
+		location = 6414
+		division_template = "Vozdushno-desantnaia diviziia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.37
+	}
+	division = {
+		location = 3739
+		division_template = "Vozdushno-desantnaia diviziia"
+		start_experience_factor = 0.54
+		start_equipment_factor = 0.45
+	}
+	division = {
+		location = 525
+		division_template = "Vozdushno-desantnaia diviziia"
+		start_experience_factor = 0.63
+		start_equipment_factor = 0.2
+	}
+
+
+	#rifle
+	division = {
+		location = 525
+		division_template = "Strelkovye divizii"
+		start_experience_factor = 0.5
+	}
+	#horse
+	#cosack
 }

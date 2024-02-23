@@ -12,6 +12,33 @@ on_actions = {
 				news_event = TR_news.1    
 			}
 		}
+		effect ={ 
+			if = {
+				limit = {
+					OR = {
+						tag = FGE
+						is_in_faction_with = FGE
+						is_in_faction_with = RUS
+						tag = ENG
+					}
+					# FROM = { tag = FRA }
+					FROM.FROM = {
+						state = 16
+					}
+				}
+				16 = {
+					transfer_state_to = FGE
+				}
+				FGE = {
+					set_capital = {
+						state = 16
+						remember_old_capital = no
+					}
+					set_cosmetic_tag = FRA
+				}
+				news_event = TR_news.2
+			}
+		}
 		# effect = {
 		# 	if = {
 		# 		limit = {

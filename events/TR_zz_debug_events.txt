@@ -253,16 +253,19 @@ country_event = {
 
 	option = {
 		name = TR_debug.3.a
-		if = {
-			limit = {
-				NOT = {
-					has_global_flag = TR_debug_war
-				}
-			}
-			set_global_flag = TR_debug_war
-		}
-		else = {
-			clr_global_flag = TR_debug_war
+		# if = {
+		# 	limit = {
+		# 		NOT = {
+		# 			has_global_flag = TR_debug_war
+		# 		}
+		# 	}
+		# 	set_global_flag = TR_debug_war
+		# }
+		# else = {
+		# 	clr_global_flag = TR_debug_war
+		# }
+		every_country = {
+			set_cosmetic_tag = FRA
 		}
 	}
 }
