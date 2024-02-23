@@ -173,9 +173,9 @@ TR_POL_resistance = {
 	}
 	TR_POL_spread_the_movement1 = {
 		visible = {
-			72 = {
-				has_state_flag = TR_POL_resisting
-			}
+			# 72 = {
+			# 	has_state_flag = TR_POL_resisting
+			# }
 			88 = {
 				has_state_flag = TR_POL_resisting
 			}
@@ -202,6 +202,11 @@ TR_POL_resistance = {
 			}
 			98 = {
 				set_state_flag = TR_POL_avaiabled_resist
+			}
+			hidden_effect = {
+				RUS = {
+					country_event = TR_poland_for_russia.2
+				}
 			}
 		}
 		ai_will_do = {

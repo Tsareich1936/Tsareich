@@ -128,7 +128,7 @@ set_stability = 0.50
 ###         characters         ###
 ##################################
 #political leader
-recruit_character = SRI_dAnnunzio
+recruit_character = SRI_Gabriele_DAnnunzio
 recruit_character = SRI_consiglio_socialista
 recruit_character = SRI_blank_leader
 recruit_character = SRI_benito_mussolini
@@ -236,7 +236,7 @@ set_popularities = {
 	socialdemocratic = 2
 }
 
-promote_character = SRI_dAnnunzio
+promote_character = SRI_Gabriele_DAnnunzio
 
 add_ideas = {
 	SRI_divided_italy

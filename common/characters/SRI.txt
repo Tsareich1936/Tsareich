@@ -1,9 +1,9 @@
 characters = {
-	SRI_dAnnunzio = {
-		name = "SRI_dAnnunzio"
+	SRI_Gabriele_DAnnunzio = {
+		name = "SRI_Gabriele_DAnnunzio"
 		portraits = {
 			civilian = {
-				large = GFX_portrait_SRI_dAnnunzio
+				large = GFX_portrait_SRI_Gabriele_DAnnunzio
 			}
 		}
 		country_leader={

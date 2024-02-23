@@ -130,18 +130,21 @@ set_stability = 0.3
 set_war_support = 0.66
 
 set_politics = {
-	ruling_party = socialdemocratic
+	ruling_party = syndicalism
 	last_election = "1935.9.8"
 	election_frequency = 36
 	elections_allowed = no
 }
 set_popularities = {
-	socialdemocratic = 66
+	syndicalism = 55
+	socialdemocratic = 11
 	communism = 11
 	socialism = 11
 	democratic = 11
 	anarchism = 1
 }
+
+recruit_character = POL_Krakow_
 
 recruit_character = POL_ignacy_moscicki
 recruit_character = POL_wladyslaw_sikorski

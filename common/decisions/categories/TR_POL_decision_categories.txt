@@ -3,7 +3,7 @@ TR_POL_resistance = {
 		tag = POL
 	}
 	priority = 999
-	icon = icon
+	icon = GFX_decision_POL_looming_peasants_strike
 	visible_when_empty = yes
 	visible = {
 		has_war_with = RUS
@@ -11,5 +11,41 @@ TR_POL_resistance = {
 			has_global_flag = TR_poland_recognized_flag
 		}
 		has_country_flag = TR_POL_start_resistance
+	}
+	on_map_area = {
+		target_array = TR_poland_resist_states
+		name = POLAND
+		zoom = 250
+		target_trigger = {
+			FROM = {
+				has_state_flag = TR_POL_avaiabled_resist
+			}
+		}
+	}
+}
+TR_RUS_resistance = {
+	allowed = {
+		tag = RUS
+	}
+	priority = 999
+	icon = GFX_decision_POL_looming_peasants_strike
+	visible_when_empty = yes
+	visible = {
+		POL = {
+			has_war_with = RUS
+		}
+		NOT = {
+			has_global_flag = TR_poland_recognized_flag
+		}
+		POL = {
+			has_country_flag = TR_POL_start_resistance
+		}
+	}
+	on_map_area = {
+		name = POLAND
+		zoom = 250
+		target_trigger = {
+			has_state_flag = TR_POL_avaiabled_resist
+		}
 	}
 }

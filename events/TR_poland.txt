@@ -1,13 +1,19 @@
 add_namespace = TR_poland
+add_namespace = TR_poland_for_russia
 country_event = {#start resistance
 	id = TR_poland.1
 	title = TR_poland.1.t
 	desc = TR_poland.1.d
 
 	is_triggered_only = yes
-
+	immediate = {
+		RUS = {
+			country_event = TR_poland_for_russia.1
+		}
+	}
 	option = {#OK
 		name = TR_poland.1.a
+		unlock_decision_category_tooltip = TR_POL_resistance
 	}
 }
 country_event = {
@@ -108,5 +114,28 @@ country_event = {
 
 	option = {#OK
 		name = TR_poland.5.a
+	}
+}
+country_event = {#ポーランドで農民が抵抗運動を開始
+	id = TR_poland_for_russia.1
+	title = TR_poland_for_russia.1.t
+	desc = TR_poland_for_russia.1.d
+	picture = GFX_report_event_german_polish_border
+	is_triggered_only = yes
+
+	option = {#OK
+		name = TR_poland_for_russia.1.a
+		unlock_decision_category_tooltip = TR_RUS_resistance
+	}
+}
+country_event = {#抵抗運動が北へと拡大
+	id = TR_poland_for_russia.2
+	title = TR_poland_for_russia.2.t
+	desc = TR_poland_for_russia.2.d
+	picture = GFX_report_event_DEN_resistance
+	is_triggered_only = yes
+
+	option = {#OK
+		name = TR_poland_for_russia.2.a
 	}
 }

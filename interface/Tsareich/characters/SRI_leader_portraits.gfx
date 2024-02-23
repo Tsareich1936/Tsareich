@@ -1,7 +1,7 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_portrait_SRI_dAnnunzio"
-		textureFile = "gfx/leaders/SRI/Portrait_dannunzio.dds"
+		name = "GFX_portrait_SRI_Gabriele_DAnnunzio"
+		textureFile = "gfx/leaders/SRI/Portrait_SRI_Gabriele_DAnnunzio.dds"
 	}
 	# spriteType = {
 	# 	name = "GFX_idea_SRI_divided_italy"
