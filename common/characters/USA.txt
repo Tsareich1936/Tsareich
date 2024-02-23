@@ -128,6 +128,35 @@ characters={
 			id=-1
 		}
 	}
+	USA_Norman_Thomas = {
+		name = USA_Norman_Thomas
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_USA_Norman_Thomas
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+	USA_Alf_Landon = {
+		name = USA_Alf_Landon
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Alf_Landon
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1965.1.1"
+			id = -1
+			traits = {
+				staunch_constitutionalist
+			}
+		}
+	}
 	USA_Henry_Louis_Mencken = {
 		name = USA_Henry_Louis_Mencken
 		portraits = {

@@ -39,6 +39,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Constitutional_Democratic_Party
+        icon = GFX_hamaguti
         relative_position_id = jap_19th_General_Election
         x = -7
         y = 1
@@ -271,6 +272,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Rikken_Seiyukai
+        icon = GFX_inukai
         relative_position_id = jap_19th_General_Election
         x = 0
         y = 1
@@ -449,6 +451,7 @@ focus_tree = { # nomal
 
     focus = {                       
         id = jap_extensive_transportation_network
+        icon = GFX_shinkansen
         relative_position_id = jap_decentralization_of_power
         x = 0
         y = 1
@@ -555,6 +558,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_Shakai_Taishuto
+        icon = GFX_abe
         relative_position_id = jap_19th_General_Election
         x = 7
         y = 1
@@ -1163,6 +1167,10 @@ focus_tree = { # nomal
                     target = JAP
                     decision = JAP_HOL
                 }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_FRA
+                }
             }
             if = {
                 limit = {
@@ -1184,6 +1192,10 @@ focus_tree = { # nomal
                     target = JAP
                     decision = JAP_HOL.1
                 }
+                activate_targeted_decision = {
+                    target = JAP
+                    decision = JAP_FRA.1
+                }
             }
         }
     }
@@ -1203,6 +1215,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_agrarian_reform_1
+        icon = GFX_land_reform
         relative_position_id = jap_social_reform
         x = -2
         y = 1
@@ -1220,6 +1233,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_agrarian_reform_2
+        icon = GFX_land_reform
         relative_position_id = jap_agrarian_reform_1
         x = 0
         y = 1
@@ -1234,6 +1248,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_agrarian_reform_3
+        icon = GFX_land_reform
         relative_position_id = jap_agrarian_reform_2
         x = 0
         y = 1
@@ -1307,6 +1322,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_pollution
+        icon = GFX_Pollution_measures
         relative_position_id = jap_social_reform
         x = 0
         y = 1
@@ -1327,6 +1343,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_pollution_2
+        icon = GFX_Pollution_measures
         relative_position_id = jap_pollution
         x = 0
         y = 1
@@ -1344,6 +1361,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_pollution_3
+        icon = GFX_Pollution_measures
         relative_position_id = jap_pollution_2
         x = 0
         y = 1
@@ -1398,7 +1416,7 @@ focus_tree = { # nomal
             536 = {
                 add_resource = {
                     type = steel
-                    amount = 28
+                    amount = 18
                 }
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -1422,7 +1440,7 @@ focus_tree = { # nomal
             952 = {
                 add_resource = {
                     type = oil
-                    amount = 26
+                    amount = 18
                 }
             }
             533 = {
@@ -1605,7 +1623,7 @@ focus_tree = { # nomal
             536 = {
                 add_resource = {
                     type = steel
-                    amount = 36
+                    amount = 24
                 }
             }
         }
@@ -1679,7 +1697,7 @@ focus_tree = { # nomal
             955 = {
                 add_resource = {
                     type = oil
-                    amount = 24
+                    amount = 18
                 }
             }
         }

@@ -1,5 +1,6 @@
 add_namespace = TR_uk
 add_namespace = TR_uk_diplomacy
+add_namespace = TR_uk_center
 country_event = {#HOL 英国との同盟
 	id = TR_uk_diplomacy.1
 	title = TR_uk_diplomacy.1.t
@@ -132,6 +133,66 @@ country_event = {# BEL 本土への帰還
 
 	option = {# Good
 		name = TR_uk_diplomacy.7.a
+	}
+}
+country_event = {#フランスからの撤退
+	id = TR_uk_center.1
+	title = TR_uk_center.1.t
+	desc = TR_uk_center.1.d
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			FRA = {
+				transfer_state = 936
+				transfer_state = 937
+			}
+		}
+	}
+	option = {
+		name = TR_uk_center.1.a
+		hidden_effect = {
+			country_event = {
+				id = TR_uk_center.2
+				days = 35
+				random_days = 5
+			}
+		}
+	}
+}
+country_event = {#醜態をさらす
+	id = TR_uk_center.2
+	title = TR_uk_center.2.t
+	desc = TR_uk_center.2.d
+
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = TR_uk_center.2.a
+		add_stability = -0.1
+		add_war_support = -0.1
+		unlock_national_focus = TR_ENG_expose_faults
+		hidden_effect = {
+			country_event = {
+				id = TR_uk_center.3
+				days = 35
+				random_days = 5
+			}
+		}
+	}
+}
+country_event = {#醜態をさらす
+	id = TR_uk_center.3
+	title = TR_uk_center.3.t
+	desc = TR_uk_center.3.d
+
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = TR_uk_center.3.a
+		unlock_national_focus = TR_ENG_protest_letter_france
 	}
 }
 country_event = {#財政問題
