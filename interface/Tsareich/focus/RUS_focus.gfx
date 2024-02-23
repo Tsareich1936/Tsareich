@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_RUS_guard"
+		textureFile = "gfx/interface/goals/Tsareich/focus_RUS_guard.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_new_government"
+		textureFile = "gfx/interface/goals/Tsareich/focus_RUS_new_government.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_ukrine"
+		textureFile = "gfx/interface/goals/Tsareich/focus_RUS_ukrine.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_moscow"
+		textureFile = "gfx/interface/goals/Tsareich/focus_RUS_moscow.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_newtsar"
+		textureFile = "gfx/interface/goals/Tsareich/focus_RUS_newtsar"
+	}
+}

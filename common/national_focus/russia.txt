@@ -140,7 +140,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_newtsar
-		icon = GFX_focus_SOV_panslavic_nationalism
+		icon = GFX_focus_RUS_newtsar
 		cost = 4
 		prerequisite = {
 			focus = RUS_FkV_notsar
@@ -208,7 +208,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_tsar_infantry
-		icon = GFX_focus_DEN_expand_haerens_tekniske_korps
+		icon = GFX_focus_RUS_guard
 		cost = 4
 		prerequisite = {
 			focus = RUS_unprison
@@ -236,7 +236,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_remake_national_government
-		icon = GFX_focus_NOR_continue_nygaardsvold_government
+		icon = GFX_focus_RUS_new_government
 		cost = 4
 		prerequisite = {
 			focus = RUS_tsar_infantry
@@ -758,7 +758,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_develop_of_ukrine
-		icon = GFX_focus_SWE_beneath_sticks_and_stone
+		icon = GFX_focus_RUS_ukrine
 		cost = 4
 		prerequisite = {
 			focus = RUS_build_stock_exchange
@@ -881,7 +881,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_moscow_economy
-		icon = GFX_focus_SWE_landsverk
+		icon = GFX_focus_RUS_moscow
 		cost = 4
 		prerequisite = {
 			focus = RUS_national_construction
