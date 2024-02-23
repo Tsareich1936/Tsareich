@@ -1,0 +1,78 @@
+peace_ai_desires = {
+	RUS_puppet_GER = {
+		peace_action_type = puppet
+		enable = {
+			ROOT = {
+				original_tag = RUS
+			}
+			FROM.FROM = {
+				original_tag = GER
+			}
+			FROM.FROM.FROM = {
+				OR = {
+					state = 8
+					state = 28
+					state = 42
+					state = 50
+					state = 51
+					state = 52
+					state = 53
+					state = 54
+					state = 55
+					state = 56
+					state = 57
+					state = 58
+					state = 59
+					state = 60
+					state = 61
+					state = 62
+					state = 64
+					state = 65
+					state = 65
+				}
+			}
+		}
+		ai_desire = 999
+	}
+	RUS_puppet_AUS = {
+		peace_action_type = puppet
+		enable = {
+			ROOT = {
+				original_tag = RUS
+			}
+			FROM.FROM = {
+				original_tag = AUS
+			}
+			FROM.FROM.FROM = {
+				OR = {
+					state = 4
+					state = 39
+					state = 152
+					state = 153
+					state = 153
+					state = 848
+				}
+			}
+		}
+		ai_desire = 1000
+	}
+	RUS_take_GER = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				original_tag = RUS
+			}
+			FROM.FROM = {
+				original_tag = GER
+			}
+			FROM.FROM.FROM = {
+				OR = {
+					state = 63
+					state = 66
+					state = 68
+				}
+			}
+		}
+		ai_desire = 1001
+	}
+}

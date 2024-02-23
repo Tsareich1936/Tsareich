@@ -3,11 +3,25 @@ news_event = {#ワルシャワ開放
 	id = TR_news.1
 	title = TR_news.1.t
 	desc = TR_news.1.d
+	picture = GFX_news_event_polish_resistance_warsaw
 
 	is_triggered_only = yes
 	major = yes
 
 	option = {
 		name = TR_news.1.a
+	}
+}
+news_event = {#パリ開放
+	id = TR_news.2
+	title = TR_news.2.t
+	desc = TR_news.2.d
+
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_051
+
+	option = {
+		name = TR_news.2.a
 	}
 }
