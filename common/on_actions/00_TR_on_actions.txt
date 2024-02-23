@@ -233,6 +233,16 @@ on_actions = {
 				}
 			}
 		}
+		effect = {
+			if = {
+				limit = {
+					has_war_with = GER
+				}
+				country_event = {
+					id = TR_japan.10
+				}
+			}
+		}
 	}
 	on_daily_POL = {
 		effect = {

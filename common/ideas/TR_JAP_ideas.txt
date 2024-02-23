@@ -1533,6 +1533,49 @@ ideas = {
 				industry_repair_factor = -0.5
 			}
 		}
+
+		JAP_for_war = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_supply_node_factor = 0.2
+				production_speed_rail_way_factor = 0.2
+			}
+		}
+		TR_final_war = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = SRI
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = VIN
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = POL
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
 	}
 
 }
