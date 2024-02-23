@@ -106,6 +106,8 @@ if = {
 		basic_light_battery = 1
 		basic_heavy_battery = 1
 		basic_medium_battery = 1
+		basic_ship_hull_light = 1
+		basic_heavy_armor_scheme = 1
 		improved_ship_torpedo_launcher = 1
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
@@ -605,23 +607,7 @@ if = {
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = empty
-				mid_1_custom_slot = ship_deck_space
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Kaga Class"
-			type = ship_hull_carrier_conversion_bb
-			name_group = JAP_CV_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = dp_ship_secondaries_1
+				fixed_ship_secondaries_slot = dp_ship_secondaries_2
 				mid_1_custom_slot = ship_deck_space
 			}
 			obsolete = yes
@@ -642,17 +628,20 @@ if = {
 			}
 		}
 		create_equipment_variant = {
-			name = "Zuiho Class"
-			type = ship_hull_carrier_conversion_ca
-			name_group = JAP_CVL_HISTORICAL
+			name = "Shokaku Class"
+			type = ship_hull_carrier_1
+			name_group = JAP_CV_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
 				fixed_ship_deck_slot_2 = ship_deck_space
+				front_2_custom_slot = ship_deck_space
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries_1
+				fixed_ship_engine_slot = carrier_ship_engine_2
+				fixed_ship_secondaries_slot = dp_ship_secondaries_1
+				mid_1_custom_slot = ship_deck_space
+				front_1_custom_slot = ship_deck_space
 			}
 		}
 		create_equipment_variant = {
@@ -702,6 +691,25 @@ if = {
 				fixed_ship_armor_slot = ship_armor_bb_1
 				front_1_custom_slot = empty
 				mid_1_custom_slot = ship_secondaries_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_heavy_battery_2
+			}
+		}
+		create_equipment_variant = {
+			name = "Kaga Class"
+			name_group = JAP_BB_HISTORICAL
+			type = ship_hull_heavy_2
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_secondaries_slot = dp_ship_secondaries_2
+				fixed_ship_armor_slot = ship_armor_bb_2
+				front_1_custom_slot = empty
+				mid_1_custom_slot = ship_heavy_battery_2
 				mid_2_custom_slot = ship_airplane_launcher_1
 				rear_1_custom_slot = ship_heavy_battery_2
 			}
@@ -995,6 +1003,22 @@ if = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_2
+				mid_1_custom_slot = ship_torpedo_2
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		create_equipment_variant = {
+			name = "Yugumo Class"
+			type = ship_hull_light_2
+			name_group = JAP_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = dp_light_battery_2
+				fixed_ship_anti_air_slot = dp_light_battery_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_2
 				fixed_ship_torpedo_slot = ship_torpedo_2
 				mid_1_custom_slot = ship_torpedo_2
 				rear_1_custom_slot = ship_depth_charge_1

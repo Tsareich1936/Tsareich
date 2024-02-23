@@ -1,0 +1,29 @@
+political_actions = {
+    TR_inter = {
+		icon = generic_political_actions
+		visible = {
+			is_in_faction_with = FRA
+	    }
+		available = {
+            is_in_faction_with = FRA
+			not = {
+				is_in_tech_sharing_group = inter_research
+			}
+		}
+
+		cost = 20
+        fire_only_once = yes 
+		days_remove = 30
+		cancel_if_not_visible = yes
+
+
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		remove_effect = {
+			add_to_tech_sharing_group = inter_research
+		}
+	}
+}
