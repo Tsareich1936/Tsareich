@@ -1597,7 +1597,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			
+			modifier = {
+				tag = JAP
+				factor = 0.001
+			}
 			modifier = {
 				has_war = yes
 				factor = 20

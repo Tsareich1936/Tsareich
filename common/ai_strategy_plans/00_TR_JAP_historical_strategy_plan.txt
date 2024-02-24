@@ -54,7 +54,6 @@ JAP_historical_plan_RS = {
 	abort = {
 		or = { 
 			has_completed_focus = jap_Foreign_Policy
-			has_war_with_major = yes
 		}
 	}
 
@@ -257,7 +256,6 @@ JAP_historical_plan_RM = {
 	abort = {
 		or = { 
 			has_completed_focus = jap_Foreign_Policy
-			has_war_with_major = yes
 		}
 	}
 
@@ -326,7 +324,6 @@ JAP_historical_plan_s = {
 	abort = {
 		or = { 
 			has_completed_focus = jap_Foreign_Policy
-			has_war_with_major = yes
 		}
 	}
 

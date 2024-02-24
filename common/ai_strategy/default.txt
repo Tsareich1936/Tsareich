@@ -301,6 +301,7 @@ bba_air_prod_1 = {
 
 	enable = {
 		always = yes
+		not = { original_tag = JAP }
 		NOT = { original_tag = GER } 
 		NOT = { original_tag = ENG }
 	}
@@ -424,6 +425,7 @@ bba_support_boosts = {
 convoy_voy_voy_voy = {
 	enable = {
 		has_dlc = "Man the Guns"
+		not = { original_tag = JAP }
 		convoy_threat > 0.2
 	}
 	abort = {
@@ -470,6 +472,7 @@ ill_show_you_mine = {
 	enable = {
 		has_dlc = "Man the Guns"
 		mine_threat > 0.2
+		not = { original_tag = JAP }
 	}
 	abort = {
 		mine_threat < 0.2
@@ -498,6 +501,7 @@ ill_show_you_mine_2 = {
 	enable = {
 		has_dlc = "Man the Guns"
 		mine_threat > 0.5
+		not = { original_tag = JAP }
 	}
 	abort = {
 		mine_threat < 0.5
@@ -635,6 +639,7 @@ default_garrison_production = {
 default_mountaineers_production = {
 	enable = {
 		NOT = { original_tag = GER }
+		not = { original_tag = JAP }
 		ai_wants_divisions > 11 #Decreasing the amount of mountaineers the AI wants
 	}
 	abort = {
@@ -765,7 +770,6 @@ slightly_naval_focused_nation = {
 more_naval_focused_nation = {
 	enable = {
 		OR = {
-			tag = JAP
 			tag = USA
 			tag = ENG
 		}

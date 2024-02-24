@@ -2042,9 +2042,15 @@ focus_tree = {
 					factor = 170
 				}
 				bypass = {
-					JAP = {
-						is_in_faction_with = ROOT
+					or = {
+						JAP = {
+							is_in_faction_with = ROOT
+						}
+						JAP = {
+							is_in_faction = yes
+						}
 					}
+
 				}
 				x = 0
 				y = 4
