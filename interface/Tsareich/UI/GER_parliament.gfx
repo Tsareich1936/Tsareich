@@ -6,6 +6,6 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_icon_unko
 		textureFile = "gfx/interface/UI/GER_parliament/unko.png"
-		noOfFrames = 4
+		noOfFrames = 10
 	}
 }

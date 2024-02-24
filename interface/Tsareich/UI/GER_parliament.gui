@@ -14,11 +14,11 @@ guiTypes = {
 			name = GER_parliament_seat_grid
 			position = {
 				x = 250
-				y = 250
+				y = 230
 			}
 			size = {
 				width = 450
-				height = 250
+				height = 240
 			}
 			slotsize = {
 				width = 0
@@ -35,7 +35,7 @@ guiTypes = {
 			spriteType = GFX_icon_unko
 			orientation = CENTER
 			position = { x=-50% y=-50% }
-			scale = 0.8
+			scale = 0.6
 		}
 	}
 }

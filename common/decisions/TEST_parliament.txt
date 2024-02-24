@@ -1,13 +1,13 @@
 TEST_parliament = {
 	reset = {
-		priority = 10
+		priority = 11
 		complete_effect = {
 			clear_array = parliament_seat_array
 			GER_parliament_seat_position = yes
 		}
 	}
-	add_red = {
-		priority = 9
+	add_1 = {
+		priority = 10
 		complete_effect = {
 			# add_to_array = {
 			# 	array = parliament_seat_array
@@ -25,12 +25,16 @@ TEST_parliament = {
 			}
 		}
 	}
-	add_pup = {
-		priority = 8
+	add_2 = {
+		priority = 9
 		complete_effect = {
+			# add_to_array = {
+			# 	array = parliament_seat_array
+			# 	value = 1
+			# }
 			for_loop_effect = {
 				start = 1
-				end = 12
+				end = 489
 				compare = less_than_or_equals
 				add = 1
 				add_to_array = {
@@ -40,12 +44,16 @@ TEST_parliament = {
 			}
 		}
 	}
-	add_bul = {
-		priority = 7
+	add_3 = {
+		priority = 8
 		complete_effect = {
+			# add_to_array = {
+			# 	array = parliament_seat_array
+			# 	value = 1
+			# }
 			for_loop_effect = {
 				start = 1
-				end = 12
+				end = 489
 				compare = less_than_or_equals
 				add = 1
 				add_to_array = {
@@ -55,17 +63,136 @@ TEST_parliament = {
 			}
 		}
 	}
-	add_gre = {
-		priority = 6
+	add_4 = {
+		priority = 7
 		complete_effect = {
+			# add_to_array = {
+			# 	array = parliament_seat_array
+			# 	value = 1
+			# }
 			for_loop_effect = {
 				start = 1
-				end = 12
+				end = 489
 				compare = less_than_or_equals
 				add = 1
 				add_to_array = {
 					array = parliament_seat_array
 					value = 4
+				}
+			}
+		}
+	}
+	add_5 = {
+		priority = 6
+		complete_effect = {
+			# add_to_array = {
+			# 	array = parliament_seat_array
+			# 	value = 1
+			# }
+			for_loop_effect = {
+				start = 1
+				end = 489
+				compare = less_than_or_equals
+				add = 1
+				add_to_array = {
+					array = parliament_seat_array
+					value = 5
+				}
+			}
+		}
+	}
+	add_6 = {
+		priority = 5
+		complete_effect = {
+			# add_to_array = {
+			# 	array = parliament_seat_array
+			# 	value = 1
+			# }
+			for_loop_effect = {
+				start = 1
+				end = 489
+				compare = less_than_or_equals
+				add = 1
+				add_to_array = {
+					array = parliament_seat_array
+					value = 6
+				}
+			}
+		}
+	}
+	add_7 = {
+		priority = 4
+		complete_effect = {
+			# add_to_array = {
+			# 	array = parliament_seat_array
+			# 	value = 1
+			# }
+			for_loop_effect = {
+				start = 1
+				end = 489
+				compare = less_than_or_equals
+				add = 1
+				add_to_array = {
+					array = parliament_seat_array
+					value = 7
+				}
+			}
+		}
+	}
+
+	add_8 = {
+		priority = 3
+		complete_effect = {
+			# add_to_array = {
+			# 	array = parliament_seat_array
+			# 	value = 1
+			# }
+			for_loop_effect = {
+				start = 1
+				end = 489
+				compare = less_than_or_equals
+				add = 1
+				add_to_array = {
+					array = parliament_seat_array
+					value = 8
+				}
+			}
+		}
+	}
+	add_9 = {
+		priority = 2
+		complete_effect = {
+			# add_to_array = {
+			# 	array = parliament_seat_array
+			# 	value = 1
+			# }
+			for_loop_effect = {
+				start = 1
+				end = 489
+				compare = less_than_or_equals
+				add = 1
+				add_to_array = {
+					array = parliament_seat_array
+					value = 9
+				}
+			}
+		}
+	}
+	add_10 = {
+		priority = 1
+		complete_effect = {
+			# add_to_array = {
+			# 	array = parliament_seat_array
+			# 	value = 1
+			# }
+			for_loop_effect = {
+				start = 1
+				end = 489
+				compare = less_than_or_equals
+				add = 1
+				add_to_array = {
+					array = parliament_seat_array
+					value = 10
 				}
 			}
 		}
