@@ -1,6 +1,10 @@
 state={
 	id=942
 	name="STATE_942"
+	resources = {
+		steel = 3
+		tungsten = 2
+	}
 	history={
 		owner = CZE
 		buildings = {
@@ -16,8 +20,7 @@ state={
 	provinces={
 		445 494 583 3462 9414 9429 
 	}
-	manpower= 1668300
-	buildings_max_level_factor=1.000
+	manpower= 1618300
 	state_category=large_city
 	local_supplies=0.000
 }

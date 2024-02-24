@@ -187,17 +187,17 @@ if = {
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = democratic
 	last_election = "1920.5.19"
 	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 18
+	democratic = 65
+	socialdemocratic = 18
 	neutrality = 10
 	fascism = 0
 	communism = 7
-	conservatism = 65
 }
 give_guarantee = ROM
 give_guarantee = SER

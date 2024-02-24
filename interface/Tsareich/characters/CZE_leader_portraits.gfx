@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_portrait_CZE_syukoda
+		textureFile = "gfx/leaders/CZE/portrait_CZE_syukoda.dds"
+	}
+}
