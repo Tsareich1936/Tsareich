@@ -1,0 +1,41 @@
+guiTypes = {
+	containerWindowType = {
+		name = GER_parliament_window
+		size = {
+			width = 510
+			height = 255
+		}
+		orientation = UPPER_LEFT
+		background = {
+			name = unkoburi
+			quadTextureSprite = GFX_gui_GER_parliament_bg
+		}
+		gridBoxType = {
+			name = GER_parliament_seat_grid
+			position = {
+				x = 250
+				y = 230
+			}
+			size = {
+				width = 450
+				height = 240
+			}
+			slotsize = {
+				width = 0
+				height = 0
+			}
+			format = UPPER_LEFT
+			max_slots_vertical = 4
+		}
+	}
+	containerWindowType = {
+		name = GER_parliament_seat_array
+		iconType = {
+			name = GER_seat_icon
+			spriteType = GFX_icon_unko
+			orientation = CENTER
+			position = { x=-50% y=-50% }
+			scale = 0.6
+		}
+	}
+}

@@ -1,0 +1,9 @@
+TEST_parliament = {
+	icon = power_struggle
+	scripted_gui = GER_Parliament
+	priority = 999
+	allowed = {
+		tag = GER
+	}
+	visible_when_empty = yes
+}
