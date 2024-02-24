@@ -86,7 +86,7 @@ armor_JAP = {
 		}
 		
 		target_template = {
-			weight = 0.9
+			weight = 5
 			match_value = 4000.0
 			
 			support = {
@@ -175,7 +175,7 @@ armor_JAP = {
 		}
 		
 		target_template = {
-			weight = 0.9
+			weight = 10
 			match_value = 4000.0
 			
 			support = {
@@ -317,13 +317,6 @@ infantry_JAP = {
 		upgrade_prio = {
 			factor = 5
 
-			modifier = {
-				factor = 2
-				OR = {
-					CHI = { has_capitulated = no }
-					country_exists = CHI
-				}
-			}
 		}
 		
 		target_width = 30.0
@@ -369,7 +362,7 @@ infantry_JAP = {
 		}
 		
 		target_template = {
-			weight = 0.9
+			weight = 10
 			match_value = 3000.0
 			
 			support = {
@@ -478,7 +471,7 @@ marines_JAP = {
 		}
 
 		target_template = {
-			weight = 0.9
+			weight = 7.5
 			match_value = 2000.0
 			
 			support = {

@@ -2905,3 +2905,18 @@ JAP_lack_food = {
 		selectable_mission = no
 	}
 }
+
+JAP_for_debug = {
+	VIN_problem = {
+		complete_effect = {
+			FRA = {
+				annex_country = {
+					target = VIN
+				}
+			}
+		}
+		allowed = {
+			is_debug = yes
+		}
+	}
+}

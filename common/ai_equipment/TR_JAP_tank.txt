@@ -153,158 +153,38 @@ JAP_medium_tanks = {
 				suspension_type_slot = tank_christie_suspension
 				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = empty
-				special_type_slot_2 = empty
-				special_type_slot_3 = empty
-				special_type_slot_4 = empty
+				special_type_slot_1 = secondary_turret_hmg
+				special_type_slot_2 = secondary_turret_hmg
+				special_type_slot_3 = {
+					any_of = {
+						additional_machine_guns
+						easy_maintenance
+					}
+				}
+				special_type_slot_4 = tank_radio_2
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 4
+				tank_nsb_engine_upgrade > 4
 				tank_nsb_armor_upgrade = {
-					base = 2
-					modifier = {
-						add = 2
-						has_war = yes
-					}
+					base = 0
 				}
 			}
 		}
 
 		allowed_modules = {
-			
-			tank_small_cannon 
-			tank_small_cannon_2 
-			tank_close_support_gun 
-			tank_high_velocity_cannon
-			tank_medium_two_man_tank_turret
-			tank_bogie_suspension
-			tank_riveted_armor
-			tank_diesel_engine
-		}
-	}
-
-	improved_medium_tank_default = { #Chi-He
-		priority = {
-			factor = 100
-			modifier = { 
-				has_tech = advanced_medium_tank_chassis 
-				factor = 0 #let's not waste XP here
-			}
-		}
-
-		target_variant = {
-			match_value = 3000
-			type = medium_tank_chassis_2
-			modules = {
-				main_armament_slot = { 
-					any_of = {  
-						tank_medium_cannon 
-						tank_high_velocity_cannon 
-						tank_close_support_gun 
-						tank_small_cannon_2 
-					} 
-				}
-				turret_type_slot = tank_medium_three_man_tank_turret 
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_diesel_engine
-				special_type_slot_1 = tank_radio_module
-				special_type_slot_2 = empty
-				special_type_slot_3 = empty
-				special_type_slot_4 = empty
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = 5
-				tank_nsb_armor_upgrade = {
-					base = 5
-					modifier = {
-						add = 3
-						has_war = yes
-					}
-					modifier = {
-						any_enemy_country = {
-							is_major = yes
-						}
-						add = 3
-					}
-				}
-			}
-		}
-
-		allowed_modules = {
-			tank_small_cannon_2 
-			tank_close_support_gun 
+			additional_machine_guns
+			secondary_turret_hmg
+			easy_maintenance
+			tank_radio_2
 			tank_medium_cannon 
-			tank_medium_cannon_2
-			tank_high_velocity_cannon
-			tank_medium_three_man_tank_turret
-			tank_bogie_suspension
-			tank_riveted_armor
-			tank_diesel_engine
-			tank_radio_3
-			tank_radio_2
-			tank_radio_1
-		}
-	}
-
-	advanced_medium_tank_default = { #Chi-Nu
-		priority = {
-			factor = 100
-		}
-
-		target_variant = {
-			match_value = 4000
-			type = medium_tank_chassis_3
-			modules = {
-				main_armament_slot = tank_medium_cannon_2
-				turret_type_slot = tank_medium_three_man_tank_turret
-				suspension_type_slot = tank_bogie_suspension
-				armor_type_slot = tank_welded_armor
-				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = tank_radio_module
-				special_type_slot_2 = smoke_launchers
-				special_type_slot_3 = empty
-				special_type_slot_4 = empty
-			}
-			upgrades = {
-				tank_nsb_engine_upgrade = {
-					base = 5
-					modifier = {
-							add = 3
-							has_war = yes
-						}
-				}
-				tank_nsb_armor_upgrade = {
-					base = 4
-					modifier = {
-						add = 2
-						has_war = yes
-					}
-					modifier = {
-						add = 2
-						any_enemy_country = {
-							is_major = yes
-						}
-					}
-				}
-			}
-		}
-
-		allowed_modules = {
-			tank_medium_cannon_2
-			tank_high_velocity_cannon_2
-			tank_medium_three_man_tank_turret
-			tank_bogie_suspension
-			tank_welded_armor
+			tank_medium_cannon_2 
+			tank_medium_three_man_tank_turret 
+			tank_christie_suspension
+			tank_medium_two_man_tank_turret
 			tank_gasoline_engine
-			
-			tank_radio_3
-			tank_radio_2
-			tank_radio_1
-			smoke_launchers
+			tank_riveted_armor
 		}
 	}
-}
 
 
 JAP_modern_tanks = {

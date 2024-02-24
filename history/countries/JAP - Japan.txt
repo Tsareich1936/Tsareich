@@ -25,6 +25,7 @@ add_ideas = {
 	JAP_dissatisfaction
 	the_long_lance
 	JAP_agriculture
+	TR_water_land_battle
 }
 
 set_power_balance = {

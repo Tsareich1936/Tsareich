@@ -1569,6 +1569,16 @@ ideas = {
 				defense_bonus_against = 0.2
 			}
 		}
+		TR_water_land_battle = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				shore_bombardment_bonus = 0.2
+				naval_invasion_capacity = 10
+			}
+		}
 	}
 
 }
