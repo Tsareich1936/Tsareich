@@ -151,6 +151,54 @@ if = {
 		armored_car1 = 1
 	}
 }
+#議会の初期化
+GER_define_parliament_vars = yes
+GER_define_parliament_arraies = yes
+set_variable = {
+	var = GER_anarchist_seats
+	value = 44
+}
+set_variable = {
+	var = GER_syndicalist_seats
+	value = 44
+}
+set_variable = {
+	var = GER_communist_seats
+	value = 44
+}
+set_variable = {
+	var = GER_socialist_seats
+	value = 44
+}
+set_variable = {
+	var = GER_socialdemocrat_seats
+	value = 44
+}
+set_variable = {
+	var = GER_democrat_seats
+	value = 44
+}
+set_variable = {
+	var = GER_conservatist_seats
+	value = 44
+}
+set_variable = {
+	var = GER_neutral_seats
+	value = 44
+}
+set_variable = {
+	var = GER_theocrat_seats
+	value = 44
+}
+set_variable = {
+	var = GER_fascist_seats
+	value = 44
+}
+set_variable = {
+	var = GER_blank_seats
+	value = 49
+}
+GER_update_parliament_seats = yes
 
 set_variable = { var = ger_gateway_to_europe_influence value = 0 }
 

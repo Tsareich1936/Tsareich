@@ -3,12 +3,22 @@ guiTypes = {
 		name = GER_parliament_window
 		size = {
 			width = 510
-			height = 255
+			height = 420
 		}
 		orientation = UPPER_LEFT
 		background = {
 			name = unkoburi
 			quadTextureSprite = GFX_gui_GER_parliament_bg
+		}
+		instantTextBoxType = {
+			name = GER_num_of_seats_text
+			text = "489"
+			font = hoi_36header
+			position = {
+				x = 155
+				y = 200
+			}
+			format = centre
 		}
 		gridBoxType = {
 			name = GER_parliament_seat_grid
@@ -27,15 +37,357 @@ guiTypes = {
 			format = UPPER_LEFT
 			max_slots_vertical = 4
 		}
+		containerWindowType = {
+			name = GER_parliament_parties
+			position = {
+				x = 20
+				y = 265
+			}
+			size = {
+				width = 480
+				height = 135
+			}
+			orientation = UPPER_LEFT
+			iconType = {
+				name = GER_01
+				spriteType = GFX_icon_GER_parliament_seats
+				frame = 1
+				scale = 0.6
+				position = {
+					x = 0
+					y = 0
+				}
+			}
+			iconType = {
+				name = GER_02
+				spriteType = GFX_icon_GER_parliament_seats
+				frame = 2
+				scale = 0.6
+				position = {
+					x = 0
+					y = 25%
+				}
+			}
+			iconType = {
+				name = GER_03
+				spriteType = GFX_icon_GER_parliament_seats
+				frame = 3
+				scale = 0.6
+				position = {
+					x = 0
+					y = 50%
+				}
+			}
+			iconType = {
+				name = GER_04
+				spriteType = GFX_icon_GER_parliament_seats
+				frame = 4
+				scale = 0.6
+				position = {
+					x = 0
+					y = 75%
+				}
+			}
+			iconType = {
+				name = GER_05
+				spriteType = GFX_icon_GER_parliament_seats
+				frame = 5
+				scale = 0.6
+				position = {
+					x = 0
+					y = 100%
+				}
+			}
+			iconType = {
+				name = GER_06
+				spriteType = GFX_icon_GER_parliament_seats
+				frame = 6
+				scale = 0.6
+				position = {
+					x = 250%
+					y = 0%
+				}
+			}
+			iconType = {
+				name = GER_07
+				spriteType = GFX_icon_GER_parliament_seats
+				frame = 7
+				scale = 0.6
+				position = {
+					x = 250%
+					y = 25%
+				}
+			}
+			iconType = {
+				name = GER_08
+				spriteType = GFX_icon_GER_parliament_seats
+				frame = 8
+				scale = 0.6
+				position = {
+					x = 250%
+					y = 50%
+				}
+			}
+			iconType = {
+				name = GER_09
+				spriteType = GFX_icon_GER_parliament_seats
+				frame = 9
+				scale = 0.6
+				position = {
+					x = 250%
+					y = 75%
+				}
+			}
+			iconType = {
+				name = GER_10
+				spriteType = GFX_icon_GER_parliament_seats
+				frame = 10
+				scale = 0.6
+				position = {
+					x = 250%
+					y = 100%
+				}
+			}
+			iconType = {
+				name = GER_11
+				spriteType = GFX_icon_GER_parliament_seats
+				frame = 11
+				scale = 0.6
+				position = {
+					x = 250%
+					y = 125%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_01_name
+				font = hoi_24header
+				text = "GER_anarchism_party"
+				format = left
+				position = {
+					x = 30%
+					y = 0
+				}
+			}
+			instantTextBoxType = {
+				name = GER_02_name
+				font = hoi_24header
+				text = "GER_syndicalism_party"
+				format = left
+				position = {
+					x = 30%
+					y = 25%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_03_name
+				font = hoi_24header
+				text = "GER_communism_party"
+				format = left
+				position = {
+					x = 30%
+					y = 50%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_04_name
+				font = hoi_24header
+				text = "GER_socialism_party"
+				format = left
+				position = {
+					x = 30%
+					y = 75%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_05_name
+				font = hoi_24header
+				text = "GER_socialdemocratic_party"
+				format = left
+				position = {
+					x = 30%
+					y = 100%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_06_name
+				font = hoi_24header
+				text = "GER_democratic_party"
+				format = left
+				position = {
+					x = 280%
+					y = 0%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_07_name
+				font = hoi_24header
+				text = "GER_conservatism_party"
+				format = left
+				position = {
+					x = 280%
+					y = 25%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_08_name
+				font = hoi_24header
+				text = "GER_neutrality_party"
+				format = left
+				position = {
+					x = 280%
+					y = 50%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_09_name
+				font = hoi_24header
+				text = "GER_theocracy_party"
+				format = left
+				position = {
+					x = 280%
+					y = 75%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_010_name
+				font = hoi_24header
+				text = "GER_fascism_party"
+				format = left
+				position = {
+					x = 280%
+					y = 100%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_011_name
+				font = hoi_24header
+				text = "blank_seat"
+				format = left
+				position = {
+					x = 280%
+					y = 125%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_01_num
+				font = hoi_20
+				text = "GER_01_num"
+				format = left
+				position = {
+					x = 180%
+					y = 0
+				}
+			}
+			instantTextBoxType = {
+				name = GER_02_num
+				font = hoi_20
+				text = "GER_02_num"
+				format = left
+				position = {
+					x = 180%
+					y = 25%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_03_num
+				font = hoi_20
+				text = "GER_03_num"
+				format = left
+				position = {
+					x = 180%
+					y = 50%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_04_num
+				font = hoi_20
+				text = "GER_04_num"
+				format = left
+				position = {
+					x = 180%
+					y = 75%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_05_num
+				font = hoi_20
+				text = "GER_05_num"
+				format = left
+				position = {
+					x = 180%
+					y = 100%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_06_num
+				font = hoi_20
+				text = "GER_06_num"
+				format = left
+				position = {
+					x = 400%
+					y = 0%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_07_num
+				font = hoi_20
+				text = "GER_07_num"
+				format = left
+				position = {
+					x = 400%
+					y = 25%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_08_num
+				font = hoi_20
+				text = "GER_08_num"
+				format = left
+				position = {
+					x = 400%
+					y = 50%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_09_num
+				font = hoi_20
+				text = "GER_09_num"
+				format = left
+				position = {
+					x = 400%
+					y = 75%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_10_num
+				font = hoi_20
+				text = "GER_10_num"
+				format = left
+				position = {
+					x = 400%
+					y = 100%
+				}
+			}
+			instantTextBoxType = {
+				name = GER_11_num
+				font = hoi_20
+				text = "GER_11_num"
+				format = left
+				position = {
+					x = 400%
+					y = 125%
+				}
+			}
+		}
 	}
 	containerWindowType = {
 		name = GER_parliament_seat_array
 		iconType = {
 			name = GER_seat_icon
-			spriteType = GFX_icon_unko
+			spriteType = GFX_icon_GER_parliament_seats
 			orientation = CENTER
 			position = { x=-50% y=-50% }
-			scale = 0.6
+			scale = 0.2
 		}
 	}
 }

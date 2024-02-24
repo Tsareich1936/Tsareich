@@ -2,15 +2,60 @@ TEST_parliament = {
 	reset = {
 		priority = 11
 		complete_effect = {
-			clear_array = parliament_seat_array
-			GER_parliament_seat_position = yes
+			GER_define_parliament_vars = yes
+			GER_define_parliament_arraies = yes
+			set_variable = {
+				var = GER_anarchist_seats 
+				value = 44
+			}
+			set_variable = {
+				var = GER_syndicalist_seats
+				value = 44
+			}
+			set_variable = {
+				var = GER_communist_seats
+				value = 44
+			}
+			set_variable = {
+				var = GER_socialist_seats
+				value = 44
+			}
+			set_variable = {
+				var = GER_socialdemocrat_seats
+				value = 44
+			}
+			set_variable = {
+				var = GER_democrat_seats
+				value = 44
+			}
+			set_variable = {
+				var = GER_conservatist_seats
+				value = 44
+			}
+			set_variable = {
+				var = GER_neutral_seats
+				value = 44
+			}
+			set_variable = {
+				var = GER_theocrat_seats
+				value = 44
+			}
+			set_variable = {
+				var = GER_fascist_seats
+				value = 44
+			}
+			set_variable = {
+				var = GER_blank_seats
+				value = 49
+			}
+			GER_update_parliament_seats = yes
 		}
 	}
 	add_1 = {
 		priority = 10
 		complete_effect = {
 			# add_to_array = {
-			# 	array = parliament_seat_array
+			# 	array = GER_parliament_seat_array
 			# 	value = 1
 			# }
 			for_loop_effect = {
@@ -19,7 +64,7 @@ TEST_parliament = {
 				compare = less_than_or_equals
 				add = 1
 				add_to_array = {
-					array = parliament_seat_array
+					array = GER_parliament_seat_array
 					value = 1
 				}
 			}
@@ -29,7 +74,7 @@ TEST_parliament = {
 		priority = 9
 		complete_effect = {
 			# add_to_array = {
-			# 	array = parliament_seat_array
+			# 	array = GER_parliament_seat_array
 			# 	value = 1
 			# }
 			for_loop_effect = {
@@ -38,7 +83,7 @@ TEST_parliament = {
 				compare = less_than_or_equals
 				add = 1
 				add_to_array = {
-					array = parliament_seat_array
+					array = GER_parliament_seat_array
 					value = 2
 				}
 			}
@@ -48,7 +93,7 @@ TEST_parliament = {
 		priority = 8
 		complete_effect = {
 			# add_to_array = {
-			# 	array = parliament_seat_array
+			# 	array = GER_parliament_seat_array
 			# 	value = 1
 			# }
 			for_loop_effect = {
@@ -57,7 +102,7 @@ TEST_parliament = {
 				compare = less_than_or_equals
 				add = 1
 				add_to_array = {
-					array = parliament_seat_array
+					array = GER_parliament_seat_array
 					value = 3
 				}
 			}
@@ -67,7 +112,7 @@ TEST_parliament = {
 		priority = 7
 		complete_effect = {
 			# add_to_array = {
-			# 	array = parliament_seat_array
+			# 	array = GER_parliament_seat_array
 			# 	value = 1
 			# }
 			for_loop_effect = {
@@ -76,7 +121,7 @@ TEST_parliament = {
 				compare = less_than_or_equals
 				add = 1
 				add_to_array = {
-					array = parliament_seat_array
+					array = GER_parliament_seat_array
 					value = 4
 				}
 			}
@@ -86,7 +131,7 @@ TEST_parliament = {
 		priority = 6
 		complete_effect = {
 			# add_to_array = {
-			# 	array = parliament_seat_array
+			# 	array = GER_parliament_seat_array
 			# 	value = 1
 			# }
 			for_loop_effect = {
@@ -95,7 +140,7 @@ TEST_parliament = {
 				compare = less_than_or_equals
 				add = 1
 				add_to_array = {
-					array = parliament_seat_array
+					array = GER_parliament_seat_array
 					value = 5
 				}
 			}
@@ -105,7 +150,7 @@ TEST_parliament = {
 		priority = 5
 		complete_effect = {
 			# add_to_array = {
-			# 	array = parliament_seat_array
+			# 	array = GER_parliament_seat_array
 			# 	value = 1
 			# }
 			for_loop_effect = {
@@ -114,7 +159,7 @@ TEST_parliament = {
 				compare = less_than_or_equals
 				add = 1
 				add_to_array = {
-					array = parliament_seat_array
+					array = GER_parliament_seat_array
 					value = 6
 				}
 			}
@@ -124,7 +169,7 @@ TEST_parliament = {
 		priority = 4
 		complete_effect = {
 			# add_to_array = {
-			# 	array = parliament_seat_array
+			# 	array = GER_parliament_seat_array
 			# 	value = 1
 			# }
 			for_loop_effect = {
@@ -133,7 +178,7 @@ TEST_parliament = {
 				compare = less_than_or_equals
 				add = 1
 				add_to_array = {
-					array = parliament_seat_array
+					array = GER_parliament_seat_array
 					value = 7
 				}
 			}
@@ -144,7 +189,7 @@ TEST_parliament = {
 		priority = 3
 		complete_effect = {
 			# add_to_array = {
-			# 	array = parliament_seat_array
+			# 	array = GER_parliament_seat_array
 			# 	value = 1
 			# }
 			for_loop_effect = {
@@ -153,7 +198,7 @@ TEST_parliament = {
 				compare = less_than_or_equals
 				add = 1
 				add_to_array = {
-					array = parliament_seat_array
+					array = GER_parliament_seat_array
 					value = 8
 				}
 			}
@@ -163,7 +208,7 @@ TEST_parliament = {
 		priority = 2
 		complete_effect = {
 			# add_to_array = {
-			# 	array = parliament_seat_array
+			# 	array = GER_parliament_seat_array
 			# 	value = 1
 			# }
 			for_loop_effect = {
@@ -172,7 +217,7 @@ TEST_parliament = {
 				compare = less_than_or_equals
 				add = 1
 				add_to_array = {
-					array = parliament_seat_array
+					array = GER_parliament_seat_array
 					value = 9
 				}
 			}
@@ -182,7 +227,7 @@ TEST_parliament = {
 		priority = 1
 		complete_effect = {
 			# add_to_array = {
-			# 	array = parliament_seat_array
+			# 	array = GER_parliament_seat_array
 			# 	value = 1
 			# }
 			for_loop_effect = {
@@ -191,7 +236,7 @@ TEST_parliament = {
 				compare = less_than_or_equals
 				add = 1
 				add_to_array = {
-					array = parliament_seat_array
+					array = GER_parliament_seat_array
 					value = 10
 				}
 			}
