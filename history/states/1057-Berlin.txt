@@ -1,0 +1,15 @@
+state={
+	id=1057
+	name="STATE_1057"
+	history={
+		owner = GER
+		add_core_of = GER
+	}
+	provinces={
+		6521 
+	}
+	manpower=4330640
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

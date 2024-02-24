@@ -19,10 +19,10 @@ state={
 			infrastructure = 3 #was: 6
 			industrial_complex = 1
 		}
-		add_core_of = POL
 		add_core_of = SIL
 		add_core_of = GER
-		add_claim_by = CZE
+		add_core_of = POL
+		add_claim_by = GER
 	}
 
 	local_supplies=0.0 
