@@ -23,9 +23,9 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = TR_POL_resistance
 			set_country_flag = TR_POL_start_resistance
-			72 = {
-				set_state_flag = TR_POL_avaiabled_resist
-			}
+			# 72 = {
+			# 	set_state_flag = TR_POL_avaiabled_resist
+			# }
 			88 = {
 				set_state_flag = TR_POL_avaiabled_resist
 			}
@@ -37,6 +37,9 @@ focus_tree = {
 			}
 			762 = {
 				set_state_flag = TR_POL_avaiabled_resist
+			}
+			RUS = {
+				country_event = TR_poland_for_russia.1
 			}
 		}
 		ai_will_do = {

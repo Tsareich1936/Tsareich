@@ -17,6 +17,6 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_focus_RUS_newtsar"
-		textureFile = "gfx/interface/goals/Tsareich/focus_RUS_newtsar"
+		textureFile = "gfx/interface/goals/Tsareich/focus_RUS_newtsar.dds"
 	}
 }

@@ -12,10 +12,24 @@ TR_POL_resistance = {
 		}
 		has_country_flag = TR_POL_start_resistance
 	}
+	highlight_states = {
+		highlight_states_trigger = {
+			has_state_flag = TR_POL_avaiabled_resist
+		}
+	}
 	on_map_area = {
-		target_array = TR_poland_resist_states
-		name = POLAND
+		name = "TR_POL_resistance"
 		zoom = 250
+		targets = {
+			10
+			87
+			88
+			90
+			92
+			97
+			98
+			762
+		}
 		target_trigger = {
 			FROM = {
 				has_state_flag = TR_POL_avaiabled_resist
@@ -41,11 +55,28 @@ TR_RUS_resistance = {
 			has_country_flag = TR_POL_start_resistance
 		}
 	}
-	on_map_area = {
-		name = POLAND
-		zoom = 250
-		target_trigger = {
+	highlight_states = {
+		highlight_states_trigger = {
 			has_state_flag = TR_POL_avaiabled_resist
+		}
+	}
+	on_map_area = {
+		name = "TR_POL_resistance"
+		zoom = 250
+		targets = {
+			10
+			87
+			88
+			90
+			92
+			97
+			98
+			762
+		}
+		target_trigger = {
+			FROM = {
+				has_state_flag = TR_POL_avaiabled_resist
+			}
 		}
 	}
 }

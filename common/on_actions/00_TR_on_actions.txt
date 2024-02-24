@@ -234,20 +234,6 @@ on_actions = {
 			}
 		}
 	}
-	on_daily_POL = {
-		effect = {
-			if = {
-				limit = {
-					any_state = {
-						has_state_flag = TR_POL_avaiabled_resist
-					}
-				}
-				add_to_array = {
-					array = global.TR_poland_resist_states
-				}
-			}
-		}
-	}
 	on_monthly = {
 		effect = {
 			every_country = {

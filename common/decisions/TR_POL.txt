@@ -12,6 +12,7 @@ TR_POL_resistance = {
 	TR_POL_resistance1 = {
 		state_target = yes
 		priority = 999
+		icon = GFX_decision_POL_looming_peasants_strike
 		available = {
 			tag = POL
 			has_country_flag = TR_POL_start_resistance
@@ -94,6 +95,7 @@ TR_POL_resistance = {
 	TR_POL_resistance2 = {
 		state_target = yes
 		priority = 998
+		icon = GFX_decision_POL_looming_peasants_strike
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = "この地域はすでに掌握済みである。"
@@ -133,7 +135,7 @@ TR_POL_resistance = {
 				
 			}
 		}
-		cost = 30
+		cost = 50
 		complete_effect = {
 			FROM = {
 				add_resistance = 15
@@ -293,6 +295,100 @@ TR_POL_resistance = {
 				TR_POL_coup = yes
 			}
 			# load_oob = POL_coup
+		}
+	}
+}
+TR_RUS_resistance = {
+	TR_RUS_attack_resistance = {
+		state_target = yes
+		priority = 999
+		icon = GFX_decision_POL_looming_peasants_strike
+		available = {
+			tag = RUS
+			POL = {
+				has_country_flag = TR_POL_start_resistance
+			}
+		}
+		visible = {
+			NOT = {
+				has_global_flag = TR_poland_recognized_flag
+			}
+			# FROM = {
+			# 	NOT = {
+			# 		has_state_flag = TR_POL_resisting
+			# 	}
+			# }
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = TR_POL_avaiabled_resist
+			}
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					is_owned_by = RUS
+					is_controlled_by = RUS
+				}
+				is_core_of = POL
+				has_resistance = yes
+				has_state_flag = TR_POL_avaiabled_resist
+			}
+		}
+		on_map_mode = map_only
+		icon = my_icon
+		custom_cost_trigger = {
+			has_manpower > 24999
+			has_political_power > 99
+			# has_equipment = {
+			# 	infantry_equipment > 4999
+			# }
+		}
+		custom_cost_text = dicision_cost_pp_100_manpower_25k #_ie_5k
+		ai_will_do = {
+			base = 999
+			modifier = {
+				factor = 0
+				has_manpower < 25001
+				has_political_power > 151
+				# has_equipment = {
+				# 	infantry_equipment < 10001
+				# }
+			}
+		}
+		complete_effect = {
+			add_manpower = -25000
+			add_political_power = -100
+			# add_equipment_to_stockpile = {
+			# 	type = infantry_equipment
+			# 	amount = -5000
+			# }
+		}
+		days_remove = 70
+		remove_effect = {
+			FROM = {
+				add_resistance = -15
+			}
+			if = {
+				limit = {
+					FROM = {
+						resistance < 65
+						is_core_of = POL
+						OR = {
+							is_owned_by = RUS
+							is_controlled_by = RUS
+						}
+						has_state_flag = TR_POL_resisting
+					}
+				}
+				FROM = {
+					# set_state_owner_to = POL
+					clr_state_flag = TR_POL_resisting
+					hidden_effect = {
+						add_resistance_target = -30
+					}
+				}
+			}
 		}
 	}
 }
