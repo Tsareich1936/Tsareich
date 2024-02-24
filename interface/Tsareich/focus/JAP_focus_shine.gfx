@@ -38,7 +38,7 @@
 spriteTypes = {
 
 	spriteType = {
-		name = "GFX_japanese_electionshine_shine"
+		name = "GFX_japanese_election_shine"
 		textureFile = "gfx/interface/goals/Tsareich/japanese_election.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

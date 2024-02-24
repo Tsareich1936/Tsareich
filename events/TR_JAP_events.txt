@@ -1598,7 +1598,7 @@ country_event = { # against FRA
 			puppet = VIN
 		}
 		ai_chance = {
-			base = 1
+			base = 0
 		}
 	}
 	option = {
@@ -1615,7 +1615,7 @@ country_event = { # against FRA
 			}
 		}
 		ai_chance = {
-			base = 0
+			base = 1
 		}
 	}
 }
@@ -3290,6 +3290,28 @@ country_event = {
 		name = TR_japan.102.b
 		ai_chance = {
 			base = 0
+		}
+	}
+}
+country_event = {
+	id = TR_japan.117
+	title = TR_japan.117.t
+	desc = TR_japan.117.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.117.a
+		VIN = {
+			country_event = TR_japan.55
+			leave_faction = yes
+		}
+	}
+	option = {
+		name = TR_japan.117.b
+		JAP = {
+		    create_wargoal = {
+				target = VIN
+				type = puppet_wargoal_focus
+			}
 		}
 	}
 }

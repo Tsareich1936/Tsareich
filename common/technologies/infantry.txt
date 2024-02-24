@@ -145,6 +145,10 @@ technologies = {
 					tag = YUN
 				}
 			}
+			modifier = {
+				tag = JAP
+				factor = 0.5
+			}
 
 			modifier = {
 				factor = 5
@@ -181,7 +185,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 3
-						
+			modifier = {
+				tag = JAP
+				factor = 0.5
+			}
 			modifier = {
 				factor = 10
 				date > "1939.1.1"
@@ -1356,7 +1363,10 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			
+			modifier = {
+				tag = JAP
+				factor = 0.5
+			}
 			modifier = {
 				factor = 5
 

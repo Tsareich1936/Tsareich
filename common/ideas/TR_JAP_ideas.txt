@@ -1566,11 +1566,6 @@ ideas = {
 				defense_bonus_against = 0.2
 			}
 			targeted_modifier = {
-				tag = VIN
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
-			}
-			targeted_modifier = {
 				tag = POL
 				attack_bonus_against = 0.2
 				defense_bonus_against = 0.2

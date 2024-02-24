@@ -1253,13 +1253,7 @@ technologies = {
 			}
 			modifier = {
 				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
+				factor = 5
 			}
 			modifier = {
 				factor = 2

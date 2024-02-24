@@ -401,6 +401,10 @@ technologies = {
 				date > "1936.1.1"
 			}
 			modifier = {
+				factor = 10
+				tag = JAP
+			}
+			modifier = {
 				has_deployed_air_force_size = {
 					size > 500
 					type = tactical_bomber

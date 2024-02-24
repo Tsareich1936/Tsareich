@@ -2519,7 +2519,7 @@ JAP_WAR_PLAN_CREATE_2 = {
 				add = -5
 				has_country_flag = {
 					flag = TR_japan.INS
-					days > 365
+					days < 365
 				}
 			}
 		}
@@ -2551,13 +2551,13 @@ JAP_WAR_PLAN_CREATE_2 = {
 				add = -45
 				has_country_flag = {
 					flag = TR_japan.USA
-					days > 365
+					days < 365
 				}
 			}
 			modifier = {
 				add = -5
 				has_country_flag = {
-					flag = TR_japan.FGE
+					flag = TR_japan.FRA
 					days < 365
 				}
 			}

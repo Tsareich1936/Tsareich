@@ -13,8 +13,8 @@ focus_tree = { # nomal
     # #　政治ツリー
 
 	focus = {
-        icon = 	GFX_japanese_election
 		id = jap_19th_General_Election
+        icon = 	GFX_japanese_election
         x = 28
         y = 0
         cost = 4
@@ -29,13 +29,8 @@ focus_tree = { # nomal
         }  
 
 	}
- 
-  
     
-   
-    
-
-    # # 立憲民政党
+    # 立憲民政党
 
     focus = {
         id = jap_Constitutional_Democratic_Party
