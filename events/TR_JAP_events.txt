@@ -155,7 +155,7 @@ country_event = {      # 一か年計画
 			}
 			modifier = {
 				date > 1938.1.1
-				factor = 0.05
+				factor = 0.
 			}
 		}
 		hidden_effect = {
@@ -236,12 +236,12 @@ country_event = {     # 一か年計画
 		ai_chance = {
 			base = 1
 			modifier = {
-				has_war = yes
-				factor = 10
+				has_war_with_major = yes
+				factor = 0
 			}
 			modifier = {
-				has_war = no
-				factor = 60
+				date > 1938.1.1
+				factor = 0.
 			}
 		}
 		hidden_effect = {
@@ -260,12 +260,15 @@ country_event = {     # 一か年計画
 		ai_chance = {
 			base = 1
 			modifier = {
-				has_war = yes
-				factor = 45
+				has_war_with_major = no
+				factor = 0.25
 			}
 			modifier = {
-				has_war = no
-				factor = 20
+				or = {
+					has_war_with_major = yes
+					date < 1938.1.1
+				}
+				factor = 0.6
 			}
 		}
 		hidden_effect = {
@@ -284,12 +287,15 @@ country_event = {     # 一か年計画
 		ai_chance = {
 			base = 1
 			modifier = {
-				has_war = yes
-				factor = 45
+				has_war_with_major = no
+				factor = 0.25
 			}
 			modifier = {
-				has_war = no
-				factor = 20
+				or = {
+					has_war_with_major = yes
+					date < 1938.1.1
+				}
+				factor = 0.3
 			}
 		}
 		hidden_effect = {

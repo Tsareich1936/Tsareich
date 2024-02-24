@@ -131,3 +131,13 @@ JAP_lack_food = {
 	}
 	visible_when_empty = no
 }
+
+JAP_for_debug = {
+	allowed = {
+		tag = JAP
+	}
+	priority = {
+		base = 1000
+	}
+	
+}

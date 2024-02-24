@@ -10929,6 +10929,7 @@ shared_focus = {
     }
     icon = GFX_goal_generic_navy_doctrines_tactics
     completion_reward = {
+        navy_experience = 50
         swap_ideas = {
             remove_idea = JAP_NAVY
             add_idea = JAP_NAVY_1
@@ -10946,6 +10947,7 @@ shared_focus = {
         focus = jap_NAVY_2_1
     }
     completion_reward = {
+        navy_experience = 50
         swap_ideas = {
             remove_idea = JAP_NAVY_1
             add_idea = JAP_NAVY_2
@@ -10965,6 +10967,7 @@ shared_focus = {
         focus = jap_NAVY_2_2
     }
     completion_reward = {
+        navy_experience = 50
         remove_ideas = JAP_NAVY_2
     }
 }
@@ -11071,7 +11074,7 @@ shared_focus = {
     completion_reward = {
         swap_ideas = {
             remove_idea = JAP_AIRFORCE_3
-            add_idea = CSA_avionJAP_AIRFORCE_5s_fairey
+            add_idea = JAP_AIRFORCE_5
         }
 
         
@@ -11102,6 +11105,7 @@ shared_focus = {
     y = 0
     cost = 8
     completion_reward = {
+        air_experience = 50
         swap_ideas = {
             remove_idea = JAP_AIRFORCE
             add_idea = JAP_AIRFORCE_1
@@ -11120,6 +11124,7 @@ shared_focus = {
         focus = jap_AIRFORCE_2_1
     }
     completion_reward = {
+        air_experience = 50
         swap_ideas = {
             remove_idea = JAP_AIRFORCE_1
             add_idea = JAP_AIRFORCE_2
@@ -11138,6 +11143,7 @@ shared_focus = {
         focus = jap_AIRFORCE_2_2
     }
     completion_reward = {
+        air_experience = 50
         remove_ideas = JAP_AIRFORCE_2
     }
 }
@@ -11307,6 +11313,7 @@ shared_focus = {
         
     }
     completion_reward = {
+        army_experience = 50
         swap_ideas = {
             remove_idea = JAP_ARMY
             add_idea = JAP_ARMY_1
@@ -11328,6 +11335,7 @@ shared_focus = {
         
     }
     completion_reward = {
+        army_experience = 50
         swap_ideas = {
             remove_idea = JAP_ARMY_1
             add_idea = JAP_ARMY_2
@@ -11349,6 +11357,7 @@ shared_focus = {
         
     }
     completion_reward = {
+        army_experience = 50
         remove_ideas = JAP_ARMY_2
     }
 }

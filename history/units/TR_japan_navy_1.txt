@@ -13,9 +13,9 @@ units = {
 		task_force = {				
 			name = ""
 			location = 1092  # Hiroshima
-			ship = { name = "Amagi" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 = {amount = 1 owner = JAP version_name = "Amagi Class" } } }
+			ship = { name = "Shinano" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 = {amount = 1 owner = JAP version_name = "Amagi Class" } } }
 			ship = { name = "Kii" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 =  {amount = 1 owner = JAP version_name = "Amagi Class" } } }
-			ship = { name = "Owati" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 = {amount = 1 owner = JAP version_name = "Amagi Class"} } }
+			ship = { name = "Aizu" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 = {amount = 1 owner = JAP version_name = "Amagi Class"} } }
 			ship = { name = "Tosa" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 = {amount = 1 owner = JAP version_name = "Amagi Class"} } }
 			ship = { name = "Kagero" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Kagero Class" } } }
 			ship = { name = "Oyashio" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Kagero Class" } } }

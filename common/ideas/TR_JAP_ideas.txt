@@ -198,7 +198,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = -0.2
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.1
 				stability_weekly = 0.01
 			}
 		}
@@ -358,7 +358,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_weekly = -0.005
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.2
 				consumer_goods_factor = -0.2
 			}
 		}
@@ -384,7 +384,7 @@ ideas = {
 	    	removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = 0.2
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.2
 			}
 		}
 
@@ -432,7 +432,6 @@ ideas = {
 	    	removal_cost = -1
 			modifier = {
 				production_factory_max_efficiency_factor = 0.2
-				line_change_production_efficiency_factor = 0.1
 			}
 		}
 
@@ -1186,7 +1185,7 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = -0.2
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.1
 				stability_factor = -0.2
 			}
 		}
@@ -1204,7 +1203,6 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = -0.1
-				consumer_goods_factor = 0.1
 				stability_factor = -0.1
 			}
 		}
@@ -1569,6 +1567,16 @@ ideas = {
 				tag = POL
 				attack_bonus_against = 0.2
 				defense_bonus_against = 0.2
+			}
+		}
+		TR_water_land_battle = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				shore_bombardment_bonus = 0.2
+				naval_invasion_capacity = 10
 			}
 		}
 	}
