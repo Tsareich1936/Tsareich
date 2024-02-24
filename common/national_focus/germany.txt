@@ -369,7 +369,7 @@ focus_tree = {
 		x = 8
 		y = 2
 		completion_reward = {
-			add_research_slot = 1
+			add_ideas = TR_FRA_tech
 		}
 	}
 	focus = {
@@ -1317,9 +1317,12 @@ focus_tree = {
 			factor = 4000
 		}
 		available = {
-			has_country_flag = TR_czech_revolution_ger
-			NOT = {
-				has_global_flag = TR_czech_revolution_end_conservatism
+			has_global_flag = TR_CZE_REV
+		}
+		bypass = {
+			CZE {
+				has_government = communism
+				has_government = socialism
 			}
 		}
 		completion_reward = {

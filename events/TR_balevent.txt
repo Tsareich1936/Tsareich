@@ -16,6 +16,11 @@ country_event = {#プラハ革命
 			has_global_flag = TR_CZE_BANcom
 		}
 	}
+	immediate = {
+		hidden_effect =  {
+			set_global_flag = TR_CZE_REV
+		}
+	}
 	option = {
 		name = TR_czech_revolution.1.a #彼らに政権を引き渡そう...
 		ai_chance = {
@@ -72,6 +77,11 @@ country_event = {#プラハ暴動失敗
 		date > 1939.1.1
 		has_global_flag = TR_CZE_BANcom
 	}
+	immediate = {
+		hidden_effect =  {
+			set_global_flag = TR_CZE_REV
+		}
+	}
 	option = {
 		name = TR_czech_revolution.2.a #反乱軍は事前に鎮圧された
 		ai_chance = { factor = 100 }
@@ -84,7 +94,7 @@ country_event = {#プラハ暴動失敗
 			    }
 		    }
 	    }
-	    13 = { #反乱1
+	    15 = { #反乱1
 		    GER = {
 			    country_event = {
 				    id = TR_czech_revolution.8
@@ -92,14 +102,14 @@ country_event = {#プラハ暴動失敗
 			    }
 		    }
 		}	
-		2 = { #反乱2
-		    GER = {
-				country_event = {
-					id = TR_czech_revolution.9
-					days = 3
-				}
-			}
-        }	
+		#2 = { #反乱2
+		#    GER = {
+		#		country_event = {
+		#			id = TR_czech_revolution.9
+		#			days = 3
+		#		}
+		#	}
+        #}	
     }
 }
 
@@ -196,6 +206,10 @@ country_event = {#チェコ革命の失敗
 	option = {
 		name = TR_czech_revolution.7.a
 		ai_chance = { factor = 100 }
+		create_wargoal = {
+			target = CZE
+			type =  annex_everything
+		}
 	}
 }
 country_event = {#シレジアでスラブ人が蜂起！
