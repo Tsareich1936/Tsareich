@@ -28,7 +28,14 @@ TR_USA_coup = {
 				target = PREV
 				type = civil_war
 			}
-			add_civil_war_target = prev
+			add_civil_war_target = PREV
+			PREV = {
+				add_to_war = {
+					targeted_alliance = THIS
+					enemy = PREV
+				}
+			}
 		}
 	}
+	
 }

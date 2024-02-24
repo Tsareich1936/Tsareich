@@ -755,6 +755,9 @@ add_namespace = TR_usa_civil_war_legacy
 					target = CSA
 					size = 0.2
 				}
+				FGA = {
+					clr_country_flag = USA_federation_flag
+				}
 				set_country_flag = USA_federation_flag
 			}
 			CSA = {
@@ -778,6 +781,9 @@ add_namespace = TR_usa_civil_war_legacy
 			}
 			set_popularities = {
 				conservatism = 100
+			}
+			CSA = {
+				clr_country_flag = USA_CSA_flag
 			}
 			set_country_flag = USA_CSA_flag
 			set_cosmetic_tag = CSA
@@ -959,6 +965,10 @@ add_namespace = TR_usa_civil_war_legacy
 					}
 					load_focus_tree = generic_focus
 					TR_USA_coup = yes
+					declare_war_on = {
+						target = FGA
+						type = civil_war
+					}
 					division_template = {
 						name = "Milita Division"
 						regiments = {
@@ -1298,6 +1308,21 @@ add_namespace = TR_usa_civil_war_legacy
 		immediate = {
 			USA = {
 				retire_character = USA_earl_browder
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 361
+							state = 362
+							state = 1035
+							state = 1036
+						}
+					}
+					create_unit = {
+						division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+						owner = USA
+						count = 5
+					}
+				}
 			}
 			ADR = {
 				recruit_character = USA_earl_browder

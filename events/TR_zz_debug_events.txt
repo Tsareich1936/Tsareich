@@ -419,3 +419,16 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = TR_debug.11
+
+	is_triggered_only = yes
+	option = {
+		ENG = {
+			add_to_war = {
+				targeted_alliance = RUS
+				enemy = POL
+			}
+		}
+	}
+}
