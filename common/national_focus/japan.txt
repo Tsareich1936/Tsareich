@@ -1210,7 +1210,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_agrarian_reform_1
-        icon = GFX_land_reform
+        icon = GFX_land_reform1
         relative_position_id = jap_social_reform
         x = -2
         y = 1
@@ -1228,7 +1228,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_agrarian_reform_2
-        icon = GFX_land_reform
+        icon = GFX_land_reform2
         relative_position_id = jap_agrarian_reform_1
         x = 0
         y = 1
@@ -1317,7 +1317,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_pollution
-        icon = GFX_Pollution_measures
+        icon = GFX_Pollution_measures1
         relative_position_id = jap_social_reform
         x = 0
         y = 1
@@ -1338,7 +1338,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_pollution_2
-        icon = GFX_Pollution_measures
+        icon = GFX_Pollution_measures2
         relative_position_id = jap_pollution
         x = 0
         y = 1

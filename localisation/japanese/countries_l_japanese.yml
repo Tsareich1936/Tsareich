@@ -1456,6 +1456,7 @@
  MEN: "蒙古国"
  MEN_DEF: "蒙古国"
  MEN_ADJ: "蒙疆"
+ KOR_government_general: "朝鮮総督府"
  KOR_fascism: "独立朝鮮総督府"
  KOR_fascism_DEF: "独立朝鮮総督府"
  KOR_democratic: "大韓民国"
@@ -6458,3 +6459,6 @@
  EXC_DEF: "広東"
  EXC_ADJ: "広東"
 
+ JCH: "中国総督府"
+ JCH_DEF: "中国総督府"
+ JCH_ADJ: "中国総督府"

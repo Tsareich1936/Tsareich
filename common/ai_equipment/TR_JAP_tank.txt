@@ -5,7 +5,7 @@ JAP_light_tanks = {
 
 	blocked_for = {}
 
-	available_for = { JAP }
+	available_for = { JAP JCH}
 
 	roles = {
 		armor

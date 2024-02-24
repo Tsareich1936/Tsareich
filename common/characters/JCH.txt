@@ -1,0 +1,14 @@
+characters = {
+	JCH_Kohaku_Chin = {
+		name = JCH_Kohaku_Chin
+		portraits = {
+			civilian = {
+				large = GFX_300px-Chen_Gong-bo_Mayor_Shanghai_1943
+			}
+		}
+		country_leader={
+			ideology = despotism	
+		}
+	}
+	
+}

@@ -2106,6 +2106,11 @@ country_event = {
 	hidden = yes
 	immediate = {
 		puppet = KOR
+		set_autonomy = {
+			target = THIS
+			autonomy_state = government_general
+		}
+		
 	}
 }
 
@@ -2187,8 +2192,14 @@ country_event = {
 				transfer_state = 759
 				transfer_state = 760
 			}
+			JAP = {
+				add_to_faction = OTT
+			}
 			hidden_effect = {
-				inherit_technology = OTT
+				OTT= {
+					inherit_technology = JAP
+				}
+
 				OTT = {
 					create_country_leader = {
 						name = OTT_Caliph_Abdulmecid_II
@@ -3302,6 +3313,250 @@ country_event = {
 				target = VIN
 				type = puppet_wargoal_focus
 			}
+		}
+	}
+}
+country_event = {
+	id = TR_japan.118
+	title = TR_japan.118.t
+	desc = TR_japan.118.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = TR_japan.118.a
+		JCH = {
+			transfer_state = 613
+			transfer_state = 598
+			transfer_state = 606
+			transfer_state = 749
+			transfer_state = 596
+		}
+		hidden_effect = {
+			JAP = {
+				puppet = JCH
+			}
+			JCH = {
+				create_country_leader = {
+					name = JCH_Kohaku_Chin
+					picture = GFX_300px-Chen_Gong-bo_Mayor_Shanghai_1943
+					ideology = despotism
+				}
+				set_politics = {
+					ruling_party = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 1
+				}
+				inherit_technology = JAP
+				army_experience = 200
+			}
+			613 = {
+				add_core_of = JCH
+			}
+			716 = {
+				add_core_of = JCH
+			}
+			717 = {
+				add_core_of = JCH
+			}
+			714 = {
+				add_core_of = JCH
+			}
+			761 = {
+				add_core_of = JCH
+			}
+			715 = {
+				add_core_of = JCH
+			}
+			612 = {
+				add_core_of = JCH
+			}
+			610 = {
+				add_core_of = JCH
+			}
+			609 = {
+				add_core_of = JCH
+			}
+			611 = {
+				add_core_of = JCH
+			}
+			608 = {
+				add_core_of = JCH
+			}
+			597 = {
+				add_core_of = JCH
+			}
+			614 = {
+				add_core_of = JCH
+			}
+			615 = {
+				add_core_of = JCH
+			}
+			621 = {
+				add_core_of = JCH
+			}
+			746 = {
+				add_core_of = JCH
+			}
+			622 = {
+				add_core_of = JCH
+			}
+			283 = {
+				add_core_of = JCH
+			}
+			616 = {
+				add_core_of = JCH
+			}
+			754 = {
+				add_core_of = JCH
+			}
+			755 = {
+				add_core_of = JCH
+			}
+			756 = {
+				add_core_of = JCH
+			}
+			604 = {
+				add_core_of = JCH
+			}
+			759 = {
+				add_core_of = JCH
+			}
+			750 = {
+				add_core_of = JCH
+			}
+			287 = {
+				add_core_of = JCH
+			}
+			619 = {
+				add_core_of = JCH
+			}
+			617 = {
+				add_core_of = JCH
+			}
+			618 = {
+				add_core_of = JCH
+			}
+			598 = {
+				add_core_of = JCH
+			}
+			606 = {
+				add_core_of = JCH
+			}
+			607 = {
+				add_core_of = JCH
+			}
+			620 = {
+				add_core_of = JCH
+			}
+			600 = {
+				add_core_of = JCH
+			}
+			749 = {
+				add_core_of = JCH
+			}
+			596 = {
+				add_core_of = JCH
+			}
+			595 = {
+				add_core_of = JCH
+			}
+			600 = {
+				add_core_of = JCH
+			}
+			620 = {
+				add_core_of = JCH
+			}
+			602 = {
+				add_core_of = JCH
+			}
+			750 = {
+				add_core_of = JCH
+			}
+			593 = {
+				add_core_of = JCH
+			}
+			592 = {
+				add_core_of = JCH
+			}
+			594 = {
+				add_core_of = JCH
+			}
+			591 = {
+				add_core_of = JCH
+			}
+			599 = {
+				add_core_of = JCH
+			}
+			750 = {
+				add_core_of = JCH
+			}
+			748 = {
+				add_core_of = JCH
+			}
+			603 = {
+				add_core_of = JCH
+			}
+			325 = {
+				add_core_of = JCH
+			}
+			747 = {
+				add_core_of = JCH
+			}
+			751 = {
+				add_core_of = JCH
+			}
+			752 = {
+				add_core_of = JCH
+			}
+			328 = {
+				add_core_of = JCH
+			}
+			744 = {
+				add_core_of = JCH
+			}
+			605 = {
+				add_core_of = JCH
+			}
+			753 = {
+				add_core_of = JCH
+			}
+			601 = {
+				add_core_of = JCH
+			}
+			760 = {
+				add_core_of = JCH
+			}
+			
+		}
+	}
+	option = {
+		name = TR_japan.118.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = TR_japan.119
+	title = TR_japan.119.t
+	desc = TR_japan.119.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.119.a
+		every_state = {
+			limit = {
+				is_core_of = JCH
+				is_controlled_by = JAP
+			}
+			transfer_state_to = JCH
+		}
+	}
+	option = {
+		name = TR_japan.119.b
+		hidden_effect = {
+			set_country_flag = TR_japan.CHI
 		}
 	}
 }

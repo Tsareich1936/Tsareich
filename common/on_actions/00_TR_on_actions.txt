@@ -168,6 +168,62 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					613 = {
+						is_fully_controlled_by = controller
+						controller = {
+							or = {
+								tag = JAP
+								is_puppet_of = JAP
+							}
+						}
+					}
+					598 = {
+						is_fully_controlled_by = controller
+						controller = {
+							or = {
+								tag = JAP
+								is_puppet_of = JAP
+							}
+						}
+					}
+					606 = {
+						is_fully_controlled_by = controller
+						controller = {
+							or = {
+								tag = JAP
+								is_puppet_of = JAP
+							}
+						}
+					}
+					749 = {
+						is_fully_controlled_by = controller
+						controller = {
+							or = {
+								tag = JAP
+								is_puppet_of = JAP
+							}
+						}
+					}
+					596 = {
+						is_fully_controlled_by = controller
+						controller = {
+							or = {
+								tag = JAP
+								is_puppet_of = JAP
+							}
+						}
+					}	
+				}
+				JAP = {
+					country_event = {
+						id = TR_japan.118
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
 					has_war_with_major = yes
 				}
 				mark_focus_tree_layout_dirty = yes
@@ -248,6 +304,22 @@ on_actions = {
 				}
 			}
 		}
+		effect = {
+			if = {
+				limit = {
+					any_controlled_state = {
+						is_core_of = JCH
+					}
+					not = {
+						has_country_flag = TR_japan.CHI
+					}
+				}
+				set_state_flag = TR_JCH_core
+				country_event = {
+					id = TR_japan.119
+				}
+			}
+		}
 	}
 	on_monthly = {
 		effect = {
@@ -313,7 +385,7 @@ on_actions = {
 						}
 					}
 					760 = {
-					is_fully_controlled_by = controller
+					    is_fully_controlled_by = controller
 						controller = {
 							OR = {
 								is_puppet_of = JAP
