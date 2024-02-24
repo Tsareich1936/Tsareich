@@ -124,7 +124,19 @@ JAP_historical_plan_war = {
 		}
 	}
 	abort = {
-		always = no
+		or = {
+			JAP = {
+				surrender_progress > 0.05
+			}
+			not = {
+				526 = {
+					is_controlled_by = JAP
+				}
+				645 = {
+					is_controlled_by = JAP
+				}
+			}
+		}
 	}
 
 	ai_national_focuses = {
@@ -135,6 +147,7 @@ JAP_historical_plan_war = {
 		jap_AIRFORCE_2_1
 		jap_war_economy
 		jap_AIRFORCE_2_2
+		jap_war_plan
 		jap_AIRFORCE_2_3
 	}
 
@@ -154,6 +167,42 @@ JAP_historical_plan_war = {
 		}
 	}
 
+}
+
+JAP_final_war = {
+	name = "TR_japan_final"
+	desc = "TR_japan_final_desc"
+	allowed = {
+		tag = JAP
+	}
+	enable = {
+		or = {
+			JAP = {
+				surrender_progress > 0.05
+			}
+			not = {
+				526 = {
+					is_controlled_by = JAP
+				}
+				645 = {
+					is_controlled_by = JAP
+				}
+			}
+		}
+	}
+	abort = {
+		always = no
+	}
+	ai_national_focuses = {
+		jap_No_defeat
+		jap_Metal_Supply_and_Order
+		jap_student_going_war
+		jap_psychological_mobilization
+		jap_volunteer_corps
+		jap_Kamikaze
+		jap_National_Volunteer_Army
+		jap_Operation_Ketsu
+	}
 }
 
 JAP_historical_plan_RS_war_1 = {

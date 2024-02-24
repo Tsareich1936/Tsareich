@@ -233,6 +233,21 @@ on_actions = {
 				}
 			}
 		}
+		effect = {
+			if = {
+				limit = {
+					has_war_with = GER
+					has_war_with = FRA
+					has_war_with = SRI
+					GER = {
+						is_puppet = no
+					}
+				}
+				country_event = {
+					id = TR_japan.112
+				}
+			}
+		}
 	}
 	on_monthly = {
 		effect = {

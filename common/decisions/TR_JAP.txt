@@ -1555,7 +1555,7 @@ JAP_NAVAL_PLAN_3 = {
 					name_group = JAP_DE_HISTORICAL
 					parent_version = 0
 					modules = {
-						fixed_ship_battery_slot = dp_light_battery_1
+						fixed_ship_battery_slot = dp_light_battery_2
 						fixed_ship_anti_air_slot = ship_anti_air_2
 						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 						fixed_ship_radar_slot = empty
@@ -2385,6 +2385,9 @@ JAP_WAR_PLAN_CREATE = {
 		ai_will_do = {
 			base = 300
 		}
+		remove_effect = {
+			add_ideas = JAP_for_war
+		}
 		days_remove = 120
 	}
 	FOR_WAR_3 = {
@@ -2516,7 +2519,7 @@ JAP_WAR_PLAN_CREATE_2 = {
 				add = -5
 				has_country_flag = {
 					flag = TR_japan.INS
-					days > 365
+					days < 365
 				}
 			}
 		}
@@ -2548,13 +2551,13 @@ JAP_WAR_PLAN_CREATE_2 = {
 				add = -45
 				has_country_flag = {
 					flag = TR_japan.USA
-					days > 365
+					days < 365
 				}
 			}
 			modifier = {
 				add = -5
 				has_country_flag = {
-					flag = TR_japan.FGE
+					flag = TR_japan.FRA
 					days < 365
 				}
 			}

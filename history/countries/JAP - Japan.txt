@@ -1007,6 +1007,7 @@ if = {
 				mid_1_custom_slot = ship_torpedo_2
 				rear_1_custom_slot = ship_depth_charge_1
 			}
+			obsolete = yes
 		}
 		create_equipment_variant = {
 			name = "Yugumo Class"
@@ -1015,7 +1016,7 @@ if = {
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = dp_light_battery_2
-				fixed_ship_anti_air_slot = dp_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = light_ship_engine_2

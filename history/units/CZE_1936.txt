@@ -47,6 +47,23 @@ division_template = {
 }
 
 division_template = {
+	name = "motorizované divize"					# Infantry Division
+	division_names_group = CZE_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
 	name = "Rychlá divize"	#Fast division		
 	division_names_group = CZE_ARM_01
 	regiments = {
@@ -66,7 +83,7 @@ division_template = {
 		mot_anti_air_brigade = { x = 3 y = 1 }
 		mot_anti_air_brigade = { x = 3 y = 2 }
 		mot_anti_air_brigade = { x = 3 y = 3 }
-	light_armor = { x = 4 y = 0 }
+	motorized = { x = 4 y = 0 }
 	}
 	support = {
 		mot_recon = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
@@ -87,7 +104,7 @@ units = {
 		division_template = "Rychlá divize"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1
-		force_equipment_variants = { light_tank_equipment_2 = { owner = "CZE" } }
+		force_equipment_variants = { light_tank_chassis_2 = { owner = "CZE" version_name = "TNH" } }
 	}
 	division = { # "2. fast"
 	division_name = {
@@ -98,12 +115,12 @@ units = {
 	division_template = "Rychlá divize"
 	start_experience_factor = 0.2
 	start_equipment_factor = 1
-	force_equipment_variants = { light_tank_equipment_2 = { owner = "CZE" } }
+	force_equipment_variants = { light_tank_chassis_2 = { owner = "CZE" version_name = "TNH" } }
     }
 	division = { # "1. divize"
 		name = "1. divize"
 		location = 11542
-		division_template = "Pěší divize"
+		division_template = "motorizované divize"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -111,7 +128,7 @@ units = {
 	division = { # "2. divize"
 		name = "2. divize"
 		location = 6440
-		division_template = "Pěší divize"
+		division_template = "motorizované divize"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -120,7 +137,7 @@ units = {
 	division = { # "3. divize"
 		name = "3. divize"
 		location = 9414
-		division_template = "Pěší divize"
+		division_template = "motorizované divize"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -130,7 +147,7 @@ units = {
 	division = { # "4. divize"
 		name = "4. divize"
 		location = 9569
-		division_template = "Pěší divize"
+		division_template = "motorizované divize"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -162,10 +179,30 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_2
+			type = light_tank_chassis_2
+			creator = "CZE"
+			version_name = "TNH"
+		}
+		requested_factories = 3
+		progress = 0.48
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
 			creator = "CZE"
 		}
-		requested_factories = 2
+		requested_factories = 1
+		progress = 0.48
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "CZE"
+		}
+		requested_factories = 1
 		progress = 0.48
 		efficiency = 100
 	}

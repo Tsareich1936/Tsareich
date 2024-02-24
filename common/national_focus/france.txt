@@ -1214,7 +1214,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
-						building = industrial_complex
+						building = synthetic_refinery
 						size > 0
 						include_locked = yes
 					}

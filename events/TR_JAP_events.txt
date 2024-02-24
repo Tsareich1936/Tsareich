@@ -150,12 +150,12 @@ country_event = {      # 一か年計画
 		ai_chance = {
 			base = 1
 			modifier = {
-				has_war = yes
-				factor = 10
+				has_war_with_major = yes
+				factor = 0
 			}
 			modifier = {
-				has_war = no
-				factor = 60
+				date > 1938.1.1
+				factor = 0.05
 			}
 		}
 		hidden_effect = {
@@ -174,12 +174,15 @@ country_event = {      # 一か年計画
 		ai_chance = {
 			base = 1
 			modifier = {
-				has_war = yes
-				factor = 45
+				has_war_with_major = no
+				factor = 0.25
 			}
 			modifier = {
-				has_war = no
-				factor = 20
+				or = {
+					has_war_with_major = yes
+					date < 1938.1.1
+				}
+				factor = 0.6
 			}
 		}
 		hidden_effect = {
@@ -198,12 +201,15 @@ country_event = {      # 一か年計画
 		ai_chance = {
 			base = 1
 			modifier = {
-				has_war = yes
-				factor = 45
+				has_war_with_major = no
+				factor = 0.25
 			}
 			modifier = {
-				has_war = no
-				factor = 20
+				or = {
+					has_war_with_major = yes
+					date < 1938.1.1
+				}
+				factor = 0.3
 			}
 		}
 		hidden_effect = {
@@ -1592,7 +1598,7 @@ country_event = { # against FRA
 			puppet = VIN
 		}
 		ai_chance = {
-			base = 1
+			base = 0
 		}
 	}
 	option = {
@@ -1609,7 +1615,7 @@ country_event = { # against FRA
 			}
 		}
 		ai_chance = {
-			base = 0
+			base = 1
 		}
 	}
 }
@@ -2831,116 +2837,77 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		if= {
-			limit = {
-				SIK = {
-					is_in_faction_with = MAN
-				}
+
+		SIK = {
+			country_event = {
+				id = TR_japan.102
 			}
-			SIK = {
-				country_event = {
-					id = TR_japan.102
-				}
-			}
+			
 		}
-		if= {
-			limit = {
-				XSM = {
-					is_in_faction_with = MAN
-				}
+		XSM = {
+			country_event = {
+				id = TR_japan.103
 			}
-			XSM = {
-				country_event = {
-					id = TR_japan.103
-				}
-			}
-		}
-		if= {
-			limit = {
-				SIC = {
-					is_in_faction_with = MAN
-				}
-			}
-			SIC = {
-				country_event = {
-					id = TR_japan.104
-				}
-			}
+			
 		}
 
-		if= {
-			limit = {
-				YUN = {
-					is_in_faction_with = MAN
-				}
-			}
-			YUN = {
-				country_event = {
-					id = TR_japan.105
-				}
+		SIC = {
+			country_event = {
+				id = TR_japan.104
 			}
 		}
-		if= {
-			limit = {
-				GZH = {
-					is_in_faction_with = MAN
-				}
-			}
-			GZH = {
-				country_event = {
-					id = TR_japan.106
-				}
+		
+		YUN = {
+			country_event = {
+				id = TR_japan.105
+				
 			}
 		}
-
-		if= {
-			limit = {
-				HNA = {
-					is_in_faction_with = MAN
-				}
-			}
-			HNA = {
-				country_event = {
-					id = TR_japan.107
-				}
+		GZH = {
+			country_event = {
+				id = TR_japan.106
+				
 			}
 		}
-		if= {
-			limit = {
-				GXC = {
-					is_in_faction_with = MAN
-				}
-			}
-			GXC = {
-				country_event = {
-					id = TR_japan.108
-				}
+		HNA = {
+			country_event = {
+				id = TR_japan.107
+				
 			}
 		}
-
-		if= {
-			limit = {
-				FJN = {
-					is_in_faction_with = MAN
-				}
-			}
-			FJN = {
-				country_event = {
-					id = TR_japan.109
-				}
+		GXC = {
+			country_event = {
+				id = TR_japan.108
 			}
 		}
-
-		if= {
-			limit = {
-				HNA = {
-					is_in_faction_with = MAN
-				}
+		FJN = {
+			country_event = {
+				id = TR_japan.109
 			}
-			HNA = {
-				country_event = {
-					id = TR_japan.110
-				}
+		}
+		HNA = {
+			country_event = {
+				id = TR_japan.110
+			}
+		}
+		EXC = {
+			country_event = {
+				id = TR_japan.113
+			}
+		}
+		PRC = {
+			country_event = {
+				id = TR_japan.114
+			}
+		}
+		SAN = {
+			country_event = {
+				id = TR_japan.115
+			}
+		}
+		SHX = {
+			country_event = {
+				id = TR_japan.116
 			}
 		}
 		
@@ -3223,6 +3190,128 @@ country_event = {
 		}
 		ai_chance = {
 			base = 7
+		}
+	}
+}
+
+country_event = {
+	id = TR_japan.112
+	is_triggered_only = yes
+	fire_only_once = yes
+	title = TR_japan.112.t
+	desc = TR_japan.112.d
+	option = {
+		name = TR_japan.112.a
+		add_ideas = TR_final_war
+	}
+}
+country_event = {
+	id = TR_japan.113
+	title = TR_japan.102.t
+	desc = TR_japan.102.
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.102.a
+		MAN = {
+			
+			annex_country = {
+				target = EXC
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = TR_japan.102.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = TR_japan.114
+	title = TR_japan.102.t
+	desc = TR_japan.102.
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.102.a
+		MAN = {
+			
+			annex_country = {
+				target = PRC
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = TR_japan.102.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = TR_japan.115
+	title = TR_japan.102.t
+	desc = TR_japan.102.
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.102.a
+		MAN = {
+			
+			annex_country = {
+				target = SAN
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = TR_japan.102.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = TR_japan.116
+	title = TR_japan.102.t
+	desc = TR_japan.102.
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.102.a
+		MAN = {
+			
+			annex_country = {
+				target = SHX
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = TR_japan.102.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = TR_japan.117
+	title = TR_japan.117.t
+	desc = TR_japan.117.d
+	is_triggered_only = yes
+	option = {
+		name = TR_japan.117.a
+		VIN = {
+			country_event = TR_japan.55
+			leave_faction = yes
+		}
+	}
+	option = {
+		name = TR_japan.117.b
+		JAP = {
+		    create_wargoal = {
+				target = VIN
+				type = puppet_wargoal_focus
+			}
 		}
 	}
 }

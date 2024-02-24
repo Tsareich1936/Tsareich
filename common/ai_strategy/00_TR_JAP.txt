@@ -281,7 +281,7 @@ JAP_NAVY = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_carrier
-		value = 6
+		value = 8
 	}
 	ai_strategy = {
 		type = role_ratio
@@ -341,11 +341,6 @@ JAP_NAVY_1 = {
 	}
 	ai_strategy = {
 		type = role_ratio
-		id = naval_capital_bb
-		value = 20
-	}
-	ai_strategy = {
-		type = role_ratio
 		id = naval_carrier
 		value = 24
 	}
@@ -382,12 +377,12 @@ JAP_NAVY_1 = {
 	ai_strategy = {
 		type = unit_ratio
 		id = submarine
-		value = 30
+		value = 20
 	}
 	ai_strategy = {
 		type = unit_ratio
 		id = light_cruiser
-		value = 60
+		value = 40
 	}
 	ai_strategy = {
 		type = unit_ratio
