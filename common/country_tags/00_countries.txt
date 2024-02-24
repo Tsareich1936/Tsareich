@@ -273,6 +273,7 @@ OTT = "countries/Ottoman Empire.txt"
 BKN = "countries/Wuhan.txt"
 SAN = "countries/Santou.txt"
 EXC = "countries/Kanton.txt"
+JCH = "countries/Japan_China.txt"
 
  # CSA = "countries/CSA.txt"
  # ARP = "countries/American Republic.txt"

@@ -1,0 +1,21 @@
+capital = 613
+
+set_stability = 0.5
+set_war_support = 0.5
+
+set_research_slots = 3
+add_ideas = {
+	free_trade
+	extensive_conscription
+	war_economy
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.2.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	neutrality  = 100
+}
+recruit_character = JCH_Kohaku_Chin

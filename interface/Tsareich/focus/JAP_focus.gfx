@@ -32,7 +32,23 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/Tsareich/Pollution_measures.dds"
 	}
 	spriteType = {
+		name = "GFX_Pollution_measures1"
+		textureFile = "gfx/interface/goals/Tsareich/Pollution_measures1.dds"
+	}
+	spriteType = {
+		name = "GFX_Pollution_measures2"
+		textureFile = "gfx/interface/goals/Tsareich/Pollution_measures2.dds"
+	}
+	spriteType = {
 		name = "GFX_land_reform"
 		textureFile = "gfx/interface/goals/Tsareich/land_reform.dds"
+	}
+	spriteType = {
+		name = "GFX_land_reform1"
+		textureFile = "gfx/interface/goals/Tsareich/land_reform1.dds"
+	}
+	spriteType = {
+		name = "GFX_land_reform2"
+		textureFile = "gfx/interface/goals/Tsareich/land_reform2.dds"
 	}
 }
