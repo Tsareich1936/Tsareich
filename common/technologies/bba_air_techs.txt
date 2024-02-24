@@ -463,7 +463,7 @@ technologies = {
 			}
 			modifier = {
 				tag = JAP
-				factor = 5
+				factor = 10
 			}
 			modifier = {
 				has_deployed_air_force_size = {
@@ -1145,6 +1145,10 @@ technologies = {
 				factor = 3
 			}
 			modifier = {
+				tag = JAP
+				factor = 5
+			}
+			modifier = {
 				has_War = yes
 				factor = 3
 			}
@@ -1534,7 +1538,7 @@ technologies = {
 			}
 			modifier = {
 				tag = JAP
-				factor = 5
+				factor = 10
 			}
 			modifier = {
 				num_of_military_factories < 10
@@ -1663,6 +1667,10 @@ technologies = {
 			modifier = {
 				date > "1939.1.1"
 				factor = 3
+			}
+			modifier = {
+				tag = JAP
+				factor = 5
 			}
 			modifier = {
 				OR = {
