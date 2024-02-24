@@ -126,10 +126,15 @@ JAP_army_product = {
 		}
 	}
 	ai_strategy = {
-		type = equipment_production_factor
-		id = motorized
-		value = 5
+		type = air_factory_balance
+		value = 0
 	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = train
+		value = 1
+	}
+	
 }
 
 JAP_army_product_1 = {
@@ -150,7 +155,11 @@ JAP_army_product_1 = {
 		value = 30
 	}
 
-
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = train
+		value = 1
+	}
 
 
 }
@@ -169,7 +178,7 @@ JAP_army_product_2 = {
 	}
 	ai_strategy = {
 		type = equipment_production_min_factories
-		id = medium_armor
+		id = armor
 		value = 20
 	}
 	ai_strategy = {
@@ -183,10 +192,14 @@ JAP_army_product_2 = {
 	}
 	ai_strategy = {
 		type = equipment_production_min_factories
-		id = air_heavy_fighter
+		id = heavy_fighter
 		value = 20
 	}
-
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = train
+		value = 1
+	}
 }
 JAP_army_product_2 = {
 	allowed = {	tag = JAP }
@@ -227,7 +240,11 @@ JAP_army_product_2 = {
 		id = air_tactical_bomber
 		value = 15
 	}
-
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = train
+		value = 1
+	}
 }
 
 
@@ -254,7 +271,7 @@ JAP_NAVY = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_escort
-		value = 30
+		value = 0
 	}
 	ai_strategy = {
 		type = role_ratio
@@ -325,7 +342,7 @@ JAP_NAVY_1 = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_escort
-		value = 30
+		value = 0
 	}
 	ai_strategy = {
 		type = role_ratio
