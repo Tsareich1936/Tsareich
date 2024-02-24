@@ -1,0 +1,73 @@
+TEST_parliament = {
+	reset = {
+		priority = 10
+		complete_effect = {
+			clear_array = parliament_seat_array
+			GER_parliament_seat_position = yes
+		}
+	}
+	add_red = {
+		priority = 9
+		complete_effect = {
+			# add_to_array = {
+			# 	array = parliament_seat_array
+			# 	value = 1
+			# }
+			for_loop_effect = {
+				start = 1
+				end = 489
+				compare = less_than_or_equals
+				add = 1
+				add_to_array = {
+					array = parliament_seat_array
+					value = 1
+				}
+			}
+		}
+	}
+	add_pup = {
+		priority = 8
+		complete_effect = {
+			for_loop_effect = {
+				start = 1
+				end = 12
+				compare = less_than_or_equals
+				add = 1
+				add_to_array = {
+					array = parliament_seat_array
+					value = 2
+				}
+			}
+		}
+	}
+	add_bul = {
+		priority = 7
+		complete_effect = {
+			for_loop_effect = {
+				start = 1
+				end = 12
+				compare = less_than_or_equals
+				add = 1
+				add_to_array = {
+					array = parliament_seat_array
+					value = 3
+				}
+			}
+		}
+	}
+	add_gre = {
+		priority = 6
+		complete_effect = {
+			for_loop_effect = {
+				start = 1
+				end = 12
+				compare = less_than_or_equals
+				add = 1
+				add_to_array = {
+					array = parliament_seat_array
+					value = 4
+				}
+			}
+		}
+	}
+}
