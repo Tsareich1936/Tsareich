@@ -13,7 +13,78 @@ focus_tree = {
 	initial_show_position = {
 		focus = TR_USA_1936_presidential_election
 	}
-
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM""""""""7????????????""""""""WMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMY""7!`                  `  ` `                    _?"""HMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM""=`           ....-__(:;::;::;;:;;:;:;;;::;:;:;:_--.....           ?"TWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMY"=`        ..._(:::::::;::<+++++++++++&&gggg&&++++++++++<:::::;;;;:;_-...        ?"YMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM9"`      ...(::;;:;:<++++gQkH@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@HHmmaJJ+<:::::::_-..       ?THMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMB"`      ..(;::;:<jj+gW@@@@@@@@@@@@@@@@@@@@@@@@@g@@g@@@@@@g@@g@g@@@@@@@@@@@@@@@@@@HmaJ+<;:::::-..      ?"MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM9^     .._::;:;+j+gH@@@@@@@@@@@@@@@@g@@@@g@g@ggg@gg@g@g@gggg@g@g@@g@ggg@g@@g@@g@@@@@@@@@@@@@@HmaJ+;::::_..     _TMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM@=     ..(:;:;jjgW@@@@@@@@@@@@@@g@@@g@g@gg@gg@@gg@g@g@gg@g@gW@g@g@ggg@g@@g@ggg@g@g@ggg@g@@g@@@@@@@@@@@@Hm&+<::::_.     (TMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"`    ..::::+jgW@@@@@@@@@@@@@@g@g@g@gg@@gg@@gg@ggg@gg@gg@g@gggg ?777"4@ggggg@g@g@gg@g@g@gg@g@g@gg@@g@@@@@@@@@@@NmJ+;:::_.     7WMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM#"     .(:;:+jgH@@@@@@@@@@@@@g@@gg@g@g@g@gggg@gg@gg@ggg@ggggggggggg      ,gggg@ggggggggggg@g@gg@g@g@g@g@gg@@g@@@@@@@@@@@mg+::::-.    ?WMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"    ..;::<jgH@@@@@@@@@@@@g@@gg@g@g@g@ggg@g@gg@gggggggggggggggggggggg(Jgkma.ggggggggggg@ggggggg@gggg@ggg@g@gg@gg@g@g@@@@@@@@@@mJ<:;:_.    ?WMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMD!   ..;:;+jd@@@@@@@@@@@@@g@@g@g@g@gg@gg@gggggggggggggggggggggggggggggggJgggggggggggggggggggggggggggggggg@gg@g@g@@gg@g@g@g@@@@@@@@@@Ha+:;;_.    7MMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMM#=    .;:;+jd@@@@@@@@@@@@g@@g@g@gg@g@g@gggggg@gggggggggggggggggggggggggggHY?Wggggggggggggggggggggggggggggggggggggggg@g@g@g@g@g@g@@@@@@@@@@Na+:::_.   .TMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMM@'   .(:;;jd@@@@@@@@@@@@g@@g@gg@gg@gggggggg@ggggggggggggggggggggggggggHY"!   .   ?TWmgmgggggggggggggggggggggggggggggggggg@ggg@g@g@gg@g@@@@@@@@@Na<;;<-    TMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMD    .::;j&@@@@@@@@@@@@@@g@g@g@g@g@gg@g@ggggggggggggggggggggggggggggBY=   ..~~~~~~_..  .74Hmmgggggggggggggggggggggggggg@ggggg@gg@g@g@@g@g@g@@@@@@@@@mJ::;_.   7MMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMM@`   .:::jd@@@@@@@@@@@@@g@g@@gg@g@ggg@ggggggggggggggggggggggggmgmHY"`  .._~~~~~~~~~~~~~~~_..  _"UHmmmmmmgggggggggggggggggggggggg@gggggg@gg@g@@g@@@@@@@@@Nx<::<.   7MMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMM@`   .;:;jW@@@@@@@@@@@@@@g@gg@g@ggggg@gggggggggggggggggggH"""""""!  .._~~~~~~~~~~~~~~~~~~~~~~~~~_..  ?""""""7mmmggggggggggggggggggggg@gg@gg@@g@g@@g@@@@@@@@@Ha<:;<.   TMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMM^   .::;jH@@@@@@@@@@@@@gg@@g@@gg@gg@ggggggggggggggggggmmmmH     .._~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_..    .mmmmmmmggggggggggggggggggg@ggg@gg@g@g@g@g@@@@@@@@He<:;_.  .UMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMD   .;;:jW@@@@@@@@@@@@@@@g@gg@ggggg@gggggggggggggggggmmmBY=`  ._~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_.  -74Hmmmmmggmgggggggggggggggg@gggg@g@@g@@@g@@@@@@@@He:::_   /MMMMMMMMMMMMM
+	# MMMMMMMMMMMMM'   (:;jd@@@@@@@@@@@@@g@gg@@gg@gg@gggggggggggggggggmmmgmmH,..                                                     ..(mmmgmmmmmgmggggggggggggggggg@ggg@g@g@@@g@@@@@@@@@NJ:;<.   WMMMMMMMMMMM
+	# MMMMMMMMMMMD   .;:;j@@@@@@@@@@@@@@g@g@g@g@ggg@gggggggggggggggmgmmgmmmmmmm$~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~dqqmmmmmmmmmmmmgmgggggggggggggg@gg@gg@gg@g@@g@@@@@@@@@m<::_   ?MMMMMMMMMM
+	# MMMMMMMMMMD   .;:+d@@@@@@@@@@@@@@g@@@g@gg@gg@gggggggggggggmgmmP????jmmmmmr....`..`.`..`..`.`.`.`.`..`..`..`..`.`.`.`.``.`.`.`..dqmmmH?????mmgmmmgmgggggggggggggg@gg@g@gg@@@@g@@@@@@@@@N+;;<.  ,MMMMMMMMM
+	# MMMMMMMMM%   (::jH@@@@@@@@@@@@@@g@g@gg@g@ggggggggggggggggmgmmm]    .mmmmq\`  ``  ` `  ` `  ` ` ` ` ` ` ` `  `  ` ` `` `` ``  ` dHqqmH     mmmgmgmmgmgggggggggggggggg@g@@gg@g@@@@@@@@@@@@e::;.  .MMMMMMMM
+	# MMMMMMMM^   ::;j@@@@@@@@@@@N=77777777777777777777777777C77C777^   ..7777i.     .........-      ..........-      ...........     .1777.    777777777777777777777777777C777777jg@@@@@@@@@@@m:::-  .MMMMMMM
+	# MMMMMMM%   ;::j@@@@@@@@@@@@@}   <:<<::;    .(((:((~    >:>><<<    .((((((_   _:~:_~:~:~~~~_   ~~:~~:__~:~~~_   ~~~:~~:~~~~:~   .((((((     >><>>::    (((((((     :<:><<:   J@g@@g@@@@@@@@R;::-  .MMMMMM
+	# MMMMMMF   :;:j@@@@@@H@@@@@@@}                                                (;;;<-;>;>>>;!   >;;>;;<(>;>>;_   >>;;>;;<(>;;;                                                J@@g@@@@@@@@@@@b:;:_  .MMMMM
+	# MMMMMF   (::j@@@@H@@@@@@@@@#i.............................................   __1==1(======:  .======>+====={   ======v(===:_   .............................................JH@@g@@@@@@@@@@@p:;:.  JMMMM
+	# MMMMM`  .:;+W@@@@@@@@@@@@@@@>____________________________________________`   (_~<rrOJrttrr{  .rtrrtrIjrtrtr}   rtrrtv(rtv~_:    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~J@g@@@@@@@@@@@@@@c::<   WMMM
+	# MMMM]   :::d@@H@@@@@@@@@@@@@}                                                (_:.?OOO<OOOO:  .OOOOOOCzOOOOO\   OOOOCJOOC<(~:                                                J@@g@g@@g@@@@@@H@N;::_  .MMM
+	# MMM#   (::j@@@@@H@@@@@@@@@@@}   . ....      .....      ~ ...      _....      (_:.<::_~__~__   ::::_~_-~_:::~   :.~____:~<(~:     . ...      . ....      _....      _....    J@g@@@@@@@@@@@@@@@r:::   dMM
+	# MMMF   :;:d@H@@@@@@H@@@@@@@@}   . J;&.      `(x&-      ~ &(x      !.&(x      :_:(<::_(T?_~`   ;:::((3?\<:::~   :-,C?>~:~<(~:     . &+&      . j;&.      :.&(x      :.x(;    J@g@@g@@@@@@@@@@@@N;::_  .MM
+	# MMM\  .:;<H@@@@H@@@@@@@@@@@@}   . J;&.      `(x&-      ~ &(x      !.&(x      :_:_<::_(z({~.   ;:;:((c+{<:;:~   --(c1:~:~<(~:     . ++&      . j;&.      :.&(x      :.&(;    J@@g@@g@@g@@@@@H@@@2:;<   MM
+	# MMM   (:;j@@H@@@@@@@@@@@@@@@}   . jlu_      `(lu-      ~ u(o      !.u(l     `:<;_<::_(&(;<`   :::;((x(;<::;~  `:((xj/~:~<(_:`    . ucu      . ucu.      :.u(l      :.z(|    J@g@@@@@@@@@@@@@@@@b:::   dM
+	# MM#   :::J@@@@@@H@@@@@@@@@@@}   _         `:          .          .           ;<:_<:;_____<`   __<:(____<:<~.   :(____~:~<(~:.    .          ~          .          ~         J@g@g@@g@@@@@@@@H@@@:::.  (M
+	# MMF   ::;d@H@@H@@@@@@@@@@@@@}                                             `  :<:~<(:::::::    :::__~~_~-(::~   ::::::::_<(~;.                                               J@@@@@@@@@@@@@@@@@@#;::~  (M
+	# MMF   ::;d@H@@@@@@H@@@@@@@@@}   .+<__.      .(__.     .+<__-      .(__.      :<(_<(<__(_-_    :::::~  ~::::~   ~__(_-_<_<(~:.   .-+<__      ..(__      .+<__-      .(__.    J@@g@@g@@@@@@@H@@@@#:::~  (M
+	# MM#   ;:;J@@@H@@@@@@@@@@@@@@}  .          . `         .    `    .            :<(_<__~~~~~~    ::;:;_<({::::_   _~~~~~~_.<(_:.              .                     .`         J@@@@@@@@@@@@@@@H@@@:;:`  (M
+	# MMM   (::J@@H@@H@@@H@@@@@@@@}  .  Id([    .  u(=r     ~ jjrk    .  w(II      :<(_<((<((/.(    :::~  <(} _::_   .<((,.(<~<(_:_     .ru(}    .  Iz()    .  w(II    .  u(jr    J@g@@g@@@@@@@@@@@@HD::;   dM
+	# MMM,  (:;<MH@@@@@H@@@@@@@@@@}  .  x+(;   `.  &(({     ~ ((cx    .  &(+x      :<(~<((<j({I(    ::<   `    (:_   .<1(>I(<_<(_:_     .c&(-    .  x((;    .  j(+x    .  &((;    J@@@@@@@@@@@@H@@@@@$::<   MM
+	# MMM]   ;::d@@H@@H@@@@H@@@@@@}  .  xJ(;    .  &((;     ~ ((;x    .  +(+x      :<(~<((<??%C(    :;<........(;`   .<??C3(<~:((:_     .x&(-    .  x((;    .  j(+x    .  &((;    J@@@g@@@@@@@@@@H@@M;::~  .MM
+	# MMMN   (;:?@H@@H@@@@@@@@@@@@}  .  C??\    . `C?<}     ~ ??CC    .  z(>C      ::(~<((<z(%C(    ::<(:uIdu:<(;`   .<z(CC(<_:((:~     .CC?:    .  C??\    .  z(>C    .  C??\    J@@@@@@@@@@@H@@@H@D:;:   JMM
+	# MMMM]   ;::d@H@@@@H@@@H@@@@@}  .  Cz?\    .  V??%     ~ j?3C    .  O?>3      <:(~:((<z(rI_    <:<(~T3?T<<(<`   .<d(II(<_:(.:~     .%O?:    .  Cj?\    .  O?CC    .  V??%    J@@@@@@@@@@@@@@@@#;::~  .MMM
+	# MMMMN.  (:;?M@@H@@@H@@@@@H@@}  .          ..          _         ..            ` ~<((<_____     ;<(:uIdu:<(<     <____(<~~  `               .          ..         ..         J@@@@@@@@@H@@H@H@3::<   JMMM
+	# MMMMMb   <:;?@H@H@@@@H@@@@@@}                                                     .<<<<<<_    .<~~~T=?T<~_~     <<<<<<<                                                     J@@@@@@@@@@@H@@@D;::`  .MMMM
+	# MMMMMM[   :::d@H@H@@H@@H@@@>_-----(+.-------_+:--------.+---------(+.-_<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<_--.+---------(+.--------+<--------.+_-----(d@@@@@H@@H@@@H@::;`  .MMMMM
+	# MMMMMMM,   :;:d@@@H@@@@@H@@+......<<.........<:.........<_........(<...                                                          ....<_........(<-........<>.........<:......J@@@@@@@H@@@H@;::~  .MMMMMM
+	# MMMMMMMM,   :;:dH@H@HH@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@gg@g@gg@gggggggggggggggggggggmgmgmggmgmmmmmmmmmmmmgmgmmggmgmmmmgggggggggggggggggggggggggg@g@@g@@@@g@@@@@@@@@@@@@@@@@@@@@H@@H@@@H@@:::~  .dMMMMMM
+	# MMMMMMMMN,   <:;?M@H@@H@H@@H@@H@@@@@@@@@@@@@@@@@@@@g@@g@g@gg@ggg@ggggggggggggggggggggggggggggggggmggmggmggggggggggggggggggggggggggggggggggg@g@g@gg@gg@@g@@@@g@@@@@@@@@@@@@@@@H@@@@H@@H@@5:::`  .MMMMMMMM
+	# MMMMMMMMMM,   ~::?W@@H@@H@H@@@@H@@MMMHHHHH@@@gg@@gg@gg@gggggg@g@g@g@ggggggmgggggmggmmgmgggmmmggmmgmgHHHHHHHHgmmmmmgmggggggggggggggggggg@gHHH@g@gggg@@gggg@@HHH@@@@@@@@@@H@@H@@@H@@@H@@M3;:<`  .MMMMMMMMM
+	# MMMMMMMMMMMp   _::;TH@@H@@@H@H@@@F.&m-.ma,(H, gH@Hp (WHs .Qm&,@g@g@gH, dH& WH-+H[.WHr (WgHm .kHm..kt.gm..ma,qm,.QQa,HgggggHm .Wggm..kgY~(WHm,?HH; gH@Hm.k#'Jgm,@m, gma,H@@@@@@H@@H@@HB<::~   .MMMMMMMMMM
+	# MMMMMMMMMMMMN.   <::?W@H@H@@H@@H@@@@@}.@@@H@] @@@@b d@@# J@Hj@@@g@g@@@,.Hgo.<dg@.gggb dgggH ,ggg_.gHggg_.gggHg}.ggYggggggggH Jgg@g~.gF d@g@@g,.@] @@@@N,@h ?W@@@@) @@FH@@@H@H@@H@HHM6:::`   .MMMMMMMMMMM
+	# MMMMMMMMMMMMMM,   _:::?MH@H@@H@@H@@@@}.@@@@@] JJJJ, d@@# .g+,@@@@@@g@@H,,@H`.H#(ggg@b (JJJJ ,ggg_.ggggg_.ggggg}.&&,g@gg@@g@H .JJJJ..@) @@@@@@\ H] g@@@N,@@Ha. ?H@) gg,H@@H@@H@@H@M8::;~   .MMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMN,   ~:::7MH@H@H@@HH@@}.@@@@@] @@@@b d@@# J@@HBX@@@@g@g@H.((H,.<W@@@gb dg@gH ,@g@_.g@g@g_.@@g@g}.ggHHT@@g@@gH J@@@@~.@h.z@@g@#`.@b W@@@F(@PW@@N d@) @@MM5@@@H@H@@9<::<`   (MMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMa.   ~;:;TM@H@H@@HMO..uHH@A(.JW@Ki..dK&..&&(.@@@g@@@@@@h.H@H,d@@g@Ri..d@Ho..dHo..zg@Ho..zH@Ho..+z+.J@g@g@K&..d@Ho..uHHa.ZY&.d@@@m.+1&J@@h.vYiJMO..+z&.J@H@@HMB>;:<`   .MMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMJ    ~::;7MH@H@@@@@@@H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@g@g@g@@@g@g@@@@@@@@@@@g@@@g@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@H@@H@H@HM8<;:<`   .MMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMNJ    ~:::?WHH@HHH@H@@H@H@H@H@@H@@H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@g@@g@@@@@@@@@@@@@@@@@@@@g@@@g@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@H@@H@H@H@H@H@@H@@H#6:::~`   .MMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMa.   _<::<TMH@H@H@HH@@H@H@H@@H@@@H@@H@@@@@@@@@a`dx(b(m(d#(@@@Y+x4m`+@m`jNx(dh/7HHe(dYugg?HjJ/(J(HT+gJTN,?H@a(d@@@@@@@@@@@@H@@H@@H@@H@@H@H@H@H@HM8>:::~    .MMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMm,    ~:::?TMH@H@@H@H@@H@H@@H@H@@H@@@H@@@@@@@b,@o(@$WHj[v@@+(TH@ YYB`H@b.@@Ih,4NJ%,@HHHH@@)d@@}J@@@)J]N,7@J@@@@@@H@@H@@H@@H@H@@H@@H@@H@@H@MB=:::~`   ..MMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMN,.   _~;::?TMHH@H@H@@H@H@@H@@H@@H@@H@H@@H@@L((,=d@tHM.WM4@L,@ @@@`H@b.@@z@@n.JL,H@H @@@)d@@L/@@M!d]@@h,(@@H@@H@@H@@H@@H@@H@H@HH@H@HHMB=:::<`    .dMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm,    _~:;:<7WMHHH@H@HH@H@H@@H@H@@H@H@@@@@g@@d@mmWNmmWmgd@mmg@mmmNmmdmmk@@Nd@MmggH@@HmmH@@Mmgd@HmQ@@@d@@H@H@@H@@H@@H@@H@H@@H@H@#5>:::<~    .(MMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMa.     ~<:::?THMH@@H@HH@HH@H@H@@H@H@H@H@@H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@H@H@@H@@H@@H@@H@HH@HH@H@HHM9=;:::~`    ..MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN,     _~:::;?TWM@@H@@H@H@HH@@H@H@H@H@@HH@HH@H@HH@H@H@H@H@@@@@H@@H@H@H@@H@@HH@HH@HH@H@HH@H@@H@H@HH@@HH@HH@H@@H@@MH9C::::<~`    .(MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNJ.     _!:;::;?TWM@H@H@HH@H@H@H@HH@@H@H@H@H@@H@H@H@@HH@HH@H@H@H@H@H@H@H@@H@@H@@H@H@@HH@H@H@H@@HH@@H@@H@MH9=<;:::<~`    ..gMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN.,     `~<::;:;?TYHM@H@H@H@H@H@H@H@H@H@H@@H@@H@H@@H@H@@H@H@@H@@H@H@H@H@H@@H@@H@H@@H@H@H@H@H@HMMYYC;;:::<~`     ..&MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNJ,      `~<:;::;:<7TWHM@H@H@H@H@H@H@HH@HH@H@H@H@HH@H@H@H@HH@H@H@H@HH@HH@H@H@HH@H@HMMY9T>:;::::<~`      ..gMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNg..       `~~<::;::::<?TTYHMMMH@H@H@@H@H@H@H@@H@H@H@H@H@H@H@H@@H@H@HMMHY9Y7<::::::::<~~`      ..JMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN+..        `~~<<:;:::::;:::<?17TTYYYYYYYYYYYYYYYYYYYYTTC<<;::::::::::<<~~``       ...gMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNg-..           `~~~~<<:::;::;:::;::::::::;:::::::::<<<~~~``          ...(gMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNgJ...                             `                 ....JgMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNag+(............................J+gNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+	# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 	### ELECTION ###
 		focus = {#1936アメリカ合衆国大統領選挙
 			id = TR_USA_1936_presidential_election
