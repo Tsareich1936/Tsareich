@@ -936,7 +936,7 @@ focus_tree = {
 			focus = VIN_CHI4
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		x = 12
 		y = 11
@@ -997,7 +997,7 @@ focus_tree = {
 			focus = VIN_CHI_NTH
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 		x = 12
 		y = 12
@@ -1015,7 +1015,7 @@ focus_tree = {
 			focus = VIN_CHI_TIB
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		x = 12
 		y = 13
@@ -1034,7 +1034,7 @@ focus_tree = {
 			focus = VIN_CHI_NTH
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		x = 14
 		y = 12
@@ -2767,10 +2767,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_i5
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_civilian
 		cost = 8
 		prerequisite = {
 			focus = VINv_ind1
+		}
+		available = {
+			has_completed_focus = VINv_ind2
 		}
 		x = 32
 		y = 3
@@ -2780,7 +2783,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_i9
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_capstone_civilian
 		cost = 8
 		prerequisite = {
 			focus = VINv_i5
@@ -2793,23 +2796,29 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_i1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_research
 		cost = 8
 		prerequisite = {
 			focus = VINv_ind1
+		}
+		available = {
+			has_completed_focus = VINv_ind2
 		}
 		x = 34
 		y = 3
         completion_reward = {
-			
+			add_research_slot = 1
 		}
 	}
 	focus = {
 		id = VINv_ind2
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_organize_wreckers
 		cost = 8
 		prerequisite = {
 			focus = VINv_ind1
+		}
+		available = {
+			date > 1936.1.1
 		}
 		x = 36
 		y = 3
@@ -2819,10 +2828,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_ind3
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_organize_wreckers
 		cost = 8
 		prerequisite = {
 			focus = VINv_ind2
+		}
+		available = {
+			date > 1937.1.1
 		}
 		x = 36
 		y = 4
@@ -2832,10 +2844,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_ind4
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_organize_wreckers
 		cost = 8
 		prerequisite = {
 			focus = VINv_ind3
+		}
+		available = {
+			date > 1938.1.1
 		}
 		x = 36
 		y = 5
@@ -2845,10 +2860,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_ind5
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_organize_wreckers
 		cost = 8
 		prerequisite = {
 			focus = VINv_ind4
+		}
+		available = {
+			date > 1939.1.1
 		}
 		x = 36
 		y = 6
@@ -2858,7 +2876,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_ind6
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_soviet_construction
 		cost = 8
 		prerequisite = {
 			focus = VINv_ind5
@@ -2871,10 +2889,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_r1
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_selector_civilian
 		cost = 8
 		prerequisite = {
 			focus = VINv_ind1
+		}
+		available = {
+			has_completed_focus = VINv_ind2
 		}
 		x = 38
 		y = 3
@@ -2884,10 +2905,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_r2
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_selector_civilian
 		cost = 8
 		prerequisite = {
 			focus = VINv_r1
+		}
+		available = {
+			has_completed_focus = VINv_ind3
 		}
 		x = 38
 		y = 4
@@ -2897,10 +2921,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_r3
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_selector_civilian
 		cost = 8
 		prerequisite = {
 			focus = VINv_r2
+		}
+		available = {
+			has_completed_focus = VINv_ind4
 		}
 		x = 38
 		y = 5
@@ -2910,10 +2937,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_r4
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_selector_civilian
 		cost = 8
 		prerequisite = {
 			focus = VINv_r3
+		}
+		available = {
+			has_completed_focus = VINv_ind5
 		}
 		x = 38
 		y = 6
@@ -2923,10 +2953,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_r5
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_capstone_army
 		cost = 8
 		prerequisite = {
 			focus = VINv_ind1
+		}
+		available = {
+			has_completed_focus = VINv_ind2
 		}
 		x = 40
 		y = 3
@@ -2936,10 +2969,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_r6
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_capstone_army
 		cost = 8
 		prerequisite = {
 			focus = VINv_r5
+		}
+		available = {
+			has_completed_focus = VINv_ind3
 		}
 		x = 40
 		y = 4
@@ -2949,10 +2985,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_r7
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_capstone_army
 		cost = 8
 		prerequisite = {
 			focus = VINv_r6
+		}
+		available = {
+			has_completed_focus = VINv_ind4
 		}
 		x = 40
 		y = 5
@@ -2962,13 +3001,16 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_r8
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_capstone_army
 		cost = 8
 		prerequisite = {
 			focus = VINv_r7
 		}
 		prerequisite = {
 			focus = VINv_r10
+		}
+		available = {
+			has_completed_focus = VINv_ind5
 		}
 		x = 40
 		y = 6
@@ -2978,7 +3020,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_r9
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_selector_material
 		cost = 8
 		prerequisite = {
 			focus = VINv_r5
@@ -2991,7 +3033,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_r10
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_selector_material
 		cost = 8
 		prerequisite = {
 			focus = VINv_r9
@@ -3004,7 +3046,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_r11
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_soviet_construction
 		cost = 8
 		prerequisite = {
 			focus = VINv_r8
@@ -3283,7 +3325,13 @@ focus_tree = {
 		x = 53
 		y = 4
         completion_reward = {
-			
+			create_wargoal = {
+				target = GXC
+				type = annex_everything
+			}
+		    GXC = { 
+				every_core_state = { add_core_of = vIN } 
+			}
 		}
 	}
 	focus = {
@@ -3348,23 +3396,29 @@ focus_tree = {
 
 	focus = {
 		id = VINv_i2
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_research
 		cost = 8
 		prerequisite = {
 			focus = VINv_i1
 		}
+		available = {
+			has_completed_focus = VINv_ind3
+		}
 		x = 34
 		y = 4
         completion_reward = {
-			
+		    
 		}
 	}
 	focus = {
 		id = VINv_i3
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_capstone_research
 		cost = 8
 		prerequisite = {
 			focus = VINv_i2
+		}
+		available = {
+			has_completed_focus = VINv_ind4
 		}
 		x = 34
 		y = 5
@@ -3374,10 +3428,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_i4
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_selector_research
 		cost = 8
 		prerequisite = {
 			focus = VINv_i3
+		}
+		available = {
+			has_completed_focus = VINv_ind5
 		}
 		x = 34
 		y = 6
@@ -3387,10 +3444,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_i6
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_civilian
 		cost = 8
 		prerequisite = {
 			focus = VINv_i5
+		}
+		available = {
+			has_completed_focus = VINv_ind3
 		}
 		x = 32
 		y = 4
@@ -3400,10 +3460,13 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_i7
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_materiel
 		cost = 8
 		prerequisite = {
 			focus = VINv_i6
+		}
+		available = {
+			has_completed_focus = VINv_ind4
 		}
 		x = 32
 		y = 5
@@ -3413,13 +3476,16 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_i8
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_materiel
 		cost = 8
 		prerequisite = {
 			focus = VINv_i7
 		}
 		prerequisite = {
 			focus = VINv_i10
+		}
+		available = {
+			has_completed_focus = VINv_ind5
 		}
 		x = 32
 		y = 6
@@ -3429,7 +3495,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_i10
-		icon = GFX_goal_unknown
+		icon = GFX_focus_NORDIC_com_capstone_civilian
 		cost = 8
 		prerequisite = {
 			focus = VINv_i9
@@ -3442,7 +3508,7 @@ focus_tree = {
 	}
 	focus = {
 		id = VINv_i11
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_soviet_construction
 		cost = 8
 		prerequisite = {
 			focus = VINv_i4
@@ -3577,7 +3643,7 @@ focus_tree = {
 		x = 55
 		y = 4
         completion_reward = {
-			
+	        add_ideas = TR_VIN_PRC			
 		}
 	}
 	focus = {
@@ -3590,7 +3656,10 @@ focus_tree = {
 		x = 55
 		y = 5
         completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = TR_VIN_PRC
+				add_idea = TR_VIN_PRC1
+			}
 		}
 	}
 	focus = {
@@ -3603,7 +3672,10 @@ focus_tree = {
 		x = 55
 		y = 6
         completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = TR_VIN_PRC1
+				add_idea = TR_VIN_PRC2
+			}
 		}
 	}
 }
