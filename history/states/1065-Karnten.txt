@@ -5,6 +5,10 @@ state={
 		owner = GER
 		add_core_of = GER
 		add_core_of = AUS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
 	}
 	provinces={
 		668 3673 3674 6673 11612 
