@@ -164,6 +164,24 @@ on_actions = {
 			}
 		}
 	}
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						tag = JAP
+					}
+				}
+				set_autonomy = {
+					target = ROOT
+					autonomy_state = government_general
+				}
+				ROOT = {
+					load_focus_tree = government_general
+				}
+			}
+		}
+	}
 	on_daily_JAP = {
 		effect = {
 			if = {

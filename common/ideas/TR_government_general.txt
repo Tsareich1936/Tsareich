@@ -1,0 +1,44 @@
+ideas = {
+	country = {
+		TR_GG_economy = {
+			picture = GFX_idea_generic_central_management
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			available = {
+				is_puppet_of = JAP
+			}
+			modifier = {
+				local_resources_factor = 0.2
+				stability_factor = -0.2
+			}
+		}
+		TR_GG_research = {
+			picture = GFX_idea_generic_research_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			available = {
+				is_puppet_of = JAP
+			}
+			modifier = {
+				research_speed_factor = 0.07
+			}
+		}
+		TR_GG_building = {
+			picture = GFX_idea_generic_build_infrastructure
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			available = {
+				is_puppet_of = JAP
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+}

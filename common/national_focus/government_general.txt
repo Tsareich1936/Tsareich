@@ -1,0 +1,14 @@
+focus_tree = {
+	id = government_general
+	country = {
+		factor = 0
+		modifier = {
+			tag = JCH
+			add = 101
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+
+	shared_focus = GG_country
+}

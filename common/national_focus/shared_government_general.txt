@@ -1,0 +1,460 @@
+shared_focus = {
+	id = GG_country
+	cost = 5
+	x = 5
+	y = 0
+	icon = GFX_focus_FIN_confederated_finno_russian_republics
+	completion_reward = { 
+		add_political_power = 100
+		add_stability = 0.2
+	}
+}
+shared_focus = {
+	id = GG_economy
+	cost = 10
+	relative_position_id = GG_country
+	x = 3
+	y = 1
+	prerequisite = {
+		focus = GG_country
+	}
+	completion_reward = {
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+			}
+		}
+	}
+	icon = GFX_goal_generic_construct_civ_factory
+}
+shared_focus = {
+	id = GG_economy_1_1
+	cost = 10
+	relative_position_id = GG_economy
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = GG_economy
+	}
+	completion_reward = {
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+			}
+		}
+	}
+	icon = GFX_goal_generic_construct_civ_factory
+}
+shared_focus = {
+	id = GG_economy_1_2
+	cost = 10
+	relative_position_id = GG_economy
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = GG_economy
+	}
+	completion_reward = {
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
+	}
+	icon = GFX_goal_generic_construct_mil_factory
+}
+shared_focus = {
+	id = GG_economy_1_3
+	cost = 10
+	relative_position_id = GG_economy
+	x = 2
+	y = 1
+	available = {
+		any_state = {
+			is_coastal = yes
+			is_controlled_by = ROOT
+		}
+	}
+	completion_reward = { 
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				is_coastal = yes
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+			}
+		}
+	}
+	prerequisite = {
+		focus = GG_economy
+	}
+	icon = GFX_goal_generic_construct_naval_dockyard
+}
+shared_focus = {
+	id = GG_economy_2_1
+	cost = 10
+	relative_position_id = GG_economy_1_1
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = GG_economy_1_1
+	}
+	completion_reward = {
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+			}
+		}
+	}
+	icon = GFX_goal_generic_construct_civ_factory
+}
+shared_focus = {
+	id = GG_economy_2_2
+	cost = 10
+	relative_position_id = GG_economy_1_2
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = GG_economy_1_2
+	}
+	completion_reward = {
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
+	}
+	icon = GFX_goal_generic_construct_mil_factory
+}
+shared_focus = {
+	id = GG_economy_2_3
+	cost = 10
+	relative_position_id = GG_economy_1_3
+	x = 0
+	y = 1
+	available = {
+		any_state = {
+			is_coastal = yes
+			is_controlled_by = ROOT
+		}
+	}
+	completion_reward = { 
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				is_coastal = yes
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+			}
+		}
+	}
+	prerequisite = {
+		focus = GG_economy_1_3
+	}
+	icon = GFX_goal_generic_construct_naval_dockyard
+}
+shared_focus = {
+	id = GG_research
+	icon = GFX_focus_research
+	prerequisite = { focus = GG_economy_2_1 }
+	prerequisite = {
+		focus = GG_economy_2_2
+	}
+	x = 0
+	y = 1
+	relative_position_id = GG_economy_2_2
+	cost = 10
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+shared_focus = {
+	id = GG_economy_3_1
+	cost = 10
+	icon = GFX_goal_generic_production
+	relative_position_id = GG_research
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = GG_research
+	}
+	completion_reward = {
+		add_ideas = TR_GG_economy
+	}
+}
+shared_focus = {
+	id = GG_economy_3_2
+	cost = 10
+	icon = GFX_focus_research
+	relative_position_id = GG_research
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = GG_research
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				THIS ={
+					amount_research_slots = 4
+				}
+			}
+			add_research_slot = 1
+		}
+		add_ideas = TR_GG_research
+	}
+}
+shared_focus = {
+	id = GG_economy_3_3
+	cost = 10
+	icon = GFX_goal_generic_production
+	relative_position_id = GG_research
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = GG_research
+	}
+	completion_reward = {
+		add_ideas = TR_GG_building
+	}
+}
+shared_focus = {
+	id = GG_military
+	cost = 10
+	prerequisite = {
+		focus = GG_country
+	}
+	relative_position_id = GG_country
+	x = -3
+	y = 1
+	completion_reward = { 
+		army_experience = 100
+		navy_experience = 100
+		air_experience = 100
+	}
+	icon = GFX_focus_generic_military_dictatorship
+}
+shared_focus = {
+	id = GG_military_1_1
+	cost = 10
+	relative_position_id = GG_military
+	x = -2
+	y = 1
+	completion_reward = { 
+		JAP ={
+			send_equipment = {
+				type = infantry_equipment
+				amount = 10000
+				target = ROOT
+			}
+		}
+	}
+	prerequisite = {
+		focus = GG_military
+	}
+	icon = GFX_goal_generic_military_deal
+}
+shared_focus = {
+	id = GG_military_1_2
+	cost = 10
+	relative_position_id = GG_military
+	x = 0
+	y = 1
+	icon = GFX_focus_chi_army_reform
+	prerequisite = {
+		focus = GG_military
+	}
+	completion_reward = { 
+		add_tech_bonus = {
+			name = GG_military_1_2
+			bonus = 1
+			uses = 2
+			category = infantry_tech
+		}
+	}
+}
+shared_focus = {
+	id = GG_military_1_3
+	cost = 10
+	relative_position_id = GG_military
+	x = 2
+	y = 1
+	icon = GFX_goal_generic_air_fighter
+	prerequisite = {
+		focus = GG_military
+	}
+	completion_reward = { 
+		add_tech_bonus = {
+			name = GG_military_1_3
+			bonus = 1
+			uses = 2
+			category = light_air
+		}
+	}
+}
+shared_focus = {
+	id = GG_military_2_1
+	cost = 10
+	relative_position_id = GG_military_1_1
+	x = 0
+	y = 1
+	completion_reward = { 
+		JAP ={
+			send_equipment = {
+				type = artillery_equipment
+				amount = 120
+				target = ROOT
+			}
+		}
+	}
+	prerequisite = {
+		focus = GG_military_1_1
+	}
+	icon = GFX_goal_generic_military_deal
+}
+shared_focus = {
+	id = GG_military_2_2
+	cost = 10
+	relative_position_id = GG_military_1_2
+	x = 0
+	y = 1
+	icon = GFX_goal_generic_army_artillery2
+	prerequisite = {
+		focus = GG_military_1_2
+	}
+	completion_reward = { 
+		add_tech_bonus = {
+			name = GG_military_2_2
+			bonus = 1
+			uses = 2
+			category = artillery
+		}
+	}
+}
+shared_focus = {
+	id = GG_military_2_3
+	cost = 10
+	relative_position_id = GG_military_1_3
+	x = 0
+	y = 1
+	icon = GFX_goal_generic_air_bomber
+	prerequisite = {
+		focus = GG_military_1_3
+	}
+	completion_reward = { 
+		add_tech_bonus = {
+			name = GG_military_1_3
+			bonus = 1
+			uses = 2
+			category = medium_air
+		}
+	}
+}
+shared_focus = {
+	id = GG_military_3
+	cost = 10
+	relative_position_id = GG_military_2_2
+	x = 0
+	y = 1
+	icon = GFX_focus_generic_military_mission
+	prerequisite = {
+		focus = GG_military_2_1
+	}
+	prerequisite = {
+		focus = GG_military_2_2
+	}
+	prerequisite = {
+		focus = GG_military_2_3
+	}
+	completion_reward = { 
+		add_ideas = JAP_ARMY_4
+	}
+}
+shared_focus = {
+	id = GG_military_4_1
+	cost = 10
+	relative_position_id = GG_military_3
+	x = -2
+	y = 1
+	icon = GFX_goal_generic_army_doctrines
+	completion_reward = { 
+		add_tech_bonus = {
+			name = GG_military_4_1
+			uses = 2
+			category = land_doctrine
+			bonus = 50
+		}
+	}
+	prerequisite = {
+		focus = GG_military_3
+	}
+}
+shared_focus = {
+	id = GG_military_4_2
+	cost = 10
+	relative_position_id = GG_military_3
+	x = 0
+	y = 1
+	icon = GFX_goal_generic_air_doctrine
+	completion_reward = { 
+		add_tech_bonus = {
+			name = GG_military_4_1
+			uses = 2
+			category = air_doctrine
+			bonus = 50
+		}
+	}
+	prerequisite = {
+		focus = GG_military_3
+	}
+}
+shared_focus = {
+	id = GG_military_4_3
+	cost = 10
+	relative_position_id = GG_military_3
+	x = 2
+	y = 1
+	icon = GFX_goal_generic_navy_doctrines_tactics
+	completion_reward = { 
+		add_tech_bonus = {
+			name = GG_military_4_1
+			uses = 2
+			category = naval_doctrine
+			bonus = 50
+		}
+	}
+	prerequisite = {
+		focus = GG_military_3
+	}
+}

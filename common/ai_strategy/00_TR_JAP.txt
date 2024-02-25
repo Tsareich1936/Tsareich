@@ -61,6 +61,7 @@ JAP_army_unit_production_1 = {
 
 	allowed = {	tag = JAP }
 	enable = {
+		has_war = yes
 		JAP = {
 			naval_strength_ratio = {
 				tag = enemies
@@ -75,7 +76,7 @@ JAP_army_unit_production_1 = {
 	ai_strategy = {
 		type = role_ratio
 		id = garrison
-		value = 200
+		value = 120
 	}
 
 	ai_strategy = {
@@ -93,7 +94,7 @@ JAP_army_unit_production_1 = {
 	ai_strategy = {
 		type = role_ratio
 		id = marines
-		value > 30
+		value = 30
 	}
 
 	ai_strategy = {
@@ -111,7 +112,7 @@ JAP_army_unit_production_1 = {
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value > 144
+		value = 144
 	}
 }
 
@@ -160,8 +161,21 @@ JAP_army_product_1 = {
 		id = train
 		value = 1
 	}
-
-
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = air_fighter
+		value = 20
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = air_fighter
+		value = 50
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 100
+	}
 }
 
 JAP_army_product_2 = {
@@ -192,13 +206,23 @@ JAP_army_product_2 = {
 	}
 	ai_strategy = {
 		type = equipment_production_min_factories
-		id = heavy_fighter
-		value = 20
+		id = air_fighter
+		value = 40
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = air_fighter
+		value = 100
 	}
 	ai_strategy = {
 		type = equipment_production_min_factories
 		id = train
 		value = 1
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 100
 	}
 }
 JAP_army_product_2 = {
@@ -227,8 +251,13 @@ JAP_army_product_2 = {
 	}
 	ai_strategy = {
 		type = equipment_production_min_factories
-		id = air_heavy_fighter
-		value = 40
+		id = air_fighter
+		value = 60
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = air_fighter
+		value = 200
 	}
 	ai_strategy = {
 		type = equipment_production_min_factories
@@ -244,6 +273,11 @@ JAP_army_product_2 = {
 		type = equipment_production_min_factories
 		id = train
 		value = 1
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 100
 	}
 }
 
@@ -261,7 +295,7 @@ JAP_NAVY = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_carrier
-		value = 10
+		value = 8
 	}
 	ai_strategy = {
 		type = role_ratio
@@ -286,12 +320,12 @@ JAP_NAVY = {
 	ai_strategy = {
 		type = unit_ratio
 		id = destroyer
-		value = 20
+		value = 40
 	}
 	ai_strategy = {
 		type = unit_ratio
 		id = carrier
-		value = 20
+		value = 30
 	}
 	ai_strategy = {
 		type = unit_ratio
