@@ -1164,4 +1164,5 @@ GER_update_parliament_seats = {
 			value = 11
 		}
 	}
+	
 }

@@ -1,0 +1,24 @@
+defined_text = {#消費財工場補正
+	name = GetCGF
+	text = { localization_key = "TE_CGF_tt" }
+}
+defined_text = {#工場出力
+	name = GetICF
+	text = { localization_key = "TE_ICF_tt" }
+}
+defined_text = {#造船所出力
+	name = GetICD
+	text = { localization_key = "TE_ICD_tt" }
+}
+defined_text = {#建設速度
+	name = GetPSBF
+	text = { localization_key = "TE_PSBF_tt" }
+}
+defined_text = {#資源の採掘効率
+	name = GetLRF
+	text = { localization_key = "TE_LRF_tt" }
+}
+defined_text = {#供給範囲
+	name = GetSNR
+	text = { localization_key = "TE_SNR_tt" }
+}
