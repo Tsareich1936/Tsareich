@@ -8468,5 +8468,9 @@ spriteTypes = {
 		name = "GFX_portrait_MNT_blazo_dukanovic"
 		texturefile = "gfx/leaders/ITA/portrait_MNT_blazo_dukanovic.dds"
 	}
+	spriteType = {
+		name = "GFX_300px-Chen_Gong-bo_Mayor_Shanghai_1943"
+		texturefile = "gfx/leaders/JCH/300px-Chen_Gong-bo_Mayor_Shanghai_1943.dds"
+	}
 	
 }

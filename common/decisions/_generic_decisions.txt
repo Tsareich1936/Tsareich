@@ -1709,7 +1709,10 @@ war_measures = {
         }
         ai_will_do = {
 			factor = 1
-
+			modifier = {
+				tag = JAP
+				factor = 1000
+			}
 			modifier = {
 				factor = 100
 				has_manpower < 100000

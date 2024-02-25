@@ -481,10 +481,9 @@ marines_JAP = {
 				logistics_company = 1
 				light_flame_tank = 1
 			}
-			
 			regiments = {
-				marine = 12
 				artillery_brigade = 2
+				marine = 12
 			}
 		}
 

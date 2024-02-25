@@ -926,6 +926,10 @@ technologies = {
 				}
 				factor = 5
 			}
+			modifier = {
+				tag = JAP
+				factor = 0
+			}
 		}
 	}
 
@@ -1146,7 +1150,7 @@ technologies = {
 			}
 			modifier = {
 				tag = JAP
-				factor = 5
+				factor = 200
 			}
 			modifier = {
 				has_War = yes
@@ -1186,7 +1190,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				tag = JAP
-				factor = 5
+				factor = 200
 			}
 			modifier = {
 				OR = {
@@ -1531,14 +1535,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			base = 5
 			modifier = {
 				is_major = yes
 				factor = 5
 			}
 			modifier = {
 				tag = JAP
-				factor = 10
+				factor = 20
 			}
 			modifier = {
 				num_of_military_factories < 10
@@ -1647,7 +1651,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			base = 5
 			modifier = {
 				is_major = yes
 				factor = 2
@@ -1670,7 +1674,7 @@ technologies = {
 			}
 			modifier = {
 				tag = JAP
-				factor = 5
+				factor = 20
 			}
 			modifier = {
 				OR = {
@@ -1715,6 +1719,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
+
 		}
 	}
 

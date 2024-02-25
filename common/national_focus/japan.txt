@@ -1210,7 +1210,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_agrarian_reform_1
-        icon = GFX_land_reform
+        icon = GFX_land_reform1
         relative_position_id = jap_social_reform
         x = -2
         y = 1
@@ -1228,7 +1228,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_agrarian_reform_2
-        icon = GFX_land_reform
+        icon = GFX_land_reform2
         relative_position_id = jap_agrarian_reform_1
         x = 0
         y = 1
@@ -1257,7 +1257,7 @@ focus_tree = { # nomal
 					is_controlled_by = ROOT
 					is_core_of = ROOT
                 }
-                add_extra_state_shared_building_slots = 3
+                add_extra_state_shared_building_slots = 1
             }
         }
     }
@@ -1317,7 +1317,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_pollution
-        icon = GFX_Pollution_measures
+        icon = GFX_Pollution_measures1
         relative_position_id = jap_social_reform
         x = 0
         y = 1
@@ -1338,7 +1338,7 @@ focus_tree = { # nomal
 
     focus = {
         id = jap_pollution_2
-        icon = GFX_Pollution_measures
+        icon = GFX_Pollution_measures2
         relative_position_id = jap_pollution
         x = 0
         y = 1
@@ -1411,7 +1411,7 @@ focus_tree = { # nomal
             536 = {
                 add_resource = {
                     type = steel
-                    amount = 18
+                    amount = 14
                 }
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -1432,12 +1432,6 @@ focus_tree = { # nomal
         x =  -1
         y = 1
         completion_reward = {
-            952 = {
-                add_resource = {
-                    type = oil
-                    amount = 18
-                }
-            }
             533 = {
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -1498,7 +1492,7 @@ focus_tree = { # nomal
             647 = {
                 add_resource = {
                     type = aluminium
-                    amount = 18
+                    amount = 14
                 }
             }
         }
@@ -1575,6 +1569,13 @@ focus_tree = { # nomal
         relative_position_id = jap_industry
         x = -2
         y = 4
+        ai_will_do = {
+            base = 1
+            modifier = {
+                has_war = yes
+                factor = 0
+            }
+        }
         mutually_exclusive = {
             focus = jap_bank
         }
@@ -1599,7 +1600,7 @@ focus_tree = { # nomal
             956 = {
                 add_resource = {
                     type = steel
-                    amount = 35
+                    amount = 17
                 }
             }
         }
@@ -1618,7 +1619,7 @@ focus_tree = { # nomal
             536 = {
                 add_resource = {
                     type = steel
-                    amount = 24
+                    amount = 12
                 }
             }
         }
@@ -1673,7 +1674,7 @@ focus_tree = { # nomal
             976 = {
                 add_resource = {
                     type = chromium
-                    amount = 24
+                    amount = 12
                 }
             }
         }
@@ -1692,7 +1693,7 @@ focus_tree = { # nomal
             955 = {
                 add_resource = {
                     type = oil
-                    amount = 18
+                    amount = 10
                 }
             }
         }
@@ -10967,7 +10968,7 @@ shared_focus = {
         focus = jap_NAVY_2_2
     }
     completion_reward = {
-        navy_experience = 50
+        navy_experience = 100
         remove_ideas = JAP_NAVY_2
     }
 }
@@ -11143,7 +11144,7 @@ shared_focus = {
         focus = jap_AIRFORCE_2_2
     }
     completion_reward = {
-        air_experience = 50
+        air_experience = 100
         remove_ideas = JAP_AIRFORCE_2
     }
 }
@@ -11357,7 +11358,7 @@ shared_focus = {
         
     }
     completion_reward = {
-        army_experience = 50
+        army_experience = 100
         remove_ideas = JAP_ARMY_2
     }
 }

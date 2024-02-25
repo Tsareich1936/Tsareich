@@ -5,7 +5,7 @@ JAP_naval_bomber = {
 
 	blocked_for = {}
 
-	available_for = {JAP}
+	available_for = {JAP JCH}
 
 	roles = {
 		air_naval_bomber

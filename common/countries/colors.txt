@@ -943,8 +943,8 @@ CRT = {
 }
 
 OTT = {
-	color = rgb { 236 244 217}
-	color_ui = rgb {  236 244 217}
+	color = rgb { 139 210 513}
+	color_ui = rgb {  139 210 513}
 }
 SAN = {
 	color = rgb{ 0 204 204 }
@@ -957,4 +957,10 @@ EXC = {
 NAB = {
 	color = rgb{ 0 0 0 }
 	color_ui = rgb{ 0 0 0 }
+}
+JCH = {
+	color = rgb{ 119 10 161}
+	color_ui = {
+		119 10 161
+	}
 }

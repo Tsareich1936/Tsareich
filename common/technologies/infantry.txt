@@ -147,7 +147,7 @@ technologies = {
 			}
 			modifier = {
 				tag = JAP
-				factor = 0.5
+				factor = 0.001
 			}
 
 			modifier = {
@@ -187,7 +187,7 @@ technologies = {
 			factor = 3
 			modifier = {
 				tag = JAP
-				factor = 0.5
+				factor = 0.001
 			}
 			modifier = {
 				factor = 10
@@ -1365,7 +1365,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				tag = JAP
-				factor = 0.5
+				factor = 0.001
 			}
 			modifier = {
 				factor = 5
@@ -1777,7 +1777,11 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = JAP
+				or = {
+					tag = JAP
+					tag = JCH
+				}
+
 				factor = 0
 			}
 			modifier = {
@@ -2051,6 +2055,10 @@ technologies = {
 		}
 		
 		ai_will_do = {
+			modifier = {
+				tag = JAP
+				factor = 0.001
+			}
 			factor = 2
 			modifier = {
 				tag = USA

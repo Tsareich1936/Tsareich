@@ -6,7 +6,7 @@ JAP_destroyers = {
 	}
 	
 	available_for = {
-		JAP
+		JAP JCH
 	}
 	
 	roles = {

@@ -1,0 +1,13 @@
+﻿l_japanese:
+ blank_seat: "空席"
+ GER_01_num: "§Y[?GER_anarchist_seats] 議席§!"
+ GER_02_num: "§Y[?GER_syndicalist_seats] 議席§!"
+ GER_03_num: "§Y[?GER_communist_seats] 議席§!"
+ GER_04_num: "§Y[?GER_socialist_seats] 議席§!"
+ GER_05_num: "§Y[?GER_socialdemocrat_seats] 議席§!"
+ GER_06_num: "§Y[?GER_democrat_seats] 議席§!"
+ GER_07_num: "§Y[?GER_conservatist_seats] 議席§!"
+ GER_08_num: "§Y[?GER_neutral_seats] 議席§!"
+ GER_09_num: "§Y[?GER_theocrat_seats] 議席§!"
+ GER_10_num: "§Y[?GER_fascist_seats] 議席§!"
+ GER_11_num: "§Y[?GER_blank_seats] 議席§!"

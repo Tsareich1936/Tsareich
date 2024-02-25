@@ -1,0 +1,20 @@
+scripted_gui = {
+	GER_Parliament = {
+		context_type = decision_category
+		window_name = GER_parliament_window
+		dynamic_lists = {
+			GER_parliament_seat_grid = {
+				array = GER_parliament_seat_array
+				index = seat_idx
+				entry_container = GER_parliament_seat_array
+			}
+		}
+		properties = {
+			GER_seat_icon = {
+				frame = v
+				x = GER_seat_x_position^seat_idx
+				y = GER_seat_y_position^seat_idx
+			}
+		}
+	}
+}
