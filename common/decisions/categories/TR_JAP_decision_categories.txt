@@ -134,7 +134,11 @@ JAP_lack_food = {
 
 JAP_for_debug = {
 	allowed = {
-		tag = JAP
+		or  = {
+			tag = JAP
+			tag = RUS
+		}
+
 	}
 	priority = {
 		base = 1000
