@@ -167,7 +167,7 @@ focus_tree = {
 			focus = RUS_unprison
 		}
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = RUS_newtsar
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -179,10 +179,20 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 150
+			custom_effect_tooltip = RUS_TE_tt_1
 			set_temp_variable = {
-                updt_consumer_goods_factor = 0.1
+                updt_consumer_goods_factor = -0.25
+            }
+			set_temp_variable = {
+                updt_industrial_capacity_factor = 0.15
+            }
+			set_temp_variable = {
+               updt_production_speed_buildings_factor = 0.15
             }
 			TE_update_modifier = yes
+			
+			custom_effect_tooltip = RUS_TE_tt_1_2
+			add_stability = -0.05
 		}
 	}
 
