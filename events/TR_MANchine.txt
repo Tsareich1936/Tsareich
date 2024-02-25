@@ -40,6 +40,7 @@ country_event = {#爆殺内戦
 	trigger = {
 		date > 1936.5.20
 		has_global_flag = TR_bomb_MAN
+		tag = MAN　
 	}
 	immediate = {
 		hidden_effect = {
