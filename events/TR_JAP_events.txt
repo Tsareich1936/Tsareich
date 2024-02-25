@@ -2291,13 +2291,13 @@ country_event = {
 			714 = {
 				add_resource = {
 					type = oil
-					amount = 60
+					amount = 30
 				}
 			}
 			597 = {
 				add_resource = {
 					type = oil
-					amount = 38
+					amount = 19
 				}
 			}
 			give_resource_rights = {

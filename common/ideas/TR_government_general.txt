@@ -10,8 +10,7 @@ ideas = {
 				is_puppet_of = JAP
 			}
 			modifier = {
-				extra_trade_to_target_factor = 1
-				local_resources_factor = 0.1
+				local_resources_factor = 0.2
 				stability_factor = -0.2
 			}
 		}
