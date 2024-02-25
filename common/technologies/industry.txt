@@ -942,7 +942,7 @@ technologies = {
 			}	
 			modifier = {
 				tag = JAP
-				factor = 0.5
+				factor = 0.0001
 			}
 			modifier = {
 				has_war = yes
@@ -1002,7 +1002,7 @@ technologies = {
 			}	
 			modifier = {
 				tag = JAP
-				factor = 0.5
+				factor = 0.0001
 			}
 			modifier = {
 				has_war = yes
@@ -1222,7 +1222,7 @@ technologies = {
 			}
 			modifier = {
 				tag = JAP
-				factor = 0.5
+				factor = 0.001
 			}
 			modifier = {
 				factor = 0.5
@@ -1443,7 +1443,7 @@ technologies = {
 			}
 			modifier = {
 				tag = JAP
-				factor = 0.5
+				factor = 0.001
 			}
 			modifier = {
 				factor = 0.5

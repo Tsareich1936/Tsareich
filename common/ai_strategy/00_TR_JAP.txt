@@ -225,7 +225,7 @@ JAP_army_product_2 = {
 		value = 100
 	}
 }
-JAP_army_product_2 = {
+JAP_army_product_3 = {
 	allowed = {	tag = JAP }
 	enable = {
 		JAP = {
@@ -246,18 +246,13 @@ JAP_army_product_2 = {
 	}
 	ai_strategy = {
 		type = equipment_production_min_factories
-		id = anti_air
-		value = 5
-	}
-	ai_strategy = {
-		type = equipment_production_min_factories
 		id = air_fighter
 		value = 60
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = air_fighter
-		value = 200
+		value = 400
 	}
 	ai_strategy = {
 		type = equipment_production_min_factories
@@ -277,7 +272,12 @@ JAP_army_product_2 = {
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
-		value = 100
+		value = 300
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = support
+		value = -99
 	}
 }
 
@@ -442,4 +442,20 @@ JAP_armor = {
 		id = artillery
 		value = 0
 	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = -99
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank_brigade
+		value = -99
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank_equipment
+		value = -99
+	}
+
 }

@@ -2370,12 +2370,17 @@ JAP_WAR_PLAN_CREATE = {
 		ai_will_do = {
 			base = 300
 		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = TR_japan.for_war
+			}
+		}
 		fire_only_once = yes
 		days_remove = 120
 	}
 	FOR_WAR_2 = {
 		available = {
-			has_decision = FOR_WAR_1
+			has_country_flag = TR_japan.for_war
 		}
 		allowed = {
 			always = no
@@ -2388,13 +2393,16 @@ JAP_WAR_PLAN_CREATE = {
 		}
 		remove_effect = {
 			add_ideas = JAP_for_war
+			hidden_effect = {
+				set_country_flag = TR_japan.for_war_2
+			}
 		}
 		fire_only_once = yes
 		days_remove = 120
 	}
 	FOR_WAR_3 = {
 		available = {
-			has_decision = FOR_WAR_3
+			has_country_flag = TR_japan.for_war_2
 		}
 		allowed = {
 			always = no
@@ -2423,9 +2431,9 @@ JAP_WAR_PLAN_CREATE_2 = {
 		cost = 100
 		fire_only_once = yes
 		ai_will_do = {
-			base = 100
+			base = 200
 			modifier = {
-				add = -99
+				add = -45
 				has_country_flag = {
 					flag = TR_japan.USA
 					days < 365
@@ -2460,33 +2468,17 @@ JAP_WAR_PLAN_CREATE_2 = {
 		allowed = {
 			always = no
 		}
+		available = {
+
+			is_exiled_in = PHI
+			
+		}
 		cost = 100
 		fire_only_once = yes
 		ai_will_do = {
 			base = 100
-			modifier = {
-				add = -45
-				has_country_flag = {
-					flag = TR_japan.ENG
-					days < 365
-				}
-
-			}
-			modifier = {
-				add = -45
-				has_country_flag = {
-					flag = TR_japan.FRA
-					days < 365
-				}
-			}
-			modifier = {
-				add = -5
-				has_country_flag = {
-					flag = TR_japan.INS
-					days < 365
-				}
-			}
 		}
+		
 		complete_effect = {
 			USA = {
 				country_event = {
@@ -2504,30 +2496,9 @@ JAP_WAR_PLAN_CREATE_2 = {
 		fire_only_once = yes
 		ai_will_do = {
 			base = 100
-			modifier = {
-				add = -45
-				has_country_flag = {
-					flag = TR_japan.ENG
-					days < 365
-				}
-			}
-			modifier = {
-				add = -45
-				has_country_flag = {
-					flag = TR_japan.USA
-					days < 365
-				}
-			}
-			modifier = {
-				add = -5
-				has_country_flag = {
-					flag = TR_japan.INS
-					days < 365
-				}
-			}
 		}
 		complete_effect = {
-			VEN = {
+			FRA = {
 				country_event = {
 					id = TR_japan.55
 					days = 1

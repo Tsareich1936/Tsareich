@@ -3561,5 +3561,226 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = TR_japan.CHI
 		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = TR_japan.120
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				JAP = {
+					is_ai = yes
+				}
+			}
+			add_timed_idea = {
+				idea = TR_for_ai
+				days = 12
+			}
+			JAP ={
+				country_event = {
+					id = TR_japan.121
+					days = 12
+				}
+			}
+		}
+
+	}
+}
+country_event = {
+	id = TR_japan.121
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		set_technology = {
+			range_improvements = 1
+		}
+	}
+}
+country_event = {
+	id = TR_japan.122
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				JAP = {
+					is_ai = yes
+				}
+			}
+			add_timed_idea = {
+				idea = TR_for_ai
+				days = 35
+			}
+			JAP ={
+				country_event = {
+					id = TR_japan.123
+					days = 35
+				}
+			}
+		}
+
+	}
+}
+country_event = {
+	id = TR_japan.123
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		set_technology = {
+			survivability_studies = 1
+			aa_hmg = 1
+			engines_3 = 1
+		}
+	}
+}
+country_event = {
+	id = TR_japan.124
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				JAP ={
+					is_ai = yes
+				}
+			}
+			air_experience = -300
+			create_equipment_variant = {
+				name = "G4M1"
+				type = small_plane_airframe_2
+				modules = {
+					fixed_main_weapon_slot = torpedo_mounting
+					engine_type_slot = engine_3_1x
+					special_type_slot_1 = drop_tanks
+					special_type_slot_2 = fuel_tanks_small	
+				}
+			}
+			create_equipment_variant = {
+				name = "Zero"
+				type = cv_small_plane_airframe_2
+				modules = {
+					fixed_main_weapon_slot = heavy_mg_4x
+					fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+					fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+						
+					engine_type_slot = engine_3_1x
+					special_type_slot_1 = empty
+					special_type_slot_2 = empty	
+				}
+			}
+			create_equipment_variant = {
+				name = "ki-43"
+				type = small_plane_airframe_2
+				modules = {
+					fixed_main_weapon_slot = heavy_mg_4x
+					fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+					fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+					engine_type_slot = engine_3_1x
+					special_type_slot_1 = drop_tanks
+					special_type_slot_2 = armor_plate_small
+					special_type_slot_3 = self_sealing_fuel_tanks_small	
+				}
+			}
+			create_equipment_variant = {
+				name = "B6N"
+				type = cv_small_plane_airframe_2
+				modules = {
+					fixed_main_weapon_slot = torpedo_mounting
+					engine_type_slot = engine_2_1x
+					special_type_slot_1 = drop_tanks
+					special_type_slot_2 = fuel_tanks_small	
+				}
+			}
+			create_equipment_variant = {
+				name = "Ki-48"
+				type = medium_plane_airframe_2
+				modules = {
+					fixed_main_weapon_slot = medium_bomb_bay
+					fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+					fixed_auxiliary_weapon_slot_2 = empty
+					engine_type_slot = engine_3_2x
+					special_type_slot_1 = drop_tanks
+					special_type_slot_2 = armor_plate_medium	
+				}
+			}
+			create_equipment_variant = {
+				name = "Ki-44"
+				type = medium_plane_airframe_2
+				modules = {
+					fixed_main_weapon_slot = heavy_mg_4x
+					fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+					fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+					engine_type_slot = engine_3_2x
+					special_type_slot_1 = armor_plate_medium
+					special_type_slot_2 = fuel_tanks_medium	
+				}
+			}
+			create_equipment_variant = {
+				name = "Ki-51"
+				type = small_plane_airframe_2
+				modules = {
+					fixed_main_weapon_slot = small_bomb_bay
+					fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+					fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+					engine_type_slot = engine_3_1x
+					special_type_slot_1 = drop_tanks
+					special_type_slot_2 = dive_brakes_small
+				}
+			}
+			create_equipment_variant = {
+				name = "B74"
+				type = cv_small_plane_airframe_2
+				modules = {
+					fixed_main_weapon_slot = small_bomb_bay
+					fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+					fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+					engine_type_slot = engine_3_1x
+					special_type_slot_1 = drop_tanks
+					special_type_slot_2 = dive_brakes_small
+					
+				}
+		    }
+		}
+	}
+}
+country_event = {
+	id = TR_japan.125
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				JAP = {
+					is_ai = yes
+				}
+			}
+			army_experience = -100
+			create_equipment_variant = {
+				name = "CHI-Ha"
+				type = medium_tank_chassis_1
+				modules = {
+					main_armament_slot = tank_medium_cannon
+						
+					
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = secondary_turret_hmg
+					special_type_slot_2 = secondary_turret_hmg
+					special_type_slot_3 = easy_maintenance
+					special_type_slot_4 = tank_radio_2
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 14
+					tank_nsb_armor_upgrade = 0
+				}
+			}
+		}
 	}
 }

@@ -226,11 +226,13 @@ shared_focus = {
 	completion_reward = {
 		if = {
 			limit = {
-				THIS ={
-					amount_research_slots = 4
+				not = {
+					THIS ={
+						amount_research_slots = 5
+					}
 				}
 			}
-			add_research_slot = 1
+			set_research_slots = 5
 		}
 		add_ideas = TR_GG_research
 	}

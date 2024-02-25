@@ -1553,7 +1553,10 @@ technologies = {
 				factor = 1.2
 				date > "1940.1.1"
 			}
-			
+			modifier = {
+				tag = JAP
+				factor = 0.01
+			}
 			modifier = {
 				factor = 1.2
 				date > "1941.1.1"

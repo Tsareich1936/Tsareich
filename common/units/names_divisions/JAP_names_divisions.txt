@@ -900,7 +900,7 @@ JAP_IMB_01 =
 	{
 		1 = { "%d Dokuritsu Konsei Ryodan" }
 		11 = { "%d Dokuritsu Konsei Ryodan" }
-		201 = { "Karafuto Dokuritsu Konsei Ryodan" }
+		201 = { "Hokkaido Dokuritsu Konsei Ryodan" }
 		202 = { "Konoe Dokuritsu Konsei Ryodan" }
 		12 = { "%d Dokuritsu Konsei Ryodan" }
 		15 = { "%d Dokuritsu Konsei Ryodan" }

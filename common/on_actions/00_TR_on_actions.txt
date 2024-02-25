@@ -115,6 +115,34 @@ on_actions = {
 					days = 30
 				}
 			}
+			JAP = {
+
+				country_event = {
+					id = TR_japan.120
+					days = 365
+				}
+				
+			}
+			JAP = {
+
+				country_event = {
+					id = TR_japan.122
+					days = 1460
+				}
+				
+			}
+			JAP = {
+				country_event = {
+					id = TR_japan.124
+					days = 1460
+				}
+			}
+			JAP = {
+				country_event = {
+					id = TR_japan.125
+					days = 1095
+				}
+			}
 		}
 	effect = {#VIN set up
 			#VIN gomu concessions			
@@ -172,9 +200,11 @@ on_actions = {
 						tag = JAP
 					}
 				}
-				set_autonomy = {
-					target = ROOT
-					autonomy_state = government_general
+				FROM = {
+					set_autonomy = {
+						target = ROOT
+						autonomy_state = government_general
+					}
 				}
 				ROOT = {
 					load_focus_tree = government_general

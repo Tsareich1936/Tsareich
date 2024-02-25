@@ -986,6 +986,10 @@ technologies = {
 				is_major = no
 				factor = 0
 			}
+			modifier = {
+				factor = 0
+				tag = JAP
+			}
 		}
 
 		categories = {

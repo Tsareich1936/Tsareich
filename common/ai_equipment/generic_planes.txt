@@ -152,7 +152,7 @@ generic_fighter = {
 generic_cas = {
 	category = air
 
-	blocked_for = {GER ENG USA}
+	blocked_for = {GER ENG USA JAP}
 
 	available_for = {}
 
@@ -238,7 +238,7 @@ generic_cas = {
 generic_naval_bomber = {
 	category = air
 
-	blocked_for = {GER ENG USA}
+	blocked_for = {GER ENG USA JAP}
 
 	available_for = {}
 
@@ -322,7 +322,7 @@ generic_cv_fighter = {
 	category = air
 
 	#blocked_for = {  ENG USA FRA JAP } #Why
-	blocked_for = { ENG }
+	blocked_for = { ENG JAP}
 
 	available_for = {}
 
@@ -471,7 +471,7 @@ generic_cv_cas = {
 	category = air
 
 	#blocked_for = { ENG USA FRA JAP }
-	blocked_for = { ENG }
+	blocked_for = { ENG JAP}
 
 	available_for = {}
 
@@ -570,7 +570,7 @@ generic_cv_naval_bomber = {
 	category = air
 
 	#blocked_for = {  ENG USA FRA JAP }
-	blocked_for = { ENG }
+	blocked_for = { ENG JAP}
 
 	available_for = {}
 
@@ -671,7 +671,7 @@ generic_cv_naval_bomber = {
 generic_tactical_bomber = {
 	category = air
 
-	blocked_for = {GER ENG USA}
+	blocked_for = {GER ENG USA JAP}
 
 	available_for = {}
 
@@ -831,7 +831,7 @@ generic_tactical_bomber = {
 generic_heavy_fighter = {
 	category = air
 
-	blocked_for = {GER ENG USA}
+	blocked_for = {GER ENG USA JAP}
 
 	available_for = {}
 
@@ -930,7 +930,7 @@ generic_heavy_fighter = {
 
 generic_scout_plane = {
 	category = air
-	blocked_for = {}
+	blocked_for = {JAP}
 	available_for = {}
 
 	roles = {
@@ -1161,7 +1161,7 @@ generic_strategic_bomber = {
 generic_maritime_patrol = {
 	category = air
 
-	blocked_for = {GER ENG USA}
+	blocked_for = {GER ENG USA JAP}
 
 	available_for = {}
 

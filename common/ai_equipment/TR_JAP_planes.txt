@@ -11,15 +11,15 @@ JAP_naval_bomber = {
 		air_naval_bomber
 	}
 	priority = {
-		factor = 500
+		factor = 50
 	}
 	naval_bomber_1 = {
 		priority = {
-			factor = 200
+			factor = 20
 		}
 		target_variant = {
 			match_value = 1500
-			type = small_plane_naval_bomber_airframe_1
+			type = small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
 				engine_type_slot > engine_2_1x
@@ -36,14 +36,14 @@ JAP_naval_bomber = {
 	}
 	naval_bomber_2 = {
 		priority = {
-			factor = 200
+			factor = 20
 		}
 		target_variant = {
 			match_value = 1500
-			type = small_plane_naval_bomber_airframe_2
+			type = small_plane_airframe_2
 			modules = {
-				fixed_main_weapon_slot > torpedo_mounting
-				engine_type_slot > engine_2_1x
+				fixed_main_weapon_slot = torpedo_mounting
+				engine_type_slot = engine_3_1x
 				special_type_slot_1 = drop_tanks
 				special_type_slot_2 = fuel_tanks_small	
 			}
@@ -59,14 +59,14 @@ JAP_naval_bomber = {
 
 	naval_bomber_3 = {
 		priority = {
-			factor = 200
+			factor = 20
 		}
 		target_variant = {
 			match_value = 2000
-			type = small_plane_naval_bomber_airframe_3
+			type = small_plane_airframe_3
 			modules = {
 				fixed_main_weapon_slot > torpedo_mounting
-				engine_type_slot > engine_3_1x
+				engine_type_slot > engine_4_1x
 				special_type_slot_1 = drop_tanks
 				special_type_slot_2 = fuel_tanks_small	
 			}
@@ -97,7 +97,7 @@ JAP_cv_fighter = {
 	}
 
 	priority = {
-		factor = 1000
+		factor = 10
 		modifier = {
 			has_navy_size = {
 				unit = carrier
@@ -110,7 +110,7 @@ JAP_cv_fighter = {
 
 	basic_cv_fighter_default = {
 		priority = {
-			factor = 100
+			factor = 10
 		}
 
 		target_variant = {
@@ -224,7 +224,7 @@ JAP_fighter = {
 	}
 
 	priority = {
-		factor = 1000
+		factor = 10
 		modifier = {
 			has_navy_size = {
 				unit = carrier
@@ -237,7 +237,7 @@ JAP_fighter = {
 
 	basic_cv_fighter_default = {
 		priority = {
-			factor = 100
+			factor = 10
 		}
 
 		target_variant = {
@@ -358,7 +358,7 @@ JAP_cv_naval_bomber = {
 	}
 
 	priority = {
-		factor = 500
+		factor = 50
 		modifier = {
 			has_navy_size = {
 				unit = carrier
@@ -369,14 +369,14 @@ JAP_cv_naval_bomber = {
 	}
 	cv_naval_bomber_1 = {
 		priority = {
-			factor = 200
+			factor = 20
 		}
 		target_variant = {
 			match_value = 1500
 			type = cv_small_plane_naval_bomber_airframe_1
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
-				engine_type_slot > engine_2_1x
+				engine_type_slot = engine_2_1x
 				special_type_slot_1 = drop_tanks
 				special_type_slot_2 = fuel_tanks_small	
 			}
@@ -390,14 +390,14 @@ JAP_cv_naval_bomber = {
 	}
 	cv_naval_bomber_2 = {
 		priority = {
-			factor = 200
+			factor = 20
 		}
 		target_variant = {
 			match_value = 1500
 			type = cv_small_plane_naval_bomber_airframe_2
 			modules = {
-				fixed_main_weapon_slot > torpedo_mounting
-				engine_type_slot > engine_2_1x
+				fixed_main_weapon_slot = torpedo_mounting
+				engine_type_slot = engine_3_1x
 				special_type_slot_1 = drop_tanks
 				special_type_slot_2 = fuel_tanks_small	
 			}
@@ -412,14 +412,14 @@ JAP_cv_naval_bomber = {
 
 	cv_naval_bomber_3 = {
 		priority = {
-			factor = 200
+			factor = 20
 		}
 		target_variant = {
 			match_value = 2000
 			type = cv_small_plane_naval_bomber_airframe_3
 			modules = {
 				fixed_main_weapon_slot > torpedo_mounting
-				engine_type_slot > engine_3_1x
+				engine_type_slot > engine_4_1x
 				special_type_slot_1 = drop_tanks
 				special_type_slot_2 = fuel_tanks_small	
 			}
@@ -448,7 +448,7 @@ JAP_tactical_bomber = {
 	}
 
 	priority = {
-		factor = 2000
+		factor = 20
 		modifier = {
 			num_of_factories < 100
 			factor = 0.5
@@ -466,7 +466,7 @@ JAP_tactical_bomber = {
 		}
 
 		target_variant = {
-			match_value = 3000
+			match_value = 30
 			type = medium_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -486,12 +486,12 @@ JAP_tactical_bomber = {
 	}
 	tac_bomber_2_default = {
 		priority = {
-			factor = 100
+			factor = 10
 	
 		}
 
 		target_variant = {
-			match_value = 3000
+			match_value = 30
 			type = medium_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -514,11 +514,11 @@ JAP_tactical_bomber = {
 
 	tac_bomber_3_default = {
 		priority = {
-			factor = 100
+			factor = 10
 		}
 
 		target_variant = {
-			match_value = 4000
+			match_value = 40
 			type = medium_plane_airframe_3
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -539,11 +539,11 @@ JAP_tactical_bomber = {
 	}
 	jet_tac_bomber_default = {
 		priority = {
-			factor = 100
+			factor = 10
 		}
 
 		target_variant = {
-			match_value = 4000
+			match_value = 40
 			type = medium_plane_airframe_4
 			modules = {
 				fixed_main_weapon_slot = medium_bomb_bay
@@ -576,12 +576,12 @@ JAP_heavy_fighter = {
 	}
 
 	priority = {
-		factor = 500
+		factor = 50
 		
 	}
 	heavy_fighter_1 = {
 		priority = {
-			factor = 100
+			factor = 10
 			
 		}
 		
@@ -610,7 +610,7 @@ JAP_heavy_fighter = {
 
 	heavy_fighter_2 = {
 		priority = {
-			factor = 200
+			factor = 20
 			
 		}
 		
@@ -639,7 +639,7 @@ JAP_heavy_fighter = {
 
 	heavy_fighter_3 = {
 		priority = {
-			factor = 200
+			factor = 20
 			
 		}
 
@@ -679,7 +679,7 @@ JAP_strategic_bomber = {
 	}
 
 	priority = {
-		factor = 200
+		factor = 20
 		modifier = {
 			num_of_factories < 50
 			factor = 0
@@ -788,7 +788,7 @@ JAP_cas = {
 	}
 
 	priority = {
-		factor = 1000
+		factor = 10
 		modifier = {
 			has_navy_size = {
 				unit = carrier
@@ -801,7 +801,7 @@ JAP_cas = {
 
 	basic_cas_default = {
 		priority = {
-			factor = 100
+			factor = 10
 		}
 
 		target_variant = {
@@ -926,12 +926,12 @@ JAP_cv_cas = {
 
 	basic_cv_cas_default = {
 		priority = {
-			factor = 100
+			factor = 10
 		}
 
 		target_variant = {
 			match_value = 2000
-			type = small_plane_airframe_1
+			type = cv_small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = small_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
@@ -954,7 +954,7 @@ JAP_cv_cas = {
 
 		target_variant = {
 			match_value = 3000
-			type = small_plane_airframe_2
+			type = cv_small_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = small_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
@@ -980,7 +980,7 @@ JAP_cv_cas = {
 
 		target_variant = {
 			match_value = 4000
-			type = small_plane_airframe_3
+			type = cv_small_plane_airframe_3
 			modules = {
 				fixed_main_weapon_slot = small_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
@@ -1005,7 +1005,7 @@ JAP_cv_cas = {
 
 		target_variant = {
 			match_value = 4000
-			type = small_plane_airframe_4
+			type = cv_small_plane_airframe_4
 			modules = {
 				fixed_main_weapon_slot = small_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = small_bomb_bay

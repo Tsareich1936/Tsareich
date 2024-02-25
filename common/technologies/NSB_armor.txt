@@ -681,6 +681,10 @@ technologies = {
 				factor = 2
 				tag = GER
 			}
+			modifier = {
+				factor = 0.001
+				tag = JAP
+			}
 
 			modifier = {
 				factor = 2

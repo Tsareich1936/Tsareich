@@ -22,6 +22,14 @@ ideas = {
             }
         }
 
+        TR_for_ai = {
+            picture = jap_duplicate_research
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = -1
+            }
+        }
+
 	}
 
 }

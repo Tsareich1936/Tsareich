@@ -84,7 +84,7 @@ JAP_light_frame_tanks = {
 
 		target_variant = {
 			match_value = 1000
-			type > light_tank_flame_chassis
+			type = light_tank_flame_chassis
 			modules = {
 				main_armament_slot = flamethrower
 				turret_type_slot = tank_light_one_man_tank_turret
@@ -111,6 +111,7 @@ JAP_light_frame_tanks = {
 			tank_riveted_armor
 			tank_diesel_engine
 		}
+		
 	}
 }
 
@@ -132,11 +133,7 @@ JAP_medium_tanks = {
 
 	basic_medium_tank_default = { #Chi-Ha
 		priority = {
-			factor = 100
-			modifier = { 
-				has_tech = improved_medium_tank_chassis
-				factor = 0 #let's not waste XP here
-			}
+			factor = 5
 		}
 		target_variant = {
 			match_value = 2000
@@ -164,9 +161,7 @@ JAP_medium_tanks = {
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade > 4
-				tank_nsb_armor_upgrade = {
-					base = 0
-				}
+				tank_nsb_armor_upgrade = 0
 			}
 		}
 
