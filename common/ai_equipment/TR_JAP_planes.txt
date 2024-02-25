@@ -275,7 +275,7 @@ JAP_fighter = {
 				engine_type_slot = engine_3_1x
 				special_type_slot_1 = drop_tanks
 				special_type_slot_2 = armor_plate_small
-				special_type_slot_3 = self_sealing_fuel_tanks_small	
+				special_type_slot_3 = empty
 			}
 		}
 
@@ -472,7 +472,7 @@ JAP_tactical_bomber = {
 				fixed_main_weapon_slot = medium_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
 				engine_type_slot = engine_2_2x
-				special_type_slot_1 = drop_tanks
+				special_type_slot_1 = fuel_tanks_medium
 				special_type_slot_2 = empty
 			}
 			
@@ -481,7 +481,7 @@ JAP_tactical_bomber = {
 		allowed_modules = {
 			medium_bomb_bay
 			engine_2_2x
-			drop_tanks
+			fuel_tanks_medium
 		}
 	}
 	tac_bomber_2_default = {
@@ -498,7 +498,7 @@ JAP_tactical_bomber = {
 				fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
 				fixed_auxiliary_weapon_slot_2 = empty
 				engine_type_slot = engine_3_2x
-				special_type_slot_1 = drop_tanks
+				special_type_slot_1 = fuel_tanks_medium
 				special_type_slot_2 = armor_plate_medium	
 			}
 			
@@ -507,7 +507,7 @@ JAP_tactical_bomber = {
 		allowed_modules = {
 			medium_bomb_bay
 			engine_3_2x
-			drop_tanks
+			fuel_tanks_medium
 			armor_plate_medium
 		}
 	}
@@ -525,7 +525,7 @@ JAP_tactical_bomber = {
 				fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
 				fixed_auxiliary_weapon_slot_2 = empty
 				engine_type_slot = engine_4_2x
-				special_type_slot_1 = drop_tanks
+				special_type_slot_1 = fuel_tanks_medium
 				special_type_slot_2 = armor_plate_medium	
 			}
 			
@@ -533,7 +533,7 @@ JAP_tactical_bomber = {
 		allowed_modules = {
 			medium_bomb_bay
 			engine_4_2x
-			drop_tanks
+			fuel_tanks_medium
 			armor_plate_medium
 		}
 	}

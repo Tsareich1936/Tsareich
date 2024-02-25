@@ -3683,7 +3683,6 @@ country_event = {
 					engine_type_slot = engine_3_1x
 					special_type_slot_1 = drop_tanks
 					special_type_slot_2 = armor_plate_small
-					special_type_slot_3 = self_sealing_fuel_tanks_small	
 				}
 			}
 			create_equipment_variant = {
@@ -3704,7 +3703,7 @@ country_event = {
 					fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
 					fixed_auxiliary_weapon_slot_2 = empty
 					engine_type_slot = engine_3_2x
-					special_type_slot_1 = drop_tanks
+					special_type_slot_1 = fuel_tanks_medium
 					special_type_slot_2 = armor_plate_medium	
 				}
 			}

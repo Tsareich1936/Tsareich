@@ -1142,56 +1142,11 @@ focus_tree = { # nomal
             focus = jap_war_plan
         }
         completion_reward = {
-            if = {
-                limit = {
-                    has_completed_focus = jap_Find_an_ally
-                }
-                activate_targeted_decision = {
-                    target = JAP
-                    decision = JAP_ENG
-                }
-                activate_targeted_decision = {
-                    target = JAP
-                    decision = JAP_USA
-                }
-                # activate_targeted_decision = {
-                #     target = JAP
-                #     decision = JAP_FGE
-                # }
-                activate_targeted_decision = {
-                    target = JAP
-                    decision = JAP_HOL
-                }
-                activate_targeted_decision = {
-                    target = JAP
-                    decision = JAP_FRA
-                }
-            }
-            if = {
-                limit = {
-                    has_completed_focus = jap_Create_allies
-                }
-                activate_targeted_decision = {
-                    target = JAP
-                    decision = JAP_ENG.1
-                }
-                activate_targeted_decision = {
-                    target = JAP
-                    decision = JAP_USA.1
-                }
-                # activate_targeted_decision = {
-                #     target = JAP
-                #     decision = JAP_FGE.1
-                # }
-                activate_targeted_decision = {
-                    target = JAP
-                    decision = JAP_HOL.1
-                }
-                activate_targeted_decision = {
-                    target = JAP
-                    decision = JAP_FRA.1
-                }
-            }
+            country_event = TR_japan.53
+            country_event = TR_japan.54
+            country_event = TR_japan.55
+            country_event = TR_japan.56
+            country_event = TR_japan.117
         }
     }
 

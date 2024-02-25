@@ -151,12 +151,9 @@ JAP_medium_tanks = {
 				engine_type_slot = tank_gasoline_engine
 				special_type_slot_1 = secondary_turret_hmg
 				special_type_slot_2 = secondary_turret_hmg
-				special_type_slot_3 = {
-					any_of = {
-						additional_machine_guns
-						easy_maintenance
-					}
-				}
+				special_type_slot_3 = easy_maintenance
+					
+				
 				special_type_slot_4 = tank_radio_2
 			}
 			upgrades = {
