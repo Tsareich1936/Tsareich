@@ -178,7 +178,11 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_political_power = 120
+			add_political_power = 150
+			set_temp_variable = {
+                updt_consumer_goods_factor = 0.1
+            }
+			TE_update_modifier = yes
 		}
 	}
 

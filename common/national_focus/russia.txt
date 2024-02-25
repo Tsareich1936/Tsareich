@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-
+	
 	# focus = {
 	# 	id = test_TE_focus
 	# 	icon = GFX
@@ -64,7 +64,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = RUS_army_airforce
 		}
-		x = -1
+		x = 0
 		y = 13
 		relative_position_id = RUS_FkV_notsar
 		prerequisite = {
@@ -1190,14 +1190,14 @@ focus_tree = {
 		icon = GFX_focus_NORDIC_dem_army
 		cost = 4
 		prerequisite = {
-			focus = RUS_alaska_development
+			#focus = RUS_alaska_development
 		}
 		mutually_exclusive = {
 			focus = RUS_advance_navy
 		}
-		x = -9
+		x = 42
 		y = 12
-		relative_position_id = RUS_FkV_notsar
+		#relative_position_id = RUS_FkV_notsar
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.5
@@ -1245,14 +1245,14 @@ focus_tree = {
 		icon = GFX_focus_NORDIC_dem_navy
 		cost = 4
 		prerequisite = {
-			focus = RUS_alaska_development
+			#focus = RUS_alaska_development
 		}
 		mutually_exclusive = {
 			focus = RUS_indp_army
 		}
-		x = 9
+		x = 60
 		y = 12
-		relative_position_id = RUS_FkV_notsar
+		#relative_position_id = RUS_FkV_notsar
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.5
