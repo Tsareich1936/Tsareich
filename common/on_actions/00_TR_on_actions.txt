@@ -164,6 +164,20 @@ on_actions = {
 			}
 		}
 	}
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						tag = JAP
+					}
+				}
+				ROOT = {
+					load_focus_tree = government_general
+				}
+			}
+		}
+	}
 	on_daily_JAP = {
 		effect = {
 			if = {
