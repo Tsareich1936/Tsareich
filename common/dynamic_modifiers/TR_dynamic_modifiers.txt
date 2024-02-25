@@ -1,3 +1,20 @@
+TR_traditional_economy_modifier = {
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		NOT = {
+			has_idea = traditional_economy
+		}
+	}
+	consumer_goods_factor = rus_TE_consumer_goods_factor
+	industrial_capacity_factory = rus_TE_industrial_capacity_factor
+	industrial_capacity_dockyard = rus_TE_industrial_capacity_dockyard
+	production_speed_buildings_factor = rus_TE_production_speed_buildings_factor
+	local_resources_factor = rus_TE_local_resources_factor
+	supply_node_range = rus_TE_supply_node_range
+}
+
 TR_POL_resisting = {
 	enable = {
 		always = yes

@@ -1,0 +1,60 @@
+defined_text = {#消費財工場補正
+	name = GetCGF
+	text = { trigger = { NOT = { check_variable = { rus_TE_consumer_goods_factor = 0 } } } localization_key = "TE_CGF_tt" }
+	text = { localization_key = "" }
+}
+defined_text = {#工場出力
+	name = GetICF
+	text = { trigger = { NOT = { check_variable = { var = rus_TE_industrial_capacity_factor value = 0 } } } localization_key = "TE_ICF_tt" }
+	text = { localization_key = "" }
+}
+defined_text = {#造船所出力
+	name = GetICD
+	text = { trigger = { NOT = { check_variable = { var = rus_TE_industrial_capacity_dockyard value = 0 } } } localization_key = "TE_ICD_tt" }
+	text = { localization_key = "" }
+}
+defined_text = {#建設速度
+	name = GetPSBF
+	text = { trigger = { NOT = { check_variable = { var = rus_TE_production_speed_buildings_factor value = 0 } } } localization_key = "TE_PSBF_tt" }
+	text = { localization_key = "" }
+}
+defined_text = {#資源の採掘効率
+	name = GetLRF
+	text = { trigger = { NOT = { check_variable = { var = rus_TE_local_resources_factor value = 0 } } } localization_key = "TE_LRF_tt" }
+	text = { localization_key = "" }
+}
+defined_text = {#供給範囲
+	name = GetSNR
+	text = { trigger = { NOT = { check_variable = { var = rus_TE_supply_node_range value = 0 } } } localization_key = "TE_SNR_tt" }
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = UpdtCGF
+	text = { trigger = { NOT = { check_variable = { updt_consumer_goods_factor = 0 } } } localization_key = "TE_updt_CGF_tt" }
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = UpdtICF
+	text = { trigger = { NOT = { check_variable = { updt_industrial_capacity_factor = 0 } } } localization_key = "TE_updt_ICF_tt" }
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = UpdtICD
+	text = { trigger = { NOT = { check_variable = { updt_industrial_capacity_dockyard = 0 } } } localization_key = "TE_updt_ICD_tt" }
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = UpdtPSBF
+	text = { trigger = { NOT = { check_variable = { updt_production_speed_buildings_factor = 0 } } } localization_key = "TE_updt_PSBF_tt" }
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = UpdtLRF
+	text = { trigger = { NOT = { check_variable = { updt_local_resources_factor = 0 } } } localization_key = "TE_updt_LRF_tt" }
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = UpdtSNR
+	text = { trigger = { NOT = { check_variable = { updt_supply_node_range = 0 } } } localization_key = "TE_updt_SNR_tt" }
+	text = { localization_key = "" }
+}

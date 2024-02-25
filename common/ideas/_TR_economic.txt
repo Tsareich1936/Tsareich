@@ -3,7 +3,30 @@ ideas = {
 	economy = { 
 		law = yes
 		use_list_view = no
-				
+		traditional_economy = {
+			picture = generic_agrarian_society
+			visible = {
+				original_tag = RUS
+			}
+			available = {
+			}
+			allowed_to_remove = {
+				always = no
+			}
+
+			cost = 255
+			removal_cost = -1
+			level = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.2
+				custom_modifier_tooltip = "traditional_economy_modifier_tt"
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
 		company_economy = {
 			
 			picture = generic_flexible_foreign_policy2

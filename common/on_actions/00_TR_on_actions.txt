@@ -172,6 +172,10 @@ on_actions = {
 						tag = JAP
 					}
 				}
+				set_autonomy = {
+					target = ROOT
+					autonomy_state = government_general
+				}
 				ROOT = {
 					load_focus_tree = government_general
 				}

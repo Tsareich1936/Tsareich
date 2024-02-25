@@ -2370,6 +2370,7 @@ JAP_WAR_PLAN_CREATE = {
 		ai_will_do = {
 			base = 300
 		}
+		fire_only_once = yes
 		days_remove = 120
 	}
 	FOR_WAR_2 = {
@@ -2388,6 +2389,7 @@ JAP_WAR_PLAN_CREATE = {
 		remove_effect = {
 			add_ideas = JAP_for_war
 		}
+		fire_only_once = yes
 		days_remove = 120
 	}
 	FOR_WAR_3 = {
@@ -2400,6 +2402,7 @@ JAP_WAR_PLAN_CREATE = {
 		modifier = {
 			civilian_factory_use = 5
 		}
+		fire_only_once = yes
 		days_remove = 120
 		remove_effect = {
 			add_ideas = JAP_imperial_resolve
@@ -2917,6 +2920,22 @@ JAP_for_debug = {
 		}
 		allowed = {
 			is_debug = yes
+		}
+	}
+	add_oik = {
+		complete_effect = {
+			282 = {
+				add_resource = {
+					type = oil
+					amount = 1000
+				}
+			}
+			246 = {
+				add_resource = {
+					type = oil
+					amount = 1000
+				}
+			}
 		}
 	}
 }

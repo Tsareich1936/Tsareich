@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	
 	focus = {
 		id = RUS_FkV_notsar
 		icon = GFX_focus_hun_elect_a_king
@@ -54,6 +55,7 @@ focus_tree = {
 			always = no
 		}
 	}
+>>>>>>> parent of 2e33f14c (フィンランドはバグります！)
 	focus = {
 		id = RUS_indp_air
 		icon = GFX_focus_NORDIC_com_airforce
