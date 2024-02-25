@@ -8,7 +8,57 @@ focus_tree = {
 		}
 	}
 	default = no
-	
+<<<<<<< HEAD
+
+	# focus = {
+	# 	id = test_TE_focus
+	# 	icon = GFX
+	# 	cost = 16359.143
+	# 	x = 0
+	# 	y = 0
+	# 	completion_reward = {
+	# 		set_temp_variable = {
+	# 			updt_consumer_goods_factor = 0.1
+	# 		}
+	# 		set_temp_variable = {
+	# 			updt_industrial_capacity_factor = 0.1
+	# 		}
+	# 		set_temp_variable = {
+	# 			updt_industrial_capacity_dockyard = 0.1
+	# 		}
+	# 		set_temp_variable = {
+	# 			updt_production_speed_buildings_factor = 0.1
+	# 		}
+	# 		set_temp_variable = {
+	# 			updt_local_resources_factor = 0.1
+	# 		}
+	# 		set_temp_variable = {
+	# 			updt_supply_node_range = 0.1
+	# 		}
+	# 		TE_update_modifier = yes
+	# 		set_temp_variable = {
+	# 			updt_consumer_goods_factor = 0.2
+	# 		}
+	# 		set_temp_variable = {
+	# 			updt_industrial_capacity_factor = 0.2
+	# 		}
+	# 		set_temp_variable = {
+	# 			updt_industrial_capacity_dockyard = 0.2
+	# 		}
+	# 		set_temp_variable = {
+	# 			updt_production_speed_buildings_factor = 0.2
+	# 		}
+	# 		set_temp_variable = {
+	# 			updt_local_resources_factor = 0.2
+	# 		}
+	# 		set_temp_variable = {
+	# 			updt_supply_node_range = 0.2
+	# 		}
+	# 		TE_update_modifier = yes
+	# 	}
+		
+	# }
+=======
 	focus = {
 		id = RUS_FkV_notsar
 		icon = GFX_focus_hun_elect_a_king
