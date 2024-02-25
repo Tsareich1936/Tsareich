@@ -175,7 +175,7 @@ armor_JAP = {
 		}
 		
 		target_template = {
-			weight = 10
+			weight = 5
 			match_value = 4000.0
 			
 			support = {
