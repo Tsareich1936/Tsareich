@@ -3659,6 +3659,7 @@ country_event = {
 					special_type_slot_1 = drop_tanks
 					special_type_slot_2 = fuel_tanks_small	
 				}
+				allow_without_tech = yes
 			}
 			create_equipment_variant = {
 				name = "Zero"
@@ -3672,6 +3673,8 @@ country_event = {
 					special_type_slot_1 = empty
 					special_type_slot_2 = empty	
 				}
+				allow_without_tech = yes
+
 			}
 			create_equipment_variant = {
 				name = "ki-43"
@@ -3684,6 +3687,7 @@ country_event = {
 					special_type_slot_1 = drop_tanks
 					special_type_slot_2 = armor_plate_small
 				}
+				allow_without_tech = yes
 			}
 			create_equipment_variant = {
 				name = "B6N"
@@ -3694,6 +3698,7 @@ country_event = {
 					special_type_slot_1 = drop_tanks
 					special_type_slot_2 = fuel_tanks_small	
 				}
+				allow_without_tech = yes
 			}
 			create_equipment_variant = {
 				name = "Ki-48"
@@ -3706,6 +3711,7 @@ country_event = {
 					special_type_slot_1 = fuel_tanks_medium
 					special_type_slot_2 = armor_plate_medium	
 				}
+				allow_without_tech = yes
 			}
 			create_equipment_variant = {
 				name = "Ki-44"
@@ -3718,6 +3724,7 @@ country_event = {
 					special_type_slot_1 = armor_plate_medium
 					special_type_slot_2 = fuel_tanks_medium	
 				}
+				allow_without_tech = yes
 			}
 			create_equipment_variant = {
 				name = "Ki-51"
@@ -3730,6 +3737,7 @@ country_event = {
 					special_type_slot_1 = drop_tanks
 					special_type_slot_2 = dive_brakes_small
 				}
+				allow_without_tech = yes
 			}
 			create_equipment_variant = {
 				name = "B74"
@@ -3743,6 +3751,7 @@ country_event = {
 					special_type_slot_2 = dive_brakes_small
 					
 				}
+				allow_without_tech = yes
 		    }
 		}
 	}
