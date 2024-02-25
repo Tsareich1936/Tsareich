@@ -2,17 +2,14 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_invisible_bg
 		textureFile = "gfx/interface/UI/invisible_bg.dds"
-		transparencecheck = yes
 	}
 	spriteType = {
 		name = GFX_TR_USA_show_election
 		textureFile = "gfx/interface/UI/usa_election/usa_show_election_button.dds"
-		transparencecheck = yes
 	}
 	spriteType = {
 		name = GFX_TR_USA_election_bg
 		textureFile = "gfx/interface/UI/usa_election/usa_election_bg.dds"
-		transparencecheck = yes
 	}
 	spriteType = {
 		name = GFX_TR_USA_election_border
