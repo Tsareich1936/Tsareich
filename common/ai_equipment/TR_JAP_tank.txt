@@ -26,7 +26,7 @@ JAP_light_tanks = {
 
 		target_variant = {
 			match_value = 1000
-			type > light_tank_flame_chassis
+			type = light_tank_flame_chassis
 			modules = {
 				main_armament_slot = tank_close_support_gun
 				turret_type_slot = tank_light_three_man_tank_turret
@@ -67,7 +67,7 @@ JAP_light_frame_tanks = {
 	available_for = { JAP }
 
 	roles = {
-		light_tank_flame_chassis
+		medium_tank_flame
 	}
 
 	priority = {
@@ -78,16 +78,13 @@ JAP_light_frame_tanks = {
 			factor = 10
 			
 		}
-		enable = {
-			has_tech = tech_engineers2
-		}
 
 		target_variant = {
 			match_value = 1000
-			type = light_tank_flame_chassis
+			type = medium_tank_flame_chassis
 			modules = {
 				main_armament_slot = flamethrower
-				turret_type_slot = tank_light_one_man_tank_turret
+				turret_type_slot = tank_medium_one_man_tank_turret
 				suspension_type_slot = tank_christie_suspension
 				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_gasoline_engine
@@ -105,6 +102,7 @@ JAP_light_frame_tanks = {
 		}
 
 		allowed_modules = {
+			flamethrower
 			tank_close_support_gun
 			tank_light_fixed_superstructure_turret
 			tank_bogie_suspension

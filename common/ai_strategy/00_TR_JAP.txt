@@ -128,7 +128,7 @@ JAP_army_product = {
 	}
 	ai_strategy = {
 		type = air_factory_balance
-		value = 0
+		value = 10
 	}
 	ai_strategy = {
 		type = equipment_production_min_factories
@@ -161,22 +161,7 @@ JAP_army_product_1 = {
 		id = train
 		value = 1
 	}
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = air_fighter
-		value = 20
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = air_fighter
-		value = 50
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = fighter
-		value = 100
-	}
-}
+}-
 
 JAP_army_product_2 = {
 	allowed = {	tag = JAP }
@@ -204,26 +189,6 @@ JAP_army_product_2 = {
 		id = anti_air
 		value = 5
 	}
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = air_fighter
-		value = 40
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = air_fighter
-		value = 100
-	}
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = train
-		value = 1
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = fighter
-		value = 100
-	}
 }
 JAP_army_product_3 = {
 	allowed = {	tag = JAP }
@@ -243,36 +208,6 @@ JAP_army_product_3 = {
 	ai_strategy = {
 		type = air_factory_balance
 		value = 40
-	}
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = air_fighter
-		value = 60
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = air_fighter
-		value = 400
-	}
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = air_naval_bomber
-		value = 15
-	}
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = air_tactical_bomber
-		value = 15
-	}
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = train
-		value = 1
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = fighter
-		value = 300
 	}
 	ai_strategy = {
 		type = equipment_production_factor
