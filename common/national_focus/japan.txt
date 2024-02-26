@@ -1144,7 +1144,6 @@ focus_tree = { # nomal
         completion_reward = {
             country_event = TR_japan.53
             country_event = TR_japan.54
-            country_event = TR_japan.55
             country_event = TR_japan.56
             country_event = TR_japan.117
         }
