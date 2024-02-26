@@ -1,0 +1,33 @@
+d_check_states = {
+	ROOT = {
+		set_temp_variable = {
+			noOfStates = 0
+		}
+		every_owned_state = {
+			limit = {
+			}
+			ROOT = {
+				add_to_temp_variable = {
+					var = noOfStates
+					value = 1
+				} 
+			}
+		}
+		log = "Owned states : [?noOfStates]" 
+		set_temp_variable = {
+			noOfStates = 0
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			ROOT = {
+				add_to_temp_variable = {
+					var = noOfStates
+					value = 1
+				} 
+			}
+		}
+		log = "Owned core states : [?noOfStates]" 
+	}
+}
