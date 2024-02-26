@@ -8,7 +8,7 @@ guiTypes = {
 		orientation = UPPER_LEFT
 		background = {
 			name = unkoburi
-			quadTextureSprite = GFX_gui_GER_parliament_bg
+			# quadTextureSprite = GFX_gui_GER_parliament_bg
 		}
 		instantTextBoxType = {
 			name = GER_num_of_seats_text
