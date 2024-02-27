@@ -1,0 +1,10 @@
+scripted_gui = {
+	Sidebar = {
+		context_type = global_context
+		window_name = sidebar
+		parent_window_name = topbar
+		visible = {
+			tag = PAR
+		}
+	}
+}

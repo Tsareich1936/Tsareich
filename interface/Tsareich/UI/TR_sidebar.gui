@@ -1,0 +1,23 @@
+guiTypes = {
+	containerWindowType = {
+		name = sidebar
+		position = {
+			x = 0
+			y = 81
+		}
+		size = {
+			width = 45
+			height = 100%
+		}
+		
+		clipping = yes
+		iconType = {
+			name = sidebar_bg
+			quadTextureSprite = GFX_gui_sidebar
+			size = {
+				width = 45
+				height = 100%
+			}
+		}
+	}
+}
