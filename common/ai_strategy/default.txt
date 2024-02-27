@@ -146,6 +146,7 @@ default_role_ratios = {
 	enable = {
 		not = {
 			has_dlc = "Man the Guns"
+
 		}
 	}
 	abort_when_not_enabled = yes
@@ -256,6 +257,9 @@ default_surplus_management = {
 	# If we manage to get all equipment we want, keep producing more stuff according to this
 	enable = {
 		always = yes  # For now, applies to everyone
+		not = {
+			original_tag = JAP
+		}
 	}
 	abort_when_not_enabled = yes
 
@@ -411,6 +415,7 @@ bba_support_boosts = {
 
 	enable = {
 		is_historical_focus_on = yes
+		not = 	{			original_tag = JAP}
 		date < 1939.1.1
 	}
 	abort_when_not_enabled = yes
@@ -733,7 +738,6 @@ highered_armored_production = {
 slightly_naval_focused_nation = {
 	enable = {
 		OR = {
-			tag = JAP
 			tag = USA
 			tag = ENG
 			tag = FRA
