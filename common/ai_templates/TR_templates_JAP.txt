@@ -193,7 +193,6 @@ armor_JAP = {
 		}
 		
 		allowed_types = {
-			light_armor
 			medium_armor
 			motorized
 			engineer

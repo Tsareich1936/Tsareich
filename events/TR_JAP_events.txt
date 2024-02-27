@@ -3652,7 +3652,7 @@ country_event = {
 			air_experience = -300
 			create_equipment_variant = {
 				name = "G4M1"
-				type = small_plane_airframe_2
+				type = small_plane_naval_bomber_airframe_2
 				modules = {
 					fixed_main_weapon_slot = torpedo_mounting
 					engine_type_slot = engine_3_1x
@@ -3691,12 +3691,12 @@ country_event = {
 			}
 			create_equipment_variant = {
 				name = "B6N"
-				type = cv_small_plane_airframe_2
+				type = cv_small_plane_naval_bomber_airframe_2
 				modules = {
 					fixed_main_weapon_slot = torpedo_mounting
-					engine_type_slot = engine_2_1x
+					engine_type_slot = engine_3_1x
 					special_type_slot_1 = drop_tanks
-					special_type_slot_2 = fuel_tanks_small	
+					special_type_slot_2 = empty	
 				}
 				allow_without_tech = yes
 			}
@@ -3715,7 +3715,7 @@ country_event = {
 			}
 			create_equipment_variant = {
 				name = "Ki-44"
-				type = medium_plane_airframe_2
+				type = medium_plane_fighter_airframe_2
 				modules = {
 					fixed_main_weapon_slot = heavy_mg_4x
 					fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
@@ -3728,11 +3728,10 @@ country_event = {
 			}
 			create_equipment_variant = {
 				name = "Ki-51"
-				type = small_plane_airframe_2
+				type = small_plane_cas_airframe_2
 				modules = {
 					fixed_main_weapon_slot = small_bomb_bay
 					fixed_auxiliary_weapon_slot_1 = small_bomb_bay
-					fixed_auxiliary_weapon_slot_2 = small_bomb_bay
 					engine_type_slot = engine_3_1x
 					special_type_slot_1 = drop_tanks
 					special_type_slot_2 = dive_brakes_small
@@ -3741,11 +3740,10 @@ country_event = {
 			}
 			create_equipment_variant = {
 				name = "B74"
-				type = cv_small_plane_airframe_2
+				type = cv_small_plane_cas_airframe_2
 				modules = {
 					fixed_main_weapon_slot = small_bomb_bay
 					fixed_auxiliary_weapon_slot_1 = small_bomb_bay
-					fixed_auxiliary_weapon_slot_2 = small_bomb_bay
 					engine_type_slot = engine_3_1x
 					special_type_slot_1 = drop_tanks
 					special_type_slot_2 = dive_brakes_small

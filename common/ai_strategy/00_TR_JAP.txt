@@ -275,7 +275,7 @@ JAP_NAVY = {
 	ai_strategy = {
 		type = unit_ratio
 		id = convoy
-		value = 80
+		value = 30
 	}
 	ai_strategy = {
 		type = role_ratio
@@ -331,7 +331,7 @@ JAP_NAVY_1 = {
 	ai_strategy = {
 		type = unit_ratio
 		id = carrier
-		value = 20
+		value = 40
 	}
 	ai_strategy = {
 		type = unit_ratio
@@ -344,9 +344,14 @@ JAP_NAVY_1 = {
 		value = 40
 	}
 	ai_strategy = {
+		type = equipment_production_factor
+		id = convoy
+		value = -80
+	}
+	ai_strategy = {
 		type = unit_ratio
 		id = convoy
-		value = 20
+		value = 10
 	}
 	ai_strategy = {
 		type = role_ratio
