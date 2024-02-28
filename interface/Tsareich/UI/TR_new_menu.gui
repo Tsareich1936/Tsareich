@@ -7,6 +7,7 @@ guiTypes = {
 			quadTextureSprite = GFX_gui_blank_button
 			position = { x= -48 y = 0 }
 			frame = 1
+			shortcut = "a"
 		}
 	}
 }

@@ -1,3 +1,5 @@
+#!gfx:interface\countrytechtreeview.gfx
+#!gfx:interface\general_stuff.gfx
 @faction_name_pos_x = 7
 @faction_name_pos_y = 49
 @faction_name_max_width = 118

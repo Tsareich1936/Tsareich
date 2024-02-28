@@ -1,0 +1,17 @@
+scripted_gui = {
+	TR_EconomicView = {
+		context_type = player_context
+		window_name = TR_economicview
+		parent_window_token = top_bar
+		visible = {
+			check_variable = {
+				economy_button_opened = 2
+			}
+		}
+		effects = {
+			TR_EV_close_button_click = {
+				clear_variable = economy_button_opened
+			}
+		}
+	}
+}
