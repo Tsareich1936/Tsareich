@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_gui_blank_button
+		textureFile = "gfx/interface/topbar/blank_button.dds"
+		noOfFrames = 2
+	}
+}

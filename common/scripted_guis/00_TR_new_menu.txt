@@ -1,0 +1,27 @@
+scripted_gui = {
+	TR_New_Menu = {
+		context_type = player_context
+		window_name = TR_economy_button_window
+		parent_window_token = top_bar
+		effects = {
+			TR_economy_button_click = {
+				if = {
+					limit = {
+						has_variable = economy_button_opened
+					}
+					clear_variable = economy_button_opened
+				}
+				else = {
+					set_variable = {
+						economy_button_opened = 2
+					}
+				}
+			}
+		}
+		properties = {
+			TR_economy_button = {
+				frame = economy_button_opened
+			}
+		}
+	}
+}

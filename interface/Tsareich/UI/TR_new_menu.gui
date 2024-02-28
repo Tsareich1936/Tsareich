@@ -1,0 +1,12 @@
+guiTypes = {
+	containerWindowType = {
+		name = TR_economy_button_window
+		position = { x=217 y=36 }
+		buttonType = {
+			name = TR_economy_button
+			quadTextureSprite = GFX_gui_blank_button
+			position = { x= -48 y = 0 }
+			frame = 1
+		}
+	}
+}
