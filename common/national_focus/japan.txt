@@ -1133,7 +1133,7 @@ focus_tree = { # nomal
                 limit = {
                     has_completed_focus = jap_Create_allies
                 }
-                always = no
+                has_country_flag =  TR_japan.fin
             }
             
         }

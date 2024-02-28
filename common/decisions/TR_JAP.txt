@@ -2414,7 +2414,9 @@ JAP_WAR_PLAN_CREATE = {
 		days_remove = 120
 		remove_effect = {
 			add_ideas = JAP_imperial_resolve
-			unlock_national_focus = jap_final_war
+			hidden_effect = {
+				set_country_flag = TR_japan.fin
+			}
 		}
 		ai_will_do = {
 			base = 300

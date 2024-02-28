@@ -369,7 +369,7 @@ JAP_naval_light_cruiser = {
 				dp_ship_secondaries_1
 				ship_torpedo_2
 				ship_airplane_launcher_1
-			}
+			
 		}
 	}
 

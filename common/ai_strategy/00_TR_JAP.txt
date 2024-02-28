@@ -357,7 +357,7 @@ JAP_NAVY_1 = {
 	ai_strategy = {
 		type = unit_ratio
 		id = light_cruiser
-		value = 40
+		value = 20
 	}
 	ai_strategy = {
 		type = role_ratio
