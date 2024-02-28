@@ -3,6 +3,7 @@ budget_income = {
 
 	# This count is displayed as an x-axis label, increment it
 	add_to_variable = { income_count = 1 }
+	set_variable = { income_month = [?global.date.GetDateStringNoHourLong] }
 
 	# We keep track of the last y position so we can calculate the slope
 	set_variable = { income_last_y_position = income_y_position }
