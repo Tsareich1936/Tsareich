@@ -991,7 +991,7 @@ country_event = {            # 外交方針
 		name = TR_japan.31.a
 		complete_national_focus = jap_cooperation
 		ai_chance = {
-			base = 1
+			base = 0
 		}
 	}
 	option = {
@@ -1294,11 +1294,11 @@ country_event = {    # 英国との対決
 	option = {
 		name = TR_japan.44.b
 		JAP = {
-		    create_wargoal = {
+		    declare_war_on = {
 				target = RAJ
 				type = liberate_wargoal
 			}
-			create_wargoal = {
+			declare_war_on = {
 				target = MAL
 				type = liberate_wargoal
 			}
@@ -1332,7 +1332,7 @@ country_event = {    # 米国との対決
 	option = {
 		name = TR_japan.45.b
 		JAP = {
-		    create_wargoal = {
+		    declare_war_on = {
 				target = PHI
 				type = liberate_wargoal
 			}
@@ -1366,7 +1366,7 @@ country_event = {   # against FRA
 	option = {
 		name = TR_japan.46.b
 		JAP = {
-		    create_wargoal = {
+		    declare_war_on = {
 				target = VIN
 				type = liberate_wargoal
 			}
@@ -1443,7 +1443,7 @@ country_event = {  # against HOL
 	option = {
 		name = TR_japan.49.b
 		JAP = {
-		    create_wargoal = {
+		    declare_war_on = {
 				target = INS
 				type = liberate_wargoal
 			}
@@ -1540,11 +1540,11 @@ country_event = { # 英国との対決
 	option = {
 		name = TR_japan.53.b
 		JAP = {
-		    create_wargoal = {
+			declare_war_on = {
 				target = RAJ
 				type = puppet_wargoal_focus
 			}
-			create_wargoal = {
+			declare_war_on = {
 				target = MAL
 				type = puppet_wargoal_focus
 			}
@@ -1577,7 +1577,7 @@ country_event = {  # 米国との対決
 	option = {
 		name = TR_japan.54.b
 		JAP = {
-		    create_wargoal = {
+		    declare_war_on = {
 				target = PHI
 				type = puppet_wargoal_focus
 			}
@@ -1610,7 +1610,7 @@ country_event = { # against FRA
 	option = {
 		name = TR_japan.55.b
 		JAP = {
-		    create_wargoal = {
+		    declare_war_on = {
 				target = VIN
 				type = puppet_wargoal_focus
 			}
@@ -1643,7 +1643,7 @@ country_event = { # against HOL
 	option = {
 		name = TR_japan.56.b
 		JAP = {
-		    create_wargoal = {
+		    declare_war_on = {
 				target = INS
 				type = puppet_wargoal_focus
 			}
@@ -3314,7 +3314,7 @@ country_event = {
 	option = {
 		name = TR_japan.117.b
 		JAP = {
-		    create_wargoal = {
+		    declare_war_on = {
 				target = VIN
 				type = puppet_wargoal_focus
 			}

@@ -221,7 +221,6 @@ JAP_army_product_3 = {
 	}
 }
 
-
 JAP_NAVY = {
 	allowed = {
 		tag = JAP
@@ -286,7 +285,7 @@ JAP_NAVY = {
 	ai_strategy = {
 		type = unit_ratio
 		id = destroyer
-		value = 240
+		value = 480
 	}
 	ai_strategy = {
 		type = unit_ratio
@@ -296,7 +295,7 @@ JAP_NAVY = {
 	ai_strategy = {
 		type = unit_ratio
 		id = light_cruiser
-		value = 0
+		value = -20
 	}
 	ai_strategy = {
 		type = unit_ratio

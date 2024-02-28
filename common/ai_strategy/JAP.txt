@@ -162,3 +162,107 @@ market = {
 		value = 1000
 	}
 }
+JAP_army_product = {
+	allowed = {	tag = JAP }
+	enable = {
+		always = yes
+	}
+	abort = {
+		JAP = {
+			num_of_available_military_factories < 30
+		}
+	}
+	ai_strategy = {
+		type = air_factory_balance
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = train
+		value = 1
+	}
+	
+}
+
+JAP_army_product_1 = {
+	allowed = {	tag = JAP }
+	enable = {
+		JAP = {
+			num_of_available_military_factories > 29
+		}
+	}
+	abort = {
+	    JAP = {
+			num_of_available_military_factories > 75
+		}
+	}
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 30
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = train
+		value = 1
+	}
+}-
+
+JAP_army_product_2 = {
+	allowed = {	tag = JAP }
+	enable = {
+	    JAP = {
+			num_of_available_military_factories > 75
+		}
+	}
+	abort = {
+		JAP = {
+			num_of_available_military_factories > 150
+		}
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = armor
+		value = 20
+	}
+	ai_strategy = {
+		type = air_factory_balance
+		value = 40
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = anti_air
+		value = 5
+	}
+}
+JAP_army_product_3 = {
+	allowed = {	tag = JAP }
+	enable = {
+		JAP = {
+			num_of_available_military_factories > 150
+		}
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = medium_armor
+		value = 40
+	}
+	ai_strategy = {
+		type = air_factory_balance
+		value = 40
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = support
+		value = -99
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter 
+		value = 40
+	}
+}
