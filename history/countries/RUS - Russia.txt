@@ -245,6 +245,97 @@ set_variable = { var = rus_TE_production_speed_buildings_factor value = -0.75 }
 set_variable = { var = rus_TE_local_resources_factor value = -0.5 }
 set_variable = { var = rus_TE_supply_node_range value = -0.1 }
 
+#budget
+set_variable = {
+	income_per_month = 40
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 50
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 30
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 40
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 60
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 70
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 90
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 100
+}
+budget_income = yes
+
+set_variable = {
+	income_per_month = 90
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 50
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 40
+}
+budget_income = yes
+
+set_variable = {
+	income_per_month = 40
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 20
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 30
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 40
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 80
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 60
+}
+budget_income = yes
+
+set_variable = {
+	income_per_month = 40
+}
+budget_income = yes
+
+set_variable = {
+	income_per_month = 50
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 30
+}
+budget_income = yes
+set_variable = {
+	income_per_month = 40
+}
+budget_income = yes
+
+
 #resistance
 85 = {
 	start_resistance = yes

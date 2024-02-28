@@ -8,6 +8,8 @@ guiTypes = {
 			position = { x= -48 y = 0 }
 			frame = 1
 			shortcut = "a"
+			clicksound = click_close
+			oversound = ui_menu_over
 		}
 	}
 }
