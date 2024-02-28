@@ -36,7 +36,7 @@ JAP_NAVY = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_cruiser_light
-		value = 52
+		value = 36
 	}
 
 	ai_strategy = {
@@ -62,7 +62,7 @@ JAP_NAVY = {
 	ai_strategy = {
 		type = unit_ratio
 		id = destroyer
-		value = 20
+		value = 240
 	}
 	ai_strategy = {
 		type = unit_ratio
@@ -72,7 +72,7 @@ JAP_NAVY = {
 	ai_strategy = {
 		type = unit_ratio
 		id = light_cruiser
-		value = 40
+		value = 0
 	}
 	ai_strategy = {
 		type = unit_ratio
@@ -118,7 +118,7 @@ JAP_NAVY_1 = {
 	ai_strategy = {
 		type = unit_ratio
 		id = destroyer
-		value = 30
+		value = 120
 	}
 	ai_strategy = {
 		type = unit_ratio
@@ -128,7 +128,7 @@ JAP_NAVY_1 = {
 	ai_strategy = {
 		type = unit_ratio
 		id = carrier
-		value = 40
+		value = 60
 	}
 	ai_strategy = {
 		type = unit_ratio
