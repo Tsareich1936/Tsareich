@@ -1,0 +1,60 @@
+# scripted_gui = {
+# 	Pol_Show_Window = {
+# 		window_name = pol_show_parties
+# 		parent_window_name = countrypoliticsview
+# 		ai_enabled = {
+# 			always = no
+# 		}
+# 		triggers = {
+# 			button1_visible = {
+# 				NOT = {
+# 					check_variable = {
+# 						showing_parties_window_variable = 1
+# 					}
+# 				}
+# 			}
+# 			button2_visible = {
+# 				OR = {
+# 					NOT = {
+# 						check_variable = {
+# 							showing_parties_window_variable = 0
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 		effects = {
+# 			button1_click = {
+# 				set_variable = {
+# 					showing_parties_window_variable = 1
+# 				}
+# 			}
+# 			button2_click = {
+# 				set_variable = {
+# 					showing_parties_window_variable = 0
+# 				}
+# 			}
+# 		}
+# 	}
+# 	Pol_Parties_Window = {
+# 		window_name = pol_parties_window
+# 		parent_window_name = countrypoliticsview
+# 		ai_enabled = {
+# 			always = no
+# 		}
+# 		triggers = {
+# 			Communism_Leading_visible = { has_government = communism }
+# 			Socialism_Leading_visible = { has_government = socialism }
+# 			SocialDemocratic_Leading_visible = { has_government = socialdemocratic }
+# 			Democratic_Leading_visible = { has_government = democratic }
+# 			Conservatism_Leading_visible = { has_government = conservatism }
+# 			Neutrality_Leading_visible = { has_government = neutrality }
+# 			Fascism_Leading_visible = { has_government = Fascism }
+# 		}
+# 		visible = {
+# 			check_variable = {
+# 				showing_parties_window_variable = 1
+# 			}
+# 		}
+# 	}
+# }
