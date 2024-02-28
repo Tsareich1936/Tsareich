@@ -935,6 +935,7 @@ default_stockpile_management = {
 default_market_stockpile_management = {
 	enable = {
 		always = yes
+		not = { tag = JAP}
 		# NOT = { original_tag = GER } # commented until actually needs override
 	}
 	abort_when_not_enabled = yes
@@ -1051,6 +1052,7 @@ default_market_stockpile_management_if_at_war = {
 default_market_convoy_purchases = {
 	enable = {
 		naval_base > 0  # not land-locked
+		not = { tag = JAP }
 	}
 	abort_when_not_enabled = yes
 

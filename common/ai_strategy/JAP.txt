@@ -1,0 +1,164 @@
+JAP_NAVY = {
+	allowed = {
+		tag = JAP
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		date > 1938.6.1
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 8
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 52
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_destroyer
+		value = 20
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 0
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 40
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = destroyer
+		value = 20
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 5
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = light_cruiser
+		value = 40
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 80
+	}
+}
+JAP_NAVY_1 = {
+	allowed = {
+		tag = JAP
+	}
+	enable = {
+		date > 1938.6.1
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value > 24
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value > 72
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value > 48
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_destroy
+		value > 220
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = destroyer
+		value = 30
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 20
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 40
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = light_cruiser
+		value = 40
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 0
+	}
+}
+market = {
+	allowed = {
+		tag = JAP
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = equipment_market_min_for_sale
+		id = convoy
+		value = 1000
+	}
+}

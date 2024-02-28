@@ -1142,6 +1142,9 @@ focus_tree = { # nomal
             focus = jap_war_plan
         }
         completion_reward = {
+            hidden_effect = {
+                add_war_support = 0.2
+            }
             country_event = TR_japan.53
             country_event = TR_japan.54
             country_event = TR_japan.56
