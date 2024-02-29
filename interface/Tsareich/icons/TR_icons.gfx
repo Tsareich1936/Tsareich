@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_icon_dollar
+		textureFile = "gfx/icons/dollaer.dds"
+		legacy_lazy_load = no
+	}
+}

@@ -1,3 +1,6 @@
+#!gfx:interface\general_stuff.gfx
+#!gfx:interface\Tsareich\icons\TR_icons.gfx
+#!gfx:interface\topbar.gfx
 guiTypes = {
 	containerWindowType = {
 		name = TR_economy_button_window
@@ -10,6 +13,46 @@ guiTypes = {
 			shortcut = "a"
 			clicksound = click_close
 			oversound = ui_menu_over
+		}
+	}
+	containerWindowType = {
+		name = TR_money_value
+		orientation = UPPER_LEFT
+		position = {
+			x = 173
+			y = 5
+		}
+		iconType ={
+			name ="TR_money_value_bg"
+			spriteType = "GFX_generic_box_96"
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType ={
+			name ="dollar_icon"
+			spriteType = "GFX_icon_dollar"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.85
+		}
+
+		instantTextBoxType = {
+			name ="MONEY_VALUE"
+			position = { x= 20 y = 3 }
+			font = "hoi_18mbs"
+			text = "MONEY_VALUE"
+			format = center
+			maxWidth = 50
+			maxHeight = 24
+			fixedsize = yes
+		}
+		iconType = {
+			name ="fuel_ratio_bar"
+			spriteType = "GFX_topbar_fuel_bar"
+			position = { x= 50 y = 15 }
+			frame = 50
+			alwaystransparent = yes
 		}
 	}
 }

@@ -3,7 +3,6 @@ budget_income = {
 
 	# This count is displayed as an x-axis label, increment it
 	add_to_variable = { income_count = 1 }
-	set_variable = { income_month = [?global.date.GetDateStringNoHourLong] }
 
 	# We keep track of the last y position so we can calculate the slope
 	set_variable = { income_last_y_position = income_y_position }
@@ -21,6 +20,7 @@ budget_income = {
 		remove_from_array = { array = income_graph_offsets index = 0 }
 		remove_from_array = { array = income_graph_slopes index = 0 }
 		remove_from_array = { array = income_numbers index = 0 }
+		remove_from_array = { array = income_date index = 0 }
 	}
 
 	# The y position offset is the inverse of the y position
