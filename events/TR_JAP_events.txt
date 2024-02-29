@@ -3864,11 +3864,11 @@ country_event = {
 				}
 				add_timed_idea = {
 					idea = TR_jap_ai_cas
-					days = 30
+					days = 365
 				}
 				country_event = {
 					id = TR_japan.127
-					days = 30
+					days = 365
 				}
 			}
 		}
