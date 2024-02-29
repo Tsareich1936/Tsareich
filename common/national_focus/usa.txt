@@ -829,3 +829,568 @@ focus_tree = {
 					}
 				}
 }
+focus_tree = {
+	id = fga_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 23
+			tag = FGA
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	initial_show_position = {
+		focus = FGA_new_government
+	}
+	focus = {
+		id = FGA_new_government
+		icon = GFX_
+		cost = 5
+		
+		x = 10
+		y = 0
+		completion_reward = {
+	
+		}
+	}
+	#Center
+		focus = {
+			id = FGA_positive_pacifism
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_new_government
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_new_government
+			completion_reward = {
+		
+			}
+		}
+		#center-left
+			focus = {
+				id = FGA_stop_war
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_positive_pacifism
+				}
+				x = -1
+				y = 1
+				relative_position_id = FGA_positive_pacifism
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = FGA_cooperate_texas
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_stop_war
+				}
+				prerequisite = {
+					focus = FGA_positive_equalise
+				}
+				x = -1
+				y = 2
+				relative_position_id = FGA_stop_war
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = FGA_perfect_election
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_cooperate_texas
+				}
+				x = -1
+				y = 1
+				relative_position_id = FGA_cooperate_texas
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = FGA_eliminate_discrimination
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_cooperate_texas
+				}
+				x = 1
+				y = 1
+				relative_position_id = FGA_cooperate_texas
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = FGA_cooperate_natives
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_perfect_election
+				}
+				x = 0
+				y = 1
+				relative_position_id = FGA_perfect_election
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = FGA_retake_texas
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_eliminate_discrimination
+				}
+				x = 0
+				y = 1
+				relative_position_id = FGA_eliminate_discrimination
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = FGA_strength_US
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_cooperate_natives
+				}
+				prerequisite = {
+					focus = FGA_retake_texas
+				}
+				x = 0
+				y = 4
+				relative_position_id = FGA_cooperate_texas
+				completion_reward = {
+			
+				}
+			}
+		#center-right
+			focus = {
+				id = FGA_international_cooperate
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_positive_pacifism
+				}
+				x = 1
+				y = 1
+				relative_position_id = FGA_positive_pacifism
+				completion_reward = {
+			
+				}
+			}
+			focus = {#The Third International
+				id = FGA_cooperate_TIN
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_international_cooperate
+				}
+				x = 0
+				y = 1
+				relative_position_id = FGA_international_cooperate
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = FGA_ask_TIN_to_support
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_cooperate_TIN
+				}
+				x = 0
+				y = 2
+				relative_position_id = FGA_cooperate_TIN
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = FGA_no_dictator
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_ask_TIN_to_support
+				}
+				x = -1
+				y = 2
+				relative_position_id = FGA_ask_TIN_to_support
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = FGA_red_free
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_no_dictator	
+				}
+				x = 0
+				y = 1
+				relative_position_id = FGA_no_dictator
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = FGA_dictator
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_ask_TIN_to_support
+				}
+				x = 1
+				y = 2
+				relative_position_id = FGA_ask_TIN_to_support
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = FGA_strength_president
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_dictator
+				}
+				x = 0
+				y = 1
+				relative_position_id = FGA_dictator
+				completion_reward = {
+			
+				}
+			}
+	#Left
+		focus = {
+			id = FGA_labour_reform
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_new_government
+			}
+			x = -4
+			y = 1
+			relative_position_id = FGA_new_government
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_equalise_employment
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_labour_reform
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_labour_reform
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_positive_equalise
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_equalise_employment
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_equalise_employment
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_approach_labour_union
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_labour_reform
+			}
+			x = -2
+			y = 1
+			relative_position_id = FGA_labour_reform
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_low_conscription
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_approach_labour_union
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_approach_labour_union
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_strength_labour_union
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_low_conscription
+			}
+			x = 0
+			y = 2
+			relative_position_id = FGA_low_conscription
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_minimum_wage
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_strength_labour_union
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_strength_labour_union
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_limit_work_time
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_strength_labour_union
+			}
+			x = -2
+			y = 1
+			relative_position_id = FGA_strength_labour_union
+			completion_reward = {
+		
+			}
+		}
+	#Right
+		focus = {
+			id = FGA_social_welfare_policy
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_new_government
+			}
+			x = 4
+			y = 1
+			relative_position_id = FGA_new_government
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_deliver_wealth
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_social_welfare_policy
+			}
+			x = -1
+			y = 1
+			relative_position_id = FGA_social_welfare_policy
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_save_unemployed
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_deliver_wealth
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_deliver_wealth
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_peace_compromise
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_save_unemployed
+			}
+			prerequisite = {
+				focus = FGA_cooperate_TIN
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_save_unemployed
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_unemployed_conscripts
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_peace_compromise
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_peace_compromise
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_strength_social_service
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_deliver_wealth
+			}
+			x = 2
+			y = 1
+			relative_position_id = FGA_deliver_wealth
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_infra_net
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_strength_social_service
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_strength_social_service
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_military_industry
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_infra_net
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_infra_net
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_states_insurance
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_social_welfare_policy
+			}
+			x = 3
+			y = 2
+			relative_position_id = FGA_social_welfare_policy
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_medical
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_states_insurance
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_states_insurance
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_schoolership
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_medical
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_medical
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_joint_military_industrial_research
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_military_industry
+			}
+			prerequisite = {
+				focus = FGA_schoolership
+			}
+			x = -1
+			y = 1
+			relative_position_id = FGA_schoolership
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_support_for_builder
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_joint_military_industrial_research
+			}
+			x = 1
+			y = 2
+			relative_position_id = FGA_joint_military_industrial_research
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_perfect_employ
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_joint_military_industrial_research
+			}
+			prerequisite = {
+				focus = FGA_unemployed_conscripts
+			}
+			x = -1
+			y = 2
+			relative_position_id = FGA_joint_military_industrial_research
+			completion_reward = {
+		
+			}
+		}
+	#
+}
