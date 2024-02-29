@@ -3862,6 +3862,21 @@ country_event = {
 					variant_name = "Ki-51"
 					amount = 1000
 				}
+				add_equipment_to_stockpile = {
+					type = cv_small_plane_naval_bomber_airframe_2
+					variant_name = "B6N"
+					amount = 300
+				}
+				add_equipment_to_stockpile = {
+					type = cv_small_plane_cas_airframe_2
+					variant_name = "Zero"
+					amount = 300
+				}
+				add_equipment_to_stockpile = {
+					type = cv_small_plane_airframe_2
+					variant_name = "B74"
+					amount = 300
+				}
 				add_timed_idea = {
 					idea = TR_jap_ai_cas
 					days = 365
