@@ -3850,10 +3850,28 @@ country_event = {
 	hidden = yes
 	is_triggered_only = yes
 	immediate = {
-		add_equipment_to_stockpile = {
-			type = small_plane_cas_airframe_2
-			variant_name = Ki-51
-			amount = 1
+		if = {
+			limit = {
+				JAP = {
+					is_ai = yes
+				}
+			}
+			JAP = {
+				add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe_2
+					variant_name = Ki-51
+					amount = 1
+				}
+				add_timed_idea = {
+					idea = TR_jap_ai_cas
+					days = 30
+				}
+				country_event = {
+					id = TR_japan.127
+					days = 30
+				}
+			}
 		}
+
 	}
 }

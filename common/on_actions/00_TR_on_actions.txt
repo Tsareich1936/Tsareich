@@ -143,6 +143,14 @@ on_actions = {
 					days = 1095
 				}
 			}
+
+			JAP = {
+				country_event = {
+					id = TR_japan.127
+					days = 1520
+				}
+			}
+			
 		}
 	effect = {#VIN set up
 			#VIN gomu concessions			
@@ -468,30 +476,6 @@ on_actions = {
 
 				
 			}
-		}
-	}
-	on_monthly = {
-		effect = {
-			if = {
-				limit = {
-					JAP = {
-						is_ai = yes
-					}
-				    date > 1940.2.1
-				}
-				JAP = {
-					country_event = {
-						id = TR_japan.127
-					}
-				}
-				JAP = {
-					add_timed_idea = {
-						idea = TR_jap_ai_cas
-						days = 30
-					}
-				}
-			}
-
 		}
 	}
 	on_civil_war_end = {
