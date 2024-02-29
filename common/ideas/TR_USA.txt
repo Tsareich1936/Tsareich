@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		TR_great_depression_idea = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = usa_great_depression_3
+			modifier = {
+				custom_modifier_tooltip = "great_depression_idea_modifier_tt"
+				# political_power_cost = 1
+				# consumer_goods_factor = 0.60
+				# conscription_factor = -0.5
+				# join_faction_tension = 0.20
+				# local_resources_factor = -0.2
+			}
+		}
+	}
+}

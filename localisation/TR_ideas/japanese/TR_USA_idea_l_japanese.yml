@@ -1,0 +1,26 @@
+﻿l_japanese:
+ #大恐慌  
+ TR_great_depression_idea: "大恐慌"
+ TR_great_depression_idea_desc: "世界的な現象にもかかわらず、大恐慌は合衆国の株式市場での株価の暴落から端を発し、失業率の急上昇と租税収入の大幅な減収を引き起こした。合衆国政府と国民は新たな戦争に巻き込まれることなしに十分すぎるほどの不安を抱えていた。"
+ #大恐慌―効果
+ TR_great_depression_modifier: "£pol_idea $TR_great_depression_idea$"
+ great_depression_idea_modifier_tt: "$GD_pp_cost$$GD_cg_factor$$GD_c_factor$$GD_lr_factor$"
+ GD_pp_cost: "[ROOT.GetGD_PPC]"
+ GD_cg_factor: "[ROOT.GetGD_CFF]"
+ GD_c_factor: "[ROOT.GetGD_CF]"
+ GD_lr_factor: "[ROOT.GetGD_LRF]"
+ GD_pp_cost_tt: "$MODIFIER_POLITICAL_POWER_COST$: [?usa_GD_pp_cost_var|-Y]\n"
+ GD_cg_factor_tt: "$MODIFIER_CONSUMER_GOODS_FACTOR$: [?usa_GD_cg_factor_var|Y%.1]\n"
+ GD_c_factor_tt: "$MODIFIER_CONSCRIPTION_FACTOR$: [?usa_GD_c_factor_var|Y%+]\n"
+ GD_lr_factor_tt: "$MODIFIER_LOCAL_RESOURCES_FACTOR$: [?usa_GD_lr_factor|Y%+]\n" 
+ #大恐慌-効果修正
+ updt_great_depression_idea_modifier_tt: "§Y$TR_great_depression_idea$§!に次の修正: \n$updt_GD_pp_cost$$updt_GD_cg_factor$$updt_GD_c_factor$$updt_GD_lr_factor$"
+ updt_GD_pp_cost: "[ROOT.UpdtGD_PPC]"
+ updt_GD_cg_factor: "[ROOT.UpdtGD_CFF]"
+ updt_GD_c_factor: "[ROOT.UpdtGD_CF]"
+ updt_GD_lr_factor: "[ROOT.UpdtGD_LRF]"
+
+ updt_GD_pp_cost_tt: "$MODIFIER_POLITICAL_POWER_COST$: [?updt_GD_pp_cost_var|Y-=]\n"
+ updt_GD_cg_factor_tt: "$MODIFIER_CONSUMER_GOODS_FACTOR$: [?updt_GD_cg_factor_var|Y%=.1]\n"
+ updt_GD_c_factor_tt: "$MODIFIER_CONSCRIPTION_FACTOR$: [?updt_GD_c_factor_var|Y%+=]\n"
+ updt_GD_lr_factor_tt: "$MODIFIER_LOCAL_RESOURCES_FACTOR$: [?updt_GD_lr_factor|Y%+=]\n"

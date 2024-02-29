@@ -205,6 +205,35 @@ focus_tree = {
 				relative_position_id = TR_USA_1936_presidential_election
 				completion_reward = {
 					set_country_flag = TR_USA_left_route
+					add_popularity = {
+						ideology = socialism
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.01
+					}
+					add_popularity = {
+						ideology = syndicalism
+						popularity = 0.01
+					}
+					# set_temp_variable = {
+					# 	var = updt_GD_pp_cost_var
+					# 	value = 0.1
+					# }
+					# set_temp_variable = {
+					# 	var = updt_GD_cg_factor_var
+					# 	value = 0.1
+					# }
+					# set_temp_variable = {
+					# 	var = updt_GD_c_factor_var
+					# 	value = 0.1
+					# }
+					# set_temp_variable = {
+					# 	var = updt_GD_lr_factor
+					# 	value = 0.1
+					# }
+					# GD_update_modifier = yes
 				}
 			}
 			focus = {#恐慌脱出への糸口
@@ -218,7 +247,11 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_USA_the_new_way
 				completion_reward = {
-			
+					add_stability = 0.03
+					add_popularity = {
+						ideology = socialism
+						popularity = 0.01
+					}
 				}
 			}
 			# American Democratic Republic #
@@ -347,6 +380,10 @@ focus_tree = {
 					relative_position_id = TR_USA_clues_to_escape_the_depression
 					completion_reward = {
 						set_country_flag = TR_USA_soc_route
+						add_popularity = {
+							ideology = socialism
+							popularity = 0.01
+						}
 					}
 				}
 				focus = {#福祉重視政策
@@ -361,7 +398,7 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_USA_big_government
 					completion_reward = {
-				
+						add_stability = 0.02
 					}
 				}
 				focus = {#社会主義国家の実現
@@ -383,7 +420,10 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_USA_welfare_oriented_policy
 					completion_reward = {
-				
+						add_popularity = {
+							ideology = socialism
+							popularity = 0.01
+						}
 					}
 				}
 			# OTHER SIDE #
@@ -507,6 +547,18 @@ focus_tree = {
 				relative_position_id = TR_USA_1936_presidential_election
 				completion_reward = {
 					set_country_flag = TR_USA_right_route
+					add_popularity = {
+						ideology = conservatism
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.01
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.01
+					}
 				}
 			}
 			# Confederation states of America #
@@ -851,7 +903,24 @@ focus_tree = {
 		x = 10
 		y = 0
 		completion_reward = {
-	
+			add_political_power = 100
+			set_temp_variable = {
+				var = updt_GD_pp_cost_var
+				value = -0.25
+			}
+			set_temp_variable = {
+				var = updt_GD_cg_factor_var
+				value = -0.1
+			}
+			set_temp_variable = {
+				var = updt_GD_c_factor_var
+				value = 0.1
+			}
+			set_temp_variable = {
+				var = updt_GD_lr_factor
+				value = 0.1
+			}
+			GD_update_modifier = yes
 		}
 	}
 	#Center
@@ -986,7 +1055,7 @@ focus_tree = {
 				y = 1
 				relative_position_id = FGA_positive_pacifism
 				completion_reward = {
-			
+					
 				}
 			}
 			focus = {#The Third International
@@ -1000,7 +1069,10 @@ focus_tree = {
 				y = 1
 				relative_position_id = FGA_international_cooperate
 				completion_reward = {
-			
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 5000
+					}
 				}
 			}
 			focus = {
@@ -1028,7 +1100,10 @@ focus_tree = {
 				y = 2
 				relative_position_id = FGA_ask_TIN_to_support
 				completion_reward = {
-			
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 5000
+					}
 				}
 			}
 			focus = {
@@ -1085,7 +1160,8 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_new_government
 			completion_reward = {
-		
+				add_stability = 0.05
+				add_political_power = 50
 			}
 		}
 		focus = {
@@ -1198,7 +1274,8 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_new_government
 			completion_reward = {
-		
+				add_stability = 0.05
+				add_political_power = 50
 			}
 		}
 		focus = {
@@ -1212,7 +1289,16 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_social_welfare_policy
 			completion_reward = {
-		
+				add_war_support = 0.05
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				set_temp_variable = {
+					var = updt_GD_cg_factor_var
+					value = -0.05
+				}
+				GD_update_modifier = yes
 			}
 		}
 		focus = {
@@ -1226,7 +1312,17 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_deliver_wealth
 			completion_reward = {
-		
+				add_stability = 0.05
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				set_temp_variable = {
+					var = updt_GD_c_factor_var
+					value = 0.15
+				}
+				
+				GD_update_modifier = yes
 			}
 		}
 		focus = {
@@ -1243,7 +1339,7 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_save_unemployed
 			completion_reward = {
-		
+				add_war_support = 0.05
 			}
 		}
 		focus = {
@@ -1256,6 +1352,31 @@ focus_tree = {
 			x = 0
 			y = 1
 			relative_position_id = FGA_peace_compromise
+			completion_reward = {
+				add_stability = 0.05
+				add_ideas = extensive_conscription
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				set_temp_variable = {
+					var = updt_GD_c_factor_var
+					value = 0.15
+				}
+				
+				GD_update_modifier = yes
+			}
+		}
+		focus = {
+			id = FGA_war_economy
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_unemployed_conscripts
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_unemployed_conscripts
 			completion_reward = {
 		
 			}
@@ -1271,7 +1392,16 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_deliver_wealth
 			completion_reward = {
-		
+				add_stability = 0.05
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				set_temp_variable = {
+					var = updt_GD_cg_factor_var
+					value = -0.15
+				}
+				GD_update_modifier = yes
 			}
 		}
 		focus = {
@@ -1285,7 +1415,20 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_strength_social_service
 			completion_reward = {
-		
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
 			}
 		}
 		focus = {
@@ -1299,7 +1442,20 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_infra_net
 			completion_reward = {
-		
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+					}
+				}
 			}
 		}
 		focus = {
@@ -1313,7 +1469,12 @@ focus_tree = {
 			y = 2
 			relative_position_id = FGA_social_welfare_policy
 			completion_reward = {
-		
+				add_stability = 0.05
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				GD_update_modifier = yes
 			}
 		}
 		focus = {
@@ -1327,7 +1488,11 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_states_insurance
 			completion_reward = {
-		
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				GD_update_modifier = yes
 			}
 		}
 		focus = {
@@ -1341,7 +1506,7 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_medical
 			completion_reward = {
-		
+				
 			}
 		}
 		focus = {
@@ -1358,7 +1523,7 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_schoolership
 			completion_reward = {
-		
+				add_research_slot = 1
 			}
 		}
 		focus = {
@@ -1389,7 +1554,7 @@ focus_tree = {
 			y = 2
 			relative_position_id = FGA_joint_military_industrial_research
 			completion_reward = {
-		
+				
 			}
 		}
 	#

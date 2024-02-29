@@ -15,7 +15,7 @@
  TE_PSBF_tt: "$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: [?rus_TE_production_speed_buildings_factor|%+]\n"
  TE_LRF_tt: "$MODIFIER_LOCAL_RESOURCES_FACTOR$: [?rus_TE_local_resources_factor|%+]\n"
  TE_SNR_tt: "$MODIFIER_SUPPLY_NODE_RANGE$: [?rus_TE_supply_node_range|%+]\n"
- TE_update_modifier: "§Y$traditional_economy$§!に以下の補正：\n$TE_updt_consumer_goods_factor$$TE_updt_industrial_capacity_factory$$TE_updt_industrial_capacity_dockyard$$TE_updt_production_speed_buildings_factor$$TE_updt_local_resources_factor$$TE_updt_supply_node_range$"
+ TE_update_modifier: "§Y$traditional_economy$§!に以下の修正: \n$TE_updt_consumer_goods_factor$$TE_updt_industrial_capacity_factory$$TE_updt_industrial_capacity_dockyard$$TE_updt_production_speed_buildings_factor$$TE_updt_local_resources_factor$$TE_updt_supply_node_range$"
  TE_updt_consumer_goods_factor: "[ROOT.UpdtCGF]"
  TE_updt_industrial_capacity_factory: "[ROOT.UpdtICF]"
  TE_updt_industrial_capacity_dockyard: "[ROOT.UpdtICD]"
