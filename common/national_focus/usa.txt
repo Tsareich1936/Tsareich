@@ -897,7 +897,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FGA_new_government
-		icon = GFX_
+		icon = GFX_goal_anschluss
 		cost = 5
 		
 		x = 10
@@ -1151,7 +1151,7 @@ focus_tree = {
 	#Left
 		focus = {
 			id = FGA_labour_reform
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_new_government
@@ -1265,7 +1265,7 @@ focus_tree = {
 	#Right
 		focus = {
 			id = FGA_social_welfare_policy
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_new_government
@@ -1280,7 +1280,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_deliver_wealth
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_social_welfare_policy
@@ -1303,7 +1303,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_save_unemployed
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_deliver_wealth
@@ -1327,7 +1327,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_peace_compromise
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_save_unemployed
@@ -1344,7 +1344,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_unemployed_conscripts
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_peace_compromise
@@ -1383,7 +1383,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_strength_social_service
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_deliver_wealth
@@ -1406,7 +1406,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_infra_net
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_strength_social_service
@@ -1433,7 +1433,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_military_industry
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_infra_net
@@ -1460,7 +1460,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_states_insurance
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_social_welfare_policy
@@ -1479,7 +1479,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_medical
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_states_insurance
@@ -1497,7 +1497,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_schoolership
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_medical
@@ -1511,7 +1511,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_joint_military_industrial_research
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_military_industry
