@@ -3859,8 +3859,8 @@ country_event = {
 			JAP = {
 				add_equipment_to_stockpile = {
 					type = small_plane_cas_airframe_2
-					variant_name = Ki-51
-					amount = 1
+					variant_name = "Ki-51"
+					amount = 1000
 				}
 				add_timed_idea = {
 					idea = TR_jap_ai_cas
