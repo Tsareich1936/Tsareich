@@ -715,6 +715,7 @@ add_namespace = TR_usa_civil_war_legacy
 		}
 		option = {
 			name = TR_usa_election.4.a
+			load_focus_tree = fga_tree
 		}
 	}
 	country_event = {#連合国独立宣言
@@ -921,7 +922,7 @@ add_namespace = TR_usa_civil_war_legacy
 						producer = THIS
 					}
 					set_cosmetic_tag = USA_USA
-					load_focus_tree = generic_focus
+					# load_focus_tree = generic_focus
 					division_template = {
 						name = "Milita Division"
 						regiments = {
