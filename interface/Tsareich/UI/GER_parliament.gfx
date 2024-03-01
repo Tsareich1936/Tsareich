@@ -10,7 +10,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = GFX_icon_GER_parliament_seats
-		textureFile = "gfx/interface/UI/GER_parliament/parliament_seats.dds"
+		textureFile = "gfx/interface/UI/GER_parliament/parliament_seats.png"
 		noOfFrames = 11
 	}
 }

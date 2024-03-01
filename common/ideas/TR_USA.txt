@@ -1,0 +1,100 @@
+ideas = {
+	country = {
+		TR_great_depression_idea = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = usa_great_depression_3
+			modifier = {
+				custom_modifier_tooltip = "great_depression_idea_modifier_tt"
+				# political_power_cost = 1
+				# consumer_goods_factor = 0.60
+				# conscription_factor = -0.5
+				# join_faction_tension = 0.20
+				# local_resources_factor = -0.2
+			}
+		}
+		FGA_states_building_policy = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = a
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				production_speed_infrastructure_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+		FGA_cooperate_labours = {
+			allowed = {
+				has_civil_war = yes
+				NOT = {
+					has_war_with = ADR
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				OR = {
+					has_civil_war = no
+					has_war_with = ADR
+				}
+			}
+			picture = a
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_weekly = 0.005
+				war_support_factor = 0.10
+			}
+		}
+		FGA_low_conscription_idea = {
+			allowed = {
+				has_civil_war = yes
+				NOT = {
+					has_war_with = ADR
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				OR = {
+					has_civil_war = no
+					has_war_with = ADR
+				}
+			}
+			picture = a
+			modifier = {
+				conscription_factor = -0.03
+			}
+		}
+		FGA_positive_equalise_idea = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				OR = {
+					has_civil_war = no
+					has_war_with = ADR
+				}
+			}
+			picture = a
+			modifier = {
+				compliance_gain = 0.05
+				compliance_growth = 0.15
+			}
+		}
+		
+	}
+}

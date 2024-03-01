@@ -205,6 +205,35 @@ focus_tree = {
 				relative_position_id = TR_USA_1936_presidential_election
 				completion_reward = {
 					set_country_flag = TR_USA_left_route
+					add_popularity = {
+						ideology = socialism
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.01
+					}
+					add_popularity = {
+						ideology = syndicalism
+						popularity = 0.01
+					}
+					# set_temp_variable = {
+					# 	var = updt_GD_pp_cost_var
+					# 	value = 0.1
+					# }
+					# set_temp_variable = {
+					# 	var = updt_GD_cg_factor_var
+					# 	value = 0.1
+					# }
+					# set_temp_variable = {
+					# 	var = updt_GD_c_factor_var
+					# 	value = 0.1
+					# }
+					# set_temp_variable = {
+					# 	var = updt_GD_lr_factor
+					# 	value = 0.1
+					# }
+					# GD_update_modifier = yes
 				}
 			}
 			focus = {#恐慌脱出への糸口
@@ -218,7 +247,11 @@ focus_tree = {
 				y = 1
 				relative_position_id = TR_USA_the_new_way
 				completion_reward = {
-			
+					add_stability = 0.03
+					add_popularity = {
+						ideology = socialism
+						popularity = 0.01
+					}
 				}
 			}
 			# American Democratic Republic #
@@ -347,6 +380,10 @@ focus_tree = {
 					relative_position_id = TR_USA_clues_to_escape_the_depression
 					completion_reward = {
 						set_country_flag = TR_USA_soc_route
+						add_popularity = {
+							ideology = socialism
+							popularity = 0.01
+						}
 					}
 				}
 				focus = {#福祉重視政策
@@ -361,7 +398,7 @@ focus_tree = {
 					y = 1
 					relative_position_id = TR_USA_big_government
 					completion_reward = {
-				
+						add_stability = 0.02
 					}
 				}
 				focus = {#社会主義国家の実現
@@ -383,7 +420,10 @@ focus_tree = {
 					y = 2
 					relative_position_id = TR_USA_welfare_oriented_policy
 					completion_reward = {
-				
+						add_popularity = {
+							ideology = socialism
+							popularity = 0.01
+						}
 					}
 				}
 			# OTHER SIDE #
@@ -507,6 +547,18 @@ focus_tree = {
 				relative_position_id = TR_USA_1936_presidential_election
 				completion_reward = {
 					set_country_flag = TR_USA_right_route
+					add_popularity = {
+						ideology = conservatism
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.01
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.01
+					}
 				}
 			}
 			# Confederation states of America #
@@ -828,4 +880,765 @@ focus_tree = {
 				
 					}
 				}
+}
+focus_tree = {
+	id = fga_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 23
+			tag = FGA
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	initial_show_position = {
+		focus = FGA_new_government
+	}
+	focus = {
+		id = FGA_new_government
+		icon = GFX_goal_anschluss
+		cost = 5
+		
+		x = 10
+		y = 0
+		completion_reward = {
+			add_political_power = 100
+			set_temp_variable = {
+				var = updt_GD_pp_cost_var
+				value = -0.25
+			}
+			set_temp_variable = {
+				var = updt_GD_cg_factor_var
+				value = -0.1
+			}
+			set_temp_variable = {
+				var = updt_GD_c_factor_var
+				value = 0.1
+			}
+			set_temp_variable = {
+				var = updt_GD_lr_factor
+				value = 0.1
+			}
+			GD_update_modifier = yes
+		}
+	}
+	#Center
+		focus = {
+			id = FGA_positive_pacifism
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_new_government
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_new_government
+			completion_reward = {
+				add_war_support = -0.05
+				add_stability = 0.10
+			}
+		}
+		#center-left
+			focus = {
+				id = FGA_stop_war
+				icon = GFX_goal_anschluss
+				cost = 5
+				prerequisite = {
+					focus = FGA_positive_pacifism
+				}
+				x = -1
+				y = 1
+				relative_position_id = FGA_positive_pacifism
+				completion_reward = {
+					add_war_support = -0.05
+					add_stability = 0.03
+				}
+			}
+			focus = {
+				id = FGA_cooperate_texas
+				icon = GFX_goal_anschluss
+				cost = 5
+				prerequisite = {
+					focus = FGA_stop_war
+				}
+				prerequisite = {
+					focus = FGA_positive_equalise
+				}
+				available = {
+					country_exists = TXS
+				}
+				bypass = {
+					TXS = {
+						has_capitulated = yes
+					}
+				}
+				x = -1
+				y = 2
+				relative_position_id = FGA_stop_war
+				completion_reward = {
+					white_peace = TXS
+				}
+			}
+			focus = {
+				id = FGA_perfect_election
+				icon = GFX_goal_anschluss
+				cost = 5
+				prerequisite = {
+					focus = FGA_cooperate_texas
+				}
+				x = -1
+				y = 1
+				relative_position_id = FGA_cooperate_texas
+				completion_reward = {
+					set_temp_variable = {
+						var = updt_GD_pp_cost_var
+						value = -0.05
+					}
+					GD_update_modifier = yes
+				}
+			}
+			focus = {
+				id = FGA_eliminate_discrimination
+				icon = GFX_goal_anschluss
+				cost = 5
+				prerequisite = {
+					focus = FGA_cooperate_texas
+				}
+				x = 1
+				y = 1
+				relative_position_id = FGA_cooperate_texas
+				completion_reward = {
+					add_stability = 0.03
+					set_temp_variable = {
+						var = updt_GD_pp_cost_var
+						value = -0.05
+					}
+					GD_update_modifier = yes
+				}
+			}
+			focus = {
+				id = FGA_cooperate_natives
+				icon = GFX_goal_anschluss
+				cost = 5
+				prerequisite = {
+					focus = FGA_perfect_election
+				}
+				x = 0
+				y = 1
+				relative_position_id = FGA_perfect_election
+				completion_reward = {
+					IRC = {
+						add_stability = -0.25
+						add_war_support = -0.25
+					}
+				}
+			}
+			focus = {
+				id = FGA_retake_texas
+				icon = GFX_goal_anschluss
+				cost = 5
+				prerequisite = {
+					focus = FGA_eliminate_discrimination
+				}
+				x = 0
+				y = 1
+				relative_position_id = FGA_eliminate_discrimination
+				completion_reward = {
+					annex_country = {
+						target = TXS
+					}
+				}
+			}
+			focus = {
+				id = FGA_strength_US
+				icon = GFX_goal_anschluss
+				cost = 5
+				prerequisite = {
+					focus = FGA_cooperate_natives
+				}
+				prerequisite = {
+					focus = FGA_retake_texas
+				}
+				x = 0
+				y = 4
+				relative_position_id = FGA_cooperate_texas
+				completion_reward = {
+					add_ideas = USA_homeland_defense
+				}
+			}
+		#center-right
+			focus = {
+				id = FGA_international_cooperate
+				icon = GFX_goal_anschluss
+				cost = 5
+				prerequisite = {
+					focus = FGA_positive_pacifism
+				}
+				x = 1
+				y = 1
+				relative_position_id = FGA_positive_pacifism
+				completion_reward = {
+					FRA = {
+						add_opinion_modifier = {
+							target = FGA
+							modifier = SRI_international
+						}
+					}
+					GER = {
+						add_opinion_modifier = {
+							target = FGA
+							modifier = SRI_international
+						}
+					}
+					SRI = { 
+						add_opinion_modifier = {
+							target = FGA
+							modifier = SRI_international
+						}
+					}
+				}
+			}
+			focus = {#The Third International
+				id = FGA_cooperate_TIN
+				icon = GFX_goal_anschluss
+				cost = 5
+				prerequisite = {
+					focus = FGA_international_cooperate
+				}
+				x = 0
+				y = 1
+				relative_position_id = FGA_international_cooperate
+				completion_reward = {
+					FRA = {
+						country_event = TR_america_socialist.1
+					}
+				}
+			}
+			focus = {
+				id = FGA_ask_TIN_to_support
+				icon = GFX_goal_anschluss
+				cost = 5
+				prerequisite = {
+					focus = FGA_cooperate_TIN
+				}
+				x = 0
+				y = 2
+				relative_position_id = FGA_cooperate_TIN
+				completion_reward = {
+					FRA = {
+						country_event = TR_america_socialist.4
+					}
+				}
+			}
+			focus = {
+				id = FGA_no_dictator
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_ask_TIN_to_support
+				}
+				mutually_exclusive = {
+					focus = FGA_dictator
+				}
+				x = -1
+				y = 2
+				relative_position_id = FGA_ask_TIN_to_support
+				completion_reward = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 5000
+					}
+				}
+			}
+			focus = {
+				id = FGA_red_free
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_no_dictator	
+				}
+				x = 0
+				y = 1
+				relative_position_id = FGA_no_dictator
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = FGA_dictator
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_ask_TIN_to_support
+				}
+				mutually_exclusive = {
+					focus = FGA_no_dictator
+				}
+				x = 1
+				y = 2
+				relative_position_id = FGA_ask_TIN_to_support
+				completion_reward = {
+			
+				}
+			}
+			focus = {
+				id = FGA_strength_president
+				icon = GFX_
+				cost = 5
+				prerequisite = {
+					focus = FGA_dictator
+				}
+				x = 0
+				y = 1
+				relative_position_id = FGA_dictator
+				completion_reward = {
+			
+				}
+			}
+	#Left
+		focus = {
+			id = FGA_labour_reform
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_new_government
+			}
+			x = -4
+			y = 1
+			relative_position_id = FGA_new_government
+			completion_reward = {
+				add_stability = 0.05
+				add_political_power = 50
+			}
+		}
+		focus = {
+			id = FGA_equalise_employment
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_labour_reform
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_labour_reform
+			completion_reward = {
+				add_stability = 0.05
+			}
+		}
+		focus = {
+			id = FGA_positive_equalise
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_equalise_employment
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_equalise_employment
+			completion_reward = {
+				add_ideas = FGA_positive_equalise_idea
+			}
+		}
+		focus = {
+			id = FGA_approach_labour_union
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_labour_reform
+			}
+			x = -2
+			y = 1
+			relative_position_id = FGA_labour_reform
+			completion_reward = {
+				add_ideas = FGA_cooperate_labours
+			}
+		}
+		focus = {
+			id = FGA_low_conscription
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_approach_labour_union
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_approach_labour_union
+			completion_reward = {
+				add_timed_idea = {
+					idea = FGA_low_conscription_idea
+					days = 180
+				}
+			}
+		}
+		focus = {
+			id = FGA_strength_labour_union
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_low_conscription
+			}
+			x = 0
+			y = 2
+			relative_position_id = FGA_low_conscription
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_minimum_wage
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_strength_labour_union
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_strength_labour_union
+			completion_reward = {
+		
+			}
+		}
+		focus = {
+			id = FGA_limit_work_time
+			icon = GFX_
+			cost = 5
+			prerequisite = {
+				focus = FGA_strength_labour_union
+			}
+			x = -2
+			y = 1
+			relative_position_id = FGA_strength_labour_union
+			completion_reward = {
+		
+			}
+		}
+	#Right
+		focus = {
+			id = FGA_social_welfare_policy
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_new_government
+			}
+			x = 4
+			y = 1
+			relative_position_id = FGA_new_government
+			completion_reward = {
+				add_stability = 0.05
+				add_political_power = 50
+			}
+		}
+		focus = {
+			id = FGA_deliver_wealth
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_social_welfare_policy
+			}
+			x = -1
+			y = 1
+			relative_position_id = FGA_social_welfare_policy
+			completion_reward = {
+				add_war_support = 0.05
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				set_temp_variable = {
+					var = updt_GD_cg_factor_var
+					value = -0.05
+				}
+				GD_update_modifier = yes
+			}
+		}
+		focus = {
+			id = FGA_save_unemployed
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_deliver_wealth
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_deliver_wealth
+			completion_reward = {
+				add_stability = 0.05
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				set_temp_variable = {
+					var = updt_GD_c_factor_var
+					value = 0.15
+				}
+				
+				GD_update_modifier = yes
+			}
+		}
+		focus = {
+			id = FGA_peace_compromise
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_save_unemployed
+			}
+			prerequisite = {
+				focus = FGA_cooperate_TIN
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_save_unemployed
+			completion_reward = {
+				add_war_support = 0.05
+				swap_ruler_traits = {
+					remove = TR_pacifist
+					add = TR_realistic_pacifist
+				}
+			}
+		}
+		focus = {
+			id = FGA_unemployed_conscripts
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_peace_compromise
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_peace_compromise
+			completion_reward = {
+				add_stability = 0.05
+				add_ideas = extensive_conscription
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				set_temp_variable = {
+					var = updt_GD_c_factor_var
+					value = 0.15
+				}
+				
+				GD_update_modifier = yes
+			}
+		}
+		focus = {
+			id = FGA_war_economy
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_unemployed_conscripts
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_unemployed_conscripts
+			completion_reward = {
+				add_ideas = war_economy
+			}
+		}
+		focus = {
+			id = FGA_strength_social_service
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_deliver_wealth
+			}
+			x = 2
+			y = 1
+			relative_position_id = FGA_deliver_wealth
+			completion_reward = {
+				add_stability = 0.05
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				set_temp_variable = {
+					var = updt_GD_cg_factor_var
+					value = -0.15
+				}
+				GD_update_modifier = yes
+			}
+		}
+		focus = {
+			id = FGA_infra_net
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_strength_social_service
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_strength_social_service
+			completion_reward = {
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+			}
+		}
+		focus = {
+			id = FGA_military_industry
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_infra_net
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_infra_net
+			completion_reward = {
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+					}
+				}
+			}
+		}
+		focus = {
+			id = FGA_states_insurance
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_social_welfare_policy
+			}
+			x = 3
+			y = 2
+			relative_position_id = FGA_social_welfare_policy
+			completion_reward = {
+				add_stability = 0.05
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				GD_update_modifier = yes
+			}
+		}
+		focus = {
+			id = FGA_medical
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_states_insurance
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_states_insurance
+			completion_reward = {
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				GD_update_modifier = yes
+			}
+		}
+		focus = {
+			id = FGA_schoolership
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_medical
+			}
+			x = 0
+			y = 1
+			relative_position_id = FGA_medical
+			completion_reward = {
+				
+			}
+		}
+		focus = {
+			id = FGA_joint_military_industrial_research
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_military_industry
+			}
+			prerequisite = {
+				focus = FGA_schoolership
+			}
+			x = -1
+			y = 1
+			relative_position_id = FGA_schoolership
+			completion_reward = {
+				add_research_slot = 1
+			}
+		}
+		focus = {
+			id = FGA_support_for_builder
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_joint_military_industrial_research
+			}
+			x = 1
+			y = 2
+			relative_position_id = FGA_joint_military_industrial_research
+			completion_reward = {
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				set_temp_variable = {
+					var = updt_GD_cg_factor_var
+					value = -0.05
+				}
+				GD_update_modifier = yes
+				add_timed_idea = {
+					idea = FGA_states_building_policy
+					days = 730
+				}
+			}
+		}
+		focus = {
+			id = FGA_perfect_employ
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_joint_military_industrial_research
+			}
+			prerequisite = {
+				focus = FGA_unemployed_conscripts
+			}
+			x = -1
+			y = 2
+			relative_position_id = FGA_joint_military_industrial_research
+			completion_reward = {
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.15
+				}
+				set_temp_variable = {
+					var = updt_GD_cg_factor_var
+					value = -0.1
+				}
+				set_temp_variable = {
+					var = updt_GD_c_factor_var
+					value = 0.15
+				}
+				set_temp_variable = {
+					var = updt_GD_lr_factor
+					value = 0.1
+				}
+				GD_update_modifier = yes
+			}
+		}
+	#
 }

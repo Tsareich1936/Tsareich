@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_portrait_SER_aleksandar_ii_karadordevic
+		textureFile = "gfx/leaders/SER/Portrait_SER_Aleksandar_II_Karadordevic.dds"
+	}
+}

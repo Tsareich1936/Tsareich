@@ -1,0 +1,41 @@
+defiend_text = {
+	name = GetGD_PPC
+	text = { trigger = { check_variable  = { var = usa_GD_pp_cost_var value = 0  compare = not_equals } } localization_key = "GD_pp_cost_tt" }
+	text = { localization_key = "" }
+}
+defiend_text = {
+	name = GetGD_CFF
+	text = { trigger = { check_variable  = { var = usa_GD_cg_factor_var value = 0  compare = not_equals } } localization_key = "GD_cg_factor_tt" }
+	text = { localization_key = "" }
+}
+defiend_text = {
+	name = GetGD_CF
+	text = { trigger = { check_variable  = { var = usa_GD_c_factor_var value = 0  compare = not_equals } } localization_key = "GD_c_factor_tt" }
+	text = { localization_key = "" }
+}
+defiend_text = {
+	name = GetGD_LRF
+	text = { trigger = { check_variable  = { var = usa_GD_lr_factor value = 0  compare = not_equals } } localization_key = "GD_lr_factor_tt" }
+	text = { localization_key = "" }
+}
+
+defiend_text = {
+	name = UpdtGD_PPC
+	text = { trigger = { check_variable  = { var = updt_GD_pp_cost_var value = 0  compare = not_equals } } localization_key = "updt_GD_pp_cost_tt" }
+	text = { localization_key = "" }
+}
+defiend_text = {
+	name = UpdtGD_CFF
+	text = { trigger = { check_variable  = { var = updt_GD_cg_factor_var value = 0  compare = not_equals } } localization_key = "updt_GD_cg_factor_tt" }
+	text = { localization_key = "" }
+}
+defiend_text = {
+	name = UpdtGD_CF
+	text = { trigger = { check_variable  = { var = updt_GD_c_factor_var value = 0  compare = not_equals } } localization_key = "updt_GD_c_factor_tt" }
+	text = { localization_key = "" }
+}
+defiend_text = {
+	name = UpdtGD_LRF
+	text = { trigger = { check_variable  = { var = updt_GD_lr_factor value = 0  compare = not_equals } } localization_key = "updt_GD_lr_factor_tt" }
+	text = { localization_key = "" }
+}

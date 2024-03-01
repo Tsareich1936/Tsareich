@@ -127,7 +127,7 @@ if = {
 	}
 }
 
-
+recruit_character = SER_aleksandar_ii_karadordevic
 recruit_character = SER_acd2
 recruit_character = SER_communist_guy
 recruit_character = SER_acr
@@ -214,7 +214,10 @@ create_country_leader = {
 		#
 	}
 }
-
+promote_character = {
+	character = SER_aleksandar_ii_karadordevic
+	ideology = despotism
+}
 add_ideas = {
 	limited_conscription
 	export_focus

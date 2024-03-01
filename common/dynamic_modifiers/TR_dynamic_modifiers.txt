@@ -14,7 +14,20 @@ TR_traditional_economy_modifier = {
 	local_resources_factor = rus_TE_local_resources_factor
 	supply_node_range = rus_TE_supply_node_range
 }
-
+TR_great_depression_modifier = {
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		NOT = {
+			has_idea = TR_great_depression_idea
+		}
+	}
+	political_power_cost = usa_GD_pp_cost_var
+	consumer_goods_factor = usa_GD_cg_factor_var
+	conscription_factor = usa_GD_c_factor_var
+	local_resources_factor = usa_GD_lr_factor
+}
 TR_POL_resisting = {
 	enable = {
 		always = yes

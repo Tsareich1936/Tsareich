@@ -1,5 +1,5 @@
-add_namespace = TR_czech_revolution
-add_namespace = TR_czech_revolution_news
+add_namespace = "TR_czech_revolution"
+add_namespace = "TR_czech_revolution_news"
 
 
 country_event = {#プラハ革命
@@ -65,7 +65,7 @@ country_event = {#プラハ革命
 }
 
 
-country_event = { #プラハ暴動失敗
+country_event = {#プラハ暴動失敗
 	id = TR_czech_revolution.2
 	title = TR_czech_revolution.2.t
 	desc = TR_czech_revolution.2.d
@@ -86,25 +86,30 @@ country_event = { #プラハ暴動失敗
 		name = TR_czech_revolution.2.a #反乱軍は事前に鎮圧された
 		ai_chance = { factor = 100 }
 		add_stability = 0.2	
-		random_list = {
-			85 = { #普通
-		        GER = {
-			        country_event = {
-				        id = TR_czech_revolution.7
-				        days = 3
-			        }
-		        }
-	        }
-	        15 = { #反乱1
-		        GER = {
-			        country_event = {
-				        id = TR_czech_revolution.8
-				        days = 3
-			        }
-		        }
-		    }	
+		85 = { #普通
+		    GER = {
+			    country_event = {
+				    id = TR_czech_revolution.7
+				    days = 3
+			    }
+		    }
 	    }
-
+	    15 = { #反乱1
+		    GER = {
+			    country_event = {
+				    id = TR_czech_revolution.8
+				    days = 3
+			    }
+		    }
+		}	
+		#2 = { #反乱2
+		#    GER = {
+		#		country_event = {
+		#			id = TR_czech_revolution.9
+		#			days = 3
+		#		}
+		#	}
+        #}	
     }
 }
 

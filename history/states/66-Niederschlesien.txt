@@ -20,8 +20,6 @@ state={
 		}
 		add_core_of = GER
 		add_core_of = SIL
-		add_core_of = POL
-		add_claim_by = CZE
 		1939.1.1 = {
 			buildings = {
 				air_base = 10
@@ -35,7 +33,7 @@ state={
 	}
 
 	provinces={
-		552 3283 3438 3510 3545 6462 6534 6595 9470 9570 11517 
+		552 3283 3438 3510 3545 6462 6534 6595 9470 9535 9570 11517 
 	}
 	manpower=3052726
 	buildings_max_level_factor=1.000

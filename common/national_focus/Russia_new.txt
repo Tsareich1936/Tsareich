@@ -1,0 +1,847 @@
+focus_tree = {
+	country = {
+		factor = 0
+		modifier = {
+			add = 101
+			tag = RUS
+		}
+	}
+	default = no
+
+	############################
+	#	皇帝死亡イベント分岐	#
+	############################
+	focus = {
+		id = RUS_FkV_notsar
+		icon = GFX_focus_hun_elect_a_king
+		cost = 0
+		mutually_exclusive = {
+			focus = RUS_FkV_communist_win
+			focus = RUS_FkV_broken_country
+		}
+		x = 50
+		y = 0
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = RUS_FkV_broken_country
+		icon = GFX_focus_generic_fascist_troops
+		cost = 0
+		x = 20
+		y = 0
+		relative_position_id = RUS_FkV_notsar
+		search_filters = FOCUS_FILTER_POLITICAL
+		mutually_exclusive = {
+			focus = RUS_FkV_communist_win
+			focus = RUS_FkV_notsar
+		}
+		available = {
+			always = no
+		}
+	}
+	focus = {
+		id = RUS_FkV_communist_win
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		cost = 0
+		mutually_exclusive = {
+			focus = RUS_FkV_notsar
+			focus = RUS_FkV_broken_country
+		}
+		x = -20
+		y = 0
+		relative_position_id = RUS_FkV_notsar
+		search_filters = FOCUS_FILTER_POLITICAL
+		available = {
+			always = no
+		}
+	}
+
+	########################
+	#	改革皇帝政治近代化	#
+	########################
+	focus = {
+		id = RUS_newtsar
+		icon = GFX_focus_RUS_newtsar
+		cost = 5
+		prerequisite = {
+			focus = RUS_FkV_notsar
+		}
+		mutually_exclusive = {
+			focus = RUS_oldtsar
+		}
+		relative_position_id = RUS_FkV_notsar
+		x = -23
+		y = 2
+		search_filters = FOCUS_FILTER_POLITICAL
+		completion_reward = {
+			hidden_effect = {
+				RUS = {
+					kill_country_leader = yes
+					set_country_flag = Tsar_kirill
+					
+				}
+			}
+			promote_character = {
+				character = RUS_kirill_vladimirovich
+			}
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = RUS_unprison
+		icon = GFX_focus_mex_arrest_general_cedillo
+		cost = 5
+		prerequisite = {
+			focus = RUS_newtsar
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_newtsar
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_ARMY_XP
+			FOCUS_FILTER_NAVY_XP
+			FOCUS_FILTER_AIR_XP
+			FOCUS_FILTER_WAR_SUPPORT
+			FOCUS_FILTER_POLITICAL_CHARACTER
+		}
+		ai_will_do = {
+			factor = 200
+		}
+		available = {
+		}
+		completion_reward = {
+			add_stability = -0.15
+			add_trait = {
+				character = RUS_kirill_vladimirovich
+				ideology = despotism
+				trait = TR_krill_evolutional_government
+			}
+		}
+	}
+	focus = {
+		id = RUS_tsar_infantry
+		icon = GFX_focus_RUS_guard
+		cost = 5
+		prerequisite = {
+			focus = RUS_newtsar
+		}
+		x = -1
+		y = 1
+		relative_position_id = RUS_newtsar
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_STABILITY
+			FOCUS_FILTER_POLITICAL_CHARACTER
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		}
+		completion_reward = {
+			remove_trait = {
+				character = RUS_kirill_vladimirovich
+				ideology = despotism
+				trait = TR_krill_conflicts_in_the_court
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_remake_national_government
+		icon = GFX_focus_RUS_new_government
+		cost = 5
+		prerequisite = {
+			focus = RUS_tsar_infantry
+			focus = RUS_unprison
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_newtsar
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 150
+			custom_effect_tooltip = RUS_TE_tt_1
+			set_temp_variable = {
+                updt_consumer_goods_factor = -0.25
+            }
+			set_temp_variable = {
+                updt_industrial_capacity_factor = 0.15
+            }
+			set_temp_variable = {
+               updt_production_speed_buildings_factor = 0.15
+            }
+			TE_update_modifier = yes
+			
+			custom_effect_tooltip = RUS_TE_tt_1_2
+			add_stability = -0.05
+		}
+	}
+
+
+	########################
+	#	反動皇帝政治近代化	#
+	########################
+	focus = {
+		id = RUS_oldtsar
+		icon = GFX_focus_SOV_zemsky_sobor
+		cost = 5
+		prerequisite = {
+			focus = RUS_FkV_notsar
+		}
+		mutually_exclusive = {
+			focus = RUS_newtsar
+		}
+		relative_position_id = RUS_FkV_notsar
+		x = 23
+		y = 2
+		search_filters = FOCUS_FILTER_POLITICAL
+		completion_reward = {
+
+		}
+	}
+	
+	#####################
+	#	外交ツリー		#
+	#####################
+	focus = {
+		id = RUS_empire_diplo
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5
+		prerequisite = {
+			focus = RUS_newtsar
+			focus = RUS_oldtsar
+		}
+		relative_position_id = RUS_FkV_notsar
+		x = 0
+		y = 4
+		completion_reward = {
+			#TODO 効果調整
+			add_political_power = 50
+			add_ideas = RUS_empire_diplo
+			unlock_decision_category_tooltip = RUS_spain_civilwar_decision_c
+		}
+	}
+
+	# 欧州外交ツリー
+	focus = {
+		id = RUS_europe_diplo
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 5
+		prerequisite = {
+			focus = RUS_empire_diplo
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_empire_diplo
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_category_tooltip = RUS_europe_diplo_c
+		}
+	}
+	focus = {
+		id = RUS_money_to_SER
+		icon = GFX_focus_invite_yugoslavia
+		cost = 5
+		prerequisite = {
+			focus = RUS_europe_diplo
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+			country_exists = SER
+		}
+		x = -1
+		y = 2
+		relative_position_id = RUS_empire_diplo
+		completion_reward = {
+			#TODO ロシアのデバフとttの強化
+			SER = {
+				country_event = TR_Russia_diplo.10
+			}
+			unlock_decision_tooltip = RUS_ser_build_industrial_complex
+		}
+	}
+	focus = {
+		id = RUS_nord_anticommune
+		icon = GFX_goal_anti_comintern_pact
+		cost = 5
+		prerequisite = {
+			focus = RUS_europe_diplo
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+			OR = {
+				SWE = {
+					AND = {
+						is_subject = no
+						country_exists = SWE
+					}
+				}
+				ICE = {
+					AND = {
+						is_subject = no
+						country_exists = ICE
+					}
+				}
+				DEN = {
+					AND = {
+						is_subject = no
+						country_exists = DEN
+					}
+				}
+				NOR = {
+					AND = {
+						is_subject = no
+						country_exists = NOR
+					}
+				}
+			}
+		}
+		x = 1
+		y = 2
+		relative_position_id = RUS_empire_diplo
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = SWE
+						tag = ICE
+						tag = DEN
+						tag = NOR
+					}
+				}
+				country_event = TR_Russia_diplo.11
+			}
+		}
+	}
+
+	#択一
+	focus = {
+		id = RUS_money_to_ROM
+		icon = GFX_focus_invite_romania
+		cost = 5
+		prerequisite = {
+			focus = RUS_money_to_SER
+		}
+		prerequisite = {
+			focus = RUS_nord_anticommune
+		}
+		mutually_exclusive = {
+			focus = RUS_push_ROM
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+				has_war_with = ROM
+			}
+			country_exists = ROM
+			ROM = {
+				is_subject = no
+			}
+		}
+		bypass = {
+			ROM = {
+				is_subject_of = RUS
+			}
+		}
+		x = -1
+		y = 3
+		relative_position_id = RUS_empire_diplo
+	}
+	focus = {
+		id = RUS_push_ROM
+		icon = GFX_focus_rom_preserve_romania
+		cost = 5
+		prerequisite = {
+			focus = RUS_nord_anticommune
+		}
+		prerequisite = {
+			focus = RUS_money_to_SER
+		}
+		mutually_exclusive = {
+			focus = RUS_money_to_ROM
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+				has_war_with = ROM
+			}
+			country_exists = ROM
+			ROM = {
+				is_subject = no
+			}
+		}
+		x = 1
+		y = 3
+		relative_position_id = RUS_empire_diplo
+	}
+
+	# 側面
+	focus = {
+		id = RUS_corp_POR
+		icon = GFX_focus_generic_befriend_portugal
+		cost = 10
+		prerequisite = {
+			focus = RUS_money_to_SER
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+			country_exists = POR
+		}
+		x = -3
+		y = 3
+		relative_position_id = RUS_empire_diplo
+		completion_reward = {
+			add_political_power = 30
+
+		}
+	}
+	focus = {
+		id = RUS_invade_nord
+		icon = GFX_focus_generic_attack_nordic_territory
+		cost = 10
+		prerequisite = {
+			focus = RUS_nord_anticommune
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+			has_war_support > 0.5
+		}
+		x = 3
+		y = 3
+		relative_position_id = RUS_empire_diplo
+		completion_reward = {
+			add_named_threat = {
+				threat = 3
+				name = RUS_invade_nord
+			}
+		}
+	}
+
+	#三列目
+	focus = {
+		id = RUS_diplo_help_CZE
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
+		prerequisite = {
+			focus = RUS_money_to_ROM
+			focus = RUS_push_ROM
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+		}
+		x = 0
+		y = 4
+		relative_position_id = RUS_empire_diplo
+	}
+
+	#亡命政府
+	focus = {
+		id = RUS_money_to_FGE
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 10
+		prerequisite = {
+			focus = RUS_money_to_ROM
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+			country_exists = FGE
+		}
+		x = -2
+		y = 4
+		relative_position_id = RUS_empire_diplo
+	}
+	focus = {
+		id = RUS_no_money_to_GE
+		icon = GFX_focus_fra_devalue_the_franc
+		cost = 10
+		prerequisite = {
+			focus = RUS_push_ROM
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+			country_exists = FGE
+		}
+		x = 2
+		y = 4
+		relative_position_id = RUS_empire_diplo
+	}
+
+	#下段
+	focus = {
+		id = RUS_knockout_commune
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10
+		prerequisite = {
+			focus = RUS_diplo_help_CZE
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+			is_major = yes
+		}
+		x = 0
+		y = 5
+		relative_position_id = RUS_empire_diplo
+	}
+
+
+	#太平洋外交
+	focus = {
+		id = RUS_diplo_US
+		icon = GFX_goal_generic_national_unity
+		cost = 5
+		prerequisite = {
+			focus = RUS_empire_diplo
+		}
+		available = {
+			has_war = no
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+		}
+		x = -6
+		y = 1
+		relative_position_id = RUS_empire_diplo
+	}
+	focus = {
+		id = RUS_treaty_with_USA
+		icon = GFX_focus_generic_befriend_usa
+		cost = 5
+		prerequisite = {
+			focus = RUS_diplo_US
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+		}
+		x = -5
+		y = 2
+		relative_position_id = RUS_empire_diplo
+	}
+
+	#択一
+	focus = {
+		id = RUS_air_pro_US
+		icon = GFX_focus_generic_long_range_aircraft
+		cost = 10
+		prerequisite = {
+			focus = RUS_treaty_with_USA
+		}
+		mutually_exclusive = {
+			focus = RUS_naval_pro_JAP
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+		}
+		x = -5
+		y = 3
+		relative_position_id = RUS_empire_diplo
+	}
+	focus = {
+		id = RUS_naval_pro_JAP
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 10
+		prerequisite = {
+			focus = RUS_diplo_US
+		}
+		available = {
+			has_war_with = JAP
+			NOT = {
+				is_subject = yes
+			}
+		}
+
+		mutually_exclusive = {
+			focus = RUS_air_pro_US
+		}
+		x = -7
+		y = 3
+		relative_position_id = RUS_empire_diplo
+	}
+
+	#中東外交
+	focus = {
+		id = RUS_battle_with_PER
+		icon = GFX_focus_generic_attack_iran
+		cost = 5
+		bypass = {
+			PER = {
+				is_subject_of = RUS
+			}
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+			country_exists = PER
+			has_army_manpower = {
+				size > 600000
+			}
+		}
+		prerequisite = {
+			focus = RUS_empire_diplo
+		}
+		x = -10
+		y = 1
+		relative_position_id = RUS_empire_diplo
+		completion_reward = {
+			custom_effect_tooltip = TR_Russia.tt.5
+			country_event = TR_Russia.5
+		}
+	}
+
+	focus = {
+		id = RUS_afgan_diplo
+		icon = GFX_focus_generic_befriend_afghanistan
+		cost = 4
+		prerequisite = {
+			focus = RUS_battle_with_PER
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+			country_exists = AFG
+		}
+		x = -9
+		y = 2
+		relative_position_id = RUS_empire_diplo
+	}
+	focus = {
+		id = RUS_iraq_diplo
+		icon = GFX_goal_generic_oil_refinery
+		cost = 4
+		prerequisite = {
+			focus = RUS_battle_with_PER
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+			country_exists = AFG
+		}
+		x = -11
+		y = 2
+		relative_position_id = RUS_empire_diplo
+	}
+
+	#択一
+	focus = {
+		id = RUS_invade_mid
+		icon = GFX_focus_ETH_an_arabic_base
+		cost = 4
+		prerequisite = {
+			focus = RUS_afgan_diplo
+			focus = RUS_iraq_diplo
+		}
+		mutually_exclusive = {
+			focus = RUS_friend_mid
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+			has_war_support > 0.25
+		}
+		x = -11
+		y = 3
+		relative_position_id = RUS_empire_diplo
+	}
+	focus = {
+		id = RUS_friend_mid
+		icon = GFX_focus_TUR_treaty_of_saadabad
+		cost = 4
+		prerequisite = {
+			focus = RUS_afgan_diplo
+			focus = RUS_iraq_diplo
+		}
+		mutually_exclusive = {
+			focus = RUS_invade_mid
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+		}
+		x = -9
+		y = 3
+		relative_position_id = RUS_empire_diplo
+	}
+
+	# 国家顧問
+	focus = {
+		id = RUS_send_pros
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 4
+		prerequisite = {
+			focus = RUS_empire_diplo
+		}
+		x = 10
+		y = 1
+		relative_position_id = RUS_empire_diplo
+	}
+	focus = {
+		id = RUS_send_tech_pro
+		icon = GFX_focus_spa_the_spanish_miracle
+		cost = 4
+		prerequisite = {
+			focus = RUS_send_pros
+		}
+		x = 9
+		y = 2
+		relative_position_id = RUS_empire_diplo
+	}
+	focus = {
+		id = RUS_send_army_pro
+		icon = GFX_focus_POL_beck_ribbentrop
+		cost = 4
+		prerequisite = {
+			focus = RUS_send_pros
+		}
+		x = 11
+		y = 2
+		relative_position_id = RUS_empire_diplo
+	}
+
+	#択一
+	focus = {
+		id = RUS_international_industrial_pro
+		icon = GFX_focus_generic_industrialists
+		cost = 4
+		prerequisite = {
+			focus = RUS_send_army_pro
+			focus = RUS_send_tech_pro
+		}
+		mutually_exclusive = {
+			focus = RUS_international_army_pro
+		}
+		x = 9
+		y = 3
+		relative_position_id = RUS_empire_diplo
+	}
+	focus = {
+		id = RUS_international_army_pro
+		icon = GFX_focus_SOV_mobilization_plan
+		cost = 4
+		prerequisite = {
+			focus = RUS_send_tech_pro
+			focus = RUS_send_army_pro
+		}
+		mutually_exclusive = {
+			focus = RUS_international_industrial_pro
+		}
+		x = 11
+		y = 3
+		relative_position_id = RUS_empire_diplo
+	}
+
+	#アンカラ条約
+	focus = {
+		id = RUS_ankara_treaty
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		cost = 5
+		prerequisite = {
+			focus = RUS_empire_diplo
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+			has_global_flag = TUR_ankara_treaty_available
+		}
+		x = 6
+		y = 1
+		relative_position_id = RUS_empire_diplo
+	}
+
+	#択一
+	focus = {
+		id = RUS_corp_TUR
+		icon = GFX_focus_generic_befriend_turkey
+		cost = 10
+		prerequisite = {
+			focus = RUS_ankara_treaty
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+		}
+		mutually_exclusive = {
+			focus = RUS_push_TUR
+		}
+		x = 5
+		y = 2
+		relative_position_id = RUS_empire_diplo
+	}
+	focus = {
+		id = RUS_push_TUR
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10
+		prerequisite = {
+			focus = RUS_ankara_treaty
+		}
+		available = {
+			NOT = {
+				is_subject = yes
+			}
+			has_war_support > 0.25
+		}
+		mutually_exclusive = {
+			focus = RUS_corp_TUR
+		}
+		x = 7
+		y = 2
+		relative_position_id = RUS_empire_diplo
+		completion_reward = {
+			add_named_threat = {
+				threat = 3
+				name = RUS_push_TUR
+			}
+		}
+	}
+}

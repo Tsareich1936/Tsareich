@@ -1,3 +1,42 @@
+GD_update_modifier = {
+	custom_effect_tooltip = "updt_great_depression_idea_modifier_tt"
+	hidden_effect = {
+		add_to_variable = {
+			var = usa_GD_pp_cost_var
+			value = updt_GD_pp_cost_var
+		}
+		add_to_variable = {
+			var = usa_GD_cg_factor_var
+			value = updt_GD_cg_factor_var
+		}
+		add_to_variable = {
+			var = usa_GD_c_factor_var
+			value = updt_GD_c_factor_var
+		}
+		add_to_variable = {
+			var = usa_GD_lr_factor
+			value = updt_GD_lr_factor
+		}
+	}
+}
+#template
+# set_temp_variable = {
+# 	var = updt_GD_pp_cost_var
+# 	value = 0.1
+# }
+# set_temp_variable = {
+# 	var = updt_GD_cg_factor_var
+# 	value = 0.1
+# }
+# set_temp_variable = {
+# 	var = updt_GD_c_factor_var
+# 	value = 0.1
+# }
+# set_temp_variable = {
+# 	var = updt_GD_lr_factor
+# 	value = 0.1
+# }
+# GD_update_modifier = yes
 TR_USA_coup = {
 	every_country = {
 		limit = {
@@ -28,7 +67,27 @@ TR_USA_coup = {
 				target = PREV
 				type = civil_war
 			}
-			add_civil_war_target = PREV
+			if = {
+				limit = {
+					PREV = {
+						NOT = {
+							OR = {
+								tag = TXS
+								tag = IRC
+							}
+						}
+					}
+					THIS = {
+						NOT = {
+							OR = {
+								tag = TXS
+								tag = IRC
+							}
+						}
+					}
+				}
+				add_civil_war_target = PREV
+			}
 			PREV = {
 				add_to_war = {
 					targeted_alliance = THIS

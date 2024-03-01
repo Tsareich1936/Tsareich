@@ -2,6 +2,7 @@
 state={
 	id=153
 	name="STATE_153"
+
 	history={
 		owner = GER
 		victory_points = {
@@ -11,6 +12,7 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 3
+
 		}
 		add_core_of = GER
 		add_core_of = AUS
@@ -18,10 +20,13 @@ state={
 			owner = GER
 			controller = GER
 			add_core_of = GER
+
 		}
+
 	}
+
 	provinces={
-		668 671 673 3675 6673 9633 9636 11618 11634 
+		671 673 9633 9636 11618 11634 
 	}
 	manpower=1500986
 	buildings_max_level_factor=1.000

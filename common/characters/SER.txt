@@ -1,0 +1,15 @@
+characters = {
+	SER_aleksandar_ii_karadordevic = {
+		name = SER_aleksandar_ii_karadordevic
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SER_aleksandar_ii_karadordevic
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}
