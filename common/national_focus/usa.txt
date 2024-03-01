@@ -1052,7 +1052,7 @@ focus_tree = {
 			}
 			focus = {
 				id = FGA_strength_US
-				icon = GFX_
+				icon = GFX_goal_anschluss
 				cost = 5
 				prerequisite = {
 					focus = FGA_cooperate_natives
@@ -1064,7 +1064,7 @@ focus_tree = {
 				y = 4
 				relative_position_id = FGA_cooperate_texas
 				completion_reward = {
-			
+					add_ideas = USA_homeland_defense
 				}
 			}
 		#center-right
