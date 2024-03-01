@@ -31,7 +31,7 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.50
 				conscription_factor = 0.05
-				surrender_limit = 1
+				surrender_limit = 0.1
 			}
 		}
 		TR_POL_low_legitimacy = {
