@@ -26,6 +26,8 @@ add_ideas = {
 	the_long_lance
 	JAP_agriculture
 	TR_water_land_battle
+
+	TR_jap_limit_factory
 }
 
 set_power_balance = {
