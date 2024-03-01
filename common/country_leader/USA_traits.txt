@@ -1,0 +1,14 @@
+leader_traits = {
+	TR_pacifist = {
+		random = no
+		political_power_gain = 0.15
+		war_support_factor = -0.15
+		stability_factor = 0.15
+	}
+	TR_realistic_pacifist = {
+		random = no
+		political_power_gain = 0.20
+		war_support_weekly = 0.003
+		stability_factor = 0.15
+	}
+}

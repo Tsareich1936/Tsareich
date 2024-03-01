@@ -76,6 +76,25 @@ ideas = {
 				conscription_factor = -0.03
 			}
 		}
+		FGA_positive_equalise_idea = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				OR = {
+					has_civil_war = no
+					has_war_with = ADR
+				}
+			}
+			picture = a
+			modifier = {
+				compliance_gain = 0.05
+				compliance_growth = 0.15
+			}
+		}
 		
 	}
 }

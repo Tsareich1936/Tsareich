@@ -67,7 +67,27 @@ TR_USA_coup = {
 				target = PREV
 				type = civil_war
 			}
-			add_civil_war_target = PREV
+			if = {
+				limit = {
+					PREV = {
+						NOT = {
+							OR = {
+								tag = TXS
+								tag = IRC
+							}
+						}
+					}
+					THIS = {
+						NOT = {
+							OR = {
+								tag = TXS
+								tag = IRC
+							}
+						}
+					}
+				}
+				add_civil_war_target = PREV
+			}
 			PREV = {
 				add_to_war = {
 					targeted_alliance = THIS
