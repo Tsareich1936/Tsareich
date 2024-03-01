@@ -955,7 +955,7 @@ focus_tree = {
 			}
 			focus = {
 				id = FGA_cooperate_texas
-				icon = GFX_
+				icon = GFX_goal_anschluss
 				cost = 5
 				prerequisite = {
 					focus = FGA_stop_war
@@ -963,11 +963,19 @@ focus_tree = {
 				prerequisite = {
 					focus = FGA_positive_equalise
 				}
+				available = {
+					country_exists = TXS
+				}
+				bypass = {
+					TXS = {
+						has_capitulated = yes
+					}
+				}
 				x = -1
 				y = 2
 				relative_position_id = FGA_stop_war
 				completion_reward = {
-			
+					white_peace = TXS
 				}
 			}
 			focus = {
@@ -1014,7 +1022,7 @@ focus_tree = {
 			}
 			focus = {
 				id = FGA_retake_texas
-				icon = GFX_
+				icon = GFX_goal_anschlusss
 				cost = 5
 				prerequisite = {
 					focus = FGA_eliminate_discrimination
@@ -1023,7 +1031,9 @@ focus_tree = {
 				y = 1
 				relative_position_id = FGA_eliminate_discrimination
 				completion_reward = {
-			
+					annex_country = {
+						target = TXS
+					}
 				}
 			}
 			focus = {
@@ -1166,7 +1176,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_equalise_employment
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_labour_reform
@@ -1175,7 +1185,7 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_labour_reform
 			completion_reward = {
-		
+				add_stability = 0.05
 			}
 		}
 		focus = {
@@ -1194,7 +1204,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_approach_labour_union
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_labour_reform
@@ -1203,12 +1213,12 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_labour_reform
 			completion_reward = {
-		
+				add_ideas = FGA_cooperate_labours
 			}
 		}
 		focus = {
 			id = FGA_low_conscription
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_approach_labour_union
@@ -1217,7 +1227,10 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_approach_labour_union
 			completion_reward = {
-		
+				add_timed_idea = {
+					idea = FGA_low_conscription_idea
+					days = 180
+				}
 			}
 		}
 		focus = {
@@ -1369,7 +1382,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_war_economy
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_unemployed_conscripts
@@ -1378,7 +1391,7 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_unemployed_conscripts
 			completion_reward = {
-		
+				add_ideas = war_economy
 			}
 		}
 		focus = {
@@ -1528,7 +1541,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_support_for_builder
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_joint_military_industrial_research
@@ -1537,12 +1550,24 @@ focus_tree = {
 			y = 2
 			relative_position_id = FGA_joint_military_industrial_research
 			completion_reward = {
-		
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				set_temp_variable = {
+					var = updt_GD_cg_factor_var
+					value = -0.05
+				}
+				GD_update_modifier = yes
+				add_timed_idea = {
+					idea = USA_states_building_policy
+					days = 730
+				}
 			}
 		}
 		focus = {
 			id = FGA_perfect_employ
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_joint_military_industrial_research
@@ -1554,7 +1579,23 @@ focus_tree = {
 			y = 2
 			relative_position_id = FGA_joint_military_industrial_research
 			completion_reward = {
-				
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.15
+				}
+				set_temp_variable = {
+					var = updt_GD_cg_factor_var
+					value = -0.1
+				}
+				set_temp_variable = {
+					var = updt_GD_c_factor_var
+					value = 0.15
+				}
+				set_temp_variable = {
+					var = updt_GD_lr_factor
+					value = 0.1
+				}
+				GD_update_modifier = yes
 			}
 		}
 	#
