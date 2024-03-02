@@ -1,0 +1,15 @@
+characters = {
+	NAB_nabla = {
+		name = NAB_nabla
+		portraits = {
+			civilian = {
+				large = GFX_portrait_NAB_nabla
+			}
+		}
+		country_leader = {
+			ideology = anarchism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}
