@@ -506,6 +506,40 @@ on_actions = {
 				country_event = { id = TR_czech_revolution.11 }
 			}
 		}
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = USA
+					}
+					original_tag = USA
+					all_country = {
+						limit = {
+							original_tag = USA
+						}
+						if = {
+							limit = {
+								exists = yes
+							}
+							add_to_temp_variable = {
+								noOfAmericans = 1
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							noOfAmericans = 1
+						}
+					}
+					clear_variable = noOfAmericans
+				}
+				else = {
+					clear_variable = noOfAmericans
+				}
+			}
+		}
 	}
 	on_war_relation_added = {
 		effect = {
