@@ -1524,9 +1524,9 @@ JAP_NAVAL_PLAN_3 = {
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
-					name = "Amagi Class"
+					name = "Ibuki Class"
 					type = ship_hull_heavy_2
-					name_group = JAP_BB_HISTORICAL
+					name_group = JAP_BC_HISTORICAL
 					parent_version = 0
 					modules = {
 						fixed_ship_battery_slot = ship_heavy_battery_2
@@ -1536,7 +1536,7 @@ JAP_NAVAL_PLAN_3 = {
 						fixed_ship_engine_slot = heavy_ship_engine_2
 						fixed_ship_secondaries_slot = ship_secondaries_2
 						fixed_ship_armor_slot = ship_armor_bc_2
-						front_1_custom_slot = empty
+						front_1_custom_slot = ship_heavy_battery_2
 						mid_1_custom_slot = ship_secondaries_2
 						mid_2_custom_slot = ship_airplane_launcher_1
 						rear_1_custom_slot = ship_heavy_battery_2
@@ -1744,6 +1744,7 @@ JAP_NAVAL_PLAN_3 = {
 		}
 		remove_effect = {
 			load_oob = TR_japan_navy_3
+			load_oob = JAP_air_navy_1
 		}
 	}
 
@@ -1787,9 +1788,9 @@ JAP_NAVAL_PLAN_3 = {
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
-					name = "Amagi Class"
+					name = "Ibuki Class"
 					type = ship_hull_heavy_2
-					name_group = JAP_BB_HISTORICAL
+					name_group = JAP_BC_HISTORICAL
 					parent_version = 0
 					modules = {
 						fixed_ship_battery_slot = ship_heavy_battery_2
@@ -1799,7 +1800,7 @@ JAP_NAVAL_PLAN_3 = {
 						fixed_ship_engine_slot = heavy_ship_engine_2
 						fixed_ship_secondaries_slot = ship_secondaries_2
 						fixed_ship_armor_slot = ship_armor_bc_2
-						front_1_custom_slot = empty
+						front_1_custom_slot = ship_heavy_battery_2
 						mid_1_custom_slot = ship_secondaries_2
 						mid_2_custom_slot = ship_airplane_launcher_1
 						rear_1_custom_slot = ship_heavy_battery_2
@@ -1860,6 +1861,7 @@ JAP_NAVAL_PLAN_3 = {
 		}
 		remove_effect = {
 			load_oob = TR_japan_navy_4
+			load_oob = JAP_air_navy_1
 		}
 		cost = 100
 	}
@@ -1904,9 +1906,9 @@ JAP_NAVAL_PLAN_3 = {
 					has_dlc = "Man the Guns"
 				}
 				create_equipment_variant = {
-					name = "Amagi Class"
+					name = "Ibuki Class"
 					type = ship_hull_heavy_2
-					name_group = JAP_BB_HISTORICAL
+					name_group = JAP_BC_HISTORICAL
 					parent_version = 0
 					modules = {
 						fixed_ship_battery_slot = ship_heavy_battery_2
@@ -1915,8 +1917,8 @@ JAP_NAVAL_PLAN_3 = {
 						fixed_ship_radar_slot = empty
 						fixed_ship_engine_slot = heavy_ship_engine_2
 						fixed_ship_secondaries_slot = ship_secondaries_2
-						fixed_ship_armor_slot = ship_armor_bb_2
-						front_1_custom_slot = empty
+						fixed_ship_armor_slot = ship_armor_bc_2
+						front_1_custom_slot = ship_heavy_battery_2
 						mid_1_custom_slot = ship_secondaries_2
 						mid_2_custom_slot = ship_airplane_launcher_1
 						rear_1_custom_slot = ship_heavy_battery_2
@@ -1976,6 +1978,7 @@ JAP_NAVAL_PLAN_3 = {
 		}
 		remove_effect = {
 			load_oob = TR_japan_navy_5
+			load_oob = JAP_air_navy_1
 		}
 		cost = 100
 	}
@@ -2085,6 +2088,8 @@ JAP_NAVAL_PLAN_3 = {
 	   	cost = 100
 		remove_effect = {
 			load_oob = TR_japan_navy_6
+			load_oob = JAP_air_navy_1
+
 		}
 	}
 	
@@ -2192,6 +2197,7 @@ JAP_NAVAL_PLAN_3 = {
 		}
 		remove_effect = {
 			load_oob = TR_japan_navy_7
+			load_oob = JAP_air_navy_3
 		}		
 		cost = 100
 	}

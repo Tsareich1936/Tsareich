@@ -13,10 +13,10 @@ units = {
 		task_force = {				
 			name = ""
 			location = 1092  # Hiroshima
-			ship = { name = "Shinano" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 = {amount = 1 owner = JAP version_name = "Amagi Class" } } }
-			ship = { name = "Kii" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 =  {amount = 1 owner = JAP version_name = "Amagi Class" } } }
-			ship = { name = "Aizu" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 = {amount = 1 owner = JAP version_name = "Amagi Class"} } }
-			ship = { name = "Tosa" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 = {amount = 1 owner = JAP version_name = "Amagi Class"} } }
+			ship = { name = "Ibuki" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 = {amount = 1 owner = JAP version_name = "Ibuki Class" } } }
+			ship = { name = "Hodaka" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 =  {amount = 1 owner = JAP version_name = "Ibuki Class" } } }
+			ship = { name = "Tsukuba" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 = {amount = 1 owner = JAP version_name = "Ibuki Class"} } }
+			ship = { name = "Hakkai" definition = battle_cruiser start_experience_factor = 0 equipment = { ship_hull_heavy_2 = {amount = 1 owner = JAP version_name = "Ibuki Class"} } }
 			ship = { name = "Kagero" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Kagero Class" } } }
 			ship = { name = "Oyashio" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Kagero Class" } } }
 			ship = { name = "Amatsukaze" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Asashio Class"} } }

@@ -147,7 +147,7 @@ JAP_BB_HISTORICAL = {
 	fallback_name = "Senkan %d -go"		
 
 	unique = {
-		    "Yamato" "Musashi" "Tosa" "Kii" "Owari" "Iwami" "Sagami" "Suwo" "Hizen" "Tango" "Iki" 
+		    "Yamato" "Musashi" "Iwami" "Sagami" "Suwo" "Hizen" "Tango" "Iki" 
 			# Captured/Converted/Older Models
 			"Fuso" "Yamashiro" "Ise" "Hyuga" "Nagato" "Mutsu" "Haruna" "Kirishima" "Kaga" "Shinano" 
 			# Fictional
@@ -189,7 +189,7 @@ JAP_CV_HISTORICAL = {
 	fallback_name = "Seikikubo %d -go"	
 
 	unique = {
-		    "Shokaku" "Zuikaku" "Junyo" "Hiyo" "Taiho" "Unryu" "Amagi" "Katsuragi" "Shinano" "Kasagi" "Aso" "Ikoma" 
+		    "Soryu" "Hiryu" "Shokaku" "Zuikaku" "Junyo" "Hiyo" "Taiho" "Unryu" "Amagi" "Katsuragi" "Shinano" "Kasagi" "Aso" "Ikoma" 
 			"Kurama" "Kaga" 
 	}
 }

@@ -38,6 +38,17 @@ JAP_historical_plan = {
 			factor = 1.0
 		}
 	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = VIN
+		value = -100
+		target = military_access
+	}
+	ai_strategy = {
+		type = ignore
+		id = VIN
+		value = 100
+	}
 
 }
 
@@ -97,7 +108,18 @@ JAP_historical_plan_RS = {
 
 	ideas = {
 	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = VIN
+		value = -100
+		target = military_access
+	}
 
+	ai_strategy = {
+		type = ignore
+		id = VIN
+		value = 100
+	}
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -148,6 +170,8 @@ JAP_historical_plan_war = {
 		jap_AIRFORCE_2_2
 		jap_war_plan
 		jap_AIRFORCE_2_3
+		jap_ARMY_1_3
+		jap_final_war
 	}
 
 	research = {
@@ -156,7 +180,18 @@ JAP_historical_plan_war = {
 
 	ideas = {
 	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = VIN
+		value = -100
+		target = military_access
+	}
 
+	ai_strategy = {
+		type = ignore
+		id = VIN
+		value = 100
+	}
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -191,6 +226,17 @@ JAP_final_war = {
 	}
 	abort = {
 		always = no
+	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = VIN
+		value = -100
+		target = military_access
+	}
+	ai_strategy = {
+		type = ignore
+		id = VIN
+		value = 100
 	}
 	ai_national_focuses = {
 		jap_No_defeat
@@ -229,6 +275,17 @@ JAP_historical_plan_RS_war_1 = {
 		
 	}
 
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = VIN
+		value = -100
+		target = military_access
+	}
+	ai_strategy = {
+		type = ignore
+		id = VIN
+		value = 100
+	}
 	ideas = {
 	}
 
@@ -259,6 +316,17 @@ JAP_historical_plan_RM = {
 		}
 	}
 
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = VIN
+		value = -100
+		target = military_access
+	}
+	ai_strategy = {
+		type = ignore
+		id = VIN
+		value = 100
+	}
 	ai_national_focuses = {
 		jap_Inoue
 		jap_Liquidation_of_unprofitable_companies
@@ -361,7 +429,18 @@ JAP_historical_plan_s = {
 		jap_ARMY_1_2
 		jap_Foreign_Policy
 	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = VIN
+		value = -100
+		target = military_access
+	}
 
+	ai_strategy = {
+		type = ignore
+		id = VIN
+		value = 100
+	}
 	research = {
 		
 	}
@@ -422,7 +501,18 @@ JAP_historical_plan_1 = {
 	}
 	ideas = {
 	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = VIN
+		value = -100
+		target = military_access
+	}
 
+	ai_strategy = {
+		type = ignore
+		id = VIN
+		value = 100
+	}
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -467,7 +557,18 @@ JAP_historical_plan_2 = {
 	}
 	ideas = {
 	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = VIN
+		value = -100
+		target = military_access
+	}
 
+	ai_strategy = {
+		type = ignore
+		id = VIN
+		value = 100
+	}
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -512,7 +613,18 @@ JAP_historical_plan_3 = {
 	}
 	ideas = {
 	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = VIN
+		value = -100
+		target = military_access
+	}
 
+	ai_strategy = {
+		type = ignore
+		id = VIN
+		value = 100
+	}
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -564,6 +676,17 @@ JAP_building = {
 		id = infrastructure
 		value = 10
 	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = VIN
+		value = -100
+		target = military_access
+	}
+	ai_strategy = {
+		type = ignore
+		id = VIN
+		value = 100
+	}
 }
 
 JAP_building_1 = {
@@ -604,5 +727,10 @@ JAP_building_1 = {
 		type = building_target
 		id = infrastructure
 		value = 0
+	}
+	ai_strategy = {
+		type = ignore
+		id = VIN
+		value = 100
 	}
 }

@@ -420,3 +420,19 @@ JAP_armor = {
 	}
 
 }
+JAP = {
+	allowed = {
+		tag = VIN
+	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = JAP
+		value = -1000
+		target = military_access
+	}
+	ai_strategy = {
+		type = ignore
+		id = JAP
+		value = 100
+	}
+}

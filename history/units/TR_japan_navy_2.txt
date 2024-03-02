@@ -15,7 +15,7 @@ units = {
 			location = 1092  # Hiroshima
 			ship = { name = "Yamato" definition = battleship start_experience_factor = 0 equipment = { ship_hull_super_heavy_1 = {amount = 1 owner = JAP version_name = "Yamato Class" } } }
 			ship = { name = "Musashi" definition = battleship start_experience_factor = 0 equipment = {  ship_hull_super_heavy_1 =  {amount = 1 owner = JAP version_name = "Yamato Class" } } }
-			ship = { name = "Kii" definition = battleship start_experience_factor = 0 equipment = { ship_hull_super_heavy_1 = {amount = 1 owner = JAP version_name = "Yamato Class" } } }
+			ship = { name = "Shinano" definition = battleship start_experience_factor = 0 equipment = { ship_hull_super_heavy_1 = {amount = 1 owner = JAP version_name = "Yamato Class" } } }
 			ship = { name = "Kagero" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Kagero Class" } } }
 			ship = { name = "Oyashio" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Kagero Class" } } }
 			ship = { name = "Amatsukaze" definition = destroyer equipment = { ship_hull_light_2 = {amount = 1 owner = JAP version_name = "Asashio Class"} } }

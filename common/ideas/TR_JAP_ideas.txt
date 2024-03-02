@@ -844,7 +844,7 @@ ideas = {
 				production_speed_infrastructure_factor = 0.3
 				production_speed_synthetic_refinery_factor = 0.3
 				production_speed_arms_factory_factor = -1.0
-                production_speed_naval_base_factor = -1.0
+                production_speed_dockyard_factor = -1.0
 			}
 		}
 
@@ -858,7 +858,7 @@ ideas = {
 				production_speed_infrastructure_factor = -1.0
 				production_speed_synthetic_refinery_factor = -1.0
 				production_speed_arms_factory_factor = 0.3
-                production_speed_naval_base_factor = -1.0
+                production_speed_dockyard_factor = -1.0
 			}
 		}
 
@@ -872,7 +872,7 @@ ideas = {
 				production_speed_infrastructure_factor = -1.0
 				production_speed_synthetic_refinery_factor = -1.0
 				production_speed_arms_factory_factor = -1.0
-                production_speed_naval_base_factor = 0.3
+                production_speed_dockyard_factor   = 0.3
 			}
 		}
 

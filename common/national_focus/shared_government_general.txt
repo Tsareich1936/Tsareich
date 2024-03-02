@@ -264,6 +264,37 @@ shared_focus = {
 		army_experience = 100
 		navy_experience = 100
 		air_experience = 100
+		division_template = {
+            name = "Hoheishidan"
+            regiments = {
+                infantry = {x = 0 y = 0 }
+                infantry = {x = 0 y = 1 }
+                infantry = {x = 0 y = 2 }
+				infantry = {x = 0 y = 3 }
+				infantry = {x = 0 y = 4 }
+                infantry = {x = 1 y = 0 }
+                infantry = {x = 1 y = 1 }
+                infantry = {x = 1 y = 2 }
+				infantry = {x = 1 y = 3 }
+                infantry = {x = 1 y = 4 }
+                infantry = {x = 2 y = 0 }
+                infantry = {x = 2 y = 1 }
+                infantry = {x = 2 y = 2 }
+				infantry = {x = 2 y = 3 }
+				infantry = {x = 2 y = 4 }
+            }
+        }
+		every_core_state = {
+			limit = {
+				is_owned_by = PREV
+			}
+			create_unit = {
+				division = "name = \"Hoheishidan\" division_template = \"Hoheishidan\" start_experience_factor = 0.5" 
+				owner = PREV
+				count = 3
+				
+			}
+		}
 	}
 	icon = GFX_focus_generic_military_dictatorship
 }
