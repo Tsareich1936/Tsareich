@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_portrait_NAB_nabla
+		textureFile = "gfx/leaders/NAB/Portrait_NAB_Nabla.dds"
+	}
+}
