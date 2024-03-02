@@ -917,8 +917,8 @@ focus_tree = {
 				value = 0.1
 			}
 			set_temp_variable = {
-				var = updt_GD_lr_factor
-				value = 0.1
+				var = updt_GD_c_factor_var
+				value = 0.05
 			}
 			GD_update_modifier = yes
 		}
@@ -958,7 +958,7 @@ focus_tree = {
 			focus = {
 				id = FGA_cooperate_texas
 				icon = GFX_goal_anschluss
-				cost = 5
+				cost = 10
 				prerequisite = {
 					focus = FGA_stop_war
 				}
@@ -983,7 +983,7 @@ focus_tree = {
 			focus = {
 				id = FGA_perfect_election
 				icon = GFX_goal_anschluss
-				cost = 5
+				cost = 10
 				prerequisite = {
 					focus = FGA_cooperate_texas
 				}
@@ -1001,7 +1001,7 @@ focus_tree = {
 			focus = {
 				id = FGA_eliminate_discrimination
 				icon = GFX_goal_anschluss
-				cost = 5
+				cost = 10
 				prerequisite = {
 					focus = FGA_cooperate_texas
 				}
@@ -1020,7 +1020,7 @@ focus_tree = {
 			focus = {
 				id = FGA_cooperate_natives
 				icon = GFX_goal_anschluss
-				cost = 5
+				cost = 10
 				prerequisite = {
 					focus = FGA_perfect_election
 				}
@@ -1037,7 +1037,7 @@ focus_tree = {
 			focus = {
 				id = FGA_retake_texas
 				icon = GFX_goal_anschluss
-				cost = 5
+				cost = 10
 				prerequisite = {
 					focus = FGA_eliminate_discrimination
 				}
@@ -1048,12 +1048,17 @@ focus_tree = {
 					annex_country = {
 						target = TXS
 					}
+					set_temp_variable = {
+						var = updt_GD_c_factor_var
+						value = 0.05
+					}
+					GD_update_modifier = yes
 				}
 			}
 			focus = {
 				id = FGA_strength_US
 				icon = GFX_goal_anschluss
-				cost = 5
+				cost = 10
 				prerequisite = {
 					focus = FGA_cooperate_natives
 				}
@@ -1065,6 +1070,11 @@ focus_tree = {
 				relative_position_id = FGA_cooperate_texas
 				completion_reward = {
 					add_ideas = USA_homeland_defense
+					set_temp_variable = {
+						var = updt_GD_c_factor_var
+						value = 0.15
+					}
+					GD_update_modifier = yes
 				}
 			}
 		#center-right
@@ -1133,7 +1143,7 @@ focus_tree = {
 			}
 			focus = {
 				id = FGA_no_dictator
-				icon = GFX_
+				icon = GFX_goal_anschluss
 				cost = 5
 				prerequisite = {
 					focus = FGA_ask_TIN_to_support
@@ -1145,15 +1155,12 @@ focus_tree = {
 				y = 2
 				relative_position_id = FGA_ask_TIN_to_support
 				completion_reward = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 5000
-					}
+					add_stability = 0.01
 				}
 			}
 			focus = {
 				id = FGA_red_free
-				icon = GFX_
+				icon = GFX_goal_anschluss
 				cost = 5
 				prerequisite = {
 					focus = FGA_no_dictator	
@@ -1162,12 +1169,12 @@ focus_tree = {
 				y = 1
 				relative_position_id = FGA_no_dictator
 				completion_reward = {
-			
+					add_ideas = FGA_red_free_idea
 				}
 			}
 			focus = {
 				id = FGA_dictator
-				icon = GFX_
+				icon = GFX_goal_anschluss
 				cost = 5
 				prerequisite = {
 					focus = FGA_ask_TIN_to_support
@@ -1175,11 +1182,15 @@ focus_tree = {
 				mutually_exclusive = {
 					focus = FGA_no_dictator
 				}
+				available = {
+					always = no
+				}
 				x = 1
 				y = 2
 				relative_position_id = FGA_ask_TIN_to_support
 				completion_reward = {
-			
+					add_stability = -0.1
+					add_war_support = 0.1
 				}
 			}
 			focus = {
@@ -1193,7 +1204,7 @@ focus_tree = {
 				y = 1
 				relative_position_id = FGA_dictator
 				completion_reward = {
-			
+					
 				}
 			}
 	#Left
@@ -1273,7 +1284,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_strength_labour_union
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_low_conscription
@@ -1282,12 +1293,16 @@ focus_tree = {
 			y = 2
 			relative_position_id = FGA_low_conscription
 			completion_reward = {
-		
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				GD_update_modifier = yes
 			}
 		}
 		focus = {
 			id = FGA_minimum_wage
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_strength_labour_union
@@ -1296,12 +1311,20 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_strength_labour_union
 			completion_reward = {
-		
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				set_temp_variable = {
+					var = updt_GD_cg_factor_var
+					value = -0.1
+				}
+				GD_update_modifier = yes
 			}
 		}
 		focus = {
 			id = FGA_limit_work_time
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_strength_labour_union
@@ -1310,7 +1333,15 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_strength_labour_union
 			completion_reward = {
-		
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				set_temp_variable = {
+					var = updt_GD_cg_factor_var
+					value = -0.1
+				}
+				GD_update_modifier = yes
 			}
 		}
 	#Right
@@ -1454,7 +1485,7 @@ focus_tree = {
 				}
 				set_temp_variable = {
 					var = updt_GD_cg_factor_var
-					value = -0.15
+					value = -0.10
 				}
 				GD_update_modifier = yes
 			}
@@ -1470,20 +1501,25 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_strength_social_service
 			completion_reward = {
-				random_owned_state = {
+				random_owned_controlled_state = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
 						level = 1
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
 						level = 1
 					}
 				}
+				set_temp_variable = {
+					var = updt_GD_lr_factor
+					value = 0.1
+				}
+				GD_update_modifier = yes
 			}
 		}
 		focus = {
@@ -1497,20 +1533,29 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_infra_net
 			completion_reward = {
-				random_owned_state = {
+				random_owned_controlled_state = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
 						level = 2
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
 						level = 2
 					}
 				}
+				set_temp_variable = {
+					var = updt_GD_cg_factor_var
+					value = -0.1
+				}
+				set_temp_variable = {
+					var = updt_GD_lr_factor
+					value = 0.1
+				}
+				GD_update_modifier = yes
 			}
 		}
 		focus = {
@@ -1525,6 +1570,20 @@ focus_tree = {
 			relative_position_id = FGA_social_welfare_policy
 			completion_reward = {
 				add_stability = 0.05
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
 				set_temp_variable = {
 					var = updt_GD_pp_cost_var
 					value = -0.05
@@ -1578,6 +1637,20 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_schoolership
 			completion_reward = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
 				add_research_slot = 1
 			}
 		}
@@ -1592,6 +1665,20 @@ focus_tree = {
 			y = 2
 			relative_position_id = FGA_joint_military_industrial_research
 			completion_reward = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+				}
 				set_temp_variable = {
 					var = updt_GD_pp_cost_var
 					value = -0.05
@@ -1638,6 +1725,91 @@ focus_tree = {
 					value = 0.1
 				}
 				GD_update_modifier = yes
+			}
+		}
+		focus = {
+			id = FGA_states_resource
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_war_economy
+			}
+			prerequisite = {
+				focus = FGA_perfect_employ
+			}
+			x = -1
+			y = 2
+			relative_position_id = FGA_perfect_employ
+			completion_reward = {
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = 0.05
+				}
+				set_temp_variable = {
+					var = updt_GD_lr_factor
+					value = 0.2
+				}
+				GD_update_modifier = yes
+			}
+		}
+		focus = {
+			id = FGA_states_building_station
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_perfect_employ
+			}
+			prerequisite = {
+				focus = FGA_support_for_builder
+			}
+			x = 1
+			y = 2
+			relative_position_id = FGA_perfect_employ
+			completion_reward = {
+				set_temp_variable = {
+					var = updt_GD_cg_factor_var
+					value = -0.05
+				}
+				GD_update_modifier = yes
+				swap_ideas = {
+					remove_idea = FGA_states_building_policy
+					add_idea = FGA_states_building_station_idea
+				}
+			}
+		}
+		focus = {
+			id = FGA_strength_military_industry
+			icon = GFX_goal_anschluss
+			cost = 5
+			prerequisite = {
+				focus = FGA_support_for_builder
+			}
+			x = 1
+			y = 2
+			relative_position_id = FGA_support_for_builder
+			completion_reward = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				add_ideas = FGA_strength_military_industry_idea
 			}
 		}
 	#

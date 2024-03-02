@@ -58,10 +58,10 @@ ideas = {
 			picture = generic_flexible_foreign_policy2
 						
 			available = {
-				always = no
+				tag = NAB
 			}				
 			visible = {
-				always = no
+				tag = NAB
 			}
 			removal_cost = -1
 			level = -1

@@ -15,8 +15,8 @@ units = {
 			location = 1092  # Hiroshima
 			ship = { name = "Shokaku" definition = carrier start_experience_factor = 0 equipment = { ship_hull_carrier_1 = {amount = 1 owner = JAP version_name = "Shokaku Class" } } }
 			ship = { name = "Zuikaku" definition = carrier start_experience_factor = 0 equipment = { ship_hull_carrier_1 =  {amount = 1 owner = JAP version_name = "Shokaku Class" } } }
-			ship = { name = "Amagi" definition = battleship start_experience_factor = 0 equipment = { ship_hull_heavy_2 = {amount = 1 owner = JAP version_name = "Amagi Class" } } }
-			ship = { name = "Kii" definition = battleship start_experience_factor = 0 equipment = { ship_hull_heavy_2 =  {amount = 1 owner = JAP version_name = "Amagi Class" } } }
+			ship = { name = "Ibuki" definition = battleship start_experience_factor = 0 equipment = { ship_hull_heavy_2 = {amount = 1 owner = JAP version_name = "Ibuki Class" } } }
+			ship = { name = "Hodaka" definition = battleship start_experience_factor = 0 equipment = { ship_hull_heavy_2 =  {amount = 1 owner = JAP version_name = "Ibuki Class" } } }
 			ship = { name = "Agano" definition = light_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Agano Class"} } }
 			ship = { name = "Noshiro" definition = light_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Agano Class"} } }
 			ship = { name = "Yahagi" definition = light_cruiser start_experience_factor = 0 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Agano Class"} } }

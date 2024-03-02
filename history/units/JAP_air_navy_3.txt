@@ -1,0 +1,36 @@
+﻿
+
+
+
+
+#AIRCRAFT
+air_wings = {
+	"Ryuhou" = {
+		cv_small_plane_airframe_1 =  { owner = "JAP" amount = 10 version_name = "A4N" }
+		cv_small_plane_airframe_1 =  { owner = "JAP" amount = 8 version_name = "A4N" }
+		cv_small_plane_naval_bomber_airframe_1 =  { owner = "JAP" amount = 10 version_name = "B4Y" }
+		cv_small_plane_naval_bomber_airframe_1 =  { owner = "JAP" amount = 10 version_name = "B4Y" }
+	}
+
+	"Chitose" = {
+		cv_small_plane_airframe_1 =  { owner = "JAP" amount = 10 version_name = "A4N" }
+		cv_small_plane_airframe_1 =  { owner = "JAP" amount = 8 version_name = "A4N" }
+		cv_small_plane_naval_bomber_airframe_1 =  { owner = "JAP" amount = 10 version_name = "B4Y" }
+		cv_small_plane_naval_bomber_airframe_1 =  { owner = "JAP" amount = 10 version_name = "B4Y" }
+	}
+	"Chiyoda" = {
+		cv_small_plane_airframe_1 =  { owner = "JAP" amount = 10 version_name = "A4N" }
+		cv_small_plane_airframe_1 =  { owner = "JAP" amount = 8 version_name = "A4N" }
+		cv_small_plane_naval_bomber_airframe_1 =  { owner = "JAP" amount = 10 version_name = "B4Y" }
+		cv_small_plane_naval_bomber_airframe_1 =  { owner = "JAP" amount = 10 version_name = "B4Y" }
+	}
+	"Junyo" = {
+		cv_small_plane_airframe_1 =  { owner = "JAP" amount = 10 version_name = "A4N" }
+		cv_small_plane_airframe_1 =  { owner = "JAP" amount = 8 version_name = "A4N" }
+		cv_small_plane_naval_bomber_airframe_1 =  { owner = "JAP" amount = 10 version_name = "B4Y" }
+		cv_small_plane_naval_bomber_airframe_1 =  { owner = "JAP" amount = 10 version_name = "B4Y" }
+	}
+}
+
+
+

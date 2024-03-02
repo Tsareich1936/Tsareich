@@ -1,4 +1,4 @@
-ENG_historical_plan = {
+USA_historical_plan = {
 	name = "United States historical plan"
 	desc = "Historical behavior for United States"
 
@@ -17,6 +17,78 @@ ENG_historical_plan = {
 		TR_USA_big_government
 		TR_USA_welfare_oriented_policy
 		TR_USA_realisation_of_socialist_state
+	}
+
+	research = {
+		
+	}
+
+	ideas = {
+		home_defence_spirit = 1
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+FGA_historical_plan = {
+	name = "United States historical plan"
+	desc = "Historical behavior for United States"
+
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		always = yes
+		has_focus_tree = fga_tree
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		FGA_new_government
+		FGA_social_welfare_policy
+		FGA_deliver_wealth
+		FGA_save_unemployed
+		FGA_positive_pacifism
+		FGA_international_cooperate
+		FGA_cooperate_TIN
+		FGA_peace_compromise
+		FGA_unemployed_conscripts
+		FGA_strength_social_service
+		FGA_states_insurance
+		FGA_stop_war
+		FGA_labour_reform
+		FGA_equalise_employment
+		FGA_approach_labour_union
+		FGA_positive_equalise
+		FGA_cooperate_texas
+		FGA_infra_net
+		FGA_medical
+		FGA_military_industry
+		FGA_schoolership
+		FGA_joint_military_industrial_research
+		FGA_perfect_employ
+		FGA_perfect_election
+		FGA_eliminate_discrimination
+		FGA_ask_TIN_to_support
+		FGA_low_conscription
+		FGA_strength_labour_union
+		FGA_war_economy
+		FGA_retake_texas
+		FGA_cooperate_natives
+		FGA_minimum_wage
+		FGA_limit_work_time
+		FGA_support_for_builder
+		FGA_strength_US
+		FGA_no_dictator
+		FGA_red_free
 	}
 
 	research = {

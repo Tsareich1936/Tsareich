@@ -3858,24 +3858,24 @@ country_event = {
 			}
 			JAP = {
 				add_equipment_to_stockpile = {
-					type = small_plane_cas_airframe_2
-					variant_name = "Ki-51"
-					amount = 1000
+					type = medium_plane_airframe_2
+					variant_name = "Ki-48"
+					amount = 1500
 				}
 				add_equipment_to_stockpile = {
 					type = cv_small_plane_naval_bomber_airframe_2
 					variant_name = "B6N"
-					amount = 300
+					amount = 500
 				}
 				add_equipment_to_stockpile = {
-					type = cv_small_plane_cas_airframe_2
+					type = cv_small_plane_airframe_2
 					variant_name = "Zero"
 					amount = 300
 				}
 				add_equipment_to_stockpile = {
-					type = cv_small_plane_airframe_2
+					type = cv_small_plane_cas_airframe_2
 					variant_name = "B74"
-					amount = 300
+					amount = 100
 				}
 				add_timed_idea = {
 					idea = TR_jap_ai_cas
@@ -3888,5 +3888,41 @@ country_event = {
 			}
 		}
 
+	}
+}
+country_event = {
+	id = TR_japan.128
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				JAP = {
+					is_ai = yes
+				}
+			}
+			JAP = {
+				navy_experience = -50
+			    create_equipment_variant = {
+					name = "Agano"
+					type = ship_hull_cruiser_2 
+					modules = {
+						fixed_ship_battery_slot = ship_light_medium_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = ship_radar_1
+						fixed_ship_engine_slot = cruiser_ship_engine_2
+						fixed_ship_armor_slot = ship_armor_cruiser_3
+						fixed_ship_secondaries_slot = dp_ship_secondaries_2
+						front_1_custom_slot = ship_light_medium_battery_2
+						mid_1_custom_slot = ship_light_medium_battery_2
+						mid_2_custom_slot = ship_airplane_launcher_2
+						rear_1_custom_slot = dp_light_battery_2
+					}
+					allow_without_tech = yes
+				}
+			}
+		}
 	}
 }
