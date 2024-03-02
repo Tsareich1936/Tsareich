@@ -383,6 +383,53 @@ ideas = {
 					build_cost_ic = -0.15  instant = yes
 				}
 			}
+			targeted_modifier = {
+				tag = GXC
+				attack_bonus_against = 0.5
+			}
+			targeted_modifier = {
+				tag = EXC
+				attack_bonus_against = 0.5
+			}
+			targeted_modifier = {
+				tag = YUN
+				attack_bonus_against = 0.5
+			}
+			targeted_modifier = {
+				tag = GZH
+				attack_bonus_against = 0.5
+			}
+			targeted_modifier = {
+				tag = SIC
+				attack_bonus_against = 0.5
+			}
+			targeted_modifier = {
+				tag = HNA
+				attack_bonus_against = 0.5
+			}
+		}
+
+		TR_VIN_CHIwar1= {
+			picture = "chi_war_of_resistance3"
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+			}
+			targeted_modifier = {
+				tag = FJN
+				attack_bonus_against = 0.5
+			}
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.5
+			}
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.1
+			}
 		}
 	}	
 }

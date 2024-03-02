@@ -440,11 +440,11 @@ focus_tree = {
 			focus = VIN_6
 		}
 		available = {
-			has_global_flag = TR_bomb_MAN
+			has_global_flag = TR_war_MAN
 			is_subject = no
 		}
 		ai_will_do = {
-			factor = 25
+			factor = 50
 		}
 		x = 16
 		y = 5
@@ -908,7 +908,10 @@ focus_tree = {
 		x = 16
 		y = 10
 		completion_reward = {
-			remove_ideas = TR_VIN_CHIwar
+			swap_ideas = {
+				remove_idea = TR_VIN_CHIwar
+				add_idea = TR_VIN_CHIwar1
+			}
 			country_event = TR_vietnam.2
 			set_capital = {
 			    state  = 592
