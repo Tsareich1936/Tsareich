@@ -4,12 +4,13 @@ state={
 	name="STATE_253"
 	manpower = 2585987
 	
-	state_category = town
+	state_category = city
 
 	history={
 		owner = RUS
 		buildings = {
 			infrastructure = 3 #was: 5
+			industrial_complex = 4
 		}
 		add_core_of = RUS
 		victory_points = {

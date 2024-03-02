@@ -2,7 +2,7 @@ state={
 	id=216
 	name="STATE_216"
 	
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = RUS
@@ -10,9 +10,10 @@ state={
 			11159 1 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			air_base = 3
-
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		add_core_of = RUS
 		add_core_of = KAR

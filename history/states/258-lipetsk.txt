@@ -10,6 +10,7 @@ state={
 		owner = RUS
 		buildings = {
 			infrastructure = 3 #was: 5
+			arms_factory = 3
 		}
 		add_core_of = RUS
 		victory_points = {

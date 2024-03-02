@@ -4,12 +4,13 @@ state={
 	name="STATE_244" # Volkhov
 	manpower = 195325
 	
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = RUS
 		buildings = {
 			infrastructure = 3 #was: 5
+			arms_factory = 2
 		}
 		add_core_of = RUS
 		victory_points = {
