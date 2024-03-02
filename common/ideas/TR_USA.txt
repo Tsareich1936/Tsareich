@@ -95,6 +95,22 @@ ideas = {
 				compliance_growth = 0.15
 			}
 		}
-		
+		FGA_red_free_idea = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = a
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				socialdemocratic_drift = 0.005
+				communism_acceptance = 50
+				syndicalism_acceptance = 50
+				socialdemocratic_acceptance = 50
+			}
+		}
 	}
 }

@@ -958,7 +958,7 @@ focus_tree = {
 			focus = {
 				id = FGA_cooperate_texas
 				icon = GFX_goal_anschluss
-				cost = 5
+				cost = 10
 				prerequisite = {
 					focus = FGA_stop_war
 				}
@@ -983,7 +983,7 @@ focus_tree = {
 			focus = {
 				id = FGA_perfect_election
 				icon = GFX_goal_anschluss
-				cost = 5
+				cost = 10
 				prerequisite = {
 					focus = FGA_cooperate_texas
 				}
@@ -1001,7 +1001,7 @@ focus_tree = {
 			focus = {
 				id = FGA_eliminate_discrimination
 				icon = GFX_goal_anschluss
-				cost = 5
+				cost = 10
 				prerequisite = {
 					focus = FGA_cooperate_texas
 				}
@@ -1020,7 +1020,7 @@ focus_tree = {
 			focus = {
 				id = FGA_cooperate_natives
 				icon = GFX_goal_anschluss
-				cost = 5
+				cost = 10
 				prerequisite = {
 					focus = FGA_perfect_election
 				}
@@ -1037,7 +1037,7 @@ focus_tree = {
 			focus = {
 				id = FGA_retake_texas
 				icon = GFX_goal_anschluss
-				cost = 5
+				cost = 10
 				prerequisite = {
 					focus = FGA_eliminate_discrimination
 				}
@@ -1053,7 +1053,7 @@ focus_tree = {
 			focus = {
 				id = FGA_strength_US
 				icon = GFX_goal_anschluss
-				cost = 5
+				cost = 10
 				prerequisite = {
 					focus = FGA_cooperate_natives
 				}
@@ -1133,7 +1133,7 @@ focus_tree = {
 			}
 			focus = {
 				id = FGA_no_dictator
-				icon = GFX_
+				icon = GFX_goal_anschluss
 				cost = 5
 				prerequisite = {
 					focus = FGA_ask_TIN_to_support
@@ -1145,15 +1145,12 @@ focus_tree = {
 				y = 2
 				relative_position_id = FGA_ask_TIN_to_support
 				completion_reward = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 5000
-					}
+					add_stability = 0.01
 				}
 			}
 			focus = {
 				id = FGA_red_free
-				icon = GFX_
+				icon = GFX_goal_anschluss
 				cost = 5
 				prerequisite = {
 					focus = FGA_no_dictator	
@@ -1162,12 +1159,12 @@ focus_tree = {
 				y = 1
 				relative_position_id = FGA_no_dictator
 				completion_reward = {
-			
+					add_ideas = FGA_red_free_idea
 				}
 			}
 			focus = {
 				id = FGA_dictator
-				icon = GFX_
+				icon = GFX_goal_anschluss
 				cost = 5
 				prerequisite = {
 					focus = FGA_ask_TIN_to_support
@@ -1175,11 +1172,15 @@ focus_tree = {
 				mutually_exclusive = {
 					focus = FGA_no_dictator
 				}
+				available = {
+					always = no
+				}
 				x = 1
 				y = 2
 				relative_position_id = FGA_ask_TIN_to_support
 				completion_reward = {
-			
+					add_stability = -0.1
+					add_war_support = 0.1
 				}
 			}
 			focus = {
@@ -1193,7 +1194,7 @@ focus_tree = {
 				y = 1
 				relative_position_id = FGA_dictator
 				completion_reward = {
-			
+					
 				}
 			}
 	#Left
@@ -1273,7 +1274,7 @@ focus_tree = {
 		}
 		focus = {
 			id = FGA_strength_labour_union
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_low_conscription
@@ -1282,12 +1283,16 @@ focus_tree = {
 			y = 2
 			relative_position_id = FGA_low_conscription
 			completion_reward = {
-		
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				GD_update_modifier = yes
 			}
 		}
 		focus = {
 			id = FGA_minimum_wage
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_strength_labour_union
@@ -1296,12 +1301,16 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_strength_labour_union
 			completion_reward = {
-		
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				GD_update_modifier = yes
 			}
 		}
 		focus = {
 			id = FGA_limit_work_time
-			icon = GFX_
+			icon = GFX_goal_anschluss
 			cost = 5
 			prerequisite = {
 				focus = FGA_strength_labour_union
@@ -1310,7 +1319,11 @@ focus_tree = {
 			y = 1
 			relative_position_id = FGA_strength_labour_union
 			completion_reward = {
-		
+				set_temp_variable = {
+					var = updt_GD_pp_cost_var
+					value = -0.05
+				}
+				GD_update_modifier = yes
 			}
 		}
 	#Right
