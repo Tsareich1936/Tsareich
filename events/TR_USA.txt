@@ -958,6 +958,10 @@ add_namespace = TR_america_socialist
 						id = TR_usa_civil_war.4
 						months = 12
 					}
+					country_event = {
+						id = TR_usa_civil_war.7
+						months = 13
+					}
 				}
 				CSA = {
 					add_equipment_to_stockpile = {
@@ -1495,6 +1499,93 @@ add_namespace = TR_america_socialist
 					producer = THIS
 				}
 				TXS = {
+					TR_USA_coup = yes
+				}
+			}
+		}
+		option = {
+			name = TR_usa_civil_war.5.a
+			
+		}
+	}
+	country_event = {#軍部の反抗
+		id = TR_usa_civil_war.7
+		title = TR_usa_civil_war.7.t
+		desc = TR_usa_civil_war.7.d
+	
+		is_triggered_only = yes
+		immediate = {
+			
+			AMG = {
+				USA = {
+					every_core_state = {
+						add_core_of = ADR
+					}
+				}
+				set_capital = {
+					state = 382
+					remember_old_capital = no
+				}
+				transfer_state = 376
+				transfer_state = 377
+				transfer_state = 381
+				transfer_state = 382
+				transfer_state = 384
+				transfer_state = 387
+				transfer_state = 388
+				transfer_state = 389
+				transfer_state = 390
+				division_template = {
+					name = "Milita Division"
+					regiments = {
+						infantry = { x = 0 y = 0  }
+						infantry = { x = 0 y = 1  }
+						infantry = { x = 0 y = 2  }
+						infantry = { x = 0 y = 3  }
+					}
+				}
+				set_rule = {
+					can_join_factions = no
+				}
+				set_capital = {
+					state = 375
+				}
+				FGA = {
+					transfer_units_fraction = {
+						target = PREV
+						size = 0.5
+					}
+				}
+				division_template = {
+					name = "Milita Division"
+					regiments = {
+						infantry = { x = 0 y = 0  }
+						infantry = { x = 0 y = 1  }
+						infantry = { x = 0 y = 2  }
+						infantry = { x = 0 y = 3  }
+					}
+					
+				}
+				every_owned_state = {
+					if = {
+						limit = {
+							check_variable = {
+								AMG.num_armies < 70
+							}
+						}
+						create_unit = {
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+							owner = AMG
+							count = 3
+						}
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = THIS
+				}
+				AMG = {
 					TR_USA_coup = yes
 				}
 			}
