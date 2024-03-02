@@ -1519,7 +1519,7 @@ add_namespace = TR_america_socialist
 			AMG = {
 				USA = {
 					every_core_state = {
-						add_core_of = ADR
+						add_core_of = AMG
 					}
 				}
 				set_capital = {
