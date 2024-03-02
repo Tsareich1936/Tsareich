@@ -687,62 +687,6 @@ JAP_strategic_bomber = {
 		}
 	}
 
-	strat_bomber_1_default = {
-		priority = {
-			factor = 10
-		}
-
-		target_variant = {
-			match_value = 1000
-			type = large_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = large_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = large_bomb_bay
-				fixed_auxiliary_weapon_slot_2 = empty
-				engine_type_slot = engine_2_4x
-				special_type_slot_1 = fuel_tanks_large
-				special_type_slot_2 = bomb_sights_1
-			}
-			
-		}
-
-		allowed_modules = {
-			large_bomb_bay
-			engine_2_4x
-			bomb_sights_1
-			fuel_tanks_large
-		}
-	}
-
-	strat_bomber_2_default = {
-		priority = {
-			factor = 10
-		}
-
-		target_variant = {
-			match_value = 2000
-			type = large_plane_airframe_2
-			modules = {
-				fixed_main_weapon_slot = large_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = large_bomb_bay
-				fixed_auxiliary_weapon_slot_2 = large_bomb_bay
-				fixed_auxiliary_weapon_slot_3 = large_bomb_bay
-				engine_type_slot = engine_3_4x
-				special_type_slot_1 = radio_navigation_2
-				special_type_slot_2 = bomb_sights_2
-				special_type_slot_3 = fuel_tanks_large
-			}
-			
-		}
-
-		allowed_modules = {
-			large_bomb_bay
-			engine_3_4x
-			radio_navigation_2
-			fuel_tanks_large
-			bomb_sights_2
-		}
-	}
 
 	strat_bomber_3_default = {
 		priority = {
