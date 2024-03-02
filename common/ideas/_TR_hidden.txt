@@ -35,7 +35,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				industrial_capacity_factory = -0.2
+				industrial_capacity_factory = -0.3
 			}
 		}
         TR_jap_limit_factory = {
