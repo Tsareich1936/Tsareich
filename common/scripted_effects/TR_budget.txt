@@ -1,3 +1,15 @@
+EV_update_taxes_ratio = {
+	set_variable = {
+		EV_taxes_ratio_slider_drager_position = EV_taxes_ratio_var
+	}
+	multiply_variable = {
+		EV_taxes_ratio_slider_drager_position = 105
+	}
+	add_to_variable = {
+		EV_taxes_ratio_slider_drager_position = 18
+	}
+	EV_update_taxes = yes
+}
 EV_update_taxes = {
 	set_variable = {
 		EV_taxes_amount_var_k = num_of_civilian_factories_available_for_projects

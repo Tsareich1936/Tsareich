@@ -36,31 +36,13 @@ scripted_gui = {
 				add_to_variable = {
 					EV_taxes_ratio_var = -0.05
 				}
-				set_variable = {
-					EV_taxes_ratio_slider_drager_position = EV_taxes_ratio_var
-				}
-				multiply_variable = {
-					EV_taxes_ratio_slider_drager_position = 105
-				}
-				add_to_variable = {
-					EV_taxes_ratio_slider_drager_position = 18
-				}
-				EV_update_taxes = yes
+				EV_update_taxes_ratio = yes
 			}
 			EV_taxes_ratio_slider_right_click = {
 				add_to_variable = {
 					EV_taxes_ratio_var = 0.05
 				}
-				set_variable = {
-					EV_taxes_ratio_slider_drager_position = EV_taxes_ratio_var
-				}
-				multiply_variable = {
-					EV_taxes_ratio_slider_drager_position = 105
-				}
-				add_to_variable = {
-					EV_taxes_ratio_slider_drager_position = 18
-				}
-				EV_update_taxes = yes
+				EV_update_taxes_ratio = yes
 			}
 		}
 		properties = {
