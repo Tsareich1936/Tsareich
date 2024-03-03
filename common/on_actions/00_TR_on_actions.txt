@@ -36,6 +36,12 @@ on_actions = {
 				if = { limit = { tag = JAP } set_variable = { country_intro_page_count = 0 } }
 				if = { limit = { tag = USA } set_variable = { country_intro_page_count = 0 } }
 			}
+			every_country = {
+				set_variable = {
+					EV_taxes_ratio_var = 0.5
+				}
+				EV_update_taxes = yes
+			}
 		}
 	
 	effect = {#SRI set up
@@ -220,6 +226,19 @@ on_actions = {
 					remove_core_of = MDR
 				}
 			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			add_to_variable = {
+				money_value = EV_taxes_amount_var_k
+			}
+			EV_update_taxes = yes
+		}
+	}
+	on_monthly_BRA = {
+		effect = {
+			BUDGET_LOG = yes
 		}
 	}
 	on_puppet = {

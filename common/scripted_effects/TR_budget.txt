@@ -1,0 +1,146 @@
+EV_update_taxes = {
+	set_variable = {
+		EV_taxes_amount_var_k = num_of_civilian_factories_available_for_projects
+	}
+	add_to_variable = {
+		EV_taxes_amount_var_k = num_of_civilian_factories
+	}
+	divide_variable = {
+		EV_taxes_amount_var_k = 4
+	}
+	set_variable = {
+		EV_mp = max_manpower_k
+	}
+	multiply_variable = {
+		EV_mp = 0.08
+	}
+	multiply_variable = {
+		EV_mp = 0.001
+	}
+	if = {
+		limit = {
+			check_variable = {
+				EV_mp > 25
+			}
+		}
+		multiply_variable = {
+			EV_mp = 0.7
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				EV_mp > 20
+			}
+		}
+		multiply_variable = {
+			EV_mp = 0.7
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				EV_mp > 10
+			}
+		}
+		multiply_variable = {
+			EV_mp = 0.98
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				EV_mp > 9
+			}
+		}
+		multiply_variable = {
+			EV_mp = 0.98
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				EV_mp > 8
+			}
+		}
+		multiply_variable = {
+			EV_mp = 0.98
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				EV_mp > 7.5
+			}
+		}
+		multiply_variable = {
+			EV_mp = 0.95
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				EV_mp > 7
+			}
+		}
+		multiply_variable = {
+			EV_mp = 0.65
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				EV_mp > 6.5
+			}
+		}
+		multiply_variable = {
+			EV_mp = 0.7
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				EV_mp > 6
+			}
+		}
+		multiply_variable = {
+			EV_mp = 0.9
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				EV_mp > 5.5
+			}
+		}
+		multiply_variable = {
+			EV_mp = 0.95
+		}
+	}
+	multiply_variable = {
+		EV_taxes_amount_var_k = EV_mp
+	}
+	multiply_variable = {
+		EV_taxes_amount_var_k = 0.087
+	}
+	#1937年時点の日本の租税収入を基準とした値
+	#単位は１００万ドル
+	multiply_variable = {
+		EV_taxes_amount_var_k = EV_taxes_ratio_var
+	}
+}
+BUDGET_LOG = {
+	log = "[?global.date.GetDateStringNoHour]"
+	log = "BUDGET_LOG1"
+	log = "BUDGET_LOG2"
+	log = "BUDGET_LOG3"
+	log = "BUDGET_LOG4"
+	log = "BUDGET_LOG5"
+	log = "BUDGET_LOG6"
+	log = "BUDGET_LOG7"
+	log = "BUDGET_LOG8"
+	log = "BUDGET_LOG9"
+}
+d_BUDGET_LOG = {
+	BUDGET_LOG = yes
+}

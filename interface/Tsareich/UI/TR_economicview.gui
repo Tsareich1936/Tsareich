@@ -355,6 +355,16 @@ guiTypes = {
 			font = hoi_18
 			format = right
 		}
+		instantTextBoxType = {
+			name = taxes_amount
+			position = {
+				x = 20
+				y = -25
+			}
+			text = "taxes_amount"
+			font = "hoi_20"
+			format = right
+		}
 	}
 	containerWindowType = {
 		name = EV_social_security_slider

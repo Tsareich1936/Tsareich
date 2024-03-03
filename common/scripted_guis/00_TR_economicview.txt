@@ -45,6 +45,7 @@ scripted_gui = {
 				add_to_variable = {
 					EV_taxes_ratio_slider_drager_position = 18
 				}
+				EV_update_taxes = yes
 			}
 			EV_taxes_ratio_slider_right_click = {
 				add_to_variable = {
@@ -59,6 +60,7 @@ scripted_gui = {
 				add_to_variable = {
 					EV_taxes_ratio_slider_drager_position = 18
 				}
+				EV_update_taxes = yes
 			}
 		}
 		properties = {
