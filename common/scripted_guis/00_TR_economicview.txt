@@ -19,6 +19,159 @@ scripted_gui = {
 		context_type = player_context
 		window_name = EV_taxes_ratio_slider
 		parent_window_name = TR_EV_budget_income
+		triggers = {
+			EV_taxes_ratio_slider_left_click_enabled = {
+				check_variable = {
+					EV_taxes_ratio_var > 0
+				}
+			}
+			EV_taxes_ratio_slider_right_click_enabled = {
+				check_variable = {
+					EV_taxes_ratio_var < 1
+				}
+			}
+		}
+		effects = {
+			EV_taxes_ratio_slider_left_click = {
+				add_to_variable = {
+					EV_taxes_ratio_var = -0.05
+				}
+				set_variable = {
+					EV_taxes_ratio_slider_drager_position = EV_taxes_ratio_var
+				}
+				multiply_variable = {
+					EV_taxes_ratio_slider_drager_position = 105
+				}
+				add_to_variable = {
+					EV_taxes_ratio_slider_drager_position = 18
+				}
+			}
+			EV_taxes_ratio_slider_right_click = {
+				add_to_variable = {
+					EV_taxes_ratio_var = 0.05
+				}
+				set_variable = {
+					EV_taxes_ratio_slider_drager_position = EV_taxes_ratio_var
+				}
+				multiply_variable = {
+					EV_taxes_ratio_slider_drager_position = 105
+				}
+				add_to_variable = {
+					EV_taxes_ratio_slider_drager_position = 18
+				}
+			}
+		}
+		properties = {
+			EV_taxes_ratio_slider_drager = {
+				
+				x = EV_taxes_ratio_slider_drager_position
+			}
+		}
 	}
-
+	EV_Social_Security_Slider = {
+		context_type = player_context
+		window_name = EV_social_security_slider
+		parent_window_name = TR_EV_budget_expenses
+		triggers = {
+			EV_social_security_slider_left_click_enabled = {
+				check_variable = {
+					EV_social_security_var > 0
+				}
+			}
+			EV_social_security_slider_right_click_enabled = {
+				check_variable = {
+					EV_social_security_var < 1
+				}
+			}
+		}
+		effects = {
+			EV_social_security_slider_left_click = {
+				add_to_variable = {
+					EV_social_security_var = -0.05
+				}
+				set_variable = {
+					EV_social_security_slider_drager_position = EV_social_security_var
+				}
+				multiply_variable = {
+					EV_social_security_slider_drager_position = 105
+				}
+				add_to_variable = {
+					EV_social_security_slider_drager_position = 18
+				}
+			}
+			EV_social_security_slider_right_click = {
+				add_to_variable = {
+					EV_social_security_var = 0.05
+				}
+				set_variable = {
+					EV_social_security_slider_drager_position = EV_social_security_var
+				}
+				multiply_variable = {
+					EV_social_security_slider_drager_position = 105
+				}
+				add_to_variable = {
+					EV_social_security_slider_drager_position = 18
+				}
+			}
+		}
+		properties = {
+			EV_social_security_slider_drager = {
+				
+				x = EV_social_security_slider_drager_position
+			}
+		}
+	}
+	EV_Civil_Servant_Saraly_Slider = {
+		context_type = player_context
+		window_name = EV_civil_servant_saraly_slider
+		parent_window_name = TR_EV_budget_expenses
+		triggers = {
+			EV_civil_servant_saraly_slider_left_click_enabled = {
+				check_variable = {
+					EV_civil_servant_saraly_var > 0
+				}
+			}
+			EV_civil_servant_saraly_slider_right_click_enabled = {
+				check_variable = {
+					EV_civil_servant_saraly_var < 1
+				}
+			}
+		}
+		effects = {
+			EV_civil_servant_saraly_slider_left_click = {
+				add_to_variable = {
+					EV_civil_servant_saraly_var = -0.05
+				}
+				set_variable = {
+					EV_civil_servant_saraly_slider_drager_position = EV_civil_servant_saraly_var
+				}
+				multiply_variable = {
+					EV_civil_servant_saraly_slider_drager_position = 105
+				}
+				add_to_variable = {
+					EV_civil_servant_saraly_slider_drager_position = 18
+				}
+			}
+			EV_civil_servant_saraly_slider_right_click = {
+				add_to_variable = {
+					EV_civil_servant_saraly_var = 0.05
+				}
+				set_variable = {
+					EV_civil_servant_saraly_slider_drager_position = EV_civil_servant_saraly_var
+				}
+				multiply_variable = {
+					EV_civil_servant_saraly_slider_drager_position = 105
+				}
+				add_to_variable = {
+					EV_civil_servant_saraly_slider_drager_position = 18
+				}
+			}
+		}
+		properties = {
+			EV_civil_servant_saraly_slider_drager = {
+				
+				x = EV_civil_servant_saraly_slider_drager_position
+			}
+		}
+	}
 }

@@ -129,6 +129,40 @@ guiTypes = {
 				text = "government_bond"
 				font = "hoi_20"
 			}
+			iconType = {
+				name = diplomatic_income_window
+				position = {
+					x = 7
+					y = 217
+				}
+				quadTextureSprite = GFX_gui_budget_item
+			}
+			instantTextBoxType = {
+				name = diplomatic_income_text
+				position = {
+					x = 20
+					y = 228
+				}
+				text = "diplomatic_income"
+				font = "hoi_20"
+			}
+			iconType = {
+				name = import_tax_window
+				position = {
+					x = 7
+					y = 279
+				}
+				quadTextureSprite = GFX_gui_budget_item
+			}
+			instantTextBoxType = {
+				name = import_tax_text
+				position = {
+					x = 20
+					y = 290
+				}
+				text = "import_tax"
+				font = "hoi_20"
+			}
 		}
 		containerWindowType = {
 			name = TR_EV_budget_expenses
@@ -139,7 +173,7 @@ guiTypes = {
 			size = { width = 350 height= 250 }
 			orientation = UPPER_LEFT
 			iconType = {
-				name = budget_income_bg
+				name = budget_expenses_bg
 				spriteType = GFX_gui_budget_window
 			}
 			instantTextBoxType = {
@@ -151,6 +185,115 @@ guiTypes = {
 				text = "BUDGET_EXPENSES"
 				font = hoi_24header
 			}
+			iconType = {
+				name = social_security_window
+				
+				position = {
+					x = 7
+					y = 31
+				}
+				quadTextureSprite = GFX_gui_budget_item
+			}
+			instantTextBoxType = {
+				name = social_security_text
+				
+				position = {
+					x = 20
+					y = 42
+				}
+				text = "social_security"
+				font = "hoi_20"
+			}
+			iconType = {
+				name = pay_government_bond_window
+				position = {
+					x = 7
+					y = 155
+				}
+				quadTextureSprite = GFX_gui_budget_item
+			}
+			instantTextBoxType = {
+				name = pay_government_bond_text
+				position = {
+					x = 20
+					y = 166
+				}
+				text = "pay_government_bond"
+				font = "hoi_20"
+			}
+			iconType = {
+				name = civil_servant_saraly_window
+				
+				position = {
+					x = 7
+					y = 93
+				}
+				quadTextureSprite = GFX_gui_budget_item
+			}
+			instantTextBoxType = {
+				name = civil_servant_saraly_text
+				
+				position = {
+					x = 20
+					y = 104
+				}
+				text = "civil_servant_saraly"
+				font = "hoi_20"
+			}
+			iconType = {
+				name = war_expenses_window
+				
+				position = {
+					x = 7
+					y = 217
+				}
+				quadTextureSprite = GFX_gui_budget_item
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = war_expenses_text
+				
+				position = {
+					x = 20
+					y = 228
+				}
+				text = "war_expenses"
+				font = "hoi_20"
+			}
+			iconType = {
+				name = building_expenses_window
+				position = {
+					x = 7
+					y = 279
+				}
+				quadTextureSprite = GFX_gui_budget_item
+			}
+			instantTextBoxType = {
+				name = building_expenses_text
+				position = {
+					x = 20
+					y = 290
+				}
+				text = "building_expenses"
+				font = "hoi_20"
+			}
+			# iconType = {
+			# 	name = a
+			# 	position = {
+			# 		x = 7
+			# 		y = 341
+			# 	}
+			# 	quadTextureSprite = GFX_gui_budget_item
+			# }
+			# instantTextBoxType = {
+			# 	name = za
+			# 	position = {
+			# 		x = 20
+			# 		y = 352
+			# 	}
+			# 	text = "building_expenses"
+			# 	font = "hoi_20"
+			# }
 		}
 	}
 	containerWindowType = {
@@ -181,7 +324,7 @@ guiTypes = {
 			name = EV_taxes_ratio_slider_drager
 			position = {
 				x = 18
-				y = 3
+				y = 4
 			}
 			quadTextureSprite = GFX_scroll_drager
 		}
@@ -200,10 +343,131 @@ guiTypes = {
 				y = 3
 			}
 			quadTextureSprite = GFX_scroll_right
+			pdx_tooltip = "a"
 		}
 		instantTextBoxType = {
 			name = EV_taxes_ratio_percentage
 			text = "taxes_ratio_percentage"
+			position = {
+				x = 0
+				y = 0
+			}
+			font = hoi_18
+			format = right
+		}
+	}
+	containerWindowType = {
+		name = EV_social_security_slider
+		position = {
+			x = 20
+			y = 70
+		}
+		iconType = {
+			name = EV_social_security_slider_bg
+			position = {
+				x = 0
+				y = 2
+			}
+			quadTextureSprite = GFX_scrollbar_horisontal_bg
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = EV_social_security_slider_track
+			position = {
+				x = 18
+				y = 5
+			}
+			quadTextureSprite = GFX_gui_budget_scroll_track
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = EV_social_security_slider_drager
+			position = {
+				x = 18
+				y = 4
+			}
+			quadTextureSprite = GFX_scroll_drager
+		}
+		buttonType = {
+			name = EV_social_security_slider_left
+			position = {
+				x = 2
+				y = 3
+			}
+			quadTextureSprite = GFX_scroll_left
+		}
+		buttonType = {
+			name = EV_social_security_slider_right
+			position = {
+				x = 138
+				y = 3
+			}
+			quadTextureSprite = GFX_scroll_right
+			pdx_tooltip = "a"
+		}
+		instantTextBoxType = {
+			name = EV_social_security_percentage
+			text = "social_security_percentage"
+			position = {
+				x = 0
+				y = 0
+			}
+			font = hoi_18
+			format = right
+		}
+	}
+	containerWindowType = {
+		name = EV_civil_servant_saraly_slider
+		position = {
+			x = 20
+			y = 132
+		}
+		iconType = {
+			name = EV_civil_servant_saraly_slider_bg
+			position = {
+				x = 0
+				y = 2
+			}
+			quadTextureSprite = GFX_scrollbar_horisontal_bg
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = EV_civil_servant_saraly_slider_track
+			position = {
+				x = 18
+				y = 5
+			}
+			quadTextureSprite = GFX_gui_budget_scroll_track
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = EV_civil_servant_saraly_slider_drager
+			position = {
+				x = 18
+				y = 4
+			}
+			quadTextureSprite = GFX_scroll_drager
+		}
+		buttonType = {
+			name = EV_civil_servant_saraly_slider_left
+			position = {
+				x = 2
+				y = 3
+			}
+			quadTextureSprite = GFX_scroll_left
+		}
+		buttonType = {
+			name = EV_civil_servant_saraly_slider_right
+			position = {
+				x = 138
+				y = 3
+			}
+			quadTextureSprite = GFX_scroll_right
+			pdx_tooltip = "a"
+		}
+		instantTextBoxType = {
+			name = EV_civil_servant_saraly_percentage
+			text = "civil_servant_saraly_percentage"
 			position = {
 				x = 0
 				y = 0
