@@ -1,0 +1,92 @@
+﻿
+
+### Air Wings
+air_wings = {
+
+	195 = { 
+
+		small_plane_airframe_1 = {
+			owner = "RUS" 
+			amount = 100
+			version_name = "T-15"
+		}
+		small_plane_airframe_1 = {
+			owner = "RUS" 
+			amount = 100
+			version_name = "T-15"
+		}
+		small_plane_airframe_1 = {
+			owner = "RUS" 
+			amount = 100
+			version_name = "T-15"
+		}
+		small_plane_airframe_1 = {
+			owner = "RUS" 
+			amount = 100
+			version_name = "T-15"
+		}
+		small_plane_airframe_1 = {
+			owner = "RUS" 
+			amount = 100
+			version_name = "T-15"
+		}
+		small_plane_airframe_1 = {
+			owner = "RUS" 
+			amount = 100
+			version_name = "T-15"
+		}
+		small_plane_cas_airframe_1 = {
+			owner = "RUS" 
+			amount = 100
+			version_name = "Si-07"
+		}
+		small_plane_cas_airframe_1 = {
+			owner = "RUS" 
+			amount = 100
+			version_name = "Si-07"
+		}
+		small_plane_cas_airframe_1 = {
+			owner = "RUS" 
+			amount = 100
+			version_name = "Si-07"
+		}
+		small_plane_cas_airframe_1 = {
+			owner = "RUS" 
+			amount = 30
+			version_name = "Si-07"
+		}
+	}
+
+}
+
+
+		
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_1
+			creator = "RUS" 
+			version_name = "T-15"
+		}
+		requested_factories = 3
+		progress = 0.15
+		efficiency = 30
+		
+	}
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_cas_airframe_1
+			creator = "RUS" 
+			version_name = "Si-07"
+		}
+		requested_factories = 2
+		progress = 0.12
+		efficiency = 25
+		
+	}
+}
+	#####################

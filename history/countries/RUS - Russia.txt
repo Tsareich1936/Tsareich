@@ -11,14 +11,13 @@ if = {
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "SOV_1936_air_bba"
+		set_air_oob = "RUS_1936_air"
 		set_technology = {
 			iw_small_airframe = 1
 			aa_lmg = 1
 			aa_cannon_1 = 1
 			early_bombs = 1
 			engines_1 = 1
-			engines_2 = 1
 			iw_medium_airframe = 1
 			iw_large_airframe = 1
 			basic_small_airframe = 1
@@ -553,7 +552,57 @@ if = {
 	recruit_character = RUS_andrey_shkuro
 	recruit_character = RUS_anton_denikin
 }
-
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "K-23"
+		type = medium_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_hmg
+			special_type_slot_2 = empty
+			special_type_slot_3 = empty
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 1
+			tank_nsb_engine_upgrade = 6
+		}
+		icon = "GFX_SOV_medium_gwtank_medium"
+		model = "SOV_medium_gw_armor_0_entity"
+	}
+}
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = { 
+		name = "T-15" 
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = aircraft_cannon_1_1x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = { 
+		name = "Si-07" 
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = lmg_defense_turret
+		}
+	}
+}
 if = {
 	limit = {
 		has_dlc = "Man the Guns"

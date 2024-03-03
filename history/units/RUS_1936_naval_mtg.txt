@@ -508,3 +508,204 @@ units = {
 	}
 
 }
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "RUS"
+			version_name = "Rous Class"
+		}
+		name = "Danska" 
+		requested_factories = 3
+		progress = 0.79
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "RUS"
+			version_name = "Rous Class"
+		}
+		name = "Nebrew" 
+		requested_factories = 3
+		progress = 0.72
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "RUS"
+			version_name = "Perun Class"
+		}
+		name = "Nikaia" 
+		requested_factories = 2
+		progress = 0.4
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "RUS"
+			version_name = "Perun Class"
+		}
+		name = "Beapex" 
+		requested_factories = 2
+		progress = 0.35
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "RUS"
+			version_name = "Perun Class"
+		}
+		name = "Chiniye" 
+		requested_factories = 2
+		progress = 0.3
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "RUS"
+			version_name = "Perun Class"
+		}
+		name = "Peruna" 
+		requested_factories = 2
+		progress = 0.25
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "RUS"
+			version_name = "Perun Class"
+		}
+		name = "Victariya" 
+		requested_factories = 2
+		progress = 0.2
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "RUS"
+			version_name = "Arctos Class"
+		}
+		name = "Arctos-1" 
+		requested_factories = 1
+		progress = 0.4
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "RUS"
+			version_name = "Arctos Class"
+		}
+		name = "Arctos-2" 
+		requested_factories = 1
+		progress = 0.4
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "RUS"
+			version_name = "Arctos Class"
+		}
+		name = "Arctos-3" 
+		requested_factories = 1
+		progress = 0.4
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "RUS"
+			version_name = "Arctos Class"
+		}
+		name = "Arctos-4" 
+		requested_factories = 1
+		progress = 0.4
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "RUS"
+			version_name = "Arctos Class"
+		}
+		name = "Arctos-5" 
+		requested_factories = 1
+		progress = 0.4
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "RUS"
+			version_name = "23 Class"
+		}
+		name = "D23-199" 
+		requested_factories = 1
+		progress = 0.85
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "RUS"
+			version_name = "Novo-Arxangelsk Class"
+		}
+		name = "SS94-2" 
+		requested_factories = 1
+		progress = 0.6
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "RUS"
+			version_name = "Novo-Arxangelsk Class"
+		}
+		name = "SS102-4" 
+		requested_factories = 1
+		progress = 0.6
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "RUS"
+			version_name = "Novo-Arxangelsk Class"
+		}
+		name = "SS92-49" 
+		requested_factories = 1
+		progress = 0.6
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "RUS"
+			version_name = "Novo-Arxangelsk Class"
+		}
+		name = "SS95-34" 
+		requested_factories = 1
+		progress = 0.6
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "RUS"
+			version_name = "Novo-Arxangelsk Class"
+		}
+		name = "SS95-2" 
+		requested_factories = 1
+		progress = 0.6
+		amount = 1
+	}
+}
