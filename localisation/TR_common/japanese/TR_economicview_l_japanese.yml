@@ -9,6 +9,7 @@
  BUDGET_INCOME: "歳入"
  taxes_ratio: "税収"
  taxes_ratio_percentage: "[?ROOT.EV_taxes_ratio_var|%.0Y]"
+ taxes_ratio_tt: "現在の税率による影響\n$MODIFIER_STABILITY_WEEKLY$:\n$MODIFIER_WAR_SUPPORT_WEEKLY$\n税率は経済法により上限と下限が制限される。"
  taxes_amount: "§Y+G§![?EV_taxes_amount_var_k|Y.3]§YM§!"
  taxes_amount_gotten_p: "§Y+$$§![?EV_taxes_amount_var_k|Y]§YM§"
  taxes_amount_gotten_n: "§R$$§![?EV_taxes_amount_var_k|Y]K"
