@@ -27,6 +27,6 @@ scripted_gui = {
 	TR_Money_Value = {
 		context_type = player_context
 		window_name = TR_money_value
-		parent_window_token = top_bar
+		parent_window_name = topbar
 	} 
 }
