@@ -32,7 +32,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = "ECONOMIC_ECONOMIC"
 			maxWidth = 400
-			maxHeight = 20
+			maxHeight = 36
 			fixedsize = yes
 		}
 		buttonType = {
@@ -45,24 +45,171 @@ guiTypes = {
 			clicksound = click_close
 			pdx_tooltip = "CLOSE"
 		}
-
+		instantTextboxType = {
+			name = "budget_title"
+			position = { x = 45 y = 52 }
+			textureFile = ""
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0}
+			text = "ECONOMIC_BUDGET"
+			maxWidth = 400
+			maxHeight = 30
+			fixedsize = yes
+		}
 		containerWindowType = {
 			name = TR_EV_budget_income
 			position = {
-				x = -30
-				y = 42
+				x = 7
+				y = 85
 			}	
 			size = { width = 350 height= 250 }
 			orientation = UPPER_LEFT
+			iconType = {
+				name = budget_income_bg
+				spriteType = GFX_gui_budget_window
+			}
 			instantTextBoxType = {
 				position = {
-					x = 50
-					y = 15
+					x = 35
+					y = 5
 				}
 				name = budget_income_title
 				text = "BUDGET_INCOME"
 				font = hoi_24header
 			}
+			iconType = {
+				name = taxes_ratio_window
+				position = {
+					x = 7
+					y = 31
+				}
+				quadTextureSprite = GFX_gui_budget_item
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = taxes_ratio_text
+				position = {
+					x = 20
+					y = 42
+				}
+				text = "taxes_ratio"
+				font = "hoi_20"
+			}
+			iconType = {
+				name = currency_issue_window
+				position = {
+					x = 7
+					y = 93
+				}
+				quadTextureSprite = GFX_gui_budget_item
+			}
+			instantTextBoxType = {
+				name = currency_issue_text
+				position = {
+					x = 20
+					y = 104
+				}
+				text = "currency_issue"
+				font = "hoi_20"
+			}
+			iconType = {
+				name = government_bond_window
+				position = {
+					x = 7
+					y = 155
+				}
+				quadTextureSprite = GFX_gui_budget_item
+			}
+			instantTextBoxType = {
+				name = government_bond_text
+				position = {
+					x = 20
+					y = 166
+				}
+				text = "government_bond"
+				font = "hoi_20"
+			}
+		}
+		containerWindowType = {
+			name = TR_EV_budget_expenses
+			position = {
+				x = 277
+				y = 85
+			}	
+			size = { width = 350 height= 250 }
+			orientation = UPPER_LEFT
+			iconType = {
+				name = budget_income_bg
+				spriteType = GFX_gui_budget_window
+			}
+			instantTextBoxType = {
+				position = {
+					x = 35
+					y = 5
+				}
+				name = budget_expenses_title
+				text = "BUDGET_EXPENSES"
+				font = hoi_24header
+			}
+		}
+	}
+	containerWindowType = {
+		name = EV_taxes_ratio_slider
+		position = {
+			x = 20
+			y = 70
+		}
+		iconType = {
+			name = EV_taxes_ratio_slider_bg
+			position = {
+				x = 0
+				y = 2
+			}
+			quadTextureSprite = GFX_scrollbar_horisontal_bg
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = EV_taxes_ratio_slider_track
+			position = {
+				x = 18
+				y = 5
+			}
+			quadTextureSprite = GFX_gui_budget_scroll_track
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = EV_taxes_ratio_slider_drager
+			position = {
+				x = 18
+				y = 3
+			}
+			quadTextureSprite = GFX_scroll_drager
+		}
+		buttonType = {
+			name = EV_taxes_ratio_slider_left
+			position = {
+				x = 2
+				y = 3
+			}
+			quadTextureSprite = GFX_scroll_left
+		}
+		buttonType = {
+			name = EV_taxes_ratio_slider_right
+			position = {
+				x = 138
+				y = 3
+			}
+			quadTextureSprite = GFX_scroll_right
+		}
+		instantTextBoxType = {
+			name = EV_taxes_ratio_percentage
+			text = "taxes_ratio_percentage"
+			position = {
+				x = 0
+				y = 0
+			}
+			font = hoi_18
+			format = right
 		}
 	}
 }

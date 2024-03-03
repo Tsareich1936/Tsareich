@@ -15,5 +15,10 @@ scripted_gui = {
 			}
 		}
 	}
+	EV_Taxes_Ratio_Slider = {
+		context_type = player_context
+		window_name = EV_taxes_ratio_slider
+		parent_window_name = TR_EV_budget_income
+	}
 
 }

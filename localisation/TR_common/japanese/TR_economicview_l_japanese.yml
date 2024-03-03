@@ -1,0 +1,9 @@
+﻿l_japanese:
+ ECONOMIC_ECONOMIC: "経済"
+ ECONOMIC_BUDGET: "予算"
+ BUDGET_INCOME: "歳入"
+ taxes_ratio: "税率"
+ taxes_ratio_percentage: "[?|%.0Y]"
+ currency_issue: "通貨発行"
+ government_bond: "国債"
+ BUDGET_EXPENSES: "歳出"

@@ -1,5 +1,16 @@
 spriteTypes = {
-
+	spriteType = {
+		name = GFX_gui_budget_window
+		textureFile = "gfx/interface/UI/economicview/budget_window.dds"
+	}
+	spriteType = {
+		name = GFX_gui_budget_item
+		textureFile = "gfx/interface/UI/economicview/budget_item.dds"
+	}
+	spriteType = {
+		name = GFX_gui_budget_scroll_track
+		textureFile = "gfx/interface/UI/economicview/budget_scroll_track.dds"
+	}
 	spriteType = {
 		name = "GFX_Line_Graph_Background"
 		textureFile = "/gfx/interface/UI/line_graph/line_graph_background.dds"
