@@ -13,9 +13,9 @@ leader_traits = {
 	}
 	TR_krill_reformal_tsar = {
 		random = no
-		political_power_factor = 0.35
-		research_speed_factor = 0.08
-		neutrality_drift = 0.05
+		political_power_factor = 0.25
+		research_speed_factor = 0.05
+		political_advisor_cost_factor = -0.15
 	}
 	TR_krill_conflicts_in_the_court = {
 		random = no
@@ -25,10 +25,11 @@ leader_traits = {
 	}
 	TR_krill_evolutional_government = {
 		random = no
-		stability_factor = -0.05
-		war_support_factor = 0.1
-		land_doctrine_cost_factor = -0.1
-		naval_doctrine_cost_factor = -0.1
-		air_doctrine_cost_factor = -0.1
+		army_advisor_cost_factor = -0.15
+		navy_advisor_cost_factor = -0.15
+		air_advisor_cost_factor = -0.15
+		land_doctrine_cost_factor = -0.075
+		naval_doctrine_cost_factor = -0.075
+		air_doctrine_cost_factor = -0.075
 	}
 }

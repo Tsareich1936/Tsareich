@@ -933,6 +933,50 @@ ideas = {
             }
         }
 
+        RUS_navy_money_too_much = {
+            picture = jap_interservice_rivalry_navy_strengthened
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_dockyard = 0.3
+                production_speed_dockyard_factor = 0.25
+            }
+        }
+
+        RUS_angry_navy = {
+            picture = SOV_conspiracy_in_the_academy_navy
+            allowed = {
+                
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            removal_cost = -1
+            modifier = {
+                experience_gain_navy_factor = -0.75
+                navy_org_factor = -0.4
+                navy_max_range_factor = -0.4
+                industrial_capacity_dockyard = -0.75
+            }
+        }
+
     }
 
     

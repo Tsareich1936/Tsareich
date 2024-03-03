@@ -115,9 +115,6 @@ focus_tree = {
 			FOCUS_FILTER_WAR_SUPPORT
 			FOCUS_FILTER_POLITICAL_CHARACTER
 		}
-		ai_will_do = {
-			factor = 200
-		}
 		available = {
 		}
 		completion_reward = {
@@ -144,9 +141,6 @@ focus_tree = {
 			FOCUS_FILTER_STABILITY
 			FOCUS_FILTER_POLITICAL_CHARACTER
 		}
-		ai_will_do = {
-			factor = 40
-		}
 		available = {
 		}
 		completion_reward = {
@@ -164,6 +158,8 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = RUS_tsar_infantry
+		}
+		prerequisite = {
 			focus = RUS_unprison
 		}
 		x = 0
@@ -171,9 +167,6 @@ focus_tree = {
 		relative_position_id = RUS_newtsar
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
-		}
-		ai_will_do = {
-			factor = 40
 		}
 		available = {
 		}
@@ -184,15 +177,309 @@ focus_tree = {
                 updt_consumer_goods_factor = -0.25
             }
 			set_temp_variable = {
-                updt_industrial_capacity_factor = 0.15
+                updt_industrial_capacity_factor = 0.1
             }
 			set_temp_variable = {
-               updt_production_speed_buildings_factor = 0.15
+               updt_production_speed_buildings_factor = 0.1
             }
 			TE_update_modifier = yes
 			
 			custom_effect_tooltip = RUS_TE_tt_1_2
 			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = RUS_discard_35_budget
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 5
+		prerequisite = {
+			focus = RUS_remake_national_government
+		}
+		x = 0
+		y = 3
+		relative_position_id = RUS_newtsar
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		}
+		completion_reward = {
+			
+			custom_effect_tooltip = RUS_TE_tt_2
+			set_temp_variable = {
+                updt_consumer_goods_factor = -0.25
+            }
+			set_temp_variable = {
+                updt_industrial_capacity_factor = 0.15
+            }
+			remove_ideas = RUS_navy_money_too_much
+			TE_update_modifier = yes
+			
+			custom_effect_tooltip = RUS_TE_tt_1_2
+			add_war_support = -0.15
+		}
+	}
+
+	focus = {
+		id = RUS_confiscation_unusable_factory_in_resource_state
+		icon = GFX_focus_SOV_the_road_of_life
+		cost = 5
+		prerequisite = {
+			focus = RUS_discard_35_budget
+		}
+		x = 0
+		y = 4
+		relative_position_id = RUS_newtsar
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		}
+		completion_reward = {
+			
+			custom_effect_tooltip = RUS_TE_tt_3
+			set_temp_variable = {
+                updt_local_resources_factor = 0.25
+            }
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						OR = {
+							has_resources_amount = {
+								resource = oil
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = aluminium
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = rubber
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = tungsten
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = steel
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = chromium
+								amount > 0
+							}
+						}
+						OR = {
+							industrial_complex > 0
+						}
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						OR = {
+							has_resources_amount = {
+								resource = oil
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = aluminium
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = rubber
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = tungsten
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = steel
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = chromium
+								amount > 0
+							}
+						}
+						OR = {
+							industrial_complex > 0
+						}
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						OR = {
+							has_resources_amount = {
+								resource = oil
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = aluminium
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = rubber
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = tungsten
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = steel
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = chromium
+								amount > 0
+							}
+						}
+						OR = {
+							industrial_complex > 0
+						}
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						OR = {
+							has_resources_amount = {
+								resource = oil
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = aluminium
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = rubber
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = tungsten
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = steel
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = chromium
+								amount > 0
+							}
+						}
+						OR = {
+							industrial_complex > 0
+						}
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						OR = {
+							has_resources_amount = {
+								resource = oil
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = aluminium
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = rubber
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = tungsten
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = steel
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = chromium
+								amount > 0
+							}
+						}
+						OR = {
+							industrial_complex > 0
+						}
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					AND = {
+						OR = {
+							has_resources_amount = {
+								resource = oil
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = aluminium
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = rubber
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = tungsten
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = steel
+								amount > 0
+							}
+							has_resources_amount = {
+								resource = chromium
+								amount > 0
+							}
+						}
+						OR = {
+							industrial_complex > 0
+						}
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			
+			TE_update_modifier = yes
+			custom_effect_tooltip = RUS_TE_tt_1_2
+			add_stability = -0.15
 		}
 	}
 

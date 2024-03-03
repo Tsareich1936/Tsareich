@@ -122,6 +122,7 @@ add_ideas = {
 	RUS_low_research
 	RUS_nomad_of_russia
 	RUS_wwi_army
+	RUS_navy_money_too_much
 
 	#debug
 

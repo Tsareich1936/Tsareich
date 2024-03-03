@@ -228,3 +228,8 @@
  RUS_nav_CC_tsar:"ツァーリ級航空母艦"
  RUS_nav_CC_tsar_desc:"我が国が誇る主力空母「ツァーリ」の建造計画が定まった。迅速にこれを建造し、大戦争のうちに就役させなければならない。バルトの海と太平洋はロシアのものとなるだろう！"
  RUS_tsarCC_tt:"§YTsar Class§!4隻がそれぞれ§G90%§!、§G70%§!、§G50%§!、§G30%§!完成した状態でドックに入る。"
+
+ RUS_discard_35_budget:"35年予算の破棄"
+ RUS_discard_35_budget_desc:"去年制定された海軍偏重の予算が、我が国の改革体制が得られる資金を多く奪っている。皇帝の名の下に超法規的措置を行い、海軍の潤沢「すぎる」予算を接収し、これを国のために適切に使用すべきだ。"
+ RUS_confiscation_unusable_factory_in_resource_state:"資源地帯での産業再編"
+ RUS_confiscation_unusable_factory_in_resource_state_desc:"我が国の資源地帯で行われている農家に資源採掘を強要する。彼らは宝箱の上に住んでいるのに、どうしてその宝を獲得しようとしないのだ？"
