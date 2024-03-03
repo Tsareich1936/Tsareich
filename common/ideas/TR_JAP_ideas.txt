@@ -1423,7 +1423,7 @@ ideas = {
 			
 			removal_cost = -1
 			modifier = {
-				country_resource_oil = -1000
+				country_resource_oil = -30
 				production_factory_start_efficiency_factor = 0.2
 			}
 		}
