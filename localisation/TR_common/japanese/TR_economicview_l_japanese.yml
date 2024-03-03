@@ -1,5 +1,5 @@
 ﻿l_japanese:
- MONEY_VALUE: "G[?ROOT.money_value|+Y]M"
+ MONEY_VALUE: "G[?ROOT.money_value|+]M"
  money_tt: "§Y国庫§!"
  ECONOMIC_ECONOMIC: "経済"
  ECONOMIC_BUDGET: "予算"
