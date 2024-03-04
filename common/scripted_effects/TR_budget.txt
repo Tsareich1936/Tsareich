@@ -141,7 +141,7 @@ EV_update_taxes = {
 		EV_taxes_amount_var_k = EV_taxes_ratio_var
 	}
 }
-EV_update_war_expenses = {
+EV_update_war_expenses_ratio = {
 	set_variable = {
 		EV_war_expenses_slider_drager_position = EV_war_expenses_var
 	}
@@ -151,7 +151,58 @@ EV_update_war_expenses = {
 	add_to_variable = {
 		EV_war_expenses_slider_drager_position = 18
 	}
-} 
+	EV_update_war_expenses = yes
+}
+EV_update_war_expenses = {
+	set_temp_variable = {
+		temp_div = num_battalions
+	}
+	multiply_temp_variable = {
+		temp_div = mtth:fix_battalions
+	}
+	# subtract_from_temp_variable = {
+	# 	temp_div = current_conscription_amount
+	# }
+	# multiply_temp_variable = {
+	# 	temp_div = 0.01
+	# }
+	divide_temp_variable = {
+		temp_div = 9
+	}
+	set_temp_variable = {
+		temp_work_af = 	num_of_available_military_factories
+	}
+	add_to_variable = {
+		temp_work_af = 10	
+	}
+	multiply_temp_variable = {
+		temp_work_af = -1.3
+	}
+	add_to_temp_variable = {
+		temp_work_af = num_of_military_factories
+	}
+	divide_temp_variable = {
+		temp_work_af = 4
+	}
+	set_variable = {
+		EV_war_expenses_amount_var = temp_div
+	}
+	add_to_variable = {
+		EV_war_expenses_amount_var = temp_work_af
+	}
+	divide_variable = {
+		EV_war_expenses_amount_var = 2
+	}
+	multiply_variable = {
+		EV_war_expenses_amount_var = -0.087
+	}
+	multiply_variable = {
+		EV_war_expenses_amount_var = 0.5
+	}
+	multiply_variable = {
+		EV_war_expenses_amount_var = EV_war_expenses_var
+	}
+}
 BUDGET_LOG = {
 	log = "[?global.date.GetDateStringNoHour]"
 	log = "BUDGET_LOG1"

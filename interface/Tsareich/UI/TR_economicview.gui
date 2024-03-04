@@ -551,5 +551,16 @@ guiTypes = {
 			font = hoi_18
 			format = right
 		}
+		instantTextBoxType = {
+			name = war_expenses_amount
+			position = {
+				x = 20
+				y = -25
+			}
+			text = "war_expenses_ammount"
+			font = "hoi_20"
+			format = right
+			pdx_tooltip = taxes_ratio_tt
+		}
 	}
 }

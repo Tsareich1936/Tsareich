@@ -96,10 +96,138 @@ taxes_ratio_effect = {
 		}
 	}
 }
-taxes_ratio_limit_by = {
-	base = 0
+fix_battalions = {
+	base = 1
 	modifier = {
-		add = token:civilian_economy
-		has_idea = civilian_economy
+		factor = 0.9
+		check_variable = {
+			num_battalions < 400
+		}
+	}
+	modifier = {
+		factor = 0.95
+		check_variable = {
+			num_of_civilian_factories < 45
+		}
+	}
+	modifier = {
+		factor = 0.9
+		check_variable = {
+			num_battalions < 350
+		}
+	}
+	modifier = {
+		factor = 0.95
+		check_variable = {
+			num_of_civilian_factories < 40
+		}
+	}
+	modifier = {
+		factor = 0.9
+		check_variable = {
+			num_battalions < 300
+		}
+	}
+	modifier = {
+		factor = 0.9
+		check_variable = {
+			num_of_civilian_factories < 35
+		}
+	}
+	modifier = {
+		factor = 0.9
+		check_variable = {
+			num_battalions < 250
+		}
+	}
+	modifier = {
+		factor = 0.9
+		check_variable = {
+			num_of_civilian_factories < 30
+		}
+	}
+	modifier = {
+		factor = 0.9
+		check_variable = {
+			num_battalions < 200
+		}
+	}
+	modifier = {
+		factor = 0.9
+		check_variable = {
+			num_of_civilian_factories < 25
+		}
+	}
+	modifier = {
+		factor = 0.9
+		check_variable = {
+			num_battalions < 150
+		}
+	}
+	modifier = {
+		factor = 0.8
+		check_variable = {
+			num_of_civilian_factories < 20
+		}
+	}
+	modifier = {
+		factor = 0.8
+		check_variable = {
+			num_battalions < 100
+		}
+	}
+	modifier = {
+		factor = 0.75
+		check_variable = {
+			num_of_civilian_factories < 15
+		}
+	}
+	modifier = {
+		factor = 0.8
+		check_variable = {
+			num_of_civilian_factories < 10
+		}
+	}
+	modifier = {
+		factor = 0.7
+		check_variable = {
+			num_of_civilian_factories < 7
+		}
+	}
+	modifier = {
+		factor = 0.6
+		check_variable = {
+			num_of_civilian_factories < 5
+		}
+	}
+	modifier = {
+		factor = 0.4
+		check_variable = {
+			num_of_civilian_factories < 4
+		}
+	}
+	modifier = {
+		factor = 0.3
+		check_variable = {
+			num_of_civilian_factories < 3
+		}
+	}
+	modifier = {
+		factor = 0.2
+		check_variable = {
+			num_of_civilian_factories < 2
+		}
+	}
+	modifier = {
+		factor = 0.1
+		check_variable = {
+			num_of_civilian_factories < 1
+		}
+	}
+	modifier = {
+		factor = 0.1
+		check_variable = {
+			num_of_civilian_factories = 0
+		}
 	}
 }
