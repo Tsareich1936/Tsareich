@@ -310,7 +310,7 @@ guiTypes = {
 			}
 			quadTextureSprite = GFX_scrollbar_horisontal_bg
 			# alwaystransparent = yes
-			pdx_tooltip = MONEY_VALUE
+			pdx_tooltip = taxes_ratio_tt
 		}
 		iconType = {
 			name = EV_taxes_ratio_slider_track
@@ -320,7 +320,7 @@ guiTypes = {
 			}
 			quadTextureSprite = GFX_gui_budget_scroll_track
 			# alwaystransparent = yes
-			pdx_tooltip = MONEY_VALUE
+			pdx_tooltip = taxes_ratio_tt
 		}
 		iconType = {
 			name = EV_taxes_ratio_slider_drager
@@ -329,7 +329,7 @@ guiTypes = {
 				y = 4
 			}
 			quadTextureSprite = GFX_scroll_drager
-			pdx_tooltip = MONEY_VALUE
+			pdx_tooltip = taxes_ratio_tt
 		}
 		buttonType = {
 			name = EV_taxes_ratio_slider_left
@@ -338,7 +338,7 @@ guiTypes = {
 				y = 3
 			}
 			quadTextureSprite = GFX_scroll_left
-			pdx_tooltip = MONEY_VALUE
+			pdx_tooltip = taxes_ratio_tt
 		}
 		buttonType = {
 			name = EV_taxes_ratio_slider_right
@@ -347,7 +347,7 @@ guiTypes = {
 				y = 3
 			}
 			quadTextureSprite = GFX_scroll_right
-			pdx_tooltip = MONEY_VALUE
+			pdx_tooltip = taxes_ratio_tt
 		}
 		instantTextBoxType = {
 			name = EV_taxes_ratio_percentage
@@ -358,7 +358,7 @@ guiTypes = {
 			}
 			font = hoi_18
 			format = right
-			pdx_tooltip = MONEY_VALUE
+			pdx_tooltip = taxes_ratio_tt
 		}
 		instantTextBoxType = {
 			name = taxes_amount
@@ -369,7 +369,7 @@ guiTypes = {
 			text = "taxes_amount"
 			font = "hoi_20"
 			format = right
-			pdx_tooltip = MONEY_VALUE
+			pdx_tooltip = taxes_ratio_tt
 		}
 	}
 	containerWindowType = {

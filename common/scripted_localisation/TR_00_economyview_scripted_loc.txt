@@ -18,3 +18,10 @@ defined_text = {
 		localization_key = MONEY_tt
 	}
 }
+
+defined_text = {
+	name = GetTaxesRatioEffect
+	text = {
+		localization_key = taxes_ratio_tt_gotten
+	}
+}

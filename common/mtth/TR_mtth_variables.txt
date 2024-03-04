@@ -1,0 +1,105 @@
+taxes_ratio_effect = {
+	base = 0
+	modifier = {
+		add = -0.01
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.9
+			compare = greater_than
+		}
+	}
+	modifier = {
+		add = -0.008
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.9
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.8
+			compare = greater_than
+		}
+	}
+	modifier = {
+		add = -0.005
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.8
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.7
+			compare = greater_than
+		}
+	}
+	modifier = {
+		add = -0.003
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.7
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.6
+			compare = greater_than
+		}
+	}
+	modifier = {
+		add = 0
+		factor = 0
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.4
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.3
+			compare = greater_than
+		}
+	}
+	modifier = {
+		add = 0.001
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.3
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.2
+			compare = greater_than
+		}
+	}
+	modifier = {
+		add = 0.002
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.2
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.1
+			compare = greater_than
+		}
+	}
+	modifier = {
+		add = 0.003
+		check_variable = {
+			var = EV_taxes_ratio_var
+			value = 0.1
+			compare = less_than_or_equals
+		}
+	}
+}
+taxes_ratio_limit_by = {
+	base = 0
+	modifier = {
+		add = token:civilian_economy
+		has_idea = civilian_economy
+	}
+}
