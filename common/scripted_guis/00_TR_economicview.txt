@@ -158,4 +158,84 @@ scripted_gui = {
 			}
 		}
 	}
+	#EV_war_expenses_slider
+	EV_War_Expenses_Slider = {
+		context_type = player_context
+		window_name = EV_war_expenses_slider
+		parent_window_name = TR_EV_budget_expenses
+		triggers = {
+			EV_war_expenses_slider_left_click_enabled = {
+				check_variable = {
+					EV_war_expenses_var > 0
+				}
+			}
+			EV_war_expenses_slider_right_click_enabled = {
+				check_variable = {
+					EV_war_expenses_var < 1
+				}
+			}
+		}
+		effects = {
+			EV_war_expenses_slider_left_click = {
+				set_temp_variable = {
+					temp = EV_war_expenses_var
+				}
+				multiply_temp_variable = {
+					temp = 10
+				}
+				modulo_temp_variable = {
+					temp = 2
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = temp
+							value = 0
+							compare = not_equals
+						}
+					}
+					set_variable = {
+						EV_war_expenses_var = 0.6
+					}
+				}
+				add_to_variable = {
+					EV_war_expenses_var = -0.2
+				}
+				EV_update_war_expenses = yes
+			}
+			EV_war_expenses_slider_right_click = {
+				set_temp_variable = {
+					temp = EV_war_expenses_var
+				}
+				multiply_temp_variable = {
+					temp = 10
+				}
+				modulo_temp_variable = {
+					temp = 2
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = temp
+							value = 0
+							compare = not_equals
+						}
+					}
+					set_variable = {
+						EV_war_expenses_var = 0.6
+					}
+				}
+				add_to_variable = {
+					EV_war_expenses_var = 0.2
+				}
+				EV_update_war_expenses = yes
+			}
+		}
+		properties = {
+			EV_war_expenses_slider_drager = {
+				
+				x = EV_war_expenses_slider_drager_position
+			}
+		}
+	}
 }
