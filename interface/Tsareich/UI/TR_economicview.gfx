@@ -12,6 +12,15 @@ spriteTypes = {
 		textureFile = "gfx/interface/UI/economicview/budget_scroll_track.dds"
 	}
 	spriteType = {
+		name = GFX_gui_budget_government_bond_button
+		textureFile = "gfx/interface/UI/economicview/budget_government_bond_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = GFX_gui_budget_bar_frame
+		textureFile = "gfx/interface/UI/economicview/budget_bar_frame.dds"
+	}
+	spriteType = {
 		name = "GFX_Line_Graph_Background"
 		textureFile = "/gfx/interface/UI/line_graph/line_graph_background.dds"
 	}

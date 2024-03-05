@@ -17,6 +17,7 @@
  taxes_amount_gotten_n: "§R$$§![?EV_taxes_amount_var_k|Y]K"
  currency_issue: "通貨発行"
  government_bond: "国債"
+ government_bond_ammount: "発行額: G000.000M"
  diplomatic_income: "外交協定"
  import_tax: "関税"
  BUDGET_EXPENSES: "歳出"

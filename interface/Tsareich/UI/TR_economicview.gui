@@ -373,6 +373,53 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
+		name = EV_government_bond
+		position = {
+			x = 20
+			y = 194
+		}
+		buttonType = {
+			name = EV_government_bond_button
+			position = {
+				x = 197
+				y = -2
+			}
+			scale = 1
+			frame = 1
+			quadTextureSprite = GFX_gui_budget_government_bond_button
+			clicksound = click_close
+		}
+		# instantTextBoxType = {
+		# 	name = EV_government_bond_percentage
+		# 	text = "government_bond_percentage"
+		# 	position = {
+		# 		x = 0
+		# 		y = 0
+		# 	}
+		# 	font = hoi_18
+		# 	format = right
+		# }
+		instantTextBoxType = {
+			name = government_bond_amount
+			position = {
+				x = 20
+				y = -25
+			}
+			text = "government_bond_ammount"
+			font = "hoi_20"
+			format = right
+			pdx_tooltip = taxes_ratio_tt
+		}
+		iconType = {
+			name = EV_government_bond_bar
+			position = {
+				x = 0
+				y = 2
+			}
+			quadTextureSprite = GFX_gui_budget_bar_frame
+		}
+	}
+	containerWindowType = {
 		name = EV_social_security_slider
 		position = {
 			x = 20

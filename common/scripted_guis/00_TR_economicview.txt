@@ -52,6 +52,23 @@ scripted_gui = {
 			}
 		}
 	}
+	EV_Government_Bond = {
+		context_type = player_context
+		window_name = EV_government_bond
+		parent_window_name = TR_EV_budget_income
+		triggers = {
+			
+		}
+		effects = {
+			EV_government_bond_button_click = {
+				
+			}
+		}
+		properties = {
+			EV_government_bond_button = {
+			}
+		}
+	}
 	EV_Social_Security_Slider = {
 		context_type = player_context
 		window_name = EV_social_security_slider
