@@ -309,7 +309,8 @@ guiTypes = {
 				y = 2
 			}
 			quadTextureSprite = GFX_scrollbar_horisontal_bg
-			alwaystransparent = yes
+			# alwaystransparent = yes
+			pdx_tooltip = taxes_ratio_tt
 		}
 		iconType = {
 			name = EV_taxes_ratio_slider_track
@@ -318,7 +319,8 @@ guiTypes = {
 				y = 5
 			}
 			quadTextureSprite = GFX_gui_budget_scroll_track
-			alwaystransparent = yes
+			# alwaystransparent = yes
+			pdx_tooltip = taxes_ratio_tt
 		}
 		iconType = {
 			name = EV_taxes_ratio_slider_drager
@@ -327,6 +329,7 @@ guiTypes = {
 				y = 4
 			}
 			quadTextureSprite = GFX_scroll_drager
+			pdx_tooltip = taxes_ratio_tt
 		}
 		buttonType = {
 			name = EV_taxes_ratio_slider_left
@@ -335,6 +338,7 @@ guiTypes = {
 				y = 3
 			}
 			quadTextureSprite = GFX_scroll_left
+			pdx_tooltip = taxes_ratio_tt
 		}
 		buttonType = {
 			name = EV_taxes_ratio_slider_right
@@ -343,7 +347,7 @@ guiTypes = {
 				y = 3
 			}
 			quadTextureSprite = GFX_scroll_right
-			pdx_tooltip = "a"
+			pdx_tooltip = taxes_ratio_tt
 		}
 		instantTextBoxType = {
 			name = EV_taxes_ratio_percentage
@@ -354,6 +358,18 @@ guiTypes = {
 			}
 			font = hoi_18
 			format = right
+			pdx_tooltip = taxes_ratio_tt
+		}
+		instantTextBoxType = {
+			name = taxes_amount
+			position = {
+				x = 20
+				y = -25
+			}
+			text = "taxes_amount"
+			font = "hoi_20"
+			format = right
+			pdx_tooltip = taxes_ratio_tt
 		}
 	}
 	containerWindowType = {
@@ -474,6 +490,77 @@ guiTypes = {
 			}
 			font = hoi_18
 			format = right
+		}
+	}
+	containerWindowType = {
+		name = EV_war_expenses_slider
+		position = {
+			x = 20
+			y = 256
+		}
+		iconType = {
+			name = EV_war_expenses_slider_bg
+			position = {
+				x = 0
+				y = 2
+			}
+			quadTextureSprite = GFX_scrollbar_horisontal_bg
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = EV_war_expenses_slider_track
+			position = {
+				x = 18
+				y = 5
+			}
+			quadTextureSprite = GFX_gui_budget_scroll_track
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = EV_war_expenses_slider_drager
+			position = {
+				x = 18
+				y = 4
+			}
+			quadTextureSprite = GFX_scroll_drager
+		}
+		buttonType = {
+			name = EV_war_expenses_slider_left
+			position = {
+				x = 2
+				y = 3
+			}
+			quadTextureSprite = GFX_scroll_left
+		}
+		buttonType = {
+			name = EV_war_expenses_slider_right
+			position = {
+				x = 138
+				y = 3
+			}
+			quadTextureSprite = GFX_scroll_right
+			pdx_tooltip = "a"
+		}
+		instantTextBoxType = {
+			name = EV_war_expenses_percentage
+			text = "war_expenses_percentage"
+			position = {
+				x = 0
+				y = 0
+			}
+			font = hoi_18
+			format = right
+		}
+		instantTextBoxType = {
+			name = war_expenses_amount
+			position = {
+				x = 20
+				y = -25
+			}
+			text = "war_expenses_ammount"
+			font = "hoi_20"
+			format = right
+			pdx_tooltip = taxes_ratio_tt
 		}
 	}
 }

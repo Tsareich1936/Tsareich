@@ -1,0 +1,204 @@
+set_variable = {
+	infantry_n = num_battalions_with_type@infantry
+}
+set_variable = {
+	artillery_n = num_battalions_with_type@artillery
+}
+set_variable = {
+	cavalry_n = num_battalions_with_type@cavalry
+}
+set_variable = {
+	motorized_n = num_battalions_with_type@motorized
+}
+set_variable = {
+	light_armor_n = num_battalions_with_type@light_armor
+}
+set_variable = {
+	medium_armor_n = num_battalions_with_type@medium_armor
+}
+set_temp_variable = {
+	temp_infantry_a = num_equipment_in_armies_k@infantry
+}
+set_temp_variable = {
+	temp_infantry_t = num_target_equipment_in_armies_k@infantry
+}
+set_variable = {
+	suff_infantry = temp_infantry_a
+}
+divide_variable = {
+	suff_infantry = temp_infantry_t
+}
+set_temp_variable = {
+	temp_artillery_a = num_equipment_in_armies_k@artillery
+}
+set_temp_variable = {
+	temp_artillery_t = num_target_equipment_in_armies_k@artillery
+}
+set_variable = {
+	suff_artillery = temp_artillery_a
+}
+divide_variable = {
+	suff_artillery = temp_artillery_t
+}
+set_temp_variable = {
+	temp_cavalry_a = num_equipment_in_armies_k@cavalry
+}
+set_temp_variable = {
+	temp_cavalry_t = num_target_equipment_in_armies_k@cavalry
+}
+set_variable = {
+	suff_cavalry = temp_cavalry_a
+}
+divide_variable = {
+	suff_cavalry = temp_cavalry_t
+}
+set_temp_variable = {
+	temp_motorized_a = num_equipment_in_armies_k@motorized
+}
+set_temp_variable = {
+	temp_motorized_t = num_target_equipment_in_armies_k@motorized
+}
+set_variable = {
+	suff_motorized = temp_motorized_a
+}
+divide_variable = {
+	suff_motorized = temp_motorized_t
+}
+set_temp_variable = {
+	temp_light_armor_a = num_equipment_in_armies_k@light_armor
+}
+set_temp_variable = {
+	temp_light_armor_t = num_target_equipment_in_armies_k@light_armor
+}
+set_variable = {
+	suff_light_armor = temp_light_armor_a
+}
+divide_variable = {
+	suff_light_armor = temp_light_armor_t
+}
+set_temp_variable = {
+	temp_medium_armor_a = num_equipment_in_armies_k@medium_armor
+}
+set_temp_variable = {
+	temp_medium_armor_t = num_target_equipment_in_armies_k@medium_armor
+}
+set_variable = {
+	suff_medium_armor = temp_medium_armor_a
+}
+divide_variable = {
+	suff_medium_armor = temp_medium_armor_t
+}
+set_variable = {
+	other = num_battalions
+}
+subtract_from_variable = {
+	other = infantry_n
+}
+subtract_from_variable = {
+	other = artillery_n
+}
+subtract_from_variable = {
+	other = cavalry_n
+}
+subtract_from_variable = {
+	other = motorized_n
+}
+subtract_from_variable = {
+	other = light_armor_n
+}
+subtract_from_variable = {
+	other = medium_armor_n
+}
+set_variable = {
+	armies_cost = 0
+}
+set_variable = {
+	infantry_cost = infantry_n
+}
+multiply_variable = {
+	infantry_cost = suff_infantry
+}
+multiply_variable = {
+	infantry_cost = 1
+}
+set_variable = {
+	artillery_cost = artillery_n
+}
+multiply_variable = {
+	artillery_cost = suff_artillery
+}
+multiply_variable = {
+	artillery_cost = 1.5
+}
+set_variable = {
+	cavalry_cost = cavalry_n
+}
+multiply_variable = {
+	cavalry_cost = suff_cavalry
+}
+multiply_variable = {
+	cavalry_cost = 1.2
+}
+set_variable = {
+	motorized_cost = motorized_n
+}
+multiply_variable = {
+	motorized_cost = suff_motorized
+}
+multiply_variable = {
+	motorized_cost = 1.5
+}
+set_variable = {
+	light_armor_cost = light_armor_n
+}
+multiply_variable = {
+	light_armor_cost = suff_light_armor
+}
+multiply_variable = {
+	light_armor_cost = 2
+}
+set_variable = {
+	medium_armor_cost = medium_armor_n
+}
+multiply_variable = {
+	medium_armor_cost = suff_medium_armor
+}
+multiply_variable = {
+	medium_armor_cost = 3
+}
+set_variable = {
+	other_cost = other_n
+}
+multiply_variable = {
+	other_cost = 1
+}
+add_to_variable = {
+	armies_cost = other_cost
+}
+add_to_variable = {
+	armies_cost = infantry_cost
+}
+add_to_variable = {
+	armies_cost = artillery_cost
+}
+add_to_variable = {
+	armies_cost = cavalry_cost
+}
+add_to_variable = {
+	armies_cost = motorized_cost
+}
+add_to_variable = {
+	armies_cost = light_armor_cost
+}
+add_to_variable = {
+	armies_cost = medium_armor_cost
+}
+set_variable = {
+	war_ex = 0.1
+}
+add_to_variable = {
+	war_ex = EV_war_expenses_var
+}
+multiply_variable = {
+	armies_cost = war_ex
+}

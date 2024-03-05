@@ -36,29 +36,13 @@ scripted_gui = {
 				add_to_variable = {
 					EV_taxes_ratio_var = -0.05
 				}
-				set_variable = {
-					EV_taxes_ratio_slider_drager_position = EV_taxes_ratio_var
-				}
-				multiply_variable = {
-					EV_taxes_ratio_slider_drager_position = 105
-				}
-				add_to_variable = {
-					EV_taxes_ratio_slider_drager_position = 18
-				}
+				EV_update_taxes_ratio = yes
 			}
 			EV_taxes_ratio_slider_right_click = {
 				add_to_variable = {
 					EV_taxes_ratio_var = 0.05
 				}
-				set_variable = {
-					EV_taxes_ratio_slider_drager_position = EV_taxes_ratio_var
-				}
-				multiply_variable = {
-					EV_taxes_ratio_slider_drager_position = 105
-				}
-				add_to_variable = {
-					EV_taxes_ratio_slider_drager_position = 18
-				}
+				EV_update_taxes_ratio = yes
 			}
 		}
 		properties = {
@@ -171,6 +155,46 @@ scripted_gui = {
 			EV_civil_servant_saraly_slider_drager = {
 				
 				x = EV_civil_servant_saraly_slider_drager_position
+			}
+		}
+	}
+	#EV_war_expenses_slider
+	EV_War_Expenses_Slider = {
+		context_type = player_context
+		window_name = EV_war_expenses_slider
+		parent_window_name = TR_EV_budget_expenses
+		triggers = {
+			EV_war_expenses_slider_left_click_enabled = {
+				check_variable = {
+					EV_war_expenses_var > 0
+				}
+			}
+			EV_war_expenses_slider_right_click_enabled = {
+				check_variable = {
+					EV_war_expenses_var < 1
+				}
+			}
+		}
+		effects = {
+			EV_war_expenses_slider_left_click = {
+				
+				add_to_variable = {
+					EV_war_expenses_var = -0.1
+				}
+				EV_update_war_expenses_ratio = yes
+			}
+			EV_war_expenses_slider_right_click = {
+				
+				add_to_variable = {
+					EV_war_expenses_var = 0.1
+				}
+				EV_update_war_expenses_ratio = yes
+			}
+		}
+		properties = {
+			EV_war_expenses_slider_drager = {
+				
+				x = EV_war_expenses_slider_drager_position
 			}
 		}
 	}

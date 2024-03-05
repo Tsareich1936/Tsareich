@@ -1,0 +1,27 @@
+defined_text = {
+	name = GetTaxesAmount
+	text = {
+		trigger = {
+			check_variable = {
+				EV_taxes_amount_var_k < 0
+			}
+		}
+		localization_key = taxes_amount_gotten_n
+	}
+	text = {
+		localization_key = taxes_amount_gotten_p
+	}
+}
+defined_text = {
+	name = GetMonetToolTip
+	text = {
+		localization_key = MONEY_tt
+	}
+}
+
+defined_text = {
+	name = GetTaxesRatioEffect
+	text = {
+		localization_key = taxes_ratio_tt_gotten
+	}
+}

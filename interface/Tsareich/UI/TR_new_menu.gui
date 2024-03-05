@@ -27,25 +27,29 @@ guiTypes = {
 			spriteType = "GFX_generic_box_96"
 			position = { x = 0 y = 0 }
 			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "money_tt"
 		}
 
 		iconType ={
 			name ="dollar_icon"
 			spriteType = "GFX_icon_dollar"
-			position = { x= 0 y = 0 }
+			position = { x= 2 y = 2 }
 			Orientation = "UPPER_LEFT"
-			scale = 0.85
+			scale = 0.8
+			pdx_tooltip = "money_tt"
 		}
 
 		instantTextBoxType = {
 			name ="MONEY_VALUE"
-			position = { x= 20 y = 3 }
+			position = { x= -10 y = 0 }
 			font = "hoi_18mbs"
 			text = "MONEY_VALUE"
 			format = center
-			maxWidth = 50
+			maxWidth = 100
 			maxHeight = 24
 			fixedsize = yes
+			format = right
+			pdx_tooltip = "money_tt"
 		}
 		iconType = {
 			name ="fuel_ratio_bar"
@@ -53,6 +57,7 @@ guiTypes = {
 			position = { x= 50 y = 15 }
 			frame = 50
 			alwaystransparent = yes
+			pdx_tooltip = "money_tt"
 		}
 	}
 }

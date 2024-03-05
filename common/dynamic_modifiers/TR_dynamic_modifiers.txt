@@ -28,6 +28,13 @@ TR_great_depression_modifier = {
 	conscription_factor = usa_GD_c_factor_var
 	local_resources_factor = usa_GD_lr_factor
 }
+TR_taxes_ratio_effect = {
+	enable = {
+		always = yes
+	}
+	stability_weekly = mtth:taxes_ratio_effect
+	war_support_weekly = mtth:taxes_ratio_effect
+}
 TR_POL_resisting = {
 	enable = {
 		always = yes
