@@ -626,16 +626,16 @@ country_event = {            #########  右翼政治団体が首相を襲撃！
 	desc = TR_japan.12.d
 	fire_only_once = yes
 	is_triggered_only = yes
-	immediate = {
-		JAP = {
-			country_event = {
-				id = TR_japan.28
-				days = 1
-			}
-		}
-	}
     option = {
         name = TR_japan.12.a
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.28
+					days = 1
+				}
+			}
+		}
     }
 }
 
