@@ -4,8 +4,7 @@ scripted_gui = {
 		window_name = "TR_reserach_system_GUI_open"
 		parent_window_token = politics_tab
 		visible = {
-			is_ai = no
-			tag = JAP
+			always = no
 		}
 		
 		effects = {
