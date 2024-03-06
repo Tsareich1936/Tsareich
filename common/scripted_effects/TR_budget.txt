@@ -12,13 +12,13 @@ EV_update_taxes_ratio = {
 }
 EV_update_taxes = {
 	set_variable = {
-		EV_taxes_amount_var_k = num_of_civilian_factories_available_for_projects
+		EV_taxes_amount_var_raw = num_of_civilian_factories_available_for_projects
 	}
 	add_to_variable = {
-		EV_taxes_amount_var_k = num_of_civilian_factories
+		EV_taxes_amount_var_raw = num_of_civilian_factories
 	}
 	divide_variable = {
-		EV_taxes_amount_var_k = 4
+		EV_taxes_amount_var_raw = 4
 	}
 	set_variable = {
 		EV_mp = max_manpower_k
@@ -130,10 +130,13 @@ EV_update_taxes = {
 		}
 	}
 	multiply_variable = {
-		EV_taxes_amount_var_k = EV_mp
+		EV_taxes_amount_var_raw = EV_mp
 	}
 	multiply_variable = {
-		EV_taxes_amount_var_k = 0.087
+		EV_taxes_amount_var_raw = 0.087
+	}
+	set_variable = {
+		EV_taxes_amount_var_k = EV_taxes_amount_var_raw
 	}
 	#1937年時点の日本の租税収入を基準とした値
 	#単位は１００万ドル
@@ -143,10 +146,11 @@ EV_update_taxes = {
 	add_to_variable = {#基本値
 		EV_taxes_amount_var_k = 0.1
 	}
+	EV_update_gdp = yes
 }
 EV_update_war_expenses_ratio = {
 	set_variable = {
-		EV_war_expenses_slider_drager_position = EV_war_expenses_var
+		EV_war_expenses_slider_drager_position = EV_war_expenses_var_raw
 	}
 	multiply_variable = {
 		EV_war_expenses_slider_drager_position = 105
@@ -358,7 +362,7 @@ EV_update_war_expenses = {
 		war_ex = 0.1
 	}
 	add_to_variable = {
-		war_ex = EV_war_expenses_var
+		war_ex = EV_war_expenses_var_raw
 	}
 	multiply_variable = {
 		armies_cost = war_ex
@@ -368,6 +372,223 @@ EV_update_war_expenses = {
 	# }
 	set_variable = {
 		EV_war_expenses_amount_var = armies_cost
+	}
+	EV_update_gdp = yes
+}
+EV_update_gdp = {
+	set_variable = {
+		GDP_amount_var = 0
+	}
+	set_variable = {
+		var = GDP_civilian
+		value = EV_taxes_amount_var_raw
+	}
+	divide_variable = {
+		var = GDP_civilian
+		value = 7
+	}
+	multiply_variable = {
+		var = GDP_civilian
+		value = 365
+	}
+	set_variable = {
+		var = GDP_army
+		value = num_of_military_factories
+	}
+	add_to_variable = {
+		var = GDP_army
+		value = num_of_naval_factories
+	}
+	divide_variable = {
+		var = GDP_army
+		value = 4
+	}
+	multiply_variable = {
+		var = GDP_army
+		value = 4.536
+	}
+	set_variable = {
+		var = GDP_government
+		value = EV_war_expenses_amount_var
+	}
+	divide_variable = {
+		var = GDP_government
+		value = 7
+	}
+	multiply_variable = {
+		var = GDP_government
+		value = -365
+	}
+	add_to_variable = {
+		var = GDP_amount_var
+		value = GDP_civilian
+	}
+	add_to_variable = {
+		var = GDP_amount_var
+		value = GDP_army
+	}
+	add_to_variable = {
+		var = GDP_amount_var
+		value = GDP_government
+	}
+}
+EV_update_gdp_to_line = {
+	# 折れ線グラフを更新する
+
+	# This count is displayed as an x-axis label, increment it
+	add_to_variable = { GDP_count = 1 }
+	
+	set_variable = {
+		GDP_last_amount = GDP_amount
+	}
+	set_variable = {
+		GDP_amount = GDP_amount_var
+	}
+	clear_array = GDP_relatives
+	clear_array = GDP_graph_offsets
+	clear_array = GDP_graph_slopes
+	add_to_array = {
+		array = GDP_amounts
+		value = GDP_amount
+	}
+	for_each_loop = {
+		array = GDP_amounts
+		value = v
+		index = i
+		add_to_array = {
+			array = GDP_relatives
+			value = v
+		}
+		divide_variable = {
+			GDP_relatives^i = GDP_amount
+		}
+	}
+	for_each_loop = {
+		array = GDP_relatives
+		value = v
+		index = i
+		add_to_array = {
+			array = GDP_graph_offsets
+			value = v
+		}
+		multiply_variable = {
+			GDP_graph_offsets^i = -100
+		}
+		add_to_variable = {
+			GDP_graph_offsets^i = -20
+		}
+	}
+	for_each_loop = {
+		array = GDP_graph_offsets
+		value = v
+		index = i
+		set_temp_variable = {
+			bi = i 
+		}
+		add_to_temp_variable = {
+			bi = 1
+		}
+		add_to_array = {
+			array = GDP_graph_slopes
+			value = v
+		}
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						GDP_graph_offsets^bi = 0
+					}
+				}
+			}
+			subtract_from_variable = {
+				GDP_graph_slopes^i = GDP_graph_offsets^bi
+			}
+		}
+		else = {
+			subtract_from_variable = {
+				GDP_graph_slopes^i = GDP_graph_offsets^i
+			}
+		}
+		divide_variable = {
+			GDP_graph_slopes^i = 4
+		}
+		add_to_variable = {
+			GDP_graph_slopes^i = 50
+		}
+		set_variable = {
+			gdp_50pct = GDP_amounts^i
+		}
+	}
+	# 範囲外のものを削除
+	if = {
+		limit = {
+			check_variable = { GDP_count > 40 }
+		}
+		remove_from_array = { array = GDP_amounts index = 0 }
+		remove_from_array = { array = GDP_relatives index = 0 }
+		remove_from_array = { array = GDP_graph_offsets index = 0 }
+		remove_from_array = { array = GDP_graph_slopes index = 0 }
+	}
+	
+	set_variable = {
+		gdp_100pct = gdp_50pct
+	}
+	multiply_variable = {
+		gdp_100pct = 1.5
+	}
+	set_variable = {
+		gdp_90pct = gdp_50pct
+	}
+	multiply_variable = {
+		gdp_90pct = 1.4
+	}
+	set_variable = {
+		gdp_80pct = gdp_50pct
+	}
+	multiply_variable = {
+		gdp_80pct = 1.3
+	}
+	set_variable = {
+		gdp_70pct = gdp_50pct
+	}
+	multiply_variable = {
+		gdp_70pct = 1.2
+	}
+	set_variable = {
+		gdp_60pct = gdp_50pct
+	}
+	multiply_variable = {
+		gdp_60pct = 1.1
+	}
+	set_variable = {
+		gdp_40pct = gdp_50pct
+	}
+	multiply_variable = {
+		gdp_40pct = 0.9
+	}
+	set_variable = {
+		gdp_30pct = gdp_50pct
+	}
+	multiply_variable = {
+		gdp_30pct = 0.8
+	}
+	set_variable = {
+		gdp_20pct = gdp_50pct
+	}
+	multiply_variable = {
+		gdp_20pct = 0.7
+	}
+	set_variable = {
+		gdp_10pct = gdp_50pct
+	}
+	multiply_variable = {
+		gdp_10pct = 0.6
+	}
+	set_variable = {
+		gdp_0pct = gdp_50pct
+	}
+	multiply_variable = {
+		gdp_0pct = 0.5
 	}
 }
 BUDGET_LOG = {

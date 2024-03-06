@@ -295,6 +295,24 @@ guiTypes = {
 			# 	font = "hoi_20"
 			# }
 		}
+		instantTextboxType = {
+			name = "GDP_title"
+			position = { x = 45 y = 485 }
+			textureFile = ""
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0}
+			text = "ECONOMIC_GDP"
+			maxWidth = 400
+			maxHeight = 30
+			fixedsize = yes
+		}
+		containerWindowType = {
+			name = TR_EV_GDP
+			position = {
+				x = 8
+				y = 516
+			}
+		}
 	}
 	containerWindowType = {
 		name = EV_taxes_ratio_slider
@@ -608,6 +626,220 @@ guiTypes = {
 			font = "hoi_20"
 			format = right
 			pdx_tooltip = taxes_ratio_tt
+		}
+	}
+	containerWindowType = {
+		name = EV_GDP_view
+		
+		size = {
+			width = 534
+			height = 500
+		}
+		clipping = yes
+		iconType = {
+			name = EV_GDP_graph_bg
+			quadTextureSprite = GFX_Line_Graph_Background
+		}
+		iconType = {
+			name = EV_GDP_graph_chart
+			position = {
+				x = 60
+				y = 20
+			}
+			quadTextureSprite = GFX_Line_Graph_Chart
+		}
+		#縦軸
+			instantTextBoxType = {
+				name = gdp_0_pct
+				text = "gdp_0_pct"
+				font = "garamond_14"
+				format = right
+				maxWidth = 256
+				maxHeight = 16
+				position = {
+					x = -185
+					y = 228
+				}
+			}
+			instantTextBoxType = {
+				name = gdp_10_pct
+				text = "gdp_10_pct"
+				font = "garamond_14"
+				format = right
+				maxWidth = 256
+				maxHeight = 16
+				position = {
+					x = -185
+					y = 206
+				}
+			}
+			instantTextBoxType = {
+				name = gdp_20_pct
+				text = "gdp_20_pct"
+				font = "garamond_14"
+				format = right
+				maxWidth = 256
+				maxHeight = 16
+				position = {
+					x = -185
+					y = 186
+				}
+			}
+			instantTextBoxType = {
+				name = gdp_30_pct
+				text = "gdp_30_pct"
+				font = "garamond_14"
+				format = right
+				maxWidth = 256
+				maxHeight = 16
+				position = {
+					x = -185
+					y = 166
+				}
+			}
+			instantTextBoxType = {
+				name = gdp_40_pct
+				text = "gdp_40_pct"
+				font = "garamond_14"
+				format = right
+				maxWidth = 256
+				maxHeight = 16
+				position = {
+					x = -185
+					y = 146
+				}
+			}
+			instantTextBoxType = {
+				name = gdp_50_pct
+				text = "gdp_50_pct"
+				font = "garamond_14"
+				format = right
+				maxWidth = 256
+				maxHeight = 16
+				position = {
+					x = -185
+					y = 126
+				}
+			}
+			instantTextBoxType = {
+				name = gdp_60_pct
+				text = "gdp_60_pct"
+				font = "garamond_14"
+				format = right
+				maxWidth = 256
+				maxHeight = 16
+				position = {
+					x = -185
+					y = 106
+				}
+			}
+			instantTextBoxType = {
+				name = gdp_70_pct
+				text = "gdp_70_pct"
+				font = "garamond_14"
+				format = right
+				maxWidth = 256
+				maxHeight = 16
+				position = {
+					x = -185
+					y = 86
+				}
+			}
+			instantTextBoxType = {
+				name = gdp_80_pct
+				text = "gdp_80_pct"
+				font = "garamond_14"
+				format = right
+				maxWidth = 256
+				maxHeight = 16
+				position = {
+					x = -185
+					y = 66
+				}
+			}
+			instantTextBoxType = {
+				name = gdp_90_pct
+				text = "gdp_90_pct"
+				font = "garamond_14"
+				format = right
+				maxWidth = 256
+				maxHeight = 16
+				position = {
+					x = -185
+					y = 46
+				}
+			}
+			instantTextBoxType = {
+				name = gdp_100_pct
+				text = "gdp_100_pct"
+				font = "garamond_14"
+				format = right
+				maxWidth = 256
+				maxHeight = 16
+				position = {
+					x = -185
+					y = 26
+				}
+			}
+		#GDP数値
+		instantTextBoxType = {
+			name = EV_GDP_amount_text
+			font = hoi_24header
+			text = "GDP_amount_text"
+			position = {
+				x = 25
+				y = 280
+			}
+			format = left
+		}
+		instantTextBoxType = {
+			name = EV_GDP_amount
+			font = hoi_24header
+			text = "GDP_amount"
+			position = {
+				x = 280
+				y = 280
+			}
+			format = right
+		}
+		gridBoxType = {
+			name = GDP_graph_segments
+			position = {
+				x = 88
+				y = 37
+			}
+			origo = upper_left
+			size = {
+				width = 0
+				height = 200
+			}
+			slotsize = { width = 10 height = 400 }
+			max_slots_horizontal = 40
+			add_horizontal = yes
+		}
+	}
+	containerWindowType = {
+		name = "line_graph_line_segment"
+		size = { width = 20 height = 400 }
+		position = { x = 0 y = 0 }
+
+		# Line segment progress bar, using our custom asset with custom shader
+		iconType = {
+			name = "segment"
+			spriteType = "GFX_Line_Segment"
+			position = { x = 0 y = 0 }
+			frame = 57
+			alwaystransparent = yes
+		}
+
+		# Optional, x-axis label which corresponds to the value of this segment
+		instantTextboxType = {
+			name = "label"
+			position = { x = -15 y = 212}
+			font = "garamond_14"
+			text = "a"
+			maxWidth = 30
+			format = center
 		}
 	}
 }

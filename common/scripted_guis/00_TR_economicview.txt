@@ -61,7 +61,7 @@ scripted_gui = {
 		}
 		effects = {
 			EV_government_bond_button_click = {
-				
+				EV_update_gdp_to_line = yes
 			}
 		}
 		properties = {
@@ -183,12 +183,12 @@ scripted_gui = {
 		triggers = {
 			EV_war_expenses_slider_left_click_enabled = {
 				check_variable = {
-					EV_war_expenses_var > 0
+					EV_war_expenses_var_raw > 0
 				}
 			}
 			EV_war_expenses_slider_right_click_enabled = {
 				check_variable = {
-					EV_war_expenses_var < 1
+					EV_war_expenses_var_raw < 1
 				}
 			}
 		}
@@ -196,14 +196,32 @@ scripted_gui = {
 			EV_war_expenses_slider_left_click = {
 				
 				add_to_variable = {
-					EV_war_expenses_var = -0.1
+					EV_war_expenses_var_raw = -0.1
+				}
+				set_variable = {
+					EV_war_expenses_var = EV_war_expenses_var_raw
+				}
+				subtract_from_variable = {
+					EV_war_expenses_var = 0.5
+				}
+				multiply_variable = {
+					EV_war_expenses_var = 0.66
 				}
 				EV_update_war_expenses_ratio = yes
 			}
 			EV_war_expenses_slider_right_click = {
 				
 				add_to_variable = {
-					EV_war_expenses_var = 0.1
+					EV_war_expenses_var_raw = 0.1
+				}
+				set_variable = {
+					EV_war_expenses_var = EV_war_expenses_var_raw
+				}
+				subtract_from_variable = {
+					EV_war_expenses_var = 0.5
+				}
+				multiply_variable = {
+					EV_war_expenses_var = 0.66
 				}
 				EV_update_war_expenses_ratio = yes
 			}
@@ -212,6 +230,32 @@ scripted_gui = {
 			EV_war_expenses_slider_drager = {
 				
 				x = EV_war_expenses_slider_drager_position
+			}
+		}
+	}
+	EV_GDP_View = {
+		context_type = player_context
+		window_name = EV_GDP_view
+		parent_window_name = TR_EV_GDP
+		# Set up dynamic list to generate one line segment per point
+		dynamic_lists = {
+			GDP_graph_segments = {
+				array = GDP_graph_offsets
+				change_scope = no
+				entry_container = line_graph_line_segment
+				index = segment_idx
+			}
+		}
+
+		properties = {
+			segment = {
+				# Sets they position of the line segment to the graph offset
+				# Equal to -y1
+				y = GDP_graph_offsets^segment_idx
+
+				# Tells the shader how steep to draw the line
+				# Must be equal to (y2 - y1) / 2 + 50
+				frame = GDP_graph_slopes^segment_idx
 			}
 		}
 	}

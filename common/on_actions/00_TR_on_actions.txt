@@ -241,6 +241,8 @@ on_actions = {
 				money_value = EV_war_expenses_amount_var
 			}
 			EV_update_war_expenses = yes
+			EV_update_gdp = yes
+			EV_update_gdp_to_line = yes
 		}
 	}
 	on_monthly_BRA = {

@@ -36,7 +36,7 @@ spriteTypes = {
 		textureFile2 = "/gfx/interface/UI/line_graph/graph_line_empty.dds"
 		size = {
 			x = 10
-			y = 200
+			y = 400
 		}
 		effectFile = "gfx/FX/line_graph.lua"
 		horizontal = yes
