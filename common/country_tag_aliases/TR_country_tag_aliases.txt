@@ -29,11 +29,19 @@ AMG = {#American Military Government
 	has_country_flag = USA_military_flag
 }
 #Balkan War
-MDR = {#Madarska
+DNB = {#Donabska Cleansing zone
 	original_tag = HUN
-	has_country_flag = HUN_madarska
+	has_country_flag = HUN_donabska
 }
-
+RPZ = {#Romanian Pannonia Occupied Zone
+	original_tag = HUN
+	has_country_flag = HUN_pannonia
+}
+CHZ = {#Czech North Hungaria Occupied Zone
+	original_tag = HUN
+	has_country_flag = HUN_north_hungary
+}
+#Spanish Civil War
 SPA= {#American Republic
 	original_tag = SPR
 	has_country_flag = SPR_fascism_flag

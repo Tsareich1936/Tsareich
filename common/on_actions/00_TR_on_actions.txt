@@ -226,7 +226,9 @@ on_actions = {
 	effect = {#HUN set up
 			HUN = {
 				every_core_state = {
-					remove_core_of = MDR
+					remove_core_of = DNB
+					remove_core_of = RPZ
+					remove_core_of = CHZ
 				}
 			}
 		}

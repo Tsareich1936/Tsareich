@@ -113,13 +113,13 @@ set_autonomy = {
 	target = SLO
 	autonomous_state = autonomy_puppet
 }
-set_autonomy = {
-	target = CRT
-	autonomous_state = autonomy_puppet
-}
+# set_autonomy = {
+# 	target = CRT
+# 	autonomous_state = autonomy_puppet
+# }
 create_dynamic_country = {
 	original_tag = HUN
-	set_country_flag = HUN_madarska
+	set_country_flag = HUN_donabska
 	set_politics = {
 		ruling_party = neutrality
 	}
@@ -127,7 +127,33 @@ create_dynamic_country = {
 		neutrality = 100
 	}
 	reserve_dynamic_country = yes
-	set_cosmetic_tag = MDR
+	set_cosmetic_tag = DNB
+	inherit_technology = HUN
+}
+create_dynamic_country = {
+	original_tag = HUN
+	set_country_flag = HUN_pannonia
+	set_politics = {
+		ruling_party = neutrality
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+	reserve_dynamic_country = yes
+	set_cosmetic_tag = RPZ
+	inherit_technology = HUN
+}
+create_dynamic_country = {
+	original_tag = HUN
+	set_country_flag = HUN_north_hungary
+	set_politics = {
+		ruling_party = neutrality
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+	reserve_dynamic_country = yes
+	set_cosmetic_tag = CHZ
 	inherit_technology = HUN
 }
 #Start Horty as neutral if DOD

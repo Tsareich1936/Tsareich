@@ -43,7 +43,7 @@ autonomy_state = {
 			tag = SER
 		}
 		# FROM = {
-		# 	tag = MDR
+		# 	tag = DNB
 		# }
 	}
 	

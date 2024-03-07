@@ -1,7 +1,7 @@
 TR_SER_balkan_war_peace = {
 	HUN = {
 		leave_faction = yes
-		MDR = {
+		DNB = {
 			transfer_state = 43
 			transfer_state = 154
 			transfer_state = 155
@@ -14,7 +14,7 @@ TR_SER_balkan_war_peace = {
 			transfer_state = 45
 			transfer_state = 764
 			set_autonomy = {
-				target = MDR
+				target = DNB
 				autonomy_state = autonomy_cleansing_area
 				freedom_level = 0
 			}
@@ -40,6 +40,90 @@ TR_SER_balkan_war_peace = {
 			# 	autonomy_state = autonomy_collaboration_government
 			# 	freedom_level = 0
 			# }
+		}
+		BUL = {
+			every_owned_state = {
+				set_state_controller_to = SER
+			}
+			SER = {
+				start_peace_conference = {
+					tag = BUL
+					score_factor = 100
+				}
+			}
+		}
+	}
+	SER = {
+		dismantle_faction = yes
+	}
+}
+d_balkan_war_peace = {
+	HUN = {
+		leave_faction = yes
+		DNB = {
+			transfer_state = 155
+			transfer_state = 1059
+			every_owned_state = {
+				remove_core_of = PREV
+			}
+		}
+		RPZ = {
+			transfer_state = 154
+			every_owned_state = {
+				remove_core_of = PREV
+			}
+		}
+		CHZ = {
+			transfer_state = 43
+			every_owned_state = {
+				remove_core_of = PREV
+			}
+		}
+		SER = {
+			transfer_state = 45
+			transfer_state = 764
+			set_autonomy = {
+				target = DNB
+				autonomy_state = autonomy_cleansing_area
+				freedom_level = 0
+			}
+		}
+		ROM = {
+			transfer_state = 76
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 84
+			transfer_state = 935
+			set_autonomy = {
+				target = RPZ
+				autonomy_state = autonomy_supervised_state
+				freedom_level = 0.3
+			}
+		}
+		CZE = {
+			SLO = {
+				leave_faction = yes
+				white_peace = SER
+				transfer_state = 70
+				transfer_state = 71
+				transfer_state = 73
+				transfer_state = 664
+			}
+			# set_autonomy = {
+			# 	target = SLO
+			# 	autonomy_state = autonomy_collaboration_government
+			# 	freedom_level = 0
+			# }
+			set_autonomy = {
+				target = CHZ
+				autonomy_state = autonomy_supervised_state
+				freedom_level = 0.3
+			}
+			set_autonomy = {
+				target = SLO
+				autonomy_state = autonomy_supervised_state
+				freedom_level = 0.3
+			}
 		}
 		BUL = {
 			every_owned_state = {

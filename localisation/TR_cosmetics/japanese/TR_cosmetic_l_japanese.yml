@@ -117,11 +117,18 @@
  RAJ_empire_neutrality_DEF: "インド連合王国"
  RAJ_empire_neutrality_ADJ: "インド"
 
- MDR: "パンノニア"
- MDR_DEF: "パンノニア"
- MDR_ADJ: "パンノニア"
- MDR_autonomy_cleansing_area: "パンノニア浄化区域"
- MDR_autonomy_cleansing_area_DEF: "パンノニア浄化区域"
+ DNB: "ドナブスカ"
+ DNB_DEF: "ドナブスカ"
+ DNB_ADJ: "ドナブスカ"
+ DNB_autonomy_cleansing_area: "ドナブスカ浄化区域"
+ DNB_autonomy_cleansing_area_DEF: "ドナブスカ浄化区域"
+
+ RPZ: "パンノニア占領区域"
+ RPZ_DEF: "パンノニア占領区域"
+ RPZ_ADJ: "パンノニア"
+ CHZ: "北ハンガリー占領区域"
+ CHZ_DEF: "北ハンガリー占領区域"
+ CHZ_ADJ: "北ハンガリー"
 
  CZE_conservatism_democratic: "チェコ共和国"
  CZE_communism_government: "チェコ革命戦線"
