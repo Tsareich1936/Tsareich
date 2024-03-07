@@ -649,11 +649,184 @@ start_experience_factor = 0.5
 	division = {
 		location = 9645
 		division_template = "Pekhotnye divizii"
-start_experience_factor = 0.5
+		start_experience_factor = 0.5
 	}
 	#52
-
-
+	division = {
+		location = 12911
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 5222
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 7251
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 9833
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 9833
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 12333
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 947
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 6912
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 12320
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 12434
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 11232
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 4660
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 11704
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 6464
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 11746
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 4473
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 12359
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 12029
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 7560
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 6997
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 957
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 3532
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 334
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 9532
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 584
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 11746
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 11479
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 11853
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 9753
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 12991
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 1610
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 4111
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 9263
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 6642
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
+	division = {
+		location = 10510
+		division_template = "Pekhotnye divizii"
+		start_experience_factor = 0.5
+	}
 	#to 88
 	
 	#grenadier
