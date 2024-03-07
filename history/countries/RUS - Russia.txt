@@ -126,7 +126,7 @@ add_ideas = {
 	#debug
 
 	#laws
-	volunteer_only
+	limited_conscription
 	export_focus
 	# civilian_economy
 	traditional_economy
