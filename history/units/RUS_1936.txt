@@ -1289,15 +1289,212 @@ start_experience_factor = 0.4
 		start_equipment_factor = 0.2
 	}
 
-
-	#rifle
+	#border
 	division = {
-		location = 525
-		division_template = "Strelkovye divizii"
-		start_experience_factor = 0.4
+		location = 279
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
 	}
-	#horse
-	#cosack
+	division = {
+		location = 334
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 388
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 3532
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 11558
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 584
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 6464
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 11398
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 3410
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 6431
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 9425
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 9548
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 3707
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 3701
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 11142
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 9140
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 849
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 362
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+
+	#
+
+	division = {
+		location = 11811
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 6813
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 7620
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 9868
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 9932
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+
+	#
+	division = {
+		location = 10559
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 4725
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 4805
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 6684
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 3977
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 11879
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 12612
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 1840
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+
+	#
+	division = {
+		location = 8183
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
+	division = {
+		location = 12941
+		division_template = "Otdelnjy korpus pogranichnoy strazhi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.175
+	}
 }
 
 #########################

@@ -19,6 +19,7 @@ ideas = {
                 stability_factor = 0.35
                 political_power_factor = 0.15
                 neutrality_drift = 0.02
+                conscription = 0.005
             }
             rule = {
 				can_create_factions = yes
@@ -44,7 +45,7 @@ ideas = {
                 stability_factor = 0.35
                 political_power_factor = 0.15
                 neutrality_drift = 0.03
-                conscription = 0.005
+                conscription = 0.01
             }
             rule = {
 				can_create_factions = yes
@@ -70,7 +71,7 @@ ideas = {
                 stability_factor = 0.35
                 political_power_factor = 0.15
                 neutrality_drift = 0.03
-                conscription = 0.005
+                conscription = 0.01
                 mobilization_speed = 0.15
             }
             rule = {
@@ -117,7 +118,7 @@ ideas = {
             }
             removal_cost = -1
             modifier = {
-                conscription_factor = -0.35
+                conscription_factor = -0.25
                 mobilization_speed = -0.25
             }
         }

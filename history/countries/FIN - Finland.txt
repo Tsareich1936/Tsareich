@@ -2,9 +2,6 @@
 
 set_oob = "FIN_1936"
 
-145 = {
-	set_demilitarized_zone = yes
-}
 
 
 
