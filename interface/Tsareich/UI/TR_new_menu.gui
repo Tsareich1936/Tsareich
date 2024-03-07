@@ -7,12 +7,13 @@ guiTypes = {
 		position = { x=217 y=36 }
 		buttonType = {
 			name = TR_economy_button
-			quadTextureSprite = GFX_gui_blank_button
+			quadTextureSprite = GFX_gui_economy_button
 			position = { x= -48 y = 0 }
 			frame = 1
 			shortcut = "a"
 			clicksound = click_close
 			oversound = ui_menu_over
+			pdx_tooltip = "ECONOMY_BUTTON_TT"
 		}
 	}
 	containerWindowType = {

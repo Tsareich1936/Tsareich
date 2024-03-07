@@ -13,6 +13,12 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = GetEconomyButton
+	text = {
+		localization_key = ECONOMY_TT
+	}
+}
+defined_text = {
 	name = GetMonetToolTip
 	text = {
 		localization_key = MONEY_tt

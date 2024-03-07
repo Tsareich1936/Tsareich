@@ -4,4 +4,9 @@ spriteTypes = {
 		textureFile = "gfx/interface/topbar/blank_button.dds"
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = GFX_gui_economy_button
+		textureFile = "gfx/interface/UI/economicview/economy_button.dds"
+		noOfFrames = 2
+	}
 }

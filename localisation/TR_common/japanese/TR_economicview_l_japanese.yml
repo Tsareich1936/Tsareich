@@ -5,6 +5,8 @@
  MONEY_tt: "§Y$MONEY_MONEY$§!\n§Y$BUDGET_INCOME$§!\n $taxes_ratio$: $taxes_amount$ \n 以下の影響を受ける\n  民需工場: [?num_of_civilian_factories|Y.0]\n  人口: [?max_manpower_k|Y]§Yk§!\n  税率: §Y$taxes_ratio_percentage$§!\n $diplomatic_income$:\n $import_tax$:\n§Y$BUDGET_EXPENSES$§!\n $social_security$:\n $civil_servant_saraly$:\n $pay_government_bond$:\n $war_expenses$:\n $building_expenses$:"
  MONEY_tt_delayed: ""
  ECONOMIC_ECONOMIC: "経済"
+ ECONOMY_BUTTON_TT: "[GetEconomyButton]"
+ ECONOMY_TT: "§Y$ECONOMIC_ECONOMIC$§!\n支出と収入を管理し国家の経済を操作する。"
  ECONOMIC_BUDGET: "予算"
  BUDGET_INCOME: "歳入"
  taxes_ratio: "税収"
