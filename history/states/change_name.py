@@ -1,7 +1,7 @@
 import glob
 import os
 import re
-fist_num = 970
+fist_num = 970 #新規追加分のステートの最初の値　パワーリネームで事前に変えておく
 files = glob.glob("history/states/*.txt")
 name_list = [os.path.basename(file) for file in files]
 for i in name_list:
