@@ -1,6 +1,10 @@
 add_namespace = "TR_Russia"
 add_namespace = "TR_Russia_diplo"
+add_namespace = "TR_Russia_tsarwar"
 add_namespace = "TR_Russia_news"
+
+
+
 
 
 country_event = {
@@ -101,6 +105,29 @@ country_event = {
 		}
     }
 }
+
+############## tsarwar ###################
+
+
+country_event = {
+    id = TR_Russia_TW.1
+    title = TR_Russia_TW.1.t
+    desc = TR_Russia_TW.1.d
+    picture = GFX_report_event_chinese_soldiers_mountain
+
+    is_triggered_only = yes
+    immediate = {
+
+    }
+    option = { #最後通牒
+        name = TR_Russia_TW.1.a
+
+    }
+
+}
+
+
+##########################################
 
 
 # シベリア測量

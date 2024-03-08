@@ -98,10 +98,15 @@ RUS_debug_decision_c = {
 		cost = 0
         days_remove = 0
         complete_effect = {
-			white_peace = {
-                tag = PER
-                message = TR_Russia_per_peace_tt.1
-            }
+            start_civil_war = {
+				ideology = fascism
+				size = 0.1
+				army_ratio = 0.15
+				navy_ratio = 0.01
+				air_ratio = 0
+				capital = 263
+				states = { 263 264 247 246 208 244}
+			}
         }
     }
 

@@ -1,221 +1,11 @@
 ideas = {
     country = {
+
+        ##########################
         RUS_winner_of_wwi = {
-            picture = SOV_the_true_tsars
+            picture = generic_army_problems
             allowed = {
-            }
-            available = {
 
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                war_support_factor = -0.15
-                stability_factor = 0.35
-                political_power_factor = 0.15
-                neutrality_drift = 0.02
-                conscription = 0.005
-            }
-            rule = {
-				can_create_factions = yes
-                can_send_volunteers = yes
-			}
-        }
-
-        RUS_winner_of_wwi_1 = {
-            picture = SOV_the_true_tsars
-            allowed = {
-            }
-            available = {
-
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                stability_factor = 0.35
-                political_power_factor = 0.15
-                neutrality_drift = 0.03
-                conscription = 0.01
-            }
-            rule = {
-				can_create_factions = yes
-                can_send_volunteers = yes
-			}
-        }
-
-        RUS_winner_of_wwi_2 = {
-            picture = SOV_the_true_tsars
-            allowed = {
-            }
-            available = {
-
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                stability_factor = 0.35
-                political_power_factor = 0.15
-                neutrality_drift = 0.03
-                conscription = 0.01
-                mobilization_speed = 0.15
-            }
-            rule = {
-				can_create_factions = yes
-			}
-        }
-
-
-        RUS_wwi_army = {
-            picture = chi_army_corruption2
-            allowed = {
-            }
-            available = {
-
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                army_attack_factor = -0.1
-                army_defence_factor = -0.1
-                land_doctrine_cost_factor = 0.15
-                naval_doctrine_cost_factor = 0.15
-                air_doctrine_cost_factor = 0.3
-            }
-        }
-
-        RUS_nomad_of_russia = { #todo name change
-            picture = ETH_national_studs
-            allowed = {
-            }
-            available = {
-
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                conscription_factor = -0.25
-                mobilization_speed = -0.25
-            }
-        }
-
-        RUS_agricultural_economy = {
-            picture = POL_disjointed_industry
-            allowed = {
-            }
-            available = {
-
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                war_support_factor = -0.25
-                consumer_goods_factor = 0.75
-                local_resources_factor = -0.25
-                industrial_capacity_factory = -0.25
-                industrial_capacity_dockyard = -0.25
-                production_speed_buildings_factor = -0.3
-            }
-        }
-
-        RUS_agricultural_economy_1 = {
-            picture = POL_disjointed_industry
-            allowed = {
-            }
-            available = {
-
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                war_support_factor = -0.25
-                consumer_goods_factor = 0.5
-                local_resources_factor = -0.15
-                industrial_capacity_factory = -0.15
-                industrial_capacity_dockyard = -0.15
-                production_speed_buildings_factor = -0.2
-            }
-        }
-
-        RUS_agricultural_economy_2 = {
-            picture = POL_disjointed_industry
-            allowed = {
-            }
-            available = {
-
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                war_support_factor = -0.25
-                consumer_goods_factor = 0.25
-                production_speed_buildings_factor = -0.1
-            }
-        }
-
-        RUS_low_research = {
-            picture = jap_duplicate_research
-            allowed = {
-            }
-            available = {
-
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                research_speed_factor = -0.3
-            }
-
-        }
-
-
-        RUS_MNE_Lyceum_idea = {
-            picture = generic_research_bonus
-            allowed = {
             }
             available = {
                 
@@ -223,16 +13,121 @@ ideas = {
             cancel = {
 
             }
-            allowed_civil_war = {
-                always = yes
+            removal_cost = -1
+            modifier = {
+                drift_defence_factor = 0.5
+                political_power_factor = 0.2
+                stability_factor = 0.25
+                war_support_factor = -0.25
+                mobilization_speed = -0.5
+                conscription = 0.005
+            }
+            rule = {
+                can_create_factions = yes
+            }
+        }
+
+        RUS_1935_budget  = {
+            picture = generic_army_problems
+            allowed = {
+
+            }
+            available = {
+                
+            }
+            cancel = {
+
             }
             removal_cost = -1
             modifier = {
-                research_speed_factor = 0.075
-                consumer_goods_factor = 0.025
+                consumer_goods_factor = 0.35
+                industrial_capacity_factory = -0.1
+                production_speed_arms_factory_factor = -0.1
+                production_speed_dockyard_factor = 0.25
+                industrial_capacity_dockyard = 0.25
             }
-
         }
+
+        RUS_attack_doctrine = {
+            picture = generic_army_problems
+            allowed = {
+
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            removal_cost = -1
+            modifier = {
+                land_doctrine_cost_factor = 0.25
+                air_doctrine_cost_factor = 0.35
+                army_attack_factor = 0.05
+                army_defence_factor = -0.15
+                army_org_factor = -0.2
+                army_strength_factor = -0.2
+            }
+        }
+
+        RUS_constitution_bad = {
+            picture = generic_army_problems
+            allowed = {
+
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            removal_cost = -1
+            modifier = {
+                drift_defence_factor = -0.35
+                political_power_factor = 0.15
+                stability_weekly = -0.0025
+                war_support_factor = 0.05
+            }
+        }
+
+        RUS_conscription_diff = {
+            picture = generic_army_problems
+            allowed = {
+
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            removal_cost = -1
+            modifier = {
+                conscription_factor = -0.25
+                training_time_army_factor = 0.15
+            }
+        }
+        RUS_volks_army_diff = {
+            picture = generic_army_problems
+            allowed = {
+
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            removal_cost = -1
+            modifier = {
+                army_core_defence_factor = -0.015
+                command_power_gain = -0.15
+                stability_factor = -0.05
+                custom_modifier_tooltip = RUS_idea_volks_army.tt
+            }
+        }
+
+        ##########################
 
         RUS_dropped_army = {
             picture = generic_army_problems
@@ -339,167 +234,7 @@ ideas = {
             }
         }
  
-        RUS_stock_exchange = {
-            picture = gre_schachtplan3
-            allowed = {
-                
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                military_industrial_organization_design_team_assign_cost = -0.35
-                production_speed_buildings_factor = 0.05
-                industrial_capacity_factory = 0.1
-                industrial_capacity_dockyard = 0.1
-                
-            }
-        }
-
-        RUS_stock_exchange_1 = {
-            picture = gre_schachtplan3
-            allowed = {
-                
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                military_industrial_organization_design_team_assign_cost = -0.35
-                production_speed_buildings_factor = 0.1
-                industrial_capacity_factory = 0.1
-                industrial_capacity_dockyard = 0.1
-                production_factory_efficiency_gain_factor = 0.1
-            }
-        }
-        
-        RUS_national_construction_idea = {
-            picture = generic_railroads
-            allowed = {
-                
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                production_cost_infrastructure_factor = -0.05
-                production_cost_supply_node_factor = -0.2
-            }
-        }
-
-        RUS_cost_of_buying_arms_factory = {
-            picture = SPR_seize_the_gold_reserves
-            allowed = {
-                
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                consumer_goods_factor = 0.2
-            }
-        }
-
-        RUS_shikolsky_planes_idea = {
-            picture = SWE_land_air_warfare
-            allowed = {
-                
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            equipment_bonus = {
-                medium_plane_fighter_airframe = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-                small_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-            }
-        }
-
-        RUS_three_year_buildup = {
-            picture = SOV_fourth_five_year_plan
-            allowed = {
-                
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                production_speed_arms_factory_factor = 0.5
-                production_speed_dockyard_factor = 0.5
-                consumer_goods_factor = -0.35
-            }
-        }
-
-        RUS_deep_battle = {
-            picture = NORDIC_army_communist
-            allowed = {
-                
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                army_attack_factor = 0.08
-                army_defence_factor = 0.05
-                army_org_factor = 0.1
-                supply_consumption_factor = -0.1
-                winter_attrition_factor = -0.5
-            }
-        }
+    
 
         RUS_empire_diplo = {
             picture = generic_intel_bonus
@@ -621,49 +356,6 @@ ideas = {
             
         }
 
-        RUS_church_law = {
-            picture = YUG_orthodox_church_support
-            allowed = {
-                
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                political_power_factor = 0.1
-                research_speed_factor = -0.025
-                army_org_factor = 0.075
-            }
-        }
-
-        RUS_holy_war = {
-            picture = SPA_crusade_against_democracy
-            allowed = {
-                
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                command_power_gain_mult = 0.1
-                army_core_defence_factor = 0.05
-                conscription_factor = 0.15
-            }
-        }
         RUS_op_air = {
             picture = generic_aircraft_support
             allowed = {

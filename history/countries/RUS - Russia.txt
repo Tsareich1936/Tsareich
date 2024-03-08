@@ -117,11 +117,11 @@ if = {
 # ideas
 add_ideas = {
 	RUS_winner_of_wwi
-	# RUS_agricultural_economy
-	RUS_low_research
-	RUS_nomad_of_russia
-	RUS_wwi_army
-	RUS_navy_money_too_much
+	RUS_1935_budget
+	RUS_attack_doctrine
+	RUS_constitution_bad
+	RUS_conscription_diff
+	RUS_volks_army_diff
 
 	#debug
 
@@ -238,12 +238,12 @@ SYR = {
 #var
 set_variable = { var = rus_finland_autonomous_power value = 20 }
 #traditional economy
-set_variable = { var = rus_TE_consumer_goods_factor value = 1.5 }
+set_variable = { var = rus_TE_consumer_goods_factor value = 0.5 }
 set_variable = { var = rus_TE_industrial_capacity_factor value = -0.75 }
-set_variable = { var = rus_TE_industrial_capacity_dockyard value = -0.2 }
+set_variable = { var = rus_TE_industrial_capacity_dockyard value = 0 }
 set_variable = { var = rus_TE_production_speed_buildings_factor value = -0.75 }
-set_variable = { var = rus_TE_local_resources_factor value = -0.5 }
-set_variable = { var = rus_TE_supply_node_range value = -0.1 }
+set_variable = { var = rus_TE_local_resources_factor value = -0.25 }
+set_variable = { var = rus_TE_supply_node_range value = -0.25 }
 
 # budget
 
