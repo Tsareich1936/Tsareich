@@ -1,8 +1,8 @@
 state={
-	id=967
-	name="STATE_967"
+	id=1002
+	name="STATE_1002"
 	provinces={
-		13280 13321 13323 13324 
+		13370 13411 13413 13414 
 	}
 	history={
 		owner = JAP
@@ -10,9 +10,7 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-		victory_points = {
-			13280 3
-		}
+		
 	}
 	manpower=799000
 	state_category = rural

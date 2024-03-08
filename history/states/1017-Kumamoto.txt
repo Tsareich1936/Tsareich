@@ -1,7 +1,7 @@
 
 state={
-	id=982
-	name="STATE_982"
+	id=1017
+	name="STATE_1017"
 
 	history={
 		owner = JAP
@@ -12,13 +12,13 @@ state={
 
 		}
 		victory_points = {
-			11925 15
+			11925 15 
 		}
 
 	}
 
 	provinces={
-		1183 11925 11949 12006 13353 
+		1183 11925 11949 12006 13443 
 	}
 	manpower=1387000
 	buildings_max_level_factor=1.000

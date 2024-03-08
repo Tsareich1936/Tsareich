@@ -1,6 +1,6 @@
 state={
-	id=1065
-	name="STATE_1065"
+	id=1100
+	name="STATE_1100"
 	history={
 		owner = GER
 		add_core_of = GER

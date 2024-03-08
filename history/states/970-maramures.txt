@@ -1,6 +1,6 @@
 state={
-	id=935
-	name="STATE_935"
+	id=970
+	name="STATE_970"
 	history={
 		owner = TRA
 		buildings = {

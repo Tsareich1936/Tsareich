@@ -1,7 +1,7 @@
 
 state={
-	id=953
-	name="STATE_953"
+	id=988
+	name="STATE_988"
 
 	history={
 		owner = JAP
@@ -9,17 +9,15 @@ state={
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 3
+
 		}
-		victory_points = {
-			13299 3
-		}
-		victory_points = {
-			13297 1
-		}
+		
+		
+
 	}
 
 	provinces={
-		1024 4118 4122 13295 13297 13299 
+		1024 4118 4122 13385 13387 13389 
 	}
 	manpower=1582000
 	buildings_max_level_factor=1.000

@@ -19,5 +19,7 @@ for i in name_list:
         data_lines = data_lines.replace("\tid={}".format(str(spilit_name[0]-35)), "\tid={}".format(spilit_name[0]))
         data_lines = data_lines.replace("\tid = {}".format(str(spilit_name[0]-35)), "\tid={}".format(spilit_name[0]))
         data_lines = data_lines.replace("\tname=\"STATE_{}\"".format(str(spilit_name[0]-35)), "\tname=\"STATE_{}\"".format(spilit_name[0]))
-        data_lines = data_lines.replace("\tname = \"STATE_{}\"".format(str(spilit_name[0]-35)), "\tname = \"STATE_{}\"".format(spilit_name[0]))
+        data_lines = data_lines.replace("\tname = \"STATE_{}\"".format(str(spilit_name[0]-35)), "\tname=\"STATE_{}\"".format(spilit_name[0]))
         print(data_lines)
+        with open("history/states/"+i,mode="w")as f:
+            data_lines = f.write(data_lines)
