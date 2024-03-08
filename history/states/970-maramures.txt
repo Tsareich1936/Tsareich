@@ -1,0 +1,21 @@
+state={
+	id=935
+	name="STATE_935"
+	history={
+		owner = TRA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = ROM
+		add_core_of = TRA
+		}
+	provinces={
+		746 9704 11676 
+	}
+	manpower=632900
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

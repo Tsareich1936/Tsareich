@@ -1,0 +1,29 @@
+state={
+	id=973
+	name="STATE_973"
+	provinces={
+		1136 11960 13348 13350 
+	}
+	history = {
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			industrial_complex = 1
+			dockyard = 1
+			infrastructure = 4
+			13350 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			11960 35
+		}
+		victory_points = {
+		    13350 3
+		}
+	}
+	manpower=1703000
+	state_category = metropolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

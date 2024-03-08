@@ -1,0 +1,24 @@
+state={
+	id=936
+	name="STATE_936"
+	provinces={
+		6449 
+	}
+	history={
+		victory_points = {
+			6449 1
+		}
+		buildings = {
+			infrastructure = 3
+		    6449 = {
+				naval_base = 2
+			}
+		}
+		owner = ENG
+		add_core_of = FRA
+		add_core_of = FGE
+		}
+	manpower=10000
+	state_category= rural
+	local_supplies=1
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=937
+	name="STATE_937"
+
+	history={
+		victory_points = {
+			11548 3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+		    11548 = {
+				naval_base = 3
+			}
+
+		}
+		add_core_of = FRA
+		add_core_of = FGE
+		owner = ENG
+	}
+
+	provinces={
+		575 11548 
+	}
+	manpower=150000
+	state_category = town
+	local_supplies=1
+}

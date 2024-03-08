@@ -1,0 +1,22 @@
+state={
+	id=966
+	name="STATE_966"
+	provinces={
+		1067 7102 13317 13318 
+	}
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			7102 3
+		}
+	}
+	manpower=647000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
