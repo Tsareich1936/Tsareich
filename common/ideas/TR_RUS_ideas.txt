@@ -127,6 +127,57 @@ ideas = {
             }
         }
 
+        ###battle
+
+        RUS_geeran_battle_line = {
+            picture = generic_army_problems
+            allowed = {
+
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            removal_cost = -1
+            modifier = {
+                political_power_cost = 0.05
+                research_speed_factor = -0.005
+                
+                custom_modifier_tooltip = RUS_BL_tt.per
+            }
+            targeted_modifier = {
+                tag = PER
+                attack_bonus_against = 0.05
+                defense_bonus_against = 0.05
+            }
+        }
+        RUS_germany_battle_line = {
+            picture = generic_army_problems
+            allowed = {
+
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            removal_cost = -1
+            modifier = {
+                political_power_cost = 0.05
+                research_speed_factor = -0.005
+                
+                custom_modifier_tooltip = RUS_BL_tt.ger
+            }
+            targeted_modifier = {
+                tag = GER
+                attack_bonus_against = 0.05
+                defense_bonus_against = 0.05
+            }
+        }
+
         ##########################
 
         RUS_dropped_army = {
