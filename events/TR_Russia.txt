@@ -753,7 +753,7 @@ country_event = {
             742 = {
                 transfer_state_to = TAJ
             }
-            944 = {
+            979 = {
                 transfer_state_to = SYR
             }
             SYR = {
@@ -785,14 +785,14 @@ country_event = {
 
     option = {
         name = TR_Russia.15.a #よし。
-        948 = {
+        983 = {
             add_resource = {
                 type = oil
                 amount = 48
             }
             add_manpower = 25000
         }
-        946 = {
+        981 = {
             add_resource = {
                 type = oil
                 amount = 12

@@ -854,7 +854,7 @@ add_namespace = TR_america_socialist
 			FGA = {
 				CSA = {
 					transfer_state = 375
-					transfer_state = 1021
+					transfer_state = 1056
 				}
 				transfer_units_fraction = {
 					target = CSA
@@ -1064,11 +1064,11 @@ add_namespace = TR_america_socialist
 					transfer_state = 379
 					transfer_state = 385
 					transfer_state = 386
-					transfer_state = 1031
-					transfer_state = 1032
-					transfer_state = 1033
+					transfer_state = 1066
+					transfer_state = 1067
+					transfer_state = 1068
 					set_capital = {
-						state = 1031
+						state = 1066
 					}
 					set_rule = {
 						can_join_factions = no
@@ -1167,9 +1167,9 @@ add_namespace = TR_america_socialist
 								state = 379
 								state = 385
 								state = 386
-								state = 1031
-								state = 1032
-								state = 1033
+								state = 1066
+								state = 1067
+								state = 1068
 							}
 						}
 					}
@@ -1183,9 +1183,9 @@ add_namespace = TR_america_socialist
 								state = 379
 								state = 385
 								state = 386
-								state = 1031
-								state = 1032
-								state = 1033
+								state = 1066
+								state = 1067
+								state = 1068
 							}
 						}
 					}
@@ -1319,8 +1319,8 @@ add_namespace = TR_america_socialist
 						OR = {
 							state = 361
 							state = 362
-							state = 1035
-							state = 1036
+							state = 1070
+							state = 1071
 						}
 					}
 					create_unit = {
@@ -1349,9 +1349,9 @@ add_namespace = TR_america_socialist
 				transfer_state = 394
 				transfer_state = 395
 				transfer_state = 396
-				transfer_state = 1020
-				transfer_state = 1038
-				transfer_state = 1039
+				transfer_state = 1055
+				transfer_state = 1073
+				transfer_state = 1074
 				set_capital = {
 					state = 393
 				}
@@ -1405,7 +1405,7 @@ add_namespace = TR_america_socialist
 					can_join_factions = no
 				}
 				set_capital = {
-					state = 1038
+					state = 1073
 				}
 				division_template = {
 					name = "Milita Division"
@@ -1458,11 +1458,11 @@ add_namespace = TR_america_socialist
 				375	= {
 					add_core_of = TXS
 				}
-				1021 = {
+				1056 = {
 					add_core_of = TXS
 				}
 				transfer_state = 375
-				transfer_state = 1021
+				transfer_state = 1056
 				set_rule = {
 					can_join_factions = no
 				}

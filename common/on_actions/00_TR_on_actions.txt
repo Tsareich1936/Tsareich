@@ -187,9 +187,9 @@ on_actions = {
 			#VIN gomu concessions			
 			VIN = {
 				give_resource_rights = { receiver = FRA state = 741 }
-				give_resource_rights = { receiver = FRA state = 1022 }
-				give_resource_rights = { receiver = FRA state = 1028 }
-				give_resource_rights = { receiver = FRA state = 1029 } 
+				give_resource_rights = { receiver = FRA state = 1057 }
+				give_resource_rights = { receiver = FRA state = 1053 }
+				give_resource_rights = { receiver = FRA state = 1064 } 
 			}
 		}
 	effect = {#SPR set up

@@ -144,8 +144,8 @@ country_event = {#フランスからの撤退
 	immediate = {
 		hidden_effect = {
 			FRA = {
-				transfer_state = 936
-				transfer_state = 937
+				transfer_state = 971
+				transfer_state = 972
 			}
 		}
 	}

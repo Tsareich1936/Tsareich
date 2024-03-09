@@ -1952,7 +1952,7 @@ country_event = { # civil war by communist
 				ideology = ROOT
 				size = 0.3
 				states = {
-					953 967 535 959 962 963 955 965 949 958 282 964 968 970 971 973 950 981 982 977 978 979 530
+					988 1002 535 994 997 998 990 1000 984 993 282 999 1003 1005 1006 1008 985 1016 1017 1012 1013 1014 530
 				}
 				
 			}		
@@ -2261,7 +2261,7 @@ country_event = {
 		}
 		give_resource_rights = {
 			receiver = JAP
-			state = 991
+			state = 1026
 		}
 	}
 	option = {
@@ -2572,7 +2572,7 @@ country_event = {
 		}
 		give_resource_rights = {
 			receiver = JAP
-			state = 1014
+			state = 1049
 		}
 	}
 	option = {

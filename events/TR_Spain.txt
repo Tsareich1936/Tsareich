@@ -153,11 +153,11 @@ country_event = {
             176  = { transfer_state_to = SPB }
 			791  = { transfer_state_to = SPB }
 			172  = { transfer_state_to = SPC }
-			1041  = { transfer_state_to = SPC }
-			1044  = { transfer_state_to = SPC }
+			1076  = { transfer_state_to = SPC }
+			1079  = { transfer_state_to = SPC }
 			167  = { transfer_state_to = SPD }
 			794  = { transfer_state_to = SPD }
-			1043  = { transfer_state_to = SPD }
+			1078  = { transfer_state_to = SPD }
 			165  = { transfer_state_to = CAT }
 			792  = { transfer_state_to = NAV }
 			SPR = {
@@ -589,7 +589,7 @@ country_event = { #神聖スペイン
 				}
 			}
             175  = { transfer_state_to = SPE }
-			1042  = { transfer_state_to = SPE }
+			1077  = { transfer_state_to = SPE }
 			declare_war_on = {
 				target = SPE
 				type = civil_war
@@ -602,7 +602,7 @@ country_event = { #神聖スペイン
 			}	
 			SPE = {
 				set_capital = {
-					state = 1042
+					state = 1077
 				}
 				add_ideas = TR_SPR_civwar
 			    add_ideas = war_economy

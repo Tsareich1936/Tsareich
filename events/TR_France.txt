@@ -51,7 +51,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		1044 = { transfer_state_to = FRA }
+		1079 = { transfer_state_to = FRA }
 		FRA = {
 			country_event = { 
 				id = TR_FRA_SPsibaku.5
@@ -72,7 +72,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		1043 = { transfer_state_to = FRA }
+		1078 = { transfer_state_to = FRA }
 		FRA = {
 			country_event = { 
 				id = TR_FRA_SPsibaku.6

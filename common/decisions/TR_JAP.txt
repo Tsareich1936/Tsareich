@@ -2809,7 +2809,7 @@ JAP_airbornes = {
 			has_tech = paratroopers
 			num_battalions_in_states = {
 				count > 1
-				states = {982 }
+				states = {1017 }
 				exclude = {
 					paratrooper
 				}
@@ -2841,7 +2841,7 @@ JAP_airbornes = {
 			has_tech = paratroopers
 			num_battalions_in_states = {
 				count > 1
-				states = {963 }
+				states = {998 }
 				exclude = {
 					paratrooper
 				}
