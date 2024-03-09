@@ -31,3 +31,9 @@ defined_text = {
 		localization_key = taxes_ratio_tt_gotten
 	}
 }
+defined_text = {
+	name = GetSocialSecurityEffect
+	text = {
+		localization_key = social_security_tt_gotten
+	}
+}
