@@ -104,7 +104,7 @@ country_event = {
 			
 			add_state_core = 340
 			add_state_core = 797
-			add_state_core = 943
+			add_state_core = 978
 			add_state_core = 341
 		}
 	}
@@ -213,12 +213,12 @@ country_event = {
 
 			transfer_state = 340
 			transfer_state = 797
-			transfer_state = 943
+			transfer_state = 978
 			transfer_state = 341
 			
 			add_state_core = 340
 			add_state_core = 797
-			add_state_core = 943
+			add_state_core = 978
 			add_state_core = 341
 		}
 	}

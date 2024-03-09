@@ -1,0 +1,21 @@
+state={
+	id=1052
+	name="STATE_1052"
+	provinces={
+		4445 7629 9675 13158 
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		victory_points = {
+			4445 1
+		}
+	}
+	manpower=3574000
+	state_category = city
+	local_supplies=0.000
+}

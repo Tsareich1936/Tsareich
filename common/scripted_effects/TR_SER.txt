@@ -6,25 +6,28 @@ TR_SER_balkan_war_peace = {
 		leave_faction = yes
 		DNB = {
 			transfer_state = 155
-			transfer_state = 1059
-			transfer_state = 1073
-			transfer_state = 1074
-			transfer_state = 1075
+			transfer_state = 1094
+			transfer_state = 1108
+			transfer_state = 1109
+			transfer_state = 1110
 			every_owned_state = {
-				remove_core_of = PREV
+				remove_core_of = PREV.PREV
+				add_core_of = PREV
 			}
 		}
 		RPZ = {
 			transfer_state = 154
-			transfer_state = 1076
+			transfer_state = 1111
 			every_owned_state = {
-				remove_core_of = PREV
+				remove_core_of = PREV.PREV
+				add_core_of = PREV
 			}
 		}
 		CHZ = {
-			transfer_state = 1072
+			transfer_state = 1107
 			every_owned_state = {
-				remove_core_of = PREV
+				remove_core_of = PREV.PREV
+				add_core_of = PREV
 			}
 		}
 		SER = {
@@ -41,7 +44,7 @@ TR_SER_balkan_war_peace = {
 			transfer_state = 82
 			transfer_state = 83
 			transfer_state = 84
-			transfer_state = 935
+			transfer_state = 970
 			set_autonomy = {
 				target = RPZ
 				autonomy_state = autonomy_supervised_state
@@ -56,94 +59,7 @@ TR_SER_balkan_war_peace = {
 				transfer_state = 71
 				transfer_state = 73
 				transfer_state = 664
-				transfer_state = 1071
-			}
-			set_autonomy = {
-				target = CHZ
-				autonomy_state = autonomy_supervised_state
-				freedom_level = 0.3
-			}
-			set_autonomy = {
-				target = SLO
-				autonomy_state = autonomy_supervised_state
-				freedom_level = 0.3
-			}
-		}
-		BUL = {
-			every_owned_state = {
-				set_state_controller_to = SER
-			}
-			SER = {
-				start_peace_conference = {
-					tag = BUL
-					score_factor = 100
-				}
-			}
-		}
-	}
-	SER = {
-		dismantle_faction = yes
-	}
-}
-d_balkan_war_peace = {
-	HUN = {
-		white_peace = SER
-		white_peace = ROM
-		white_peace = CZE
-		leave_faction = yes
-		DNB = {
-			transfer_state = 155
-			transfer_state = 1059
-			transfer_state = 1073
-			transfer_state = 1074
-			transfer_state = 1075
-			every_owned_state = {
-				remove_core_of = PREV
-			}
-		}
-		RPZ = {
-			transfer_state = 154
-			transfer_state = 1076
-			every_owned_state = {
-				remove_core_of = PREV
-			}
-		}
-		CHZ = {
-			transfer_state = 1072
-			every_owned_state = {
-				remove_core_of = PREV
-			}
-		}
-		SER = {
-			transfer_state = 45
-			transfer_state = 764
-			set_autonomy = {
-				target = DNB
-				autonomy_state = autonomy_cleansing_area
-				freedom_level = 0
-			}
-		}
-		ROM = {
-			transfer_state = 76
-			transfer_state = 82
-			transfer_state = 83
-			transfer_state = 84
-			transfer_state = 935
-			set_autonomy = {
-				target = RPZ
-				autonomy_state = autonomy_supervised_state
-				freedom_level = 0.3
-			}
-		}
-		CZE = {
-			SLO = {
-				leave_faction = yes
-				white_peace = SER
-				transfer_state = 70
-				transfer_state = 71
-				transfer_state = 73
-				transfer_state = 664
-				transfer_state = 1071
+				transfer_state = 1106
 			}
 			set_autonomy = {
 				target = CHZ

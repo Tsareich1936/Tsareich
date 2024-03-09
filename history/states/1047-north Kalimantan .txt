@@ -1,0 +1,22 @@
+state={
+	id=1047
+	name="STATE_1047"
+	provinces={
+		1404 2047 7415 12243 
+	}
+	history = {
+		owner = INS
+		add_core_of = INS
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	state_category = rural
+	resources = {
+		rubber = 11
+	}
+	manpower=94894
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

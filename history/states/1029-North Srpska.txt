@@ -1,0 +1,16 @@
+state={
+	id=1029
+	name="STATE_1029"
+	provinces={
+		6619 6983 9588 9591 11574 
+	}
+	history = {
+		owner = SER
+		add_core_of = SER
+		add_core_of = BOS
+	}
+	manpower=382400
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -823,7 +823,7 @@ focus_tree = {
 			has_full_control_of_state = 592
 			has_full_control_of_state = 594
 			has_full_control_of_state = 671
-			has_full_control_of_state = 1023
+			has_full_control_of_state = 1058
 		}
 		ai_will_do = {
 			factor = 15

@@ -1,0 +1,19 @@
+state={
+	id=1060
+	name="STATE_1060"
+	provinces={
+		10330 10356 10456 
+	}
+	history = {
+		owner = VIN
+		add_core_of = VIN
+		add_core_of = SIA
+		add_core_of = LAO
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower= 36500
+	state_category = pastoral
+	local_supplies=0.0001
+}

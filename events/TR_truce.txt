@@ -128,7 +128,7 @@ country_event = {
 		766 = {
 			transfer_state_to = GER
 		}
-		938 = {
+		973 = {
 			transfer_state_to = GER
 		}
 		192 = {

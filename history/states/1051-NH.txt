@@ -1,0 +1,21 @@
+state={
+	id=1051
+	name="STATE_1051"
+	provinces={
+		733 3712 3715 10481 
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		victory_points = {
+			733 1
+		}
+	}
+	manpower=4815400
+	state_category = city
+	local_supplies=0.000
+}

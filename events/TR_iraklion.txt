@@ -829,20 +829,20 @@ country_event = {
 			}
 			if = {
 				limit = {
-					country_exists = BUL
+					NOT = {
+						has_global_flag = TR_balkan_war_finished
+					}
 				}
 				BUL = {
-					transfer_state = 945
+					transfer_state = 980
 				}
 			}
 			if = {
 				limit = {
-					NOT = {
-						country_exists = BUL
-					}
+					has_global_flag = TR_balkan_war_finished
 				}
 				SER = {
-					transfer_state = 945
+					transfer_state = 980
 				}
 			}
 			if = {

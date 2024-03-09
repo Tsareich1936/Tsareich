@@ -1,0 +1,26 @@
+
+state={
+	id=1080
+	name="STATE_1080"
+
+	history={
+		owner = GER
+		add_core_of = GER
+		victory_points = {
+			3522 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+
+	}
+
+	provinces={
+		425 3522 3561 6441 6487 6582 9456 9560 11359 11468 11545 
+	}
+	manpower=3662546
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

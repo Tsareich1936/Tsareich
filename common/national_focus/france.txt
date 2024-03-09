@@ -472,8 +472,8 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			add_state_claim = 165
-			add_state_claim = 1043
-			add_state_claim = 1044
+			add_state_claim = 1078
+			add_state_claim = 1079
 			country_event = { 
 				id = TR_FRA_SPsibaku.1
 				days = 1
@@ -615,11 +615,11 @@ focus_tree = {
 			custom_effect_tooltip = TR_FRA_tyukaku_tt
 			hidden_effect = {
 				remove_state_claim = 165
-				remove_state_claim =  1043
-				remove_state_claim = 1044
+				remove_state_claim =  1078
+				remove_state_claim = 1079
 				add_state_core  = 165
-				add_state_core  = 1043
-				add_state_core  = 1044
+				add_state_core  = 1078
+				add_state_core  = 1079
 			}
 			remove_ideas = TR_FRA_kokuminno_situbou1
 		}

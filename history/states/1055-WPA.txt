@@ -1,0 +1,24 @@
+state={
+	id=1055
+	name="STATE_1055"
+	provinces={
+		702 862 880 3687 3697 3802 3850 3880 6705 6899 9662 9789 9836 11648 11769 11789 11800 11817 12405 
+	}
+	resources = {
+		steel = 14
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			11800 15 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+		}
+	}
+	manpower= 4262500
+	state_category = large_city
+	local_supplies=0.000
+}

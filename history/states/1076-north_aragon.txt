@@ -1,0 +1,23 @@
+state={
+	id=1076
+	name="STATE_1076"
+	resources = {
+		steel = 5
+	}
+	provinces={
+		790 899 915 6901 9813 9840 9842 11793 11819 11821 11838 13225 
+	}
+	history = {
+		owner = SPR
+		add_core_of = SPR
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			9840 3
+		}
+	}
+	manpower=221000
+	state_category = town
+	local_supplies=0.000
+}

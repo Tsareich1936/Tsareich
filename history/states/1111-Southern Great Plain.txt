@@ -1,0 +1,23 @@
+state={
+	id=1111
+	name="STATE_1111"
+	provinces={
+		679 699 9656 11644 11646 
+	}
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+
+		}
+		add_core_of = HUN
+
+	}
+	manpower = 911794
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=12.000
+}

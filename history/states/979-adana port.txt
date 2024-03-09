@@ -1,0 +1,25 @@
+state={
+	id=979
+	name="STATE_979"
+	provinces={
+		11746 
+	}
+
+	history={
+	buildings = {
+		11746 = {
+			naval_base = 8
+
+		}
+	}
+	victory_points = {
+		11746 5 
+	}
+	owner = RUS
+}
+
+	manpower=420000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

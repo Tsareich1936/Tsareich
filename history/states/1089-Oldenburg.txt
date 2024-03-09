@@ -1,0 +1,29 @@
+
+state={
+	id=1089
+	name="STATE_1089"
+
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 2
+			fuel_silo = 1
+			241 = {
+				naval_base = 8
+
+			}
+			air_base = 3
+		}
+	}
+
+	provinces={
+		241 247 309 336 
+	}
+	manpower=582400
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

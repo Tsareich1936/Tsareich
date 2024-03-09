@@ -1,0 +1,22 @@
+state={
+	id=1036
+	name="STATE_1036"
+	provinces={
+		1332 1345 1373 1533 12212 12415 
+	}
+	history = {
+		owner = INS
+		add_core_of = INS
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	state_category = rural
+	resources = {
+		rubber = 19
+	}
+	manpower=248241
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

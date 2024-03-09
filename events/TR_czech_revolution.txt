@@ -184,7 +184,7 @@ country_event = {#チェコ内戦
 			size = 0.5
 			capital = 9
 			states = {
-				9 941 942
+				9 976 977
 			}
 			keep_political_leader = yes
 			keep_political_party_members = yes
