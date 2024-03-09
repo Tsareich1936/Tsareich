@@ -13,6 +13,9 @@ ideas = {
             cancel = {
 
             }
+            allowed_civil_war = {
+                tag = RUS
+            }
             removal_cost = -1
             modifier = {
                 drift_defence_factor = 0.5
@@ -38,6 +41,9 @@ ideas = {
             cancel = {
 
             }
+            allowed_civil_war = {
+                tag = RUS
+            }
             removal_cost = -1
             modifier = {
                 consumer_goods_factor = 0.35
@@ -58,6 +64,9 @@ ideas = {
             }
             cancel = {
 
+            }
+            allowed_civil_war = {
+                tag = RUS
             }
             removal_cost = -1
             modifier = {
@@ -81,6 +90,9 @@ ideas = {
             cancel = {
 
             }
+            allowed_civil_war = {
+                tag = RUS
+            }
             removal_cost = -1
             modifier = {
                 drift_defence_factor = -0.35
@@ -101,6 +113,9 @@ ideas = {
             cancel = {
 
             }
+            allowed_civil_war = {
+                tag = RUS
+            }
             removal_cost = -1
             modifier = {
                 conscription_factor = -0.25
@@ -118,12 +133,36 @@ ideas = {
             cancel = {
 
             }
+            allowed_civil_war = {
+                tag = RUS
+            }
             removal_cost = -1
             modifier = {
                 army_core_defence_factor = -0.015
                 command_power_gain = -0.15
                 stability_factor = -0.05
                 custom_modifier_tooltip = RUS_idea_volks_army.tt
+            }
+        }
+        RUS_research_diff = {
+            picture = generic_army_problems
+            allowed = {
+
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                tag = RUS
+            }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = -0.35
+                research_sharing_per_country_bonus_factor = -1
+                military_industrial_organization_research_bonus = -0.25
             }
         }
 
@@ -141,6 +180,9 @@ ideas = {
 
             }
             removal_cost = -1
+            allowed_civil_war = {
+                tag = RUS
+            }
             modifier = {
                 political_power_cost = 0.05
                 research_speed_factor = -0.005
@@ -163,6 +205,9 @@ ideas = {
             }
             cancel = {
 
+            }
+            allowed_civil_war = {
+                tag = RUS
             }
             removal_cost = -1
             modifier = {

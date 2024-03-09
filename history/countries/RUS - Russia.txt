@@ -122,6 +122,7 @@ add_ideas = {
 	RUS_constitution_bad
 	RUS_conscription_diff
 	RUS_volks_army_diff
+	RUS_research_diff
 
 	RUS_geeran_battle_line
 	RUS_germany_battle_line

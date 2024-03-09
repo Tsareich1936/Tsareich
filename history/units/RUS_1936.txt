@@ -798,7 +798,7 @@ start_experience_factor = 0.4
 		start_experience_factor = 0.4
 	}
 	division = {
-		location = 12991
+		location = 3083
 		division_template = "Pekhotnye divizii"
 		start_experience_factor = 0.4
 	}
@@ -1490,7 +1490,7 @@ start_experience_factor = 0.4
 		start_equipment_factor = 0.175
 	}
 	division = {
-		location = 12941
+		location = 10988
 		division_template = "Otdelnjy korpus pogranichnoy strazhi"
 		start_experience_factor = 0
 		start_equipment_factor = 0.175

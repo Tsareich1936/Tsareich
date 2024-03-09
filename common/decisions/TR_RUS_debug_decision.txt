@@ -100,14 +100,21 @@ RUS_debug_decision_c = {
         complete_effect = {
             start_civil_war = {
 				ideology = fascism
-				size = 0.1
-				army_ratio = 0.15
-				navy_ratio = 0.01
+				size = 0.01
+				army_ratio = 0.02
+				navy_ratio = 0
 				air_ratio = 0
 				capital = 263
-				states = { 263 264 247 246 208 244}
+				states = { 244 208 263 }
 			}
+            every_unit_leader = {
+                limit = {
+                    has_trait = old_guard
+                }
+                set_nationality = D15
+            }
         }
+        
     }
 
 
