@@ -1,0 +1,19 @@
+leader_traits = {
+	oppose_government = { 
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			army_attack_factor = -0.75
+			army_defence_factor = -0.75
+			max_army_group_size = -4
+			max_commander_army_size = -23
+		}
+		
+	
+		new_commander_weight = {
+			factor = 0
+		}
+		
+	}
+}

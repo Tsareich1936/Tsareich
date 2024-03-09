@@ -116,6 +116,23 @@ RUS_debug_decision_c = {
         }
         
     }
-
+    RUS_aaa = {
+        allowed = {
+            tag = RUS
+        }
+        available = {
+            
+        }
+        icon = GFX_decision_unknown
+        priority = 28
+		cost = 0
+        days_remove = 0
+        complete_effect = {
+            263 = {
+                
+            }
+        }
+        
+    }
 
 }

@@ -1,5 +1,6 @@
 add_namespace = "TR_Russia"
 add_namespace = "TR_Russia_diplo"
+add_namespace = "TR_Russia_TW"
 add_namespace = "TR_Russia_tsarwar"
 add_namespace = "TR_Russia_news"
 
@@ -113,16 +114,62 @@ country_event = {
     id = TR_Russia_TW.1
     title = TR_Russia_TW.1.t
     desc = TR_Russia_TW.1.d
-    picture = GFX_report_event_chinese_soldiers_mountain
+    picture = GFX_report_event_ast_parliament_house
 
     is_triggered_only = yes
     immediate = {
 
     }
-    option = { #最後通牒
+    option = { 
         name = TR_Russia_TW.1.a
+        add_stability = -0.01
+    }
+
+}
+
+country_event = {
+    id = TR_Russia_TW.2
+    title = TR_Russia_TW.2.t
+    desc = TR_Russia_TW.2.d
+    picture = GFX_report_event_ast_parliament_house
+
+    is_triggered_only = yes
+    immediate = {
 
     }
+    #国家方針とってる
+    option = { 
+        name = TR_Russia_TW.2.a
+        263 = {
+            set_demilitarized_zone = yes
+        }
+    }
+    option = { 
+        name = TR_Russia_TW.2.b
+        if = {
+            limit = {
+                NOT = {
+                    has_completed_focus = RUS_newtsar
+                }
+            }
+            custom_effect_tooltip = RUS_TW_tsarinf.1
+        }
+        263 = {
+            set_demilitarized_zone = yes
+        }
+    }
+
+    #取ってない
+    option = { 
+        name = TR_Russia_TW.2.c
+        trigger = {
+            has_completed_focus = RUS_newtsar
+        }
+        263 = {
+            set_demilitarized_zone = yes
+        }
+    }
+
 
 }
 
