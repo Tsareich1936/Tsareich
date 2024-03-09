@@ -451,6 +451,7 @@ guiTypes = {
 			}
 			quadTextureSprite = GFX_scrollbar_horisontal_bg
 			alwaystransparent = yes
+			pdx_tooltip = social_security_tt
 		}
 		iconType = {
 			name = EV_social_security_slider_track
@@ -460,6 +461,8 @@ guiTypes = {
 			}
 			quadTextureSprite = GFX_gui_budget_scroll_track
 			alwaystransparent = yes
+			pdx_tooltip = social_security_tt
+
 		}
 		iconType = {
 			name = EV_social_security_slider_drager
@@ -468,6 +471,8 @@ guiTypes = {
 				y = 4
 			}
 			quadTextureSprite = GFX_scroll_drager
+			pdx_tooltip = social_security_tt
+
 		}
 		buttonType = {
 			name = EV_social_security_slider_left
@@ -476,6 +481,8 @@ guiTypes = {
 				y = 3
 			}
 			quadTextureSprite = GFX_scroll_left
+			pdx_tooltip = social_security_tt
+
 		}
 		buttonType = {
 			name = EV_social_security_slider_right
@@ -484,7 +491,7 @@ guiTypes = {
 				y = 3
 			}
 			quadTextureSprite = GFX_scroll_right
-			pdx_tooltip = "a"
+			pdx_tooltip = social_security_tt
 		}
 		instantTextBoxType = {
 			name = EV_social_security_percentage
@@ -495,6 +502,7 @@ guiTypes = {
 			}
 			font = hoi_18
 			format = right
+			pdx_tooltip = social_security_tt
 		}
 	}
 	containerWindowType = {

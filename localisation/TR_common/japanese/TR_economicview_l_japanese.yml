@@ -25,6 +25,8 @@
  BUDGET_EXPENSES: "歳出"
  social_security: "社会保障費"
  social_security_percentage: "[?ROOT.EV_social_security_var|%.0Y]"
+ social_security_tt: "[GetSocialSecurityEffect]"
+ social_security_tt_gotten: "§Y現在の社会保障費による影響§!\n$MODIFIER_STABILITY_FACTOR$: [?mtth:social_security_ratio_effect_1|Y.2%]\n$MODIFIER_WAR_SUPPORT_FACTOR$: [?mtth:social_security_ratio_effect_1|Y.2%]"
  civil_servant_saraly: "公務員給与"
  civil_servant_saraly_percentage: "[?ROOT.EV_civil_servant_saraly_var|%.0Y]"
  pay_government_bond: "国債償還"

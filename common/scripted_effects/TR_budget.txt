@@ -148,6 +148,17 @@ EV_update_taxes = {
 	}
 	EV_update_gdp = yes
 }
+EV_update_social_security_ratio = {
+	set_variable = {
+		EV_social_security_slider_drager_position = EV_social_security_var
+	}
+	multiply_variable = {
+		EV_social_security_slider_drager_position = 105
+	}
+	add_to_variable = {
+		EV_social_security_slider_drager_position = 18
+	}
+}
 EV_update_war_expenses_ratio = {
 	set_variable = {
 		EV_war_expenses_slider_drager_position = EV_war_expenses_var_raw

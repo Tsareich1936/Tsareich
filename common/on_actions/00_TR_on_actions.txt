@@ -41,9 +41,33 @@ on_actions = {
 					EV_taxes_ratio_var = 0.5
 				}
 				EV_update_taxes_ratio = yes
+				set_variable = {
+					var = EV_social_security_var
+					value = 0.5
+				}
+				EV_update_social_security_ratio = yes
+				set_variable = {
+					var = EV_war_expenses_var_raw
+					value = 0.5
+				}
+				EV_update_war_expenses_ratio = yes
 				add_dynamic_modifier = {
 					modifier = TR_taxes_ratio_effect
 				}
+				add_dynamic_modifier = {
+					modifier = TR_social_security_ratio_effect
+				}
+
+				add_to_variable = {
+					money_value = EV_taxes_amount_var_k
+				}
+				EV_update_taxes = yes
+				add_to_variable = {
+					money_value = EV_war_expenses_amount_var
+				}
+				EV_update_war_expenses = yes
+				EV_update_gdp = yes
+				EV_update_gdp_to_line = yes
 			}
 		}
 	
