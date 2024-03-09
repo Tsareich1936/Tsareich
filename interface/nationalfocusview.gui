@@ -690,9 +690,10 @@ guiTypes = {
 		}
 		iconType = {
 			name = "symbol"
-			position = { x = 42 y = 88 }
+			position = { x = 111 y = 132 }
 			spriteType = "GFX_goal_unknown"
 			alwaystransparent = yes
+			centerposition = yes
 		}
 		iconType = {
 			name = "prerequisites_bg"
