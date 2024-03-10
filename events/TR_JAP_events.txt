@@ -18,10 +18,9 @@ country_event = {        # 19選挙
 	
 	option = {
 		name = TR_Japan.1.a
-
 		custom_effect_tooltip = TR_japan.RikkenMinseito
-	    complete_national_focus = jap_Constitutional_Democratic_Party
 		hidden_effect = {
+			load_focus_tree = japan_focus_RikkenMinsei
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.21
@@ -36,15 +35,15 @@ country_event = {        # 19選挙
 			}
 			set_politics = {
 				ruling_party = democratic
-			}			
+			}		
+			complete_national_focus = jap_Constitutional_Democratic_Party	
 		}
-
-		
 		ai_chance = { base = 40 }
 	}
 	option = {
 		name = TR_Japan.1.b
 		hidden_effect = {
+			load_focus_tree = japan_focus_RikkenSeiyukai
 			add_popularity = {
 				ideology = democratic
 				popularity = -0.1
@@ -60,19 +59,16 @@ country_event = {        # 19選挙
 			set_politics = {
 				ruling_party = conservatism
 			}			
+			complete_national_focus = jap_Rikken_Seiyukai
 		}
 		custom_effect_tooltip = TR_japan.RikkennSeiyukai
-	    complete_national_focus = jap_Rikken_Seiyukai
-
-		
 		ai_chance = { base = 40 }
 	}
 	option = {
 		name = TR_Japan.1.c
-		
 		custom_effect_tooltip = TR_japan.SyakaiTaisyu
-	    complete_national_focus = jap_Shakai_Taishuto
 		hidden_effect = {
+			load_focus_tree = japan_focus_SyakaiTaisyu
 			add_popularity = {
 				ideology = democratic
 				popularity = -0.12
@@ -87,10 +83,9 @@ country_event = {        # 19選挙
 			}
 			set_politics = {
 				ruling_party = socialdemocratic
-			}			
+			}	
+			complete_national_focus = jap_Shakai_Taishuto		
 		}
-
-		
 		ai_chance = { base = 20 }
 	}
 }

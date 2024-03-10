@@ -145,3 +145,11 @@ JAP_for_debug = {
 	}
 	
 }
+
+JAP_agriculture = {
+	allowed = {
+		tag = JAP
+	}
+	priority = 150
+	visible_when_empty = no
+}

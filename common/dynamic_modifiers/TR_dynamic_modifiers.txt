@@ -115,3 +115,25 @@ TR_ENG_support_from_ENG = {
 	military_factory_donations = ENG.support_SPR_var
 	industrial_factory_donations = ENG.support_SPR_var
 }
+
+TR_JAP_military = {
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		always = no
+	}
+	icon = GFX_idea_chi_army_corruption
+	army_attack_factor = JAP.army_attack_factor
+	army_defence_factor = JAP.army_defence_factor
+	experience_gain_army_factor = JAP.experience_gain_army_factor
+	land_doctrine_cost_factor = JAP.land_doctrine_cost_factor
+	navy_capital_ship_attack_factor = JAP.navy_capital_ship_attack_factor
+	sortie_efficiency = JAP.sortie_efficiency
+	experience_gain_navy_factor = JAP.experience_gain_navy_factor
+	naval_doctrine_cost_factor = JAP.naval_doctrine_cost_factor
+	air_ace_generation_chance_factor = JAP.air_ace_generation_chance_factor
+	enemy_army_bonus_air_superiority_factor = JAP.enemy_army_bonus_air_superiority_factor
+	experience_gain_air_factor = JAP.experience_gain_air_factor
+	air_doctrine_cost_factor = JAP.air_doctrine_cost_factor
+}

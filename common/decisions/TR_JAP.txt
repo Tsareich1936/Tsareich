@@ -2666,7 +2666,6 @@ JAP_balance_of_power_category = {
 		}
 	}
 	JAP_bop_high_cost = {
-		days_re_enable = 365
 		allowed = {
 			original_tag = JAP
 		}
@@ -2698,7 +2697,6 @@ JAP_balance_of_power_category = {
 	}
 
 	JAP_bop_low_cost = {
-		days_re_enable = 365
 		allowed = {
 			original_tag = JAP
 		}
@@ -2730,7 +2728,6 @@ JAP_balance_of_power_category = {
 	}
 
 	JAP_pro_military_propaganda = {
-		days_re_enable = 365
 		allowed = {
 			original_tag = JAP
 		}
@@ -2745,7 +2742,6 @@ JAP_balance_of_power_category = {
 	}
 
 	JAP_Taking_in_the_General = {
-		days_re_enable = 180
 		allowed = {
 			original_tag = JAP
 		}
@@ -2756,7 +2752,7 @@ JAP_balance_of_power_category = {
 		}
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = JAP_Taking_in_the_Generalb
+				set_country_flag = JAP_Taking_in_the_General
 				country_event = {
 					id = TR_japan.74
 					days = 180
@@ -2772,7 +2768,6 @@ JAP_balance_of_power_category = {
 	}
 
 	JAP_Taking_in_the_cabinet_ministers = {
-		days_re_enable = 180
 		available = {
 			not = {
 				has_country_flag = JAP_Taking_in_the_General
@@ -2909,10 +2904,1251 @@ JAP_for_debug = {
 					amount = 1000
 				}
 			}
-			246 = {
+			195 = {
 				add_resource = {
 					type = oil
 					amount = 1000
+				}
+			}
+		}
+	}
+}
+
+JAP_agriculture = {
+	JAP_agr_1 = {
+		allowed = {
+			always = no
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			hidden_effect = {
+				JAP = {
+					set_country_flag = TR_japan.agr.1
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 2
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.1
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 3
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					swap_ideas = {
+						remove_idea = JAP_agriculture
+						add_idea = JAP_agriculture_2
+					}
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 5
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 6
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					remove_ideas = JAP_agriculture_2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 8
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.3
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 9
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					add_ideas = JAP_agriculture_3
+				}
+			}
+		}
+	}
+	JAP_agr_2 = {
+		allowed = {
+			always = no
+		}
+		available = {
+			JAP = {
+				has_country_flag = TR_japan.agr.1
+			}
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			hidden_effect = {
+				JAP = {
+					set_country_flag = TR_japan.agr.2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 2
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.1
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 3
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					swap_ideas = {
+						remove_idea = JAP_agriculture
+						add_idea = JAP_agriculture_2
+					}
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 5
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 6
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					remove_ideas = JAP_agriculture_2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 8
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.3
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 9
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					add_ideas = JAP_agriculture_3
+				}
+			}
+		}
+	}
+	JAP_agr_3 = {
+		allowed = {
+			always = no
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		available = {
+			JAP = {
+				has_country_flag = TR_japan.agr.2
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			hidden_effect = {
+				JAP = {
+					set_country_flag = TR_japan.agr.3
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 2
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.1
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 3
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					swap_ideas = {
+						remove_idea = JAP_agriculture
+						add_idea = JAP_agriculture_2
+					}
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 5
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 6
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					remove_ideas = JAP_agriculture_2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 8
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.3
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 9
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					add_ideas = JAP_agriculture_3
+				}
+			}
+		}
+	}
+	JAP_agr_1_b = {
+		allowed = {
+			always = no
+		}
+		days_remove = 180
+		modifier = {
+			political_power_gain = -0.5
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			hidden_effect = {
+				JAP = {
+					set_country_flag = TR_japan.agr.1_b
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 2
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.1
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 3
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					swap_ideas = {
+						remove_idea = JAP_agriculture
+						add_idea = JAP_agriculture_2
+					}
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 5
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 6
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					remove_ideas = JAP_agriculture_2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 8
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.3
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 9
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					add_ideas = JAP_agriculture_3
+				}
+			}
+		}
+	}
+	JAP_agr_2_b = {
+		allowed = {
+			always = no
+		}
+		available = {
+			JAP = {
+				has_country_flag = TR_japan.agr.1_b
+			}
+		}
+		days_remove = 180
+		modifier = {
+			political_power_gain = -0.5
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			hidden_effect = {
+				JAP = {
+					set_country_flag = TR_japan.agr.2_b
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 2
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.1
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 3
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					swap_ideas = {
+						remove_idea = JAP_agriculture
+						add_idea = JAP_agriculture_2
+					}
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 5
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 6
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					remove_ideas = JAP_agriculture_2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 8
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.3
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 9
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					add_ideas = JAP_agriculture_3
+				}
+			}
+		}
+	}
+	JAP_agr_3_b = {
+		allowed = {
+			always = no
+		}
+		days_remove = 180
+		modifier = {
+			political_power_gain = -0.5
+		}
+		available = {
+			JAP = {
+				has_country_flag = TR_japan.agr.2_b
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			hidden_effect = {
+				JAP = {
+					set_country_flag = TR_japan.agr.3_b
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 2
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.1
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 3
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					swap_ideas = {
+						remove_idea = JAP_agriculture
+						add_idea = JAP_agriculture_2
+					}
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 5
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 6
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					remove_ideas = JAP_agriculture_2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 8
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.3
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 9
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					add_ideas = JAP_agriculture_3
+				}
+			}
+		}
+	}
+	JAP_agr_1_c = {
+		allowed = {
+			always = no
+		}
+		days_remove = 180
+		modifier = {
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			hidden_effect = {
+				JAP = {
+					set_country_flag = TR_japan.agr.1_c
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 2
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.1
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 3
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					swap_ideas = {
+						remove_idea = JAP_agriculture
+						add_idea = JAP_agriculture_2
+					}
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 5
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 6
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					remove_ideas = JAP_agriculture_2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 8
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.3
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 9
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					add_ideas = JAP_agriculture_3
+				}
+			}
+		}
+	}
+	JAP_agr_2_c = {
+		allowed = {
+			always = no
+		}
+		available = {
+			JAP = {
+				has_country_flag = TR_japan.agr.1_c
+			}
+		}
+		days_remove = 180
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			hidden_effect = {
+				JAP = {
+					set_country_flag = TR_japan.agr.2_c
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 2
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.1
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 3
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					swap_ideas = {
+						remove_idea = JAP_agriculture
+						add_idea = JAP_agriculture_2
+					}
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 5
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 6
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					remove_ideas = JAP_agriculture_2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 8
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.3
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 9
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					add_ideas = JAP_agriculture_3
+				}
+			}
+		}
+	}
+	JAP_agr_3_c = {
+		allowed = {
+			always = no
+		}
+		days_remove = 180
+		available = {
+			JAP = {
+				has_country_flag = TR_japan.agr.2_c
+			}
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			hidden_effect = {
+				JAP = {
+					set_country_flag = TR_japan.agr.3_c
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 2
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.1
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 3
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					swap_ideas = {
+						remove_idea = JAP_agriculture
+						add_idea = JAP_agriculture_2
+					}
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 5
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 6
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					remove_ideas = JAP_agriculture_2
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 8
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					custom_effect_tooltip = TR_japan.agr.3
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 9
+							has_country_flag = TR_japan.agr.1
+							has_country_flag = TR_japan.agr.2
+							has_country_flag = TR_japan.agr.3
+							has_country_flag = TR_japan.agr.1_b
+							has_country_flag = TR_japan.agr.2_b
+							has_country_flag = TR_japan.agr.3_b
+							has_country_flag = TR_japan.agr.1_c
+							has_country_flag = TR_japan.agr.2_c
+							has_country_flag = TR_japan.agr.3_c
+						}
+					}
+					add_ideas = JAP_agriculture_3
 				}
 			}
 		}
