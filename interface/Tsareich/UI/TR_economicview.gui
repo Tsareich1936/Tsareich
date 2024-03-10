@@ -423,7 +423,7 @@ guiTypes = {
 				x = 20
 				y = -25
 			}
-			text = "government_bond_ammount"
+			text = "government_bond_amount"
 			font = "hoi_20"
 			format = right
 			pdx_tooltip = taxes_ratio_tt
@@ -501,6 +501,17 @@ guiTypes = {
 				y = 0
 			}
 			font = hoi_18
+			format = right
+			pdx_tooltip = social_security_tt
+		}
+		instantTextBoxType = {
+			name = EV_social_security_amount
+			position = {
+				x = 20
+				y = -25
+			}
+			text = "social_security_ammount"
+			font = "hoi_20"
 			format = right
 			pdx_tooltip = social_security_tt
 		}

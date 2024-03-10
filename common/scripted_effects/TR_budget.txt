@@ -158,6 +158,45 @@ EV_update_social_security_ratio = {
 	add_to_variable = {
 		EV_social_security_slider_drager_position = 18
 	}
+	EV_update_social_security = yes
+}
+EV_update_social_security = {
+	set_temp_variable = {
+		var = temp_mp
+		value = max_manpower_k
+	}
+	multiply_temp_variable = {
+		var = temp_mp
+		value = 0.001
+	}
+	multiply_temp_variable = {
+		var = temp_mp
+		value = 0.001
+	}
+	set_temp_variable = {
+		var = temp_gdp
+		value = GDP_amount_var
+	}
+	divide_temp_variable = {
+		var = temp_gdp
+		value = 200
+	}
+	add_to_temp_variable = {
+		var = temp_mp
+		value = temp_gdp
+	}
+	multiply_temp_variable = {
+		var = temp_mp
+		value = -1
+	}
+	multiply_temp_variable = {
+		var = temp_mp
+		value = EV_social_security_var
+	}
+	set_variable = {
+		var = EV_social_security_amount_var
+		value = temp_mp
+	}
 }
 EV_update_war_expenses_ratio = {
 	set_variable = {

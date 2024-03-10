@@ -267,7 +267,16 @@ on_actions = {
 				money_value = EV_war_expenses_amount_var
 			}
 			EV_update_war_expenses = yes
+			add_to_variable = {
+				money_value	= EV_social_security_amount_var
+			}
+			EV_update_social_security = yes
 			EV_update_gdp = yes
+			
+		}
+	}
+	on_monthly = {
+		effect = {
 			EV_update_gdp_to_line = yes
 		}
 	}
