@@ -367,3 +367,139 @@ social_security_ratio_effect_1 = {
 		}
 	}
 }
+social_security_ratio_effect_2 = {
+	base = 0
+	modifier = {
+		add = 0.35
+		check_variable = {
+			var = EV_social_security_var
+			value = 1
+			compare = equals
+		}
+	}
+	modifier = {
+		add = 0.28
+		check_variable = {
+			var = EV_social_security_var
+			value = 1
+			compare = less_than
+		}
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.9
+			compare = greater_than_or_equals
+		}
+	}
+	modifier = {
+		add = 0.21
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.9
+			compare = less_than
+		}
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.8
+			compare = greater_than_or_equals
+		}
+	}
+	modifier = {
+		add = 0.14
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.8
+			compare = less_than
+		}
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.7
+			compare = greater_than_or_equals
+		}
+	}
+	modifier = {
+		add = 0.07
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.7
+			compare = less_than
+		}
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.6
+			compare = greater_than_or_equals
+		}
+	}
+	modifier = {
+		add = 0
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.6
+			compare = less_than
+		}
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.4
+			compare = greater_than
+		}
+	}
+	modifier = {
+		add = -0.1
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.4
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.3
+			compare = greater_than
+		}
+	}
+	modifier = {
+		add = -0.20
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.3
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.2
+			compare = greater_than
+		}
+	}
+	modifier = {
+		add = -0.3
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.2
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.1
+			compare = greater_than
+		}
+	}
+	modifier = {
+		add = -0.4
+		check_variable = {
+			var = EV_social_security_var
+			value = 0.1
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = EV_social_security_var
+			value = 0
+			compare = greater_than
+		}
+	}
+	modifier = {
+		add = -0.5
+		check_variable = {
+			var = EV_social_security_var
+			value = 0
+			compare = equals
+		}
+	}
+}
