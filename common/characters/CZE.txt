@@ -30,7 +30,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= socialdemocratic
+			ideology= socialdemocratic_ideology
 			expire="1965.1.1.1"
 			id=-1
 		}

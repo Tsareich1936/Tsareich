@@ -27,7 +27,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_government = socialism
+			has_government = socialdemocratic
 		}
 		localization_key = "[GetSubIdeologySDe]"
 	}
@@ -72,9 +72,9 @@ defined_text = {
 	name = GetSubIdeologyAna
 	text = {
 		trigger = {
-			has_country_leader_ideology = anarchism
+			has_country_leader_ideology = anarchism_ideology
 		}
-		localization_key = anarchism
+		localization_key = anarchism_ideology
 	}
 	text = {
 		trigger = {
@@ -96,9 +96,9 @@ defined_text = {
 	name = GetSubIdeologySyn
 	text = {
 		trigger = {
-			has_country_leader_ideology = syndicalism
+			has_country_leader_ideology = syndicalism_ideology
 		}
-		localization_key = syndicalism
+		localization_key = syndicalism_ideology
 	}
 	text = {
 		trigger = {
@@ -155,24 +155,24 @@ defined_text = {
 	name = GetSubIdeologySoc
 	text = {
 		trigger = {
-			has_country_leader_ideology = socialism
+			has_country_leader_ideology = socialism_ideology
 		}
-		localization_key = socialism
+		localization_key = socialism_ideology
 	}
 	text = {
-		localization_key = socialism
+		localization_key = socialism_ideology
 	}
 }
 defined_text = {
 	name = GetSubIdeologySDe
 	text = {
 		trigger = {
-			has_country_leader_ideology = socialdemocratic
+			has_country_leader_ideology = socialdemocratic_ideology
 		}
-		localization_key = socialdemocratic
+		localization_key = socialdemocratic_ideology
 	}
 	text = {
-		localization_key = socialdemocratic
+		localization_key = socialdemocratic_ideology
 	}
 }
 defined_text = {
@@ -188,12 +188,12 @@ defined_text = {
 	name = GetSubIdeologyCon
 	text = {
 		trigger = {
-			has_country_leader_ideology = conservatism
+			has_country_leader_ideology = conservatism_ideology
 		}
-		localization_key = conservatism
+		localization_key = conservatism_ideology
 	}
 	text = {
-		localization_key = conservatism
+		localization_key = conservatism_ideology
 	}
 }
 defined_text = {
