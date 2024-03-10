@@ -127,6 +127,7 @@ country_event = {
 
 }
 
+#デニーキンが蜂起
 country_event = {
     id = TR_Russia_TW.2
     title = TR_Russia_TW.2.t
@@ -137,12 +138,10 @@ country_event = {
     immediate = {
 
     }
-    #国家方針とってる
+
     option = { 
         name = TR_Russia_TW.2.a
-        263 = {
-            set_demilitarized_zone = yes
-        }
+        country_event = { id = TR_Russia_TW.201 days = 14 }
     }
     option = { 
         name = TR_Russia_TW.2.b
@@ -153,26 +152,72 @@ country_event = {
                 }
             }
             custom_effect_tooltip = RUS_TW_tsarinf.1
+            random_list = {
+                70 = {
+                    country_event = { id = TR_Russia_TW.201 days = 14 }
+                }
+                30 = {
+                    country_event = TR_Russia_TW.202
+                }
+                
+            }
         }
-        263 = {
-            set_demilitarized_zone = yes
-        }
+        
     }
 
-    #取ってない
     option = { 
         name = TR_Russia_TW.2.c
         trigger = {
             has_completed_focus = RUS_newtsar
         }
-        263 = {
-            set_demilitarized_zone = yes
-        }
+        
     }
 
 
 }
 
+#デニーキンが勢力を拡大
+country_event = {
+    id = TR_Russia_TW.201
+    title = TR_Russia_TW.201.t
+    desc = TR_Russia_TW.201.d
+    picture = GFX_report_event_ast_parliament_house
+
+    is_triggered_only = yes
+    immediate = {
+
+    }
+
+    option = { 
+        name = TR_Russia_TW.201.a
+        
+    }
+
+}
+
+#協力者を射殺
+country_event = {
+    id = TR_Russia_TW.202
+    title = TR_Russia_TW.202.t
+    desc = TR_Russia_TW.202.d
+    picture = GFX_report_event_ast_parliament_house
+
+    is_triggered_only = yes
+    immediate = {
+
+    }
+
+    option = { 
+        name = TR_Russia_TW.201.a
+        random_army_leader = {
+            limit = {
+                has_trait = old_guard
+            }
+            retire_character = THIS
+        }
+    }
+
+}
 
 ##########################################
 

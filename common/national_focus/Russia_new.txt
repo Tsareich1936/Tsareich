@@ -94,6 +94,7 @@ focus_tree = {
 					elections_allowed = no
 				}
 				country_event = TR_Russia_TW.1
+				country_event = { id = TR_Russia_TW.2 days = 30 }
 			}
 			custom_effect_tooltip = RUS_TW_tt.1
 

@@ -128,8 +128,11 @@ RUS_debug_decision_c = {
 		cost = 0
         days_remove = 0
         complete_effect = {
-            263 = {
-                
+            random_army_leader = {
+                limit = {
+                    has_trait = old_guard
+                }
+                retire_character = THIS
             }
         }
         
