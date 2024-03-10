@@ -198,7 +198,7 @@ create_country_leader = {
 	desc = ""
 	picture = GFX_portrait_Peter_Karadordevic
 	expire = "1965.1.1"
-	ideology = Despotism
+	ideology = despotic_monarchism
 	traits = {
 		#
 	}
@@ -216,7 +216,7 @@ create_country_leader = {
 }
 promote_character = {
 	character = SER_aleksandar_ii_karadordevic
-	ideology = despotism
+	ideology = despotic_monarchism
 }
 add_ideas = {
 	limited_conscription

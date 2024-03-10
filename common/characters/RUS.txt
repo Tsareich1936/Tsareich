@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = despotic_monarchism
 			traits = { TR_hero_of_wwi }
 			expire = "1965.1.1.1"
 			id = -1
@@ -21,7 +21,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = despotic_monarchism
 			expire = "1965.1.1.1"
 			traits = { TR_confusion_of_notsar }
 			id= -1
@@ -35,7 +35,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = despotic_monarchism
 			traits = { TR_krill_conflicts_in_the_court TR_krill_reformal_tsar }
 			expire = "1965.1.1.1"
 			id = -1

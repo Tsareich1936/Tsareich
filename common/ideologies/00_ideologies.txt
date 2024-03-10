@@ -390,7 +390,12 @@ ideologies = {
 	neutrality = {
 
 		types = {
-
+			
+			despotic_monarchism = {
+			}
+			constitutional_monarchism = {
+			}
+			
 			despotism  = {
 			}
 

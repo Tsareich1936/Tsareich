@@ -32,11 +32,16 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideologies/neutrality_group.dds"
 	}
 	spriteType = {
-		name = GFX_ideology_despotism
+		name = GFX_ideology_despotic_monarchism
 		textureFile = "gfx/interface/ideologies/monarchism.dds"
 	}
 	spriteType = {
-		name = x
+		name = GFX_ideology_constitutional_monarchism
+		textureFile = "gfx/interface/ideologies/monarchism.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_despotism
+		textureFile = "gfx/interface/ideologies/authoritarianism.dds"
 	}
 	spriteType = {
 		name = GFX_ideology_fascism_group

@@ -20,7 +20,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=despotism
+			ideology=despotic_monarchism
 			traits = { the_last_romanov_maybe }
 			expire="1965.1.1.1"
 			id=-1
@@ -35,7 +35,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=despotism
+			ideology=despotic_monarchism
 			traits = { patriot_king }
 			expire="1965.1.1.1"
 			id=-1
@@ -50,7 +50,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=despotism
+			ideology=despotic_monarchism
 			expire="1965.1.1.1"
 			id=-1
 			traits = { royal_legitimist }

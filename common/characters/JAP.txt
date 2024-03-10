@@ -216,7 +216,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = despotic_monarchism
 			id = -1
 		}
 	}

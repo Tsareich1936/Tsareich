@@ -2053,7 +2053,7 @@ country_event = {
 			create_country_leader = {
 				name = JAP_Toyotomi
 				picture = GFX_JAP_Toyotomi
-				ideology = despotism
+				ideology = despotic_monarchism
 			}
 			load_focus_tree = {
 				tree = japan_Toyotomi
@@ -2204,7 +2204,7 @@ country_event = {
 					create_country_leader = {
 						name = OTT_Caliph_Abdulmecid_II
 						picture = GFX_Portrait_Caliph_Abdulmecid_2
-						ideology = despotism
+						ideology = despotic_monarchism
 					}
 	
 				}
