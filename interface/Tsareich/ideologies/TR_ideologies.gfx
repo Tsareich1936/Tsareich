@@ -1,7 +1,51 @@
 spriteTypes = {
 	spriteType = {
+		name = GFX_ideology_anarchism_group
+		textureFile = "gfx/interface/ideologies/anarchism_group.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_syndicalism_group
+		textureFile = "gfx/interface/ideologies/syndicalism_group.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_communism_group
+		textureFile = "gfx/interface/ideologies/communism_group.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_socialism_group
+		textureFile = "gfx/interface/ideologies/socialism_group.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_socialdemocratic_group
+		textureFile = "gfx/interface/ideologies/socialdemocratic_group.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_democratic_group
+		textureFile = "gfx/interface/ideologies/democratic_group.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_conservatism_group
+		textureFile = "gfx/interface/ideologies/conservatism_group.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_neutrality_group
+		textureFile = "gfx/interface/ideologies/neutrality_group.dds"
+	}
+	spriteType = {
+		name = GFX_ideology_despotism
+		textureFile = "gfx/interface/ideologies/monarchism.dds"
+	}
+	spriteType = {
+		name = x
+	}
+	spriteType = {
+		name = GFX_ideology_fascism_group
+		textureFile = "gfx/interface/ideologies/fascism_group.dds"
+	}
+	#Theocracy
+	spriteType = {
 		name = GFX_ideology_theocracy_group
-		textureFile = "gfx/interface/ideologies/theocracy_groups.dds"
+		textureFile = "gfx/interface/ideologies/theocracy_group.dds"
 	}
 	spriteType = {
 		name = GFX_ideology_protestantism
