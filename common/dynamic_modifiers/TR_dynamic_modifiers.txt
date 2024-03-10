@@ -43,6 +43,12 @@ TR_social_security_ratio_effect = {
 	war_support_factor = mtth:social_security_ratio_effect_1
 	monthly_population = mtth:social_security_ratio_effect_2
 }
+TR_civil_servant_saraky_effect = {
+	enable = {
+		always = yes
+	}
+	political_power_factor = mtth:civil_servant_saraly_ratio_effect
+}
 TR_POL_resisting = {
 	enable = {
 		always = yes

@@ -47,6 +47,10 @@ on_actions = {
 				}
 				EV_update_social_security_ratio = yes
 				set_variable = {
+					var = EV_civil_servant_saraly_var
+					value = 0.5
+				}
+				set_variable = {
 					var = EV_war_expenses_var_raw
 					value = 0.5
 				}
@@ -56,6 +60,9 @@ on_actions = {
 				}
 				add_dynamic_modifier = {
 					modifier = TR_social_security_ratio_effect
+				}
+				add_dynamic_modifier = {
+					modifier = TR_civil_servant_saraky_effect
 				}
 
 				add_to_variable = {

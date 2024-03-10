@@ -37,3 +37,9 @@ defined_text = {
 		localization_key = social_security_tt_gotten
 	}
 }
+defined_text = {
+	name = GetCivilServantEffect
+	text = {
+		localization_key = civil_servant_saraly_tt_gotten
+	}
+}

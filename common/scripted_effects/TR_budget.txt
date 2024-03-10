@@ -198,6 +198,17 @@ EV_update_social_security = {
 		value = temp_mp
 	}
 }
+EV_update_civil_servant_saraly_ratio = {
+	set_variable = {
+		EV_civil_servant_saraly_slider_drager_position = EV_civil_servant_saraly_var
+	}
+	multiply_variable = {
+		EV_civil_servant_saraly_slider_drager_position = 105
+	}
+	add_to_variable = {
+		EV_civil_servant_saraly_slider_drager_position = 18
+	}
+}
 EV_update_war_expenses_ratio = {
 	set_variable = {
 		EV_war_expenses_slider_drager_position = EV_war_expenses_var_raw

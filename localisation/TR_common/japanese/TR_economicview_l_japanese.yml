@@ -1,5 +1,5 @@
 ﻿l_japanese:
- MONEY_VALUE: "G[?ROOT.money_value|.3]M"
+ MONEY_VALUE: "G[?ROOT.money_value|.1]M"
  MONEY_MONEY: "国庫"
  money_tt: "[GetMonetToolTip]"
  MONEY_tt: "§Y$MONEY_MONEY$§!\n§Y$BUDGET_INCOME$§!\n $taxes_ratio$: $taxes_amount$ \n 以下の影響を受ける\n  民需工場: [?num_of_civilian_factories|Y.0]\n  人口: [?max_manpower_k|Y]§Yk§!\n  税率: §Y$taxes_ratio_percentage$§!\n $diplomatic_income$:\n $import_tax$:\n§Y$BUDGET_EXPENSES$§!\n $social_security$:\n $civil_servant_saraly$:\n $pay_government_bond$:\n $war_expenses$:\n $building_expenses$:"
@@ -31,6 +31,9 @@
  social_security_ammount: "§Y+G§![?EV_social_security_amount_var|Y.3]§YM§!"
  civil_servant_saraly: "公務員給与"
  civil_servant_saraly_percentage: "[?ROOT.EV_civil_servant_saraly_var|%.0Y]"
+ civil_servant_saraly_tt: "[GetCivilServantEffect]"
+ civil_servant_saraly_tt_gotten: "§Y現在の公務員給与による影響§!\n$MODIFIER_POLITICAL_POWER_FACTOR$: [?mtth:civil_servant_saraly_ratio_effect|+=.1%]"
+ civil_servant_saraly_amount: ""
  pay_government_bond: "国債償還"
  war_expenses: "軍事費"
 #  war_expenses_percentage: "[?ROOT.EV_war_expenses_var|%.0Y]\n[?ROOT.EV_war_expenses_var_raw|%.0Y]"
