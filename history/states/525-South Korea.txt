@@ -7,6 +7,7 @@ state={
 		owner = KOR
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 2
 			arms_factory = 1
 			dockyard = 1
 			7221 = {

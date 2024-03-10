@@ -10,6 +10,11 @@ set_technology = {
 }
 
 set_convoys = 5
+add_ideas = {
+	KOR_influence_of_japanese_capital
+	KOR_regional_disparity
+	KOR_premodern_political_system
+}
 
 set_politics = {
 	ruling_party = neutrality
@@ -23,7 +28,7 @@ set_popularities = {
 	communism = 0
 	neutrality = 100
 }
-
+recruit_character = KOR_Yi_Kang
 create_country_leader = {
 	name = "Syngman Rhee"
 	desc = ""
@@ -35,16 +40,16 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Yi Kang"
-	desc = ""
-	picture = GFX_portrait_Yi_Kang
-	expire = "1965.1.1"
-	ideology = despotic_monarchism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Yi Kang"
+# 	desc = ""
+# 	picture = GFX_portrait_Yi_Kang
+# 	expire = "1965.1.1"
+# 	ideology = despotic_monarchism
+# 	traits = {
+# 		#
+# 	}
+# }
 
 create_country_leader = {
 	name = "Kim Il-sung"
@@ -66,7 +71,4 @@ create_country_leader = {
 	traits = {
 		#
 	}
-}
-add_ideas = {
-	KOR_JAP
 }

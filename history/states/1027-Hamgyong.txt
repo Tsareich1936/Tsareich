@@ -9,6 +9,9 @@ state={
 		add_core_of = KOR
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 2
+			dockyard = 1
 			898 = {
 				naval_base = 2
 			}
@@ -19,9 +22,10 @@ state={
 		victory_points = {
 			898 1
 		}
+		add_extra_state_shared_building_slots = 4
 	}
 	manpower=1354800
 	state_category = rural
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor=2
 	local_supplies=0.000
 }

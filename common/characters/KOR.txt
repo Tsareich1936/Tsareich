@@ -1,0 +1,15 @@
+characters = {
+	KOR_Yi_Kang = {
+		name = KOR_Yi_Kang
+		portraits = {
+			civilian = {
+				large = GFX_portrait_KOR_Yi_Kang
+			}
+		}
+		country_leader = {
+			ideology = despotic_monarchism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+}
