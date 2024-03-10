@@ -8,13 +8,237 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = { x = 20 y = 1200 }
-	default = yes
+	default = no
 	focus = {
 		id = GER_1936_election
 		icon = GFX_german_election
 		cost = 10.00
 		x = 9
 		y = 0
+
+	}
+	focus = {
+		id = GER_KPD
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = GER_1936_election
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = GER_focus_Heinrich_Brandler
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = GER_KPD
+		}
+		mutually_exclusive = {
+			focus = GER_focus_Ernst_Thalmann
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = GER_united_front_movement
+		icon = GFX_focus_por_workers_of_iberia
+		cost = 10.00
+		prerequisite = {
+			focus = GER_focus_Heinrich_Brandler
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = GER_trade_union_collaborators
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10.00
+		prerequisite = {
+			focus = GER_united_front_movement
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = GER_death_to_the_fascists
+		icon = GFX_focus_generic_conspiracy
+		cost = 10.00
+		prerequisite = {
+			focus = GER_united_front_movement
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = GER_workers_government
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		cost = 10.00
+		prerequisite = {
+			focus = GER_trade_union_collaborators
+		}
+		prerequisite = {
+			focus = GER_death_to_the_fascists
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = GER_focus_Ernst_Thalmann
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = GER_KPD
+		}
+		mutually_exclusive = {
+			focus = GER_focus_Heinrich_Brandler
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = GER_revision_of_the_planned_economy
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = GER_focus_Heinrich_Brandler
+			focus = GER_focus_Ernst_Thalmann
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = GER_improvement_of_peoples_lives
+		icon = GFX_focus_generic_supply_line
+		cost = 10.00
+		prerequisite = {
+			focus = GER_revision_of_the_planned_economy
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = GER_price_stabilization
+		icon = GFX_focus_CHL_silverworking
+		cost = 10.00
+		prerequisite = {
+			focus = GER_revision_of_the_planned_economy
+		}
+		prerequisite = {
+			focus = GER_revision_of_the_planned_economy
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = GER_New_economy_system
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = GER_improvement_of_peoples_lives
+		}
+		prerequisite = {
+			focus = GER_price_stabilization
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = GER_fighting_democracy
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		cost = 10.00
+		prerequisite = {
+			focus = GER_workers_government
+		}
+		prerequisite = {
+			focus = GER_New_economy_system
+		}
+		x = 6
+		y = 7
+
+	}
+	focus = {
+		id = GER_eliminate_political_opponents
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 10.00
+		prerequisite = {
+			focus = GER_focus_Ernst_Thalmann
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = GER_establishment_of_a_mutual_surveillance_network
+		icon = GFX_focus_generic_annex_country_2
+		cost = 10.00
+		prerequisite = {
+			focus = GER_eliminate_political_opponents
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = GER_ban_SPD
+		icon = GFX_focus_SOV_the_last_purge
+		cost = 10.00
+		prerequisite = {
+			focus = GER_eliminate_political_opponents
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = GER_party_and_peoples_Leader
+		icon = GFX_focus_ARG_centralize_power
+		cost = 10.00
+		prerequisite = {
+			focus = GER_establishment_of_a_mutual_surveillance_network
+		}
+		prerequisite = {
+			focus = GER_ban_SPD
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = GER_theleman_constitution
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		cost = 10.00
+		prerequisite = {
+			focus = GER_party_and_peoples_Leader
+		}
+		prerequisite = {
+			focus = GER_New_economy_system
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = GER_the_way_we_go
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
+		cost = 10.00
+		prerequisite = {
+			focus = GER_fighting_democracy
+			focus = GER_theleman_constitution
+		}
+		x = 9
+		y = 8
 
 	}
 }
