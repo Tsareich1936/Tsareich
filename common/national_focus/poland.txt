@@ -14,7 +14,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TR_POL_start_resistance
-		icon = GFX_
+		icon = GFX_focus_POL_start_resistiance
 		cost = 10
 		x = 5
 		y = 0
@@ -36,6 +36,9 @@ focus_tree = {
 				set_state_flag = TR_POL_avaiabled_resist
 			}
 			762 = {
+				set_state_flag = TR_POL_avaiabled_resist
+			}
+			1103 = {
 				set_state_flag = TR_POL_avaiabled_resist
 			}
 			RUS = {

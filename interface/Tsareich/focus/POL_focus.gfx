@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_focus_POL_start_resistiance
+		textureFile = "gfx/interface/goals/Tsareich/focus_POL_start_resistance.dds"
+	}
+}
