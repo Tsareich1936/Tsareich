@@ -5,13 +5,18 @@ state={
 	history={
 		add_core_of = PRE
 		owner = PRE
-
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
 	}
 
 	provinces={
 		2176 2281 4171 8144 
 	}
-	manpower=0
+	state_category = rural
+	manpower=952153
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

@@ -2,9 +2,9 @@ state={
 	id=768
 	name="STATE_768" # Rwanda
 	
-	state_category = pastoral
+	state_category = rural
 	resources = {
-		tungsten = 3
+		tungsten = 8
 	}
 
 	history={
@@ -14,8 +14,8 @@ state={
 			9962 1
 		}
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
+			arms_factory = 1
 		}
 	}
 

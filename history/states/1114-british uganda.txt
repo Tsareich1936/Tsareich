@@ -3,11 +3,13 @@ state={
 	name="STATE_1114"
 	provinces={
 		7133 8223 12929 
+		
 	}
 	history = {
 		owner = ENG
 	}
-	manpower=0
+	state_category = rural
+	manpower=1845000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
