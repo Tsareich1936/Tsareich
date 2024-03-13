@@ -350,6 +350,12 @@ set_variable = { var = rus_TE_supply_node_range value = -0.25 }
 	set_resistance = 30
 	set_garrison_strength = 1.0
 }
+1104 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 30
+	set_garrison_strength = 1.0
+}
 
 #人
 recruit_character = RUS_georgy_zhukov

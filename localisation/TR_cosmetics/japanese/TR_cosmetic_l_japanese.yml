@@ -227,3 +227,7 @@
  GRA_COL_theocracy_DEF: "神聖コロンビア帝国"
  GRA_COL_fascism: "大コロンビア帝国"
  GRA_COL_fascism_DEF: "大コロンビア帝国"
+ 
+ RUS_reactionary_rebels: "ロシア救国軍"
+ RUS_reactionary_rebels_DEF: "ロシア救国軍"
+ RUS_reactionary_rebels_ADJ: "救国軍"

@@ -432,3 +432,67 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = TR_debug.12
+	is_triggered_only = yes
+	immediate = {
+		RUS = {
+			retire_character = RUS_anton_denikin
+			create_dynamic_country = {
+				original_tag = RUS
+				copy_tag = RUS
+				save_global_event_target_as = RUS_reactionary_rebels
+				recruit_character = RUS_anton_denikin
+				promote_character = {
+					character = RUS_anton_denikin
+					ideology = despotism
+				}
+				set_politics = {
+					ruling_party = neutrality
+				}
+				set_popularities = {
+					neutrality = 100
+				}
+				reserve_dynamic_country = yes
+				set_cosmetic_tag = RUS_reactionary_rebels
+				inherit_technology = RUS
+			}
+			event_target:RUS_reactionary_rebels = {
+				transfer_state = 146
+				transfer_state = 208
+				transfer_state = 209
+				transfer_state = 244
+				transfer_state = 263
+				set_capital = {
+					state = 263
+				}
+			}
+			save_global_event_target_as = RUS_empire
+		}
+	}
+	option = {
+		name = "帝国"
+		event_target:RUS_reactionary_rebels = {
+			declare_war_on = {
+				target = RUS
+				type = civil_war
+			}
+			add_civil_war_target = RUS
+		}
+	}
+	option = {
+		name = "救国軍"
+		event_target:RUS_reactionary_rebels = {
+			change_tag_from = RUS
+			
+		}
+		event_target:RUS_reactionary_rebels = {
+			declare_war_on = {
+				target = RUS
+				type = civil_war
+			}
+			add_civil_war_target = RUS
+			add_political_power = 999
+		}
+	}
+}
