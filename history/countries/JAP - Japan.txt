@@ -53,7 +53,7 @@ set_variable = {
 	JAP.experience_gain_army_factor = -0.3
 }
 set_variable = {
-	JAP.land_doctrine_cost_factor = -0.3
+	JAP.land_doctrine_cost_factor = 0.3
 }
 set_variable = {
 	JAP.navy_capital_ship_attack_factor = -0.3
@@ -65,19 +65,37 @@ set_variable = {
 	JAP.experience_gain_navy_factor = -0.3
 }
 set_variable = {
-	JAP.naval_doctrine_cost_factor = -0.3
+	JAP.naval_doctrine_cost_factor = 0.3
 }
 set_variable = {
 	JAP.air_ace_generation_chance_factor = -0.3
 }
 set_variable = {
-	JAP.enemy_army_bonus_air_superiority_factor = -0.3
+	JAP.enemy_army_bonus_air_superiority_factor = 0.3
 }
 set_variable = {
 	JAP.experience_gain_air_factor = -0.3
 }
 set_variable = {
-	JAP.air_doctrine_cost_factor = -0.3
+	JAP.air_doctrine_cost_factor = 0.3
+}
+set_variable = {
+	JAP.army = 0.5
+}
+set_variable = {
+	JAP.navy = 0.5
+}
+set_variable = {
+	JAP.air = 0.3
+}
+set_variable = {
+	JAP.huge = 0.7
+}
+set_variable = {
+	JAP.free = 0.7
+}
+set_variable = {
+	JAP.control = 0.3
 }
 if = {
 	limit = { has_dlc = "Waking the Tiger" }

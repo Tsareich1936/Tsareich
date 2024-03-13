@@ -1169,3 +1169,13 @@ scripted_gui = {
 
 
 }
+
+scripted_gui = {
+	TR_JAP_power_balance = {
+		context_type = decision_category
+		window_name = "TR_JAP_power_balance_1"
+		visible = {
+			tag = JAP
+		}
+	}
+}

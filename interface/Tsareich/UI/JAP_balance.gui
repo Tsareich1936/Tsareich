@@ -1,0 +1,189 @@
+
+guiTypes = {
+	containerWindowType = {
+		name = "TR_JAP_power_balance_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 100%
+			height = 350
+		}
+		instantTextboxType = {
+			name = "JAP_title_1"
+			position = {x=10 y=20}
+			format = centre
+			text = "皇道派"
+			maxWidth = 175
+			maxHeight = 60
+			fixedsize = yes
+			font = "hoi_24header"
+		}
+
+		iconType = {
+			name = "TR_JAP_army_back"
+			spriteType = "GFX_TR_JAP_power_army"
+			position = {
+			    x = 30
+			    y = 50
+			}
+		}
+		instantTextBoxType = {
+			name = "TR_JAP_army_value"
+			text = TR_JAP_army_value
+			maxWidth = 175
+			maxHeight = 60
+			font = "hoi_36header"
+			position = {
+				x = 40
+				y = 53
+			}
+		}
+		instantTextboxType = {
+			name = "JAP_title_2"
+			position = {x=175 y=20}
+			format = centre
+			text = "統制派"
+			maxWidth = 175
+			maxHeight = 60
+			fixedsize = yes
+			font = "hoi_24header"
+		}
+		iconType = {
+			name = "TR_JAP_navy"
+			spriteType = "GFX_TR_JAP_power_navy"
+			position = {
+				x = 200
+				y = 50
+			}
+		}
+		instantTextBoxType = {
+			name = "TR_JAP_navy_value"
+			text = TR_JAP_navy_value
+			maxWidth = 175
+			maxHeight = 60
+			font = "hoi_36header"
+			position = {
+				x = 210
+				y = 53
+			}
+		}
+		instantTextboxType = {
+			name = "JAP_title_3"
+			position = {x=10 y=135}
+			format = centre
+			text = "航空主兵論"
+			maxWidth = 175
+			maxHeight = 60
+			fixedsize = yes
+			font = "hoi_24header"
+		}
+		iconType = {
+			name = "TR_JAP_air"
+			spriteType = "GFX_TR_JAP_power_air"
+			position = {
+				x = 30
+				y = 160
+			}
+		}
+		instantTextBoxType = {
+			name = "TR_JAP_air_value"
+			text = TR_JAP_air_value
+			maxWidth = 175
+			maxHeight = 60
+			font = "hoi_36header"
+			position = {
+				x = 40
+				y = 163
+			}
+		}
+		instantTextboxType = {
+			name = "JAP_title_4"
+			position = {x=175 y=135}
+			format = centre
+			text = "大艦巨砲主義"
+			maxWidth = 175
+			maxHeight = 60
+			fixedsize = yes
+			font = "hoi_24header"
+		}
+		iconType = {
+			name = "TR_JAP_huge"
+			spriteType = "GFX_TR_JAP_power_huge"
+			position = {
+				x = 200
+				y = 160
+			}
+		}
+		instantTextBoxType = {
+			name = "TR_JAP_huge_value"
+			text = TR_JAP_huge_value
+			maxWidth = 175
+			maxHeight = 60
+			font = "hoi_36header"
+			position = {
+				x = 210
+				y = 163
+			}
+		}
+		instantTextboxType = {
+			name = "JAP_title_5"
+			position = {x=10 y=245}
+			format = centre
+			text = "自由経済"
+			maxWidth = 175
+			maxHeight = 60
+			fixedsize = yes
+			font = "hoi_24header"
+		}
+		iconType = {
+			name = "TR_JAP_free"
+			spriteType = "GFX_TR_JAP_power_free"
+			position = {
+				x = 30
+				y = 270
+			}
+		}
+		instantTextBoxType = {
+			name = "TR_JAP_free_value"
+			text = TR_JAP_free_value
+			maxWidth = 175
+			maxHeight = 60
+			font = "hoi_36header"
+			position = {
+				x = 40
+				y = 273
+			}
+		}
+		instantTextboxType = {
+			name = "JAP_title_6"
+			position = {x=175 y=245}
+			format = centre
+			text = "統制経済"
+			maxWidth = 175
+			maxHeight = 60
+			fixedsize = yes
+			font = "hoi_24header"
+		}
+		iconType = {
+			name = "TR_JAP_contol"
+			spriteType = "GFX_TR_JAP_power_control"
+			position = {
+				x = 200
+				y = 270
+			}
+		}
+		instantTextBoxType = {
+			name = "TR_JAP_control_value"
+			text = TR_JAP_control_value
+			maxWidth = 175
+			maxHeight = 60
+			font = "hoi_36header"
+			position = {
+				x = 210
+				y = 273
+			}
+		}
+	}
+}

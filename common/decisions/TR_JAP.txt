@@ -4154,3 +4154,7 @@ JAP_agriculture = {
 		}
 	}
 }
+
+JAP_power = {
+
+}

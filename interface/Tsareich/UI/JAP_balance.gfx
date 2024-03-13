@@ -1,0 +1,27 @@
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_TR_JAP_power_air"
+		textureFile = "gfx/interface/UI/JAP_power/air.dds"
+	}
+	spriteType = {
+		name = "GFX_TR_JAP_power_army"
+		textureFile = "gfx/interface/UI/JAP_power/army.dds"
+	}
+	spriteType = {
+		name = "GFX_TR_JAP_power_huge"
+		textureFile = "gfx/interface/UI/JAP_power/huge.dds"
+	}
+	spriteType = {
+		name = "GFX_TR_JAP_power_navy"
+		textureFile = "gfx/interface/UI/JAP_power/navy.dds"
+	}
+	spriteType = {
+		name = "GFX_TR_JAP_power_free"
+		textureFile = "gfx/interface/UI/JAP_power/free.dds"
+	}
+	spriteType = {
+		name = "GFX_TR_JAP_power_control"
+		textureFile = "gfx/interface/UI/JAP_power/control.dds"
+	}
+}

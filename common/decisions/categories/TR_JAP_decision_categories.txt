@@ -153,3 +153,12 @@ JAP_agriculture = {
 	priority = 150
 	visible_when_empty = no
 }
+
+JAP_power = {
+	allowed = {
+		tag = JAP
+	}
+	priority = 300
+	visible_when_empty = yes
+	scripted_gui = TR_JAP_power_balance
+}

@@ -516,7 +516,13 @@ country_event = {              ######〇３計画
 		hidden_effect = {
 			set_country_flag = TR_japan_9
 		}
-	    complete_national_focus = jap_NAVY_1_2
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.129
+				}
+			}
+		}
 		
 		ai_chance = { base = 1 }
 	}
@@ -525,7 +531,13 @@ country_event = {              ######〇３計画
 		hidden_effect = {
 			set_country_flag = TR_japan_10
 		}
-	    complete_national_focus = jap_NAVY_1_2
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.129
+				}
+			}
+		}
 		
 		ai_chance = { base = 1 }
 	}
@@ -545,7 +557,13 @@ country_event = {              ######〇３計画
 		hidden_effect = {
 			set_country_flag = TR_japan11
 		}
-	    complete_national_focus = jap_NAVY_1_2
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.129
+				}
+			}
+		}
 		
 		ai_chance = { factor = 1 }
 	}
@@ -572,7 +590,13 @@ country_event = {              ######〇３計画
 		hidden_effect = {
 			set_country_flag = TR_japan_12
 		}
-	    complete_national_focus = jap_NAVY_1_2
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.129
+				}
+			}
+		}
 		
 		ai_chance = { base = 1 }
 	}
@@ -581,7 +605,13 @@ country_event = {              ######〇３計画
 		hidden_effect = {
 			set_country_flag = TR_japan_13
 		}
-	    complete_national_focus = jap_NAVY_1_2
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.129
+				}
+			}
+		}
 		
 		ai_chance = { base = 1 }
 	}
@@ -600,7 +630,13 @@ country_event = {              ######〇３計画
 		hidden_effect = {
 			set_country_flag = TR_japan14
 		}
-	    complete_national_focus = jap_NAVY_1_2
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.129
+				}
+			}
+		}
 		
 		ai_chance = { base = 1 }
 	}
@@ -609,7 +645,13 @@ country_event = {              ######〇３計画
 		hidden_effect = {
 			set_country_flag = TR_japan_15
 		}
-	    complete_national_focus = jap_NAVY_1_2
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = TR_japan.129
+				}
+			}
+		}
 		
 		ai_chance = { base = 1 }
 	}
@@ -3920,4 +3962,103 @@ country_event = {
 			}
 		}
 	}
+}
+
+country_event = {
+	id = TR_japan.129
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		if = {
+            limit = {
+				JAP = {
+					has_country_flag = 	TR_japan_9
+				}
+
+            }
+        
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_NAVY_3_1_1
+            }
+        }
+        if = {
+            limit = { 
+				JAP = {
+					has_country_flag = TR_japan_10
+				}
+
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_NAVY_3_1_2
+            }
+        }
+        if = {
+            limit = {
+				JAP = {
+					has_country_flag = TR_japan11
+				}
+
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_NAVY_3_2_1
+            }
+        }
+        if = {
+            limit = {
+				JAP = {
+					has_country_flag = TR_japan_12
+				}
+
+            }
+        
+            activate_targeted_decision = {
+                target = jap
+                decision = JAP_NAVY_3_2_2
+            }
+        }
+        if = {
+            limit = {
+				JAP = {
+					has_country_flag = TR_japan_13
+				}
+
+            }
+        
+            activate_targeted_decision = {
+                target = jap
+                decision = JAP_NAVY_3_2_3
+            }
+        }
+        if = {
+            limit = {
+				JAP = {
+					has_country_flag = TR_japan14
+				}
+
+            }
+        
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_NAVY_3_3_1
+            }
+        }
+        if = {
+            limit = {
+				JAP = {
+					has_country_flag = TR_japan_15
+				}
+
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_NAVY_3_3_2
+            }
+        }
+        
+    }
+	
 }

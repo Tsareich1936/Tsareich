@@ -136,7 +136,7 @@ shared_focus = {
         	JAP.experience_gain_navy_factor = 0.1
 		}
         add_to_variable = {
-        	JAP.naval_doctrine_cost_factor = 0.1
+        	JAP.naval_doctrine_cost_factor = -0.1
 		}
     }
 }
@@ -162,7 +162,7 @@ shared_focus = {
         	JAP.experience_gain_navy_factor = 0.1
 		}
         add_to_variable = {
-        	JAP.naval_doctrine_cost_factor = 0.1
+        	JAP.naval_doctrine_cost_factor = -0.1
 		}
     }
     icon = GFX_goal_generic_navy_doctrines_tactics
@@ -190,7 +190,7 @@ shared_focus = {
         	JAP.experience_gain_navy_factor = 0.1
 		}
         add_to_variable = {
-        	JAP.naval_doctrine_cost_factor = 0.1
+        	JAP.naval_doctrine_cost_factor = -0.1
 		}
         if = {
             limit = {
@@ -348,13 +348,13 @@ shared_focus = {
             JAP.air_ace_generation_chance_factor = 0.1
         }
         add_to_variable = {
-            JAP.enemy_army_bonus_air_superiority_factor = 0.1
+            JAP.enemy_army_bonus_air_superiority_factor = -0.1
         }
         add_to_variable = {
             JAP.experience_gain_air_factor = 0.1
         }
         add_to_variable = {
-            JAP.air_doctrine_cost_factor = 0.1
+            JAP.air_doctrine_cost_factor = -0.1
         }
     }
 }
@@ -375,13 +375,13 @@ shared_focus = {
             JAP.air_ace_generation_chance_factor = 0.1
         }
         add_to_variable = {
-            JAP.enemy_army_bonus_air_superiority_factor = 0.1
+            JAP.enemy_army_bonus_air_superiority_factor = -0.1
         }
         add_to_variable = {
             JAP.experience_gain_air_factor = 0.1
         }
         add_to_variable = {
-            JAP.air_doctrine_cost_factor = 0.1
+            JAP.air_doctrine_cost_factor = -0.1
         }
     }
 }
@@ -402,13 +402,13 @@ shared_focus = {
             JAP.air_ace_generation_chance_factor = 0.1
         }
         add_to_variable = {
-            JAP.enemy_army_bonus_air_superiority_factor = 0.1
+            JAP.enemy_army_bonus_air_superiority_factor = -0.1
         }
         add_to_variable = {
             JAP.experience_gain_air_factor = 0.1
         }
         add_to_variable = {
-            JAP.air_doctrine_cost_factor = 0.1
+            JAP.air_doctrine_cost_factor = -0.1
         }
         if = {
             limit = {
@@ -604,7 +604,7 @@ shared_focus = {
             JAP.experience_gain_army_factor = 0.1
         }
         add_to_variable = {
-            JAP.land_doctrine_cost_factor = 0.1
+            JAP.land_doctrine_cost_factor = -0.1
         }
     }
 }
@@ -634,7 +634,7 @@ shared_focus = {
             JAP.experience_gain_army_factor = 0.1
         }
         add_to_variable = {
-            JAP.land_doctrine_cost_factor = 0.1
+            JAP.land_doctrine_cost_factor = -0.1
         }
     }
 }
@@ -664,7 +664,7 @@ shared_focus = {
             JAP.experience_gain_army_factor = 0.1
         }
         add_to_variable = {
-            JAP.land_doctrine_cost_factor = 0.1
+            JAP.land_doctrine_cost_factor = -0.1
         }
         if = {
             limit = {

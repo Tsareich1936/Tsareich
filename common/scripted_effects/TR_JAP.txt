@@ -1,0 +1,12 @@
+JAP_army = {
+	set_variable = {
+		JAP_balance = 1
+	}
+	subtract_from_variable = {
+		var = JAP_balance
+		value = JAP.army
+	}
+	set_variable = {
+		JAP.navy = JAP_balance
+	}
+}
