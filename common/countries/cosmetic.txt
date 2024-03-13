@@ -97,6 +97,10 @@ GRA_COL = {
 	color_ui = rgb { 200 165 48 }
 }
 
+RUS_reactionary_rebels_novgorod = {
+	color = rgb { 65 88 65 }
+	color_ui = rgb { 65 65 65 }
+}
 RUS_reactionary_rebels = {
 	color = rgb { 65 88 65 }
 	color_ui = rgb { 65 65 65 }
