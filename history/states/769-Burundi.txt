@@ -2,24 +2,24 @@ state={
 	id=769
 	name="STATE_769" # Burundi
 	
-	state_category = pastoral
+	state_category = town
 
 	history={
 		add_core_of = PRE
 		owner = PRE
 		victory_points = {
-			2220 1
+			2220 5
 		}
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
+			industrial_complex = 2
 		}
 	}
 
 	provinces={
 		2220
 	}
-	manpower=2145731
+	manpower=2845731
 	buildings_max_level_factor=1.000
 
 	local_supplies=0.0 
