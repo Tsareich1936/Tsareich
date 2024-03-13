@@ -96,6 +96,11 @@ GRA_COL = {
 	color = rgb { 208 154 27 }
 	color_ui = rgb { 200 165 48 }
 }
+
+RUS_reactionary_rebels = {
+	color = rgb { 65 88 65 }
+	color_ui = rgb { 65 65 65 }
+}
 #original
 MAL_UK = {
     color = rgb { 201 56 93 }

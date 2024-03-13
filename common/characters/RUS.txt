@@ -41,6 +41,46 @@ characters = {
 			id = -1
 		}
 	}
+	RUS_anton_denikin = {#反乱軍の国家指導者
+		name = SOV_anton_denikin
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_anton_denikin"
+			}
+			army = {
+				large = "GFX_portrait_SOV_anton_denikin"
+				small = "GFX_idea_SOV_anton_denikin"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1947.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = anton_denikin
+			allowed = {
+				original_tag = RUS
+			}			
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			traits = { old_guard inflexible_strategist }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 	RUS_Joseph_Stalin = {
 		name = RUS_Joseph_Stalin
 		portraits = {
@@ -1629,38 +1669,46 @@ characters = {
 	##  ####  #  #     #   #   #      #### ###  # # #   #    ( Y )  
 	#   #  #   # #  #  #    #  #      #  # #  # #   #   #   ()~*~() 
 	#   #  # ##   ##  ### ##   #      #  # #  # #   #   #   (_)-(_) 
-	RUS_anton_denikin = {
-		name = SOV_anton_denikin
-		portraits = {
-			army = {
-				large = "GFX_portrait_SOV_anton_denikin"
-				small = "GFX_idea_SOV_anton_denikin"
-			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = anton_denikin
-			allowed = {
-				original_tag = RUS
-			}			
-			traits = {
-				army_chief_drill_1
-			}
-			cost = 50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
+	# RUS_anton_denikin = {
+	# 	name = SOV_anton_denikin
+	# 	portraits = {
+	# 		civilian = {
+	# 			large = "GFX_portrait_SOV_anton_denikin"
+	# 		}
+	# 		army = {
+	# 			large = "GFX_portrait_SOV_anton_denikin"
+	# 			small = "GFX_idea_SOV_anton_denikin"
+	# 		}
+	# 	}
+	# 	country_leader = {
+	# 		ideology = despotism
+	# 		expire = "1947.1.1"
+	# 		id = -1
+	# 	}
+	# 	advisor = {
+	# 		slot = army_chief
+	# 		idea_token = anton_denikin
+	# 		allowed = {
+	# 			original_tag = RUS
+	# 		}			
+	# 		traits = {
+	# 			army_chief_drill_1
+	# 		}
+	# 		cost = 50
+	# 		ai_will_do = {
+	# 			factor = 1.000
+	# 		}
+	# 	}
 		
-		field_marshal = {
-			traits = { old_guard inflexible_strategist }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
-	}
+	# 	field_marshal = {
+	# 		traits = { old_guard inflexible_strategist }
+	# 		skill = 1
+	# 		attack_skill = 1
+	# 		defense_skill = 1
+	# 		planning_skill = 1
+	# 		logistics_skill = 1
+	# 	}
+	# }
 
 
 
