@@ -1,0 +1,8 @@
+opinion_modifiers = {
+	RUS_accepted_finland_expantion = {
+		value = 60
+	}
+	RUS_broke_our_independence = {
+		value = -100
+	}
+}
