@@ -33,7 +33,7 @@ division_template = {
 
 	regiments = {
 		irregular_infantry = { x = 0 y = 0 }
-		irregular_infantry = { x = 0 y = 0 }
+		irregular_infantry = { x = 0 y = 1 }
 		irregular_infantry = { x = 1 y = 0 }
 		irregular_infantry = { x = 1 y = 1 }
 		irregular_infantry = { x = 2 y = 0 }
@@ -41,6 +41,127 @@ division_template = {
 	}
 	support = {
 		recon = { x = 0 y = 0 }  
+	}
+}
+units = {
+	#infantry
+	division= {
+		location = 2220
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+	}
+	division= {
+		location = 12989
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+	}
+	division= {
+		location = 8144
+		division_template = "Schutztruppe"
+		start_experience_factor = 0.4
+	}
+	division= {
+		location = 9622
+		division_template = "Schutztruppe"
+		start_experience_factor = 0.4
+	}
+	division= {
+		location = 2176
+		division_template = "Schutztruppe"
+		start_experience_factor = 0.4
+	}
+	division= {
+		location = 7161
+		division_template = "Schutztruppe"
+		start_experience_factor = 0.4
+	}
+	division= {
+		location = 2034
+		division_template = "Schutztruppe"
+		start_experience_factor = 0.4
+	}
+	division= {
+		location = 11934
+		division_template = "Schutztruppe"
+		start_experience_factor = 0.4
+	}
+
+	division= {
+		location = 2073
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.8
+	}
+	division= {
+		location = 10766
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.8
+	}
+	division= {
+		location = 2220
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.8
+	}
+	division= {
+		location = 2220
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.8
+	}
+	division= {
+		location = 2220
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.8
+	}
+
+	division= {
+		location = 12847
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.1
+	}
+	division= {
+		location = 2220
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.1
+	}
+	division= {
+		location = 4941
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.1
+	}
+	division= {
+		location = 1950
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.1
+	}
+	division= {
+		location = 2220
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.1
+	}
+	division= {
+		location = 12989
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.1
+	}
+
+	division= {
+		location = 2220
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.1
+	}
+	division= {
+		location = 7161
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.1
+	}
+	division= {
+		location = 2073
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.1
+	}
+	division= {
+		location = 7161
+		division_template = "Infanteriedivision Ascari"
+		start_experience_factor = 0.1
 	}
 }
 
