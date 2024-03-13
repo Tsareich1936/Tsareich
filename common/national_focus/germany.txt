@@ -7,31 +7,53 @@ focus_tree = {
 			tag = GER
 		}
 	}
-	continuous_focus_position = { x = 20 y = 1200 }
+	continuous_focus_position = { x = 100 y = 1500 }
 	default = no
 	focus = {
 		id = GER_1936_election
 		icon = GFX_german_election
-		cost = 10.00
+		cost = 5.00
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "TR_GER_1936_council_election_trigger_tt"
+				always = no
+			}
+		}
 		x = 9
 		y = 0
+		completion_reward = {
+			effect_tooltip = {
+				custom_effect_tooltip = "TR_GER_1936_council_election_effect_tt"
+			}
 
+			hidden_effect = {
+				country_event = TR_germany.1
+			}
+		}
 	}
 	focus = {
 		id = GER_KPD
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_1936_election
 		}
 		x = 9
 		y = 2
-
+		completion_reward = {
+			add_political_power = 100
+			effect_tooltip = {
+				custom_effect_tooltip = "TR_GER_congress_of_the_KPD_tt"
+			}
+			hidden_effect = {
+				country_event = TR_germany.3
+			}
+		}
 	}
 	focus = {
 		id = GER_focus_Heinrich_Brandler
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_KPD
 		}
@@ -45,7 +67,7 @@ focus_tree = {
 	focus = {
 		id = GER_united_front_movement
 		icon = GFX_focus_por_workers_of_iberia
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_focus_Heinrich_Brandler
 		}
@@ -56,7 +78,7 @@ focus_tree = {
 	focus = {
 		id = GER_trade_union_collaborators
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_united_front_movement
 		}
@@ -67,7 +89,7 @@ focus_tree = {
 	focus = {
 		id = GER_death_to_the_fascists
 		icon = GFX_focus_generic_conspiracy
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_united_front_movement
 		}
@@ -78,7 +100,7 @@ focus_tree = {
 	focus = {
 		id = GER_workers_government
 		icon = GFX_focus_generic_workers_and_farmers_rise
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_trade_union_collaborators
 		}
@@ -92,7 +114,7 @@ focus_tree = {
 	focus = {
 		id = GER_focus_Ernst_Thalmann
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_KPD
 		}
@@ -106,7 +128,7 @@ focus_tree = {
 	focus = {
 		id = GER_revision_of_the_planned_economy
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_focus_Heinrich_Brandler
 			focus = GER_focus_Ernst_Thalmann
@@ -118,7 +140,7 @@ focus_tree = {
 	focus = {
 		id = GER_improvement_of_peoples_lives
 		icon = GFX_focus_generic_supply_line
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_revision_of_the_planned_economy
 		}
@@ -129,7 +151,7 @@ focus_tree = {
 	focus = {
 		id = GER_price_stabilization
 		icon = GFX_focus_CHL_silverworking
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_revision_of_the_planned_economy
 		}
@@ -143,7 +165,7 @@ focus_tree = {
 	focus = {
 		id = GER_New_economy_system
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_improvement_of_peoples_lives
 		}
@@ -155,9 +177,9 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GER_fighting_democracy
+		id = GER_all_power_to_the_rate
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_workers_government
 		}
@@ -171,7 +193,7 @@ focus_tree = {
 	focus = {
 		id = GER_eliminate_political_opponents
 		icon = GFX_focus_spr_crush_the_revolution
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_focus_Ernst_Thalmann
 		}
@@ -182,7 +204,7 @@ focus_tree = {
 	focus = {
 		id = GER_establishment_of_a_mutual_surveillance_network
 		icon = GFX_focus_generic_annex_country_2
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_eliminate_political_opponents
 		}
@@ -193,7 +215,7 @@ focus_tree = {
 	focus = {
 		id = GER_ban_SPD
 		icon = GFX_focus_SOV_the_last_purge
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_eliminate_political_opponents
 		}
@@ -204,7 +226,7 @@ focus_tree = {
 	focus = {
 		id = GER_party_and_peoples_Leader
 		icon = GFX_focus_ARG_centralize_power
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_establishment_of_a_mutual_surveillance_network
 		}
@@ -218,7 +240,7 @@ focus_tree = {
 	focus = {
 		id = GER_theleman_constitution
 		icon = GFX_focus_TUR_ratify_the_six_arrows
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = GER_party_and_peoples_Leader
 		}
@@ -232,9 +254,9 @@ focus_tree = {
 	focus = {
 		id = GER_the_way_we_go
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
-			focus = GER_fighting_democracy
+			focus = GER_all_power_to_the_rate
 			focus = GER_theleman_constitution
 		}
 		x = 9
