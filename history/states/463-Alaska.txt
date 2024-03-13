@@ -4,7 +4,7 @@ state={
 	name="STATE_463"
 	resources = { oil = 12 }
 	history={
-		owner = RUS
+		owner = RUP
 		buildings = {
 			infrastructure = 2
 			air_base = 4
@@ -14,7 +14,7 @@ state={
 			}
 
 		}
-		add_core_of = RUS
+		add_core_of = RUP
 
 		victory_points = {
 			13203 5 

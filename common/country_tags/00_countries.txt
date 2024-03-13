@@ -274,6 +274,7 @@ BKN = "countries/Wuhan.txt"
 SAN = "countries/Santou.txt"
 EXC = "countries/Kanton.txt"
 JCH = "countries/Japan_China.txt"
+RUP = "countries/Russian America and Pacific"
 
  # CSA = "countries/CSA.txt"
  # ARP = "countries/American Republic.txt"

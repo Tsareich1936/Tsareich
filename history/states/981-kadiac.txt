@@ -6,7 +6,7 @@ state={
 	}
 	resources = { steel = 13 aluminium = 20 }
 	history={
-		owner = RUS
+		owner = RUP
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -16,7 +16,7 @@ state={
 			}
 
 		}
-		add_core_of = RUS
+		add_core_of = RUP
 
 		victory_points = {
 			4833 5

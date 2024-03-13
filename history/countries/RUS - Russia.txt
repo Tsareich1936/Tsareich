@@ -138,19 +138,7 @@ add_ideas = {
 add_dynamic_modifier = {
 	modifier = TR_traditional_economy_modifier
 }
-every_state = {
-	limit = {
-		is_controlled_by = RUS
-		OR = {
-			is_core_of = KAZ
-			is_core_of = TMS
-			is_core_of = TAJ
-			is_core_of = KYR
-			is_core_of = GEO
-		}
-	}
-	add_state_modifier = RUS_other_volks
-}
+
 
 # politics
 set_research_slots = 3
@@ -201,6 +189,10 @@ if = {
 		target = SYR
 		autonomous_state = autonomy_puppet
 	}
+	set_autonomy = {
+		target = RUP
+		autonomous_state = autonomy_puppet
+	}
 }
 if = {
 	limit = { 
@@ -216,6 +208,10 @@ if = {
 	}
 	set_autonomy = {
 		target = SYR
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = RUP
 		autonomous_state = autonomy_puppet
 	}
 }
@@ -240,6 +236,7 @@ add_to_faction = FIN
 add_to_faction = ARM
 add_to_faction = SYR
 add_to_faction = MON
+add_to_faction = RUP
 
 add_to_tech_sharing_group = slav_entente_research
 FIN = {
@@ -249,6 +246,9 @@ ARM = {
 	add_to_tech_sharing_group = slav_entente_research
 }
 SYR = {
+	add_to_tech_sharing_group = slav_entente_research
+}
+RUP = {
 	add_to_tech_sharing_group = slav_entente_research
 }
 

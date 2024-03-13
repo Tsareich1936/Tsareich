@@ -9,7 +9,7 @@ state={
 	state_category = small_island
 
 	history={
-		owner = FGE
+		owner = RUP
 		add_core_of = TAH
 		add_claim_by = FRA
 		victory_points = {
