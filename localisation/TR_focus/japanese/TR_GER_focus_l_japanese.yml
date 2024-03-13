@@ -1,23 +1,29 @@
 ﻿l_japanese:
  GER_1936_election:0 "1936年評議会選挙"
  GER_1936_election_desc:0 "ドイツの国政は共産党(KPD)、社会民主党(SPD)、社会党(DSP)の三大政党によって分断されている。将来の展望について異なる考えを持つ各政党は、より多くの議席獲得、あるいは政権奪取を目指して積極的に選挙活動を行っている。"
+
  GER_KPD:0 "KPDの勝利"
  GER_KPD_desc:0 "共産党(KPD)は選挙で過半数以上の議席を獲得し、与党の座を守り抜いた。次の評議会議長は共産党(KPD)から選出しなければならない。"
+
  GER_focus_Heinrich_Brandler:0 "ブランドラー派"
- GER_focus_Ernst_Thalmann:0 "テールマン派"
  GER_united_front_movement:0 "統一戦線運動"
- GER_eliminate_political_opponents:0 "政敵を排除"
- GER_establishment_of_a_mutual_surveillance_network:0 "相互監視網の構築"
- GER_revision_of_the_planned_economy:0 "計画経済の見直し"
- GER_ban_SPD:0 "社民党の非合法化"
- GER_party_and_peoples_Leader:0 "党と人民の指導者"
  GER_trade_union_collaborators:0 "労働組合の協力者"
- GER_seek_reconciliation:0 "和解を求める"
  GER_death_to_the_fascists:0 "ファシストに死を！"
  GER_workers_government:0 "労働者政府万歳"
+ GER_all_power_to_the_rate:0 "「全権力をレーテに」"
+
+ GER_focus_Ernst_Thalmann:0 "テールマン派"
+ GER_eliminate_political_opponents:0 "政敵を排除"
+ GER_establishment_of_a_mutual_surveillance_network:0 "相互監視網の構築"
+ GER_ban_SPD:0 "社民党の非合法化"
+ GER_party_and_peoples_Leader:0 "党と人民の指導者"
  GER_theleman_constitution:0 "テールマン憲法"
+
+ GER_revision_of_the_planned_economy:0 "計画経済の見直し"
  GER_improvement_of_peoples_lives:0 "国民生活の改善"
  GER_price_stabilization:0 "価格の安定化"
  GER_New_economy_system:0 "新経済システム"
+
  GER_the_way_we_go:0 "我々が目指す道"
- GER_all_power_to_the_rate:0 "「全権力をレーテに」"
+
+ GER_berlin_international_convention:0"ベルリン・インターナショナル大会"

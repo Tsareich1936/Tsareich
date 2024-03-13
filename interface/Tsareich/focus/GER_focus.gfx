@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_german_election"
 		textureFile = "gfx/interface/goals/Tsareich/german_election.dds"
 	}
+	spriteType = {
+		name = "GFX_Shield_with_Laurels"
+		textureFile = "gfx/interface/goals/Tsareich/Shield_with_Laurels.dds"
+	}
 }
