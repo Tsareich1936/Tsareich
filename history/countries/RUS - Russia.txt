@@ -127,6 +127,8 @@ add_ideas = {
 	RUS_geeran_battle_line
 	RUS_germany_battle_line
 
+	RUS_alaska_budget_cost
+
 	#debug
 
 	#laws

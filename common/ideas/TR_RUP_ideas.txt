@@ -1,0 +1,69 @@
+ideas = {
+	country = {
+		RUP_alaska_budget = {
+            picture = gre_schachtplan
+            allowed = {
+
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                tag = RUP
+            }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = -0.25
+				industrial_factory_donations = 8
+				military_factory_donations = 4
+				weekly_manpower = 1000
+				custom_modifier_tooltip = RUS_rup_budget.tt
+            }
+        }
+
+		#cost
+		RUS_alaska_budget_cost = {
+            picture = gre_schachtplan
+            allowed = {
+
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                tag = RUP
+            }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.15
+            }
+        }
+
+		RUP_alaska_navy_company = {
+            picture = NORDIC_navy_communist
+            allowed = {
+
+            }
+            available = {
+                
+            }
+            cancel = {
+
+            }
+            allowed_civil_war = {
+                tag = RUP
+            }
+            removal_cost = -1
+            modifier = {
+				dockyard_donations = 12
+				industrial_capacity_dockyard = 0.25
+            }
+        }
+	}
+}
