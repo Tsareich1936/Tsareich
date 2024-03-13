@@ -138,6 +138,19 @@ add_ideas = {
 add_dynamic_modifier = {
 	modifier = TR_traditional_economy_modifier
 }
+every_state = {
+	limit = {
+		is_controlled_by = RUS
+		OR = {
+			is_core_of = KAZ
+			is_core_of = TMS
+			is_core_of = TAJ
+			is_core_of = KYR
+			is_core_of = GEO
+		}
+	}
+	add_state_modifier = RUS_other_volks
+}
 
 # politics
 set_research_slots = 3

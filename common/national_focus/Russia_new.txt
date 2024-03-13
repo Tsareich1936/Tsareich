@@ -7,7 +7,6 @@ focus_tree = {
 		}
 	}
 	default = no
-
 	############################
 	#	皇帝死亡イベント分岐	#
 	############################
@@ -57,7 +56,6 @@ focus_tree = {
 			always = no
 		}
 	}
-
 	########################
 	#	改革皇帝政治近代化	#
 	########################
@@ -80,7 +78,6 @@ focus_tree = {
 				RUS = {
 					kill_country_leader = yes
 					set_country_flag = Tsar_kirill
-					
 				}
 			}
 			promote_character = {
@@ -94,13 +91,10 @@ focus_tree = {
 					elections_allowed = no
 				}
 				country_event = TR_Russia_TW.1
-				country_event = { id = TR_Russia_TW.2 days = 30 }
 			}
 			custom_effect_tooltip = RUS_TW_tt.1
-
 		}
 	}
-
 	#差し迫った危機
 	focus = {
 		id = RUS_imminent_dangerous
@@ -114,88 +108,272 @@ focus_tree = {
 		y = 1
 		search_filters = FOCUS_FILTER_POLITICAL
 		completion_reward = {
-
+			add_political_power = 50
+			custom_effect_tooltip = RUS_TW_unprison
+			add_trait = {
+				character = RUS_kirill_vladimirovich
+				trait = TR_krill_evolutional_government
+			}
 		}
 	}
-#	focus = {
-#		id = RUS_unprison
-#		cost = 5
-#		prerequisite = {
-#			focus = RUS_newtsar
-#		}
-#		x = 1
-#		y = 1
-#		relative_position_id = RUS_newtsar
-#		search_filters = {
-#			FOCUS_FILTER_POLITICAL
-#			FOCUS_FILTER_ARMY_XP
-#			FOCUS_FILTER_NAVY_XP
-#			FOCUS_FILTER_AIR_XP
-#			FOCUS_FILTER_WAR_SUPPORT
-#			FOCUS_FILTER_POLITICAL_CHARACTER
-#		}
-#		available = {
-#		}
-#		completion_reward = {
-#			add_stability = -0.15
-#			add_trait = {
-#				character = RUS_kirill_vladimirovich
-#				ideology = despotism
-#				trait = TR_krill_evolutional_government
-#			}
-#		}
-#	}
-#	focus = {
-#		id = RUS_tsar_infantry
-#		icon = GFX_focus_RUS_guard
-#		cost = 5
-#		prerequisite = {
-#			focus = RUS_newtsar
-#		}
-#		x = -1
-#		y = 1
-#		relative_position_id = RUS_newtsar
-#		search_filters = {
-#			FOCUS_FILTER_POLITICAL
-#			FOCUS_FILTER_STABILITY
-#			FOCUS_FILTER_POLITICAL_CHARACTER
-#		}
-#		available = {
-#		}
-#		completion_reward = {
-#			remove_trait = {
-#				character = RUS_kirill_vladimirovich
-#				ideology = despotism
-#				trait = TR_krill_conflicts_in_the_court
-#			}
-#		}
-#	}
-#
-#	focus = {
-#		id = RUS_remake_national_government
-#		icon = GFX_focus_RUS_new_government
-#		cost = 5
-#		prerequisite = {
-#			focus = RUS_tsar_infantry
-#		}
-#		prerequisite = {
-#			focus = RUS_unprison
-#		}
-#		x = 0
-#		y = 2
-#		relative_position_id = RUS_newtsar
-#		search_filters = {
-#			FOCUS_FILTER_POLITICAL
-#		}
-#		available = {
-#		}
-#		completion_reward = {
-#
-#		}
-#	}
+	#親衛隊
+	focus = {
+		id = RUS_tsar_infantry
+		icon = GFX_focus_RUS_guard
+		cost = 5
+		prerequisite = {
+			focus = RUS_imminent_dangerous
+		}
+		mutually_exclusive = {
+			focus = RUS_appeal_to_army
+			focus = RUS_purge_the_opposition
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_newtsar
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_TW_tsarinf.2
+			custom_effect_tooltip = RUS_TW_tsarinf_warinf
+			custom_effect_tooltip = RUS_TW_inf_danger
+		}
+	}
+	#陸軍
+	focus = {
+		id = RUS_appeal_to_army
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+		cost = 5
+		prerequisite = {
+			focus = RUS_imminent_dangerous
+		}
+		mutually_exclusive = {
+			focus = RUS_tsar_infantry
+			focus = RUS_purge_the_opposition
+		}
+		x = -3
+		y = 2
+		relative_position_id = RUS_newtsar
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		}
+		completion_reward = {
+			army_experience = 30
+			custom_effect_tooltip = RUS_TW_army_warinf
+			custom_effect_tooltip = RUS_TW_inf_danger
+		}
+	}
+	#将校の弾圧
+	focus = {
+		id = RUS_purge_the_opposition
+		icon = GFX_focus_SOV_military_purge
+		cost = 5
+		prerequisite = {
+			focus = RUS_imminent_dangerous
+		}
+		mutually_exclusive = {
+			focus = RUS_appeal_to_army
+			focus = RUS_tsar_infantry
+		}
+		x = 3
+		y = 2
+		relative_position_id = RUS_newtsar
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_TW_purge.1
+			every_army_leader = {
+				limit = {
+					has_trait = old_guard
+				}
+				add_skill_level = -1
+				add_attack = -1
+				add_defense = -1
+			}
+			add_timed_idea = {
+				idea = RUS_purged_army_TW
+				days = 180
+			}
+			custom_effect_tooltip = RUS_TW_inf_danger
+		}
+	}
+	#フィンランドとの交渉
+	focus = {
+		id = RUS_concession_to_FIN
+		icon = GFX_focus_invite_finland
+		cost = 5
+		prerequisite = {
+			focus = RUS_purge_the_opposition
+			focus = RUS_tsar_infantry
+			focus = RUS_appeal_to_army
+		}
+		mutually_exclusive = {
+			focus = RUS_nothing_to_FIN
+			focus = RUS_invade_FIN_with_oppose
+		}
+		x = -3
+		y = 3
+		relative_position_id = RUS_newtsar
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_TW_fin_state
+			add_opinion_modifier = {
+				target = FIN
+				modifier = RUS_accepted_finland_expantion
+			}
+			custom_effect_tooltip = RUS_TW_fin_danger
+		}
+	}
+	#フィンランドを放置
+	focus = {
+		id = RUS_nothing_to_FIN
+		icon = GFX_focus_generic_invade_finland
+		cost = 5
+		prerequisite = {
+			focus = RUS_purge_the_opposition
+			focus = RUS_tsar_infantry
+			focus = RUS_appeal_to_army
+		}
+		mutually_exclusive = {
+			focus = RUS_concession_to_FIN
+			focus = RUS_invade_FIN_with_oppose
+		}
+		x = 0
+		y = 3
+		relative_position_id = RUS_newtsar
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_TW_fin_nothing
+			add_stability = -0.02
+			custom_effect_tooltip = RUS_TW_fin_danger
+		}
+	}
+	#フィンランドを刺激
+	focus = {
+		id = RUS_invade_FIN_with_oppose
+		icon = GFX_focus_generic_invade_finland
+		cost = 5
+		prerequisite = {
+			focus = RUS_purge_the_opposition
+			focus = RUS_tsar_infantry
+			focus = RUS_appeal_to_army
+		}
+		mutually_exclusive = {
+			focus = RUS_concession_to_FIN
+			focus = RUS_nothing_to_FIN
+		}
+		x = 3
+		y = 3
+		relative_position_id = RUS_newtsar
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		}
+		completion_reward = {
+			custom_effect_tooltip = RUS_TW_fin_war
+			custom_effect_tooltip = RUS_TW_fin_war_core
+			set_autonomy = {
+				target = FIN
+				autonomous_state = autonomy_puppet
+			}
+			add_opinion_modifier = {
+				target = FIN
+				modifier = RUS_broke_our_independence
+			}
+			custom_effect_tooltip = RUS_TW_fin_danger
+		}
+	}
+	#軍制改革
+	focus = {
+		id = RUS_national_army
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+		cost = 5
+		prerequisite = {
+			focus = RUS_nothing_to_FIN
+			focus = RUS_concession_to_FIN
+			focus = RUS_invade_FIN_with_oppose
+		}
+		mutually_exclusive = {
+			focus = RUS_volked_army
+		}
+		x = -2
+		y = 4
+		relative_position_id = RUS_newtsar
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		}
+		completion_reward = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = RUS_volks_army_diff
+					add_idea = RUS_volks_army_diff_notag
+				}
+			}
+			clear_division_template_cap = { 
+				division_template = "Kavkazskaia strelkovaia diviziia"
 
+			}
+			clear_division_template_cap = { 
+				division_template = "Turkestanskaia strelkovaia diviziia"
 
+			}
+			clear_division_template_cap = { 
+				division_template = "Sibirskaia strelkovaia diviziia"
 
+			}
+			clear_division_template_cap = { 
+				division_template = "Kavkazskaia grenaderskaia diviziia"
+
+			}
+			clear_division_template_cap = { 
+				division_template = "Kavkazskaia kavaleriiskaia divizii"
+
+			}
+			remove_ideas = RUS_volks_army_diff_notag
+			custom_effect_tooltip = RUS_TW_volk_danger
+		}
+	}
+	#	focus = {
+	#		id = RUS_remake_national_government
+	#		icon = GFX_focus_RUS_new_government
+	#		cost = 5
+	#		prerequisite = {
+	#			focus = RUS_tsar_infantry
+	#		}
+	#		prerequisite = {
+	#			focus = RUS_unprison
+	#		}
+	#		x = 0
+	#		y = 2
+	#		relative_position_id = RUS_newtsar
+	#		search_filters = {
+	#			FOCUS_FILTER_POLITICAL
+	#		}
+	#		available = {
+	#		}
+	#		completion_reward = {
+	#
+	#		}
+	#	}
 	########################
 	#	反動皇帝政治近代化	#
 	########################
@@ -217,7 +395,6 @@ focus_tree = {
 			custom_effect_tooltip = RUS_TWC_tt.1
 		}
 	}
-	
 	#####################
 	#	外交ツリー		#
 	#####################
@@ -239,7 +416,6 @@ focus_tree = {
 			unlock_decision_category_tooltip = RUS_spain_civilwar_decision_c
 		}
 	}
-
 	# 欧州外交ツリー
 	focus = {
 		id = RUS_europe_diplo
@@ -340,7 +516,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	#択一
 	focus = {
 		id = RUS_money_to_ROM
@@ -401,7 +576,6 @@ focus_tree = {
 		y = 3
 		relative_position_id = RUS_empire_diplo
 	}
-
 	# 側面
 	focus = {
 		id = RUS_corp_POR
@@ -421,7 +595,6 @@ focus_tree = {
 		relative_position_id = RUS_empire_diplo
 		completion_reward = {
 			add_political_power = 30
-
 		}
 	}
 	focus = {
@@ -447,7 +620,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	#三列目
 	focus = {
 		id = RUS_diplo_help_CZE
@@ -466,7 +638,6 @@ focus_tree = {
 		y = 4
 		relative_position_id = RUS_empire_diplo
 	}
-
 	#亡命政府
 	focus = {
 		id = RUS_money_to_FGE
@@ -502,7 +673,6 @@ focus_tree = {
 		y = 4
 		relative_position_id = RUS_empire_diplo
 	}
-
 	#下段
 	focus = {
 		id = RUS_knockout_commune
@@ -521,8 +691,6 @@ focus_tree = {
 		y = 5
 		relative_position_id = RUS_empire_diplo
 	}
-
-
 	#太平洋外交
 	focus = {
 		id = RUS_diplo_US
@@ -559,7 +727,6 @@ focus_tree = {
 		y = 2
 		relative_position_id = RUS_empire_diplo
 	}
-
 	#択一
 	focus = {
 		id = RUS_air_pro_US
@@ -593,7 +760,6 @@ focus_tree = {
 				is_subject = yes
 			}
 		}
-
 		mutually_exclusive = {
 			focus = RUS_air_pro_US
 		}
@@ -601,7 +767,6 @@ focus_tree = {
 		y = 3
 		relative_position_id = RUS_empire_diplo
 	}
-
 	#中東外交
 	focus = {
 		id = RUS_battle_with_PER
@@ -632,7 +797,6 @@ focus_tree = {
 			country_event = TR_Russia.5
 		}
 	}
-
 	focus = {
 		id = RUS_afgan_diplo
 		icon = GFX_focus_generic_befriend_afghanistan
@@ -667,7 +831,6 @@ focus_tree = {
 		y = 2
 		relative_position_id = RUS_empire_diplo
 	}
-
 	#択一
 	focus = {
 		id = RUS_invade_mid
@@ -710,7 +873,6 @@ focus_tree = {
 		y = 3
 		relative_position_id = RUS_empire_diplo
 	}
-
 	# 国家顧問
 	focus = {
 		id = RUS_send_pros
@@ -745,7 +907,6 @@ focus_tree = {
 		y = 2
 		relative_position_id = RUS_empire_diplo
 	}
-
 	#択一
 	focus = {
 		id = RUS_international_industrial_pro
@@ -777,7 +938,6 @@ focus_tree = {
 		y = 3
 		relative_position_id = RUS_empire_diplo
 	}
-
 	#アンカラ条約
 	focus = {
 		id = RUS_ankara_treaty
@@ -796,7 +956,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_empire_diplo
 	}
-
 	#択一
 	focus = {
 		id = RUS_corp_TUR

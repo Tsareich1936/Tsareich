@@ -1,0 +1,5 @@
+RUS_other_volks = {
+	army_attack_factor = -0.05
+	army_defence_factor = -0.05
+	army_speed_factor = -0.05
+}
