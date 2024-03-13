@@ -8,8 +8,8 @@ state={
 	}
 
 	history={
-		owner = ENG
-		add_core_of = RWA
+		owner = PRE
+		add_core_of = PRE
 		victory_points = {
 			9962 1
 		}

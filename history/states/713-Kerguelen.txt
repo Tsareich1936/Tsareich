@@ -5,8 +5,7 @@ state={
 	state_category = tiny_island
 
 	history={
-		add_claim_by = FRA
-		owner = FGE
+		owner = ENG
 		buildings = {
 			infrastructure = 1
 			2165 = {
