@@ -144,29 +144,6 @@ ideas = {
                 custom_modifier_tooltip = RUS_idea_volks_army.tt
             }
         }
-
-        RUS_volks_army_diff_notag = {
-            picture = generic_army_problems
-            allowed = {
-
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                tag = RUS
-            }
-            removal_cost = -1
-            modifier = {
-                army_core_defence_factor = -0.015
-                command_power_gain = -0.15
-                stability_factor = -0.05
-            }
-        }
-
         RUS_research_diff = {
             picture = generic_army_problems
             allowed = {
@@ -786,26 +763,6 @@ ideas = {
                 navy_org_factor = -0.4
                 navy_max_range_factor = -0.4
                 industrial_capacity_dockyard = -0.75
-            }
-        }
-
-        RUS_purged_army_TW = {
-            picture = SOV_conspiracy_in_the_academy_army
-            allowed = {
-                
-            }
-            available = {
-                
-            }
-            cancel = {
-
-            }
-            allowed_civil_war = {
-                always = yes
-            }
-            removal_cost = -1
-            modifier = {
-                experience_gain_army_factor = -0.35
             }
         }
 
