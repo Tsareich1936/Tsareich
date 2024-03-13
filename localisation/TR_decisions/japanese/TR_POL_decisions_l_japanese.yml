@@ -6,7 +6,7 @@
  TR_POL_resistance2: "抵抗運動を扇動"
  TR_POL_spread_the_movement1: "抵抗運動を拡大"
  TR_RUS_attack_resistance: "抵抗運動の鎮圧"
- dicision_cost_pp_50_manpower_15k: "£pol_power_icon §Y50§! £manpower_icon    §Y15.00k§!"
- dicision_cost_pp_50_manpower_15k_blocked: "£pol_power_icon §R50§! £manpower_icon    §R15.00k§!"
- dicision_cost_pp_50_manpower_15k_tooltip: "このディシジョンを実行するには、\n£pol_power_icon  §Y50§!\n  £manpower_icon     §Y15.00k§! が必要"
+ dicision_cost_pp_100_manpower_25k: "£pol_power_icon §Y100§! £manpower_icon    §Y25.00k§!"
+ dicision_cost_pp_100_manpower_25k_blocked: "£pol_power_icon §R100§! £manpower_icon    §R25.00k§!"
+ dicision_cost_pp_100_manpower_25k_tooltip: "このディシジョンを実行するには、\n£pol_power_icon  §Y100§!\n  £manpower_icon     §Y25.00k§! が必要"
 #£infantry_equipment_text_icon §Y5.00k§!

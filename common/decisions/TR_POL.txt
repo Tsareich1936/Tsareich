@@ -312,7 +312,6 @@ TR_RUS_resistance = {
 		visible = {
 			NOT = {
 				has_global_flag = TR_poland_recognized_flag
-				has_country_flag = attacked_resistance
 			}
 			# FROM = {
 			# 	NOT = {
@@ -339,50 +338,36 @@ TR_RUS_resistance = {
 		on_map_mode = map_only
 		icon = my_icon
 		custom_cost_trigger = {
-			has_manpower > 14999
-			has_political_power > 49
+			has_manpower > 24999
+			has_political_power > 99
 			# has_equipment = {
 			# 	infantry_equipment > 4999
 			# }
 		}
-		custom_cost_text = dicision_cost_pp_50_manpower_15k #_ie_5k
+		custom_cost_text = dicision_cost_pp_100_manpower_25k #_ie_5k
 		ai_will_do = {
-			base = 50
+			base = 999
 			modifier = {
 				factor = 0
-				has_manpower < 15001
-				has_political_power < 51
-			}
-			modifier = {
-				factor = 2
-				has_manpower > 30001
-				has_political_power > 101
-			}
-			modifier = {
-				factor = 2
-				has_manpower > 60001
+				has_manpower < 25001
 				has_political_power > 151
+				# has_equipment = {
+				# 	infantry_equipment < 10001
+				# }
 			}
 		}
 		complete_effect = {
-			add_manpower = -15000
-			add_political_power = -50
-			hidden_effect = {
-				set_country_flag = {
-					flag = attacked_resistance
-					value = 1
-					days = 7
-				}
-			}
+			add_manpower = -25000
+			add_political_power = -100
 			# add_equipment_to_stockpile = {
 			# 	type = infantry_equipment
 			# 	amount = -5000
 			# }
 		}
-		days_remove = 7
+		days_remove = 70
 		remove_effect = {
 			FROM = {
-				add_resistance = -25
+				add_resistance = -15
 			}
 			if = {
 				limit = {
@@ -404,7 +389,6 @@ TR_RUS_resistance = {
 					}
 				}
 			}
-			
 		}
 	}
 }
