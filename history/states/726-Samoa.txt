@@ -1,23 +1,24 @@
 state={
-	id=708
-	name="STATE_708"
-	manpower = 126703
-
+	id=726
+	name="STATE_726"
+	manpower=123214
 	state_category = small_island
 
 	history={
-		owner = RUS
-		add_core_of = MAD
+		owner = RUP
+		add_core_of = SAM
 		buildings = {
 			infrastructure = 2
-			13072 = {
+			7290 = {
 				naval_base = 1
 			}
 		}
+		victory_points = {
+			7290 1
+		}
 	}
-
 	provinces={
-		13072 
+		7290 13080 
 	}
 
 	local_supplies=0.0 

@@ -6,9 +6,8 @@ state={
 	state_category = small_island
 
 	history={
-		owner = FGE
+		owner = RUS
 		add_core_of = MAD
-		add_claim_by = FRA
 		buildings = {
 			infrastructure = 2
 			13017 = {

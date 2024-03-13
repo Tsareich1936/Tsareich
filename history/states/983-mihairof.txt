@@ -6,12 +6,12 @@ state={
 	}
 	resources = { tungsten = 21 aluminium = 11 chromium = 74 oil = 51 }
 	history={
-		owner = RUS
+		owner = RUP
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = RUS
+		add_core_of = RUP
 
 		victory_points = {
 			7855 1
