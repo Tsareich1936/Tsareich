@@ -206,7 +206,7 @@ focus_tree = { # nomal
         completion_reward = {
             add_ideas = JAP_navy_ship
         }
-    }6
+    }
 
     focus = {
         id = jap_No_defeat
@@ -2198,36 +2198,181 @@ focus_tree = {
     }
 
     focus = {
-        id = jap_socialist_economy
-        icon = GFX_focus_generic_industry_1
+        id = jap_ST_economy
+        icon = GFX_focus_generic_the_giant_wakes
         relative_position_id = jap_Shakai_Taishuto
         x = 0
         y = 1
-        cost = 10
         prerequisite = {
             focus = jap_Shakai_Taishuto
         }
-        available = {
-            
+    }
+
+    focus = {
+        id = jap_public_housing
+        icon = GFX_focus_SWE_hygienic_housing
+        relative_position_id = jap_ST_economy
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_economy
         }
-        completion_reward = {
-            remove_ideas = JAP_inflation
-            country_event = TR_japan.4
+    }
+
+    focus = {
+        id = jap_Expansion_of_the_insurance_system	
+        icon = GFX_focus_generic_concessions
+        relative_position_id = jap_ST_economy
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_economy
+        }
+    }
+
+    focus = {
+        id = jap_Reduction_of_civil_servants
+        icon = GFX_goal_generic_construct_civ_factory
+        relative_position_id = jap_public_housing	
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_public_housing
+        }
+        prerequisite = {
+            focus = jap_Expansion_of_the_insurance_system
+        }
+    }
+
+    focus = {
+        id = jap_Regulation_of_strikes_in_public_sector	
+        icon = GFX_focus_renounce_the_treaty_of_trianon
+        relative_position_id = jap_public_housing	
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_public_housing
+        }
+        prerequisite = {
+            focus = jap_Expansion_of_the_insurance_system
+        }
+    }
+
+    focus = {
+        id = jap_Reduction_of_military_spending		
+        icon = GFX_goal_generic_consumer_goods
+        relative_position_id = jap_public_housing	
+        x = 3
+        y = 1
+        prerequisite = {
+            focus = jap_public_housing
+        }
+        prerequisite = {
+            focus = jap_Expansion_of_the_insurance_system
+        }
+    }
+
+    focus = {
+        id = jap_Efficient_government	
+        icon = GFX_focus_generic_industry_3
+        relative_position_id = jap_Regulation_of_strikes_in_public_sector
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_Reduction_of_civil_servants
+        }
+        prerequisite = {
+            focus = jap_Regulation_of_strikes_in_public_sector
+        }
+        prerequisite = {
+            focus = jap_Reduction_of_military_spending
+        }
+    }
+
+    focus = {
+        id = jap_nationalization
+        icon = GFX_goal_generic_construct_civ_factory
+        relative_position_id = jap_Efficient_government
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_Efficient_government
+        }
+    }
+
+    focus = {
+        id = jap_labor_union
+        icon = GFX_goal_generic_demand_territory
+        relative_position_id = jap_Efficient_government
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_Efficient_government
+        }
+    }
+
+    focus = {
+        id = jap_ST_Important_industry_control_law
+        icon = GFX_goal_generic_consumer_goods
+        relative_position_id = jap_labor_union
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_nationalization
+        }
+        prerequisite = {
+            focus = jap_labor_union
+        }
+    }
+
+    focus = {
+        id = jap_welfare_state
+        icon = GFX_focus_SWE_state_paid_vacation
+        relative_position_id = jap_ST_Important_industry_control_law
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_ST_Important_industry_control_law
+        }
+    }
+
+    focus = {
+        id = jap_Redistribution_of_income	
+        icon = GFX_focus_rom_parties_end
+        relative_position_id = jap_welfare_state
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_welfare_state
+        }
+    }
+
+    focus = {
+        id = jap_Universal_Pension	
+        icon = GFX_focus_SWE_state_paid_vacation
+        relative_position_id = jap_welfare_state
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_welfare_state
         }
     }
 
     focus = {
         id = jap_planned_economy
         icon = GFX_focus_generic_industry_2
-        relative_position_id = jap_socialist_economy
-        x = 0
+        relative_position_id = jap_Universal_Pension
+        x = -2
         y = 1
         cost = 8
         prerequisite = {
-            focus = jap_socialist_economy
+            focus = jap_Redistribution_of_income
         }
-        available = {
-            
+        prerequisite = {
+            focus = jap_Universal_Pension
+        }
+        mutually_exclusive = {
+            focus = jap_mixed_economy
         }
         completion_reward = {
             add_ideas = planned_economy
@@ -2238,96 +2383,324 @@ focus_tree = {
     }
 
     focus = {
-        id = jap_wealth_redistribution
-        icon = GFX_goal_generic_national_unity
-        relative_position_id = jap_planned_economy
+        id = jap_mixed_economy
+        icon = GFX_goal_generic_positive_trade_relations
+        relative_position_id = jap_Universal_Pension
         x = 0
         y = 1
         cost = 8
         prerequisite = {
+            focus = jap_Redistribution_of_income
+        }
+        prerequisite = {
+            focus = jap_Universal_Pension
+        }
+        mutually_exclusive = {
             focus = jap_planned_economy
         }
-        available = {
-            has_country_flag = {
-                flag = TR_japan_20
-                days > 365
-            }
-        }
-        completion_reward = {
-            add_ideas = JAP_wealth_redistribution
-        }
     }
-
     focus = {
-        id = jap_Building_Japanese-style_Socialism
-        icon = GFX_focus_spa_the_spanish_miracle
-        relative_position_id = jap_wealth_redistribution
-        x = 0
-        y = 1
-        cost = 10
-        prerequisite = {
-            focus = jap_wealth_redistribution
-        }
-        available = {
-            
-        }
-        completion_reward = {
-            add_ideas = JAP_Japanese_style_socialism
-            add_research_slot = 1
-            hidden_effect = {
-                mark_focus_tree_layout_dirty = yes
-            }
-        }
-    }
-
-    focus = {
-        id = jap_dismantling_of_the_Ministry_of_Home_Affairs
+        id = jap_ST_socail_reform
         icon = GFX_goal_generic_demand_territory
         relative_position_id = jap_Shakai_Taishuto
-        x = 2
+        x = -6
         y = 1
-        cost = 10
         prerequisite = {
             focus = jap_Shakai_Taishuto
         }
-        available = {
-            
-        }
+        cost = 4
         completion_reward = {
             add_political_power = 100
         }
     }
 
     focus = {
-        id = jap_Development_of_insurance_system
-		icon = GFX_goal_generic_construction2
-        relative_position_id = jap_dismantling_of_the_Ministry_of_Home_Affairs
+        id = jap_ST_Supporting_Shitamachi_Factory
+        icon = GFX_focus_generic_industry_1
+        relative_position_id = jap_ST_socail_reform
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_socail_reform
+        }
+        mutually_exclusive = {
+            focus = jap_ST_JIS
+        }
+    }
+
+    focus = {
+        id = jap_ST_JIS
+        icon = GFX_focus_generic_self_management
+        relative_position_id = jap_ST_socail_reform
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_socail_reform
+        }
+        mutually_exclusive = {
+            focus = jap_ST_Supporting_Shitamachi_Factory
+        }
+    }
+
+    focus = {
+        id = jap_ST_agrarian_reform_1
+        icon = GFX_land_reform1
+        relative_position_id = jap_ST_Supporting_Shitamachi_Factory
+        x = -1
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = jap_ST_Supporting_Shitamachi_Factory
+            focus = jap_ST_JIS
+        }
+        completion_reward = {
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_agr_1
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_agr_1_b
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_agr_1_c
+            }
+        }
+    }
+
+    focus = {
+        id = jap_ST_zaibatsu
+        icon = GFX_focus_jap_zaibatsu
+        relative_position_id = jap_ST_Supporting_Shitamachi_Factory
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_Supporting_Shitamachi_Factory
+            focus = jap_ST_JIS
+        }
+        completion_reward = {
+           swap_ideas = {
+            remove_idea = JAP_zaibatsus
+            add_idea = JAP_zaibatsus_2
+           }
+        }
+        cost = 4
+    }
+
+    focus = {
+        id = jap_ST_disparity
+        icon = GFX_goal_generic_demand_territory
+        relative_position_id = jap_ST_JIS 
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_Supporting_Shitamachi_Factory
+            focus = jap_ST_JIS
+        }
+    }
+
+    focus = {
+        id = jap_ST_school
+        icon = GFX_focus_research
+        relative_position_id = jap_ST_zaibatsu
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_agrarian_reform_1
+        }
+        prerequisite = {
+            focus = jap_ST_zaibatsu
+        }
+        prerequisite = {
+            focus = jap_ST_disparity
+        }
+    }
+
+    focus = {
+        id = jap_ST_dom
+        icon = GFX_focus_generic_hydroelectric_energy
+        relative_position_id = jap_ST_zaibatsu
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_agrarian_reform_1
+        }
+        prerequisite = {
+            focus = jap_ST_zaibatsu
+        }
+        prerequisite = {
+            focus = jap_ST_disparity
+        }
+    }
+
+    focus = {
+        id = jap_ST_agrarian_reform_2
+        icon = GFX_land_reform2
+        relative_position_id = jap_ST_school
+        x = -1
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = jap_ST_school
+        }
+        prerequisite = {
+            focus = jap_ST_dom
+        }
+        completion_reward = {
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_agr_2
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_agr_2_b
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_agr_2_c
+            }
+        }
+    }
+
+    focus = {
+        id = jap_ST_low
+        icon = GFX_focus_hol_the_foundations_of_defense
+        relative_position_id = jap_ST_dom
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_school
+        }
+        prerequisite = {
+            focus = jap_ST_dom
+        }
+        completion_reward = {
+            add_ideas = JAP_LOW
+        }
+        cost = 4
+    }
+
+    focus = {
+        id = jap_ST_woman_evote
+        icon = GFX_focus_generic_population_growth
+        relative_position_id = jap_ST_dom
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_school
+        }
+        prerequisite = {
+            focus = jap_ST_dom
+        }
+    }
+
+    focus = {
+        id = jap_ST_agrarian_reform_3
+        icon = GFX_land_reform
+        relative_position_id = jap_ST_agrarian_reform_2
         x = 0
         y = 1
         cost = 5
         prerequisite = {
-            focus = jap_dismantling_of_the_Ministry_of_Home_Affairs
-        }
-        available = {
-            
+            focus = jap_ST_agrarian_reform_2
         }
         completion_reward = {
-            add_stability = 0.1
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_agr_3
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_agr_3_b
+            }
+            activate_targeted_decision = {
+                target = JAP
+                decision = JAP_agr_3_c
+            }
         }
+    }
+
+    focus = {
+        id = jap_ST_zaibutsu_2
+        icon = GFX_focus_jap_zaibatsu
+        relative_position_id = jap_ST_low
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_ST_low
+        }
+        available = {
+           
+        }
+        completion_reward = {
+            country_event = {
+                id = TR_japan.57
+            }
+        }
+        cost = 4
+    }
+
+    focus = {
+        id = jap_ST_planning_agency
+        icon = GFX_goal_generic_territory_or_war
+        relative_position_id = jap_ST_woman_evote
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_ST_woman_evote
+        }
+    }
+
+    focus = {
+        id = jap_ST_rador 
+        icon = GFX_goal_generic_radar
+        relative_position_id = jap_ST_zaibutsu_2
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_agrarian_reform_3
+        }
+        prerequisite = {
+            focus = jap_ST_zaibutsu_2
+        }
+        prerequisite = {
+            focus = jap_ST_planning_agency
+        }
+    }
+
+    focus = {
+        id = jap_ST_great_air_company
+        icon = GFX_focus_generic_aircraft_production
+        relative_position_id = jap_ST_zaibutsu_2
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_agrarian_reform_3
+        }
+        prerequisite = {
+            focus = jap_ST_zaibutsu_2
+        }
+        prerequisite = {
+            focus = jap_ST_planning_agency
+        }        
     }
 
     focus = {
         id = jap_Establishment_of_the_Ministry_of_Labor
         icon = GFX_goal_generic_production
-        relative_position_id = jap_Development_of_insurance_system
-        x = 0
+        relative_position_id = jap_ST_great_air_company
+        x = -1
         y = 1
         cost = 5
         prerequisite = {
-            focus = jap_Development_of_insurance_system
+            focus = jap_ST_rador
+        }
+        prerequisite = {
+            focus = jap_ST_great_air_company
         }
         available = {
-            
+           
         }
         completion_reward = {
             add_ideas = JAP_Establishment_of_the_Ministry_of_Labor
@@ -2335,95 +2708,327 @@ focus_tree = {
     }
 
     focus = {
-        id = jap_social_democracy
-        icon = GFX_focus_generic_the_giant_wakes
-        relative_position_id = jap_Shakai_Taishuto
-        x = -2
+        id = jap_ST_Archipelago_remodeling_theory
+        icon = GFX_shinkansen
+        relative_position_id = jap_Establishment_of_the_Ministry_of_Labor
+        x = 0
         y = 1
-        cost = 5
+        prerequisite = {
+            focus = jap_Establishment_of_the_Ministry_of_Labor
+        }
+    }
+
+    focus = {
+        id = jap_ST_miliraly
+        icon = GFX_goal_generic_major_war
+        relative_position_id = jap_Shakai_Taishuto
+        x = 6
+        y = 1
         prerequisite = {
             focus = jap_Shakai_Taishuto
         }
-        available = {
-            
-        }
-        completion_reward = {
-            add_popularity = {
-                ideology = socialdemocratic
-                popularity = 0.1
-                }
+    }
+
+    focus = {
+        id = jap_ST_dockyard
+        icon = GFX_goal_generic_construct_naval_dockyard
+        relative_position_id = jap_ST_miliraly
+        x = -2
+        y = 1
+        prerequisite = {
+            focus = jap_ST_miliraly
         }
     }
 
     focus = {
-        id = jap_Cooperation_with_Socialist_Countries
-        icon = GFX_goal_generic_major_alliance
-        relative_position_id = jap_social_democracy
+        id = jap_ST_Open_space_separation_method
+        icon = GFX_focus_generic_air_bases
+        relative_position_id = jap_ST_miliraly
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_ST_miliraly
+        }
+    }
+
+    focus = {
+        id = jap_ST_make_division
+        icon = GFX_focus_chi_army_reform
+        relative_position_id = jap_ST_miliraly
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = jap_ST_miliraly
+        }
+    }
+
+    focus  = {
+        id = jap_ST_plan_3
+        icon = GFX_goal_generic_navy_battleship
+        relative_position_id = jap_ST_dockyard
         x = 0
         y = 1
         cost = 4
-        prerequisite = {
-            focus = jap_social_democracy
-        }
-        available = {
-            
-        }
         completion_reward = {
-            
-            diplomatic_relation = {
-                country = GER
-                relation = non_aggression_pact
-                active = yes
-            }
-            diplomatic_relation = {
-                country = FRA
-                relation = non_aggression_pact
-                active = yes
-            }
-            diplomatic_relation = {
-                country = SRI
-                relation = non_aggression_pact
-                active = yes
-            }
-
+            country_event = TR_japan.7
+        }
+        prerequisite = {
+            focus = jap_ST_dockyard
         }
     }
 
     focus = {
-        id = jap_revise_the_constitution
-        icon = GFX_focus_renounce_the_treaty_of_trianon
-        relative_position_id = jap_Cooperation_with_Socialist_Countries
+        id = jap_ST_fighting_battle
+        icon = GFX_goal_generic_air_fighter2
+        relative_position_id = jap_ST_Open_space_separation_method
         x = 0
         y = 1
-        cost = 20
         prerequisite = {
-            focus = jap_Cooperation_with_Socialist_Countries
-        }
-        available = {
-            
-        }
-        completion_reward = {
-            swap_ideas = {
-                remove_idea = JAP_constitution
-                add_idea = JAP_constitution_3
-            }
+            focus = jap_ST_Open_space_separation_method
         }
     }
 
-    ##　軍事ツリー
+    focus = {
+        id = jap_ST_tank
+        icon = GFX_goal_generic_army_tanks
+        relative_position_id = jap_ST_make_division
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_ST_make_division
+        }
+    }
 
-    shared_focus = jap_NAVY_1_1
-    shared_focus = jap_NAVY_2_1
-    shared_focus = jap_NAVY_3_1
-    shared_focus = jap_AIRFORCE_1_1
-    shared_focus = jap_AIRFORCE_2_1
-    shared_focus = jap_AIRFORCE_3_1
-    shared_focus = jap_AIRFORCE_10
-    shared_focus = jap_ARMY_1_1
-    shared_focus = jap_ARMY_2_1
-    shared_focus = jap_ARMY_3_1
-    shared_focus = jap_ARMY_10
-    shared_focus = jap_ARMY
+    focus = {
+        id = jap_ST_big_ship_big_gun_principle
+        icon = GFX_focus_generic_navy_battleship2
+        relative_position_id = jap_ST_plan_3
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_plan_3
+        }
+        mutually_exclusive = {
+            focus = jap_ST_Aviation_main_soldier_theory
+        }
+    }
+
+    focus = {
+        id = jap_ST_Aviation_main_soldier_theory
+        icon = GFX_goal_generic_navy_carrier
+        relative_position_id = jap_ST_plan_3
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_plan_3
+        }
+        prerequisite = {
+            focus = jap_ST_fighting_battle
+        }
+        mutually_exclusive = {
+            focus = jap_ST_big_ship_big_gun_principle
+        }
+    }
+
+    focus = {
+        id = jap_ST_Air_combat
+        icon = GFX_goal_generic_air_fighter
+        relative_position_id = jap_ST_tank
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_fighting_battle
+        }
+        prerequisite = {
+            focus = jap_ST_tank
+        }
+        mutually_exclusive = {
+            focus = jap_ST_hand_to_hand_combat
+        }
+    }
+
+    focus = {
+        id = jap_ST_hand_to_hand_combat
+        icon = GFX_goal_generic_allies_build_infantry
+        relative_position_id = jap_ST_tank
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_tank
+        }
+        mutually_exclusive = {
+            focus = jap_ST_Air_combat
+        }
+    }
+
+    focus = {
+        id = jap_ST_Revision_of_Naval_Warfare_Essentials_Order
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        relative_position_id = jap_ST_big_ship_big_gun_principle
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_big_ship_big_gun_principle
+            focus = jap_ST_Aviation_main_soldier_theory
+        }
+    }
+
+    focus = {
+        id = jap_ST_Aircraft_manufacturing_factory
+        icon = GFX_goal_continuous_air_production
+        relative_position_id = jap_ST_Aviation_main_soldier_theory
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_Aviation_main_soldier_theory
+            focus = jap_ST_Air_combat
+        }
+    }
+
+    focus = {
+        id = jap_ST_Revised_operational_requirements_order
+        icon = GFX_goal_generic_army_doctrines
+        relative_position_id = jap_ST_hand_to_hand_combat
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_Air_combat
+            focus = jap_ST_hand_to_hand_combat
+        }
+    }
+
+    focus = {
+        id = jap_ST_Expand_the_ground_force
+        icon = GFX_goal_generic_amphibious_assault
+        relative_position_id = jap_ST_Revision_of_Naval_Warfare_Essentials_Order
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_ST_Revision_of_Naval_Warfare_Essentials_Order
+        }    
+    }
+
+    focus = {
+        id = jap_ST_Reconnaissance_aircraft
+        icon = GFX_goal_generic_air_production
+        relative_position_id = jap_ST_Aircraft_manufacturing_factory
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_ST_Aircraft_manufacturing_factory
+        }
+    }
+
+    focus = {
+        id = jap_ST_army_aircraft_carrier
+        icon = GFX_goal_generic_navy_cruiser
+        relative_position_id = jap_ST_Revised_operational_requirements_order
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_ST_Revised_operational_requirements_order
+        }
+    }
+
+    focus = {
+        id = jap_ST_Excellent_ship_construction_subsidy_facility
+        icon = GFX_focus_generic_refit_civilian_ships
+        relative_position_id = jap_ST_Expand_the_ground_force
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_ST_Expand_the_ground_force
+        }
+    }
+
+    focus = {
+        id = jap_ST_bombing
+        icon = GFX_goal_generic_air_bomber
+        relative_position_id = jap_ST_Reconnaissance_aircraft
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_ST_Reconnaissance_aircraft
+        }
+    }
+
+    focus = {
+        id = jap_ST_supply_soldier
+        icon = GFX_goal_generic_position_armies
+        relative_position_id = jap_ST_army_aircraft_carrier
+        x = 0
+        y = 1
+        prerequisite = {
+            focus = jap_ST_army_aircraft_carrier
+        }
+    }
+
+    focus = {
+        id = jap_ST_Yokosuka_Naval_Base_First_Special_Ground_Force
+        icon = GFX_focus_eng_special_air_service
+        relative_position_id = jap_ST_Excellent_ship_construction_subsidy_facility
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_Excellent_ship_construction_subsidy_facility
+        }
+        prerequisite = {
+            focus = jap_ST_bombing
+        }
+    }
+
+    focus = {
+        id = jap_ST_Telecommunications_Solidarity
+        icon = GFX_focus_generic_paratrooper
+        relative_position_id = jap_ST_supply_soldier
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_bombing
+        }
+        prerequisite = {
+            focus = jap_ST_supply_soldier
+        }
+    }
+
+    focus = {
+        id = jap_ST_army_navy
+        icon = GFX_goal_generic_neutrality_focus
+        relative_position_id = jap_ST_Yokosuka_Naval_Base_First_Special_Ground_Force
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = jap_ST_Yokosuka_Naval_Base_First_Special_Ground_Force
+        }
+        prerequisite = {
+            focus = jap_ST_Telecommunications_Solidarity
+        }
+    }
+
+    focus = {
+        id = jap_ST_20th_election
+        icon = 	GFX_japanese_election
+        relative_position_id = jap_planned_economy
+        x = 1
+        y = 1
+        cost = 7
+        prerequisite = {
+            focus = jap_ST_Archipelago_remodeling_theory
+        }
+        prerequisite = {
+            focus = jap_planned_economy
+            focus = jap_mixed_economy
+        }
+        prerequisite = {
+            focus = jap_ST_army_navy
+        }
+        completion_reward = {
+            country_event = {
+                id = TR_japan.1
+            }
+        }  
+    }
+
 }
 
 focus_tree = {  # army bop

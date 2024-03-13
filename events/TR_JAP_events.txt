@@ -456,13 +456,8 @@ country_event = {              ######〇３計画
 	id = TR_japan.7
 	title = TR_japan.7.t
 	desc = TR_japan.7.d
+	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-		tag = JAP
-		JAP = {
-			has_completed_focus = jap_NAVY_1_1
-		}
-	}
 	timeout_days = 21
 	option = {
 		name = TR_japan.7.a
@@ -1003,7 +998,7 @@ country_event = {       #　犬養首相が死亡
 			create_country_leader = {
 				name = JAP_Korekiyo_Takahashi
 				picture = GFX_portrait_Korekiyo_Takahashi
-				ideology = conservatism
+				ideology = conservatism_ideology
 			}
 			add_manpower = -1
 			JAP = {
