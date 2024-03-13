@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_EAS_von_Lettow_Vorberk"
+		texturefile = "gfx/leaders/EAS/Portrait_EAS_von_Lettow_Vorberk.dds"
+	}
+}

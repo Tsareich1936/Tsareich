@@ -9,8 +9,8 @@ state={
 	}
 	
 	history={
-		owner = PRE
-		add_core_of = PRE
+		owner = EAS
+		add_core_of = EAS
 		buildings = {
 			infrastructure = 1
 

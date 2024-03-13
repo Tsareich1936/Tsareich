@@ -275,6 +275,7 @@ SAN = "countries/Santou.txt"
 EXC = "countries/Kanton.txt"
 JCH = "countries/Japan_China.txt"
 RUP = "countries/Russian America and Pacific.txt"
+EAS = "countries/Eastafrica Schutztruppe.txt"
 
  # CSA = "countries/CSA.txt"
  # ARP = "countries/American Republic.txt"

@@ -1,0 +1,24 @@
+characters = {
+	EAS_von_Lettow_Vorberk = {
+		name = EAS_von_Lettow_Vorberk
+		portraits = {
+			civilian = {
+				large = GFX_portrait_EAS_von_Lettow_Vorberk
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { warmonger }
+			expire = "1965.1.1"
+			id = -1
+		}
+		field_marshal={
+			traits={ old_guard jungle_rat }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
+		}
+	}
+}
