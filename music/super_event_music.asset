@@ -18,3 +18,8 @@ music = {
     file = "einheitsfrontlied.ogg"
     volume = 1.00
 }
+music = {
+    name = "The_Star_Spangled_Banner"
+    file = "The_Star_Spangled_Banner.ogg"
+    volume = 1.25
+}

@@ -19,4 +19,12 @@ spriteTypes = {
 		name = GFX_SE_German_Civil_War_Picture
 	 	textureFile = "gfx/interface/super_event/SE_German_Civil_War_Picture.png"
 	}
+	spriteType = {
+		name = GFX_SE_Tsar_War_Picture
+		textureFile = "gfx/interface/super_event/SE_Tsar_War_Picture.png"
+	}
+	spriteType = {
+		name = GFX_SE_Unified_America_Picture
+		textureFile = "gfx/interface/super_event/SE_Unified_America_Picture.png"
+	}
 }

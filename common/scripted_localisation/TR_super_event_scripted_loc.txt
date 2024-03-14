@@ -32,6 +32,22 @@ defined_text = {
 	    }
 	    localization_key = "SE_German_Civil_War_Title"
     }
+	text = {#Tsar War
+		trigger = {
+		    check_variable = {
+			    TR_super_event_variable = 5
+		    }
+	    }
+	    localization_key = "SE_Tsar_War_Title"
+	}
+	text = {#Unified America
+		trigger = {
+		    check_variable = {
+			    TR_super_event_variable = 6
+		    }
+	    }
+	    localization_key = "SE_Unified_America_Title"
+	}
 	text = {#Error Event
 		trigger = {
 			check_variable = {
@@ -75,6 +91,22 @@ defined_text = {
 		    }
 	    }
 	    localization_key = "SE_German_Civil_War_Desc"
+    }
+	text = {# Tsar War
+	    trigger = {
+		    check_variable = {
+			    TR_super_event_variable = 5
+		    }
+	    }
+	    localization_key = "SE_Tsar_War_Desc"
+    }
+	text = {# Unified_America
+	    trigger = {
+		    check_variable = {
+			    TR_super_event_variable = 6
+		    }
+	    }
+	    localization_key = "SE_Unified_America_Desc"
     }
 	text = {#Error Event
 		trigger = {
@@ -120,6 +152,22 @@ defined_text = {
 		}
 		localization_key = "GFX_SE_German_Civil_War_Picture"
 	}
+	text = {# Tsar War
+		trigger = {
+			check_variable = {
+				TR_super_event_variable = 5
+			}
+		}
+		localization_key = "GFX_SE_Tsar_War_Picture"
+	}
+	text = {# Unified_America
+	    trigger = {
+		    check_variable = {
+			    TR_super_event_variable = 6
+		    }
+	    }
+	    localization_key = "GFX_SE_Unified_America_Picture"
+    }
 	text = {#Error Event
 		localization_key = "GFX_SE_Error_Picture"
 	}
@@ -158,6 +206,22 @@ defined_text = {
 		    }
 	    }
 	    localization_key = SE_German_Civil_War_Button
+    }
+	text = {# Tsar War
+	    trigger = {
+		    check_variable = {
+			    TR_super_event_variable = 5
+		    }
+	    }
+	    localization_key = SE_Tsar_War_Button
+    }
+	text = {# Unified_America
+	    trigger = {
+		    check_variable = {
+			    TR_super_event_variable = 6
+		    }
+	    }
+	    localization_key = SE_Unified_America_Button
     }
 	text = {#Error Event
 		trigger = {

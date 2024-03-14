@@ -216,6 +216,121 @@ on_actions = {
 				TR_SER_balkan_war_peace = yes
 			}
 		}
+		effect = {#US civil war
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = USA
+							tag = TXS
+							tag = DST
+							tag = IRC
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = USA
+							tag = TXS
+							tag = DST
+							tag = IRC
+						}
+					}
+					has_global_flag = TR_USA_civil_war
+					NOT = {
+						has_global_flag = TR_USA_civil_war_finished
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							tag = FGA
+						}
+					}
+					set_global_flag = TR_FGA_failed
+				}
+				if = {
+					limit = {
+						ROOT = {
+							tag = CSA
+						}
+					}
+					set_global_flag = TR_CSA_failed
+					log = "TR_CSA_failed"
+				}
+				if = {
+					limit = {
+						ROOT = {
+							tag = AMR
+						}
+					}
+					set_global_flag = TR_AMR_failed
+					log = "TR_AMR_failed"
+				}
+				if = {
+					limit = {
+						ROOT = {
+							tag = ADR
+						}
+					}
+					set_global_flag = TR_ADR_failed
+					log = "TR_ADR_failed"
+				}
+				if = {
+					limit = {
+						ROOT = {
+							tag = AMG
+						}
+					}
+					set_global_flag = TR_AMG_failed
+					log = "TR_AMG_failed"
+				}
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								# has_global_flag = TR_FGA_failed
+								has_global_flag = TR_CSA_failed
+								has_global_flag = TR_AMR_failed
+								has_global_flag = TR_ADR_failed
+								has_global_flag = TR_AMG_failed
+							}
+							AND = {
+								has_global_flag = TR_FGA_failed
+								# has_global_flag = TR_CSA_failed
+								has_global_flag = TR_AMR_failed
+								has_global_flag = TR_ADR_failed
+								has_global_flag = TR_AMG_failed
+							}
+							AND = {
+								has_global_flag = TR_FGA_failed
+								has_global_flag = TR_CSA_failed
+								# has_global_flag = TR_AMR_failed
+								has_global_flag = TR_ADR_failed
+								has_global_flag = TR_AMG_failed
+							}
+							AND = {
+								has_global_flag = TR_FGA_failed
+								has_global_flag = TR_CSA_failed
+								has_global_flag = TR_AMR_failed
+								# has_global_flag = TR_ADR_failed
+								has_global_flag = TR_AMG_failed
+							}
+							AND = {
+								has_global_flag = TR_FGA_failed
+								has_global_flag = TR_CSA_failed
+								has_global_flag = TR_AMR_failed
+								has_global_flag = TR_ADR_failed
+								# has_global_flag = TR_AMG_failed
+							}
+						}
+					}
+					set_global_flag = TR_USA_civil_war_finished
+					USA = {
+						country_event = TR_super_event.6
+					}
+				}
+			}
+		}
 	}
 	on_state_control_changed = {
 		effect = {

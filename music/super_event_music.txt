@@ -25,3 +25,9 @@ music = {
     modifier = {factor = 1}
   }
 }
+music = {
+  song = "The_Star_Spangled_Banner"
+  chance = {
+    modifier = { factor = 0 }
+  }
+}
