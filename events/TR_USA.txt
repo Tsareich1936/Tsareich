@@ -1400,7 +1400,7 @@ add_namespace = TR_america_socialist
 		immediate = {
 			
 			IRC = {
-				transfer_state = 1038
+				transfer_state = 1073
 				set_rule = {
 					can_join_factions = no
 				}
