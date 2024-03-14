@@ -19,6 +19,11 @@ music = {
     volume = 1.00
 }
 music = {
+    name = "March_of_Preobrazhensky_Regiment"
+    file = "March_of_Preobrazhensky_Regiment.ogg"
+    volume = 1
+}
+music = {
     name = "The_Star_Spangled_Banner"
     file = "The_Star_Spangled_Banner.ogg"
     volume = 1.25

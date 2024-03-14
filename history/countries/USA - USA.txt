@@ -120,6 +120,19 @@ create_dynamic_country = {
 	set_cosmetic_tag = AMG
 	inherit_technology = USA
 }
+create_dynamic_country = {
+	original_tag = USA
+	set_country_flag = USA_freedom_flag
+	set_politics = {
+		ruling_party = anarchism
+	}
+	set_popularities = {
+		anarchism = 100
+	}
+	reserve_dynamic_country = yes
+	set_cosmetic_tag = FAM
+	inherit_technology = USA
+}
 # election variables #
 	set_variable = { ROOT.TR_USA_arkansas_var = 2 }
 	set_variable = { ROOT.TR_USA_iowa_var = 3 }

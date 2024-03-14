@@ -112,6 +112,7 @@ on_actions = {
 					remove_core_of = ADR
 					remove_core_of = AMR
 					remove_core_of = AMG
+					remove_core_of = FAM
 				}
 			}
         }

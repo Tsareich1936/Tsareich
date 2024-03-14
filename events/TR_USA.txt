@@ -962,6 +962,10 @@ add_namespace = TR_america_socialist
 						id = TR_usa_civil_war.7
 						months = 13
 					}
+					country_event = {
+						id = TR_usa_civil_war.8
+						months = 14
+					}
 				}
 				CSA = {
 					add_equipment_to_stockpile = {
@@ -1586,6 +1590,82 @@ add_namespace = TR_america_socialist
 					producer = THIS
 				}
 				AMG = {
+					TR_USA_coup = yes
+				}
+			}
+		}
+		option = {
+			name = TR_usa_civil_war.5.a
+			
+		}
+	}
+	country_event = {#自由の灯火
+		id = TR_usa_civil_war.8
+		title = TR_usa_civil_war.8.t
+		desc = TR_usa_civil_war.8.d
+	
+		is_triggered_only = yes
+		immediate = {
+			
+			FAM = {
+				USA = {
+					every_core_state = {
+						add_core_of = FAM
+					}
+				}
+				set_capital = {
+					state = 1053
+					remember_old_capital = no
+				}
+				transfer_state = 1051
+				transfer_state = 1052
+				transfer_state = 1053
+				transfer_state = 1054
+				transfer_state = 1075
+				division_template = {
+					name = "Milita Division"
+					regiments = {
+						infantry = { x = 0 y = 0  }
+						infantry = { x = 0 y = 1  }
+						infantry = { x = 0 y = 2  }
+						infantry = { x = 0 y = 3  }
+					}
+				}
+				set_rule = {
+					can_join_factions = no
+				}
+				FGA = {
+					retire_ideology_leader = anarchism
+					retire_character = USA_Henry_Louis_Mencken
+				}
+				FAM = {
+					retire_country_leader = yes
+					recruit_character = USA_Henry_Louis_Mencken
+					promote_character = {
+						character = USA_Henry_Louis_Mencken
+						ideology = libertarianism
+					}
+				}
+				every_owned_state = {
+					if = {
+						limit = {
+							check_variable = {
+								FAM.num_armies < 15
+							}
+						}
+						create_unit = {
+							division = "name = \"Milita Division\" division_template = \"Milita Division\" start_experience_factor = 0.5" 
+							owner = FAM
+							count = 3
+						}
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = THIS
+				}
+				FAM = {
 					TR_USA_coup = yes
 				}
 			}

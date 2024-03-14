@@ -28,6 +28,10 @@ AMG = {#American Military Government
 	original_tag = USA
 	has_country_flag = USA_military_flag
 }
+FAM = {#North American Free Enterprise Zone#Free America
+	original_tag = USA
+	has_country_flag = USA_freedom_flag
+}
 #Balkan War
 DNB = {#Donabska Cleansing zone
 	original_tag = HUN

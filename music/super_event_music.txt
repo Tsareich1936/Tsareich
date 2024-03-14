@@ -26,6 +26,12 @@ music = {
   }
 }
 music = {
+  song = "March_of_Preobrazhensky_Regiment"
+  chance = {
+    modifier = { factor = 2 tag = RUS }
+  }
+}
+music = {
   song = "The_Star_Spangled_Banner"
   chance = {
     modifier = { factor = 0 }

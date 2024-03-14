@@ -84,6 +84,10 @@ AMG = {
 	color = rgb { 145 163 176  }
 	color_ui = rgb { 186 205 219 }
 }
+FAM = {
+	color = rgb { 252 252 52 }
+	color_ui = rgb { 222 222 22 }
+}
 RAJ_empire = {
 	color = rgb { 170  10  10 }
 	color_ui = rgb { 200  10  10 }
