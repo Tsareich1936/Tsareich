@@ -47,6 +47,7 @@ TR_USA_coup = {
 				tag = AMR
 				tag = ADR
 				tag = AMG
+				tag = FAM
 				tag = TXS
 				tag = DST
 				tag = IRC
