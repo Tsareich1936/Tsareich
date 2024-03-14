@@ -204,6 +204,10 @@ country_event = {
 						trigger_for = RUS
 					}
 				}
+				country_event = {
+					id = TR_Russia_TW.23
+					days = 250
+				}
 			}
 		}
 	}
