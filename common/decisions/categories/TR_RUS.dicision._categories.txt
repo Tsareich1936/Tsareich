@@ -1,0 +1,108 @@
+RUS_europe_diplo_c = {
+	icon = GFX_decision_category_generic_foreign_policy
+
+	allowed = {
+		tag = RUS
+	}
+	visible = {
+		#has_completed_focus = RUS_europe_diplo
+	}
+
+	priority = {
+		base = 130
+	}
+	
+
+	visible_when_empty = no
+
+}
+RUS_finland_decision_c = {
+	icon = GFX_decision_category_FIN_national_defense
+
+	allowed = {
+		tag = RUS
+	}
+
+	picture = GFX_decision_cat_picture_NOR_fascist_war
+	priority = {
+		base = 11
+	}
+	
+	custom_icon = {
+		tag = RUS
+		value = rus_finland_autonomous_power_icon_value
+		desc = rus_finland_autonomous_value_desc
+		visible = {
+			country_exists = RUS
+		}
+	}
+	visible_when_empty = yes
+
+}
+RUS_rubber_decision_c = {
+	icon = GFX_decision_category_generic_prospect_for_resources
+	priority = 21
+	allowed = {
+		tag = RUS
+	}
+	#picture = GFX_decision_cat_picture_SWI_federal_council
+	visible = {
+		has_country_flag = RUS_rubber_factory_flag
+	}
+}
+RUS_spain_civilwar_decision_c = {
+	icon = GFX_decision_category_spr_carlism
+
+	allowed = {
+		tag = RUS
+	}
+	visible = {
+		hidden_trigger = {
+			has_global_flag = TR_spr_civ_war
+		}
+	}
+
+	picture = GFX_decision_cat_picture_spr_civil_war_offensives
+	priority = {
+		base = 129
+	}
+	
+
+	visible_when_empty = no
+
+}
+RUS_siberia_decision_c = {
+	icon = GFX_decision_category_generic_prospect_for_resources
+
+	allowed = {
+		tag = RUS
+	}
+	visible = {
+		hidden_trigger = {
+			has_country_flag = RUS_start_siberia_decision
+		}
+	}
+
+	picture = GFX_decision_cat_picture_chi_infiltration
+	priority = {
+		base = 12
+	}
+	
+
+	visible_when_empty = yes
+
+}
+RUS_tsar_war_dicisions = {
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+	allowed = {
+		tag = RUS
+	}
+	visible = {
+		
+	}
+
+	priority = {
+		base = 255
+	}
+	visible_when_empty = yes
+}

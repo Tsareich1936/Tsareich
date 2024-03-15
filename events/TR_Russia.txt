@@ -724,6 +724,9 @@ state_event = {
                 air_ratio = 0.03
                 stockpile_ratio = 0.03
                 navy_ratio = 0
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
             }
 		}
 	}

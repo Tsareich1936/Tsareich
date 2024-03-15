@@ -60,7 +60,7 @@ TR_RUS_resistance = {
 	allowed = {
 		tag = RUS
 	}
-	priority = 999
+	priority = 24
 	icon = GFX_decision_POL_looming_peasants_strike
 	visible_when_empty = yes
 	visible = {
