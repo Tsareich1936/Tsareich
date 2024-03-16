@@ -118,6 +118,29 @@ country_event = {
 }
 
 ############## tsarwar ###################
+#           _____                    _____                    _____                    _____                    _____                    _____                   _______                           _____                   _______               _____                    _____                    _____ 
+#          /\    \                  /\    \                  /\    \                  /\    \                  /\    \                  /\    \                 /::\    \                         /\    \                 /::\    \             |\    \                  /\    \                  /\    \ 
+#         /::\    \                /::\    \                /::\    \                /::\    \                /::\____\                /::\    \               /::::\    \                       /::\____\               /::::\    \            |:\____\                /::\____\                /::\    \ 
+#        /::::\    \              /::::\    \              /::::\    \              /::::\    \              /:::/    /               /::::\    \             /::::::\    \                     /:::/    /              /::::::\    \           |::|   |               /::::|   |               /::::\    \ 
+#       /::::::\    \            /::::::\    \            /::::::\    \            /::::::\    \            /:::/    /               /::::::\    \           /::::::::\    \                   /:::/    /              /::::::::\    \          |::|   |              /:::::|   |              /::::::\    \ 
+#      /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \          /:::/    /               /:::/\:::\    \         /:::/~~\:::\    \                 /:::/    /              /:::/~~\:::\    \         |::|   |             /::::::|   |             /:::/\:::\    \ 
+#     /:::/  \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \        /:::/__\:::\    \        /:::/____/               /:::/__\:::\    \       /:::/    \:::\    \               /:::/____/              /:::/    \:::\    \        |::|   |            /:::/|::|   |            /:::/__\:::\    \ 
+#    /:::/    \:::\    \      /::::\   \:::\    \      /::::\   \:::\    \       \:::\   \:::\    \      /::::\    \              /::::\   \:::\    \     /:::/    / \:::\    \              |::|    |              /:::/    / \:::\    \       |::|   |           /:::/ |::|   |           /::::\   \:::\    \ 
+#   /:::/    / \:::\    \    /::::::\   \:::\    \    /::::::\   \:::\    \    ___\:::\   \:::\    \    /::::::\____\________    /::::::\   \:::\    \   /:::/____/   \:::\____\             |::|    |     _____   /:::/____/   \:::\____\      |::|___|______    /:::/  |::|   | _____    /::::::\   \:::\    \ 
+#  /:::/    /   \:::\    \  /:::/\:::\   \:::\    \  /:::/\:::\   \:::\____\  /\   \:::\   \:::\    \  /:::/\:::::::::::\    \  /:::/\:::\   \:::\    \ |:::|    |     |:::|    |            |::|    |    /\    \ |:::|    |     |:::|    |     /::::::::\    \  /:::/   |::|   |/\    \  /:::/\:::\   \:::\    \ 
+# /:::/____/     \:::\____\/:::/  \:::\   \:::\____\/:::/  \:::\   \:::|    |/::\   \:::\   \:::\____\/:::/  |:::::::::::\____\/:::/  \:::\   \:::\____\|:::|____|     |:::|____|            |::|    |   /::\____\|:::|____|     |:::|    |    /::::::::::\____\/:: /    |::|   /::\____\/:::/  \:::\   \:::\____\ 
+# \:::\    \      \::/    /\::/    \:::\  /:::/    /\::/   |::::\  /:::|____|\:::\   \:::\   \::/    /\::/   |::|~~~|~~~~~     \::/    \:::\  /:::/    / \:::\   _\___/:::/    /             |::|    |  /:::/    / \:::\    \   /:::/    /    /:::/~~~~/~~      \::/    /|::|  /:::/    /\::/    \:::\  /:::/    / 
+#  \:::\    \      \/____/  \/____/ \:::\/:::/    /  \/____|:::::\/:::/    /  \:::\   \:::\   \/____/  \/____|::|   |           \/____/ \:::\/:::/    /   \:::\ |::| /:::/    /              |::|    | /:::/    /   \:::\    \ /:::/    /    /:::/    /          \/____/ |::| /:::/    /  \/____/ \:::\/:::/    / 
+#   \:::\    \                       \::::::/    /         |:::::::::/    /    \:::\   \:::\    \            |::|   |                    \::::::/    /     \:::\|::|/:::/    /               |::|____|/:::/    /     \:::\    /:::/    /    /:::/    /                   |::|/:::/    /            \::::::/    / 
+#    \:::\    \                       \::::/    /          |::|\::::/    /      \:::\   \:::\____\           |::|   |                     \::::/    /       \::::::::::/    /                |:::::::::::/    /       \:::\__/:::/    /    /:::/    /                    |::::::/    /              \::::/    / 
+#     \:::\    \                      /:::/    /           |::| \::/____/        \:::\  /:::/    /           |::|   |                     /:::/    /         \::::::::/    /                 \::::::::::/____/         \::::::::/    /     \::/    /                     |:::::/    /               /:::/    / 
+#      \:::\    \                    /:::/    /            |::|  ~|               \:::\/:::/    /            |::|   |                    /:::/    /           \::::::/    /                   ~~~~~~~~~~                \::::::/    /       \/____/                      |::::/    /               /:::/    / 
+#       \:::\    \                  /:::/    /             |::|   |                \::::::/    /             |::|   |                   /:::/    /             \::::/____/                                               \::::/    /                                     /:::/    /               /:::/    / 
+#        \:::\____\                /:::/    /              \::|   |                 \::::/    /              \::|   |                  /:::/    /               |::|    |                                                 \::/____/                                     /:::/    /               /:::/    / 
+#         \::/    /                \::/    /                \:|   |                  \::/    /                \:|   |                  \::/    /                |::|____|                                                  ~~                                           \::/    /                \::/    / 
+#          \/____/                  \/____/                  \|___|                   \/____/                  \|___|                   \/____/                  ~~                                                                                                      \/____/                  \/____/ 
+
+
 country_event = {
 	id = TR_Russia_TW.1
 	title = TR_Russia_TW.1.t
@@ -148,7 +171,7 @@ country_event = {
 						trigger_for = RUS
 					}
 				}
-                244 = {
+				244 = {
 					state_event = {
 						#ラドガ湖
 						id = TR_Russia_TW.7
@@ -156,15 +179,15 @@ country_event = {
 						trigger_for = RUS
 					}
 				}
-                country_event = {#バルト
-                    id = TR_Russia_TW.8
-                    days = 150
-                }
-                country_event = {#カレリア
-                    id = TR_Russia_TW.13
-                    days = 180
-                }
-                209 = {
+				country_event = {#バルト
+					id = TR_Russia_TW.8
+					days = 150
+				}
+				country_event = {#カレリア
+					id = TR_Russia_TW.13
+					days = 180
+				}
+				209 = {
 					state_event = {
 						#プスコフ
 						id = TR_Russia_TW.7
@@ -172,7 +195,7 @@ country_event = {
 						trigger_for = RUS
 					}
 				}
-                264 = {
+				264 = {
 					state_event = {
 						#プスコフ
 						id = TR_Russia_TW.18
@@ -180,7 +203,7 @@ country_event = {
 						trigger_for = RUS
 					}
 				}
-                247 = {
+				247 = {
 					state_event = {
 						#トヴェリ
 						id = TR_Russia_TW.18
@@ -188,7 +211,7 @@ country_event = {
 						trigger_for = RUS
 					}
 				}
-                246 = {
+				246 = {
 					state_event = {
 						#ルジェフ
 						id = TR_Russia_TW.18
@@ -196,7 +219,7 @@ country_event = {
 						trigger_for = RUS
 					}
 				}
-                210 = {
+				210 = {
 					state_event = {
 						#ネヴェリ
 						id = TR_Russia_TW.18
@@ -204,7 +227,7 @@ country_event = {
 						trigger_for = RUS
 					}
 				}
-				country_event = {
+				country_event = {#火蓋は切って落とされる
 					id = TR_Russia_TW.23
 					days = 250
 				}
@@ -257,16 +280,16 @@ country_event = {
 					remember_old_capital = no
 				}
 			}
-            transfer_units_fraction = {
-                target = event_target:RUS_reactionary_rebels
-                army_ratio = 0.05
-                air_ratio = 0.05
-                stockpile_ratio = 0.1
-                navy_ratio = 0
+			transfer_units_fraction = {
+				target = event_target:RUS_reactionary_rebels
+				army_ratio = 0.05
+				air_ratio = 0.05
+				stockpile_ratio = 0.1
+				navy_ratio = 0
 				keep_unit_leaders_trigger = {
 					always = yes
 				}
-            }
+			}
 			263 = {
 				teleport_armies = {
 					to_state = 208
@@ -380,7 +403,7 @@ state_event = {
 
 	immediate = {
 		hidden_effect = {
-			save_event_target_as = RebellousState
+			save_event_target_as = RebelState
 			goto_state = ROOT
 			event_target:RUS_reactionary_rebels = {
 				transfer_state = ROOT
@@ -390,13 +413,16 @@ state_event = {
 					to_state = 195
 				}
 			}
-            transfer_units_fraction = {
-                target = event_target:RUS_reactionary_rebels
-                army_ratio = 0.05
-                air_ratio = 0.05
-                stockpile_ratio = 0.05
-                navy_ratio = 0
-            }
+			transfer_units_fraction = {
+				target = event_target:RUS_reactionary_rebels
+				army_ratio = 0.05
+				air_ratio = 0.05
+				stockpile_ratio = 0.05
+				navy_ratio = 0
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
 		}
 	}
 	option = {
@@ -453,9 +479,7 @@ country_event = {
 	title = TR_Russia_TW.8.t
 	desc = TR_Russia_TW.8.d
 	is_triggered_only = yes
-	option = {
-		#奴らの遊びに付き合う暇などない
-		name = TR_Russia_TW.8.a
+	immediate = {
 		every_state = {
 			limit = {
 				OR = {
@@ -463,17 +487,36 @@ country_event = {
 					is_core_of = LAT
 				}
 			}
-			transfer_state_to = event_target:RUS_reactionary_rebels
-			teleport_armies = {
-				to_state = 11
+			set_state_flag = RUS_is_in_rebellion
+		}
+	}
+	option = {
+		#奴らの遊びに付き合う暇などない
+		name = TR_Russia_TW.8.a
+		custom_effect_tooltip = EST_LAT_STATES_WILL_TRANSFER
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = EST
+						is_core_of = LAT
+					}
+				}
+				transfer_state_to = event_target:RUS_reactionary_rebels
+				teleport_armies = {
+					to_state = 11
+				}
+				transfer_units_fraction = {
+					target = event_target:RUS_reactionary_rebels
+					army_ratio = 0.1
+					air_ratio = 0.1
+					stockpile_ratio = 0.1
+					navy_ratio = 0
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
+				}
 			}
-            transfer_units_fraction = {
-                target = event_target:RUS_reactionary_rebels
-                army_ratio = 0.1
-                air_ratio = 0.1
-                stockpile_ratio = 0.1
-                navy_ratio = 0
-            }
 		}
 	}
 	option = {
@@ -497,6 +540,10 @@ country_event = {
 	option = {
 		#親衛隊を動員しろ
 		name = TR_Russia_TW.8.c
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -2000
+		}
 		random_list = {
 			9 = {
 				country_event = {
@@ -522,6 +569,25 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = TR_Russia_TW.9.a
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = LAT
+				}
+			}
+			clr_state_flag = RUS_is_in_rebellion
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = EST
+				}
+			}
+			transfer_state_to = event_target:RUS_reactionary_rebels
+			teleport_armies = {
+				to_state = 11
+			}
+		}
 	}
 }
 
@@ -537,8 +603,24 @@ country_event = {
 		add_stability = -0.025
 		every_state = {
 			limit = {
-				is_core_of = EST
-				is_core_of = LAT
+				OR = {
+					is_core_of = EST
+					is_core_of = LAT
+				}
+			}
+			transfer_state_to = event_target:RUS_reactionary_rebels
+			teleport_armies = {
+				to_state = 11
+			}
+			transfer_units_fraction = {
+				target = event_target:RUS_reactionary_rebels
+				army_ratio = 0.1
+				air_ratio = 0.1
+				stockpile_ratio = 0.1
+				navy_ratio = 0
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
 			}
 			set_state_flag = RUS_additional_armies
 		}
@@ -553,6 +635,15 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = TR_Russia_TW.11.a
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = EST
+					is_core_of = LAT
+				}
+			}
+			clr_state_flag = RUS_is_in_rebellion
+		}
 	}
 }
 
@@ -568,8 +659,24 @@ country_event = {
 		add_stability = -0.05
 		every_state = {
 			limit = {
-				is_core_of = EST
-				is_core_of = LAT
+				OR = {
+					is_core_of = EST
+					is_core_of = LAT
+				}
+			}
+			transfer_state_to = event_target:RUS_reactionary_rebels
+			teleport_armies = {
+				to_state = 11
+			}
+			transfer_units_fraction = {
+				target = event_target:RUS_reactionary_rebels
+				army_ratio = 0.1
+				air_ratio = 0.1
+				stockpile_ratio = 0.1
+				navy_ratio = 0
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
 			}
 			set_state_flag = RUS_additional_armies
 		}
@@ -582,9 +689,7 @@ country_event = {
 	title = TR_Russia_TW.13.t
 	desc = TR_Russia_TW.13.d
 	is_triggered_only = yes
-	option = {
-		#奴らの遊びに付き合う暇などない
-		name = TR_Russia_TW.13.a
+	immediate = {
 		every_state = {
 			limit = {
 				OR = {
@@ -593,17 +698,37 @@ country_event = {
 					state = 722
 				}
 			}
-			transfer_state_to = event_target:RUS_reactionary_rebels
-			teleport_armies = {
-				to_state = 11
+			set_state_flag = RUS_is_in_rebellion
+		}
+	}
+	option = {
+		#奴らの遊びに付き合う暇などない
+		name = TR_Russia_TW.13.a
+		custom_effect_tooltip = KAR_STATES_WILL_TRANSFER
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = KAR
+						state = 213
+						state = 722
+					}
+				}
+				transfer_state_to = event_target:RUS_reactionary_rebels
+				teleport_armies = {
+					to_state = 11
+				}
+				transfer_units_fraction = {
+					target = event_target:RUS_reactionary_rebels
+					army_ratio = 0.1
+					air_ratio = 0.1
+					stockpile_ratio = 0.1
+					navy_ratio = 0
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
+				}
 			}
-            transfer_units_fraction = {
-                target = event_target:RUS_reactionary_rebels
-                army_ratio = 0.1
-                air_ratio = 0.1
-                stockpile_ratio = 0.1
-                navy_ratio = 0
-            }
 		}
 	}
 	option = {
@@ -652,6 +777,16 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = TR_Russia_TW.14.a
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = KAR
+					state = 213
+					state = 722
+				}
+			}
+			clr_state_flag = RUS_is_in_rebellion
+		}
 	}
 }
 
@@ -671,6 +806,20 @@ country_event = {
 				state = 213
 				state = 722
 			}
+			transfer_state_to = event_target:RUS_reactionary_rebels
+			teleport_armies = {
+				to_state = 11
+			}
+			transfer_units_fraction = {
+				target = event_target:RUS_reactionary_rebels
+				army_ratio = 0.1
+				air_ratio = 0.1
+				stockpile_ratio = 0.1
+				navy_ratio = 0
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
 			set_state_flag = RUS_additional_armies
 		}
 	}
@@ -684,6 +833,16 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = TR_Russia_TW.16.a
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = KAR
+					state = 213
+					state = 722
+				}
+			}
+			clr_state_flag = RUS_is_in_rebellion
+		}
 	}
 }
 
@@ -703,8 +862,23 @@ country_event = {
 				state = 213
 				state = 722
 			}
+			transfer_state_to = event_target:RUS_reactionary_rebels
+			teleport_armies = {
+				to_state = 11
+			}
+			transfer_units_fraction = {
+				target = event_target:RUS_reactionary_rebels
+				army_ratio = 0.1
+				air_ratio = 0.1
+				stockpile_ratio = 0.1
+				navy_ratio = 0
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
 			set_state_flag = RUS_additional_armies
 		}
+		
 	}
 }
 state_event = {
@@ -715,31 +889,14 @@ state_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			goto_state = ROOT
-			event_target:RUS_reactionary_rebels = {
-				transfer_state = ROOT
-			}
-			ROOT = {
-				teleport_armies = {
-					to_state = 195
-				}
-			}
-            transfer_units_fraction = {
-                target = event_target:RUS_reactionary_rebels
-                army_ratio = 0.03
-                air_ratio = 0.03
-                stockpile_ratio = 0.03
-                navy_ratio = 0
-				keep_unit_leaders_trigger = {
-					always = yes
-				}
-            }
+			save_global_event_target_as = RebelState
+			set_state_flag = RUS_is_in_rebellion
 		}
 	}
 	option = {
 		#ポリスメン
 		name = TR_Russia_TW.18.a
-        random_list = {
+		random_list = {
 			7 = {
 				country_event = {
 					id = TR_Russia_TW.19
@@ -756,7 +913,7 @@ state_event = {
 		
 	}
 	option = {
-        #親衛隊
+		#親衛隊
 		name = TR_Russia_TW.18.b
 		random_list = {
 			9 = {
@@ -774,7 +931,7 @@ state_event = {
 		}
 	}
 }
-country_event = {
+country_event = {#成功
 	id = TR_Russia_TW.19
 	title = TR_Russia_TW.19.t
 	desc = TR_Russia_TW.19.d
@@ -783,9 +940,13 @@ country_event = {
 
 	option = {
 		name = TR_Russia_TW.19.a
+		event_target:RebelState = {
+			clr_state_flag = RUS_is_in_rebellion
+			clear_global_event_target = RebelState
+		}
 	}
 }
-country_event = {
+country_event = {#失敗
 	id = TR_Russia_TW.20
 	title = TR_Russia_TW.20.t
 	desc = TR_Russia_TW.20.d
@@ -794,10 +955,32 @@ country_event = {
 
 	option = {
 		name = TR_Russia_TW.20.a
-        add_political_power = -30
+		add_political_power = -30
+		goto_state = event_target:RebelState
+		event_target:RUS_reactionary_rebels = {
+			transfer_state = event_target:RebelState
+		}
+		event_target:RebelState = {
+			teleport_armies = {
+				to_state = 195
+			}
+		}
+		transfer_units_fraction = {
+			target = event_target:RUS_reactionary_rebels
+			army_ratio = 0.03
+			air_ratio = 0.03
+			stockpile_ratio = 0.03
+			navy_ratio = 0
+			keep_unit_leaders_trigger = {
+				always = yes
+			}
+		}
+		event_target:RebelState = {
+			clear_global_event_target = RebelState
+		}
 	}
 }
-country_event = {
+country_event = {#成功
 	id = TR_Russia_TW.21
 	title = TR_Russia_TW.21.t
 	desc = TR_Russia_TW.21.d
@@ -806,9 +989,13 @@ country_event = {
 
 	option = {
 		name = TR_Russia_TW.21.a
+		event_target:RebelState = {
+			clr_state_flag = RUS_is_in_rebellion
+			clear_global_event_target = RebelState
+		}
 	}
 }
-country_event = {
+country_event = {#失敗
 	id = TR_Russia_TW.22
 	title = TR_Russia_TW.22.t
 	desc = TR_Russia_TW.22.d
@@ -817,15 +1004,37 @@ country_event = {
 
 	option = {
 		name = TR_Russia_TW.22.a
-        add_political_power = -50
-        add_manpower = -1000
-        FROM = {
-            set_state_flag = RUS_additional_armies
-        }
+		add_political_power = -50
+		add_manpower = -1000
+		event_target:RebelState = {
+			set_state_flag = RUS_additional_armies
+		}
+		goto_state = event_target:RebelState
+		event_target:RUS_reactionary_rebels = {
+			transfer_state = event_target:RebelState
+		}
+		event_target:RebelState = {
+			teleport_armies = {
+				to_state = 195
+			}
+		}
+		transfer_units_fraction = {
+			target = event_target:RUS_reactionary_rebels
+			army_ratio = 0.03
+			air_ratio = 0.03
+			stockpile_ratio = 0.03
+			navy_ratio = 0
+			keep_unit_leaders_trigger = {
+				always = yes
+			}
+		}
+		event_target:RebelState = {
+			clear_global_event_target = RebelState
+		}
 	}
 }
 country_event = {
-    id = TR_Russia_TW.23
+	id = TR_Russia_TW.23
 	title = TR_Russia_TW.23.t
 	desc = TR_Russia_TW.23.d
 
@@ -833,43 +1042,43 @@ country_event = {
 
 	option = {
 		name = TR_Russia_TW.23.a
-        event_target:RUS_reactionary_rebels = {
+		event_target:RUS_reactionary_rebels = {
 			declare_war_on = {
 				target = RUS
 				type = civil_war
 			}
 			add_civil_war_target = RUS
-            division_template = {
-                name = "Armiq spaseniq"
-                regiments = {
-                    infantry = { x = 0 y = 1 }
-                    infantry = { x = 0 y = 2 }
-                    infantry = { x = 0 y = 3 }
-                    infantry = { x = 1 y = 1 }
-                    infantry = { x = 1 y = 2 }
-                    infantry = { x = 1 y = 3 }
-                    infantry = { x = 2 y = 1 }
-                    infantry = { x = 2 y = 2 }
-                    infantry = { x = 2 y = 3 }
-                }
-            }
-            every_owned_state = {
-                # create_unit = {
-                #     division = "name = \"Armiq spaseniq\" division_template = \"Armiq spaseniq\" start_experience_factor = 0.6"
-                #     owner = PREV
-                #     count = 1
-                # }
-                if = {
-                    limit = {
-                        has_state_flag = RUS_additional_armies
-                    }
-                    create_unit = {
-                        division = "name = \"Armiq spaseniq\" division_template = \"Armiq spaseniq\" start_experience_factor = 0.6"
-                        owner = PREV
-                        count = 1
-                    }
-                }
-            }
+			division_template = {
+				name = "Armiq spaseniq"
+				regiments = {
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+				}
+			}
+			every_owned_state = {
+				# create_unit = {
+				#	 division = "name = \"Armiq spaseniq\" division_template = \"Armiq spaseniq\" start_experience_factor = 0.6"
+				#	 owner = PREV
+				#	 count = 1
+				# }
+				if = {
+					limit = {
+						has_state_flag = RUS_additional_armies
+					}
+					create_unit = {
+						division = "name = \"Armiq spaseniq\" division_template = \"Armiq spaseniq\" start_experience_factor = 0.6"
+						owner = PREV
+						count = 1
+					}
+				}
+			}
 		}
 	}
 }
