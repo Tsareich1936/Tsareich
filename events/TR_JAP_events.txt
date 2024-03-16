@@ -155,7 +155,7 @@ country_event = {      # 一か年計画
 			}
 			modifier = {
 				date > 1938.1.1
-				factor = 0.
+				factor = 0
 			}
 		}
 		hidden_effect = {
@@ -241,7 +241,7 @@ country_event = {     # 一か年計画
 			}
 			modifier = {
 				date > 1938.1.1
-				factor = 0.
+				factor = 0
 			}
 		}
 		hidden_effect = {
@@ -742,7 +742,7 @@ country_event = {        # 立憲政友会の総裁を決める
 			create_country_leader = {
 				name = JAP_fusanosuke_kuhara
 				picture = GFX_portrait_Fusanosuke_Kuhara
-				ideology = conservatism
+				ideology = conservatism_ideology
 				expire = "1965.1.29"
 			}
 			JAP = {
@@ -762,7 +762,7 @@ country_event = {        # 立憲政友会の総裁を決める
 			create_country_leader = {
 				name = JAP_chikuhei_nakajima
 				picture = GFX_portrait_Chikuhei_Nakajima
-				ideology = conservatism
+				ideology = conservatism_ideology
 				expire = "1949.10.29"
 			}
 			JAP = {
@@ -966,7 +966,7 @@ country_event = {       #　犬養首相が死亡
 			create_country_leader = {
 				name = JAP_Korekiyo_Takahashi
 				picture = GFX_portrait_Korekiyo_Takahashi
-				ideology = conservatism
+				ideology = conservatism_ideology
 			}
 			add_manpower = -1
 			JAP = {
