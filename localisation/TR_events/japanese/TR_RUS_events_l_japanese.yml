@@ -210,10 +210,10 @@
  TR_Russia_TW.6.d: "$TEST_DESC$"
  TR_Russia_TW.6.a: "$TEST_BUTTON$"
 
- TR_Russia_TW.7.t: "[ROOT.GetName]で守旧派が蜂起" #州ごとにイベントを作るのではなく、共通。
+ TR_Russia_TW.7.t: "[RebellousState.GetName]で守旧派が蜂起" #州ごとにイベントを作るのではなく、共通。#RebellousState:イベントターゲットの州
  TR_Russia_TW.7.d: "$TEST_DESC$"
  TR_Russia_TW.7.a: "$TEST_BUTTON$"
- TR_Russia_TW.18.t: "[ROOT.GetName]で守旧派が反抗"
+ TR_Russia_TW.18.t: "[RebellousState.GetName]で守旧派が反抗"
 
  TR_Russia_TW.201.t: "ノヴゴロド動乱が周辺へ拡大"
  TR_Russia_TW.201.d: "ノヴゴロドで発生した動乱につられて、その周囲におけるデニーキンの信奉者たちは過激な行動を始めている。現在の活動水準では明確な行動を行うには不十分だが、必ずこれを鎮圧する必要がある。"

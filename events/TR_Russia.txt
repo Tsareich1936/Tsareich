@@ -225,12 +225,12 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			goto_state = 263
-			retire_character = RUS_anton_denikin
-			create_dynamic_country = {
+			goto_state = 263 #ノブゴロドに視点移動
+			retire_character = RUS_anton_denikin #ロシアからデニーキンを引退
+			create_dynamic_country = { #叛乱国家の作成
 				original_tag = RUS
 				copy_tag = RUS
-				save_global_event_target_as = RUS_reactionary_rebels
+				save_global_event_target_as = RUS_reactionary_rebels #以降この国家として RUS_reactionary_rebels を用いる
 				recruit_character = RUS_anton_denikin
 				promote_character = {
 					character = RUS_anton_denikin
@@ -251,7 +251,7 @@ country_event = {
 					target = POL
 					type = annex_everything
 				}
-				transfer_state = 263
+				transfer_state = 263 #ノブゴロド
 				set_capital = {
 					state = 263
 					remember_old_capital = no
@@ -259,15 +259,19 @@ country_event = {
 			}
             transfer_units_fraction = {
                 target = event_target:RUS_reactionary_rebels
-                army_ratio = 0.1
-                air_ratio = 0.1
+                army_ratio = 0.05
+                air_ratio = 0.05
                 stockpile_ratio = 0.1
                 navy_ratio = 0
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
             }
 			263 = {
 				teleport_armies = {
 					to_state = 208
 				}
+				set_state_flag = RUS_is_in_rebellion
 			}
 		}
 	}
@@ -373,8 +377,10 @@ state_event = {
 	title = TR_Russia_TW.7.t
 	desc = TR_Russia_TW.7.d
 	is_triggered_only = yes
+
 	immediate = {
 		hidden_effect = {
+			save_event_target_as = RebellousState
 			goto_state = ROOT
 			event_target:RUS_reactionary_rebels = {
 				transfer_state = ROOT
