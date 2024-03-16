@@ -43,20 +43,34 @@ country_event = {#爆殺内戦
 		tag = MAN
 	}
 	immediate = {
+		
 		hidden_effect = {
 			set_global_flag = TR_war_MAN
-			MAN = {
-				remove_from_faction = FJN
-				remove_from_faction = GXC
-				remove_from_faction = HNA
-				remove_from_faction = GZH
-				remove_from_faction = SIC
-				remove_from_faction = YUN
-				remove_from_faction = XSM
-				remove_from_faction = SIK
-				remove_from_faction = BKN
-				remove_from_faction = EXC
-				remove_from_faction = MAN
+
+			every_country = {
+				limit = {
+					OR = {
+						tag = SIC
+						tag = XSM
+						tag = YUN
+						tag = FJN
+						tag = HNA
+						tag = GXC
+						tag = GZH
+						tag = SIK
+						tag = BKN
+						tag = EXC
+					}
+				}
+				MAN = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_free 
+					}
+					remove_from_faction = PREV
+				}
+				set_cosmetic_tag = CHI
+				drop_cosmetic_tag = yes
 			}
 			621  = { transfer_state_to = SHX }
 			SHX = {

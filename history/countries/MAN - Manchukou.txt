@@ -59,13 +59,26 @@ set_popularities = {
 
 
 create_faction = Republic_of_China
-add_to_faction = SIC
-add_to_faction = XSM
-add_to_faction = YUN
-add_to_faction = FJN
-add_to_faction = HNA
-add_to_faction = GXC
-add_to_faction = GZH
-add_to_faction = SIK
-add_to_faction = BKN
-add_to_faction = EXC
+every_country = {
+	limit = {
+		OR = {
+			tag = SIC
+			tag = XSM
+			tag = YUN
+			tag = FJN
+			tag = HNA
+			tag = GXC
+			tag = GZH
+			tag = SIK
+			tag = BKN
+			tag = EXC
+		}
+	}
+	ROOT = {
+		set_autonomy = {
+			target = PREV
+			autonomy_state = autonomy_junfa
+		}
+		add_to_faction = PREV
+	}
+}
