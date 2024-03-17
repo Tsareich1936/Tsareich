@@ -423,6 +423,9 @@ state_event = {
 					always = yes
 				}
 			}
+			ROOT = {
+				set_state_flag = RUS_is_in_rebellion
+			}
 		}
 	}
 	option = {
