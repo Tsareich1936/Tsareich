@@ -6,11 +6,16 @@
  GER_KPD_desc:0 "共産党(KPD)は選挙で過半数以上の議席を獲得し、与党の座を守り抜いた。次の評議会議長は共産党(KPD)から選出しなければならない。"
 
  GER_focus_Heinrich_Brandler:0 "ブランドラー派"
+ GER_focus_Heinrich_Brandler_desc:0 "党内の右派として知られるブランドラー派は、勢力を拡大し続けるファシスト勢力への対処として共産党(KPD)、社会民主党(SPD)による統一戦線の構築を目指している。"
  GER_united_front_movement:0 "統一戦線運動"
+ GER_united_front_movement_desc:0 "ファシズムに反対する全ての労働者及び兵士へ、反ファシスト統一戦線に加わることを求める。"
  GER_trade_union_collaborators:0 "労働組合の協力者"
+ GER_trade_union_collaborators_desc:0 "労働組合の同志と連携することで、統一戦線の基盤は更に強固なものとなるだろう。"
  GER_death_to_the_fascists:0 "ファシストに死を！"
  GER_workers_government:0 "労働者政府万歳"
+ GER_workers_government_desc:0 "社会民主党(SPD)とはドイツ革命時から長らく対立関係にあったが、共通の敵を前にしてついに連立政権の結成に至った。労働者政府万歳！"
  GER_all_power_to_the_rate:0 "「全権力をレーテに」"
+ GER_all_power_to_the_rate_desc:0 "一部の党急進派は、評議会を廃して共産党(KPD)を唯一の前衛政党とする独裁体制を構築すべきであると主張している。しかし、我々は革命によってなされた労働者の民主主義を守らなければならない。かつての標語を思い出そうではないか。"
 
  GER_focus_Ernst_Thalmann:0 "テールマン派"
  GER_eliminate_political_opponents:0 "政敵を排除"
