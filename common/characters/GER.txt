@@ -69,6 +69,19 @@ characters={
 			id=-1
 		}
 	}
+	GER_Rosa_Luxemburg = {
+		name = GER_Rosa_Luxemburg
+		portraits = {
+			civilian = {
+				large = GFX_portrait_GER_Rosa_Luxemburg
+			}
+		}
+		country_leader = {
+			ideology = luxemburgism
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
 
 	GER_wilhelm_ii={ #Empty Wilhelm II so he doesn't become ruler automatically if the neutrals are in power
 		name=GER_wilhelm_ii

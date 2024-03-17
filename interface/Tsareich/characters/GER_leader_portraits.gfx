@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_portrait_GER_karl_liebknecht
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Karl_Liebknecht.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_GER_heinrich_brandler
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Heinrich_Brandler.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_GER_ernst_thalmann
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Ernst_Thalmann.dds"
+	}
+	spriteType = {
+		name = GFX_portrait_GER_Rosa_Luxemburg
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Rosa_Luxemburg.dds"
+	}
+}
