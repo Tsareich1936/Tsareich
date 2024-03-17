@@ -52,8 +52,8 @@ news_event = {
 	title = TR_north_italy.2.t
 	desc = TR_north_italy.2.d
 	is_triggered_only = yes
-	timeout_days = 7
 	major = yes
+	picture = GFX_news_event_ITA_civil_war
 	trigger = {
 		NOT = { TAG = SRI }
 	}
