@@ -52,11 +52,19 @@ autonomy_state = {
 	allowed = {
 		OVERLORD = {
 			tag = MAN
-			tag = CHI
 		}
-		# FROM = {
-		# 	tag = DNB
-		# }
+		OR = {
+			tag = SIC
+			tag = XSM
+			tag = YUN
+			tag = FJN
+			tag = HNA
+			tag = GXC
+			tag = GZH
+			tag = SIK
+			tag = BKN
+			tag = EXC
+		}
 	}
 	default = no
 	

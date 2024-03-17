@@ -1,4 +1,5 @@
 ﻿l_japanese:
+ autonomy_junfa: "軍閥"
  autonomy_imperial_dominion: "帝国自治領"
  CAN_autonomy_imperial_dominion: "帝国自治領カナダ"
  AST_autonomy_imperial_dominion: "帝国自治領オーストラリア"
@@ -45,3 +46,4 @@
  MAN_autonomy_imperial_dominion: "帝国自治領満州"
  government_general: "総督府"
  autonomy_cleansing_area: "浄化区域"
+ country_autonomy_cleansing_area: "[]$autonomy_cleansing_area$"
