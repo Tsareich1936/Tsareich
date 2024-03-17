@@ -1,27 +1,72 @@
-add_namespace = TR_news
+add_namespace = TR_global_news
+add_namespace = TR_global_news_important
+news_event = {#第11回オリンピック競技会
+	id = TR_global_news.1
+	title = TR_global_news.1.t
+	desc = TR_global_news.1.d
+
+	# is_triggered_only = yes
+	major = yes
+	trigger = {
+		date > 1936.8.15
+		NOT = { has_global_flag = olympics_1936 }
+		# NOT = { has_global_flag = civil_war_olympics }
+		country_exists = GER
+		country_exists = USA
+		GER = { has_war = no }
+		GER = { has_civil_war = no }
+		FRA = { has_war = no }
+		ENG = { has_war = no }
+		USA = { has_war = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = olympics_1936 
+	}
+
+	picture = GFX_news_event_olympics_1940
+	option = {
+		name = TR_global_news.1.a
+		trigger = {
+			NOT = {
+				tag = GER
+			}
+		}
+	}
+	option = {#For Germany
+		name = TR_global_news.1.b	
+		trigger = {
+			tag = GER
+		}
+	}
+}
 news_event = {#ワルシャワ開放
-	id = TR_news.1
-	title = TR_news.1.t
-	desc = TR_news.1.d
+	id = TR_global_news_important.1
+	title = TR_global_news_important.1.t
+	desc = TR_global_news_important.1.d
 	picture = GFX_news_event_polish_resistance_warsaw
 
 	is_triggered_only = yes
 	major = yes
 
 	option = {
-		name = TR_news.1.a
+		name = TR_global_news_important.1.a
 	}
 }
 news_event = {#パリ開放
-	id = TR_news.2
-	title = TR_news.2.t
-	desc = TR_news.2.d
+	id = TR_global_news_important.2
+	title = TR_global_news_important.2.t
+	desc = TR_global_news_important.2.d
 
 	is_triggered_only = yes
 	major = yes
 	picture = GFX_news_event_051
 
 	option = {
-		name = TR_news.2.a
+		name = TR_global_news_important.2.a
 	}
 }
