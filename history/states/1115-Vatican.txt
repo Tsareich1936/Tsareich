@@ -1,0 +1,21 @@
+state={
+	id=1115
+	name="STATE_1115"
+	history = {
+		owner = PAP
+		add_core_of = PAP
+		add_core_of = ITA
+		add_core_of = SRI
+		buildings = {
+			industrial_complex = 1
+		}
+		add_extra_state_shared_building_slots = -7
+	}
+	provinces={
+		13444 
+	}
+	manpower=500
+	state_category = metropolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
