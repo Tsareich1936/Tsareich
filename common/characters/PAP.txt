@@ -1,0 +1,31 @@
+characters = {
+	PAP_papa_pio_xi = {
+		name = ITA_papa_pio_xi
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ITA_papa_pio_xi"
+			}
+		}
+		country_leader = {
+			ideology = catholicism
+			id = -1
+			expire = "1965.1.1"
+		}
+		#COUNTRY LEADER ROLE IS GIVEN LATER
+	}
+
+	PAP_papa_pio_xii = {
+		name = ITA_papa_pio_xii
+		portraits = {
+			# civilian = {
+			# 	large = GFX_portrait_ITA_papa_pio_xii
+			# }
+		}
+		country_leader = {
+			ideology = catholicism
+			id = -1
+			expire = "1965.1.1"
+		}
+		#COUNTRY LEADER ROLE IS GIVEN LATER
+	}
+}

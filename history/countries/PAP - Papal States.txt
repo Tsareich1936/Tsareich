@@ -7,7 +7,7 @@ set_stability = 0.5
 set_war_support = 0.5
 add_ideas = {
 }
-
+set_cosmetic_tag = PAP_VAT
 
 # Starting tech
 set_technology = {
@@ -99,18 +99,17 @@ if = {
 set_convoys = 60
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = theocracy
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 10
-	fascism = 10
-	communism = 0
-	neutrality = 80
+	theocracy = 100
 }
 
+recruit_character = PAP_papa_pio_xi
+recruit_character = PAP_papa_pio_xii
 
 
 ### VARIANTS ###

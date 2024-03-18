@@ -17,6 +17,9 @@
  CRO_SLV_fascism_DEF: "クロアート＝スロヴェーン軍政府"
  SOM_UK_subject: "$OVERLORDADJ$保護領ソマリア"
  URSR: "ローマ社会主義共和国連邦"
+ PAP_VAT: "バチカン市国"
+ PAP_VAT_DEF: "バチカン市国"
+ PAP_VAT_ADJ: "バチカン"
  PER_puppet_RUS: "ペルシャ保護領"
 
  PER_empire: "ペルシャ帝国"
