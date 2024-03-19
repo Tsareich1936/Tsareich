@@ -113,21 +113,13 @@ country_event = {
 				can_join_factions = yes
 			}
 			hidden_effect = {
-				transfer_state =2
-				transfer_state =114
-				transfer_state =115
-				transfer_state =117
-				transfer_state =156
-				transfer_state =157
-				transfer_state =158
-				transfer_state =159
-				transfer_state =160
-				transfer_state =161
-				transfer_state =162
-				transfer_state =736
-				transfer_state =849
-				transfer_state =850
-				transfer_state =852
+				every_state = {
+					limit = {
+						is_core_of = ITA
+						is_owned_by = ITA
+					}
+					transfer_state_to = SRI
+				}
 			}
 			white_peace = {
 				tag = ITA
