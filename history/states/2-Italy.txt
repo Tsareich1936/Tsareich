@@ -43,7 +43,7 @@ state={
 	provinces={
 		923 6862 9794 9904 11846 
 	}
-	manpower=2781971
+	manpower=2000000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

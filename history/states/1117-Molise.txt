@@ -9,7 +9,8 @@ state={
 		add_core_of = ITA
 		add_core_of = SRI
 	}
-	manpower=0
+	state_category = city
+	manpower=200000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
