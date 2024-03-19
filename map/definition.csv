@@ -908,7 +908,7 @@
 907;4;117;85;land;false;hills;1
 908;4;117;135;land;false;forest;2
 909;4;117;190;land;false;hills;7
-910;4;120;50;land;true;hills;1
+910;4;120;50;land;false;hills;1
 911;4;123;15;land;true;forest;1
 912;4;123;70;land;true;hills;6
 913;4;123;220;land;false;forest;2
@@ -13458,3 +13458,4 @@
 13457;148;22;119;land;true;hills;1
 13458;75;69;51;land;false;hills;1
 13459;14;128;142;land;true;urban;1
+13460;89;107;59;land;false;urban;1

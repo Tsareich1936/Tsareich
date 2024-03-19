@@ -946,7 +946,7 @@ OTT = {
 	color = rgb { 139 210 513}
 	color_ui = rgb {  139 210 513}
 }
-SAN = {
+SHA = {
 	color = rgb{ 0 204 204 }
 	color_ui = rgb{ 0 0 0 }
 }
@@ -963,4 +963,8 @@ JCH = {
 	color_ui = {
 		119 10 161
 	}
+}
+SAN = {
+	color = rgb{ 93  181  225 }
+	color_ui = rgb{ 93  181  225 }
 }

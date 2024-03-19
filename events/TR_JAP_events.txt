@@ -2917,7 +2917,7 @@ country_event = {
 				id = TR_japan.114
 			}
 		}
-		SAN = {
+		SHA = {
 			country_event = {
 				id = TR_japan.115
 			}
@@ -3265,9 +3265,9 @@ country_event = {
 	option = {
 		name = TR_japan.102.a
 		MAN = {
-			add_to_faction = SAN
+			add_to_faction = SHA
 		}
-		SAN = {
+		SHA = {
 			set_major = yes
 		}
 	}

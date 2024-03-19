@@ -1,0 +1,17 @@
+state={
+	id=1122
+	name="STATE_1122"
+	provinces={
+		13460 
+	}
+	history = {
+		owner = SAN
+		add_core_of = SAN
+		add_core_of = SRI
+		add_core_of = ITA
+	}
+	manpower=12480
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

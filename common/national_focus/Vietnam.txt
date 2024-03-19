@@ -1073,7 +1073,7 @@ focus_tree = {
 				type = annex_everything
 			}		
 			create_wargoal = {
-				target = SAN
+				target = SHA
 				type = annex_everything
 			}
 		}

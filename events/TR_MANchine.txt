@@ -215,7 +215,7 @@ country_event = {#中原からの撤退(講和)
 			# white_peace = NKCHI
 			white_peace = PRC
 			white_peace = SHX
-			597 = { transfer_state_to = SAN }
+			597 = { transfer_state_to = SHA }
 			615  = { transfer_state_to = SHX }
 			746  = { transfer_state_to = SHX }
 			622  = { transfer_state_to = PRC }
@@ -224,7 +224,7 @@ country_event = {#中原からの撤退(講和)
 			598  = { transfer_state_to = FJN }
 		}
 		
-		SAN = {
+		SHA = {
 			add_state_core = 597
 			division_template = {
 				name = "Qu Jun"
@@ -238,19 +238,19 @@ country_event = {#中原からの撤退(講和)
 			every_owned_state = {
 				create_unit = {
 					division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
-					owner = SAN
+					owner = SHA
 				}
 				create_unit = {
 					division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
-					owner = SAN
+					owner = SHA
 				}
 				create_unit = {
 					division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
-					owner = SAN
+					owner = SHA
 				}
 				create_unit = {
 					division = "name = \"Qu Jun\" division_template = \"Qu Jun\" start_experience_factor = 0.1" 
-					owner = SAN
+					owner = SHA
 				}
 			}
 		}
@@ -310,7 +310,7 @@ country_event = {#講和
 	}
 	    option = {#OK
 	    name = TR_FJN.2.b
-		SAN = { change_tag_from = FJN }
+		SHA = { change_tag_from = FJN }
     }
 }
 
