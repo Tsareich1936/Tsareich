@@ -11,9 +11,7 @@ state={
 
 	history={
 		owner = SRI
-		victory_points = {
-			6788 10 
-		}
+		
 		victory_points = {
 			6780 5 
 		}

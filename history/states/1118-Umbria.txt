@@ -5,7 +5,7 @@ state={
 		3885 6926 11751 13453 
 	}
 	history = {
-		owner = SRI
+		owner = ITA
 		add_core_of = ITA
 		add_core_of = SRI
 	}
