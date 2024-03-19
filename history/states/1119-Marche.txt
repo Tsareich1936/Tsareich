@@ -1,0 +1,15 @@
+state={
+	id=1119
+	name="STATE_1119"
+	provinces={
+		925 967 11790 11861 13452 
+	}
+	history = {
+		owner = SRI
+		add_core_of = ITA
+		add_core_of = SRI
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
