@@ -33,7 +33,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_KPD
-		icon = GFX_focus_SOV_the_supreme_soviet
+		icon = GFX_victory_of_KPD
 		cost = 5.00
 		prerequisite = {
 			focus = GER_1936_election
@@ -52,7 +52,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_focus_Heinrich_Brandler
-		icon = GFX_Shield_with_Laurels
+		icon = GFX_focus_Heinrich_Brandler
 		cost = 5.00
 		prerequisite = {
 			focus = GER_KPD
@@ -113,7 +113,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_focus_Ernst_Thalmann
-		icon = GFX_Shield_with_Laurels
+		icon = GFX_focus_Ernst_Thalmann
 		cost = 5.00
 		prerequisite = {
 			focus = GER_KPD

@@ -7,4 +7,16 @@ spriteTypes = {
 		name = "GFX_Shield_with_Laurels"
 		textureFile = "gfx/interface/goals/Tsareich/Shield_with_Laurels.dds"
 	}
+	spriteType = {
+		name = "GFX_victory_of_KPD"
+		textureFile = "gfx/interface/goals/Tsareich/victory_of_KPD.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_Heinrich_Brandler"
+		textureFile = "gfx/interface/goals/Tsareich/focus_Heinrich_Brandler.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_Ernst_Thalmann"
+		textureFile = "gfx/interface/goals/Tsareich/focus_Ernst_Thalmann.dds"
+	}
 }
