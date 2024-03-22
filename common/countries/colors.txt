@@ -968,3 +968,7 @@ SAN = {
 	color = rgb{ 93  181  225 }
 	color_ui = rgb{ 93  181  225 }
 }
+LHT = {
+	color = rgb{ 103 30 83 }
+	color_ui = rgb{ 103 30 83 }
+}

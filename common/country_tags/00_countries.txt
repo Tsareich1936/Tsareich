@@ -277,6 +277,7 @@ JCH = "countries/Japan_China.txt"
 RUP = "countries/Russian America and Pacific.txt"
 EAS = "countries/Eastafrica Schutztruppe.txt"
 SAN = "countries/San Marino.txt"
+LHT = "countries/Liechtenstein.txt"
 
 #  CSA = "countries/CSA.txt"
  # ARP = "countries/American Republic.txt"
