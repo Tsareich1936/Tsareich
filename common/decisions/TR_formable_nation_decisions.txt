@@ -442,6 +442,11 @@ form_hre_category = {
 				state = 2
 				state = 102
 				state = 853
+				state = 735
+				state = 32
+				state = 21
+				state = 851
+				state = 1
 			}
 			highlight_color_while_active = 3
 		}
@@ -550,6 +555,11 @@ form_hre_category = {
 			controls_state = 2
 			controls_state = 102
 			controls_state = 853
+			controls_state = 735
+			controls_state = 32
+			controls_state = 21
+			controls_state = 851
+			controls_state = 1
 		}
 
 		visible = {
@@ -672,7 +682,14 @@ form_hre_category = {
 			2 = { add_core_of = ROOT }
 			102 = { add_core_of = ROOT }
 			853 = { add_core_of = ROOT }
-			853 = { add_core_of = ROOT }
+			1122 = { add_core_of = ROOT }
+			1123 = { add_core_of = ROOT }
+			1115 = { add_core_of = ROOT }
+			735 = { add_core_of = ROOT }
+			32 = { add_core_of = ROOT }
+			21 = { add_core_of = ROOT }
+			851 = { add_core_of = ROOT }
+			1 = { add_core_of = ROOT }
 			hidden_effect = {
 				news_event = { id = wtt_news.70 hours = 6 }
 				set_global_flag = form_hre_flag
