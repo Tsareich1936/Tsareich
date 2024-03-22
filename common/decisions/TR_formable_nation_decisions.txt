@@ -345,3 +345,346 @@ form_south_slavia_category = {
 		}
 	}
 }
+form_hre_category = {
+
+	form_hre = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = GER
+				original_tag = LHT
+				original_tag = SWI
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 8
+				state = 28
+				state = 42
+				state = 50
+				state = 51
+				state = 52
+				state = 53
+				state = 54
+				state = 55
+				state = 56
+				state = 57
+				state = 58
+				state = 59
+				state = 60
+				state = 61
+				state = 62
+				state = 63
+				state = 64
+				state = 65
+				state = 66
+				state = 67
+				state = 68
+				state = 974
+				state = 1080
+				state = 1081
+				state = 1083
+				state = 1084
+				state = 1085
+				state = 1086
+				state = 1087
+				state = 1088
+				state = 1089
+				state = 1090
+				state = 1091
+				state = 1092
+				state = 1095
+				state = 1096
+				state = 1097
+				state = 1098
+				state = 4
+				state = 39
+				state = 69
+				state = 74
+				state = 152
+				state = 153		
+				state = 848
+				state = 1093
+				state = 1099
+				state = 1100
+				state = 1101
+				state = 1102
+				state = 3
+				state = 151
+				state = 845
+				state = 847 
+				state = 846 
+				state = 7
+				state = 35
+				state = 36
+				state = 6
+				state = 34
+				state = 9
+				state = 75
+				state = 975
+				state = 976
+				state = 977
+				state = 17
+				state = 158
+				state = 159
+				state = 160
+				state = 161
+				state = 162
+				state = 736
+				state = 850
+				state = 852
+				state = 1120
+				state = 1121
+				state = 1118
+				state = 1119
+				state = 2
+				state = 102
+				state = 853
+			}
+			highlight_color_while_active = 3
+		}
+		available = {
+			is_subject = no
+			# Germany
+			custom_trigger_tooltip = {
+				tooltip = form_hre_germany_required_states_tt
+				controls_state = 8
+				controls_state = 28
+				controls_state = 42
+				controls_state = 50
+				controls_state = 51
+				controls_state = 52
+				controls_state = 53
+				controls_state = 54
+				controls_state = 55
+				controls_state = 56
+				controls_state = 57
+				controls_state = 58
+				controls_state = 59
+				controls_state = 60
+				controls_state = 61
+				controls_state = 62
+				controls_state = 63
+				controls_state = 64
+				controls_state = 65
+				controls_state = 66
+				controls_state = 67
+				controls_state = 68
+				controls_state = 974
+				controls_state = 1080
+				controls_state = 1081
+				controls_state = 1083
+				controls_state = 1084
+				controls_state = 1085
+				controls_state = 1087
+				controls_state = 1089
+				controls_state = 1090
+				controls_state = 1091
+				controls_state = 1092
+				controls_state = 1095
+				controls_state = 1096
+				controls_state = 1097
+				controls_state = 1098
+				# Austria
+				controls_state = 4
+				controls_state = 39
+				controls_state = 69
+				controls_state = 74
+				controls_state = 152
+				controls_state = 153		
+				controls_state = 848
+				controls_state = 1086
+				controls_state = 1088
+				controls_state = 1093
+				controls_state = 1099
+				controls_state = 1100
+				controls_state = 1101
+				controls_state = 1102
+			}
+			# Switzerland
+			custom_trigger_tooltip = {
+				tooltip = form_country_switzerland_required_states_tt
+				controls_state = 3 #Swiss Plateau
+				controls_state = 151 #Eastern Swiss Alps
+				controls_state = 845 #Jura Mountains
+				controls_state = 847 #Western Swiss Alps
+				controls_state = 846 #Ticino
+			}
+			# Netherlands
+			custom_trigger_tooltip = {
+				tooltip = form_eu_netherlands_required_states_tt
+				controls_state = 6
+				controls_state = 7
+				controls_state = 35
+				controls_state = 36
+			}
+			# Czech
+			custom_trigger_tooltip = {
+				tooltip = form_country_czech_required_states_tt
+				controls_state = 9
+				controls_state = 75
+				controls_state = 975
+				controls_state = 976
+				controls_state = 977
+			}
+			# SRI
+			custom_trigger_tooltip = {
+				tooltip = form_country_sri_required_states_tt
+				controls_state = 158
+				controls_state = 159
+				controls_state = 160
+				controls_state = 161
+				controls_state = 162
+				controls_state = 736
+				controls_state = 850
+				controls_state = 852
+				controls_state = 1120
+				controls_state = 1121
+			}
+			controls_state = 17
+			controls_state = 34
+			controls_state = 1118
+			controls_state = 1119
+			controls_state = 2
+			controls_state = 102
+			controls_state = 853
+		}
+
+		visible = {
+			OR = {
+				original_tag = GER
+				original_tag = LHT
+				original_tag = SWI
+			}
+			has_government = neutrality
+			NOT = { has_global_flag = form_hre_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = HRE_UNIFIED
+			# Germany
+			custom_effect_tooltip = form_country_germany_coring_states_tt
+			hidden_effect = {
+				8 = { add_core_of = ROOT }
+				28 = { add_core_of = ROOT }
+				42 = { add_core_of = ROOT }
+				50 = { add_core_of = ROOT }
+				51 = { add_core_of = ROOT }
+				52 = { add_core_of = ROOT }
+				53 = { add_core_of = ROOT }
+				54 = { add_core_of = ROOT }
+				55 = { add_core_of = ROOT }
+				56 = { add_core_of = ROOT }
+				57 = { add_core_of = ROOT }
+				58 = { add_core_of = ROOT }
+				59 = { add_core_of = ROOT }
+				60 = { add_core_of = ROOT }
+				61 = { add_core_of = ROOT }
+				62 = { add_core_of = ROOT }
+				63 = { add_core_of = ROOT }
+				64 = { add_core_of = ROOT }
+				65 = { add_core_of = ROOT }
+				66 = { add_core_of = ROOT }
+				67 = { add_core_of = ROOT }
+				68 = { add_core_of = ROOT }
+				974 = { add_core_of = ROOT }
+				1080 = { add_core_of = ROOT }
+				1081 = { add_core_of = ROOT }
+				1083 = { add_core_of = ROOT }
+				1084 = { add_core_of = ROOT }
+				1085 = { add_core_of = ROOT }
+				1087 = { add_core_of = ROOT }
+				1089 = { add_core_of = ROOT }
+				1090 = { add_core_of = ROOT }
+				1091 = { add_core_of = ROOT }
+				1092 = { add_core_of = ROOT }
+				1095 = { add_core_of = ROOT }
+				1096 = { add_core_of = ROOT }
+				1097 = { add_core_of = ROOT }
+				1098 = { add_core_of = ROOT }
+			# Austria
+				4 = { add_core_of = ROOT }
+				39 = { add_core_of = ROOT }
+				69 = { add_core_of = ROOT }
+				74 = { add_core_of = ROOT }
+				152 = { add_core_of = ROOT }
+				153 = { add_core_of = ROOT }		
+				848 = { add_core_of = ROOT }
+				1086 = { add_core_of = ROOT }
+				1088 = { add_core_of = ROOT }
+				1093 = { add_core_of = ROOT }
+				1099 = { add_core_of = ROOT }
+				1100 = { add = add_core_of = ROOT }
+				1101 = { add_core_of = ROOT }
+				1102 = { add_core_of = ROOT }
+			}
+			# Switzerland
+			custom_effect_tooltip = form_country_switzerland_coring_states_tt
+			hidden_effect = {
+				3 = { add_core_of = ROOT }
+				151 = { add_core_of = ROOT }
+				845 = { add_core_of = ROOT }
+				847 = { add_core_of = ROOT }
+				846 = { add_core_of = ROOT }
+			}
+			# Netherlands
+			custom_effect_tooltip = form_eu_netherlands_coring_states_tt
+			hidden_effect = {
+				6 = { add_core_of = ROOT }
+				7 = { add_core_of = ROOT }
+				35 = { add_core_of = ROOT }
+				36 = { add_core_of = ROOT }
+			}
+			# Czech
+			custom_effect_tooltip = form_country_czech_coring_states_tt
+			hidden_effect = {
+				9 = { add_core_of = ROOT }
+				75 = { add_core_of = ROOT }
+				975 = { add_core_of = ROOT }
+				976 = { add_core_of = ROOT }
+				977 = { add_core_of = ROOT }
+			}
+			# SRI
+			custom_effect_tooltip = form_country_sri_coring_states_tt
+			hidden_effect = {
+				158 = { add_core_of = ROOT }
+				159 = { add_core_of = ROOT }
+				160 = { add_core_of = ROOT }
+				161 = { add_core_of = ROOT }
+				162 = { add_core_of = ROOT }
+				736 = { add_core_of = ROOT }
+				850 = { add_core_of = ROOT }
+				852 = { add_core_of = ROOT }
+				1120 = { add_core_of = ROOT }
+				1121 = { add_core_of = ROOT }
+			}
+			# Leichtenstein
+			custom_effect_tooltip = form_country_Leichtenstein_coring_states_tt
+			custom_trigger_tooltip = {
+				controls_state = 1123
+			}
+			17 = { add_core_of = ROOT }
+			34 = { add_core_of = ROOT }
+			1118 = { add_core_of = ROOT }
+			1119 = { add_core_of = ROOT }
+			2 = { add_core_of = ROOT }
+			102 = { add_core_of = ROOT }
+			853 = { add_core_of = ROOT }
+			853 = { add_core_of = ROOT }
+			hidden_effect = {
+				news_event = { id = wtt_news.70 hours = 6 }
+				set_global_flag = form_hre_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
