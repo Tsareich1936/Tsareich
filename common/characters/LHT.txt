@@ -3,7 +3,7 @@ characters = {
 		name = LHT_Franz_i
 		portraits = {
 			civilian = {
-				large = "GFX_Portrait_LHT_Franz_i"
+				large = "GFX_portrait_LHT_Franz_i"
 			}
 		}
 		country_leader = {
@@ -11,6 +11,5 @@ characters = {
 			id = -1
 			expire = "1965.1.1"
 		}
-		#COUNTRY LEADER ROLE IS GIVEN LATER
 	}
 }
