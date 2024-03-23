@@ -54,3 +54,4 @@ set_popularities = {
 	communism = 0
 	neutrality = 80
 }
+recruit_character = LHT_Franz_i

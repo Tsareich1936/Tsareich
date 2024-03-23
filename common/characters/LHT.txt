@@ -1,0 +1,16 @@
+characters = {
+	LHT_Franz_i = {
+		name = LHT_Franz_i
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_LHT_Franz_i"
+			}
+		}
+		country_leader = {
+			ideology = constitutional_monarchism
+			id = -1
+			expire = "1965.1.1"
+		}
+		#COUNTRY LEADER ROLE IS GIVEN LATER
+	}
+}

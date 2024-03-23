@@ -3,6 +3,7 @@
 oob = "AZR_1936"
 
 set_research_slots = 3
+set_cosmetic_tag = ARM_puppet_RUS
 
 # Starting tech
 set_technology = {
