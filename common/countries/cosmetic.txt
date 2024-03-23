@@ -1,9 +1,20 @@
 #TR
 PER_puppet_RUS = {
 	color = rgb { 64 128 0 }
-	color_ui = rgb { 64 128 0 }
+	color_ui = rgb { 51 204 51 }
 }
-
+ARM_puppet_RUS = {
+	color = rgb { 64 128 0 }
+	color_ui = rgb { 51 204 51 }
+}
+SYR_puppet_RUS = {
+	color = rgb { 64 128 0 }
+	color_ui = rgb { 51 204 51 }
+}
+FIN_puppet_RUS = {
+	color = rgb { 64 128 0 }
+	color_ui = rgb { 51 204 51 }
+}
 
 PER_empire = {
 	color = rgb { 94 0 77 }
@@ -35,16 +46,16 @@ CZE_communism = {
 	color_ui = rgb { 135 48 48 }
 }
 CRO_SLV = {
-	color = rgb { 178  55  141 }
-	color_ui = rgb { 178  55  141 }
+	color = rgb { 230  70  180 }
+	color_ui = rgb { 230 255 122 }
 }
 SOM_UK = {
 	color = rgb { 160  20  20 }
 	color_ui = rgb { 180  10  10 }
 }
 SUD_UK = {
-	color = rgb { 160  20  20 }
-	color_ui = rgb { 180  10  10 }
+	color = rgb { 215  143  81 }
+	color_ui = rgb { 215  143  81 }
 }
 URSR = {
 	color = rgb { 153 0 0 }

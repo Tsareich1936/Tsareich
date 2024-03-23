@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_portrait_LHT_Franz_i
+		textureFile = "gfx/leaders/LHT/portrait_Leichtenstein_Franz_i.dds"
+	}
+}

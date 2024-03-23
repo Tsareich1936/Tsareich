@@ -1,0 +1,15 @@
+characters = {
+	LHT_Franz_i = {
+		name = LHT_Franz_i
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_LHT_Franz_i"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			id = -1
+			expire = "1965.1.1"
+		}
+	}
+}

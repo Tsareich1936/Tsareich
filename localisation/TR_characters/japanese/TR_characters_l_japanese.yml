@@ -1,6 +1,8 @@
 ﻿l_japanese:
  GER_heinrich_brandler: "ハインリヒ・ブランドラー"
  GER_otto_strasser: "オットー・シュトラッサー"
+ GER_karl_liebknecht: "カール・リープクネヒト"
+ GER_Rosa_Luxemburg: "ローザ・ルクセンブルク"
 
  RUS_alexei_nikolaevich: "アレクセイ・ニコラエヴィチ"
  RUS_kirill_vladimirovich: "キリル・ウラジーミロヴィチ"
@@ -40,7 +42,6 @@
  OTT_Caliph_Abdulmecid_II: "アブデュルメジト2世"
  FRA_ludovic_oscar_frossard: "ルドヴィック＝オスカー・フロッサール"
 
- GER_karl_liebknecht: "カール・リープクネヒト"
  MAN_Zhang_Zuolin: "張作霖"
  MAN_Zhang_Xueliang: "張学良"
  
@@ -66,3 +67,5 @@
  CZE_syukoda: "株主総会"
  
  SER_aleksandar_ii_karadordevic: "アレクサンダル・カラジョルジェヴィチ"
+
+ LHT_Franz_i: "フランツ一世"

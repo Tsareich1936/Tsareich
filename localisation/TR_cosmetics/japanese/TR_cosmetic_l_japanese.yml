@@ -1,4 +1,8 @@
 ﻿l_japanese:
+ BEL_COG: "ベルギー領コンゴ"
+ BEL_COG_DEF: "ベルギー領コンゴ"
+ BEL_COG_ADJ: "ベルギー領コンゴ"
+
  CRO_SLV: "クロアート＝スロヴェーン"
  CRO_SLV_ADJ: "クロアート＝スロヴェーン"
  CRO_SLV_communism: "クロアート＝スロヴェーン人民共和国"
@@ -13,8 +17,8 @@
  CRO_SLV_conservatism_DEF: "クロアート＝スロヴェーン"
  CRO_SLV_neutrality: "クロアート＝スロヴェーン連合王国"
  CRO_SLV_neutrality_DEF: "クロアート＝スロヴェーン連合王国"
- CRO_SLV_fascism: "クロアート＝スロヴェーン軍政府"
- CRO_SLV_fascism_DEF: "クロアート＝スロヴェーン軍政府"
+ CRO_SLV_fascism: "クロアート＝スロヴェーン"
+ CRO_SLV_fascism_DEF: "クロアート＝スロヴェーン"
  SOM_UK_subject: "$OVERLORDADJ$保護領ソマリア"
  URSR: "ローマ社会主義共和国連邦"
  PAP_VAT: "バチカン市国"

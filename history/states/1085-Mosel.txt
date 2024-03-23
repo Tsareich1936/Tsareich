@@ -1,17 +1,21 @@
+
 state={
 	id=1085
 	name="STATE_1085"
+
 	history={
 		owner = GER
 		add_core_of = GER
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+
 		}
+
 	}
 
 	provinces={
-		3629 9559 11502 
+		3629 9559 11502 13466 
 	}
 	manpower=696246
 	buildings_max_level_factor=1.000

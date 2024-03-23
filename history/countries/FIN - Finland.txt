@@ -2,6 +2,7 @@
 
 set_oob = "FIN_1936"
 
+set_cosmetic_tag = FIN_puppet_RUS
 
 
 
